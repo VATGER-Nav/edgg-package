@@ -1,0 +1,76 @@
+DisplayTypeName:Ground Radar display
+DisplayTypeNeedRadarContent:0
+DisplayTypeGeoReferenced:1
+Free Text:EDDG Parking NEW\10:freetext
+Free Text:EDDG Parking NEW\101:freetext
+Free Text:EDDG Parking NEW\102:freetext
+Free Text:EDDG Parking NEW\103:freetext
+Free Text:EDDG Parking NEW\104:freetext
+Free Text:EDDG Parking NEW\11:freetext
+Free Text:EDDG Parking NEW\12:freetext
+Free Text:EDDG Parking NEW\13:freetext
+Free Text:EDDG Parking NEW\14:freetext
+Free Text:EDDG Parking NEW\18A:freetext
+Free Text:EDDG Parking NEW\18B:freetext
+Free Text:EDDG Parking NEW\18C:freetext
+Free Text:EDDG Parking NEW\18D:freetext
+Free Text:EDDG Parking NEW\18E:freetext
+Free Text:EDDG Parking NEW\19A:freetext
+Free Text:EDDG Parking NEW\19B:freetext
+Free Text:EDDG Parking NEW\19C:freetext
+Free Text:EDDG Parking NEW\19D:freetext
+Free Text:EDDG Parking NEW\19E:freetext
+Free Text:EDDG Parking NEW\20:freetext
+Free Text:EDDG Parking NEW\201:freetext
+Free Text:EDDG Parking NEW\202:freetext
+Free Text:EDDG Parking NEW\203:freetext
+Free Text:EDDG Parking NEW\21:freetext
+Free Text:EDDG Parking NEW\21A:freetext
+Free Text:EDDG Parking NEW\21B:freetext
+Free Text:EDDG Parking NEW\22:freetext
+Free Text:EDDG Parking NEW\24:freetext
+Free Text:EDDG Parking NEW\24A:freetext
+Free Text:EDDG Parking NEW\24B:freetext
+Free Text:EDDG Parking NEW\25:freetext
+Free Text:EDDG Parking NEW\301:freetext
+Free Text:EDDG Parking NEW\302:freetext
+Free Text:EDDG Parking NEW\303:freetext
+Free Text:EDDG Parking NEW\401:freetext
+Free Text:EDDG Parking NEW\402:freetext
+Free Text:EDDG Parking NEW\403:freetext
+Free Text:EDDG Parking NEW\404:freetext
+Free Text:EDDG Parking NEW\405:freetext
+Free Text:EDDG Parking NEW\406:freetext
+Free Text:EDDG Parking NEW\7:freetext
+Free Text:EDDG Parking NEW\8:freetext
+Free Text:EDDG Parking NEW\9:freetext
+Free Text:EDDG Parking NEW\9A:freetext
+Free Text:EDDG Parking NEW\9B:freetext
+Free Text:EDDG Taxiway\A:freetext
+Free Text:EDDG Taxiway\B:freetext
+Free Text:EDDG Taxiway\B:freetext
+Free Text:EDDG Taxiway\C:freetext
+Free Text:EDDG Taxiway\D:freetext
+Free Text:EDDG Taxiway\G:freetext
+Geo:EDDG Groundlayout Gates:
+Geo:EDDG Groundlayout Taxilines:
+Regions:EDDG Ground ALTN:polygon
+SHOWC:1
+SHOWSB:1
+BELOW:0
+ABOVE:13500
+LEADER:5
+SHOWLEADER:0
+TURNLEADER:0
+HISTORY_DOTS:0
+SIMULATION_MODE:1
+DISABLEPANNING:0
+DISABLEZOOMING:0
+DisplayRotation:18.00000
+TAGFAMILY:Phoenix Ground
+WINDOWAREA:52.127134:7.666480:52.140361:7.704913
+PLUGIN:Ground Radar plugin:AirportElevation:159
+PLUGIN:Ground Radar plugin:AirportRadius:3
+PLUGIN:Ground Radar plugin:GroundMode:EDDG
+PLUGIN:Ground Radar plugin:ShowMapData:EDDG
+PLUGIN:TopSky plugin:ShowMapData:NONE

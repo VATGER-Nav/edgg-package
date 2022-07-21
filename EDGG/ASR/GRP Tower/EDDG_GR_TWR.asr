@@ -1,0 +1,24 @@
+DisplayTypeName:Ground Radar display
+DisplayTypeNeedRadarContent:0
+DisplayTypeGeoReferenced:1
+ARTCC low boundary:Centerlines EDDG 07:
+ARTCC low boundary:Centerlines EDDG 25:
+ARTCC low boundary:Tower CTR EDDG:
+Runways:EDDG 07-25:centerline
+SHOWC:1
+SHOWSB:0
+BELOW:180
+ABOVE:13500
+LEADER:5
+SHOWLEADER:0
+TURNLEADER:0
+HISTORY_DOTS:0
+SIMULATION_MODE:1
+DISABLEPANNING:0
+DISABLEZOOMING:0
+DisplayRotation:0.00000
+TAGFAMILY:Matias (built in)
+WINDOWAREA:51.955638:7.141173:52.331793:8.234173
+PLUGIN:Ground Radar plugin:ShowMapData:EDDG_TWR
+PLUGIN:Ground Radar plugin:TowerMode:EDDG
+PLUGIN:TopSky plugin:ShowMapData:EDDG_TWR

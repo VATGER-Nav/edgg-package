@@ -1,0 +1,168 @@
+DisplayTypeName:Standard ES radar screen
+DisplayTypeNeedRadarContent:1
+DisplayTypeGeoReferenced:1
+SECTORFILE:
+SECTORTITLE:
+ARTCC boundary:AoR APP EDDF:
+ARTCC boundary:AoR EDDS_APP:
+ARTCC high boundary:AoR EDGG (South):
+ARTCC high boundary:AoR EDUU (Langen South):
+ARTCC high boundary:EDUU Neighbour:
+ARTCC low boundary:Tower CTR EDDF:
+ARTCC low boundary:Tower CTR EDDR (HX):
+ARTCC low boundary:Tower CTR EDDS:
+ARTCC low boundary:Tower CTR EDFH:
+ARTCC low boundary:Tower CTR EDFM (HX):
+ARTCC low boundary:Tower CTR EDRZ (HX):
+ARTCC low boundary:Tower CTR EDSB:
+ARTCC low boundary:Tower CTR EDTL (HX):
+ARTCC low boundary:Tower CTR ETAD (HX):
+ARTCC low boundary:Tower CTR ETAR:
+ARTCC low boundary:Tower CTR ETHN (HX):
+ARTCC low boundary:Tower CTR ETSB:
+Fixes:ABLUM:symbol
+Fixes:ADEMI:symbol
+Fixes:ADMUM:symbol
+Fixes:ANEKI:symbol
+Fixes:ARPEG:symbol
+Fixes:ASKIK:symbol
+Fixes:ASPAT:symbol
+Fixes:BADLI:symbol
+Fixes:BADSO:symbol
+Fixes:BARSU:symbol
+Fixes:BATUB:symbol
+Fixes:BERXO:symbol
+Fixes:BETEX:symbol
+Fixes:BETZO:symbol
+Fixes:BITBU:symbol
+Fixes:BOMBI:symbol
+Fixes:BUPAL:symbol
+Fixes:CINDY:symbol
+Fixes:DEGOM:symbol
+Fixes:DEMUL:symbol
+Fixes:DINKU:symbol
+Fixes:DITAM:symbol
+Fixes:DODEN:symbol
+Fixes:DOMUX:symbol
+Fixes:EBANA:symbol
+Fixes:EKSAK:symbol
+Fixes:ELBAL:symbol
+Fixes:ELLUM:symbol
+Fixes:ELMOX:symbol
+Fixes:ELNAT:symbol
+Fixes:EMKIL:symbol
+Fixes:EMPAX:symbol
+Fixes:ERNAS:symbol
+Fixes:ERSIL:symbol
+Fixes:ERTES:symbol
+Fixes:ESEGU:symbol
+Fixes:ETARU:symbol
+Fixes:FAWUR:symbol
+Fixes:GAPLA:symbol
+Fixes:GEBNO:symbol
+Fixes:GULKO:symbol
+Fixes:HAREM:symbol
+Fixes:HEUSE:symbol
+Fixes:IBINI:symbol
+Fixes:IBVIL:symbol
+Fixes:INBED:symbol
+Fixes:KERAX:symbol
+Fixes:KOMIB:symbol
+Fixes:KOVAN:symbol
+Fixes:KUMIK:symbol
+Fixes:KUNOD:symbol
+Fixes:LAMGO:symbol
+Fixes:LAMPU:symbol
+Fixes:LESMO:symbol
+Fixes:LETKU:symbol
+Fixes:LIMGO:symbol
+Fixes:LIPMI:symbol
+Fixes:LIPNI:symbol
+Fixes:LIRSU:symbol
+Fixes:MADOR:symbol
+Fixes:MANUV:symbol
+Fixes:MAPOX:symbol
+Fixes:MARUN:symbol
+Fixes:MASEK:symbol
+Fixes:MAXOT:symbol
+Fixes:MINGA:symbol
+Fixes:MOPAN:symbol
+Fixes:MOVUM:symbol
+Fixes:NATOR:symbol
+Fixes:NIVNU:symbol
+Fixes:NOMBO:symbol
+Fixes:NORKU:symbol
+Fixes:NORTA:symbol
+Fixes:OMOGI:symbol
+Fixes:OTMON:symbol
+Fixes:PESOV:symbol
+Fixes:PIPEP:symbol
+Fixes:RAMOB:symbol
+Fixes:RASVO:symbol
+Fixes:RAVLO:symbol
+Fixes:REMBA:symbol
+Fixes:REUTL:symbol
+Fixes:RILAX:symbol
+Fixes:RIMET:symbol
+Fixes:RITAX:symbol
+Fixes:ROBAR:symbol
+Fixes:ROBEL:symbol
+Fixes:ROKIL:symbol
+Fixes:ROLIS:symbol
+Fixes:ROMIR:symbol
+Fixes:ROTWE:symbol
+Fixes:RUDOT:symbol
+Fixes:SONOM:symbol
+Fixes:SPESA:symbol
+Fixes:SULUS:symbol
+Fixes:TEDGO:symbol
+Fixes:TEKSI:symbol
+Fixes:TINSA:symbol
+Fixes:TOBAK:symbol
+Fixes:TOLVU:symbol
+Fixes:ULKIG:symbol
+Fixes:UMUPU:symbol
+Fixes:UNOKO:symbol
+Fixes:UTABA:symbol
+Fixes:UVANO:symbol
+Fixes:VAGAB:symbol
+Fixes:VELIS:symbol
+Fixes:XAROL:symbol
+VORs:BUB:symbol
+VORs:CHA:symbol
+VORs:COL:symbol
+VORs:DIK:symbol
+VORs:DKB:symbol
+VORs:FUL:symbol
+VORs:GED:symbol
+VORs:GMH:symbol
+VORs:HMM:symbol
+VORs:KRH:symbol
+VORs:LBU:symbol
+VORs:LUX:symbol
+VORs:MTR:symbol
+VORs:NTM:symbol
+VORs:RID:symbol
+VORs:RKN:symbol
+VORs:SPI:symbol
+VORs:SPY:symbol
+VORs:SUL:symbol
+VORs:TAU:symbol
+VORs:TRA:symbol
+VORs:WRB:symbol
+VORs:ZWN:symbol
+SHOWC:1
+SHOWSB:0
+BELOW:400
+ABOVE:0
+LEADER:-3
+SHOWLEADER:0
+TURNLEADER:0
+HISTORY_DOTS:0
+SIMULATION_MODE:1
+DISABLEPANNING:0
+DISABLEZOOMING:0
+DisplayRotation:0.00000
+TAGFAMILY:Langen Radar EDGG
+WINDOWAREA:48.369205:4.511200:51.802544:14.487509
+PLUGIN:TopSky plugin:ShowMapData:APP_EDDS,APP_EDDF,APP_EDDR,APP_EDFH,APP_EDFM,AREA

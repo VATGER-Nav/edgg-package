@@ -1,0 +1,58 @@
+DisplayTypeName:Standard ES radar screen
+DisplayTypeNeedRadarContent:1
+DisplayTypeGeoReferenced:1
+SECTORFILE:
+SECTORTITLE:
+Airports:EDFA:symbol
+Airports:EDFB:symbol
+Airports:EDFC:symbol
+Airports:EDFD:symbol
+Airports:EDFG:symbol
+Airports:EDFH:symbol
+Airports:EDFI:symbol
+Airports:EDFJ:symbol
+Airports:EDFK:symbol
+Airports:EDFL:symbol
+Airports:EDFM:symbol
+Airports:EDFN:symbol
+Airports:EDFO:symbol
+Airports:EDFP:symbol
+Airports:EDFQ:symbol
+Airports:EDFR:symbol
+Airports:EDFS:symbol
+Airports:EDFT:symbol
+Airports:EDFU:symbol
+Airports:EDFV:symbol
+Airports:EDFX:symbol
+Airports:EDFY:symbol
+Airports:EDFZ:symbol
+ARTCC boundary:AoR APP EDDF:
+ARTCC low boundary:Centerlines EDDF 07L:
+ARTCC low boundary:Centerlines EDDF 07R:
+ARTCC low boundary:Centerlines EDDF 25L:
+ARTCC low boundary:Centerlines EDDF 25R:
+ARTCC low boundary:Tower CTR EDDF:
+ARTCC low boundary:Tower CTR EDFE:
+ARTCC low boundary:Tower CTR ETOU (HX):
+Runways:EDDF 07C-25C:centerline
+Runways:EDDF 07L-25R:centerline
+Runways:EDDF 07R-25L:centerline
+Runways:EDDF 18-36:centerline
+Runways:EDFE 08-26:centerline
+Runways:ETOU 07-25:centerline
+VORs:FFM:symbol
+SHOWC:1
+SHOWSB:0
+BELOW:380
+ABOVE:13500
+LEADER:3
+SHOWLEADER:0
+TURNLEADER:0
+HISTORY_DOTS:0
+SIMULATION_MODE:1
+DISABLEPANNING:0
+DISABLEZOOMING:0
+DisplayRotation:0.00000
+TAGFAMILY:Phoenix Tower
+WINDOWAREA:49.812417:7.864005:50.278045:9.216987
+PLUGIN:TopSky plugin:ShowMapData:EDDF_TWR

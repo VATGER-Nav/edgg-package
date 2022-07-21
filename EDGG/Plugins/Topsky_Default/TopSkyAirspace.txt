@@ -1,0 +1,4 @@
+QNHTL:ED:80,978,70,1014,60,1051,50
+
+//Additional APP Lines
+//Example::: APPLINE:EFHK:15:153.4:HEL 

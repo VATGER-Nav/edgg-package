@@ -1,0 +1,66 @@
+Settings	Settingsfile	\EDGG\Settings\EDGG\EDGG_General.txt
+Settings	SettingsfileSYMBOLOGY	\EDGG\Settings\EDGG\EDGG_Symbology.txt
+Settings	SettingsfileVOICE	\EDGG\Settings\VoiceChannels.txt
+Settings	SettingsfilePROFILE	\EDGG\Settings\ALL\EDGG_APP_Profile.txt
+Settings	SettingsfileTAGS	\EDGG\Settings\ALL\EDGG_Tags.txt
+Settings	SettingsfileSIL	\EDGG\Settings\EDGG\EDGG_SectorInboundList.txt
+Settings	SettingsfileSEL	\EDGG\Settings\EDGG\EDGG_SectorExitList.txt
+Settings	SettingsfileDEP	\EDGG\Settings\EDGG\EDGG_DepartureList.txt
+Settings	SettingsfileARR	\EDGG\Settings\EDGG\EDGG_ArrivalList.txt
+Settings	SettingsfileFP	\EDGG\Settings\ALL\EDGG_FPList.txt
+Settings	SettingsfileSCREEN	\EDGG\Settings\EDGG\EDGG_Screen.txt
+Settings	SettingsfilePLUGINS	\EDGG\Settings\ALL\EDGG_Plugins.txt
+Settings	SettingsfilePILOTING	\EDGG\Settings\ALL\EDGG_Piloting.txt
+Settings	SettingsfileCONFLICT	\EDGG\Settings\ALL\EDGG_ConflictListConfiguration.txt
+Settings	SettingsfileVCCS	\EDGG\Settings\ALL\EDFF_VCCS_APPCTR.txt
+Settings	sector	\EDGG-FULL_20220714184051-220701-0001.sct
+Settings	alias	\EDGG\Alias\alias.txt
+Settings	AtisFolder	\EDGG\ATIS\AtisFiles.txt
+Settings	airlines	\EDGG\ICAO\ICAO_Airlines.txt
+Settings	airports	\EDGG\ICAO\ICAO_Airports.txt
+Settings	aircraft	\EDGG\ICAO\ICAO_Aircraft.txt
+Settings	airways	\EDGG\NavData\airway.txt
+Settings	airportcoords	\EDGG\NavData\icao.txt
+Settings	AselKey	5111808
+Settings	FreqKey	3604480
+Voice	PPPT	18612224
+Voice	SPPT	18612224
+Voice	bass_filter	1
+Sounds	Sound0	\EDGG\Sounds\Handoff Request.wav
+Sounds	Sound1	\EDGG\Sounds\Handoff Accept.wav
+Sounds	Sound2	\EDGG\Sounds\Conflict Alert1.wav
+Sounds	Sound3	\EDGG\Sounds\Private Msg.wav
+Sounds	Sound4	\EDGG\Sounds\Private Msg.wav
+Sounds	Sound7	\EDGG\Sounds\SMTAlarm1.wav
+Sounds	Sound9	\EDGG\Sounds\Connect.wav
+Sounds	Sound10	\EDGG\Sounds\Disconnect.wav
+Sounds	Sound11	\EDGG\Sounds\Ongoing request.wav
+Sounds	Sound12	\EDGG\Sounds\Ongoing accepted.wav
+Sounds	Sound13	\EDGG\Sounds\ongoing refused.wav
+Sounds	Sound14	\EDGG\Sounds\manual ongoing.wav
+Sounds	Sound18	\EDGG\Sounds\startup_silent.wav
+RecentFiles	Recent1	\EDGG\ASR\APP\EDDF_APP.asr
+RecentFiles	Recent2	\EDGG\ASR\APP\EDDL_APP.asr
+RecentFiles	Recent3	\EDGG\ASR\APP\EDDS_APP.asr
+RecentFiles	Recent4	\EDGG\ASR\CTR\KTG.asr
+RecentFiles	Recent5	\EDGG\ASR\CTR\PADH.asr
+Plugins	Plugin0	\EDGG\Plugins\Topsky_EDGG\TopSky.dll
+Plugins	Plugin0Display0	Standard ES radar screen
+Plugins	Plugin1	\EDGG\Plugins\GRP\Default\GRplugin.dll
+Plugins	Plugin1Display0	Ground Radar display
+Plugins	Plugin1Display1	Standard ES radar screen
+Plugins	Plugin2	\EDGG\Plugins\AfvEuroScopeBridge.dll
+Plugins	Plugin3	\EDGG\Plugins\CCAMS.dll
+Plugins	Plugin3Display0	Ground Radar display
+Plugins	Plugin3Display1	Standard ES radar screen
+TeamSpeakVccs	Ts3DialogLeft	639
+TeamSpeakVccs	Ts3DialogTop	156
+TeamSpeakVccs	Ts3DialogRight	1459
+TeamSpeakVccs	Ts3DialogBottom	756
+TeamSpeakVccs	TsVccsMiniControlX	1754
+TeamSpeakVccs	TsVccsMiniControlY	47
+TeamSpeakVccs	Ts3G2GPtt	3670016
+TeamSpeakVccs	Ts3G2APtt	3670016
+Plugins	Plugin4	\EDGG\Plugins\VCH.dll
+Plugins	Plugin5	\EDGG\Plugins\DelHel\DelHel.dll
+Plugins	Plugin6	\EDGG\Plugins\VFPC\VFPC.dll

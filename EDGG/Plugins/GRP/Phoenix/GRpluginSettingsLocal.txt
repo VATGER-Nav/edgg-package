@@ -1,0 +1,12 @@
+// Settings Phoenix Ground
+
+RawVideo=1
+
+Color_Arrival=240,240,0
+Color_Departure=0,232,232
+Color_RawVideo=255,255,0
+Color_Unknown=160,160,160
+
+Color_New_Stand=255,80,60
+
+// Individual Settings

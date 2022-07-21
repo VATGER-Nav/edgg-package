@@ -1,0 +1,41 @@
+DisplayTypeName:Ground Radar display
+DisplayTypeNeedRadarContent:0
+DisplayTypeGeoReferenced:1
+Free Text:EDFM Parking Stands\1:freetext
+Free Text:EDFM Parking Stands\2:freetext
+Free Text:EDFM Parking Stands\3:freetext
+Free Text:EDFM Parking Stands\4:freetext
+Free Text:EDFM Parking Stands\5:freetext
+Free Text:EDFM Taxiways\A:freetext
+Free Text:EDFM Taxiways\A:freetext
+Free Text:EDFM Taxiways\B:freetext
+Free Text:EDFM Taxiways\C:freetext
+Free Text:EDFM Taxiways\D:freetext
+Free Text:EDFM Taxiways\D:freetext
+Free Text:EDFM Taxiways\D:freetext
+Free Text:EDFM Taxiways\F:freetext
+Free Text:EDFM Taxiways\G:freetext
+Free Text:EDFM Taxiways\Grass:freetext
+Free Text:EDFM Taxiways\Parking Area:freetext
+Geo:EDFM Groundlayout Taxiway:
+Regions:EDFM Ground NEW:polygon
+Regions:EDFM Holdshorts:polygon
+SHOWC:1
+SHOWSB:0
+BELOW:0
+ABOVE:0
+LEADER:5
+SHOWLEADER:0
+TURNLEADER:0
+HISTORY_DOTS:0
+SIMULATION_MODE:1
+DISABLEPANNING:0
+DISABLEZOOMING:0
+DisplayRotation:357.00000
+TAGFAMILY:Phoenix Ground
+WINDOWAREA:49.471039:8.504473:49.478369:8.525770
+PLUGIN:Ground Radar plugin:AirportElevation:309
+PLUGIN:Ground Radar plugin:AirportRadius:3
+PLUGIN:Ground Radar plugin:GroundMode:EDFM
+PLUGIN:Ground Radar plugin:ShowMapData:EDFM
+PLUGIN:TopSky plugin:ShowMapData:NONE

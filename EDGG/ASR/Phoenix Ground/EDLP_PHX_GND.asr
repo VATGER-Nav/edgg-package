@@ -1,0 +1,39 @@
+DisplayTypeName:Ground Radar display
+DisplayTypeNeedRadarContent:0
+DisplayTypeGeoReferenced:1
+Free Text:EDLP Taxiway\A:freetext
+Free Text:EDLP Taxiway\A:freetext
+Free Text:EDLP Taxiway\A:freetext
+Free Text:EDLP Taxiway\A:freetext
+Free Text:EDLP Taxiway\A1:freetext
+Free Text:EDLP Taxiway\B:freetext
+Free Text:EDLP Taxiway\C:freetext
+Free Text:EDLP Taxiway\D:freetext
+Free Text:EDLP Taxiway\D:freetext
+Free Text:EDLP Taxiway\D:freetext
+Free Text:EDLP Taxiway\D:freetext
+Free Text:EDLP Taxiway\L:freetext
+Free Text:EDLP Taxiway\M:freetext
+Free Text:EDLP Taxiway\M:freetext
+Geo:EDLP Groundlayout Gates:
+Geo:EDLP Groundlayout Taxilines:
+Regions:EDLP Ground ALTN:polygon
+SHOWC:1
+SHOWSB:1
+BELOW:0
+ABOVE:13500
+LEADER:5
+SHOWLEADER:0
+TURNLEADER:0
+HISTORY_DOTS:0
+SIMULATION_MODE:1
+DISABLEPANNING:0
+DISABLEZOOMING:0
+DisplayRotation:32.00000
+TAGFAMILY:Phoenix Ground
+WINDOWAREA:51.607264:8.598429:51.620491:8.636862
+PLUGIN:Ground Radar plugin:AirportElevation:699
+PLUGIN:Ground Radar plugin:AirportRadius:3
+PLUGIN:Ground Radar plugin:GroundMode:EDLP
+PLUGIN:Ground Radar plugin:ShowMapData:EDLP
+PLUGIN:TopSky plugin:ShowMapData:NONE

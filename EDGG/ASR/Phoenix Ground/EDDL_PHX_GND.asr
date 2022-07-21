@@ -1,0 +1,177 @@
+DisplayTypeName:Ground Radar display
+DisplayTypeNeedRadarContent:0
+DisplayTypeGeoReferenced:1
+SECTORFILE:
+SECTORTITLE:
+Free Text:EDDL Parking Airac 20/10\A01:freetext
+Free Text:EDDL Parking Airac 20/10\A02:freetext
+Free Text:EDDL Parking Airac 20/10\A03:freetext
+Free Text:EDDL Parking Airac 20/10\A04:freetext
+Free Text:EDDL Parking Airac 20/10\A08:freetext
+Free Text:EDDL Parking Airac 20/10\A09:freetext
+Free Text:EDDL Parking Airac 20/10\A10:freetext
+Free Text:EDDL Parking Airac 20/10\A12:freetext
+Free Text:EDDL Parking Airac 20/10\A13:freetext
+Free Text:EDDL Parking Airac 20/10\A15:freetext
+Free Text:EDDL Parking Airac 20/10\A16:freetext
+Free Text:EDDL Parking Airac 20/10\B01:freetext
+Free Text:EDDL Parking Airac 20/10\B02:freetext
+Free Text:EDDL Parking Airac 20/10\B03:freetext
+Free Text:EDDL Parking Airac 20/10\B04:freetext
+Free Text:EDDL Parking Airac 20/10\B05:freetext
+Free Text:EDDL Parking Airac 20/10\B06:freetext
+Free Text:EDDL Parking Airac 20/10\B08:freetext
+Free Text:EDDL Parking Airac 20/10\B09:freetext
+Free Text:EDDL Parking Airac 20/10\B10:freetext
+Free Text:EDDL Parking Airac 20/10\B11:freetext
+Free Text:EDDL Parking Airac 20/10\C01:freetext
+Free Text:EDDL Parking Airac 20/10\C02:freetext
+Free Text:EDDL Parking Airac 20/10\C03:freetext
+Free Text:EDDL Parking Airac 20/10\C04:freetext
+Free Text:EDDL Parking Airac 20/10\C05:freetext
+Free Text:EDDL Parking Airac 20/10\C06:freetext
+Free Text:EDDL Parking Airac 20/10\C07:freetext
+Free Text:EDDL Parking Airac 20/10\C08:freetext
+Free Text:EDDL Parking Airac 20/10\GAT:freetext
+Free Text:EDDL Parking Airac 20/10\V01:freetext
+Free Text:EDDL Parking Airac 20/10\V02:freetext
+Free Text:EDDL Parking Airac 20/10\V03:freetext
+Free Text:EDDL Parking Airac 20/10\V05:freetext
+Free Text:EDDL Parking Airac 20/10\V07:freetext
+Free Text:EDDL Parking Airac 20/10\V08A:freetext
+Free Text:EDDL Parking Airac 20/10\V08B:freetext
+Free Text:EDDL Parking Airac 20/10\V08C:freetext
+Free Text:EDDL Parking Airac 20/10\V101:freetext
+Free Text:EDDL Parking Airac 20/10\V103:freetext
+Free Text:EDDL Parking Airac 20/10\V104:freetext
+Free Text:EDDL Parking Airac 20/10\V106:freetext
+Free Text:EDDL Parking Airac 20/10\V11A:freetext
+Free Text:EDDL Parking Airac 20/10\V11B:freetext
+Free Text:EDDL Parking Airac 20/10\V11C:freetext
+Free Text:EDDL Parking Airac 20/10\V12:freetext
+Free Text:EDDL Parking Airac 20/10\V120:freetext
+Free Text:EDDL Parking Airac 20/10\V121:freetext
+Free Text:EDDL Parking Airac 20/10\V122:freetext
+Free Text:EDDL Parking Airac 20/10\V123:freetext
+Free Text:EDDL Parking Airac 20/10\V124:freetext
+Free Text:EDDL Parking Airac 20/10\V125:freetext
+Free Text:EDDL Parking Airac 20/10\V126:freetext
+Free Text:EDDL Parking Airac 20/10\V127:freetext
+Free Text:EDDL Parking Airac 20/10\V128:freetext
+Free Text:EDDL Parking Airac 20/10\V129:freetext
+Free Text:EDDL Parking Airac 20/10\V130:freetext
+Free Text:EDDL Parking Airac 20/10\V14:freetext
+Free Text:EDDL Parking Airac 20/10\V16:freetext
+Free Text:EDDL Parking Airac 20/10\V17:freetext
+Free Text:EDDL Parking Airac 20/10\V19:freetext
+Free Text:EDDL Parking Airac 20/10\V20:freetext
+Free Text:EDDL Parking Airac 20/10\V22:freetext
+Free Text:EDDL Parking Airac 20/10\V23:freetext
+Free Text:EDDL Parking Airac 20/10\V24:freetext
+Free Text:EDDL Parking Airac 20/10\V25:freetext
+Free Text:EDDL Parking Airac 20/10\V26:freetext
+Free Text:EDDL Parking Airac 20/10\V27:freetext
+Free Text:EDDL Parking Airac 20/10\V28:freetext
+Free Text:EDDL Parking Airac 20/10\V29:freetext
+Free Text:EDDL Parking Airac 20/10\V29A:freetext
+Free Text:EDDL Parking Airac 20/10\V38:freetext
+Free Text:EDDL Parking Airac 20/10\V39:freetext
+Free Text:EDDL Parking Airac 20/10\V40:freetext
+Free Text:EDDL Parking Airac 20/10\V41:freetext
+Free Text:EDDL Parking Airac 20/10\V42:freetext
+Free Text:EDDL Parking Airac 20/10\V43:freetext
+Free Text:EDDL Parking Airac 20/10\V44:freetext
+Free Text:EDDL Parking Airac 20/10\V45:freetext
+Free Text:EDDL Parking Airac 20/10\V46:freetext
+Free Text:EDDL Parking Airac 20/10\V47:freetext
+Free Text:EDDL Parking Airac 20/10\V49:freetext
+Free Text:EDDL Parking Airac 20/10\V51:freetext
+Free Text:EDDL Parking Airac 20/10\V53:freetext
+Free Text:EDDL Parking Airac 20/10\V61:freetext
+Free Text:EDDL Parking Airac 20/10\V61A:freetext
+Free Text:EDDL Parking Airac 20/10\V62:freetext
+Free Text:EDDL Parking Airac 20/10\V63:freetext
+Free Text:EDDL Parking Airac 20/10\V71:freetext
+Free Text:EDDL Parking Airac 20/10\V72:freetext
+Free Text:EDDL Parking Airac 20/10\V72A:freetext
+Free Text:EDDL Parking Airac 20/10\V73:freetext
+Free Text:EDDL Parking Airac 20/10\V74:freetext
+Free Text:EDDL Parking Airac 20/10\V75:freetext
+Free Text:EDDL Parking Airac 20/10\V76:freetext
+Free Text:EDDL Parking Airac 20/10\V77:freetext
+Free Text:EDDL Parking Airac 20/10\V81:freetext
+Free Text:EDDL Parking Airac 20/10\V82:freetext
+Free Text:EDDL Parking Airac 20/10\V83:freetext
+Free Text:EDDL Parking Airac 20/10\V84:freetext
+Free Text:EDDL Parking Airac 20/10\V85:freetext
+Free Text:EDDL Parking Airac 20/10\V86:freetext
+Free Text:EDDL Parking Airac 20/10\V91:freetext
+Free Text:EDDL Parking Airac 20/10\V92:freetext
+Free Text:EDDL Parking Airac 20/10\V93:freetext
+Free Text:EDDL Parking Airac 20/10\V94:freetext
+Free Text:EDDL Parking Airac 20/10\V95:freetext
+Free Text:EDDL Parking Airac 20/10\V96:freetext
+Free Text:EDDL Taxiway Airac 20/10\G1:freetext
+Free Text:EDDL Taxiway Airac 20/10\G2:freetext
+Free Text:EDDL Taxiway Airac 20/10\K:freetext
+Free Text:EDDL Taxiway Airac 20/10\K1:freetext
+Free Text:EDDL Taxiway Airac 20/10\K2:freetext
+Free Text:EDDL Taxiway Airac 20/10\K3:freetext
+Free Text:EDDL Taxiway Airac 20/10\K5:freetext
+Free Text:EDDL Taxiway Airac 20/10\L1:freetext
+Free Text:EDDL Taxiway Airac 20/10\L2:freetext
+Free Text:EDDL Taxiway Airac 20/10\L3:freetext
+Free Text:EDDL Taxiway Airac 20/10\L3:freetext
+Free Text:EDDL Taxiway Airac 20/10\L4:freetext
+Free Text:EDDL Taxiway Airac 20/10\L4:freetext
+Free Text:EDDL Taxiway Airac 20/10\L5:freetext
+Free Text:EDDL Taxiway Airac 20/10\L5:freetext
+Free Text:EDDL Taxiway Airac 20/10\L6:freetext
+Free Text:EDDL Taxiway Airac 20/10\L7:freetext
+Free Text:EDDL Taxiway Airac 20/10\L7:freetext
+Free Text:EDDL Taxiway Airac 20/10\L7:freetext
+Free Text:EDDL Taxiway Airac 20/10\L8:freetext
+Free Text:EDDL Taxiway Airac 20/10\L9:freetext
+Free Text:EDDL Taxiway Airac 20/10\L9:freetext
+Free Text:EDDL Taxiway Airac 20/10\M:freetext
+Free Text:EDDL Taxiway Airac 20/10\M:freetext
+Free Text:EDDL Taxiway Airac 20/10\M:freetext
+Free Text:EDDL Taxiway Airac 20/10\M:freetext
+Free Text:EDDL Taxiway Airac 20/10\N:freetext
+Free Text:EDDL Taxiway Airac 20/10\P1:freetext
+Free Text:EDDL Taxiway Airac 20/10\P2:freetext
+Free Text:EDDL Taxiway Airac 20/10\P3:freetext
+Free Text:EDDL Taxiway Airac 20/10\P4:freetext
+Free Text:EDDL Taxiway Airac 20/10\P4:freetext
+Free Text:EDDL Taxiway Airac 20/10\T:freetext
+Free Text:EDDL Taxiway Airac 20/10\T:freetext
+Free Text:EDDL Taxiway Airac 20/10\T:freetext
+Free Text:EDDL Taxiway Airac 20/10\T:freetext
+Free Text:EDDL Taxiway Airac 20/10\T:freetext
+Free Text:EDDL Taxiway Airac 20/10\T1:freetext
+Free Text:EDDL Taxiway Airac 20/10\W:freetext
+Free Text:EDDL Taxiway Airac 20/10\W:freetext
+Free Text:EDDL Taxiway Airac 20/10\Y:freetext
+Geo:EDDL Groundlayout Gates 2102:
+Geo:EDDL Groundlayout Stopbars:
+Geo:EDDL Groundlayout Taxilines 2102:
+Regions:EDDL GROUND ALTN:polygon
+SHOWC:1
+SHOWSB:0
+BELOW:0
+ABOVE:13500
+LEADER:5
+SHOWLEADER:0
+TURNLEADER:0
+HISTORY_DOTS:0
+SIMULATION_MODE:1
+DISABLEPANNING:0
+DISABLEZOOMING:0
+DisplayRotation:36.00000
+TAGFAMILY:Phoenix Ground
+WINDOWAREA:51.276187:6.737657:51.296854:6.797709
+PLUGIN:Ground Radar plugin:AirportElevation:147
+PLUGIN:Ground Radar plugin:AirportRadius:3
+PLUGIN:Ground Radar plugin:GroundMode:EDDL
+PLUGIN:Ground Radar plugin:ShowMapData:EDDL
+PLUGIN:TopSky plugin:ShowMapData:NONE

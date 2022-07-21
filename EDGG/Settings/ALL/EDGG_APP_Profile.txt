@@ -1,0 +1,87 @@
+PROFILE
+PROFILE:%%_OBS:100:0
+ATIS2:
+ATIS3:
+ATIS4:
+
+PROFILE:EDDF_N_APP:150:5
+ATIS2:Langen Radar | Frankfurt Arrival
+ATIS3:PDC/DCL Datalink [EDDF] - Pilotbriefing vats.im/eddf
+ATIS4:You have feedback? Submit it! feedback.vatger.de
+
+PROFILE:EDDF_H_APP:100:5
+ATIS2:Frankfurt Director
+ATIS3:Callsign only on initial call. Turn immediately when instructed.
+ATIS4:You have feedback? Submit it! feedback.vatger.de
+
+PROFILE:EDDF_N_DEP:100:5
+ATIS2:Langen Radar | Frankfurt Departure
+ATIS3:Pilotbriefing vats.im/eddf
+ATIS4:You have feedback? Submit it! feedback.vatger.de
+
+PROFILE:EDDL_APP:100:5
+ATIS2:Langen Radar
+ATIS3:Covering EDDL/EDLN/EDLV - PDC/DCL Datalink [EDDL]
+ATIS4:Charts and further information at www.vatsim-germany.org
+
+PROFILE:EDDS_N_APP:100:5
+ATIS2:Langen Radar
+ATIS3:Covering EDDS/EDSB/EDTL - PDC/DCL Datalink [EDDS]
+ATIS4:You have feedback? Submit it! feedback.vatger.de
+
+PROFILE:EDDK_APP:100:5
+ATIS2:Langen Radar
+ATIS3:Covering EDDK/ETNN - PDC/DCL Datalink [EDDK]
+ATIS4:Charts and further information at www.vatsim-germany.org
+
+PROFILE:EDGG_CTR:300:6
+ATIS2:Langen Radar - CPDLC [EDGC]
+ATIS3:Covering Langen (EDDF/EDDL/EDDK/EDDS/...)
+ATIS4:You have feedback? Submit it! feedback.vatger.de
+
+PROFILE:EDGG_B_CTR:300:6
+ATIS2:Langen Radar - CPDLC [EDGB]
+ATIS3:Covering EDDF/EDDS/EDFM
+ATIS4:You have feedback? Submit it! feedback.vatger.de
+
+PROFILE:EDGG_D_CTR:300:6
+ATIS2:Langen Radar - CPDLC [EDGD]
+ATIS3:Covering EDDF/EDDS/EDFM
+ATIS4:You have feedback? Submit it! feedback.vatger.de
+
+PROFILE:EDGG_G_CTR:300:6
+ATIS2:Langen Radar - CPDLC [EDGG]
+ATIS3:Covering EDDF/EDFH/EDDR
+ATIS4:You have feedback? Submit it! feedback.vatger.de
+
+PROFILE:EDGG_H_CTR:300:6
+ATIS2:Langen Radar - CPDLC [EDGH]
+ATIS3:Covering EDDL/EDDK/EDDG/EDLP/EDLW/EDLV/EDLN
+ATIS4:Charts and further information at www.vatsim-germany.org
+
+PROFILE:EDGG_K_CTR:300:6
+ATIS2:Langen Radar - CPDLC [EDGK]
+ATIS3:Covering EDDF/EDDS/EDFH/EDSB/EDDR
+ATIS4:You have feedback? Submit it! feedback.vatger.de
+
+PROFILE:EDGG_P_CTR:300:6
+ATIS2:Langen Radar - CPDLC [EDGP]
+ATIS3:Covering EDDL/EDDK/EDDG/EDLP/EDLW/EDLV/EDLN
+ATIS4:Charts and further information at www.vatsim-germany.org
+
+PROFILE:EDGG_R_CTR:300:6
+ATIS2:Langen Radar - CPDLC [EDGR]
+ATIS3:Covering EDDF/EDDS/EDFH/EDSB/EDDR
+ATIS4:You have feedback? Submit it! feedback.vatger.de
+
+PROFILE:EDUU_W_CTR:300:6
+ATIS2:Rhein Radar - CPDLC [EDUW]
+ATIS3:Covering above FL245 only!
+ATIS4:You have feedback? Submit it! feedback.vatger.de
+
+PROFILE:EDUU_N_CTR:300:6
+ATIS2:Rhein Radar - CPDLC [EDUN]
+ATIS3:Covering above FL245 only!
+ATIS4:You have feedback? Submit it! feedback.vatger.de
+
+END

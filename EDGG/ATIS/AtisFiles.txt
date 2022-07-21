@@ -1,0 +1,445 @@
+RECORD:-:leer.wav
+RECORD: :leer.wav
+RECORD:  :leer.wav
+RECORD:   :leer.wav
+RECORD:    :leer.wav
+RECORD:,:leer.wav
+RECORD:.:leer.wav
+RECORD:+:leer.wav
+RECORD:0:leer.wav
+RECORD:0:leer.wav
+RECORD:0:leer.wav
+RECORD:1:leer.wav
+RECORD:10:leer.wav
+RECORD:10 To 25 Percent:leer.wav
+RECORD:11:leer.wav
+RECORD:12:leer.wav
+RECORD:13:leer.wav
+RECORD:14:leer.wav
+RECORD:15:leer.wav
+RECORD:16:leer.wav
+RECORD:17:leer.wav
+RECORD:18:leer.wav
+RECORD:19:leer.wav
+RECORD:2:leer.wav
+RECORD:20:leer.wav
+RECORD:25 To 50 Percent:leer.wav
+RECORD:3:leer.wav
+RECORD:30:leer.wav
+RECORD:4:leer.wav
+RECORD:40:leer.wav
+RECORD:5:leer.wav
+RECORD:50:leer.wav
+RECORD:6:leer.wav
+RECORD:60:leer.wav
+RECORD:7:leer.wav
+RECORD:70:leer.wav
+RECORD:8:leer.wav
+RECORD:80:leer.wav
+RECORD:9:leer.wav
+RECORD:90:leer.wav
+RECORD:A:leer.wav
+RECORD:Above:leer.wav
+RECORD:AC:leer.wav
+RECORD:Advise On Initial Contact You Have Information:leer.wav
+RECORD:After:leer.wav
+RECORD:Aircraft With Parking Position On Apron 1 Or 3 Expect Departure And Arrival Runway 08L:leer.wav
+RECORD:Aircraft With Parking Position On Apron 1 Or 3 Expect Departure And Arrival Runway 26R:leer.wav
+RECORD:All Runways:leer.wav
+RECORD:Altitude:leer.wav
+RECORD:Altocumulus:leer.wav
+RECORD:And:leer.wav
+RECORD:Approach:leer.wav
+RECORD:At:leer.wav
+RECORD:Attention:leer.wav
+RECORD:Attention!:leer.wav
+RECORD:Augsburg:leer.wav
+RECORD:Automated Weather Message:leer.wav
+RECORD:Automatic Weather Report:leer.wav
+RECORD:B:leer.wav
+RECORD:Baden:leer.wav
+RECORD:Becoming:leer.wav
+RECORD:Below:leer.wav
+RECORD:Below 10 Percent:leer.wav
+RECORD:Berlin Brandenburg:leer.wav
+RECORD:Berlin Schoenefeld:leer.wav
+RECORD:Berlin Tegel:leer.wav
+RECORD:Bird Activity Over Airport:leer.wav
+RECORD:Birds Observed In Vicinity Of All Runways:leer.wav
+RECORD:Birds Observed In Vicinity Of Runway:leer.wav
+RECORD:Birds Observed In Vicinity Of Runways:leer.wav
+RECORD:Blowing Dust:leer.wav
+RECORD:Blowing Sand:leer.wav
+RECORD:Blowing Snow:leer.wav
+RECORD:Braking Action:leer.wav
+RECORD:Braunschweig-Wolfsburg:leer.wav
+RECORD:Bremen:leer.wav
+RECORD:Bremen Radar:leer.wav
+RECORD:Broken:leer.wav
+RECORD:By:leer.wav
+RECORD:C:leer.wav
+RECORD:Cavok:leer.wav
+RECORD:CB:leer.wav
+RECORD:Center:leer.wav
+RECORD:Centimeter:leer.wav
+RECORD:Centimeter Or More:leer.wav
+RECORD:Centimeters:leer.wav
+RECORD:Centimeters Or More:leer.wav
+RECORD:Charts Available For Free On www.Vatsim-Germany.Org:leer.wav
+RECORD:CI:leer.wav
+RECORD:Circling:leer.wav
+RECORD:Cirrus:leer.wav
+RECORD:Clear:leer.wav
+RECORD:Clear And Dry:leer.wav
+RECORD:Cleared Of Deposits:leer.wav
+RECORD:Closed:leer.wav
+RECORD:Closed Due Clearance In Progress:leer.wav
+RECORD:Clouds:leer.wav
+RECORD:Clouds And Visibility Ok:leer.wav
+RECORD:CLR:leer.wav
+RECORD:CM:leer.wav
+RECORD:CM Or More:leer.wav
+RECORD:CMs:leer.wav
+RECORD:CMs or More:leer.wav
+RECORD:Coburg:leer.wav
+RECORD:Cologne Bonn:leer.wav
+RECORD:Compacted Or Rolled Snow:leer.wav
+RECORD:Covered With:leer.wav
+RECORD:Cumulonimbus:leer.wav
+RECORD:D:leer.wav
+RECORD:Damp:leer.wav
+RECORD:Degrees:leer.wav
+RECORD:Departure Frequency:leer.wav
+RECORD:Departure Frequency For All Departing Aircraft Is:leer.wav
+RECORD:Departure Runway:leer.wav
+RECORD:Deposits 10 To 25 Percent:leer.wav
+RECORD:Deposits 25 To 50 Percent:leer.wav
+RECORD:Deposits Below 10 Percent:leer.wav
+RECORD:Deposits More Than 50 Percent:leer.wav
+RECORD:Dew Point:leer.wav
+RECORD:Dortmund:leer.wav
+RECORD:Downgrading:leer.wav
+RECORD:Dresden:leer.wav
+RECORD:Drizzle:leer.wav
+RECORD:Dry Snow:leer.wav
+RECORD:Due to work in progress:leer.wav
+RECORD:Duesseldorf:leer.wav
+RECORD:Dust Whirls:leer.wav
+RECORD:Duststorm:leer.wav
+RECORD:E:leer.wav
+RECORD:East:leer.wav
+RECORD:Eggenfelden:leer.wav
+RECORD:Erfurt:leer.wav
+RECORD:Expect:leer.wav
+RECORD:Expect Dependent Parallel ILS Approach:leer.wav
+RECORD:expect GBAS approach:leer.wav
+RECORD:expect GPS approach:leer.wav
+RECORD:expect ILS approach:leer.wav
+RECORD:expect Localizer DME approach:leer.wav
+RECORD:expect NDB approach:leer.wav
+RECORD:expect RNP Y approach:leer.wav
+RECORD:expect Visual approach:leer.wav
+RECORD:expect VOR DME approach:leer.wav
+RECORD:F:leer.wav
+RECORD:Feet:leer.wav
+RECORD:Few:leer.wav
+RECORD:Fog:leer.wav
+RECORD:Fog Obscured:leer.wav
+RECORD:For Departure Expect:leer.wav
+RECORD:For Landing:leer.wav
+RECORD:For Take Off:leer.wav
+RECORD:Frankfurt:leer.wav
+RECORD:Frankfurt - Hahn:leer.wav
+RECORD:Frankfurt Main:leer.wav
+RECORD:Freezing:leer.wav
+RECORD:Freezing Drizzle:leer.wav
+RECORD:Freezing Fog:leer.wav
+RECORD:Freezing Precipitation:leer.wav
+RECORD:Freezing Rain:leer.wav
+RECORD:Friction Coefficient:leer.wav
+RECORD:Friedrichshafen:leer.wav
+RECORD:Frozen Ruts Or Ridges:leer.wav
+RECORD:Funnel Cloud:leer.wav
+RECORD:G:leer.wav
+RECORD:GBAS:leer.wav
+RECORD:Good:leer.wav
+RECORD:GPS:leer.wav
+RECORD:Gust:leer.wav
+RECORD:Gusts Up To:leer.wav
+RECORD:Guten Abend:leer.wav
+RECORD:Guten Tag:leer.wav
+RECORD:H:leer.wav
+RECORD:Hahn:leer.wav
+RECORD:Hail:leer.wav
+RECORD:Hamburg:leer.wav
+RECORD:Hannover:leer.wav
+RECORD:Haze:leer.wav
+RECORD:Heavy:leer.wav
+RECORD:Hectopascal:leer.wav
+RECORD:hPa:leer.wav
+RECORD:Hundred:leer.wav
+RECORD:I:leer.wav
+RECORD:Ice:leer.wav
+RECORD:Ice Crystals:leer.wav
+RECORD:Ice Pellets:leer.wav
+RECORD:ILS:leer.wav
+RECORD:ILS Y Approach:leer.wav
+RECORD:ILS Z Approach:leer.wav
+RECORD:In Depth:leer.wav
+RECORD:In The Vicinity:leer.wav
+RECORD:In Use:leer.wav
+RECORD:Inches:leer.wav
+RECORD:Independent Parallel ILS Approach:leer.wav
+RECORD:Information:leer.wav
+RECORD:J:leer.wav
+RECORD:K:leer.wav
+RECORD:Kassel:leer.wav
+RECORD:Kilometers:leer.wav
+RECORD:Knots:leer.wav
+RECORD:Koeln Bonn:leer.wav
+RECORD:L:leer.wav
+RECORD:Landing Runway:leer.wav
+RECORD:Langen Radar:leer.wav
+RECORD:Left:leer.wav
+RECORD:Leipzig:leer.wav
+RECORD:Leipzig Halle:leer.wav
+RECORD:Less Than:leer.wav
+RECORD:Light:leer.wav
+RECORD:Localizer :leer.wav
+RECORD:Low Drifting Dust:leer.wav
+RECORD:Low Drifting Sand:leer.wav
+RECORD:Low Drifting Snow:leer.wav
+RECORD:LOW VISIBILITY PROCEDURES IN OPERATION CAT II AND III AVAILABLE:leer.wav
+RECORD:Low-Visibility Procedures Cat II In Operation:leer.wav
+RECORD:Low-Visibility Procedures Cat III In Operation:leer.wav
+RECORD:Luebeck:leer.wav
+RECORD:M:leer.wav
+RECORD:MM:leer.wav
+RECORD:Maastricht Radar:leer.wav
+RECORD:Mannheim:leer.wav
+RECORD:Medium:leer.wav
+RECORD:Medium To Good:leer.wav
+RECORD:Medium To Poor:leer.wav
+RECORD:Memmingen:leer.wav
+RECORD:Met Report Time:leer.wav
+RECORD:Meters:leer.wav
+RECORD:Miles:leer.wav
+RECORD:Millimeter:leer.wav
+RECORD:Millimeters:leer.wav
+RECORD:Minus:leer.wav
+RECORD:Mist:leer.wav
+RECORD:Moderate:leer.wav
+RECORD:Moenchengladbach:leer.wav
+RECORD:More Than:leer.wav
+RECORD:More Than 50 Percent:leer.wav
+RECORD:Muenchen:leer.wav
+RECORD:Muenchen Radar:leer.wav
+RECORD:Muenster:leer.wav
+RECORD:Munich:leer.wav
+RECORD:N:leer.wav
+RECORD:NDB:leer.wav
+RECORD:Negative:leer.wav
+RECORD:Neutral:leer.wav
+RECORD:Niederrhein:leer.wav
+RECORD:No Cloud Base Available:leer.wav
+RECORD:No Cloud Detected:leer.wav
+RECORD:No Clouds Detected:leer.wav
+RECORD:No Directional Variation:leer.wav
+RECORD:No Significant Change:leer.wav
+RECORD:No Significant Clouds:leer.wav
+RECORD:No Significant Weather:leer.wav
+RECORD:North:leer.wav
+RECORD:Northeast:leer.wav
+RECORD:Northwest:leer.wav
+RECORD:Nosig:leer.wav
+RECORD:Nuernberg:leer.wav
+RECORD:O:leer.wav
+RECORD:On Frequency:leer.wav
+RECORD:On Initial Call All Flights To Leipzig Ha-lleh Must Report Scenery In Use!:leer.wav
+RECORD:On Request:leer.wav
+RECORD:Or:leer.wav
+RECORD:Or More:leer.wav
+RECORD:Out:leer.wav
+RECORD:Overcast:leer.wav
+RECORD:P:leer.wav
+RECORD:Paderborn:leer.wav
+RECORD:Partial Fog:leer.wav
+RECORD:Patches Of Fog:leer.wav
+RECORD:Plus:leer.wav
+RECORD:Poor:leer.wav
+RECORD:Present Weather:leer.wav
+RECORD:Previous Surface Condition:leer.wav
+RECORD:Q:leer.wav
+RECORD:QFE:leer.wav
+RECORD:QNH:leer.wav
+RECORD:R:leer.wav
+RECORD:Rain:leer.wav
+RECORD:Recent:leer.wav
+RECORD:Rhein Radar:leer.wav
+RECORD:Right:leer.wav
+RECORD:Rime Or Frost:leer.wav
+RECORD:RNAV:leer.wav
+RECORD:RNP:leer.wav
+RECORD:Runway:leer.wav
+RECORD:Runway Visual Range:leer.wav
+RECORD:Runways:leer.wav
+RECORD:Runways In Use:leer.wav
+RECORD:RVR:leer.wav
+RECORD:S:leer.wav
+RECORD:Saarbruecken:leer.wav
+RECORD:Sand:leer.wav
+RECORD:Sandstorm:leer.wav
+RECORD:Scattered:leer.wav
+RECORD:Schwaebisch-Hall:leer.wav
+RECORD:Sea State:leer.wav
+RECORD:Sea Surface Temperature:leer.wav
+RECORD:Shallow Fog:leer.wav
+RECORD:Shower:leer.wav
+RECORD:Showers:leer.wav
+RECORD:Showers Of Hail:leer.wav
+RECORD:Showers Of Rain:leer.wav
+RECORD:Showers Of Small Hail:leer.wav
+RECORD:Showers Of Snow:leer.wav
+RECORD:Siegerland:leer.wav
+RECORD:Sky Conditions Clear:leer.wav
+RECORD:Slush:leer.wav
+RECORD:Small Hail:leer.wav
+RECORD:Smoke:leer.wav
+RECORD:Snow:leer.wav
+RECORD:Snow Grains:leer.wav
+RECORD:South:leer.wav
+RECORD:Southeast:leer.wav
+RECORD:Southwest:leer.wav
+RECORD:Squalls:leer.wav
+RECORD:Stand By When Check In Frequency:leer.wav
+RECORD:Stratocumulus:leer.wav
+RECORD:Stratus:leer.wav
+RECORD:Straubing:leer.wav
+RECORD:Stuttgart:leer.wav
+RECORD:Surface:leer.wav
+RECORD:Surface Condition:leer.wav
+RECORD:Surface On Compacted Or Rolled Snow:leer.wav
+RECORD:Surface On Dry Snow:leer.wav
+RECORD:Surface On Frozen Ruts Or Ridges:leer.wav
+RECORD:Surface On Ice:leer.wav
+RECORD:Surface On Rime Or Frost:leer.wav
+RECORD:Surface On Slush:leer.wav
+RECORD:Surface On Wet Snow:leer.wav
+RECORD:Sylt:leer.wav
+RECORD:T:leer.wav
+RECORD:Tailwind Component Runway 18 More Than 10 Knots Pilots Unable To Accept Shall Advise ATC Upon Start-Up Request:leer.wav
+RECORD:Take Off:leer.wav
+RECORD:Taxiway Papa Echo And Bridge Closed Due To Works In Progress Taxiway Tango Romeo Closed:leer.wav
+RECORD:TCU:leer.wav
+RECORD:Tempelhof:leer.wav
+RECORD:Temperature:leer.wav
+RECORD:Temporary:leer.wav
+RECORD:The Aerodrome Is Closed Due To Contamination Of The Runways:leer.wav
+RECORD:This Is:leer.wav
+RECORD:Thousand:leer.wav
+RECORD:Thunderstorm:leer.wav
+RECORD:Thunderstorm With Hail:leer.wav
+RECORD:Thunderstorm With Ice Pellets:leer.wav
+RECORD:Thunderstorm With Rain:leer.wav
+RECORD:Thunderstorm With Small Hail:leer.wav
+RECORD:Thunderstorm With Snow:leer.wav
+RECORD:Thunderstorm With Snow Grains:leer.wav
+RECORD:To:leer.wav
+RECORD:To Less Than:leer.wav
+RECORD:To More Than:leer.wav
+RECORD:Towering Cumulus:leer.wav
+RECORD:Transition Level:leer.wav
+RECORD:Trend:leer.wav
+RECORD:TRL:leer.wav
+RECORD:U:leer.wav
+RECORD:Unavailable:leer.wav
+RECORD:Unicom:leer.wav
+RECORD:Unknown Precipitation:leer.wav
+RECORD:Unmeasurable:leer.wav
+RECORD:Upgrading:leer.wav
+RECORD:Use Caution After Landing Short Distance Between Runways Expect To Stop Before Parallel Runway:leer.wav
+RECORD:V:leer.wav
+RECORD:Variable:leer.wav
+RECORD:Variable Between:leer.wav
+RECORD:Vertical Visibility:leer.wav
+RECORD:Vicinity:leer.wav
+RECORD:Visibility:leer.wav
+RECORD:Visual:leer.wav
+RECORD:Volcanic Ash:leer.wav
+RECORD:VOR:leer.wav
+RECORD:W:leer.wav
+RECORD:West:leer.wav
+RECORD:Wet:leer.wav
+RECORD:Wet Snow:leer.wav
+RECORD:Widespread Dust:leer.wav
+RECORD:Wind:leer.wav
+RECORD:Wind Calm:leer.wav
+RECORD:Wind Variable:leer.wav
+RECORD:Windshear:leer.wav
+RECORD:Windshear All Runways:leer.wav
+RECORD:X:leer.wav
+RECORD:Y:leer.wav
+RECORD:Z:leer.wav
+ITEM:Koeln Bonn:XXX
+ITEM:INFORMATION:XXX
+ITEM:C:
+ITEM:   :XXX
+ITEM:MET REPORT TIME:XXX
+ITEM:2120:
+ITEM:   :XXX
+ITEM:EXPECT ILS APPROACH:XXX
+ITEM:RUNWAY:XXX
+ITEM:14L:
+ITEM:   :XXX
+ITEM:RUNWAYS:XXX
+ITEM:IN USE:XXX
+ITEM:14L:
+ITEM:   :XXX
+ITEM:TRL:XXX
+ITEM:70:
+ITEM:   :XXX
+ITEM:ATTENTION!:XXX
+ITEM:DEPARTURE FREQUENCY FOR ALL DEPARTING AIRCRAFT IS:XXX
+ITEM:127.725:
+ITEM:   :XXX
+ITEM:WIND:XXX
+ITEM:080:
+ITEM:DEGREES:XXX
+ITEM:7:
+ITEM:KNOTS:XXX
+ITEM:VARIABLE BETWEEN:XXX
+ITEM:040:
+ITEM:AND:XXX
+ITEM:120:
+ITEM:DEGREES:XXX
+ITEM:   :XXX
+ITEM:visibility:XXX
+ITEM:10:
+ITEM:kilometers:XXX
+ITEM:   :XXX
+ITEM:LIGHT:XXX
+ITEM:SNOW:XXX
+ITEM:   :XXX
+ITEM:CLOUDS:XXX
+ITEM:FEW:XXX
+ITEM:{1600}:
+ITEM:FEET:XXX
+ITEM:OVERCAST:XXX
+ITEM:{2200}:
+ITEM:FEET:XXX
+ITEM:   :XXX
+ITEM:TEMPERATURE:XXX
+ITEM:-5:
+ITEM:DEW POINT:XXX
+ITEM:-9:
+ITEM:   :XXX
+ITEM:QNH:XXX
+ITEM:1001:
+ITEM:   :XXX
+ITEM:TREND:XXX
+ITEM:NOSIG:XXX
+ITEM:   :XXX
+ITEM:INFORMATION:XXX
+ITEM:C:
+ITEM:OUT:XXX
+ITEM:   :XXX

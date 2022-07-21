@@ -1,0 +1,78 @@
+Settings	Settingsfile	\EDGG\Settings\TWR\EDGG_TWR_General.txt
+Settings	SettingsfileSYMBOLOGY	\EDGG\Settings\TWR\Phoenix_Symbology.txt
+Settings	SettingsfileVOICE	\EDGG\Settings\VoiceChannels.txt
+Settings	SettingsfilePROFILE	\EDGG\Settings\ALL\EDGG_TWR_Profile.txt
+Settings	SettingsfileTAGS	\EDGG\Settings\ALL\EDGG_Tags.txt
+Settings	SettingsfileSIL	\EDGG\Settings\TWR\EDGG_TWR_SectorInboundList.txt
+Settings	SettingsfileSEL	\EDGG\Settings\TWR\EDGG_TWR_SectorExitList.txt
+Settings	SettingsfileDEP	\EDGG\Settings\TWR\EDGG_TWR_DepartureList.txt
+Settings	SettingsfileARR	\EDGG\Settings\TWR\EDGG_TWR_ArrivalList.txt
+Settings	SettingsfileFP	\EDGG\Settings\ALL\EDGG_FPList.txt
+Settings	SettingsfileSCREEN	\EDGG\Settings\TWR\Phoenix_Screen.txt
+Settings	SettingsfilePLUGINS	\EDGG\Settings\ALL\EDGG_Plugins.txt
+Settings	SettingsfilePILOTING	\EDGG\Settings\ALL\EDGG_Piloting.txt
+Settings	SettingsfileCONFLICT	\EDGG\Settings\ALL\EDGG_ConflictListConfiguration.txt
+Settings	SettingsfileVCCS	\EDGG\Settings\ALL\EDFF_VCCS_TWRGND.txt
+Settings	alias	\EDGG\Alias\alias.txt
+Settings	AtisFolder	\EDGG\ATIS\AtisFiles.txt
+Settings	airlines	\EDGG\ICAO\ICAO_Airlines.txt
+Settings	airports	\EDGG\ICAO\ICAO_Airports.txt
+Settings	aircraft	\EDGG\ICAO\ICAO_Aircraft.txt
+Settings	airways	\EDGG\NavData\airway.txt
+Settings	airportcoords	\EDGG\NavData\icao.txt
+Settings	AselKey	5111808
+Settings	FreqKey	3604480
+Settings	sector	\EDGG-FULL_20220714184051-220701-0001.sct
+Voice	PPPT	18612224
+Voice	SPPT	18612224
+Voice	bass_filter	1
+Sounds	Sound0	\EDGG\Sounds\Handoff Request.wav
+Sounds	Sound1	\EDGG\Sounds\Handoff Accept.wav
+Sounds	Sound2	\EDGG\Sounds\Conflict Alert1.wav
+Sounds	Sound3	\EDGG\Sounds\Private Msg.wav
+Sounds	Sound4	\EDGG\Sounds\Private Msg.wav
+Sounds	Sound7	\EDGG\Sounds\SMTAlarm1.wav
+Sounds	Sound9	\EDGG\Sounds\Connect.wav
+Sounds	Sound10	\EDGG\Sounds\Disconnect.wav
+Sounds	Sound11	\EDGG\Sounds\Ongoing request.wav
+Sounds	Sound12	\EDGG\Sounds\Ongoing accepted.wav
+Sounds	Sound13	\EDGG\Sounds\ongoing refused.wav
+Sounds	Sound14	\EDGG\Sounds\manual ongoing.wav
+Sounds	Sound18	\EDGG\Sounds\startup_silent.wav
+RecentFiles	Recent1	\EDGG\ASR\Phoenix Tower\EDDF_PHX_TWR.asr
+RecentFiles	Recent2	\EDGG\ASR\Phoenix Ground\EDDF_PHX_GND.asr
+RecentFiles	Recent3	\EDGG\ASR\Phoenix Tower\EDDL_PHX_TWR.asr
+RecentFiles	Recent4	\EDGG\ASR\Phoenix Ground\EDDL_PHX_GND.asr
+RecentFiles	Recent5	\EDGG\ASR\Phoenix Tower\EDDS_PHX_TWR.asr
+RecentFiles	Recent6	\EDGG\ASR\Phoenix Ground\EDDS_PHX_GND.asr
+RecentFiles	Recent7	\EDGG\ASR\Phoenix Tower\EDDK_PHX_TWR.asr
+RecentFiles	Recent8	\EDGG\ASR\Phoenix Ground\EDDK_PHX_GND.asr
+Plugins	Plugin0	\EDGG\Plugins\TopSky_Phoenix\TopSky.dll
+Plugins	Plugin0Display0	Standard ES radar screen
+Plugins	Plugin0Display1	Ground Radar display
+Plugins	Plugin1	\EDGG\Plugins\AfvEuroScopeBridge.dll
+Plugins	Plugin2	\EDGG\Plugins\CCAMS.dll
+Plugins	Plugin3	\EDGG\Plugins\VCH.dll
+TeamSpeakVccs	TsVccsMiniControlX	1733
+TeamSpeakVccs	TsVccsMiniControlY	47
+TeamSpeakVccs	Ts3G2GPtt	3670016
+TeamSpeakVccs	Ts3G2APtt	3670016
+TeamSpeakVccs	Ts3NickName	YOUR ID
+TeamSpeakVccs	Ts3DialogLeft	0
+TeamSpeakVccs	Ts3DialogTop	0
+TeamSpeakVccs	Ts3DialogRight	883
+TeamSpeakVccs	Ts3DialogBottom	600
+Plugins	Plugin4	\EDGG\Plugins\GRP\Phoenix\GRplugin.dll
+Settings	SettingsfileORIGPLANE	\EDGG\Settings\TWR\EDGG_TWR_General.txt
+Settings	SettingsfileSTUP	\EDGG\Settings\TWR\EDGG_TWR_General.txt
+Settings	SettingsfileTAXIOUT	\EDGG\Settings\TWR\EDGG_TWR_General.txt
+Settings	SettingsfileTAKEOFF	\EDGG\Settings\TWR\EDGG_TWR_General.txt
+Settings	SettingsfileADCS	\EDGG\Settings\TWR\EDGG_TWR_General.txt
+Settings	SettingsfileTAXIIN	\EDGG\Settings\TWR\EDGG_TWR_General.txt
+Plugins	Plugin2Display0	Ground Radar display
+Plugins	Plugin2Display1	Standard ES radar screen
+Plugins	Plugin4Display0	Ground Radar display
+Plugins	Plugin4Display1	Standard ES radar screen
+Plugins	Plugin5	\EDGG\Plugins\CDM\CDM.dll
+Plugins	Plugin6	\EDGG\Plugins\VFPC\VFPC.dll
+Plugins	Plugin7	\EDGG\Plugins\DelHel\DelHel.dll

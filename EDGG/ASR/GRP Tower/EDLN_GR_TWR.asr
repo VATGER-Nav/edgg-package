@@ -1,0 +1,31 @@
+DisplayTypeName:Ground Radar display
+DisplayTypeNeedRadarContent:0
+DisplayTypeGeoReferenced:1
+ARTCC low boundary:Centerlines EDDL 05L:
+ARTCC low boundary:Centerlines EDDL 05R:
+ARTCC low boundary:Centerlines EDDL 23L:
+ARTCC low boundary:Centerlines EDDL 23R:
+ARTCC low boundary:Centerlines EDLN 13:
+ARTCC low boundary:Centerlines EDLN 31:
+ARTCC low boundary:Tower CTR EDDL:
+ARTCC low boundary:Tower CTR EDLN (HX):
+Runways:EDDL 05L-23R:centerline
+Runways:EDDL 05R-23L:centerline
+Runways:EDLN 13-31:centerline
+SHOWC:1
+SHOWSB:0
+BELOW:130
+ABOVE:13500
+LEADER:5
+SHOWLEADER:0
+TURNLEADER:0
+HISTORY_DOTS:0
+SIMULATION_MODE:1
+DISABLEPANNING:0
+DISABLEZOOMING:0
+DisplayRotation:0.00000
+TAGFAMILY:Matias (built in)
+WINDOWAREA:51.101404:6.028617:51.402328:6.903017
+PLUGIN:Ground Radar plugin:ShowMapData:EDLN_TWR
+PLUGIN:Ground Radar plugin:TowerMode:EDLN
+PLUGIN:TopSky plugin:ShowMapData:EDLN_TWR

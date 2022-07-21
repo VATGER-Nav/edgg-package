@@ -1,0 +1,37 @@
+DisplayTypeName:Standard ES radar screen
+DisplayTypeNeedRadarContent:1
+DisplayTypeGeoReferenced:1
+SECTORFILE:
+SECTORTITLE:
+Airports:EDTQ:symbol
+Airports:EDTY:symbol
+ARTCC boundary:Airspace C EDDS:
+ARTCC boundary:Airspace D EDDS:
+ARTCC boundary:Airspace D EDSB:
+ARTCC boundary:AoR EDDS_APP:
+ARTCC low boundary:Centerlines EDSB 03:
+ARTCC low boundary:Centerlines EDSB 21:
+ARTCC low boundary:Centerlines EDTL 03:
+ARTCC low boundary:Centerlines EDTL 21:
+ARTCC low boundary:Tower CTR EDDS:
+ARTCC low boundary:Tower CTR EDSB:
+ARTCC low boundary:Tower CTR EDTL (HX):
+Geo:EDGG AoR CTR SULZ AREA:
+Runways:EDDS 07-25:centerline
+Runways:EDSB 03-21:centerline
+Runways:EDTL 03-21:centerline
+SHOWC:1
+SHOWSB:0
+BELOW:1400
+ABOVE:28500
+LEADER:-1
+SHOWLEADER:0
+TURNLEADER:0
+HISTORY_DOTS:0
+SIMULATION_MODE:1
+DISABLEPANNING:0
+DISABLEZOOMING:0
+DisplayRotation:0.00000
+TAGFAMILY:Alternate
+WINDOWAREA:47.917116:6.345068:49.468625:10.853313
+PLUGIN:TopSky plugin:ShowMapData:EDDS_APP,STAR_EDDS,EDDS_TEXT_ASPC,EDDS_ECL,EDDS_FIX,TRANS_EDDS

@@ -1,0 +1,36 @@
+DisplayTypeName:Standard ES radar screen
+DisplayTypeNeedRadarContent:1
+DisplayTypeGeoReferenced:1
+SECTORFILE:
+SECTORTITLE:
+Airports:EDSE:symbol
+Airports:EDSH:symbol
+Airports:EDSO:symbol
+Airports:EDST:symbol
+Airports:EDSV:symbol
+Airports:EDTE:symbol
+Airports:EDTH:symbol
+Airports:EDTY:symbol
+ARTCC low boundary:Centerlines EDDS 07:
+ARTCC low boundary:Centerlines EDDS 25:
+ARTCC low boundary:Tower CTR EDDS:
+Geo:EDDS Landmark Rivers / Highway EDDS PRO:
+Regions:EDDS City:polygon
+Runways:EDDS 07-25:centerline
+VORs:LBU:symbol
+VORs:STG:symbol
+SHOWC:1
+SHOWSB:0
+BELOW:1280
+ABOVE:10000
+LEADER:3
+SHOWLEADER:0
+TURNLEADER:0
+HISTORY_DOTS:0
+SIMULATION_MODE:1
+DISABLEPANNING:0
+DISABLEZOOMING:0
+DisplayRotation:0.00000
+TAGFAMILY:Phoenix Tower
+WINDOWAREA:48.504893:8.678474:48.900711:9.828608
+PLUGIN:TopSky plugin:ShowMapData:EDDS_TWR

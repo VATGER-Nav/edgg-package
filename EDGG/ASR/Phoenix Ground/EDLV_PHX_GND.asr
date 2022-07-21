@@ -1,0 +1,48 @@
+DisplayTypeName:Ground Radar display
+DisplayTypeNeedRadarContent:0
+DisplayTypeGeoReferenced:1
+Free Text:EDLV Parking\1:freetext
+Free Text:EDLV Parking\2:freetext
+Free Text:EDLV Parking\3:freetext
+Free Text:EDLV Parking\4:freetext
+Free Text:EDLV Parking\5:freetext
+Free Text:EDLV Parking\6:freetext
+Free Text:EDLV Parking\7:freetext
+Free Text:EDLV Parking\8:freetext
+Free Text:EDLV Parking\9:freetext
+Free Text:EDLV Parking\Apron:freetext
+Free Text:EDLV Parking\GAT 1:freetext
+Free Text:EDLV Parking\GAT 2:freetext
+Free Text:EDLV Taxiway\A:freetext
+Free Text:EDLV Taxiway\B:freetext
+Free Text:EDLV Taxiway\C:freetext
+Free Text:EDLV Taxiway\D:freetext
+Free Text:EDLV Taxiway\E:freetext
+Free Text:EDLV Taxiway\F:freetext
+Free Text:EDLV Taxiway\G:freetext
+Free Text:EDLV Taxiway\H:freetext
+Free Text:EDLV Taxiway\N:freetext
+Free Text:EDLV Taxiway\N:freetext
+Free Text:EDLV Taxiway\S:freetext
+Free Text:EDLV Taxiway\S:freetext
+Geo:EDLV Groundlayout Taxilines + Gates
+Regions:EDLV Ground ALTN:polygon
+SHOWC:1
+SHOWSB:1
+BELOW:0
+ABOVE:13500
+LEADER:5
+SHOWLEADER:0
+TURNLEADER:0
+HISTORY_DOTS:0
+SIMULATION_MODE:1
+DISABLEPANNING:0
+DISABLEZOOMING:0
+DisplayRotation:357.00000
+TAGFAMILY:Phoenix Ground
+WINDOWAREA:51.595836:6.123110:51.609063:6.161544
+PLUGIN:Ground Radar plugin:AirportElevation:106
+PLUGIN:Ground Radar plugin:AirportRadius:3
+PLUGIN:Ground Radar plugin:GroundMode:EDLV
+PLUGIN:Ground Radar plugin:ShowMapData:EDLV
+PLUGIN:TopSky plugin:ShowMapData:NONE

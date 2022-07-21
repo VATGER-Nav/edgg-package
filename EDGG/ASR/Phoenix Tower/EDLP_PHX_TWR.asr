@@ -1,0 +1,26 @@
+DisplayTypeName:Standard ES radar screen
+DisplayTypeNeedRadarContent:1
+DisplayTypeGeoReferenced:1
+SECTORFILE:
+SECTORTITLE:
+ARTCC low boundary:Centerlines EDLP 06:
+ARTCC low boundary:Centerlines EDLP 24:
+ARTCC low boundary:Tower CTR EDLP:
+Geo:EDGG Groundlayout BAB-EDLL-EDFF:
+Geo:EDGG Groundlayout RIVER-EDLL-EDFF:
+Runways:EDLP 06-24:centerline
+SHOWC:1
+SHOWSB:0
+BELOW:180
+ABOVE:10000
+LEADER:3
+SHOWLEADER:0
+TURNLEADER:0
+HISTORY_DOTS:0
+SIMULATION_MODE:1
+DISABLEPANNING:0
+DISABLEZOOMING:0
+DisplayRotation:0.00000
+TAGFAMILY:Phoenix Tower
+WINDOWAREA:51.427656:8.002070:51.803812:9.095070
+PLUGIN:TopSky plugin:ShowMapData:EDLP_TWR

@@ -1,0 +1,86 @@
+PROFILE
+PROFILE:%%_OBS:100:0
+ATIS2:
+ATIS3:
+ATIS4:
+
+PROFILE:EDDF_DEL:10:2
+ATIS2:Frankfurt Delivery
+ATIS3:PDC/DCL Datalink [EDDF] - Pilotbriefing vats.im/eddf
+ATIS4:You have feedback? Submit it! feedback.vatger.de
+
+PROFILE:EDDF_C_GND:20:3
+ATIS2:Frankfurt Apron
+ATIS3:PDC/DCL Datalink [EDDF] - Pilotbriefing vats.im/eddf
+ATIS4:You have feedback? Submit it! feedback.vatger.de
+
+PROFILE:EDDF_S_TWR:40:4
+ATIS2:Frankfurt Tower
+ATIS3:PDC/DCL Datalink [EDDF] - Pilotbriefing vats.im/eddf
+ATIS4:You have feedback? Submit it! feedback.vatger.de
+
+PROFILE:EDDL_DEL:10:2
+ATIS2:Düsseldorf Delivery
+ATIS3:PDC/DCL Datalink [EDDL]
+ATIS4:Charts and further information at www.vatsim-germany.org
+
+PROFILE:EDDL_GND:20:3
+ATIS2:Düsseldorf Ground
+ATIS3:PDC/DCL Datalink [EDDL]
+ATIS4:Charts and further information at www.vatsim-germany.org
+
+PROFILE:EDDL_TWR:40:4
+ATIS2:Düsseldorf Tower
+ATIS3:PDC/DCL Datalink [EDDL]
+ATIS4:Charts and further information at www.vatsim-germany.org
+
+PROFILE:EDDS_DEL:10:2
+ATIS2:Stuttgart Delivery
+ATIS3:PDC/DCL Datalink [EDDS] - Pilotbriefing vats.im/edds
+ATIS4:You have feedback? Submit it! feedback.vatger.de
+
+PROFILE:EDDS_GND:20:3
+ATIS2:Stuttgart Ground
+ATIS3:PDC/DCL Datalink [EDDS] - Pilotbriefing vats.im/edds
+ATIS4:You have feedback? Submit it! feedback.vatger.de
+
+PROFILE:EDDS_TWR:40:4
+ATIS2:Stuttgart Tower
+ATIS3:PDC/DCL Datalink [EDDS] - Pilotbriefing vats.im/edds
+ATIS4:You have feedback? Submit it! feedback.vatger.de
+
+PROFILE:EDDG_TWR:40:4
+ATIS2:Münster/Osnabrück Tower
+ATIS3:PDC/DCL Datalink [EDDG] - Charts: chartfox.org/EDDG
+ATIS4:You have feedback? Submit it! feedback.vatger.de
+
+PROFILE:EDDK_TWR:40:4
+ATIS2:Köln/Bonn Tower
+ATIS3:PDC/DCL Datalink [EDDK]
+ATIS4:Charts and further information at www.vatsim-germany.org
+
+PROFILE:EDDR_TWR:40:4
+ATIS2:Saarbrücken Tower
+ATIS3:PDC/DCL Datalink [EDDR] - Charts: chartfox.org/EDDR
+ATIS4:You have feedback? Submit it! feedback.vatger.de
+
+PROFILE:EDFH_TWR:40:4
+ATIS2:Hahn Tower
+ATIS3:PDC/DCL Datalink [EDFH] - Pilotbriefing vats.im/edfh
+ATIS4:You have feedback? Submit it! feedback.vatger.de
+
+PROFILE:EDLW_TWR:40:4
+ATIS2:Dortmund Tower
+ATIS3:PDC/DCL Datalink [EDLW] - Charts: chartfox.org/EDLW
+ATIS4:You have feedback? Submit it! feedback.vatger.de
+
+PROFILE:EDLP_TWR:40:4
+ATIS2:Paderborn Tower
+ATIS3:PDC/DCL Datalink [EDLP] - Charts: chartfox.org/EDLP
+ATIS4:You have feedback? Submit it! feedback.vatger.de
+
+PROFILE:EDSB_TWR:40:4
+ATIS2:Baden Tower
+ATIS3:PDC/DCL Datalink [EDSB] - Charts: chartfox.org/EDSB
+ATIS4:You have feedback? Submit it! feedback.vatger.de
+END

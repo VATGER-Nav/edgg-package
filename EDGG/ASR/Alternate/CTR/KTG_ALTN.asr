@@ -1,0 +1,198 @@
+DisplayTypeName:Standard ES radar screen
+DisplayTypeNeedRadarContent:1
+DisplayTypeGeoReferenced:1
+SECTORFILE:
+SECTORTITLE:
+ARTCC boundary:Airspace C EDDF:
+ARTCC boundary:AoR APP EDDF:
+ARTCC boundary:AoR EDDS_APP:
+ARTCC high boundary:AoR EDGG (South):
+ARTCC high boundary:AoR EDUU (Langen South):
+ARTCC high boundary:EDUU Neighbour:
+ARTCC low boundary:Tower CTR EDDF:
+ARTCC low boundary:Tower CTR EDDR (HX):
+ARTCC low boundary:Tower CTR EDDS:
+ARTCC low boundary:Tower CTR EDFH:
+ARTCC low boundary:Tower CTR EDFM (HX):
+ARTCC low boundary:Tower CTR EDRZ (HX):
+ARTCC low boundary:Tower CTR EDSB:
+ARTCC low boundary:Tower CTR EDTL (HX):
+ARTCC low boundary:Tower CTR ETAD (HX):
+ARTCC low boundary:Tower CTR ETAR:
+ARTCC low boundary:Tower CTR ETOU (HX):
+ARTCC low boundary:Tower CTR ETSB:
+Fixes:ABLUM:symbol
+Fixes:ADEMI:symbol
+Fixes:ADMUM:symbol
+Fixes:ANEKI:symbol
+Fixes:ARPEG:symbol
+Fixes:ASKIK:symbol
+Fixes:ASPAT:symbol
+Fixes:BADLI:symbol
+Fixes:BADSO:symbol
+Fixes:BARSU:symbol
+Fixes:BATUB:symbol
+Fixes:BERXO:symbol
+Fixes:BETEX:symbol
+Fixes:BETZO:symbol
+Fixes:BITBU:symbol
+Fixes:BOMBI:symbol
+Fixes:BUPAL:symbol
+Fixes:CINDY:symbol
+Fixes:DEGOM:symbol
+Fixes:DEMUL:symbol
+Fixes:DINKU:symbol
+Fixes:DITAM:symbol
+Fixes:DODEN:symbol
+Fixes:DOMUX:symbol
+Fixes:EBANA:symbol
+Fixes:EKSAK:symbol
+Fixes:ELBAL:symbol
+Fixes:ELLUM:symbol
+Fixes:ELMOX:symbol
+Fixes:ELNAT:symbol
+Fixes:EMKIL:symbol
+Fixes:EMPAX:symbol
+Fixes:ERNAS:symbol
+Fixes:ERSIL:symbol
+Fixes:ERTES:symbol
+Fixes:ESEGU:symbol
+Fixes:ETARU:symbol
+Fixes:FAWUR:symbol
+Fixes:GAPLA:symbol
+Fixes:GEBNO:symbol
+Fixes:GULKO:symbol
+Fixes:HAREM:symbol
+Fixes:HEUSE:symbol
+Fixes:IBINI:symbol
+Fixes:IBVIL:symbol
+Fixes:INBED:symbol
+Fixes:KERAX:symbol
+Fixes:KOMIB:symbol
+Fixes:KOVAN:symbol
+Fixes:KUMIK:symbol
+Fixes:KUNOD:symbol
+Fixes:LAMGO:symbol
+Fixes:LAMPU:symbol
+Fixes:LESMO:symbol
+Fixes:LETKU:symbol
+Fixes:LIMGO:symbol
+Fixes:LIPMI:symbol
+Fixes:LIPNI:symbol
+Fixes:LIRSU:symbol
+Fixes:MADOR:symbol
+Fixes:MANUV:symbol
+Fixes:MAPOX:symbol
+Fixes:MARUN:symbol
+Fixes:MASEK:symbol
+Fixes:MAXOT:symbol
+Fixes:MINGA:symbol
+Fixes:MOPAN:symbol
+Fixes:MOVUM:symbol
+Fixes:NATOR:symbol
+Fixes:NIVNU:symbol
+Fixes:NOMBO:symbol
+Fixes:NORKU:symbol
+Fixes:NORTA:symbol
+Fixes:OMOGI:symbol
+Fixes:OTMON:symbol
+Fixes:PESOV:symbol
+Fixes:PIPEP:symbol
+Fixes:RAMOB:symbol
+Fixes:RASVO:symbol
+Fixes:RAVLO:symbol
+Fixes:REMBA:symbol
+Fixes:REUTL:symbol
+Fixes:RIMET:symbol
+Fixes:RITAX:symbol
+Fixes:ROBAR:symbol
+Fixes:ROBEL:symbol
+Fixes:ROKIL:symbol
+Fixes:ROLIS:symbol
+Fixes:ROMIR:symbol
+Fixes:ROTWE:symbol
+Fixes:RUDOT:symbol
+Fixes:SPESA:symbol
+Fixes:SULUS:symbol
+Fixes:TEDGO:symbol
+Fixes:TEKSI:symbol
+Fixes:TINSA:symbol
+Fixes:TOBAK:symbol
+Fixes:TOLVU:symbol
+Fixes:ULKIG:symbol
+Fixes:UMUPU:symbol
+Fixes:UNOKO:symbol
+Fixes:UTABA:symbol
+Fixes:VAGAB:symbol
+Fixes:VELIS:symbol
+Fixes:XAROL:symbol
+Geo:EDDR Groundlayout Building:
+Geo:EDDR Groundlayout Holdshorts:
+Geo:EDDR Groundlayout Markings:
+Geo:EDDR Groundlayout Runway:
+Geo:EDDR Groundlayout Stand Markings:
+Geo:EDDR Groundlayout Stands:
+Geo:EDDR Groundlayout TAXILINE:
+Geo:EDDR Groundlayout Taxiway:
+Geo:EDDS Groundlayout Taxilines:
+Geo:EDFH Groundlayout Stands:
+Geo:EDFH Groundlayout Taxilines:
+Geo:EDFM Groundlayout Taxiway:
+Geo:EDSB Groundlayout Stands:
+Geo:EDSB Groundlayout Taxilines:
+Regions:EDDS GROUND_NEW:polygon
+Regions:EDFH Ground NEW:polygon
+Regions:EDFH Holdshorts:polygon
+Regions:EDFM Ground NEW:polygon
+Regions:EDFM Holdshorts:polygon
+Regions:EDSB Ground NEW:polygon
+Regions:EDSB Holdshorts:polygon
+Runways:EDDF 07C-25C:centerline
+Runways:EDDF 07L-25R:centerline
+Runways:EDDF 07R-25L:centerline
+Runways:EDDF 18-36:centerline
+Runways:EDDR 09-27:centerline
+Runways:EDFE 08-26:centerline
+Runways:EDTL 03-21:centerline
+Runways:ETAD 05-23:centerline
+Runways:ETAR 08-26:centerline
+Runways:ETOU 07-25:centerline
+Runways:ETSB 03-21:centerline
+VORs:BUB:symbol
+VORs:CHA:symbol
+VORs:COL:symbol
+VORs:DIK:symbol
+VORs:DKB:symbol
+VORs:FUL:symbol
+VORs:GED:symbol
+VORs:GMH:symbol
+VORs:HMM:symbol
+VORs:KRH:symbol
+VORs:LBU:symbol
+VORs:LUX:symbol
+VORs:MTR:symbol
+VORs:NTM:symbol
+VORs:RID:symbol
+VORs:RKN:symbol
+VORs:SPI:symbol
+VORs:SPY:symbol
+VORs:SUL:symbol
+VORs:TAU:symbol
+VORs:WRB:symbol
+VORs:WUR:symbol
+VORs:ZWN:symbol
+SHOWC:1
+SHOWSB:0
+BELOW:1700
+ABOVE:0
+LEADER:-3
+SHOWLEADER:0
+TURNLEADER:0
+HISTORY_DOTS:0
+SIMULATION_MODE:1
+DISABLEPANNING:0
+DISABLEZOOMING:0
+DisplayRotation:0.00000
+TAGFAMILY:Alternate
+WINDOWAREA:48.548422:5.051759:51.447412:13.475403
+PLUGIN:TopSky plugin:ShowMapData:EDDF_APP,STAR_EDDF,EDDF_FIX,EDDF_ECL,EDDF_ASPC,EDDS_APP,STAR_EDDS,EDDS_ASPC,EDDS_TEXT_ASPC,TEXT_EDDS,EDDS_CDA,EDDS_ECL,EDDS_FIX,EDFH_APP,EDDR_APP,AREA,TEXT_EDFH,TEXT_EDFM,TEXT_EDSB,TEXT_EDDR

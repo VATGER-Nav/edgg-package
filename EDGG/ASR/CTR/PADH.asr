@@ -1,0 +1,41 @@
+DisplayTypeName:Standard ES radar screen
+DisplayTypeNeedRadarContent:1
+DisplayTypeGeoReferenced:1
+ARTCC boundary:AoR APP EDDG/EDLP:
+ARTCC boundary:AoR APP EDDK:
+ARTCC boundary:AoR APP EDDL:
+ARTCC high boundary:AoR EDGG (North):
+ARTCC high boundary:AoR EDYY (Langen North):
+ARTCC low boundary:Tower CTR EDDK:
+ARTCC low boundary:Tower CTR EDDL:
+ARTCC low boundary:Tower CTR EDLP:
+ARTCC low boundary:Tower CTR EDLV (HX):
+ARTCC low boundary:Tower CTR EDLW (HX):
+ARTCC low boundary:Tower CTR ETNG:
+ARTCC low boundary:Tower CTR ETNN (HX):
+Runways:EDDG 07-25:centerline
+Runways:EDDK 06-24:centerline
+Runways:EDDK 14L-32R:centerline
+Runways:EDDK 14R-32L:centerline
+Runways:EDDL 05L-23R:centerline
+Runways:EDDL 05R-23L:centerline
+Runways:EDLN 13-31:centerline
+Runways:EDLP 06-24:centerline
+Runways:EDLV 09-27:centerline
+Runways:EDLW 06-24:centerline
+Runways:ETNG 09-27:centerline
+SHOWC:1
+SHOWSB:0
+BELOW:400
+ABOVE:0
+LEADER:5
+SHOWLEADER:0
+TURNLEADER:0
+HISTORY_DOTS:0
+SIMULATION_MODE:1
+DISABLEPANNING:0
+DISABLEZOOMING:0
+DisplayRotation:0.00000
+TAGFAMILY:Langen Radar EDGG
+WINDOWAREA:50.251306:3.652013:52.595057:10.462285
+PLUGIN:TopSky plugin:ShowMapData:EDDG,EDLP,EDLW,PADL,EDDK,EDDL,ETNG,EDLV,EH

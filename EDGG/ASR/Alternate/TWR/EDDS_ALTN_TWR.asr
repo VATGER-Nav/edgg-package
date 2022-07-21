@@ -1,0 +1,28 @@
+DisplayTypeName:Standard ES radar screen
+DisplayTypeNeedRadarContent:1
+DisplayTypeGeoReferenced:1
+ARTCC low boundary:Centerlines EDDS 07:
+ARTCC low boundary:Centerlines EDDS 25:
+ARTCC low boundary:Tower CTR EDDS:
+Fixes:DS-E:name
+Fixes:DS-L:name
+Fixes:DS-O:name
+Fixes:DS-S:name
+Fixes:DS-W:name
+Regions:EDDS GROUND_NEW:polygon
+VORs:STG:symbol
+SHOWC:1
+SHOWSB:0
+BELOW:1280
+ABOVE:10000
+LEADER:-1
+SHOWLEADER:0
+TURNLEADER:0
+HISTORY_DOTS:5
+SIMULATION_MODE:1
+DISABLEPANNING:0
+DISABLEZOOMING:0
+DisplayRotation:0.00000
+TAGFAMILY:Alternate
+WINDOWAREA:48.555361:8.832063:48.808684:9.568149
+PLUGIN:TopSky plugin:ShowMapData:NONE

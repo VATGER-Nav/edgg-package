@@ -1,0 +1,37 @@
+DisplayTypeName:Ground Radar display
+DisplayTypeNeedRadarContent:0
+DisplayTypeGeoReferenced:1
+SECTORFILE:
+SECTORTITLE:
+Free Text:EDDR Parking\N1:freetext
+Free Text:EDDR Parking\N2:freetext
+Free Text:EDDR Parking\N3:freetext
+Free Text:EDDR Parking\N4:freetext
+Free Text:EDDR Parking\N5:freetext
+Free Text:EDDR Parking\S1:freetext
+Free Text:EDDR Parking\S2:freetext
+Free Text:EDDR Parking\S3:freetext
+Free Text:EDDR Parking\S4:freetext
+Free Text:EDDR Parking\S5:freetext
+Geo:EDDR Groundlayout Holdshorts:
+Geo:EDDR Groundlayout Stands:
+Regions:EDDR Ground NEW:polygon
+SHOWC:1
+SHOWSB:1
+BELOW:0
+ABOVE:5000
+LEADER:-1
+SHOWLEADER:0
+TURNLEADER:0
+HISTORY_DOTS:0
+SIMULATION_MODE:1
+DISABLEPANNING:0
+DISABLEZOOMING:0
+DisplayRotation:2.00000
+TAGFAMILY:Phoenix Ground
+WINDOWAREA:49.212056:7.093004:49.223760:7.127012
+PLUGIN:Ground Radar plugin:AirportElevation:409
+PLUGIN:Ground Radar plugin:AirportRadius:3
+PLUGIN:Ground Radar plugin:GroundMode:EDDR
+PLUGIN:Ground Radar plugin:ShowMapData:EDDR
+PLUGIN:TopSky plugin:ShowMapData:NONE
