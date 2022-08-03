@@ -184,6 +184,9 @@ Label_All_N=0
 Areas_NOTAM_Activation=1
 Areas_Altitude_Filtering=1
 
+Divergence_CLAM=0
+Divergence_RAM=0
+
 FPCP_HeadingTime=5
 FPCP_4D_PathBuffer=4000
 FPCP_PredictionTime=10
@@ -354,6 +357,9 @@ Color_Coordination=15,120,200
 
 System_FPASD=1
 
+Divergence_CLAM=1
+Divergence_RAM=1
+
 RDF_Mode=2
 RDF_Floor=2000
 
@@ -384,8 +390,30 @@ Track_PredictionLine=0
 RDF_Floor=1400
 RDF_Accuracy=3
 
-Divergence_CLAM=0
-Divergence_RAM=0
+[_DEP]
+Color_Assumed=0,0,0
+Color_Concerned=15,120,200
+Color_Informed=0,0,255
+Color_Unconcerned=200,125,170
+Color_Unknown=239,224,42
+Color_Redundant=110,110,110
+Color_Coordination=15,120,200
+Label_Co_GS=1
+Label_Ass_GS=1
+Label_Red_GS=1
+Label_No_GS=1
+
+Track_PredictionLine=0
+
+RDF_Floor=1400
+RDF_Accuracy=3
+
+[_OBS]
+Label_No_ADES=1
+
+//***********************************************************************
+//                                 Airport Settings
+//***********************************************************************
 
 [EDDF_]
 RDF_Mode=2
@@ -400,6 +428,3 @@ Shortcut_Map_Xfr_Key=5,0x57 ; W
 Shortcut_Map_Xfr_Key=6,0x4F ; O
 Shortcut_Map_Target=5,Training EDDL\EDDL Training 23
 ;Shortcut_Map_Target=6,Training EDDL\EDDL Training 05
-
-[_OBS]
-Label_No_ADES=1
