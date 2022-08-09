@@ -1,0 +1,39 @@
+PROFILE
+PROFILE:%%_OBS:100:0
+ATIS2:
+ATIS3:
+ATIS4:
+
+PROFILE:EDUU_W_CTR:300:6
+ATIS2:Rhein Radar WUR - CPDLC [EDUW]
+ATIS3:Covering Rhein UIR +FL245 above southern Langen FIR
+ATIS4:You have feedback? Submit it! feedback.vatger.de
+
+PROFILE:EDUU_N_CTR:300:6
+ATIS2:Rhein Radar NTM - CPDLC [EDUN]
+ATIS3:Covering Rhein UIR +FL245 above southern Langen FIR
+ATIS4:You have feedback? Submit it! feedback.vatger.de
+
+PROFILE:EDUU_F_CTR:300:6
+ATIS2:Rhein Radar FFM - CPDLC [EDUF]
+ATIS3:Covering Rhein UIR +FL245 above southern Langen FIR
+ATIS4:You have feedback? Submit it! feedback.vatger.de
+
+PROFILE:EDUU_U_CTR:300:6
+ATIS2:Rhein Radar FUL - CPDLC [EDUU]
+ATIS3:Covering Rhein UIR +FL245 above southern Langen FIR
+ATIS4:You have feedback? Submit it! feedback.vatger.de
+
+PROFILE:EDUU_S_CTR:300:6
+ATIS2:Rhein Radar SLN - CPDLC [EDUS]
+ATIS3:Covering Rhein UIR +FL245 above southern Langen FIR
+ATIS4:You have feedback? Submit it! feedback.vatger.de
+
+PROFILE:EDUU_T_CTR:300:6
+ATIS2:Rhein Radar TGO - CPDLC [EDUT]
+ATIS3:Covering Rhein UIR +FL245 above southern Langen FIR
+ATIS4:You have feedback? Submit it! feedback.vatger.de
+
+
+
+END
