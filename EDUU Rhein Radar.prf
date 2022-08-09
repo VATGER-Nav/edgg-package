@@ -1,7 +1,7 @@
 Settings	Settingsfile	\EDGG\Settings\EDUU\EDUU_General.txt
 Settings	SettingsfileSYMBOLOGY	\EDGG\Settings\EDUU\EDUU_Symbology.txt
 Settings	SettingsfileVOICE	\EDGG\Settings\VoiceChannels.txt
-Settings	SettingsfilePROFILE	\EDGG\Settings\ALL\EDGG_APP_Profile.txt
+Settings	SettingsfilePROFILE	\EDGG\Settings\ALL\EDUU_Profile.txt
 Settings	SettingsfileTAGS	\EDGG\Settings\ALL\EDGG_Tags.txt
 Settings	SettingsfileSIL	\EDGG\Settings\EDUU\EDUU_SectorInboundList.txt
 Settings	SettingsfileSEL	\EDGG\Settings\EDUU\EDUU_SectorExitList.txt
