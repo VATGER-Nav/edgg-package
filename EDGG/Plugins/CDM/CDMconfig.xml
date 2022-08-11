@@ -1,9 +1,9 @@
 <?xml version="1.0"?>
 <CDM>
 	<ctot option="cid" />
-	<rate ops="40" />
+	<rate ops="28" />
 	<rateLvo ops="10" />
-	<expiredCtot time="25" />
+	<expiredCtot time="10" />
 	<ReaMsg minutes="0" />
 	<Taxizones url="https://raw.githubusercontent.com/Frenkii/cdmdata/main/taxizones.txt" />
 	<Ctot url="" />
