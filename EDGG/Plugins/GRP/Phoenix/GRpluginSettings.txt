@@ -1,4 +1,4 @@
-// last change: 21.04.2022 19:23 by HF
+// last change: 03.08.2022 by KE
 
 Equip_ProMode=0
 RawVideo=1
@@ -147,3 +147,8 @@ Airport_Runway_Buffer_LVP=07:200
 [EDFH]
 Airport_Runway_Buffer_LVP=03:200
 Airport_Runway_Buffer_LVP=21:200
+
+[EDDK]
+Airport_Runway_MaxCode=14R:C
+Airport_Runway_NotATYP=24:A388,A124,A225
+AppPath=EDDK:RWY32R:50.858194444444:7.1613694444444:316:L:302:3.0
