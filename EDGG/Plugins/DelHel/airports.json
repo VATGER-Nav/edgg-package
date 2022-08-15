@@ -158,8 +158,8 @@
 			"nap": "COL3X"
           },
           "32R": {
-            "dep": "COL3B",
-			"nap": "COL1C"
+            "dep": "COL1C",
+			"nap": "COL3B"
           },
 		  "24": {
             "dep": "COL6D"
@@ -183,8 +183,8 @@
 			"nap": "KUMIK3X"
           },
           "32R": {
-            "dep": "KUMIK9B",
-			"nap": "KUMIK1C"
+            "dep": "KUMIK1C",
+			"nap": "KUMIK9B"
           },
 		  "24": {
             "dep": "KUMIK5D"
@@ -233,8 +233,8 @@
 			"nap": "WYP1X"
           },
           "32R": {
-            "dep": "WYP5B",
-			"nap": "WYP1C"
+            "dep": "WYP1C",
+			"nap": "WYP5B"
           },
 		  "24": {
             "dep": "WYP4D"
@@ -258,8 +258,8 @@
 			"nap": "PODIP3X"
           },
           "32R": {
-            "dep": "PODIP8B",
-			"nap": "PODIP1C"
+            "dep": "PODIP1C",
+			"nap": "PODIP8B"
           },
 		  "24": {
             "dep": "PODIP5D"
@@ -640,6 +640,59 @@
           },
           "09": {
             "dep": "VEBAK2R"
+          }
+		}
+      }
+	}
+  },
+  "EDDF": {
+    "elevation": 364,
+    "sids": {
+      "ANEKI": {
+        "cfl": 4000,
+        "rwys": {
+          "18": {
+            "dep": "ANEKI1L"
+          }
+		}
+      },
+	  "CINDY": {
+        "cfl": 4000,
+        "rwys": {
+          "18": {
+            "dep": "CINDY4S"
+          }
+		}
+      },
+	  "KOMIB": {
+        "cfl": 4000,
+        "rwys": {
+          "07C": {
+            "dep": "KOMIB3D"
+          }
+		}
+      },
+	  "SOBRA": {
+        "cfl": 4000,
+        "rwys": {
+          "18": {
+            "dep": "SOBRA1L"
+          }
+		}
+      },
+	  "SULUS": {
+        "cfl": 4000,
+        "rwys": {
+          "18": {
+            "dep": "SULUS3S"
+          }
+		}
+      },
+	  "ULKIG": {
+        "cfl": 4000,
+        "rwys": {
+          "18": {
+            "dep": "ULKIG1L"
           }
 		}
       }

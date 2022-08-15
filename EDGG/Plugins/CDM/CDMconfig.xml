@@ -1,13 +1,17 @@
 <?xml version="1.0"?>
 <CDM>
-	<ctot option="callsign" />
+	<ctot option="cid" />
 	<rate ops="28" />
 	<rateLvo ops="10" />
-	<expiredCtot time="25" />
-	<ReaMsg minutes="2" />
+	<expiredCtot time="10" />
+	<ReaMsg minutes="0" />
 	<Taxizones url="https://raw.githubusercontent.com/Frenkii/cdmdata/main/taxizones.txt" />
+	<Ctot url="" />
 	<DefaultTaxiTime minutes="15" />
 	<RefreshTime seconds="20" />
 	<Debug mode="false" />
-	<FlowRestrictions url="" />
+	<FlowRestrictions url="https://ecfmp.vatsim.net/api/v1/plugin" />
+	<ftpHost host="" />
+	<ftpUser user="" />
+	<ftpPassword password="" />
 </CDM>

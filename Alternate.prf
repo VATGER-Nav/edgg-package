@@ -13,7 +13,7 @@ Settings	SettingsfilePLUGINS	\EDGG\Settings\ALL\EDGG_Plugins.txt
 Settings	SettingsfilePILOTING	\EDGG\Settings\ALL\EDGG_Piloting.txt
 Settings	SettingsfileCONFLICT	\EDGG\Settings\ALL\EDGG_ConflictListConfiguration.txt
 Settings	SettingsfileVCCS	\EDGG\Settings\ALL\EDFF_VCCS_APPCTR.txt
-Settings	sector	\EDGG-FULL_20220714184051-220701-0001.sct
+Settings	sector	\EDGG-TEST_20220809112337-220701-0003.sct
 Settings	alias	\EDGG\Alias\alias.txt
 Settings	AtisFolder	\EDGG\ATIS\AtisFiles.txt
 Settings	airlines	\EDGG\ICAO\ICAO_Airlines.txt
@@ -63,3 +63,5 @@ Settings	SettingsfileTAXIOUT	\EDGG\Settings\Alternate\EDGG_ALTN_General.txt
 Settings	SettingsfileTAKEOFF	\EDGG\Settings\Alternate\EDGG_ALTN_General.txt
 Settings	SettingsfileADCS	\EDGG\Settings\Alternate\EDGG_ALTN_General.txt
 Settings	SettingsfileTAXIIN	\EDGG\Settings\Alternate\EDGG_ALTN_General.txt
+Plugins	Plugin5	\EDGG\Plugins\DelHel\DelHel.dll
+Plugins	Plugin6	\EDGG\Plugins\VFPC\VFPC.dll

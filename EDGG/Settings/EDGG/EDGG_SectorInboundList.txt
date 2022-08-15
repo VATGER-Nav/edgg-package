@@ -14,13 +14,13 @@ m_Column:ADEP:5:1:10007:7:1001:1:TopSky plugin::TopSky plugin:0:0.0
 m_Column:ADES:5:1:10008:39:7:1:TopSky plugin:TopSky plugin::0:0.0
 m_Column:SID:9:1:10011:17:0:1:TopSky plugin:::0:0.0
 m_Column:STAR:9:1:10012:18:0:1:TopSky plugin:::1:0.0
-m_Column:COPN:6:0:10004:45:21:1:TopSky plugin:TopSky plugin::0:0.0
-m_Column:PEL:4:1:10001:68:23:1:TopSky plugin:TopSky plugin::0:0.0
+m_Column:COPN:6:1:10004:45:21:1:TopSky plugin:TopSky plugin::0:0.0
+m_Column:PEL:5:1:10001:68:23:1:TopSky plugin:TopSky plugin::0:0.0
 m_Column:ETN:6:1:10016:0:0:1:TopSky plugin:::0:0.0
-m_Column:COPX:6:0:10005:45:22:1:TopSky plugin:TopSky plugin::0:0.0
-m_Column:XFL:4:1:10003:24:24:1:TopSky plugin:::0:0.0
+m_Column:COPX:6:1:10005:45:22:1:TopSky plugin:TopSky plugin::0:0.0
+m_Column:XFL:5:1:10003:24:24:1:TopSky plugin:::0:0.0
 m_Column:ETX:6:1:10017:0:0:1:TopSky plugin:::0:0.0
-m_Column:SI:4:0:10061:0:0:1:TopSky plugin:::1:0.0
+m_Column:SI:6:1:10061:0:42:1:TopSky plugin::TopSky plugin:1:0.0
 m_Column:COM:3:1:58:32:32:1:TopSky plugin:::0:0.0
 m_Column:RMK:10:1:38:2:2:1:TopSky plugin:TopSky plugin:TopSky plugin:0:0.0
 END
