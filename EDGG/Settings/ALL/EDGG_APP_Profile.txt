@@ -29,8 +29,13 @@ ATIS2:Düsseldorf Director
 ATIS3:Callsign only on initial call. Turn immediately when instructed.
 ATIS4:You have feedback? Submit it! feedback.vatger.de
 
-PROFILE:EDDS_N_APP:100:5
-ATIS2:Langen Radar
+PROFILE:EDDS_STG_APP:100:5
+ATIS2:Langen Radar - STG Sector
+ATIS3:Covering EDDS/EDSB/EDTL - PDC/DCL Datalink [EDDS]
+ATIS4:You have feedback? Submit it! feedback.vatger.de
+
+PROFILE:EDDS_REU_APP:100:5
+ATIS2:Langen Radar - REU Sector
 ATIS3:Covering EDDS/EDSB/EDTL - PDC/DCL Datalink [EDDS]
 ATIS4:You have feedback? Submit it! feedback.vatger.de
 
@@ -51,56 +56,56 @@ ATIS4:You have feedback? Submit it! feedback.vatger.de
 
 PROFILE:EDGG_CTR:300:6
 ATIS2:Langen Radar - CPDLC [EDGC]
-ATIS3:Covering Langen (EDDF/EDDL/EDDK/EDDS/...)
+ATIS3:Covering whole Langen FIR (EDDF/EDDL/EDDK/EDDS/...)
 ATIS4:You have feedback? Submit it! feedback.vatger.de
 
-PROFILE:EDGG_B_CTR:300:6
-ATIS2:Langen Radar - CPDLC [EDGB]
+PROFILE:EDGG_BAD_CTR:300:6
+ATIS2:Langen Radar - BAD Sector- CPDLC [EDGB]
 ATIS3:Covering EDDF/EDDS/EDFM
 ATIS4:You have feedback? Submit it! feedback.vatger.de
 
-PROFILE:EDGG_D_CTR:300:6
-ATIS2:Langen Radar - CPDLC [EDGD]
+PROFILE:EDGG_DKB_CTR:300:6
+ATIS2:Langen Radar - DKB Sector - CPDLC [EDGD]
 ATIS3:Covering EDDF/EDDS/EDFM
 ATIS4:You have feedback? Submit it! feedback.vatger.de
 
-PROFILE:EDGG_G_CTR:300:6
-ATIS2:Langen Radar - CPDLC [EDGG]
+PROFILE:EDGG_GIN_CTR:300:6
+ATIS2:Langen Radar - GIN Sector - CPDLC [EDGG]
 ATIS3:Covering EDDF/EDFH/EDDR
 ATIS4:You have feedback? Submit it! feedback.vatger.de
 
-PROFILE:EDGG_H_CTR:300:6
-ATIS2:Langen Radar - CPDLC [EDGH]
+PROFILE:EDGG_HER_CTR:300:6
+ATIS2:Langen Radar - HER Sector - CPDLC [EDGH]
 ATIS3:Covering EDDL/EDDG/EDLV/EDLN
 ATIS4:You have feedback? Submit it! feedback.vatger.de
 
-PROFILE:EDGG_K_CTR:300:6
-ATIS2:Langen Radar - CPDLC [EDGK]
+PROFILE:EDGG_KTG_CTR:300:6
+ATIS2:Langen Radar - KTG Sector - CPDLC [EDGK]
 ATIS3:Covering EDDF/EDDS/EDFH/EDSB/EDDR
 ATIS4:You have feedback? Submit it! feedback.vatger.de
 
-PROFILE:EDGG_P_CTR:300:6
-ATIS2:Langen Radar - CPDLC [EDGP]
+PROFILE:EDGG_PDH_CTR:300:6
+ATIS2:Langen Radar - PADH Sector - CPDLC [EDGP]
 ATIS3:Covering EDDL/EDDK/EDDG/EDLP/EDLW/EDLV/EDLN
 ATIS4:You have feedback? Submit it! feedback.vatger.de
 
-PROFILE:EDGG_R_CTR:300:6
-ATIS2:Langen Radar - CPDLC [EDGR]
+PROFILE:EDGG_REU_CTR:300:6
+ATIS2:Langen Radar - REU Sector - CPDLC [EDGR]
 ATIS3:Covering EDDF/EDDS/EDFH/EDSB/EDDR
 ATIS4:You have feedback? Submit it! feedback.vatger.de
 
-PROFILE:EDUU_W_CTR:300:6
+PROFILE:EDUU_WUR_CTR:300:6
 ATIS2:Rhein Radar WUR - CPDLC [EDUW]
 ATIS3:Covering Rhein UIR +FL245 above southern Langen FIR
 ATIS4:You have feedback? Submit it! feedback.vatger.de
 
-PROFILE:EDUU_N_CTR:300:6
+PROFILE:EDUU_NTM_CTR:300:6
 ATIS2:Rhein Radar NTM - CPDLC [EDUN]
 ATIS3:Covering Rhein UIR +FL245 above southern Langen FIR
 ATIS4:You have feedback? Submit it! feedback.vatger.de
 
 PROFILE:EDYY_R_CTR:300:6
-ATIS2:Maastricht Radar YR - CPDLC [EDYM]
+ATIS2:Maastricht Radar YR - CPDLC [EDYR]
 ATIS3:Covering Maastricht UIR +FL245 above northern Langen FIR
 ATIS4:You have feedback? Submit it! feedback.vatger.de
 
