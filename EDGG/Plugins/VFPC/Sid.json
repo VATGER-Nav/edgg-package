@@ -1272,6 +1272,7 @@
 		    {
                 "suffix": "4Y",
                 "direction": "ODD",
+				"max_fl": 230,
 				"destinations": [
                   "EDDR",
 				  "EDRZ",
@@ -1279,41 +1280,63 @@
 			   ]
             },
 			{
+                "suffix": "4Y",
+                "direction": "ODD",
+				"airways": [
+                  "Z818"
+               ]
+            },
+			{
                 "direction": "ODD",
 			    "forbidden_fls": 250
             }
          ],
          "RUDOT": [
-		             {
-               "direction": "EVEN",
-			   "max_fl": 240,
-			   "destinations": [
-                  "EDDF",
-                  "EDFC",
-				  "ETOU",
-				  "EDFE"
+		    {
+                "suffix": "9L",
+                "direction": "ODD",
+				"destinations": [
+                  "EDDR",
+				  "EDRZ",
+				  "EDSB"
+			   ]
+            },
+			{
+                "suffix": "9L",
+                "direction": "EVEN",
+				"airways": [
+                  "Z818"
                ]
+            },
+			{
+                "suffix": "1Y",
+                "direction": "EVEN",
+				"airways": [
+                  "Y180",
+				  "Y181"
+               ]
+            },
+			{
+               "direction": "EVEN",
+			   "forbidden_fls": 250
 			}
          ],
          "GEBDA": [
             {
-               "direction": "EVEN",
-               "max_fl": 180,
-			   "airways": [
-                  "Z76"
-               ]
+               "direction": "ODD",
+               "forbidden_fls": 250
             }
          ],
          "NVO": [
             {
                "direction": "EVEN",
-               "max_fl": 80,
-			   "destinations": [
-                  "EDDR",
-                  "EDRZ",
-				  "EDSB",
-				  "ETAR"
-               ]
+               "forbidden_fls": 250
+            }
+         ],
+		 "ULKIG": [
+            {
+               "direction": "ODD",
+               "forbidden_fls": 250
             }
          ],
          "OLIVI": [
