@@ -1,6 +1,8 @@
 DisplayTypeName:Ground Radar display
 DisplayTypeNeedRadarContent:0
 DisplayTypeGeoReferenced:1
+SECTORFILE:
+SECTORTITLE:
 Free Text:EDFM Parking Stands\1:freetext
 Free Text:EDFM Parking Stands\2:freetext
 Free Text:EDFM Parking Stands\3:freetext

@@ -1,6 +1,8 @@
 DisplayTypeName:Ground Radar display
 DisplayTypeNeedRadarContent:0
 DisplayTypeGeoReferenced:1
+SECTORFILE:
+SECTORTITLE:
 Free Text:EDFH ParkingNeu\A1:freetext
 Free Text:EDFH ParkingNeu\A2:freetext
 Free Text:EDFH ParkingNeu\A3:freetext
