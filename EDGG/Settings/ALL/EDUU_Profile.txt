@@ -34,6 +34,4 @@ ATIS2:Rhein Radar TGO - CPDLC [EDUT]
 ATIS3:Covering Rhein +FL245 above southern Langen FIR
 ATIS4:You have feedback? Submit it! feedback.vatger.de
 
-
-
 END

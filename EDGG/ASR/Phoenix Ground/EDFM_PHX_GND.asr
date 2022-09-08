@@ -20,7 +20,7 @@ Free Text:EDFM Taxiways\G:freetext
 Free Text:EDFM Taxiways\Grass:freetext
 Free Text:EDFM Taxiways\Parking Area:freetext
 Geo:EDFM Groundlayout Taxiway:
-Regions:EDFM Ground NEW:polygon
+Regions:EDFM Groundlayout:polygon
 Regions:EDFM Holdshorts:polygon
 SHOWC:1
 SHOWSB:0
