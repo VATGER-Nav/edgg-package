@@ -39,12 +39,42 @@ ATIS2:Langen Radar - REU Sector
 ATIS3:Covering EDDS/EDSB/EDTL - PDC/DCL Datalink [EDDS]
 ATIS4:You have feedback? Submit it! feedback.vatger.de
 
-PROFILE:EDDK_APP:100:5
+PROFILE:EDDS_F_APP:100:5
+ATIS2:Stuttgart Director
+ATIS3:Callsign only on initial call. Turn immediately when instructed.
+ATIS4:You have feedback? Submit it! feedback.vatger.de
+
+PROFILE:EDDK_APP:150:5
 ATIS2:Langen Radar
 ATIS3:Covering EDDK/ETNN - PDC/DCL Datalink [EDDK]
 ATIS4:You have feedback? Submit it! feedback.vatger.de
 
-PROFILE:EDDG_APP:100:5
+PROFILE:EDDK_N_APP:150:5
+ATIS2:Langen Radar
+ATIS3:Covering EDDK/ETNN - PDC/DCL Datalink [EDDK]
+ATIS4:You have feedback? Submit it! feedback.vatger.de
+
+PROFILE:EDDK_F_APP:100:5
+ATIS2:Köln Director
+ATIS3:Callsign only on initial call. Turn immediately when instructed.
+ATIS4:You have feedback? Submit it! feedback.vatger.de
+
+PROFILE:EDFH_EIF_APP:150:5
+ATIS2:Langen Radar
+ATIS3:Covering EDFH/EDDR - PDC/DCL Datalink [EDFH]
+ATIS4:You have feedback? Submit it! feedback.vatger.de
+
+PROFILE:EDDR_PFA_APP:150:5
+ATIS2:Langen Radar
+ATIS3:Covering EDDR - PDC/DCL Datalink [EDDR]
+ATIS4:You have feedback? Submit it! feedback.vatger.de
+
+PROFILE:EDFM_NKL_APP:150:5
+ATIS2:Langen Radar
+ATIS3:Covering EDFM - PDC/DCL Datalink [EDFM]
+ATIS4:You have feedback? Submit it! feedback.vatger.de
+
+PROFILE:EDDG_APP:150:5
 ATIS2:Langen Radar
 ATIS3:Covering EDDG/EDLW/EDLP - PDC/DCL Datalink [EDDG]
 ATIS4:You have feedback? Submit it! feedback.vatger.de
