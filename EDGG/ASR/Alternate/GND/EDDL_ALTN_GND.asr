@@ -1,6 +1,8 @@
 DisplayTypeName:Ground Radar display
 DisplayTypeNeedRadarContent:1
 DisplayTypeGeoReferenced:1
+SECTORFILE:
+SECTORTITLE:
 Free Text:EDDL Parking Airac 20/10\A01:freetext
 Free Text:EDDL Parking Airac 20/10\A02:freetext
 Free Text:EDDL Parking Airac 20/10\A03:freetext

@@ -18,21 +18,236 @@ Free Text:EDDF Holdshort\Y12:freetext
 Free Text:EDDF Holdshort\Y2:freetext
 Free Text:EDDF Holdshort\Y4:freetext
 Free Text:EDDF Holdshort\Y6:freetext
-Free Text:EDDF Parking NEW-GAT\V701:freetext
-Free Text:EDDF Parking NEW-GAT\V702:freetext
-Free Text:EDDF Parking NEW-GAT\V704:freetext
-Free Text:EDDF Parking NEW-GAT\V706:freetext
-Free Text:EDDF Parking NEW-GAT\V708:freetext
-Free Text:EDDF Parking NEW-GAT\V711:freetext
-Free Text:EDDF Parking NEW-GAT\V712:freetext
-Free Text:EDDF Parking NEW-GAT\V713:freetext
-Free Text:EDDF Parking NEW-GAT\V714:freetext
-Free Text:EDDF Parking NEW-GAT\V715:freetext
-Free Text:EDDF Parking NEW-GAT\V716:freetext
-Free Text:EDDF Parking NEW-GAT\V717:freetext
-Free Text:EDDF Parking NEW-GAT\V718:freetext
-Free Text:EDDF Parking NEW-GAT\V719:freetext
-Free Text:EDDF Parking NEW-GAT\V721:freetext
+Free Text:EDDF Parking All\A1:freetext
+Free Text:EDDF Parking All\A11:freetext
+Free Text:EDDF Parking All\A13:freetext
+Free Text:EDDF Parking All\A14:freetext
+Free Text:EDDF Parking All\A15:freetext
+Free Text:EDDF Parking All\A16:freetext
+Free Text:EDDF Parking All\A17:freetext
+Free Text:EDDF Parking All\A18:freetext
+Free Text:EDDF Parking All\A19:freetext
+Free Text:EDDF Parking All\A20:freetext
+Free Text:EDDF Parking All\A21:freetext
+Free Text:EDDF Parking All\A22:freetext
+Free Text:EDDF Parking All\A23:freetext
+Free Text:EDDF Parking All\A24:freetext
+Free Text:EDDF Parking All\A25:freetext
+Free Text:EDDF Parking All\A26:freetext
+Free Text:EDDF Parking All\A28:freetext
+Free Text:EDDF Parking All\A30:freetext
+Free Text:EDDF Parking All\A34:freetext
+Free Text:EDDF Parking All\A36:freetext
+Free Text:EDDF Parking All\A38:freetext
+Free Text:EDDF Parking All\A40:freetext
+Free Text:EDDF Parking All\A50:freetext
+Free Text:EDDF Parking All\A52:freetext
+Free Text:EDDF Parking All\A54:freetext
+Free Text:EDDF Parking All\A54A:freetext
+Free Text:EDDF Parking All\A54B:freetext
+Free Text:EDDF Parking All\A58:freetext
+Free Text:EDDF Parking All\A58A:freetext
+Free Text:EDDF Parking All\A58B:freetext
+Free Text:EDDF Parking All\A62:freetext
+Free Text:EDDF Parking All\A62A:freetext
+Free Text:EDDF Parking All\A62B:freetext
+Free Text:EDDF Parking All\A66:freetext
+Free Text:EDDF Parking All\A66A:freetext
+Free Text:EDDF Parking All\A66B:freetext
+Free Text:EDDF Parking All\A69:freetext
+Free Text:EDDF Parking All\B10:freetext
+Free Text:EDDF Parking All\B20:freetext
+Free Text:EDDF Parking All\B22:freetext
+Free Text:EDDF Parking All\B23:freetext
+Free Text:EDDF Parking All\B24:freetext
+Free Text:EDDF Parking All\B25:freetext
+Free Text:EDDF Parking All\B26:freetext
+Free Text:EDDF Parking All\B27:freetext
+Free Text:EDDF Parking All\B28:freetext
+Free Text:EDDF Parking All\B41:freetext
+Free Text:EDDF Parking All\B42:freetext
+Free Text:EDDF Parking All\B43:freetext
+Free Text:EDDF Parking All\B44:freetext
+Free Text:EDDF Parking All\B45:freetext
+Free Text:EDDF Parking All\B46:freetext
+Free Text:EDDF Parking All\B47:freetext
+Free Text:EDDF Parking All\B48:freetext
+Free Text:EDDF Parking All\C11:freetext
+Free Text:EDDF Parking All\C13:freetext
+Free Text:EDDF Parking All\C14:freetext
+Free Text:EDDF Parking All\C15:freetext
+Free Text:EDDF Parking All\C16:freetext
+Free Text:EDDF Parking All\C2:freetext
+Free Text:EDDF Parking All\C4:freetext
+Free Text:EDDF Parking All\C5:freetext
+Free Text:EDDF Parking All\C6:freetext
+Free Text:EDDF Parking All\C8:freetext
+Free Text:EDDF Parking All\D1:freetext
+Free Text:EDDF Parking All\D1A:freetext
+Free Text:EDDF Parking All\D4:freetext
+Free Text:EDDF Parking All\D4A:freetext
+Free Text:EDDF Parking All\D4B:freetext
+Free Text:EDDF Parking All\D5:freetext
+Free Text:EDDF Parking All\D5A:freetext
+Free Text:EDDF Parking All\D8:freetext
+Free Text:EDDF Parking All\D8A:freetext
+Free Text:EDDF Parking All\E2:freetext
+Free Text:EDDF Parking All\E2A:freetext
+Free Text:EDDF Parking All\E2B:freetext
+Free Text:EDDF Parking All\E5:freetext
+Free Text:EDDF Parking All\E5A:freetext
+Free Text:EDDF Parking All\E5B:freetext
+Free Text:EDDF Parking All\E6:freetext
+Free Text:EDDF Parking All\E6A:freetext
+Free Text:EDDF Parking All\E9:freetext
+Free Text:EDDF Parking All\E9A:freetext
+Free Text:EDDF Parking All\F211:freetext
+Free Text:EDDF Parking All\F212:freetext
+Free Text:EDDF Parking All\F213:freetext
+Free Text:EDDF Parking All\F214:freetext
+Free Text:EDDF Parking All\F215:freetext
+Free Text:EDDF Parking All\F216:freetext
+Free Text:EDDF Parking All\F221:freetext
+Free Text:EDDF Parking All\F222:freetext
+Free Text:EDDF Parking All\F223:freetext
+Free Text:EDDF Parking All\F224:freetext
+Free Text:EDDF Parking All\F225:freetext
+Free Text:EDDF Parking All\F231:freetext
+Free Text:EDDF Parking All\F232:freetext
+Free Text:EDDF Parking All\F233:freetext
+Free Text:EDDF Parking All\F234:freetext
+Free Text:EDDF Parking All\F235:freetext
+Free Text:EDDF Parking All\F237:freetext
+Free Text:EDDF Parking All\F238:freetext
+Free Text:EDDF Parking All\G1:freetext
+Free Text:EDDF Parking All\G10:freetext
+Free Text:EDDF Parking All\G11:freetext
+Free Text:EDDF Parking All\G12:freetext
+Free Text:EDDF Parking All\G13:freetext
+Free Text:EDDF Parking All\G14:freetext
+Free Text:EDDF Parking All\G15:freetext
+Free Text:EDDF Parking All\G16:freetext
+Free Text:EDDF Parking All\G2:freetext
+Free Text:EDDF Parking All\G3:freetext
+Free Text:EDDF Parking All\G4:freetext
+Free Text:EDDF Parking All\G5:freetext
+Free Text:EDDF Parking All\G6:freetext
+Free Text:EDDF Parking All\G7:freetext
+Free Text:EDDF Parking All\G8:freetext
+Free Text:EDDF Parking All\G9:freetext
+Free Text:EDDF Parking All\H12:freetext
+Free Text:EDDF Parking All\H14:freetext
+Free Text:EDDF Parking All\H2:freetext
+Free Text:EDDF Parking All\H4:freetext
+Free Text:EDDF Parking All\H6:freetext
+Free Text:EDDF Parking All\H8:freetext
+Free Text:EDDF Parking All\J2:freetext
+Free Text:EDDF Parking All\J2A:freetext
+Free Text:EDDF Parking All\J2B:freetext
+Free Text:EDDF Parking All\J4:freetext
+Free Text:EDDF Parking All\J6:freetext
+Free Text:EDDF Parking All\J6A:freetext
+Free Text:EDDF Parking All\J6B:freetext
+Free Text:EDDF Parking All\J8:freetext
+Free Text:EDDF Parking All\K10:freetext
+Free Text:EDDF Parking All\K2:freetext
+Free Text:EDDF Parking All\K4:freetext
+Free Text:EDDF Parking All\K6:freetext
+Free Text:EDDF Parking All\K8:freetext
+Free Text:EDDF Parking All\S501:freetext
+Free Text:EDDF Parking All\S503:freetext
+Free Text:EDDF Parking All\S504:freetext
+Free Text:EDDF Parking All\S505:freetext
+Free Text:EDDF Parking All\S506:freetext
+Free Text:EDDF Parking All\S507:freetext
+Free Text:EDDF Parking All\S508:freetext
+Free Text:EDDF Parking All\S601:freetext
+Free Text:EDDF Parking All\S602:freetext
+Free Text:EDDF Parking All\S603:freetext
+Free Text:EDDF Parking All\S604:freetext
+Free Text:EDDF Parking All\V106:freetext
+Free Text:EDDF Parking All\V107:freetext
+Free Text:EDDF Parking All\V108:freetext
+Free Text:EDDF Parking All\V109:freetext
+Free Text:EDDF Parking All\V110:freetext
+Free Text:EDDF Parking All\V111:freetext
+Free Text:EDDF Parking All\V112:freetext
+Free Text:EDDF Parking All\V113:freetext
+Free Text:EDDF Parking All\V114:freetext
+Free Text:EDDF Parking All\V115:freetext
+Free Text:EDDF Parking All\V116:freetext
+Free Text:EDDF Parking All\V117:freetext
+Free Text:EDDF Parking All\V118:freetext
+Free Text:EDDF Parking All\V119:freetext
+Free Text:EDDF Parking All\V120:freetext
+Free Text:EDDF Parking All\V121:freetext
+Free Text:EDDF Parking All\V122:freetext
+Free Text:EDDF Parking All\V123:freetext
+Free Text:EDDF Parking All\V124:freetext
+Free Text:EDDF Parking All\V125:freetext
+Free Text:EDDF Parking All\V126:freetext
+Free Text:EDDF Parking All\V127:freetext
+Free Text:EDDF Parking All\V128:freetext
+Free Text:EDDF Parking All\V129:freetext
+Free Text:EDDF Parking All\V130:freetext
+Free Text:EDDF Parking All\V134:freetext
+Free Text:EDDF Parking All\V135:freetext
+Free Text:EDDF Parking All\V136:freetext
+Free Text:EDDF Parking All\V143:freetext
+Free Text:EDDF Parking All\V144:freetext
+Free Text:EDDF Parking All\V157:freetext
+Free Text:EDDF Parking All\V158:freetext
+Free Text:EDDF Parking All\V159:freetext
+Free Text:EDDF Parking All\V160:freetext
+Free Text:EDDF Parking All\V161:freetext
+Free Text:EDDF Parking All\V162:freetext
+Free Text:EDDF Parking All\V163:freetext
+Free Text:EDDF Parking All\V164:freetext
+Free Text:EDDF Parking All\V166:freetext
+Free Text:EDDF Parking All\V167:freetext
+Free Text:EDDF Parking All\V168:freetext
+Free Text:EDDF Parking All\V169:freetext
+Free Text:EDDF Parking All\V170:freetext
+Free Text:EDDF Parking All\V171:freetext
+Free Text:EDDF Parking All\V171A:freetext
+Free Text:EDDF Parking All\V171B:freetext
+Free Text:EDDF Parking All\V172:freetext
+Free Text:EDDF Parking All\V173:freetext
+Free Text:EDDF Parking All\V173A:freetext
+Free Text:EDDF Parking All\V173B:freetext
+Free Text:EDDF Parking All\V174:freetext
+Free Text:EDDF Parking All\V175:freetext
+Free Text:EDDF Parking All\V176:freetext
+Free Text:EDDF Parking All\V177:freetext
+Free Text:EDDF Parking All\V178:freetext
+Free Text:EDDF Parking All\V266:freetext
+Free Text:EDDF Parking All\V267:freetext
+Free Text:EDDF Parking All\V268:freetext
+Free Text:EDDF Parking All\V269:freetext
+Free Text:EDDF Parking All\V270:freetext
+Free Text:EDDF Parking All\V322:freetext
+Free Text:EDDF Parking All\V324:freetext
+Free Text:EDDF Parking All\V326:freetext
+Free Text:EDDF Parking All\V328:freetext
+Free Text:EDDF Parking All\V701:freetext
+Free Text:EDDF Parking All\V702:freetext
+Free Text:EDDF Parking All\V704:freetext
+Free Text:EDDF Parking All\V706:freetext
+Free Text:EDDF Parking All\V708:freetext
+Free Text:EDDF Parking All\V711:freetext
+Free Text:EDDF Parking All\V712:freetext
+Free Text:EDDF Parking All\V713:freetext
+Free Text:EDDF Parking All\V714:freetext
+Free Text:EDDF Parking All\V715:freetext
+Free Text:EDDF Parking All\V716:freetext
+Free Text:EDDF Parking All\V717:freetext
+Free Text:EDDF Parking All\V718:freetext
+Free Text:EDDF Parking All\V719:freetext
+Free Text:EDDF Parking All\V721:freetext
+Free Text:EDDF Parking All\V94:freetext
+Free Text:EDDF Parking All\V95:freetext
+Free Text:EDDF Parking All\V96:freetext
+Free Text:EDDF Parking All\V97:freetext
 Free Text:EDDF Parking OLD-GAT\401:freetext
 Free Text:EDDF Parking OLD-GAT\402:freetext
 Free Text:EDDF Parking OLD-GAT\403:freetext
@@ -48,177 +263,6 @@ Free Text:EDDF Parking OLD-GAT\414:freetext
 Free Text:EDDF Parking OLD-GAT\416:freetext
 Free Text:EDDF Parking OLD-GAT\418:freetext
 Free Text:EDDF Parking OLD-GAT\420:freetext
-Free Text:EDDF Parking\A1:freetext
-Free Text:EDDF Parking\A11:freetext
-Free Text:EDDF Parking\A16:freetext
-Free Text:EDDF Parking\A17:freetext
-Free Text:EDDF Parking\A19:freetext
-Free Text:EDDF Parking\A20:freetext
-Free Text:EDDF Parking\A23:freetext
-Free Text:EDDF Parking\A24:freetext
-Free Text:EDDF Parking\A26:freetext
-Free Text:EDDF Parking\A30:freetext
-Free Text:EDDF Parking\A34:freetext
-Free Text:EDDF Parking\A40:freetext
-Free Text:EDDF Parking\A50:freetext
-Free Text:EDDF Parking\A52:freetext
-Free Text:EDDF Parking\A54:freetext
-Free Text:EDDF Parking\A58:freetext
-Free Text:EDDF Parking\A62:freetext
-Free Text:EDDF Parking\A66:freetext
-Free Text:EDDF Parking\A69:freetext
-Free Text:EDDF Parking\B10:freetext
-Free Text:EDDF Parking\B20:freetext
-Free Text:EDDF Parking\B23:freetext
-Free Text:EDDF Parking\B24:freetext
-Free Text:EDDF Parking\B26:freetext
-Free Text:EDDF Parking\B28:freetext
-Free Text:EDDF Parking\B42:freetext
-Free Text:EDDF Parking\B43:freetext
-Free Text:EDDF Parking\B44:freetext
-Free Text:EDDF Parking\B45:freetext
-Free Text:EDDF Parking\B46:freetext
-Free Text:EDDF Parking\B48:freetext
-Free Text:EDDF Parking\C11:freetext
-Free Text:EDDF Parking\C13:freetext
-Free Text:EDDF Parking\C14:freetext
-Free Text:EDDF Parking\C15:freetext
-Free Text:EDDF Parking\C16:freetext
-Free Text:EDDF Parking\C2:freetext
-Free Text:EDDF Parking\C4:freetext
-Free Text:EDDF Parking\C6:freetext
-Free Text:EDDF Parking\C8:freetext
-Free Text:EDDF Parking\D1:freetext
-Free Text:EDDF Parking\D4:freetext
-Free Text:EDDF Parking\D5:freetext
-Free Text:EDDF Parking\D8:freetext
-Free Text:EDDF Parking\E2:freetext
-Free Text:EDDF Parking\E5:freetext
-Free Text:EDDF Parking\E6:freetext
-Free Text:EDDF Parking\E9:freetext
-Free Text:EDDF Parking\F211:freetext
-Free Text:EDDF Parking\F212:freetext
-Free Text:EDDF Parking\F213:freetext
-Free Text:EDDF Parking\F214:freetext
-Free Text:EDDF Parking\F215:freetext
-Free Text:EDDF Parking\F216:freetext
-Free Text:EDDF Parking\F222:freetext
-Free Text:EDDF Parking\F224:freetext
-Free Text:EDDF Parking\F231:freetext
-Free Text:EDDF Parking\F232:freetext
-Free Text:EDDF Parking\F233:freetext
-Free Text:EDDF Parking\F234:freetext
-Free Text:EDDF Parking\F235:freetext
-Free Text:EDDF Parking\F237:freetext
-Free Text:EDDF Parking\F238:freetext
-Free Text:EDDF Parking\G1:freetext
-Free Text:EDDF Parking\G10:freetext
-Free Text:EDDF Parking\G11:freetext
-Free Text:EDDF Parking\G12:freetext
-Free Text:EDDF Parking\G13:freetext
-Free Text:EDDF Parking\G14:freetext
-Free Text:EDDF Parking\G15:freetext
-Free Text:EDDF Parking\G16:freetext
-Free Text:EDDF Parking\G2:freetext
-Free Text:EDDF Parking\G3:freetext
-Free Text:EDDF Parking\G4:freetext
-Free Text:EDDF Parking\G5:freetext
-Free Text:EDDF Parking\G6:freetext
-Free Text:EDDF Parking\G7:freetext
-Free Text:EDDF Parking\G8:freetext
-Free Text:EDDF Parking\G9:freetext
-Free Text:EDDF Parking\H12:freetext
-Free Text:EDDF Parking\H14:freetext
-Free Text:EDDF Parking\H2:freetext
-Free Text:EDDF Parking\H4:freetext
-Free Text:EDDF Parking\H6:freetext
-Free Text:EDDF Parking\H8:freetext
-Free Text:EDDF Parking\J2:freetext
-Free Text:EDDF Parking\J4:freetext
-Free Text:EDDF Parking\J6:freetext
-Free Text:EDDF Parking\J8:freetext
-Free Text:EDDF Parking\K10:freetext
-Free Text:EDDF Parking\K2:freetext
-Free Text:EDDF Parking\K4:freetext
-Free Text:EDDF Parking\K6:freetext
-Free Text:EDDF Parking\K8:freetext
-Free Text:EDDF Parking\S501:freetext
-Free Text:EDDF Parking\S503:freetext
-Free Text:EDDF Parking\S504:freetext
-Free Text:EDDF Parking\S505:freetext
-Free Text:EDDF Parking\S506:freetext
-Free Text:EDDF Parking\S507:freetext
-Free Text:EDDF Parking\S508:freetext
-Free Text:EDDF Parking\S601:freetext
-Free Text:EDDF Parking\S602:freetext
-Free Text:EDDF Parking\S603:freetext
-Free Text:EDDF Parking\S604:freetext
-Free Text:EDDF Parking\V106:freetext
-Free Text:EDDF Parking\V107:freetext
-Free Text:EDDF Parking\V108:freetext
-Free Text:EDDF Parking\V109:freetext
-Free Text:EDDF Parking\V110:freetext
-Free Text:EDDF Parking\V111:freetext
-Free Text:EDDF Parking\V112:freetext
-Free Text:EDDF Parking\V113:freetext
-Free Text:EDDF Parking\V114:freetext
-Free Text:EDDF Parking\V115:freetext
-Free Text:EDDF Parking\V116:freetext
-Free Text:EDDF Parking\V117:freetext
-Free Text:EDDF Parking\V118:freetext
-Free Text:EDDF Parking\V119:freetext
-Free Text:EDDF Parking\V120:freetext
-Free Text:EDDF Parking\V121:freetext
-Free Text:EDDF Parking\V122:freetext
-Free Text:EDDF Parking\V123:freetext
-Free Text:EDDF Parking\V124:freetext
-Free Text:EDDF Parking\V125:freetext
-Free Text:EDDF Parking\V126:freetext
-Free Text:EDDF Parking\V127:freetext
-Free Text:EDDF Parking\V128:freetext
-Free Text:EDDF Parking\V129:freetext
-Free Text:EDDF Parking\V130:freetext
-Free Text:EDDF Parking\V134:freetext
-Free Text:EDDF Parking\V135:freetext
-Free Text:EDDF Parking\V136:freetext
-Free Text:EDDF Parking\V143:freetext
-Free Text:EDDF Parking\V144:freetext
-Free Text:EDDF Parking\V157:freetext
-Free Text:EDDF Parking\V158:freetext
-Free Text:EDDF Parking\V159:freetext
-Free Text:EDDF Parking\V160:freetext
-Free Text:EDDF Parking\V161:freetext
-Free Text:EDDF Parking\V162:freetext
-Free Text:EDDF Parking\V163:freetext
-Free Text:EDDF Parking\V164:freetext
-Free Text:EDDF Parking\V166:freetext
-Free Text:EDDF Parking\V167:freetext
-Free Text:EDDF Parking\V168:freetext
-Free Text:EDDF Parking\V169:freetext
-Free Text:EDDF Parking\V170:freetext
-Free Text:EDDF Parking\V171:freetext
-Free Text:EDDF Parking\V172:freetext
-Free Text:EDDF Parking\V173:freetext
-Free Text:EDDF Parking\V174:freetext
-Free Text:EDDF Parking\V175:freetext
-Free Text:EDDF Parking\V176:freetext
-Free Text:EDDF Parking\V177:freetext
-Free Text:EDDF Parking\V178:freetext
-Free Text:EDDF Parking\V266:freetext
-Free Text:EDDF Parking\V267:freetext
-Free Text:EDDF Parking\V268:freetext
-Free Text:EDDF Parking\V269:freetext
-Free Text:EDDF Parking\V270:freetext
-Free Text:EDDF Parking\V322:freetext
-Free Text:EDDF Parking\V324:freetext
-Free Text:EDDF Parking\V326:freetext
-Free Text:EDDF Parking\V328:freetext
-Free Text:EDDF Parking\V94:freetext
-Free Text:EDDF Parking\V95:freetext
-Free Text:EDDF Parking\V96:freetext
-Free Text:EDDF Parking\V97:freetext
-Free Text:EDDF Taxiway\closed:freetext
-Free Text:EDDF Taxiway\closed:freetext
 Free Text:EDDF Taxiway\DP1:freetext
 Free Text:EDDF Taxiway\DP2:freetext
 Free Text:EDDF Taxiway\L:freetext
@@ -373,6 +417,7 @@ Free Text:EDDF Taxiway\W9:freetext
 Free Text:EDDF Taxiway\Y:freetext
 Free Text:EDDF Taxiway\Y:freetext
 Free Text:EDDF Taxiway\Y1:freetext
+Free Text:EDDF Taxiway\Y3:freetext
 Free Text:EDDF Taxiway\Y5:freetext
 Free Text:EDDF Taxiway\Y5:freetext
 Free Text:EDDF Taxiway\Y7:freetext
@@ -397,7 +442,7 @@ DISABLEPANNING:0
 DISABLEZOOMING:0
 DisplayRotation:20.30000
 TAGFAMILY:Phoenix Ground
-WINDOWAREA:50.022777:8.511030:50.055069:8.604861
+WINDOWAREA:50.015436:8.493014:50.055801:8.611923
 PLUGIN:Ground Radar plugin:AirportElevation:364 
 PLUGIN:Ground Radar plugin:AirportRadius:3
 PLUGIN:Ground Radar plugin:GroundMode:EDDF

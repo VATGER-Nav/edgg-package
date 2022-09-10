@@ -1,6 +1,8 @@
 DisplayTypeName:Ground Radar display
 DisplayTypeNeedRadarContent:1
 DisplayTypeGeoReferenced:1
+SECTORFILE:
+SECTORTITLE:
 Free Text:EDDK Parking\A01:freetext
 Free Text:EDDK Parking\A03:freetext
 Free Text:EDDK Parking\A10:freetext

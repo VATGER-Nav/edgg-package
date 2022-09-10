@@ -1,6 +1,8 @@
 DisplayTypeName:Ground Radar display
 DisplayTypeNeedRadarContent:0
 DisplayTypeGeoReferenced:1
+SECTORFILE:
+SECTORTITLE:
 Free Text:EDFH ParkingNeu\A1:freetext
 Free Text:EDFH ParkingNeu\A2:freetext
 Free Text:EDFH ParkingNeu\A3:freetext
@@ -39,8 +41,9 @@ Free Text:EDFH TAXIWAYSNeu\G:freetext
 Free Text:EDFH TAXIWAYSNeu\M:freetext
 Geo:EDFH Groundlayout Stands:
 Geo:EDFH Groundlayout Taxilines:
-Regions:EDFH Ground NEW:polygon
+Regions:EDFH Groundlayout:polygon
 Regions:EDFH Holdshorts:polygon
+Regions:EDFH Holdshorts CATII_III:polygon
 SHOWC:0
 SHOWSB:0
 BELOW:1660
@@ -54,7 +57,7 @@ DISABLEPANNING:0
 DISABLEZOOMING:0
 DisplayRotation:57.00000
 TAGFAMILY:Phoenix Ground
-WINDOWAREA:49.935452:7.231112:49.956131:7.291200
+WINDOWAREA:49.932839:7.225408:49.958688:7.301555
 PLUGIN:Ground Radar plugin:AirportElevation:1649
 PLUGIN:Ground Radar plugin:AirportRadius:3
 PLUGIN:Ground Radar plugin:GroundMode:EDFH

@@ -1,6 +1,8 @@
 DisplayTypeName:Ground Radar display
 DisplayTypeNeedRadarContent:0
 DisplayTypeGeoReferenced:1
+SECTORFILE:
+SECTORTITLE:
 Free Text:EDLV Parking\1:freetext
 Free Text:EDLV Parking\2:freetext
 Free Text:EDLV Parking\3:freetext
