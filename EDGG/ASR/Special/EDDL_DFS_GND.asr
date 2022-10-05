@@ -1,0 +1,29 @@
+DisplayTypeName:Ground Radar display
+DisplayTypeNeedRadarContent:0
+DisplayTypeGeoReferenced:1
+SECTORFILE:C:\Users\Konny\Documents\EuroScope_Airacs\EDGG-TEST_20220926104853-220901-0003\EDGG-TEST_20220926104853-220901-0003.sct
+SECTORTITLE:EDGG-TEST_20220926104853-220901-0003.sct
+Geo:EDDL Groundlayout DFS Basic:
+Geo:EDDL Groundlayout DFS Streets:
+Geo:EDDL Groundlayout Gates 2102:
+Regions:EDDL DFS Groundlayout:polygon
+Regions:EDDL DFS Holdingpoints:polygon
+SHOWC:1
+SHOWSB:0
+BELOW:0
+ABOVE:13500
+LEADER:5
+SHOWLEADER:0
+TURNLEADER:0
+HISTORY_DOTS:0
+SIMULATION_MODE:1
+DISABLEPANNING:0
+DISABLEZOOMING:0
+DisplayRotation:36.60000
+TAGFAMILY:Phoenix Ground
+WINDOWAREA:51.275436:6.737401:51.296626:6.797453
+PLUGIN:Ground Radar plugin:AirportElevation:147
+PLUGIN:Ground Radar plugin:AirportRadius:3
+PLUGIN:Ground Radar plugin:GroundMode:EDDL
+PLUGIN:Ground Radar plugin:ShowMapData:EDDL,EDDL_DFS
+PLUGIN:TopSky plugin:ShowMapData:EDDL_DFS
