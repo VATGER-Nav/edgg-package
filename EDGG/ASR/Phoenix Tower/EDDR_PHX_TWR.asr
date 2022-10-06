@@ -15,9 +15,8 @@ ARTCC low boundary:Centerlines ETAR 27:
 ARTCC low boundary:Tower CTR EDDR (HX):
 ARTCC low boundary:Tower CTR EDRZ (HX):
 ARTCC low boundary:Tower CTR ETAR:
-Geo:EDFF Groundlayout RIVER:
-Geo:EDGG Groundlayout BAB-EDLL-EDFF:
-Geo:EDGG Groundlayout RIVER-EDLL-EDFF:
+Geo:EDZZ Landmark River Germany:
+Geo:EDZZ Landmark Highway Germany:
 Runways:EDDR 09-27:centerline
 Runways:EDRZ 03-21:centerline
 Runways:ETAR 08-26:centerline
