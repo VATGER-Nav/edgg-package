@@ -22,7 +22,7 @@ Settings	airways	\EDGG\NavData\airway.txt
 Settings	airportcoords	\EDGG\NavData\icao.txt
 Settings	AselKey	5111808
 Settings	FreqKey	3604480
-Settings	sector	\EDGG-FULL_20220714184051-220701-0001.sct
+Settings	sector	\EDGG-FULL_20220908174141-220901-0001.sct
 Voice	PPPT	18612224
 Voice	SPPT	18612224
 Voice	bass_filter	1
@@ -64,7 +64,7 @@ TeamSpeakVccs	Ts3DialogRight	883
 TeamSpeakVccs	Ts3DialogBottom	600
 Plugins	Plugin4	\EDGG\Plugins\GRP\Phoenix\GRplugin.dll
 Settings	SettingsfileORIGPLANE	\EDGG\Settings\TWR\EDGG_TWR_General.txt
-Settings	SettingsfileSTUP	\EDGG\Settings\TWR\EDGG_TWR_General.txt
+Settings	SettingsfileSTUP	\EDGG\Settings\TWR\EDGG_TWR_StartupList.txt
 Settings	SettingsfileTAXIOUT	\EDGG\Settings\TWR\EDGG_TWR_General.txt
 Settings	SettingsfileTAKEOFF	\EDGG\Settings\TWR\EDGG_TWR_General.txt
 Settings	SettingsfileADCS	\EDGG\Settings\TWR\EDGG_TWR_General.txt
@@ -76,3 +76,4 @@ Plugins	Plugin4Display1	Standard ES radar screen
 Plugins	Plugin5	\EDGG\Plugins\CDM\CDM.dll
 Plugins	Plugin6	\EDGG\Plugins\VFPC\VFPC.dll
 Plugins	Plugin7	\EDGG\Plugins\DelHel\DelHel.dll
+Plugins	Plugin8	\EDGG\Plugins\Squawk\Squawks.dll
