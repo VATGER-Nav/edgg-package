@@ -15,7 +15,8 @@ Airports:EDRL:symbol
 Airports:EDRY:symbol
 ARTCC low boundary:Centerlines EDFM 27:
 ARTCC low boundary:Tower CTR EDFM (HX):
-Geo:EDGG Groundlayout RIVER-EDLL-EDFF:
+Geo:EDZZ Landmark River Germany:
+Geo:EDZZ Landmark Highway Germany:
 Runways:EDFM 09-27:centerline
 SHOWC:1
 SHOWSB:0

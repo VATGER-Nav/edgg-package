@@ -28,7 +28,7 @@ ARTCC low boundary:Centerlines EDLN 13:
 ARTCC low boundary:Centerlines EDLN 31:
 ARTCC low boundary:Tower CTR EDDL:
 ARTCC low boundary:Tower CTR EDLN (HX):
-Geo:EDGG Groundlayout RIVER-EDLL-EDFF:
+Geo:EDZZ Landmark River Germany:
 NDBs:BOT:symbol
 NDBs:LMA:symbol
 Runways:EDDL 05L-23R:centerline

@@ -1,0 +1,208 @@
+{
+   "NonDiscreteColor":"#8B0000",
+   "NonDiscreteMessage":"NDSSR",
+   "NonDiscrete":[
+   ],
+   "Squawks":[
+	  {
+         "code":"4447",
+         "message":"TWR",
+         "color":"#009800 "
+      },
+	  {
+         "code":"4446",
+         "message":"TWR",
+         "color":"#DC00D2 "
+      },
+	  {
+         "code":"7000",
+         "message":"V",
+         "color":"#009800 "
+      },
+	  {
+         "code":"7001",
+         "message":"VOUT",
+         "color":"#009800 "
+      },
+	  {
+         "code":"7002",
+         "message":"VIN",
+         "color":"#009800 "
+      },
+	  {
+         "code":"7003",
+         "message":"TWR",
+         "color":"#009800 "
+      },
+	  {
+         "code":"7004",
+         "message":"VX",
+         "color":"#009800 "
+      },
+      {
+         "code":"6101",
+         "message":"TMZ",
+         "color":"#009800 "
+      },
+	  {
+         "code":"6102",
+         "message":"TMZ",
+         "color":"#009800 "
+      },
+	  {
+         "code":"6104",
+         "message":"TMZ",
+         "color":"#009800 "
+      },
+      {
+         "code":"0424",
+         "message":"TMZ",
+         "color":"#009800 "
+      },
+	  {
+         "code":"4410",
+         "message":"TMZ",
+         "color":"#009800 "
+      },
+	  {
+         "code":"4676",
+         "message":"TMZ",
+         "color":"#009800 "
+      },
+	  {
+         "code":"4404",
+         "message":"TMZ",
+         "color":"#009800 "
+      },
+	  {
+         "code":"2677",
+         "message":"TMZ",
+         "color":"#009800 "
+      },
+	  {
+         "code":"4440",
+         "message":"FE",
+         "color":"#009800 "
+      },
+	  {
+         "code":"4441",
+         "message":"FE",
+         "color":"#009800 "
+      },
+	  {
+         "code":"4442",
+         "message":"FE",
+         "color":"#009800 "
+      },
+	  {
+         "code":"4443",
+         "message":"FE",
+         "color":"#009800 "
+      },
+	  {
+         "code":"4450",
+         "message":"FIS",
+         "color":"#009800 "
+      },
+      {
+         "code":"4451",
+         "message":"FIS",
+         "color":"#009800 "
+      },
+	  {
+         "code":"4453",
+         "message":"FIS",
+         "color":"#009800 "
+      },
+      {
+         "code":"4454",
+         "message":"FIS",
+         "color":"#009800 "
+      },
+      {
+         "code":"4452",
+         "message":"FIS",
+         "color":"#009800 "
+      },
+      {
+         "code":"4450",
+         "message":"FIS",
+         "color":"#009800 "
+      },
+      {
+         "code":"7740",
+         "message":"FIS",
+         "color":"#009800 "
+      },
+	  {
+         "code":"7741",
+         "message":"FIS",
+         "color":"#009800 "
+      },
+	  {
+         "code":"7742",
+         "message":"FIS",
+         "color":"#009800 "
+      },
+      {
+         "code":"7743",
+         "message":"FIS",
+         "color":"#009800 "
+      },
+	  {
+         "code":"7744",
+         "message":"FIS",
+         "color":"#009800 "
+      },
+      {
+         "code":"0020",
+         "message":"RESCU",
+         "color":"#009800 "
+      },
+      {
+         "code":"0033",
+         "message":"VM",
+         "color":"#009800 "
+      },
+      {
+         "code":"0034",
+         "message":"SAR",
+         "color":"#009800 "
+      },
+      {
+         "code":"0023",
+         "message":"BPO",
+         "color":"#009800 "
+      },
+      {
+         "code":"0025",
+         "message":"PJE",
+         "color":"#009800 "
+      },
+      {
+         "code":"0027",
+         "message":"ACRO",
+         "color":"#009800 "
+      },
+      {
+         "code":"0030",
+         "message":"CAL",
+         "color":"#009800 "
+      },
+      {
+         "code":"0035",
+         "message":"AIRCL",
+         "color":"#009800 "
+      },
+      {
+         "code":"0036",
+         "message":"POL",
+         "color":"#009800 "
+      },
+      {
+         "code":"0037",
+         "message":"BIV",
+         "color":"#009800 "
+      }	  
+   ]
+}
