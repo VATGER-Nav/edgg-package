@@ -212,9 +212,8 @@ HTTP_SIGMET_Page_Suffix=.txt
 Shortcut_RadarMenu_Combo=0x00
 Shortcut_Map_Xfr_Combo=1,0x12
 Shortcut_Map_Xfr_Key=1,0x44 ; D
-Shortcut_Map_Xfr_Key=2,0x47 ; G
 Shortcut_Map_Target=1,Airspace C/D\Airspace Level
-Shortcut_Map_Target=2,EDDK\EDDK Stands
+
 
 // CPDLC/ DCL Settings
 
@@ -262,6 +261,10 @@ Window_CPDLC_Setting=1,1,250
 [_DEL]
 Window_CPDLC_Setting=1,1,250
 Window_CPDLC_Current=1,1,600
+
+[EDDK]
+Shortcut_Map_Xfr_Key=2,0x47 ; G
+Shortcut_Map_Target=2,EDDK\EDDK Stands
 
 [EDDL]
 Shortcut_Map_Xfr_Key=2,0x47 ; G
