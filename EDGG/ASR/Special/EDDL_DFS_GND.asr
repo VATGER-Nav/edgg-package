@@ -5,7 +5,6 @@ SECTORFILE:C:\Users\Konny\Documents\EuroScope_Airacs\EDGG-TEST_20220926104853-22
 SECTORTITLE:EDGG-TEST_20220926104853-220901-0003.sct
 Geo:EDDL Groundlayout DFS Basic:
 Geo:EDDL Groundlayout DFS Streets:
-Geo:EDDL Groundlayout Gates 2102:
 Regions:EDDL DFS Groundlayout:polygon
 Regions:EDDL DFS Holdingpoints:polygon
 SHOWC:1
