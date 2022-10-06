@@ -144,8 +144,8 @@ ATIS2:Maastricht Radar RHR - CPDLC [EDYR]
 ATIS3:Covering Maastricht UIR +FL245 above northern Langen FIR
 ATIS4:You have feedback? Submit it! feedback.vatger.de
 
-PROFILE:EDYY_MSN_CTR:300:6
-ATIS2:Maastricht Radar MSN - CPDLC [EDYM]
+PROFILE:EDYY_M_CTR:300:6
+ATIS2:Maastricht Radar MNS - CPDLC [EDYM]
 ATIS3:Covering Maastricht UIR +FL245 above northern Langen FIR
 ATIS4:You have feedback? Submit it! feedback.vatger.de
 

@@ -4,11 +4,6 @@
    "NonDiscrete":[
    ],
    "Squawks":[
-      {
-         "code":"1000",
-         "message":"Test",
-         "color":"#009800 "
-      },
 	  {
          "code":"4447",
          "message":"TWR",
