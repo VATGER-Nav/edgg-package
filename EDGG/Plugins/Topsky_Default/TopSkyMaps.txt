@@ -1,3 +1,5 @@
+; 06.10.2022 by KE
+
 SYMBOLDEF:Fix1
 ARC:0:0:2:0:360
 
