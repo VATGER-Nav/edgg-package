@@ -3,40 +3,6 @@ DisplayTypeNeedRadarContent:0
 DisplayTypeGeoReferenced:1
 SECTORFILE:
 SECTORTITLE:
-Free Text:EDDK Taxiway\A:freetext
-Free Text:EDDK Taxiway\A:freetext
-Free Text:EDDK Taxiway\A:freetext
-Free Text:EDDK Taxiway\A:freetext
-Free Text:EDDK Taxiway\A:freetext
-Free Text:EDDK Taxiway\A:freetext
-Free Text:EDDK Taxiway\A1:freetext
-Free Text:EDDK Taxiway\A2:freetext
-Free Text:EDDK Taxiway\A3:freetext
-Free Text:EDDK Taxiway\A4:freetext
-Free Text:EDDK Taxiway\A5:freetext
-Free Text:EDDK Taxiway\A7:freetext
-Free Text:EDDK Taxiway\B:freetext
-Free Text:EDDK Taxiway\B:freetext
-Free Text:EDDK Taxiway\B:freetext
-Free Text:EDDK Taxiway\B:freetext
-Free Text:EDDK Taxiway\B:freetext
-Free Text:EDDK Taxiway\C:freetext
-Free Text:EDDK Taxiway\D:freetext
-Free Text:EDDK Taxiway\D:freetext
-Free Text:EDDK Taxiway\E:freetext
-Free Text:EDDK Taxiway\E:freetext
-Free Text:EDDK Taxiway\K1:freetext
-Free Text:EDDK Taxiway\K2:freetext
-Free Text:EDDK Taxiway\K3:freetext
-Free Text:EDDK Taxiway\L:freetext
-Free Text:EDDK Taxiway\M-Blue:freetext
-Free Text:EDDK Taxiway\M-Orange:freetext
-Free Text:EDDK Taxiway\M-Yellow:freetext
-Free Text:EDDK Taxiway\N:freetext
-Free Text:EDDK Taxiway\S:freetext
-Free Text:EDDK Taxiway\T:freetext
-Free Text:EDDK Taxiway\T:freetext
-Free Text:EDDK Taxiway\T2:freetext
 Geo:EDDK Groundlayout DFS Basic:
 Geo:EDDK Groundlayout DFS Stands:
 Geo:EDDK Groundlayout DFS Streets:
@@ -55,7 +21,7 @@ DISABLEPANNING:0
 DISABLEZOOMING:0
 DisplayRotation:312.90000
 TAGFAMILY:Phoenix Ground
-WINDOWAREA:50.846777:7.078704:50.887143:7.197616
+WINDOWAREA:50.850535:7.090575:50.882828:7.185705
 PLUGIN:Ground Radar plugin:AirportElevation:302
 PLUGIN:Ground Radar plugin:AirportRadius:3
 PLUGIN:Ground Radar plugin:GroundMode:EDDK

@@ -23,11 +23,11 @@ NDBs:frequency:8881798:3.5:0:0:0
 Runways:centerline:10855592:3.5:0:2:7
 Runways:extended centerline:8881798:3.5:0:0:7
 Runways:name:8421504:3.5:0:0:7
-Datablock:non concerned:11173320:3.5:0:0:7
-Datablock:notified:13137935:3.5:0:0:7
-Datablock:assumed:0:3.5:0:0:7
-Datablock:transfer to me initiated:0:3.5:0:0:7
-Datablock:redundant:7237230:3.5:0:0:7
+Datablock:non concerned:11173320:3.8:0:0:7
+Datablock:notified:13137935:3.8:0:0:7
+Datablock:assumed:0:3.8:0:0:7
+Datablock:transfer to me initiated:0:3.8:0:0:7
+Datablock:redundant:7237230:3.8:0:0:7
 Datablock:information:29670:3.5:0:0:7
 Datablock:even flight level:11974326:3.5:0:0:7
 Datablock:odd flight level:39835:3.5:0:0:7
