@@ -1,8 +1,8 @@
 DisplayTypeName:Ground Radar display
 DisplayTypeNeedRadarContent:0
 DisplayTypeGeoReferenced:1
-SECTORFILE:C:\Users\Konny\Documents\EuroScope_Airacs\EDGG-TEST_20220926104853-220901-0003\EDGG-TEST_20220926104853-220901-0003.sct
-SECTORTITLE:EDGG-TEST_20220926104853-220901-0003.sct
+SECTORFILE:
+SECTORTITLE:
 Geo:EDDL Groundlayout DFS Basic:
 Geo:EDDL Groundlayout DFS Streets:
 Regions:EDDL DFS Groundlayout:polygon
