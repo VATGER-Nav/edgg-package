@@ -24,12 +24,9 @@ ARTCC low boundary:Centerlines ETNN 25:
 ARTCC low boundary:Tower CTR EDDK:
 ARTCC low boundary:Tower CTR ETNN (HX):
 Geo:EDZZ Landmark River Germany:
-Geo:EDZZ Landmark Highway Germany:
-Regions:EDDK City:polygon
 Runways:EDDK 06-24:centerline
 Runways:EDDK 14L-32R:centerline
 Runways:EDDK 14R-32L:centerline
-Runways:ETNN 07-25:centerline
 SHOWC:1
 SHOWSB:0
 BELOW:350
