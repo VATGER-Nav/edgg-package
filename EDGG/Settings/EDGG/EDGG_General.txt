@@ -33,7 +33,7 @@ m_ShowRouteWhenAccepting:0
 m_AllowAssumedACTagDown:0
 m_InhibitAutoPushOnHandoff:0
 m_RandomSquawks:1
-m_VFRSquawks:7000,1000
+m_VFRSquawks:7000,7001,7002,7003,7004,1000,4440,4441,4442,4443,4446,4447
 m_WhoIsOnlineURL:http://vatsim.metacraft.com/vatsim-data.txt
 m_AutoLoadMetarForActiveAirports:1
 m_LockShowRouteWhenAccepting:0
