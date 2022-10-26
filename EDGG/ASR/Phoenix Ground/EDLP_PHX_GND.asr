@@ -1,8 +1,8 @@
 DisplayTypeName:Ground Radar display
 DisplayTypeNeedRadarContent:0
 DisplayTypeGeoReferenced:1
-SECTORFILE:C:\Users\philh\Documents\EuroScope\Test\EDGG-TEST_20221014133331-221001-0006.sct
-SECTORTITLE:EDGG-TEST_20221014133331-221001-0006.sct
+SECTORFILE:
+SECTORTITLE:
 Free Text:EDLP Gates\1:freetext
 Free Text:EDLP Gates\12A-F:freetext
 Free Text:EDLP Gates\1A:freetext
