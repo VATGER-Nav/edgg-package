@@ -1,0 +1,433 @@
+{
+   "NonDiscreteColor":"#8B0000",
+   "NonDiscreteMessage":"NDSSR",
+   "NonDiscrete":[
+   ],
+   "Squawks":[
+      {
+         "code":"0020",
+         "message":"RESCU",
+         "color":"#009800 "
+      },
+      {
+         "code":"0021",
+         "message":"VFFO",
+         "color":"#009800 "
+      },
+      {
+         "code":"0023",
+         "message":"BPO",
+         "color":"#009800 "
+      },
+      {
+         "code":"0024",
+         "message":"TFFN",
+         "color":"#009800 "
+      },
+      {
+         "code":"0025",
+         "message":"PJE",
+         "color":"#009800 "
+      },
+      {
+         "code":"0026",
+         "message":"POLNL",
+         "color":"#009800 "
+      },
+      {
+         "code":"0027",
+         "message":"ACRO",
+         "color":"#009800 "
+      },
+      {
+         "code":"0030",
+         "message":"CAL",
+         "color":"#009800 "
+      },
+      {
+         "code":"0031",
+         "message":"OPSKY",
+         "color":"#009800 "
+      },
+      {
+         "code":"0032",
+         "message":"END",
+         "color":"#009800 "
+      },
+      {
+         "code":"0033",
+         "message":"VM",
+         "color":"#009800 "
+      },
+      {
+         "code":"0034",
+         "message":"SAR",
+         "color":"#009800 "
+      },
+      {
+         "code":"0035",
+         "message":"AIRCL",
+         "color":"#009800 "
+      },
+      {
+         "code":"0036",
+         "message":"POL",
+         "color":"#009800 "
+      },
+      {
+         "code":"0037",
+         "message":"BIV",
+         "color":"#009800 "
+      },
+      {
+         "code":"0076",
+         "message":"PJEZH",
+         "color":"#009800 "
+      },
+      {
+         "code":"0420",
+         "message":"FMSV",
+         "color":"#009800 "
+      },
+      {
+         "code":"0421",
+         "message":"OUV",
+         "color":"#009800 "
+      },
+      {
+         "code":"0422",
+         "message":"OUNV",
+         "color":"#009800 "
+      },
+      {
+         "code":"0423",
+         "message":"OUSV",
+         "color":"#009800 "
+      },	  
+      {
+         "code":"0424",
+         "message":"T-FH",
+         "color":"#009800 "
+      },
+      {
+         "code":"0425",
+         "message":"T-DR",
+         "color":"#009800 "
+      },
+      {
+         "code":"2677",
+         "message":"T-EX",
+         "color":"#009800 "
+      },
+      {
+         "code":"4201",
+         "message":"GCA",
+         "color":"#009800 "
+      },
+      {
+         "code":"4202",
+         "message":"GCA",
+         "color":"#009800 "
+      },
+      {
+         "code":"4203",
+         "message":"GCA",
+         "color":"#009800 "
+      },
+      {
+         "code":"4204",
+         "message":"GCA",
+         "color":"#009800 "
+      },
+      {
+         "code":"4205",
+         "message":"GCA",
+         "color":"#009800 "
+      },
+      {
+         "code":"4206",
+         "message":"GCA",
+         "color":"#009800 "
+      },
+      {
+         "code":"4207",
+         "message":"GCA",
+         "color":"#009800 "
+      },
+      {
+         "code":"4210",
+         "message":"GCA",
+         "color":"#009800 "
+      },
+      {
+         "code":"4426",
+         "message":"HUM",
+         "color":"#009800 "
+      },
+      {
+         "code":"4427",
+         "message":"HUMP",
+         "color":"#009800 "
+      },
+      {
+         "code":"4432",
+         "message":"TY",
+         "color":"#009800 "
+      },
+      {
+         "code":"4433",
+         "message":"TY",
+         "color":"#009800 "
+      },
+      {
+         "code":"4440",
+         "message":"E",
+         "color":"#009800 "
+      },
+	   {
+         "code":"4441",
+         "message":"E",
+         "color":"#009800 "
+      },
+	   {
+         "code":"4442",
+         "message":"E",
+         "color":"#009800 "
+      },
+	   {
+         "code":"4443",
+         "message":"E",
+         "color":"#009800 "
+      },
+      {
+         "code":"4444",
+         "message":"CHRIS",
+         "color":"#DC00D2 "
+      },
+      {
+         "code":"4445",
+         "message":"PIPE",
+         "color":"#DC00D2 "
+      },
+      {
+         "code":"4446",
+         "message":"A66",
+         "color":"#DC00D2 "
+      },
+      {
+         "code":"4447",
+         "message":"TWR",
+         "color":"#009800 "
+      },
+      {
+         "code":"4450",
+         "message":"FDF",
+         "color":"#009800 "
+      },	 
+      {
+         "code":"4451",
+         "message":"FDR",
+         "color":"#009800 "
+      },
+      {
+         "code":"4452",
+         "message":"FDS",
+         "color":"#009800 "
+      }, 
+	   {
+         "code":"4453",
+         "message":"FDM",
+         "color":"#009800 "
+      },
+      {
+         "code":"4454",
+         "message":"FDO",
+         "color":"#009800 "
+      },
+      {
+         "code":"4455",
+         "message":"FIS",
+         "color":"#009800 "
+      },
+      {
+         "code":"4456",
+         "message":"FIS",
+         "color":"#009800 "
+      },
+      {
+         "code":"4457",
+         "message":"FIS",
+         "color":"#009800 "
+      },
+      {
+         "code":"4470",
+         "message":"F",
+         "color":"#009800 "
+      },
+      {
+         "code":"4477",
+         "message":"ARRTM",
+         "color":"#009800 "
+      },
+      {
+         "code":"6101",
+         "message":"TV",
+         "color":"#009800 "
+      },
+	   {
+         "code":"6102",
+         "message":"TW",
+         "color":"#009800 "
+      },
+      {
+         "code":"6103",
+         "message":"RAFIS",
+         "color":"#009800 "
+      },
+	   {
+         "code":"6104",
+         "message":"TG",
+         "color":"#009800 "
+      },
+      {
+         "code":"6105",
+         "message":"SVFR",
+         "color":"#009800 "
+      },
+      {
+         "code":"6130",
+         "message":"HN",
+         "color":"#009800 "
+      },
+      {
+         "code":"6140",
+         "message":"HF",
+         "color":"#009800 "
+      },
+      {
+         "code":"6150",
+         "message":"SB",
+         "color":"#009800 "
+      },
+      {
+         "code":"6160",
+         "message":"NN",
+         "color":"#009800 "
+      },
+      {
+         "code":"6170",
+         "message":"NG",
+         "color":"#009800 "
+      },
+      {
+         "code":"6220",
+         "message":"PNL",
+         "color":"#009800 "
+      },
+      {
+         "code":"6223",
+         "message":"LIFE3",
+         "color":"#009800 "
+      },
+      {
+         "code":"6224",
+         "message":"LIFE4",
+         "color":"#009800 "
+      },
+	   {
+         "code":"7000",
+         "message":"V",
+         "color":"#009800 "
+      },
+	   {
+         "code":"7001",
+         "message":"VOUT",
+         "color":"#009800 "
+      },
+	   {
+         "code":"7002",
+         "message":"VIN",
+         "color":"#009800 "
+      },
+	   {
+         "code":"7003",
+         "message":"TWR",
+         "color":"#009800 "
+      },
+	   {
+         "code":"7004",
+         "message":"TWR",
+         "color":"#009800 "
+      },
+      {
+         "code":"7005",
+         "message":"TWR",
+         "color":"#009800 "
+      },
+      {
+         "code":"7006",
+         "message":"TWR",
+         "color":"#009800 "
+      },
+      {
+         "code":"7007",
+         "message":"TWR",
+         "color":"#009800 "
+      },
+      {
+         "code":"7010",
+         "message":"TWR",
+         "color":"#009800 "
+      },
+      {
+         "code":"7740",
+         "message":"FDH",
+         "color":"#009800 "
+      },
+	   {
+         "code":"7741",
+         "message":"FDB",
+         "color":"#009800 "
+      },
+	   {
+         "code":"7742",
+         "message":"FDL",
+         "color":"#009800 "
+      },
+      {
+         "code":"7743",
+         "message":"FDV",
+         "color":"#009800 "
+      },
+	   {
+         "code":"7744",
+         "message":"FDC",
+         "color":"#009800 "
+      },
+      {
+         "code":"7745",
+         "message":"FIS",
+         "color":"#009800 "
+      },
+      {
+         "code":"7746",
+         "message":"FIS",
+         "color":"#009800 "
+      },
+      {
+         "code":"7747",
+         "message":"FIS",
+         "color":"#009800 "
+      },
+      {
+         "code":"7776",
+         "message":"TT",
+         "color":"#009800 "
+      },
+      {
+         "code":"7777",
+         "message":"TT",
+         "color":"#009800 "
+      }
+   ]
+}
