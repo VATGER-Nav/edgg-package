@@ -14,8 +14,8 @@ Airports:EDLU:symbol
 Airports:EDLY:symbol
 ARTCC low boundary:Centerlines EDDG 07:
 ARTCC low boundary:Centerlines EDDG 25:
-Geo:EDZZ Landmark River Germany:
 Geo:EDZZ Landmark Highway Germany:
+Geo:EDZZ Landmark River Germany:
 Runways:EDDG 07-25:centerline
 VORs:HMM:symbol
 VORs:OSN:symbol

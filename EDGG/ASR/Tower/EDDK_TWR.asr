@@ -23,13 +23,11 @@ ARTCC low boundary:Centerlines ETNN 07:
 ARTCC low boundary:Centerlines ETNN 25:
 ARTCC low boundary:Tower CTR EDDK:
 ARTCC low boundary:Tower CTR ETNN (HX):
-Geo:EDZZ Landmark River Germany:
 Geo:EDZZ Landmark Highway Germany:
-Regions:EDDK City:polygon
+Geo:EDZZ Landmark River Germany:
 Runways:EDDK 06-24:centerline
 Runways:EDDK 14L-32R:centerline
 Runways:EDDK 14R-32L:centerline
-Runways:ETNN 07-25:centerline
 SHOWC:1
 SHOWSB:0
 BELOW:350
@@ -43,5 +41,5 @@ DISABLEPANNING:0
 DISABLEZOOMING:0
 DisplayRotation:0.00000
 TAGFAMILY:Phoenix Tower
-WINDOWAREA:50.703488:6.558195:51.079643:7.651195
+WINDOWAREA:50.596112:6.263116:51.183854:7.994507
 PLUGIN:TopSky plugin:ShowMapData:EDDK_TWR

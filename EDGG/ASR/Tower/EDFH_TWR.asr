@@ -21,8 +21,8 @@ ARTCC low boundary:Centerlines ETSB 21:
 ARTCC low boundary:Tower CTR EDFH:
 ARTCC low boundary:Tower CTR ETAD (HX):
 ARTCC low boundary:Tower CTR ETSB:
-Geo:EDZZ Landmark River Germany:
 Geo:EDZZ Landmark Highway Germany:
+Geo:EDZZ Landmark River Germany:
 Runways:EDFH 03-21:centerline
 Runways:ETAD 05-23:centerline
 Runways:ETSB 03-21:centerline

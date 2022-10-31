@@ -13,8 +13,8 @@ ARTCC boundary:Airspace C EDDL and EDDK:
 ARTCC low boundary:Centerlines EDLW 06:
 ARTCC low boundary:Centerlines EDLW 24:
 ARTCC low boundary:Tower CTR EDLW (HX):
-Geo:EDZZ Landmark River Germany:
 Geo:EDZZ Landmark Highway Germany:
+Geo:EDZZ Landmark River Germany:
 Runways:EDLW 06-24:centerline
 VORs:GMH:symbol
 VORs:HMM:symbol
