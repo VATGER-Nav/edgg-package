@@ -52,8 +52,6 @@ TeamSpeakVccs	TsVccsMiniControlX	1741
 TeamSpeakVccs	TsVccsMiniControlY	47
 Plugins	Plugin3Display0	Ground Radar display
 Plugins	Plugin3Display1	Standard ES radar screen
-TeamSpeakVccs	Ts3G2GPtt	3670016
-TeamSpeakVccs	Ts3G2APtt	3670016
 TeamSpeakVccs	Ts3NickName	YOUR ID
 Plugins	Plugin4	\EDGG\Plugins\VCH.dll
 Plugins	Plugin5	\EDGG\Plugins\CDM\CDM.dll

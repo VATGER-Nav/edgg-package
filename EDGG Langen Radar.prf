@@ -64,4 +64,4 @@ TeamSpeakVccs	Ts3G2APtt	3670016
 Plugins	Plugin4	\EDGG\Plugins\VCH.dll
 Plugins	Plugin5	\EDGG\Plugins\DelHel\DelHel.dll
 Plugins	Plugin6	\EDGG\Plugins\VFPC\VFPC.dll
-Plugins	Plugin7	\EDGG\Plugins\Squawk\Squawks.dll
+Plugins	Plugin7	\EDGG\Plugins\Squawk\EDGG\Squawks.dll

@@ -57,6 +57,3 @@ Plugins	Plugin3	\EDGG\Plugins\CCAMS.dll
 Plugins	Plugin3Display0	Ground Radar display
 Plugins	Plugin3Display1	ModeS Function Relay (no display)
 Plugins	Plugin3Display2	Standard ES radar screen
-Plugins	Plugin4	\EDGG\Plugins\Squawk\Squawks.dll
-TeamSpeakVccs	Ts3G2GPtt	3670016
-TeamSpeakVccs	Ts3G2APtt	3670016
