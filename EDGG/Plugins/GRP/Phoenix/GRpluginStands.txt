@@ -1,12 +1,6 @@
-// Version 2.3
-// Stand: 06.10.2022
+// Version 2.4
+// Stand: 01.11.2022
 // last change by HF
-
-// Changelog
-// Summer Flightplan, reopened C-Gates at EDDF
-// new Version
-// 18.05.2022 - B43 rest. B77L => B773
-// 09.07.2022 - stands EDDS, EDDL B02
 
 // ##################################################################
 //                               General
@@ -18,10 +12,10 @@ GROUP:no_country:A*:B*:D*:F*:G*:H*:I*:J*:M*:N*:O*:P*:Q*:R*:S*:T*:U*:V*:W*:X*:Y*:
 GROUP:EDDF_A:DLH:AEE:UAL:LOT:SWR:TAP:AUA:SAS
 GROUP:EDDF_B2:XXX
 GROUP:EDDF_B4:AAR:ACA:AIC:ANA:ETH:IRA:LAN:QTR:MLD:TAM:THA
-GROUP:EDDF_B:DLH:CFG:CCA:CTN:MSR:KZR:EWG:LZB:MEA:THY:SIA:SXS
-GROUP:EDDF_C:OCN:SXS:DLH:OMA
-GROUP:EDDF_D:AFL:AFR:AZA:AAL:BAW:BAV:CFE:CES:CSN:DAL:GFA:GVY:RJA:RAM:ICE:ITY:JAL:IBE:KAL:KLM:MSC:UZB:HVN:WZZ:PGT:TAR
-GROUP:EDDF_E:ASL:ALK:AFL:AFR:AZA:AAL:BAW:BAV:BTI:CAL:CES:CFE:CSN:DAL:GFA:GVY:RJA:ICE:FEG:ITY:IBE:MSC:HVN:WZZ:UAE:KAC:SVA:NMB:VTI:PGT:TAR
+GROUP:EDDF_B:DLH:CFG:CCA:CTN:MSR:KZR:EWG:LZB:THY:SIA:SXS
+GROUP:EDDF_C:OCN:SXS:DLH:CFG
+GROUP:EDDF_D:AFL:AFR:AZA:AAL:BAW:BAV:CFE:CES:CSN:DAL:GFA:GVY:RJA:RAM:ICE:ITY:JAL:IBE:KAL:KLM:MSC:UZB:HVN:WZZ:PGT:TAR:OMA:ETD:MEA
+GROUP:EDDF_E:ASL:ALK:AFL:AFR:AZA:AAL:BAW:BAV:BTI:CAL:CES:CFE:CSN:DAL:GFA:GVY:RJA:ICE:FEG:ITY:IBE:MSC:HVN:WZZ:UAE:KAC:SVA:NMB:VTI:PGT:TAR:OMA:ETD:MEA
 GROUP:EDDF_CARGO_NW:BCS:DHX:BOX:FDX:GVY:TAY
 GROUP:EDDF_V:AEA:AFL:AFR:AMC:ANE:ASL:AUI:BAW:BRU:BTI:CSA:CFE:DAH:DLH:DLA:EIN:FIN:GFA:GVY:IAW:IBE:ICE:ITY:KLM:LOT:MAC:MGL:MGX:MLD:MSC:MNE:OCN:PGT:RAM:RJA:ROT:RYR:RZO:SAS:SMR:SVA:TUI:UZB:WZZ
 
@@ -3089,7 +3083,7 @@ WTC:L
 AREA
 
 // ##################################################################
-//                        EDDR - Saarbrüken
+//                        EDDR - Saarbrken
 // ##################################################################
 
 STAND:EDDR:S1:N049.13.05.734:E007.06.44.472:25
@@ -3246,7 +3240,7 @@ AREA
 PRIORITY:+3
 
 // ##################################################################
-//                        EDDG - Münster/Osnabrück
+//                        EDDG - Mnster/Osnabrck
 // ##################################################################
 
 STAND:EDDG:7:N052.07.51.241:E007.41.20.676:20
@@ -3443,7 +3437,7 @@ WINGSPAN:38
 PRIORITY:+2
 
 // ------------------------------------------------------------------------
-//                               GAT Münster/Osnabrück
+//                               GAT Mnster/Osnabrck
 // ------------------------------------------------------------------------
 
 STAND:EDDG:19A:N052.07.55.000:E007.41.13.100:15
@@ -3957,7 +3951,7 @@ COORD:N051.36.20.062:E008.36.33.504
 MANUAL
 
 // ##################################################################
-//                        EDDL - Düsseldorf
+//                        EDDL - Dsseldorf
 // ##################################################################
 
 // GAT
@@ -5075,7 +5069,7 @@ STAND:EDDL:V63x:N051.16.43.692:E006.45.33.552:20
 MANUAL
 
 // ##################################################################
-//                        EDDK - Köln/Bonn
+//                        EDDK - Kln/Bonn
 // ##################################################################
 
 // A01(old A21)
