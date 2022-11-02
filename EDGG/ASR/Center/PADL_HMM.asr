@@ -1,8 +1,8 @@
 DisplayTypeName:Standard ES radar screen
 DisplayTypeNeedRadarContent:1
 DisplayTypeGeoReferenced:1
-SECTORFILE:C:\Users\philh\Documents\EuroScope\Test\EDGG-TEST_20221014133331-221001-0006.sct
-SECTORTITLE:EDGG-TEST_20221014133331-221001-0006.sct
+SECTORFILE:
+SECTORTITLE:
 ARTCC boundary:AoR APP EDDK:
 ARTCC boundary:AoR APP EDDL:
 ARTCC boundary:AoR HMM + PADL:
@@ -41,4 +41,4 @@ DISABLEZOOMING:0
 DisplayRotation:0.00000
 TAGFAMILY:Langen Radar EDGG
 WINDOWAREA:50.617878:4.949288:52.492878:10.494602
-PLUGIN:TopSky plugin:ShowMapData:EDDG,EDLP,EDLW,PADL
+PLUGIN:TopSky plugin:ShowMapData:EDDG,EDLP,EDLW,PADL,HMM
