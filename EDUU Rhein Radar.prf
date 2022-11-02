@@ -39,7 +39,7 @@ Sounds	Sound12	\EDGG\Sounds\Ongoing accepted.wav
 Sounds	Sound13	\EDGG\Sounds\ongoing refused.wav
 Sounds	Sound14	\EDGG\Sounds\manual ongoing.wav
 Sounds	Sound18	\EDGG\Sounds\startup_silent.wav
-RecentFiles	Recent1	\EDGG\ASR\CTR\EDUU.asr
+RecentFiles	Recent1	\EDGG\ASR\Center\EDUU.asr
 Plugins	Plugin0	\EDGG\Plugins\Topsky_EDUU\TopSky.dll
 Plugins	Plugin0Display0	Standard ES radar screen
 Plugins	Plugin0Display1	Ground Radar display
