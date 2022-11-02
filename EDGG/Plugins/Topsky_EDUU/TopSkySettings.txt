@@ -249,8 +249,10 @@ STCA_WarningTime_L_Imm=50
 Shortcut_Map_Xfr_Combo=1,0x12
 Shortcut_Map_Xfr_Key=1,0x47 ; G
 Shortcut_Map_Xfr_Key=2,0x48 ; H
-Shortcut_Map_Target=1,Langen Radar\EDFF SEP Guide Lower
-Shortcut_Map_Target=2,Langen Radar\EDFF SEP Guide Upper
+Shortcut_Map_Xfr_Key=3,0x42 ; U
+Shortcut_Map_Target=1,Langen EXTRA\EDFF SEP Guide Lower
+Shortcut_Map_Target=2,Langen EXTRA\EDFF SEP Guide Upper
+Shortcut_Map_Target=3,Rhein Radar\Langen Sectors
 
 Menu_MaxListItems=12
 
