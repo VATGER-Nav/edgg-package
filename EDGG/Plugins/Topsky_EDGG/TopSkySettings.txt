@@ -1,3 +1,5 @@
+// EDGG Langen Radar - 03.11.2022
+
 Setup_COOPANS=1
 
 //4k-Settings - To activate delete this row and the "/" in following rows
@@ -183,6 +185,11 @@ Label_All_N=0
 
 Areas_NOTAM_Activation=1
 Areas_Altitude_Filtering=1
+
+Areas_Label_Name=0
+Areas_Label_MapText=0
+Areas_Label_Levels=0
+Areas_Label_Times=0
 
 Divergence_CLAM=0
 Divergence_RAM=0
