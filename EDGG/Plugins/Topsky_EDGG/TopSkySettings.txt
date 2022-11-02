@@ -255,9 +255,9 @@ Shortcut_Map_Xfr_Key=4,0x48 ; H
 Shortcut_Map_Xfr_Key=5,0x42 ; U
 Shortcut_Map_Target=1,MVA\MVA Germany Winter
 Shortcut_Map_Target=2,AIRSPACE C/D\AIRSPACE ALL
-Shortcut_Map_Target=3,Langen Radar\EDFF SEP Guide Lower
-Shortcut_Map_Target=4,Langen Radar\EDFF SEP Guide Upper
-Shortcut_Map_Target=5,Sector\Upper Borders
+Shortcut_Map_Target=3,Langen EXTRA\EDFF SEP Guide Lower
+Shortcut_Map_Target=4,Langen EXTRA\EDFF SEP Guide Upper
+Shortcut_Map_Target=5,Sector EXTRA\Upper Borders
 
 Menu_MaxListItems=12
 
