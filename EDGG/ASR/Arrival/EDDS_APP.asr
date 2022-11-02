@@ -3,7 +3,14 @@ DisplayTypeNeedRadarContent:1
 DisplayTypeGeoReferenced:1
 SECTORFILE:
 SECTORTITLE:
-ARTCC boundary:AoR EDDS_APP:
+ARTCC boundary:AoR APP EDDS:
+ARTCC boundary:EDGG PFA:
+ARTCC boundary:EDGG X EBG KTG:
+ARTCC boundary:EDMM FUE:
+ARTCC boundary:EDMM NDG:
+ARTCC boundary:LSAS ARFA:
+ARTCC boundary:LSAS Lower East (LSZE):
+ARTCC boundary:LSAS Lower North (LSZN):
 ARTCC low boundary:Tower CTR EDDS:
 ARTCC low boundary:Tower CTR EDSB:
 ARTCC low boundary:Tower CTR EDTL (HX):
