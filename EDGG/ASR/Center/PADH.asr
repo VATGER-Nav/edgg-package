@@ -1,13 +1,11 @@
 DisplayTypeName:Standard ES radar screen
 DisplayTypeNeedRadarContent:1
 DisplayTypeGeoReferenced:1
-ARTCC boundary:AoR APP EDDG/EDLP:
+SECTORFILE:
+SECTORTITLE:
 ARTCC boundary:AoR APP EDDK:
 ARTCC boundary:AoR APP EDDL:
-ARTCC boundary:EDGG EBG GIN:
-ARTCC boundary:EDGG EBG RUD:
-ARTCC high boundary:AoR EDGG (North):
-ARTCC high boundary:AoR EDYY (Langen North):
+ARTCC boundary:AoR HMM + PADL:
 ARTCC high boundary:EDUU Sectors:
 ARTCC high boundary:EDYY Neighbour:
 ARTCC low boundary:Tower CTR EDDK:
