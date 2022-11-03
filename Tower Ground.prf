@@ -1,5 +1,5 @@
 Settings	Settingsfile	\EDGG\Settings\TWR\EDGG_TWR_General.txt
-Settings	SettingsfileSYMBOLOGY	\EDGG\Settings\TWR\Phoenix_Symbology.txt
+Settings	SettingsfileSYMBOLOGY	\EDGG\Settings\TWR\EDGG_TWR_Symbology.txt
 Settings	SettingsfileVOICE	\EDGG\Settings\VoiceChannels.txt
 Settings	SettingsfilePROFILE	\EDGG\Settings\ALL\EDGG_TWR_Profile.txt
 Settings	SettingsfileTAGS	\EDGG\Settings\ALL\EDGG_Tags.txt
@@ -8,7 +8,7 @@ Settings	SettingsfileSEL	\EDGG\Settings\TWR\EDGG_TWR_SectorExitList.txt
 Settings	SettingsfileDEP	\EDGG\Settings\TWR\EDGG_TWR_DepartureList.txt
 Settings	SettingsfileARR	\EDGG\Settings\TWR\EDGG_TWR_ArrivalList.txt
 Settings	SettingsfileFP	\EDGG\Settings\ALL\EDGG_FPList.txt
-Settings	SettingsfileSCREEN	\EDGG\Settings\TWR\Phoenix_Screen.txt
+Settings	SettingsfileSCREEN	\EDGG\Settings\TWR\EDGG_TWR_Screen.txt
 Settings	SettingsfilePLUGINS	\EDGG\Settings\ALL\EDGG_Plugins.txt
 Settings	SettingsfilePILOTING	\EDGG\Settings\ALL\EDGG_Piloting.txt
 Settings	SettingsfileCONFLICT	\EDGG\Settings\ALL\EDGG_ConflictListConfiguration.txt
