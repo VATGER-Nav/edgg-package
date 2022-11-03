@@ -43,7 +43,7 @@ RecentFiles	Recent1	\EDGG\ASR\Center\EDUU.asr
 Plugins	Plugin0	\EDGG\Plugins\Topsky_EDUU\TopSky.dll
 Plugins	Plugin0Display0	Standard ES radar screen
 Plugins	Plugin0Display1	Ground Radar display
-Plugins	Plugin1	\EDGG\Plugins\GRP\Default\GRplugin.dll
+Plugins	Plugin1	\EDGG\Plugins\GRP\Phoenix\GRplugin.dll
 Plugins	Plugin1Display0	Ground Radar display
 Plugins	Plugin1Display1	Standard ES radar screen
 TeamSpeakVccs	Ts3DialogLeft	0

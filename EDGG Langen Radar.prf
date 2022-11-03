@@ -49,7 +49,7 @@ RecentFiles	Recent7	\EDGG\ASR\Center\PADL_HMM.asr
 RecentFiles	Recent8	\EDGG\ASR\Center\EIF_PFA.asr
 Plugins	Plugin0	\EDGG\Plugins\Topsky_EDGG\TopSky.dll
 Plugins	Plugin0Display0	Standard ES radar screen
-Plugins	Plugin1	\EDGG\Plugins\GRP\Default\GRplugin.dll
+Plugins	Plugin1	\EDGG\Plugins\GRP\Phoenix\GRplugin.dll
 Plugins	Plugin1Display0	Ground Radar display
 Plugins	Plugin1Display1	Standard ES radar screen
 Plugins	Plugin2	\EDGG\Plugins\AfvEuroScopeBridge.dll
