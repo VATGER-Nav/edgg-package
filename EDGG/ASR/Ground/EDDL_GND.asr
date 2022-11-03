@@ -111,8 +111,8 @@ Free Text:EDDL Parking Airac 20/10\V93:freetext
 Free Text:EDDL Parking Airac 20/10\V94:freetext
 Free Text:EDDL Parking Airac 20/10\V95:freetext
 Free Text:EDDL Parking Airac 20/10\V96:freetext
-Free Text:EDDL Taxiway Airac 20/10\G1:freetext
-Free Text:EDDL Taxiway Airac 20/10\G2:freetext
+Free Text:EDDL Taxiway Airac 20/10\G (G1):freetext
+Free Text:EDDL Taxiway Airac 20/10\H (G2):freetext
 Free Text:EDDL Taxiway Airac 20/10\K:freetext
 Free Text:EDDL Taxiway Airac 20/10\K1:freetext
 Free Text:EDDL Taxiway Airac 20/10\K2:freetext
@@ -149,8 +149,8 @@ Free Text:EDDL Taxiway Airac 20/10\T:freetext
 Free Text:EDDL Taxiway Airac 20/10\T:freetext
 Free Text:EDDL Taxiway Airac 20/10\T:freetext
 Free Text:EDDL Taxiway Airac 20/10\T1:freetext
-Free Text:EDDL Taxiway Airac 20/10\W:freetext
-Free Text:EDDL Taxiway Airac 20/10\W:freetext
+Free Text:EDDL Taxiway Airac 20/10\R (W):freetext
+Free Text:EDDL Taxiway Airac 20/10\R (W):freetext
 Free Text:EDDL Taxiway Airac 20/10\Y:freetext
 Geo:EDDL Groundlayout Gates 2102:
 Geo:EDDL Groundlayout Stopbars:
@@ -169,7 +169,7 @@ DISABLEPANNING:0
 DISABLEZOOMING:0
 DisplayRotation:36.00000
 TAGFAMILY:Phoenix Ground
-WINDOWAREA:51.276187:6.737657:51.296854:6.797709
+WINDOWAREA:51.276187:6.737242:51.296854:6.798124
 PLUGIN:Ground Radar plugin:AirportElevation:147
 PLUGIN:Ground Radar plugin:AirportRadius:3
 PLUGIN:Ground Radar plugin:GroundMode:EDDL
