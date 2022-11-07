@@ -23,7 +23,7 @@
 ;  only. The data must not be copied, photocopied, translated, reverse engineered, decompiled or reduced to any           ;
 ;  electronic medium or machine legible form, neither completely nor in part.                                             ;
 ;=========================================================================================================================;
-;  AIRAC 2207/1  ++  Valid period: 14/JUL/2022 - 10/AUG/2022  ++  File-Publisher: Langen - EDGG                           ;
+;  AIRAC 2211/1  ++  Valid period: 03/NOV/2022 - 30/NOV/2022  ++  File-Publisher: Langen - EDGG                           ;
 ;=========================================================================================================================;
 VOICE
 AG:EDDF_ATIS:118.025:novoice:EDDF_ATIS
@@ -44,39 +44,39 @@ AG:EDDF_S_GND Frankfurt Apron:121.650:novoice:EDDF_S_GND
 AG:EDDF_S_TWR Frankfurt Tower:119.900:novoice:EDDF_S_TWR
 AG:EDDF_W_GND Frankfurt Apron:121.750:novoice:EDDF_W_GND
 AG:EDDF_W_TWR Frankfurt Tower:124.850:novoice:EDDF_W_TWR
-AG:EDDG_APP Langen Radar:129.300:novoice:EDDG_APP
 AG:EDDG_ATIS:127.175:novoice:EDDG_ATIS
 AG:EDDG_GND Muenster Ground:121.875:novoice:EDDG_GND
+AG:EDDG_HMM_APP Langen Radar:129.300:novoice:EDDG_HMM_APP
 AG:EDDG_TWR Muenster Tower:129.800:novoice:EDDG_TWR
 AG:EDDK_APP Langen Radar:135.350:novoice:EDDK_APP
 AG:EDDK_ATIS:132.125:novoice:EDDK_ATIS
 AG:EDDK_DEL Koeln/Bonn Delivery:121.850:novoice:EDDK_DEL
 AG:EDDK_F_APP Koeln/Bonn Director:121.050:novoice:EDDK_F_APP
 AG:EDDK_GND Koeln/Bonn Ground:121.725:novoice:EDDK_GND
-AG:EDDK_N_APP Langen Radar:127.375:novoice:EDDK_N_APP
+AG:EDDK_NOR_APP Langen Radar:127.375:novoice:EDDK_NOR_APP
 AG:EDDK_P_GND Koeln/Bonn Apron:129.175:novoice:EDDK_P_GND
 AG:EDDK_TWR Koeln/Bonn Tower:124.975:novoice:EDDK_TWR
 AG:EDDL_APP Langen Radar:128.550:novoice:EDDL_APP
 AG:EDDL_ATIS:123.775:novoice:EDDL_ATIS
-AG:EDDL_B_APP Langen Radar:119.100:novoice:EDDL_B_APP
+AG:EDDL_BOT_APP Langen Radar:119.100:novoice:EDDL_BOT_APP
 AG:EDDL_DEL Duesseldorf Delivery:121.775:novoice:EDDL_DEL
 AG:EDDL_D_APP Langen Radar:121.350:novoice:EDDL_D_APP
 AG:EDDL_E_GND Duesseldorf Ground:121.600:novoice:EDDL_E_GND
 AG:EDDL_F_APP Duesseldorf Director:128.650:novoice:EDDL_F_APP
 AG:EDDL_TWR Duesseldorf Tower:118.300:novoice:EDDL_TWR
 AG:EDDL_W_GND Duesseldorf Ground:121.900:novoice:EDDL_W_GND
-AG:EDDR_APP Langen Radar:129.675:novoice:EDDR_APP
 AG:EDDR_ATIS:125.300:novoice:EDDR_ATIS
 AG:EDDR_GND Saarbruecken Ground:118.550:novoice:EDDR_GND
+AG:EDDR_PFA_APP Langen Radar:129.675:novoice:EDDR_PFA_APP
 AG:EDDR_TWR Saarbruecken Tower:118.350:novoice:EDDR_TWR
 AG:EDDS_ATIS:126.125:novoice:EDDS_ATIS
 AG:EDDS_DEL Stuttgart Delivery:121.900:novoice:EDDS_DEL
 AG:EDDS_F_APP Stuttgart Director:119.850:novoice:EDDS_F_APP
 AG:EDDS_GND Stuttgart Ground:118.600:novoice:EDDS_GND
-AG:EDDS_N_APP Langen Radar:125.050:novoice:EDDS_N_APP
-AG:EDDS_S_APP Langen Radar:119.200:novoice:EDDS_S_APP
+AG:EDDS_REU_APP Langen Radar:119.200:novoice:EDDS_REU_APP
+AG:EDDS_STG_APP Langen Radar:125.050:novoice:EDDS_STG_APP
 AG:EDDS_TWR Stuttgart Tower:118.800:novoice:EDDS_TWR
-AG:EDDS_V_TWR Stuttgart Tower:119.050:novoice:EDDS_V_TWR
+AG:EDDS_VFR_TWR Stuttgart Tower:119.050:novoice:EDDS_VFR_TWR
 AG:EDEH_I_TWR Herrenteich Info:132.050:novoice:EDEH_I_TWR
 AG:EDEL_I_TWR Langenlonsheim Info:122.875:novoice:EDEL_I_TWR
 AG:EDER_I_TWR Wasserkuppe Info:118.650:novoice:EDER_I_TWR
@@ -86,12 +86,12 @@ AG:EDFC_I_TWR Aschaffenburg Info:132.425:novoice:EDFC_I_TWR
 AG:EDFE_GND Egelsbach Apron:121.725:novoice:EDFE_GND
 AG:EDFE_I_TWR Egelsbach Info:118.400:novoice:EDFE_I_TWR
 AG:EDFG_I_TWR Gelnhausen Info:123.050:novoice:EDFG_I_TWR
-AG:EDFH_APP Langen Radar:125.600:novoice:EDFH_APP
 AG:EDFH_ATIS:120.900:novoice:EDFH_ATIS
+AG:EDFH_EIF_APP Langen Radar:125.600:novoice:EDFH_EIF_APP
 AG:EDFH_GND Hahn Ground:121.975:novoice:EDFH_GND
 AG:EDFH_TWR Hahn Tower:119.650:novoice:EDFH_TWR
-AG:EDFM_APP Langen Radar:129.350:novoice:EDFM_APP
 AG:EDFM_ATIS:122.500:novoice:EDFM_ATIS
+AG:EDFM_NKL_APP Langen Radar:129.350:novoice:EDFM_NKL_APP
 AG:EDFM_TWR Mannheim Tower:129.775:novoice:EDFM_TWR
 AG:EDFO_I_TWR Michelstadt Info:123.650:novoice:EDFO_I_TWR
 AG:EDFQ_ATIS:118.825:novoice:EDFQ_ATIS
@@ -100,31 +100,30 @@ AG:EDFU_I_TWR Mainbullau Info:122.375:novoice:EDFU_I_TWR
 AG:EDFV_I_TWR Worms Info:124.600:novoice:EDFV_I_TWR
 AG:EDFY_I_TWR Elz Info:123.600:novoice:EDFY_I_TWR
 AG:EDFZ_I_TWR Mainz Info:122.925:novoice:EDFZ_I_TWR
-AG:EDGG_A_CTR Langen Radar:134.800:novoice:EDGG_A_CTR
-AG:EDGG_B_CTR Langen Radar:131.300:novoice:EDGG_B_CTR
+AG:EDGG_BAD_CTR Langen Radar:131.300:novoice:EDGG_BAD_CTR
+AG:EDGG_CO_CTR Langen Radar:130.975:novoice:EDGG_CO_CTR
 AG:EDGG_CTR Langen Radar:135.725:novoice:EDGG_CTR
-AG:EDGG_D_CTR Langen Radar:125.200:novoice:EDGG_D_CTR
-AG:EDGG_E_CTR Langen Radar:127.725:novoice:EDGG_E_CTR
-AG:EDGG_F_CTR Langen Information:128.950:novoice:EDGG_F_CTR
-AG:EDGG_G_CTR Langen Radar:124.725:novoice:EDGG_G_CTR
-AG:EDGG_H_CTR Langen Radar:118.750:novoice:EDGG_H_CTR
-AG:EDGG_I_CTR Langen Radar:128.525:novoice:EDGG_I_CTR
-AG:EDGG_J_CTR Langen Radar:124.425:novoice:EDGG_J_CTR
-AG:EDGG_K_CTR Langen Radar:123.275:novoice:EDGG_K_CTR
-AG:EDGG_L_CTR Langen Radar:127.050:novoice:EDGG_L_CTR
-AG:EDGG_M_CTR Langen Radar:132.150:novoice:EDGG_M_CTR
-AG:EDGG_N_CTR Langen Radar:127.500:novoice:EDGG_N_CTR
-AG:EDGG_P_CTR Langen Radar:135.650:novoice:EDGG_P_CTR
-AG:EDGG_R_CTR Langen Radar:124.475:novoice:EDGG_R_CTR
-AG:EDGG_S_CTR Langen Radar:125.400:novoice:EDGG_S_CTR
-AG:EDGG_T_CTR Langen Radar:127.625:novoice:EDGG_T_CTR
-AG:EDGG_U_CTR Langen Information:123.525:novoice:EDGG_U_CTR
-AG:EDGG_V_CTR Langen Information:119.150:novoice:EDGG_V_CTR
-AG:EDGG_W_CTR Langen Information:129.875:novoice:EDGG_W_CTR
-AG:EDGG_X_CTR Langen Radar:130.975:novoice:EDGG_X_CTR
-AG:EDGG_Z_CTR Langen Radar:125.675:novoice:EDGG_Z_CTR
+AG:EDGG_DKB_CTR Langen Radar:125.200:novoice:EDGG_DKB_CTR
+AG:EDGG_GED_CTR Langen Radar:124.425:novoice:EDGG_GED_CTR
+AG:EDGG_GIN_CTR Langen Radar:124.725:novoice:EDGG_GIN_CTR
+AG:EDGG_HAB_CTR Langen Radar:134.800:novoice:EDGG_HAB_CTR
+AG:EDGG_HEF_CTR Langen Radar:127.725:novoice:EDGG_HEF_CTR
+AG:EDGG_HMM_CTR Langen Radar:118.750:novoice:EDGG_HMM_CTR
+AG:EDGG_IDF_CTR Langen Information:119.150:novoice:EDGG_IDF_CTR
+AG:EDGG_IDL_CTR Langen Information:129.875:novoice:EDGG_IDL_CTR
+AG:EDGG_IDR_CTR Langen Information:123.525:novoice:EDGG_IDR_CTR
+AG:EDGG_IDS_CTR Langen Information:128.950:novoice:EDGG_IDS_CTR
+AG:EDGG_KIR_CTR Langen Radar:128.525:novoice:EDGG_KIR_CTR
+AG:EDGG_KNG_CTR Langen Radar:125.675:novoice:EDGG_KNG_CTR
+AG:EDGG_KTG_CTR Langen Radar:123.275:novoice:EDGG_KTG_CTR
+AG:EDGG_LBU_CTR Langen Radar:127.050:novoice:EDGG_LBU_CTR
+AG:EDGG_MAN_CTR Langen Radar:132.150:novoice:EDGG_MAN_CTR
+AG:EDGG_NKH_CTR Langen Radar:127.500:novoice:EDGG_NKH_CTR
+AG:EDGG_PAH_CTR Langen Radar:135.650:novoice:EDGG_PAH_CTR
+AG:EDGG_PSA_CTR Langen Radar:125.400:novoice:EDGG_PSA_CTR
+AG:EDGG_RUD_CTR Langen Radar:124.475:novoice:EDGG_RUD_CTR
+AG:EDGG_TAU_CTR Langen Radar:127.625:novoice:EDGG_TAU_CTR
 AG:EDGP_I_TWR Oppenheim Info:122.000:novoice:EDGP_I_TWR
-AG:EDGS_APP Langen Radar:124.900:novoice:EDGS_APP
 AG:EDGS_ATIS:128.700:novoice:EDGS_ATIS
 AG:EDGS_I_TWR Siegerland Info:120.375:novoice:EDGS_I_TWR
 AG:EDKA_I_TWR Aachen Info:122.875:novoice:EDKA_I_TWR
@@ -140,9 +139,9 @@ AG:EDLM_I_TWR Marl Info:122.000:novoice:EDLM_I_TWR
 AG:EDLN_GND Moenchengladbach Ground:121.925:novoice:EDLN_GND
 AG:EDLN_TWR Moenchengladbach Tower:120.450:novoice:EDLN_TWR
 AG:EDLO_I_TWR Oerlinghausen Info:122.175:novoice:EDLO_I_TWR
-AG:EDLP_APP Langen Radar:125.225:novoice:EDLP_APP
 AG:EDLP_ATIS:125.725:novoice:EDLP_ATIS
 AG:EDLP_GND Paderborn Ground:121.925:novoice:EDLP_GND
+AG:EDLP_PAL_APP Langen Radar:125.225:novoice:EDLP_PAL_APP
 AG:EDLP_TWR Paderborn Tower:133.375:novoice:EDLP_TWR
 AG:EDLT_I_TWR Telgte Info:122.850:novoice:EDLT_I_TWR
 AG:EDLV_ATIS:124.450:novoice:EDLV_ATIS
@@ -182,17 +181,16 @@ AG:EDTY_I_TWR Schwaebisch Hall Information:129.225:novoice:EDTY_I_TWR
 AG:EDTZ_I_TWR Konstanz Info:124.350:novoice:EDTZ_I_TWR
 AG:EDUU_A_CTR Rhein Radar:122.625:novoice:EDUU_A_CTR
 AG:EDUU_D_CTR Rhein Radar:132.725:novoice:EDUU_D_CTR
-AG:EDUU_F_CTR Rhein Radar:132.325:novoice:EDUU_F_CTR
+AG:EDUU_FFM_CTR Rhein Radar:132.325:novoice:EDUU_FFM_CTR
+AG:EDUU_FUL_CTR Rhein Radar:136.325:novoice:EDUU_FUL_CTR
 AG:EDUU_L_CTR Rhein Radar:127.300:novoice:EDUU_L_CTR
-AG:EDUU_N_CTR Rhein Radar:136.475:novoice:EDUU_N_CTR
+AG:EDUU_NTM_CTR Rhein Radar:136.475:novoice:EDUU_NTM_CTR
 AG:EDUU_P_CTR Rhein Radar:128.075:novoice:EDUU_P_CTR
-AG:EDUU_S_CTR Rhein Radar:120.925:novoice:EDUU_S_CTR
-AG:EDUU_T_CTR Rhein Radar:132.400:novoice:EDUU_T_CTR
-AG:EDUU_U_CTR Rhein Radar:136.325:novoice:EDUU_U_CTR
-AG:EDUU_W_CTR Rhein Radar:134.075:novoice:EDUU_W_CTR
+AG:EDUU_SLN_CTR Rhein Radar:120.925:novoice:EDUU_SLN_CTR
+AG:EDUU_TGO_CTR Rhein Radar:132.400:novoice:EDUU_TGO_CTR
+AG:EDUU_WUR_CTR Rhein Radar:134.075:novoice:EDUU_WUR_CTR
 AG:EDYY_M_CTR Maastricht Radar:133.850:novoice:EDYY_M_CTR
 AG:EDYY_R_CTR Maastricht Radar:132.625:novoice:EDYY_R_CTR
-AG:ELLX_APP Luxembourg Approach:120.875:novoice:ELLX_APP
 AG:ETAR_GND Ramstein Ground:121.775:novoice:ETAR_GND
 AG:ETAR_TWR Ramstein Tower:123.550:novoice:ETAR_TWR
 AG:ETHN_APP Stetten Radar:123.300:novoice:ETHN_APP

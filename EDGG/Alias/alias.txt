@@ -23,7 +23,7 @@
 ;  only. The data must not be copied, photocopied, translated, reverse engineered, decompiled or reduced to any           ;
 ;  electronic medium or machine legible form, neither completely nor in part.                                             ;
 ;=========================================================================================================================;
-;  AIRAC 2207/1  ++  Valid period: 14/JUL/2022 - 10/AUG/2022  ++  File-Publisher: Langen - EDGG                           ;
+;  AIRAC 2211/1  ++  Valid period: 03/NOV/2022 - 30/NOV/2022  ++  File-Publisher: Langen - EDGG                           ;
 ;=========================================================================================================================;
 ;*** Approach ***
 .RS Report speed.
@@ -74,10 +74,10 @@
 .SQSG Squawk standby on ground.
 .NFP I don't have a flight plan from you; please send your flight plan.
 .FP For valid flightplans you may check http://www.vroute.net to get the best experience here at VATSIM.
-.CLR Information $atiscode current, cleared to $arr via $SID departure, flight planned route, climb $temp, squawk $squawk.
-.VCLR Information $atiscode current, cleared to $arr via $SID departure, flight planned route, climb via SID $temp, squawk $squawk.
-.SCLR Information $atiscode current, startup approved, cleared to $arr via $SID departure, flight planned route, climb $temp, squawk $squawk.
-.VSCLR Information $atiscode current, startup approved, cleared to $arr via $SID departure, flight planned route, climb via SID $temp, squawk $squawk.
+.CLR Information $atiscode current, cleared to $arr $SID departure, flight planned route, climb $temp, squawk $squawk.
+.VCLR Information $atiscode current, cleared to $arr $SID departure, flight planned route, climb via SID $temp, squawk $squawk.
+.SCLR Information $atiscode current, startup approved, cleared to $arr $SID departure, flight planned route, climb $temp, squawk $squawk.
+.VSCLR Information $atiscode current, startup approved, cleared to $arr $SID departure, flight planned route, climb via SID $temp, squawk $squawk.
 .CLRV Information $atiscode current, cleared to $arr via vector departure runway $deprwy, climb $2 ft on runway heading, flight planned route, squawk $squawk.
 .SCLRV Information $atiscode current, startup approved, cleared to $arr via vector departure runway $deprwy, climb $2 ft on runway heading, squawk $squawk.
 .RBC Readback correct.
@@ -93,6 +93,10 @@
 .PS Pushback approved, face south.
 .PE Pushback approved, face east.
 .PW Pushback approved, face west.
+.SPN Startup and pushback approved, face north.
+.SPS Startup and pushback approved, face south.
+.SPE Startup and pushback approved, face east.
+.SPW Startup and pushback approved, face west.
 .FN Face north.
 .FS Face south.
 .FE Face east.
@@ -119,10 +123,10 @@
 .RG Roger.
 
 ;*** EDDF ***
-.25M8 taxi right via M and M8, hold short of CAT II holdingpoint runway 25C
-.07M8 taxi right via M and M8, hold short of CAT II holdingpoint runway 07C
-.M30 taxi via M and M30, hold short of CAT II holdingpoint runway 25C
-.07M6 taxi right via M and M6, hold short of CAT II holdingpoint runway 07C
+.25M8 taxi right via M and M8, hold at CAT II/III holdingpoint runway 25C
+.07M8 taxi right via M and M8, hold at CAT II/III holdingpoint runway 07C
+.M30 taxi via M and M30, hold at CAT II/III holdingpoint runway 25C
+.07M6 taxi right via M and M6, hold at CAT II/III holdingpoint runway 07C
 .T4 taxi right via M and T, hold short of T4
 .M6 via M6 cross runway 07C, join L1, hold short of L
 .M8S via M8 cross runway 25C, continue straight ahead via N3, hold short of N
