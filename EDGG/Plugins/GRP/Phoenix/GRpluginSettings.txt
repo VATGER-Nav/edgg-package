@@ -1,9 +1,12 @@
-// last change: 03.08.2022 by KE
+// last change: 28.11.2022 by HF
 
 Equip_ProMode=0
 RawVideo=1
+
 Track_Heading_Line=0
 Track_HistoryDots_GND=5
+Track_PredictionLine_APP=1
+Track_HistoryDots_APP=5
 
 Color_Arrival=248,248,255
 Color_Departure=247,202,021
@@ -12,7 +15,7 @@ Color_Unknown=120,120,120
 Color_Warning=255,165,0
 Color_WBackground=135,135,135
 Color_New_Stand=255,255,0
-Color_APP_Background=52,58,62
+Color_APP_Background=90,90,90
 
 GroundLabel_Filter_NoState=1
 GroundLabel_Filter_Parked=1
@@ -24,7 +27,9 @@ TowerLabel_Font=EuroScope
 
 GroundLabel_FontSize=11
 TowerLabel_FontSize=11
-AppLabel_FontSize=10
+AppLabel_FontSize=11
+
+GroundLabel=1
 
 Label=GND:ARR:0:ALRT,0,0:COMM,0,1 
 Label=GND:ARR:1:CALLSIGN,0,0:STAND,0,1 
@@ -36,6 +41,16 @@ Label=GND:DEP:1:CALLSIGN,0,0:DRWY,0,1,1
 Label=GND:DEP:2:ATYP,0,0:WTC,0,1,0
 Label=GND:DEP:3:DEP,0,0:RMK,0,1 
 
+Label=GND:OTH:0:ALRT,0,0:COMM,0,0
+Label=GND:OTH:1:CALLSIGN,0,0
+Label=GND:OTH:2:
+Label=GND:OTH:3:
+
+Label=GND:UNC:0:ALRT,0,0:ASSR_E,0,1:COMM,0,0
+Label=GND:UNC:1:TSSR,0,0
+Label=GND:UNC:2:
+Label=GND:UNC:3:
+
 Label=TWR:ARR:0:ALRT,0,0:COMM,0,1 
 Label=TWR:ARR:1:CALLSIGN,0,0:ATYP,0,1
 Label=TWR:ARR:2:AFL+VS,0,1,20:GS,0,1
@@ -45,6 +60,26 @@ Label=TWR:DEP:0:ALRT,0,0:COMM,0,1
 Label=TWR:DEP:1:CALLSIGN,0,0:ATYP,0,1
 Label=TWR:DEP:2:AFL+VS,0,1,20:GS,0,1
 Label=TWR:DEP:3:DEP,0,0:RMK,0,1
+
+Label=APP:DEP:0:ALRT,0,0
+Label=APP:DEP:1:CALLSIGN,0,0:GS,0,1,1
+Label=APP:DEP:2:AFL+VS,0,23::CFL,0,0,14
+Label=APP:DEP:3:STAND,0,0
+
+Label=APP:ARR:0:ALRT,0,0
+Label=APP:ARR:1:CALLSIGN,0,0:GS,0,1,1
+Label=APP:ARR:2:AFL+VS,0,23::CFL,0,0,14
+Label=APP:ARR:3:STAND,0,0
+
+Label=APP:OTH:0:ALRT,0,0
+Label=APP:OTH:1:CALLSIGN,0,0:GS,0,1,1
+Label=APP:OTH:2:AFL+VS,0,23
+Label=APP:OTH:3:
+
+Label=APP:UNC:0:ALRT,0,0
+Label=APP:UNC:1:CALLSIGN,0,0:GS,0,1,1
+Label=APP:UNC:2:AFL+VS,0,23
+Label=APP:UNC:3:
 
 Label_AFL+VS=1,0,1
 Label_ARWY=0,0,0
@@ -96,7 +131,9 @@ System_TowerMode_AltFilter_High=10000
 System_TowerMode_AltFilter_Low=380
 
 Window_APP_AltFilter=15000
-Window_APP_Extensions=10
+Window_APP=1,1430,500,490,457
+Window_APP_Extensions=0
+Window_APP_Scale=17
 
 Window_2nd=0,100,100,400,250
 Window_2nd_Scale=200
@@ -152,3 +189,6 @@ Airport_Runway_Buffer_LVP=21:200
 Airport_Runway_MaxCode=14R:C
 Airport_Runway_NotATYP=24:A388,A124,A225
 AppPath=EDDK:RWY32R:50.858194444444:7.1613694444444:316:L:302:3.0
+
+//List_Outbound=*,2,1131,500
+//List_Inbound=*,2,1203,650
