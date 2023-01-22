@@ -1,3 +1,11 @@
+ASRFastKeys	1	\EDGG\ASR\Tower\EDFH_TWR.asr
+ASRFastKeys	2	\EDGG\ASR\Ground\EDFH_GND.asr
+ASRFastKeys	3	\EDGG\ASR\Tower\EDSB_TWR.asr
+ASRFastKeys	4	\EDGG\ASR\Ground\EDSB_GND.asr
+ASRFastKeys	5	\EDGG\ASR\Tower\EDDG_TWR.asr
+ASRFastKeys	6	\EDGG\ASR\Ground\EDDG_GND.asr
+ASRFastKeys	7	\EDGG\ASR\Tower\EDLW_TWR.asr
+ASRFastKeys	8	\EDGG\ASR\Ground\EDLW_GND.asr
 Settings	Settingsfile	\EDGG\Settings\TWR\EDGG_TWR_General.txt
 Settings	SettingsfileSYMBOLOGY	\EDGG\Settings\TWR\EDGG_TWR_Symbology.txt
 Settings	SettingsfileVOICE	\EDGG\Settings\VoiceChannels.txt
@@ -22,7 +30,6 @@ Settings	airways	\EDGG\NavData\airway.txt
 Settings	airportcoords	\EDGG\NavData\icao.txt
 Settings	AselKey	5111808
 Settings	FreqKey	3604480
-Settings	sector
 Voice	PPPT	18612224
 Voice	SPPT	18612224
 Voice	bass_filter	1
@@ -41,9 +48,9 @@ Sounds	Sound14	\EDGG\Sounds\manual ongoing.wav
 Sounds	Sound18	\EDGG\Sounds\startup_silent.wav
 RecentFiles	Recent1	\EDGG\ASR\Tower\EDDF_TWR.asr
 RecentFiles	Recent2	\EDGG\ASR\Ground\EDDF_GND.asr
-RecentFiles	Recent3	\EDGG\ASR\Tower\EDDL_TWR.asr
-RecentFiles	Recent4	\EDGG\ASR\Ground\EDDL_GND.asr
-RecentFiles	Recent5	\EDGG\ASR\Tower\EDDS_TWR.asr
+RecentFiles	Recent3	\EDGG\ASR\Tower\EDDS_TWR.asr
+RecentFiles	Recent4	\EDGG\ASR\Tower\EDDL_TWR.asr
+RecentFiles	Recent5	\EDGG\ASR\Ground\EDDL_GND.asr
 RecentFiles	Recent6	\EDGG\ASR\Ground\EDDS_GND.asr
 RecentFiles	Recent7	\EDGG\ASR\Tower\EDDK_TWR.asr
 RecentFiles	Recent8	\EDGG\ASR\Ground\EDDK_GND.asr
@@ -77,3 +84,4 @@ Plugins	Plugin5	\EDGG\Plugins\CDM\CDM.dll
 Plugins	Plugin6	\EDGG\Plugins\VFPC\VFPC.dll
 Plugins	Plugin7	\EDGG\Plugins\DelHel\DelHel.dll
 Plugins	Plugin8	\EDGG\Plugins\Squawk\PHX\Squawks.dll
+Settings	sector	\EDGG-FULL_20221229162028-221301-0001.sct
