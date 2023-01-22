@@ -67,7 +67,7 @@ m_EnableVoiceRecognition:0
 m_VoiceRecognitionStyle:2
 m_SModeTransponders:HLEGWQS
 m_CorrelationMode:0
-m_CorrelationDistance:30
+m_CorrelationDistance:40
 m_SimulateRadars:0
 m_AllowCorrelatedTAGDown:1
 m_ShowDetailedOverUntagged:1
@@ -77,7 +77,7 @@ m_VatsimStatusURL:http://status.vatsim.net/
 m_OverrideWhoIsOnlineURL:0
 m_ShowVFRFlightPlanTrack:0
 m_ShowIFRFlightPlanTrack:1
-m__AutoStartFlightPlanTracks:1
+m__AutoStartFlightPlanTracks:0
 m_UnicomFrequency:122.8
 m_MessageInfoLevel:1
 m_MessageWarningLevel:2
@@ -122,7 +122,7 @@ m_UseIsectForScratchPad:1
 m_RotateRadarTargetSymbol:0
 m_RotateFlightPlanTrackSymbol:0
 m_RubberHeadingRounding:5
-SqawkForSModeTransponder:
+SqawkForSModeTransponder:1000
 m_TransparentTagBackground:1
 m_UseArrDepTagBgColor:0
 SET_MTCA_Show:0
@@ -153,8 +153,8 @@ m_Column:SI:4:1:10061:20:0:1:TopSky plugin:::0:0.0
 END
 TAXIOUT
 m_Visible:0
-m_X:1285
-m_Y:712
+m_X:1395
+m_Y:747
 m_LineNumber:0
 m_Resizable:1
 m_OrderingColumn:4
