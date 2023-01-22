@@ -13,7 +13,6 @@ Settings	SettingsfilePLUGINS	\EDGG\Settings\ALL\EDGG_Plugins.txt
 Settings	SettingsfilePILOTING	\EDGG\Settings\ALL\EDGG_Piloting.txt
 Settings	SettingsfileCONFLICT	\EDGG\Settings\ALL\EDGG_ConflictListConfiguration.txt
 Settings	SettingsfileVCCS	\EDGG\Settings\ALL\EDFF_VCCS_APPCTR.txt
-Settings	sector
 Settings	alias	\EDGG\Alias\alias.txt
 Settings	AtisFolder	\EDGG\ATIS\AtisFiles.txt
 Settings	airlines	\EDGG\ICAO\ICAO_Airlines.txt
@@ -57,3 +56,7 @@ Plugins	Plugin3	\EDGG\Plugins\CCAMS.dll
 Plugins	Plugin3Display0	Ground Radar display
 Plugins	Plugin3Display1	ModeS Function Relay (no display)
 Plugins	Plugin3Display2	Standard ES radar screen
+Settings	sector	\EDGG-FULL_20221229162028-221301-0001.sct
+Plugins	Plugin4	\EDGG\Plugins\Squawk\EDGG\Squawks.dll
+Plugins	Plugin4Display0	Ground Radar display
+Plugins	Plugin4Display1	Standard ES radar screen
