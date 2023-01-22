@@ -1,8 +1,8 @@
 DisplayTypeName:Standard ES radar screen
 DisplayTypeNeedRadarContent:1
 DisplayTypeGeoReferenced:1
-SECTORFILE:C:\Users\philh\Documents\EuroScope\EDGG_2213\EDGG-FULL_20221229162028-221301-0001.sct
-SECTORTITLE:EDGG-FULL_20221229162028-221301-0001.sct
+SECTORFILE:
+SECTORTITLE:
 Airports:EDFA:symbol
 Airports:EDFB:symbol
 Airports:EDFC:symbol
