@@ -10,9 +10,9 @@ Fixes:symbol:9868950:1.0:0:1:7
 Fixes:name:9868950:3.5:0:0:2
 Sids:line:6579300:3.0:0:0:7
 Stars:line:6579300:3.0:0:0:7
-ARTCC high boundary:line:5263440:3.0:0:1:7
-ARTCC boundary:line:5263440:4.0:0:1:7
-ARTCC low boundary:line:5263440:3.0:0:1:7
+ARTCC high boundary:line:7895160:3.0:0:1:7
+ARTCC boundary:line:7895160:4.0:0:1:7
+ARTCC low boundary:line:7895160:3.0:0:1:7
 Geo:line:3289650:3.0:0:0:7
 VORs:symbol:5263440:3.0:0:1:7
 VORs:name:5263440:3.5:0:0:2
@@ -20,7 +20,7 @@ VORs:frequency:5263440:0.5:0:0:2
 NDBs:symbol:5263440:1.0:0:0:7
 NDBs:name:5263440:3.5:0:0:2
 NDBs:frequency:5263440:0.5:0:0:0
-Runways:centerline:6579300:3.5:0:2:7
+Runways:centerline:7895160:3.5:0:2:7
 Runways:extended centerline:6579300:3.5:1:1:7
 Runways:name:8421504:2.0:0:0:7
 Datablock:non concerned:16777215:3.8:0:0:12
@@ -31,8 +31,8 @@ Datablock:redundant:5868729:3.8:0:0:12
 Datablock:information:16777215:3.8:0:1:12
 Datablock:even flight level:8578790:3.8:0:1:12
 Datablock:odd flight level:16777215:3.8:0:0:7
-Datablock:arrivals:65535:3.8:0:8:12
-Datablock:departures:16776960:3.8:0:2:12
+Datablock:arrivals:59135:3.8:0:8:12
+Datablock:departures:16770560:3.8:0:2:12
 Datablock:user 1:43775:3.8:0:0:7
 Datablock:user 2:25855:3.8:0:0:7
 Datablock:user 3:16777215:3.8:0:0:7
@@ -40,9 +40,9 @@ Datablock:user 4:65535:3.8:0:0:7
 Datablock:user 5:961038:3.8:0:0:7
 Datablock:user 6:16777215:3.8:0:0:7
 Datablock:emergency:3289855:3.8:0:1:7
-Datablock:ongoing requested by me:65535:3.8:0:1:7
-Datablock:ongoing requested by other:65535:3.8:0:0:7
-Datablock:ongoing accepted:65280:3.8:0:0:7
+Datablock:ongoing requested by me:31476:3.8:0:1:7
+Datablock:ongoing requested by other:31476:3.8:0:0:7
+Datablock:ongoing accepted:961038:3.8:0:0:7
 Datablock:ongoing refused:255:3.8:0:0:7
 Datablock:detailed background:1310720:4.0:0:0:7
 Datablock:active item background:16711680:4.0:0:1:7
@@ -97,8 +97,8 @@ Ground Network:taxiway:65535:3.5:0:3:7
 Ground Network:terminal taxiway:255:3.5:0:3:7
 Sector:line:5921370:3.0:0:2:7
 Sector:msaw:32768:2.0:0:2:7
-Sector:active sector background:983040:0.5:0:2:7
-Sector:inactive sector background:983040:3.5:0:1:7
+Sector:active sector background:0:0.5:0:2:7
+Sector:inactive sector background:0:3.5:0:1:7
 SYMBOL:0
 SYMBOLITEM:MOVETO -4 -4
 SYMBOLITEM:LINETO 4 -4
@@ -150,11 +150,7 @@ SYMBOLITEM:LINETO -3 -3
 SYMBOL:8
 SYMBOLITEM:POLYGON -3 -3 -3 3 3 3 3 -3
 SYMBOL:9
-SYMBOLITEM:MOVETO -3 -3
-SYMBOLITEM:LINETO 3 -3
-SYMBOLITEM:LINETO 3 3
-SYMBOLITEM:LINETO -3 3
-SYMBOLITEM:LINETO -3 -3
+SYMBOLITEM:POLYGON -3 -3 -3 3 3 3 3 -3
 SYMBOL:10
 SYMBOLITEM:MOVETO -4 -4
 SYMBOLITEM:LINETO 4 -4
