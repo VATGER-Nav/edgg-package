@@ -179,7 +179,7 @@
         "cfl": 5000,
         "rwys": {
           "14L": {
-            "dep": "KUMIK7F",
+            "dep": "KUMIK1Q",
 			"nap": "KUMIK3X"
           },
           "32R": {
@@ -204,7 +204,7 @@
         "cfl": 5000,
         "rwys": {
           "14L": {
-            "dep": "NVO2F",
+            "dep": "NVO1Q",
 			"nap": "NVO2P"
           },
           "32R": {
@@ -254,7 +254,7 @@
         "cfl": 5000,
         "rwys": {
           "14L": {
-            "dep": "PODIP8F",
+            "dep": "PODIP1Q",
 			"nap": "PODIP3X"
           },
           "32R": {
