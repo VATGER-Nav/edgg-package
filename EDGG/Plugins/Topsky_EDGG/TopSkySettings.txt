@@ -162,7 +162,7 @@ System_GUI_Font_1_Size=10
 System_GUI_Font_2_Size=10
 System_GUI_Scale_Menus=0.9
 
-Track_HistoryDots=6
+Track_HistoryDots=5
 Track_PredictionLine=1
 Track_DivergenceSymbol_Size=8
 
