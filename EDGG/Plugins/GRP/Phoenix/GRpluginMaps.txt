@@ -17,6 +17,7 @@ COLORDEF:apronorange:249:153:106
 COLORDEF:dfsgrey:134:134:135
 COLORDEF:orange:176:88:21
 COLORDEF:darkblue:5:21:181
+SCTFILEPATH:..\..\..\..\EDGG-*
 
 // ##################################################################
 //                                 EDDF
@@ -25,14 +26,12 @@ COLORDEF:darkblue:5:21:181
 MAP:EDDF Background:2
 AIRPORT:EDDF
 FOLDER:2nd Window
-SCTFILEPATH:..\..\..\..\EDGG-*
 SCTFILEDATA:REGIONS\EDDF APRON_BACKGROUND
 ACTIVE:1
 
 MAP:EDDF Groundlayout:2
 AIRPORT:EDDF
 FOLDER:2nd Window
-SCTFILEPATH:..\..\..\..\EDGG-*
 SCTFILEDATA:REGIONS\EDDF Groundlayout
 ACTIVE:1
 
