@@ -45,12 +45,13 @@ Plugins	Plugin0Display1	Ground Radar display
 Plugins	Plugin1	\EDGG\Plugins\GRP\Phoenix\GRplugin.dll
 Plugins	Plugin1Display0	Ground Radar display
 Plugins	Plugin1Display1	Standard ES radar screen
+TeamSpeakVccs	TsVccsMiniControlX	1733
+TeamSpeakVccs	TsVccsMiniControlY	47
+TeamSpeakVccs	Ts3NickName	YOUR ID
 TeamSpeakVccs	Ts3DialogLeft	0
 TeamSpeakVccs	Ts3DialogTop	0
-TeamSpeakVccs	Ts3DialogRight	913
-TeamSpeakVccs	Ts3DialogBottom	600
-TeamSpeakVccs	TsVccsMiniControlX	1755
-TeamSpeakVccs	TsVccsMiniControlY	45
+TeamSpeakVccs	Ts3DialogRight	890
+TeamSpeakVccs	Ts3DialogBottom	570
 Plugins	Plugin2	\EDGG\Plugins\AfvEuroScopeBridge.dll
 Plugins	Plugin3	\EDGG\Plugins\CCAMS.dll
 Plugins	Plugin3Display0	Ground Radar display

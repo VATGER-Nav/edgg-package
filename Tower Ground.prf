@@ -67,8 +67,8 @@ TeamSpeakVccs	Ts3G2APtt	3670016
 TeamSpeakVccs	Ts3NickName	YOUR ID
 TeamSpeakVccs	Ts3DialogLeft	0
 TeamSpeakVccs	Ts3DialogTop	0
-TeamSpeakVccs	Ts3DialogRight	883
-TeamSpeakVccs	Ts3DialogBottom	600
+TeamSpeakVccs	Ts3DialogRight	890
+TeamSpeakVccs	Ts3DialogBottom	570
 Plugins	Plugin4	\EDGG\Plugins\GRP\Phoenix\GRplugin.dll
 Settings	SettingsfileORIGPLANE	\EDGG\Settings\TWR\EDGG_TWR_General.txt
 Settings	SettingsfileSTUP	\EDGG\Settings\TWR\EDGG_TWR_StartupList.txt
