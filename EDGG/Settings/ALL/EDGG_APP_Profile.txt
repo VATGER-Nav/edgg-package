@@ -86,7 +86,7 @@ ATIS4:You have feedback? Submit it! feedback.vatger.de
 
 PROFILE:EDLP_PAL_APP:150:5
 ATIS2:Langen Radar
-ATIS3:Covering EDLP/EDLW/EDDG - PDC/DCL Datalink [EDLP]
+ATIS3:Covering EDLP/EDLW - PDC/DCL Datalink [EDLP]
 ATIS4:You have feedback? Submit it! feedback.vatger.de
 
 PROFILE:EDGG_CTR:300:6
