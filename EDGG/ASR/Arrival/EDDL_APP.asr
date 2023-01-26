@@ -1,17 +1,6 @@
 DisplayTypeName:Standard ES radar screen
 DisplayTypeNeedRadarContent:1
 DisplayTypeGeoReferenced:1
-ARTCC boundary:AoR APP EDDG/EDLP:
-ARTCC boundary:AoR APP EDDK:
-ARTCC boundary:AoR APP EDDL:
-ARTCC boundary:EDGG EBG GIN:
-ARTCC boundary:EDGG EBG RUD:
-ARTCC high boundary:EDUU Sectors:
-ARTCC high boundary:EDYY Neighbour:
-ARTCC low boundary:Tower CTR EDDK:
-ARTCC low boundary:Tower CTR EDDL:
-ARTCC low boundary:Tower CTR EDLV (HX):
-ARTCC low boundary:Tower CTR EDLW (HX):
 SHOWC:1
 SHOWSB:0
 BELOW:0
@@ -25,5 +14,5 @@ DISABLEPANNING:0
 DISABLEZOOMING:0
 DisplayRotation:0.00000
 TAGFAMILY:Langen Radar EDGG
-WINDOWAREA:50.648967:4.538444:52.148967:8.957196
-PLUGIN:TopSky plugin:ShowMapData:EDDK,ETNG,EDDL,EDLV,EDLN,EDDG,EDLW,EH
+WINDOWAREA:50.610052:4.399698:52.110052:8.853588
+PLUGIN:TopSky plugin:ShowMapData:LANGEN_LL
