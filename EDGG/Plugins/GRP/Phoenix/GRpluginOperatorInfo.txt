@@ -1,11 +1,7 @@
-// modified OCT 2022
-
 AAC	Mil
 AAH	C
 ABV	C
 ABW	C
-ABR	C
-ABD	C
 ACP	C
 ACQ	C
 ACU	C
@@ -45,13 +41,15 @@ CEF	Mil
 CFC	Mil
 CFN	Mil
 CFT	C
-CGD	Mil
 CGF	C
+CHZ	C
 CJT	C
+CKJ	Mil
 CKK	C
 CLM	C
 CLU	C
 CLX	C
+CMA	C
 CNT	C
 CNV	Mil
 CRG	C
@@ -70,6 +68,7 @@ DAR	Mil
 DCC	C
 DCN	Mil
 DEC	C
+DHA	C
 DHK	C
 DHL	C
 DHV	C
@@ -84,6 +83,7 @@ EFE	C
 EGO	C
 EGY	Mil
 EIC	C
+ESU	C
 EXB	Mil
 FAC	Mil
 FAE	Mil
@@ -108,7 +108,6 @@ GBO	C
 GCL	C
 GDQ	Mil
 GEC	C
-GEL	C
 GGC	C
 GHF	Mil
 GJH	C
@@ -120,6 +119,7 @@ GNC	C
 GNY	Mil
 GOL	C
 GSC	C
+GSS	C
 GTI	C
 GXA	C
 HAF	Mil
@@ -174,7 +174,6 @@ LYB	C
 LYC	C
 LYF	Mil
 MAG	Mil
-MAA	C
 MBR	Mil
 MCX	C
 MDF	C

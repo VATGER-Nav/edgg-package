@@ -166,7 +166,7 @@ System_MetarSourceVATSIM=1
 System_TaxiTime=8
 System_FPASD=0
 
-Track_HistoryDots=4
+Track_HistoryDots=5
 Track_PredictionLine=0
 Track_DivergenceSymbol_Size=8
 
