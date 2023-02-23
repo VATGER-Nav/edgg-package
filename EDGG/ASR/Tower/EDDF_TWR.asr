@@ -3,29 +3,6 @@ DisplayTypeNeedRadarContent:1
 DisplayTypeGeoReferenced:1
 SECTORFILE:
 SECTORTITLE:
-Airports:EDFA:symbol
-Airports:EDFB:symbol
-Airports:EDFC:symbol
-Airports:EDFD:symbol
-Airports:EDFG:symbol
-Airports:EDFH:symbol
-Airports:EDFI:symbol
-Airports:EDFJ:symbol
-Airports:EDFK:symbol
-Airports:EDFL:symbol
-Airports:EDFM:symbol
-Airports:EDFN:symbol
-Airports:EDFO:symbol
-Airports:EDFP:symbol
-Airports:EDFQ:symbol
-Airports:EDFR:symbol
-Airports:EDFS:symbol
-Airports:EDFT:symbol
-Airports:EDFU:symbol
-Airports:EDFV:symbol
-Airports:EDFX:symbol
-Airports:EDFY:symbol
-Airports:EDFZ:symbol
 SHOWC:1
 SHOWSB:0
 BELOW:380
@@ -39,5 +16,5 @@ DISABLEPANNING:0
 DISABLEZOOMING:0
 DisplayRotation:0.00000
 TAGFAMILY:Phoenix Tower
-WINDOWAREA:49.774488:7.675478:50.356523:9.396847
-PLUGIN:TopSky plugin:ShowMapData:EDDF_TWR
+WINDOWAREA:49.673854:7.298606:50.626677:9.998940
+PLUGIN:TopSky plugin:ShowMapData:EDDF
