@@ -27,7 +27,7 @@ Free Text:EDLV Taxiway\N:freetext
 Free Text:EDLV Taxiway\N:freetext
 Free Text:EDLV Taxiway\S:freetext
 Free Text:EDLV Taxiway\S:freetext
-Geo:EDLV Groundlayout Taxilines + Gates
+Geo:EDLV Groundlayout Taxilines + Gates:
 Regions:EDLV Ground ALTN:polygon
 SHOWC:1
 SHOWSB:1
