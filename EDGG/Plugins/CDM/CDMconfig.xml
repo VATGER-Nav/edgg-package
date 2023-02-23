@@ -4,7 +4,8 @@
 	<rate ops="28" />
 	<rateLvo ops="10" />
 	<expiredCtot time="10" />
-	<ReaMsg minutes="0" />
+	<realMode mode="true" />
+	<Rates url="" />
 	<Taxizones url="https://raw.githubusercontent.com/Frenkii/cdmdata/main/taxizones.txt" />
 	<Ctot url="" />
 	<DefaultTaxiTime minutes="15" />
