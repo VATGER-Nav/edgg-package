@@ -131,7 +131,7 @@ System_TowerMode_AltFilter_High=10000
 System_TowerMode_AltFilter_Low=380
 
 Window_APP_AltFilter=15000
-Window_APP=1,1430,500,490,457
+Window_APP=0,1430,500,490,457
 Window_APP_Extensions=0
 Window_APP_Scale=17
 

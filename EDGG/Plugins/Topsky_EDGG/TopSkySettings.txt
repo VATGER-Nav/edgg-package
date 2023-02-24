@@ -304,8 +304,6 @@ SAP_Buffer_Vert_L_IFR=500
 SAP_Buffer_Vert_L_VFR=500
 
 Shortcut_RadarMenu_Combo=0x00
-
-Shortcut_Map_Xfr_Combo=1,0x12
 Shortcut_Map_Xfr_Key=1,0x4D ; M
 Shortcut_Map_Xfr_Key=2,0x44 ; D
 Shortcut_Map_Xfr_Key=3,0x47 ; G

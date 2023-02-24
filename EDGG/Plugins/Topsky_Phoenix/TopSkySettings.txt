@@ -247,13 +247,16 @@ SAP=0
 
 // Mapshortcuts
 Shortcut_RadarMenu_Combo=0x00
-Shortcut_Map_Xfr_Combo=1,0x12
 Shortcut_Map_Xfr_Key=1,0x4D ; M
 Shortcut_Map_Xfr_Key=2,0x44 ; D
 Shortcut_Map_Xfr_Key=3,0x47 ; G
+Shortcut_Map_Xfr_Key=4,0x48 ; H
+Shortcut_Map_Xfr_Key=5,0x56 ; V
 Shortcut_Map_Target=1,MVA\MVA Germany Winter
 Shortcut_Map_Target=2,AIRSPACE C/D\AIRSPACE ALL
 Shortcut_Map_Target=3,Stands\Stands
+Shortcut_Map_Target=4,EDDF\VFR Hospital LABEL
+Shortcut_Map_Target=5,EDDF\VFR Points LABEL
 
 // Short Term Conflict Alert
 STCA=0
