@@ -6,7 +6,7 @@ ARTCC high boundary:EDUU Neighbour:
 ARTCC high boundary:EDUU Sectors:
 SHOWC:1
 SHOWSB:0
-BELOW:10500
+BELOW:5000
 ABOVE:0
 LEADER:-1
 SHOWLEADER:1

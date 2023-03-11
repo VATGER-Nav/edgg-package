@@ -21,6 +21,7 @@ Settings	SettingsfilePLUGINS	\EDGG\Settings\ALL\EDGG_Plugins.txt
 Settings	SettingsfilePILOTING	\EDGG\Settings\ALL\EDGG_Piloting.txt
 Settings	SettingsfileCONFLICT	\EDGG\Settings\ALL\EDGG_ConflictListConfiguration.txt
 Settings	SettingsfileVCCS	\EDGG\Settings\ALL\EDFF_VCCS_TWRGND.txt
+Settings	sector
 Settings	alias	\EDGG\Alias\alias.txt
 Settings	AtisFolder	\EDGG\ATIS\AtisFiles.txt
 Settings	airlines	\EDGG\ICAO\ICAO_Airlines.txt
@@ -84,4 +85,8 @@ Plugins	Plugin5	\EDGG\Plugins\CDM\CDM.dll
 Plugins	Plugin6	\EDGG\Plugins\VFPC\VFPC.dll
 Plugins	Plugin7	\EDGG\Plugins\DelHel\DelHel.dll
 Plugins	Plugin8	\EDGG\Plugins\Squawk\PHX\Squawks.dll
-Settings	sector	\EDGG-FULL_20221229162028-221301-0001.sct
+
+LastSession	atis_url0	http://uniatis.net/atis.php?metar=$metar($atisairportA)&arr=$arrrwy($atisairportA)&dep=$deprwy($atisairportA)&apptype=ILS&info=$atiscodeA&depfreq=122.800
+LastSession	atis_url1	http://uniatis.net/atis.php?metar=$metar($atisairportB)&arr=$arrrwy($atisairportB)&dep=$deprwy($atisairportB)&apptype=ILS&info=$atiscodeB&depfreq=122.800
+LastSession	atis_url2	http://uniatis.net/atis.php?metar=$metar($atisairportC)&arr=$arrrwy($atisairportC)&dep=$deprwy($atisairportC)&apptype=ILS&info=$atiscodeC&depfreq=122.800
+LastSession	atis_url3	http://uniatis.net/atis.php?metar=$metar($atisairportD)&arr=$arrrwy($atisairportD)&dep=$deprwy($atisairportD)&apptype=ILS&info=$atiscodeD&depfreq=122.800

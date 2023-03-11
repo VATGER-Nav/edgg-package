@@ -25,14 +25,14 @@ Runways:extended centerline:6579300:3.5:1:1:7
 Runways:name:8421504:2.0:0:0:7
 Datablock:non concerned:16777215:3.8:0:0:12
 Datablock:notified:16777215:3.8:0:0:12
-Datablock:assumed:56320:3.8:0:1:12
-Datablock:transfer to me initiated:8716164:3.8:0:1:12
-Datablock:redundant:5868729:3.8:0:0:12
+Datablock:assumed:65280:3.8:0:1:12
+Datablock:transfer to me initiated:16777215:3.8:0:1:12
+Datablock:redundant:16777215:3.8:0:0:12
 Datablock:information:16777215:3.8:0:1:12
 Datablock:even flight level:8578790:3.8:0:1:12
 Datablock:odd flight level:16777215:3.8:0:0:7
-Datablock:arrivals:59135:3.8:0:8:12
-Datablock:departures:16770560:3.8:0:2:12
+Datablock:arrivals:52479:3.8:0:8:12
+Datablock:departures:16759552:3.8:0:8:12
 Datablock:user 1:43775:3.8:0:0:7
 Datablock:user 2:25855:3.8:0:0:7
 Datablock:user 3:16777215:3.8:0:0:7

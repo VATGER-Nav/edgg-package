@@ -26,4 +26,4 @@ PLUGIN:Ground Radar plugin:AirportElevation:302
 PLUGIN:Ground Radar plugin:AirportRadius:3
 PLUGIN:Ground Radar plugin:GroundMode:EDDK
 PLUGIN:Ground Radar plugin:ShowMapData:EDDK,EDDK_DFS
-PLUGIN:TopSky plugin:ShowMapData:EDDK_GND
+PLUGIN:TopSky plugin:ShowMapData:EDDK_DFS

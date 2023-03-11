@@ -30,7 +30,7 @@ ATIS3:Covering EDDL/EDLN/EDLV - PDC/DCL Datalink [EDDL]
 ATIS4:You have feedback? Submit it! feedback.vatger.de
 
 PROFILE:EDDL_F_APP:100:5
-ATIS2:Düsseldorf Director
+ATIS2:Duesseldorf Director
 ATIS3:Callsign only on initial call. Turn immediately when instructed.
 ATIS4:You have feedback? Submit it! feedback.vatger.de
 
@@ -60,7 +60,7 @@ ATIS3:Covering EDDK/ETNN - PDC/DCL Datalink [EDDK]
 ATIS4:You have feedback? Submit it! feedback.vatger.de
 
 PROFILE:EDDK_F_APP:100:5
-ATIS2:Köln Director
+ATIS2:Koeln Director
 ATIS3:Callsign only on initial call. Turn immediately when instructed.
 ATIS4:You have feedback? Submit it! feedback.vatger.de
 
