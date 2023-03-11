@@ -122,8 +122,8 @@ Color_Preactive_Map=255,069,0
 Color_Preactive_Text_Map=255,069,0
 Color_Predisplay_Map=255,069,0
 Color_Proposition_Accepted
-Color_Proposition_In
-Color_Proposition_Out
+Color_Proposition_In=255,0,0
+Color_Proposition_Out=255,0,0
 Color_QDM=16,78,139
 Color_Radar_Win_Bg
 Color_Raw_Video1
@@ -204,6 +204,11 @@ Divergence_CLAM_MinCFL=7000
 Divergence_RAM_DCT_DelayTime=90
 
 FlightLeg_FontSize=11
+FlightLeg_Label_DIST=1
+FlightLeg_Label_RFL=1
+FlightLeg_Label_SCFL=1
+FlightLeg_LineWidth=2
+FlightLeg_Label_Time=1
 
 HTTP_SIGMET_Server=http://aviationweather.gov/
 HTTP_SIGMET_Page_Prefix=data/iffdp/
@@ -407,6 +412,9 @@ Color_Unconcerned=200,125,170
 Color_Unknown=239,224,42
 Color_Redundant=110,110,110
 Color_Coordination=15,120,200
+
+Divergence_RAM=0
+
 Label_Co_GS=1
 Label_Ass_GS=1
 Label_Red_GS=1
@@ -426,6 +434,9 @@ Color_Unconcerned=200,125,170
 Color_Unknown=239,224,42
 Color_Redundant=110,110,110
 Color_Coordination=15,120,200
+
+Divergence_RAM=0
+
 Label_Co_GS=1
 Label_Ass_GS=1
 Label_Red_GS=1
