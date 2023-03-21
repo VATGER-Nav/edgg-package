@@ -140,7 +140,7 @@ Color_Raw_Video7
 Color_Runway=0,0,255
 Color_Rwy_App_Line_Inuse=168,164,165
 Color_Rwy_App_Line_Not_Inuse=24,116,205
-Color_Rwy_Locked=150,150,10
+Color_Rwy_Locked=34,139,34
 Color_Select=0,0,0
 Color_Selected
 Color_Selected_Group=255,255,254
@@ -330,7 +330,7 @@ Shortcut_Map_Target=4,Langen -EXTRA-\EDFF SEP Guide Upper
 Shortcut_Map_Target=5,Sector -EXTRA-\Upper Borders
 
 STCA_Sep_Lat_SepLevel=24500
-STCA_Filter=0
+STCA_Filter=1
 STCA_Floor=2000
 STCA_LinPred_Sep_Lat_U=5
 STCA_LinPred_Sep_Lat_L=3
@@ -356,7 +356,7 @@ System_GUI_Scale_Menus=1
 System_ProxySounds=0
 
 System_UseAcceptedCoordColor=1
-System_UseRwyLockedColor=0
+System_UseRwyLockedColor=1
 System_UseSidStarAllocationColor=0
 //System_UseSidStarNoAllocationColor=0
 

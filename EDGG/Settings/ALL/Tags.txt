@@ -2267,7 +2267,7 @@ TAGTYPE:0:5:1
 TAGITEM:72::0:0:0:0:TopSky plugin:0:1:::1
 TAGITEM:207::0:0:0:0:TopSky plugin:0:1:::1
 TAGITEM:1::0:0:0:0:Squawk Message/Warning:0:1:::1
-TAGITEM:222::0:0:0:0:TopSky plugin:0:1:::1
+TAGITEM:38::0:0:0:0:TopSky plugin:0:1:::1
 TAGITEM:0::0:0:0:0::0:1:::1
 TAGITEM:22::1:0:0:0:TopSky plugin:0:1:::1
 TAGITEM:66::0:1:0:0:TopSky plugin:0:1:::1
