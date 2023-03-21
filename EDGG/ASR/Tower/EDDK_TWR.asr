@@ -3,34 +3,17 @@ DisplayTypeNeedRadarContent:1
 DisplayTypeGeoReferenced:1
 SECTORFILE:
 SECTORTITLE:
-Airports:EDKA:symbol
-Airports:EDKB:symbol
-Airports:EDKD:symbol
-Airports:EDKF:symbol
-Airports:EDKH:symbol
-Airports:EDKI:symbol
-Airports:EDKL:symbol
-Airports:EDKN:symbol
-Airports:EDKU:symbol
-Airports:EDKV:symbol
-Airports:EDKW:symbol
-Airports:EDKZ:symbol
 ARTCC low boundary:Centerlines EDDK 06:
 ARTCC low boundary:Centerlines EDDK 14L:
 ARTCC low boundary:Centerlines EDDK 24:
 ARTCC low boundary:Centerlines EDDK 32R:
 ARTCC low boundary:Centerlines ETNN 07:
 ARTCC low boundary:Centerlines ETNN 25:
-ARTCC low boundary:Tower CTR EDDK:
-ARTCC low boundary:Tower CTR ETNN (HX):
 Geo:EDZZ Landmark River Germany:
-Runways:EDDK 06-24:centerline
-Runways:EDDK 14L-32R:centerline
-Runways:EDDK 14R-32L:centerline
 SHOWC:1
 SHOWSB:0
 BELOW:350
-ABOVE:10000
+ABOVE:18500
 LEADER:3
 SHOWLEADER:0
 TURNLEADER:0
@@ -40,5 +23,5 @@ DISABLEPANNING:0
 DISABLEZOOMING:0
 DisplayRotation:0.00000
 TAGFAMILY:Phoenix Tower
-WINDOWAREA:50.596112:6.263116:51.183854:7.994507
-PLUGIN:TopSky plugin:ShowMapData:EDDK
+WINDOWAREA:50.680439:6.579222:51.071432:7.740184
+PLUGIN:TopSky plugin:ShowMapData:EDDK,PHOENIX
