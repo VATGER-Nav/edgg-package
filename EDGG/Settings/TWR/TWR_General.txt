@@ -37,7 +37,7 @@ m_VFRSquawks:0020,0021,0023,0024,0025,0026,0027,0030,0031,0032,0033,0034,0035,00
 m_WhoIsOnlineURL:http://vatsim.metacraft.com/vatsim-data.txt
 m_AutoLoadMetarForActiveAirports:1
 m_LockShowRouteWhenAccepting:0
-m_VoiceAtisBuilderUrl:http://uniatis.net/atis.php?metar=$metar($atisairport)&arr=$arrrwy($atisairport)&dep=$deprwy($atisairport)&apptype=ILS&info=$atiscode&depfreq=122.800
+m_VoiceAtisBuilderUrl:http://uniatis.net/atis.php?metar=$metar($atisairport)&arr=$arrrwy($atisairport)&dep=$deprwy($atisairport)&apptype=ILS&info=$atiscode&depfreq=135.350
 m_DoNotUseAcceptedColor:0
 m_DoNotUseRefusedColor:0
 SET_TransparentAcListBackground:0
