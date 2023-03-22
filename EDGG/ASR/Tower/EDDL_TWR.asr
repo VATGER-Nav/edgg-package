@@ -12,14 +12,13 @@ ARTCC low boundary:Centerlines EDLN 31:
 Geo:EDZZ Landmark River Germany:
 NDBs:BOT:symbol
 NDBs:LMA:symbol
-Runways:EDLE 06-24:centerline
 VORs:BAM:symbol
 VORs:MHV:symbol
 SHOWC:1
 SHOWSB:0
 BELOW:180
 ABOVE:10000
-LEADER:3
+LEADER:-1
 SHOWLEADER:0
 TURNLEADER:0
 HISTORY_DOTS:0
