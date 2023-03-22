@@ -20,7 +20,7 @@ Settings	SettingsfileTAKEOFF	\EDGG\Settings\TWR\TWR_General.txt
 Settings	SettingsfileADCS	\EDGG\Settings\TWR\TWR_General.txt
 Settings	SettingsfileTAXIIN	\EDGG\Settings\TWR\TWR_General.txt
 
-Settings	sector	\EDGG-TEST_20230310124725-230201-0007.sct
+Settings	sector
 
 Settings	alias	\EDGG\Alias\alias.txt
 Settings	AtisFolder	\EDGG\ATIS\AtisFiles.txt
