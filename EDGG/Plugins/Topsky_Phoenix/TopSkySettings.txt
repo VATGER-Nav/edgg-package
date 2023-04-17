@@ -157,7 +157,7 @@ Color_SEP_Tool_5
 Color_SEP_Tool_6
 Color_SEP_Tool_7
 Color_SEP_Vert
-Color_Sid_Star_Allocation
+Color_Sid_Star_Allocation=0,255,0
 Color_Sid_Star_No_Allocation=255,170,0
 Color_SMW_Level_Band
 Color_SMW_Overflight
@@ -185,7 +185,7 @@ Color_VAW_Sector_Limits
 Color_VAW_Track_Position
 Color_VFR=55,156,255
 Color_Warning=255,204,0
-Color_Warning_FL=255,230,0
+Color_Warning_FL=255,204,0
 Color_Weather_Map=30,44,45
 Color_WM_Active_Fg=20,20,21
 Color_WM_Bg=88,95,99
@@ -215,6 +215,8 @@ HTTP_SIGMET_Pages=6443
 HTTP_SIGMET_Page_Suffix=.txt
 
 // Label Settings
+Label_Alt_Digits=3
+Label_ASP_Digits=3
 Label_Field18_Flag_Items=STS/,newbie,NEWBIE,Newbie,beginner,newbe
 Label_GS_Digits=2
 Label_SI_ShowFreq=1
@@ -223,6 +225,63 @@ Label_WTC_Highlight_WTC=LHJ
 Label_WTC_Highlight_ATYP=B752,B753
 
 Label_All_N=0
+
+Label_Co_SQ=0
+Label_Co_ATYP=0
+Label_Co_ATYPW=0
+Label_Co_ADES=0
+Label_Co_NRAC=0
+Label_Co_TSSR=0
+Label_Co_RFL=0
+Label_Co_FCOPX=0
+Label_Co_WTC=0
+Label_Co_GS=1
+Label_Co_COPN=0
+Label_Co_XFL=0
+Label_Co_AHDG=1
+Label_Co_ASP=1
+Label_Co_PEL=0
+
+Label_Ass_SQ=0
+Label_Ass_ATYP=0
+Label_Ass_ATYPW=0
+Label_Ass_ADES=0
+Label_Ass_NRAC=0
+Label_Ass_TSSR=0
+Label_Ass_RFL=0
+Label_Ass_FCOPX=0
+Label_Ass_WTC=0
+Label_Ass_GS=1
+Label_Ass_COPX=0
+Label_Ass_XFL=0
+Label_Ass_AHDG=1
+Label_Ass_ASP=1
+
+Label_Red_SQ=0
+Label_Red_ATYP=0
+Label_Red_ATYPW=0
+Label_Red_ADES=0
+Label_Red_NRAC=0
+Label_Red_TSSR=0
+Label_Red_RFL=0
+Label_Red_FCOPX=0
+Label_Red_WTC=0
+Label_Red_GS=1
+Label_Red_COPX=0
+Label_Red_XFL=0
+Label_Red_AHDG=1
+Label_Red_ASP=1
+
+Label_No_SQ=0
+Label_No_ATYP=0
+Label_No_ATYPW=0
+Label_No_ADES=0
+Label_No_NRAC=0
+Label_No_TSSR=0
+Label_No_RFL=0
+Label_No_FCOPX=0
+Label_No_WTC=0
+Label_No_GS=1
 
 Malrt_Misap=MAPP
 Malrt_Inbound_EST=EST
@@ -252,17 +311,17 @@ Shortcut_Map_Xfr_Key=2,0x44 ; D
 Shortcut_Map_Xfr_Key=3,0x47 ; G
 Shortcut_Map_Xfr_Key=4,0x48 ; H
 Shortcut_Map_Xfr_Key=5,0x56 ; V
-Shortcut_Map_Target=1,MVA\MVA Germany Winter
+Shortcut_Map_Target=1,MVA\MVA Germany Summer
 Shortcut_Map_Target=2,AIRSPACE C/D\AIRSPACE ALL
 Shortcut_Map_Target=3,Stands\Stands
-Shortcut_Map_Target=4,EDDF\VFR Hospital LABEL
-Shortcut_Map_Target=5,EDDF\VFR Points LABEL
+Shortcut_Map_Target=4,PHOENIX\VFR Hospital LABEL
+Shortcut_Map_Target=5,PHOENIX\VFR Points LABEL
 
 // Short Term Conflict Alert
 STCA=0
 
 System_TrueColorMode=1
-System_UseReportedGS=0
+System_UseReportedGS=1
 System_ASP_IasMach=30000
 System_MetarSourceVATSIM=1
 System_TaxiTime=10
@@ -306,14 +365,5 @@ WXR_Echo_dBZ_Lo=25
 Window_Ops_Caution=60
 Window_Ops_Warning=80
 
-[_CTR]
-
-[_APP]
-
-[_TWR]
-
-[_GND]
-
 [_DEL]
 Window_CPDLC_Current=1,1,600
-

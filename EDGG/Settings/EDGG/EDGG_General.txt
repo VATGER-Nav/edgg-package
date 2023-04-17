@@ -48,8 +48,8 @@ m_TransparentDetailedTagBackground:0
 m_TransparentDetailedTagSelectedItemBackground:1
 m_AllowDirectBeyondCOPX:0
 m_ShowAtisLetterInMETAR:1
-m_ShowCLAMWarnings:1
-m_ShowRAMWarning:1
+m_ShowCLAMWarnings:0
+m_ShowRAMWarning:0
 m_MagneticNorthUp:1
 m_ShowAForAltitudes:1
 m_Show500ForNonVisual:1
@@ -62,7 +62,7 @@ SET_WTC_A380:J
 m_RotateRouteTexts:1
 m_NeverCloseFreqChat:1
 m_KeepScratchPadAfterDirect:1
-m_HiliteASELAircraft:1
+m_HiliteASELAircraft:0
 m_EnableVoiceRecognition:0
 m_VoiceRecognitionStyle:2
 m_SModeTransponders:HLEGWQS
@@ -115,9 +115,9 @@ m_STCA_PlaySoundOnTrackedOnly:0
 m_AutoCorrelateDisabledSQs:1200,2000,2200,7000,7700,7600,7500
 m_DontAutoCorrelateDuplicated:0
 m_AcceptPilotSquawkForCorrelation:1
-m_MTCA_Floor:10000
-m_MTCA_AltitudeDifference:2000
-m_MTCA_Distance:20.0
+m_MTCA_Floor:0
+m_MTCA_AltitudeDifference:0
+m_MTCA_Distance:0.0
 m_UseIsectForScratchPad:1
 m_RotateRadarTargetSymbol:0
 m_RotateFlightPlanTrackSymbol:0

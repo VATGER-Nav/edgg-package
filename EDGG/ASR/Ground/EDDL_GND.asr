@@ -149,9 +149,8 @@ Free Text:EDDL Taxiway\T:freetext
 Free Text:EDDL Taxiway\T:freetext
 Free Text:EDDL Taxiway\T:freetext
 Free Text:EDDL Taxiway\T1:freetext
-Free Text:EDDL Taxiway\R (W):freetext
-Free Text:EDDL Taxiway\R (W):freetext
 Free Text:EDDL Taxiway\Y:freetext
+Geo:EDDL Groundlayout Checkpoints:
 Geo:EDDL Groundlayout Gates 2102:
 Geo:EDDL Groundlayout Stopbars:
 Geo:EDDL Groundlayout Taxilines 2102:

@@ -3,27 +3,15 @@ DisplayTypeNeedRadarContent:1
 DisplayTypeGeoReferenced:1
 SECTORFILE:
 SECTORTITLE:
-Airports:EDSE:symbol
-Airports:EDSH:symbol
-Airports:EDSO:symbol
-Airports:EDST:symbol
-Airports:EDSV:symbol
-Airports:EDTE:symbol
-Airports:EDTH:symbol
-Airports:EDTY:symbol
 ARTCC low boundary:Centerlines EDDS 07:
 ARTCC low boundary:Centerlines EDDS 25:
-ARTCC low boundary:Tower CTR EDDS:
 Geo:EDDS Landmark Rivers / Highway EDDS PRO:
 Regions:EDDS City:polygon
-Runways:EDDS 07-25:centerline
-VORs:LBU:symbol
-VORs:STG:symbol
 SHOWC:1
 SHOWSB:0
 BELOW:1280
 ABOVE:10000
-LEADER:3
+LEADER:-1
 SHOWLEADER:0
 TURNLEADER:0
 HISTORY_DOTS:0
@@ -32,5 +20,5 @@ DISABLEPANNING:0
 DISABLEZOOMING:0
 DisplayRotation:0.00000
 TAGFAMILY:Phoenix Tower
-WINDOWAREA:48.432483:8.503402:48.927255:9.960919
-PLUGIN:TopSky plugin:ShowMapData:EDDS
+WINDOWAREA:48.432483:8.497607:48.927255:9.966714
+PLUGIN:TopSky plugin:ShowMapData:EDDS,PHOENIX

@@ -3,26 +3,14 @@ DisplayTypeNeedRadarContent:1
 DisplayTypeGeoReferenced:1
 SECTORFILE:
 SECTORTITLE:
-Airports:EDEH:symbol
-Airports:EDEP:symbol
-Airports:EDFV:symbol
-Airports:EDFX:symbol
-Airports:EDGM:symbol
-Airports:EDGX:symbol
-Airports:EDGZ:symbol
-Airports:EDRF:symbol
-Airports:EDRL:symbol
-Airports:EDRY:symbol
 ARTCC low boundary:Centerlines EDFM 27:
-ARTCC low boundary:Tower CTR EDFM (HX):
 Geo:EDZZ Landmark Highway Germany:
 Geo:EDZZ Landmark River Germany:
-Runways:EDFM 09-27:centerline
 SHOWC:1
 SHOWSB:0
 BELOW:320
 ABOVE:10000
-LEADER:3
+LEADER:-1
 SHOWLEADER:0
 TURNLEADER:0
 HISTORY_DOTS:0
@@ -31,5 +19,5 @@ DISABLEPANNING:0
 DISABLEZOOMING:0
 DisplayRotation:0.00000
 TAGFAMILY:Phoenix Tower
-WINDOWAREA:49.353741:8.136563:49.614133:8.893189
-PLUGIN:TopSky plugin:ShowMapData:EDFM
+WINDOWAREA:49.353741:8.128290:49.614133:8.901462
+PLUGIN:TopSky plugin:ShowMapData:EDFM,PHOENIX
