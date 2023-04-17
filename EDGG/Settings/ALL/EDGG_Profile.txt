@@ -139,12 +139,12 @@ ATIS2:Rhein Radar - CPDLC [EDUN]
 ATIS3:Covering Rhein UIR +FL245 above southern Langen FIR
 ATIS4:You have feedback? Submit it! feedback.vatger.de
 
-PROFILE:EDYY_R_CTR:450:6
+PROFILE:EDYY_RHR_CTR:450:6
 ATIS2:Maastricht Radar RHR - CPDLC [EDYR]
 ATIS3:Covering Maastricht UIR +FL245 above northern Langen FIR
 ATIS4:You have feedback? Submit it! feedback.vatger.de
 
-PROFILE:EDYY_M_CTR:450:6
+PROFILE:EDYY_MUN_CTR:450:6
 ATIS2:Maastricht Radar MNS - CPDLC [EDYM]
 ATIS3:Covering Maastricht UIR +FL245 above northern Langen FIR
 ATIS4:You have feedback? Submit it! feedback.vatger.de

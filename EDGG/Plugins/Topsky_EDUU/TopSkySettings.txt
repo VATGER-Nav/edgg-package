@@ -336,6 +336,7 @@ STCA_WarningTime_L=60
 STCA_WarningTime_U_Imm=50
 STCA_WarningTime_L_Imm=50
 
+System_TransferConfirmation=0
 System_TrueColorMode=1
 System_UseReportedGS=1
 System_ASP_IasMach=28500

@@ -43,8 +43,8 @@ Color_Unknown=0,0,0
 Color_Redundant=0,0,0
 Color_Coordination=0,0,0
 
-Color_Active_Map=168,164,165
-Color_Active_Map_Type_1=168,164,165
+Color_Active_Map=200,200,200
+Color_Active_Map_Type_1=200,200,200
 Color_Active_Map_Type_2
 Color_Active_Map_Type_3
 Color_Active_Map_Type_4
@@ -67,8 +67,8 @@ Color_Active_Map_Type_20
 Color_Active_RD_Infill_Map
 Color_Active_RD_Map
 Color_Active_Sector=209,209,209
-Color_Active_Text_Map=134,134,135
-Color_AIW_Intrusion=255,142,0
+Color_Active_Text_Map=191,191,191
+Color_AIW_Intrusion=255,168,0
 Color_Arm
 Color_Background=195,195,185
 Color_Border
@@ -104,21 +104,23 @@ Color_Global_Menu_Highlight=0,125,255
 Color_Heading_Vector=0,102,0
 Color_Inactive_Sector=205,205,205
 Color_Info_Coord=34,139,34
-Color_Information=150,150,10
+Color_Information=200,185,120
 Color_Information_FL=80,80,80
 Color_Informed
 Color_Informed_2
 Color_Informed_3
-Color_Map_1=168,164,165
-Color_Map_2=168,164,165
-Color_Map_3=168,164,165
-Color_Map_4=168,164,165
-Color_Map_Auto_Label
-Color_Map_Auto_Symbol
+Color_Map_1=200,200,200
+Color_Map_2=200,200,200
+Color_Map_3=200,200,200
+Color_Map_4=200,200,200
+Color_Map_Auto_Label=200,200,200
+Color_Map_Auto_Symbol=200,200,200
 Color_Map_Border
 Color_Map_Bright
-Color_Map_Hotspot=168,164,165
+Color_Map_Hotspot=200,200,200
 Color_Map_Info=0,255,0
+Color_Map_Land
+Color_Map_Symbol
 Color_Overflown=0,255,0
 Color_Potential=255,130,71
 Color_Potential_FL=255,130,71
@@ -127,7 +129,7 @@ Color_Preactive_Text_Map=255,069,0
 Color_Predisplay_Map=255,069,0
 Color_Proposition_Accepted=34,139,34
 Color_Proposition_In=240,20,170
-Color_Proposition_Out=150,150,10
+Color_Proposition_Out=200,185,120
 Color_QDM=16,78,139
 Color_Radar_Win_Bg
 Color_Raw_Video1
@@ -138,14 +140,14 @@ Color_Raw_Video5
 Color_Raw_Video6
 Color_Raw_Video7
 Color_Runway=0,0,255
-Color_Rwy_App_Line_Inuse=168,164,165
+Color_Rwy_App_Line_Inuse=200,200,200
 Color_Rwy_App_Line_Not_Inuse=24,116,205
 Color_Rwy_Locked=34,139,34
 Color_Select=0,0,0
 Color_Selected
 Color_Selected_Group=255,255,254
 Color_Selected_Period
-Color_SEP_Tool_1=120,80,150
+Color_SEP_Tool_1=118,82,148
 Color_SEP_Tool_2
 Color_SEP_Tool_3
 Color_SEP_Tool_4
@@ -153,7 +155,7 @@ Color_SEP_Tool_5
 Color_SEP_Tool_6
 Color_SEP_Tool_7
 Color_SEP_Vert
-Color_Sid_Star_Allocation=150,150,10
+Color_Sid_Star_Allocation=200,185,120
 Color_Sid_Star_No_Allocation=255,125,0
 Color_SMW_Level_Band=0,255,0
 Color_SMW_Overflight
@@ -345,6 +347,7 @@ STCA_WarningTime_L=60
 STCA_WarningTime_U_Imm=50
 STCA_WarningTime_L_Imm=50
 
+System_TransferConfirmation=0
 System_TrueColorMode=1
 System_UseReportedGS=1
 System_ASP_IasMach=30000
@@ -403,7 +406,7 @@ WXR_Echo_dBZ_Lo=25
 
 Color_Assumed=0,0,0
 Color_Concerned=15,120,200
-Color_Unconcerned=200,125,170
+Color_Unconcerned=204,127,166
 Color_Unknown=239,224,42
 Color_Redundant=110,110,110
 Color_Coordination=15,120,200
@@ -411,7 +414,7 @@ Color_Coordination=15,120,200
 [_APP]
 Color_Assumed=0,0,0
 Color_Concerned=15,120,200
-Color_Unconcerned=200,125,170
+Color_Unconcerned=204,127,166
 Color_Unknown=239,224,42
 Color_Redundant=110,110,110
 Color_Coordination=15,120,200
@@ -427,7 +430,7 @@ RDF_Accuracy=3
 [_DEP]
 Color_Assumed=0,0,0
 Color_Concerned=15,120,200
-Color_Unconcerned=200,125,170
+Color_Unconcerned=204,127,166
 Color_Unknown=239,224,42
 Color_Redundant=110,110,110
 Color_Coordination=15,120,200
