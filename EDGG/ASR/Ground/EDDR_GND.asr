@@ -30,7 +30,7 @@ DISABLEZOOMING:0
 DisplayRotation:2.00000
 TAGFAMILY:Phoenix Ground
 WINDOWAREA:49.212056:7.093004:49.223760:7.127012
-PLUGIN:Ground Radar plugin:AirportElevation:409
+PLUGIN:Ground Radar plugin:AirportElevation:1058
 PLUGIN:Ground Radar plugin:AirportRadius:3
 PLUGIN:Ground Radar plugin:GroundMode:EDDR
 PLUGIN:Ground Radar plugin:ShowMapData:EDDR
