@@ -19,6 +19,7 @@ m_Column:AOBT:5:1:7:11:13:0:vACDM:vACDM:Ground Radar plugin:0:0.0
 m_Column:AORT:5:1:10:11:13:0:vACDM:vACDM:Ground Radar plugin:0:0.0
 m_Column:TTOT:5:1:4:0:0:0:vACDM:::0:0.0
 m_Column:EXOT:5:1:5:1:0:0:vACDM:vACDM::0:0.0
+m_Column:Event:5:1:11:0:0:1:vACDM:::0:0.0
 m_Column:STND:7:1:1:0:1:1:Ground Radar plugin::Ground Radar plugin:8:0.0
 m_Column:ATYP:7:1:78:2:32:1::TopSky plugin::8:3.8
 m_Column:ADES:5:1:17:7:1001:1:::TopSky plugin:7:3.8
