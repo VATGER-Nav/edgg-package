@@ -58,7 +58,7 @@ Plugins	Plugin2	\EDGG\Plugins\CCAMS.dll
 Plugins	Plugin2Display0	Ground Radar display
 Plugins	Plugin2Display1	Standard ES radar screen
 Plugins	Plugin3	\EDGG\Plugins\VCH.dll
-Plugins	Plugin4	\EDGG\Plugins\GRP\Phoenix\GRplugin.dll
+Plugins	Plugin4	\EDGG\Plugins\GRP\Apron\GRplugin.dll
 Plugins	Plugin4Display0	Ground Radar display
 Plugins	Plugin4Display1	Standard ES radar screen
 Plugins	Plugin5	\EDGG\Plugins\VFPC\VFPC.dll
