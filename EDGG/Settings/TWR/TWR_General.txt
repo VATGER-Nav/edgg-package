@@ -132,6 +132,7 @@ m_ConnectTime:15
 m_AutoAssumeOnGroundStateChangeButton:0
 m_ShowTrackMilesInRouteButton:1
 m_FilterOutSquawks:
+m_EquipmentsIcaoFormat:1
 ORIGPLANE
 m_Visible:0
 m_X:3
@@ -164,6 +165,7 @@ m_Column:SEQ:5:1:540:548:0:0:VCH:VCH::0:0.0
 m_Column:TTOT:5:1:4:0:0:1:vACDM:::0:0.0
 m_Column:DRWY:5:1:10050:19:19:1:TopSky plugin:::1:0.0
 m_Column:CALLSIGN:10:0:9:6:100:1::TopSky plugin:TopSky plugin:0:3.8
+m_Column:Event:5:1:11:0:0:1:vACDM:::0:0.0
 m_Column:ATYP:7:1:78:2:869:1::TopSky plugin:CCAMS:8:3.8
 m_Column:ADES:5:1:17:1001:7:1::TopSky plugin::7:3.8
 m_Column:SID:10:1:10011:17:17:1:TopSky plugin:::1:0.0
@@ -202,8 +204,8 @@ m_Column:ETA:5:1:10033:0:0:1:TopSky plugin:::0:0.0
 END
 TAXIIN
 m_Visible:0
-m_X:1424
-m_Y:48
+m_X:1371
+m_Y:443
 m_LineNumber:0
 m_Resizable:1
 m_OrderingColumn:1
@@ -211,4 +213,5 @@ m_HeaderOnly:0
 m_Column:CALLSIGN:10:0:22:6:100:1:TopSky plugin:TopSky plugin:TopSky plugin:0:0.0
 m_Column:STND:5:1:2:1:1:1:Ground Radar plugin:Ground Radar plugin:Ground Radar plugin:1:0.0
 m_Column:ATYP:7:1:70:2:0:1:TopSky plugin:TopSky plugin::1:0.0
+m_Column:Event:5:1:11:0:0:1:vACDM:::0:0.0
 END

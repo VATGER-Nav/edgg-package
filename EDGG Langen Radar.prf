@@ -58,6 +58,9 @@ Plugins	Plugin5	\EDGG\Plugins\DelHel\DelHel.dll
 Plugins	Plugin6	\EDGG\Plugins\VFPC\VFPC.dll
 Plugins	Plugin7	\EDGG\Plugins\IASsure\IASsure.dll
 Plugins	Plugin8	\EDGG\Plugins\Squawk\EDGG\Squawks.dll
+Plugins	Plugin9	\EDGG\Plugins\vACDM\vACDM.dll
+Plugins	Plugin9Display0	Ground Radar display
+Plugins	Plugin9Display1	Standard ES radar screen
 
 TeamSpeakVccs	TsVccsMiniControlX	1744
 TeamSpeakVccs	TsVccsMiniControlY	44

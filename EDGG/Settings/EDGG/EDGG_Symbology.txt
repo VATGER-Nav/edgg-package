@@ -63,8 +63,8 @@ Metar:modified:20985:3.5:0:0:7
 Metar:timeout:16777215:3.5:0:0:7
 Other:wait:16777215:3.5:0:0:7
 Other:distance line:8421504:3.5:0:0:7
-Other:distance values:65535:4.0:0:0:7
-Other:distance annotation:65535:3.5:0:0:7
+Other:distance values:0:4.0:0:0:7
+Other:distance annotation:0:3.5:0:0:7
 Other:separation leader:16777215:3.5:0:3:7
 Other:separation leader2:16777215:3.5:0:1:7
 Other:find:16777215:3.5:0:5:7

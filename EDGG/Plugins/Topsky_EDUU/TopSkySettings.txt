@@ -391,7 +391,7 @@ Shortcut_Map_Target=1,Langen EXTRA\EDFF SEP Guide Lower
 Shortcut_Map_Target=2,Langen EXTRA\EDFF SEP Guide Upper
 Shortcut_Map_Target=3,Rhein Radar\Langen Sectors
 
-[EDUU_]
+[_CTR]
 Color_Assumed=0,0,0
 Color_Concerned=15,120,200
 Color_Coordination=15,120,200

@@ -145,7 +145,7 @@ ATIS3:Covering Maastricht UIR +FL245 above northern Langen FIR
 ATIS4:You have feedback? Submit it! feedback.vatger.de
 
 PROFILE:EDYY_MUN_CTR:450:6
-ATIS2:Maastricht Radar MNS - CPDLC [EDYM]
+ATIS2:Maastricht Radar MUN - CPDLC [EDYM]
 ATIS3:Covering Maastricht UIR +FL245 above northern Langen FIR
 ATIS4:You have feedback? Submit it! feedback.vatger.de
 
