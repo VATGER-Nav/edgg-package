@@ -180,6 +180,10 @@ Airport_Runway_Closed_Dep=07L
 [EDDS]
 Airport_Runway_Buffer_LVP=25:200
 Airport_Runway_Buffer_LVP=07:200
+Window_APP=0,750,720,1100,200
+Window_APP_Scale=25
+Window_APP_Rotation=16.2
+Window_APP_AltFilter=10000
 
 [EDFH]
 Airport_Runway_Buffer_LVP=03:200
