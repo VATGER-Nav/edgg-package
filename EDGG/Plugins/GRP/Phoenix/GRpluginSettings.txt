@@ -5,7 +5,7 @@ RawVideo=1
 
 Track_Heading_Line=0
 Track_HistoryDots_GND=5
-Track_PredictionLine_APP=1
+Track_PredictionLine_APP=0
 Track_HistoryDots_APP=5
 
 Color_Arrival=248,248,255
