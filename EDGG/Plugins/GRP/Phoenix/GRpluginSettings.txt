@@ -1,4 +1,4 @@
-// last change: 28.11.2022 by HF
+// last change: 15.06.2023 by DD
 
 Equip_ProMode=0
 RawVideo=1
