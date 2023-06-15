@@ -5,7 +5,7 @@ RawVideo=1
 
 Track_Heading_Line=0
 Track_HistoryDots_GND=5
-Track_PredictionLine_APP=1
+Track_PredictionLine_APP=0
 Track_HistoryDots_APP=5
 
 Color_Arrival=248,248,255
@@ -15,7 +15,8 @@ Color_Unknown=120,120,120
 Color_Warning=255,165,0
 Color_WBackground=135,135,135
 Color_New_Stand=255,255,0
-Color_APP_Background=90,90,90
+Color_APP_Background=0,0,0
+Color_TSW2_Background=0,0,0
 
 GroundLabel_Filter_NoState=1
 GroundLabel_Filter_Parked=1
