@@ -2485,7 +2485,6 @@ TEXT:N050.01.32.563:E008.32.24.912:S27
 TEXT:N050.02.29.136:E008.33.34.736:N8-NEW
 ACTIVE:1
 
-
 // ##################################################################
 //                                 EDFH
 // ##################################################################
@@ -2820,11 +2819,31 @@ COORD:N051.17.07.690:E006.44.51.275
 COORD:N051.17.07.643:E006.44.51.602
 COORD:N051.17.08.074:E006.44.51.836
 
-
-
 // ##################################################################
 //                                 EDDK
 // ##################################################################
+
+// ******************* 2ND WINDOW *******************
+
+MAP:EDDK Groundlayout:2
+AIRPORT:EDDK
+ASRDATA:EDDK
+FOLDER:2nd Window
+SCTFILEDATA:REGIONS\EDDK GROUND ALTN
+SCTFILEDATA:GEO\EDDK Groundlayout Gates
+SCTFILEDATA:GEO\EDDK Groundlayout Taxilines
+ACTIVE:1
+
+MAP:EDDK Groundlayout DFS:2
+AIRPORT:EDDK
+ASRDATA:EDDK_DFS
+FOLDER:2nd Window
+SCTFILEDATA:REGIONS\EDDK DFS Groundlayout
+SCTFILEDATA:REGIONS\EDDK DFS Holdingpoints
+SCTFILEDATA:GEO\EDDK Groundlayout DFS Basic
+SCTFILEDATA:GEO\EDDK Groundlayout DFS Stands
+SCTFILEDATA:GEO\EDDK Groundlayout DFS Streets
+ACTIVE:1
 
 // ******************* REDUCED RUNWAY SEPERATION *******************
 MAP:14L
