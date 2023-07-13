@@ -14,7 +14,7 @@ Settings	SettingsfilePILOTING	\EDGG\Settings\ALL\Piloting.txt
 Settings	SettingsfileCONFLICT	\EDGG\Settings\ALL\ConflictListConfiguration.txt
 Settings	SettingsfileVCCS	\EDGG\Settings\ALL\VCCS_CTR.txt
 
-Settings	sector	
+Settings	sector	\EDGG-TEST_20230713172920-230701-0001.sct
 
 Settings	alias	\EDGG\Alias\alias.txt
 Settings	AtisFolder	\EDGG\ATIS\AtisFiles.txt
@@ -70,14 +70,11 @@ TeamSpeakVccs	Ts3DialogTop	0
 TeamSpeakVccs	Ts3DialogRight	890
 TeamSpeakVccs	Ts3DialogBottom	570
 
-RecentFiles	Recent1	\EDGG\ASR\Center\KTG.asr
+RecentFiles	Recent1	\EDGG\ASR\Center\EDGG.asr
 RecentFiles	Recent2	\EDGG\ASR\Arrival\EDDF_APP.asr
 RecentFiles	Recent3	\EDGG\ASR\Arrival\EDDL_APP.asr
 RecentFiles	Recent4	\EDGG\ASR\Arrival\EDDS_APP.asr
 RecentFiles	Recent5	\EDGG\ASR\Arrival\EDDK_APP.asr
-RecentFiles	Recent6	\EDGG\ASR\Center\PADH.asr
-RecentFiles	Recent7	\EDGG\ASR\Center\PADL_HMM.asr
-RecentFiles	Recent8	\EDGG\ASR\Center\EIF_PFA.asr
 
 LastSession	atis_url0	http://uniatis.net/atis.php?metar=$metar($atisairportA)&arr=$arrrwy($atisairportA)&dep=$deprwy($atisairportA)&apptype=ILS&info=$atiscodeA&depfreq=122.800
 LastSession	atis_url1	http://uniatis.net/atis.php?metar=$metar($atisairportB)&arr=$arrrwy($atisairportB)&dep=$deprwy($atisairportB)&apptype=ILS&info=$atiscodeB&depfreq=122.800

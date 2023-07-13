@@ -25,5 +25,5 @@ WINDOWAREA:50.846777:7.078704:50.887143:7.197616
 PLUGIN:Ground Radar plugin:AirportElevation:302
 PLUGIN:Ground Radar plugin:AirportRadius:3
 PLUGIN:Ground Radar plugin:GroundMode:EDDK
-PLUGIN:Ground Radar plugin:ShowMapData:EDDK,EDDK_DFS
+PLUGIN:Ground Radar plugin:ShowMapData:EDDK_DFS
 PLUGIN:TopSky plugin:ShowMapData:EDDK_DFS
