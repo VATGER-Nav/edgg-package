@@ -4,7 +4,7 @@ on:
   push:
     branches:
       - 'split-maps'
-permissions: read-all|write-all
+permissions: write-all
 jobs:
   build-maps:
     runs-on: ubuntu-latest
