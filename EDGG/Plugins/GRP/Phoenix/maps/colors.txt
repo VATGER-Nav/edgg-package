@@ -1,0 +1,17 @@
+// ******************* C O L O R *******************
+COLORDEF:blue:0:196:255
+COLORDEF:red:162:0:0
+COLORDEF:darkred:200:0:0
+COLORDEF:yellow:249:224:0
+COLORDEF:cgnyellow:255:242:119
+COLORDEF:green:14:166:0
+COLORDEF:magenta:166:0:61
+COLORDEF:black:0:0:0
+COLORDEF:greyblue:143:197:199
+COLORDEF:white:255:255:255
+COLORDEF:grey:80:80:80
+COLORDEF:apronorange:249:153:106
+COLORDEF:dfsgrey:134:134:135
+COLORDEF:orange:176:88:21
+COLORDEF:darkblue:5:21:181
+COLORDEF:lightblue:0:230:255

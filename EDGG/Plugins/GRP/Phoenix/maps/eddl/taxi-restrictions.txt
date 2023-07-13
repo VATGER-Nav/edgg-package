@@ -1,0 +1,15 @@
+// ******************* Taxi Restrictions ******************* 
+
+MAP:Taxi Restrictions
+AIRPORT:EDDL
+STYLE:Solid:2
+FOLDER:Restriction Maps
+COLOR:darkred
+ASRDATA:EDDL,EDDL_DFS
+FONTSIZE:=:14
+FONTSTYLE:700:0:0:0
+TEXT:N051.17.10.663:E006.45.58.305:TWY L5 as exit max A310/B757 allowed (up 43m wingspan)
+TEXT:N051.16.57.783:E006.45.35.812:TWY L6,L7 are no rapid exit taxiways
+TEXT:N051.17.01.416:E006.46.03.998:P1 and L5 parallel Taxi: If B744/B777/A350 on either, max 60.5m wingspan on the other (A330/A343)
+TEXT:N051.16.49.969:E006.45.31.944:Between TWY P1 and L9 parallel taxi with A380 on M, max A310/B757 on T and T1 allowed (up to 43m wingspan)
+TEXT:N051.16.55.239:E006.46.05.337:Gate A05 from TWY P1 only for aircraft max Code D
