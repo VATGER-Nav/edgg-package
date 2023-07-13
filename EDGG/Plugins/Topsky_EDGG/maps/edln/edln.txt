@@ -1,0 +1,23 @@
+//---------------------------------------------------------------
+//                          EDLN
+//---------------------------------------------------------------
+
+MAP:EDLN RNP 13
+FOLDER:EDLL Minor
+STYLE:Solid:1
+FONTSIZE:=:11
+COLOR:DFSGrey
+ACTIVE:RWY:ARR:EDLN13:DEP:*
+SYMBOL:FIX3_BIG:LN401:LN401:25:-5
+SYMBOL:FIX3_BIG:LN400:LN400:25:-5
+SYMBOL:FIX3_BIG:SUVIG:SUVIG:25:-5
+
+MAP:EDLN RNP 31
+FOLDER:EDLL Minor
+STYLE:Solid:1
+FONTSIZE:=:11
+COLOR:DFSGrey
+ACTIVE:RWY:ARR:EDLN31:DEP:*
+SYMBOL:FIX3_BIG:LN604:LN601:25:-5
+SYMBOL:FIX3_BIG:LN600:LN600:25:-5
+SYMBOL:FIX3_BIG:GREKA:GREKA:25:-5
