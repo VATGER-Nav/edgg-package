@@ -158,7 +158,7 @@
          "MODRU": [
             {
                "direction": "ANY",
-			      "forbidden_fls": 250,
+			   "forbidden_fls": 250,
                "min_fl": 210
             }
          ],
@@ -189,7 +189,7 @@
          "SONEB": [
             {
                "direction": "ANY",
-			      "forbidden_fls": 250,
+			   "forbidden_fls": 250,
                "min_fl": 140
             }
          ]
@@ -206,7 +206,10 @@
          "ABTAL": [
             {
                "direction": "ANY",
-			      "forbidden_fls": 250
+			   "forbidden_fls": 250,
+			   "airways": [
+                  "L173"
+               ]
             }
          ],
          "DKB": [
@@ -216,12 +219,12 @@
 			      "destinations": [
                   "EDDN",
                   "EDTY",
-				      "EDQ"
+				  "EDQ"
                ]
             },
             {
                "direction": "ANY",
-			      "forbidden_fls": 250,
+			   "forbidden_fls": 250,
                "airways": [
                   "N869"
                ]
@@ -234,8 +237,11 @@
 			      "destinations": [
                   "EDDF",
                   "EDFC",
-				      "ETOU",
-				      "EDFE"
+				  "ETOU",
+				  "EDFE"
+               ],
+			   "airways": [
+                  "T163"
                ]
 			}
          ],
@@ -254,74 +260,94 @@
 			      "destinations": [
                   "EDDR",
                   "EDRZ",
-				      "EDSB",
-				      "ETAR"
+				  "EDSB",
+				  "ETAR"
                ]
             }
          ],
          "KUNOD": [
             {
                "direction": "ANY",
-			      "forbidden_fls": 250
+			      "forbidden_fls": 250,
+				  "airways": [
+                  "Y326"
+               ]
             }
          ],
          "OKIBA": [
             {
                "direction": "ANY",
-               "min_fl": 200
+               "min_fl": 200,
+			   "airways": [
+                  "N851"
+               ]
             }
          ],
          "ROTWE": [
 			   {
                "direction": "ANY",
-			      "forbidden_fls": 250
+			   "forbidden_fls": 250,
+			   "engine": "J",
+			   "airways": [
+                  "N850"
+               ]
+            },
+			   {
+               "direction": "ANY",
+			   "forbidden_fls": 250
             }
          ],
          "STG": [
             {
                "direction": "ANY",
-			      "destinations": [
-				      "EDDS"
+			   "destinations": [
+			      "EDDS"
                ]
             }
          ],
          "SUL": [
             {
                "direction": "ANY",
-			      "forbidden_fls": 250,
-			      "engine": "J",
-			      "destinations": [
+			   "forbidden_fls": 250,
+			   "engine": "J",
+			   "destinations": [
                   "EDTL",
                   "EDNY",
-				      "LSZH",
-				      "LSZR"
+			      "LSZH",
+			      "LSZR"
                ]
             },
 			   {  
                "direction": "ANY",
-			      "forbidden_fls": 250,
-			      "engine": "T"
+			   "forbidden_fls": 250,
+			   "engine": "T"
 			   }
          ],
          "TAGIK": [
             {
                "direction": "ANY",
-               "max_fl": 240
+               "max_fl": 240,
+			   "airways": [
+                  "Z3"
+               ]
             }
          ],
          "TEDGO": [
             {
                "direction": "ANY",
-			      "destinations": [
-				      "EDDS",
-				      "ETHL"
+			   "destinations": [
+				   "EDDS",
+				   "ETHL"
                ]
             }
          ],
          "VESID": [
             {
                "direction": "ANY",
-			      "forbidden_fls": 250
+			   "forbidden_fls": 250,
+			   "airways": [
+                  "Y127"
+               ]
             }
          ]
 		}

@@ -19,8 +19,8 @@ m_Column:ADEP:5:1:61:7:1001:0:::TopSky plugin:7:0.0
 m_Column:ADES:5:1:17:7:1001:1:::TopSky plugin:7:3.8
 m_Column:DRWY:5:1:10050:19:89:1:TopSky plugin::TopSky plugin:7:0.0
 m_Column:SID:7:1:10011:17:17:1:TopSky plugin:::0:0.0
-m_Column:CLMB:5:1:10049:12:11:1:TopSky plugin:TopSky plugin::8:0.0
-m_Column:RFL:5:1:10006:59:30:1:TopSky plugin:TopSky plugin::8:3.8
+m_Column:CLMB:5:1:43:12:11:1::TopSky plugin::8:0.0
+m_Column:RFL:5:1:22:59:30:1::TopSky plugin::8:3.8
 m_Column:FPC:5:1:1:100:0:0:VFPC:VFPC::0:0.0
 m_Column:DEL:5:1:1:101:102:0:DelHel:DelHel:DelHel:0:0.0
 m_Column:aSSR:5:1:10042:871:869:1:TopSky plugin:CCAMS:CCAMS:0:0.0
