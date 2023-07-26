@@ -11,4 +11,5 @@ for output, inputs in data.items():
             with open(inp, 'r') as inp_file:
                 lines += inp_file.readlines()
                 lines += '\n'
+                lines += '\n'
         file.writelines(lines)
