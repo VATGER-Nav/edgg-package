@@ -1,0 +1,20 @@
+//---------------------------------------------------------------
+//                             COLORS
+//---------------------------------------------------------------
+
+COLORDEF:Holding_CTR:16:78:139
+COLORDEF:Holding_APP:0:100:0
+
+COLORDEF:yellow:140:140:0
+COLORDEF:grey:134:134:135
+COLORDEF:greysector:128:128:128 //not used
+COLORDEF:caution:255:255:0 //not used
+COLORDEF:black:0:0:0 //not used
+COLORDEF:red:128:0:0
+COLORDEF:blue:0:145:255
+COLORDEF:lightblue:0:175:157
+COLORDEF:white:255:255:255
+COLORDEF:green:0:140:29
+COLORDEF:darkgreen:12:89:25
+COLORDEF:DFSGrey:200:200:200
+COLORDEF:training:170:170:170
