@@ -2,6 +2,13 @@
 //                          EDDK
 //---------------------------------------------------------------
 
+MAP:EDDK Base
+FOLDER:EDDK
+COLOR:DFSGrey
+ACTIVE:1
+ASRDATA:DKA
+LINE:N051.16.55.000:E006.45.18.000:N051.02.07.000:E006.14.37.000
+
 MAP:EDDK TRANS 14
 FOLDER:EDDK
 FONTSIZE:=:11
