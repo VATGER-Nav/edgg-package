@@ -70,11 +70,13 @@ TeamSpeakVccs	Ts3DialogTop	0
 TeamSpeakVccs	Ts3DialogRight	890
 TeamSpeakVccs	Ts3DialogBottom	570
 
-RecentFiles	Recent1	\EDGG\ASR\Center\EDGG.asr
-RecentFiles	Recent2	\EDGG\ASR\Arrival\EDDF_APP.asr
-RecentFiles	Recent3	\EDGG\ASR\Arrival\EDDL_APP.asr
-RecentFiles	Recent4	\EDGG\ASR\Arrival\EDDS_APP.asr
-RecentFiles	Recent5	\EDGG\ASR\Arrival\EDDK_APP.asr
+RecentFiles	Recent1	\EDGG\ASR\Center\KTG.asr
+RecentFiles	Recent2	\EDGG\ASR\Center\PADH.asr
+RecentFiles	Recent3	\EDGG\ASR\Arrival\EDDF_APP.asr
+RecentFiles	Recent4	\EDGG\ASR\Arrival\EDDL_APP.asr
+RecentFiles	Recent5	\EDGG\ASR\Arrival\EDDS_APP.asr
+RecentFiles	Recent6	\EDGG\ASR\Arrival\EDDK_APP.asr
+RecentFiles	Recent7	\EDGG\ASR\Center\EDGG.asr
 
 LastSession	atis_url0	http://uniatis.net/atis.php?metar=$metar($atisairportA)&arr=$arrrwy($atisairportA)&dep=$deprwy($atisairportA)&apptype=ILS&info=$atiscodeA&depfreq=122.800
 LastSession	atis_url1	http://uniatis.net/atis.php?metar=$metar($atisairportB)&arr=$arrrwy($atisairportB)&dep=$deprwy($atisairportB)&apptype=ILS&info=$atiscodeB&depfreq=122.800
