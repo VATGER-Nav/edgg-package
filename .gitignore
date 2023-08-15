@@ -1,0 +1,11 @@
+# the following excludes allow to copy all relevant data into the repository. This allows to make this repository into a working sectorfile to run Euroscope on without the risk of uploading copyrighted material
+*.ese
+*.rwy
+*.sct
+aeronav_copyright.txt
+VoiceChannels.txt
+ICAO_Aircraft.txt
+ICAO_Airports.txt
+ICAO_Airlines.txt
+EDGG/NavData/*
+
