@@ -93,19 +93,27 @@
     ".github/workflows/source/topsky_edgg_maps/minor-airports/edsb.txt",
     ".github/workflows/source/topsky_edgg_maps/minor-airports/edtl.txt",
     ".github/workflows/source/topsky_edgg_maps/minor-airports/edty.txt",
-
+    ".github/workflows/source/topsky_edgg_maps/minor-airports/edlp.txt",
+    ".github/workflows/source/topsky_edgg_maps/minor-airports/edlv.txt",
+    ".github/workflows/source/topsky_edgg_maps/minor-airports/edlw.txt",
+    ".github/workflows/source/topsky_edgg_maps/minor-airports/eddg.txt",
     ".github/workflows/source/topsky_edgg_maps/military-airports/military-airports.txt",
     ".github/workflows/source/topsky_edgg_maps/military-airports/etar.txt",
     ".github/workflows/source/topsky_edgg_maps/military-airports/etad.txt",
 
-    ".github/workflows/source/topsky_edgg_maps/eddf/eddf.txt",
-    ".github/workflows/source/topsky_edgg_maps/edds/edds.txt",
+    ".github/workflows/source/topsky_edgg_maps/eddf/base.txt",
+    ".github/workflows/source/topsky_edgg_maps/eddf/rnp.txt",
+    ".github/workflows/source/topsky_edgg_maps/eddf/sectors.txt",
+    ".github/workflows/source/topsky_edgg_maps/eddf/transition.txt",
+
+    ".github/workflows/source/topsky_edgg_maps/edds/base.txt",
+    ".github/workflows/source/topsky_edgg_maps/edds/transition.txt",
+
     ".github/workflows/source/topsky_edgg_maps/eddl/eddl.txt",
-    ".github/workflows/source/topsky_edgg_maps/eddg/eddg.txt",
-    ".github/workflows/source/topsky_edgg_maps/eddk/eddk.txt",
-    ".github/workflows/source/topsky_edgg_maps/edlp/edlp.txt",
-    ".github/workflows/source/topsky_edgg_maps/edlv/edlv.txt",
-    ".github/workflows/source/topsky_edgg_maps/edlw/edlw.txt",
+    ".github/workflows/source/topsky_edgg_maps/eddl/transition.txt",
+
+    ".github/workflows/source/topsky_edgg_maps/eddk/extra.txt",
+    ".github/workflows/source/topsky_edgg_maps/eddk/transition.txt",
 
     ".github/workflows/source/topsky_edgg_maps/airspace-c-d.txt",
     ".github/workflows/source/topsky_edgg_maps/mva.txt",
