@@ -2250,7 +2250,7 @@ FOLDER:Sector Auto
 COLOR:DFSGrey
 ASRDATA:LANGEN,EDDS_APP
 ACTIVE:1
-#import
+
 
 MAP:Langen Sectors
 FOLDER:Sector Auto
@@ -2258,7 +2258,7 @@ ACTIVE:1
 ASRDATA:LANGEN,EIF_PFA,LANGEN_LL
 COLOR:DFSGrey
 STYLE:Solid:1
-#import .github\workflows\source\data\sectors\langen\other.txt
+
 
 MAP:Langen Neighbours
 FOLDER:Sector Auto
@@ -2266,7 +2266,7 @@ ACTIVE:1
 ASRDATA:LANGEN,EIF_PFA,LANGEN_LL
 COLOR:DFSGrey
 STYLE:Solid:1
-#import .github\workflows\source\data\airspaces\sectors\neighbour\all.txt
+
 
 MAP:EDDS Sectors
 FOLDER:Sector Auto
@@ -2559,7 +2559,7 @@ ACTIVE:ID:*:*:DLD,DLAT:*
 ASRDATA:LANGEN,LANGEN_LL
 COLOR:DFSGrey
 STYLE:Solid:1
-#import
+
 
 MAP:Noervenich Sektor
 FOLDER:Sector Auto
@@ -2568,7 +2568,7 @@ ACTIVE:ID:*:*:NOR,DKAT:*
 ASRDATA:LANGEN,LANGEN_LL
 COLOR:DFSGrey
 STYLE:Solid:1
-#import .github\workflows\source\data\sectors\langen\nor.txt
+
 
 MAP:EDDF AOR
 FOLDER:Sector Auto
@@ -2644,11 +2644,9 @@ ASRDATA:EDDS_APP
 COLOR:DFSGrey
 STYLE:DashDot:1
 // EDDS
-#import .github\workflows\source\data\airspaces\ctr\edds.txt
 // EDSB
-#import .github\workflows\source\data\airspaces\ctr\edsb.txt
 // EDTL D(HX)
-#import .github\workflows\source\data\airspaces\ctr\edtl.txt
+
 
 MAP:LL TWR-CTR
 FOLDER:Sector Auto
@@ -2657,120 +2655,99 @@ ASRDATA:LANGEN_LL
 COLOR:DFSGrey
 STYLE:DashDot:1
 //EDLW
-#import .github\workflows\source\data\airspaces\ctr\edlw.txt
 //EDDL
-#import .github\workflows\source\data\airspaces\ctr\eddl.txt
 //EDDK
-#import .github\workflows\source\data\airspaces\ctr\eddk.txt
 //EDLN
-#import .github\workflows\source\data\airspaces\ctr\edln.txt
 //EDDG
-#import .github\workflows\source\data\airspaces\ctr\eddg.txt
 //EDLV
-#import .github\workflows\source\data\airspaces\ctr\edlv.txt
 //ETNN
-#import .github\workflows\source\data\airspaces\ctr\etnn.txt
 //EDLP
-#import .github\workflows\source\data\airspaces\ctr\edlp.txt
 //ETNG
-#import .github\workflows\source\data\airspaces\ctr\etng.txt
+
 
 MAP:Upper Borders
 FOLDER:Sector -EXTRA-
 COLOR:green
 LAYER:2
 STYLE:Solid:1
-#import .github\workflows\source\data\sectors\rhein\all.txt
+
 
 MAP:-- ALL TWR-CTR --
 FOLDER:Sector -EXTRA-
 STYLE:DashDot:1
 COLOR:DFSGrey
-#import .github\workflows\source\data\airspaces\ctr\
+
 
 MAP:EDDF D-CTR
 FOLDER:Sector -EXTRA-
 STYLE:DashDot:1
 COLOR:DFSGrey
-#import .github\workflows\source\data\airspaces\ctr\eddf.txt
 
 MAP:EDFE ATZ
 FOLDER:Sector -EXTRA-
 STYLE:DashDot:1
 COLOR:DFSGrey
-#import .github\workflows\source\data\airspaces\ctr\edfe.txt
 
 MAP:EDSB D-CTR
 FOLDER:Sector -EXTRA-
 STYLE:DashDot:1
 COLOR:DFSGrey
-#import .github\workflows\source\data\airspaces\ctr\edsb.txt
 
 MAP:EDDR D(HX)
 FOLDER:Sector -EXTRA-
 STYLE:DashDot:1
 COLOR:DFSGrey
-#import .github\workflows\source\data\airspaces\ctr\eddr.txt
 
 MAP:EDDS D-CTR
 FOLDER:Sector -EXTRA-
 STYLE:DashDot:1
 COLOR:DFSGrey
-#import .github\workflows\source\data\airspaces\ctr\edds.txt
 
 MAP:EDFH D-CTR
 FOLDER:Sector -EXTRA-
 STYLE:DashDot:1
 COLOR:DFSGrey
-#import .github\workflows\source\data\airspaces\ctr\edfh.txt
 
 MAP:EDFM D(HX)
 FOLDER:Sector -EXTRA-
 STYLE:DashDot:1
 COLOR:DFSGrey
-#import .github\workflows\source\data\airspaces\ctr\edfm.txt
 
 MAP:EDTL D(HX)
 FOLDER:Sector -EXTRA-
 STYLE:DashDot:1
 COLOR:DFSGrey
-#import .github\workflows\source\data\airspaces\ctr\edtl.txt
 
 MAP:EDTO D(HX)
 FOLDER:Sector -EXTRA-
 STYLE:DashDot:1
 COLOR:DFSGrey
-#import .github\workflows\source\data\airspaces\ctr\edto.txt
 
 MAP:ETAR D-CTR
 FOLDER:Sector -EXTRA-
 STYLE:DashDot:1
 COLOR:DFSGrey
-#import .github\workflows\source\data\airspaces\ctr\etar.txt
 
 MAP:ETHF D(HX)
 FOLDER:Sector -EXTRA-
 STYLE:DashDot:1
 COLOR:DFSGrey
-#import .github\workflows\source\data\airspaces\ctr\ethf.txt
 
 MAP:ETHN D(HX)
 FOLDER:Sector -EXTRA-
 STYLE:DashDot:1
 COLOR:DFSGrey
-#import .github\workflows\source\data\airspaces\ctr\ethn.txt
 
 MAP:ETOU D(HX)
 FOLDER:Sector -EXTRA-
 STYLE:DashDot:1
 COLOR:DFSGrey
-#import .github\workflows\source\data\airspaces\ctr\etou.txt
 
 MAP:ETSB D(HX)
 FOLDER:Sector -EXTRA-
 STYLE:DashDot:1
 COLOR:DFSGrey
-#import .github\workflows\source\data\airspaces\ctr\etsb.txt
+
 
 //---------------------------------------------------------------
 //                       MINOR AIRPORTS
@@ -2846,10 +2823,8 @@ ACTIVE:RWY:ARR:*:DEP:EDFH21
 ACTIVE:RWY:ARR:*:DEP:EDFH03
 // TMZ
 STYLE:Dash:1
-#import .github\workflows\source\data\airspaces\classes\edfh_tmz.txt
 // D-Airspace
 STYLE:Solid:1
-#import .github\workflows\source\data\airspaces\classes\edfh_d.txt
 // ECL 03
 LINE:N049.55.24.851:E007.14.19.836:N049.54.35.702:E007.13.30.673
 LINE:N049.53.14.611:E007.11.17.239:N049.53.31.818:E007.10.42.132
@@ -3769,14 +3744,12 @@ COLOR:DFSGrey
 ASRDATA:LANGEN_LL
 LAYER:-2
 ACTIVE:1
-#import .github\workflows\source\data\airspaces\classes\eddg_d.txt
 
 MAP:EDDG TMZ
 FOLDER:EDDG
 COLOR:DFSGrey
 ASRDATA:LANGEN_LL
 ACTIVE:1
-#import .github\workflows\source\data\airspaces\classes\eddg_tmz.txt
 
 MAP:TWR-CTR EDDG
 FOLDER:Sector Auto
@@ -3788,7 +3761,6 @@ ACTIVE:RWY:ARR:EDDG25:DEP:*
 ACTIVE:RWY:ARR:EDDG07:DEP:*
 ACTIVE:RWY:ARR:*:DEP:EDDG25
 ACTIVE:RWY:ARR:*:DEP:EDDG07
-#import .github\workflows\source\data\airspaces\ctr\eddg.txt
 
 MAP:EDDG RNAV 07
 FOLDER:EDDG
@@ -4919,7 +4891,6 @@ ACTIVE:RWY:ARR:*:DEP:EDDL23R
 ACTIVE:RWY:ARR:*:DEP:EDDL23L
 ACTIVE:RWY:ARR:*:DEP:EDDL05R
 ACTIVE:RWY:ARR:*:DEP:EDDL05L
-#import .github\workflows\source\data\airspaces\ctr\eddl.txt
 
 
 MAP:EDDL TRANS 05
@@ -5012,7 +4983,6 @@ ACTIVE:RWY:ARR:*:DEP:EDDK32R
 ACTIVE:RWY:ARR:*:DEP:EDDK32L
 ACTIVE:RWY:ARR:*:DEP:EDDK06
 ACTIVE:RWY:ARR:*:DEP:EDDK24
-#import .github\workflows\source\data\airspaces\ctr\eddk.txt
 
 MAP:EDDK Noise 14L
 FOLDER:EDDK
@@ -5282,7 +5252,6 @@ ACTIVE:RWY:ARR:*:DEP:EDDF25C
 ACTIVE:RWY:ARR:*:DEP:EDDF07R
 ACTIVE:RWY:ARR:*:DEP:EDDF07L
 ACTIVE:RWY:ARR:*:DEP:EDDF07C
-#import
 
 MAP:ASPC EDDL EDDK
 FOLDER:AIRSPACE C/D
@@ -5309,7 +5278,6 @@ ACTIVE:RWY:ARR:*:DEP:EDDK32R
 ACTIVE:RWY:ARR:*:DEP:EDDK32L
 ACTIVE:RWY:ARR:*:DEP:EDDK06
 ACTIVE:RWY:ARR:*:DEP:EDDK24
-#import
 
 // EDDS Airspace C not displayed, not needed
 MAP:ASPD EDDS
@@ -5322,12 +5290,11 @@ ACTIVE:RWY:ARR:EDDS25:DEP:*
 ACTIVE:RWY:ARR:EDDS07:DEP:*
 ACTIVE:RWY:ARR:*:DEP:EDDS25
 ACTIVE:RWY:ARR:*:DEP:EDDS07
-#import
 
 MAP:AIRSPACE ALL
 FOLDER:AIRSPACE C/D
 COLOR:lightblue
-#import
+
 
 //---------------------------------------------------------------
 //                            MVA
@@ -5338,13 +5305,12 @@ MAP:MVA Germany Summer
 FOLDER:MVA
 COLOR:green
 STYLE:Solid:1
-#import 
 
 MAP:MVA Germany Winter
 FOLDER:MVA
 COLOR:green
 STYLE:Solid:1
-#import 
+
 
 MAP:Enroute
 FOLDER:Holding

@@ -49,7 +49,7 @@ MAP:Upper sectors
 FOLDER:Sector
 COLOR:DFSGrey
 ACTIVE:1
-#import .github\workflows\source\data\sectors\rhein\
+
 
 MAP:UPPER (LVL)
 FOLDER:Sector
@@ -73,7 +73,7 @@ MAP:Langen Sectors
 FOLDER:Rhein Radar
 COLOR:DFSGrey
 STYLE:DashDot:1
-#import .github\workflows\source\data\sectors\langen\
+
 
 MAP:Fixes Upper
 FOLDER:Rhein Radar
