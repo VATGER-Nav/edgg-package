@@ -59,7 +59,7 @@
     ".github/workflows/source/topsky_edgg_maps/symbols.txt",
     ".github/workflows/source/topsky_edgg_maps/langen-radar/langen-radar.txt",
     ".github/workflows/source/topsky_edgg_maps/langen-radar/fixes.txt",
-    ".github/workflows/source/topsky_edgg_maps/langen-radar/points.txt",
+    ".github/workflows/source/topsky_edgg_maps/langen-radar/tma-points.txt",
     ".github/workflows/source/topsky_edgg_maps/langen-radar/navaids.txt",
     ".github/workflows/source/topsky_edgg_maps/langen-radar/edll-airports.txt",
     ".github/workflows/source/topsky_edgg_maps/langen-radar/minor-rwy.txt",
