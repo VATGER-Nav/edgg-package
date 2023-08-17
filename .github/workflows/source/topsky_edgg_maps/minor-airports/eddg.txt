@@ -1,0 +1,48 @@
+//---------------------------------------------------------------
+//                          EDDG
+//---------------------------------------------------------------
+
+MAP:EDDG D-Airspace
+FOLDER:EDDG
+COLOR:DFSGrey
+ASRDATA:LANGEN_LL
+LAYER:-2
+ACTIVE:1
+#import .github\workflows\source\data\airspaces\classes\eddg_d.txt
+
+MAP:EDDG TMZ
+FOLDER:EDDG
+COLOR:DFSGrey
+ASRDATA:LANGEN_LL
+ACTIVE:1
+#import .github\workflows\source\data\airspaces\classes\eddg_tmz.txt
+
+MAP:TWR-CTR EDDG
+FOLDER:Sector Auto
+ASRDATA:LANGEN_LL
+COLOR:DFSGrey
+STYLE:DashDot:1
+//EDDG
+ACTIVE:RWY:ARR:EDDG25:DEP:*
+ACTIVE:RWY:ARR:EDDG07:DEP:*
+ACTIVE:RWY:ARR:*:DEP:EDDG25
+ACTIVE:RWY:ARR:*:DEP:EDDG07
+#import .github\workflows\source\data\airspaces\ctr\eddg.txt
+
+MAP:EDDG RNAV 07
+FOLDER:EDDG
+COLOR:DFSGrey
+ACTIVE:RWY:ARR:EDDG07:DEP:*
+SYMBOL:FIX3_BIG:KEMOT:KEMOT:25:-5
+SYMBOL:FIX3_BIG:DG012:012:18:-5
+SYMBOL:FIX3_BIG:DG011:011:18:-5
+SYMBOL:FIX3_BIG:DG010:010:18:-5
+
+MAP:EDDG RNAV 25
+FOLDER:EDDG
+COLOR:DFSGrey
+ACTIVE:RWY:ARR:EDDG25:DEP:*
+SYMBOL:FIX3_BIG:IBATO:IBATO:25:-5
+SYMBOL:FIX3_BIG:DG016:016:18:-5
+SYMBOL:FIX3_BIG:DG015:015:18:-5
+SYMBOL:FIX3_BIG:DG014:014:18:-5

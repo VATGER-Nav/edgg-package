@@ -1,0 +1,14 @@
+MAP:HEUSE AREA
+FOLDER:Langen Auto
+COLOR:DFSGrey
+STYLE:Solid:1
+ASRDATA:LANGEN,EDDS_APP
+ACTIVE:1
+#import .github\workflows\source\data\loa_areas\heuse_area.txt
+
+MAP:SULZ AREA
+FOLDER:Langen Auto
+COLOR:DFSGrey
+ASRDATA:LANGEN,EDDS_APP
+ACTIVE:1
+#import .github\workflows\source\data\loa_areas\sulz_area.txt
