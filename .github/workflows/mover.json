@@ -50,8 +50,8 @@
     ".github/workflows/source/topsky_eduu_maps/langen-sectors.txt",
     ".github/workflows/source/topsky_eduu_maps/fixes-upper.txt",
     ".github/workflows/source/topsky_eduu_maps/edff-sep-guides.txt",
-    ".github/workflows/source/topsky_eduu_maps/holding-enroute.txt",
-    ".github/workflows/source/topsky_eduu_maps/holding-arrival.txt"
+    ".github/workflows/source/data/navdata/holding-enroute.txt",
+    ".github/workflows/source/data/navdata/holding-arrival.txt"
   ],
 
   "EDGG/Plugins/Topsky_EDGG/TopSkyMaps.txt": [
@@ -109,7 +109,8 @@
 
     ".github/workflows/source/topsky_edgg_maps/airspace-c-d.txt",
     ".github/workflows/source/topsky_edgg_maps/mva.txt",
-    ".github/workflows/source/topsky_edgg_maps/holdings.txt",
+    ".github/workflows/source/data/navdata/holding-enroute.txt",
+    ".github/workflows/source/data/navdata/holding-arrival.txt",
     ".github/workflows/source/topsky_edgg_maps/training.txt",
     ".github/workflows/source/topsky_edgg_maps/extended-centerline.txt",
     ".github/workflows/source/topsky_edgg_maps/fis.txt"
