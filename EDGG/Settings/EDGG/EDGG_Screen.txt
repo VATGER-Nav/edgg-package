@@ -40,7 +40,7 @@ m_MetarListX:1430
 m_MetarListY:45
 m_VoiceListX:1488
 m_VoiceListY:42
-m_ControllerListX:1787
+m_ControllerListX:1857
 m_ControllerListY:67
 m_ShowPlaneRangeRingsTracked:0
 m_ShowPlaneRangeRingsUntracked:0

@@ -45,82 +45,39 @@ Color_Coordination=0,0,0
 
 Color_Active_Map=200,200,200
 Color_Active_Map_Type_1=200,200,200
-Color_Active_Map_Type_2
-Color_Active_Map_Type_3
-Color_Active_Map_Type_4
-Color_Active_Map_Type_5
-Color_Active_Map_Type_6
-Color_Active_Map_Type_7
-Color_Active_Map_Type_8
-Color_Active_Map_Type_9
-Color_Active_Map_Type_10
-Color_Active_Map_Type_11
-Color_Active_Map_Type_12
-Color_Active_Map_Type_13
-Color_Active_Map_Type_14
-Color_Active_Map_Type_15
-Color_Active_Map_Type_16
-Color_Active_Map_Type_17
-Color_Active_Map_Type_18
-Color_Active_Map_Type_19
-Color_Active_Map_Type_20
-Color_Active_RD_Infill_Map
-Color_Active_RD_Map
 Color_Active_Sector=209,209,209
 Color_Active_Text_Map=191,191,191
 Color_AIW_Intrusion=255,168,0
-Color_Arm
 Color_Background=195,195,185
-Color_Border
-Color_BottomShadow
-Color_CARD_Conflict_Number
 Color_CARD_Mark_All=255,125,0
 Color_CARD_Mark_Own=255,125,0
-Color_CARD_Min_Sep=150,70,0
+Color_CARD_Min_Sep=150,150,150
 Color_CARD_Time_Vector=63,125,84
 Color_CPDLC_Controller_Late=212,128,44
-Color_CPDLC_Discarded
 Color_CPDLC_DM_Request=0,0,205
 Color_CPDLC_Failed=212,128,44
 Color_CPDLC_Pilot_Late=212,124,44
 Color_CPDLC_Standby=212,128,44
 Color_CPDLC_UM_Clearance=0,0,205
 Color_CPDLC_Unable=212,128,44
-Color_CPDLC_Urgency
-Color_Datalink_Logged_On
-Color_Deselected
-Color_East_NAT_Map
 Color_Field_Highlight=210,210,210
 Color_Flight_Highlight=218,218,218
 Color_Flight_Leg=80,80,80
 Color_Foreground=0,0,0
-Color_FPLSEP_Tool_1
-Color_FPLSEP_Tool_2
-Color_FPLSEP_Tool_3
-Color_FPLSEP_Tool_4
-Color_FPLSEP_Tool_5
-Color_Freq_Indicator
 Color_Global_Menu_Highlight=0,125,255
 Color_Heading_Vector=0,102,0
 Color_Inactive_Sector=205,205,205
 Color_Info_Coord=34,139,34
-Color_Information=200,185,120
+Color_Information=250,130,0
 Color_Information_FL=80,80,80
-Color_Informed
-Color_Informed_2
-Color_Informed_3
 Color_Map_1=200,200,200
 Color_Map_2=200,200,200
 Color_Map_3=200,200,200
 Color_Map_4=200,200,200
 Color_Map_Auto_Label=200,200,200
 Color_Map_Auto_Symbol=200,200,200
-Color_Map_Border
-Color_Map_Bright
 Color_Map_Hotspot=200,200,200
 Color_Map_Info=0,255,0
-Color_Map_Land
-Color_Map_Symbol
 Color_Overflown=0,255,0
 Color_Potential=255,130,71
 Color_Potential_FL=255,130,71
@@ -131,61 +88,29 @@ Color_Proposition_Accepted=34,139,34
 Color_Proposition_In=240,20,170
 Color_Proposition_Out=200,185,120
 Color_QDM=16,78,139
-Color_Radar_Win_Bg
-Color_Raw_Video1
-Color_Raw_Video2
-Color_Raw_Video3
-Color_Raw_Video4
-Color_Raw_Video5
-Color_Raw_Video6
-Color_Raw_Video7
-Color_Runway=0,0,255
+Color_Runway=0,0,90
 Color_Rwy_App_Line_Inuse=200,200,200
 Color_Rwy_App_Line_Not_Inuse=24,116,205
-Color_Rwy_Locked=34,139,34
+Color_Rwy_Locked=0,90,0
 Color_Select=0,0,0
-Color_Selected
 Color_Selected_Group=255,255,254
-Color_Selected_Period
 Color_SEP_Tool_1=118,82,148
-Color_SEP_Tool_2
-Color_SEP_Tool_3
-Color_SEP_Tool_4
-Color_SEP_Tool_5
-Color_SEP_Tool_6
-Color_SEP_Tool_7
-Color_SEP_Vert
 Color_Sid_Star_Allocation=200,185,120
-Color_Sid_Star_No_Allocation=255,125,0
 Color_SMW_Level_Band=0,255,0
-Color_SMW_Overflight
-Color_SMW_Overlap
 Color_SMW_Overlap_Box=133,133,133
-Color_SMW_Overshoot
-Color_Standard_Line_RDF
-Color_Standard_RDF
 Color_Suite_Highlight=0,100,0
 Color_System_Calculated_TOC=126,192,238
 Color_System_Calculated_TOD=126,192,238
-Color_Text_Notes
-Color_TopShadow
 Color_Track_Default=130,130,130
 Color_Track_Highlight=0,0,255
-Color_Trough
-Color_TSA_Active
 Color_TSA_Border_Highlight=0,0,0
 Color_TSA_Filter=0,0,255
-Color_TSA_Preactive
 Color_Urgency=255,0,0
 Color_Urgency_FL=255,0,0
-Color_VAW_Profile
-Color_VAW_Sector_Limits
-Color_VAW_Track_Position
 Color_VFR=55,156,255
-Color_Warning=255,125,0
-Color_Warning_FL=255,125,0
+Color_Warning=250,162,0
+Color_Warning_FL=250,162,0
 Color_Weather_Map=100,100,100
-Color_West_NAT_Map
 Color_WM_Active_Fg=0,0,0
 Color_WM_Bg=195,195,185
 Color_WM_Border=0,0,0
@@ -213,8 +138,9 @@ FlightLeg_FontSize=11
 FlightLeg_Label_DIST=1
 FlightLeg_Label_RFL=1
 FlightLeg_Label_SCFL=1
-FlightLeg_LineWidth=2
+FlightLeg_LineWidth=1
 FlightLeg_Label_Time=1
+FlightLeg_AutoShow=1
 
 HTTP_SIGMET_Server=http://aviationweather.gov/
 HTTP_SIGMET_Page_Prefix=data/iffdp/
@@ -222,10 +148,9 @@ HTTP_SIGMET_Pages=6443
 HTTP_SIGMET_Page_Suffix=.txt
 
 Label_AHDG_Point_Label=0
-Label_Field18_Flag_Items=STS/,newbie,NEWBIE,Newbie,beginner,newbe,deaf,blind,new,first,slow,slowly
+Label_Field18_Flag_Items=STS/,newbie,NEWBIE,Newbie,beginner,newbe,deaf,blind,new,first,slow,slowly,noob
 Label_GS_Digits=2
 
-// CHECKEN!!!!
 Label_Rev_Highlight_Delta_ETN=2
 Label_OpTextCaps=0
 
@@ -234,68 +159,32 @@ Label_SI_FreqTime=3
 Label_WTC_Highlight_WTC=LHJ
 Label_WTC_Highlight_ATYP=B752,B753
 
-Label_All_N=0
+Label_AHDG_HideDctIfCOPX=1
+Label_AHDG_ShowExtra=1
 
-Label_Co_SQ=0
-Label_Co_ATYP=0
-Label_Co_ATYPW=0
-Label_Co_ADES=0
-Label_Co_NRAC=0
-Label_Co_TSSR=0
-Label_Co_RFL=0
-Label_Co_FCOPX=0
-Label_Co_WTC=0
-Label_Co_GS=1
-Label_Co_COPN=1
-Label_Co_XFL=1
-Label_Co_AHDG=1
-Label_Co_ASP=1
-Label_Co_PEL=1
+Label_N_Default=0
 
-Label_Ass_SQ=0
-Label_Ass_ATYP=0
-Label_Ass_ATYPW=0
-Label_Ass_ADES=0
-Label_Ass_NRAC=0
-Label_Ass_TSSR=0
-Label_Ass_RFL=0
-Label_Ass_FCOPX=0
-Label_Ass_WTC=0
-Label_Ass_GS=1
-Label_Ass_COPX=1
-Label_Ass_AHDG=1
-Label_Ass_XFL=1
-Label_Ass_ASP=1
+Label_SQ_Default=0000
+Label_ATYP_Default=0000
+Label_WTC_Default=0000
+Label_GS_Default=1111
+Label_ADES_Default=0000
+Label_COPN_Default=1000
+Label_COPX_Default=0110
+Label_XFL_Default=1110
+Label_AHDG_Default=1110
+Label_ASP_Default=1110
+Label_PEL_Default=1000
+Label_TSSR_Default=0000
+Label_RFL_Default=0000
+Label_NPT_Default=0000
 
-Label_Red_SQ=0
-Label_Red_ATYP=0
-Label_Red_ATYPW=0
-Label_Red_ADES=0
-Label_Red_NRAC=0
-Label_Red_TSSR=0
-Label_Red_RFL=0
-Label_Red_FCOPX=0
-Label_Red_WTC=0
-Label_Red_GS=1
-Label_Red_COPX=1
-Label_Red_AHDG=1
-Label_Red_XFL=1
-Label_Red_ASP=1
-
-Label_No_SQ=0
-Label_No_ATYP=0
-Label_No_ATYPW=0
-Label_No_ADES=0
-Label_No_NRAC=0
-Label_No_TSSR=0
-Label_No_RFL=0
-Label_No_FCOPX=0
-Label_No_WTC=0
-Label_No_GS=1
+List_Holding_Points=SPESA,UNOKO,ROLIS,KERAX
 
 Malrt_Misap=MAPP
 Malrt_Inbound_EST=EST
 Malrt_Irregular=IRR
+Malrt_Weather=WXR
 
 Menu_MaxListItems=12
 
@@ -365,7 +254,6 @@ System_UseSidStarAllocationColor=0
 
 Track_HistoryDots=5
 Track_PredictionLine=0
-Track_DivergenceSymbol_Size=8
 
 Vector_AHDG_FontSize=11
 Vector_AHDG_Label_Dist=1
@@ -448,8 +336,7 @@ RDF_Accuracy=3
 //***********************************************************************
 
 [EDDS_]
-Label_Ass_ADES=1
-Label_Co_ADES=1
+
 
 [EDDK_]
 Airspace_C_Flag=ETNN,EDKB
@@ -457,15 +344,8 @@ Airspace_C_Flag=ETNN,EDKB
 [EDDL_]
 Airspace_C_Flag=EDLV,EDLN,ETNG
 
-Label_Ass_ADES=1
-Label_Co_ADES=1
-
 [EDDF_]
 Airspace_C_Flag=ETOU
-
-Label_Co_XFL=0
-Label_Ass_XFL=0
-Label_Red_XFL=0
 
 Shortcut_Map_Xfr_Key=8,0x57 ; W
 Shortcut_Map_Xfr_Key=9,0x4F ; O

@@ -1,6 +1,6 @@
 m_PlaySounds:1
 m_AssumeSlowAcAsStandby:1
-m_ShowAirspaceLines:1
+m_ShowAirspaceLines:0
 m_ShowRouteFixName:1
 m_ShowRouteETA:1
 m_ShowCalculatedHeading:1
