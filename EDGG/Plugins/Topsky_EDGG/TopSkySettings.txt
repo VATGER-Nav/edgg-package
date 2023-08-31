@@ -10,9 +10,10 @@ Setup_COOPANS=1
 //System_GUI_Scale_Windows=1.4
 
 Airspace_833_Min=0
-Airspace_ASSR_Type=0
+Airspace_ASSR_Type=2
 Airspace_ASSR_AutoAssign_Type=0
 Airspace_ModeS_Code_VFR=7000
+Airspace_ModeS_Code_VFR=1000
 Airspace_No_DUPE_Codes=0020,0021,0023,0024,0025,0026,0027,0030,0031,0032,0033,0034,0035,0036,0037,0076,0420,0421,0422,0423,0424,0425,2677,4426,4427,4432,4433,4440,4441,4442,4443,4444,4445,4446,4447,4450,4451,4452,4453,4454,4455,4456,4457,4470,4477,6101,6102,6103,6104,6105,6130,6140,6150,6160,6170,6220,6223,6224,7000,7001,7002,7003,7004,7373,7377,7740,7741,7742,7743,7744,7745,7746,7747
 Airspace_SIGMET_Areas=EDGG,EDUU,EDMM,EDWW,EHAA,EBUU,EDYY,LSAS,LFEE
 Airspace_NOTAM_Add=EDGG,EDUU
@@ -135,17 +136,13 @@ Divergence_CLAM_MinCFL=7000
 Divergence_RAM_DCT_DelayTime=90
 
 FlightLeg_FontSize=11
+FlightLeg_Label_Time=1
 FlightLeg_Label_DIST=1
 FlightLeg_Label_RFL=1
 FlightLeg_Label_SCFL=1
 FlightLeg_LineWidth=1
-FlightLeg_Label_Time=1
-FlightLeg_AutoShow=1
 
-HTTP_SIGMET_Server=http://aviationweather.gov/
-HTTP_SIGMET_Page_Prefix=data/iffdp/
 HTTP_SIGMET_Pages=6443
-HTTP_SIGMET_Page_Suffix=.txt
 
 Label_AHDG_Point_Label=0
 Label_Field18_Flag_Items=STS/,newbie,NEWBIE,Newbie,beginner,newbe,deaf,blind,new,first,slow,slowly,noob
@@ -184,15 +181,16 @@ List_Holding_Points=SPESA,UNOKO,ROLIS,KERAX
 Malrt_Misap=MAPP
 Malrt_Inbound_EST=EST
 Malrt_Irregular=IRR
-Malrt_Weather=WXR
 
 Menu_MaxListItems=12
+
+MSAW_VFR=0
 
 MTCD_Filter_Dep=3
 
 RDF_Mode=0
 RDF_Accuracy=0
-RDF_Floor=0
+RDF_Floor=-999
 
 RwyAppLines_Length=20
 RwyAppLines_Markers=10
@@ -231,6 +229,7 @@ STCA_CurrProx_Sep_Lat_U=5
 STCA_CurrProx_Sep_Lat_L=3
 STCA_CurrProx_Sep_Vert_U=1775
 STCA_CurrProx_Sep_Vert_L=775
+STCA_VFR=0
 STCA_WarningTime_U=80
 STCA_WarningTime_L=60
 STCA_WarningTime_U_Imm=50
@@ -241,7 +240,9 @@ System_TrueColorMode=1
 System_UseReportedGS=1
 System_ASP_IasMach=30000
 System_MetarSourceVATSIM=1
+System_QNHTL_ForceMetarSourceVATSIM=1
 System_TaxiTime=10
+System_TransferConfirmation=1
 System_GUI_Font_1_Size=12
 System_GUI_Font_2_Size=10
 System_GUI_Scale_Menus=1
@@ -261,7 +262,7 @@ Vector_AHDG_Label_Time=1
 Vector_MinSep_FontSize=11
 Vector_MinSep_Label_Time=1
 Vector_QDM_FontSize=11
-Vector_QDM_MaxNumber=25
+Vector_QDM_MaxNumber=99
 Vector_QDM_Airports=0
 
 Window_SM_LeaveHoldTime=3
