@@ -3,7 +3,7 @@ run-name: Push by ${{ github.actor }} is building Maps
 on:
   push:
     branches:
-      - '*'
+      - "*"
 permissions: write-all
 jobs:
   build-maps:
@@ -15,11 +15,11 @@ jobs:
       - name: setup python
         uses: actions/setup-python@v4
         with:
-          python-version: '3.11' # install the python version needed
+          python-version: "3.11" # install the python version needed
 
-      - name: execute py script # run main.py
+      - name: execute py script # run moverWithImports.py
         working-directory: .
-        run: python .github/workflows/mover.py
+        run: python .github/workflows/moverWithImports.py
 
       - name: commit files
         run: |
@@ -32,4 +32,4 @@ jobs:
         uses: ad-m/github-push-action@v0.6.0
         with:
           github_token: ${{ secrets.GITHUB_TOKEN }}
-          branch: ${{ github.ref }} 
+          branch: ${{ github.ref }}
