@@ -128,35 +128,34 @@
   ],
 
   "EDGG/Plugins/Topsky_Phoenix/TopSkyMaps.txt": [
-    ".github/workflows/source/topsky_phoenix_maps/symbol-def.txt",
-    ".github/workflows/source/topsky_phoenix_maps/colors.txt",
-    ".github/workflows/source/topsky_phoenix_maps/override-sct.txt",
-    ".github/workflows/source/topsky_phoenix_maps/phoenix/phoenix.txt",
+    ".github/workflows/source/topsky_phoenix_maps/general.txt",
+
     ".github/workflows/source/topsky_phoenix_maps/phoenix/vfr-points.txt",
     ".github/workflows/source/topsky_phoenix_maps/phoenix/vfr-hospital.txt",
     ".github/workflows/source/topsky_phoenix_maps/phoenix/airports.txt",
     ".github/workflows/source/topsky_phoenix_maps/phoenix/runways.txt",
     ".github/workflows/source/topsky_phoenix_maps/phoenix/edff-aor.txt",
     ".github/workflows/source/topsky_phoenix_maps/phoenix/ctr.txt",
-    ".github/workflows/source/topsky_phoenix_maps/phoenix/aspc.txt",
-    ".github/workflows/source/topsky_phoenix_maps/phoenix/aspd.txt",
-    ".github/workflows/source/topsky_phoenix_maps/phoenix/tmz-rmz.txt",
+    ".github/workflows/source/topsky_phoenix_maps/phoenix/airspaces.txt",
+
     ".github/workflows/source/topsky_phoenix_maps/stands/stands.txt",
-    ".github/workflows/source/topsky_phoenix_maps/eddf/eddf.txt",
+
     ".github/workflows/source/topsky_phoenix_maps/eddf/ntz.txt",
-    ".github/workflows/source/topsky_phoenix_maps/eddf/rnp-y.txt",
+    ".github/workflows/source/topsky_phoenix_maps/eddf/rnp.txt",
     ".github/workflows/source/topsky_phoenix_maps/eddf/sid.txt",
     ".github/workflows/source/topsky_phoenix_maps/eddf/dep-freq.txt",
     ".github/workflows/source/topsky_phoenix_maps/eddf/distance-indicator.txt",
     ".github/workflows/source/topsky_phoenix_maps/eddf/extended-centerlines.txt",
-    ".github/workflows/source/topsky_phoenix_maps/eddl/eddl.txt",
+
     ".github/workflows/source/topsky_phoenix_maps/eddl/bridges.txt",
-    ".github/workflows/source/topsky_phoenix_maps/eddk/eddk.txt",
+    ".github/workflows/source/topsky_phoenix_maps/eddl/see.txt",
+
     ".github/workflows/source/topsky_phoenix_maps/eddk/extended-centerlines.txt",
+
     ".github/workflows/source/topsky_phoenix_maps/minor-airports.txt",
-    ".github/workflows/source/topsky_phoenix_maps/general.txt",
     ".github/workflows/source/topsky_phoenix_maps/mva.txt",
-    ".github/workflows/source/topsky_phoenix_maps/topografie/topografie.txt",
+    ".github/workflows/source/topsky_phoenix_maps/other-helper/level.txt",
+
     ".github/workflows/source/topsky_phoenix_maps/topografie/highway.txt",
     ".github/workflows/source/topsky_phoenix_maps/topografie/rivers.txt"
   ]
