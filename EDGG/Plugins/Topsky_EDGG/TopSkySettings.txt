@@ -213,10 +213,10 @@ Shortcut_Map_Xfr_Key=3,0x47 ; G
 Shortcut_Map_Xfr_Key=4,0x48 ; H
 Shortcut_Map_Xfr_Key=5,0x42 ; B
 Shortcut_Map_Target=1,MVA\MVA Germany Summer
-Shortcut_Map_Target=2,AIRSPACE C/D\AIRSPACE ALL
-Shortcut_Map_Target=3,Langen -EXTRA-\EDFF SEP Guide Lower
-Shortcut_Map_Target=4,Langen -EXTRA-\EDFF SEP Guide Upper
-Shortcut_Map_Target=5,Sector -EXTRA-\Upper Borders
+Shortcut_Map_Target=2,AIRSPACES\AIRSPACE ALL
+Shortcut_Map_Target=3,OTHER\EDFF SEP Guide Lower
+Shortcut_Map_Target=4,OTHER\EDFF SEP Guide Upper
+Shortcut_Map_Target=5,SECTORS\Upper Borders
 
 STCA_Sep_Lat_SepLevel=24500
 STCA_Filter=1
@@ -350,11 +350,11 @@ Airspace_C_Flag=ETOU
 
 Shortcut_Map_Xfr_Key=8,0x57 ; W
 Shortcut_Map_Xfr_Key=9,0x4F ; O
-Shortcut_Map_Target=5,Training EDDF\EDDF Training 25
-Shortcut_Map_Target=6,Training EDDF\EDDF Training 07
+Shortcut_Map_Target=5,OTHER\EDDF Training 25
+Shortcut_Map_Target=6,OTHER\EDDF Training 07
 
 [EDDL_]
 Shortcut_Map_Xfr_Key=8,0x57 ; W
 Shortcut_Map_Xfr_Key=9,0x4F ; O
-Shortcut_Map_Target=5,Training EDDL\EDDL Training 23
-Shortcut_Map_Target=6,Training EDDL\EDDL Training 05
+Shortcut_Map_Target=5,OTHER\EDDL Training 23
+Shortcut_Map_Target=6,OTHER\EDDL Training 05

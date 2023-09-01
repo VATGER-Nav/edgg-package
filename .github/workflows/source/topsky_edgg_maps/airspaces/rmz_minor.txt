@@ -1,0 +1,31 @@
+MAP:EDFQ RMZ
+FOLDER:AIRSPACES
+COLOR:DFSGrey
+STYLE:Dash:1
+ACTIVE:RWY:ARR:EDFQ29:DEP:*
+ACTIVE:RWY:ARR:EDFQ11:DEP:*
+ACTIVE:RWY:ARR:*:DEP:EDFQ29
+ACTIVE:RWY:ARR:*:DEP:EDFQ11
+#import .github\workflows\source\data\airspaces\classes\edfq_rmz.txt
+
+MAP:EDGS RMZ
+FOLDER:AIRSPACES
+COLOR:DFSGrey
+STYLE:Dash:1
+ACTIVE:RWY:ARR:EDGS31:DEP:*
+ACTIVE:RWY:ARR:EDGS13:DEP:*
+ACTIVE:RWY:ARR:*:DEP:EDGS31
+ACTIVE:RWY:ARR:*:DEP:EDGS13
+#import .github\workflows\source\data\airspaces\classes\edgs_rmz.txt
+#import .github\workflows\source\data\airspaces\classes\edgs_e.txt
+
+MAP:EDTY RMZ
+FOLDER:AIRSPACES
+COLOR:DFSGrey
+STYLE:Dash:1
+ACTIVE:RWY:ARR:EDTY28:DEP:*
+ACTIVE:RWY:ARR:EDTY10:DEP:*
+ACTIVE:RWY:ARR:*:DEP:EDTY28
+ACTIVE:RWY:ARR:*:DEP:EDTY10
+#import .github\workflows\source\data\airspaces\classes\edty_rmz.txt
+#import .github\workflows\source\data\airspaces\classes\edty_e.txt
