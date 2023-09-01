@@ -43,15 +43,16 @@
   ],
 
   "EDGG/Plugins/Topsky_EDUU/TopSkyMaps.txt": [
-    ".github/workflows/source/topsky_eduu_maps/definitions.txt",
-    ".github/workflows/source/topsky_eduu_maps/upper-sectors.txt",
-    ".github/workflows/source/topsky_eduu_maps/upper-lvl.txt",
+    ".github/workflows/source/topsky_eduu_maps/general.txt",
+    ".github/workflows/source/topsky_eduu_maps/fixes-labels.txt",
     ".github/workflows/source/topsky_eduu_maps/heuse-area.txt",
+    ".github/workflows/source/topsky_eduu_maps/upper-sectors.txt",
     ".github/workflows/source/topsky_eduu_maps/langen-sectors.txt",
-    ".github/workflows/source/topsky_eduu_maps/fixes-upper.txt",
-    ".github/workflows/source/topsky_eduu_maps/edff-sep-guides.txt",
+    ".github/workflows/source/topsky_eduu_maps/upper-lvl.txt",
     ".github/workflows/source/data/navdata/holding-enroute.txt",
-    ".github/workflows/source/data/navdata/holding-arrival.txt"
+    ".github/workflows/source/data/navdata/holding-arrival.txt",
+    ".github/workflows/source/topsky_eduu_maps/fixes.txt",
+    ".github/workflows/source/topsky_eduu_maps/edff-sep-guides.txt"
   ],
 
   "EDGG/Plugins/Topsky_EDGG/TopSkyMaps.txt": [

@@ -1,5 +1,5 @@
 MAP:Upper sectors
-FOLDER:Sector
+FOLDER:SECTORS
 COLOR:DFSGrey
 ACTIVE:1
 #import .github\workflows\source\data\sectors\rhein\
