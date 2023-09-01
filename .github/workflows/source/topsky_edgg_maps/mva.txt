@@ -7,10 +7,10 @@ MAP:MVA Germany Summer
 FOLDER:MVA
 COLOR:green
 STYLE:Solid:1
-#import 
+#import .github\workflows\source\data\mva_summer.txt
 
 MAP:MVA Germany Winter
 FOLDER:MVA
 COLOR:green
 STYLE:Solid:1
-#import 
+#import .github\workflows\source\data\mva_winter.txt

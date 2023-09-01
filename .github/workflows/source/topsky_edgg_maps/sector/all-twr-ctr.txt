@@ -1,5 +1,0 @@
-MAP:-- ALL TWR-CTR --
-FOLDER:Sector -EXTRA-
-STYLE:DashDot:1
-COLOR:DFSGrey
-#import .github\workflows\source\data\airspaces\ctr\

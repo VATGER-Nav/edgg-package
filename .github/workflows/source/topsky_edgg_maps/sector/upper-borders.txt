@@ -1,6 +1,14 @@
 MAP:Upper Borders
-FOLDER:Sector -EXTRA-
+FOLDER:SECTORS
 COLOR:green
 LAYER:2
 STYLE:Solid:1
+#import .github\workflows\source\data\sectors\rhein\all.txt
+
+MAP:PADH Upper Borders
+FOLDER:SECTORS
+COLOR:DFSGrey
+STYLE:Solid:1
+ACTIVE:ID:MNS,RHR:*:*:*
+ACTIVE:ID:PADH:*:*:RHR,MNS
 #import .github\workflows\source\data\sectors\rhein\all.txt

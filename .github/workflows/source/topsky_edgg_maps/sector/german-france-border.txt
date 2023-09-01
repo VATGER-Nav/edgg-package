@@ -1,6 +1,6 @@
 MAP:German-France Border
-FOLDER:Sector Auto
+FOLDER:SECTORS
 COLOR:DFSGrey
 ASRDATA:LANGEN,EDDS_APP
 ACTIVE:1
-#import
+#import .github\workflows\source\data\sectors\german-france-border.txt
