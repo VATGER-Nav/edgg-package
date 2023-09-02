@@ -15,13 +15,15 @@ def extract_file_path(import_statement):
 def processImport(line, input_file):
     try:
         file_path = extract_file_path(line)
-        print(file_path)
+        print(file_path),
 
         if file_path:
             file_path_is_file = os.path.isfile(file_path)
             if file_path_is_file:
                 with open(file_path, "r") as file:
-                    return file.readlines()
+                    lines = file.readlines()
+                    file_content = ''.join(lines) + '\n'
+                    return file_content
             else:
                 # find all files in folder
                 txt_files = []
