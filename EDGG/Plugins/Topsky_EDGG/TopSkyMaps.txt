@@ -751,10 +751,6 @@ ASRDATA:LANGEN,EDDS_APP
 ACTIVE:ID:DKB,BAD,KTG:*:NDG,WLD,EGG,ZUG,RDG,EDMM:*
 
 
-//---------------------------------------------------------------
-//                               FIS
-//---------------------------------------------------------------
-
 MAP:FIS Sektor + Squawks
 FOLDER:FIS
 COLOR:blue
@@ -2119,10 +2115,6 @@ SYMBOL:FIX3:OGNID
 ZOOM:8
 SYMBOL:FIX3:UMRET:UMRET:10:15
 SYMBOL:FIX3:OGNID:OGNID:10:15
-
-//---------------------------------------------------------------
-//                       Frankfurt EDDF
-//---------------------------------------------------------------
 
 MAP:NTZ 25L/R
 FOLDER:EDDF
@@ -4191,11 +4183,6 @@ ACTIVE:RWY:ARR:EDTY10:DEP:*
 ACTIVE:RWY:ARR:*:DEP:EDTY28
 ACTIVE:RWY:ARR:*:DEP:EDTY10
 
-
-//---------------------------------------------------------------
-//                            MVA
-//---------------------------------------------------------------
-// Shortcut ALT + M on correct Map (Winter or Summer)
 
 MAP:MVA Germany Summer
 FOLDER:MVA
@@ -9046,10 +9033,6 @@ LINE:N050.29.49.622:E009.42.31.511:N050.31.13.214:E009.50.16.666
 SYMBOL:FIX2:DEMAB: :25:-7
 LINE:N050.34.51.857:E010.04.14.439:N050.37.14.631:E010.11.08.463
 
-
-//---------------------------------------------------------------
-//                          Training
-//---------------------------------------------------------------
 
 MAP:EDDF Training 25 
 FOLDER:OTHER
