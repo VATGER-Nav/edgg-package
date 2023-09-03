@@ -401,6 +401,9 @@ Divergence_RAM=0
 Track_PredictionLine=0
 
 [_DEP]
+MTCD=0
+AIW=0
+
 Color_Assumed=0,0,0
 Color_Concerned=15,120,200
 Color_Unconcerned=204,127,166
