@@ -1,8 +1,3 @@
-//---------------------------------------------------------------
-//                            MVA
-//---------------------------------------------------------------
-// Shortcut ALT + M on correct Map (Winter or Summer)
-
 MAP:MVA Germany Summer
 FOLDER:MVA
 COLOR:green
