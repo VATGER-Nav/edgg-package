@@ -79,8 +79,8 @@ Color_CARD_Min_Sep=150,150,150
 Color_CARD_Reminder
 Color_CARD_Symbol_Fg
 Color_CARD_Time_Vector=63,125,84
-Color_COL_Above_Threshold
-Color_COL_Under_Threshold
+Color_COL_Above_Threshold=250,162,0
+Color_COL_Under_Threshold=200,185,120
 Color_Conflict_Ack
 Color_Conflict_Ack_FL
 Color_CPDLC_Controller_Late=212,128,44
@@ -104,7 +104,7 @@ Color_Global_Menu_Highlight=0,125,255
 Color_Heading_Vector=0,102,0
 Color_Inactive_Sector=205,205,205
 Color_Info_Coord=34,139,34
-Color_Information=250,130,0
+Color_Information=200,185,120
 Color_Information_FL=80,80,80
 Color_Informed
 Color_Informed_2
@@ -326,6 +326,9 @@ STCA_WarningTime_L_Imm=50
 System_TrueColorMode=1
 System_UseReportedGS=1
 System_ASP_IasMach=30000
+System_Filters_Concerned=0
+System_Filters_Alt_Allow=2000
+System_Filters_Hard=1
 System_MetarSourceVATSIM=1
 System_QNHTL_ForceMetarSourceVATSIM=1
 System_TaxiTime=10
@@ -355,9 +358,11 @@ Vector_QDM_AA_Label_Dist=1
 Vector_QDM_AP_Label_Dist=1
 
 Window_SM_LeaveHoldTime=3
-Window_QNHTL=3,1570,45
+Window_QNHTL=3,1637,551
 Window_CARD=3,1565,755
-Window_LFUNCFP=3,1570,211
+Window_CARD_View_Risk=0
+Window_LFUNCFP=3,1570,44
+Window_COL_Warning_Threshold=12
 Window_CPDLC_Current=1,0,650
 Window_CPDLC_Setting=1,368,471
 

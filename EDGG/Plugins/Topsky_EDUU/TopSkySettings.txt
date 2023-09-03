@@ -79,8 +79,8 @@ Color_CARD_Min_Sep=150,150,150
 Color_CARD_Reminder
 Color_CARD_Symbol_Fg
 Color_CARD_Time_Vector=63,125,84
-Color_COL_Above_Threshold
-Color_COL_Under_Threshold
+Color_COL_Above_Threshold=250,162,0
+Color_COL_Under_Threshold=200,185,120
 Color_Conflict_Ack
 Color_Conflict_Ack_FL
 Color_CPDLC_Controller_Late=212,128,44
@@ -104,7 +104,7 @@ Color_Global_Menu_Highlight=0,125,255
 Color_Heading_Vector=0,102,0
 Color_Inactive_Sector=224,224,224
 Color_Info_Coord=34,139,34
-Color_Information=250,130,0
+Color_Information=200,185,120
 Color_Information_FL=80,80,80
 Color_Informed=0,0,255
 Color_Informed_2
@@ -310,6 +310,9 @@ System_TransferConfirmation=0
 System_TrueColorMode=1
 System_UseReportedGS=1
 System_ASP_IasMach=28500
+System_Filters_Concerned=0
+System_Filters_Alt_Allow=0
+System_Filters_Hard=1
 System_MetarSourceVATSIM=1
 System_TaxiTime=10
 System_GUI_Font_1_Size=12
@@ -339,6 +342,8 @@ Vector_QDM_AP_Label_Dist=1
 Window_SM_LeaveHoldTime=3
 Window_CPDLC_Current=1,1000,44
 Window_CARD=3,1565,755
+Window_CARD_View_Risk=0
+Window_COL_Warning_Threshold=12
 Window_CPDLC_Setting=1,1400,44
 Window_LFUNCFP=3,1570,44
 
@@ -360,7 +365,7 @@ Shortcut_Map_Xfr_Key=2,0x48 ; H
 Shortcut_Map_Xfr_Key=3,0x42 ; B
 Shortcut_Map_Target=1,OTHER\EDFF SEP Guide Lower
 Shortcut_Map_Target=2,OTHER\EDFF SEP Guide Upper
-Shortcut_Map_Target=3,SECTORS\Langen Sectors
+Shortcut_Map_Target=3,SECTORS\LANGEN SECTORS
 
 [_CTR]
 Color_Assumed=0,0,0
