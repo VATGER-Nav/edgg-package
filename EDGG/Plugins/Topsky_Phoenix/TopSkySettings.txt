@@ -32,7 +32,6 @@ APW_Buffer_Vert_U=1500
 APW_Buffer_Vert_L_IFR=500
 APW_Buffer_Vert_L_VFR=500
 
-//Area labels won't be shown at all times
 Areas_Label_Name=0
 Areas_Label_MapText=0
 Areas_Label_Levels=0
@@ -47,12 +46,48 @@ Color_Unknown=255,255,255
 Color_Redundant=255,255,255 
 Color_Coordination=255,255,255
 
+Color_ACF_Via_CFL
 Color_Active_Map=205,0,0
+Color_Active_Map_Type_2
+Color_Active_Map_Type_3
+Color_Active_Map_Type_4
+Color_Active_Map_Type_5
+Color_Active_Map_Type_6
+Color_Active_Map_Type_7
+Color_Active_Map_Type_8
+Color_Active_Map_Type_9
+Color_Active_Map_Type_10
+Color_Active_Map_Type_11
+Color_Active_Map_Type_12
+Color_Active_Map_Type_13
+Color_Active_Map_Type_14
+Color_Active_Map_Type_15
+Color_Active_Map_Type_16
+Color_Active_Map_Type_17
+Color_Active_Map_Type_18
+Color_Active_Map_Type_19
+Color_Active_Map_Type_20
+Color_Active_Sector
+Color_Active_RD_Infill_Map
+Color_Active_RD_Map
 Color_Active_Text_Map=198,174,58
+Color_Arm
 Color_Background=78,85,89
+Color_Datalink_Logged_On
+Color_Deselected
+Color_Field_Highlight
+Color_Flight_Highlight
 Color_Flight_Leg=0,170,0
 Color_Freq_Indicator=237,237,237
+Color_Global_Menu_Highlight
+Color_Heading_Vector
+Color_Inactive_Sector
+Color_Info_Coord
 Color_Information=255,200,0
+Color_Informed
+Color_Informed_2
+Color_Informed_3
+Color_LatLong_Info
 Color_Map_1=205,0,0
 Color_Map_2=205,0,0
 Color_Map_3=205,0,0
@@ -74,6 +109,7 @@ Color_WM_Bg=88,95,99
 Color_WM_Fg=20,20,21
 
 // CPDLC/ DCL Settings
+CPDLC_PDC_PlaySound=1
 CPDLC_FSM_RCD_Header=FSM <hour><min> <year2><month2><day> <adep2> <callsign>
 CPDLC_FSM_CLD_Header=CLD <hour><min> <year2><month2><day> <adep2> PDC <number> <callsign>
 CPDLC_FSM_CDA_Header=CDA <hour><min> <year2><month2><day> <adep2> PDC <number>
@@ -85,22 +121,13 @@ Divergence_RAM=0
 FlightLeg_FontSize=10
 FlightLeg_LineWidth=1
 
-// neccesary? 
-FPCP_PredictionTime=10
-FPCP_HeadingTime=5
-
-HTTP_SIGMET_Server=http://aviationweather.gov/
-HTTP_SIGMET_Page_Prefix=data/iffdp/
 HTTP_SIGMET_Pages=6443
-HTTP_SIGMET_Page_Suffix=.txt
 
 // Label Settings
 Label_Alt_Digits=3
 Label_Field18_Flag_Items=STS/,newbie,NEWBIE,Newbie,beginner,newbe,deaf,blind,new,first,slow,slowly,noob
 Label_GS_Digits=2
 Label_ASP_Digits=2
-Label_SI_ShowFreq=1
-Label_SI_FreqTime=3
 Label_WTC_Highlight_WTC=LHJ
 Label_WTC_Highlight_ATYP=B752,B753
 
@@ -111,7 +138,7 @@ Label_N_Default=0
 Label_SQ_Default=0000
 Label_ATYP_Default=0000
 Label_WTC_Default=0000
-Label_GS_Default=0000
+Label_GS_Default=1111
 Label_ADES_Default=0000
 Label_COPN_Default=0000
 Label_COPX_Default=0000
@@ -129,14 +156,11 @@ Label_TOG_Default=0000
 Malrt_Misap=MAPP
 Malrt_Inbound_EST=EST
 Malrt_Irregular=IRR
-Malrt_Weather=WXR
-
-// to use DFS font, delete
-//Maps_Font=EuroScope
+Malrt_Weather=WEATHER
 
 Menu_MaxListItems=12
 
-// Medium Term Conflict Detection
+MSAW=0
 MTCD=0
 
 RDF_Mode=0
@@ -145,10 +169,8 @@ RDF_Floor=0
 
 RwyAppLines_Auto=0
 
-// Segregated Area Probe
 SAP=0
 
-// Mapshortcuts
 Shortcut_RadarMenu_Combo=0x00
 Shortcut_Map_Xfr_Key=1,0x4D ; M
 Shortcut_Map_Xfr_Key=2,0x44 ; D
@@ -156,18 +178,18 @@ Shortcut_Map_Xfr_Key=3,0x47 ; G
 Shortcut_Map_Xfr_Key=4,0x48 ; H
 Shortcut_Map_Xfr_Key=5,0x56 ; V
 Shortcut_Map_Target=1,MVA\MVA Germany Summer
-Shortcut_Map_Target=2,AIRSPACE C/D\AIRSPACE ALL
-Shortcut_Map_Target=3,Stands\Stands
-Shortcut_Map_Target=4,PHOENIX\VFR Hospital LABEL
-Shortcut_Map_Target=5,PHOENIX\VFR Points LABEL
+Shortcut_Map_Target=2,OTHER\AIRSPACE ALL
+Shortcut_Map_Target=3,STAND\STANDS
+Shortcut_Map_Target=4,PHOENIX\VFR HOSP LABEL
+Shortcut_Map_Target=5,PHOENIX\VFR POINTS LABEL
 
-// Short Term Conflict Alert
 STCA=0
 
 System_TrueColorMode=1
 System_UseReportedGS=1
 System_ASP_IasMach=30000
 System_MetarSourceVATSIM=1
+System_QNHTL_ForceMetarSourceVATSIM=1
 System_TaxiTime=10
 System_FPASD=0
 System_GUI_Font_1_Size=10
@@ -175,8 +197,8 @@ System_GUI_Font_2_Size=10
 System_GUI_Scale_Menus=0.9
 System_ProxySounds=0
 
-Track_PredictionLine=0
 Track_HistoryDots=5
+Track_PredictionLine=0
 
 Vector_AHDG_FontSize=10
 Vector_AHDG_Label_Dist=1
@@ -184,8 +206,10 @@ Vector_AHDG_Label_Time=1
 Vector_MinSep_FontSize=10
 Vector_MinSep_Label_Time=1
 Vector_QDM_FontSize=10
-Vector_QDM_MaxNumber=25
+Vector_QDM_MaxNumber=99
 Vector_QDM_Airports=0
+Vector_QDM_AA_Label_Dist=1
+Vector_QDM_AP_Label_Dist=1
 
 Window_Ops_Caution=25
 Window_Ops_Warning=30
