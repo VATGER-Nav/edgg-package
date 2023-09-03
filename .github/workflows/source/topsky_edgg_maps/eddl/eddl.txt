@@ -1,10 +1,5 @@
-//---------------------------------------------------------------
-//                       Duesseldorf EDDL
-//---------------------------------------------------------------
-
 MAP:TWR-CTR EDDL
-FOLDER:Sector Auto
-ASRDATA:LANGEN_LL
+FOLDER:SECTORS
 COLOR:DFSGrey
 STYLE:DashDot:1
 //EDDL

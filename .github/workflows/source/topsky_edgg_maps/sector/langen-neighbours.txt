@@ -1,7 +1,7 @@
 MAP:Langen Neighbours
-FOLDER:Sector Auto
+FOLDER:SECTORS
 ACTIVE:1
-ASRDATA:LANGEN,EIF_PFA,LANGEN_LL
+ASRDATA:LANGEN
 COLOR:DFSGrey
 STYLE:Solid:1
-#import .github\workflows\source\data\airspaces\sectors\neighbour\all.txt
+#import .github\workflows\source\data\sectors\neighbour\all.txt

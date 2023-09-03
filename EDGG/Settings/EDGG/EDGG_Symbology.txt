@@ -33,8 +33,8 @@ Datablock:even flight level:11974326:3.5:0:0:7
 Datablock:odd flight level:39835:3.5:0:0:7
 Datablock:arrivals:15737892:3.4:0:0:7
 Datablock:departures:25600:3.4:0:0:7
-Datablock:user 1:16777215:3.5:0:0:7
-Datablock:user 2:16777215:3.5:0:0:7
+Datablock:user 1:0:3.5:0:0:7
+Datablock:user 2:23040:3.5:0:0:7
 Datablock:user 3:16777215:3.5:0:0:7
 Datablock:user 4:16777215:3.5:0:0:7
 Datablock:user 5:16777215:3.5:0:0:7

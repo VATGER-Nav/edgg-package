@@ -1,7 +1,7 @@
 MAP:Langen Sectors
-FOLDER:Sector Auto
+FOLDER:SECTORS
 ACTIVE:1
-ASRDATA:LANGEN,EIF_PFA,LANGEN_LL
+ASRDATA:LANGEN
 COLOR:DFSGrey
 STYLE:Solid:1
 #import .github\workflows\source\data\sectors\langen\other.txt

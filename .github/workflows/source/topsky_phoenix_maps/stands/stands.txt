@@ -2,8 +2,8 @@
 //                            Stands
 //---------------------------------------------------------------
 
-MAP:Stands
-FOLDER:Stands
+MAP:EDDL/EDDK STANDS
+FOLDER:STANDS
 FONTSIZE:=:8
 COLOR:DFSStand
 ASRDATA:EDDL_DFS,EDDK_DFS

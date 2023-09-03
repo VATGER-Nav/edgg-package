@@ -43,32 +43,31 @@
   ],
 
   "EDGG/Plugins/Topsky_EDUU/TopSkyMaps.txt": [
-    ".github/workflows/source/topsky_eduu_maps/definitions.txt",
-    ".github/workflows/source/topsky_eduu_maps/upper-sectors.txt",
-    ".github/workflows/source/topsky_eduu_maps/upper-lvl.txt",
+    ".github/workflows/source/topsky_eduu_maps/general.txt",
+    ".github/workflows/source/topsky_eduu_maps/fixes-labels.txt",
     ".github/workflows/source/topsky_eduu_maps/heuse-area.txt",
+    ".github/workflows/source/topsky_eduu_maps/upper-sectors.txt",
     ".github/workflows/source/topsky_eduu_maps/langen-sectors.txt",
-    ".github/workflows/source/topsky_eduu_maps/fixes-upper.txt",
-    ".github/workflows/source/topsky_eduu_maps/edff-sep-guides.txt",
+    ".github/workflows/source/topsky_eduu_maps/upper-lvl.txt",
     ".github/workflows/source/data/navdata/holding-enroute.txt",
-    ".github/workflows/source/data/navdata/holding-arrival.txt"
+    ".github/workflows/source/data/navdata/holding-arrival.txt",
+    ".github/workflows/source/topsky_eduu_maps/fixes.txt",
+    ".github/workflows/source/topsky_eduu_maps/edff-sep-guides.txt"
   ],
 
   "EDGG/Plugins/Topsky_EDGG/TopSkyMaps.txt": [
-    ".github/workflows/source/topsky_edgg_maps/colors.txt",
-    ".github/workflows/source/topsky_edgg_maps/symbols.txt",
-    ".github/workflows/source/topsky_edgg_maps/langen-radar/langen-radar.txt",
-    ".github/workflows/source/topsky_edgg_maps/langen-radar/fixes.txt",
-    ".github/workflows/source/topsky_edgg_maps/langen-radar/tma-points.txt",
-    ".github/workflows/source/topsky_edgg_maps/langen-radar/navaids.txt",
-    ".github/workflows/source/topsky_edgg_maps/langen-radar/edll-airports.txt",
-    ".github/workflows/source/topsky_edgg_maps/langen-radar/minor-rwy.txt",
-    ".github/workflows/source/topsky_edgg_maps/langen-radar/fixes-labels.txt",
-    ".github/workflows/source/topsky_edgg_maps/langen-radar/navaids-labels.txt",
-    ".github/workflows/source/topsky_edgg_maps/langen-radar/tma-points-labels.txt",
-    ".github/workflows/source/topsky_edgg_maps/langen-radar/edll-airways.txt",
-    ".github/workflows/source/topsky_edgg_maps/langen-radar/edff-airways.txt",
-    ".github/workflows/source/topsky_edgg_maps/langen-radar/sep-guides.txt",
+    ".github/workflows/source/topsky_edgg_maps/general.txt",
+
+    ".github/workflows/source/topsky_edgg_maps/navdata/fixes-labels.txt",
+    ".github/workflows/source/topsky_edgg_maps/navdata/navaids-labels.txt",
+    ".github/workflows/source/topsky_edgg_maps/navdata/tma-points-labels.txt",
+
+    ".github/workflows/source/topsky_edgg_maps/areas.txt",
+    ".github/workflows/source/topsky_edgg_maps/fis.txt",
+
+    ".github/workflows/source/topsky_edgg_maps/sector/upper-borders.txt",
+    ".github/workflows/source/topsky_edgg_maps/sector/twr_ctr_man.txt",
+    ".github/workflows/source/topsky_edgg_maps/sector/twr_ctr_auto.txt",
 
     ".github/workflows/source/topsky_edgg_maps/sector/german-france-border.txt",
     ".github/workflows/source/topsky_edgg_maps/sector/langen-sectors.txt",
@@ -79,32 +78,17 @@
     ".github/workflows/source/topsky_edgg_maps/sector/eddf-aor.txt",
     ".github/workflows/source/topsky_edgg_maps/sector/eddf-twr-ctr.txt",
     ".github/workflows/source/topsky_edgg_maps/sector/edds-twr-ctr.txt",
-    ".github/workflows/source/topsky_edgg_maps/sector/edll-twr-ctr.txt",
-    ".github/workflows/source/topsky_edgg_maps/sector/upper-borders.txt",
-    ".github/workflows/source/topsky_edgg_maps/sector/all-twr-ctr.txt",
-    ".github/workflows/source/topsky_edgg_maps/sector/d-ctr-hx.txt",
 
-    ".github/workflows/source/topsky_edgg_maps/minor-airports/minor-airports.txt",
-    ".github/workflows/source/topsky_edgg_maps/minor-airports/eddr.txt",
-    ".github/workflows/source/topsky_edgg_maps/minor-airports/edfh.txt",
-    ".github/workflows/source/topsky_edgg_maps/minor-airports/edfm.txt",
-    ".github/workflows/source/topsky_edgg_maps/minor-airports/edfq.txt",
-    ".github/workflows/source/topsky_edgg_maps/minor-airports/edgs.txt",
-    ".github/workflows/source/topsky_edgg_maps/minor-airports/edsb.txt",
-    ".github/workflows/source/topsky_edgg_maps/minor-airports/edtl.txt",
-    ".github/workflows/source/topsky_edgg_maps/minor-airports/edty.txt",
-    ".github/workflows/source/topsky_edgg_maps/minor-airports/edlp.txt",
-    ".github/workflows/source/topsky_edgg_maps/minor-airports/edlv.txt",
-    ".github/workflows/source/topsky_edgg_maps/minor-airports/edlw.txt",
-    ".github/workflows/source/topsky_edgg_maps/minor-airports/eddg.txt",
-    ".github/workflows/source/topsky_edgg_maps/military-airports/military-airports.txt",
-    ".github/workflows/source/topsky_edgg_maps/military-airports/etar.txt",
-    ".github/workflows/source/topsky_edgg_maps/military-airports/etad.txt",
+    ".github/workflows/source/topsky_edgg_maps/aerodromes/edfh.txt",
+    ".github/workflows/source/topsky_edgg_maps/aerodromes/apch.txt",
 
     ".github/workflows/source/topsky_edgg_maps/eddf/base.txt",
     ".github/workflows/source/topsky_edgg_maps/eddf/rnp.txt",
     ".github/workflows/source/topsky_edgg_maps/eddf/sectors.txt",
     ".github/workflows/source/topsky_edgg_maps/eddf/transition.txt",
+
+    ".github/workflows/source/topsky_edgg_maps/eddk/extra.txt",
+    ".github/workflows/source/topsky_edgg_maps/eddk/transition.txt",
 
     ".github/workflows/source/topsky_edgg_maps/edds/base.txt",
     ".github/workflows/source/topsky_edgg_maps/edds/transition.txt",
@@ -112,48 +96,66 @@
     ".github/workflows/source/topsky_edgg_maps/eddl/eddl.txt",
     ".github/workflows/source/topsky_edgg_maps/eddl/transition.txt",
 
-    ".github/workflows/source/topsky_edgg_maps/eddk/extra.txt",
-    ".github/workflows/source/topsky_edgg_maps/eddk/transition.txt",
+    ".github/workflows/source/topsky_edgg_maps/navdata/fixes.txt",
+    ".github/workflows/source/topsky_edgg_maps/navdata/tma-points.txt",
+    ".github/workflows/source/topsky_edgg_maps/navdata/navaids.txt",
 
-    ".github/workflows/source/topsky_edgg_maps/airspace-c-d.txt",
+    ".github/workflows/source/topsky_edgg_maps/navdata/minor-rwy.txt",
+
+    ".github/workflows/source/topsky_edgg_maps/airspaces/aspc_eddf.txt",
+    ".github/workflows/source/topsky_edgg_maps/airspaces/aspc_eddl_eddk.txt",
+    ".github/workflows/source/topsky_edgg_maps/airspaces/aspcd_edds.txt",
+    ".github/workflows/source/topsky_edgg_maps/airspaces/aspd_minor.txt",
+    ".github/workflows/source/topsky_edgg_maps/airspaces/tmz_minor.txt",
+    ".github/workflows/source/topsky_edgg_maps/airspaces/rmz_minor.txt",
+
     ".github/workflows/source/topsky_edgg_maps/mva.txt",
+
     ".github/workflows/source/data/navdata/holding-enroute.txt",
     ".github/workflows/source/data/navdata/holding-arrival.txt",
-    ".github/workflows/source/topsky_edgg_maps/training.txt",
-    ".github/workflows/source/topsky_edgg_maps/extended-centerline.txt",
-    ".github/workflows/source/topsky_edgg_maps/fis.txt"
+
+    ".github/workflows/source/topsky_edgg_maps/other_helper/edll-airports.txt",
+    ".github/workflows/source/topsky_edgg_maps/other_helper/edll-airways.txt",
+    ".github/workflows/source/topsky_edgg_maps/other_helper/edff-airways.txt",
+    ".github/workflows/source/topsky_edgg_maps/other_helper/sep-guides.txt",
+    ".github/workflows/source/topsky_edgg_maps/other_helper/training.txt",
+
+    ".github/workflows/source/topsky_edgg_maps/ecl/eddf_tma.txt",
+    ".github/workflows/source/topsky_edgg_maps/ecl/eddl.txt",
+    ".github/workflows/source/topsky_edgg_maps/ecl/eddk.txt",
+    ".github/workflows/source/topsky_edgg_maps/ecl/military.txt",
+    ".github/workflows/source/topsky_edgg_maps/ecl/minor.txt"
   ],
 
   "EDGG/Plugins/Topsky_Phoenix/TopSkyMaps.txt": [
-    ".github/workflows/source/topsky_phoenix_maps/symbol-def.txt",
-    ".github/workflows/source/topsky_phoenix_maps/colors.txt",
-    ".github/workflows/source/topsky_phoenix_maps/override-sct.txt",
-    ".github/workflows/source/topsky_phoenix_maps/phoenix/phoenix.txt",
+    ".github/workflows/source/topsky_phoenix_maps/general.txt",
+
     ".github/workflows/source/topsky_phoenix_maps/phoenix/vfr-points.txt",
     ".github/workflows/source/topsky_phoenix_maps/phoenix/vfr-hospital.txt",
     ".github/workflows/source/topsky_phoenix_maps/phoenix/airports.txt",
     ".github/workflows/source/topsky_phoenix_maps/phoenix/runways.txt",
     ".github/workflows/source/topsky_phoenix_maps/phoenix/edff-aor.txt",
     ".github/workflows/source/topsky_phoenix_maps/phoenix/ctr.txt",
-    ".github/workflows/source/topsky_phoenix_maps/phoenix/aspc.txt",
-    ".github/workflows/source/topsky_phoenix_maps/phoenix/aspd.txt",
-    ".github/workflows/source/topsky_phoenix_maps/phoenix/tmz-rmz.txt",
+    ".github/workflows/source/topsky_phoenix_maps/phoenix/airspaces.txt",
+
     ".github/workflows/source/topsky_phoenix_maps/stands/stands.txt",
-    ".github/workflows/source/topsky_phoenix_maps/eddf/eddf.txt",
+
     ".github/workflows/source/topsky_phoenix_maps/eddf/ntz.txt",
-    ".github/workflows/source/topsky_phoenix_maps/eddf/rnp-y.txt",
+    ".github/workflows/source/topsky_phoenix_maps/eddf/rnp.txt",
     ".github/workflows/source/topsky_phoenix_maps/eddf/sid.txt",
     ".github/workflows/source/topsky_phoenix_maps/eddf/dep-freq.txt",
     ".github/workflows/source/topsky_phoenix_maps/eddf/distance-indicator.txt",
     ".github/workflows/source/topsky_phoenix_maps/eddf/extended-centerlines.txt",
-    ".github/workflows/source/topsky_phoenix_maps/eddl/eddl.txt",
+
     ".github/workflows/source/topsky_phoenix_maps/eddl/bridges.txt",
-    ".github/workflows/source/topsky_phoenix_maps/eddk/eddk.txt",
+    ".github/workflows/source/topsky_phoenix_maps/eddl/see.txt",
+
     ".github/workflows/source/topsky_phoenix_maps/eddk/extended-centerlines.txt",
+
     ".github/workflows/source/topsky_phoenix_maps/minor-airports.txt",
-    ".github/workflows/source/topsky_phoenix_maps/general.txt",
     ".github/workflows/source/topsky_phoenix_maps/mva.txt",
-    ".github/workflows/source/topsky_phoenix_maps/topografie/topografie.txt",
+    ".github/workflows/source/topsky_phoenix_maps/other-helper/level.txt",
+
     ".github/workflows/source/topsky_phoenix_maps/topografie/highway.txt",
     ".github/workflows/source/topsky_phoenix_maps/topografie/rivers.txt"
   ]

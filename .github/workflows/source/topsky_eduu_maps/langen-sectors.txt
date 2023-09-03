@@ -1,5 +1,6 @@
 MAP:Langen Sectors
-FOLDER:Rhein Radar
+FOLDER:SECTORS
 COLOR:DFSGrey
 STYLE:DashDot:1
 #import .github\workflows\source\data\sectors\langen\
+#import .github\workflows\source\data\sectors\neighbour\
