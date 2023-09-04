@@ -4,14 +4,14 @@ COLOR:DFSGrey
 STYLE:Solid:1
 ASRDATA:LANGEN,EDDS_APP
 ACTIVE:1
-#import .github\workflows\source\data\loa_lines\heuse_area.txt
+#import .github/workflows/source/data/loa_lines/heuse_area.txt
 
 MAP:SULZ AREA
 FOLDER:LoA AREAS/LINES
 COLOR:DFSGrey
 ASRDATA:LANGEN,EDDS_APP
 ACTIVE:1
-#import .github\workflows\source\data\loa_lines\sulz_area.txt
+#import .github/workflows/source/data/loa_lines/sulz_area.txt
 
 MAP:DKB AREA
 FOLDER:LoA AREAS/LINES
@@ -19,4 +19,4 @@ COLOR:DFSGrey
 STYLE:DashDot
 ASRDATA:LANGEN,EDDS_APP
 ACTIVE:ID:DKB,BAD,KTG:*:NDG,WLD,EGG,ZUG,RDG,EDMM:*
-#import .github\workflows\source\data\loa_lines\dkb_area.txt
+#import .github/workflows/source/data/loa_lines/dkb_area.txt
