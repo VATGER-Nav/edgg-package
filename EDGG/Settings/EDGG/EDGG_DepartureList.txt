@@ -1,12 +1,12 @@
 DEP
 m_Visible:1
-m_X:745
-m_Y:44
+m_X:726
+m_Y:45
 m_LineNumber:0
 m_Resizable:1
 m_OrderingColumn:4
 m_HeaderOnly:0
-m_Column:DSQ:5:1:10056:90:89:1:TopSky plugin:TopSky plugin:TopSky plugin:0:0.0
+m_Column:DSQ:5:1:10056:90:89:0:TopSky plugin:TopSky plugin:TopSky plugin:0:0.0
 m_Column:TIMER:5:1:544:0:0:0:VCH:::0:0.0
 m_Column:REQ:5:1:540:548:0:1:VCH:VCH::0:0.0
 m_Column:CALLSIGN:10:0:10021:6:99:1:TopSky plugin:TopSky plugin:TopSky plugin:0:0.0
