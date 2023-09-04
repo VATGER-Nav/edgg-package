@@ -80,7 +80,7 @@ Color_CARD_Reminder
 Color_CARD_Symbol_Fg
 Color_CARD_Time_Vector=63,125,84
 Color_COL_Above_Threshold=250,162,0
-Color_COL_Under_Threshold=200,185,120
+Color_COL_Under_Threshold=34,139,34
 Color_Conflict_Ack
 Color_Conflict_Ack_FL
 Color_CPDLC_Controller_Late=212,128,44
@@ -104,7 +104,7 @@ Color_Global_Menu_Highlight=0,125,255
 Color_Heading_Vector=0,102,0
 Color_Inactive_Sector=205,205,205
 Color_Info_Coord=34,139,34
-Color_Information=200,185,120
+Color_Information=34,139,34
 Color_Information_FL=80,80,80
 Color_Informed
 Color_Informed_2
@@ -160,7 +160,7 @@ Color_SEP_Tool_5
 Color_SEP_Tool_6
 Color_SEP_Tool_7
 Color_SEP_Vert
-Color_Sid_Star_Allocation=200,185,120
+Color_Sid_Star_Allocation=34,139,34
 Color_SMW_Highlight
 Color_SMW_Level_Band=0,255,0
 Color_SMW_Overflight

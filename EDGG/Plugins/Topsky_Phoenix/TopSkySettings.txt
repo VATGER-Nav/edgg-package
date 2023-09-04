@@ -83,7 +83,7 @@ Color_Global_Menu_Highlight
 Color_Heading_Vector
 Color_Inactive_Sector
 Color_Info_Coord
-Color_Information=200,185,120
+Color_Information=34,139,34
 Color_Informed
 Color_Informed_2
 Color_Informed_3
