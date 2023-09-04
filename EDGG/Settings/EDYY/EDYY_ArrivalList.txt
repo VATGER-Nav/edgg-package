@@ -1,0 +1,17 @@
+ARR
+m_Visible:0
+m_X:1594
+m_Y:731
+m_LineNumber:15
+m_Resizable:1
+m_OrderingColumn:5
+m_HeaderOnly:0
+m_Column:CALLSIGN:8:0:9:7:8:1::::1660632142
+m_Column:SI:5:1:26:20:6:1::::0
+m_Column:STND:5:0:2:1:1:1:Ground Radar plugin:Ground Radar plugin:Ground Radar plugin:0
+m_Column:ATYP:7:1:78:0:0:1::::1660632142
+m_Column:RWY:4:1:47:19:0:1::::0
+m_Column:ETA:6:1:54:7:0:1::::0
+m_Column:COM:3:0:11:0:0:1::::42
+m_Column:RMK:6:1:66:29:0:1::::0
+END

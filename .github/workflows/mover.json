@@ -159,5 +159,9 @@
 
     ".github/workflows/source/topsky_phoenix_maps/topografie/highway.txt",
     ".github/workflows/source/topsky_phoenix_maps/topografie/rivers.txt"
+  ],
+
+  "EDGG/Plugins/Topsky_EDYY/TopSkyMaps.txt": [
+    ".github/workflows/source/topsky_edyy_maps/general.txt"
   ]
 }
