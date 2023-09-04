@@ -114,6 +114,7 @@
     ".github/workflows/source/data/navdata/holding-enroute.txt",
     ".github/workflows/source/data/navdata/holding-arrival.txt",
 
+    ".github/workflows/source/topsky_edgg_maps/other_helper/airspace-label.txt",
     ".github/workflows/source/topsky_edgg_maps/other_helper/edll-airports.txt",
     ".github/workflows/source/topsky_edgg_maps/other_helper/edll-airways.txt",
     ".github/workflows/source/topsky_edgg_maps/other_helper/edff-airways.txt",
