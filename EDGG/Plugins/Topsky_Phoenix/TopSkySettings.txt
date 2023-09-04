@@ -179,7 +179,7 @@ Shortcut_Map_Xfr_Key=4,0x48 ; H
 Shortcut_Map_Xfr_Key=5,0x56 ; V
 Shortcut_Map_Target=1,MVA\MVA Germany Summer
 Shortcut_Map_Target=2,OTHER\AIRSPACE ALL
-Shortcut_Map_Target=3,STAND\STANDS
+Shortcut_Map_Target=3,STANDS\EDDL/EDDK STANDS
 Shortcut_Map_Target=4,PHOENIX\VFR HOSP LABEL
 Shortcut_Map_Target=5,PHOENIX\VFR POINTS LABEL
 
