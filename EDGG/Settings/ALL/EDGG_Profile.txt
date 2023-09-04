@@ -21,12 +21,12 @@ ATIS4:You have feedback? Submit it! feedback.vatger.de
 
 PROFILE:EDDL_APP:150:5
 ATIS2:Langen Radar
-ATIS3:Covering EDDL/EDLN/EDLV - PDC/DCL Datalink [EDDL]
+ATIS3:Coverage at vatglasses.uk - PDC/DCL Datalink [EDDL]
 ATIS4:You have feedback? Submit it! feedback.vatger.de
 
 PROFILE:EDDL_BOT_APP:150:5
 ATIS2:Langen Radar
-ATIS3:Covering EDDL/EDLN/EDLV - PDC/DCL Datalink [EDDL]
+ATIS3:Coverage at vatglasses.uk - PDC/DCL Datalink [EDDL]
 ATIS4:You have feedback? Submit it! feedback.vatger.de
 
 PROFILE:EDDL_F_APP:150:5
@@ -36,12 +36,12 @@ ATIS4:You have feedback? Submit it! feedback.vatger.de
 
 PROFILE:EDDS_STG_APP:150:5
 ATIS2:Langen Radar - STG Sector
-ATIS3:Covering EDDS/EDSB/EDTL - PDC/DCL Datalink [EDDS]
+ATIS3:Coverage at vatglasses.uk - PDC/DCL Datalink [EDDS]
 ATIS4:You have feedback? Submit it! feedback.vatger.de
 
 PROFILE:EDDS_REU_APP:150:5
 ATIS2:Langen Radar - REU Sector
-ATIS3:Covering EDDS/EDSB/EDTL - PDC/DCL Datalink [EDDS]
+ATIS3:Coverage at vatglasses.uk - PDC/DCL Datalink [EDDS]
 ATIS4:You have feedback? Submit it! feedback.vatger.de
 
 PROFILE:EDDS_F_APP:150:5
@@ -51,12 +51,12 @@ ATIS4:You have feedback? Submit it! feedback.vatger.de
 
 PROFILE:EDDK_APP:150:5
 ATIS2:Langen Radar
-ATIS3:Covering EDDK/ETNN - PDC/DCL Datalink [EDDK]
+ATIS3:Coverage at vatglasses.uk - PDC/DCL Datalink [EDDK]
 ATIS4:You have feedback? Submit it! feedback.vatger.de
 
 PROFILE:EDDK_NOR_APP:150:5
 ATIS2:Langen Radar
-ATIS3:Covering EDDK/ETNN - PDC/DCL Datalink [EDDK]
+ATIS3:Coverage at vatglasses.uk - PDC/DCL Datalink [EDDK]
 ATIS4:You have feedback? Submit it! feedback.vatger.de
 
 PROFILE:EDDK_F_APP:150:5
@@ -66,82 +66,77 @@ ATIS4:You have feedback? Submit it! feedback.vatger.de
 
 PROFILE:EDFH_EIF_APP:150:5
 ATIS2:Langen Radar
-ATIS3:Covering EDFH/EDDR - PDC/DCL Datalink [EDFH]
+ATIS3:Coverage at vatglasses.uk - PDC/DCL Datalink [EDFH]
 ATIS4:You have feedback? Submit it! feedback.vatger.de
 
 PROFILE:EDDR_PFA_APP:150:5
 ATIS2:Langen Radar
-ATIS3:Covering EDDR - PDC/DCL Datalink [EDDR]
+ATIS3:Coverage at vatglasses.uk - PDC/DCL Datalink [EDDR]
 ATIS4:You have feedback? Submit it! feedback.vatger.de
 
 PROFILE:EDFM_NKL_APP:150:5
 ATIS2:Langen Radar
-ATIS3:Covering EDFM - PDC/DCL Datalink [EDFM]
+ATIS3:Coverage at vatglasses.uk - PDC/DCL Datalink [EDFM]
 ATIS4:You have feedback? Submit it! feedback.vatger.de
 
 PROFILE:EDDG_HMM_APP:150:5
 ATIS2:Langen Radar
-ATIS3:Covering EDDG/EDLW/EDLP - PDC/DCL Datalink [EDDG]
+ATIS3:Coverage at vatglasses.uk - PDC/DCL Datalink [EDDG]
 ATIS4:You have feedback? Submit it! feedback.vatger.de
 
 PROFILE:EDLP_PAL_APP:150:5
 ATIS2:Langen Radar
-ATIS3:Covering EDLP/EDLW - PDC/DCL Datalink [EDLP]
+ATIS3:Coverage at vatglasses.uk - PDC/DCL Datalink [EDLP]
 ATIS4:You have feedback? Submit it! feedback.vatger.de
 
 PROFILE:EDGG_BAD_CTR:450:6
 ATIS2:Langen Radar - CPDLC [EDGB]
-ATIS3:Covering EDDF/EDDS/EDFM
+ATIS3:Coverage at vatglasses.uk
 ATIS4:You have feedback? Submit it! feedback.vatger.de
 
 PROFILE:EDGG_DKB_CTR:450:6
 ATIS2:Langen Radar - CPDLC [EDGD]
-ATIS3:Covering EDDF/EDDS/EDFM
+ATIS3:Coverage at vatglasses.uk
 ATIS4:You have feedback? Submit it! feedback.vatger.de
 
 PROFILE:EDGG_GIN_CTR:450:6
 ATIS2:Langen Radar - CPDLC [EDGG]
-ATIS3:Covering EDDF/EDFH/EDDR
-ATIS4:You have feedback? Submit it! feedback.vatger.de
-
-PROFILE:EDGG_HMM_CTR:450:6
-ATIS2:Langen Radar - CPDLC [EDGH]
-ATIS3:Covering EDDL/EDDG/EDLV/EDLN
+ATIS3:Coverage at vatglasses.uk
 ATIS4:You have feedback? Submit it! feedback.vatger.de
 
 PROFILE:EDGG_KTG_CTR:450:6
 ATIS2:Langen Radar - CPDLC [EDGK]
-ATIS3:Covering EDDF/EDDS/EDFH/EDSB/EDDR
+ATIS3:Coverage at vatglasses.uk
 ATIS4:You have feedback? Submit it! feedback.vatger.de
 
 PROFILE:EDGG_PAH_CTR:450:6
 ATIS2:Langen Radar - CPDLC [EDGP]
-ATIS3:Covering EDDL/EDDK/EDDG/EDLP/EDLW/EDLV/EDLN
+ATIS3:Coverage at vatglasses.uk
 ATIS4:You have feedback? Submit it! feedback.vatger.de
 
 PROFILE:EDGG_RUD_CTR:450:6
 ATIS2:Langen Radar - CPDLC [EDGR]
-ATIS3:Covering EDDF/EDDS/EDFH/EDSB/EDDR
+ATIS3:Coverage at vatglasses.uk
 ATIS4:You have feedback? Submit it! feedback.vatger.de
 
 PROFILE:EDUU_WUR_CTR:450:6
 ATIS2:Rhein Radar - CPDLC [EDUW]
-ATIS3:Covering Rhein UIR +FL245 above southern Langen FIR
+ATIS3:Coverage at vatglasses.uk - only above FL245!
 ATIS4:You have feedback? Submit it! feedback.vatger.de
 
 PROFILE:EDUU_NTM_CTR:450:6
 ATIS2:Rhein Radar - CPDLC [EDUN]
-ATIS3:Covering Rhein UIR +FL245 above southern Langen FIR
+ATIS3:Coverage at vatglasses.uk - only above FL245!
 ATIS4:You have feedback? Submit it! feedback.vatger.de
 
 PROFILE:EDYY_RHR_CTR:450:6
 ATIS2:Maastricht Radar RHR - CPDLC [EDYR]
-ATIS3:Covering Maastricht UIR +FL245 above northern Langen FIR
+ATIS3:Coverage at vatglasses.uk - only above FL245!
 ATIS4:You have feedback? Submit it! feedback.vatger.de
 
 PROFILE:EDYY_MNS_CTR:450:6
 ATIS2:Maastricht Radar MNS - CPDLC [EDYM]
-ATIS3:Covering Maastricht UIR +FL245 above northern Langen FIR
+ATIS3:Coverage at vatglasses.uk - only above FL245!
 ATIS4:You have feedback? Submit it! feedback.vatger.de
 
 END
