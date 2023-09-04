@@ -7,7 +7,9 @@ def extract_file_path(import_statement):
         file_path = import_statement.split("#import ")[1]
         # Remove leading/trailing whitespace and newlines from the file path
         file_path = file_path.strip()
-        return file_path
+        # replace \ in paths by /
+        normalized_path = file_path.replace("\\", "/")
+        return normalized_path
     else:
         return None
 
