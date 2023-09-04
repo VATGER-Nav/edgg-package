@@ -1,1 +1,1 @@
-..\..\ICAO\ICAO_Airports.txt
+..\ICAO\ICAO_Airports.txt
