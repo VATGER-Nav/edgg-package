@@ -42,6 +42,8 @@ TopSky plugin:ACList/Sector List/m_Column_12:XFL:5:1:10003:105:59:1:TopSky plugi
 TopSky plugin:ACList/Sector List/m_Column_13:RFL:5:1:10006:59:84:1:TopSky plugin:TopSky plugin:TopSky plugin
 TopSky plugin:ACList/Sector List/m_Column_14:ADEP:5:1:10007:7:99:0:TopSky plugin::TopSky plugin
 TopSky plugin:ACList/Sector List/m_Column_15:SID:6:1:10011:17:0:1:TopSky plugin::
+TopSky plugin:ACList/Sector List/m_Column_16:COM:3:1:11:32:0:1:::
+TopSky plugin:ACList/Sector List/m_Column_17:RMK:10:1:38:2:0:1:TopSky plugin:TopSky plugin:
 TopSky plugin:ACList/Main VFR List/m_Visible:0
 TopSky plugin:ACList/Main VFR List/m_X:20
 TopSky plugin:ACList/Main VFR List/m_Y:20

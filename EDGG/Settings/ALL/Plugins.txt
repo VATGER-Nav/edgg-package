@@ -55,6 +55,8 @@ TopSky plugin:ACList/Sector List/m_Column_12:COP:5:1:28:45:0:1::TopSky plugin:
 TopSky plugin:ACList/Sector List/m_Column_13:PEL:5:1:10001:68:0:1:TopSky plugin:TopSky plugin:
 TopSky plugin:ACList/Sector List/m_Column_14:XFL:5:1:10003:105:0:1:TopSky plugin:TopSky plugin:
 TopSky plugin:ACList/Sector List/m_Column_15:SI:5:1:10014:20:42:1:TopSky plugin::TopSky plugin
+TopSky plugin:ACList/Sector List/m_Column_16:COM:3:1:11:32:0:1:::
+TopSky plugin:ACList/Sector List/m_Column_17:RMK:10:1:38:2:0:1:TopSky plugin:TopSky plugin:
 TopSky plugin:ACList/Main VFR List/m_Visible:0
 TopSky plugin:ACList/Main VFR List/m_X:20
 TopSky plugin:ACList/Main VFR List/m_Y:20
@@ -266,6 +268,4 @@ CCAMS:ACList/Mode S EHS/m_Column_3:GS:4:1:504:0:0:1:CCAMS::
 VCH:vch_ctl_t:1
 VCH:vch_ctl:20.000000
 VCH:vch_blink:0
-TopSky plugin:ACList/Sector List/m_Column_16:COM:3:1:11:32:0:1:::
-TopSky plugin:ACList/Sector List/m_Column_17:RMK:10:1:38:2:0:1:TopSky plugin:TopSky plugin:
 END
