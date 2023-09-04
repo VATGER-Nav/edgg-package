@@ -6,7 +6,7 @@ ACTIVE:RWY:ARR:EDDG25:DEP:*
 ACTIVE:RWY:ARR:EDDG07:DEP:*
 ACTIVE:RWY:ARR:*:DEP:EDDG25
 ACTIVE:RWY:ARR:*:DEP:EDDG07
-#import .github\workflows\source\data\airspaces\ctr\eddg.txt
+#import .github/workflows/source/data/airspaces/ctr/eddg.txt
 
 MAP:EDDK D-CTR AUTO
 FOLDER:SECTORS
@@ -24,7 +24,7 @@ ACTIVE:RWY:ARR:*:DEP:EDDK32R
 ACTIVE:RWY:ARR:*:DEP:EDDK32L
 ACTIVE:RWY:ARR:*:DEP:EDDK06
 ACTIVE:RWY:ARR:*:DEP:EDDK24
-#import .github\workflows\source\data\airspaces\ctr\eddk.txt
+#import .github/workflows/source/data/airspaces/ctr/eddk.txt
 
 MAP:EDDL D-CTR AUTO
 FOLDER:SECTORS
@@ -38,7 +38,7 @@ ACTIVE:RWY:ARR:*:DEP:EDDL23L
 ACTIVE:RWY:ARR:*:DEP:EDDL23R
 ACTIVE:RWY:ARR:*:DEP:EDDL05L
 ACTIVE:RWY:ARR:*:DEP:EDDL05R
-#import .github\workflows\source\data\airspaces\ctr\eddl.txt
+#import .github/workflows/source/data/airspaces/ctr/eddl.txt
 
 MAP:EDDS D-CTR
 FOLDER:SECTORS
@@ -48,7 +48,7 @@ ACTIVE:RWY:ARR:EDDS25:DEP:*
 ACTIVE:RWY:ARR:EDDS07:DEP:*
 ACTIVE:RWY:ARR:*:DEP:EDDS25
 ACTIVE:RWY:ARR:*:DEP:EDDS07
-#import .github\workflows\source\data\airspaces\ctr\edds.txt
+#import .github/workflows/source/data/airspaces/ctr/edds.txt
 
 MAP:EDDR D(HX)
 FOLDER:SECTORS
@@ -58,7 +58,7 @@ ACTIVE:RWY:ARR:EDDR27:DEP:*
 ACTIVE:RWY:ARR:EDDR09:DEP:*
 ACTIVE:RWY:ARR:*:DEP:EDDR27
 ACTIVE:RWY:ARR:*:DEP:EDDR09
-#import .github\workflows\source\data\airspaces\ctr\eddr.txt
+#import .github/workflows/source/data/airspaces/ctr/eddr.txt
 
 MAP:EDFE ATZ
 FOLDER:SECTORS
@@ -68,7 +68,7 @@ ACTIVE:RWY:ARR:EDFE26:DEP:*
 ACTIVE:RWY:ARR:EDFE08:DEP:*
 ACTIVE:RWY:ARR:*:DEP:EDFE26
 ACTIVE:RWY:ARR:*:DEP:EDFE08
-#import .github\workflows\source\data\airspaces\ctr\edfe.txt
+#import .github/workflows/source/data/airspaces/ctr/edfe.txt
 
 MAP:EDFH D-CTR
 FOLDER:SECTORS
@@ -78,7 +78,7 @@ ACTIVE:RWY:ARR:EDFH21:DEP:*
 ACTIVE:RWY:ARR:EDFH03:DEP:*
 ACTIVE:RWY:ARR:*:DEP:EDFH21
 ACTIVE:RWY:ARR:*:DEP:EDFH03
-#import .github\workflows\source\data\airspaces\ctr\edfh.txt
+#import .github/workflows/source/data/airspaces/ctr/edfh.txt
 
 MAP:EDFM D(HX)
 FOLDER:SECTORS
@@ -88,7 +88,7 @@ ACTIVE:RWY:ARR:EDFM27:DEP:*
 ACTIVE:RWY:ARR:EDFM09:DEP:*
 ACTIVE:RWY:ARR:*:DEP:EDFM27
 ACTIVE:RWY:ARR:*:DEP:EDFM09
-#import .github\workflows\source\data\airspaces\ctr\edfm.txt
+#import .github/workflows/source/data/airspaces/ctr/edfm.txt
 
 MAP:EDLN D-CTR
 FOLDER:SECTORS
@@ -98,7 +98,7 @@ ACTIVE:RWY:ARR:EDLN31:DEP:*
 ACTIVE:RWY:ARR:EDLN13:DEP:*
 ACTIVE:RWY:ARR:*:DEP:EDLN31
 ACTIVE:RWY:ARR:*:DEP:EDLN13
-#import .github\workflows\source\data\airspaces\ctr\edln.txt
+#import .github/workflows/source/data/airspaces/ctr/edln.txt
 
 MAP:EDLP D-CTR
 FOLDER:SECTORS
@@ -108,7 +108,7 @@ ACTIVE:RWY:ARR:EDLP24:DEP:*
 ACTIVE:RWY:ARR:EDLP06:DEP:*
 ACTIVE:RWY:ARR:*:DEP:EDLP24
 ACTIVE:RWY:ARR:*:DEP:EDLP06
-#import .github\workflows\source\data\airspaces\ctr\edlp.txt
+#import .github/workflows/source/data/airspaces/ctr/edlp.txt
 
 MAP:EDLV D-CTR
 FOLDER:SECTORS
@@ -118,7 +118,7 @@ ACTIVE:RWY:ARR:EDLV27:DEP:*
 ACTIVE:RWY:ARR:EDLV09:DEP:*
 ACTIVE:RWY:ARR:*:DEP:EDLV27
 ACTIVE:RWY:ARR:*:DEP:EDLV09
-#import .github\workflows\source\data\airspaces\ctr\edlv.txt
+#import .github/workflows/source/data/airspaces/ctr/edlv.txt
 
 MAP:EDLW D-CTR
 FOLDER:SECTORS
@@ -128,7 +128,7 @@ ACTIVE:RWY:ARR:EDLW24:DEP:*
 ACTIVE:RWY:ARR:EDLW06:DEP:*
 ACTIVE:RWY:ARR:*:DEP:EDLW24
 ACTIVE:RWY:ARR:*:DEP:EDLW06
-#import .github\workflows\source\data\airspaces\ctr\edlw.txt
+#import .github/workflows/source/data/airspaces/ctr/edlw.txt
 
 MAP:EDSB D-CTR
 FOLDER:SECTORS
@@ -138,7 +138,7 @@ ACTIVE:RWY:ARR:EDLP21:DEP:*
 ACTIVE:RWY:ARR:EDLP03:DEP:*
 ACTIVE:RWY:ARR:*:DEP:EDLP21
 ACTIVE:RWY:ARR:*:DEP:EDLP03
-#import .github\workflows\source\data\airspaces\ctr\edsb.txt
+#import .github/workflows/source/data/airspaces/ctr/edsb.txt
 
 MAP:EDTL D(HX)
 FOLDER:SECTORS
@@ -148,7 +148,7 @@ ACTIVE:RWY:ARR:EDTL21:DEP:*
 ACTIVE:RWY:ARR:EDTL03:DEP:*
 ACTIVE:RWY:ARR:*:DEP:EDTL21
 ACTIVE:RWY:ARR:*:DEP:EDTL03
-#import .github\workflows\source\data\airspaces\ctr\edtl.txt
+#import .github/workflows/source/data/airspaces/ctr/edtl.txt
 
 MAP:EDTY D(HX)
 FOLDER:SECTORS
@@ -158,7 +158,7 @@ ACTIVE:RWY:ARR:EDTY28:DEP:*
 ACTIVE:RWY:ARR:EDTY10:DEP:*
 ACTIVE:RWY:ARR:*:DEP:EDTY28
 ACTIVE:RWY:ARR:*:DEP:EDTY10
-#import .github\workflows\source\data\airspaces\ctr\edty.txt
+#import .github/workflows/source/data/airspaces/ctr/edty.txt
 
 MAP:ETAD D-CTR
 FOLDER:SECTORS
@@ -168,7 +168,7 @@ ACTIVE:RWY:ARR:ETAD05:DEP:*
 ACTIVE:RWY:ARR:ETAD23:DEP:*
 ACTIVE:RWY:ARR:*:DEP:ETAD05
 ACTIVE:RWY:ARR:*:DEP:ETAD23
-#import .github\workflows\source\data\airspaces\ctr\etad.txt
+#import .github/workflows/source/data/airspaces/ctr/etad.txt
 
 MAP:ETAR D-CTR
 FOLDER:SECTORS
@@ -182,7 +182,7 @@ ACTIVE:RWY:ARR:*:DEP:ETAR27
 ACTIVE:RWY:ARR:*:DEP:ETAR26
 ACTIVE:RWY:ARR:*:DEP:ETAR09
 ACTIVE:RWY:ARR:*:DEP:ETAR08
-#import .github\workflows\source\data\airspaces\ctr\etar.txt
+#import .github/workflows/source/data/airspaces/ctr/etar.txt
 
 MAP:ETHF D(HX)
 FOLDER:SECTORS
@@ -192,7 +192,7 @@ ACTIVE:RWY:ARR:ETHF30:DEP:*
 ACTIVE:RWY:ARR:ETHF12:DEP:*
 ACTIVE:RWY:ARR:*:DEP:ETHF30
 ACTIVE:RWY:ARR:*:DEP:ETHF12
-#import .github\workflows\source\data\airspaces\ctr\ethf.txt
+#import .github/workflows/source/data/airspaces/ctr/ethf.txt
 
 MAP:ETHN D(HX)
 FOLDER:SECTORS
@@ -202,7 +202,7 @@ ACTIVE:RWY:ARR:ETHN25:DEP:*
 ACTIVE:RWY:ARR:ETHN07:DEP:*
 ACTIVE:RWY:ARR:*:DEP:ETHN25
 ACTIVE:RWY:ARR:*:DEP:ETHN07
-#import .github\workflows\source\data\airspaces\ctr\ethn.txt
+#import .github/workflows/source/data/airspaces/ctr/ethn.txt
 
 MAP:ETNG D(HX)
 FOLDER:SECTORS
@@ -212,7 +212,7 @@ ACTIVE:RWY:ARR:ETNG27:DEP:*
 ACTIVE:RWY:ARR:ETNG09:DEP:*
 ACTIVE:RWY:ARR:*:DEP:ETNG27
 ACTIVE:RWY:ARR:*:DEP:ETNG09
-#import .github\workflows\source\data\airspaces\ctr\etnn.txt
+#import .github/workflows/source/data/airspaces/ctr/etnn.txt
 
 MAP:ETNN D(HX)
 FOLDER:SECTORS
@@ -222,7 +222,7 @@ ACTIVE:RWY:ARR:ETNN24:DEP:*
 ACTIVE:RWY:ARR:ETNN06:DEP:*
 ACTIVE:RWY:ARR:*:DEP:ETNN24
 ACTIVE:RWY:ARR:*:DEP:ETNN06
-#import .github\workflows\source\data\airspaces\ctr\etnn.txt
+#import .github/workflows/source/data/airspaces/ctr/etnn.txt
 
 MAP:ETOU D(HX)
 FOLDER:SECTORS
@@ -232,7 +232,7 @@ ACTIVE:RWY:ARR:ETOU25:DEP:*
 ACTIVE:RWY:ARR:ETOU07:DEP:*
 ACTIVE:RWY:ARR:*:DEP:ETOU25
 ACTIVE:RWY:ARR:*:DEP:ETOU07
-#import .github\workflows\source\data\airspaces\ctr\etou.txt
+#import .github/workflows/source/data/airspaces/ctr/etou.txt
 
 MAP:ETSB D(HX)
 FOLDER:SECTORS
@@ -242,4 +242,4 @@ ACTIVE:RWY:ARR:ETSB21:DEP:*
 ACTIVE:RWY:ARR:ETSB03:DEP:*
 ACTIVE:RWY:ARR:*:DEP:ETSB21
 ACTIVE:RWY:ARR:*:DEP:ETSB03
-#import .github\workflows\source\data\airspaces\ctr\etsb.txt
+#import .github/workflows/source/data/airspaces/ctr/etsb.txt

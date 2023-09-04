@@ -2,4 +2,4 @@ MAP:NavAids LABELS
 FOLDER:LABELS
 FONTSIZE:=:11
 COLOR:DFSGrey
-#import .github\workflows\source\data\navdata\navaids_labels.txt
+#import .github/workflows/source/data/navdata/navaids_labels.txt

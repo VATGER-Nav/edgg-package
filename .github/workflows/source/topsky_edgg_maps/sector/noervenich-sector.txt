@@ -5,4 +5,4 @@ ACTIVE:ID:*:*:NOR,DKAT:*
 ASRDATA:LANGEN
 COLOR:DFSGrey
 STYLE:Solid:1
-#import .github\workflows\source\data\sectors\langen\nor.txt
+#import .github/workflows/source/data/sectors/langen/nor.txt

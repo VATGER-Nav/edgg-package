@@ -4,4 +4,4 @@ COLOR:white
 STYLE:Solid:2
 ASRDATA:PHOENIX
 ACTIVE:1
-#import .github\workflows\source\data\navdata\runways.txt
+#import .github/workflows/source/data/navdata/runways.txt

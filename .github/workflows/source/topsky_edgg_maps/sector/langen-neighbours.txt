@@ -4,4 +4,4 @@ ACTIVE:1
 ASRDATA:LANGEN
 COLOR:DFSGrey
 STYLE:Solid:1
-#import .github\workflows\source\data\sectors\neighbour\all.txt
+#import .github/workflows/source/data/sectors/neighbour/all.txt

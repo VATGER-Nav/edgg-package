@@ -2,4 +2,4 @@ MAP:NavAids
 ACTIVE:1
 ASRDATA:LANGEN,EDDS_APP
 COLOR:DFSGrey
-#import .github\workflows\source\data\navdata\navaids.txt
+#import .github/workflows/source/data/navdata/navaids.txt

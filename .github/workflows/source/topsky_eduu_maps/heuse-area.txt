@@ -3,4 +3,4 @@ FOLDER:LoA AREAS/LINES
 COLOR:DFSGrey
 STYLE:Solid:1
 ACTIVE:1
-#import .github\workflows\source\data\loa_lines\heuse_area.txt
+#import .github/workflows/source/data/loa_lines/heuse_area.txt

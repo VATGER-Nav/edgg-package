@@ -9,4 +9,4 @@ ACTIVE:RWY:ARR:EDDS25:DEP:*
 ACTIVE:RWY:ARR:EDDS07:DEP:*
 ACTIVE:RWY:ARR:*:DEP:EDDS25
 ACTIVE:RWY:ARR:*:DEP:EDDS07
-#import .github\workflows\source\data\airspaces\classes\edds_cd.txt
+#import .github/workflows/source/data/airspaces/classes/edds_cd.txt

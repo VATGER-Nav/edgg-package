@@ -7,7 +7,7 @@ ACTIVE:RWY:ARR:EDDG25:DEP:*
 ACTIVE:RWY:ARR:EDDG07:DEP:*
 ACTIVE:RWY:ARR:*:DEP:EDDG25
 ACTIVE:RWY:ARR:*:DEP:EDDG07
-#import .github\workflows\source\data\airspaces\classes\eddg_d.txt
+#import .github/workflows/source/data/airspaces/classes/eddg_d.txt
 
 MAP:ASPD EDFH
 FOLDER:AIRSPACES
@@ -18,7 +18,7 @@ ACTIVE:RWY:ARR:EDFH21:DEP:*
 ACTIVE:RWY:ARR:EDFH03:DEP:*
 ACTIVE:RWY:ARR:*:DEP:EDFH21
 ACTIVE:RWY:ARR:*:DEP:EDFH03
-#import .github\workflows\source\data\airspaces\classes\edfh_d.txt
+#import .github/workflows/source/data/airspaces/classes/edfh_d.txt
 
 MAP:ASPD EDSB
 FOLDER:AIRSPACES
@@ -29,6 +29,6 @@ ACTIVE:RWY:ARR:EDSB03:DEP:*
 ACTIVE:RWY:ARR:EDSB21:DEP:*
 ACTIVE:RWY:ARR:*:DEP:EDSB03
 ACTIVE:RWY:ARR:*:DEP:EDSB21
-#import .github\workflows\source\data\airspaces\classes\edsb_d.txt
+#import .github/workflows/source/data/airspaces/classes/edsb_d.txt
 STYLE:Dash:1
-#import .github\workflows\source\data\airspaces\classes\edsb_e.txt
+#import .github/workflows/source/data/airspaces/classes/edsb_e.txt
