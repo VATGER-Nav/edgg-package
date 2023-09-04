@@ -122,14 +122,14 @@ m_UseIsectForScratchPad:1
 m_RotateRadarTargetSymbol:0
 m_RotateFlightPlanTrackSymbol:0
 m_RubberHeadingRounding:5
-SqawkForSModeTransponder:
+SqawkForSModeTransponder:1000
 m_TransparentTagBackground:1
 m_UseArrDepTagBgColor:0
 SET_MTCA_Show:0
 m_TaxiOutTime:7
 m_StartupTime:10
 m_ConnectTime:15
-m_AutoAssumeOnGroundStateChangeButton:1
+m_AutoAssumeOnGroundStateChangeButton:0
 m_ShowTrackMilesInRouteButton:1
 m_FilterOutSquawks:
 ORIGPLANE

@@ -132,7 +132,6 @@ m_ConnectTime:15
 m_AutoAssumeOnGroundStateChangeButton:0
 m_ShowTrackMilesInRouteButton:1
 m_FilterOutSquawks:
-m_EquipmentsIcaoFormat:1
 ORIGPLANE
 m_Visible:0
 m_X:3
