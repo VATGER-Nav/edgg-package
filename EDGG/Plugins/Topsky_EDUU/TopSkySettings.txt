@@ -225,6 +225,8 @@ FlightLeg_Use_Ack_Color=0
 FPCP_HeadingTime=5
 FPCP_PredictionTime=10
 
+HTTP_AUP_URL=https://lara.vatsim.pt/api/areas/ED/
+
 HTTP_SIGMET_Pages=6443
 
 Label_AHDG_Point_Label=0
@@ -319,6 +321,7 @@ System_GUI_Font_1_Size=12
 System_GUI_Font_2_Size=10
 System_GUI_Scale_Menus=1
 System_ProxySounds=0
+System_UseAUP=1
 
 System_UseAcceptedCoordColor=1
 System_UseRwyLockedColor=0
@@ -339,6 +342,7 @@ Vector_QDM_Airports=0
 Vector_QDM_AA_Label_Dist=1
 Vector_QDM_AP_Label_Dist=1
 
+Window_ASM=1
 Window_SM_LeaveHoldTime=3
 Window_CPDLC_Current=1,1000,44
 Window_CARD=3,1565,755
