@@ -1,6 +1,5 @@
 MAP:UPPER SECTORS
-FOLDER:Sectors
-COLOR:ARTCC HIGH
+COLOR:greysector
 STYLE:DOT:1
 ACTIVE:1
 #import .github\workflows\source\data\sectors\maastricht\cel.txt

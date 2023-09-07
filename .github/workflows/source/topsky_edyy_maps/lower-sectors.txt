@@ -1,8 +1,7 @@
 MAP:LOWER SECTORS
-FOLDER:Sectors
-COLOR:ARTCC
+FOLDER:EDYY
+COLOR:greysector
 LAYER:-1
-ACTIVE:1
 #import .github\workflows\source\data\sectors\neighbour\alr.txt
 #import .github\workflows\source\data\sectors\neighbour\dst.txt
 #import .github\workflows\source\data\sectors\neighbour\eide.txt
