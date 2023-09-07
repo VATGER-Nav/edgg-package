@@ -14,6 +14,7 @@ ACTIVE:1
 //import .github\workflows\source\data\sectors\maastricht\kok.txt
 //import .github\workflows\source\data\sectors\maastricht\nik.txt
 #import .github\workflows\source\data\sectors\maastricht\sco.txt
+#import .github\workflows\source\data\sectors\maastricht\ekdk.txt
 #import .github\workflows\source\data\sectors\rhein\ffm.txt
 #import .github\workflows\source\data\sectors\rhein\ful.txt
 #import .github\workflows\source\data\sectors\rhein\ntm.txt
