@@ -164,6 +164,7 @@
   "EDGG/Plugins/Topsky_EDYY/TopSkyMaps.txt": [
     ".github/workflows/source/topsky_edyy_maps/general.txt",
 
+    ".github/workflows/source/topsky_edyy_maps/borders.txt",
     ".github/workflows/source/topsky_edyy_maps/upper-sectors.txt",
     ".github/workflows/source/topsky_edyy_maps/lower-sectors.txt",
     ".github/workflows/source/topsky_edyy_maps/fixes.txt"
