@@ -1,0 +1,14 @@
+MAP:LOWER SECTORS
+FOLDER:EDYY
+COLOR:greysector
+LAYER:-1
+#import .github\workflows\source\data\sectors\neighbour\alr.txt
+#import .github\workflows\source\data\sectors\neighbour\dst.txt
+#import .github\workflows\source\data\sectors\neighbour\eide.txt
+#import .github\workflows\source\data\sectors\neighbour\eidw.txt
+#import .github\workflows\source\data\sectors\neighbour\ems.txt
+#import .github\workflows\source\data\sectors\neighbour\fri.txt
+#import .github\workflows\source\data\sectors\neighbour\hei.txt
+#import .github\workflows\source\data\sectors\neighbour\hrz.txt
+#import .github\workflows\source\data\sectors\neighbour\all.txt
+#import .github\workflows\source\data\sectors\langen\

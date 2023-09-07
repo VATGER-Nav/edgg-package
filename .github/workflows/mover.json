@@ -159,5 +159,18 @@
 
     ".github/workflows/source/topsky_phoenix_maps/topografie/highway.txt",
     ".github/workflows/source/topsky_phoenix_maps/topografie/rivers.txt"
+  ],
+
+  "EDGG/Plugins/Topsky_EDYY/TopSkyMaps.txt": [
+    ".github/workflows/source/topsky_edyy_maps/general.txt",
+
+    ".github/workflows/source/topsky_edyy_maps/borders.txt",
+    ".github/workflows/source/topsky_edyy_maps/airports.txt",
+
+    ".github/workflows/source/topsky_edyy_maps/upper-sectors.txt",
+    ".github/workflows/source/topsky_edyy_maps/lower-sectors.txt",
+
+    ".github/workflows/source/topsky_edyy_maps/fixes.txt",
+    ".github/workflows/source/topsky_edyy_maps/airways.txt"
   ]
 }
