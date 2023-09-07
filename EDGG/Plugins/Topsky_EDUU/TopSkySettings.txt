@@ -342,7 +342,7 @@ Vector_QDM_Airports=0
 Vector_QDM_AA_Label_Dist=1
 Vector_QDM_AP_Label_Dist=1
 
-Window_ASM=1
+Window_ASM=3,80,120,570,300
 Window_SM_LeaveHoldTime=3
 Window_CPDLC_Current=1,1000,44
 Window_CARD=3,1565,755
