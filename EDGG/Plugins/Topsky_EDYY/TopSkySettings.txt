@@ -241,17 +241,17 @@ Label_OpTextCaps=0
 
 Label_SI_ShowFreq=1
 Label_SI_FreqTime=3
-Label_WTC_Highlight_WTC=LHJ
-Label_WTC_Highlight_ATYP=B752,B753
+// Label_WTC_Highlight_WTC=LHJ
+// Label_WTC_Highlight_ATYP=B752,B753
 
 Label_N_Default=0
 
 Label_SQ_Default=0000
 Label_ATYP_Default=0000
 Label_WTC_Default=0000
-Label_GS_Default=1111
+Label_GS_Default=0000
 Label_ADES_Default=0000
-Label_COPN_Default=1000
+Label_COPN_Default=0000
 Label_COPX_Default=0000
 Label_NRAC_Default=0000
 Label_XFL_Default=1110
@@ -313,8 +313,8 @@ System_TrueColorMode=1
 System_UseReportedGS=1
 System_ASP_IasMach=28500
 System_Filters_Concerned=0
-System_Filters_Alt_Allow=0
-System_Filters_Hard=0
+System_Filters_Alt_Allow=4000
+System_Filters_Hard=1
 System_MetarSourceVATSIM=1
 System_TaxiTime=10
 System_GUI_Font_1_Size=12
