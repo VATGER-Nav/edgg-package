@@ -2,5 +2,5 @@ MAP:LANGEN SECTORS
 FOLDER:SECTORS
 COLOR:DFSGrey
 STYLE:DashDot:1
-#import .github/workflows/source/data/sectors/langen/
-#import .github/workflows/source/data/sectors/neighbour/
+#import .github/workflows/source/data/sectors/langen/all.txt
+#import .github/workflows/source/data/sectors/neighbour/all.txt
