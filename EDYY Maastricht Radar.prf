@@ -59,7 +59,7 @@ TeamSpeakVccs	Ts3DialogTop	0
 TeamSpeakVccs	Ts3DialogRight	890
 TeamSpeakVccs	Ts3DialogBottom	570
 
-RecentFiles	Recent1	\EDGG\ASR\Center\EDUU.asr
+RecentFiles	Recent1	\EDGG\ASR\Center\EDYY.asr
 
 LastSession	atis_url0	http://uniatis.net/atis.php?metar=$metar($atisairportA)&arr=$arrrwy($atisairportA)&dep=$deprwy($atisairportA)&apptype=ILS&info=$atiscodeA&depfreq=122.800
 LastSession	atis_url1	http://uniatis.net/atis.php?metar=$metar($atisairportB)&arr=$arrrwy($atisairportB)&dep=$deprwy($atisairportB)&apptype=ILS&info=$atiscodeB&depfreq=122.800
