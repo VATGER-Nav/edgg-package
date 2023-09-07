@@ -168,7 +168,7 @@ Color_SMW_Overlap_Box=133,133,133
 Color_SMW_Overshoot=240,190,30
 Color_Standard_Line_RDF
 Color_Standard_RDF
-Color_Suite_Highlight=0,255,0
+Color_Suite_Highlight=60,150,200
 Color_System_Calculated_TOC=210,110,210
 Color_System_Calculated_TOD=210,110,210
 Color_Temp_Track_Highlight
@@ -376,4 +376,4 @@ Color_Concerned=200,200,200
 Color_Coordination=200,200,200
 Color_Unconcerned=74,74,74
 Color_Unknown=239,224,42
-Color_Redundant=197,197,198
+Color_Redundant=200,200,200
