@@ -12,6 +12,13 @@ ACTIVE:1
 #import .github\workflows\source\data\sectors\maastricht\mns.txt
 #import .github\workflows\source\data\sectors\maastricht\rhr.txt
 #import .github\workflows\source\data\sectors\maastricht\sol.txt
+//import .github\workflows\source\data\sectors\maastricht\kok.txt
+//import .github\workflows\source\data\sectors\maastricht\nik.txt
+#import .github\workflows\source\data\sectors\maastricht\sco.txt
 #import .github\workflows\source\data\sectors\rhein\ffm.txt
 #import .github\workflows\source\data\sectors\rhein\ful.txt
 #import .github\workflows\source\data\sectors\rhein\ntm.txt
+#import .github\workflows\source\data\sectors\rhein\hvl.txt
+#import .github\workflows\source\data\sectors\rhein\sal.txt
+#import .github\workflows\source\data\sectors\rhein\spe.txt
+#import .github\workflows\source\data\sectors\rhein\ose.txt
