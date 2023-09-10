@@ -1,9 +1,5 @@
-//---------------------------------------------------------------
-//                      Holdings
-//---------------------------------------------------------------
-
 MAP:Enroute
-FOLDER:Holding
+FOLDER:HOLDING
 COLOR:Holding_CTR
 STYLE:Solid:1
 SYMBOL:FIX2:ADEMI:ADEMI | L 284 FL60 - FL240:0:20
@@ -2080,7 +2076,7 @@ LINE:N050.27.04.349:E007.07.52.571:N050.27.04.961:E007.08.01.875
 LINE:N050.27.04.961:E007.08.01.875:N050.27.16.999:E007.13.37.999
 
 MAP:Arrival
-FOLDER:Holding
+FOLDER:HOLDING
 COLOR:Holding_APP
 STYLE:Solid:1
 SYMBOL:FIX2:LMA:LMA | R 240 FL40 - FL240:0:20

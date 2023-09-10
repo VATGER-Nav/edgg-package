@@ -1,0 +1,12 @@
+// EDDS Airspace C not displayed, not needed
+MAP:ASPCD EDDS
+FOLDER:AIRSPACES
+ZOOM:7
+COLOR:DFSGrey
+STYLE:Solid:1
+LAYER:-2
+ACTIVE:RWY:ARR:EDDS25:DEP:*
+ACTIVE:RWY:ARR:EDDS07:DEP:*
+ACTIVE:RWY:ARR:*:DEP:EDDS25
+ACTIVE:RWY:ARR:*:DEP:EDDS07
+#import .github/workflows/source/data/airspaces/classes/edds_cd.txt

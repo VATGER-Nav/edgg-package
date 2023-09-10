@@ -3,6 +3,7 @@ DisplayTypeNeedRadarContent:0
 DisplayTypeGeoReferenced:1
 SECTORFILE:
 SECTORTITLE:
+Free Text:EDDR Parking\GAT:freetext
 Free Text:EDDR Parking\N1:freetext
 Free Text:EDDR Parking\N2:freetext
 Free Text:EDDR Parking\N3:freetext
@@ -13,6 +14,11 @@ Free Text:EDDR Parking\S2:freetext
 Free Text:EDDR Parking\S3:freetext
 Free Text:EDDR Parking\S4:freetext
 Free Text:EDDR Parking\S5:freetext
+Free Text:EDDR Taxiways\A:freetext
+Free Text:EDDR Taxiways\B:freetext
+Free Text:EDDR Taxiways\C:freetext
+Free Text:EDDR Taxiways\N:freetext
+Free Text:EDDR Taxiways\S:freetext
 Geo:EDDR Groundlayout Holdshorts:
 Geo:EDDR Groundlayout Stands:
 Regions:EDDR Ground NEW:polygon

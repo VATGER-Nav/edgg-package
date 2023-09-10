@@ -1,6 +1,6 @@
 m_PlaySounds:1
 m_AssumeSlowAcAsStandby:1
-m_ShowAirspaceLines:1
+m_ShowAirspaceLines:0
 m_ShowRouteFixName:1
 m_ShowRouteETA:1
 m_ShowCalculatedHeading:1
@@ -132,7 +132,6 @@ m_ConnectTime:15
 m_AutoAssumeOnGroundStateChangeButton:0
 m_ShowTrackMilesInRouteButton:1
 m_FilterOutSquawks:
-m_EquipmentsIcaoFormat:1
 ORIGPLANE
 m_Visible:0
 m_X:3

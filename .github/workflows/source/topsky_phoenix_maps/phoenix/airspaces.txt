@@ -1,0 +1,34 @@
+MAP:ASPC
+FOLDER:PHOENIX
+COLOR:Standard
+ASRDATA:PHOENIX
+ACTIVE:1
+STYLE:DOT:2
+#import .github/workflows/source/data/airspaces/classes/eddf_c.txt
+#import .github/workflows/source/data/airspaces/classes/eddl_eddk_c.txt
+
+MAP:ASPD
+FOLDER:PHOENIX
+COLOR:Standard
+ASRDATA:PHOENIX
+ACTIVE:1
+STYLE:DASH:1
+#import .github/workflows/source/data/airspaces/classes/eddg_d.txt
+#import .github/workflows/source/data/airspaces/classes/edds_cd.txt
+#import .github/workflows/source/data/airspaces/classes/edfh_d.txt
+#import .github/workflows/source/data/airspaces/classes/edsb_d.txt
+
+MAP:TMZ/RMZ
+FOLDER:PHOENIX
+COLOR:Standard
+ASRDATA:PHOENIX
+ACTIVE:1
+STYLE:DOT:1
+#import .github/workflows/source/data/airspaces/classes/eddg_tmz.txt
+#import .github/workflows/source/data/airspaces/classes/edfh_tmz.txt
+#import .github/workflows/source/data/airspaces/classes/edfq_rmz.txt
+#import .github/workflows/source/data/airspaces/classes/edgs_rmz.txt
+#import .github/workflows/source/data/airspaces/classes/edlp_tmz.txt
+#import .github/workflows/source/data/airspaces/classes/edlv_tmz.txt
+#import .github/workflows/source/data/airspaces/classes/edlw_tmz.txt
+#import .github/workflows/source/data/airspaces/classes/edty_rmz.txt
