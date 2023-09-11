@@ -9,7 +9,6 @@ Setup_COOPANS=1
 //Window_CPDLC_Current=3,2800,44
 //Window_CARD=3,3100,1220,738,420
 
-Airspace_833_Min=0
 Airspace_ASSR_Type=2
 Airspace_ASSR_AutoAssign_Type=0
 Airspace_ModeS_Code_VFR=7000

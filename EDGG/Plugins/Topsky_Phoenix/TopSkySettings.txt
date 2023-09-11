@@ -9,9 +9,6 @@ Setup_COOPANS=1
 //System_GUI_Scale_Tracks=1.5
 //System_GUI_Scale_Windows=1.4
 
-
-Airspace_833_Min=0
-//using CCAMS
 Airspace_ASSR_Type=2
 Airspace_ASSR_AutoAssign_Type=0
 Airspace_ModeS_Code_VFR=7000
