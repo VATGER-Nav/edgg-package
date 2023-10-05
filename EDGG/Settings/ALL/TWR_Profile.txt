@@ -54,6 +54,16 @@ ATIS2:Muenster/Osnabrueck Tower
 ATIS3:PDC/DCL Datalink [EDDG] - Pilotbriefing vats.im/eddg
 ATIS4:You have feedback? Submit it! feedback.vatger.de
 
+PROFILE:EDDK_DEL:20:2
+ATIS2:Koeln/Bonn Delivery
+ATIS3:PDC/DCL Datalink [EDDK] - Pilotbriefing vats.im/eddk
+ATIS4:You have feedback? Submit it! feedback.vatger.de
+
+PROFILE:EDDK_GND:20:3
+ATIS2:Koeln/Bonn Ground
+ATIS3:PDC/DCL Datalink [EDDK] - Pilotbriefing vats.im/eddk
+ATIS4:You have feedback? Submit it! feedback.vatger.de
+
 PROFILE:EDDK_TWR:50:4
 ATIS2:Koeln/Bonn Tower
 ATIS3:PDC/DCL Datalink [EDDK] - Pilotbriefing vats.im/eddk
