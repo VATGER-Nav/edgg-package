@@ -9,9 +9,6 @@ Setup_COOPANS=1
 //System_GUI_Scale_Tracks=1.5
 //System_GUI_Scale_Windows=1.4
 
-
-Airspace_833_Min=0
-//using CCAMS
 Airspace_ASSR_Type=2
 Airspace_ASSR_AutoAssign_Type=0
 Airspace_ModeS_Code_VFR=7000
@@ -178,10 +175,10 @@ Shortcut_Map_Xfr_Key=3,0x47 ; G
 Shortcut_Map_Xfr_Key=4,0x48 ; H
 Shortcut_Map_Xfr_Key=5,0x56 ; V
 Shortcut_Map_Target=1,MVA\MVA Germany Summer
-Shortcut_Map_Target=2,OTHER\AIRSPACE ALL
+Shortcut_Map_Target=2,OTHER\AIRSPACE LEVEL
 Shortcut_Map_Target=3,STANDS\EDDL/EDDK STANDS
-Shortcut_Map_Target=4,PHOENIX\VFR HOSP LABEL
-Shortcut_Map_Target=5,PHOENIX\VFR POINTS LABEL
+Shortcut_Map_Target=4,LABELS\VFR HOSP LABEL
+Shortcut_Map_Target=5,LABELS\VFR POINTS LABEL
 
 STCA=0
 
