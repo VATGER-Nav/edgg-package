@@ -3,7 +3,7 @@ FOLDER:PHOENIX
 COLOR:Standard
 ASRDATA:PHOENIX
 ACTIVE:1
-STYLE:DOT:2
+STYLE:DOT:1
 #import .github/workflows/source/data/airspaces/classes/eddf_c.txt
 #import .github/workflows/source/data/airspaces/classes/eddl_eddk_c.txt
 
