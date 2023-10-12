@@ -1,0 +1,78 @@
+DisplayTypeName:Ground Radar display
+DisplayTypeNeedRadarContent:0
+DisplayTypeGeoReferenced:1
+SECTORFILE:E:\USER FILES\Games\MSFS2020 Addons\VATSIM\EuroScope Sector Files\Test GNG\EDGG-TEST_20231011234722-231001-0007.sct
+SECTORTITLE:EDGG-TEST_20231011234722-231001-0007.sct
+Free Text:ETOU Groundlayout\1:freetext
+Free Text:ETOU Groundlayout\10:freetext
+Free Text:ETOU Groundlayout\11:freetext
+Free Text:ETOU Groundlayout\12:freetext
+Free Text:ETOU Groundlayout\13:freetext
+Free Text:ETOU Groundlayout\14:freetext
+Free Text:ETOU Groundlayout\15:freetext
+Free Text:ETOU Groundlayout\16:freetext
+Free Text:ETOU Groundlayout\17:freetext
+Free Text:ETOU Groundlayout\18:freetext
+Free Text:ETOU Groundlayout\19:freetext
+Free Text:ETOU Groundlayout\2:freetext
+Free Text:ETOU Groundlayout\20:freetext
+Free Text:ETOU Groundlayout\21:freetext
+Free Text:ETOU Groundlayout\22:freetext
+Free Text:ETOU Groundlayout\23:freetext
+Free Text:ETOU Groundlayout\24:freetext
+Free Text:ETOU Groundlayout\25:freetext
+Free Text:ETOU Groundlayout\26:freetext
+Free Text:ETOU Groundlayout\27:freetext
+Free Text:ETOU Groundlayout\28:freetext
+Free Text:ETOU Groundlayout\29:freetext
+Free Text:ETOU Groundlayout\3:freetext
+Free Text:ETOU Groundlayout\30:freetext
+Free Text:ETOU Groundlayout\31:freetext
+Free Text:ETOU Groundlayout\32:freetext
+Free Text:ETOU Groundlayout\33:freetext
+Free Text:ETOU Groundlayout\34:freetext
+Free Text:ETOU Groundlayout\35:freetext
+Free Text:ETOU Groundlayout\36:freetext
+Free Text:ETOU Groundlayout\37:freetext
+Free Text:ETOU Groundlayout\38:freetext
+Free Text:ETOU Groundlayout\39:freetext
+Free Text:ETOU Groundlayout\4:freetext
+Free Text:ETOU Groundlayout\40:freetext
+Free Text:ETOU Groundlayout\5:freetext
+Free Text:ETOU Groundlayout\6:freetext
+Free Text:ETOU Groundlayout\7:freetext
+Free Text:ETOU Groundlayout\8:freetext
+Free Text:ETOU Groundlayout\9:freetext
+Free Text:ETOU Groundlayout\A:freetext
+Free Text:ETOU Groundlayout\A:freetext
+Free Text:ETOU Groundlayout\B:freetext
+Free Text:ETOU Groundlayout\C:freetext
+Free Text:ETOU Groundlayout\C:freetext
+Free Text:ETOU Groundlayout\D:freetext
+Free Text:ETOU Groundlayout\F:freetext
+Free Text:ETOU Groundlayout\H:freetext
+Free Text:ETOU Groundlayout\Ramp A:freetext
+Free Text:ETOU Groundlayout\Ramp B:freetext
+Free Text:ETOU Groundlayout\Ramp C:freetext
+Free Text:ETOU Groundlayout\VIP:freetext
+Geo:ETOU Groundlayout:
+Regions:ETOU Groundlayout:polygon
+SHOWC:1
+SHOWSB:0
+BELOW:0
+ABOVE:4500
+LEADER:5
+SHOWLEADER:0
+TURNLEADER:0
+HISTORY_DOTS:0
+SIMULATION_MODE:1
+DISABLEPANNING:1
+DISABLEZOOMING:1
+DisplayRotation:16.70000
+TAGFAMILY:Phoenix Ground
+WINDOWAREA:50.043697:8.310209:50.054362:8.341503
+PLUGIN:Ground Radar plugin:AirportElevation:460 
+PLUGIN:Ground Radar plugin:AirportRadius:3
+PLUGIN:Ground Radar plugin:GroundMode:ETOU
+PLUGIN:Ground Radar plugin:ShowMapData:ETOU_GND
+PLUGIN:TopSky plugin:ShowMapData:NONE
