@@ -1,8 +1,6 @@
 DisplayTypeName:Ground Radar display
 DisplayTypeNeedRadarContent:0
 DisplayTypeGeoReferenced:1
-SECTORFILE:
-SECTORTITLE:
 Free Text:ETOU Groundlayout\1:freetext
 Free Text:ETOU Groundlayout\10:freetext
 Free Text:ETOU Groundlayout\11:freetext
