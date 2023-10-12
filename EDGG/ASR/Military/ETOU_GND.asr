@@ -1,8 +1,8 @@
 DisplayTypeName:Ground Radar display
 DisplayTypeNeedRadarContent:0
 DisplayTypeGeoReferenced:1
-SECTORFILE:E:\USER FILES\Games\MSFS2020 Addons\VATSIM\EuroScope Sector Files\Test GNG\EDGG-TEST_20231011234722-231001-0007.sct
-SECTORTITLE:EDGG-TEST_20231011234722-231001-0007.sct
+SECTORFILE:
+SECTORTITLE:
 Free Text:ETOU Groundlayout\1:freetext
 Free Text:ETOU Groundlayout\10:freetext
 Free Text:ETOU Groundlayout\11:freetext
