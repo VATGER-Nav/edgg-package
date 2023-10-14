@@ -6620,7 +6620,7 @@ COORD:N049.58.03.620:E006.40.49.799
 // ******************* Closures ETIP *******************
 
 MAP:South
-AIRPORT:ETIP
+AIRPORT:ETAR
 FOLDER:ETIP Closures
 COLOR:darkred
 COORDTYPE:TWYCLOSED:REGION
