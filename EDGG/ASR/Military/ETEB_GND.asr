@@ -1,0 +1,105 @@
+DisplayTypeName:Ground Radar display
+DisplayTypeNeedRadarContent:0
+DisplayTypeGeoReferenced:1
+Free Text:ETEB Groundlayout\26:freetext
+Free Text:ETEB Groundlayout\8:freetext
+Free Text:ETEB Groundlayout\A1:freetext
+Free Text:ETEB Groundlayout\A2:freetext
+Free Text:ETEB Groundlayout\A3:freetext
+Free Text:ETEB Groundlayout\A4:freetext
+Free Text:ETEB Groundlayout\A5:freetext
+Free Text:ETEB Groundlayout\A6:freetext
+Free Text:ETEB Groundlayout\B1:freetext
+Free Text:ETEB Groundlayout\B2:freetext
+Free Text:ETEB Groundlayout\B3:freetext
+Free Text:ETEB Groundlayout\B4:freetext
+Free Text:ETEB Groundlayout\B5:freetext
+Free Text:ETEB Groundlayout\B6:freetext
+Free Text:ETEB Groundlayout\C1:freetext
+Free Text:ETEB Groundlayout\C2:freetext
+Free Text:ETEB Groundlayout\C3:freetext
+Free Text:ETEB Groundlayout\C4:freetext
+Free Text:ETEB Groundlayout\C5:freetext
+Free Text:ETEB Groundlayout\C6:freetext
+Free Text:ETEB Groundlayout\Center SOD:freetext
+Free Text:ETEB Groundlayout\Compass Pad:freetext
+Free Text:ETEB Groundlayout\D1:freetext
+Free Text:ETEB Groundlayout\D2:freetext
+Free Text:ETEB Groundlayout\D3:freetext
+Free Text:ETEB Groundlayout\D4:freetext
+Free Text:ETEB Groundlayout\D5:freetext
+Free Text:ETEB Groundlayout\D6:freetext
+Free Text:ETEB Groundlayout\E1:freetext
+Free Text:ETEB Groundlayout\E2:freetext
+Free Text:ETEB Groundlayout\E3:freetext
+Free Text:ETEB Groundlayout\E4:freetext
+Free Text:ETEB Groundlayout\E5:freetext
+Free Text:ETEB Groundlayout\East:freetext
+Free Text:ETEB Groundlayout\East SOD:freetext
+Free Text:ETEB Groundlayout\F1:freetext
+Free Text:ETEB Groundlayout\F2:freetext
+Free Text:ETEB Groundlayout\F3:freetext
+Free Text:ETEB Groundlayout\F4:freetext
+Free Text:ETEB Groundlayout\F5:freetext
+Free Text:ETEB Groundlayout\G1:freetext
+Free Text:ETEB Groundlayout\G2:freetext
+Free Text:ETEB Groundlayout\G3:freetext
+Free Text:ETEB Groundlayout\G4:freetext
+Free Text:ETEB Groundlayout\H1:freetext
+Free Text:ETEB Groundlayout\H2:freetext
+Free Text:ETEB Groundlayout\H3:freetext
+Free Text:ETEB Groundlayout\H4:freetext
+Free Text:ETEB Groundlayout\Hangar 1:freetext
+Free Text:ETEB Groundlayout\Hangar 2:freetext
+Free Text:ETEB Groundlayout\Hangar 3:freetext
+Free Text:ETEB Groundlayout\Hangar 4:freetext
+Free Text:ETEB Groundlayout\Hangar 5:freetext
+Free Text:ETEB Groundlayout\I1:freetext
+Free Text:ETEB Groundlayout\I2:freetext
+Free Text:ETEB Groundlayout\I3:freetext
+Free Text:ETEB Groundlayout\I4:freetext
+Free Text:ETEB Groundlayout\J1:freetext
+Free Text:ETEB Groundlayout\J2:freetext
+Free Text:ETEB Groundlayout\J3:freetext
+Free Text:ETEB Groundlayout\K1:freetext
+Free Text:ETEB Groundlayout\K2:freetext
+Free Text:ETEB Groundlayout\K3:freetext
+Free Text:ETEB Groundlayout\L1:freetext
+Free Text:ETEB Groundlayout\L2:freetext
+Free Text:ETEB Groundlayout\L3:freetext
+Free Text:ETEB Groundlayout\M1:freetext
+Free Text:ETEB Groundlayout\M2:freetext
+Free Text:ETEB Groundlayout\MOC Pad 1:freetext
+Free Text:ETEB Groundlayout\MOC Pad 2:freetext
+Free Text:ETEB Groundlayout\N1:freetext
+Free Text:ETEB Groundlayout\N2:freetext
+Free Text:ETEB Groundlayout\O1:freetext
+Free Text:ETEB Groundlayout\O2:freetext
+Free Text:ETEB Groundlayout\O3:freetext
+Free Text:ETEB Groundlayout\O4:freetext
+Free Text:ETEB Groundlayout\O5:freetext
+Free Text:ETEB Groundlayout\South SOD:freetext
+Free Text:ETEB Groundlayout\VIP:freetext
+Free Text:ETEB Groundlayout\West:freetext
+Free Text:ETEB Groundlayout\West SOD:freetext
+Geo:ETEB Groundlayout:
+Regions:ETEB Groundlayout:polygon
+SHOWC:1
+SHOWSB:0
+BELOW:0
+ABOVE:3000
+LEADER:5
+SHOWLEADER:0
+TURNLEADER:0
+HISTORY_DOTS:0
+SIMULATION_MODE:1
+DISABLEPANNING:0
+DISABLEZOOMING:0
+DisplayRotation:11.50000
+TAGFAMILY:Phoenix Ground
+WINDOWAREA:49.305702:10.627488:49.314234:10.652524
+PLUGIN:Ground Radar plugin:AirportElevation:1200 
+PLUGIN:Ground Radar plugin:AirportRadius:3
+PLUGIN:Ground Radar plugin:GroundMode:ETEB
+PLUGIN:Ground Radar plugin:ShowMapData:ETEB_GND
+PLUGIN:TopSky plugin:ShowMapData:NONE

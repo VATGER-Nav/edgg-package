@@ -1,0 +1,64 @@
+DisplayTypeName:Ground Radar display
+DisplayTypeNeedRadarContent:0
+DisplayTypeGeoReferenced:1
+Free Text:ETHF Groundlayout\12:freetext
+Free Text:ETHF Groundlayout\30:freetext
+Free Text:ETHF Groundlayout\A:freetext
+Free Text:ETHF Groundlayout\A1:freetext
+Free Text:ETHF Groundlayout\A2:freetext
+Free Text:ETHF Groundlayout\AIS:freetext
+Free Text:ETHF Groundlayout\B:freetext
+Free Text:ETHF Groundlayout\B1:freetext
+Free Text:ETHF Groundlayout\B2:freetext
+Free Text:ETHF Groundlayout\C:freetext
+Free Text:ETHF Groundlayout\D:freetext
+Free Text:ETHF Groundlayout\D:freetext
+Free Text:ETHF Groundlayout\D1:freetext
+Free Text:ETHF Groundlayout\D2:freetext
+Free Text:ETHF Groundlayout\F1:freetext
+Free Text:ETHF Groundlayout\F2:freetext
+Free Text:ETHF Groundlayout\F3:freetext
+Free Text:ETHF Groundlayout\H:freetext
+Free Text:ETHF Groundlayout\Hangar 3:freetext
+Free Text:ETHF Groundlayout\Hangar 4:freetext
+Free Text:ETHF Groundlayout\Hangar 5:freetext
+Free Text:ETHF Groundlayout\Hangar 6:freetext
+Free Text:ETHF Groundlayout\Hangar 8a:freetext
+Free Text:ETHF Groundlayout\Hangar 8b:freetext
+Free Text:ETHF Groundlayout\Lane 06:freetext
+Free Text:ETHF Groundlayout\Lane 24:freetext
+Free Text:ETHF Groundlayout\Northlane:freetext
+Free Text:ETHF Groundlayout\R:freetext
+Free Text:ETHF Groundlayout\R1:freetext
+Free Text:ETHF Groundlayout\R2:freetext
+Free Text:ETHF Groundlayout\Ramp 1:freetext
+Free Text:ETHF Groundlayout\Ramp 2:freetext
+Free Text:ETHF Groundlayout\Ramp 3:freetext
+Free Text:ETHF Groundlayout\Ramp 4:freetext
+Free Text:ETHF Groundlayout\Ramp 5:freetext
+Free Text:ETHF Groundlayout\Ramp 6:freetext
+Free Text:ETHF Groundlayout\Southlane:freetext
+Free Text:ETHF Groundlayout\T:freetext
+Free Text:ETHF Groundlayout\T1:freetext
+Free Text:ETHF Groundlayout\T2:freetext
+Geo:ETHF Groundlayout:
+Regions:ETHF Groundlayout:polygon
+SHOWC:1
+SHOWSB:0
+BELOW:0
+ABOVE:3000
+LEADER:5
+SHOWLEADER:0
+TURNLEADER:0
+HISTORY_DOTS:0
+SIMULATION_MODE:1
+DISABLEPANNING:0
+DISABLEZOOMING:0
+DisplayRotation:331.90000
+TAGFAMILY:Phoenix Ground
+WINDOWAREA:51.108598:9.267335:51.121930:9.306455
+PLUGIN:Ground Radar plugin:AirportElevation:565 
+PLUGIN:Ground Radar plugin:AirportRadius:3
+PLUGIN:Ground Radar plugin:GroundMode:ETHF
+PLUGIN:Ground Radar plugin:ShowMapData:ETHF_GND
+PLUGIN:TopSky plugin:ShowMapData:NONE

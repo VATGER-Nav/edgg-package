@@ -1,0 +1,42 @@
+DisplayTypeName:Ground Radar display
+DisplayTypeNeedRadarContent:0
+DisplayTypeGeoReferenced:1
+Free Text:ETNN Groundlayout\06:freetext
+Free Text:ETNN Groundlayout\06N:freetext
+Free Text:ETNN Groundlayout\06S:freetext
+Free Text:ETNN Groundlayout\24:freetext
+Free Text:ETNN Groundlayout\24N:freetext
+Free Text:ETNN Groundlayout\24S:freetext
+Free Text:ETNN Groundlayout\H:freetext
+Free Text:ETNN Groundlayout\NE1:freetext
+Free Text:ETNN Groundlayout\NE2:freetext
+Free Text:ETNN Groundlayout\NE3:freetext
+Free Text:ETNN Groundlayout\NW1:freetext
+Free Text:ETNN Groundlayout\NW2:freetext
+Free Text:ETNN Groundlayout\NW3:freetext
+Free Text:ETNN Groundlayout\SAR:freetext
+Free Text:ETNN Groundlayout\SE1:freetext
+Free Text:ETNN Groundlayout\SE2:freetext
+Free Text:ETNN Groundlayout\SE3:freetext
+Free Text:ETNN Groundlayout\SW:freetext
+Geo:ETNN Groundlayout:
+Regions:ETNN Groundlayout:polygon
+SHOWC:1
+SHOWSB:0
+BELOW:0
+ABOVE:2900
+LEADER:5
+SHOWLEADER:0
+TURNLEADER:0
+HISTORY_DOTS:0
+SIMULATION_MODE:1
+DISABLEPANNING:0
+DISABLEZOOMING:0
+DisplayRotation:22.80000
+TAGFAMILY:Phoenix Ground
+WINDOWAREA:50.822665:6.626885:50.843495:6.688007
+PLUGIN:Ground Radar plugin:AirportElevation:380 
+PLUGIN:Ground Radar plugin:AirportRadius:3
+PLUGIN:Ground Radar plugin:GroundMode:ETNN
+PLUGIN:Ground Radar plugin:ShowMapData:ETNN_GND
+PLUGIN:TopSky plugin:ShowMapData:NONE
