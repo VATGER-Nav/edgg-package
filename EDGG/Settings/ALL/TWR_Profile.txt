@@ -71,7 +71,7 @@ ATIS4:You have feedback? Submit it! feedback.vatger.de
 
 PROFILE:EDDR_TWR:50:4
 ATIS2:Saarbruecken Tower
-ATIS3:PDC/DCL Datalink [EDDR] - Pilotbriefing vats.im/edfh
+ATIS3:PDC/DCL Datalink [EDDR] - Pilotbriefing vats.im/eddr
 ATIS4:You have feedback? Submit it! feedback.vatger.de
 
 PROFILE:EDFH_TWR:50:4
