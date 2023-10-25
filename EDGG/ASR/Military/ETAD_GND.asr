@@ -1,8 +1,8 @@
 DisplayTypeName:Ground Radar display
 DisplayTypeNeedRadarContent:0
 DisplayTypeGeoReferenced:1
-Free Text:ETAD Groundlayout\05:freetext
-Free Text:ETAD Groundlayout\23:freetext
+Free Text:ETAD Groundlayout\04:freetext
+Free Text:ETAD Groundlayout\22:freetext
 Free Text:ETAD Groundlayout\A:freetext
 Free Text:ETAD Groundlayout\A:freetext
 Free Text:ETAD Groundlayout\A:freetext
@@ -49,9 +49,9 @@ HISTORY_DOTS:0
 SIMULATION_MODE:1
 DISABLEPANNING:0
 DISABLEZOOMING:0
-DisplayRotation:45.40000
+DisplayRotation:225.40000
 TAGFAMILY:Phoenix Ground
-WINDOWAREA:49.967613:6.666724:49.988443:6.727846
+WINDOWAREA:49.966074:6.668745:49.986904:6.729867
 PLUGIN:Ground Radar plugin:AirportElevation:1197
 PLUGIN:Ground Radar plugin:AirportRadius:3
 PLUGIN:Ground Radar plugin:GroundMode:ETAD
