@@ -1,0 +1,20 @@
+DisplayTypeName:Standard ES radar screen
+DisplayTypeNeedRadarContent:1
+DisplayTypeGeoReferenced:1
+Geo:EDZZ Landmark Highway Germany:
+Geo:EDZZ Landmark River Germany:
+SHOWC:1
+SHOWSB:0
+BELOW:380
+ABOVE:15500
+LEADER:3
+SHOWLEADER:0
+TURNLEADER:0
+HISTORY_DOTS:0
+SIMULATION_MODE:1
+DISABLEPANNING:0
+DISABLEZOOMING:0
+DisplayRotation:0.00000
+TAGFAMILY:Phoenix Tower
+WINDOWAREA:50.805981:8.461341:51.423062:10.272017
+PLUGIN:TopSky plugin:ShowMapData:ETHF,PHOENIX

@@ -1,0 +1,60 @@
+DisplayTypeName:Ground Radar display
+DisplayTypeNeedRadarContent:0
+DisplayTypeGeoReferenced:1
+Free Text:ETHN Groundlayout\1:freetext
+Free Text:ETHN Groundlayout\10:freetext
+Free Text:ETHN Groundlayout\11:freetext
+Free Text:ETHN Groundlayout\12:freetext
+Free Text:ETHN Groundlayout\13:freetext
+Free Text:ETHN Groundlayout\14:freetext
+Free Text:ETHN Groundlayout\15:freetext
+Free Text:ETHN Groundlayout\16:freetext
+Free Text:ETHN Groundlayout\2:freetext
+Free Text:ETHN Groundlayout\3:freetext
+Free Text:ETHN Groundlayout\4:freetext
+Free Text:ETHN Groundlayout\5:freetext
+Free Text:ETHN Groundlayout\6:freetext
+Free Text:ETHN Groundlayout\7:freetext
+Free Text:ETHN Groundlayout\8:freetext
+Free Text:ETHN Groundlayout\9:freetext
+Free Text:ETHN Groundlayout\A:freetext
+Free Text:ETHN Groundlayout\APN3:freetext
+Free Text:ETHN Groundlayout\APN4:freetext
+Free Text:ETHN Groundlayout\APN5:freetext
+Free Text:ETHN Groundlayout\APN6:freetext
+Free Text:ETHN Groundlayout\APN7:freetext
+Free Text:ETHN Groundlayout\APN8:freetext
+Free Text:ETHN Groundlayout\B:freetext
+Free Text:ETHN Groundlayout\C:freetext
+Free Text:ETHN Groundlayout\C1:freetext
+Free Text:ETHN Groundlayout\C2:freetext
+Free Text:ETHN Groundlayout\CIV:freetext
+Free Text:ETHN Groundlayout\D:freetext
+Free Text:ETHN Groundlayout\E:freetext
+Free Text:ETHN Groundlayout\F:freetext
+Free Text:ETHN Groundlayout\F1:freetext
+Free Text:ETHN Groundlayout\F2:freetext
+Free Text:ETHN Groundlayout\F3:freetext
+Free Text:ETHN Groundlayout\H:freetext
+Free Text:ETHN Groundlayout\SAR:freetext
+Geo:ETHN Groundlayout:
+Regions:ETHN Groundlayout:polygon
+SHOWC:1
+SHOWSB:0
+BELOW:0
+ABOVE:3500
+LEADER:5
+SHOWLEADER:0
+TURNLEADER:0
+HISTORY_DOTS:0
+SIMULATION_MODE:1
+DISABLEPANNING:0
+DISABLEZOOMING:0
+DisplayRotation:15.60000
+TAGFAMILY:Phoenix Ground
+WINDOWAREA:49.385858:9.943193:49.396523:9.974487
+PLUGIN:Ground Radar plugin:AirportElevation:1536 
+PLUGIN:Ground Radar plugin:AirportRadius:3
+PLUGIN:Ground Radar plugin:GroundMode:ETHN
+PLUGIN:Ground Radar plugin:ShowMapData:ETHN_GND
+PLUGIN:TopSky plugin:ShowMapData:NONE
