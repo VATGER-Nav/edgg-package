@@ -652,7 +652,7 @@
         "cfl": 4000,
         "rwys": {
           "18": {
-            "dep": "ANEKI1L"
+            "dep": "ANEKI2L"
           }
 		}
       },
@@ -660,7 +660,7 @@
         "cfl": 4000,
         "rwys": {
           "18": {
-            "dep": "CINDY4S"
+            "dep": "CINDY5S"
           }
 		}
       },
@@ -676,7 +676,7 @@
         "cfl": 4000,
         "rwys": {
           "18": {
-            "dep": "SOBRA1L"
+            "dep": "SOBRA2L"
           }
 		}
       },
@@ -684,7 +684,7 @@
         "cfl": 4000,
         "rwys": {
           "18": {
-            "dep": "SULUS3S"
+            "dep": "SULUS4S"
           }
 		}
       },
@@ -692,7 +692,7 @@
         "cfl": 4000,
         "rwys": {
           "18": {
-            "dep": "ULKIG1L"
+            "dep": "ULKIG2L"
           }
 		}
       }

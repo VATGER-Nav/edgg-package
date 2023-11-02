@@ -1,0 +1,24 @@
+DisplayTypeName:Ground Radar display
+DisplayTypeNeedRadarContent:0
+DisplayTypeGeoReferenced:1
+Geo:ETSB Groundlayout:
+Regions:ETSB Groundlayout:polygon
+SHOWC:1
+SHOWSB:0
+BELOW:0
+ABOVE:4100
+LEADER:5
+SHOWLEADER:0
+TURNLEADER:0
+HISTORY_DOTS:0
+SIMULATION_MODE:1
+DISABLEPANNING:0
+DISABLEZOOMING:0
+DisplayRotation:60.70000
+TAGFAMILY:Phoenix Ground
+WINDOWAREA:50.162870:7.029483:50.183701:7.090605
+PLUGIN:Ground Radar plugin:AirportElevation:1568 
+PLUGIN:Ground Radar plugin:AirportRadius:3
+PLUGIN:Ground Radar plugin:GroundMode:ETSB
+PLUGIN:Ground Radar plugin:ShowMapData:ETSB_GND
+PLUGIN:TopSky plugin:ShowMapData:NONE

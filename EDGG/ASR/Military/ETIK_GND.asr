@@ -1,0 +1,46 @@
+DisplayTypeName:Ground Radar display
+DisplayTypeNeedRadarContent:0
+DisplayTypeGeoReferenced:1
+Free Text:ETIK Groundlayout\06:freetext
+Free Text:ETIK Groundlayout\1:freetext
+Free Text:ETIK Groundlayout\2:freetext
+Free Text:ETIK Groundlayout\24:freetext
+Free Text:ETIK Groundlayout\3:freetext
+Free Text:ETIK Groundlayout\4:freetext
+Free Text:ETIK Groundlayout\A:freetext
+Free Text:ETIK Groundlayout\A:freetext
+Free Text:ETIK Groundlayout\A:freetext
+Free Text:ETIK Groundlayout\B:freetext
+Free Text:ETIK Groundlayout\C:freetext
+Free Text:ETIK Groundlayout\Center SOD:freetext
+Free Text:ETIK Groundlayout\D:freetext
+Free Text:ETIK Groundlayout\E:freetext
+Free Text:ETIK Groundlayout\East SOD:freetext
+Free Text:ETIK Groundlayout\F:freetext
+Free Text:ETIK Groundlayout\G:freetext
+Free Text:ETIK Groundlayout\H:freetext
+Free Text:ETIK Groundlayout\H:freetext
+Free Text:ETIK Groundlayout\I:freetext
+Free Text:ETIK Groundlayout\North SOD:freetext
+Free Text:ETIK Groundlayout\West SOD:freetext
+Geo:ETIK Groundlayout:
+Regions:ETIK Groundlayout:polygon
+SHOWC:1
+SHOWSB:0
+BELOW:0
+ABOVE:3000
+LEADER:5
+SHOWLEADER:0
+TURNLEADER:0
+HISTORY_DOTS:0
+SIMULATION_MODE:1
+DISABLEPANNING:0
+DISABLEZOOMING:0
+DisplayRotation:26.70000
+TAGFAMILY:Phoenix Ground
+WINDOWAREA:49.467402:10.366180:49.480734:10.405298
+PLUGIN:Ground Radar plugin:AirportElevation:1079 
+PLUGIN:Ground Radar plugin:AirportRadius:3
+PLUGIN:Ground Radar plugin:GroundMode:ETIK
+PLUGIN:Ground Radar plugin:ShowMapData:ETIK_GND
+PLUGIN:TopSky plugin:ShowMapData:NONE
