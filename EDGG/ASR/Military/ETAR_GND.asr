@@ -139,6 +139,6 @@ TAGFAMILY:Phoenix Ground
 WINDOWAREA:49.418082:7.553074:49.450630:7.648579
 PLUGIN:Ground Radar plugin:AirportElevation:781
 PLUGIN:Ground Radar plugin:AirportRadius:3
-PLUGIN:Ground Radar plugin:GroundMode:ETAR
+PLUGIN:Ground Radar plugin:GroundMode:ETAR,ETIP
 PLUGIN:Ground Radar plugin:ShowMapData:ETAR_GND,ETIP
 PLUGIN:TopSky plugin:ShowMapData:NONE
