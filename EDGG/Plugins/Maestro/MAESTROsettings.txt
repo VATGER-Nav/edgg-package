@@ -1,3 +1,5 @@
+// last update: 07.11.2023
+
 System_Version=1
 System_RateDisplayType=1
 System_RateTime=10
@@ -7,13 +9,15 @@ Label_DelayItem_ShowGain=0
 Label_DelayItem_Uncon=0
 Label_Highlight_Type=1
 
-Label_Rwy_FeederTime=1
+Label_Rwy_FeederTime=-1
 Label_Rwy_Feeder=1
 Label_Rwy_ATYP=7
+Label_Rwy_Delay_Now=-1
 
 Label_Feeder_ATYP=7
 Label_Feeder_Rwy=8
-Label_Feeder_FeederTime=1
+Label_Feeder_FeederTime=-1
+Label_Feeder_Delay_Now=-1
 
 [EDDF]
 FEEDER:SPESA:SP:EDDF:SPESA,DF606
