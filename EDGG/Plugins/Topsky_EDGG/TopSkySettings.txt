@@ -1,4 +1,4 @@
-// EDGG Langen Radar
+// Langen Radar - EDGG Profil
 
 Setup_COOPANS=1
 
@@ -226,8 +226,6 @@ FPCP_HeadingTime=5
 FPCP_PredictionTime=10
 
 HTTP_AUP_URL=https://lara.vatsim.pt/api/areas/ED/
-
-HTTP_SIGMET_Pages=6443
 
 Label_AHDG_Point_Label=0
 Label_AHDG_HideDctIfCOPX=1

@@ -118,8 +118,6 @@ Divergence_RAM=0
 FlightLeg_FontSize=10
 FlightLeg_LineWidth=1
 
-HTTP_SIGMET_Pages=6443
-
 // Label Settings
 Label_Alt_Digits=3
 Label_Field18_Flag_Items=STS/,newbie,NEWBIE,Newbie,beginner,newbe,deaf,blind,new,first,slow,slowly,noob
