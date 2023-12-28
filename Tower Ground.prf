@@ -20,7 +20,7 @@ Settings	SettingsfileTAKEOFF	\EDGG\Settings\TWR\TWR_General.txt
 Settings	SettingsfileADCS	\EDGG\Settings\TWR\TWR_General.txt
 Settings	SettingsfileTAXIIN	\EDGG\Settings\TWR\TWR_General.txt
 
-Settings	sector	
+Settings	sector	\EDGG-TEST_20231227233227-231201-0008.sct
 
 Settings	alias	\EDGG\Alias\alias.txt
 Settings	AtisFolder	\EDGG\ATIS\AtisFiles.txt
@@ -64,13 +64,13 @@ TeamSpeakVccs	Ts3DialogRight	890
 TeamSpeakVccs	Ts3DialogBottom	570
 
 RecentFiles	Recent1	\EDGG\ASR\Tower\EDDF_TWR.asr
-RecentFiles	Recent2	\EDGG\ASR\Ground\EDDF_GND.asr
+RecentFiles	Recent2	\EDGG\ASR\Special\EDDF_DFS_GND.asr
 RecentFiles	Recent3	\EDGG\ASR\Tower\EDDS_TWR.asr
 RecentFiles	Recent4	\EDGG\ASR\Tower\EDDL_TWR.asr
-RecentFiles	Recent5	\EDGG\ASR\Ground\EDDL_GND.asr
-RecentFiles	Recent6	\EDGG\ASR\Ground\EDDS_GND.asr
+RecentFiles	Recent5	\EDGG\ASR\Special\EDDL_DFS_GND.asr
+RecentFiles	Recent6	\EDGG\ASR\Special\EDDS_DFS_GND.asr
 RecentFiles	Recent7	\EDGG\ASR\Tower\EDDK_TWR.asr
-RecentFiles	Recent8	\EDGG\ASR\Ground\EDDK_GND.asr
+RecentFiles	Recent8	\EDGG\ASR\Special\EDDK_DFS_GND.asr
 
 ASRFastKeys	1	\EDGG\ASR\Tower\EDFH_TWR.asr
 ASRFastKeys	2	\EDGG\ASR\Ground\EDFH_GND.asr
