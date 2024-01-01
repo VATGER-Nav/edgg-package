@@ -1,5 +1,5 @@
-// Version 2.8.1
-// Stand: 17.11.2023
+// Version 2.8.2
+// Stand: 27.12.2023
 // last change by HF
 
 // ##################################################################
@@ -1779,6 +1779,7 @@ CALLSIGN:GROUP_EDDF_CARGO_NW
 CODE:F
 PRIORITY:+3
 COPY
+PRIORITY:+1
 USE:A
 
 // F232 (Cargo)
@@ -1788,6 +1789,7 @@ CALLSIGN:GROUP_EDDF_CARGO_NW,ABR
 CODE:F
 PRIORITY:+3
 COPY
+PRIORITY:+1
 USE:A
 
 // F233 (Cargo)
@@ -1797,6 +1799,7 @@ CALLSIGN:GROUP_EDDF_CARGO_NW,ABR
 CODE:F
 PRIORITY:+3
 COPY
+PRIORITY:+1
 USE:A
 
 // F234 (Cargo)
@@ -1918,9 +1921,7 @@ PRIORITY:+3
 
 // S401
 STAND:EDDF:S401:N050.01.48.179:E008.33.26.576:20
-ENGINETYPE:J,T,P
-USE:H
-CODE:B
+MANUAL
 
 // S402
 STAND:EDDF:S402:N050.01.47.171:E008.33.21.674:20
@@ -1930,8 +1931,7 @@ CODE:B
 
 // S403
 STAND:EDDF:S403:N050.01.48.576:E008.33.28.228:20
-USE:BP
-CODE:B
+MANUAL
 
 // S404
 STAND:EDDF:S404:N050.01.46.848:E008.33.20.199:20
@@ -1986,23 +1986,19 @@ CALLSIGN:AZD
 
 // S414
 STAND:EDDF:S414:N050.01.45.037:E008.33.13.114:20
-USE:BP
-CODE:B
+MANUAL
 
 // S416
 STAND:EDDF:S416:N050.01.44.649:E008.33.11.526:20
-USE:BP
-CODE:B
+MANUAL
 
 // S418
 STAND:EDDF:S418:N050.01.44.288:E008.33.10.050:20
-USE:BP
-CODE:B
+MANUAL
 
 // S420
 STAND:EDDF:S420:N050.01.43.959:E008.33.08.620:20
-USE:BP
-CODE:B
+MANUAL
 
 // ------------------------------------------------------------------------
 //                                 NEW GAT Frankfurt
@@ -8493,7 +8489,7 @@ PRIORITY:+3
 AREA
 
 // ##################################################################
-//                        ETSB - Büchel
+//                        ETSB - B chel
 // ##################################################################
 
 STAND:ETSB:NORTHWEST
@@ -8533,7 +8529,7 @@ PRIORITY:+2
 AREA
 
 // ##################################################################
-//                        ETNN - Nörvenich
+//                        ETNN - N rvenich
 // ##################################################################
 
 STAND:ETNN:NORTHWEST
