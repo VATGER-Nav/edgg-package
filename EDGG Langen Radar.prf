@@ -73,3 +73,13 @@ LastSession	server	AUTOMATIC
 LastSession	realname 
 LastSession	certificate	
 LastSession	rating 
+
+ASRFastKeys	1	\EDGG\ASR\Ground\EDDF_GND.asr
+ASRFastKeys	2	\EDGG\ASR\Ground\EDDL_GND.asr
+ASRFastKeys	3	\EDGG\ASR\Ground\EDDS_GND.asr
+ASRFastKeys	4	\EDGG\ASR\Ground\EDDK_GND.asr
+ASRFastKeys	5	\EDGG\ASR\Ground\EDDG_GND.asr
+ASRFastKeys	6	\EDGG\ASR\Ground\EDLW_GND.asr
+ASRFastKeys	7	\EDGG\ASR\Ground\EDLP_GND.asr
+ASRFastKeys	8	\EDGG\ASR\Ground\EDFH_GND.asr
+ASRFastKeys	8	\EDGG\ASR\Ground\EDDR_GND.asr
