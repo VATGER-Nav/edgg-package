@@ -1,4 +1,4 @@
-// last change: 23.01.2024 by DD
+// last change: 23.01.2024 by PH
 
 Equip_ProMode=0
 RawVideo=1
@@ -15,7 +15,7 @@ Color_Unknown=160,160,160
 
 Color_New_Stand=255,80,60
 
-Color_Warning=255,165,0
+Color_Warning=255,120,0
 Color_WBackground=135,135,135
 Color_New_Stand=255,255,0
 Color_APP_Background=0,0,0
