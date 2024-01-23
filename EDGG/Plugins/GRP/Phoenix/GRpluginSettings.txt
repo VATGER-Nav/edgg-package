@@ -1,4 +1,4 @@
-// last change: 15.06.2023 by DD
+// last change: 23.01.2024 by DD
 
 Equip_ProMode=0
 RawVideo=1
@@ -8,10 +8,13 @@ Track_HistoryDots_GND=5
 Track_PredictionLine_APP=0
 Track_HistoryDots_APP=5
 
-Color_Arrival=248,248,255
-Color_Departure=247,202,021
-Color_RawVideo=0,100,0
-Color_Unknown=120,120,120
+Color_Arrival=240,240,0
+Color_Departure=0,232,232
+Color_RawVideo=255,255,0
+Color_Unknown=160,160,160
+
+Color_New_Stand=255,80,60
+
 Color_Warning=255,165,0
 Color_WBackground=135,135,135
 Color_New_Stand=255,255,0
