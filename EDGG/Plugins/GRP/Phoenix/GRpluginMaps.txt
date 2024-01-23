@@ -18,7 +18,7 @@ COLORDEF:closure:113:37:39
 COLORDEF:apronorange:249:153:106
 COLORDEF:dfsorange:248:172:58
 COLORDEF:dfsgrey:134:134:135
-COLORDEF:dfstaxiwaylabel:210:210:210
+COLORDEF:dfstaxiwaylabel:180:180:180
 
 SCTFILEPATH:..\..\..\..\EDGG-*
 
