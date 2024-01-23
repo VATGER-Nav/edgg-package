@@ -106,7 +106,7 @@ Color_TSA_Border_Highlight=0,0,0
 Color_TSA_Filter=0,0,255
 Color_Urgency=255,0,0
 Color_Urgency_FL=255,0,0
-Color_VFR=55,156,255
+Color_VFR=180,150,95
 Color_Warning=250,162,0
 Color_Warning_FL=250,162,0
 Color_Weather_Map=100,100,100
@@ -257,6 +257,9 @@ System_GUI_Font_2_Size=10
 System_GUI_Scale_Menus=1
 System_ProxySounds=0
 System_UseAUP=1
+
+System_FIC_Position=1
+System_FIC_Position_Free_Filtered=1
 
 System_UseAcceptedCoordColor=1
 System_UseRwyLockedColor=1
