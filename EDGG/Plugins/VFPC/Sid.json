@@ -58,6 +58,11 @@
                "direction": "ANY",
 			   "forbidden_fls": 250,
 			   "airways": ["Z28","Z29"]
+            },
+			{
+               "direction": "ANY",
+			   "forbidden_fls": 250,
+			   "destinations": ["EDDK"],
             }
          ],
          "SOBRA": [
@@ -310,7 +315,8 @@
             },
 			   {
                "direction": "ANY",
-			   "forbidden_fls": 250
+			   "forbidden_fls": 250,
+			   "engine": "JTP",
             }
          ],
          "STG": [
@@ -440,7 +446,7 @@
 			   {
                "direction": "ANY",
 			   "forbidden_fls": 250,
-			   "airways": ["Q762","Q760"]
+			   "airways": ["Q762","Q760","Y180"]
 			}
          ],
          "GEBDA": [
@@ -578,7 +584,7 @@
             {
                "direction": "ANY",
                "forbidden_fls": 250,
-               "airways": ["Z585"]
+               "airways": ["Z858"]
             }
          ],
 		   "OSN": [
@@ -735,7 +741,7 @@
 		      {
                "direction": "ANY",
 			   "forbidden_fls": 250,
-			   "airways": ["Z714","Y126"]
+			   "airways": ["Z714","Y126","N850"]
             }
          ],
          "GAGSI": [
@@ -867,7 +873,7 @@
             {
                "direction": "ANY",
                "max_fl": 230,
-               "airways": ["Z585"]
+               "airways": ["Z858"]
             }
          ],
          "NVO": [
