@@ -138,7 +138,7 @@ FlightLeg_Label_Time=1
 FlightLeg_Label_DIST=1
 FlightLeg_Label_RFL=1
 FlightLeg_Label_SCFL=1
-FlightLeg_LineWidth=1
+FlightLeg_LineWidth=0
 FlightLeg_Use_Ack_Color=0
 
 FPCP_HeadingTime=5
