@@ -83,7 +83,7 @@ FlightLeg_FontSize=10
 FlightLeg_LineWidth=0
 
 // Label Settings
-Label_Alt_Digits=3
+Label_Alt_Digits=2
 Label_Field18_Flag_Items=STS/,newbie,NEWBIE,Newbie,beginner,newbe,deaf,blind,new,first,slow,slowly,noob
 Label_GS_Digits=2
 Label_ASP_Digits=2
