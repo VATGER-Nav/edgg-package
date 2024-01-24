@@ -62,7 +62,7 @@
 			{
                "direction": "ANY",
 			   "forbidden_fls": 250,
-			   "destinations": ["EDDK"],
+			   "destinations": ["EDDK"]
             }
          ],
          "SOBRA": [
@@ -316,7 +316,7 @@
 			   {
                "direction": "ANY",
 			   "forbidden_fls": 250,
-			   "engine": "JTP",
+			   "engine": "JTP"
             }
          ],
          "STG": [
@@ -571,6 +571,11 @@
                "direction": "ANY",
 			   "forbidden_fls": 250,
 			   "airways": ["Q603","Z841"]
+            },
+			{
+               "direction": "ANY",
+               "max_fl": 230,
+			   "destinations": ["EDDK"]
             }
          ],
          "HMM": [
