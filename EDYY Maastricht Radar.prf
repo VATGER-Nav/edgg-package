@@ -19,7 +19,6 @@ Settings	SettingsfileTAXIOUT	\EDGG\Settings\EDYY\EDYY_General.txt
 Settings	SettingsfileTAKEOFF	\EDGG\Settings\EDYY\EDYY_General.txt
 Settings	SettingsfileADCS	\EDGG\Settings\EDYY\EDYY_General.txt
 Settings	SettingsfileTAXIIN	\EDGG\Settings\EDYY\EDYY_General.txt
-
 Settings	alias	\EDGG\Alias\alias.txt
 Settings	AtisFolder	\EDGG\ATIS\AtisFiles.txt
 Settings	airlines	\EDGG\ICAO\ICAO_Airlines.txt
@@ -54,6 +53,9 @@ Plugins	Plugin5	\EDGG\Plugins\IASsure\IASsure.dll
 Plugins	Plugin6	\EDGG\Plugins\vACDM\vACDM.dll
 Plugins	Plugin6Display0	Ground Radar display
 Plugins	Plugin6Display1	Standard ES radar screen
+Plugins	Plugin7	\EDGG\Plugins\DelHel\DelHel.dll
+Plugins	Plugin8	\EDGG\Plugins\VCH.dll
+Plugins	Plugin9	\EDGG\Plugins\VFPC\VFPC.dll
 
 TeamSpeakVccs	TsVccsMiniControlX	1744
 TeamSpeakVccs	TsVccsMiniControlY	44
@@ -71,5 +73,4 @@ LastSession	atis_url2	http://uniatis.net/atis.php?metar=$metar($atisairportC)&ar
 LastSession	atis_url3	http://uniatis.net/atis.php?metar=$metar($atisairportD)&arr=$arrrwy($atisairportD)&dep=$deprwy($atisairportD)&apptype=ILS&info=$atiscodeD&depfreq=122.800
 LastSession	server	AUTOMATIC
 
-Settings	sector	\EDGG-FULL_20231228171153-231301-0001.sct
-
+Settings	sector	\EDGG-TEST_20240123223157-231301-0003.sct
