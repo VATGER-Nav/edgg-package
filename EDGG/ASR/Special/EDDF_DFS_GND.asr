@@ -25,6 +25,7 @@ Geo:EDDF Groundlayout Stands:
 Regions:EDDF DFS Buildings:polygon
 Regions:EDDF DFS Groundlayout:polygon
 Regions:EDDF DFS STOP CAT 1:polygon
+Regions:EDDF DFS STOP CAT 2:polygon
 Regions:EDDF DFS Stopbars:polygon
 SHOWC:1
 SHOWSB:0

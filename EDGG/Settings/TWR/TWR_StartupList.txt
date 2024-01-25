@@ -1,37 +1,38 @@
 STUP
 m_Visible:1
-m_X:704
+m_X:615
 m_Y:45
 m_LineNumber:0
 m_Resizable:1
 m_OrderingColumn:6
 m_HeaderOnly:0
-m_Column:TIMER:5:1:544:0:0:1:VCH:::0:0.0
+m_Column:TIMER:5:1:544:0:0:0:VCH:::0:0.0
 m_Column:REQ:5:1:540:548:0:1:VCH:VCH::0:0.0
-m_Column:CALLSIGN:10:0:9:6:100:1::TopSky plugin:TopSky plugin:8:3.8
-m_Column:C:2:1:58:27:19:1:::vACDM:8:3.8
-m_Column:EOBT:5:1:1:9:0:0:vACDM:vACDM::0:0.0
-m_Column:TOBT:5:1:2:3:6:1:vACDM:vACDM:vACDM:0:0.0
+m_Column:CALLSIGN:10:0:9:6:100:1::TopSky plugin:TopSky plugin:0:3.8
+m_Column:C:2:1:10046:27:19:1:TopSky plugin::vACDM:1:3.8
+m_Column:TOBT:5:1:2:6:3:1:vACDM:vACDM:vACDM:0:0.0
 m_Column:TSAT:5:1:3:8:9:1:vACDM:vACDM:vACDM:0:0.0
-m_Column:ASAT:5:1:6:7:8:0:vACDM:vACDM:vACDM:0:0.0
-m_Column:ASRT:5:1:9:9:8:1:vACDM:vACDM:vACDM:0:0.0
-m_Column:AOBT:5:1:7:11:13:0:vACDM:vACDM:Ground Radar plugin:0:0.0
-m_Column:AORT:5:1:10:11:13:0:vACDM:vACDM:Ground Radar plugin:0:0.0
-m_Column:TTOT:5:1:4:0:0:0:vACDM:::0:0.0
-m_Column:EXOT:5:1:5:1:0:0:vACDM:vACDM::0:0.0
-m_Column:STND:7:1:1:0:1:1:Ground Radar plugin::Ground Radar plugin:8:0.0
-m_Column:ATYP:5:1:16:2:32:1::TopSky plugin::8:3.8
-m_Column:WTC:3:1:10032:104:0:1:TopSky plugin:TopSky plugin::0:0.0
-m_Column:ADES:5:1:17:7:1001:1:::TopSky plugin:7:3.8
-m_Column:DRWY:5:1:10050:19:19:1:TopSky plugin:::0:0.0
-m_Column:SID:10:1:10011:17:17:1:TopSky plugin:::1:0.0
-m_Column:CLMB:5:1:20:11:109:1:::TopSky plugin:1:0.0
-m_Column:RFL:5:1:22:30:59:0:::TopSky plugin:0:0.0
-m_Column:FPC:5:1:1:100:100:0:VFPC:VFPC:VFPC:0:0.0
-m_Column:DEL:5:1:1:101:102:0:DelHel:DelHel:DelHel:0:0.0
+m_Column:CTOT:5:1:11:0:0:0:vACDM:::0:0.0
+m_Column:ASRT:5:1:9:9:0:1:vACDM:vACDM::0:0.0
+m_Column:ASAT:5:1:6:7:14:0:vACDM:vACDM:vACDM:0:0.0
+m_Column:AORT:5:1:10:11:12:0:vACDM:vACDM:vACDM:0:0.0
+m_Column:AOBT:5:1:7:12:18:0:vACDM:vACDM:vACDM:0:0.0
+m_Column:TTOT:5:1:4:1:0:0:vACDM:vACDM::0:0.0
+m_Column:ECFMP:7:1:12:0:0:0:vACDM:::0:0.0
+m_Column:STAND:7:1:1:0:1:1:Ground Radar plugin::Ground Radar plugin:0:0.0
+m_Column:ATYP:5:1:10028:2:32:1:TopSky plugin:TopSky plugin::0:3.8
+m_Column:W:2:1:10032:104:0:1:TopSky plugin:TopSky plugin::0:0.0
+m_Column:V:2:1:10031:0:0:1:TopSky plugin:::0:0.0
+m_Column:ADES:5:1:10008:7:1001:1:TopSky plugin::TopSky plugin:0:3.8
+m_Column:RWY:4:1:10050:19:19:1:TopSky plugin:::0:0.0
+m_Column:SID:9:1:10011:17:17:1:TopSky plugin:::1:0.0
+m_Column:CLMB:5:1:10049:11:109:1:TopSky plugin::TopSky plugin:0:0.0
+m_Column:RFL:5:1:10062:30:59:0:TopSky plugin::TopSky plugin:0:0.0
 m_Column:aSSR:5:1:10042:871:869:1:TopSky plugin:CCAMS:CCAMS:1:0.0
-m_Column:DCL:4:1:10128:122:27:1:TopSky plugin:TopSky plugin::1:0.0
-m_Column:STS:5:1:3:13:13:1:Ground Radar plugin:Ground Radar plugin:Ground Radar plugin:8:0.0
-m_Column:COM:3:1:80:32:32:1::::8:3.8
+m_Column:FPC:5:1:1:100:0:0:VFPC:VFPC::0:0.0
+m_Column:DEL:5:1:1:101:102:0:DelHel:DelHel:DelHel:0:0.0
+m_Column:DCL:4:1:10128:155:27:1:TopSky plugin:TopSky plugin::0:0.0
+m_Column:STS:5:1:3:13:13:1:Ground Radar plugin:Ground Radar plugin:Ground Radar plugin:0:0.0
+m_Column:T:2:1:80:32:32:1::::0:3.8
 m_Column:RMK:12:1:10059:2:2:1:TopSky plugin:TopSky plugin:TopSky plugin:0:0.0
 END

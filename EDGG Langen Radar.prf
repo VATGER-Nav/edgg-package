@@ -13,8 +13,12 @@ Settings	SettingsfilePLUGINS	\EDGG\Settings\EDGG\EDGG_Plugins.txt
 Settings	SettingsfilePILOTING	\EDGG\Settings\ALL\Piloting.txt
 Settings	SettingsfileCONFLICT	\EDGG\Settings\ALL\ConflictListConfiguration.txt
 Settings	SettingsfileVCCS	\EDGG\Settings\ALL\VCCS_CTR.txt
-
-Settings	sector
+Settings	SettingsfileORIGPLANE	\EDGG\Settings\EDGG\EDGG_General.txt
+Settings	SettingsfileSTUP	\EDGG\Settings\EDGG\EDGG_StartupList.txt
+Settings	SettingsfileTAXIOUT	\EDGG\Settings\EDGG\EDGG_General.txt
+Settings	SettingsfileTAKEOFF	\EDGG\Settings\EDGG\EDGG_General.txt
+Settings	SettingsfileADCS	\EDGG\Settings\EDGG\EDGG_General.txt
+Settings	SettingsfileTAXIIN	\EDGG\Settings\EDGG\EDGG_General.txt
 
 Settings	alias	\EDGG\Alias\alias.txt
 Settings	AtisFolder	\EDGG\ATIS\AtisFiles.txt
@@ -50,6 +54,16 @@ Plugins	Plugin9	\EDGG\Plugins\vACDM\vACDM.dll
 Plugins	Plugin9Display0	Ground Radar display
 Plugins	Plugin9Display1	Standard ES radar screen
 
+ASRFastKeys	1	\EDGG\ASR\Ground\EDDF_GND.asr
+ASRFastKeys	2	\EDGG\ASR\Ground\EDDL_GND.asr
+ASRFastKeys	3	\EDGG\ASR\Ground\EDDS_GND.asr
+ASRFastKeys	4	\EDGG\ASR\Ground\EDDK_GND.asr
+ASRFastKeys	5	\EDGG\ASR\Ground\EDDG_GND.asr
+ASRFastKeys	6	\EDGG\ASR\Ground\EDLW_GND.asr
+ASRFastKeys	7	\EDGG\ASR\Ground\EDLP_GND.asr
+ASRFastKeys	8	\EDGG\ASR\Ground\EDFH_GND.asr
+ASRFastKeys	8	\EDGG\ASR\Ground\EDDR_GND.asr
+
 TeamSpeakVccs	TsVccsMiniControlX	1744
 TeamSpeakVccs	TsVccsMiniControlY	44
 TeamSpeakVccs	Ts3NickName	YOUR ID
@@ -70,6 +84,6 @@ LastSession	atis_url2	http://uniatis.net/atis.php?metar=$metar($atisairportC)&ar
 LastSession	atis_url3	http://uniatis.net/atis.php?metar=$metar($atisairportD)&arr=$arrrwy($atisairportD)&dep=$deprwy($atisairportD)&apptype=ILS&info=$atiscodeD&depfreq=122.800
 
 LastSession	server	AUTOMATIC
-LastSession	realname 
-LastSession	certificate	
-LastSession	rating 
+
+Settings	sector	\EDGG-FULL_20231228171153-231301-0001.sct
+
