@@ -1,4 +1,4 @@
-// DFS Phoenix - 21.01.2024 
+// DFS Phoenix - 22.02.2024 
 
 Setup_COOPANS=1
 
@@ -129,11 +129,13 @@ Shortcut_Map_Xfr_Key=2,0x44 ; D
 Shortcut_Map_Xfr_Key=3,0x47 ; G
 Shortcut_Map_Xfr_Key=4,0x48 ; H
 Shortcut_Map_Xfr_Key=5,0x56 ; V
+Shortcut_Map_Xfr_Key=6,0x42 ; B
 Shortcut_Map_Target=1,MVA\MVA Germany Winter
 Shortcut_Map_Target=2,OTHER\AIRSPACE LEVEL
-Shortcut_Map_Target=3,STANDS\EDDL/EDDK STANDS
+Shortcut_Map_Target=3,STANDS\STANDS ALL
 Shortcut_Map_Target=4,LABELS\VFR HOSP LABEL
 Shortcut_Map_Target=5,LABELS\VFR POINTS LABEL
+Shortcut_Map_Target=6,STANDS\STANDS Maximum
 
 STCA=0
 
