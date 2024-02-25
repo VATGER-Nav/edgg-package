@@ -24,6 +24,11 @@ ATIS2:Langen Radar
 ATIS3:Coverage at vatglasses.uk - PDC/DCL Datalink [EDDL]
 ATIS4:You have feedback? Submit it! feedback.vatger.de
 
+PROFILE:EDDL_DEP:150:5
+ATIS2:Langen Radar
+ATIS3:Coverage at vatglasses.uk - PDC/DCL Datalink [EDDL]
+ATIS4:You have feedback? Submit it! feedback.vatger.de
+
 PROFILE:EDDL_BOT_APP:150:5
 ATIS2:Langen Radar
 ATIS3:Coverage at vatglasses.uk - PDC/DCL Datalink [EDDL]
