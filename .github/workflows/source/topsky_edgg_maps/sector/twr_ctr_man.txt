@@ -164,7 +164,7 @@ MAP:ETNG CTR
 FOLDER:SECTORS
 STYLE:DashDot:1
 COLOR:DFSGrey
-#import .github/workflows/source/data/airspaces/ctr/etnn.txt
+#import .github/workflows/source/data/airspaces/ctr/etng.txt
 
 MAP:ETNN CTR
 FOLDER:SECTORS
