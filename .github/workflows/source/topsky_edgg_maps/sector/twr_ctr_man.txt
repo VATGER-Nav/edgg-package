@@ -1,44 +1,44 @@
-MAP:ALL TOWER-CTR
+MAP:ALL CTR
 FOLDER:SECTORS
 STYLE:DashDot:1
 COLOR:DFSGrey
 #import .github/workflows/source/data/airspaces/ctr/
 
-MAP:EDDF D-CTR
+MAP:EDDF CTR
 FOLDER:SECTORS
 STYLE:DashDot:1
 COLOR:DFSGrey
 #import .github/workflows/source/data/airspaces/ctr/eddf.txt
 
-MAP:EDDG D-CTR
+MAP:EDDG CTR
 FOLDER:SECTORS
 STYLE:DashDot:1
 COLOR:DFSGrey
 #import .github/workflows/source/data/airspaces/ctr/eddg.txt
 
-MAP:EDDK D-CTR
+MAP:EDDK CTR
 FOLDER:SECTORS
 STYLE:DashDot:1
 COLOR:DFSGrey
 #import .github/workflows/source/data/airspaces/ctr/eddk.txt
 
-MAP:EDDL D-CTR
+MAP:EDDL CTR
 FOLDER:SECTORS
 STYLE:DashDot:1
 COLOR:DFSGrey
 #import .github/workflows/source/data/airspaces/ctr/eddl.txt
 
-MAP:EDDS D-CTR
-FOLDER:SECTORS
-STYLE:DashDot:1
-COLOR:DFSGrey
-#import .github/workflows/source/data/airspaces/ctr/edds.txt
-
-MAP:EDDR D(HX)
+MAP:EDDR CTR
 FOLDER:SECTORS
 STYLE:DashDot:1
 COLOR:DFSGrey
 #import .github/workflows/source/data/airspaces/ctr/eddr.txt
+
+MAP:EDDS CTR
+FOLDER:SECTORS
+STYLE:DashDot:1
+COLOR:DFSGrey
+#import .github/workflows/source/data/airspaces/ctr/edds.txt
 
 MAP:EDFE ATZ
 FOLDER:SECTORS
@@ -46,97 +46,139 @@ STYLE:DashDot:1
 COLOR:DFSGrey
 #import .github/workflows/source/data/airspaces/ctr/edfe.txt
 
-MAP:EDFH D-CTR
+MAP:EDFH CTR
 FOLDER:SECTORS
 STYLE:DashDot:1
 COLOR:DFSGrey
 #import .github/workflows/source/data/airspaces/ctr/edfh.txt
 
-MAP:EDFM D(HX)
+MAP:EDFM CTR
 FOLDER:SECTORS
 STYLE:DashDot:1
 COLOR:DFSGrey
 #import .github/workflows/source/data/airspaces/ctr/edfm.txt
 
-MAP:EDLN D-CTR
+MAP:EDFQ RMZ
+FOLDER:SECTORS
+STYLE:DashDot:1
+COLOR:DFSGrey
+#import .github/workflows/source/data/airspaces/ctr/edfq.txt
+
+MAP:EDGS RMZ
+FOLDER:SECTORS
+STYLE:DashDot:1
+COLOR:DFSGrey
+#import .github/workflows/source/data/airspaces/ctr/edgs.txt
+
+MAP:EDLN CTR
 FOLDER:SECTORS
 STYLE:DashDot:1
 COLOR:DFSGrey
 #import .github/workflows/source/data/airspaces/ctr/edln.txt
 
-MAP:EDLP D-CTR
+MAP:EDLP CTR
 FOLDER:SECTORS
 STYLE:DashDot:1
 COLOR:DFSGrey
 #import .github/workflows/source/data/airspaces/ctr/edlp.txt
 
-MAP:EDLV D-CTR
+MAP:EDLV CTR
 FOLDER:SECTORS
 STYLE:DashDot:1
 COLOR:DFSGrey
 #import .github/workflows/source/data/airspaces/ctr/edlv.txt
 
-MAP:EDLW D-CTR
+MAP:EDLW CTR
 FOLDER:SECTORS
 STYLE:DashDot:1
 COLOR:DFSGrey
 #import .github/workflows/source/data/airspaces/ctr/edlw.txt
 
-MAP:EDSB D-CTR
+MAP:EDQG RMZ
+FOLDER:SECTORS
+STYLE:DashDot:1
+COLOR:DFSGrey
+#import .github/workflows/source/data/airspaces/ctr/edqg.txt
+
+MAP:EDRY RMZ
+FOLDER:SECTORS
+STYLE:DashDot:1
+COLOR:DFSGrey
+#import .github/workflows/source/data/airspaces/ctr/edry.txt
+
+MAP:EDRZ RMZ
+FOLDER:SECTORS
+STYLE:DashDot:1
+COLOR:DFSGrey
+#import .github/workflows/source/data/airspaces/ctr/edrz.txt
+
+MAP:EDSB CTR
 FOLDER:SECTORS
 STYLE:DashDot:1
 COLOR:DFSGrey
 #import .github/workflows/source/data/airspaces/ctr/edsb.txt
 
-MAP:EDTL D(HX)
+MAP:EDTL CTR
 FOLDER:SECTORS
 STYLE:DashDot:1
 COLOR:DFSGrey
 #import .github/workflows/source/data/airspaces/ctr/edtl.txt
 
-MAP:EDTY D(HX)
+MAP:ETAD CTR
 FOLDER:SECTORS
 STYLE:DashDot:1
 COLOR:DFSGrey
-#import .github/workflows/source/data/airspaces/ctr/edty.txt
+#import .github/workflows/source/data/airspaces/ctr/etad.txt
 
-MAP:ETAR D-CTR
+MAP:ETAR CTR
 FOLDER:SECTORS
 STYLE:DashDot:1
 COLOR:DFSGrey
 #import .github/workflows/source/data/airspaces/ctr/etar.txt
 
-MAP:ETHF D(HX)
+MAP:ETEB CTR
+FOLDER:SECTORS
+STYLE:DashDot:1
+COLOR:DFSGrey
+#import .github/workflows/source/data/airspaces/ctr/eteb.txt
+
+MAP:ETHF CTR
 FOLDER:SECTORS
 STYLE:DashDot:1
 COLOR:DFSGrey
 #import .github/workflows/source/data/airspaces/ctr/ethf.txt
 
-MAP:ETHN D(HX)
+MAP:ETHN CTR
 FOLDER:SECTORS
 STYLE:DashDot:1
 COLOR:DFSGrey
 #import .github/workflows/source/data/airspaces/ctr/ethn.txt
 
-MAP:ETNG D(HX)
+MAP:ETIK CTR
+FOLDER:SECTORS
+STYLE:DashDot:1
+COLOR:DFSGrey
+#import .github/workflows/source/data/airspaces/ctr/etik.txt
+
+MAP:ETNG CTR
 FOLDER:SECTORS
 STYLE:DashDot:1
 COLOR:DFSGrey
 #import .github/workflows/source/data/airspaces/ctr/etnn.txt
 
-MAP:ETNN D(HX)
+MAP:ETNN CTR
 FOLDER:SECTORS
 STYLE:DashDot:1
 COLOR:DFSGrey
 #import .github/workflows/source/data/airspaces/ctr/etnn.txt
 
-MAP:ETOU D(HX)
+MAP:ETOU CTR
 FOLDER:SECTORS
 STYLE:DashDot:1
 COLOR:DFSGrey
 #import .github/workflows/source/data/airspaces/ctr/etou.txt
 
-MAP:ETSB D(HX)
+MAP:ETSB CTR
 FOLDER:SECTORS
 STYLE:DashDot:1
 COLOR:DFSGrey
