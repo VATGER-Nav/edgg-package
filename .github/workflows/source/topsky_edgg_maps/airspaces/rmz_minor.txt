@@ -17,7 +17,6 @@ ACTIVE:RWY:ARR:EDGS13:DEP:*
 ACTIVE:RWY:ARR:*:DEP:EDGS31
 ACTIVE:RWY:ARR:*:DEP:EDGS13
 #import .github/workflows/source/data/airspaces/classes/edgs_rmz.txt
-#import .github/workflows/source/data/airspaces/classes/edgs_e.txt
 
 MAP:EDTY RMZ
 FOLDER:AIRSPACES
@@ -28,4 +27,3 @@ ACTIVE:RWY:ARR:EDTY10:DEP:*
 ACTIVE:RWY:ARR:*:DEP:EDTY28
 ACTIVE:RWY:ARR:*:DEP:EDTY10
 #import .github/workflows/source/data/airspaces/classes/edty_rmz.txt
-#import .github/workflows/source/data/airspaces/classes/edty_e.txt
