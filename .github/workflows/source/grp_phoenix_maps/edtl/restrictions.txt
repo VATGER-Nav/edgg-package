@@ -1,6 +1,6 @@
 // ******************* Closures ******************* 
 
-MAP:H
+MAP:North
 AIRPORT:EDTL
 FOLDER:Closures
 COLOR:closure
