@@ -3,7 +3,9 @@ run-name: Push by ${{ github.actor }} is building Maps
 on:
   push:
     branches:
+      - "!main"
       - "*"
+      - "*/**"
 permissions: write-all
 jobs:
   build-maps:
