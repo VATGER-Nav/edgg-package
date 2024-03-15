@@ -1,8 +1,6 @@
 DisplayTypeName:Standard ES radar screen
 DisplayTypeNeedRadarContent:1
 DisplayTypeGeoReferenced:1
-SECTORFILE:
-SECTORTITLE:
 ARTCC low boundary:Centerlines EDDL 05L:
 ARTCC low boundary:Centerlines EDDL 05R:
 ARTCC low boundary:Centerlines EDDL 23L:
@@ -14,8 +12,8 @@ Geo:EDZZ Landmark Highway Germany:
 Geo:EDZZ Landmark River Germany:
 SHOWC:1
 SHOWSB:0
-BELOW:130
-ABOVE:13500
+BELOW:0
+ABOVE:10000
 LEADER:3
 SHOWLEADER:0
 TURNLEADER:0
@@ -25,5 +23,5 @@ DISABLEPANNING:0
 DISABLEZOOMING:0
 DisplayRotation:0.00000
 TAGFAMILY:Phoenix Tower
-WINDOWAREA:51.089153:6.042811:51.390077:6.936333
+WINDOWAREA:51.046452:5.952714:51.427094:7.069616
 PLUGIN:TopSky plugin:ShowMapData:EDLN,PHOENIX
