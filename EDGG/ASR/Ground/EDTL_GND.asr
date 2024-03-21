@@ -1,0 +1,44 @@
+DisplayTypeName:Ground Radar display
+DisplayTypeNeedRadarContent:0
+DisplayTypeGeoReferenced:1
+Free Text:EDTL Groundlayout\A:freetext
+Free Text:EDTL Groundlayout\APN:freetext
+Free Text:EDTL Groundlayout\B:freetext
+Free Text:EDTL Groundlayout\B131:freetext
+Free Text:EDTL Groundlayout\B132:freetext
+Free Text:EDTL Groundlayout\B133:freetext
+Free Text:EDTL Groundlayout\B140:freetext
+Free Text:EDTL Groundlayout\B143:freetext
+Free Text:EDTL Groundlayout\C:freetext
+Free Text:EDTL Groundlayout\D:freetext
+Free Text:EDTL Groundlayout\E:freetext
+Free Text:EDTL Groundlayout\F:freetext
+Free Text:EDTL Groundlayout\Fire Brigade:freetext
+Free Text:EDTL Groundlayout\G:freetext
+Free Text:EDTL Groundlayout\H:freetext
+Free Text:EDTL Groundlayout\L:freetext
+Free Text:EDTL Groundlayout\L:freetext
+Free Text:EDTL Groundlayout\MIL:freetext
+Free Text:EDTL Groundlayout\P:freetext
+Free Text:EDTL Groundlayout\Q:freetext
+Geo:EDTL Groundlayout:
+Regions:EDTL Groundlayout:polygon
+SHOWC:1
+SHOWSB:0
+BELOW:0
+ABOVE:2500
+LEADER:-1
+SHOWLEADER:0
+TURNLEADER:0
+HISTORY_DOTS:0
+SIMULATION_MODE:1
+DISABLEPANNING:0
+DISABLEZOOMING:0
+DisplayRotation:62.60000
+TAGFAMILY:Phoenix Ground
+WINDOWAREA:48.361022:7.802497:48.378042:7.852439
+PLUGIN:Ground Radar plugin:AirportElevation:147
+PLUGIN:Ground Radar plugin:AirportRadius:3
+PLUGIN:Ground Radar plugin:GroundMode:EDTL
+PLUGIN:Ground Radar plugin:ShowMapData:EDTL
+PLUGIN:TopSky plugin:ShowMapData:EDTL

@@ -39,7 +39,12 @@
     ".github/workflows/source/grp_phoenix_maps/edds/dfs-layout.txt",
     ".github/workflows/source/grp_phoenix_maps/edds/reduced-runway-separation.txt",
     ".github/workflows/source/grp_phoenix_maps/edds/tora.txt",
-    ".github/workflows/source/grp_phoenix_maps/edds/restrictions.txt"
+    ".github/workflows/source/grp_phoenix_maps/edds/restrictions.txt",
+    ".github/workflows/source/grp_phoenix_maps/edln/edln.txt",
+    ".github/workflows/source/grp_phoenix_maps/edln/closures.txt",
+    ".github/workflows/source/grp_phoenix_maps/edln/restrictions.txt",
+    ".github/workflows/source/grp_phoenix_maps/edtl/edtl.txt",
+    ".github/workflows/source/grp_phoenix_maps/edtl/restrictions.txt"
   ],
 
   "EDGG/Plugins/Topsky_EDUU/TopSkyMaps.txt": [
