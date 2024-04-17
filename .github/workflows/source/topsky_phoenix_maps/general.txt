@@ -19,6 +19,8 @@ COLORDEF:maxCodeE:0:255:255
 COLORDEF:maxCodeE_B748:0:175:255
 COLORDEF:maxCodeF:0:255:0
 COLORDEF:taxiways:255:105:180
+COLORDEF:taxiway_background:83:83:83
+COLORDEF:apron_background:38:36:45
 
 //VFR Pflichtmeldepunkte
 SYMBOLDEF:FIX VFR
