@@ -1,0 +1,89 @@
+{
+    "airportConfigs": "../vSID Airportconfig",
+    "colors": {
+        "sidSuggestion": {
+            "r": 75,
+            "g": 75,
+            "b": 75
+        },
+        "suggestedSidSet": {
+            "r": 0,
+            "g": 128,
+            "b": 0
+        },
+        "customSidSuggestion": {
+            "r": 192,
+            "g": 167,
+            "b": 24
+        },
+        "customSidSet": {
+            "r": 206,
+            "g": 103,
+            "b": 0
+        },
+        "noSid": {
+            "r": 220,
+            "g": 30,
+            "b": 20
+        },
+        "suggestedClmb": {
+            "r": 75,
+            "g": 75,
+            "b": 75
+        },
+        "customClmbSet": {
+            "r": 206,
+            "g": 103,
+            "b": 0
+        },
+        "clmbSet": {
+            "r": 0,
+            "g": 128,
+            "b": 255
+        },
+        "clmbViaSet": {
+            "r": 0,
+            "g": 128,
+            "b": 0
+        },
+        "rwyNotSet": {
+            "r": 75,
+            "g": 75,
+            "b": 75
+        },
+        "rwySet": {
+            "r": 0,
+            "g": 128,
+            "b": 0
+        },
+        "notDepRwySet": {
+            "r": 206,
+            "g": 103,
+            "b": 0
+        },
+        "squawkNotSet": {
+            "r": 206,
+            "g": 103,
+            "b": 0
+        },
+        "requestNeutral": {
+            "r": 128,
+            "g": 128,
+            "b": 128
+        },
+        "requestCaution":  {
+            "r": 220,
+            "g": 140,
+            "b": 0
+        },
+        "requestWarning": {
+            "r": 220,
+            "g": 30,
+            "b": 20
+        }
+    },
+    "requests": {
+        "caution": 2,
+        "warning": 5
+    }
+}

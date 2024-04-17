@@ -1,0 +1,81 @@
+{
+    "EDLP": {
+        "elevation": 699,
+        "runways": "06,24",
+        "transAlt": 5000,
+        "maxInitialClimb": 7000,
+        "appSI": "PADL,HMM,PADH",
+        "sids": {
+            "DOMEG": {
+                "X": {
+                    "rwy": "06",
+                    "initial": 5000,
+                    "climbvia": true,
+                    "prio": 1
+                },
+                "W": {
+                    "rwy": "24",
+                    "initial": 5000,
+                    "climbvia": false,
+                    "prio": 1
+                }
+			},
+			"GISDI": {
+                "X": {
+                    "rwy": "06",
+                    "initial": 5000,
+                    "climbvia": true,
+                    "prio": 1
+                },
+                "W": {
+                    "rwy": "24",
+                    "initial": 5000,
+                    "climbvia": true,
+                    "prio": 1
+                }
+			},
+			"HMM": {
+                "X": {
+                    "rwy": "06",
+                    "initial": 5000,
+                    "climbvia": true,
+                    "prio": 1
+                },
+                "W": {
+                    "rwy": "24",
+                    "initial": 5000,
+                    "climbvia": false,
+                    "prio": 1
+                }
+			},
+			"TINSA": {
+                "X": {
+                    "rwy": "06",
+                    "initial": 5000,
+                    "climbvia": true,
+                    "prio": 1
+                },
+                "W": {
+                    "rwy": "24",
+                    "initial": 5000,
+                    "climbvia": true,
+                    "prio": 1
+                }
+			},
+			"WRB": {
+                "X": {
+                    "rwy": "06",
+                    "initial": 5000,
+                    "climbvia": true,
+                    "prio": 1
+                },
+                "W": {
+                    "rwy": "24",
+                    "initial": 5000,
+                    "climbvia": false,
+                    "prio": 1
+                }
+			}
+        }
+    }
+}
