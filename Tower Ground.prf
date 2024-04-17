@@ -54,6 +54,9 @@ Plugins	Plugin8	\EDGG\Plugins\IASsure\IASsure.dll
 Plugins	Plugin9	\EDGG\Plugins\vACDM\vACDM.dll
 Plugins	Plugin10	\EDGG\Plugins\AMAN\Aman.dll
 Plugins	Plugin11	\EDGG\Plugins\vSID\vSID Plugin TWR\vSID.dll
+Plugins	Plugin12	\EDGG\Plugins\VatCAN\VATCANBookings.dll
+Plugins	Plugin12Display0	Ground Radar display
+Plugins	Plugin12Display1	Standard ES radar screen
 
 TeamSpeakVccs	TsVccsMiniControlX	1744
 TeamSpeakVccs	TsVccsMiniControlY	44
