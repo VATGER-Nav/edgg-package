@@ -2,13 +2,13 @@
 
 [DCL]
 // ****************** REQ STARTUP ON OWN FREQ ****************** 
-DCL:EDDF,EDDS,EDDR,EDFH,EDSB,EDFM,EDDL,EDDK,EDDG,EDLW,EDLP,EDLV:SID:CLRD TO <ades> OFF <drwy> VIA <sid> CLIMB <cfl> SQUAWK <assr> ATIS <rmk> <startup_own>
+DCL:EDDF,EDDS,EDDR,EDFH,EDSB,EDFM,EDDL,EDDK,EDDG,EDLW,EDLP,EDLV:SID:CLRD TO <ades> OFF <drwy> VIA <sid> CLIMB <cfl> SQUAWK <assr> ATIS <atis> <startup_own> <rmk>
 
 // ****************** REQ STARTUP ON FREQ + TOBT + OWN FREQ****************** 
-//DCL:EDDF,EDDS,EDDR,EDFH,EDSB,EDFM,EDDL,EDDK,EDDG,EDLW,EDLP,EDLV:SID:CLRD TO <ades> OFF <drwy> VIA <sid> CLIMB <cfl> SQUAWK <assr> ATIS <rmk> REPORT TOBT AT VACDM.VATGER.DE AND REQ STARTUP ON <freq_own>
+//DCL:EDDF,EDDS,EDDR,EDFH,EDSB,EDFM,EDDL,EDDK,EDDG,EDLW,EDLP,EDLV:SID:CLRD TO <ades> OFF <drwy> VIA <sid> CLIMB <cfl> SQUAWK <assr> ATIS <atis> REPORT TOBT AT VACDM.VATGER.DE AND REQ STARTUP ON <freq_own> <rmk>
 
 // ****************** STARTUP APPROVED + next Frequency ****************** 
-// DCL:EDDF,EDDS,EDDR,EDFH,EDSB,EDFM,EDDL,EDDK,EDDG,EDLW,EDLP,EDLV:SID:CLRD TO <ades> OFF <drwy> VIA <sid> CLIMB <cfl> SQUAWK <assr> ATIS <rmk> <startup_next>
+// DCL:EDDF,EDDS,EDDR,EDFH,EDSB,EDFM,EDDL,EDDK,EDDG,EDLW,EDLP,EDLV:SID:CLRD TO <ades> OFF <drwy> VIA <sid> CLIMB <cfl> SQUAWK <assr> ATIS <atis> <startup_next> <rmk>
 
 [FREETEXT]
 FREETEXT:NE:GUDE
