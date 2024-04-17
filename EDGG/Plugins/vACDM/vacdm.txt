@@ -1,5 +1,5 @@
 SERVER_url=https://app.vacdm.net
-UPDATE_RATE_SECONDS=5
+UPDATE_RATE_SECONDS=1
 COLOR_lightgreen=127,252,73
 COLOR_lightblue=53,218,235
 COLOR_green=0,181,27
