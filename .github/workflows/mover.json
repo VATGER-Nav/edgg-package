@@ -165,8 +165,8 @@
 
     ".github/workflows/source/topsky_phoenix_maps/topografie/highway.txt",
     ".github/workflows/source/topsky_phoenix_maps/topografie/rivers.txt",
-	
-	".github/workflows/source/topsky_phoenix_maps/taxiways/taxiways_all.txt"
+
+    ".github/workflows/source/topsky_phoenix_maps/taxiways/taxiways_all.txt"
   ],
 
   "EDGG/Plugins/Topsky_EDYY/TopSkyMaps.txt": [
