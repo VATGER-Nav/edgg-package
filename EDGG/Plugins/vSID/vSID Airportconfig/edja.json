@@ -1,0 +1,69 @@
+{
+    "EDJA": {
+        "elevation": 2079,
+        "runways": "06,24",
+        "transAlt": 5000,
+        "maxInitialClimb": 7000,
+        "appSI": "ILR,SWA,FUE,ZUG,TRU,RDG",
+        "timeMode": true,
+		"timezone": "Europe/Berlin",
+        "sids": {
+            "KPT": {
+                "B": {
+                    "rwy": "06",
+                    "initial": 7000,
+                    "climbvia": true,
+                    "prio": 1
+                },
+                "A": {
+                    "rwy": "24",
+                    "initial": 7000,
+                    "climbvia": false,
+                    "prio": 1
+                }
+			},
+			"LUPOL": {
+                "B": {
+                    "rwy": "06",
+                    "initial": 7000,
+                    "climbvia": true,
+                    "prio": 1
+                },
+                "A": {
+                    "rwy": "24",
+                    "initial": 7000,
+                    "climbvia": true,
+                    "prio": 1
+                }
+			},
+			"UMTEX": {
+                "B": {
+                    "rwy": "06",
+                    "initial": 7000,
+                    "climbvia": true,
+                    "prio": 1
+                },
+                "A": {
+                    "rwy": "24",
+                    "initial": 7000,
+                    "climbvia": false,
+                    "prio": 1
+                }
+			},
+			"ALG": {
+                "U": {
+                    "rwy": "06",
+                    "initial": 7000,
+                    "climbvia": true,
+                    "prio": 99
+                },
+                "T": {
+                    "rwy": "24",
+                    "initial": 7000,
+                    "climbvia": true,
+                    "prio": 99
+                }
+			}
+        }
+    }
+}

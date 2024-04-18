@@ -19,7 +19,7 @@ Settings	SettingsfileTAXIOUT	\EDGG\Settings\TWR\TWR_General.txt
 Settings	SettingsfileTAKEOFF	\EDGG\Settings\TWR\TWR_General.txt
 Settings	SettingsfileADCS	\EDGG\Settings\TWR\TWR_General.txt
 Settings	SettingsfileTAXIIN	\EDGG\Settings\TWR\TWR_General.txt
-Settings	sector	\EDGG-FULL_20240127182724-240101-0002.sct
+Settings	sector	\EDGG-FULL_20240323103659-240301-0003.sct
 Settings	alias	\EDGG\Alias\alias.txt
 Settings	AtisFolder	\EDGG\ATIS\AtisFiles.txt
 Settings	airlines	\EDGG\ICAO\ICAO_Airlines.txt
@@ -29,10 +29,13 @@ Settings	airways	\EDGG\NavData\airway.txt
 Settings	airportcoords	\EDGG\NavData\icao.txt
 Settings	AselKey	5111808
 Settings	FreqKey	3604480
+
 Voice	PPPT	18612224
 Voice	SPPT	18612224
 Voice	bass_filter	1
+
 Sounds	Sound18	\EDGG\Sounds\startup_silent.wav
+
 Plugins	Plugin0	\EDGG\Plugins\TopSky_Phoenix\TopSky.dll
 Plugins	Plugin0Display0	Standard ES radar screen
 Plugins	Plugin0Display1	Ground Radar display
@@ -49,6 +52,10 @@ Plugins	Plugin6	\EDGG\Plugins\DelHel\DelHel.dll
 Plugins	Plugin7	\EDGG\Plugins\Squawk\PHX\Squawks.dll
 Plugins	Plugin8	\EDGG\Plugins\IASsure\IASsure.dll
 Plugins	Plugin9	\EDGG\Plugins\vACDM\vACDM.dll
+Plugins	Plugin10	\EDGG\Plugins\AMAN\Aman.dll
+Plugins	Plugin11	\EDGG\Plugins\vSID\vSID Plugin TWR\vSID.dll
+Plugins	Plugin12	\EDGG\Plugins\VatCAN\VATCANBookings.dll
+
 TeamSpeakVccs	TsVccsMiniControlX	1744
 TeamSpeakVccs	TsVccsMiniControlY	44
 TeamSpeakVccs	Ts3NickName	YOUR ID
@@ -56,14 +63,16 @@ TeamSpeakVccs	Ts3DialogLeft	0
 TeamSpeakVccs	Ts3DialogTop	0
 TeamSpeakVccs	Ts3DialogRight	890
 TeamSpeakVccs	Ts3DialogBottom	570
-RecentFiles	Recent1	\EDGG\ASR\Tower\EDDF_TWR.asr
-RecentFiles	Recent2	\EDGG\ASR\Special\EDDF_DFS_GND.asr
+
+RecentFiles	Recent1	\EDGG\ASR\Special\EDDF_DFS_GND.asr
+RecentFiles	Recent2	\EDGG\ASR\Tower\EDDF_TWR.asr
 RecentFiles	Recent3	\EDGG\ASR\Tower\EDDS_TWR.asr
 RecentFiles	Recent4	\EDGG\ASR\Tower\EDDL_TWR.asr
 RecentFiles	Recent5	\EDGG\ASR\Special\EDDL_DFS_GND.asr
 RecentFiles	Recent6	\EDGG\ASR\Special\EDDS_DFS_GND.asr
 RecentFiles	Recent7	\EDGG\ASR\Tower\EDDK_TWR.asr
 RecentFiles	Recent8	\EDGG\ASR\Special\EDDK_DFS_GND.asr
+
 ASRFastKeys	1	\EDGG\ASR\Tower\EDFH_TWR.asr
 ASRFastKeys	2	\EDGG\ASR\Ground\EDFH_GND.asr
 ASRFastKeys	3	\EDGG\ASR\Tower\EDSB_TWR.asr
@@ -72,11 +81,15 @@ ASRFastKeys	5	\EDGG\ASR\Tower\EDDG_TWR.asr
 ASRFastKeys	6	\EDGG\ASR\Ground\EDDG_GND.asr
 ASRFastKeys	7	\EDGG\ASR\Tower\EDLW_TWR.asr
 ASRFastKeys	8	\EDGG\ASR\Ground\EDLW_GND.asr
+
 LastSession	atis_url0	http://uniatis.net/atis.php?metar=$metar($atisairportA)&arr=$arrrwy($atisairportA)&dep=$deprwy($atisairportA)&apptype=ILS&info=$atiscodeA&depfreq=122.800
 LastSession	atis_url1	http://uniatis.net/atis.php?metar=$metar($atisairportB)&arr=$arrrwy($atisairportB)&dep=$deprwy($atisairportB)&apptype=ILS&info=$atiscodeB&depfreq=122.800
 LastSession	atis_url2	http://uniatis.net/atis.php?metar=$metar($atisairportC)&arr=$arrrwy($atisairportC)&dep=$deprwy($atisairportC)&apptype=ILS&info=$atiscodeC&depfreq=122.800
 LastSession	atis_url3	http://uniatis.net/atis.php?metar=$metar($atisairportD)&arr=$arrrwy($atisairportD)&dep=$deprwy($atisairportD)&apptype=ILS&info=$atiscodeD&depfreq=122.800
 LastSession	server	AUTOMATIC
-Plugins	Plugin10	\EDGG\Plugins\AMAN\Aman.dll
+
+
 Plugins	Plugin10Display0	Ground Radar display
 Plugins	Plugin10Display1	Standard ES radar screen
+LastSession	atis_freq4	118000
+

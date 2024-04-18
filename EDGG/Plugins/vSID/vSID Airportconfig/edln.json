@@ -1,0 +1,137 @@
+{
+    "EDLN": {
+        "elevation": 125,
+        "runways": "13,31",
+        "transAlt": 5000,
+        "maxInitialClimb": 7000,
+        "appSI": "DLD,DLA,BOT,PADH",
+        "sids": {
+            "ABODU": {
+                "A": {
+                    "rwy": "13",
+                    "initial": 2000,
+                    "climbvia": false,
+                    "prio": 1
+                },
+                "N": {
+                    "rwy": "31",
+                    "initial": 2000,
+                    "climbvia": false,
+                    "prio": 1
+                }
+			},
+			"COL": {
+                "A": {
+                    "rwy": "13",
+                    "initial": 2000,
+                    "climbvia": true,
+                    "prio": 1
+                },
+                "N": {
+                    "rwy": "31",
+                    "initial": 2000,
+                    "climbvia": true,
+                    "prio": 1
+                }
+			},
+			"GMH": {
+                "Z": {
+                    "rwy": "13",
+                    "initial": 2000,
+                    "climbvia": false,
+                    "prio": 1
+                },
+                "N": {
+                    "rwy": "31",
+                    "initial": 2000,
+                    "climbvia": false,
+                    "prio": 1
+                }
+			},
+			"KUMIK": {
+                "A": {
+                    "rwy": "13",
+                    "initial": 2000,
+                    "climbvia": true,
+                    "prio": 1
+                },
+                "N": {
+                    "rwy": "31",
+                    "initial": 2000,
+                    "climbvia": true,
+                    "prio": 1
+                }
+			},
+			"MODRU": {
+                "M": {
+                    "rwy": "13",
+                    "initial": 2000,
+                    "climbvia": false,
+                    "prio": 1
+                },
+                "N": {
+                    "rwy": "31",
+                    "initial": 2000,
+                    "climbvia": false,
+                    "prio": 1
+                }
+			},
+			"NVO": {
+                "Z": {
+                    "rwy": "13",
+                    "initial": 2000,
+                    "climbvia": false,
+                    "prio": 1
+                },
+                "N": {
+                    "rwy": "31",
+                    "initial": 2000,
+                    "climbvia": false,
+                    "prio": 1
+                }
+			},
+			"NUDGO": {
+                "A": {
+                    "rwy": "13",
+                    "initial": 2000,
+                    "climbvia": false,
+                    "prio": 1
+                },
+                "N": {
+                    "rwy": "31",
+                    "initial": 2000,
+                    "climbvia": false,
+                    "prio": 1
+                }
+			},
+			"ROMIN": {
+                "M": {
+                    "rwy": "13",
+                    "initial": 2000,
+                    "climbvia": false,
+                    "prio": 1
+                },
+                "N": {
+                    "rwy": "31",
+                    "initial": 2000,
+                    "climbvia": false,
+                    "prio": 1
+                }
+			},
+			"SONEB": {
+                "A": {
+                    "rwy": "13",
+                    "initial": 2000,
+                    "climbvia": true,
+                    "prio": 1
+                },
+                "N": {
+                    "rwy": "31",
+                    "initial": 2000,
+                    "climbvia": true,
+                    "prio": 1
+                }
+			}
+        }
+    }
+}

@@ -1,0 +1,131 @@
+{
+    "EDDG": {
+        "elevation": 159,
+        "runways": "25,07",
+        "transAlt": 5000,
+        "maxInitialClimb": 7000,
+		"appSI": "HMM,PADL,PADH",
+        "sids": {
+            "DOMEG": {
+                "E": {
+                    "rwy": "07",
+                    "initial": 5000,
+                    "climbvia": false,
+                    "prio": 2
+                },
+                "Y": {
+                    "rwy": "07",
+                    "initial": 5000,
+                    "climbvia": false,
+                    "prio": 1,
+                    "engineType": "PT",
+                    "mtow": 5700
+                },
+			    "C": {
+                    "rwy": "25",
+                    "initial": 5000,
+                    "climbvia": false,
+                    "prio": 3
+                },
+			    "Z1": {
+                    "rwy": "25",
+                    "initial": 5000,
+                    "climbvia": false,
+                    "prio": 1,
+                    "engineType": "J",
+                    "mtow": 20000
+                },
+				"Z2": {
+                    "rwy": "25",
+                    "initial": 5000,
+                    "climbvia": false,
+                    "prio": 2,
+                    "engineType": "TP"
+                }
+            },
+            "RKN": {
+                "E": {
+                    "rwy": "07",
+                    "initial": 5000,
+                    "climbvia": false,
+                    "prio": 3
+                },
+                "Y1": {
+                    "rwy": "07",
+                    "initial": 5000,
+                    "climbvia": true,
+                    "prio": 1,
+                    "engineType": "J",
+                    "mtow": 20000
+                },
+				"Y2": {
+                    "rwy": "07",
+                    "initial": 5000,
+                    "climbvia": true,
+                    "prio": 2,
+                    "engineType": "PT"
+                },
+			    "C": {
+                    "rwy": "25",
+                    "initial": 5000,
+                    "climbvia": false,
+                    "prio": 3
+                }
+            },
+			"OSN": {
+                "E": {
+                    "rwy": "07",
+                    "initial": 5000,
+                    "climbvia": false,
+                    "prio": 2
+                },
+			    "C": {
+                    "rwy": "25",
+                    "initial": 5000,
+                    "climbvia": false,
+                    "prio": 3
+                },
+			    "X1": {
+                    "rwy": "25",
+                    "initial": 5000,
+                    "climbvia": false,
+                    "prio": 1,
+                    "engineType": "J",
+                    "mtow": 20000
+                },
+				"X2": {
+                    "rwy": "25",
+                    "initial": 5000,
+                    "climbvia": false,
+                    "prio": 2,
+                    "engineType": "TP"
+                }
+            },
+			"HMM": {
+                "Y": {
+                    "rwy": "07",
+                    "initial": 5000,
+                    "climbvia": false,
+                    "prio": 2,
+                   "engineType": "PT",
+                    "mtow": 5700
+                },
+			    "Z1": {
+                    "rwy": "25",
+                    "initial": 5000,
+                    "climbvia": false,
+                    "prio": 1,
+                    "engineType": "J",
+                    "mtow": 20000
+                },
+				"Z2": {
+                    "rwy": "25",
+                    "initial": 5000,
+                    "climbvia": false,
+                    "prio": 2,
+                    "engineType": "TP"
+                }
+            }
+        }
+    }
+}

@@ -41,6 +41,7 @@
     ".github/workflows/source/grp_phoenix_maps/edds/tora.txt",
     ".github/workflows/source/grp_phoenix_maps/edds/restrictions.txt",
     ".github/workflows/source/grp_phoenix_maps/edln/edln.txt",
+    ".github/workflows/source/grp_phoenix_maps/edln/aor.txt",
     ".github/workflows/source/grp_phoenix_maps/edln/closures.txt",
     ".github/workflows/source/grp_phoenix_maps/edln/restrictions.txt",
     ".github/workflows/source/grp_phoenix_maps/edtl/edtl.txt",
@@ -163,7 +164,9 @@
     ".github/workflows/source/topsky_phoenix_maps/other-helper/level.txt",
 
     ".github/workflows/source/topsky_phoenix_maps/topografie/highway.txt",
-    ".github/workflows/source/topsky_phoenix_maps/topografie/rivers.txt"
+    ".github/workflows/source/topsky_phoenix_maps/topografie/rivers.txt",
+
+    ".github/workflows/source/topsky_phoenix_maps/taxiways/taxiways_all.txt"
   ],
 
   "EDGG/Plugins/Topsky_EDYY/TopSkyMaps.txt": [

@@ -1,0 +1,4 @@
+MAP:Taxiways ALL
+FOLDER:Taxiways
+FONTSIZE:=:10
+#import .github/workflows/source/topsky_phoenix_maps/taxiways/eddk.txt

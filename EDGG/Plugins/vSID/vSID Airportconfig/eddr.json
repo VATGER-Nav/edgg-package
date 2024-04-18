@@ -1,0 +1,93 @@
+{
+    "EDDR": {
+        "elevation": 1058,
+        "runways": "09,27",
+        "transAlt": 5000,
+        "maxInitialClimb": 8000,
+        "appSI": "PFA,EIF,RUD,GIN,KTG",
+        "sids": {
+            "GTQ": {
+                "L": {
+                    "rwy": "09",
+                    "initial": 8000,
+                    "climbvia": true,
+                    "prio": 1
+                },
+                "M": {
+                    "rwy": "27",
+                    "initial": 8000,
+                    "climbvia": true,
+                    "prio": 1
+                },
+				"E": {
+                    "rwy": "09",
+                    "initial": 8000,
+                    "climbvia": true,
+                    "prio": 99
+                },
+                "W": {
+                    "rwy": "27",
+                    "initial": 8000,
+                    "climbvia": true,
+                    "prio": 99
+                }
+			},
+			"TOMPI": {
+                "L": {
+                    "rwy": "09",
+                    "initial": 4000,
+                    "climbvia": true,
+                    "prio": 2
+                },
+                "M": {
+                    "rwy": "27",
+                    "initial": 4000,
+                    "climbvia": true,
+                    "prio": 2
+                },
+				"E1": {
+                    "rwy": "09",
+                    "initial": 4000,
+                    "climbvia": true,
+                    "prio": 1,
+                    "engineType": "PT",
+                    "mtow": 5700
+                },
+                "W1": {
+                    "rwy": "27",
+                    "initial": 4000,
+                    "climbvia": true,
+                    "prio": 1,
+                    "engineType": "PT",
+                    "mtow": 5700
+                }
+			},
+			"ZWN": {
+                "L": {
+                    "rwy": "09",
+                    "initial": 4000,
+                    "climbvia": true,
+                    "prio": 1
+                },
+                "M": {
+                    "rwy": "27",
+                    "initial": 4000,
+                    "climbvia": true,
+                    "prio": 1
+                },
+				"E": {
+                    "rwy": "09",
+                    "initial": 4000,
+                    "climbvia": true,
+                    "prio": 99
+                },
+                "W": {
+                    "rwy": "27",
+                    "initial": 4000,
+                    "climbvia": true,
+                    "prio": 99
+                }
+			}
+        }
+    }
+}

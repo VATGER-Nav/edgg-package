@@ -1,0 +1,77 @@
+{
+    "EDSB": {
+        "elevation": 409,
+        "runways": "03,21",
+        "transAlt": 5000,
+        "maxInitialClimb": 7000,
+        "appSI": "REU,STG,BAD,DKB,KTG",
+        "sids": {
+            "GAGSI": {
+                "Y": {
+                    "rwy": "03",
+                    "initial": 7000,
+                    "climbvia": true,
+                    "prio": 1
+                },
+				"N": {
+                    "rwy": "03",
+                    "initial": 7000,
+                    "climbvia": false,
+                    "prio": 99
+                },
+                "Z": {
+                    "rwy": "21",
+                    "initial": 7000,
+                    "climbvia": false,
+                    "prio": 1
+                },
+                "P": {
+                    "rwy": "21",
+                    "initial": 7000,
+                    "climbvia": true,
+                    "prio": 99
+                }
+			},
+			"STR": {
+                "Y": {
+                    "rwy": "03",
+                    "initial": 7000,
+                    "climbvia": true,
+                    "prio": 1
+                },
+                "Z": {
+                    "rwy": "21",
+                    "initial": 7000,
+                    "climbvia": false,
+                    "prio": 1
+                },
+                "P": {
+                    "rwy": "21",
+                    "initial": 7000,
+                    "climbvia": false,
+                    "prio": 99
+                }
+			},
+			"TUBLO": {
+                "Y": {
+                    "rwy": "03",
+                    "initial": 7000,
+                    "climbvia": true,
+                    "prio": 1
+                },
+				"N": {
+                    "rwy": "03",
+                    "initial": 7000,
+                    "climbvia": true,
+                    "prio": 99
+                },
+                "Z": {
+                    "rwy": "21",
+                    "initial": 7000,
+                    "climbvia": false,
+                    "prio": 1
+                }
+			}
+        }
+    }
+}
