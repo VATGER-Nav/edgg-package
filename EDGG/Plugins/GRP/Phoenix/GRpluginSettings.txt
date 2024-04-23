@@ -1,4 +1,4 @@
-// last change: 20.02.2024 by PH
+// last change: 23.04.2024 by PH
 
 Equip_ProMode=0
 RawVideo=1
@@ -182,7 +182,7 @@ Airport_Runway_Buffer_LVP=25C:200
 Airport_Runway_Buffer_LVP=07R:200
 Airport_Runway_Buffer_LVP=07C:200
 
-Airport_Runway_NotATYP=25R:A388,B741,B742,B743,B744,B748,MD11,DC10,A124,L101
+Airport_Runway_NotATYP=25R:A388,B741,B742,B743,B744,B748,MD11,DC10,A124,L101,A124,A225
 Airport_Runway_Closed_Arr=18
 Airport_Runway_Closed_Dep=25R
 Airport_Runway_Closed_Dep=07L
@@ -198,11 +198,6 @@ Window_APP_AltFilter=10000
 [EDFH]
 Airport_Runway_Buffer_LVP=03:200
 Airport_Runway_Buffer_LVP=21:200
-
-[EDDK]
-Airport_Runway_MaxCode=14R:C
-Airport_Runway_NotATYP=24:A388,A124,A225
-AppPath=EDDK:RWY32R:50.858194444444:7.1613694444444:316:L:302:3.0
 
 //List_Outbound=*,2,1131,500
 //List_Inbound=*,2,1203,650
