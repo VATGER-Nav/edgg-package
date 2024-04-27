@@ -140,7 +140,6 @@
     ".github/workflows/source/topsky_phoenix_maps/phoenix/vfr.txt",
     ".github/workflows/source/topsky_phoenix_maps/phoenix/airports.txt",
     ".github/workflows/source/topsky_phoenix_maps/phoenix/runways.txt",
-    ".github/workflows/source/topsky_phoenix_maps/phoenix/edff-aor.txt",
     ".github/workflows/source/topsky_phoenix_maps/phoenix/airspaces.txt",
 
     ".github/workflows/source/topsky_phoenix_maps/stands/stands_all.txt",
@@ -159,7 +158,6 @@
 
     ".github/workflows/source/topsky_phoenix_maps/minor-airports.txt",
     ".github/workflows/source/topsky_phoenix_maps/mva.txt",
-    ".github/workflows/source/topsky_phoenix_maps/other-helper/level.txt",
 
     ".github/workflows/source/topsky_phoenix_maps/topografie/highway.txt",
     ".github/workflows/source/topsky_phoenix_maps/topografie/rivers.txt",

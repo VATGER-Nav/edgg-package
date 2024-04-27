@@ -1,4 +1,4 @@
-MAP:Controlzone
+MAP:Controlzone (CTR)
 FOLDER:Airspace
 COLOR:Standard
 ACTIVE:1
@@ -13,6 +13,7 @@ ASRDATA:PHOENIX
 ACTIVE:1
 STYLE:DOT:1
 #import .github/workflows/source/data/airspaces/classes/eddf_c.txt
+#import .github/workflows/source/data/sectors/langen/eddf_app.txt
 #import .github/workflows/source/data/airspaces/classes/eddl_eddk_c.txt
 
 MAP:Airspace D
@@ -40,3 +41,9 @@ STYLE:DOT:1
 #import .github/workflows/source/data/airspaces/classes/edlv_tmz.txt
 #import .github/workflows/source/data/airspaces/classes/edlw_tmz.txt
 #import .github/workflows/source/data/airspaces/classes/edty_rmz.txt
+
+MAP:Airspace Label
+FOLDER:Airspace
+COLOR:Standard
+ASRDATA:PHOENIX
+#import .github/workflows/source/data/airspaces/classes/labels.txt
