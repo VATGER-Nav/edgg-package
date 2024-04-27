@@ -1,5 +1,13 @@
-MAP:ASPC
-FOLDER:PHOENIX
+MAP:Controlzone
+FOLDER:Airspace
+COLOR:Standard
+ACTIVE:1
+ASRDATA:PHOENIX
+STYLE:Solid:1
+#import .github/workflows/source/data/airspaces/ctr/
+
+MAP:Airspace C
+FOLDER:Airspace
 COLOR:Standard
 ASRDATA:PHOENIX
 ACTIVE:1
@@ -7,8 +15,8 @@ STYLE:DOT:1
 #import .github/workflows/source/data/airspaces/classes/eddf_c.txt
 #import .github/workflows/source/data/airspaces/classes/eddl_eddk_c.txt
 
-MAP:ASPD
-FOLDER:PHOENIX
+MAP:Airspace D
+FOLDER:Airspace
 COLOR:Standard
 ASRDATA:PHOENIX
 ACTIVE:1
@@ -19,7 +27,7 @@ STYLE:DASH:1
 #import .github/workflows/source/data/airspaces/classes/edsb_d.txt
 
 MAP:TMZ/RMZ
-FOLDER:PHOENIX
+FOLDER:Airspace
 COLOR:Standard
 ASRDATA:PHOENIX
 ACTIVE:1

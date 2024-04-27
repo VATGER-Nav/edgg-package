@@ -1,7 +1,0 @@
-MAP:CTR
-FOLDER:PHOENIX
-COLOR:Standard
-ACTIVE:1
-ASRDATA:PHOENIX
-STYLE:Solid:1
-#import .github/workflows/source/data/airspaces/ctr/

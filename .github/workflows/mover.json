@@ -137,15 +137,13 @@
   "EDGG/Plugins/Topsky_Phoenix/TopSkyMaps.txt": [
     ".github/workflows/source/topsky_phoenix_maps/general.txt",
 
-    ".github/workflows/source/topsky_phoenix_maps/phoenix/vfr-points.txt",
-    ".github/workflows/source/topsky_phoenix_maps/phoenix/vfr-hospital.txt",
+    ".github/workflows/source/topsky_phoenix_maps/phoenix/vfr.txt",
     ".github/workflows/source/topsky_phoenix_maps/phoenix/airports.txt",
     ".github/workflows/source/topsky_phoenix_maps/phoenix/runways.txt",
     ".github/workflows/source/topsky_phoenix_maps/phoenix/edff-aor.txt",
-    ".github/workflows/source/topsky_phoenix_maps/phoenix/ctr.txt",
     ".github/workflows/source/topsky_phoenix_maps/phoenix/airspaces.txt",
 
-    ".github/workflows/source/topsky_phoenix_maps/stands/stands.txt",
+    ".github/workflows/source/topsky_phoenix_maps/stands/stands_all.txt",
 
     ".github/workflows/source/topsky_phoenix_maps/eddf/ntz.txt",
     ".github/workflows/source/topsky_phoenix_maps/eddf/rnp.txt",
