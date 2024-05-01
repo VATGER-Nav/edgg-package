@@ -154,7 +154,7 @@
 	
 	".github/workflows/source/topsky_phoenix_maps/stands/stands_all.txt",
 	
-	".github/workflows/source/topsky_phoenix_maps/extended_centerlines_all.txt",
+	".github/workflows/source/topsky_phoenix_maps/extended_centerlines_all.txt"
   ],
 
   "EDGG/Plugins/Topsky_EDYY/TopSkyMaps.txt": [
