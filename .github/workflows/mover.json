@@ -137,32 +137,24 @@
   "EDGG/Plugins/Topsky_Phoenix/TopSkyMaps.txt": [
     ".github/workflows/source/topsky_phoenix_maps/general.txt",
 
-    ".github/workflows/source/topsky_phoenix_maps/phoenix/vfr.txt",
-    ".github/workflows/source/topsky_phoenix_maps/phoenix/airports.txt",
-    ".github/workflows/source/topsky_phoenix_maps/phoenix/runways.txt",
-    ".github/workflows/source/topsky_phoenix_maps/phoenix/airspaces.txt",
+    ".github/workflows/source/topsky_phoenix_maps/vfr.txt",
+    ".github/workflows/source/topsky_phoenix_maps/airports.txt",
+    ".github/workflows/source/topsky_phoenix_maps/runways.txt",
+    ".github/workflows/source/topsky_phoenix_maps/airspaces.txt",
 
-    ".github/workflows/source/topsky_phoenix_maps/stands/stands_all.txt",
+    ".github/workflows/source/topsky_phoenix_maps/eddf/eddf_rnp.txt",
+    ".github/workflows/source/topsky_phoenix_maps/eddf/eddf_sids.txt",
+    ".github/workflows/source/topsky_phoenix_maps/eddf/eddf_tools.txt",
 
-    ".github/workflows/source/topsky_phoenix_maps/eddf/ntz.txt",
-    ".github/workflows/source/topsky_phoenix_maps/eddf/rnp.txt",
-    ".github/workflows/source/topsky_phoenix_maps/eddf/sid.txt",
-    ".github/workflows/source/topsky_phoenix_maps/eddf/dep-freq.txt",
-    ".github/workflows/source/topsky_phoenix_maps/eddf/distance-indicator.txt",
-    ".github/workflows/source/topsky_phoenix_maps/eddf/extended-centerlines.txt",
-
-    ".github/workflows/source/topsky_phoenix_maps/eddl/bridges.txt",
-    ".github/workflows/source/topsky_phoenix_maps/eddl/see.txt",
-
-    ".github/workflows/source/topsky_phoenix_maps/eddk/extended-centerlines.txt",
-
-    ".github/workflows/source/topsky_phoenix_maps/minor-airports.txt",
     ".github/workflows/source/topsky_phoenix_maps/mva.txt",
+	
+	".github/workflows/source/topsky_phoenix_maps/topo.txt",
 
-    ".github/workflows/source/topsky_phoenix_maps/topografie/highway.txt",
-    ".github/workflows/source/topsky_phoenix_maps/topografie/rivers.txt",
-
-    ".github/workflows/source/topsky_phoenix_maps/taxiways/taxiways_all.txt"
+    ".github/workflows/source/topsky_phoenix_maps/taxiways/taxiways_all.txt",
+	
+	".github/workflows/source/topsky_phoenix_maps/stands/stands_all.txt",
+	
+	".github/workflows/source/topsky_phoenix_maps/extended_centerlines_all.txt",
   ],
 
   "EDGG/Plugins/Topsky_EDYY/TopSkyMaps.txt": [

@@ -1,5 +1,0 @@
-MAP:RIVERS
-FOLDER:TOPO
-COLOR:River
-STYLE:Solid:1
-#import .github/workflows/source/data/topographie/rivers.txt

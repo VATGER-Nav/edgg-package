@@ -1,5 +1,0 @@
-MAP:HIGHWAY
-FOLDER:TOPO
-COLOR:Highway
-STYLE:Solid:1
-#import .github/workflows/source/data/topographie/highways.txt

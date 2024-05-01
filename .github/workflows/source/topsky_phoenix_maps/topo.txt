@@ -1,0 +1,23 @@
+MAP:Highway
+FOLDER:TOPO
+COLOR:Highway
+STYLE:Solid:1
+#import .github/workflows/source/data/topographie/highways.txt
+
+MAP:Rivers
+FOLDER:TOPO
+COLOR:River
+STYLE:Solid:1
+#import .github/workflows/source/data/topographie/rivers.txt
+
+MAP:EDDL Lake
+FOLDER:TOPO
+COLOR:River
+STYLE:Solid:1
+#import .github/workflows/source/data/topographie/eddl_lake.txt
+
+MAP:EDDL Bridges
+FOLDER:TOPO
+COLOR:Standard
+STYLE:Solid:1
+#import .github/workflows/source/data/topographie/eddl_bridges.txt
