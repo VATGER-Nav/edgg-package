@@ -145,9 +145,8 @@
 	
 	".github/workflows/source/topsky_phoenix_maps/topo.txt",
 
-    ".github/workflows/source/topsky_phoenix_maps/taxiways/taxiways_all.txt",
-	
-	".github/workflows/source/topsky_phoenix_maps/stands/stands_all.txt",
+    ".github/workflows/source/topsky_phoenix_maps/taxiways.txt",
+	".github/workflows/source/topsky_phoenix_maps/stands.txt",
 	
     ".github/workflows/source/topsky_phoenix_maps/eddf/eddf_rnp.txt",
 	".github/workflows/source/topsky_phoenix_maps/eddf/eddf_tools.txt",
