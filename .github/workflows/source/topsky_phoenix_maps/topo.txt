@@ -14,10 +14,12 @@ MAP:EDDL Lake
 FOLDER:TOPO
 COLOR:River
 STYLE:Solid:1
+ACTIVE:1
 #import .github/workflows/source/data/topographie/eddl_lake.txt
 
 MAP:EDDL Bridges
 FOLDER:TOPO
 COLOR:Standard
 STYLE:Solid:1
+ACTIVE:1
 #import .github/workflows/source/data/topographie/eddl_bridges.txt

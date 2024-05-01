@@ -138,13 +138,8 @@
     ".github/workflows/source/topsky_phoenix_maps/general.txt",
 
     ".github/workflows/source/topsky_phoenix_maps/vfr.txt",
-    ".github/workflows/source/topsky_phoenix_maps/airports.txt",
     ".github/workflows/source/topsky_phoenix_maps/runways.txt",
     ".github/workflows/source/topsky_phoenix_maps/airspaces.txt",
-
-    ".github/workflows/source/topsky_phoenix_maps/eddf/eddf_rnp.txt",
-    ".github/workflows/source/topsky_phoenix_maps/eddf/eddf_sids.txt",
-    ".github/workflows/source/topsky_phoenix_maps/eddf/eddf_tools.txt",
 
     ".github/workflows/source/topsky_phoenix_maps/mva.txt",
 	
@@ -153,6 +148,10 @@
     ".github/workflows/source/topsky_phoenix_maps/taxiways/taxiways_all.txt",
 	
 	".github/workflows/source/topsky_phoenix_maps/stands/stands_all.txt",
+	
+    ".github/workflows/source/topsky_phoenix_maps/eddf/eddf_rnp.txt",
+	".github/workflows/source/topsky_phoenix_maps/eddf/eddf_tools.txt",
+    ".github/workflows/source/topsky_phoenix_maps/eddf/eddf_sids.txt",
 	
 	".github/workflows/source/topsky_phoenix_maps/extended_centerlines_all.txt"
   ],

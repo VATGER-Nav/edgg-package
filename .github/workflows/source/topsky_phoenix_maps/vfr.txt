@@ -8,6 +8,12 @@ FOLDER:VFR
 COLOR:Standard
 #import .github/workflows/source/data/vfr/hospitals_label.txt
 
+MAP:Aerodromes
+FOLDER:VFR
+COLOR:Standard
+ACTIVE:1
+#import .github/workflows/source/data/vfr/airfields.txt
+
 MAP:VFR POINTS
 FOLDER:VFR
 COLOR:Standard
