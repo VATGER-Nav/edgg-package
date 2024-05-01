@@ -1,15 +1,18 @@
+MAP:Airspace Label
+FOLDER:Airspace
+COLOR:Standard
+#import .github/workflows/source/data/airspaces/labels.txt
+
 MAP:Controlzone (CTR)
 FOLDER:Airspace
 COLOR:Standard
 ACTIVE:1
-ASRDATA:PHOENIX
 STYLE:Solid:1
 #import .github/workflows/source/data/airspaces/ctr/
 
 MAP:Airspace C
 FOLDER:Airspace
 COLOR:Standard
-ASRDATA:PHOENIX
 ACTIVE:1
 STYLE:DOT:1
 #import .github/workflows/source/data/airspaces/airspace_c/
@@ -18,7 +21,6 @@ STYLE:DOT:1
 MAP:Airspace D
 FOLDER:Airspace
 COLOR:Standard
-ASRDATA:PHOENIX
 ACTIVE:1
 STYLE:DASH:1
 #import .github/workflows/source/data/airspaces/airspace_d/
@@ -26,14 +28,7 @@ STYLE:DASH:1
 MAP:TMZ/RMZ
 FOLDER:Airspace
 COLOR:Standard
-ASRDATA:PHOENIX
 ACTIVE:1
 STYLE:DOT:1
 #import .github/workflows/source/data/airspaces/tmz/
 #import .github/workflows/source/data/airspaces/rmz/
-
-MAP:Airspace Label
-FOLDER:Airspace
-COLOR:Standard
-ASRDATA:PHOENIX
-#import .github/workflows/source/data/airspaces/labels.txt
