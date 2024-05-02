@@ -69,13 +69,11 @@
     ".github/workflows/source/topsky_edgg_maps/navdata/tma-points-labels.txt",
 
     ".github/workflows/source/topsky_edgg_maps/areas.txt",
-    ".github/workflows/source/topsky_edgg_maps/fis.txt",
 
     ".github/workflows/source/topsky_edgg_maps/sector/upper-borders.txt",
     ".github/workflows/source/topsky_edgg_maps/sector/twr_ctr_man.txt",
     ".github/workflows/source/topsky_edgg_maps/sector/twr_ctr_auto.txt",
-
-    ".github/workflows/source/topsky_edgg_maps/sector/german-france-border.txt",
+	
     ".github/workflows/source/topsky_edgg_maps/sector/langen-sectors.txt",
     ".github/workflows/source/topsky_edgg_maps/sector/langen-neighbours.txt",
     ".github/workflows/source/topsky_edgg_maps/sector/edds-sectors.txt",
@@ -108,17 +106,11 @@
 
     ".github/workflows/source/topsky_edgg_maps/navdata/minor-rwy.txt",
 
-    ".github/workflows/source/topsky_edgg_maps/airspaces/aspc_eddf.txt",
-    ".github/workflows/source/topsky_edgg_maps/airspaces/aspc_eddl_eddk.txt",
-    ".github/workflows/source/topsky_edgg_maps/airspaces/aspcd_edds.txt",
-    ".github/workflows/source/topsky_edgg_maps/airspaces/aspd_minor.txt",
-    ".github/workflows/source/topsky_edgg_maps/airspaces/tmz_minor.txt",
-    ".github/workflows/source/topsky_edgg_maps/airspaces/rmz_minor.txt",
-
+    ".github/workflows/source/topsky_edgg_maps/airspaces.txt",
     ".github/workflows/source/topsky_edgg_maps/mva.txt",
-
-    ".github/workflows/source/data/navdata/holding-enroute.txt",
-    ".github/workflows/source/data/navdata/holding-arrival.txt",
+    ".github/workflows/source/topsky_edgg_maps/holdings.txt",
+    ".github/workflows/source/topsky_edgg_maps/topo.txt",
+	".github/workflows/source/topsky_edgg_maps/vfr.txt",
 
     ".github/workflows/source/topsky_edgg_maps/other_helper/airspace-label.txt",
     ".github/workflows/source/topsky_edgg_maps/other_helper/edll-airports.txt",

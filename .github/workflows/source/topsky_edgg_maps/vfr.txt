@@ -1,0 +1,5 @@
+MAP:FIS Sector + Squawks
+FOLDER:FIS
+COLOR:blue
+STYLE:Solid:1
+#import .github/workflows/source/data/vfr/fis.txt
