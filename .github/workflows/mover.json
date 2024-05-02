@@ -119,7 +119,7 @@
     ".github/workflows/source/topsky_edgg_maps/other_helper/sep-guides.txt",
     ".github/workflows/source/topsky_edgg_maps/other_helper/training.txt",
 
-    ".github/workflows/source/topsky_edgg_maps/ecl/eddf_tma.txt",
+    ".github/workflows/source/topsky_edgg_maps/ecl/eddf.txt",
     ".github/workflows/source/topsky_edgg_maps/ecl/eddl.txt",
     ".github/workflows/source/topsky_edgg_maps/ecl/eddk.txt",
     ".github/workflows/source/topsky_edgg_maps/ecl/military.txt",
