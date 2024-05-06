@@ -96,7 +96,6 @@
 
     ".github/workflows/source/topsky_edgg_maps/airspaces.txt",
     ".github/workflows/source/topsky_edgg_maps/mva.txt",
-    ".github/workflows/source/topsky_edgg_maps/holdings.txt",
     ".github/workflows/source/topsky_edgg_maps/topo.txt",
     ".github/workflows/source/topsky_edgg_maps/vfr.txt",
 
