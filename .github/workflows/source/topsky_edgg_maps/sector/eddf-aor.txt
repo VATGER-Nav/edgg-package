@@ -1,7 +1,6 @@
 MAP:EDDF AOR
-FOLDER:SECTORS
 ACTIVE:1
-ASRDATA:EDDF_APP
+ASRDATA:EDDF
 COLOR:DFSGrey
 STYLE:SOLID:1
 #import .github/workflows/source/data/sectors/eddf_app.txt

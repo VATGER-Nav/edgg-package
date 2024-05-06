@@ -1,11 +1,10 @@
 MAP:Bottrop Sektor
-FOLDER:SECTORS
 ACTIVE:ID:*:*:DUS,BOT:*
 ACTIVE:ID:*:*:DUS,DLD:*
 ACTIVE:ID:*:*:BOT,DLD:*
 ACTIVE:ID:*:*:BOT,DLAT:*
 ACTIVE:ID:*:*:DLD,DLAT:*
-ASRDATA:LANGEN
+ASRDATA:EDGG
 COLOR:DFSGrey
 STYLE:Solid:1
 #import .github/workflows/source/data/sectors/langen/bot.txt

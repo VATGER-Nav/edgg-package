@@ -1,19 +1,19 @@
 // Special CTR Maps for APP sectors
 
-MAP:EDDF TWR CTR
-FOLDER:SECTORS
+MAP:EDDF TMA CTR
+FOLDER:Controlzone
 ACTIVE:1
-ASRDATA:EDDF_APP
+ASRDATA:EDDF
 COLOR:DFSGrey
 STYLE:DashDot:1
 #import .github/workflows/source/data/airspace/ctr/eddf.txt
 #import .github/workflows/source/data/airspace/ctr/etou.txt
 #import .github/workflows/source/data/airspace/ctr/edfe.txt
 
-MAP:EDDS TWR CTR
-FOLDER:SECTORS
+MAP:EDDS TMA CTR
+FOLDER:Controlzone
 ACTIVE:1
-ASRDATA:EDDS_APP
+ASRDATA:EDDS
 COLOR:DFSGrey
 STYLE:DashDot:1
 #import .github/workflows/source/data/airspace/ctr/edds.txt

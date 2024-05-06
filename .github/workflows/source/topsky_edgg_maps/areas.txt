@@ -1,5 +1,5 @@
 MAP:HEUSE AREA
-FOLDER:AREAS/LINES
+FOLDER:Areas
 COLOR:DFSGrey
 STYLE:Solid:1
 STYLE:DashDot
@@ -8,7 +8,7 @@ ACTIVE:1
 #import .github/workflows/source/data/loa_lines/heuse_area.txt
 
 MAP:SULZ AREA
-FOLDER:AREAS/LINES
+FOLDER:Areas
 COLOR:DFSGrey
 STYLE:DashDot
 ASRDATA:EDGG,EDDS
@@ -16,7 +16,7 @@ ACTIVE:1
 #import .github/workflows/source/data/loa_lines/sulz_area.txt
 
 MAP:DKB AREA
-FOLDER:AREAS/LINES
+FOLDER:Areas
 COLOR:DFSGrey
 STYLE:DashDot
 ASRDATA:EDGG

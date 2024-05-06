@@ -1,5 +1,4 @@
 MAP:ETOU ECL
-FOLDER:AUTO
 COLOR:DFSGrey
 STYLE:Solid:1
 ACTIVE:RWY:ARR:EDDF25:DEP:*
@@ -9,7 +8,6 @@ ACTIVE:RWY:ARR:*:DEP:EDDF07
 #import .github/workflows/source/data/extended_centerline/etou_ecl.txt
 
 MAP:ETAD ECL
-FOLDER:AUTO
 COLOR:DFSGrey
 STYLE:SOLID:1
 ACTIVE:RWY:ARR:ETAD04:DEP:*
@@ -19,7 +17,6 @@ ACTIVE:RWY:ARR:*:DEP:ETAD22
 #import .github/workflows/source/data/extended_centerline/etad_ecl.txt
 
 MAP:ETAR ECL
-FOLDER:AUTO
 COLOR:DFSGrey
 STYLE:SOLID:1
 ACTIVE:RWY:ARR:ETAR08:DEP:*
@@ -33,7 +30,6 @@ ACTIVE:RWY:ARR:*:DEP:ETAR27
 #import .github/workflows/source/data/extended_centerline/etar_ecl.txt
 
 MAP:ETNN ECL
-FOLDER:AUTO
 COLOR:DFSGrey
 STYLE:Solid:1
 ACTIVE:RWY:ARR:ETNN24:DEP:*
@@ -43,7 +39,6 @@ ACTIVE:RWY:ARR:*:DEP:ETNN24
 #import .github/workflows/source/data/extended_centerline/etnn_ecl.txt
 
 MAP:ETNG ECL
-FOLDER:AUTO
 COLOR:DFSGrey
 STYLE:Solid:1
 ACTIVE:RWY:ARR:ETNG09:DEP:*

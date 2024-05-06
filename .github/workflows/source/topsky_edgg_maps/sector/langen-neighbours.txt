@@ -1,7 +1,6 @@
 MAP:Langen Neighbours
-FOLDER:SECTORS
 ACTIVE:1
-ASRDATA:LANGEN
+ASRDATA:EDGG
 COLOR:DFSGrey
 STYLE:Solid:1
 #import .github/workflows/source/data/sectors/lsas/arfa.txt

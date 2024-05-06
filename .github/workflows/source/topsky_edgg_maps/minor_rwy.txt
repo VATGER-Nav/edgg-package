@@ -1,7 +1,6 @@
 MAP:Minor RWY
-FOLDER:AUTO
 COLOR:DFSGrey
 STYLE:Solid:2
-ASRDATA:LANGEN,EDDS_APP
+ASRDATA:EDGG,EDDS
 ACTIVE:1
 #import .github/workflows/source/data/navdata/runways.txt

@@ -1,6 +1,5 @@
 MAP:German-France Border
-FOLDER:SECTORS
 COLOR:DFSGrey
-ASRDATA:LANGEN,EDDS_APP
+ASRDATA:EDGG,EDDS
 ACTIVE:1
 #import .github/workflows/source/data/topographie/german-france-border.txt
