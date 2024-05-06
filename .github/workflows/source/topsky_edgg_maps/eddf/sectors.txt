@@ -89,6 +89,7 @@ MAP:DFA Center border
 COLOR:DFSGrey
 STYLE:Solid:1
 ASRDATA:EDDF
+ACTIVE:1
 //clockwise, starting with TAU
 //TAU not displayed
 //GIN8+GIN5

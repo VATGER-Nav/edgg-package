@@ -3,4 +3,4 @@ ACTIVE:1
 ASRDATA:EDGG
 COLOR:DFSGrey
 STYLE:Solid:1
-#import .github/workflows/source/data/sectors/edgg/other.txt
+#import .github/workflows/source/data/sectors/edgg/edgg_all.txt
