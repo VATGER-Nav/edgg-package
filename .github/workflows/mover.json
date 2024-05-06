@@ -49,16 +49,7 @@
   ],
 
   "EDGG/Plugins/Topsky_EDUU/TopSkyMaps.txt": [
-    ".github/workflows/source/topsky_eduu_maps/general.txt",
-    ".github/workflows/source/topsky_eduu_maps/fixes-labels.txt",
-    ".github/workflows/source/topsky_eduu_maps/heuse-area.txt",
-    ".github/workflows/source/topsky_eduu_maps/upper-sectors.txt",
-    ".github/workflows/source/topsky_eduu_maps/langen-sectors.txt",
-    ".github/workflows/source/topsky_eduu_maps/upper-lvl.txt",
-    ".github/workflows/source/data/navdata/holding-enroute.txt",
-    ".github/workflows/source/data/navdata/holding-arrival.txt",
-    ".github/workflows/source/topsky_eduu_maps/fixes.txt",
-    ".github/workflows/source/topsky_eduu_maps/edff-sep-guides.txt"
+    
   ],
 
   "EDGG/Plugins/Topsky_EDGG/TopSkyMaps.txt": [
@@ -79,6 +70,8 @@
     ".github/workflows/source/topsky_edgg_maps/sector/bottrop-sector.txt",
     ".github/workflows/source/topsky_edgg_maps/sector/noervenich-sector.txt",
     ".github/workflows/source/topsky_edgg_maps/sector/eddf-aor.txt",
+
+    ".github/workflows/source/topsky_edgg_maps/holdings.txt",
 
     ".github/workflows/source/topsky_edgg_maps/eddf/base.txt",
     ".github/workflows/source/topsky_edgg_maps/eddf/rnp.txt",
@@ -133,15 +126,6 @@
   ],
 
   "EDGG/Plugins/Topsky_EDYY/TopSkyMaps.txt": [
-    ".github/workflows/source/topsky_edyy_maps/general.txt",
-
-    ".github/workflows/source/topsky_edyy_maps/borders.txt",
-    ".github/workflows/source/topsky_edyy_maps/airports.txt",
-
-    ".github/workflows/source/topsky_edyy_maps/upper-sectors.txt",
-    ".github/workflows/source/topsky_edyy_maps/lower-sectors.txt",
-
-    ".github/workflows/source/topsky_edyy_maps/fixes.txt",
-    ".github/workflows/source/topsky_edyy_maps/airways.txt"
+    
   ]
 }
