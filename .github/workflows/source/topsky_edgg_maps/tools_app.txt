@@ -23,19 +23,19 @@ STYLE:Solid:1
 #import .github/workflows/source/data/tools/eddf_vectoring_25l.txt
 
 MAP:EDDF VT 25R
-FOLDER:OTHER
+FOLDER:Tools
 COLOR:training
 STYLE:Solid:1
 #import .github/workflows/source/data/tools/eddf_vectoring_25r.txt
 
 MAP:EDDF VT 07R
-FOLDER:OTHER
+FOLDER:Tools
 COLOR:training
 STYLE:Solid:1
 #import .github/workflows/source/data/tools/eddf_vectoring_07r.txt
 
 MAP:EDDF VT 07L
-FOLDER:OTHER
+FOLDER:Tools
 COLOR:training
 STYLE:Solid:1
 #import .github/workflows/source/data/tools/eddf_vectoring_07l.txt

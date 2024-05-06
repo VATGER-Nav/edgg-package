@@ -1,21 +1,21 @@
 MAP:EDDL TMA Fixes
-FOLDER:Auto
+FOLDER:AUTO
 ACTIVE:1
-ASRDATA:LANGEN
+ASRDATA:EDGG
 COLOR:DFSGrey
 #import .github/workflows/source/data/navdata/eddl_tma_fixes.txt
 
 MAP:EDGG Fixes
-FOLDER:Auto
+FOLDER:AUTO
 ACTIVE:1
-ASRDATA:LANGEN
+ASRDATA:EDGG
 COLOR:DFSGrey
 #import .github/workflows/source/data/navdata/edgg_fixes.txt
 
 MAP:NavAids
-FOLDER:Auto
+FOLDER:AUTO
 ACTIVE:1
-ASRDATA:LANGEN,EDDS_APP
+ASRDATA:EDGG,EDDS
 COLOR:DFSGrey
 #import .github/workflows/source/data/navdata/navaids.txt
 

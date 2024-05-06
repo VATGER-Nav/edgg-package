@@ -26,7 +26,6 @@ MAP:ASPC EDDL EDDK
 FOLDER:Airspace
 COLOR:DFSGrey
 LAYER:-2
-ASRDATA:LANGEN
 STYLE:Solid:1
 ACTIVE:RWY:ARR:EDDL23R:DEP:*
 ACTIVE:RWY:ARR:EDDL23L:DEP:*
@@ -50,7 +49,6 @@ ACTIVE:RWY:ARR:*:DEP:EDDK06
 ACTIVE:RWY:ARR:*:DEP:EDDK24
 #import .github/workflows/source/data/airspace/airspace_c/eddl_eddk_c_dashed.txt
 
-// EDDS Airspace C not displayed, not needed
 MAP:ASPCD EDDS
 FOLDER:Airspace
 ZOOM:7
