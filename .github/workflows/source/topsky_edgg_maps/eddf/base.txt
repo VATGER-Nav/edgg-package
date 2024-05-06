@@ -93,4 +93,4 @@ ACTIVE:RWY:ARR:*:DEP:EDDF07R
 ACTIVE:RWY:ARR:*:DEP:EDDF07L
 ACTIVE:RWY:ARR:*:DEP:EDDF07C
 FONTSIZE:=:14
-#import .github/workflows/source/data/airspaces/airspace_c/eddf_app_airspace_label.txt
+#import .github/workflows/source/data/airspace/airspace_c/eddf_app_airspace_label.txt

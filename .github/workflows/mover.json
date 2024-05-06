@@ -81,9 +81,7 @@
     ".github/workflows/source/topsky_edgg_maps/eddk.txt",
     ".github/workflows/source/topsky_edgg_maps/edds.txt",
     ".github/workflows/source/topsky_edgg_maps/edfh.txt",
-
-    ".github/workflows/source/topsky_edgg_maps/eddl/eddl.txt",
-    ".github/workflows/source/topsky_edgg_maps/eddl/transition.txt",
+    ".github/workflows/source/topsky_edgg_maps/eddl.txt",
 
     ".github/workflows/source/topsky_edgg_maps/approaches.txt",
 
