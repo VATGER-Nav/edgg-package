@@ -54,6 +54,11 @@
 
   "EDGG/Plugins/Topsky_EDGG/TopSkyMaps.txt": [
     ".github/workflows/source/topsky_edgg_maps/general.txt",
+	
+	".github/workflows/source/topsky_edgg_maps/ecl/eddl.txt",
+    ".github/workflows/source/topsky_edgg_maps/ecl/eddk.txt",
+    ".github/workflows/source/topsky_edgg_maps/ecl/military.txt",
+    ".github/workflows/source/topsky_edgg_maps/ecl/minor.txt",
 
     ".github/workflows/source/topsky_edgg_maps/airspace.txt",
 
@@ -71,8 +76,6 @@
     ".github/workflows/source/topsky_edgg_maps/sector/noervenich-sector.txt",
     ".github/workflows/source/topsky_edgg_maps/sector/eddf-aor.txt",
 
-    ".github/workflows/source/topsky_edgg_maps/holdings.txt",
-
     ".github/workflows/source/topsky_edgg_maps/eddf/base.txt",
     ".github/workflows/source/topsky_edgg_maps/eddf/eddf_rnp.txt",
     ".github/workflows/source/topsky_edgg_maps/eddf/eddf_ntz.txt",
@@ -84,7 +87,8 @@
     ".github/workflows/source/topsky_edgg_maps/edfh.txt",
     ".github/workflows/source/topsky_edgg_maps/eddl.txt",
 
-    ".github/workflows/source/topsky_edgg_maps/approaches.txt",
+    ".github/workflows/source/topsky_edgg_maps/holdings.txt",
+	".github/workflows/source/topsky_edgg_maps/approaches.txt",
     ".github/workflows/source/topsky_edgg_maps/mva.txt",
     ".github/workflows/source/topsky_edgg_maps/topo.txt",
     ".github/workflows/source/topsky_edgg_maps/vfr.txt",
@@ -93,10 +97,6 @@
     ".github/workflows/source/topsky_edgg_maps/tools_ctr.txt",
 
     ".github/workflows/source/topsky_edgg_maps/ecl/eddf.txt",
-    ".github/workflows/source/topsky_edgg_maps/ecl/eddl.txt",
-    ".github/workflows/source/topsky_edgg_maps/ecl/eddk.txt",
-    ".github/workflows/source/topsky_edgg_maps/ecl/military.txt",
-    ".github/workflows/source/topsky_edgg_maps/ecl/minor.txt",
 
     ".github/workflows/source/topsky_edgg_maps/minor_rwy.txt"
   ],

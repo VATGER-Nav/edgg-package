@@ -3,4 +3,4 @@ ACTIVE:1
 ASRDATA:EDDF
 COLOR:DFSGrey
 STYLE:SOLID:1
-#import .github/workflows/source/data/sectors/eddf_app.txt
+#import .github/workflows/source/data/sectors/edgg/eddf_app.txt

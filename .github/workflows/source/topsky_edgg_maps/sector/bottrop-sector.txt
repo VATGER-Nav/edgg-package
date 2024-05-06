@@ -7,4 +7,4 @@ ACTIVE:ID:*:*:DLD,DLAT:*
 ASRDATA:EDGG
 COLOR:DFSGrey
 STYLE:Solid:1
-#import .github/workflows/source/data/sectors/langen/bot.txt
+#import .github/workflows/source/data/sectors/edgg/bot.txt

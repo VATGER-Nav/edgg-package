@@ -1,3 +1,15 @@
+MAP:EDDL TMA Labels
+FOLDER:EDDL
+FONTSIZE:=:11
+COLOR:DFSGrey
+#import .github/workflows/source/data/navdata/labels/eddl_tma_labels.txt
+
+MAP:EDDL TMA Fixes
+ACTIVE:1
+ASRDATA:EDGG
+COLOR:DFSGrey
+#import .github/workflows/source/data/navdata/eddl_tma_fixes.txt
+
 MAP:EDDL TRANS 05 Fixes
 FONTSIZE:=:11
 COLOR:DFSGrey
