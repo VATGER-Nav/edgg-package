@@ -161,12 +161,12 @@ m_Resizable:1
 m_OrderingColumn:2
 m_HeaderOnly:0
 m_Column:SEQ:5:1:10056:89:90:1:TopSky plugin:TopSky plugin:TopSky plugin:1:0.0
-m_Column:DRWY:5:1:642:743:17:1:vSID:vSID::1:0.0
+m_Column:DRWY:5:1:10050:743:17:1:TopSky plugin:vSID::1:0.0
 m_Column:CALLSIGN:10:0:22:6:143:1:TopSky plugin:TopSky plugin:TopSky plugin:0:0.0
 m_Column:ATYP:7:1:70:2:869:1:TopSky plugin:TopSky plugin:CCAMS:1:0.0
 m_Column:ADES:5:1:17:1001:7:1::TopSky plugin::1:0.0
-m_Column:vSID:10:1:641:741:742:1:vSID:vSID:vSID:1:0.0
-m_Column:CLMB:5:1:640:740:0:1:vSID:vSID::0:0.0
+m_Column:SID:10:1:10011:17:19:1:TopSky plugin:::1:0.0
+m_Column:CLMB:5:1:10049:109:0:1:TopSky plugin:TopSky plugin::0:0.0
 m_Column:STS:5:1:3:13:13:1:Ground Radar plugin:Ground Radar plugin:Ground Radar plugin:1:0.0
 m_Column:RMK:7:1:10059:2:2:1:TopSky plugin:TopSky plugin:TopSky plugin:0:0.0
 END

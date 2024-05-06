@@ -5,7 +5,7 @@ Settings	SettingsfilePROFILE	\EDGG\Settings\ALL\TWR_Profile.txt
 Settings	SettingsfileTAGS	\EDGG\Settings\ALL\Tags.txt
 Settings	SettingsfileSIL	\EDGG\Settings\TWR\TWR_SectorInboundList.txt
 Settings	SettingsfileSEL	\EDGG\Settings\TWR\TWR_SectorExitList.txt
-Settings	SettingsfileDEP	\EDGG\Settings\TWR\TWR_DepartureList.txt
+Settings	SettingsfileDEP	\EDGG\Settings\TWR\TWR_DepartureList_vSID.txt
 Settings	SettingsfileARR	\EDGG\Settings\TWR\TWR_ArrivalList.txt
 Settings	SettingsfileFP	\EDGG\Settings\ALL\FPList.txt
 Settings	SettingsfileSCREEN	\EDGG\Settings\TWR\TWR_Screen.txt
@@ -14,8 +14,8 @@ Settings	SettingsfilePILOTING	\EDGG\Settings\ALL\Piloting.txt
 Settings	SettingsfileCONFLICT	\EDGG\Settings\ALL\ConflictListConfiguration.txt
 Settings	SettingsfileVCCS	\EDGG\Settings\ALL\VCCS_TWR.txt
 Settings	SettingsfileORIGPLANE	\EDGG\Settings\TWR\TWR_General.txt
-Settings	SettingsfileSTUP	\EDGG\Settings\TWR\TWR_StartupList.txt
-Settings	SettingsfileTAXIOUT	\EDGG\Settings\TWR\TWR_General.txt
+Settings	SettingsfileSTUP	\EDGG\Settings\TWR\TWR_StartupList_vSID.txt
+Settings	SettingsfileTAXIOUT	\EDGG\Settings\TWR\TWR_General_vSID.txt
 Settings	SettingsfileTAKEOFF	\EDGG\Settings\TWR\TWR_General.txt
 Settings	SettingsfileADCS	\EDGG\Settings\TWR\TWR_General.txt
 Settings	SettingsfileTAXIIN	\EDGG\Settings\TWR\TWR_General.txt
@@ -55,6 +55,7 @@ Plugins	Plugin9	\EDGG\Plugins\vACDM\vACDM.dll
 Plugins	Plugin10	\EDGG\Plugins\AMAN\Aman.dll
 Plugins	Plugin10Display0	Ground Radar display
 Plugins	Plugin10Display1	Standard ES radar screen
+Plugins	Plugin11	\EDGG\Plugins\vSID\vSID Plugin TWR\vSID.dll
 
 TeamSpeakVccs	TsVccsMiniControlX	1744
 TeamSpeakVccs	TsVccsMiniControlY	44

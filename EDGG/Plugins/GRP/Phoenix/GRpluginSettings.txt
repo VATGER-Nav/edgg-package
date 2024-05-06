@@ -1,4 +1,4 @@
-// last change: 23.04.2024 by PH
+// last change: 06.05.2024 by PH
 
 Equip_ProMode=0
 RawVideo=1
@@ -124,7 +124,7 @@ System_State_Depa=DEP
 System_State_DeIce=DEICE
 System_State_Parked=ONB
 
-System_SchengenArea=BI,EB,ED,EE,EF,EH,EK,EL,EN,EP,ES,ET,EV,EY,GC,LE,LF,LG,LH,LI,LJ,LK,LM,LO,LP,LS,LZ
+System_SchengenArea=BI,EB,ED,EE,EF,EH,EK,EL,EN,EP,ES,ET,EV,EY,GC,LB,LD,LE,LF,LG,LH,LI,LJ,LK,LM,LO,LP,LR,LS,LZ
 System_RMCA_RWY_Closure=50
 System_RMCA_RWY_Closure_Info=20
 System_RMCA_RWY_Closure_LVP=40

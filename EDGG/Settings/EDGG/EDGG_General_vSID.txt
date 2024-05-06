@@ -1,6 +1,6 @@
 m_PlaySounds:1
 m_AssumeSlowAcAsStandby:1
-m_ShowAirspaceLines:0
+m_ShowAirspaceLines:1
 m_ShowRouteFixName:1
 m_ShowRouteETA:1
 m_ShowCalculatedHeading:1
@@ -9,7 +9,7 @@ m_TransitionAltitude:5000
 m_AllowConcernedACTagDown:0
 m_CenterlineDme:0.0
 m_CenterlineLength:20.0
-m_CenterlineTickDme:5.0
+m_CenterlineTickDme:1.0
 m_CenterlineTickInterval:1.0
 m_CenterlineTickLength:0.5
 m_CenterlineMarkerLength:1.0
@@ -19,11 +19,11 @@ m_CenterlineVectorLength:3.0
 m_CenterlineVectorAngle:30.0
 m_CenterlineVectorBase:5.0
 m_STCA_LowShow:0
-m_STCA_LowVertical:900
+m_STCA_LowVertical:1000
 m_STCA_LowHorizontal:4.0
-m_STCA_LowBottom:10000
+m_STCA_LowBottom:2500
 m_STCA_HighShow:0
-m_STCA_HighVertical:900
+m_STCA_HighVertical:1000
 m_STCA_HighHorizontal:12.0
 m_STCA_HighBottom:18000
 m_ExtendedCenterlinActiveArr:1
@@ -37,7 +37,7 @@ m_VFRSquawks:0020,0021,0023,0024,0025,0026,0027,0030,0031,0032,0033,0034,0035,00
 m_WhoIsOnlineURL:http://vatsim.metacraft.com/vatsim-data.txt
 m_AutoLoadMetarForActiveAirports:1
 m_LockShowRouteWhenAccepting:0
-m_VoiceAtisBuilderUrl:http://uniatis.net/atis.php?metar=$metar($atisairport)&arr=$arrrwy($atisairport)&dep=$deprwy($atisairport)&apptype=ILS&info=$atiscode&depfreq=135.350
+m_VoiceAtisBuilderUrl:http://uniatis.net/atis.php?metar=$metar($atisairport)&arr=$arrrwy($atisairport)&dep=$deprwy($atisairport)&apptype=ILS&info=$atiscode&depfreq=122.800
 m_DoNotUseAcceptedColor:0
 m_DoNotUseRefusedColor:0
 SET_TransparentAcListBackground:0
@@ -62,12 +62,12 @@ SET_WTC_A380:J
 m_RotateRouteTexts:1
 m_NeverCloseFreqChat:1
 m_KeepScratchPadAfterDirect:1
-m_HiliteASELAircraft:1
+m_HiliteASELAircraft:0
 m_EnableVoiceRecognition:0
 m_VoiceRecognitionStyle:2
 m_SModeTransponders:HLEGWQS
 m_CorrelationMode:0
-m_CorrelationDistance:40
+m_CorrelationDistance:30
 m_SimulateRadars:0
 m_AllowCorrelatedTAGDown:1
 m_ShowDetailedOverUntagged:1
@@ -77,7 +77,7 @@ m_VatsimStatusURL:http://status.vatsim.net/
 m_OverrideWhoIsOnlineURL:0
 m_ShowVFRFlightPlanTrack:0
 m_ShowIFRFlightPlanTrack:1
-m__AutoStartFlightPlanTracks:0
+m__AutoStartFlightPlanTracks:1
 m_UnicomFrequency:122.8
 m_MessageInfoLevel:1
 m_MessageWarningLevel:2
@@ -98,11 +98,11 @@ m_PrivateMessageLevel:4
 m_FreqMessageLevel:4
 m_MericUnits:0
 m_ShowCorrelatedInFpList:0
-m_ShowUncorrelatedInFpList:0
+m_ShowUncorrelatedInFpList:1
 m_ShowVFRInFpList:1
 m_ShowIFRInFpList:0
-m_ShowConcernedInFpList:0
-m_ShowUnconcernedInFpList:1
+m_ShowConcernedInFpList:1
+m_ShowUnconcernedInFpList:0
 m_ZoomCenterUnderMouse:1
 m_AseURL:http://www.craig-phillips.co.uk/ase/repository/
 m_STCA_LowPreWarnTime:150
@@ -154,36 +154,31 @@ m_Column:SI:4:1:10061:20:0:1:TopSky plugin:::0:0.0
 END
 TAXIOUT
 m_Visible:0
-m_X:1336
-m_Y:611
-m_LineNumber:0
+m_X:0
+m_Y:965
+m_LineNumber:15
 m_Resizable:1
-m_OrderingColumn:4
+m_OrderingColumn:2
 m_HeaderOnly:0
-m_Column:DSQ:5:1:10056:89:90:1:TopSky plugin:TopSky plugin:TopSky plugin:1:0.0
-m_Column:SEQ:5:1:546:548:0:0:VCH:VCH::0:0.0
-m_Column:TTOT:5:1:3:0:0:0:vACDM:::0:0.0
-m_Column:CTOT:5:1:10:0:0:0:vACDM:::0:0.0
-m_Column:ECFMP:7:1:11:0:0:0:vACDM:::0:0.0
-m_Column:CALLSIGN:10:0:9:6:143:1::TopSky plugin:TopSky plugin:0:3.8
-m_Column:ATYP:7:1:78:2:869:1::TopSky plugin:CCAMS:8:3.8
-m_Column:ADES:5:1:17:1001:7:1::TopSky plugin::7:3.8
-m_Column:DRWY:5:1:10050:19:17:1:TopSky plugin:::1:0.0
-m_Column:SID:10:1:10011:17:19:1:TopSky plugin:::1:0.0
-m_Column:STS:5:1:3:13:13:1:Ground Radar plugin:Ground Radar plugin:Ground Radar plugin:8:0.0
+m_Column:SEQ:5:1:10056:89:90:1:TopSky plugin:TopSky plugin:TopSky plugin:1:0.0
+m_Column:DRWY:5:1:642:743:17:1:vSID:vSID::1:0.0
+m_Column:CALLSIGN:10:0:22:6:143:1:TopSky plugin:TopSky plugin:TopSky plugin:0:0.0
+m_Column:ATYP:7:1:70:2:869:1:TopSky plugin:TopSky plugin:CCAMS:1:0.0
+m_Column:ADES:5:1:17:1001:7:1::TopSky plugin::1:0.0
+m_Column:vSID:10:1:641:741:742:1:vSID:vSID:vSID:1:0.0
+m_Column:CLMB:5:1:640:740:0:1:vSID:vSID::0:0.0
+m_Column:STS:5:1:3:13:13:1:Ground Radar plugin:Ground Radar plugin:Ground Radar plugin:1:0.0
 m_Column:RMK:7:1:10059:2:2:1:TopSky plugin:TopSky plugin:TopSky plugin:0:0.0
-m_Column:HOLD:5:1:440:444:0:0:VCH:VCH::0:0.0
 END
 TAKEOFF
 m_Visible:0
-m_X:1509
-m_Y:847
+m_X:1626
+m_Y:781
 m_LineNumber:0
 m_Resizable:1
 m_OrderingColumn:1
 m_HeaderOnly:0
-m_Column:DSQ:5:1:10056:90:89:1:TopSky plugin:TopSky plugin:TopSky plugin:1:0.0
-m_Column:SEQ:5:1:540:548:0:0:VCH:VCH::0:0.0
+m_Column:SEQ:5:1:10056:90:89:1:TopSky plugin:TopSky plugin:TopSky plugin:1:0.0
 m_Column:DRWY:5:1:10050:19:19:1:TopSky plugin:::1:0.0
 m_Column:CALLSIGN:10:0:22:6:100:1:TopSky plugin:TopSky plugin:TopSky plugin:0:0.0
 m_Column:ATYP:7:1:70:2:869:1:TopSky plugin:TopSky plugin:CCAMS:1:0.0
@@ -205,8 +200,8 @@ m_Column:ETA:5:1:10033:0:0:1:TopSky plugin:::0:0.0
 END
 TAXIIN
 m_Visible:0
-m_X:1371
-m_Y:443
+m_X:1598
+m_Y:108
 m_LineNumber:0
 m_Resizable:1
 m_OrderingColumn:1
@@ -214,5 +209,4 @@ m_HeaderOnly:0
 m_Column:CALLSIGN:10:0:22:6:100:1:TopSky plugin:TopSky plugin:TopSky plugin:0:0.0
 m_Column:STND:5:1:2:1:1:1:Ground Radar plugin:Ground Radar plugin:Ground Radar plugin:1:0.0
 m_Column:ATYP:7:1:70:2:0:1:TopSky plugin:TopSky plugin::1:0.0
-m_Column:Event:5:1:11:0:0:1:vACDM:::0:0.0
 END
