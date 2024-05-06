@@ -98,7 +98,7 @@
     ".github/workflows/source/topsky_edgg_maps/ecl/military.txt",
     ".github/workflows/source/topsky_edgg_maps/ecl/minor.txt",
 
-    ".github/workflows/source/topsky_edgg_maps/navdata/minor_rwy.txt"
+    ".github/workflows/source/topsky_edgg_maps/minor_rwy.txt"
   ],
 
   "EDGG/Plugins/Topsky_Phoenix/TopSkyMaps.txt": [
