@@ -74,7 +74,8 @@
     ".github/workflows/source/topsky_edgg_maps/holdings.txt",
 
     ".github/workflows/source/topsky_edgg_maps/eddf/base.txt",
-    ".github/workflows/source/topsky_edgg_maps/eddf/rnp.txt",
+    ".github/workflows/source/topsky_edgg_maps/eddf/eddf_rnp.txt",
+    ".github/workflows/source/topsky_edgg_maps/eddf/eddf_ntz.txt",
     ".github/workflows/source/topsky_edgg_maps/eddf/sectors.txt",
     ".github/workflows/source/topsky_edgg_maps/eddf/transition.txt",
 
