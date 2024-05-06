@@ -108,7 +108,7 @@
 
     ".github/workflows/source/topsky_phoenix_maps/vfr.txt",
     ".github/workflows/source/topsky_phoenix_maps/runways.txt",
-    ".github/workflows/source/topsky_phoenix_maps/airspaces.txt",
+    ".github/workflows/source/topsky_phoenix_maps/airspace.txt",
 
     ".github/workflows/source/topsky_phoenix_maps/mva.txt",
 	
