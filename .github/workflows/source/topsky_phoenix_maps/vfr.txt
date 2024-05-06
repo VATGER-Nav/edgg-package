@@ -7,6 +7,11 @@ FOLDER:VFR
 COLOR:Standard
 #import .github/workflows/source/data/vfr/vfr_reporting_points_label.txt
 
+MAP:MIL VFR POINTS LABEL
+FOLDER:VFR
+COLOR:Standard
+#import .github/workflows/source/data/vfr/mil_reporting_points_label.txt
+
 MAP:VFR HOSP LABEL
 FOLDER:VFR
 COLOR:Standard
@@ -29,6 +34,7 @@ FOLDER:VFR
 COLOR:Standard
 ACTIVE:1
 #import .github/workflows/source/data/vfr/vfr_reporting_points.txt
+#import .github/workflows/source/data/vfr/mil_reporting_points.txt
 
 MAP:VFR HOSP
 FOLDER:VFR

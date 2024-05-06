@@ -14,6 +14,12 @@ COLOR:DFSGrey
 #import .github/workflows/source/data/vfr/vfr_reporting_points.txt
 #import .github/workflows/source/data/vfr/vfr_reporting_points_label.txt
 
+MAP:MIL VFR Reporting Points
+FOLDER:VFR
+COLOR:DFSGrey
+#import .github/workflows/source/data/vfr/mil_reporting_points.txt
+#import .github/workflows/source/data/vfr/mil_reporting_points_label.txt
+
 MAP:VFR Hospitals
 FOLDER:VFR
 COLOR:DFSGrey
