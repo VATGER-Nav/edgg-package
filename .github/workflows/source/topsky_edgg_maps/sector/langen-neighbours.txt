@@ -4,21 +4,21 @@ ACTIVE:1
 ASRDATA:LANGEN
 COLOR:DFSGrey
 STYLE:Solid:1
-#import .github/workflows/source/data/sectors/neighbour/lsas/arfa.txt
-#import .github/workflows/source/data/sectors/neighbour/lsas/lsasze.txt
-#import .github/workflows/source/data/sectors/neighbour/lsas/lsaszn.txt
-#import .github/workflows/source/data/sectors/neighbour/lsas/lsas-ape.txt
-#import .github/workflows/source/data/sectors/neighbour/edmm/alb.txt
-#import .github/workflows/source/data/sectors/neighbour/edmm/frk.txt
-#import .github/workflows/source/data/sectors/neighbour/edmm/fue.txt
-#import .github/workflows/source/data/sectors/neighbour/edmm/ger.txt
-#import .github/workflows/source/data/sectors/neighbour/edmm/hal.txt
-#import .github/workflows/source/data/sectors/neighbour/edmm/ndg.txt
-#import .github/workflows/source/data/sectors/neighbour/edmm/trn.txt
-#import .github/workflows/source/data/sectors/neighbour/edmm/trs.txt
-#import .github/workflows/source/data/sectors/neighbour/edww-gg/dst.txt
-#import .github/workflows/source/data/sectors/neighbour/edww-gg/ems.txt
-#import .github/workflows/source/data/sectors/neighbour/edww-gg/hrz.txt
-#import .github/workflows/source/data/sectors/neighbour/ehaa.txt
-#import .github/workflows/source/data/sectors/neighbour/ebbu.txt
-#import .github/workflows/source/data/sectors/neighbour/lfee.txt
+#import .github/workflows/source/data/sectors/lsas/arfa.txt
+#import .github/workflows/source/data/sectors/lsas/lsasze.txt
+#import .github/workflows/source/data/sectors/lsas/lsaszn.txt
+#import .github/workflows/source/data/sectors/lsas/lsas-ape.txt
+#import .github/workflows/source/data/sectors/edmm/alb.txt
+#import .github/workflows/source/data/sectors/edmm/frk.txt
+#import .github/workflows/source/data/sectors/edmm/fue.txt
+#import .github/workflows/source/data/sectors/edmm/ger.txt
+#import .github/workflows/source/data/sectors/edmm/hal.txt
+#import .github/workflows/source/data/sectors/edmm/ndg.txt
+#import .github/workflows/source/data/sectors/edmm/trn.txt
+#import .github/workflows/source/data/sectors/edmm/trs.txt
+#import .github/workflows/source/data/sectors/edww/dst.txt
+#import .github/workflows/source/data/sectors/edww/ems.txt
+#import .github/workflows/source/data/sectors/edww/hrz.txt
+#import .github/workflows/source/data/sectors/ehaa.txt
+#import .github/workflows/source/data/sectors/ebbu.txt
+#import .github/workflows/source/data/sectors/lfee.txt
