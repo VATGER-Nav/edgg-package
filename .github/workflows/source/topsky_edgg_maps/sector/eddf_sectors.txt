@@ -1,3 +1,12 @@
+// used for EDDF_APP
+
+MAP:EDDF AoR
+ACTIVE:1
+ASRDATA:EDDF
+COLOR:DFSGrey
+STYLE:SOLID:1
+#import .github/workflows/source/data/sectors/edgg/eddf_app.txt
+
 MAP:EDDF DEP Border
 FOLDER:EDDF
 COLOR:DFSGrey

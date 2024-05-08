@@ -1,0 +1,25 @@
+MAP:Noervenich Sektor
+ACTIVE:ID:*:*:NOR,DKA:*
+ACTIVE:ID:*:*:NOR,DKAT:*
+ASRDATA:EDGG,EDDK
+COLOR:DFSGrey
+STYLE:Solid:1
+#import .github/workflows/source/data/sectors/edgg/nor.txt
+
+MAP:Bottrop Sektor
+ACTIVE:ID:*:*:DUS,BOT:*
+ACTIVE:ID:*:*:DUS,DLD:*
+ACTIVE:ID:*:*:BOT,DLD:*
+ACTIVE:ID:*:*:BOT,DLAT:*
+ACTIVE:ID:*:*:DLD,DLAT:*
+ASRDATA:EDGG
+COLOR:DFSGrey
+STYLE:Solid:1
+#import .github/workflows/source/data/sectors/edgg/bot.txt
+
+MAP:Langen Sectors
+ACTIVE:1
+ASRDATA:EDGG
+COLOR:DFSGrey
+STYLE:Solid:1
+#import .github/workflows/source/data/sectors/edgg/edgg_all.txt

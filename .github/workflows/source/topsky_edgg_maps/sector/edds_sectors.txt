@@ -1,3 +1,5 @@
+// used for EDDS_APP
+
 MAP:EDDS Sectors
 ASRDATA:EDDS
 COLOR:DFSGrey
