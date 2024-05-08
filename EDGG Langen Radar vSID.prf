@@ -5,7 +5,7 @@ Settings	SettingsfilePROFILE	\EDGG\Settings\ALL\EDGG_Profile.txt
 Settings	SettingsfileTAGS	\EDGG\Settings\ALL\Tags.txt
 Settings	SettingsfileSIL	\EDGG\Settings\EDGG\EDGG_SectorInboundList.txt
 Settings	SettingsfileSEL	\EDGG\Settings\EDGG\EDGG_SectorExitList.txt
-Settings	SettingsfileDEP	\EDGG\Settings\EDGG\EDGG_DepartureList.txt
+Settings	SettingsfileDEP	\EDGG\Settings\EDGG\EDGG_DepartureList_vSID.txt
 Settings	SettingsfileARR	\EDGG\Settings\EDGG\EDGG_ArrivalList.txt
 Settings	SettingsfileFP	\EDGG\Settings\ALL\FPList.txt
 Settings	SettingsfileSCREEN	\EDGG\Settings\EDGG\EDGG_Screen.txt
@@ -14,8 +14,8 @@ Settings	SettingsfilePILOTING	\EDGG\Settings\ALL\Piloting.txt
 Settings	SettingsfileCONFLICT	\EDGG\Settings\ALL\ConflictListConfiguration.txt
 Settings	SettingsfileVCCS	\EDGG\Settings\ALL\VCCS_CTR.txt
 Settings	SettingsfileORIGPLANE	\EDGG\Settings\EDGG\EDGG_General.txt
-Settings	SettingsfileSTUP	\EDGG\Settings\EDGG\EDGG_StartupList.txt
-Settings	SettingsfileTAXIOUT	\EDGG\Settings\EDGG\EDGG_General.txt
+Settings	SettingsfileSTUP	\EDGG\Settings\EDGG\EDGG_StartupList_vSID.txt
+Settings	SettingsfileTAXIOUT	\EDGG\Settings\EDGG\EDGG_General_vSID.txt
 Settings	SettingsfileTAKEOFF	\EDGG\Settings\EDGG\EDGG_General.txt
 Settings	SettingsfileADCS	\EDGG\Settings\EDGG\EDGG_General.txt
 Settings	SettingsfileTAXIIN	\EDGG\Settings\EDGG\EDGG_General.txt
@@ -55,6 +55,7 @@ Plugins	Plugin9Display1	Standard ES radar screen
 Plugins	Plugin10	\EDGG\Plugins\AMAN\Aman.dll
 Plugins	Plugin10Display0	Standard ES radar screen
 Plugins	Plugin10Display1	Ground Radar display
+Plugins	Plugin11	\EDGG\Plugins\vSID\vSID Plugin Radar\vSID.dll
 
 ASRFastKeys	1	\EDGG\ASR\Ground\EDDF_GND.asr
 ASRFastKeys	2	\EDGG\ASR\Ground\EDDL_GND.asr
