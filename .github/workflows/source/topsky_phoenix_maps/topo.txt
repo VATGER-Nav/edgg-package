@@ -19,6 +19,7 @@ FOLDER:TOPO
 COLOR:River
 STYLE:Solid:1
 ACTIVE:1
+ASRDATA:PHOENIX
 #import .github/workflows/source/data/topographie/eddl_lake.txt
 
 MAP:EDDL Bridges
@@ -26,4 +27,5 @@ FOLDER:TOPO
 COLOR:Standard
 STYLE:Solid:1
 ACTIVE:1
+ASRDATA:PHOENIX
 #import .github/workflows/source/data/topographie/eddl_bridges.txt
