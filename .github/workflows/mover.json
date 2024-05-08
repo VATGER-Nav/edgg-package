@@ -1,20 +1,24 @@
 {
   "EDGG/Plugins/GRP/Phoenix/GRpluginMaps.txt": [
     ".github/workflows/source/grp_phoenix_maps/colors.txt",
-    ".github/workflows/source/grp_phoenix_maps/sct-file-path.txt",
-    ".github/workflows/source/grp_phoenix_maps/eddf/eddf.txt",
+	".github/workflows/source/grp_phoenix_maps/sct-file-path.txt",
+	
     ".github/workflows/source/grp_phoenix_maps/eddf/background.txt",
     ".github/workflows/source/grp_phoenix_maps/eddf/groundlayout.txt",
-    ".github/workflows/source/grp_phoenix_maps/eddf/reduced-runway-separation.txt",
-    ".github/workflows/source/grp_phoenix_maps/eddf/tora.txt",
-    ".github/workflows/source/grp_phoenix_maps/eddf/runway-crossing.txt",
-    ".github/workflows/source/grp_phoenix_maps/eddf/notam-closures.txt",
-    ".github/workflows/source/grp_phoenix_maps/eddf/restriction-maps.txt",
-    ".github/workflows/source/grp_phoenix_maps/eddf/aor-twr.txt",
-    ".github/workflows/source/grp_phoenix_maps/eddf/aor-gnd-apn.txt",
-    ".github/workflows/source/grp_phoenix_maps/eddf/permanent-closures.txt",
-    ".github/workflows/source/grp_phoenix_maps/eddf/restrictions.txt",
-    ".github/workflows/source/grp_phoenix_maps/eddf/app-window.txt",
+	".github/workflows/source/grp_phoenix_maps/eddf/restrictions_alarm.txt",
+	
+	".github/workflows/source/grp_phoenix_maps/eddf/restriction_maps.txt",
+	".github/workflows/source/grp_phoenix_maps/eddf/eddf_aor_twr.txt",
+    ".github/workflows/source/grp_phoenix_maps/eddf/eddf_aor_gnd.txt",
+	".github/workflows/source/grp_phoenix_maps/eddf/runway_crossing.txt",
+	".github/workflows/source/grp_phoenix_maps/eddf/notam_closures.txt",
+	".github/workflows/source/grp_phoenix_maps/eddf/de_icing.txt",
+	".github/workflows/source/grp_phoenix_maps/eddf/break_away_areas.txt",
+    ".github/workflows/source/grp_phoenix_maps/eddf/permanent_closures.txt",
+	".github/workflows/source/grp_phoenix_maps/eddf/tora.txt",
+	".github/workflows/source/grp_phoenix_maps/eddf/reduced_runway_separation.txt",
+    ".github/workflows/source/grp_phoenix_maps/eddf/app_window.txt",
+	
     ".github/workflows/source/grp_phoenix_maps/eddf/eddf-pro.txt",
     ".github/workflows/source/grp_phoenix_maps/edfh/edfh.txt",
     ".github/workflows/source/grp_phoenix_maps/eddl/eddl.txt",
@@ -86,9 +90,9 @@
     ".github/workflows/source/topsky_edgg_maps/edds.txt",
     ".github/workflows/source/topsky_edgg_maps/edfh.txt",
     ".github/workflows/source/topsky_edgg_maps/eddl.txt",
-
-    ".github/workflows/source/topsky_edgg_maps/holdings.txt",
 	".github/workflows/source/topsky_edgg_maps/approaches.txt",
+	
+	".github/workflows/source/topsky_edgg_maps/holdings.txt",
     ".github/workflows/source/topsky_edgg_maps/mva.txt",
     ".github/workflows/source/topsky_edgg_maps/topo.txt",
     ".github/workflows/source/topsky_edgg_maps/vfr.txt",

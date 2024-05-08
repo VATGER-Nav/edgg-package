@@ -1,4 +1,7 @@
-// ******************* EDDF Restriction Maps *******************
+// -------------------------------------------------------------
+//                     EDDF Restriction Maps 
+// -------------------------------------------------------------
+
 MAP:A388 Restrictions
 AIRPORT:EDDF
 FOLDER:Restriction Maps

@@ -29,6 +29,5 @@ COLOR:DFSGrey
 MAP:Aerodromes
 FOLDER:VFR
 COLOR:DFSGrey
-#import .github/workflows/source/data/vfr/airfields.txt
-
+#import .github/workflows/source/data/airports/
 

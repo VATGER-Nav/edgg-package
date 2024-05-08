@@ -1,8 +1,10 @@
-// ******************* Perm. Closures ******************* 
+// -------------------------------------------------------------
+//                          Closures 
+// -------------------------------------------------------------
 
 MAP:M5
 AIRPORT:EDDF
-FOLDER:Perm. Closures
+FOLDER:Closures
 COLOR:closure
 COORDTYPE:TWYCLOSED:REGION
 STYLE:Solid:2
@@ -24,7 +26,7 @@ COORD:N050.02.32.496:E008.35.12.535
 
 MAP:R
 AIRPORT:EDDF
-FOLDER:Perm. Closures
+FOLDER:Closures
 COLOR:closure
 COORDTYPE:TWYCLOSED:REGION
 STYLE:Solid:2
@@ -106,7 +108,7 @@ COORD:N050.01.29.390:E008.31.44.615
 
 MAP:W
 AIRPORT:EDDF
-FOLDER:Perm. Closures
+FOLDER:Closures
 COLOR:closure
 COORDTYPE:TWYCLOSED:REGION
 STYLE:Solid:2
@@ -218,7 +220,7 @@ COORD:N050.01.26.032:E008.31.31.159
 
 MAP:M16
 AIRPORT:EDDF
-FOLDER:Perm. Closures
+FOLDER:Closures
 COLOR:closure
 COORDTYPE:TWYCLOSED:REGION
 STYLE:Solid:2

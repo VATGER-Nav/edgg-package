@@ -82,7 +82,7 @@ ZOOM:8
 FOLDER:EDDF
 FONTSIZE:=:12
 ACTIVE:RWY:ARR:EDDF25L:DEP:*
-#import .github/workflows/source/data/procedures/eddf/star/eddf_final_25l_name.txt
+#import .github/workflows/source/data/procedures/eddf/star/eddf_final_25l_names.txt
 
 MAP:EDDF 25R Final
 COLOR:DFSGrey
@@ -90,13 +90,7 @@ ZOOM:8
 FOLDER:EDDF
 FONTSIZE:=:12
 ACTIVE:RWY:ARR:EDDF25R:DEP:*
-SYMBOL:TFIX:DF426:426:8:-25
-SYMBOL:TFIX:DF425:425:8:-25
-SYMBOL:TFIX:DF424:424:8:-25
-SYMBOL:TFIX:DF423:423:8:-25
-SYMBOL:TFIX:DF420:420:8:-25
-SYMBOL:TFIX:DF430:430:-8:-25
-SYMBOL:TFIX:DF480:480:8:-25
+#import .github/workflows/source/data/procedures/eddf/star/eddf_final_25r_names.txt
 
 MAP:EDDF 25C Final 
 COLOR:DFSGrey
@@ -104,15 +98,7 @@ ZOOM:8
 FOLDER:EDDF
 FONTSIZE:=:12
 ACTIVE:RWY:ARR:EDDF25C:EDDF25L,EDDF25R:DEP:*:*
-SYMBOL:TFIX:DF526:526:15:-10
-SYMBOL:TFIX:DF525:525:15:-10
-SYMBOL:TFIX:DF524:524:15:-10
-SYMBOL:TFIX:DF523:523:15:-10
-SYMBOL:TFIX:DF522:522:15:-10
-SYMBOL:TFIX:DF530:530:8:-25
-SYMBOL:TFIX:DF580:580:15:-10
-SYMBOL:TFIX:DF581:581:18:-4
-SYMBOL:TFIX:DF582:582:18:-4
+#import .github/workflows/source/data/procedures/eddf/star/eddf_final_25c_names.txt
 
 MAP:EDDF STAR 07
 COLOR:DFSGrey
