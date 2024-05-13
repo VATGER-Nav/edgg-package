@@ -93,7 +93,9 @@
     ".github/workflows/source/topsky_edgg_maps/edfh.txt",
     ".github/workflows/source/topsky_edgg_maps/eddl.txt",
 	".github/workflows/source/topsky_edgg_maps/approaches.txt",
-	
+
+	".github/workflows/source/topsky_edgg_maps/military.txt",
+	  
 	".github/workflows/source/topsky_edgg_maps/holdings.txt",
     ".github/workflows/source/topsky_edgg_maps/mva.txt",
     ".github/workflows/source/topsky_edgg_maps/topo.txt",
