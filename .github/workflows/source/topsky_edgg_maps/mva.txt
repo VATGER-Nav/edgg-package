@@ -9,3 +9,9 @@ FOLDER:MVA
 COLOR:green
 STYLE:Solid:1
 #import .github/workflows/source/data/mva_winter.txt
+
+MAP:MVA Military AoRs
+FOLDER:MVA
+COLOR:green
+STYLE:Solid:1
+#import .github/workflows/source/data/mva/mva_military.txt
