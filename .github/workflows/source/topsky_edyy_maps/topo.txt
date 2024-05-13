@@ -1,10 +1,10 @@
 MAP:COASTLINE
-FOLDER:EDYY
+FOLDER:Topo
 COLOR:greysector
 #import .github\workflows\source\data\sectors\topo\coastline.txt
 
-MAP:FIR/UIR
-FOLDER:EDYY
+MAP:FIR Border
+FOLDER:Topo
 COLOR:greysector
 #import .github\workflows\source\data\sectors\fir\edggfir.txt
 #import .github\workflows\source\data\sectors\fir\edmmfir.txt

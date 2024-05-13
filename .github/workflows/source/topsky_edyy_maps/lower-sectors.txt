@@ -1,7 +1,0 @@
-MAP:LOWER SECTORS
-FOLDER:EDYY
-COLOR:greysector
-LAYER:-1
-#import .github\workflows\source\data\sectors\langen\edyylower.txt
-#import .github\workflows\source\data\sectors\neighbour\ehaa.txt
-#import .github\workflows\source\data\sectors\neighbour\ebbu.txt

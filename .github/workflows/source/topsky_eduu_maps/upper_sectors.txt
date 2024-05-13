@@ -1,0 +1,10 @@
+MAP:UPPER SECTORS
+FOLDER:Upper
+COLOR:DFSGrey
+ACTIVE:1
+#import .github/workflows/source/data/sectors/eduu/eduu_all.txt
+
+MAP:UPPER (LVL)
+FOLDER:Upper
+COLOR:lightblue
+#import .github/workflows/source/data/sectors/eduu/eduu_lvl.txt

@@ -1,0 +1,4 @@
+MAP:AIRWAYS
+COLOR:greysector
+ACTIVE:1
+#import .github/workflows/source/data/navdata/edyy_airways.txt

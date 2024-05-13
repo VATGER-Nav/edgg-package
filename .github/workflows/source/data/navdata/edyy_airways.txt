@@ -1,6 +1,4 @@
-MAP:AIRWAYS
-COLOR:greysector
-ACTIVE:1
+// EDYY Airways
 //L17
 LINE:MOLIX:PETIK
 //L179
