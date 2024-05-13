@@ -9,6 +9,7 @@ COLORDEF:Highway:100:60:0
 COLORDEF:DFSStand:255:255:0
 COLORDEF:red:255:0:0
 COLORDEF:white:255:255:255
+COLORDEF:yellow:255:255:0
 
 // color definitions ground layout/maps
 COLORDEF:stands:200:200:200
