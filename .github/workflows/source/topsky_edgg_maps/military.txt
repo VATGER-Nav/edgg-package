@@ -9,3 +9,59 @@ FOLDER:MILITARY
 COLOR:Holding_CTR
 STYLE:Solid:1
 #import .github/workflows/source/data/military/awacs_orbits/NG7.txt
+
+MAP:ETAD AoR
+FOLDER:MILITARY
+ACTIVE:ID:*:*:TADA:*
+ACTIVE:ID:TADA:*:*:*
+COLOR:DFSGrey
+STYLE:Solid:1
+#import .github/workflows/source/data/military/aors/etad.txt
+
+MAP:ETAR AoR
+FOLDER:MILITARY
+ACTIVE:ID:*:*:TARA:*
+ACTIVE:ID:TARA:*:*:*
+COLOR:DFSGrey
+STYLE:Solid:1
+#import .github/workflows/source/data/military/aors/etar.txt
+
+MAP:ETHF AoR
+FOLDER:MILITARY
+ACTIVE:ID:*:*:THFA:*
+ACTIVE:ID:THFA:*:*:*
+COLOR:DFSGrey
+STYLE:Solid:1
+#import .github/workflows/source/data/military/aors/ethf.txt
+
+MAP:ETHN AoR
+FOLDER:MILITARY
+ACTIVE:ID:*:*:THNA:*
+ACTIVE:ID:THNA:*:*:*
+COLOR:DFSGrey
+STYLE:Solid:1
+#import .github/workflows/source/data/military/aors/ethn.txt
+
+MAP:ETNG AoR
+FOLDER:MILITARY
+ACTIVE:ID:*:*:TNGA:*
+ACTIVE:ID:TNGA:*:*:*
+COLOR:DFSGrey
+STYLE:Solid:1
+#import .github/workflows/source/data/military/aors/etng.txt
+
+MAP:ETNN AoR
+FOLDER:MILITARY
+ACTIVE:ID:*:*:TNNA:*
+ACTIVE:ID:TNNA:*:*:*
+COLOR:DFSGrey
+STYLE:Solid:1
+#import .github/workflows/source/data/military/aors/etnn.txt
+
+MAP:ETSB AoR
+FOLDER:MILITARY
+ACTIVE:ID:*:*:TSBA:*
+ACTIVE:ID:TSBA:*:*:*
+COLOR:DFSGrey
+STYLE:Solid:1
+#import .github/workflows/source/data/military/aors/etsb.txt
