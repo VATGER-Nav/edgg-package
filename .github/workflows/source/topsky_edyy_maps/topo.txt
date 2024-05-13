@@ -1,7 +1,7 @@
-MAP:COASTLINE
+MAP:Coastline
 FOLDER:Topo
 COLOR:greysector
-#import .github\workflows\source\data\sectors\topo\coastline.txt
+#import .github\workflows\source\data\topographie\coastline.txt
 
 MAP:FIR Border
 FOLDER:Topo

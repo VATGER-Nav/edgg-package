@@ -1,4 +1,0 @@
-MAP:FIX Label
-FOLDER:Upper
-COLOR:DFSGrey
-#import .github/workflows/source/data/navdata/labels/eduu_fixes_labels.txt

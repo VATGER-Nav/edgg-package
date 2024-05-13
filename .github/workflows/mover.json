@@ -8,21 +8,21 @@
 	".github/workflows/source/grp_phoenix_maps/eddf/restrictions_alarm.txt",
 	
 	".github/workflows/source/grp_phoenix_maps/eddf/restriction_maps.txt",
+	".github/workflows/source/grp_phoenix_maps/eddf/runway_crossing.txt",
 	".github/workflows/source/grp_phoenix_maps/eddf/eddf_aor_twr.txt",
     ".github/workflows/source/grp_phoenix_maps/eddf/eddf_aor_gnd.txt",
-	".github/workflows/source/grp_phoenix_maps/eddf/runway_crossing.txt",
 	".github/workflows/source/grp_phoenix_maps/eddf/notam_closures.txt",
+    ".github/workflows/source/grp_phoenix_maps/eddf/permanent_closures.txt",
 	".github/workflows/source/grp_phoenix_maps/eddf/de_icing.txt",
 	".github/workflows/source/grp_phoenix_maps/eddf/break_away_areas.txt",
-    ".github/workflows/source/grp_phoenix_maps/eddf/permanent_closures.txt",
 	".github/workflows/source/grp_phoenix_maps/eddf/tora.txt",
 	".github/workflows/source/grp_phoenix_maps/eddf/reduced_runway_separation.txt",
     ".github/workflows/source/grp_phoenix_maps/eddf/app_window.txt",
 	".github/workflows/source/grp_phoenix_maps/eddf/eddf_pro.txt",
 	
-    ".github/workflows/source/grp_phoenix_maps/eddl/eddl_a380_taxi_routing.txt",
-    ".github/workflows/source/grp_phoenix_maps/eddl/second_window.txt",
     ".github/workflows/source/grp_phoenix_maps/eddl/app_window.txt",
+	".github/workflows/source/grp_phoenix_maps/eddl/eddl_a380_taxi_routing.txt",
+    ".github/workflows/source/grp_phoenix_maps/eddl/second_window.txt",
     ".github/workflows/source/grp_phoenix_maps/eddl/reduced_runway_separation.txt",
     ".github/workflows/source/grp_phoenix_maps/eddl/notam_closures.txt",
     ".github/workflows/source/grp_phoenix_maps/eddl/restriction_map.txt",
@@ -59,7 +59,6 @@
     ".github/workflows/source/topsky_eduu_maps/general.txt",
 	
 	".github/workflows/source/topsky_eduu_maps/fixes.txt",
-	".github/workflows/source/topsky_eduu_maps/fixes_labels.txt",
 	
 	".github/workflows/source/topsky_eduu_maps/upper_sectors.txt",
 	".github/workflows/source/topsky_eduu_maps/lower_sectors.txt",
@@ -145,8 +144,9 @@
 	".github/workflows/source/topsky_edyy_maps/fixes.txt",
 	".github/workflows/source/topsky_edyy_maps/edyy_airways.txt",
 	
-	".github/workflows/source/topsky_edyy_maps/lower_sectors.txt",
 	".github/workflows/source/topsky_edyy_maps/upper_sectors.txt",
+	
+	".github/workflows/source/topsky_edyy_maps/lower_sectors.txt",
 	
 	".github/workflows/source/topsky_edyy_maps/topo.txt"
 	

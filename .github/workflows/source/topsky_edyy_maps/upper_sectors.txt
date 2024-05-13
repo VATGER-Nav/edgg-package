@@ -1,4 +1,4 @@
-MAP:UPPER SECTORS
+MAP:Sectors
 COLOR:greysector
 FOLDER:Upper
 STYLE:DOT:1

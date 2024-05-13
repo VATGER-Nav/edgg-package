@@ -1,6 +1,6 @@
-MAP:LANGEN SECTORS
+MAP:Langen Sectors
 FOLDER:Lower
-COLOR:DFSGrey
+COLOR:grey
 STYLE:DashDot:1
 //Langen
 #import .github/workflows/source/data/sectors/edgg/edgg_all.txt

@@ -1,4 +1,4 @@
-MAP:LOWER SECTORS
+MAP:Sectors
 FOLDER:Lower
 COLOR:greysector
 LAYER:-1

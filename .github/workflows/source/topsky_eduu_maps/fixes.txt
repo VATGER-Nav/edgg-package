@@ -1,4 +1,10 @@
-MAP:FIXES UPPER
+MAP:FIX Label
+FOLDER:Upper
+COLOR:DFSGrey
+#import .github/workflows/source/data/navdata/labels/eduu_fixes_labels.txt
+
+MAP:FIXES
+FOLDER:Upper
 COLOR:DFSGrey
 ACTIVE:1
 #import .github/workflows/source/data/navdata/eduu_fixes.txt
