@@ -2,7 +2,7 @@
 
 MAP:Class F Restrictions
 AIRPORT:EDDK
-FOLDER:Restriction Maps
+FOLDER:Restrictions
 STYLE:Solid:2
 COLOR:blue
 // Headline
@@ -110,7 +110,7 @@ LINE:N050.51.28.095:E007.07.31.136:N050.51.35.060:E007.07.28.278
 
 MAP:747-8 Restrictions
 AIRPORT:EDDK
-FOLDER:Restriction Maps
+FOLDER:Restrictions
 STYLE:Solid:2
 COLOR:green
 // Headline
@@ -204,7 +204,7 @@ LINE:N050.51.28.095:E007.07.31.136:N050.51.35.060:E007.07.28.278
 
 MAP:Class E Restrictions
 AIRPORT:EDDK
-FOLDER:Restriction Maps
+FOLDER:Restrictions
 STYLE:Solid:2
 COLOR:darkred
 // Headline
@@ -263,7 +263,7 @@ LINE:N050.51.28.095:E007.07.31.136:N050.51.35.060:E007.07.28.278
 
 MAP:Class D Restrictions
 AIRPORT:EDDK
-FOLDER:Restriction Maps
+FOLDER:Restrictions
 STYLE:Solid:2
 COLOR:orange
 // Headline
@@ -316,7 +316,7 @@ LINE:N050.51.28.095:E007.07.31.136:N050.51.35.060:E007.07.28.278
 
 MAP:MIL-Only Restriction
 AIRPORT:EDDK
-FOLDER:Restriction Maps
+FOLDER:Restrictions
 STYLE:Solid:2
 COLOR:red
 // Headline

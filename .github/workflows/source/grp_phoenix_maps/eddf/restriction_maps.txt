@@ -4,7 +4,7 @@
 
 MAP:A388 Restrictions
 AIRPORT:EDDF
-FOLDER:Restriction Maps
+FOLDER:Restrictions
 STYLE:SOLID:2
 COLOR:blue
 // Headline
@@ -278,7 +278,7 @@ LINE:N050.01.18.607:E008.31.47.694:N050.01.16.071:E008.31.43.906
 
 MAP:747-8 Restrictions
 AIRPORT:EDDF
-FOLDER:Restriction Maps
+FOLDER:Restrictions
 STYLE:SOLID:2
 COLOR:green
 // Headline
@@ -503,7 +503,7 @@ LINE:N050.01.18.607:E008.31.47.694:N050.01.16.071:E008.31.43.906
 
 MAP:A346/A35K/B773/B77W Restrictions
 AIRPORT:EDDF
-FOLDER:Restriction Maps
+FOLDER:Restrictions
 STYLE:SOLID:2
 COLOR:darkred
 // Headline
@@ -702,7 +702,7 @@ LINE:N050.01.18.607:E008.31.47.694:N050.01.16.071:E008.31.43.906
 
 MAP:Max Code C allowed
 AIRPORT:EDDF
-FOLDER:Restriction Maps
+FOLDER:Restrictions
 STYLE:SOLID:5
 COLOR:green
 // Headline
