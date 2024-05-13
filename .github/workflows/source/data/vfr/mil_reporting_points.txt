@@ -1,4 +1,3 @@
-// MIL VFR Reporting Points
 //ETHF
 SYMBOL:VFR:HF-N1
 SYMBOL:VFR:HF-N2
