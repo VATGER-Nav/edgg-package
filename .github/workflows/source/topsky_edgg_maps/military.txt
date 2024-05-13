@@ -1,0 +1,11 @@
+MAP:ORBIT NG4
+FOLDER:MILITARY
+COLOR:Holding_CTR
+STYLE:Solid:1
+#import .github/workflows/source/data/military/awacs_orbits/NG4.txt
+
+MAP:ORBIT NG7
+FOLDER:MILITARY
+COLOR:Holding_CTR
+STYLE:Solid:1
+#import .github/workflows/source/data/military/awacs_orbits/NG7.txt
