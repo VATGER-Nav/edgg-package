@@ -131,6 +131,7 @@
 	  ".github/workflows/source/topsky_phoenix_maps/stands.txt",
 	
     ".github/workflows/source/topsky_phoenix_maps/eddf/eddf_rnp.txt",
+	".github/workflows/source/topsky_phoenix_maps/eddf/eddf_ntz.txt",
 	".github/workflows/source/topsky_phoenix_maps/eddf/eddf_tools.txt",
     ".github/workflows/source/topsky_phoenix_maps/eddf/eddf_sids.txt",
 	".github/workflows/source/topsky_phoenix_maps/eddf/etou_corner.txt",
