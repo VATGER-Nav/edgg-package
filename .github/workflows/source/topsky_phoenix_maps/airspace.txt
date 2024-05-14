@@ -24,7 +24,7 @@ STYLE:DOT:1
 ASRDATA:PHOENIX
 #import .github/workflows/source/data/airspace/airspace_c/eddf_c_dashed.txt
 #import .github/workflows/source/data/airspace/airspace_c/eddl_eddk_c_dashed.txt
-#import .github/workflows/source/data/sectors/langen/eddf_app.txt
+#import .github/workflows/source/data/sectors/edgg/eddf_app.txt
 
 MAP:Airspace D
 FOLDER:Airspace
