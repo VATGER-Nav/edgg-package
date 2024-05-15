@@ -1,8 +1,0 @@
-MAP:Noervenich Sektor
-FOLDER:SECTORS
-ACTIVE:ID:*:*:NOR,DKA:*
-ACTIVE:ID:*:*:NOR,DKAT:*
-ASRDATA:LANGEN
-COLOR:DFSGrey
-STYLE:Solid:1
-#import .github/workflows/source/data/sectors/langen/nor.txt

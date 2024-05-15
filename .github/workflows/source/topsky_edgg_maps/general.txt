@@ -1,3 +1,7 @@
+// ----------------------------------------
+//                   Colors
+// ----------------------------------------
+
 COLORDEF:Holding_CTR:16:78:139
 COLORDEF:Holding_APP:0:100:0
 
@@ -13,7 +17,25 @@ COLORDEF:white:255:255:255
 COLORDEF:green:0:140:29
 COLORDEF:darkgreen:12:89:25
 COLORDEF:DFSGrey:200:200:200
-COLORDEF:training:170:170:170
+COLORDEF:training:255:255:255
+
+// ----------------------------------------
+//                   Symbols
+// ----------------------------------------
+
+SYMBOLDEF:VFR
+POLYGON:-4:3:0:-4:4:3
+
+SYMBOLDEF:HOSPITAL
+MOVETO:-4:-4
+LINETO:4:-4
+LINETO:4:4
+LINETO:-4:4
+LINETO:-4:-4
+MOVETO:-1:-1
+LINETO:2:2
+MOVETO:-1:1
+LINETO:2:-2
 
 SYMBOLDEF:FIX1
 ARC:0:0:1:0:360

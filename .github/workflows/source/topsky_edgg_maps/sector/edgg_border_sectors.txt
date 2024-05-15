@@ -1,0 +1,23 @@
+MAP:Langen Neighbours
+ACTIVE:1
+ASRDATA:EDGG
+COLOR:DFSGrey
+STYLE:Solid:1
+#import .github/workflows/source/data/sectors/lsas/arfa.txt
+#import .github/workflows/source/data/sectors/lsas/lsasze.txt
+#import .github/workflows/source/data/sectors/lsas/lsaszn.txt
+#import .github/workflows/source/data/sectors/lsas/lsas-ape.txt
+#import .github/workflows/source/data/sectors/edmm/alb.txt
+#import .github/workflows/source/data/sectors/edmm/frk.txt
+#import .github/workflows/source/data/sectors/edmm/fue.txt
+#import .github/workflows/source/data/sectors/edmm/ger.txt
+#import .github/workflows/source/data/sectors/edmm/hal.txt
+#import .github/workflows/source/data/sectors/edmm/ndg.txt
+#import .github/workflows/source/data/sectors/edmm/trn.txt
+#import .github/workflows/source/data/sectors/edmm/trs.txt
+#import .github/workflows/source/data/sectors/edww/dst.txt
+#import .github/workflows/source/data/sectors/edww/ems.txt
+#import .github/workflows/source/data/sectors/edww/hrz.txt
+#import .github/workflows/source/data/sectors/ehaa.txt
+#import .github/workflows/source/data/sectors/ebbu.txt
+#import .github/workflows/source/data/sectors/lfee.txt

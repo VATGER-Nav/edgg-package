@@ -1,184 +1,155 @@
 {
   "EDGG/Plugins/GRP/Phoenix/GRpluginMaps.txt": [
     ".github/workflows/source/grp_phoenix_maps/colors.txt",
-    ".github/workflows/source/grp_phoenix_maps/sct-file-path.txt",
-    ".github/workflows/source/grp_phoenix_maps/eddf/eddf.txt",
+	".github/workflows/source/grp_phoenix_maps/sct-file-path.txt",
+	
     ".github/workflows/source/grp_phoenix_maps/eddf/background.txt",
     ".github/workflows/source/grp_phoenix_maps/eddf/groundlayout.txt",
-    ".github/workflows/source/grp_phoenix_maps/eddf/reduced-runway-separation.txt",
-    ".github/workflows/source/grp_phoenix_maps/eddf/tora.txt",
-    ".github/workflows/source/grp_phoenix_maps/eddf/runway-crossing.txt",
-    ".github/workflows/source/grp_phoenix_maps/eddf/notam-closures.txt",
-    ".github/workflows/source/grp_phoenix_maps/eddf/restriction-maps.txt",
-    ".github/workflows/source/grp_phoenix_maps/eddf/aor-twr.txt",
-    ".github/workflows/source/grp_phoenix_maps/eddf/aor-gnd-apn.txt",
-    ".github/workflows/source/grp_phoenix_maps/eddf/permanent-closures.txt",
-    ".github/workflows/source/grp_phoenix_maps/eddf/restrictions.txt",
-    ".github/workflows/source/grp_phoenix_maps/eddf/app-window.txt",
-    ".github/workflows/source/grp_phoenix_maps/eddf/eddf-pro.txt",
-    ".github/workflows/source/grp_phoenix_maps/edfh/edfh.txt",
-    ".github/workflows/source/grp_phoenix_maps/eddl/eddl.txt",
-    ".github/workflows/source/grp_phoenix_maps/eddl/second-window.txt",
-    ".github/workflows/source/grp_phoenix_maps/eddl/app-window.txt",
-    ".github/workflows/source/grp_phoenix_maps/eddl/reduced-runway-separation.txt",
-    ".github/workflows/source/grp_phoenix_maps/eddl/notam-closures.txt",
-    ".github/workflows/source/grp_phoenix_maps/eddl/taxi-restrictions.txt",
-    ".github/workflows/source/grp_phoenix_maps/eddl/permanent-closures.txt",
-    ".github/workflows/source/grp_phoenix_maps/eddk/eddk.txt",
-    ".github/workflows/source/grp_phoenix_maps/eddk/second-window.txt",
-    ".github/workflows/source/grp_phoenix_maps/eddk/app-window.txt",
-    ".github/workflows/source/grp_phoenix_maps/eddk/reduced-runway-separation.txt",
-    ".github/workflows/source/grp_phoenix_maps/eddk/active-crossings-runways.txt",
-    ".github/workflows/source/grp_phoenix_maps/eddk/notam-closures.txt",
-    ".github/workflows/source/grp_phoenix_maps/eddk/restriction-map.txt",
-    ".github/workflows/source/grp_phoenix_maps/eddk/permanent-closures.txt",
-    ".github/workflows/source/grp_phoenix_maps/eddk/restrictions.txt",
-    ".github/workflows/source/grp_phoenix_maps/edds/edds.txt",
-    ".github/workflows/source/grp_phoenix_maps/edds/second-window.txt",
-    ".github/workflows/source/grp_phoenix_maps/edds/app-window.txt",
-    ".github/workflows/source/grp_phoenix_maps/edds/dfs-layout.txt",
-    ".github/workflows/source/grp_phoenix_maps/edds/reduced-runway-separation.txt",
+	".github/workflows/source/grp_phoenix_maps/eddf/restrictions_alarm.txt",
+	
+	".github/workflows/source/grp_phoenix_maps/eddf/restriction_maps.txt",
+	".github/workflows/source/grp_phoenix_maps/eddf/runway_crossing.txt",
+	".github/workflows/source/grp_phoenix_maps/eddf/eddf_aor_twr.txt",
+    ".github/workflows/source/grp_phoenix_maps/eddf/eddf_aor_gnd.txt",
+	".github/workflows/source/grp_phoenix_maps/eddf/notam_closures.txt",
+    ".github/workflows/source/grp_phoenix_maps/eddf/permanent_closures.txt",
+	".github/workflows/source/grp_phoenix_maps/eddf/de_icing.txt",
+	".github/workflows/source/grp_phoenix_maps/eddf/break_away_areas.txt",
+	".github/workflows/source/grp_phoenix_maps/eddf/tora.txt",
+	".github/workflows/source/grp_phoenix_maps/eddf/reduced_runway_separation.txt",
+    ".github/workflows/source/grp_phoenix_maps/eddf/app_window.txt",
+	".github/workflows/source/grp_phoenix_maps/eddf/eddf_pro.txt",
+	
+    ".github/workflows/source/grp_phoenix_maps/eddl/app_window.txt",
+	".github/workflows/source/grp_phoenix_maps/eddl/eddl_a380_taxi_routing.txt",
+    ".github/workflows/source/grp_phoenix_maps/eddl/second_window.txt",
+    ".github/workflows/source/grp_phoenix_maps/eddl/reduced_runway_separation.txt",
+    ".github/workflows/source/grp_phoenix_maps/eddl/notam_closures.txt",
+    ".github/workflows/source/grp_phoenix_maps/eddl/restriction_map.txt",
+    ".github/workflows/source/grp_phoenix_maps/eddl/permanent_closures.txt",
+	
+    ".github/workflows/source/grp_phoenix_maps/eddk/second_window.txt",
+    ".github/workflows/source/grp_phoenix_maps/eddk/app_window.txt",
+    ".github/workflows/source/grp_phoenix_maps/eddk/reduced_runway_separation.txt",
+    ".github/workflows/source/grp_phoenix_maps/eddk/active_crossings_runways.txt",
+    ".github/workflows/source/grp_phoenix_maps/eddk/notam_closures.txt",
+    ".github/workflows/source/grp_phoenix_maps/eddk/restriction_map.txt",
+    ".github/workflows/source/grp_phoenix_maps/eddk/permanent_closures.txt",
+    ".github/workflows/source/grp_phoenix_maps/eddk/restrictions_auto.txt",
+	
+    ".github/workflows/source/grp_phoenix_maps/edds/second_window.txt",
+    ".github/workflows/source/grp_phoenix_maps/edds/app_window.txt",
+    ".github/workflows/source/grp_phoenix_maps/edds/dfs_layout.txt",
+    ".github/workflows/source/grp_phoenix_maps/edds/reduced_runway_separation.txt",
     ".github/workflows/source/grp_phoenix_maps/edds/tora.txt",
     ".github/workflows/source/grp_phoenix_maps/edds/restrictions.txt",
-    ".github/workflows/source/grp_phoenix_maps/edln/edln.txt",
+	
     ".github/workflows/source/grp_phoenix_maps/edln/aor.txt",
     ".github/workflows/source/grp_phoenix_maps/edln/closures.txt",
     ".github/workflows/source/grp_phoenix_maps/edln/restrictions.txt",
-    ".github/workflows/source/grp_phoenix_maps/edtl/edtl.txt",
-    ".github/workflows/source/grp_phoenix_maps/edtl/restrictions.txt"
+	
+	".github/workflows/source/grp_phoenix_maps/military.txt",
+	
+	".github/workflows/source/grp_phoenix_maps/edfh.txt",
+	
+    ".github/workflows/source/grp_phoenix_maps/edtl.txt"
   ],
 
   "EDGG/Plugins/Topsky_EDUU/TopSkyMaps.txt": [
     ".github/workflows/source/topsky_eduu_maps/general.txt",
-    ".github/workflows/source/topsky_eduu_maps/fixes-labels.txt",
-    ".github/workflows/source/topsky_eduu_maps/heuse-area.txt",
-    ".github/workflows/source/topsky_eduu_maps/upper-sectors.txt",
-    ".github/workflows/source/topsky_eduu_maps/langen-sectors.txt",
-    ".github/workflows/source/topsky_eduu_maps/upper-lvl.txt",
-    ".github/workflows/source/data/navdata/holding-enroute.txt",
-    ".github/workflows/source/data/navdata/holding-arrival.txt",
-    ".github/workflows/source/topsky_eduu_maps/fixes.txt",
-    ".github/workflows/source/topsky_eduu_maps/edff-sep-guides.txt"
+	
+	".github/workflows/source/topsky_eduu_maps/fixes.txt",
+	
+	".github/workflows/source/topsky_eduu_maps/upper_sectors.txt",
+	".github/workflows/source/topsky_eduu_maps/lower_sectors.txt",
+	
+	".github/workflows/source/topsky_eduu_maps/eduu_tools.txt",
+	
+	".github/workflows/source/topsky_eduu_maps/heuse_area.txt"
   ],
 
   "EDGG/Plugins/Topsky_EDGG/TopSkyMaps.txt": [
     ".github/workflows/source/topsky_edgg_maps/general.txt",
-
-    ".github/workflows/source/topsky_edgg_maps/navdata/fixes-labels.txt",
-    ".github/workflows/source/topsky_edgg_maps/navdata/navaids-labels.txt",
-    ".github/workflows/source/topsky_edgg_maps/navdata/tma-points-labels.txt",
-
-    ".github/workflows/source/topsky_edgg_maps/areas.txt",
-    ".github/workflows/source/topsky_edgg_maps/fis.txt",
-
-    ".github/workflows/source/topsky_edgg_maps/sector/upper-borders.txt",
-    ".github/workflows/source/topsky_edgg_maps/sector/twr_ctr_man.txt",
-    ".github/workflows/source/topsky_edgg_maps/sector/twr_ctr_auto.txt",
-
-    ".github/workflows/source/topsky_edgg_maps/sector/german-france-border.txt",
-    ".github/workflows/source/topsky_edgg_maps/sector/langen-sectors.txt",
-    ".github/workflows/source/topsky_edgg_maps/sector/langen-neighbours.txt",
-    ".github/workflows/source/topsky_edgg_maps/sector/edds-sectors.txt",
-    ".github/workflows/source/topsky_edgg_maps/sector/bottrop-sector.txt",
-    ".github/workflows/source/topsky_edgg_maps/sector/noervenich-sector.txt",
-    ".github/workflows/source/topsky_edgg_maps/sector/eddf-aor.txt",
-    ".github/workflows/source/topsky_edgg_maps/sector/eddf-twr-ctr.txt",
-    ".github/workflows/source/topsky_edgg_maps/sector/edds-twr-ctr.txt",
-
-    ".github/workflows/source/topsky_edgg_maps/aerodromes/edfh.txt",
-    ".github/workflows/source/topsky_edgg_maps/aerodromes/apch.txt",
-
-    ".github/workflows/source/topsky_edgg_maps/eddf/base.txt",
-    ".github/workflows/source/topsky_edgg_maps/eddf/rnp.txt",
-    ".github/workflows/source/topsky_edgg_maps/eddf/sectors.txt",
-    ".github/workflows/source/topsky_edgg_maps/eddf/transition.txt",
-
-    ".github/workflows/source/topsky_edgg_maps/eddk/extra.txt",
-    ".github/workflows/source/topsky_edgg_maps/eddk/transition.txt",
-
-    ".github/workflows/source/topsky_edgg_maps/edds/base.txt",
-    ".github/workflows/source/topsky_edgg_maps/edds/transition.txt",
-
-    ".github/workflows/source/topsky_edgg_maps/eddl/eddl.txt",
-    ".github/workflows/source/topsky_edgg_maps/eddl/transition.txt",
-
-    ".github/workflows/source/topsky_edgg_maps/navdata/fixes.txt",
-    ".github/workflows/source/topsky_edgg_maps/navdata/tma-points.txt",
-    ".github/workflows/source/topsky_edgg_maps/navdata/navaids.txt",
-
-    ".github/workflows/source/topsky_edgg_maps/navdata/minor-rwy.txt",
-
-    ".github/workflows/source/topsky_edgg_maps/airspaces/aspc_eddf.txt",
-    ".github/workflows/source/topsky_edgg_maps/airspaces/aspc_eddl_eddk.txt",
-    ".github/workflows/source/topsky_edgg_maps/airspaces/aspcd_edds.txt",
-    ".github/workflows/source/topsky_edgg_maps/airspaces/aspd_minor.txt",
-    ".github/workflows/source/topsky_edgg_maps/airspaces/tmz_minor.txt",
-    ".github/workflows/source/topsky_edgg_maps/airspaces/rmz_minor.txt",
-
-    ".github/workflows/source/topsky_edgg_maps/mva.txt",
-
-    ".github/workflows/source/data/navdata/holding-enroute.txt",
-    ".github/workflows/source/data/navdata/holding-arrival.txt",
-
-    ".github/workflows/source/topsky_edgg_maps/other_helper/airspace-label.txt",
-    ".github/workflows/source/topsky_edgg_maps/other_helper/edll-airports.txt",
-    ".github/workflows/source/topsky_edgg_maps/other_helper/edll-airways.txt",
-    ".github/workflows/source/topsky_edgg_maps/other_helper/edff-airways.txt",
-    ".github/workflows/source/topsky_edgg_maps/other_helper/sep-guides.txt",
-    ".github/workflows/source/topsky_edgg_maps/other_helper/training.txt",
-
-    ".github/workflows/source/topsky_edgg_maps/ecl/eddf_tma.txt",
-    ".github/workflows/source/topsky_edgg_maps/ecl/eddl.txt",
+	
+	".github/workflows/source/topsky_edgg_maps/ecl/eddl.txt",
     ".github/workflows/source/topsky_edgg_maps/ecl/eddk.txt",
     ".github/workflows/source/topsky_edgg_maps/ecl/military.txt",
-    ".github/workflows/source/topsky_edgg_maps/ecl/minor.txt"
+    ".github/workflows/source/topsky_edgg_maps/ecl/minor.txt",
+
+    ".github/workflows/source/topsky_edgg_maps/airspace.txt",
+
+    ".github/workflows/source/topsky_edgg_maps/edgg_fixes.txt",
+
+    ".github/workflows/source/topsky_edgg_maps/areas.txt",
+
+    ".github/workflows/source/topsky_edgg_maps/sector/upper_borders.txt",
+    ".github/workflows/source/topsky_edgg_maps/sector/controlzones.txt",
+
+    ".github/workflows/source/topsky_edgg_maps/sector/edgg_sectors.txt",
+    ".github/workflows/source/topsky_edgg_maps/sector/edgg_border_sectors.txt",
+    ".github/workflows/source/topsky_edgg_maps/sector/edds_sectors.txt",
+    ".github/workflows/source/topsky_edgg_maps/sector/eddf_sectors.txt",
+
+    ".github/workflows/source/topsky_edgg_maps/eddf/base.txt",
+    ".github/workflows/source/topsky_edgg_maps/eddf/eddf_rnp.txt",
+    ".github/workflows/source/topsky_edgg_maps/eddf/eddf_ntz.txt",
+    ".github/workflows/source/topsky_edgg_maps/eddf/transition.txt",
+
+    ".github/workflows/source/topsky_edgg_maps/eddk.txt",
+    ".github/workflows/source/topsky_edgg_maps/edds.txt",
+    ".github/workflows/source/topsky_edgg_maps/edfh.txt",
+    ".github/workflows/source/topsky_edgg_maps/eddl.txt",
+	".github/workflows/source/topsky_edgg_maps/approaches.txt",
+
+	".github/workflows/source/topsky_edgg_maps/military.txt",
+	  
+	".github/workflows/source/topsky_edgg_maps/holdings.txt",
+    ".github/workflows/source/topsky_edgg_maps/mva.txt",
+    ".github/workflows/source/topsky_edgg_maps/topo.txt",
+    ".github/workflows/source/topsky_edgg_maps/vfr.txt",
+
+    ".github/workflows/source/topsky_edgg_maps/tools_app.txt",
+    ".github/workflows/source/topsky_edgg_maps/tools_ctr.txt",
+
+    ".github/workflows/source/topsky_edgg_maps/ecl/eddf.txt",
+
+    ".github/workflows/source/topsky_edgg_maps/minor_rwy.txt"
   ],
 
   "EDGG/Plugins/Topsky_Phoenix/TopSkyMaps.txt": [
     ".github/workflows/source/topsky_phoenix_maps/general.txt",
 
-    ".github/workflows/source/topsky_phoenix_maps/phoenix/vfr-points.txt",
-    ".github/workflows/source/topsky_phoenix_maps/phoenix/vfr-hospital.txt",
-    ".github/workflows/source/topsky_phoenix_maps/phoenix/airports.txt",
-    ".github/workflows/source/topsky_phoenix_maps/phoenix/runways.txt",
-    ".github/workflows/source/topsky_phoenix_maps/phoenix/edff-aor.txt",
-    ".github/workflows/source/topsky_phoenix_maps/phoenix/ctr.txt",
-    ".github/workflows/source/topsky_phoenix_maps/phoenix/airspaces.txt",
+    ".github/workflows/source/topsky_phoenix_maps/vfr.txt",
+    ".github/workflows/source/topsky_phoenix_maps/runways.txt",
+    ".github/workflows/source/topsky_phoenix_maps/airspace.txt",
 
-    ".github/workflows/source/topsky_phoenix_maps/stands/stands.txt",
-
-    ".github/workflows/source/topsky_phoenix_maps/eddf/ntz.txt",
-    ".github/workflows/source/topsky_phoenix_maps/eddf/rnp.txt",
-    ".github/workflows/source/topsky_phoenix_maps/eddf/sid.txt",
-    ".github/workflows/source/topsky_phoenix_maps/eddf/dep-freq.txt",
-    ".github/workflows/source/topsky_phoenix_maps/eddf/distance-indicator.txt",
-    ".github/workflows/source/topsky_phoenix_maps/eddf/extended-centerlines.txt",
-
-    ".github/workflows/source/topsky_phoenix_maps/eddl/bridges.txt",
-    ".github/workflows/source/topsky_phoenix_maps/eddl/see.txt",
-
-    ".github/workflows/source/topsky_phoenix_maps/eddk/extended-centerlines.txt",
-
-    ".github/workflows/source/topsky_phoenix_maps/minor-airports.txt",
     ".github/workflows/source/topsky_phoenix_maps/mva.txt",
-    ".github/workflows/source/topsky_phoenix_maps/other-helper/level.txt",
+	
+	".github/workflows/source/topsky_phoenix_maps/topo.txt",
 
-    ".github/workflows/source/topsky_phoenix_maps/topografie/highway.txt",
-    ".github/workflows/source/topsky_phoenix_maps/topografie/rivers.txt",
-
-    ".github/workflows/source/topsky_phoenix_maps/taxiways/taxiways_all.txt"
+    ".github/workflows/source/topsky_phoenix_maps/taxiways.txt",
+	  ".github/workflows/source/topsky_phoenix_maps/stands.txt",
+	
+    ".github/workflows/source/topsky_phoenix_maps/eddf/eddf_rnp.txt",
+	".github/workflows/source/topsky_phoenix_maps/eddf/eddf_ntz.txt",
+	".github/workflows/source/topsky_phoenix_maps/eddf/eddf_tools.txt",
+    ".github/workflows/source/topsky_phoenix_maps/eddf/eddf_sids.txt",
+	".github/workflows/source/topsky_phoenix_maps/eddf/etou_corner.txt",
+	
+	".github/workflows/source/topsky_phoenix_maps/extended_centerlines_all.txt"
   ],
 
   "EDGG/Plugins/Topsky_EDYY/TopSkyMaps.txt": [
     ".github/workflows/source/topsky_edyy_maps/general.txt",
-
-    ".github/workflows/source/topsky_edyy_maps/borders.txt",
-    ".github/workflows/source/topsky_edyy_maps/airports.txt",
-
-    ".github/workflows/source/topsky_edyy_maps/upper-sectors.txt",
-    ".github/workflows/source/topsky_edyy_maps/lower-sectors.txt",
-
-    ".github/workflows/source/topsky_edyy_maps/fixes.txt",
-    ".github/workflows/source/topsky_edyy_maps/airways.txt"
+	
+	".github/workflows/source/topsky_edyy_maps/fixes.txt",
+	".github/workflows/source/topsky_edyy_maps/edyy_airways.txt",
+	
+	".github/workflows/source/topsky_edyy_maps/upper_sectors.txt",
+	
+	".github/workflows/source/topsky_edyy_maps/lower_sectors.txt",
+	
+	".github/workflows/source/topsky_edyy_maps/topo.txt"
+	
   ]
 }

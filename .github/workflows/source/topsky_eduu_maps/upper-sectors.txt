@@ -1,5 +1,0 @@
-MAP:UPPER SECTORS
-FOLDER:SECTORS
-COLOR:DFSGrey
-ACTIVE:1
-#import .github/workflows/source/data/sectors/rhein/all.txt

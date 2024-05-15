@@ -1,0 +1,33 @@
+//---------------------------------------------------------------
+//                            VFR APP/CTR
+//---------------------------------------------------------------
+
+MAP:FIS
+FOLDER:VFR
+COLOR:blue
+STYLE:Solid:1
+#import .github/workflows/source/data/vfr/fis.txt
+
+MAP:VFR Reporting Points
+FOLDER:VFR
+COLOR:DFSGrey
+#import .github/workflows/source/data/vfr/vfr_reporting_points.txt
+#import .github/workflows/source/data/vfr/vfr_reporting_points_label.txt
+
+MAP:MIL VFR Reporting Points
+FOLDER:VFR
+COLOR:DFSGrey
+#import .github/workflows/source/data/vfr/mil_reporting_points.txt
+#import .github/workflows/source/data/vfr/mil_reporting_points_label.txt
+
+MAP:VFR Hospitals
+FOLDER:VFR
+COLOR:DFSGrey
+#import .github/workflows/source/data/vfr/hospitals.txt
+#import .github/workflows/source/data/vfr/hospitals_label.txt
+
+MAP:Aerodromes
+FOLDER:VFR
+COLOR:DFSGrey
+#import .github/workflows/source/data/airports/
+

@@ -1,0 +1,25 @@
+MAP:Sectors
+COLOR:greysector
+FOLDER:Upper
+STYLE:DOT:1
+ACTIVE:1
+#import .github\workflows\source\data\sectors\edyy\cel.txt
+#import .github\workflows\source\data\sectors\edyy\dlt.txt
+#import .github\workflows\source\data\sectors\edyy\hol.txt
+#import .github\workflows\source\data\sectors\edyy\jev.txt
+#import .github\workflows\source\data\sectors\edyy\lnh.txt
+#import .github\workflows\source\data\sectors\edyy\lux.txt
+#import .github\workflows\source\data\sectors\edyy\mns.txt
+#import .github\workflows\source\data\sectors\edyy\rhr.txt
+#import .github\workflows\source\data\sectors\edyy\sol.txt
+//import .github\workflows\source\data\sectors\edyy\kok.txt
+//import .github\workflows\source\data\sectors\edyy\nik.txt
+#import .github\workflows\source\data\sectors\edyy\sco.txt
+#import .github\workflows\source\data\sectors\edyy\ekdk.txt
+#import .github\workflows\source\data\sectors\eduu\ffm.txt
+#import .github\workflows\source\data\sectors\eduu\ful.txt
+#import .github\workflows\source\data\sectors\eduu\ntm.txt
+#import .github\workflows\source\data\sectors\eduu\hvl.txt
+#import .github\workflows\source\data\sectors\eduu\sal.txt
+#import .github\workflows\source\data\sectors\eduu\spe.txt
+#import .github\workflows\source\data\sectors\eduu\ose.txt

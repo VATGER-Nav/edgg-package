@@ -9,7 +9,9 @@ COLORDEF:Highway:100:60:0
 COLORDEF:DFSStand:255:255:0
 COLORDEF:red:255:0:0
 COLORDEF:white:255:255:255
+COLORDEF:yellow:255:255:0
 
+// color definitions ground layout/maps
 COLORDEF:stands:200:200:200
 COLORDEF:closed:150:37:39
 COLORDEF:maxCodeB:255:140:0
@@ -22,11 +24,11 @@ COLORDEF:taxiways:255:105:180
 COLORDEF:taxiway_background:83:83:83
 COLORDEF:apron_background:38:36:45
 
-//VFR Pflichtmeldepunkte
-SYMBOLDEF:FIX VFR
+// VFR Pflichtmeldepunkte
+SYMBOLDEF:VFR
 POLYGON:-4:3:0:-4:4:3
 
-//Krankenhaeuser
+// Hospitals
 SYMBOLDEF:HOSPITAL
 MOVETO:-4:-4
 LINETO:4:-4
@@ -38,7 +40,7 @@ LINETO:2:2
 MOVETO:-1:1
 LINETO:2:-2
 
-//Flughaefen
+// Airports
 SYMBOLDEF:AIRPORT
 MOVETO:-4:-4
 LINETO:4:-4
@@ -46,7 +48,7 @@ LINETO:4:4
 LINETO:-4:4
 LINETO:-4:-4
 
-//Pluses
+// Pluses
 SYMBOLDEF:PLUS
 MOVETO:-4:0
 LINETO:5:0

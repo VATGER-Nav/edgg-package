@@ -1,0 +1,13 @@
+MAP:Coastline
+FOLDER:Topo
+COLOR:greysector
+#import .github\workflows\source\data\topographie\coastline.txt
+
+MAP:FIR Border
+FOLDER:Topo
+COLOR:greysector
+#import .github\workflows\source\data\sectors\fir\edggfir.txt
+#import .github\workflows\source\data\sectors\fir\edmmfir.txt
+#import .github\workflows\source\data\sectors\fir\edwwfir.txt
+#import .github\workflows\source\data\sectors\fir\ehaafir.txt
+#import .github\workflows\source\data\sectors\fir\lfeefir.txt

@@ -1,31 +1,24 @@
 MAP:HEUSE AREA
-FOLDER:LoA AREAS/LINES
+FOLDER:Areas
 COLOR:DFSGrey
 STYLE:Solid:1
 STYLE:DashDot
-ASRDATA:LANGEN
+ASRDATA:EDGG
 ACTIVE:1
 #import .github/workflows/source/data/loa_lines/heuse_area.txt
 
 MAP:SULZ AREA
-FOLDER:LoA AREAS/LINES
+FOLDER:Areas
 COLOR:DFSGrey
 STYLE:DashDot
-ASRDATA:LANGEN,EDDS_APP
+ASRDATA:EDGG,EDDS
 ACTIVE:1
 #import .github/workflows/source/data/loa_lines/sulz_area.txt
 
 MAP:DKB AREA
-FOLDER:LoA AREAS/LINES
+FOLDER:Areas
 COLOR:DFSGrey
 STYLE:DashDot
-ASRDATA:LANGEN
+ASRDATA:EDGG
 ACTIVE:ID:DKB,BAD,KTG:*:NDG,WLD,EGG,ZUG,RDG,EDMM:*
 #import .github/workflows/source/data/loa_lines/dkb_area.txt
-
-MAP:EDDS RELEASE LINE
-FOLDER:EDDS
-ASRDATA:LANGEN,EDDS_APP
-COLOR:DFSGrey
-ACTIVE:1
-#import .github/workflows/source/data/loa_lines/edds_release_line.txt

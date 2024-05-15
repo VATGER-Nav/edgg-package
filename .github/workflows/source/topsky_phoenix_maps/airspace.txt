@@ -1,0 +1,44 @@
+//---------------------------------------------------------------
+//                            Airspace
+//---------------------------------------------------------------
+
+MAP:Airspace Label
+FOLDER:Airspace
+COLOR:Standard
+ASRDATA:PHOENIX
+#import .github/workflows/source/data/airspace/labels.txt
+
+MAP:Controlzone (CTR)
+FOLDER:Airspace
+COLOR:Standard
+ACTIVE:1
+STYLE:Solid:1
+ASRDATA:PHOENIX
+#import .github/workflows/source/data/airspace/ctr/
+
+MAP:Airspace C
+FOLDER:Airspace
+COLOR:Standard
+ACTIVE:1
+STYLE:DOT:1
+ASRDATA:PHOENIX
+#import .github/workflows/source/data/airspace/airspace_c/eddf_c_dashed.txt
+#import .github/workflows/source/data/airspace/airspace_c/eddl_eddk_c_dashed.txt
+#import .github/workflows/source/data/sectors/edgg/eddf_app.txt
+
+MAP:Airspace D
+FOLDER:Airspace
+COLOR:Standard
+ACTIVE:1
+STYLE:DASH:1
+ASRDATA:PHOENIX
+#import .github/workflows/source/data/airspace/airspace_d/
+
+MAP:TMZ/RMZ
+FOLDER:Airspace
+COLOR:Standard
+ACTIVE:1
+STYLE:DOT:1
+ASRDATA:PHOENIX
+#import .github/workflows/source/data/airspace/tmz/
+#import .github/workflows/source/data/airspace/rmz/

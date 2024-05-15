@@ -1,0 +1,43 @@
+//---------------------------------------------------------------
+//                            VFR Tower
+//---------------------------------------------------------------
+
+MAP:VFR POINTS LABEL
+FOLDER:VFR
+COLOR:Standard
+#import .github/workflows/source/data/vfr/vfr_reporting_points_label.txt
+
+MAP:MIL VFR POINTS LABEL
+FOLDER:VFR
+COLOR:Standard
+#import .github/workflows/source/data/vfr/mil_reporting_points_label.txt
+
+MAP:VFR HOSP LABEL
+FOLDER:VFR
+COLOR:Standard
+#import .github/workflows/source/data/vfr/hospitals_label.txt
+
+MAP:FIS Sector + Squawks
+FOLDER:VFR
+COLOR:blue
+STYLE:Solid:1
+#import .github/workflows/source/data/vfr/fis.txt
+
+MAP:Aerodromes
+FOLDER:VFR
+COLOR:Standard
+ACTIVE:1
+#import .github/workflows/source/data/vfr/airfields.txt
+
+MAP:VFR POINTS
+FOLDER:VFR
+COLOR:Standard
+ACTIVE:1
+#import .github/workflows/source/data/vfr/vfr_reporting_points.txt
+#import .github/workflows/source/data/vfr/mil_reporting_points.txt
+
+MAP:VFR HOSP
+FOLDER:VFR
+COLOR:Standard
+ACTIVE:1
+#import .github/workflows/source/data/vfr/hospitals.txt
