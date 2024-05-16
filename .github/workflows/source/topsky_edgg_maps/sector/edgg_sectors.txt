@@ -23,6 +23,6 @@ MAP:Langen Sectors ALL
 ACTIVE:1
 COLOR:DFSGrey
 FOLDER:Langen Radar
-ASRDATA:EDGG,EDDK,EDDL
+ASRDATA:EDGG
 STYLE:Solid:1
 #import .github/workflows/source/data/sectors/edgg/edgg_all.txt
