@@ -18,6 +18,42 @@ COLOR:DFSGrey
 FOLDER:EDDF
 #import .github/workflows/source/data/procedures/eddf/star/eddf_final_25c_fixes.txt
 
+MAP:EDDF STAR 25
+COLOR:DFSGrey
+FOLDER:EDDF
+ZOOM:8
+FONTSIZE:=:13
+ACTIVE:RWY:ARR:EDDF25:DEP:*
+ACTIVE:RWY:ARR:EDDF25R:DEP:*
+ACTIVE:RWY:ARR:EDDF25L:DEP:*
+ACTIVE:RWY:ARR:EDDF25C:DEP:*
+#import .github/workflows/source/data/procedures/eddf/star/eddf_star_25_names.txt
+
+MAP:EDDF 25L Final
+COLOR:DFSGrey
+ZOOM:8
+FOLDER:EDDF
+FONTSIZE:=:12
+ACTIVE:RWY:ARR:EDDF25L:DEP:*
+#import .github/workflows/source/data/procedures/eddf/star/eddf_final_25l_names.txt
+
+MAP:EDDF 25R Final
+COLOR:DFSGrey
+ZOOM:8
+FOLDER:EDDF
+FONTSIZE:=:12
+ACTIVE:RWY:ARR:EDDF25R:DEP:*
+#import .github/workflows/source/data/procedures/eddf/star/eddf_final_25r_names.txt
+
+MAP:EDDF 25C Final 
+COLOR:DFSGrey
+ZOOM:8
+FOLDER:EDDF
+FONTSIZE:=:12
+ACTIVE:RWY:ARR:EDDF25C:EDDF25L,EDDF25R:DEP:*:*
+#import .github/workflows/source/data/procedures/eddf/star/eddf_final_25c_names.txt
+
+
 MAP:EDDF 25 FULL DOWNWIND
 COLOR:DFSGrey
 FOLDER:EDDF
@@ -65,44 +101,10 @@ SYMBOL:TFIX:DF443:443:18:-6
 SYMBOL:TFIX:DF642:642:18:-6
 SYMBOL:TFIX:DF643:643:18:-6
 
-MAP:EDDF STAR 25
-COLOR:DFSGrey
-FOLDER:EDDF
-ASRDATA:EDDF_APP
-FONTSIZE:=:13
-ACTIVE:RWY:ARR:EDDF25:DEP:*
-ACTIVE:RWY:ARR:EDDF25R:DEP:*
-ACTIVE:RWY:ARR:EDDF25L:DEP:*
-ACTIVE:RWY:ARR:EDDF25C:DEP:*
-#import .github/workflows/source/data/procedures/eddf/star/eddf_star_25_names.txt
-
-MAP:EDDF 25L Final
-COLOR:DFSGrey
-ZOOM:8
-FOLDER:EDDF
-FONTSIZE:=:12
-ACTIVE:RWY:ARR:EDDF25L:DEP:*
-#import .github/workflows/source/data/procedures/eddf/star/eddf_final_25l_names.txt
-
-MAP:EDDF 25R Final
-COLOR:DFSGrey
-ZOOM:8
-FOLDER:EDDF
-FONTSIZE:=:12
-ACTIVE:RWY:ARR:EDDF25R:DEP:*
-#import .github/workflows/source/data/procedures/eddf/star/eddf_final_25r_names.txt
-
-MAP:EDDF 25C Final 
-COLOR:DFSGrey
-ZOOM:8
-FOLDER:EDDF
-FONTSIZE:=:12
-ACTIVE:RWY:ARR:EDDF25C:EDDF25L,EDDF25R:DEP:*:*
-#import .github/workflows/source/data/procedures/eddf/star/eddf_final_25c_names.txt
-
 MAP:EDDF STAR 07
 COLOR:DFSGrey
 FOLDER:EDDF
+ZOOM:8
 FONTSIZE:=:12
 ACTIVE:RWY:ARR:EDDF07:DEP:*
 ACTIVE:RWY:ARR:EDDF07R:DEP:*
@@ -125,7 +127,7 @@ COLOR:darkgreen
 SYMBOL:FIX3_BIG:DF441
 SYMBOL:FIX3_BIG:DF640
 
-MAP:EDDF 07R
+MAP:EDDF 07R Final
 COLOR:DFSGrey
 ZOOM:8
 FOLDER:EDDF
@@ -136,7 +138,7 @@ SYMBOL:TFIX:DF652:652:15:20
 SYMBOL:TFIX:DF660:660:15:20
 SYMBOL:TFIX:DF670:670:15:20
 
-MAP:EDDF 07L
+MAP:EDDF 07L Final
 COLOR:DFSGrey
 ZOOM:8
 FOLDER:EDDF
@@ -148,7 +150,7 @@ SYMBOL:TFIX:DF450:450:8:-25
 SYMBOL:TFIX:DF470:470:8:-25
 SYMBOL:TFIX:DF460:460:8:-25
 
-MAP:EDDF 07C
+MAP:EDDF 07C Final
 COLOR:DFSGrey
 ZOOM:8
 FOLDER:EDDF

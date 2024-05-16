@@ -95,6 +95,7 @@
     ".github/workflows/source/topsky_edgg_maps/ecl/military.txt",
     ".github/workflows/source/topsky_edgg_maps/ecl/minor.txt",
 
+    ".github/workflows/source/topsky_edgg_maps/controlzones.txt",
     ".github/workflows/source/topsky_edgg_maps/airspace.txt",
 
     ".github/workflows/source/topsky_edgg_maps/edgg_fixes.txt",
@@ -102,7 +103,6 @@
     ".github/workflows/source/topsky_edgg_maps/areas.txt",
 
     ".github/workflows/source/topsky_edgg_maps/sector/upper_borders.txt",
-    ".github/workflows/source/topsky_edgg_maps/controlzones.txt",
     ".github/workflows/source/topsky_edgg_maps/sector/edgg_sectors.txt",
     ".github/workflows/source/topsky_edgg_maps/sector/edgg_border_sectors.txt",
 

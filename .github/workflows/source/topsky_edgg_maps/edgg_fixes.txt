@@ -1,12 +1,12 @@
 MAP:EDGG Fixes
 ACTIVE:1
-ASRDATA:EDGG
+ASRDATA:EDGG,EDDK,EDDL,EDDS
 COLOR:DFSGrey
 #import .github/workflows/source/data/navdata/edgg_fixes.txt
 
 MAP:NavAids
 ACTIVE:1
-ASRDATA:EDGG,EDDS
+ASRDATA:EDGG,EDDK,EDDL,EDDS
 COLOR:DFSGrey
 #import .github/workflows/source/data/navdata/navaids.txt
 
