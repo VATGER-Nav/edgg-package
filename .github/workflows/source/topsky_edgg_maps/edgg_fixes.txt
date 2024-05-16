@@ -1,15 +1,3 @@
-MAP:EDGG Fixes
-ACTIVE:1
-ASRDATA:EDGG,EDDK,EDDL,EDDS
-COLOR:DFSGrey
-#import .github/workflows/source/data/navdata/edgg_fixes.txt
-
-MAP:NavAids
-ACTIVE:1
-ASRDATA:EDGG,EDDK,EDDL,EDDS
-COLOR:DFSGrey
-#import .github/workflows/source/data/navdata/navaids.txt
-
 MAP:Fixes Labels
 FOLDER:Langen Radar
 FONTSIZE:=:11
@@ -21,3 +9,18 @@ FOLDER:Langen Radar
 FONTSIZE:=:11
 COLOR:DFSGrey
 #import .github/workflows/source/data/navdata/labels/navaids_labels.txt
+
+MAP:EDGG Fixes
+FOLDER:Langen Radar
+ACTIVE:1
+ASRDATA:EDGG,EDDK,EDDL,EDDS
+COLOR:DFSGrey
+#import .github/workflows/source/data/navdata/edgg_fixes.txt
+
+MAP:EDGG NavAids
+FOLDER:Langen Radar
+ACTIVE:1
+ASRDATA:EDGG,EDDK,EDDL,EDDS
+COLOR:DFSGrey
+#import .github/workflows/source/data/navdata/navaids.txt
+
