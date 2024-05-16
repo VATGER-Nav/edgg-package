@@ -20,4 +20,4 @@ MAP:NavAids Labels
 FOLDER:Langen Radar
 FONTSIZE:=:11
 COLOR:DFSGrey
-#import .github/workflows/source/data/navdata/navaids_labels.txt
+#import .github/workflows/source/data/navdata/labels/navaids_labels.txt

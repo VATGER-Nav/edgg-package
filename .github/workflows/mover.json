@@ -107,12 +107,12 @@
     ".github/workflows/source/topsky_edgg_maps/sector/edgg_sectors.txt",
     ".github/workflows/source/topsky_edgg_maps/sector/edgg_border_sectors.txt",
     ".github/workflows/source/topsky_edgg_maps/sector/edds_sectors.txt",
-    ".github/workflows/source/topsky_edgg_maps/sector/eddf_sectors.txt",
 
-    ".github/workflows/source/topsky_edgg_maps/eddf/base.txt",
     ".github/workflows/source/topsky_edgg_maps/eddf/eddf_rnp.txt",
     ".github/workflows/source/topsky_edgg_maps/eddf/eddf_ntz.txt",
     ".github/workflows/source/topsky_edgg_maps/eddf/transition.txt",
+	".github/workflows/source/topsky_edgg_maps/eddf/base.txt",	
+	".github/workflows/source/topsky_edgg_maps/sector/eddf_sectors.txt",
 
     ".github/workflows/source/topsky_edgg_maps/eddk.txt",
     ".github/workflows/source/topsky_edgg_maps/edds.txt",

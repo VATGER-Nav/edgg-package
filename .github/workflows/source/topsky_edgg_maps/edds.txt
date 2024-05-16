@@ -102,3 +102,11 @@ ACTIVE:1
 SYMBOL:OBSTACLES:N048.45.20.500:E009.11.24.200: :0:0
 SYMBOL:OBSTACLES:N048.37.04.800:E009.08.42.800: :0:0
 
+MAP:LSAS Border
+ASRDATA:EDDS
+COLOR:DFSGrey
+FOLDER:EDDS
+ACTIVE:1
+#import .github/workflows/source/data/sectors/lsas/arfa.txt
+#import .github/workflows/source/data/sectors/lsas/lsasze.txt
+#import .github/workflows/source/data/sectors/lsas/lsaszn.txt

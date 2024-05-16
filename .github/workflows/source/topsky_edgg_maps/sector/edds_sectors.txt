@@ -5,8 +5,6 @@ ASRDATA:EDDS
 COLOR:DFSGrey
 LAYER:-1
 ACTIVE:1
-#import .github/workflows/source/data/sectors/edgg/str.txt
-#import .github/workflows/source/data/sectors/edgg/reu.txt
 #import .github/workflows/source/data/sectors/edgg/pfa.txt
 
 //NKRH1

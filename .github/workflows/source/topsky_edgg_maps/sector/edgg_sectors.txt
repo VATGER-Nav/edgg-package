@@ -1,8 +1,9 @@
-MAP:Noervenich Sektor
+MAP:NOR Sektor
 ACTIVE:ID:*:*:NOR,DKA:*
 ACTIVE:ID:*:*:NOR,DKAT:*
 ASRDATA:EDGG,EDDK
 COLOR:DFSGrey
+FOLDER:Langen Radar
 STYLE:Solid:1
 #import .github/workflows/source/data/sectors/edgg/nor.txt
 
@@ -12,14 +13,14 @@ ACTIVE:ID:*:*:DUS,DLD:*
 ACTIVE:ID:*:*:BOT,DLD:*
 ACTIVE:ID:*:*:BOT,DLAT:*
 ACTIVE:ID:*:*:DLD,DLAT:*
-ASRDATA:EDGG
 COLOR:DFSGrey
+FOLDER:EDDL
 STYLE:Solid:1
 #import .github/workflows/source/data/sectors/edgg/bot.txt
 
-MAP:Langen Sectors
+MAP:Langen Sectors ALL
 ACTIVE:1
-ASRDATA:EDGG
 COLOR:DFSGrey
+FOLDER:Langen Radar
 STYLE:Solid:1
 #import .github/workflows/source/data/sectors/edgg/edgg_all.txt

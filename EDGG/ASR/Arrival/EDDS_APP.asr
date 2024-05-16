@@ -3,9 +3,6 @@ DisplayTypeNeedRadarContent:1
 DisplayTypeGeoReferenced:1
 SECTORFILE:
 SECTORTITLE:
-ARTCC boundary:LSAS ARFA:
-ARTCC boundary:LSAS Lower East (LSZE):
-ARTCC boundary:LSAS Lower North (LSZN):
 SHOWC:1
 SHOWSB:0
 BELOW:0

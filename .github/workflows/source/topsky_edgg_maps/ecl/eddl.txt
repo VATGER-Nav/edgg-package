@@ -9,4 +9,4 @@ ACTIVE:RWY:ARR:*:DEP:EDDL23R
 ACTIVE:RWY:ARR:*:DEP:EDDL23L
 ACTIVE:RWY:ARR:*:DEP:EDDL05R
 ACTIVE:RWY:ARR:*:DEP:EDDL05L
-#import .github/workflows/source/data/extended_centerline/eddl.txt
+#import .github/workflows/source/data/extended_centerline/eddl_ecl.txt
