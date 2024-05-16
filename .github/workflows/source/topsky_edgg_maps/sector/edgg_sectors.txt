@@ -1,26 +1,28 @@
-MAP:NOR Sektor
-ACTIVE:ID:*:*:NOR,DKA:*
-ACTIVE:ID:*:*:NOR,DKAT:*
-ASRDATA:EDGG,EDDK
-COLOR:DFSGrey
-FOLDER:Langen Radar
-STYLE:Solid:1
-#import .github/workflows/source/data/sectors/edgg/nor.txt
-
-MAP:Bottrop Sektor
+MAP:BOT
 ACTIVE:ID:*:*:DUS,BOT:*
 ACTIVE:ID:*:*:DUS,DLD:*
 ACTIVE:ID:*:*:BOT,DLD:*
 ACTIVE:ID:*:*:BOT,DLAT:*
 ACTIVE:ID:*:*:DLD,DLAT:*
+ASRDATA:EDGG,EDDK,EDDL
 COLOR:DFSGrey
-FOLDER:EDDL
+FOLDER:Langen Radar
 STYLE:Solid:1
 #import .github/workflows/source/data/sectors/edgg/bot.txt
+
+MAP:NOR
+ACTIVE:ID:*:*:NOR,DKA:*
+ACTIVE:ID:*:*:NOR,DKAT:*
+ASRDATA:EDGG,EDDK,EDDL
+COLOR:DFSGrey
+FOLDER:Langen Radar
+STYLE:Solid:1
+#import .github/workflows/source/data/sectors/edgg/nor.txt
 
 MAP:Langen Sectors ALL
 ACTIVE:1
 COLOR:DFSGrey
 FOLDER:Langen Radar
+ASRDATA:EDGG,EDDK,EDDL
 STYLE:Solid:1
 #import .github/workflows/source/data/sectors/edgg/edgg_all.txt

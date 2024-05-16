@@ -3,6 +3,19 @@ DisplayTypeNeedRadarContent:1
 DisplayTypeGeoReferenced:1
 SECTORFILE:
 SECTORTITLE:
+ARTCC boundary:AoR APP EDDS:
+ARTCC boundary:EDGG BAD:
+ARTCC boundary:EDGG KNG:
+ARTCC boundary:EDGG KTG:
+ARTCC boundary:EDGG LBU:
+ARTCC boundary:EDGG NKRH:
+ARTCC boundary:EDGG PFA:
+ARTCC boundary:EDMM FUE:
+ARTCC boundary:EDMM NDG:
+ARTCC boundary:EDMM WLD:
+ARTCC boundary:LSAS ARFA:
+ARTCC boundary:LSAS Lower East (LSZE):
+ARTCC boundary:LSAS Lower North (LSZN):
 SHOWC:1
 SHOWSB:0
 BELOW:0
@@ -16,5 +29,5 @@ DISABLEPANNING:0
 DISABLEZOOMING:0
 DisplayRotation:0.00000
 TAGFAMILY:EDGG Arrival/Departure
-WINDOWAREA:47.853373:5.849523:49.841812:11.753715
+WINDOWAREA:47.649716:6.613190:49.680386:12.517382
 PLUGIN:TopSky plugin:ShowMapData:EDDS

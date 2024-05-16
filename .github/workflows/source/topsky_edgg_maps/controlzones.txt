@@ -19,6 +19,7 @@ STYLE:DashDot:1
 #import .github/workflows/source/data/airspace/ctr/edds.txt
 #import .github/workflows/source/data/airspace/ctr/edsb.txt
 #import .github/workflows/source/data/airspace/ctr/edtl.txt
+#import .github/workflows/source/data/airspace/ctr/edty_rmz.txt
 
 // All CTR Maps
 
