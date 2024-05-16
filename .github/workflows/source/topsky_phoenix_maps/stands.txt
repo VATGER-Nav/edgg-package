@@ -6,7 +6,7 @@ MAP:STANDS ALL
 FOLDER:STANDS
 FONTSIZE:=:9
 COLOR:stands
-#import .github/workflows/source/data/stands_name
+#import .github/workflows/source/data/stands_name/
 
 MAP:STANDS Maximum
 FOLDER:STANDS
