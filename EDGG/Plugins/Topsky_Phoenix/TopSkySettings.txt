@@ -132,10 +132,10 @@ Shortcut_Map_Xfr_Key=5,0x56 ; V
 Shortcut_Map_Xfr_Key=6,0x42 ; B
 Shortcut_Map_Xfr_Key=7,0x54 ; T
 Shortcut_Map_Target=1,MVA\MVA Germany Summer
-Shortcut_Map_Target=2,OTHER\AIRSPACE LEVEL
+Shortcut_Map_Target=2,Airspace\Airspace Label
 Shortcut_Map_Target=3,STANDS\STANDS ALL
-Shortcut_Map_Target=4,LABELS\VFR HOSP LABEL
-Shortcut_Map_Target=5,LABELS\VFR POINTS LABEL
+Shortcut_Map_Target=4,VFR\VFR HOSP LABEL
+Shortcut_Map_Target=5,VFR\VFR POINTS LABEL
 Shortcut_Map_Target=6,STANDS\STANDS Maximum
 Shortcut_Map_Target=7,Taxiways\Taxiways ALL
 

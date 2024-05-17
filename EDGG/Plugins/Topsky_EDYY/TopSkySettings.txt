@@ -309,10 +309,9 @@ WXR_Echo_dBZ_Lo=25
 
 Shortcut_RadarMenu_Combo=0x00
 Shortcut_Map_Xfr_Key=1,0x47 ; G
-Shortcut_Map_Xfr_Key=2,0x48 ; H
-Shortcut_Map_Xfr_Key=3,0x42 ; B
-Shortcut_Map_Target=1,EDYY\FIR/UIR
-Shortcut_Map_Target=3,EDYY\LOWER SECTORS
+Shortcut_Map_Xfr_Key=2,0x42 ; B
+Shortcut_Map_Target=1,Topo\FIR Border
+Shortcut_Map_Target=2,Lower\Sectors
 
 [_CTR]
 Color_Assumed=10,180,20

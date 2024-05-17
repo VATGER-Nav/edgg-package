@@ -285,9 +285,9 @@ Shortcut_RadarMenu_Combo=0x00
 Shortcut_Map_Xfr_Key=1,0x47 ; G
 Shortcut_Map_Xfr_Key=2,0x48 ; H
 Shortcut_Map_Xfr_Key=3,0x42 ; B
-Shortcut_Map_Target=1,OTHER\EDFF SEP Guide Lower
-Shortcut_Map_Target=2,OTHER\EDFF SEP Guide Upper
-Shortcut_Map_Target=3,SECTORS\LANGEN SECTORS
+Shortcut_Map_Target=1,Toos\Seperation Guide Lower
+Shortcut_Map_Target=2,Tools\Seperation Guide Upper
+Shortcut_Map_Target=3,Lower\Langen Sectors
 
 [_CTR]
 Color_Assumed=0,0,0

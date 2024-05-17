@@ -1,6 +1,14 @@
 DisplayTypeName:Standard ES radar screen
 DisplayTypeNeedRadarContent:1
 DisplayTypeGeoReferenced:1
+SECTORFILE:
+SECTORTITLE:
+ARTCC boundary:AoR APP EDDK:
+ARTCC boundary:AoR APP EDDL:
+ARTCC boundary:AoR HMM + PADL:
+ARTCC boundary:EDGG NOR:
+ARTCC boundary:EDGG SIG:
+ARTCC boundary:EDGG TAU:
 SHOWC:1
 SHOWSB:0
 BELOW:0
@@ -15,4 +23,4 @@ DISABLEZOOMING:0
 DisplayRotation:0.00000
 TAGFAMILY:EDGG Arrival/Departure
 WINDOWAREA:50.610052:4.399698:52.110052:8.853588
-PLUGIN:TopSky plugin:ShowMapData:EDGG
+PLUGIN:TopSky plugin:ShowMapData:EDDL

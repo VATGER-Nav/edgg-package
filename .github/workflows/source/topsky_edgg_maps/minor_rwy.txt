@@ -1,6 +1,5 @@
 MAP:Minor RWY
 COLOR:DFSGrey
 STYLE:Solid:2
-ASRDATA:EDGG,EDDS
 ACTIVE:1
 #import .github/workflows/source/data/navdata/runways.txt

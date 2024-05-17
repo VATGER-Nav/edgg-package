@@ -1,8 +1,21 @@
-MAP:EDDS Fixes LABEL
+MAP:EDDS Fix LABEL
 FOLDER:EDDS
 FONTSIZE:=:11
 COLOR:DFSGrey
 #import .github/workflows/source/data/navdata/labels/edds_tma_labels.txt
+
+MAP:Border REU/STG
+COLOR:DFSGrey
+FOLDER:EDDS
+STYLE:Solid:1
+#import .github/workflows/source/data/sectors/edgg/stg.txt
+
+MAP:EDDS RELEASE LINE
+FOLDER:EDDS
+ASRDATA:EDGG,EDDS
+COLOR:DFSGrey
+ACTIVE:1
+#import .github/workflows/source/data/loa_lines/edds_release_line.txt
 
 MAP:NOISE 07
 FOLDER:EDDS
@@ -20,18 +33,18 @@ STYLE:Solid:1
 ACTIVE:RWY:ARR:EDDS25:DEP:*
 LINE:N048.45.38.840:E009.26.32.937:N048.42.24.028:E009.27.52.873
 
-MAP:EDDS RELEASE LINE
-FOLDER:EDDS
-ASRDATA:EDGG,EDDS
-COLOR:DFSGrey
-ACTIVE:1
-#import .github/workflows/source/data/loa_lines/edds_release_line.txt
-
-MAP:EDDS Fixes
+MAP:EDDS Map
 ASRDATA:EDDS
+FOLDER:EDDS
 COLOR:DFSGrey
 ACTIVE:1
+// EDDS fixes
 #import .github/workflows/source/data/navdata/edds_tma_fixes.txt
+// EDDS OBSTACLES
+SYMBOL:OBSTACLES:N048.45.20.500:E009.11.24.200: :0:0
+SYMBOL:OBSTACLES:N048.37.04.800:E009.08.42.800: :0:0
+// EDDS airports
+#import .github/workflows/source/data/airports/ids_area.txt
 
 MAP:EDDS TRANS 25
 ASRDATA:EDDS,EDGG
@@ -88,17 +101,3 @@ SYMBOL:TFIX:DS514:514:0:0
 SYMBOL:TFIX:DS513:513:0:0
 SYMBOL:TFIX:DS512:512:0:0
 SYMBOL:TFIX:UNSER:UN:15:20
-
-MAP:EDDS Airports
-ASRDATA:EDDS
-COLOR:DFSGrey
-ACTIVE:1
-#import .github/workflows/source/data/airports/ids_area.txt
-
-MAP:EDDS OBSTACLES
-COLOR:DFSGrey
-ASRDATA:EDDS
-ACTIVE:1
-SYMBOL:OBSTACLES:N048.45.20.500:E009.11.24.200: :0:0
-SYMBOL:OBSTACLES:N048.37.04.800:E009.08.42.800: :0:0
-

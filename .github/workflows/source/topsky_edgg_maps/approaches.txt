@@ -144,7 +144,7 @@ STYLE:Solid:1
 FONTSIZE:=:11
 COLOR:DFSGrey
 ACTIVE:RWY:ARR:EDSB21:DEP:*
-#import .github/workflows/source/data/procedures/edsb/edsb_rnp_31.txt
+#import .github/workflows/source/data/procedures/edsb/edsb_rnp_21.txt
 
 MAP:EDTL RNP 03
 FOLDER:Minor Approaches
