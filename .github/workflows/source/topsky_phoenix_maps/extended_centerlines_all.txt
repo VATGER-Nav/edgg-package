@@ -56,7 +56,7 @@ ACTIVE:RWY:ARR:EDDF25R:DEP:*
 ACTIVE:RWY:ARR:EDDF07L:DEP:*
 #import .github/workflows/source/data/extended_centerline/eddf/eddf_ecl_07l.txt
 
-MAP:ECL 13R
+MAP:EDDK ECL 13R
 FOLDER:EDDK
 COLOR:ECL
 STYLE:Solid:1
@@ -64,7 +64,7 @@ ASRDATA:PHOENIX
 ACTIVE:RWY:ARR:EDDK13R:DEP:*
 #import .github/workflows/source/data/extended_centerline/eddk/eddk_ecl_13r.txt
 
-MAP:ECL 31L
+MAP:EDDK ECL 31L
 FOLDER:EDDK
 COLOR:ECL
 STYLE:Solid:1
@@ -72,11 +72,106 @@ ASRDATA:PHOENIX
 ACTIVE:RWY:ARR:EDDK31L:DEP:*
 #import .github/workflows/source/data/extended_centerline/eddk/eddk_ecl_31l.txt
 
-MAP:ETOU ECL
-FOLDER:MIL
+MAP:ETAD ECL
+FOLDER:ECL
+COLOR:ECL
+STYLE:SOLID:1
+ACTIVE:RWY:ARR:ETAD04:DEP:*
+ACTIVE:RWY:ARR:ETAD22:DEP:*
+ACTIVE:RWY:ARR:*:DEP:ETAD04
+ACTIVE:RWY:ARR:*:DEP:ETAD22
+#import .github/workflows/source/data/extended_centerline/etad_ecl.txt
+
+MAP:ETAR ECL
+FOLDER:ECL
+COLOR:ECL
+STYLE:SOLID:1
+ACTIVE:RWY:ARR:ETAR08:DEP:*
+ACTIVE:RWY:ARR:ETAR09:DEP:*
+ACTIVE:RWY:ARR:ETAR26:DEP:*
+ACTIVE:RWY:ARR:ETAR27:DEP:*
+ACTIVE:RWY:ARR:*:DEP:ETAR08
+ACTIVE:RWY:ARR:*:DEP:ETAR09
+ACTIVE:RWY:ARR:*:DEP:ETAR26
+ACTIVE:RWY:ARR:*:DEP:ETAR27
+#import .github/workflows/source/data/extended_centerline/etar_ecl.txt
+
+MAP:ETEB ECL
+FOLDER:ECL
 COLOR:ECL
 STYLE:Solid:1
-ASRDATA:PHOENIX
+ACTIVE:RWY:ARR:ETEB08:DEP:*
+ACTIVE:RWY:ARR:ETEB26:DEP:*
+ACTIVE:RWY:ARR:*:DEP:ETEB08
+ACTIVE:RWY:ARR:*:DEP:ETEB26
+#import .github/workflows/source/data/extended_centerline/eteb_ecl.txt
+
+MAP:ETHF ECL
+FOLDER:ECL
+COLOR:ECL
+STYLE:Solid:1
+ACTIVE:RWY:ARR:ETHF11:DEP:*
+ACTIVE:RWY:ARR:ETHF29:DEP:*
+ACTIVE:RWY:ARR:*:DEP:ETHF11
+ACTIVE:RWY:ARR:*:DEP:ETHF29
+#import .github/workflows/source/data/extended_centerline/ethf_ecl.txt
+
+MAP:ETHN ECL
+FOLDER:ECL
+COLOR:ECL
+STYLE:Solid:1
+ACTIVE:RWY:ARR:ETHN07:DEP:*
+ACTIVE:RWY:ARR:ETHN25:DEP:*
+ACTIVE:RWY:ARR:*:DEP:ETHN07
+ACTIVE:RWY:ARR:*:DEP:ETHN25
+#import .github/workflows/source/data/extended_centerline/ethn_ecl.txt
+
+MAP:ETIK ECL
+FOLDER:ECL
+COLOR:ECL
+STYLE:Solid:1
+ACTIVE:RWY:ARR:ETIK06:DEP:*
+ACTIVE:RWY:ARR:ETIK24:DEP:*
+ACTIVE:RWY:ARR:*:DEP:ETIK06
+ACTIVE:RWY:ARR:*:DEP:ETIK24
+#import .github/workflows/source/data/extended_centerline/etik_ecl.txt
+
+MAP:ETNG ECL
+FOLDER:ECL
+COLOR:ECL
+STYLE:Solid:1
+ACTIVE:RWY:ARR:ETNG09:DEP:*
+ACTIVE:RWY:ARR:ETNG27:DEP:*
+ACTIVE:RWY:ARR:*:DEP:ETNG09
+ACTIVE:RWY:ARR:*:DEP:ETNG27
+#import .github/workflows/source/data/extended_centerline/etng_ecl.txt
+
+MAP:ETNN ECL
+FOLDER:ECL
+COLOR:ECL
+STYLE:Solid:1
+ACTIVE:RWY:ARR:ETNN24:DEP:*
+ACTIVE:RWY:ARR:ETNN06:DEP:*
+ACTIVE:RWY:ARR:*:DEP:ETNN06
+ACTIVE:RWY:ARR:*:DEP:ETNN24
+#import .github/workflows/source/data/extended_centerline/etnn_ecl.txt
+
+MAP:ETOU ECL
+FOLDER:ECL
+COLOR:ECL
+STYLE:Solid:1
 ACTIVE:RWY:ARR:ETOU25:DEP:*
 ACTIVE:RWY:ARR:ETOU07:DEP:*
-#import .github/workflows/source/data/extended_centerline/etou.txt
+ACTIVE:RWY:ARR:*:DEP:ETOU25
+ACTIVE:RWY:ARR:*:DEP:ETOU07
+#import .github/workflows/source/data/extended_centerline/etou_ecl.txt
+
+MAP:ETSB ECL
+FOLDER:ECL
+COLOR:ECL
+STYLE:Solid:1
+ACTIVE:RWY:ARR:ETSB03:DEP:*
+ACTIVE:RWY:ARR:ETSB21:DEP:*
+ACTIVE:RWY:ARR:*:DEP:ETSB03
+ACTIVE:RWY:ARR:*:DEP:ETSB21
+#import .github/workflows/source/data/extended_centerline/etsb_ecl.txt
