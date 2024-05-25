@@ -7,8 +7,8 @@ STYLE:Solid:1
 #import .github/workflows/source/data/sectors/edgg/nor.txt
 
 MAP:Bottrop Sektor
-ACTIVE:ID:*:*:DUS,BOT:*
-ACTIVE:ID:*:*:DUS,DLD:*
+ACTIVE:ID:*:*:DLA,BOT:*
+ACTIVE:ID:*:*:DLA,DLD:*
 ACTIVE:ID:*:*:BOT,DLD:*
 ACTIVE:ID:*:*:BOT,DLAT:*
 ACTIVE:ID:*:*:DLD,DLAT:*
