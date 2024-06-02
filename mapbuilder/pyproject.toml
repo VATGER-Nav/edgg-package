@@ -1,0 +1,61 @@
+[tool.poetry]
+name = "mapbuilder"
+version = "0.1.0"
+description = "A builder for GRPlugin and Topsky Maps"
+authors = ["Alex Legler <alex@a3li.li>"]
+license = "MIT"
+
+[tool.poetry.dependencies]
+python = "^3.11,<3.13"
+Jinja2 = "^3.1.2"
+shapely = "^2.0.3"
+more-itertools = "^10.2.0"
+rich = "^13.7.1"
+lxml = "^5.1.0"
+fiona = "^1.9.6"
+pygeodesy = "^24.3.9"
+xmltodict = "^0.13.0"
+pydantic = "^2.6.4"
+
+[tool.poetry.scripts]
+mapbuilder = 'mapbuilder.__main__:entry'
+
+[tool.poetry.group.dev.dependencies]
+ruff = "^0.3"
+lxml-stubs = "^0.5"
+
+[tool.ruff]
+line-length = 100
+target-version = "py311"
+preview = true
+
+[tool.ruff.lint]
+select = [
+  "E",  # pycodestyle errors
+  "W",  # pycodestyle warnings
+  "F",  # pyflakes
+  "C90",  # mccabe
+  "I",  # isort
+  "ASYNC",  # flake8-async
+  "B",  # flake8-bugbear
+  "BLE",  # flake8-blind-except
+  "COM",  # flake8-commas
+  "C4",  # flake8-comprehensions
+  "DTZ",  # flake8-datetimez
+  "EM",  # flake8-errmsg
+  "ICN",  # flake8-import-conventions
+  "PYI",  # flake8-pyi
+  "Q",  # flake8-quotes
+  "SIM",  # flake8-simplify
+  "TCH",  # flake8-typechecking
+  "PTH",  # flake8-use-pathlib
+  "UP",  # pyupgrade
+  "RUF",  # ruff-specific
+  "TRY",  # tryceratops
+  "FURB", # refurb
+]
+ignore = ["COM812", "C901"]
+
+[build-system]
+requires = ["poetry-core"]
+build-backend = "poetry.core.masonry.api"
