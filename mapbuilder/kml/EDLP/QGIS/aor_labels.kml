@@ -1,0 +1,18 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<kml xmlns="http://www.opengis.net/kml/2.2">
+<Document id="root_doc">
+<Folder><name>aor_labels</name>
+  <Placemark>
+	<name>LPG_</name>
+      <Point><coordinates>8.61483816281101,51.6124857927858</coordinates></Point>
+  </Placemark>
+  <Placemark>
+	<name>LPT_</name>
+      <Point><coordinates>8.61350195300176,51.6137634862844</coordinates></Point>
+  </Placemark>
+  <Placemark>
+	<name>PADL_</name>
+      <Point><coordinates>8.61291244867416,51.614327163159</coordinates></Point>
+  </Placemark>
+</Folder>
+</Document></kml>

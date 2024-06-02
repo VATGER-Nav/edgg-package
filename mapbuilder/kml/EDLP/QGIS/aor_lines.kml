@@ -1,0 +1,16 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<kml xmlns="http://www.opengis.net/kml/2.2">
+<Document id="root_doc">
+<Folder><name>aor_lines</name>
+  <Placemark>
+	<name>LPT</name>
+	<Style><LineStyle><color>ff0000ff</color></LineStyle><PolyStyle><fill>0</fill></PolyStyle></Style>
+      <LineString><coordinates>8.59930849159187,51.6067245474015 8.63156286603736,51.6198580892525</coordinates></LineString>
+  </Placemark>
+  <Placemark>
+	<name>LPG</name>
+	<Style><LineStyle><color>ff0000ff</color></LineStyle><PolyStyle><fill>0</fill></PolyStyle></Style>
+      <LineString><coordinates>8.6316151507974,51.6198019934366 8.63529611498408,51.6164257621475 8.6029159915641,51.6033445103431 8.5993607759245,51.6066684507202 8.63161515036999,51.6198019925711</coordinates></LineString>
+  </Placemark>
+</Folder>
+</Document></kml>

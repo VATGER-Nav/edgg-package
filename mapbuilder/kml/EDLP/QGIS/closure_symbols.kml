@@ -1,0 +1,22 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<kml xmlns="http://www.opengis.net/kml/2.2">
+<Document id="root_doc">
+<Folder><name>closure_symbols</name>
+  <Placemark>
+	<name>E#1</name>
+      <Point><coordinates>8.60029046419673,51.606781825212</coordinates></Point>
+  </Placemark>
+  <Placemark>
+	<name>E#2</name>
+      <Point><coordinates>8.60326155095129,51.6067956297609</coordinates></Point>
+  </Placemark>
+  <Placemark>
+	<name>E#3</name>
+      <Point><coordinates>8.59997186885896,51.6074214315726</coordinates></Point>
+  </Placemark>
+  <Placemark>
+	<name>E#4</name>
+      <Point><coordinates>8.60132034214906,51.6079643996847</coordinates></Point>
+  </Placemark>
+</Folder>
+</Document></kml>

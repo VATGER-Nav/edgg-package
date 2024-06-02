@@ -1,0 +1,14 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<kml xmlns="http://www.opengis.net/kml/2.2">
+<Document id="root_doc">
+<Folder><name>tora</name>
+  <Placemark>
+	<name>24 B</name>
+      <Point><coordinates>8.61913777677771,51.6147913071442</coordinates></Point>
+  </Placemark>
+  <Placemark>
+	<name>06 C</name>
+      <Point><coordinates>8.60972481436636,51.6109260858806</coordinates></Point>
+  </Placemark>
+</Folder>
+</Document></kml>

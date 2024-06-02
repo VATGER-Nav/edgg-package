@@ -1,0 +1,71 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<kml xmlns="http://www.opengis.net/kml/2.2">
+<Document id="root_doc">
+<Folder><name>layout_stopbars</name>
+  <Placemark>
+	<name>H</name>
+	<Style><LineStyle><color>ff0000ff</color></LineStyle><PolyStyle><fill>0</fill></PolyStyle></Style>
+      <LineString><coordinates>8.60623407006506,51.6075055229917 8.60645054530511,51.6075957033269</coordinates></LineString>
+  </Placemark>
+  <Placemark>
+	<name>Hangars 1</name>
+	<Style><LineStyle><color>ff0000ff</color></LineStyle><PolyStyle><fill>0</fill></PolyStyle></Style>
+      <LineString><coordinates>8.60688839543057,51.6077670733039 8.60695966299931,51.6077950124963</coordinates></LineString>
+  </Placemark>
+  <Placemark>
+	<name>Hangars 2</name>
+	<Style><LineStyle><color>ff0000ff</color></LineStyle><PolyStyle><fill>0</fill></PolyStyle></Style>
+      <LineString><coordinates>8.60852086817705,51.6084257144425 8.60860282588111,51.6084622284974</coordinates></LineString>
+  </Placemark>
+  <Placemark>
+	<name>Hangars 3</name>
+	<Style><LineStyle><color>ff0000ff</color></LineStyle><PolyStyle><fill>0</fill></PolyStyle></Style>
+      <LineString><coordinates>8.60992127590282,51.6090099357965 8.61000768782992,51.6090038501961</coordinates></LineString>
+  </Placemark>
+  <Placemark>
+	<name>Hangars 4</name>
+	<Style><LineStyle><color>ff0000ff</color></LineStyle><PolyStyle><fill>0</fill></PolyStyle></Style>
+      <LineString><coordinates>8.6124762182422,51.6092998307229 8.61264636956257,51.6092942983943 8.61268467588077,51.6092976177915 8.612975982068,51.6093811558754</coordinates></LineString>
+  </Placemark>
+  <Placemark>
+	<name>Hangars 5</name>
+	<Style><LineStyle><color>ff0000ff</color></LineStyle><PolyStyle><fill>0</fill></PolyStyle></Style>
+      <LineString><coordinates>8.61410557303255,51.6093828155709 8.61426681590683,51.6094475436471</coordinates></LineString>
+  </Placemark>
+  <Placemark>
+	<name>F</name>
+	<Style><LineStyle><color>ff0000ff</color></LineStyle><PolyStyle><fill>0</fill></PolyStyle></Style>
+      <LineString><coordinates>8.613929555304,51.6100361314853 8.61402340509342,51.6100215610569</coordinates></LineString>
+  </Placemark>
+  <Placemark>
+	<name>Q</name>
+	<Style><LineStyle><color>ff0000ff</color></LineStyle><PolyStyle><fill>0</fill></PolyStyle></Style>
+      <LineString><coordinates>8.62239949879922,51.6140995647552 8.62248346966344,51.6141333037616</coordinates></LineString>
+  </Placemark>
+  <Placemark>
+	<name>A_2</name>
+	<Style><LineStyle><color>ff0000ff</color></LineStyle><PolyStyle><fill>0</fill></PolyStyle></Style>
+      <LineString><coordinates>8.63031498761747,51.6187978633559 8.63055578641928,51.6189335719754</coordinates></LineString>
+  </Placemark>
+  <Placemark>
+	<name>A1_2</name>
+	<Style><LineStyle><color>ff0000ff</color></LineStyle><PolyStyle><fill>0</fill></PolyStyle></Style>
+      <LineString><coordinates>8.63114358246881,51.6186667546433 8.63145970807528,51.6186452865139</coordinates></LineString>
+  </Placemark>
+  <Placemark>
+	<name>B_2</name>
+	<Style><LineStyle><color>ff0000ff</color></LineStyle><PolyStyle><fill>0</fill></PolyStyle></Style>
+      <LineString><coordinates>8.61955807293795,51.6142793780341 8.61962105108611,51.6144726094204</coordinates></LineString>
+  </Placemark>
+  <Placemark>
+	<name>C_2</name>
+	<Style><LineStyle><color>ff0000ff</color></LineStyle><PolyStyle><fill>0</fill></PolyStyle></Style>
+      <LineString><coordinates>8.60999527334223,51.6105556792314 8.61030275488915,51.610511201576</coordinates></LineString>
+  </Placemark>
+  <Placemark>
+	<name>D_2</name>
+	<Style><LineStyle><color>ff0000ff</color></LineStyle><PolyStyle><fill>0</fill></PolyStyle></Style>
+      <LineString><coordinates>8.60357767655777,51.6078202223447 8.6038388506428,51.6079360243934</coordinates></LineString>
+  </Placemark>
+</Folder>
+</Document></kml>
