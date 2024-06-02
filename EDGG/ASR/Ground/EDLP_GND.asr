@@ -1,8 +1,6 @@
 DisplayTypeName:Ground Radar display
 DisplayTypeNeedRadarContent:0
 DisplayTypeGeoReferenced:1
-SECTORFILE:D:\Github\edgg-package\EDGG-FULL_20240516165347-240501-0001.sct
-SECTORTITLE:EDGG-FULL_20240516165347-240501-0001.sct
 SHOWC:1
 SHOWSB:1
 BELOW:0

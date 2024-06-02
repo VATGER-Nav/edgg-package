@@ -57,19 +57,6 @@ LINETO:-6:6
 SYMBOLDEF:VFR
 POLYGON:-4:3:0:-4:4:3
 
-MAP:EDDF Background:2
-AIRPORT:EDDF
-FOLDER:AUTO
-SCTFILEDATA:REGIONS\EDDF APRON_BACKGROUND
-ACTIVE:1
-
-//MAP:Taxiways
-//AIRPORT:EDDF
-//FOLDER:Airport Layout
-//ACTIVE:1
-
-
-
 // -------------------------------------------------------------
 //                           EDDF PRO 
 // -------------------------------------------------------------
