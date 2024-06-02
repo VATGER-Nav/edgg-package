@@ -1,43 +1,8 @@
 DisplayTypeName:Ground Radar display
 DisplayTypeNeedRadarContent:0
 DisplayTypeGeoReferenced:1
-SECTORFILE:
-SECTORTITLE:
-Free Text:EDLP Gates\1:freetext
-Free Text:EDLP Gates\12A-F:freetext
-Free Text:EDLP Gates\1A:freetext
-Free Text:EDLP Gates\1B:freetext
-Free Text:EDLP Gates\2:freetext
-Free Text:EDLP Gates\2A:freetext
-Free Text:EDLP Gates\3:freetext
-Free Text:EDLP Gates\4:freetext
-Free Text:EDLP Gates\5:freetext
-Free Text:EDLP Gates\6:freetext
-Free Text:EDLP Gates\7:freetext
-Free Text:EDLP Gates\7A:freetext
-Free Text:EDLP Gates\7B:freetext
-Free Text:EDLP Gates\7C:freetext
-Free Text:EDLP Gates\8X/Y:freetext
-Free Text:EDLP Gates\9X/Y:freetext
-Free Text:EDLP Taxiway\A:freetext
-Free Text:EDLP Taxiway\A:freetext
-Free Text:EDLP Taxiway\A:freetext
-Free Text:EDLP Taxiway\A:freetext
-Free Text:EDLP Taxiway\A1:freetext
-Free Text:EDLP Taxiway\B:freetext
-Free Text:EDLP Taxiway\C:freetext
-Free Text:EDLP Taxiway\D:freetext
-Free Text:EDLP Taxiway\D:freetext
-Free Text:EDLP Taxiway\D:freetext
-Free Text:EDLP Taxiway\D:freetext
-Free Text:EDLP Taxiway\F:freetext
-Free Text:EDLP Taxiway\G:freetext
-Free Text:EDLP Taxiway\L:freetext
-Free Text:EDLP Taxiway\M:freetext
-Free Text:EDLP Taxiway\M:freetext
-Geo:EDLP Groundlayout Gates:
-Geo:EDLP Groundlayout Taxilines:
-Regions:EDLP Ground ALTN:polygon
+SECTORFILE:D:\Github\edgg-package\EDGG-FULL_20240516165347-240501-0001.sct
+SECTORTITLE:EDGG-FULL_20240516165347-240501-0001.sct
 SHOWC:1
 SHOWSB:1
 BELOW:0
@@ -51,7 +16,7 @@ DISABLEPANNING:0
 DISABLEZOOMING:0
 DisplayRotation:32.00000
 TAGFAMILY:Phoenix Ground
-WINDOWAREA:51.605656:8.596551:51.618883:8.635669
+WINDOWAREA:51.602352:8.586839:51.623374:8.647962
 PLUGIN:Ground Radar plugin:AirportElevation:699
 PLUGIN:Ground Radar plugin:AirportRadius:3
 PLUGIN:Ground Radar plugin:GroundMode:EDLP
