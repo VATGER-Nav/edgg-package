@@ -167,5 +167,17 @@
     ".github/workflows/source/topsky_edyy_maps/lower_sectors.txt",
 
     ".github/workflows/source/topsky_edyy_maps/topo.txt"
+  ],
+
+  "EDGG/Plugins/Topsky_EDGG/TopSkyCPDLC.txt": [
+    ".github/workflows/source/topsky_cpdlc/TopSkyCPDLC.txt"
+  ],
+
+  "EDGG/Plugins/Topsky_EDUU/TopSkyCPDLC.txt": [
+    ".github/workflows/source/topsky_cpdlc/TopSkyCPDLC.txt"
+  ],
+
+  "EDGG/Plugins/Topsky_EDYY/TopSkyCPDLC.txt": [
+    ".github/workflows/source/topsky_cpdlc/TopSkyCPDLC.txt"
   ]
 }
