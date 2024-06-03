@@ -34,7 +34,7 @@ class KMLParser:
         else:
             self.parse_recursively(self.xml_root["kml"], result)
         self.result = result
-        logging.debug(result)
+        #logging.debug(result)
         if self.root is not None and self.root in self.result:
             self.result = self.result[self.root]
         return self.result

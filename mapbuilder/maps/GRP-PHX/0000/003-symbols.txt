@@ -1,9 +1,0 @@
-// Closure Cross
-SYMBOLDEF:CROSS
-MOVETO:-5:-5
-LINETO:6:6
-MOVETO:5:-5
-LINETO:-6:6
-// VFR Reporting Points
-SYMBOLDEF:VFR
-POLYGON:-4:3:0:-4:4:3

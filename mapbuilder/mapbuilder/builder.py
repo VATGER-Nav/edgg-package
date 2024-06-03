@@ -1,10 +1,12 @@
 import logging
+import os
 from datetime import UTC, datetime
 from pathlib import Path
 
 from .cache import Cache
 from .data.aixm2 import parse_aixm
 from .data.kml import KMLParser
+from .data.raw import RAWParser
 from .data.sidstar import parse_sidstar
 from .dfs import aixm
 from .handlers.jinja import JinjaHandler
@@ -38,10 +40,15 @@ class Builder:
                 self.data[data_source] = parser.parse()
             elif data_source_type == "raw":
                 logging.debug(f"Loading raw source {data_source}...")
-                with (source_dir / config["data"][data_source]["source"]).open(
-                    encoding="iso-8859-1",
-                ) as f:
-                    self.data[data_source] = f.read()
+                if os.path.isfile(source_dir / config["data"][data_source]["source"]):
+                    with (source_dir / config["data"][data_source]["source"]).open(
+                        encoding="iso-8859-1",
+                    ) as f:
+                        self.data[data_source] = f.read()
+                else:
+                    parser = RAWParser(source_dir / config["data"][data_source]["source"])
+                    self.data[data_source] = parser.parse()
+                    #logging.debug(self.data[data_source])
             elif data_source_type == "ese":
                 logging.debug(f"Loading ESE source {data_source}...")
                 self.data[data_source] = {
@@ -51,6 +58,7 @@ class Builder:
                 logging.error(f"Unknown data source type for data source {data_source}")
 
         self.jinja_handler = JinjaHandler(self.data, self.config)
+
 
     def __load_aixm(self, name: str, src: str):
         if src.startswith("aixm:dfs"):

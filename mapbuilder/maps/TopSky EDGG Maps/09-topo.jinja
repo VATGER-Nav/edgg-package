@@ -1,0 +1,22 @@
+//---------------------------------------------------------------
+//                            Topographie
+//---------------------------------------------------------------
+
+MAP:Highway
+FOLDER:TOPO
+COLOR:Highway
+STYLE:Solid:1
+{{ data.rawdata['topographie/highways.txt'] }}
+
+MAP:Rivers
+FOLDER:TOPO
+COLOR:River
+STYLE:Solid:1
+{{ data.rawdata['topographie/rivers.txt'] }}
+
+MAP:German-France Border
+FOLDER:TOPO
+COLOR:DFSGrey
+ASRDATA:EDDS
+ACTIVE:1
+{{ data.rawdata['topographie/german-france-border.txt'] }}

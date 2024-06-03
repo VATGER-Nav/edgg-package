@@ -1,5 +1,9 @@
 [data]
 
+[data.rawdata]
+type = "raw"
+source = "data"
+
 [data.edlp]
 type = "aixm"
 source = "aixm/EDLP_AerodromeMapping_2024-05-16_2024-05-16_snapshot.xml"
@@ -10,13 +14,17 @@ source = "kml/EDLP/layout.kml"
 
 [profiles]
 
-[profiles.TWR]
+[profiles.Default]
 maps = [
-    { map = "GRP-PHX", target = "EDGG/Plugins/GRP/Phoenix/GRpluginMaps.txt" },
-    { map = "GRP-Stands", target = "EDGG/Plugins/GRP/Phoenix/GRpluginStands.txt" }
+    { map = "GRP Phoenix Maps", target = "EDGG/Plugins/GRP/Phoenix/GRpluginMaps.txt" },
+    { map = "GRP Stands", target = "EDGG/Plugins/GRP/Phoenix/GRpluginStands.txt" },
+    { map = "TopSky EDUU Maps", target = "EDGG/Plugins/Topsky_EDUU/TopSkyMaps.txt" },
+    { map = "TopSky EDGG Maps", target = "EDGG/Plugins/Topsky_EDGG/TopSkyMaps.txt" },
+    { map = "TopSky EDYY Maps", target = "EDGG/Plugins/Topsky_EDYY/TopSkyMaps.txt" },
+    { map = "TopSky Phoenix Maps", target = "EDGG/Plugins/Topsky_Phoenix/TopSkyMaps.txt" }
 ]
-dir = "EDGG/Plugins/GRP/Phoenix/"
-aliases = [ "PHX" ]
+dir = "EDGG/Plugins/"
+aliases = [ "Default" ]
 
 #[profiles.TWR_DAY]
 #maps = [

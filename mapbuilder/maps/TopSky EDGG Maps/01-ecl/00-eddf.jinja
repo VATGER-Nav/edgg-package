@@ -1,0 +1,68 @@
+MAP:EDDF RWY
+COLOR:DFSGrey
+STYLE:Solid:2
+ASRDATA:EDDF,EDGG
+ACTIVE:1
+//----- RWY EDDF -----
+LINE:N050.02.03.008:E008.31.33.351:N049.59.54.531:E008.31.34.618 
+LINE:N050.01.39.151:E008.32.03.029:N050.02.24.190:E008.35.11.511 
+LINE:N050.02.13.401:E008.29.49.480:N050.02.44.970:E008.32.01.381 
+LINE:N050.01.57.421:E008.32.04.671:N050.02.42.460:E008.35.13.131
+//RWY ETOU
+LINE:N050.02.49.199:E008.18.39.599:N050.03.09.601:E008.20.23.398
+//RWY EDFE
+LINE:N049.57.37.249:E008.37.54.170:N049.57.40.039:E008.38.52.429
+
+MAP:EDDF ECL 25 + 07
+COLOR:DFSGrey
+STYLE:Solid:1
+ACTIVE:RWY:ARR:EDDF25:DEP:*
+ACTIVE:RWY:ARR:EDDF07:DEP:*
+ACTIVE:RWY:ARR:*:DEP:EDDF25
+ACTIVE:RWY:ARR:*:DEP:EDDF07
+{{ data.rawdata['extended_centerline/eddf/eddf_ecl_25l.txt'] }}
+{{ data.rawdata['extended_centerline/eddf/eddf_ecl_25r.txt'] }}
+{{ data.rawdata['extended_centerline/eddf/eddf_ecl_07l.txt'] }}
+{{ data.rawdata['extended_centerline/eddf/eddf_ecl_07r.txt'] }}
+
+MAP:EDDF ECL 25L
+COLOR:DFSGrey
+STYLE:Solid:1
+ACTIVE:RWY:ARR:EDDF25L:DEP:*
+ACTIVE:RWY:ARR:EDDF07R:DEP:*
+{{ data.rawdata['extended_centerline/eddf/eddf_ecl_25l.txt'] }}
+
+MAP:EDDF ECL 25R
+COLOR:DFSGrey
+STYLE:Solid:1
+ACTIVE:RWY:ARR:EDDF25R:DEP:*
+ACTIVE:RWY:ARR:EDDF07L:DEP:*
+{{ data.rawdata['extended_centerline/eddf/eddf_ecl_25r.txt'] }}
+
+MAP:EDDF ECL 25C
+COLOR:DFSGrey
+STYLE:Solid:1
+ACTIVE:RWY:ARR:EDDF25C:DEP:*
+ACTIVE:RWY:ARR:EDDF07C:DEP:*
+{{ data.rawdata['extended_centerline/eddf/eddf_ecl_25c.txt'] }}
+
+MAP:EDDF ECL 07L
+COLOR:DFSGrey
+STYLE:Solid:1
+ACTIVE:RWY:ARR:EDDF07L:DEP:*
+ACTIVE:RWY:ARR:EDDF25R:DEP:*
+{{ data.rawdata['extended_centerline/eddf/eddf_ecl_07l.txt'] }}
+
+MAP:EDDF ECL 07R
+COLOR:DFSGrey
+STYLE:Solid:1
+ACTIVE:RWY:ARR:EDDF07R:DEP:*
+ACTIVE:RWY:ARR:EDDF25L:DEP:*
+{{ data.rawdata['extended_centerline/eddf/eddf_ecl_07r.txt'] }}
+
+MAP:EDDF ECL 07C
+COLOR:DFSGrey
+STYLE:Solid:1
+ACTIVE:RWY:ARR:EDDF07C:DEP:*
+ACTIVE:RWY:ARR:EDDF25C:DEP:*
+{{ data.rawdata['extended_centerline/eddf/eddf_ecl_07c.txt'] }}

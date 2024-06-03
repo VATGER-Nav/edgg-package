@@ -1,0 +1,18 @@
+MAP:Upper Borders
+FOLDER:Upper
+COLOR:green
+LAYER:2
+STYLE:Solid:1
+{{ data.rawdata['sectors/eduu/eduu_all.txt'] }}
+{{ data.rawdata['sectors/edyy/rhr.txt'] }}
+{{ data.rawdata['sectors/edyy/mns.txt'] }}
+{{ data.rawdata['sectors/edyy/sol.txt'] }}
+{{ data.rawdata['sectors/edyy/lux.txt'] }}
+{{ data.rawdata['sectors/edyy/lnh.txt'] }}
+
+MAP:PADH Upper Borders
+COLOR:DFSGrey
+STYLE:Solid:1
+ACTIVE:ID:MNS,RHR:*:*:*
+ACTIVE:ID:PADH:*:*:RHR,MNS
+{{ data.rawdata['sectors/eduu/eduu_all.txt'] }}
