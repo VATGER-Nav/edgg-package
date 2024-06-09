@@ -40,6 +40,15 @@ COLOR:Holding_CTR
 STYLE:Solid:1
 #import .github/workflows/source/data/military/aar_anchors/virgin.txt
 
+MAP:NLFS
+FOLDER:Military
+COLOR:DFSGrey
+STYLE:Solid:1
+FONTSIZE:=:11
+#import .github/workflows/source/data/military/nlfs/edr150.txt
+#import .github/workflows/source/data/military/nlfs/labels.txt
+#import .github/workflows/source/data/military/nlfs/altitudes.txt
+
 MAP:ETAD 23
 FOLDER:Military
 STYLE:Solid:1
