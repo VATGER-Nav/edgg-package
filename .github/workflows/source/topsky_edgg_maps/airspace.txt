@@ -156,7 +156,6 @@ ACTIVE:RWY:ARR:*:DEP:EDRZ21
 ACTIVE:RWY:ARR:*:DEP:EDRZ03
 #import .github/workflows/source/data/airspace/rmz/edrz_rmz.txt
 
-
 MAP:EDGS RMZ
 FOLDER:Controlzone
 STYLE:DashDot:1
