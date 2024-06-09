@@ -146,6 +146,17 @@ ACTIVE:RWY:ARR:*:DEP:EDRY34
 ACTIVE:RWY:ARR:*:DEP:EDRY16
 #import .github/workflows/source/data/airspace/rmz/edry_rmz.txt
 
+MAP:EDRZ RMZ
+FOLDER:Controlzone
+STYLE:DashDot:1
+COLOR:DFSGrey
+ACTIVE:RWY:ARR:EDRZ21:DEP:*
+ACTIVE:RWY:ARR:EDRZ03:DEP:*
+ACTIVE:RWY:ARR:*:DEP:EDRZ21
+ACTIVE:RWY:ARR:*:DEP:EDRZ03
+#import .github/workflows/source/data/airspace/rmz/edrz_rmz.txt
+
+
 MAP:EDGS RMZ
 FOLDER:Controlzone
 STYLE:DashDot:1
