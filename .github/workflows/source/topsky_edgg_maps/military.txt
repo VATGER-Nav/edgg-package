@@ -2,15 +2,43 @@ MAP:ORBIT NG4
 FOLDER:Military
 COLOR:Holding_CTR
 STYLE:Solid:1
-LAYER:2
 #import .github/workflows/source/data/military/awacs_orbits/NG4.txt
 
 MAP:ORBIT NG7
 FOLDER:Military
 COLOR:Holding_CTR
 STYLE:Solid:1
-LAYER:2
 #import .github/workflows/source/data/military/awacs_orbits/NG7.txt
+
+MAP:ANCHOR Angie
+FOLDER:Military
+COLOR:Holding_CTR
+STYLE:Solid:1
+#import .github/workflows/source/data/military/aar_anchors/angie.txt
+
+MAP:ANCHOR Gretchen Low
+FOLDER:Military
+COLOR:Holding_CTR
+STYLE:Solid:1
+#import .github/workflows/source/data/military/aar_anchors/gretchen_low.txt
+
+MAP:ANCHOR Jojo
+FOLDER:Military
+COLOR:Holding_CTR
+STYLE:Solid:1
+#import .github/workflows/source/data/military/aar_anchors/jojo.txt
+
+MAP:ANCHOR Ute
+FOLDER:Military
+COLOR:Holding_CTR
+STYLE:Solid:1
+#import .github/workflows/source/data/military/aar_anchors/ute.txt
+
+MAP:ANCHOR Virgin
+FOLDER:Military
+COLOR:Holding_CTR
+STYLE:Solid:1
+#import .github/workflows/source/data/military/aar_anchors/virgin.txt
 
 MAP:ETAD 23
 FOLDER:Military
