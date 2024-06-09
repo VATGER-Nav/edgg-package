@@ -59,7 +59,7 @@ ACTIVE:RWY:ARR:EDDS25:DEP:*
 ACTIVE:RWY:ARR:EDDS07:DEP:*
 ACTIVE:RWY:ARR:*:DEP:EDDS25
 ACTIVE:RWY:ARR:*:DEP:EDDS07
-#import .github/workflows/source/data/airspace/airspace_d/edds_cd.txt
+#import .github/workflows/source/data/airspace/airspace_d/edds_d.txt
 
 MAP:ASPD EDDG
 FOLDER:Airspace
