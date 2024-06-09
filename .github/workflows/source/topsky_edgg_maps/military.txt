@@ -16,12 +16,6 @@ COLOR:Holding_CTR
 STYLE:Solid:1
 #import .github/workflows/source/data/military/aar_anchors/angie.txt
 
-MAP:ANCHOR Gretchen Low
-FOLDER:Military
-COLOR:Holding_CTR
-STYLE:Solid:1
-#import .github/workflows/source/data/military/aar_anchors/gretchen_low.txt
-
 MAP:ANCHOR Jojo
 FOLDER:Military
 COLOR:Holding_CTR
