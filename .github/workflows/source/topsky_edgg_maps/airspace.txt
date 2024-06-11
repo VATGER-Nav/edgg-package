@@ -4,6 +4,13 @@ LAYER:+2
 COLOR:Standard
 #import .github/workflows/source/data/airspace/labels.txt
 
+MAP:Airspace ECHO
+FOLDER:Airspace
+LAYER:+1
+STYLE:Solid:1
+COLOR:white
+#import .github/workflows/source/data/airspace/airspace_e/
+
 MAP:ASPC EDDF
 FOLDER:Airspace
 COLOR:DFSGrey
