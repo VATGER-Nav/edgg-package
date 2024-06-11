@@ -24,7 +24,7 @@
 			   {
                "direction": "ANY",
                "max_fl": 230,
-               "destinations": ["EDDM","EDDN","EDM"],
+               "destinations": ["EDDM","EDDN","EDM","EDJA"],
 			   "airways": ["T104"]
             },
 			   {
