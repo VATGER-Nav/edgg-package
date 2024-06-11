@@ -5,6 +5,7 @@
 MAP:Airspace Label
 FOLDER:Airspace
 COLOR:Standard
+LAYER:+4
 ASRDATA:PHOENIX
 #import .github/workflows/source/data/airspace/labels.txt
 
@@ -20,6 +21,7 @@ MAP:Airspace C
 FOLDER:Airspace
 COLOR:Standard
 ACTIVE:1
+LAYER:+2
 STYLE:DOT:1
 ASRDATA:PHOENIX
 #import .github/workflows/source/data/airspace/airspace_c/edds_c.txt
@@ -31,6 +33,7 @@ MAP:Airspace D
 FOLDER:Airspace
 COLOR:Standard
 ACTIVE:1
+LAYER:+1
 STYLE:Solid:1
 ASRDATA:PHOENIX
 #import .github/workflows/source/data/airspace/airspace_d/
@@ -39,6 +42,7 @@ MAP:Airspace E
 FOLDER:Airspace
 COLOR:Distance
 STYLE:DASH:1
+LAYER:+3
 ASRDATA:PHOENIX
 #import .github/workflows/source/data/airspace/airspace_e/
 

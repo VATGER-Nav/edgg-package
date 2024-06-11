@@ -1,12 +1,12 @@
 MAP:Airspace LEVEL
 FOLDER:Airspace
-LAYER:+2
+LAYER:+4
 COLOR:Standard
 #import .github/workflows/source/data/airspace/labels.txt
 
 MAP:Airspace ECHO
 FOLDER:Airspace
-LAYER:+1
+LAYER:+3
 STYLE:Solid:1
 COLOR:white
 #import .github/workflows/source/data/airspace/airspace_e/
