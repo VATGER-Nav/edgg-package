@@ -9,7 +9,7 @@ STYLE:Solid:1
 ASRDATA:PHOENIX
 ACTIVE:RWY:ARR:EDDF25C:DEP:*
 ACTIVE:RWY:ARR:EDDF07C:DEP:*
-#import .github/workflows/source/data/extended_centerline/eddf/eddf_ecl_25c.txt
+#import .github/workflows/source/data/extended_centerline/eddf/eddf_ecl_25c_twr.txt
 
 MAP:EDDF ECL 25L
 FOLDER:EDDF
@@ -18,7 +18,7 @@ STYLE:Solid:1
 ASRDATA:PHOENIX
 ACTIVE:RWY:ARR:EDDF25L:DEP:*
 ACTIVE:RWY:ARR:EDDF07R:DEP:*
-#import .github/workflows/source/data/extended_centerline/eddf/eddf_ecl_25l.txt
+#import .github/workflows/source/data/extended_centerline/eddf/eddf_ecl_25l_twr.txt
 
 MAP:EDDF ECL 25R
 FOLDER:EDDF
@@ -27,7 +27,7 @@ STYLE:Solid:1
 ASRDATA:PHOENIX
 ACTIVE:RWY:ARR:EDDF25R:DEP:*
 ACTIVE:RWY:ARR:EDDF07L:DEP:*
-#import .github/workflows/source/data/extended_centerline/eddf/eddf_ecl_25r.txt
+#import .github/workflows/source/data/extended_centerline/eddf/eddf_ecl_25r_twr.txt
 
 MAP:EDDF ECL 07C
 FOLDER:EDDF
@@ -36,7 +36,7 @@ STYLE:Solid:1
 ASRDATA:PHOENIX
 ACTIVE:RWY:ARR:EDDF25C:DEP:*
 ACTIVE:RWY:ARR:EDDF07C:DEP:*
-#import .github/workflows/source/data/extended_centerline/eddf/eddf_ecl_07c.txt
+#import .github/workflows/source/data/extended_centerline/eddf/eddf_ecl_07c_twr.txt
 
 MAP:EDDF ECL 07R
 FOLDER:EDDF
@@ -45,7 +45,7 @@ STYLE:Solid:1
 ASRDATA:PHOENIX
 ACTIVE:RWY:ARR:EDDF25L:DEP:*
 ACTIVE:RWY:ARR:EDDF07R:DEP:*
-#import .github/workflows/source/data/extended_centerline/eddf/eddf_ecl_07r.txt
+#import .github/workflows/source/data/extended_centerline/eddf/eddf_ecl_07r_twr.txt
 
 MAP:EDDF ECL 07L
 FOLDER:EDDF
@@ -54,7 +54,7 @@ STYLE:Solid:1
 ASRDATA:PHOENIX
 ACTIVE:RWY:ARR:EDDF25R:DEP:*
 ACTIVE:RWY:ARR:EDDF07L:DEP:*
-#import .github/workflows/source/data/extended_centerline/eddf/eddf_ecl_07l.txt
+#import .github/workflows/source/data/extended_centerline/eddf/eddf_ecl_07l_twr.txt
 
 MAP:ECL 13R
 FOLDER:EDDK

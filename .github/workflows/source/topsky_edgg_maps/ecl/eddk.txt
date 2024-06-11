@@ -18,11 +18,11 @@ ACTIVE:RWY:ARR:*:DEP:EDDK24
 MAP:EDDK ECL 13R
 COLOR:DFSGrey
 STYLE:Solid:1
-ACTIVE:RWY:ARR:*:DEP:EDDK13R
+ACTIVE:RWY:ARR:EDDK13R:DEP:*
 #import .github/workflows/source/data/extended_centerline/eddk/eddk_ecl_13r.txt
 
 MAP:EDDK ECL 31L
 COLOR:DFSGrey
 STYLE:Solid:1
-ACTIVE:RWY:ARR:*:DEP:EDDK31L
+ACTIVE:RWY:ARR:EDDK31L:DEP:*
 #import .github/workflows/source/data/extended_centerline/eddk/eddk_ecl_31l.txt
