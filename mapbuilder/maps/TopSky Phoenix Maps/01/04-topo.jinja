@@ -1,0 +1,31 @@
+//---------------------------------------------------------------
+//                            Topographie
+//---------------------------------------------------------------
+
+MAP:Highway
+FOLDER:TOPO
+COLOR:Highway
+STYLE:Solid:1
+{{ data.rawdata['topographie/highways.txt'] }}
+
+MAP:Rivers
+FOLDER:TOPO
+COLOR:River
+STYLE:Solid:1
+{{ data.rawdata['topographie/rivers.txt'] }}
+
+MAP:EDDL Lake
+FOLDER:TOPO
+COLOR:River
+STYLE:Solid:1
+ACTIVE:1
+ASRDATA:PHOENIX
+{{ data.rawdata['topographie/eddl_lake.txt'] }}
+
+MAP:EDDL Bridges
+FOLDER:TOPO
+COLOR:Standard
+STYLE:Solid:1
+ACTIVE:1
+ASRDATA:PHOENIX
+{{ data.rawdata['topographie/eddl_bridges.txt'] }}

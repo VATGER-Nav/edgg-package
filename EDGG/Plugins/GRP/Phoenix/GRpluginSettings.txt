@@ -201,3 +201,6 @@ Airport_Runway_Buffer_LVP=21:200
 
 //List_Outbound=*,2,1131,500
 //List_Inbound=*,2,1203,650
+
+[EDLP]
+Window_APP_Rotation=32.5

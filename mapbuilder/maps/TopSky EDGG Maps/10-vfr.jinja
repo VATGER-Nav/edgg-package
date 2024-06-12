@@ -1,0 +1,37 @@
+//---------------------------------------------------------------
+//                            VFR APP/CTR
+//---------------------------------------------------------------
+
+MAP:FIS
+FOLDER:VFR
+COLOR:blue
+STYLE:Solid:1
+{{ data.rawdata['vfr/fis.txt'] }}
+
+MAP:VFR Reporting Points
+FOLDER:VFR
+COLOR:DFSGrey
+{{ data.rawdata['vfr/vfr_reporting_points.txt'] }}
+{{ data.rawdata['vfr/vfr_reporting_points_label.txt'] }}
+
+MAP:MIL VFR Reporting Points
+FOLDER:VFR
+COLOR:DFSGrey
+{{ data.rawdata['vfr/mil_reporting_points.txt'] }}
+{{ data.rawdata['vfr/mil_reporting_points_label.txt'] }}
+
+MAP:VFR Hospitals
+FOLDER:VFR
+COLOR:DFSGrey
+{{ data.rawdata['vfr/hospitals.txt'] }}
+{{ data.rawdata['vfr/hospitals_label.txt'] }}
+
+MAP:Aerodromes
+FOLDER:VFR
+COLOR:DFSGrey
+{{ data.rawdata['airports/idf_area.txt'] }}
+{{ data.rawdata['airports/idl_area.txt'] }}
+{{ data.rawdata['airports/idr_area.txt'] }}
+{{ data.rawdata['airports/ids_area.txt'] }}
+{{ data.rawdata['airports/idv_area.txt'] }}
+

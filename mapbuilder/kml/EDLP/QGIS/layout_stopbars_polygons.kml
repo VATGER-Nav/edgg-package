@@ -1,0 +1,31 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<kml xmlns="http://www.opengis.net/kml/2.2">
+<Document id="root_doc">
+<Folder><name>layout_stopbars</name>
+  <Placemark>
+	<name>D_1</name>
+	<Style><LineStyle><color>ff0000ff</color></LineStyle><PolyStyle><fill>0</fill></PolyStyle></Style>
+      <Polygon><outerBoundaryIs><LinearRing><coordinates>8.60359249494556,51.6078037339495 8.60385799106037,51.6079187691399 8.60387404431382,51.607905731833 8.60360607846771,51.6077929973168 8.60359249494556,51.6078037339495</coordinates></LinearRing></outerBoundaryIs></Polygon>
+  </Placemark>
+  <Placemark>
+	<name>C_1</name>
+	<Style><LineStyle><color>ff0000ff</color></LineStyle><PolyStyle><fill>0</fill></PolyStyle></Style>
+      <Polygon><outerBoundaryIs><LinearRing><coordinates>8.6099872467155,51.6105292227002 8.61029966772502,51.6104901130172 8.61029596312807,51.6104763095916 8.6099847769842,51.6105135021454 8.6099872467155,51.6105292227002</coordinates></LinearRing></outerBoundaryIs></Polygon>
+  </Placemark>
+  <Placemark>
+	<name>B_1</name>
+	<Style><LineStyle><color>ff0000ff</color></LineStyle><PolyStyle><fill>0</fill></PolyStyle></Style>
+      <Polygon><outerBoundaryIs><LinearRing><coordinates>8.61967725099432,51.6144616280964 8.61970848045426,51.6144563393874 8.61964099758277,51.6142603700436 8.61960896248372,51.6142668566567 8.61967725099432,51.6144616280964</coordinates></LinearRing></outerBoundaryIs></Polygon>
+  </Placemark>
+  <Placemark>
+	<name>A_1</name>
+	<Style><LineStyle><color>ff0000ff</color></LineStyle><PolyStyle><fill>0</fill></PolyStyle></Style>
+      <Polygon><outerBoundaryIs><LinearRing><coordinates>8.6305784159834,51.6189104724946 8.63059653698573,51.6188952362483 8.63035326845263,51.6187656612511 8.63033474546788,51.6187809955896 8.6305784159834,51.6189104724946</coordinates></LinearRing></outerBoundaryIs></Polygon>
+  </Placemark>
+  <Placemark>
+	<name>A1_1</name>
+	<Style><LineStyle><color>ff0000ff</color></LineStyle><PolyStyle><fill>0</fill></PolyStyle></Style>
+      <Polygon><outerBoundaryIs><LinearRing><coordinates>8.63145847320962,51.6186192180574 8.63145847320962,51.6185992833453 8.63111765029015,51.618626885252 8.63112999894665,51.6186460532329 8.63145847320962,51.6186192180574</coordinates></LinearRing></outerBoundaryIs></Polygon>
+  </Placemark>
+</Folder>
+</Document></kml>

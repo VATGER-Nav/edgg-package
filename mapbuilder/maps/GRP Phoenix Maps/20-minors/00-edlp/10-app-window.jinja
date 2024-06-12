@@ -1,0 +1,43 @@
+// ************************* Approach Window ************************
+
+MAP:TMZ:A
+AIRPORT:EDLP
+FOLDER:Approach Window
+STYLE:Dot:1
+COLOR:layout_runway
+{{ data.rawdata['airspace/tmz/edlp_tmz.txt'] }}
+
+MAP:CTR:A
+AIRPORT:EDLP
+FOLDER:Approach Window
+ACTIVE:1
+STYLE:SOLID:1
+COLOR:layout_runway
+{{ data.rawdata['airspace/ctr/edlp.txt'] }}
+
+MAP:Extended Centerlines:A
+AIRPORT:EDLP
+FOLDER:Approach Window
+ACTIVE:1
+STYLE:SOLID:1
+COLOR:layout_runway
+// 24
+{{ ecl_dashes(runways.EDLP['24'], 12) }}
+{{ marker_ticks(runways.EDLP['24'], [4], 0, 0.325) }}
+{{ marker_ticks(runways.EDLP['24'], [7.2], 0.5, 1) }}
+// 06
+{{ ecl_dashes(runways.EDLP['06'], 12) }}
+{{ marker_ticks(runways.EDLP['06'], [4], 0, 0.325) }}
+{{ marker_ticks(runways.EDLP['06'], [7.1], 0.5, 1) }}
+
+MAP:VFR Points:A
+AIRPORT:EDLP
+FOLDER:Approach Window
+COLOR:layout_runway
+SYMBOL:VFR:LP-N:N:10:-7
+SYMBOL:VFR:LP-E:E:10:-7
+SYMBOL:VFR:LP-S:S:10:-7
+SYMBOL:VFR:LP-H:H:10:-7
+SYMBOL:VFR:LP-K:K:10:-7
+SYMBOL:VFR:LP-W1:W1:13:-7
+SYMBOL:VFR:LP-W2:W2:13:-7
