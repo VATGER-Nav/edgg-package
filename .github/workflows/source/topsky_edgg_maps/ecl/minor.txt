@@ -1,4 +1,5 @@
 MAP:EDDG ECL
+FOLDER:ECL
 COLOR:DFSGrey
 STYLE:Solid:1
 ACTIVE:RWY:ARR:EDDG25:DEP:*
@@ -8,6 +9,7 @@ ACTIVE:RWY:ARR:*:DEP:EDDG07
 #import .github/workflows/source/data/extended_centerline/eddg_ecl.txt
 
 MAP:EDDR ECL
+FOLDER:ECL
 COLOR:DFSGrey
 ACTIVE:RWY:ARR:EDDR27:DEP:*
 ACTIVE:RWY:ARR:EDDR09:DEP:*
@@ -16,6 +18,7 @@ ACTIVE:RWY:ARR:*:DEP:EDDR09
 #import .github/workflows/source/data/extended_centerline/eddr_ecl.txt
 
 MAP:EDDS ECL
+FOLDER:ECL
 COLOR:DFSGrey
 STYLE:Solid:1
 ACTIVE:RWY:ARR:EDDS25:DEP:*
@@ -25,6 +28,7 @@ ACTIVE:RWY:ARR:*:DEP:EDDS07
 #import .github/workflows/source/data/extended_centerline/edds_ecl.txt
 
 MAP:EDFH ECL
+FOLDER:ECL
 COLOR:DFSGrey
 ACTIVE:RWY:ARR:EDFH21:DEP:*
 ACTIVE:RWY:ARR:EDFH03:DEP:*
@@ -33,6 +37,7 @@ ACTIVE:RWY:ARR:*:DEP:EDFH03
 #import .github/workflows/source/data/extended_centerline/edfh_ecl.txt
 
 MAP:EDFM ECL
+FOLDER:ECL
 COLOR:DFSGrey
 STYLE:SOLID:1
 ACTIVE:RWY:ARR:EDFM27:DEP:*
@@ -42,6 +47,7 @@ ACTIVE:RWY:ARR:*:DEP:EDFM09
 #import .github/workflows/source/data/extended_centerline/edfm_ecl.txt
 
 MAP:EDFQ ECL
+FOLDER:ECL
 COLOR:DFSGrey
 STYLE:SOLID:1
 ACTIVE:RWY:ARR:EDFQ29:DEP:*
@@ -51,6 +57,7 @@ ACTIVE:RWY:ARR:*:DEP:EDFQ11
 #import .github/workflows/source/data/extended_centerline/edfq_ecl.txt
 
 MAP:EDGS ECL
+FOLDER:ECL
 COLOR:DFSGrey
 STYLE:SOLID:1
 ACTIVE:RWY:ARR:EDGS31:DEP:*
@@ -60,6 +67,7 @@ ACTIVE:RWY:ARR:*:DEP:EDGS13
 #import .github/workflows/source/data/extended_centerline/edgs_ecl.txt
 
 MAP:EDLN ECL
+FOLDER:ECL
 COLOR:DFSGrey
 STYLE:Solid:1
 ACTIVE:RWY:ARR:EDLN13:DEP:*
@@ -69,6 +77,7 @@ ACTIVE:RWY:ARR:*:DEP:EDLN31
 #import .github/workflows/source/data/extended_centerline/edln_ecl.txt
 
 MAP:EDLP ECL
+FOLDER:ECL
 COLOR:DFSGrey
 STYLE:Solid:1
 ACTIVE:RWY:ARR:EDLP24:DEP:*
@@ -78,6 +87,7 @@ ACTIVE:RWY:ARR:*:DEP:EDLP06
 #import .github/workflows/source/data/extended_centerline/edlp_ecl.txt
 
 MAP:EDLV ECL
+FOLDER:ECL
 COLOR:DFSGrey
 STYLE:Solid:1
 ACTIVE:RWY:ARR:EDLV27:DEP:*
@@ -87,6 +97,7 @@ ACTIVE:RWY:ARR:*:DEP:EDLV09
 #import .github/workflows/source/data/extended_centerline/edlv_ecl.txt
 
 MAP:EDLW ECL
+FOLDER:ECL
 COLOR:DFSGrey
 STYLE:Solid:1
 ACTIVE:RWY:ARR:EDLW24:DEP:*
@@ -96,6 +107,7 @@ ACTIVE:RWY:ARR:*:DEP:EDLW06
 #import .github/workflows/source/data/extended_centerline/edlw_ecl.txt
 
 MAP:EDSB ECL
+FOLDER:ECL
 COLOR:DFSGrey
 STYLE:Solid:1
 ACTIVE:RWY:ARR:EDSB03:DEP:*
@@ -105,6 +117,7 @@ ACTIVE:RWY:ARR:*:DEP:EDSB21
 #import .github/workflows/source/data/extended_centerline/edsb_ecl.txt
 
 MAP:EDTL ECL
+FOLDER:ECL
 COLOR:DFSGrey
 STYLE:Solid:1
 ACTIVE:RWY:ARR:EDTL03:DEP:*
@@ -114,6 +127,7 @@ ACTIVE:RWY:ARR:*:DEP:EDTL21
 #import .github/workflows/source/data/extended_centerline/edtl_ecl.txt
 
 MAP:EDTY ECL
+FOLDER:ECL
 COLOR:DFSGrey
 STYLE:SOLID:1
 ACTIVE:RWY:ARR:EDTY10:DEP:*

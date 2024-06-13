@@ -43,6 +43,7 @@
     ".github/workflows/source/grp_phoenix_maps/edds/reduced_runway_separation.txt",
     ".github/workflows/source/grp_phoenix_maps/edds/tora.txt",
     ".github/workflows/source/grp_phoenix_maps/edds/restrictions.txt",
+    ".github/workflows/source/grp_phoenix_maps/edds/closures.txt",
 
     ".github/workflows/source/grp_phoenix_maps/edln/aor.txt",
     ".github/workflows/source/grp_phoenix_maps/edln/closures.txt",
