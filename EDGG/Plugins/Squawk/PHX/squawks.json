@@ -393,6 +393,36 @@
          "code":"7777",
          "message":"TT",
          "color":"#00ff00"
+      },
+      {
+         "code":"6111",
+         "message":"EM",
+         "color":"#00ff00"
+      },
+      {
+         "code":"6106",
+         "message":"EM",
+         "color":"#00ff00"
+      },
+      {
+         "code":"3772",
+         "message":"EM",
+         "color":"#00ff00"
+      },
+      {
+         "code":"6110",
+         "message":"EM",
+         "color":"#00ff00"
+      },
+      {
+         "code":"6107",
+         "message":"EM",
+         "color":"#00ff00"
+      },
+      {
+         "code":"3773",
+         "message":"EM",
+         "color":"#00ff00"
       }
    ]
 }
