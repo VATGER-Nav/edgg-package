@@ -1,5 +1,5 @@
 MAP:EDDK ECL
-FOLDER:ECL
+FOLDER:AUTO
 COLOR:DFSGrey
 STYLE:Solid:1
 ACTIVE:RWY:ARR:EDDK13R:DEP:*
@@ -17,14 +17,14 @@ ACTIVE:RWY:ARR:*:DEP:EDDK24
 #import .github/workflows/source/data/extended_centerline/eddk/eddk_ecl_default.txt
 
 MAP:EDDK ECL 13R
-FOLDER:ECL
+FOLDER:AUTO
 COLOR:DFSGrey
 STYLE:Solid:1
 ACTIVE:RWY:ARR:EDDK13R:DEP:*
 #import .github/workflows/source/data/extended_centerline/eddk/eddk_ecl_13r.txt
 
 MAP:EDDK ECL 31L
-FOLDER:ECL
+FOLDER:AUTO
 COLOR:DFSGrey
 STYLE:Solid:1
 ACTIVE:RWY:ARR:EDDK31L:DEP:*
