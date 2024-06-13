@@ -1,12 +1,4 @@
-MAP:Noervenich Sektor
-ACTIVE:ID:*:*:NOR,DKA:*
-ACTIVE:ID:*:*:NOR,DKAT:*
-ASRDATA:EDGG,EDDK
-COLOR:DFSGrey
-STYLE:Solid:1
-#import .github/workflows/source/data/sectors/edgg/nor.txt
-
-MAP:Bottrop Sektor
+MAP:BOT
 ACTIVE:ID:*:*:DLA,BOT:*
 ACTIVE:ID:*:*:DLA,DLD:*
 ACTIVE:ID:*:*:BOT,DLD:*
