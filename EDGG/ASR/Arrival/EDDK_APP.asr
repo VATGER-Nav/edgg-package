@@ -3,13 +3,13 @@ DisplayTypeNeedRadarContent:1
 DisplayTypeGeoReferenced:1
 SECTORFILE:
 SECTORTITLE:
-ARTCC boundary:AoR APP NOR:
 ARTCC boundary:AoR APP EDDL:
+ARTCC boundary:AoR APP NOR:
 ARTCC boundary:AoR HMM + PADL:
-ARTCC boundary:EDGG BOT:
 ARTCC boundary:EDGG RUD:
 ARTCC boundary:EDGG SIG:
 ARTCC boundary:EDGG TAU:
+ARTCC low boundary:Tower CTR ETNN (HX):
 SHOWC:1
 SHOWSB:0
 BELOW:0
