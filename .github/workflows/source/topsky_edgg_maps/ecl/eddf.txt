@@ -1,5 +1,5 @@
 MAP:EDDF RWY
-FOLDER:ECL
+FOLDER:AUTO
 COLOR:DFSGrey
 STYLE:Solid:2
 ASRDATA:EDDF,EDGG
@@ -15,7 +15,7 @@ LINE:N050.02.49.199:E008.18.39.599:N050.03.09.601:E008.20.23.398
 LINE:N049.57.37.249:E008.37.54.170:N049.57.40.039:E008.38.52.429
 
 MAP:EDDF ECL 25 + 07
-FOLDER:ECL
+FOLDER:AUTO
 COLOR:DFSGrey
 STYLE:Solid:1
 ACTIVE:RWY:ARR:EDDF25:DEP:*
@@ -28,7 +28,7 @@ ACTIVE:RWY:ARR:*:DEP:EDDF07
 #import .github/workflows/source/data/extended_centerline/eddf/eddf_ecl_07r.txt
 
 MAP:EDDF ECL 25L
-FOLDER:ECL
+FOLDER:AUTO
 COLOR:DFSGrey
 STYLE:Solid:1
 ACTIVE:RWY:ARR:EDDF25L:DEP:*
@@ -36,7 +36,7 @@ ACTIVE:RWY:ARR:EDDF07R:DEP:*
 #import .github/workflows/source/data/extended_centerline/eddf/eddf_ecl_25l.txt
 
 MAP:EDDF ECL 25R
-FOLDER:ECL
+FOLDER:AUTO
 COLOR:DFSGrey
 STYLE:Solid:1
 ACTIVE:RWY:ARR:EDDF25R:DEP:*
@@ -44,7 +44,7 @@ ACTIVE:RWY:ARR:EDDF07L:DEP:*
 #import .github/workflows/source/data/extended_centerline/eddf/eddf_ecl_25r.txt
 
 MAP:EDDF ECL 25C
-FOLDER:ECL
+FOLDER:AUTO
 COLOR:DFSGrey
 STYLE:Solid:1
 ACTIVE:RWY:ARR:EDDF25C:DEP:*
@@ -52,7 +52,7 @@ ACTIVE:RWY:ARR:EDDF07C:DEP:*
 #import .github/workflows/source/data/extended_centerline/eddf/eddf_ecl_25c.txt
 
 MAP:EDDF ECL 07L
-FOLDER:ECL
+FOLDER:AUTO
 COLOR:DFSGrey
 STYLE:Solid:1
 ACTIVE:RWY:ARR:EDDF07L:DEP:*
@@ -60,7 +60,7 @@ ACTIVE:RWY:ARR:EDDF25R:DEP:*
 #import .github/workflows/source/data/extended_centerline/eddf/eddf_ecl_07l.txt
 
 MAP:EDDF ECL 07R
-FOLDER:ECL
+FOLDER:AUTO
 COLOR:DFSGrey
 STYLE:Solid:1
 ACTIVE:RWY:ARR:EDDF07R:DEP:*
@@ -68,7 +68,7 @@ ACTIVE:RWY:ARR:EDDF25L:DEP:*
 #import .github/workflows/source/data/extended_centerline/eddf/eddf_ecl_07r.txt
 
 MAP:EDDF ECL 07C
-FOLDER:ECL
+FOLDER:AUTO
 COLOR:DFSGrey
 STYLE:Solid:1
 ACTIVE:RWY:ARR:EDDF07C:DEP:*
