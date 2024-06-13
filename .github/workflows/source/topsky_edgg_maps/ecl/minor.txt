@@ -121,3 +121,12 @@ ACTIVE:RWY:ARR:EDTY28:DEP:*
 ACTIVE:RWY:ARR:*:DEP:EDTY10
 ACTIVE:RWY:ARR:*:DEP:EDTY28
 #import .github/workflows/source/data/extended_centerline/edty_ecl.txt
+
+MAP:EDRZ ECL
+COLOR:DFSGrey
+STYLE:SOLID:1
+ACTIVE:RWY:ARR:EDRZ03:DEP:*
+ACTIVE:RWY:ARR:EDRZ21:DEP:*
+ACTIVE:RWY:ARR:*:DEP:EDRZ03
+ACTIVE:RWY:ARR:*:DEP:EDRZ21
+#import .github/workflows/source/data/extended_centerline/edrz_ecl.txt

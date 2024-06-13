@@ -1,8 +1,15 @@
 MAP:Airspace LEVEL
 FOLDER:Airspace
-LAYER:+2
+LAYER:+4
 COLOR:Standard
 #import .github/workflows/source/data/airspace/labels.txt
+
+MAP:Airspace ECHO
+FOLDER:Airspace
+LAYER:+3
+STYLE:Dot:1
+COLOR:white
+#import .github/workflows/source/data/airspace/airspace_e/
 
 MAP:ASPC EDDF
 FOLDER:Airspace
@@ -22,6 +29,7 @@ ACTIVE:RWY:ARR:*:DEP:EDDF07R
 ACTIVE:RWY:ARR:*:DEP:EDDF07L
 ACTIVE:RWY:ARR:*:DEP:EDDF07C
 #import .github/workflows/source/data/airspace/airspace_c/eddf_c_dashed.txt
+#import .github/workflows/source/data/sectors/edgg/eddf_aor_app.txt
 
 MAP:ASPC EDDL EDDK
 FOLDER:Airspace
@@ -59,7 +67,7 @@ ACTIVE:RWY:ARR:EDDS25:DEP:*
 ACTIVE:RWY:ARR:EDDS07:DEP:*
 ACTIVE:RWY:ARR:*:DEP:EDDS25
 ACTIVE:RWY:ARR:*:DEP:EDDS07
-#import .github/workflows/source/data/airspace/airspace_d/edds_cd.txt
+#import .github/workflows/source/data/airspace/airspace_d/edds_d.txt
 
 MAP:ASPD EDDG
 FOLDER:Airspace
@@ -93,13 +101,31 @@ ACTIVE:RWY:ARR:EDSB21:DEP:*
 ACTIVE:RWY:ARR:*:DEP:EDSB03
 ACTIVE:RWY:ARR:*:DEP:EDSB21
 #import .github/workflows/source/data/airspace/airspace_d/edsb_d.txt
-STYLE:Dash:1
-#import .github/workflows/source/data/airspace/airspace_e/edsb_e.txt
+
+MAP:ASPD EDLW
+FOLDER:Airspace
+COLOR:DFSGrey
+ACTIVE:RWY:ARR:EDLW24:DEP:*
+ACTIVE:RWY:ARR:EDLW06:DEP:*
+ACTIVE:RWY:ARR:*:DEP:EDLW24
+ACTIVE:RWY:ARR:*:DEP:EDLW06
+STYLE:Solid:1
+#import .github/workflows/source/data/airspace/airspace_d/edlw_d.txt
+
+MAP:ASPD EDLV
+FOLDER:Airspace
+COLOR:DFSGrey
+ACTIVE:RWY:ARR:EDLV27:DEP:*
+ACTIVE:RWY:ARR:EDLV09:DEP:*
+ACTIVE:RWY:ARR:*:DEP:EDLV27
+ACTIVE:RWY:ARR:*:DEP:EDLV09
+STYLE:Solid:1
+#import .github/workflows/source/data/airspace/airspace_d/edlv_d.txt
 
 MAP:EDFQ RMZ
 FOLDER:Airspace
 COLOR:DFSGrey
-STYLE:Dash:1
+STYLE:Dot:1
 ACTIVE:RWY:ARR:EDFQ29:DEP:*
 ACTIVE:RWY:ARR:EDFQ11:DEP:*
 ACTIVE:RWY:ARR:*:DEP:EDFQ29
@@ -109,7 +135,7 @@ ACTIVE:RWY:ARR:*:DEP:EDFQ11
 MAP:EDGS RMZ
 FOLDER:Airspace
 COLOR:DFSGrey
-STYLE:Dash:1
+STYLE:Dot:1
 ACTIVE:RWY:ARR:EDGS31:DEP:*
 ACTIVE:RWY:ARR:EDGS13:DEP:*
 ACTIVE:RWY:ARR:*:DEP:EDGS31
@@ -119,7 +145,7 @@ ACTIVE:RWY:ARR:*:DEP:EDGS13
 MAP:EDTY RMZ
 FOLDER:Airspace
 COLOR:DFSGrey
-STYLE:Dash:1
+STYLE:Dot:1
 ACTIVE:RWY:ARR:EDTY28:DEP:*
 ACTIVE:RWY:ARR:EDTY10:DEP:*
 ACTIVE:RWY:ARR:*:DEP:EDTY28
@@ -128,7 +154,7 @@ ACTIVE:RWY:ARR:*:DEP:EDTY10
 
 MAP:EDQG RMZ
 FOLDER:Controlzone
-STYLE:DashDot:1
+STYLE:Dot:1
 COLOR:DFSGrey
 ACTIVE:RWY:ARR:EDQG08:DEP:*
 ACTIVE:RWY:ARR:EDQG26:DEP:*
@@ -138,7 +164,7 @@ ACTIVE:RWY:ARR:*:DEP:EDQG26
 
 MAP:EDRY RMZ
 FOLDER:Controlzone
-STYLE:DashDot:1
+STYLE:Dot:1
 COLOR:DFSGrey
 ACTIVE:RWY:ARR:EDRY34:DEP:*
 ACTIVE:RWY:ARR:EDRY16:DEP:*
@@ -146,9 +172,19 @@ ACTIVE:RWY:ARR:*:DEP:EDRY34
 ACTIVE:RWY:ARR:*:DEP:EDRY16
 #import .github/workflows/source/data/airspace/rmz/edry_rmz.txt
 
+MAP:EDRZ RMZ
+FOLDER:Controlzone
+STYLE:Dot:1
+COLOR:DFSGrey
+ACTIVE:RWY:ARR:EDRZ21:DEP:*
+ACTIVE:RWY:ARR:EDRZ03:DEP:*
+ACTIVE:RWY:ARR:*:DEP:EDRZ21
+ACTIVE:RWY:ARR:*:DEP:EDRZ03
+#import .github/workflows/source/data/airspace/rmz/edrz_rmz.txt
+
 MAP:EDGS RMZ
 FOLDER:Controlzone
-STYLE:DashDot:1
+STYLE:Dot:1
 COLOR:DFSGrey
 ACTIVE:RWY:ARR:EDGS31:DEP:*
 ACTIVE:RWY:ARR:EDGS13:DEP:*
@@ -158,7 +194,7 @@ ACTIVE:RWY:ARR:*:DEP:EDGS13
 
 MAP:EDFQ RMZ 
 FOLDER:Controlzone
-STYLE:DashDot:1
+STYLE:Dot:1
 COLOR:DFSGrey
 ACTIVE:RWY:ARR:EDFQ29:DEP:*
 ACTIVE:RWY:ARR:EDFQ11:DEP:*
@@ -213,4 +249,8 @@ ACTIVE:RWY:ARR:EDLV27:DEP:*
 ACTIVE:RWY:ARR:EDLV09:DEP:*
 ACTIVE:RWY:ARR:*:DEP:EDLV27
 ACTIVE:RWY:ARR:*:DEP:EDLV09
+STYLE:Dash:1
 #import .github/workflows/source/data/airspace/tmz/edlv_tmz.txt
+
+// EM TMZ/RMZ
+#import .github/workflows/source/data/EM/tmz-rmz_edgg.txt

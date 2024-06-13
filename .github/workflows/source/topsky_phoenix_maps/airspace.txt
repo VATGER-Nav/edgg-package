@@ -5,6 +5,7 @@
 MAP:Airspace Label
 FOLDER:Airspace
 COLOR:Standard
+LAYER:+4
 ASRDATA:PHOENIX
 #import .github/workflows/source/data/airspace/labels.txt
 
@@ -20,8 +21,10 @@ MAP:Airspace C
 FOLDER:Airspace
 COLOR:Standard
 ACTIVE:1
+LAYER:+2
 STYLE:DOT:1
 ASRDATA:PHOENIX
+#import .github/workflows/source/data/airspace/airspace_c/edds_c.txt
 #import .github/workflows/source/data/airspace/airspace_c/eddf_c_dashed.txt
 #import .github/workflows/source/data/airspace/airspace_c/eddl_eddk_c_dashed.txt
 #import .github/workflows/source/data/sectors/edgg/eddf_aor_app.txt
@@ -30,15 +33,32 @@ MAP:Airspace D
 FOLDER:Airspace
 COLOR:Standard
 ACTIVE:1
-STYLE:DASH:1
+LAYER:+1
+STYLE:Solid:1
 ASRDATA:PHOENIX
-#import .github/workflows/source/data/airspace/airspace_d/
+#import .github/workflows/source/data/airspace/airspace_d/eddg_d.txt
+#import .github/workflows/source/data/airspace/airspace_d/edds_d.txt
+#import .github/workflows/source/data/airspace/airspace_d/edfh_d.txt
+#import .github/workflows/source/data/airspace/airspace_d/edlv_d.txt
+#import .github/workflows/source/data/airspace/airspace_d/edlw_d.txt
+#import .github/workflows/source/data/airspace/airspace_d/edsb_d.txt
+
+MAP:Airspace E
+FOLDER:Airspace
+COLOR:Distance
+STYLE:DASH:1
+LAYER:+3
+ASRDATA:PHOENIX
+#import .github/workflows/source/data/airspace/airspace_e/
 
 MAP:TMZ/RMZ
 FOLDER:Airspace
 COLOR:Standard
 ACTIVE:1
-STYLE:DOT:1
+STYLE:DASH:1
 ASRDATA:PHOENIX
 #import .github/workflows/source/data/airspace/tmz/
 #import .github/workflows/source/data/airspace/rmz/
+
+// EM TMZ/RMZ
+#import .github/workflows/source/data/EM/tmz-rmz_phoenix.txt
