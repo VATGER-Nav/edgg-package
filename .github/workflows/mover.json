@@ -19,6 +19,7 @@
     ".github/workflows/source/grp_phoenix_maps/eddf/reduced_runway_separation.txt",
     ".github/workflows/source/grp_phoenix_maps/eddf/app_window.txt",
     ".github/workflows/source/grp_phoenix_maps/eddf/eddf_pro.txt",
+	".github/workflows/source/grp_phoenix_maps/eddf/vsid_areas",
 
     ".github/workflows/source/grp_phoenix_maps/eddl/app_window.txt",
     ".github/workflows/source/grp_phoenix_maps/eddl/eddl_a380_taxi_routing.txt",
