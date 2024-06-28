@@ -1255,7 +1255,7 @@ COLOR:green
 // Headline
 FONTSIZE:=:20
 FONTSTYLE:700:0:0:0
-TEXT:N050.03.09.954:E008.33.44.734:Restriction Maps for A340-600, A350-1000, B777-300 and B777-300ER, all applicable for A388/B748
+TEXT:N050.03.09.954:E008.33.44.734:max. aircraft code C allowed (wingspan max. 36 m)
 // Font-Reset
 FONTSIZE:0
 FONTSTYLE:0
