@@ -1,6 +1,7 @@
 {
   "EDGG/Plugins/GRP/Phoenix/GRpluginMaps.txt": [
     ".github/workflows/source/grp_phoenix_maps/colors.txt",
+	".github/workflows/source/grp_phoenix_maps/symbols.txt",
     ".github/workflows/source/grp_phoenix_maps/sct-file-path.txt",
 
     ".github/workflows/source/grp_phoenix_maps/eddf/background.txt",
@@ -55,6 +56,14 @@
     ".github/workflows/source/grp_phoenix_maps/edfh.txt",
 
     ".github/workflows/source/grp_phoenix_maps/edtl.txt"
+
+    ".github/workflows/source/grp_phoenix_maps/edlp.txt",
+
+    ".github/workflows/source/grp_phoenix_maps/edlw.txt",
+
+    ".github/workflows/source/grp_phoenix_maps/edln.txt",
+
+    ".github/workflows/source/grp_phoenix_maps/edlv.txt"
   ],
 
   "EDGG/Plugins/GRP/Phoenix/GRpluginStands.txt": [

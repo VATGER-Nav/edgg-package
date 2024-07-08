@@ -1,4 +1,4 @@
-// last change: 06.05.2024 by PH
+// last change: 08.07.2024 by SS
 
 Equip_ProMode=0
 RawVideo=1
@@ -201,3 +201,23 @@ Airport_Runway_Buffer_LVP=21:200
 
 //List_Outbound=*,2,1131,500
 //List_Inbound=*,2,1203,650
+
+[EDLP]
+Window_APP_Rotation=32.5
+
+[EDLW]
+Window_APP_Rotation=28.7
+Airport_Runway_Area_LVP=24:90
+Airport_Runway_Area_LVP=06:90
+Airport_Runway_Buffer_LVP=24:150
+Airport_Runway_Buffer_LVP=06:150
+
+[EDLN]
+Window_APP_Rotation=322
+
+[EDLV]
+Window_APP_Rotation=358
+Airport_Runway_Area_LVP=27:90
+Airport_Runway_Area_LVP=09:90
+Airport_Runway_Buffer_LVP=27:150
+Airport_Runway_Buffer_LVP=09:150

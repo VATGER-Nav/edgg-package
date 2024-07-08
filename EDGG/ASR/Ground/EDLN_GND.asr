@@ -1,35 +1,8 @@
 DisplayTypeName:Ground Radar display
 DisplayTypeNeedRadarContent:0
 DisplayTypeGeoReferenced:1
-Free Text:EDLN Groundlayout\13:freetext
-Free Text:EDLN Groundlayout\31:freetext
-Free Text:EDLN Groundlayout\A:freetext
-Free Text:EDLN Groundlayout\A:freetext
-Free Text:EDLN Groundlayout\A1:freetext
-Free Text:EDLN Groundlayout\A2:freetext
-Free Text:EDLN Groundlayout\A3:freetext
-Free Text:EDLN Groundlayout\A4:freetext
-Free Text:EDLN Groundlayout\A5:freetext
-Free Text:EDLN Groundlayout\A6:freetext
-Free Text:EDLN Groundlayout\B:freetext
-Free Text:EDLN Groundlayout\C:freetext
-Free Text:EDLN Groundlayout\Commercial Area:freetext
-Free Text:EDLN Groundlayout\D:freetext
-Free Text:EDLN Groundlayout\E:freetext
-Free Text:EDLN Groundlayout\F:freetext
-Free Text:EDLN Groundlayout\Flight Academy:freetext
-Free Text:EDLN Groundlayout\Fuel Station:freetext
-Free Text:EDLN Groundlayout\Hangar 2:freetext
-Free Text:EDLN Groundlayout\Hangar 3:freetext
-Free Text:EDLN Groundlayout\Hangar 4:freetext
-Free Text:EDLN Groundlayout\Hangar 5:freetext
-Free Text:EDLN Groundlayout\Hangar 6:freetext
-Free Text:EDLN Groundlayout\Hangar 7:freetext
-Free Text:EDLN Groundlayout\Maintenance:freetext
-Free Text:EDLN Groundlayout\Run-up Area:freetext
-Free Text:EDLN Groundlayout\Terminal:freetext
-Geo:EDLN Groundlayout:
-Regions:EDLN Groundlayout:polygon
+SECTORFILE:
+SECTORTITLE:
 SHOWC:1
 SHOWSB:0
 BELOW:0
@@ -43,7 +16,7 @@ DISABLEPANNING:0
 DISABLEZOOMING:0
 DisplayRotation:322.00000
 TAGFAMILY:Phoenix Ground
-WINDOWAREA:51.224407:6.486869:51.235300:6.518829
+WINDOWAREA:51.224272:6.480963:51.238012:6.520913
 PLUGIN:Ground Radar plugin:AirportElevation:147
 PLUGIN:Ground Radar plugin:AirportRadius:3
 PLUGIN:Ground Radar plugin:GroundMode:EDLN
