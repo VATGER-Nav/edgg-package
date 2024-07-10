@@ -77,7 +77,7 @@ TAGITEM:3::0:0:100:101:IASsure:0:1:IASsure:IASsure:1
 TAGITEM:79::0:1:7:99:TopSky plugin:0:1::TopSky plugin:1
 TAGITEM:2::0:1:1:0:Ground Radar plugin:0:1:Ground Radar plugin::1
 TAGITEM:0::0:0:0:0::0:1:::1
-TAGITEM:272::0:0:17:0:TopSky plugin:0:1:::1
+TAGITEM:641::0:0:17:0:vSID:0:1:::1
 TAGITEM:164::0:1:19:1:TopSky plugin:0:1::Ground Radar plugin:1
 TAGITEM:641::0:1:650:0:VCH:0:1:VCH::1
 TAGTYPE:3:0:0
@@ -2320,7 +2320,7 @@ TAGITEM:0::0:0:0:0::0:1:::1
 TAGITEM:15::0:0:12:39:TopSky plugin:0:1:TopSky plugin:TopSky plugin:1
 TAGITEM:67::0:0:16:0:TopSky plugin:0:1:TopSky plugin::1
 TAGITEM:131::0:0:16:0:TopSky plugin:0:1:TopSky plugin::1
-TAGITEM:57::0:1:16:0:TopSky plugin:0:1:TopSky plugin::1
+TAGITEM:57::0:1:16:134:TopSky plugin:0:1:TopSky plugin:TopSky plugin:1
 TAGITEM:51::0:1:139:16:TopSky plugin:0:1:TopSky plugin:TopSky plugin:1
 TAGITEM:44::0:1:45:99:TopSky plugin:0:1:TopSky plugin:TopSky plugin:1
 TAGITEM:164::0:1:19:50:TopSky plugin:0:1::TopSky plugin:1
