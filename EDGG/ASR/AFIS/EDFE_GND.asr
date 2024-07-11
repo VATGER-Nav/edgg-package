@@ -1,0 +1,50 @@
+DisplayTypeName:Ground Radar display
+DisplayTypeNeedRadarContent:0
+DisplayTypeGeoReferenced:1
+SECTORFILE:
+SECTORTITLE:
+Free Text:EDFE TAXIWAYS\08:freetext
+Free Text:EDFE TAXIWAYS\26:freetext
+Free Text:EDFE TAXIWAYS\A:freetext
+Free Text:EDFE TAXIWAYS\A:freetext
+Free Text:EDFE TAXIWAYS\A:freetext
+Free Text:EDFE TAXIWAYS\A:freetext
+Free Text:EDFE TAXIWAYS\A:freetext
+Free Text:EDFE TAXIWAYS\A:freetext
+Free Text:EDFE TAXIWAYS\A:freetext
+Free Text:EDFE TAXIWAYS\A:freetext
+Free Text:EDFE TAXIWAYS\B:freetext
+Free Text:EDFE TAXIWAYS\C:freetext
+Free Text:EDFE TAXIWAYS\C:freetext
+Free Text:EDFE TAXIWAYS\C:freetext
+Free Text:EDFE TAXIWAYS\D:freetext
+Free Text:EDFE TAXIWAYS\E:freetext
+Free Text:EDFE TAXIWAYS\F:freetext
+Free Text:EDFE TAXIWAYS\G:freetext
+Geo:EDFE Groundlayout Details:
+Geo:EDFE Groundlayout Highway:
+Geo:EDFE Groundlayout Stands:
+Geo:EDFE Groundlayout Taxilines:
+Geo:EDFE Groundlayout Taxiwayoutlines:
+Regions:EDFE Buildings:polygon
+Regions:EDFE Holdshorts:polygon
+Regions:EDFE Runwaymarkings:polygon
+SHOWC:1
+SHOWSB:0
+BELOW:0
+ABOVE:10000
+LEADER:-1
+SHOWLEADER:0
+TURNLEADER:0
+HISTORY_DOTS:0
+SIMULATION_MODE:2
+DISABLEPANNING:0
+DISABLEZOOMING:0
+DisplayRotation:4.20000
+TAGFAMILY:Phoenix Ground
+WINDOWAREA:49.956873:8.624438:49.969076:8.659920
+PLUGIN:Ground Radar plugin:AirportElevation:1276
+PLUGIN:Ground Radar plugin:AirportRadius:3
+PLUGIN:Ground Radar plugin:GroundMode:EDFE
+PLUGIN:Ground Radar plugin:ShowMapData:EDFE_GND
+PLUGIN:TopSky plugin:ShowMapData:NONE
