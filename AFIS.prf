@@ -1,6 +1,7 @@
 Settings	Settingsfile	\EDGG\Settings\TWR\TWR_General.txt
 Settings	SettingsfileSYMBOLOGY	\EDGG\Settings\TWR\TWR_Symbology.txt
 Settings	SettingsfileVOICE	\EDGG\Settings\VoiceChannels.txt
+Settings	SettingsfilePROFILE	\EDGG\Settings\ALL\AFIS_Profile.txt
 Settings	SettingsfileTAGS	\EDGG\Settings\ALL\Tags.txt
 Settings	SettingsfileSIL	\EDGG\Settings\TWR\TWR_SectorInboundList.txt
 Settings	SettingsfileSEL	\EDGG\Settings\TWR\TWR_SectorExitList.txt
