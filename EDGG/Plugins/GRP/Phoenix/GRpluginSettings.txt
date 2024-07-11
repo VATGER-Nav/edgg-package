@@ -110,7 +110,7 @@ System_OSM=1
 System_CVM=1
 System_ECM=1
 System_APM=1
-System_RIM=0
+System_RIM=1
 System_RVM=1
 System_SRM=1
 
@@ -186,6 +186,11 @@ Airport_Runway_NotATYP=25R:A388,B741,B742,B743,B744,B748,MD11,DC10,A124,L101,A12
 Airport_Runway_Closed_Arr=18
 Airport_Runway_Closed_Dep=25R
 Airport_Runway_Closed_Dep=07L
+
+System_RIM=0
+
+[EDDK]
+System_RIM=0
 
 [EDDS]
 Airport_Runway_Buffer_LVP=25:200

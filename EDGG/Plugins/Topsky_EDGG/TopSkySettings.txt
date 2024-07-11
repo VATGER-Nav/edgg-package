@@ -319,6 +319,12 @@ Color_Unknown=239,224,42
 Color_Redundant=110,110,110
 Color_Coordination=15,120,200
 
+RDF_Mode=1
+RDF_Floor=1400
+RDF_Accuracy=3
+
+Label_ADES_Default=1111
+
 [_APP]
 MTCD=0
 AIW=0
