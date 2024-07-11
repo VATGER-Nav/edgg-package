@@ -1,0 +1,27 @@
+DisplayTypeName:Standard ES radar screen
+DisplayTypeNeedRadarContent:1
+DisplayTypeGeoReferenced:1
+SECTORFILE:
+SECTORTITLE:
+ARTCC low boundary:Centerlines EDGS 31:
+ARTCC low boundary:RMZ EDGS:
+Geo:EDZZ Landmark Highway Germany:
+Geo:EDZZ Landmark River Germany:
+VORs:SLD:frequency
+VORs:SLD:name
+VORs:SLD:symbol
+SHOWC:1
+SHOWSB:0
+BELOW:0
+ABOVE:10000
+LEADER:3
+SHOWLEADER:0
+TURNLEADER:0
+HISTORY_DOTS:0
+SIMULATION_MODE:2
+DISABLEPANNING:0
+DISABLEZOOMING:0
+DisplayRotation:0.00000
+TAGFAMILY:Phoenix Tower
+WINDOWAREA:50.531997:7.551797:50.930563:8.710631
+PLUGIN:TopSky plugin:ShowMapData:EDGS,PHOENIX

@@ -1,0 +1,30 @@
+DisplayTypeName:Standard ES radar screen
+DisplayTypeNeedRadarContent:1
+DisplayTypeGeoReferenced:1
+SECTORFILE:
+SECTORTITLE:
+Airports:EDTX:name
+Airports:EDTX:symbol
+ARTCC low boundary:Centerlines EDTY 10:
+ARTCC low boundary:Centerlines EDTY 28:
+ARTCC low boundary:RMZ EDTY RMZ:
+Geo:EDZZ Landmark Highway Germany:
+Geo:EDZZ Landmark River Germany:
+VORs:SHD:frequency
+VORs:SHD:name
+VORs:SHD:symbol
+SHOWC:1
+SHOWSB:0
+BELOW:0
+ABOVE:10000
+LEADER:3
+SHOWLEADER:0
+TURNLEADER:0
+HISTORY_DOTS:0
+SIMULATION_MODE:2
+DISABLEPANNING:0
+DISABLEZOOMING:0
+DisplayRotation:0.00000
+TAGFAMILY:Phoenix Tower
+WINDOWAREA:48.942699:9.272777:49.341265:10.431612
+PLUGIN:TopSky plugin:ShowMapData:EDTY,PHOENIX

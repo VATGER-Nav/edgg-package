@@ -1,0 +1,529 @@
+DisplayTypeName:Standard ES radar screen
+DisplayTypeNeedRadarContent:1
+DisplayTypeGeoReferenced:1
+SECTORFILE:
+SECTORTITLE:
+Airports:EDEH:name
+Airports:EDEH:symbol
+Airports:EDEL:name
+Airports:EDEL:symbol
+Airports:EDEN:name
+Airports:EDEN:symbol
+Airports:EDEP:name
+Airports:EDEP:symbol
+Airports:EDER:name
+Airports:EDER:symbol
+Airports:EDEW:name
+Airports:EDEW:symbol
+Airports:EDFA:name
+Airports:EDFA:symbol
+Airports:EDFC:name
+Airports:EDFC:symbol
+Airports:EDFD:name
+Airports:EDFD:symbol
+Airports:EDFG:name
+Airports:EDFG:symbol
+Airports:EDFI:name
+Airports:EDFI:symbol
+Airports:EDFJ:name
+Airports:EDFJ:symbol
+Airports:EDFK:name
+Airports:EDFK:symbol
+Airports:EDFL:name
+Airports:EDFL:symbol
+Airports:EDFN:name
+Airports:EDFN:symbol
+Airports:EDFO:name
+Airports:EDFO:symbol
+Airports:EDFP:name
+Airports:EDFP:symbol
+Airports:EDFR:name
+Airports:EDFR:symbol
+Airports:EDFS:name
+Airports:EDFS:symbol
+Airports:EDFT:name
+Airports:EDFT:symbol
+Airports:EDFU:name
+Airports:EDFU:symbol
+Airports:EDFX:name
+Airports:EDFX:symbol
+Airports:EDGA:name
+Airports:EDGA:symbol
+Airports:EDGB:name
+Airports:EDGB:symbol
+Airports:EDGE:name
+Airports:EDGE:symbol
+Airports:EDGF:name
+Airports:EDGF:symbol
+Airports:EDGI:name
+Airports:EDGI:symbol
+Airports:EDGJ:name
+Airports:EDGJ:symbol
+Airports:EDGK:name
+Airports:EDGK:symbol
+Airports:EDGM:name
+Airports:EDGM:symbol
+Airports:EDGP:name
+Airports:EDGP:symbol
+Airports:EDGQ:name
+Airports:EDGQ:symbol
+Airports:EDGR:name
+Airports:EDGR:symbol
+Airports:EDGT:name
+Airports:EDGT:symbol
+Airports:EDGU:name
+Airports:EDGU:symbol
+Airports:EDGW:name
+Airports:EDGW:symbol
+Airports:EDGX:name
+Airports:EDGX:symbol
+Airports:EDGZ:name
+Airports:EDGZ:symbol
+Airports:EDKD:name
+Airports:EDKD:symbol
+Airports:EDKH:name
+Airports:EDKH:symbol
+Airports:EDKI:name
+Airports:EDKI:symbol
+Airports:EDKO:name
+Airports:EDKO:symbol
+Airports:EDKU:name
+Airports:EDKU:symbol
+Airports:EDKV:name
+Airports:EDKV:symbol
+Airports:EDKW:name
+Airports:EDKW:symbol
+Airports:EDLR:name
+Airports:EDLR:symbol
+Airports:EDLS:name
+Airports:EDLS:symbol
+Airports:EDLU:name
+Airports:EDLU:symbol
+Airports:EDLX:name
+Airports:EDLX:symbol
+Airports:EDLY:name
+Airports:EDLY:symbol
+Airports:EDRA:name
+Airports:EDRA:symbol
+Airports:EDRB:name
+Airports:EDRB:symbol
+Airports:EDRD:name
+Airports:EDRD:symbol
+Airports:EDRE:name
+Airports:EDRE:symbol
+Airports:EDRF:name
+Airports:EDRF:symbol
+Airports:EDRG:name
+Airports:EDRG:symbol
+Airports:EDRH:name
+Airports:EDRH:symbol
+Airports:EDRI:name
+Airports:EDRI:symbol
+Airports:EDRJ:name
+Airports:EDRJ:symbol
+Airports:EDRL:name
+Airports:EDRL:symbol
+Airports:EDRM:name
+Airports:EDRM:symbol
+Airports:EDRN:name
+Airports:EDRN:symbol
+Airports:EDRO:name
+Airports:EDRO:symbol
+Airports:EDRP:name
+Airports:EDRP:symbol
+Airports:EDRS:name
+Airports:EDRS:symbol
+Airports:EDRT:name
+Airports:EDRT:symbol
+Airports:EDRV:name
+Airports:EDRV:symbol
+Airports:EDRW:name
+Airports:EDRW:symbol
+Airports:EDRY:name
+Airports:EDRY:symbol
+Airports:EDSA:name
+Airports:EDSA:symbol
+Airports:EDSE:name
+Airports:EDSE:symbol
+Airports:EDSG:name
+Airports:EDSG:symbol
+Airports:EDSH:name
+Airports:EDSH:symbol
+Airports:EDSI:name
+Airports:EDSI:symbol
+Airports:EDSK:name
+Airports:EDSK:symbol
+Airports:EDSL:name
+Airports:EDSL:symbol
+Airports:EDSN:name
+Airports:EDSN:symbol
+Airports:EDSR:name
+Airports:EDSR:symbol
+Airports:EDST:name
+Airports:EDST:symbol
+Airports:EDSV:name
+Airports:EDSV:symbol
+Airports:EDSW:name
+Airports:EDSW:symbol
+Airports:EDSZ:name
+Airports:EDSZ:symbol
+Airports:EDTB:name
+Airports:EDTB:symbol
+Airports:EDTC:name
+Airports:EDTC:symbol
+Airports:EDTE:name
+Airports:EDTE:symbol
+Airports:EDTF:name
+Airports:EDTF:symbol
+Airports:EDTG:name
+Airports:EDTG:symbol
+Airports:EDTK:name
+Airports:EDTK:symbol
+Airports:EDTN:name
+Airports:EDTN:symbol
+Airports:EDTO:name
+Airports:EDTO:symbol
+Airports:EDTP:name
+Airports:EDTP:symbol
+Airports:EDTR:name
+Airports:EDTR:symbol
+Airports:EDTS:name
+Airports:EDTS:symbol
+Airports:EDTU:name
+Airports:EDTU:symbol
+Airports:EDTW:name
+Airports:EDTW:symbol
+Airports:EDTZ:name
+Airports:EDTZ:symbol
+ARTCC boundary:FIR border EDMM:
+ARTCC boundary:FIR border EDWW FIR EDWW:
+ARTCC boundary:FIR border EHAA:
+ARTCC boundary:FIR border LFEE LFEE FIR:
+ARTCC boundary:FIR border LSAS:
+ARTCC low boundary:Tower CTR EDLR:
+ARTCC low boundary:Tower CTR EDTO (HX):
+Geo:EDZZ Landmark Highway Germany:
+Geo:EDZZ Landmark River Germany:
+Runways:EDEH 04-22:centerline
+Runways:EDEH 04-22:extended centerline 1
+Runways:EDEH 04-22:extended centerline 2
+Runways:EDEH 04-22:name
+Runways:EDEL 01-19:centerline
+Runways:EDEL 01-19:extended centerline 1
+Runways:EDEL 01-19:extended centerline 2
+Runways:EDEL 01-19:name
+Runways:EDEN 18-36:centerline
+Runways:EDEN 18-36:extended centerline 1
+Runways:EDEN 18-36:extended centerline 2
+Runways:EDEN 18-36:name
+Runways:EDEP 15L-33R:centerline
+Runways:EDEP 15L-33R:extended centerline 1
+Runways:EDEP 15L-33R:extended centerline 2
+Runways:EDEP 15L-33R:name
+Runways:EDEP 15R-33L:centerline
+Runways:EDEP 15R-33L:extended centerline 1
+Runways:EDEP 15R-33L:extended centerline 2
+Runways:EDEP 15R-33L:name
+Runways:EDER 06-24:centerline
+Runways:EDER 06-24:extended centerline 1
+Runways:EDER 06-24:extended centerline 2
+Runways:EDER 06-24:name
+Runways:EDEW 06-24:centerline
+Runways:EDEW 06-24:extended centerline 1
+Runways:EDEW 06-24:extended centerline 2
+Runways:EDEW 06-24:name
+Runways:EDFA 06-24:centerline
+Runways:EDFA 06-24:extended centerline 1
+Runways:EDFA 06-24:extended centerline 2
+Runways:EDFA 06-24:name
+Runways:EDFC 08-26:centerline
+Runways:EDFC 08-26:extended centerline 1
+Runways:EDFC 08-26:extended centerline 2
+Runways:EDFC 08-26:name
+Runways:EDFD 13-31:centerline
+Runways:EDFD 13-31:extended centerline 1
+Runways:EDFD 13-31:extended centerline 2
+Runways:EDFD 13-31:name
+Runways:EDFG 07-25:centerline
+Runways:EDFG 07-25:extended centerline 1
+Runways:EDFG 07-25:extended centerline 2
+Runways:EDFG 07-25:name
+Runways:EDFJ 09-27:centerline
+Runways:EDFJ 09-27:extended centerline 1
+Runways:EDFJ 09-27:extended centerline 2
+Runways:EDFJ 09-27:name
+Runways:EDFK 17-35:centerline
+Runways:EDFK 17-35:extended centerline 1
+Runways:EDFK 17-35:extended centerline 2
+Runways:EDFK 17-35:name
+Runways:EDFL 07-25:centerline
+Runways:EDFL 07-25:extended centerline 1
+Runways:EDFL 07-25:extended centerline 2
+Runways:EDFL 07-25:name
+Runways:EDFN 03-21:centerline
+Runways:EDFN 03-21:extended centerline 1
+Runways:EDFN 03-21:extended centerline 2
+Runways:EDFN 03-21:name
+Runways:EDFO 08-26:centerline
+Runways:EDFO 08-26:extended centerline 1
+Runways:EDFO 08-26:extended centerline 2
+Runways:EDFO 08-26:name
+Runways:EDFR 03-21:centerline
+Runways:EDFR 03-21:extended centerline 1
+Runways:EDFR 03-21:extended centerline 2
+Runways:EDFR 03-21:name
+Runways:EDFS 10-28:centerline
+Runways:EDFS 10-28:extended centerline 1
+Runways:EDFS 10-28:extended centerline 2
+Runways:EDFS 10-28:name
+Runways:EDFT 06-24:centerline
+Runways:EDFT 06-24:extended centerline 1
+Runways:EDFT 06-24:extended centerline 2
+Runways:EDFT 06-24:name
+Runways:EDFU 05-23:centerline
+Runways:EDFU 05-23:extended centerline 1
+Runways:EDFU 05-23:extended centerline 2
+Runways:EDFU 05-23:name
+Runways:EDFX 14-32:centerline
+Runways:EDFX 14-32:extended centerline 1
+Runways:EDFX 14-32:extended centerline 2
+Runways:EDFX 14-32:name
+Runways:EDGA 03-21:centerline
+Runways:EDGA 03-21:extended centerline 1
+Runways:EDGA 03-21:extended centerline 2
+Runways:EDGA 03-21:name
+Runways:EDGB 07-25:centerline
+Runways:EDGB 07-25:extended centerline 1
+Runways:EDGB 07-25:extended centerline 2
+Runways:EDGB 07-25:name
+Runways:EDGE 10-28:centerline
+Runways:EDGE 10-28:extended centerline 1
+Runways:EDGE 10-28:extended centerline 2
+Runways:EDGE 10-28:name
+Runways:EDGF 08-26:centerline
+Runways:EDGF 08-26:extended centerline 1
+Runways:EDGF 08-26:extended centerline 2
+Runways:EDGF 08-26:name
+Runways:EDGI 07-25:centerline
+Runways:EDGI 07-25:extended centerline 1
+Runways:EDGI 07-25:extended centerline 2
+Runways:EDGI 07-25:name
+Runways:EDGK 03-21:centerline
+Runways:EDGK 03-21:extended centerline 1
+Runways:EDGK 03-21:extended centerline 2
+Runways:EDGK 03-21:name
+Runways:EDGM 15-33:centerline
+Runways:EDGM 15-33:extended centerline 1
+Runways:EDGM 15-33:extended centerline 2
+Runways:EDGM 15-33:name
+Runways:EDGQ 09-27:centerline
+Runways:EDGQ 09-27:extended centerline 1
+Runways:EDGQ 09-27:extended centerline 2
+Runways:EDGQ 09-27:name
+Runways:EDGR 04-22:centerline
+Runways:EDGR 04-22:extended centerline 1
+Runways:EDGR 04-22:extended centerline 2
+Runways:EDGR 04-22:name
+Runways:EDGT 10-28:centerline
+Runways:EDGT 10-28:extended centerline 1
+Runways:EDGT 10-28:extended centerline 2
+Runways:EDGT 10-28:name
+Runways:EDGU 08-26:centerline
+Runways:EDGU 08-26:extended centerline 1
+Runways:EDGU 08-26:extended centerline 2
+Runways:EDGU 08-26:name
+Runways:EDKD 06-24:centerline
+Runways:EDKD 06-24:extended centerline 1
+Runways:EDKD 06-24:extended centerline 2
+Runways:EDKD 06-24:name
+Runways:EDKH 09-27:centerline
+Runways:EDKH 09-27:extended centerline 1
+Runways:EDKH 09-27:extended centerline 2
+Runways:EDKH 09-27:name
+Runways:EDKO 07-25:centerline
+Runways:EDKO 07-25:extended centerline 1
+Runways:EDKO 07-25:extended centerline 2
+Runways:EDKO 07-25:name
+Runways:EDKV 05-23:centerline
+Runways:EDKV 05-23:extended centerline 1
+Runways:EDKV 05-23:extended centerline 2
+Runways:EDKV 05-23:name
+Runways:EDKW 07-25:centerline
+Runways:EDKW 07-25:extended centerline 1
+Runways:EDKW 07-25:extended centerline 2
+Runways:EDKW 07-25:name
+Runways:EDLS 11-29:centerline
+Runways:EDLS 11-29:extended centerline 1
+Runways:EDLS 11-29:extended centerline 2
+Runways:EDLS 11-29:name
+Runways:EDRA 10-28:centerline
+Runways:EDRA 10-28:extended centerline 1
+Runways:EDRA 10-28:extended centerline 2
+Runways:EDRA 10-28:name
+Runways:EDRD 09-27:centerline
+Runways:EDRD 09-27:extended centerline 1
+Runways:EDRD 09-27:extended centerline 2
+Runways:EDRD 09-27:name
+Runways:EDRE 07-25:centerline
+Runways:EDRE 07-25:extended centerline 1
+Runways:EDRE 07-25:extended centerline 2
+Runways:EDRE 07-25:name
+Runways:EDRE 07R-25L:centerline
+Runways:EDRE 07R-25L:extended centerline 1
+Runways:EDRE 07R-25L:extended centerline 2
+Runways:EDRE 07R-25L:name
+Runways:EDRF 08-26:centerline
+Runways:EDRF 08-26:extended centerline 1
+Runways:EDRF 08-26:extended centerline 2
+Runways:EDRF 08-26:name
+Runways:EDRG 06-24:centerline
+Runways:EDRG 06-24:extended centerline 1
+Runways:EDRG 06-24:extended centerline 2
+Runways:EDRG 06-24:name
+Runways:EDRH 06-24:centerline
+Runways:EDRH 06-24:extended centerline 1
+Runways:EDRH 06-24:extended centerline 2
+Runways:EDRH 06-24:name
+Runways:EDRH 06R-24L:centerline
+Runways:EDRH 06R-24L:extended centerline 1
+Runways:EDRH 06R-24L:extended centerline 2
+Runways:EDRH 06R-24L:name
+Runways:EDRI 05-23:centerline
+Runways:EDRI 05-23:extended centerline 1
+Runways:EDRI 05-23:extended centerline 2
+Runways:EDRI 05-23:name
+Runways:EDRJ 07-25:centerline
+Runways:EDRJ 07-25:extended centerline 1
+Runways:EDRJ 07-25:extended centerline 2
+Runways:EDRJ 07-25:name
+Runways:EDRL 11-29:centerline
+Runways:EDRL 11-29:extended centerline 1
+Runways:EDRL 11-29:extended centerline 2
+Runways:EDRL 11-29:name
+Runways:EDRM 18-36:centerline
+Runways:EDRM 18-36:extended centerline 1
+Runways:EDRM 18-36:extended centerline 2
+Runways:EDRM 18-36:name
+Runways:EDRN 05-23:centerline
+Runways:EDRN 05-23:extended centerline 1
+Runways:EDRN 05-23:extended centerline 2
+Runways:EDRN 05-23:name
+Runways:EDRO 08-26:centerline
+Runways:EDRO 08-26:extended centerline 1
+Runways:EDRO 08-26:extended centerline 2
+Runways:EDRO 08-26:name
+Runways:EDRP 04-22:centerline
+Runways:EDRP 04-22:extended centerline 1
+Runways:EDRP 04-22:extended centerline 2
+Runways:EDRP 04-22:name
+Runways:EDRS 03-21:centerline
+Runways:EDRS 03-21:extended centerline 1
+Runways:EDRS 03-21:extended centerline 2
+Runways:EDRS 03-21:name
+Runways:EDRS 04-22:centerline
+Runways:EDRS 04-22:extended centerline 1
+Runways:EDRS 04-22:extended centerline 2
+Runways:EDRS 04-22:name
+Runways:EDRT 04-22:centerline
+Runways:EDRT 04-22:extended centerline 1
+Runways:EDRT 04-22:extended centerline 2
+Runways:EDRT 04-22:name
+Runways:EDRV 07-25:centerline
+Runways:EDRV 07-25:extended centerline 1
+Runways:EDRV 07-25:extended centerline 2
+Runways:EDRV 07-25:name
+Runways:EDRW 07-25:centerline
+Runways:EDRW 07-25:extended centerline 1
+Runways:EDRW 07-25:extended centerline 2
+Runways:EDRW 07-25:name
+Runways:EDRY 16-34:centerline
+Runways:EDRY 16-34:extended centerline 1
+Runways:EDRY 16-34:extended centerline 2
+Runways:EDRY 16-34:name
+Runways:EDSE 14-32:centerline
+Runways:EDSE 14-32:extended centerline 1
+Runways:EDSE 14-32:extended centerline 2
+Runways:EDSE 14-32:name
+Runways:EDSG 12-30:centerline
+Runways:EDSG 12-30:extended centerline 1
+Runways:EDSG 12-30:extended centerline 2
+Runways:EDSG 12-30:name
+Runways:EDSH 10-28:centerline
+Runways:EDSH 10-28:extended centerline 1
+Runways:EDSH 10-28:extended centerline 2
+Runways:EDSH 10-28:name
+Runways:EDSI 06-24:centerline
+Runways:EDSI 06-24:extended centerline 1
+Runways:EDSI 06-24:extended centerline 2
+Runways:EDSI 06-24:name
+Runways:EDSL 06-24:centerline
+Runways:EDSL 06-24:extended centerline 1
+Runways:EDSL 06-24:extended centerline 2
+Runways:EDSL 06-24:name
+Runways:EDSN 09-27:centerline
+Runways:EDSN 09-27:extended centerline 1
+Runways:EDSN 09-27:extended centerline 2
+Runways:EDSN 09-27:name
+Runways:EDSR 01-19:centerline
+Runways:EDSR 01-19:extended centerline 1
+Runways:EDSR 01-19:extended centerline 2
+Runways:EDSR 01-19:name
+Runways:EDST 06-24:centerline
+Runways:EDST 06-24:extended centerline 1
+Runways:EDST 06-24:extended centerline 2
+Runways:EDST 06-24:name
+Runways:EDST 12L-30R:centerline
+Runways:EDST 12L-30R:extended centerline 1
+Runways:EDST 12L-30R:extended centerline 2
+Runways:EDST 12L-30R:name
+Runways:EDST 12R-30L:centerline
+Runways:EDST 12R-30L:extended centerline 1
+Runways:EDST 12R-30L:extended centerline 2
+Runways:EDST 12R-30L:name
+Runways:EDSV 06-24:centerline
+Runways:EDSV 06-24:extended centerline 1
+Runways:EDSV 06-24:extended centerline 2
+Runways:EDSV 06-24:name
+Runways:EDSZ 08-26:centerline
+Runways:EDSZ 08-26:extended centerline 1
+Runways:EDSZ 08-26:extended centerline 2
+Runways:EDSZ 08-26:name
+Runways:EDTB 03-21:centerline
+Runways:EDTB 03-21:extended centerline 1
+Runways:EDTB 03-21:extended centerline 2
+Runways:EDTB 03-21:name
+Runways:EDTC 12-30:centerline
+Runways:EDTC 12-30:extended centerline 1
+Runways:EDTC 12-30:extended centerline 2
+Runways:EDTC 12-30:name
+Runways:EDTE 06-24:centerline
+Runways:EDTE 06-24:extended centerline 1
+Runways:EDTE 06-24:extended centerline 2
+Runways:EDTE 06-24:name
+Runways:EDTF 16-34:centerline
+Runways:EDTF 16-34:extended centerline 1
+Runways:EDTF 16-34:extended centerline 2
+Runways:EDTF 16-34:name
+Runways:EDTF 16L-34R:centerline
+Runways:EDTF 16L-34R:extended centerline 1
+Runways:EDTF 16L-34R:extended centerline 2
+Runways:EDTF 16L-34R:name
+SHOWC:1
+SHOWSB:0
+BELOW:0
+ABOVE:10000
+LEADER:-1
+SHOWLEADER:0
+TURNLEADER:0
+HISTORY_DOTS:0
+SIMULATION_MODE:2
+DISABLEPANNING:0
+DISABLEZOOMING:0
+DisplayRotation:0.00000
+TAGFAMILY:Phoenix Tower
+WINDOWAREA:47.177861:0.959268:53.060100:18.061929
+PLUGIN:Ground Radar plugin:AirportElevation:0
+PLUGIN:Ground Radar plugin:AirportRadius:3
+PLUGIN:Ground Radar plugin:GroundMode:EDXX
+PLUGIN:Ground Radar plugin:ShowMapData:EDXX_GND
+PLUGIN:TopSky plugin:ShowMapData:EDXX,PHOENIX

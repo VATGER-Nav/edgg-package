@@ -1,0 +1,30 @@
+DisplayTypeName:Standard ES radar screen
+DisplayTypeNeedRadarContent:1
+DisplayTypeGeoReferenced:1
+SECTORFILE:
+SECTORTITLE:
+ARTCC boundary:FIR border LFEE LFEE FIR:
+ARTCC low boundary:Centerlines EDRZ 03:
+ARTCC low boundary:Centerlines EDRZ 21:
+ARTCC low boundary:RMZ EDRZ RMZ:
+ARTCC low boundary:Tower CTR EDRZ (HX):
+Geo:EDZZ Landmark Highway Germany:
+Geo:EDZZ Landmark River Germany:
+VORs:ZWN:frequency
+VORs:ZWN:name
+VORs:ZWN:symbol
+SHOWC:1
+SHOWSB:0
+BELOW:0
+ABOVE:10000
+LEADER:3
+SHOWLEADER:0
+TURNLEADER:0
+HISTORY_DOTS:0
+SIMULATION_MODE:1
+DISABLEPANNING:0
+DISABLEZOOMING:0
+DisplayRotation:0.00000
+TAGFAMILY:Phoenix Tower
+WINDOWAREA:49.092370:6.920974:49.411223:7.848042
+PLUGIN:TopSky plugin:ShowMapData:EDRZ,PHOENIX

@@ -1,0 +1,26 @@
+DisplayTypeName:Ground Radar display
+DisplayTypeNeedRadarContent:0
+DisplayTypeGeoReferenced:1
+SECTORFILE:
+SECTORTITLE:
+Runways:EDTY 10-28:centerline
+Runways:EDTY 10-28:name
+SHOWC:1
+SHOWSB:0
+BELOW:0
+ABOVE:10000
+LEADER:-1
+SHOWLEADER:0
+TURNLEADER:0
+HISTORY_DOTS:0
+SIMULATION_MODE:2
+DISABLEPANNING:0
+DISABLEZOOMING:0
+DisplayRotation:351.00000
+TAGFAMILY:Phoenix Ground
+WINDOWAREA:49.095409:9.703233:49.153600:9.872425
+PLUGIN:Ground Radar plugin:AirportElevation:1276
+PLUGIN:Ground Radar plugin:AirportRadius:3
+PLUGIN:Ground Radar plugin:GroundMode:EDTY
+PLUGIN:Ground Radar plugin:ShowMapData:EDTY_GND
+PLUGIN:TopSky plugin:ShowMapData:NONE

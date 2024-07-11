@@ -1,0 +1,124 @@
+DisplayTypeName:Standard ES radar screen
+DisplayTypeNeedRadarContent:1
+DisplayTypeGeoReferenced:1
+SECTORFILE:
+SECTORTITLE:
+Airports:EDFB:name
+Airports:EDFB:symbol
+Airports:EDFV:name
+Airports:EDFV:symbol
+Airports:EDFY:name
+Airports:EDFY:symbol
+Airports:EDFZ:name
+Airports:EDFZ:symbol
+Airports:EDKA:name
+Airports:EDKA:symbol
+Airports:EDKB:name
+Airports:EDKB:symbol
+Airports:EDKF:name
+Airports:EDKF:symbol
+Airports:EDKL:name
+Airports:EDKL:symbol
+Airports:EDKM:name
+Airports:EDKM:symbol
+Airports:EDKN:name
+Airports:EDKN:symbol
+Airports:EDKZ:name
+Airports:EDKZ:symbol
+Airports:EDLA:name
+Airports:EDLA:symbol
+Airports:EDLB:name
+Airports:EDLB:symbol
+Airports:EDLC:name
+Airports:EDLC:symbol
+Airports:EDLD:name
+Airports:EDLD:symbol
+Airports:EDLE:name
+Airports:EDLE:symbol
+Airports:EDLF:name
+Airports:EDLF:symbol
+Airports:EDLG:name
+Airports:EDLG:symbol
+Airports:EDLH:name
+Airports:EDLH:symbol
+Airports:EDLI:name
+Airports:EDLI:symbol
+Airports:EDLK:name
+Airports:EDLK:symbol
+Airports:EDLM:name
+Airports:EDLM:symbol
+Airports:EDLO:name
+Airports:EDLO:symbol
+Airports:EDLQ:name
+Airports:EDLQ:symbol
+Airports:EDLT:name
+Airports:EDLT:symbol
+Airports:EDLZ:name
+Airports:EDLZ:symbol
+Airports:EDRK:name
+Airports:EDRK:symbol
+Airports:EDRY:name
+Airports:EDRY:symbol
+Airports:EDTQ:name
+Airports:EDTQ:symbol
+Geo:EDFB Groundlayout Building:
+Geo:EDFB Groundlayout Runway:
+Geo:EDFB Groundlayout Taxiway:
+Geo:EDFV Groundlayout Building:
+Geo:EDFV Groundlayout Runway:
+Geo:EDFV Groundlayout Runway_Gras:
+Geo:EDFV Groundlayout Taxiway:
+Geo:EDFY Groundlayout Building:
+Geo:EDFY Groundlayout Runway:
+Geo:EDFY Groundlayout Taxiway:
+Geo:EDFZ Groundlayout All Ground:
+Geo:EDKA Groundlayout Taxiway:
+Geo:EDKB Groundlayout:
+Geo:EDKF Groundlayout:
+Geo:EDKL Groundlayout:
+Geo:EDKM Groundlayout:
+Geo:EDKN Groundlayout:
+Geo:EDKZ Groundlayout:
+Geo:EDLA Groundlayout:
+Geo:EDLB Groundlayout:
+Geo:EDLC Groundlayout:
+Geo:EDLD Groundlayout:
+Geo:EDLE Groundlayout:
+Geo:EDLF Groundlayout:
+Geo:EDLG Groundlayout:
+Geo:EDLH Groundlayout:
+Geo:EDLI Groundlayout:
+Geo:EDLJ Groundlayout:
+Geo:EDLK Groundlayout:
+Geo:EDLM Groundlayout:
+Geo:EDLO Groundlayout:
+Geo:EDLQ Groundlayout:
+Geo:EDLT Groundlayout:
+Geo:EDLZ Groundlayout:
+Geo:EDRK Groundlayout Building:
+Geo:EDRK Groundlayout Runway:
+Geo:EDRK Groundlayout Stops:
+Geo:EDRK Groundlayout Taxiway:
+Geo:EDRY Groundlayout All Ground:
+Geo:EDTQ Groundlayout All Ground:
+Geo:EDZZ Landmark Highway Germany:
+Geo:EDZZ Landmark River Germany:
+SHOWC:1
+SHOWSB:0
+BELOW:0
+ABOVE:10000
+LEADER:3
+SHOWLEADER:0
+TURNLEADER:0
+HISTORY_DOTS:0
+SIMULATION_MODE:2
+DISABLEPANNING:0
+DISABLEZOOMING:0
+DisplayRotation:0.00000
+TAGFAMILY:Phoenix Tower
+WINDOWAREA:47.558498:1.476493:53.358394:18.339742
+PLUGIN:Ground Radar plugin:AirportElevation:0
+PLUGIN:Ground Radar plugin:AirportRadius:3
+PLUGIN:Ground Radar plugin:GroundMode:EDXX
+PLUGIN:Ground Radar plugin:ShowMapData:EDXX_GND
+PLUGIN:TopSky plugin:ShowMapData:EDXX,PHOENIX

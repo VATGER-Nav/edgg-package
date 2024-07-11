@@ -1,0 +1,34 @@
+DisplayTypeName:Ground Radar display
+DisplayTypeNeedRadarContent:0
+DisplayTypeGeoReferenced:1
+SECTORFILE:
+SECTORTITLE:
+Free Text:EDGS Taxiways\A:freetext
+Free Text:EDGS Taxiways\A:freetext
+Free Text:EDGS Taxiways\B:freetext
+Free Text:EDGS Taxiways\C:freetext
+Free Text:EDGS Taxiways\D:freetext
+Free Text:EDGS Taxiways\G:freetext
+Free Text:EDGS Taxiways\RWY 13/31 Grass:freetext
+Free Text:EDGS Taxiways\RWY 22/04 Grass:freetext
+Geo:EDGS Groundlayout Taxilines:
+Regions:EDGS Ground:polygon
+SHOWC:1
+SHOWSB:0
+BELOW:0
+ABOVE:10000
+LEADER:5
+SHOWLEADER:0
+TURNLEADER:0
+HISTORY_DOTS:0
+SIMULATION_MODE:2
+DISABLEPANNING:0
+DISABLEZOOMING:0
+DisplayRotation:322.00000
+TAGFAMILY:Phoenix Ground
+WINDOWAREA:50.699678:8.060451:50.716211:8.108523
+PLUGIN:Ground Radar plugin:AirportElevation:302
+PLUGIN:Ground Radar plugin:AirportRadius:3
+PLUGIN:Ground Radar plugin:GroundMode:EDGS
+PLUGIN:Ground Radar plugin:ShowMapData:EDGS_GND
+PLUGIN:TopSky plugin:ShowMapData:NONE
