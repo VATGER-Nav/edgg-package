@@ -1,0 +1,46 @@
+PROFILE
+PROFILE:%%_OBS:300:0
+ATIS2:
+ATIS3:
+ATIS4:
+PROFILE:EDGS_I_TWR:50:4
+ATIS2:Siegerland Information | This is an uncontrolled AFIS Aerodrome
+ATIS3:Both VFR and IFR poss. - all IFR Departures report ATIS Letter on inital contact with Information
+ATIS4:You have feedback? Submit it! feedback.vatger.de
+PROFILE:EDTY_I_TWR:50:4
+ATIS2:Schwaebisch Hall Information | This is an uncontrolled AFIS Aerodrome 
+ATIS3:Pilotbriefing vats.im/EDTY - both VFR and IFR poss. - all IFR Departures report ATIS Letter on inital contact with Information
+ATIS4:You have feedback? Submit it! feedback.vatger.de
+PROFILE:EDRZ_I_TWR:50:4
+ATIS2:Zweibruecken Information | This is an uncontrolled AFIS Aerodrome 
+ATIS3:Both VFR and IFR poss. | Weather Information on inital contact with station
+ATIS4:You have feedback? Submit it! feedback.vatger.de
+PROFILE:EDQG_I_TWR:50:4
+ATIS2:Giebelstadt Information | This is an uncontrolled AFIS Aerodrome 
+ATIS3:Pilotbriefing vats.im/EDQG - both VFR and IFR poss. | Weather Information on inital contact with station
+ATIS4:You have feedback? Submit it! feedback.vatger.de
+PROFILE:EDTD_I_TWR:50:4
+ATIS2:Donaueschingen Information | This is an uncontrolled AFIS Aerodrome 
+ATIS3:Both VFR and IFR poss. | Weather Information on inital contact with station
+ATIS4:You have feedback? Submit it! feedback.vatger.de
+PROFILE:EDTM_I_TWR:50:4
+ATIS2:Mengen Information | This is an uncontrolled AFIS Aerodrome 
+ATIS3:Both VFR and IFR poss. | Weather Information on inital contact with station - QFE on request
+ATIS4:You have feedback? Submit it! feedback.vatger.de
+PROFILE:EDXX_I_TWR:50:4
+ATIS2:$radioname Radio | This is an uncontrolled AFIS Aerodrome
+ATIS3:VFR only - Weather Information on inital contact with station
+ATIS4:You have feedback? Submit it! feedback.vatger.de
+PROFILE:EDFQ_I_TWR:50:4
+ATIS2:Alllendorf Information | This is an uncontrolled AFIS Aerodrome
+ATIS3:Both VFR and IFR poss. - all IFR Departures report ATIS Letter on inital contact with Information
+ATIS4:You have feedback? Submit it! feedback.vatger.de
+PROFILE:EDFE_I_TWR:50:4
+ATIS2:Egelsbach Radio | This is an uncontrolled AFIS Aerodrome - not covering EDDF
+ATIS3:Pilotbriefing vats.im/EDFE - VFR only - for IFR Pickup contact responsibe Controller after leaving RMZ
+ATIS4:You have feedback? Submit it! feedback.vatger.de
+PROFILE:EDFE_GND:30:3
+ATIS2:Egelsbach Apron | This is an controlled Apron - not covering EDDF
+ATIS3:Pilotbriefing vats.im/EDFE - VFR only - for IFR Pickup contact responsibe Controller after leaving RMZ
+ATIS4:You have feedback? Submit it! feedback.vatger.de
+END
