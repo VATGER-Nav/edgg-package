@@ -48,8 +48,8 @@ COLORDEF:aor-twr-a:161:22:70
 COLORDEF:aor-twr-b:201:47:71
 COLORDEF:aor-twr-c:202:58:62
 COLORDEF:aor-twr-d:169:13:44
-COLORDEF:aor-app-a:255:198:62
-COLORDEF:aor-app-b:219:139:45
+COLORDEF:aor-app-a:219:139:45
+COLORDEF:aor-app-b:216:112:44
 
 COLORDEF:rrs-marker:80:104:84
 COLORDEF:tora-label:200:200:200
