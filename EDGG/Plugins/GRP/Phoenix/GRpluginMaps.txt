@@ -40,16 +40,16 @@ COLORDEF:layout-label-stand:180:180:180
 COLORDEF:layout-eddl-taxiline-yellow:135:135:135
 
 COLORDEF:aor-gnd-a:98:133:29
-COLORDEF:aor-gnd-b:98:133:29
-COLORDEF:aor-gnd-c:98:133:29
-COLORDEF:aor-gnd-d:98:133:29
-COLORDEF:aor-gnd-e:98:133:29
+COLORDEF:aor-gnd-b:151:162:51
+COLORDEF:aor-gnd-c:99:119:36
+COLORDEF:aor-gnd-d:69:131:29
+COLORDEF:aor-gnd-e:0:126:60
 COLORDEF:aor-twr-a:161:22:70
-COLORDEF:aor-twr-b:161:22:70
-COLORDEF:aor-twr-c:161:22:70
-COLORDEF:aor-twr-d:161:22:70
-COLORDEF:aor-app-a:185:165:54
-COLORDEF:aor-app-b:185:165:54
+COLORDEF:aor-twr-b:201:47:71
+COLORDEF:aor-twr-c:202:58:62
+COLORDEF:aor-twr-d:169:13:44
+COLORDEF:aor-app-a:255:198:62
+COLORDEF:aor-app-b:219:139:45
 
 COLORDEF:rrs-marker:80:104:84
 COLORDEF:tora-label:200:200:200
