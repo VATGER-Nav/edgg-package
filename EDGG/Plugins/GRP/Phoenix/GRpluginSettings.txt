@@ -1,4 +1,4 @@
-// last change: 06.05.2024 by PH
+// last change: 08.07.2024 by SS
 
 Equip_ProMode=0
 RawVideo=1
@@ -110,7 +110,7 @@ System_OSM=1
 System_CVM=1
 System_ECM=1
 System_APM=1
-System_RIM=0
+System_RIM=1
 System_RVM=1
 System_SRM=1
 
@@ -187,6 +187,11 @@ Airport_Runway_Closed_Arr=18
 Airport_Runway_Closed_Dep=25R
 Airport_Runway_Closed_Dep=07L
 
+System_RIM=0
+
+[EDDK]
+System_RIM=0
+
 [EDDS]
 Airport_Runway_Buffer_LVP=25:200
 Airport_Runway_Buffer_LVP=07:200
@@ -201,3 +206,23 @@ Airport_Runway_Buffer_LVP=21:200
 
 //List_Outbound=*,2,1131,500
 //List_Inbound=*,2,1203,650
+
+[EDLP]
+Window_APP_Rotation=32.5
+
+[EDLW]
+Window_APP_Rotation=28.7
+Airport_Runway_Area_LVP=24:90
+Airport_Runway_Area_LVP=06:90
+Airport_Runway_Buffer_LVP=24:150
+Airport_Runway_Buffer_LVP=06:150
+
+[EDLN]
+Window_APP_Rotation=322
+
+[EDLV]
+Window_APP_Rotation=358
+Airport_Runway_Area_LVP=27:90
+Airport_Runway_Area_LVP=09:90
+Airport_Runway_Buffer_LVP=27:150
+Airport_Runway_Buffer_LVP=09:150

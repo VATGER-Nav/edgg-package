@@ -1,6 +1,7 @@
 {
   "EDGG/Plugins/GRP/Phoenix/GRpluginMaps.txt": [
     ".github/workflows/source/grp_phoenix_maps/colors.txt",
+	".github/workflows/source/grp_phoenix_maps/symbols.txt",
     ".github/workflows/source/grp_phoenix_maps/sct-file-path.txt",
 
     ".github/workflows/source/grp_phoenix_maps/eddf/background.txt",
@@ -19,6 +20,7 @@
     ".github/workflows/source/grp_phoenix_maps/eddf/reduced_runway_separation.txt",
     ".github/workflows/source/grp_phoenix_maps/eddf/app_window.txt",
     ".github/workflows/source/grp_phoenix_maps/eddf/eddf_pro.txt",
+	".github/workflows/source/grp_phoenix_maps/eddf/vsid_areas.txt",
 
     ".github/workflows/source/grp_phoenix_maps/eddl/app_window.txt",
     ".github/workflows/source/grp_phoenix_maps/eddl/eddl_a380_taxi_routing.txt",
@@ -45,15 +47,19 @@
     ".github/workflows/source/grp_phoenix_maps/edds/restrictions.txt",
     ".github/workflows/source/grp_phoenix_maps/edds/closures.txt",
 
-    ".github/workflows/source/grp_phoenix_maps/edln/aor.txt",
-    ".github/workflows/source/grp_phoenix_maps/edln/closures.txt",
-    ".github/workflows/source/grp_phoenix_maps/edln/restrictions.txt",
-
     ".github/workflows/source/grp_phoenix_maps/military.txt",
 
     ".github/workflows/source/grp_phoenix_maps/edfh.txt",
 
-    ".github/workflows/source/grp_phoenix_maps/edtl.txt"
+    ".github/workflows/source/grp_phoenix_maps/edtl.txt",
+
+    ".github/workflows/source/grp_phoenix_maps/edlp.txt",
+
+    ".github/workflows/source/grp_phoenix_maps/edlw.txt",
+
+    ".github/workflows/source/grp_phoenix_maps/edln.txt",
+
+    ".github/workflows/source/grp_phoenix_maps/edlv.txt"
   ],
 
   "EDGG/Plugins/GRP/Phoenix/GRpluginStands.txt": [

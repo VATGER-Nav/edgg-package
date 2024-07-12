@@ -4,6 +4,7 @@ COLOR:green
 LAYER:2
 STYLE:Solid:1
 #import .github/workflows/source/data/sectors/eduu/eduu_all.txt
+#import .github/workflows/source/data/loa_lines/pilam_area.txt
 #import .github/workflows/source/data/sectors/edyy/rhr.txt
 #import .github/workflows/source/data/sectors/edyy/mns.txt
 #import .github/workflows/source/data/sectors/edyy/sol.txt

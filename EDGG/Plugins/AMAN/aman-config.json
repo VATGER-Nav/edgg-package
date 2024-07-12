@@ -15,6 +15,20 @@
             "destinationAirports": [ "EDDK" ],
 			"defaultTimeSpan": 30
         },
+		"EDDK 31R/24": {
+            "viaFixes": [ "DEPOK", "ERNEP", "GULKO", "KOPAG" ],
+            "tagLayout": "RWY",
+			"targetFixes": [ "RARIX", "KUKIT" ],
+            "destinationAirports": [ "EDDK" ],
+			"defaultTimeSpan": 30
+        },
+		"EDDK 13L/24": {
+            "viaFixes": [ "DEPOK", "ERNEP", "GULKO", "KOPAG" ],
+            "tagLayout": "RWY",
+			"targetFixes": [ "LEDGU", "KUKIT" ],
+            "destinationAirports": [ "EDDK" ],
+			"defaultTimeSpan": 30
+        },
 		"EDDS": {
             "targetFixes": [ "EDDS"],
             "viaFixes": [ "BADSO", "KRH", "LBU", "NOSBU","IBIRU","REUTL","TEKSI","ARSUT" ],
@@ -47,6 +61,20 @@
             "targetFixes": [ "EDDF"],
             "viaFixes": [ "SPESA", "RAMOB", "KERAX", "ROLIS" ],
             "tagLayout": "myLayout",
+            "destinationAirports": [ "EDDF" ],
+			"defaultTimeSpan": 30
+        },
+		"EDDF 25L/25R": {
+            "viaFixes": [ "SPESA", "RAMOB", "KERAX", "ROLIS" ],
+			"targetFixes": [ "DF620", "DF420" ],
+            "tagLayout": "RWY",
+            "destinationAirports": [ "EDDF" ],
+			"defaultTimeSpan": 30
+        },
+		"EDDF 07L/07R": {
+            "viaFixes": [ "SPESA", "RAMOB", "KERAX", "ROLIS" ],
+			"targetFixes": [ "DF460", "DF660" ],
+            "tagLayout": "RWY",
             "destinationAirports": [ "EDDF" ],
 			"defaultTimeSpan": 30
         },
@@ -95,7 +123,7 @@
             { "source": "static", "defaultValue": "¤", "width": 2, "isViaFixIndicator": true },
             { "source": "aircraftType", "width": 5 },
             { "source": "aircraftWtc", "width": 2 },
-            { "source": "remainingDistance", "width": 3, "rightAligned": true },
+            { "source": "assignedStar", "width": 7 },
 			{ "source": "static", "width": 1 },
             { "source": "estimatedLandingTime", "width": 5 }
         ],

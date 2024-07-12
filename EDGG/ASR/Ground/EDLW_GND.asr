@@ -3,37 +3,6 @@ DisplayTypeNeedRadarContent:0
 DisplayTypeGeoReferenced:1
 SECTORFILE:
 SECTORTITLE:
-Free Text:EDLW Parking\0:freetext
-Free Text:EDLW Parking\1:freetext
-Free Text:EDLW Parking\10:freetext
-Free Text:EDLW Parking\11:freetext
-Free Text:EDLW Parking\12:freetext
-Free Text:EDLW Parking\2:freetext
-Free Text:EDLW Parking\3:freetext
-Free Text:EDLW Parking\4:freetext
-Free Text:EDLW Parking\5:freetext
-Free Text:EDLW Parking\6:freetext
-Free Text:EDLW Parking\7:freetext
-Free Text:EDLW Parking\8:freetext
-Free Text:EDLW Parking\9:freetext
-Free Text:EDLW Parking\B2:freetext
-Free Text:EDLW Parking\B3:freetext
-Free Text:EDLW Parking\B4:freetext
-Free Text:EDLW Parking\B5:freetext
-Free Text:EDLW Parking\B6:freetext
-Free Text:EDLW Taxiway\A:freetext
-Free Text:EDLW Taxiway\A:freetext
-Free Text:EDLW Taxiway\B:freetext
-Free Text:EDLW Taxiway\C:freetext
-Free Text:EDLW Taxiway\D:freetext
-Free Text:EDLW Taxiway\D:freetext
-Free Text:EDLW Taxiway\K:freetext
-Free Text:EDLW Taxiway\L:freetext
-Free Text:EDLW Taxiway\M:freetext
-Free Text:EDLW Taxiway\M:freetext
-Geo:EDLW Groundlayout Gates:
-Geo:EDLW Groundlayout Taxilines:
-Regions:EDLW Ground ALTN:polygon
 SHOWC:1
 SHOWSB:1
 BELOW:0
@@ -45,9 +14,9 @@ HISTORY_DOTS:0
 SIMULATION_MODE:1
 DISABLEPANNING:0
 DISABLEZOOMING:0
-DisplayRotation:28.00000
+DisplayRotation:28.70000
 TAGFAMILY:Phoenix Ground
-WINDOWAREA:51.511383:7.593806:51.524609:7.632239
+WINDOWAREA:51.507361:7.583856:51.528026:7.643941
 PLUGIN:Ground Radar plugin:AirportElevation:425
 PLUGIN:Ground Radar plugin:AirportRadius:3
 PLUGIN:Ground Radar plugin:GroundMode:EDLW

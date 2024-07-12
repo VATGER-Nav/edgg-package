@@ -12,9 +12,9 @@
             "b": 0
         },
         "customSidSuggestion": {
-            "r": 230,
-            "g": 230,
-            "b": 60
+            "r": 255,
+            "g": 255,
+            "b": 180
         },
         "customSidSet": {
             "r": 255,
