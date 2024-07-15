@@ -1,4 +1,4 @@
-// last change: 08.07.2024 by SS
+// last change: 14.07.2024 by SS
 
 Equip_ProMode=0
 RawVideo=1
@@ -192,6 +192,19 @@ System_RIM=0
 [EDDK]
 System_RIM=0
 
+[EDDL]
+Airport_Runway_Area_LVP=23L:90
+Airport_Runway_Area_LVP=05R:90
+Airport_Runway_Area_LVP=23R:90
+Airport_Runway_Area_LVP=05L:90
+Airport_Runway_Buffer_LVP=23L:150
+Airport_Runway_Buffer_LVP=05R:150
+Airport_Runway_Buffer_LVP=23R:150
+Airport_Runway_Buffer_LVP=05L:150
+Airport_Runway_NotATYP=23R:A388,B741,B742,B743,B744,B748,A124,A225
+Window_APP_Rotation=36.7
+Window_APP_AltFilter=10000
+
 [EDDS]
 Airport_Runway_Buffer_LVP=25:200
 Airport_Runway_Buffer_LVP=07:200
@@ -209,20 +222,24 @@ Airport_Runway_Buffer_LVP=21:200
 
 [EDLP]
 Window_APP_Rotation=32.5
+Window_APP_AltFilter=10000
 
 [EDLW]
-Window_APP_Rotation=28.7
 Airport_Runway_Area_LVP=24:90
 Airport_Runway_Area_LVP=06:90
 Airport_Runway_Buffer_LVP=24:150
 Airport_Runway_Buffer_LVP=06:150
+Window_APP_Rotation=28.7
+Window_APP_AltFilter=10000
 
 [EDLN]
 Window_APP_Rotation=322
+Window_APP_AltFilter=10000
 
 [EDLV]
-Window_APP_Rotation=358
 Airport_Runway_Area_LVP=27:90
 Airport_Runway_Area_LVP=09:90
 Airport_Runway_Buffer_LVP=27:150
 Airport_Runway_Buffer_LVP=09:150
+Window_APP_Rotation=358
+Window_APP_AltFilter=10000
