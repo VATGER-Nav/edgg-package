@@ -3,10 +3,6 @@ DisplayTypeNeedRadarContent:0
 DisplayTypeGeoReferenced:1
 SECTORFILE:
 SECTORTITLE:
-Geo:EDDL Groundlayout DFS Basic:
-Geo:EDDL Groundlayout DFS Streets:
-Regions:EDDL DFS Groundlayout:polygon
-Regions:EDDL DFS Holdingpoints:polygon
 SHOWC:1
 SHOWSB:0
 BELOW:0
@@ -20,7 +16,7 @@ DISABLEPANNING:0
 DISABLEZOOMING:0
 DisplayRotation:36.60000
 TAGFAMILY:Phoenix Ground
-WINDOWAREA:51.275720:6.736211:51.296910:6.798634
+WINDOWAREA:51.274235:6.737007:51.295705:6.799430
 PLUGIN:Ground Radar plugin:AirportElevation:147
 PLUGIN:Ground Radar plugin:AirportRadius:3
 PLUGIN:Ground Radar plugin:GroundMode:EDDL

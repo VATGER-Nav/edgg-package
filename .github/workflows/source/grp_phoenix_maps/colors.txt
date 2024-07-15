@@ -16,6 +16,7 @@ COLORDEF:lightblue:0:230:255
 
 COLORDEF:closure:113:37:39
 COLORDEF:closure-symbol:185:59:46
+COLORDEF:closure-symbol-eddl:209:158:28
 
 COLORDEF:apronorange:249:153:106
 COLORDEF:dfsorange:248:172:58
@@ -28,7 +29,7 @@ COLORDEF:layout-apron:29:29:29
 COLORDEF:layout-building:45:52:55
 COLORDEF:layout-runway:85:85:85
 COLORDEF:layout-runway-marking:150:150:150
-COLORDEF:layout-taxiline-yellow:88:85:57
+COLORDEF:layout-taxiline-yellow:145:136:94
 COLORDEF:layout-taxiline-orange:113:68:6
 COLORDEF:layout-taxiline-blue:39:59:106
 COLORDEF:layout-taxiline-grey:99:99:99
@@ -36,11 +37,21 @@ COLORDEF:layout-holdingpoint:193:121:4
 COLORDEF:layout-label-taxiway:180:180:180
 COLORDEF:layout-label-stand:180:180:180
 
-COLORDEF:aor-gnd:98:133:29
-COLORDEF:aor-twr:161:22:70
-COLORDEF:aor-app:185:165:54
+COLORDEF:layout-eddl-taxiline-yellow:135:135:135
 
-COLORDEF:rrs-marker:200:200:200
+COLORDEF:aor-gnd-a:98:133:29
+COLORDEF:aor-gnd-b:151:162:51
+COLORDEF:aor-gnd-c:99:119:36
+COLORDEF:aor-gnd-d:69:131:29
+COLORDEF:aor-gnd-e:0:126:60
+COLORDEF:aor-twr-a:161:22:70
+COLORDEF:aor-twr-b:201:47:71
+COLORDEF:aor-twr-c:202:58:62
+COLORDEF:aor-twr-d:169:13:44
+COLORDEF:aor-app-a:204:153:51
+COLORDEF:aor-app-b:216:112:44
+
+COLORDEF:rrs-marker:80:104:84
 COLORDEF:tora-label:200:200:200
 
 COLORDEF:lvp-marking:185:59:46
@@ -48,5 +59,11 @@ COLORDEF:lvp-areas:60:12:15
 
 COLORDEF:restrictions-AB:185:59:46
 COLORDEF:restrictions-C:210:116:7
+COLORDEF:restrictions-D:209:195:54
+COLORDEF:restrictions-E:64:154:112
+COLORDEF:restrictions-F:0:143:193
+
+COLORDEF:deicing:90:109:156
+COLORDEF:deicing-line:54:65:92
 
 COLORDEF:appwindow-runway:160:160:160
