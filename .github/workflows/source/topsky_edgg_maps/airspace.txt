@@ -251,6 +251,3 @@ ACTIVE:RWY:ARR:*:DEP:EDLV27
 ACTIVE:RWY:ARR:*:DEP:EDLV09
 STYLE:Dash:1
 #import .github/workflows/source/data/airspace/tmz/edlv_tmz.txt
-
-// EM TMZ/RMZ
-#import .github/workflows/source/data/EM/tmz-rmz_edgg.txt
