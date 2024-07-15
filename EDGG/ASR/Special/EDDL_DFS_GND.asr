@@ -3,10 +3,6 @@ DisplayTypeNeedRadarContent:0
 DisplayTypeGeoReferenced:1
 SECTORFILE:
 SECTORTITLE:
-Geo:EDDL Groundlayout DFS Basic:
-Geo:EDDL Groundlayout DFS Streets:
-Regions:EDDL DFS Groundlayout:polygon
-Regions:EDDL DFS Holdingpoints:polygon
 SHOWC:1
 SHOWSB:0
 BELOW:0
