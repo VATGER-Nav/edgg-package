@@ -41,6 +41,8 @@
     ".github/workflows/source/grp_phoenix_maps/edds/restrictions.txt",
     ".github/workflows/source/grp_phoenix_maps/edds/closures.txt",
 
+    ".github/workflows/source/grp_phoenix_maps/eddg.txt",
+
     ".github/workflows/source/grp_phoenix_maps/military.txt",
 
     ".github/workflows/source/grp_phoenix_maps/edfh.txt",

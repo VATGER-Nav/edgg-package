@@ -1,4 +1,4 @@
-// last change: 14.07.2024 by SS
+// last change: 20.07.2024 by SS
 
 Equip_ProMode=0
 RawVideo=1
@@ -211,6 +211,14 @@ Airport_Runway_Buffer_LVP=07:200
 Window_APP=0,750,720,1100,200
 Window_APP_Scale=25
 Window_APP_Rotation=16.2
+Window_APP_AltFilter=10000
+
+[EDDG]
+Airport_Runway_Area_LVP=25:90
+Airport_Runway_Area_LVP=07:90
+Airport_Runway_Buffer_LVP=25:150
+Airport_Runway_Buffer_LVP=07:150
+Window_APP_Rotation=18.5
 Window_APP_AltFilter=10000
 
 [EDFH]
