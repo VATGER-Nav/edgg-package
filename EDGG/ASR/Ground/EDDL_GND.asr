@@ -3,174 +3,22 @@ DisplayTypeNeedRadarContent:0
 DisplayTypeGeoReferenced:1
 SECTORFILE:
 SECTORTITLE:
-Free Text:EDDL Parking\A01:freetext
-Free Text:EDDL Parking\A02:freetext
-Free Text:EDDL Parking\A03:freetext
-Free Text:EDDL Parking\A04:freetext
-Free Text:EDDL Parking\A08:freetext
-Free Text:EDDL Parking\A09:freetext
-Free Text:EDDL Parking\A10:freetext
-Free Text:EDDL Parking\A12:freetext
-Free Text:EDDL Parking\A13:freetext
-Free Text:EDDL Parking\A15:freetext
-Free Text:EDDL Parking\A16:freetext
-Free Text:EDDL Parking\B01:freetext
-Free Text:EDDL Parking\B02:freetext
-Free Text:EDDL Parking\B03:freetext
-Free Text:EDDL Parking\B04:freetext
-Free Text:EDDL Parking\B05:freetext
-Free Text:EDDL Parking\B06:freetext
-Free Text:EDDL Parking\B08:freetext
-Free Text:EDDL Parking\B09:freetext
-Free Text:EDDL Parking\B10:freetext
-Free Text:EDDL Parking\B11:freetext
-Free Text:EDDL Parking\C01:freetext
-Free Text:EDDL Parking\C02:freetext
-Free Text:EDDL Parking\C03:freetext
-Free Text:EDDL Parking\C04:freetext
-Free Text:EDDL Parking\C05:freetext
-Free Text:EDDL Parking\C06:freetext
-Free Text:EDDL Parking\C07:freetext
-Free Text:EDDL Parking\C08:freetext
-Free Text:EDDL Parking\GAT:freetext
-Free Text:EDDL Parking\V01:freetext
-Free Text:EDDL Parking\V02:freetext
-Free Text:EDDL Parking\V03:freetext
-Free Text:EDDL Parking\V05:freetext
-Free Text:EDDL Parking\V07:freetext
-Free Text:EDDL Parking\V08A:freetext
-Free Text:EDDL Parking\V08B:freetext
-Free Text:EDDL Parking\V08C:freetext
-Free Text:EDDL Parking\V101:freetext
-Free Text:EDDL Parking\V103:freetext
-Free Text:EDDL Parking\V104:freetext
-Free Text:EDDL Parking\V106:freetext
-Free Text:EDDL Parking\V11A:freetext
-Free Text:EDDL Parking\V11B:freetext
-Free Text:EDDL Parking\V11C:freetext
-Free Text:EDDL Parking\V12:freetext
-Free Text:EDDL Parking\V120:freetext
-Free Text:EDDL Parking\V121:freetext
-Free Text:EDDL Parking\V122:freetext
-Free Text:EDDL Parking\V123:freetext
-Free Text:EDDL Parking\V124:freetext
-Free Text:EDDL Parking\V125:freetext
-Free Text:EDDL Parking\V126:freetext
-Free Text:EDDL Parking\V127:freetext
-Free Text:EDDL Parking\V128:freetext
-Free Text:EDDL Parking\V129:freetext
-Free Text:EDDL Parking\V130:freetext
-Free Text:EDDL Parking\V14:freetext
-Free Text:EDDL Parking\V16:freetext
-Free Text:EDDL Parking\V17:freetext
-Free Text:EDDL Parking\V19:freetext
-Free Text:EDDL Parking\V20:freetext
-Free Text:EDDL Parking\V22:freetext
-Free Text:EDDL Parking\V23:freetext
-Free Text:EDDL Parking\V24:freetext
-Free Text:EDDL Parking\V25:freetext
-Free Text:EDDL Parking\V26:freetext
-Free Text:EDDL Parking\V27:freetext
-Free Text:EDDL Parking\V28:freetext
-Free Text:EDDL Parking\V29:freetext
-Free Text:EDDL Parking\V29A:freetext
-Free Text:EDDL Parking\V38:freetext
-Free Text:EDDL Parking\V39:freetext
-Free Text:EDDL Parking\V40:freetext
-Free Text:EDDL Parking\V41:freetext
-Free Text:EDDL Parking\V42:freetext
-Free Text:EDDL Parking\V43:freetext
-Free Text:EDDL Parking\V44:freetext
-Free Text:EDDL Parking\V45:freetext
-Free Text:EDDL Parking\V46:freetext
-Free Text:EDDL Parking\V47:freetext
-Free Text:EDDL Parking\V49:freetext
-Free Text:EDDL Parking\V51:freetext
-Free Text:EDDL Parking\V53:freetext
-Free Text:EDDL Parking\V61:freetext
-Free Text:EDDL Parking\V61A:freetext
-Free Text:EDDL Parking\V62:freetext
-Free Text:EDDL Parking\V63:freetext
-Free Text:EDDL Parking\V71:freetext
-Free Text:EDDL Parking\V72:freetext
-Free Text:EDDL Parking\V72A:freetext
-Free Text:EDDL Parking\V73:freetext
-Free Text:EDDL Parking\V74:freetext
-Free Text:EDDL Parking\V75:freetext
-Free Text:EDDL Parking\V76:freetext
-Free Text:EDDL Parking\V77:freetext
-Free Text:EDDL Parking\V81:freetext
-Free Text:EDDL Parking\V82:freetext
-Free Text:EDDL Parking\V83:freetext
-Free Text:EDDL Parking\V84:freetext
-Free Text:EDDL Parking\V85:freetext
-Free Text:EDDL Parking\V86:freetext
-Free Text:EDDL Parking\V91:freetext
-Free Text:EDDL Parking\V92:freetext
-Free Text:EDDL Parking\V93:freetext
-Free Text:EDDL Parking\V94:freetext
-Free Text:EDDL Parking\V95:freetext
-Free Text:EDDL Parking\V96:freetext
-Free Text:EDDL Taxiway\G (G1):freetext
-Free Text:EDDL Taxiway\H (G2):freetext
-Free Text:EDDL Taxiway\K:freetext
-Free Text:EDDL Taxiway\K1:freetext
-Free Text:EDDL Taxiway\K2:freetext
-Free Text:EDDL Taxiway\K3:freetext
-Free Text:EDDL Taxiway\K5:freetext
-Free Text:EDDL Taxiway\L1:freetext
-Free Text:EDDL Taxiway\L2:freetext
-Free Text:EDDL Taxiway\L3:freetext
-Free Text:EDDL Taxiway\L3:freetext
-Free Text:EDDL Taxiway\L4:freetext
-Free Text:EDDL Taxiway\L4:freetext
-Free Text:EDDL Taxiway\L5:freetext
-Free Text:EDDL Taxiway\L5:freetext
-Free Text:EDDL Taxiway\L6:freetext
-Free Text:EDDL Taxiway\L7:freetext
-Free Text:EDDL Taxiway\L7:freetext
-Free Text:EDDL Taxiway\L7:freetext
-Free Text:EDDL Taxiway\L8:freetext
-Free Text:EDDL Taxiway\L9:freetext
-Free Text:EDDL Taxiway\L9:freetext
-Free Text:EDDL Taxiway\M:freetext
-Free Text:EDDL Taxiway\M:freetext
-Free Text:EDDL Taxiway\M:freetext
-Free Text:EDDL Taxiway\M:freetext
-Free Text:EDDL Taxiway\N:freetext
-Free Text:EDDL Taxiway\P1:freetext
-Free Text:EDDL Taxiway\P2:freetext
-Free Text:EDDL Taxiway\P3:freetext
-Free Text:EDDL Taxiway\P4:freetext
-Free Text:EDDL Taxiway\P4:freetext
-Free Text:EDDL Taxiway\T:freetext
-Free Text:EDDL Taxiway\T:freetext
-Free Text:EDDL Taxiway\T:freetext
-Free Text:EDDL Taxiway\T:freetext
-Free Text:EDDL Taxiway\T:freetext
-Free Text:EDDL Taxiway\T1:freetext
-Free Text:EDDL Taxiway\Y:freetext
-Geo:EDDL Groundlayout Checkpoints:
-Geo:EDDL Groundlayout Gates 2102:
-Geo:EDDL Groundlayout Stopbars:
-Geo:EDDL Groundlayout Taxilines 2102:
-Regions:EDDL GROUND ALTN:polygon
 SHOWC:1
 SHOWSB:0
 BELOW:0
-ABOVE:13500
-LEADER:5
+ABOVE:5000
+LEADER:-1
 SHOWLEADER:0
 TURNLEADER:0
 HISTORY_DOTS:0
 SIMULATION_MODE:1
 DISABLEPANNING:0
 DISABLEZOOMING:0
-DisplayRotation:36.00000
+DisplayRotation:36.60000
 TAGFAMILY:Phoenix Ground
-WINDOWAREA:51.276187:6.737242:51.296854:6.798124
+WINDOWAREA:51.275720:6.736211:51.296910:6.798634
 PLUGIN:Ground Radar plugin:AirportElevation:147
 PLUGIN:Ground Radar plugin:AirportRadius:3
 PLUGIN:Ground Radar plugin:GroundMode:EDDL
-PLUGIN:Ground Radar plugin:ShowMapData:EDDL,EDDL_PHX
-PLUGIN:TopSky plugin:ShowMapData:NONE
+PLUGIN:Ground Radar plugin:ShowMapData:EDDL_DFS
+PLUGIN:TopSky plugin:ShowMapData:EDDL_DFS
