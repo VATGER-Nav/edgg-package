@@ -26,8 +26,8 @@ COLORDEF:dfstaxiwaylabel:180:180:180
 COLORDEF:layout-base:10:10:10
 COLORDEF:layout-taxiway:53:53:53
 COLORDEF:layout-apron:29:29:29
-COLORDEF:layout-building:45:52:55
-COLORDEF:layout-runway:85:85:85
+COLORDEF:layout-building:43:49:50
+COLORDEF:layout-runway:78:78:78
 COLORDEF:layout-runway-marking:150:150:150
 COLORDEF:layout-taxiline-yellow:145:136:94
 COLORDEF:layout-taxiline-orange:113:68:6
