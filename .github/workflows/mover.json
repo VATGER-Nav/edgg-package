@@ -55,7 +55,9 @@
 
     ".github/workflows/source/grp_phoenix_maps/edln.txt",
 
-    ".github/workflows/source/grp_phoenix_maps/edlv.txt"
+    ".github/workflows/source/grp_phoenix_maps/edlv.txt",
+
+    ".github/workflows/source/grp_phoenix_maps/edsb.txt"
   ],
 
   "EDGG/Plugins/GRP/Phoenix/GRpluginStands.txt": [

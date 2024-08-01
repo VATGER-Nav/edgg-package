@@ -3,51 +3,6 @@ DisplayTypeNeedRadarContent:0
 DisplayTypeGeoReferenced:1
 SECTORFILE:
 SECTORTITLE:
-Free Text:EDSB Labels\APR2:freetext
-Free Text:EDSB Labels\APR3:freetext
-Free Text:EDSB Labels\APR4:freetext
-Free Text:EDSB Labels\DE-ICE:freetext
-Free Text:EDSB Labels\DE-ICE:freetext
-Free Text:EDSB Labels\DRF:freetext
-Free Text:EDSB Labels\GAT:freetext
-Free Text:EDSB Labels\Helipad:freetext
-Free Text:EDSB Labels\Police:freetext
-Free Text:EDSB Labels\Terminal:freetext
-Free Text:EDSB Parking\18/18A:freetext
-Free Text:EDSB Parking\19/19A:freetext
-Free Text:EDSB Parking\20:freetext
-Free Text:EDSB Parking\21:freetext
-Free Text:EDSB Parking\22:freetext
-Free Text:EDSB Parking\23:freetext
-Free Text:EDSB Parking\24:freetext
-Free Text:EDSB Parking\25:freetext
-Free Text:EDSB Parking\26:freetext
-Free Text:EDSB Parking\27:freetext
-Free Text:EDSB Taxiways\A:freetext
-Free Text:EDSB Taxiways\B:freetext
-Free Text:EDSB Taxiways\C:freetext
-Free Text:EDSB Taxiways\D:freetext
-Free Text:EDSB Taxiways\E:freetext
-Free Text:EDSB Taxiways\G:freetext
-Free Text:EDSB Taxiways\G:freetext
-Free Text:EDSB Taxiways\G:freetext
-Free Text:EDSB Taxiways\H:freetext
-Free Text:EDSB Taxiways\J:freetext
-Free Text:EDSB Taxiways\K:freetext
-Free Text:EDSB Taxiways\M:freetext
-Free Text:EDSB Taxiways\N:freetext
-Free Text:EDSB Taxiways\P:freetext
-Free Text:EDSB Taxiways\P:freetext
-Free Text:EDSB Taxiways\Q:freetext
-Free Text:EDSB Taxiways\S:freetext
-Free Text:EDSB Taxiways\S:freetext
-Free Text:EDSB Taxiways\T:freetext
-Free Text:EDSB Taxiways\Z:freetext
-Free Text:EDSB Taxiways\Z:freetext
-Geo:EDSB Groundlayout Stands:
-Geo:EDSB Groundlayout Taxilines:
-Regions:EDSB Ground NEW:polygon
-Regions:EDSB Holdshorts:polygon
 SHOWC:1
 SHOWSB:1
 BELOW:0
