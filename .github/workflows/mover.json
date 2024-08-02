@@ -1,7 +1,7 @@
 {
   "EDGG/Plugins/GRP/Phoenix/GRpluginMaps.txt": [
     ".github/workflows/source/grp_phoenix_maps/colors.txt",
-	".github/workflows/source/grp_phoenix_maps/symbols.txt",
+    ".github/workflows/source/grp_phoenix_maps/symbols.txt",
     ".github/workflows/source/grp_phoenix_maps/sct-file-path.txt",
 
     ".github/workflows/source/grp_phoenix_maps/eddf/background.txt",
@@ -20,15 +20,9 @@
     ".github/workflows/source/grp_phoenix_maps/eddf/reduced_runway_separation.txt",
     ".github/workflows/source/grp_phoenix_maps/eddf/app_window.txt",
     ".github/workflows/source/grp_phoenix_maps/eddf/eddf_pro.txt",
-	".github/workflows/source/grp_phoenix_maps/eddf/vsid_areas.txt",
+    ".github/workflows/source/grp_phoenix_maps/eddf/vsid_areas.txt",
 
-    ".github/workflows/source/grp_phoenix_maps/eddl/app_window.txt",
-    ".github/workflows/source/grp_phoenix_maps/eddl/eddl_a380_taxi_routing.txt",
-    ".github/workflows/source/grp_phoenix_maps/eddl/second_window.txt",
-    ".github/workflows/source/grp_phoenix_maps/eddl/reduced_runway_separation.txt",
-    ".github/workflows/source/grp_phoenix_maps/eddl/notam_closures.txt",
-    ".github/workflows/source/grp_phoenix_maps/eddl/restriction_map.txt",
-    ".github/workflows/source/grp_phoenix_maps/eddl/permanent_closures.txt",
+    ".github/workflows/source/grp_phoenix_maps/eddl.txt",
 
     ".github/workflows/source/grp_phoenix_maps/eddk/second_window.txt",
     ".github/workflows/source/grp_phoenix_maps/eddk/app_window.txt",
@@ -47,6 +41,8 @@
     ".github/workflows/source/grp_phoenix_maps/edds/restrictions.txt",
     ".github/workflows/source/grp_phoenix_maps/edds/closures.txt",
 
+    ".github/workflows/source/grp_phoenix_maps/eddg.txt",
+
     ".github/workflows/source/grp_phoenix_maps/military.txt",
 
     ".github/workflows/source/grp_phoenix_maps/edfh.txt",
@@ -59,7 +55,9 @@
 
     ".github/workflows/source/grp_phoenix_maps/edln.txt",
 
-    ".github/workflows/source/grp_phoenix_maps/edlv.txt"
+    ".github/workflows/source/grp_phoenix_maps/edlv.txt",
+
+    ".github/workflows/source/grp_phoenix_maps/edsb.txt"
   ],
 
   "EDGG/Plugins/GRP/Phoenix/GRpluginStands.txt": [
