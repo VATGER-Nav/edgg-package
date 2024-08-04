@@ -43,6 +43,8 @@
 
     ".github/workflows/source/grp_phoenix_maps/eddg.txt",
 
+    ".github/workflows/source/grp_phoenix_maps/eddr.txt",
+
     ".github/workflows/source/grp_phoenix_maps/military.txt",
 
     ".github/workflows/source/grp_phoenix_maps/edtl.txt",

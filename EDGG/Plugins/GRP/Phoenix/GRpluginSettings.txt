@@ -221,6 +221,10 @@ Airport_Runway_Buffer_LVP=07:150
 Window_APP_Rotation=18.5
 Window_APP_AltFilter=10000
 
+[EDDR]
+Window_APP_Rotation=2.6
+Window_APP_AltFilter=10000
+
 [EDLP]
 Window_APP_Rotation=32.5
 Window_APP_AltFilter=10000
