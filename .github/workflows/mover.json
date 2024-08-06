@@ -59,6 +59,8 @@
 
     ".github/workflows/source/grp_phoenix_maps/edfh.txt",
 
+    ".github/workflows/source/grp_phoenix_maps/edfm.txt",
+
     ".github/workflows/source/grp_phoenix_maps/edsb.txt"
   ],
 
@@ -72,6 +74,7 @@
     ".github/workflows/source/grp_stands/eddr.txt",
     ".github/workflows/source/grp_stands/edds.txt",
     ".github/workflows/source/grp_stands/edfh.txt",
+    ".github/workflows/source/grp_stands/edfm.txt",
     ".github/workflows/source/grp_stands/edln.txt",
     ".github/workflows/source/grp_stands/edlp.txt",
     ".github/workflows/source/grp_stands/edlv.txt",

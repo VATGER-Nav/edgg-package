@@ -1,4 +1,4 @@
-// last change: 04.08.2024 by SS
+// last change: 06.08.2024 by SS
 
 Equip_ProMode=0
 RawVideo=1
@@ -259,6 +259,10 @@ Window_APP_AltFilter=10000
 
 //List_Outbound=*,2,1131,500
 //List_Inbound=*,2,1203,650
+
+[EDFM]
+Window_APP_Rotation=356.9
+Window_APP_AltFilter=10000
 
 [EDSB]
 Airport_Runway_Area_LVP=21:90
