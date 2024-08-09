@@ -3,25 +3,6 @@ DisplayTypeNeedRadarContent:0
 DisplayTypeGeoReferenced:1
 SECTORFILE:
 SECTORTITLE:
-Free Text:EDDR Parking\GAT:freetext
-Free Text:EDDR Parking\N1:freetext
-Free Text:EDDR Parking\N2:freetext
-Free Text:EDDR Parking\N3:freetext
-Free Text:EDDR Parking\N4:freetext
-Free Text:EDDR Parking\N5:freetext
-Free Text:EDDR Parking\S1:freetext
-Free Text:EDDR Parking\S2:freetext
-Free Text:EDDR Parking\S3:freetext
-Free Text:EDDR Parking\S4:freetext
-Free Text:EDDR Parking\S5:freetext
-Free Text:EDDR Taxiways\A:freetext
-Free Text:EDDR Taxiways\B:freetext
-Free Text:EDDR Taxiways\C:freetext
-Free Text:EDDR Taxiways\N:freetext
-Free Text:EDDR Taxiways\S:freetext
-Geo:EDDR Groundlayout Holdshorts:
-Geo:EDDR Groundlayout Stands:
-Regions:EDDR Ground NEW:polygon
 SHOWC:1
 SHOWSB:1
 BELOW:0
@@ -33,9 +14,9 @@ HISTORY_DOTS:0
 SIMULATION_MODE:1
 DISABLEPANNING:0
 DISABLEZOOMING:0
-DisplayRotation:2.00000
+DisplayRotation:2.60000
 TAGFAMILY:Phoenix Ground
-WINDOWAREA:49.212056:7.093004:49.223760:7.127012
+WINDOWAREA:49.204706:7.076553:49.227566:7.143017
 PLUGIN:Ground Radar plugin:AirportElevation:1058
 PLUGIN:Ground Radar plugin:AirportRadius:3
 PLUGIN:Ground Radar plugin:GroundMode:EDDR

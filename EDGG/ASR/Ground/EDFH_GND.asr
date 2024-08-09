@@ -3,47 +3,6 @@ DisplayTypeNeedRadarContent:0
 DisplayTypeGeoReferenced:1
 SECTORFILE:
 SECTORTITLE:
-Free Text:EDFH ParkingNeu\A1:freetext
-Free Text:EDFH ParkingNeu\A2:freetext
-Free Text:EDFH ParkingNeu\A3:freetext
-Free Text:EDFH ParkingNeu\A4:freetext
-Free Text:EDFH ParkingNeu\A5:freetext
-Free Text:EDFH ParkingNeu\A6:freetext
-Free Text:EDFH ParkingNeu\APR2:freetext
-Free Text:EDFH ParkingNeu\APR3:freetext
-Free Text:EDFH ParkingNeu\APR4:freetext
-Free Text:EDFH ParkingNeu\APR5:freetext
-Free Text:EDFH ParkingNeu\B1:freetext
-Free Text:EDFH ParkingNeu\B2:freetext
-Free Text:EDFH ParkingNeu\B3:freetext
-Free Text:EDFH ParkingNeu\B4:freetext
-Free Text:EDFH ParkingNeu\B5:freetext
-Free Text:EDFH ParkingNeu\D1:freetext
-Free Text:EDFH ParkingNeu\D2:freetext
-Free Text:EDFH ParkingNeu\D3/D4:freetext
-Free Text:EDFH ParkingNeu\E:freetext
-Free Text:EDFH ParkingNeu\F:freetext
-Free Text:EDFH ParkingNeu\G1:freetext
-Free Text:EDFH ParkingNeu\G2:freetext
-Free Text:EDFH ParkingNeu\G3:freetext
-Free Text:EDFH ParkingNeu\G4:freetext
-Free Text:EDFH ParkingNeu\G5:freetext
-Free Text:EDFH TAXIWAYSNeu\A:freetext
-Free Text:EDFH TAXIWAYSNeu\A:freetext
-Free Text:EDFH TAXIWAYSNeu\A:freetext
-Free Text:EDFH TAXIWAYSNeu\B1:freetext
-Free Text:EDFH TAXIWAYSNeu\B2:freetext
-Free Text:EDFH TAXIWAYSNeu\C:freetext
-Free Text:EDFH TAXIWAYSNeu\D:freetext
-Free Text:EDFH TAXIWAYSNeu\E:freetext
-Free Text:EDFH TAXIWAYSNeu\F:freetext
-Free Text:EDFH TAXIWAYSNeu\G:freetext
-Free Text:EDFH TAXIWAYSNeu\M:freetext
-Geo:EDFH Groundlayout Stands:
-Geo:EDFH Groundlayout Taxilines:
-Regions:EDFH Groundlayout:polygon
-Regions:EDFH Holdshorts:polygon
-Regions:EDFH Holdshorts CATII_III:polygon
 SHOWC:0
 SHOWSB:0
 BELOW:1660
@@ -55,9 +14,9 @@ HISTORY_DOTS:0
 SIMULATION_MODE:1
 DISABLEPANNING:0
 DISABLEZOOMING:0
-DisplayRotation:57.00000
+DisplayRotation:57.65000
 TAGFAMILY:Phoenix Ground
-WINDOWAREA:49.932839:7.225408:49.958688:7.301555
+WINDOWAREA:49.929021:7.216193:49.961758:7.311377
 PLUGIN:Ground Radar plugin:AirportElevation:1649
 PLUGIN:Ground Radar plugin:AirportRadius:3
 PLUGIN:Ground Radar plugin:GroundMode:EDFH
