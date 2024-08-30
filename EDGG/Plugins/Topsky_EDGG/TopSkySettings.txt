@@ -230,7 +230,7 @@ Shortcut_Map_Target=3,Tools\Seperation Guide Lower
 Shortcut_Map_Target=4,Tools\Seperation Guide Upper
 Shortcut_Map_Target=5,Upper\Upper Borders
 Shortcut_Map_Target=6,VFR\VFR Reporting Points
-Shortcut_Map_Target=7,EDDK\EDDK Noise 13L,EDDK\EDDK Noise 31R,EDDK\EDDK Noise 24,EDDK\EDDK Noise 06
+Shortcut_Map_Target=7,EDDK\EDDK Noise All
 
 STCA_Sep_Lat_SepLevel=24500
 STCA_Filter=1
