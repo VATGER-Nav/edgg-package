@@ -1,4 +1,4 @@
-// last change: 06.08.2024 by SS
+// last change: 03.09.2024 by SS
 
 Equip_ProMode=0
 RawVideo=1
@@ -190,6 +190,12 @@ Airport_Runway_Closed_Dep=07L
 System_RIM=0
 
 [EDDK]
+Airport_Runway_Area_LVP=31R:90
+Airport_Runway_Area_LVP=13L:90
+Airport_Runway_Buffer_LVP=31R:150
+Airport_Runway_Buffer_LVP=13L:150
+Window_APP_Rotation=312.9
+Window_APP_AltFilter=10000
 System_RIM=0
 
 [EDDL]

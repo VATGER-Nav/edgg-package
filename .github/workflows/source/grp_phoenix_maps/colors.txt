@@ -67,3 +67,4 @@ COLORDEF:deicing:90:109:156
 COLORDEF:deicing-line:54:65:92
 
 COLORDEF:appwindow-runway:160:160:160
+COLORDEF:appwindow-background:0:0:0
