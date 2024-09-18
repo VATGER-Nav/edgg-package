@@ -5758,7 +5758,7 @@ MANUAL
 //                             EDDS - Stuttgart
 // ########################################################################
 
-GROUP:EDDS_US:AIO:CAP:CMB:CNV:CPF:DOI:DOS:DUKE:GKA:JPR:MSH:OSD:QID:RCH:SAM:USR
+GROUP:EDDS_US:AF1:AIO:CAP:CMB:CNV:CPF:DOI:DOS:DUKE:GKA:JPR:MSH:OSD:QID:RCH:SAM:SPAR:USR
 GROUP:EDDS_OP:AEE:AFR:ASL:ATV:AUA:BAW:CAI:CFG:CXI:DAL:DLH:ENT:EWG:FHM:FHY:GPX:GSW:GWI:HOP:ITY:JOC:KLM:LBT:LOT:MBU:MGH:MSC:PGT:SAS:SEK:STW:SWR:SWU:SXS:TDR:THY:TUI:TVS:TWI:VLG:VOE
 
 // ------------------------------------------------------------------------
