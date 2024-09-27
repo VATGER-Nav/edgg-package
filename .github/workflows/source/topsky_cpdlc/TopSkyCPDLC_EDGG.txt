@@ -1,10 +1,10 @@
 [DCL]
-#import .github/workflows/source/data/topsky_cpdlc/DCL.txt
+#import .github/workflows/source/topsky_cpdlc/DCL.txt
 
 [FREETEXT]
-#import .github/workflows/source/data/topsky_cpdlc/freetext_general.txt
-#import .github/workflows/source/data/topsky_cpdlc/freetext_EDYY.txt
-#import .github/workflows/source/data/topsky_cpdlc/freetext_EDUU.txt
+#import .github/workflows/source/topsky_cpdlc/freetext_general.txt
+#import .github/workflows/source/topsky_cpdlc/freetext_EDYY.txt
+#import .github/workflows/source/topsky_cpdlc/freetext_EDUU.txt
 
 [STATIONS]
-#import .github/workflows/source/data/topsky_cpdlc/stations.txt
+#import .github/workflows/source/topsky_cpdlc/stations.txt
