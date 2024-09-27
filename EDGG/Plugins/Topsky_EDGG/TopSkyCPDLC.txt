@@ -1,4 +1,4 @@
-// Langen, Rhein, Maastricht Radar
+// Langen
 
 [DCL]
 // ****************** REQ STARTUP ON OWN FREQ ****************** 
