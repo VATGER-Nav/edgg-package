@@ -1,14 +1,19 @@
 // Phoenix Tower
 
 [DCL]
-// ****************** REQ STARTUP ON OWN FREQ ****************** 
-DCL:EDDF,EDDS,EDDR,EDFH,EDSB,EDFM,EDDL,EDDK,EDDG,EDLW,EDLP,EDLV:SID:CLRD TO <ades> OFF <drwy> VIA <sid> CLIMB <cfl> SQUAWK <assr> <atis> REPORT READY ON <freq_own> <rmk>
+// ****************** DEFAULT + own freq ******************
+DCL:EDDF,EDDG,EDDK,EDDL,EDDR,EDDS,EDFH,EDFM,EDLN,EDLP,EDLV,EDLW,EDSB,EDTL:CLRD TO <ades> OFF <drwy> VIA <SID> CLIMB <cfl> SQUAWK <assr> ADT MDI NEXT FREQ <freq_own> <atis> <startup_own> <rmk>
 
-// ****************** REQ STARTUP ON FREQ + TOBT + OWN FREQ****************** 
-//DCL:EDDF,EDDS,EDDR,EDFH,EDSB,EDFM,EDDL,EDDK,EDDG,EDLW,EDLP,EDLV:SID:CLRD TO <ades> OFF <drwy> VIA <sid> CLIMB <cfl> SQUAWK <assr> <atis> REPORT TOBT AT VACDM.VATGER.DE AND REQ STARTUP ON <freq_own> <rmk>
+// ****************** DEFAULT + manual freq ****************** 
+// DCL:EDDF,EDDG,EDDK,EDDL,EDDR,EDDS,EDFH,EDFM,EDLN,EDLP,EDLV,EDLW,EDSB,EDTL:CLRD TO <ades> OFF <drwy> VIA <SID> CLIMB <cfl> SQUAWK <assr> ADT MDI NEXT FREQ <freq_next> <atis> <startup_next> <rmk>
 
-// ****************** STARTUP APPROVED + next Frequency ****************** 
-// DCL:EDDF,EDDS,EDDR,EDFH,EDSB,EDFM,EDDL,EDDK,EDDG,EDLW,EDLP,EDLV:SID:CLRD TO <ades> OFF <drwy> VIA <sid> CLIMB <cfl> SQUAWK <assr> <atis> <startup_next> <rmk>
+// ****************** ACDM + own freq ******************
+// DCL:EDDF,EDDL,EDDS:CLRD TO <ades> OFF <drwy> VIA <SID> CLIMB <cfl> SQUAWK <assr> ADT MDI NEXT FREQ <freq_own> <atis> REPORT TOBT AT VACDM.VATGER.DE <startup_own> ACC TSAT <rmk>
+// DCL:EDDG,EDDK,EDDR,EDFH,EDFM,EDLN,EDLP,EDLV,EDLW,EDSB,EDTL:CLRD TO <ades> OFF <drwy> VIA <SID> CLIMB <cfl> SQUAWK <assr> ADT MDI NEXT FREQ <freq_own> <atis> <startup_own> <rmk>
+
+// ****************** ACDM + manual freq ******************
+// DCL:EDDF,EDDL,EDDS:CLRD TO <ades> OFF <drwy> VIA <SID> CLIMB <cfl> SQUAWK <assr> ADT MDI NEXT FREQ <freq_next> <atis> REPORT TOBT AT VACDM.VATGER.DE <startup_next> ACC TSAT <rmk>
+// DCL:EDDG,EDDK,EDDR,EDFH,EDFM,EDLN,EDLP,EDLV,EDLW,EDSB,EDTL:CLRD TO <ades> OFF <drwy> VIA <SID> CLIMB <cfl> SQUAWK <assr> ADT MDI NEXT FREQ <freq_next> <atis> <startup_next> <rmk>
 
 [FREETEXT]
 
