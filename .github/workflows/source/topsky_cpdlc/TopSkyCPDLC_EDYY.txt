@@ -1,5 +1,4 @@
 [DCL]
-#import .github/workflows/source/data/topsky_cpdlc/DCL.txt
 
 [FREETEXT]
 #import .github/workflows/source/data/topsky_cpdlc/freetext_general.txt
