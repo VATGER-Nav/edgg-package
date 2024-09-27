@@ -1,0 +1,7 @@
+[DCL]
+#import .github/workflows/source/data/topsky_cpdlc/DCL.txt
+
+[FREETEXT]
+
+[STATIONS]
+#import .github/workflows/source/data/topsky_cpdlc/stations.txt
