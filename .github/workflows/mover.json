@@ -179,15 +179,19 @@
     ".github/workflows/source/topsky_edyy_maps/topo.txt"
   ],
 
+  "EDGG/Plugins/Topsky_Phoenix/TopSkyCPDLC.txt": [
+    ".github/workflows/source/topsky_cpdlc/TopSkyCPDLC_PHX.txt"
+  ],
+  
   "EDGG/Plugins/Topsky_EDGG/TopSkyCPDLC.txt": [
-    ".github/workflows/source/topsky_cpdlc/TopSkyCPDLC.txt"
+    ".github/workflows/source/topsky_cpdlc/TopSkyCPDLC_EDGG.txt"
   ],
 
   "EDGG/Plugins/Topsky_EDUU/TopSkyCPDLC.txt": [
-    ".github/workflows/source/topsky_cpdlc/TopSkyCPDLC.txt"
+    ".github/workflows/source/topsky_cpdlc/TopSkyCPDLC_EDUU.txt"
   ],
 
   "EDGG/Plugins/Topsky_EDYY/TopSkyCPDLC.txt": [
-    ".github/workflows/source/topsky_cpdlc/TopSkyCPDLC.txt"
+    ".github/workflows/source/topsky_cpdlc/TopSkyCPDLC_EDYY.txt"
   ]
 }
