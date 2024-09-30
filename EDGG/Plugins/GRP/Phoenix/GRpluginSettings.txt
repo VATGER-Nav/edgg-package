@@ -1,4 +1,4 @@
-// last change: 04.09.2024 by SS
+// last change: 30.09.2024 by SS
 
 Equip_ProMode=0
 RawVideo=1
@@ -207,6 +207,8 @@ Airport_Runway_Area_LVP=31R:90
 Airport_Runway_Area_LVP=13L:90
 Airport_Runway_Buffer_LVP=31R:150
 Airport_Runway_Buffer_LVP=13L:150
+Airport_Runway_NotATYP=31L:A388,B741,B742,B743,B744,B748,A124,A225,A346
+Airport_Runway_NotATYP=24:A388,A124,A225,C5M
 //Window_APP_Rotation=312.9
 Window_APP_AltFilter=10000
 System_RIM=0
