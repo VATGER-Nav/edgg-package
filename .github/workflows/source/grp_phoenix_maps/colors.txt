@@ -30,8 +30,8 @@ COLORDEF:layout-building:43:49:50
 COLORDEF:layout-runway:78:78:78
 COLORDEF:layout-runway-marking:150:150:150
 COLORDEF:layout-taxiline-yellow:145:136:94
-COLORDEF:layout-taxiline-orange:113:68:6
-COLORDEF:layout-taxiline-blue:39:59:106
+COLORDEF:layout-taxiline-orange:161:82:14
+COLORDEF:layout-taxiline-blue:0:90:193
 COLORDEF:layout-taxiline-grey:99:99:99
 COLORDEF:layout-holdingpoint:193:121:4
 COLORDEF:layout-label-taxiway:180:180:180
