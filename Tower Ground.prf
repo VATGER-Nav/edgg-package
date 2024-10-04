@@ -36,7 +36,7 @@ Voice	bass_filter	1
 
 Sounds	Sound18	\EDGG\Sounds\startup_silent.wav
 
-Plugins	Plugin0	\EDGG\Plugins\TopSky_Phoenix\TopSky.dll
+Plugins	Plugin0	\EDGG\Plugins\Topsky_Phoenix\TopSky.dll
 Plugins	Plugin0Display0	Standard ES radar screen
 Plugins	Plugin0Display1	Ground Radar display
 Plugins	Plugin1	\EDGG\Plugins\AfvEuroScopeBridge.dll
@@ -70,10 +70,10 @@ RecentFiles	Recent1	\EDGG\ASR\Special\EDDF_DFS_GND.asr
 RecentFiles	Recent2	\EDGG\ASR\Tower\EDDF_TWR.asr
 RecentFiles	Recent3	\EDGG\ASR\Special\EDDS_DFS_GND.asr
 RecentFiles	Recent4	\EDGG\ASR\Tower\EDDS_TWR.asr
-RecentFiles	Recent5	\EDGG\ASR\Tower\EDDL_TWR.asr
-RecentFiles	Recent6	\EDGG\ASR\Ground\EDDL_GND.asr
-RecentFiles	Recent7	\EDGG\ASR\Tower\EDDK_TWR.asr
-RecentFiles	Recent8	\EDGG\ASR\Special\EDDK_DFS_GND.asr
+RecentFiles	Recent5	\EDGG\ASR\Ground\EDDL_GND.asr
+RecentFiles	Recent6	\EDGG\ASR\Tower\EDDL_TWR.asr
+RecentFiles	Recent7	\EDGG\ASR\Ground\EDDK_GND.asr
+RecentFiles	Recent8	\EDGG\ASR\Tower\EDDK_TWR.asr
 
 ASRFastKeys	1	\EDGG\ASR\Tower\EDFH_TWR.asr
 ASRFastKeys	2	\EDGG\ASR\Ground\EDFH_GND.asr

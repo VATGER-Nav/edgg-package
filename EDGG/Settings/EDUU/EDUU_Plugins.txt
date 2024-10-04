@@ -240,6 +240,7 @@ TopSky plugin:ACList/Traffic Management List 2/m_Column_18:STAR:8:1:10012:18:0:0
 TopSky plugin:ACList/Traffic Management List 2/m_Column_19:ARWY:4:1:10010:19:0:0:TopSky plugin::
 TopSky plugin:ACList/Traffic Management List 2/m_Column_20:ETA:5:1:54:0:0:0:::
 TopSky plugin:ACList/Traffic Management List 2/m_Column_21:SID:8:1:10011:17:0:0:TopSky plugin::
+CCAMS:AutoAssign:0
 CCAMS:ACList/Mode S EHS/m_Visible:0
 CCAMS:ACList/Mode S EHS/m_X:1420
 CCAMS:ACList/Mode S EHS/m_Y:48
