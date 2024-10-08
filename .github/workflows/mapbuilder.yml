@@ -1,0 +1,30 @@
+name: maps-creator
+run-name: Push by ${{ github.actor }} is building Maps
+on:
+  push:
+    branches:
+      - "*"
+      - "*/**"
+      - "!main"
+permissions: write-all
+
+jobs:
+  build-maps:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v4
+      - name: Restore cached sources
+        uses: actions/cache/restore@v4
+        with:
+          path: .cache
+          key: sources
+      - name: Run mapbuilder
+        uses: vatger-nav/mapbuilder@main
+        with:
+          target-path: '.'
+          source-path: 'mapbuilder'
+      - name: Store cached sources
+        uses: actions/cache/save@v4
+        with:
+          path: .cache
+          key: sources
