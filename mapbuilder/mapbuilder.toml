@@ -1,0 +1,88 @@
+[data]
+
+[data.eddf]
+type = "aixm"
+source = "https://aip.dfs.de/datasets/scripts/getItem.php?amdt=9999&content=aerodrome_mapping/EDDF_AerodromeMapping_2024-10-03_2024-10-03_snapshot.zip"
+
+[data.eddl]
+type = "aixm"
+source = "https://aip.dfs.de/datasets/scripts/getItem.php?amdt=9999&content=aerodrome_mapping/EDDL_AerodromeMapping_2024-10-03_2024-10-03_snapshot.zip"
+
+[data.eddk]
+type = "aixm"
+source = "https://aip.dfs.de/datasets/scripts/getItem.php?amdt=9999&content=aerodrome_mapping/EDDK_AerodromeMapping_2024-10-03_2024-10-03_snapshot.zip"
+
+[data.edds]
+type = "aixm"
+source = "https://aip.dfs.de/datasets/scripts/getItem.php?amdt=9999&content=aerodrome_mapping/EDDS_AerodromeMapping_2024-10-03_2024-10-03_snapshot.zip"
+
+[data.eddg]
+type = "aixm"
+source = "https://aip.dfs.de/datasets/scripts/getItem.php?amdt=9999&content=aerodrome_mapping/EDDG_AerodromeMapping_2024-10-03_2024-10-03_snapshot.zip"
+
+[data.eddr]
+type = "aixm"
+source = "https://aip.dfs.de/datasets/scripts/getItem.php?amdt=9999&content=aerodrome_mapping/EDDR_AerodromeMapping_2024-10-03_2024-10-03_snapshot.zip"
+
+[data.edlp]
+type = "aixm"
+source = "https://aip.dfs.de/datasets/scripts/getItem.php?amdt=9999&content=aerodrome_mapping/EDLP_AerodromeMapping_2024-10-03_2024-10-03_snapshot.zip"
+
+[data.edlw]
+type = "aixm"
+source = "https://aip.dfs.de/datasets/scripts/getItem.php?amdt=9999&content=aerodrome_mapping/EDLW_AerodromeMapping_2024-10-03_2024-10-03_snapshot.zip"
+
+[data.edln]
+type = "aixm"
+source = "https://aip.dfs.de/datasets/scripts/getItem.php?amdt=9999&content=aerodrome_mapping/EDLN_AerodromeMapping_2024-10-03_2024-10-03_snapshot.zip"
+
+[data.edlv]
+type = "aixm"
+source = "https://aip.dfs.de/datasets/scripts/getItem.php?amdt=9999&content=aerodrome_mapping/EDLV_AerodromeMapping_2024-10-03_2024-10-03_snapshot.zip"
+
+[data.edfh]
+type = "aixm"
+source = "https://aip.dfs.de/datasets/scripts/getItem.php?amdt=9999&content=aerodrome_mapping/EDFH_AerodromeMapping_2024-10-03_2024-10-03_snapshot.zip"
+
+[data.edfm]
+type = "aixm"
+source = "https://aip.dfs.de/datasets/scripts/getItem.php?amdt=9999&content=aerodrome_mapping/EDFM_AerodromeMapping_2024-10-03_2024-10-03_snapshot.zip"
+
+[data.edsb]
+type = "aixm"
+source = "https://aip.dfs.de/datasets/scripts/getItem.php?amdt=9999&content=aerodrome_mapping/EDSB_AerodromeMapping_2024-10-03_2024-10-03_snapshot.zip"
+
+[profiles]
+
+[profiles.EDGG]
+maps = [
+    { map = "topsky-edgg", target = "EDGG/Plugins/Topsky_EDGG/TopSkyMaps.txt" },
+    { map = "topsky-edgg-settings", target = "EDGG/Plugins/Topsky_EDGG/TopSkySettings.txt" },
+]
+dir = "EDGG/Plugins/Topsky_EDGG/"
+
+[profiles.EDUU]
+maps = [
+    { map = "topsky-eduu", target = "EDGG/Plugins/Topsky_EDUU/TopSkyMaps.txt" },
+    { map = "topsky-edgg-settings", target = "EDGG/Plugins/Topsky_EDUU/TopSkySettings.txt" },
+]
+dir = "EDGG/Plugins/Topsky_EDUU/"
+
+[profiles.EDYY]
+maps = [
+    { map = "topsky-edyy", target = "EDGG/Plugins/Topsky_EDYY/TopSkyMaps.txt" },
+    { map = "topsky-edgg-settings", target = "EDGG/Plugins/Topsky_EDYY/TopSkySettings.txt" },
+]
+dir = "EDGG/Plugins/Topsky_EDYY/"
+
+[profiles.TWR]
+maps = [
+    { map = "grplugin-phoenix", target = "EDGG/Plugins/GRP/Phoenix/GRpluginMaps.txt" },
+    { map = "grplugin-stands", target = "EDGG/Plugins/GRP/Phoenix/GRpluginStands.txt" },
+    { map = "grplugin-settings", target = "EDGG/Plugins/GRP/Phoenix/GRpluginSettings.txt" },
+    { map = "topsky-phoenix", target = "EDGG/Plugins/Topsky_Phoenix/TopSkyMaps.txt" },
+    { map = "topsky-phoenix-settings", target = "EDGG/Plugins/Topsky_Phoenix/TopSkySettings.txt" },
+]
+dir = "EDGG/Plugins/"
+
+[runways]
