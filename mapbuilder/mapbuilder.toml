@@ -44,10 +44,6 @@ source = "https://aip.dfs.de/datasets/scripts/getItem.php?amdt=9999&content=aero
 type = "aixm"
 source = "https://aip.dfs.de/datasets/scripts/getItem.php?amdt=9999&content=aerodrome_mapping/EDFH_AerodromeMapping_2024-10-03_2024-10-03_snapshot.zip"
 
-[data.edfm]
-type = "aixm"
-source = "https://aip.dfs.de/datasets/scripts/getItem.php?amdt=9999&content=aerodrome_mapping/EDFM_AerodromeMapping_2024-10-03_2024-10-03_snapshot.zip"
-
 [data.edsb]
 type = "aixm"
 source = "https://aip.dfs.de/datasets/scripts/getItem.php?amdt=9999&content=aerodrome_mapping/EDSB_AerodromeMapping_2024-10-03_2024-10-03_snapshot.zip"
