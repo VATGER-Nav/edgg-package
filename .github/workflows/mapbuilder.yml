@@ -3,9 +3,9 @@ run-name: Push by ${{ github.actor }} is building Maps
 on:
   push:
     branches:
-      - "*"
-      - "*/**"
       - "!main"
+    paths:
+      - "mapbuilder/**"
 
 jobs:
   build-maps:
