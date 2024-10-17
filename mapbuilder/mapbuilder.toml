@@ -60,14 +60,14 @@ dir = "EDGG/Plugins/Topsky_EDGG/"
 [profiles.EDUU]
 maps = [
     { map = "topsky-eduu", target = "EDGG/Plugins/Topsky_EDUU/TopSkyMaps.txt" },
-    { map = "topsky-edgg-settings", target = "EDGG/Plugins/Topsky_EDUU/TopSkySettings.txt" },
+    { map = "topsky-eduu-settings", target = "EDGG/Plugins/Topsky_EDUU/TopSkySettings.txt" },
 ]
 dir = "EDGG/Plugins/Topsky_EDUU/"
 
 [profiles.EDYY]
 maps = [
     { map = "topsky-edyy", target = "EDGG/Plugins/Topsky_EDYY/TopSkyMaps.txt" },
-    { map = "topsky-edgg-settings", target = "EDGG/Plugins/Topsky_EDYY/TopSkySettings.txt" },
+    { map = "topsky-edyy-settings", target = "EDGG/Plugins/Topsky_EDYY/TopSkySettings.txt" },
 ]
 dir = "EDGG/Plugins/Topsky_EDYY/"
 
