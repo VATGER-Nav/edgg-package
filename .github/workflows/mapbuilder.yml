@@ -20,7 +20,7 @@ jobs:
           path: .cache
           key: sources
       - name: Run mapbuilder
-        uses: vatger-nav/mapbuilder@main
+        uses: vatger-nav/edgg-package/.github/mapbuilder@main
         with:
           target-path: '.'
           source-path: 'mapbuilder'

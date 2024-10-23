@@ -1,0 +1,33 @@
+name: Docker Action
+
+on:
+  pull_request:
+  push:
+    paths:
+      - ".github/mapbuilder/**"
+
+jobs:
+  image:
+    name: Docker Image
+    runs-on: ubuntu-latest
+    permissions: write-all
+    steps:
+      - uses: actions/checkout@v4
+      - uses: DeterminateSystems/nix-installer-action@main
+      - uses: DeterminateSystems/magic-nix-cache-action@main
+      - name: Log in to the Container registry
+        uses: docker/login-action@e92390c5fb421da1463c202d546fed0ec5c39f20
+        with:
+          registry: ghcr.io
+          username: ${{ github.actor }}
+          password: ${{ secrets.GITHUB_TOKEN }}
+      - name: Build Docker images
+        working-directory: .github/mapbuilder
+        run: nix build -L .#docker
+      - name: Push Docker images
+        working-directory: .github/mapbuilder
+        run: |
+          if [ "$GITHUB_EVENT_NAME" != "pull_request" ]; then
+            skopeo copy --insecure-policy docker-archive://$(readlink -f ./result) docker://ghcr.io/vatger-nav/mapbuilder-edgg:$GITHUB_SHA
+            skopeo copy --insecure-policy docker-archive://$(readlink -f ./result) docker://ghcr.io/vatger-nav/mapbuilder-edgg:$GITHUB_REF_NAME
+          fi
