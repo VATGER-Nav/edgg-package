@@ -294,6 +294,7 @@ Window_LFUNCFP=3,1570,44
 Window_COL_Warning_Threshold=12
 Window_CPDLC_Current=1,0,650
 Window_CPDLC_Setting=1,368,471
+Window_DCL_StartUp_Default=0
 
 WXR_Latitude=49,3
 WXR_Latitude_Max=55
