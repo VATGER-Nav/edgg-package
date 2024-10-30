@@ -171,7 +171,6 @@ Window_Ops_Caution=25
 Window_Ops_Warning=30
 Window_SM_LeaveHoldTime=3
 Window_CPDLC_Setting=1,1,250
-Window_DCL_StartUp_Default=0
 
 WXR_Latitude=49,3
 WXR_Latitude_Max=55

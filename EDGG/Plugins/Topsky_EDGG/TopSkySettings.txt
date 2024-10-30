@@ -268,8 +268,8 @@ System_FIC_Position_Free_Filtered=1
 
 System_UseAcceptedCoordColor=1
 System_UseRwyLockedColor=1
-System_UseSidAllocationColor=0
-System_UseStarAllocationColor=0
+System_UseSidStarAllocationColor=0
+//System_UseSidStarNoAllocationColor=0
 
 Track_HistoryDots=5
 Track_PredictionLine=0
@@ -294,7 +294,6 @@ Window_LFUNCFP=3,1570,44
 Window_COL_Warning_Threshold=12
 Window_CPDLC_Current=1,0,650
 Window_CPDLC_Setting=1,368,471
-Window_DCL_StartUp_Default=0
 
 WXR_Latitude=49,3
 WXR_Latitude_Max=55

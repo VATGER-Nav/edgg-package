@@ -269,8 +269,8 @@ System_ProxySounds=0
 System_UseAUP=1
 System_UseAcceptedCoordColor=1
 System_UseRwyLockedColor=0
-System_UseSidAllocationColor=0
-System_UseStarAllocationColor=0
+System_UseSidStarAllocationColor=0
+//System_UseSidStarNoAllocationColor=0
 
 Track_HistoryDots=5
 Track_PredictionLine=0

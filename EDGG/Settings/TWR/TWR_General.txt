@@ -154,8 +154,8 @@ m_Column:SI:4:1:10061:20:0:1:TopSky plugin:::0:0.0
 END
 TAXIOUT
 m_Visible:0
-m_X:1390
-m_Y:436
+m_X:1336
+m_Y:611
 m_LineNumber:0
 m_Resizable:1
 m_OrderingColumn:4
@@ -214,5 +214,5 @@ m_HeaderOnly:0
 m_Column:CALLSIGN:10:0:22:6:100:1:TopSky plugin:TopSky plugin:TopSky plugin:0:0.0
 m_Column:STND:5:1:2:1:1:1:Ground Radar plugin:Ground Radar plugin:Ground Radar plugin:1:0.0
 m_Column:ATYP:7:1:70:2:0:1:TopSky plugin:TopSky plugin::1:0.0
-m_Column:RMK:10:1:10059:2:0:1:TopSky plugin:TopSky plugin::0:0.0
+m_Column:Event:5:1:11:0:0:1:vACDM:::0:0.0
 END
