@@ -18,8 +18,8 @@
 .nofp I have not received a flight plan from you. Please make sure you have actually filed one, have set the correct ICAO codes for the departure and arrival airport, and that the callsign in your flight plan and the one you are connected with are the same. If you have just flown inbound already, please also reconnect to the network to ensure that you appear on the controllers' screens.
 .rte The route you have filed is invalid. You can find valid routes for many destinations at https://grd.aero-nav.com.
 .newrte The route you have filed is invalid. Please refile with the following route to $arr: $uc($1)
-.tobt Set your TOBT at https://vacdm.vatger.de.
-.tsat You can find your current TSAT at https://vacdm.vatger.de.
+.tobt Set your TOBT at https://app.vacdm.net.
+.tsat You can find your current TSAT at https://app.vacdm.net.
 .clr Cleared to $arr, $sid departure, flight planned route, climb to $temp, squawk $squawk.
 .clrv Cleared to $arr, $sid departure, flight planned route, climb via SID to $temp, squawk $squawk.
 .clrvec Cleared to $arr, after departure fly heading &1, vectors to $uc($2), flight planned route, climb to altitude $temp, squawk $squawk.

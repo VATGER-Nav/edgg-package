@@ -6,11 +6,11 @@ DCL:EDDF,EDDG,EDDK,EDDL,EDDR,EDDS,EDFH,EDFM,EDLN,EDLP,EDLV,EDLW,EDSB,EDTL:SID:CL
 // DCL:EDDF,EDDG,EDDK,EDDL,EDDR,EDDS,EDFH,EDFM,EDLN,EDLP,EDLV,EDLW,EDSB,EDTL:SID:CLRD TO <ades> OFF <drwy> VIA <sid> SQUAWK <assr> ADT MDI NEXT FREQ <freq_next> <atis> <startup_next> <rmk>
 
 // ****************** ACDM + own freq ******************
-// DCL:EDDF,EDDL,EDDS:SID:CLRD TO <ades> OFF <drwy> VIA <sid> SQUAWK <assr> ADT MDI NEXT FREQ <freq_own> <atis> REPORT TOBT AT VACDM.VATGER.DE <startup_own> ACC TSAT <rmk>
+// DCL:EDDF,EDDL,EDDS:SID:CLRD TO <ades> OFF <drwy> VIA <sid> SQUAWK <assr> ADT MDI NEXT FREQ <freq_own> <atis> REPORT TOBT AT APP.VACDM.NET <startup_own> ACC TSAT <rmk>
 // DCL:EDDG,EDDK,EDDR,EDFH,EDFM,EDLN,EDLP,EDLV,EDLW,EDSB,EDTL:SID:CLRD TO <ades> OFF <drwy> VIA <sid> SQUAWK <assr> ADT MDI NEXT FREQ <freq_own> <atis> <startup_own> <rmk>
 
 // ****************** ACDM + manual freq ******************
-// DCL:EDDF,EDDL,EDDS:SID:CLRD TO <ades> OFF <drwy> VIA <sid> SQUAWK <assr> ADT MDI NEXT FREQ <freq_next> <atis> REPORT TOBT AT VACDM.VATGER.DE <startup_next> ACC TSAT <rmk>
+// DCL:EDDF,EDDL,EDDS:SID:CLRD TO <ades> OFF <drwy> VIA <sid> SQUAWK <assr> ADT MDI NEXT FREQ <freq_next> <atis> REPORT TOBT AT APP.VACDM.NET <startup_next> ACC TSAT <rmk>
 // DCL:EDDG,EDDK,EDDR,EDFH,EDFM,EDLN,EDLP,EDLV,EDLW,EDSB,EDTL:SID:CLRD TO <ades> OFF <drwy> VIA <sid> SQUAWK <assr> ADT MDI NEXT FREQ <freq_next> <atis> <startup_next> <rmk>
 
 

@@ -16,12 +16,12 @@ COLORDEF:lightblue:0:230:255
 
 COLORDEF:closure:113:37:39
 COLORDEF:closure-symbol:185:59:46
-COLORDEF:closure-symbol-eddl:209:158:28
+COLORDEF:closure-symbol-yellow:209:158:28
 
 COLORDEF:apronorange:249:153:106
 COLORDEF:dfsorange:248:172:58
 COLORDEF:dfsgrey:134:134:135
-COLORDEF:dfstaxiwaylabel:180:180:180
+COLORDEF:dfstaxiwaylabel:220:220:220
 
 COLORDEF:layout-base:10:10:10
 COLORDEF:layout-taxiway:53:53:53
@@ -30,14 +30,14 @@ COLORDEF:layout-building:43:49:50
 COLORDEF:layout-runway:78:78:78
 COLORDEF:layout-runway-marking:150:150:150
 COLORDEF:layout-taxiline-yellow:145:136:94
+COLORDEF:layout-taxiline-white:135:135:135
 COLORDEF:layout-taxiline-orange:161:82:14
 COLORDEF:layout-taxiline-blue:0:90:193
 COLORDEF:layout-taxiline-grey:99:99:99
 COLORDEF:layout-holdingpoint:193:121:4
-COLORDEF:layout-label-taxiway:180:180:180
+COLORDEF:layout-holdingpoint-grey:130:130:130
+COLORDEF:layout-label-taxiway:220:220:220
 COLORDEF:layout-label-stand:180:180:180
-
-COLORDEF:layout-eddl-taxiline-yellow:135:135:135
 
 COLORDEF:aor-gnd-a:98:133:29
 COLORDEF:aor-gnd-b:151:162:51
@@ -62,9 +62,12 @@ COLORDEF:restrictions-C:210:116:7
 COLORDEF:restrictions-D:209:195:54
 COLORDEF:restrictions-E:64:154:112
 COLORDEF:restrictions-F:0:143:193
+COLORDEF:restrictions-F2:127:63:152
 
 COLORDEF:deicing:90:109:156
 COLORDEF:deicing-line:54:65:92
+
+COLORDEF:break-away-area:58:159:65
 
 COLORDEF:appwindow-runway:160:160:160
 COLORDEF:appwindow-background:0:0:0
