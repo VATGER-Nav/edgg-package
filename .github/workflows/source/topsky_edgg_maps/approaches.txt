@@ -130,6 +130,22 @@ COLOR:DFSGrey
 ACTIVE:RWY:ARR:EDLW24:DEP:*
 #import .github/workflows/source/data/procedures/edlw/edlw_rnp_24.txt
 
+MAP:EDQG RNP 08
+FOLDER:Minor Approaches
+STYLE:Solid:1
+FONTSIZE:=:11
+COLOR:DFSGrey
+ACTIVE:RWY:ARR:EDQG08:DEP:*
+#import .github/workflows/source/data/procedures/edqg/edqg_rnp_08.txt
+
+MAP:EDQG RNP 26
+FOLDER:Minor Approaches
+STYLE:Solid:1
+FONTSIZE:=:11
+COLOR:DFSGrey
+ACTIVE:RWY:ARR:EDQG26:DEP:*
+#import .github/workflows/source/data/procedures/edqg/edqg_rnp_26.txt
+
 MAP:EDSB RNP 03
 FOLDER:Minor Approaches
 STYLE:Solid:1
