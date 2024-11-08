@@ -104,6 +104,15 @@ ACTIVE:RWY:ARR:*:DEP:EDQG08
 ACTIVE:RWY:ARR:*:DEP:EDQG26
 #import .github/workflows/source/data/extended_centerline/edqg_ecl.txt
 
+MAP:EDRY ECL
+COLOR:DFSGrey
+STYLE:SOLID:1
+ACTIVE:RWY:ARR:EDRY16:DEP:*
+ACTIVE:RWY:ARR:EDRY34:DEP:*
+ACTIVE:RWY:ARR:*:DEP:EDRY16
+ACTIVE:RWY:ARR:*:DEP:EDRY34
+#import .github/workflows/source/data/extended_centerline/edry_ecl.txt
+
 MAP:EDSB ECL
 COLOR:DFSGrey
 STYLE:Solid:1
