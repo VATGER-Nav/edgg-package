@@ -29,12 +29,13 @@ COLORDEF:layout-apron:29:29:29
 COLORDEF:layout-building:43:49:50
 COLORDEF:layout-runway:78:78:78
 COLORDEF:layout-runway-marking:150:150:150
-COLORDEF:layout-taxiline-yellow:145:136:94
+COLORDEF:layout-taxiline-yellow:117:111:77
 COLORDEF:layout-taxiline-white:135:135:135
 COLORDEF:layout-taxiline-orange:161:82:14
 COLORDEF:layout-taxiline-blue:0:90:193
 COLORDEF:layout-taxiline-grey:99:99:99
 COLORDEF:layout-holdingpoint:193:121:4
+COLORDEF:layout-holdingpoint-red:185:59:46
 COLORDEF:layout-holdingpoint-grey:130:130:130
 COLORDEF:layout-label-taxiway:220:220:220
 COLORDEF:layout-label-stand:180:180:180
