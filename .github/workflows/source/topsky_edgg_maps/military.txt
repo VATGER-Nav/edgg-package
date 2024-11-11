@@ -43,21 +43,21 @@ FONTSIZE:=:11
 #import .github/workflows/source/data/military/nlfs/labels.txt
 #import .github/workflows/source/data/military/nlfs/altitudes.txt
 
-MAP:ETAD 23
+MAP:ETAD RNP 04
 FOLDER:Military
 STYLE:Solid:1
 FONTSIZE:=:11
 COLOR:DFSGrey
-ACTIVE:RWY:ARR:ETAD23:DEP:*
-#import .github/workflows/source/data/procedures/etad/etad_23.txt
+ACTIVE:RWY:ARR:ETAD04:DEP:*
+#import .github/workflows/source/data/procedures/etad/etad_rnp_04.txt
 
-MAP:ETAD 05
+MAP:ETAD RNP 22
 FOLDER:Military
 STYLE:Solid:1
 FONTSIZE:=:11
 COLOR:DFSGrey
-ACTIVE:RWY:ARR:ETAD05:DEP:*
-#import .github/workflows/source/data/procedures/etad/etad_05.txt
+ACTIVE:RWY:ARR:ETAD22:DEP:*
+#import .github/workflows/source/data/procedures/etad/etad_rnp_22.txt
 
 MAP:ETAR RNP 08
 FOLDER:Military
@@ -90,6 +90,63 @@ FONTSIZE:=:11
 COLOR:DFSGrey
 ACTIVE:RWY:ARR:ETAR27:DEP:*
 #import .github/workflows/source/data/procedures/etar/etar_rnp_27.txt
+
+MAP:ETHF RNP 29
+FOLDER:Military
+STYLE:Solid:1
+FONTSIZE:=:11
+COLOR:DFSGrey
+ACTIVE:RWY:ARR:ETHF29:DEP:*
+ACTIVE:RWY:ARR:ETHF11:DEP:*
+#import .github/workflows/source/data/procedures/ethf/ethf_rnp_29.txt
+
+MAP:ETHN RNP 07
+FOLDER:Military
+STYLE:Solid:1
+FONTSIZE:=:11
+COLOR:DFSGrey
+ACTIVE:RWY:ARR:ETHN07:DEP:*
+#import .github/workflows/source/data/procedures/ethn/ethn_rnp_07.txt
+
+MAP:ETHN RNP 25
+FOLDER:Military
+STYLE:Solid:1
+FONTSIZE:=:11
+COLOR:DFSGrey
+ACTIVE:RWY:ARR:ETHN25:DEP:*
+#import .github/workflows/source/data/procedures/ethn/ethn_rnp_25.txt
+
+MAP:ETNG RNAV 09
+FOLDER:Military
+STYLE:Solid:1
+FONTSIZE:=:11
+COLOR:DFSGrey
+ACTIVE:RWY:ARR:ETNG09:DEP:*
+#import .github/workflows/source/data/procedures/etng/etng_rnav_09.txt
+
+MAP:ETNG RNAV 27
+FOLDER:Military
+STYLE:Solid:1
+FONTSIZE:=:11
+COLOR:DFSGrey
+ACTIVE:RWY:ARR:ETNG27:DEP:*
+#import .github/workflows/source/data/procedures/etng/etng_rnav_27.txt
+
+MAP:ETOU RNAV 07
+FOLDER:Military
+STYLE:Solid:1
+FONTSIZE:=:11
+COLOR:DFSGrey
+ACTIVE:RWY:ARR:ETOU07:DEP:*
+#import .github/workflows/source/data/procedures/etou/etou_rnav_07.txt
+
+MAP:ETOU RNAV 25
+FOLDER:Military
+STYLE:Solid:1
+FONTSIZE:=:11
+COLOR:DFSGrey
+ACTIVE:RWY:ARR:ETOU25:DEP:*
+#import .github/workflows/source/data/procedures/etou/etou_rnav_25.txt
 
 MAP:ETAD AoR
 FOLDER:Military
