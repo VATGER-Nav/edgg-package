@@ -1,14 +1,440 @@
-SYMBOL:HOSPITAL:N050.08.43.712:E008.42.32.484:BG-Unfallklinik:0:-13 //BGU
-SYMBOL:HOSPITAL:N050.05.44.366:E008.39.45.103:Uni Frankfurt:0:-13 //Uniklinik
-SYMBOL:HOSPITAL:N050.05.40.405:E008.45.25.274:Klinikum Offenbach:0:-13 //Offenbach
-SYMBOL:HOSPITAL:N049.59.39.018:E008.15.16.765:Uni Mainz:0:-13 //Mainz Uni
-SYMBOL:HOSPITAL:N050.05.29.340:E008.38.50.800:Uni Neuro:0:13 //Neuroklinik
-SYMBOL:HOSPITAL:N050.06.30.100:E008.32.49.300:Klinikum Hoechst:0:-13 //Hoechst
-SYMBOL:HOSPITAL:N050.09.00.300:E008.37.07.600:Klinikum Nordwest:0:13 //Nordwest
-SYMBOL:HOSPITAL:N049.58.58.500:E008.25.32.300:Klinikum Raunheim:0:-13 //Raunheim
-SYMBOL:HOSPITAL:N050.03.48.900:E008.11.22.300:Klinikum Wiesbaden:0:-13 //Wiesbaden
-SYMBOL:HOSPITAL:N050.08.59.900:E008.30.53.900:Klinikum Bad Soden:0:-13 //Bad Soden
-SYMBOL:HOSPITAL:N050.12.44.713:E008.37.08.934:Hochtaunuskliniken:0:-13 //Hochtaunus
-SYMBOL:HOSPITAL:N049.52.28.500:E008.38.43.500:Klinikum Darmstadt:0:-13 //Darmstadt
-SYMBOL:HOSPITAL:N049.58.36.200:E009.11.19.000:Klinikum Aschaffenburg:0:-13 //Aschaffenburg
-SYMBOL:HOSPITAL:N049.50.48.877:E007.51.42.162:Klinikum Bad Kreuznach:0:-13 //Bad Kreuznach
+SYMBOL:HOSPITAL:N052.06.30.000:E008.47.43.286:Hamelnpyrmont Sana:0:-13	// Hamelnpyrmont Sana
+SYMBOL:HOSPITAL:N052.11.32.986:E009.06.13.000:Bad Oeynhausen:0:-13	// Bad Oeynhausen
+SYMBOL:HOSPITAL:N052.15.56.002:E008.03.20.783:Schaumburg Ev. Klinikum:0:-13	// Schaumburg Ev. Klinikum
+SYMBOL:HOSPITAL:N052.16.11.954:E007.26.00.000:Osnabrueck Marienhospital:0:-13	// Osnabrueck Marienhospital
+SYMBOL:HOSPITAL:N052.16.38.000:E007.42.51.866:Rheine LRZ:0:-13	// Rheine LRZ
+SYMBOL:HOSPITAL:N052.16.40.948:E008.00.17.000:Ibbenbueren:0:-13	// Ibbenbueren
+SYMBOL:HOSPITAL:N052.16.41.002:E008.36.08.388:Osnabrueck Klinikum:0:-13	// Osnabrueck Klinikum
+SYMBOL:HOSPITAL:N052.17.45.942:E008.42.42.999:Luebbecke Kreiskrankenhaus:0:-13	// Luebbecke Kreiskrankenhaus
+SYMBOL:HOSPITAL:N052.24.23.001:E007.29.20.800:Diepenau Polipol:0:-13	// Diepenau Polipol
+SYMBOL:HOSPITAL:N052.29.50.302:E008.11.36.906:Thuine Elisabeth Krankenhaus:0:-13	// Thuine Elisabeth Krankenhaus
+SYMBOL:HOSPITAL:N052.31.15.489:E007.18.53.662:Damme Krankenhaus:0:-13	// Damme Krankenhaus
+SYMBOL:HOSPITAL:N052.31.30.422:E009.13.30.699:Lingen St. Bonifatius:0:-13	// Lingen St. Bonifatius
+SYMBOL:HOSPITAL:N052.38.07.480:E007.17.36.000:Nienburg Klinikum:0:-13	// Nienburg Klinikum
+SYMBOL:HOSPITAL:N052.41.19.000:E008.49.00.999:Meppen Ludmillenstift:0:-13	// Meppen Ludmillenstift
+SYMBOL:HOSPITAL:N053.02.07.001:E008.50.16.599:Bremen Links der Weser:0:-13	// Bremen Links der Weser
+SYMBOL:HOSPITAL:N053.04.30.000:E009.24.42.002:Bremen Mitte:0:-13	// Bremen Mitte
+SYMBOL:HOSPITAL:N053.06.19.001:E008.13.11.349:Rotenburg West Krankenhaus:0:-13	// Rotenburg West Krankenhaus
+SYMBOL:HOSPITAL:N053.06.45.411:E008.12.15.801:Oldenburg Klinikum:0:-13	// Oldenburg Klinikum
+SYMBOL:HOSPITAL:N053.08.34.199:E008.35.38.001:Oldenburg Ev. Krankenhaus:0:-13	// Oldenburg Ev. Krankenhaus
+SYMBOL:HOSPITAL:N053.10.58.001:E008.13.00.606:Bremennord Klinikum:0:-13	// Bremennord Klinikum
+SYMBOL:HOSPITAL:N053.13.02.572:E007.27.27.062:Jadelinie:0:-13	// Jadelinie
+SYMBOL:HOSPITAL:N053.14.10.688:E007.54.57.701:Leer Klinikum:0:-13	// Leer Klinikum
+SYMBOL:HOSPITAL:N053.15.27.602:E007.12.50.897:Westerstede:0:-13	// Westerstede
+SYMBOL:HOSPITAL:N053.22.28.906:E008.26.28.011:Emden Hanssusemihl Krankenhaus:0:-13	// Emden Hanssusemihl Krankenhaus
+SYMBOL:HOSPITAL:N053.27.18.144:E008.00.31.000:Wesermarschklinik:0:-13	// Wesermarschklinik
+SYMBOL:HOSPITAL:N053.30.20.999:E008.38.07.570:Sanderbusch Nordwestkrankenhaus:0:-13	// Sanderbusch Nordwestkrankenhaus
+SYMBOL:HOSPITAL:N053.32.15.562:E008.04.50.002:Bremerhaven Klinikum:0:-13	// Bremerhaven Klinikum
+SYMBOL:HOSPITAL:N053.32.40.000:E009.26.39.700:Wilhelmshaven Klinikum:0:-13	// Wilhelmshaven Klinikum
+SYMBOL:HOSPITAL:N053.35.41.302:E007.23.35.002:Stade Elbe Klinikum:0:-13	// Stade Elbe Klinikum
+SYMBOL:HOSPITAL:N053.04.27.002:E009.27.49.299:Papenburg Marienkrankenhaus:0:-13	// Papenburg Marienkrankenhaus
+SYMBOL:HOSPITAL:N052.29.39.801:E007.47.20.699:Neustadt RB Klinikum:0:-13	// Neustadt RB Klinikum
+SYMBOL:HOSPITAL:N053.34.17.001:E009.42.56.002:Wittmund Krankenhaus:0:-13	// Wittmund Krankenhaus
+SYMBOL:HOSPITAL:N052.23.32.000:E009.43.30.832:Hannover Nordstadt Klinikum:0:-13	// Hannover Nordstadt Klinikum
+SYMBOL:HOSPITAL:N052.21.33.311:E009.46.45.722:Hannover Klinikum:0:-13	// Hannover Klinikum
+SYMBOL:HOSPITAL:N052.21.38.099:E009.48.23.732:Kinderkrankenhaus auf der Bult:0:-13	// Kinderkrankenhaus auf der Bult
+SYMBOL:HOSPITAL:N052.23.04.910:E009.51.18.202:Hannover Medhochschule:0:-13	// Hannover Medhochschule
+SYMBOL:HOSPITAL:N052.59.22.402:E009.52.13.401:Soltau Krankenhaus:0:-13	// Soltau Krankenhaus
+SYMBOL:HOSPITAL:N053.20.01.101:E009.54.11.668:Buchholz Nordheide:0:-13	// Buchholz Nordheide
+SYMBOL:HOSPITAL:N053.56.34.268:E009.54.46.001:Bad Bramstedt:0:-13	// Bad Bramstedt
+SYMBOL:HOSPITAL:N053.33.08.000:E009.58.26.001:Hamburg Altona:0:-13	// Hamburg Altona
+SYMBOL:HOSPITAL:N053.35.29.001:E009.59.25.620:Hamburgeppendorf:0:-13	// Hamburgeppendorf
+SYMBOL:HOSPITAL:N054.03.54.220:E010.01.00.999:Neumuenster Friedrich Ebert:0:-13	// Neumuenster Friedrich Ebert
+SYMBOL:HOSPITAL:N053.33.38.999:E010.02.12.002:Hamburg Asklepios Klinik:0:-13	// Hamburg Asklepios Klinik
+SYMBOL:HOSPITAL:N053.36.24.999:E010.04.40.109:Hamburg Barmbek:0:-13	// Hamburg Barmbek
+SYMBOL:HOSPITAL:N053.35.48.772:E010.05.05.889:Hamburg Bundeswehrkrankenhaus:0:-13	// Hamburg Bundeswehrkrankenhaus
+SYMBOL:HOSPITAL:N052.37.43.601:E010.08.34.001:Celle:0:-13	// Celle
+SYMBOL:HOSPITAL:N054.19.52.500:E010.10.24.000:Kiel Uniklinikum:0:-13	// Kiel Uniklinikum
+SYMBOL:HOSPITAL:N053.30.29.002:E010.11.52.001:Hamburgoberg:0:-13	// Hamburgoberg
+SYMBOL:HOSPITAL:N053.34.38.000:E010.14.16.498:Barsbuettel:0:-13	// Barsbuettel
+SYMBOL:HOSPITAL:N052.18.08.550:E010.23.07.862:Peine Klinikum:0:-13	// Peine Klinikum
+SYMBOL:HOSPITAL:N053.25.54.491:E010.23.46.000:Geesthacht:0:-13	// Geesthacht
+SYMBOL:HOSPITAL:N053.14.26.002:E010.30.37.001:Lueneburg Staedt Klinikum:0:-13	// Lueneburg Staedt Klinikum
+SYMBOL:HOSPITAL:N052.29.43.001:E010.31.58.001:Gifhorn Bundespolizei:0:-13	// Gifhorn Bundespolizei
+SYMBOL:HOSPITAL:N052.58.24.000:E010.32.04.000:Uelzen Klinikum:0:-13	// Uelzen Klinikum
+SYMBOL:HOSPITAL:N052.10.45.002:E010.32.47.001:Wolfenbuettel Staedt Krankenhaus:0:-13	// Wolfenbuettel Staedt Krankenhaus
+SYMBOL:HOSPITAL:N052.14.17.002:E010.32.58.000:Braunschweid Salzdahlemer Straße:0:-13	// Braunschweid Salzdahlemer Straße
+SYMBOL:HOSPITAL:N052.29.46.000:E010.33.42.999:Gifhorn Klinikum:0:-13	// Gifhorn Klinikum
+SYMBOL:HOSPITAL:N054.02.06.299:E010.42.18.299:Siblin:0:-13	// Siblin
+SYMBOL:HOSPITAL:N053.49.59.600:E010.42.33.491:UKSH Boden:0:-13	// UKSH Boden
+SYMBOL:HOSPITAL:N053.50.06.890:E010.46.07.200:UKSH Dachlandeplatz:0:-13	// UKSH Dachlandeplatz
+SYMBOL:HOSPITAL:N052.24.43.906:E010.48.05.001:Wolfsburg Klinikum:0:-13	// Wolfsburg Klinikum
+SYMBOL:HOSPITAL:N054.06.00.000:E011.00.02.002:Neustadt Holstein:0:-13	// Neustadt Holstein
+SYMBOL:HOSPITAL:N052.13.53.001:E010.11.57.340:Helmstedt Helios Klinik:0:-13	// Helmstedt Helios Klinik
+SYMBOL:HOSPITAL:N053.20.54.971:E009.57.02.855:Winsen Luhe Krankenhaus:0:-13	// Winsen Luhe Krankenhaus
+SYMBOL:HOSPITAL:N053.27.35.136:E009.58.42.381:Hamburgharburg:0:-13	// Hamburgharburg
+SYMBOL:HOSPITAL:N052.09.02.031:E009.22.52.976:Hildesheim Helios:0:-13	// Hildesheim Helios
+SYMBOL:HOSPITAL:N051.40.26.199:E009.30.09.879:Beverungen Nord:0:-13	// Beverungen Nord
+SYMBOL:HOSPITAL:N051.21.34.560:E009.39.30.000:Fuldatal Ihringhausen:0:-13	// Fuldatal Ihringhausen
+SYMBOL:HOSPITAL:N051.23.51.000:E009.51.31.950:Hann Muenden Klinik:0:-13	// Hann Muenden Klinik
+SYMBOL:HOSPITAL:N051.36.09.580:E009.56.35.002:Harste:0:-13	// Harste
+SYMBOL:HOSPITAL:N051.33.06.999:E009.58.44.206:Goettingen Klinikum:0:-13	// Goettingen Klinikum
+SYMBOL:HOSPITAL:N051.43.50.337:E010.08.26.340:Northeim Albert:0:-13	// Northeim Albert
+SYMBOL:HOSPITAL:N051.22.36.660:E010.37.33.291:Heiligenstadt Heilbad:0:-13	// Heiligenstadt Heilbad
+SYMBOL:HOSPITAL:N051.55.54.106:E012.47.05.010:Abbenrode:0:-13	// Abbenrode
+SYMBOL:HOSPITAL:N052.24.37.829:E012.52.28.000:Gross Kreutz:0:-13	// Gross Kreutz
+SYMBOL:HOSPITAL:N052.35.53.002:E013.02.35.747:Nauen Havelland Klink:0:-13	// Nauen Havelland Klink
+SYMBOL:HOSPITAL:N053.54.10.073:E013.03.56.002:Demmin:0:-13	// Demmin
+SYMBOL:HOSPITAL:N052.24.01.001:E013.04.52.389:Potsdam Ernst v. Bergmann:0:-13	// Potsdam Ernst v. Bergmann
+SYMBOL:HOSPITAL:N054.19.47.849:E013.06.24.131:Stralsund:0:-13	// Stralsund
+SYMBOL:HOSPITAL:N054.34.15.590:E013.19.22.282:Hiddensee:0:-13	// Hiddensee
+SYMBOL:HOSPITAL:N052.26.28.832:E013.22.46.424:Charite Benjamin Franklin:0:-13	// Charite Benjamin Franklin
+SYMBOL:HOSPITAL:N052.09.42.030:E013.30.37.084:Mellensee:0:-13	// Mellensee
+SYMBOL:HOSPITAL:N052.37.48.123:E013.34.33.600:Berlin Buch:0:-13	// Berlin Buch
+SYMBOL:HOSPITAL:N052.36.00.861:E013.36.38.506:Ahrensfelde:0:-13	// Ahrensfelde
+SYMBOL:HOSPITAL:N053.58.12.267:E013.40.37.650:Kalrsburg:0:-13	// Kalrsburg
+SYMBOL:HOSPITAL:N054.49.02.889:E013.59.10.306:A01 OSS:0:-13	// A01 OSS
+SYMBOL:HOSPITAL:N053.29.08.484:E014.03.37.200:Pasewalk:0:-13	// Pasewalk
+SYMBOL:HOSPITAL:N052.17.03.600:E014.13.30.670:Bad Saarow Helios:0:-13	// Bad Saarow Helios
+SYMBOL:HOSPITAL:N053.05.30.560:E014.16.33.910:Schwedt an der Oder Raffinerie:0:-13	// Schwedt an der Oder Raffinerie
+SYMBOL:HOSPITAL:N053.03.12.950:E014.28.49.430:Schwedt an der Oder Klinikum:0:-13	// Schwedt an der Oder Klinikum
+SYMBOL:HOSPITAL:N052.18.02.992:E013.37.40.368:Frankfurt an der Oder Klinikum:0:-13	// Frankfurt an der Oder Klinikum
+SYMBOL:HOSPITAL:N052.18.16.859:E013.24.28.836:Achenbachkrankenhaus:0:-13	// Achenbachkrankenhaus
+SYMBOL:HOSPITAL:N054.05.19.860:E013.34.03.911:Greifswald Unimedizin:0:-13	// Greifswald Unimedizin
+SYMBOL:HOSPITAL:N052.31.10.704:E013.20.18.179:Berlin Unfallkrankenhaus:0:-13	// Berlin Unfallkrankenhaus
+SYMBOL:HOSPITAL:N052.32.33.530:E013.47.25.001:Charite Virchowklinikum:0:-13	// Charite Virchowklinikum
+SYMBOL:HOSPITAL:N052.49.42.000:E013.34.53.001:Eberswalde Krankenhaus:0:-13	// Eberswalde Krankenhaus
+SYMBOL:HOSPITAL:N052.41.02.001:E014.37.23.384:Bernau Krankenhaus:0:-13	// Bernau Krankenhaus
+SYMBOL:HOSPITAL:N052.08.26.117:E013.52.25.904:Eisenhuettenstadt Staedt Krankenhaus:0:-13	// Eisenhuettenstadt Staedt Krankenhaus
+SYMBOL:HOSPITAL:N051.56.35.726:E013.17.27.773:Luebben Spreewaldklinik:0:-13	// Luebben Spreewaldklinik
+SYMBOL:HOSPITAL:N053.32.41.579:E013.18.30.417:Neubrandenburg Klinikum:0:-13	// Neubrandenburg Klinikum
+SYMBOL:HOSPITAL:N052.35.25.498:E013.03.07.208:Berlin Humboldtkrankenhaus:0:-13	// Berlin Humboldtkrankenhaus
+SYMBOL:HOSPITAL:N053.22.55.229:E012.47.46.072:Neustrelitz LRZ:0:-13	// Neustrelitz LRZ
+SYMBOL:HOSPITAL:N052.54.14.001:E014.04.27.387:Neuruppin Ruppiner Kliniken:0:-13	// Neuruppin Ruppiner Kliniken
+SYMBOL:HOSPITAL:N054.50.03.761:E014.05.53.542:WK OSS:0:-13	// WK OSS
+SYMBOL:HOSPITAL:N054.47.12.570:E013.11.00.903:Arkona:0:-13	// Arkona
+SYMBOL:HOSPITAL:N052.05.57.045:E013.37.57.699:Luckenwalde:0:-13	// Luckenwalde
+SYMBOL:HOSPITAL:N052.07.19.701:E013.51.58.601:Teupitz Asklepios:0:-13	// Teupitz Asklepios
+SYMBOL:HOSPITAL:N053.20.02.001:E014.00.05.919:Prenzlau Kreiskrankenhaus:0:-13	// Prenzlau Kreiskrankenhaus
+SYMBOL:HOSPITAL:N052.59.58.942:E012.59.01.000:Angermuende:0:-13	// Angermuende
+SYMBOL:HOSPITAL:N051.33.40.601:E014.19.18.999:Torgau Kreiskrankenhaus:0:-13	// Torgau Kreiskrankenhaus
+SYMBOL:HOSPITAL:N051.44.36.000:E013.12.24.941:Cottbus Carlthiemklinikum:0:-13	// Cottbus Carlthiemklinikum
+SYMBOL:HOSPITAL:N051.41.09.795:E009.32.58.000:Herzberg Klinikum:0:-13	// Herzberg Klinikum
+SYMBOL:HOSPITAL:N053.47.32.800:E009.30.11.700:Sommerland:0:-13	// Sommerland
+SYMBOL:HOSPITAL:N053.56.31.892:E006.33.56.402:Itzehoe Klinikum:0:-13	// Itzehoe Klinikum
+SYMBOL:HOSPITAL:N053.57.51.002:E006.55.24.572:BKRZ01 Windfarm:0:-13	// BKRZ01 Windfarm
+SYMBOL:HOSPITAL:N053.58.41.542:E006.50.10.382:Dolwin Beta:0:-13	// Dolwin Beta
+SYMBOL:HOSPITAL:N053.58.56.100:E006.37.23.942:Nordsee One:0:-13	// Nordsee One
+SYMBOL:HOSPITAL:N053.59.59.939:E006.35.15.602:Alpha Ventus:0:-13	// Alpha Ventus
+SYMBOL:HOSPITAL:N054.00.51.600:E007.00.31.652:FINO1:0:-13	// FINO1
+SYMBOL:HOSPITAL:N054.01.29.356:E006.33.39.431:GOW01Z01:0:-13	// GOW01Z01
+SYMBOL:HOSPITAL:N054.02.14.460:E007.02.18.161:Merkur:0:-13	// Merkur
+SYMBOL:HOSPITAL:N054.03.20.582:E007.53.24.062:GOW02Z01:0:-13	// GOW02Z01
+SYMBOL:HOSPITAL:N054.10.30.400:E009.04.48.670:Helgoland Suedhafen:0:-13	// Helgoland Suedhafen
+SYMBOL:HOSPITAL:N054.12.00.580:E007.41.58.960:Heide Kreiskrankenhaus:0:-13	// Heide Kreiskrankenhaus
+SYMBOL:HOSPITAL:N054.23.57.520:E007.44.23.871:M00:0:-13	// M00
+SYMBOL:HOSPITAL:N054.27.07.650:E009.02.54.431:Helwin Alpha:0:-13	// Helwin Alpha
+SYMBOL:HOSPITAL:N054.28.59.549:E007.44.05.612:Husum Kreiskrankenhaus:0:-13	// Husum Kreiskrankenhaus
+SYMBOL:HOSPITAL:N054.31.11.680:E009.34.10.550:Amrumbank:0:-13	// Amrumbank
+SYMBOL:HOSPITAL:N054.31.19.121:E009.25.40.001:Schleswig Helios Klinikum:0:-13	// Schleswig Helios Klinikum
+SYMBOL:HOSPITAL:N054.47.14.000:E008.50.42.000:Flensburg:0:-13	// Flensburg
+SYMBOL:HOSPITAL:N054.47.38.300:E006.40.12.472:Niebuell:0:-13	// Niebuell
+SYMBOL:HOSPITAL:N053.35.05.586:E011.22.49.200:Borkum Inselkrankenhaus:0:-13	// Borkum Inselkrankenhaus
+SYMBOL:HOSPITAL:N052.31.22.800:E011.24.24.592:Gardelegen Krankenhaus:0:-13	// Gardelegen Krankenhaus
+SYMBOL:HOSPITAL:N053.39.09.501:E011.26.22.499:Schwerin Klinikum:0:-13	// Schwerin Klinikum
+SYMBOL:HOSPITAL:N053.53.00.100:E011.35.04.200:Wismar Staedt Krankenhaus:0:-13	// Wismar Staedt Krankenhaus
+SYMBOL:HOSPITAL:N052.09.30.600:E011.36.24.740:Magdeburg Klinikum:0:-13	// Magdeburg Klinikum
+SYMBOL:HOSPITAL:N052.11.25.008:E011.36.45.000:Barleben:0:-13	// Barleben
+SYMBOL:HOSPITAL:N052.06.15.600:E011.37.11.302:Magdeburg Uni Boden:0:-13	// Magdeburg Uni Boden
+SYMBOL:HOSPITAL:N052.06.07.679:E011.51.13.799:Magdeburg Uni Dach:0:-13	// Magdeburg Uni Dach
+SYMBOL:HOSPITAL:N052.36.42.099:E011.52.29.972:Stendal Johanniterkrankenhaus:0:-13	// Stendal Johanniterkrankenhaus
+SYMBOL:HOSPITAL:N053.04.26.915:E011.54.22.652:Perleberg Kreiskrankenhaus Prignitz:0:-13	// Perleberg Kreiskrankenhaus Prignitz
+SYMBOL:HOSPITAL:N054.05.24.242:E012.06.05.868:Bad Doberan:0:-13	// Bad Doberan
+SYMBOL:HOSPITAL:N054.05.06.468:E012.06.14.199:Rostock Unimedizin:0:-13	// Rostock Unimedizin
+SYMBOL:HOSPITAL:N054.10.45.185:E012.06.27.166:Hohe Duene:0:-13	// Hohe Duene
+SYMBOL:HOSPITAL:N054.04.14.063:E012.11.58.000:Rostock Suedstadt:0:-13	// Rostock Suedstadt
+SYMBOL:HOSPITAL:N053.48.42.999:E012.12.38.711:Guestrow Klinikum:0:-13	// Guestrow Klinikum
+SYMBOL:HOSPITAL:N054.02.18.060:E012.17.08.049:Dummerstorf:0:-13	// Dummerstorf
+SYMBOL:HOSPITAL:N053.28.41.092:E012.23.19.630:Plau am See Fachkrankenhaus:0:-13	// Plau am See Fachkrankenhaus
+SYMBOL:HOSPITAL:N052.56.53.092:E012.28.53.501:Kyritz Klinikum:0:-13	// Kyritz Klinikum
+SYMBOL:HOSPITAL:N052.25.30.000:E012.32.39.239:BB Asklepios:0:-13	// BB Asklepios
+SYMBOL:HOSPITAL:N052.24.54.623:E012.34.14.002:Brandenburg Klinikum:0:-13	// Brandenburg Klinikum
+SYMBOL:HOSPITAL:N053.46.40.001:E012.35.53.499:Teterow Krankenhaus:0:-13	// Teterow Krankenhaus
+SYMBOL:HOSPITAL:N052.08.27.111:E011.30.35.180:Bad Belzig Johanniterkrankenhaus:0:-13	// Bad Belzig Johanniterkrankenhaus
+SYMBOL:HOSPITAL:N052.00.34.348:E012.28.34.400:Altenweddingen:0:-13	// Altenweddingen
+SYMBOL:HOSPITAL:N051.52.41.902:E009.23.29.188:Coswig Mediclin Herzzentrum:0:-13	// Coswig Mediclin Herzzentrum
+SYMBOL:HOSPITAL:N047.40.10.820:E010.20.24.512:Immenstadt EADS GMBH:0:-13	// Immenstadt EADS GMBH
+SYMBOL:HOSPITAL:N047.41.28.940:E010.18.09.202:Kemptendurach:0:-13	// Kemptendurach
+SYMBOL:HOSPITAL:N047.43.54.772:E009.53.30.930:Kempten Allgaeu Klinikum:0:-13	// Kempten Allgaeu Klinikum
+SYMBOL:HOSPITAL:N047.46.07.799:E009.37.15.705:Kisslegg:0:-13	// Kisslegg
+SYMBOL:HOSPITAL:N047.47.16.700:E010.09.24.351:Ravensburg St. Elisabeth:0:-13	// Ravensburg St. Elisabeth
+SYMBOL:HOSPITAL:N048.18.43.640:E009.57.05.001:Klinikum Weissenhorn:0:-13	// Klinikum Weissenhorn
+SYMBOL:HOSPITAL:N048.25.21.000:E009.56.43.689:Ulm Uniklinikum:0:-13	// Ulm Uniklinikum
+SYMBOL:HOSPITAL:N048.25.35.469:E009.25.42.780:BWK Ulm Boden:0:-13	// BWK Ulm Boden
+SYMBOL:HOSPITAL:N047.40.21.962:E009.43.09.012:Friedrichshafen Klinikum:0:-13	// Friedrichshafen Klinikum
+SYMBOL:HOSPITAL:N048.16.45.012:E009.35.53.812:Ehingen Gesundheitszentrum:0:-13	// Ehingen Gesundheitszentrum
+SYMBOL:HOSPITAL:N047.40.18.002:E010.13.41.200:Tettnang Kreiskrankenhaus:0:-13	// Tettnang Kreiskrankenhaus
+SYMBOL:HOSPITAL:N047.33.41.649:E010.17.28.241:Immenstadt Klinikum:0:-13	// Immenstadt Klinikum
+SYMBOL:HOSPITAL:N048.27.22.641:E010.10.07.569:Guenzburg Bezirkskrankenhaus:0:-13	// Guenzburg Bezirkskrankenhaus
+SYMBOL:HOSPITAL:N047.58.57.530:E009.56.51.749:Memmingen Klinikum:0:-13	// Memmingen Klinikum
+SYMBOL:HOSPITAL:N048.25.30.112:E009.46.45.621:Ulm BWK Dach:0:-13	// Ulm BWK Dach
+SYMBOL:HOSPITAL:N048.06.47.171:E010.40.44.001:Biberach an der Riss Sana Kliniken:0:-13	// Biberach an der Riss Sana Kliniken
+SYMBOL:HOSPITAL:N050.55.44.001:E010.42.37.390:Gotha Helios Kreiskrankenhaus:0:-13	// Gotha Helios Kreiskrankenhaus
+SYMBOL:HOSPITAL:N050.36.10.952:E010.44.51.411:Suhl SRH Zentralklinikum:0:-13	// Suhl SRH Zentralklinikum
+SYMBOL:HOSPITAL:N050.25.44.220:E010.47.41.406:Hildburghausen Helios:0:-13	// Hildburghausen Helios
+SYMBOL:HOSPITAL:N051.30.49.684:E010.56.26.700:Nordhausen:0:-13	// Nordhausen
+SYMBOL:HOSPITAL:N050.50.22.100:E011.00.43.370:Arnstedt Kreiskrankenhaus:0:-13	// Arnstedt Kreiskrankenhaus
+SYMBOL:HOSPITAL:N050.59.39.581:E010.46.09.333:Erfurt Helios Klinikum:0:-13	// Erfurt Helios Klinikum
+SYMBOL:HOSPITAL:N048.42.26.946:E011.03.45.130:Donauwoerth:0:-13	// Donauwoerth
+SYMBOL:HOSPITAL:N049.27.47.409:E011.06.00.450:Nuernbergnord:0:-13	// Nuernbergnord
+SYMBOL:HOSPITAL:N049.13.02.450:E011.07.44.386:Roth:0:-13	// Roth
+SYMBOL:HOSPITAL:N047.29.03.761:E011.11.05.151:Garmisch Partenkirchen Klinikum:0:-13	// Garmisch Partenkirchen Klinikum
+SYMBOL:HOSPITAL:N049.11.07.260:E011.21.49.054:Hiloplstein:0:-13	// Hiloplstein
+SYMBOL:HOSPITAL:N049.15.13.234:E011.22.21.202:Dippenricht:0:-13	// Dippenricht
+SYMBOL:HOSPITAL:N048.46.13.700:E011.25.45.600:Ingolstadt Klinikum:0:-13	// Ingolstadt Klinikum
+SYMBOL:HOSPITAL:N048.15.56.402:E011.32.08.002:Dachau Klinikum:0:-13	// Dachau Klinikum
+SYMBOL:HOSPITAL:N049.56.40.000:E011.32.54.000:Bayreuth Klinikum:0:-13	// Bayreuth Klinikum
+SYMBOL:HOSPITAL:N048.06.10.901:E011.32.54.053:Muenchen Sued:0:-13	// Muenchen Sued
+SYMBOL:HOSPITAL:N048.09.09.702:E011.33.35.640:Deutsches Herzzentrum:0:-13	// Deutsches Herzzentrum
+SYMBOL:HOSPITAL:N048.05.00.780:E011.39.13.227:Muenchen Krankenhaus Harlaching:0:-13	// Muenchen Krankenhaus Harlaching
+SYMBOL:HOSPITAL:N048.02.53.214:E012.30.10.091:Ottobrunn:0:-13	// Ottobrunn
+SYMBOL:HOSPITAL:N049.13.06.251:E012.30.18.652:Roding Firma Muehlbauer:0:-13	// Roding Firma Muehlbauer
+SYMBOL:HOSPITAL:N049.12.55.070:E012.35.26.830:Roding Dachlandeplatz:0:-13	// Roding Dachlandeplatz
+SYMBOL:HOSPITAL:N048.53.09.302:E012.58.15.129:Straubing St. Elisabeth:0:-13	// Straubing St. Elisabeth
+SYMBOL:HOSPITAL:N048.50.21.340:E011.15.32.631:Deggendorf Donauisar:0:-13	// Deggendorf Donauisar
+SYMBOL:HOSPITAL:N048.10.49.700:E011.27.55.192:FFB Kreisklinik:0:-13	// FFB Kreisklinik
+SYMBOL:HOSPITAL:N048.06.37.966:E012.05.30.999:Klinikum Grosshardern:0:-13	// Klinikum Grosshardern
+SYMBOL:HOSPITAL:N048.59.04.000:E012.56.06.000:Regensburg Uni:0:-13	// Regensburg Uni
+SYMBOL:HOSPITAL:N048.51.34.802:E011.37.34.220:Metten:0:-13	// Metten
+SYMBOL:HOSPITAL:N048.09.15.506:E011.12.55.966:Klinikum Bogenhausen:0:-13	// Klinikum Bogenhausen
+SYMBOL:HOSPITAL:N047.40.19.470:E012.37.52.000:BGU Murnau:0:-13	// BGU Murnau
+SYMBOL:HOSPITAL:N047.52.27.002:E011.57.30.741:Traunstein Kreiskrankenhaus:0:-13	// Traunstein Kreiskrankenhaus
+SYMBOL:HOSPITAL:N048.04.52.472:E012.05.32.400:Ebersberg Kreisklinik:0:-13	// Ebersberg Kreisklinik
+SYMBOL:HOSPITAL:N048.59.16.199:E011.49.42.000:Regensburg Uni SL1:0:-13	// Regensburg Uni SL1
+SYMBOL:HOSPITAL:N047.46.06.000:E013.02.48.308:Agatharied Krankenhaus:0:-13	// Agatharied Krankenhaus
+SYMBOL:HOSPITAL:N047.38.04.542:E012.11.20.346:Berchtesgaden Resort:0:-13	// Berchtesgaden Resort
+SYMBOL:HOSPITAL:N047.56.48.340:E011.33.55.505:Vogtareuth Schoen Klinik:0:-13	// Vogtareuth Schoen Klinik
+SYMBOL:HOSPITAL:N048.14.16.617:E011.34.39.166:Oberschleissheim:0:-13	// Oberschleissheim
+SYMBOL:HOSPITAL:N048.10.15.446:E012.07.56.115:Schwabing Staedt:0:-13	// Schwabing Staedt
+SYMBOL:HOSPITAL:N047.51.37.480:E012.52.26.840:Rosenheim Klinikum:0:-13	// Rosenheim Klinikum
+SYMBOL:HOSPITAL:N049.05.08.092:E013.26.41.000:Viechtach Kreiskrankenhaus:0:-13	// Viechtach Kreiskrankenhaus
+SYMBOL:HOSPITAL:N048.33.49.000:E010.42.25.427:Passau Kinikum:0:-13	// Passau Kinikum
+SYMBOL:HOSPITAL:N047.34.00.995:E011.36.02.499:Fuessen Klinikum:0:-13	// Fuessen Klinikum
+SYMBOL:HOSPITAL:N048.08.09.694:E011.59.32.400:Muenchen RD Isar:0:-13	// Muenchen RD Isar
+SYMBOL:HOSPITAL:N049.54.38.200:E011.52.00.801:Pullenreuth:0:-13	// Pullenreuth
+SYMBOL:HOSPITAL:N049.26.54.150:E012.09.59.001:Amberg Klinikum St. Marien:0:-13	// Amberg Klinikum St. Marien
+SYMBOL:HOSPITAL:N049.40.54.470:E011.04.53.699:Weiden Klinikum:0:-13	// Weiden Klinikum
+SYMBOL:HOSPITAL:N050.08.19.900:E012.18.58.562:Lichtenfels Klinikum:0:-13	// Lichtenfels Klinikum
+SYMBOL:HOSPITAL:N050.00.37.361:E011.37.27.362:Waldsassen:0:-13	// Waldsassen
+SYMBOL:HOSPITAL:N049.45.50.062:E011.27.51.002:Pegnitz:0:-13	// Pegnitz
+SYMBOL:HOSPITAL:N049.54.22.000:E011.00.40.076:Mistelgau:0:-13	// Mistelgau
+SYMBOL:HOSPITAL:N049.36.00.238:E011.20.39.592:Erlangen Uniklinikum:0:-13	// Erlangen Uniklinikum
+SYMBOL:HOSPITAL:N049.12.23.919:E010.50.15.962:Aerodynamic Iberler:0:-13	// Aerodynamic Iberler
+SYMBOL:HOSPITAL:N048.23.04.200:E012.51.58.202:Augsburg Klinikum:0:-13	// Augsburg Klinikum
+SYMBOL:HOSPITAL:N050.51.45.000:E013.06.50.462:Roehrsdorf:0:-13	// Roehrsdorf
+SYMBOL:HOSPITAL:N051.17.30.538:E013.21.06.855:Oschatz Collmklinik:0:-13	// Oschatz Collmklinik
+SYMBOL:HOSPITAL:N050.55.12.958:E013.31.19.791:Freiberg Kreiskrankenhaus:0:-13	// Freiberg Kreiskrankenhaus
+SYMBOL:HOSPITAL:N051.27.20.243:E013.35.35.171:Elsterwerda Krankenhaus:0:-13	// Elsterwerda Krankenhaus
+SYMBOL:HOSPITAL:N051.07.54.765:E013.38.43.674:Coswig Fachkrankenhaus:0:-13	// Coswig Fachkrankenhaus
+SYMBOL:HOSPITAL:N050.59.30.560:E013.41.38.498:Freital Kreiskrankenhaus:0:-13	// Freital Kreiskrankenhaus
+SYMBOL:HOSPITAL:N051.05.01.562:E013.46.48.000:Elbepark:0:-13	// Elbepark
+SYMBOL:HOSPITAL:N051.03.27.000:E013.55.28.240:Dresden Uniklinikum:0:-13	// Dresden Uniklinikum
+SYMBOL:HOSPITAL:N051.31.54.902:E013.57.08.730:Lausitzring MC:0:-13	// Lausitzring MC
+SYMBOL:HOSPITAL:N050.57.31.000:E013.59.17.560:Pirna Klinikum:0:-13	// Pirna Klinikum
+SYMBOL:HOSPITAL:N051.31.50.351:E014.00.01.642:Senftenberg Ackerstraße:0:-13	// Senftenberg Ackerstraße
+SYMBOL:HOSPITAL:N051.31.40.930:E014.16.06.000:Senftenberg Klinikbereich:0:-13	// Senftenberg Klinikbereich
+SYMBOL:HOSPITAL:N050.58.58.001:E014.16.24.759:Sebnitz Kreiskrankenhaus:0:-13	// Sebnitz Kreiskrankenhaus
+SYMBOL:HOSPITAL:N051.26.32.259:E014.24.25.200:Lausitzer Seenland:0:-13	// Lausitzer Seenland
+SYMBOL:HOSPITAL:N051.34.08.328:E014.25.49.401:Spremberg:0:-13	// Spremberg
+SYMBOL:HOSPITAL:N051.11.06.202:E014.58.10.802:Bautzen Krankenhaus:0:-13	// Bautzen Krankenhaus
+SYMBOL:HOSPITAL:N051.09.40.040:E013.42.57.921:Goerlitz Staedt Klinikum:0:-13	// Goerlitz Staedt Klinikum
+SYMBOL:HOSPITAL:N051.03.30.302:E013.04.48.011:Friedrichstadt Krankenhaus:0:-13	// Friedrichstadt Krankenhaus
+SYMBOL:HOSPITAL:N050.44.01.659:E013.30.20.999:Zschopau Klinikum:0:-13	// Zschopau Klinikum
+SYMBOL:HOSPITAL:N051.10.30.000:E012.53.06.962:Elblandkliniken:0:-13	// Elblandkliniken
+SYMBOL:HOSPITAL:N050.50.44.571:E010.13.48.688:Chemnitz Klinikum:0:-13	// Chemnitz Klinikum
+SYMBOL:HOSPITAL:N048.40.07.443:E010.08.19.911:Oggenhausen:0:-13	// Oggenhausen
+SYMBOL:HOSPITAL:N048.40.21.832:E010.05.08.747:Heidenheim Klinikum:0:-13	// Heidenheim Klinikum
+SYMBOL:HOSPITAL:N048.50.59.363:E010.12.33.718:Aalen Ostalbklinikum:0:-13	// Aalen Ostalbklinikum
+SYMBOL:HOSPITAL:N048.59.31.884:E010.24.05.692:Ellenberg Schweizerhof:0:-13	// Ellenberg Schweizerhof
+SYMBOL:HOSPITAL:N049.03.57.399:E011.09.44.122:Dinkelsbuehl:0:-13	// Dinkelsbuehl
+SYMBOL:HOSPITAL:N050.21.14.469:E011.15.49.950:Sonneberg Regiomed Klinik:0:-13	// Sonneberg Regiomed Klinik
+SYMBOL:HOSPITAL:N050.53.23.680:E011.18.34.859:Bad Berka Zentral Boden:0:-13	// Bad Berka Zentral Boden
+SYMBOL:HOSPITAL:N051.28.17.580:E011.19.19.290:Sangerhausen Krankenhaus:0:-13	// Sangerhausen Krankenhaus
+SYMBOL:HOSPITAL:N050.57.38.790:E011.20.31.600:Weimar Sophien Hufeland:0:-13	// Weimar Sophien Hufeland
+SYMBOL:HOSPITAL:N050.38.38.181:E011.32.27.302:Saalfeld Klinikum:0:-13	// Saalfeld Klinikum
+SYMBOL:HOSPITAL:N051.32.01.101:E011.37.09.002:Eisleben Helios:0:-13	// Eisleben Helios
+SYMBOL:HOSPITAL:N050.53.12.002:E011.44.06.000:Jena Klinikum:0:-13	// Jena Klinikum
+SYMBOL:HOSPITAL:N051.46.54.002:E011.52.48.000:Bernburg Klinikum:0:-13	// Bernburg Klinikum
+SYMBOL:HOSPITAL:N051.30.14.001:E011.56.07.800:Halledoelau Staedt Krankenhaus:0:-13	// Halledoelau Staedt Krankenhaus
+SYMBOL:HOSPITAL:N051.30.03.600:E011.57.19.480:Kroellwitz Uni:0:-13	// Kroellwitz Uni
+SYMBOL:HOSPITAL:N051.11.37.169:E011.58.08.001:Wiessenfels Asklepios:0:-13	// Wiessenfels Asklepios
+SYMBOL:HOSPITAL:N051.28.38.000:E011.59.15.699:Halle Elisabeth und Barbara:0:-13	// Halle Elisabeth und Barbara
+SYMBOL:HOSPITAL:N051.27.37.991:E012.11.33.000:Halle Berufsgen. Kliniken:0:-13	// Halle Berufsgen. Kliniken
+SYMBOL:HOSPITAL:N051.21.04.000:E012.11.50.219:Schkeuditz ADAC LRZ:0:-13	// Schkeuditz ADAC LRZ
+SYMBOL:HOSPITAL:N051.48.57.179:E012.20.09.471:Dessau Staedt Klinikum:0:-13	// Dessau Staedt Klinikum
+SYMBOL:HOSPITAL:N050.23.52.019:E012.22.33.348:Schoeneck Paracelsus:0:-13	// Schoeneck Paracelsus
+SYMBOL:HOSPITAL:N051.22.59.564:E012.22.43.454:Leipzig Staedt:0:-13	// Leipzig Staedt
+SYMBOL:HOSPITAL:N051.18.12.496:E012.23.14.800:Leipzig St. Elisabethkrankenhaus:0:-13	// Leipzig St. Elisabethkrankenhaus
+SYMBOL:HOSPITAL:N051.19.49.102:E012.23.19.792:Leipzig Uni Operative:0:-13	// Leipzig Uni Operative
+SYMBOL:HOSPITAL:N051.19.44.879:E012.25.45.149:Leipzig Uni Zentrallager:0:-13	// Leipzig Uni Zentrallager
+SYMBOL:HOSPITAL:N050.43.11.709:E012.26.08.452:Zwickau Heinrich Braun:0:-13	// Zwickau Heinrich Braun
+SYMBOL:HOSPITAL:N051.18.27.270:E012.26.12.329:Leipzig Herzzentrum Dach:0:-13	// Leipzig Herzzentrum Dach
+SYMBOL:HOSPITAL:N051.18.21.770:E012.30.23.462:Leipzig Herzzentrum Boden:0:-13	// Leipzig Herzzentrum Boden
+SYMBOL:HOSPITAL:N051.08.07.750:E012.38.56.642:Borna Sana Klinikum:0:-13	// Borna Sana Klinikum
+SYMBOL:HOSPITAL:N051.14.45.651:E012.42.25.402:FA Ulrich Altner:0:-13	// FA Ulrich Altner
+SYMBOL:HOSPITAL:N050.28.18.599:E012.42.58.000:Erlabrunn Kliniken:0:-13	// Erlabrunn Kliniken
+SYMBOL:HOSPITAL:N050.35.35.002:E011.15.58.400:AUE Helios Klinikum:0:-13	// AUE Helios Klinikum
+SYMBOL:HOSPITAL:N050.53.23.720:E007.39.32.040:Bad Berka Zentral Dach:0:-13	// Bad Berka Zentral Dach
+SYMBOL:HOSPITAL:N047.36.51.783:E008.28.50.618:Loerrach Kreiskrankenhaus:0:-13	// Loerrach Kreiskrankenhaus
+SYMBOL:HOSPITAL:N047.57.21.672:E007.51.06.923:Schwarzwaldbaar Klinikum:0:-13	// Schwarzwaldbaar Klinikum
+SYMBOL:HOSPITAL:N048.00.05.638:E007.50.24.821:Freiburg St. Josefskrankenhaus:0:-13	// Freiburg St. Josefskrankenhaus
+SYMBOL:HOSPITAL:N048.00.24.441:E007.50.21.290:Freiburg Uniklinikum FR2:0:-13	// Freiburg Uniklinikum FR2
+SYMBOL:HOSPITAL:N048.00.26.889:E008.36.40.536:Freiburg Uniklinikum FR1:0:-13	// Freiburg Uniklinikum FR1
+SYMBOL:HOSPITAL:N048.09.54.594:E008.34.29.532:Rottweil Helios Klinik:0:-13	// Rottweil Helios Klinik
+SYMBOL:HOSPITAL:N048.10.24.640:E008.04.20.291:Polizeistuetzpunkt:0:-13	// Polizeistuetzpunkt
+SYMBOL:HOSPITAL:N048.23.27.701:E008.24.16.380:Norddach Firma Junker:0:-13	// Norddach Firma Junker
+SYMBOL:HOSPITAL:N048.28.36.902:E008.33.45.504:Freudenstadt Krankenhaus:0:-13	// Freudenstadt Krankenhaus
+SYMBOL:HOSPITAL:N049.07.19.215:E006.59.55.281:Bruchsal:0:-13	// Bruchsal
+SYMBOL:HOSPITAL:N049.13.20.140:E007.45.24.941:Saarbruecken:0:-13	// Saarbruecken
+SYMBOL:HOSPITAL:N049.26.30.059:E007.08.19.360:KL Westpfalz Klinikum:0:-13	// KL Westpfalz Klinikum
+SYMBOL:HOSPITAL:N049.28.29.619:E008.23.21.002:St. Wendel Golfhotel:0:-13	// St. Wendel Golfhotel
+SYMBOL:HOSPITAL:N049.29.11.001:E008.28.52.922:BGU Ludwigshafen:0:-13	// BGU Ludwigshafen
+SYMBOL:HOSPITAL:N049.29.21.819:E008.25.29.000:Mannheim Theresienkrankenhaus:0:-13	// Mannheim Theresienkrankenhaus
+SYMBOL:HOSPITAL:N049.29.28.000:E008.09.30.000:Ludwigshafen:0:-13	// Ludwigshafen
+SYMBOL:HOSPITAL:N049.33.47.402:E008.19.16.000:Gruenstadt Kreiskrankenhaus:0:-13	// Gruenstadt Kreiskrankenhaus
+SYMBOL:HOSPITAL:N049.38.55.000:E008.38.10.000:Worms Klinikum:0:-13	// Worms Klinikum
+SYMBOL:HOSPITAL:N048.08.58.000:E008.22.29.381:Rottweil Krankenhaus:0:-13	// Rottweil Krankenhaus
+SYMBOL:HOSPITAL:N049.01.06.114:E008.36.10.001:Karlsruhe Staedt:0:-13	// Karlsruhe Staedt
+SYMBOL:HOSPITAL:N049.07.56.000:E008.30.03.701:Klinik Bruchsal:0:-13	// Klinik Bruchsal
+SYMBOL:HOSPITAL:N048.03.58.601:E008.27.42.570:Zentralklinikum Villingen Schwenningen:0:-13	// Zentralklinikum Villingen Schwenningen
+SYMBOL:HOSPITAL:N047.55.39.810:E007.53.13.622:Braeunlingen Firma Straub:0:-13	// Braeunlingen Firma Straub
+SYMBOL:HOSPITAL:N048.20.38.642:E008.24.33.002:Lahr ETT Ortenau Klinikum:0:-13	// Lahr ETT Ortenau Klinikum
+SYMBOL:HOSPITAL:N048.58.14.999:E008.30.10.800:Rueppurr Diakonie:0:-13	// Rueppurr Diakonie
+SYMBOL:HOSPITAL:N048.54.16.200:E008.29.11.152:SRH Klinikum:0:-13	// SRH Klinikum
+SYMBOL:HOSPITAL:N049.29.35.751:E008.40.24.262:Mannheim Klinikum:0:-13	// Mannheim Klinikum
+SYMBOL:HOSPITAL:N048.53.52.412:E008.39.55.800:Pforzheim Krankenhaus:0:-13	// Pforzheim Krankenhaus
+SYMBOL:HOSPITAL:N048.53.52.199:E008.40.11.399:Pforzheim Arcus:0:-13	// Pforzheim Arcus
+SYMBOL:HOSPITAL:N049.25.17.400:E007.41.56.004:Heidelberg Uniklinikum:0:-13	// Heidelberg Uniklinikum
+SYMBOL:HOSPITAL:N047.54.26.669:E007.57.18.000:Bad Krozingen Herzzentrum:0:-13	// Bad Krozingen Herzzentrum
+SYMBOL:HOSPITAL:N048.28.35.001:E008.26.08.099:Offenburg Kreiskrankenhaus:0:-13	// Offenburg Kreiskrankenhaus
+SYMBOL:HOSPITAL:N049.18.37.600:E008.39.56.542:Speyer Diakonie:0:-13	// Speyer Diakonie
+SYMBOL:HOSPITAL:N049.24.54.731:E007.10.59.002:Heidelberg Chirurg Dach:0:-13	// Heidelberg Chirurg Dach
+SYMBOL:HOSPITAL:N049.20.29.001:E007.20.42.000:Neunkirchen Staedt:0:-13	// Neunkirchen Staedt
+SYMBOL:HOSPITAL:N049.18.24.002:E008.49.16.464:Homburg Saar Uniklinik:0:-13	// Homburg Saar Uniklinik
+SYMBOL:HOSPITAL:N047.45.36.764:E008.49.17.462:Singen Hegauklinikum:0:-13	// Singen Hegauklinikum
+SYMBOL:HOSPITAL:N047.48.20.747:E008.51.48.190:Muelhausen:0:-13	// Muelhausen
+SYMBOL:HOSPITAL:N048.17.13.370:E009.06.24.282:Balingen Krankenhaus:0:-13	// Balingen Krankenhaus
+SYMBOL:HOSPITAL:N048.17.15.562:E009.13.06.352:Burladingen Firma Trigema:0:-13	// Burladingen Firma Trigema
+SYMBOL:HOSPITAL:N048.29.02.300:E009.09.16.247:Reutlingen Klinikum:0:-13	// Reutlingen Klinikum
+SYMBOL:HOSPITAL:N048.29.29.480:E009.02.17.301:Reutlingenbetzingen:0:-13	// Reutlingenbetzingen
+SYMBOL:HOSPITAL:N048.31.46.463:E009.02.08.301:Tuebingen Cronakliniken:0:-13	// Tuebingen Cronakliniken
+SYMBOL:HOSPITAL:N048.31.58.462:E008.43.22.721:Tuebingen Unfallklinik:0:-13	// Tuebingen Unfallklinik
+SYMBOL:HOSPITAL:N048.32.30.167:E008.49.53.102:Nagold Kreiskrankenhaus:0:-13	// Nagold Kreiskrankenhaus
+SYMBOL:HOSPITAL:N047.59.06.630:E009.23.40.010:Tuttlingen Klinikum:0:-13	// Tuttlingen Klinikum
+SYMBOL:HOSPITAL:N048.17.18.381:E009.11.19.230:Pfronstettenaichelau:0:-13	// Pfronstettenaichelau
+SYMBOL:HOSPITAL:N047.40.19.161:E009.09.59.001:Konstanz Klinikum:0:-13	// Konstanz Klinikum
+SYMBOL:HOSPITAL:N050.54.35.000:E009.15.18.749:Schwalmstadt Krankenhaus:0:-13	// Schwalmstadt Krankenhaus
+SYMBOL:HOSPITAL:N050.55.16.810:E009.27.12.500:Schwalmstadt Asklepios:0:-13	// Schwalmstadt Asklepios
+SYMBOL:HOSPITAL:N051.18.42.002:E009.30.33.844:Kassel Rotes Kreuz Krankenhaus:0:-13	// Kassel Rotes Kreuz Krankenhaus
+SYMBOL:HOSPITAL:N051.19.42.777:E009.42.15.153:Kassel Klinikum:0:-13	// Kassel Klinikum
+SYMBOL:HOSPITAL:N050.32.45.035:E010.13.00.232:Fulda Klinikum:0:-13	// Fulda Klinikum
+SYMBOL:HOSPITAL:N050.48.15.099:E010.19.00.002:Bad Salzungen Klinikum:0:-13	// Bad Salzungen Klinikum
+SYMBOL:HOSPITAL:N050.59.15.000:E010.23.56.192:Eisenach St. Georg:0:-13	// Eisenach St. Georg
+SYMBOL:HOSPITAL:N050.33.25.499:E010.28.07.450:Meiningen Helios Klinikum:0:-13	// Meiningen Helios Klinikum
+SYMBOL:HOSPITAL:N051.12.01.412:E006.02.39.772:Muehlhausen Klinikum:0:-13	// Muehlhausen Klinikum
+SYMBOL:HOSPITAL:N050.46.32.420:E006.08.35.571:Aachen Uniklinikum:0:-13	// Aachen Uniklinikum
+SYMBOL:HOSPITAL:N050.48.53.630:E006.19.21.519:Rhein Maas Klinikum:0:-13	// Rhein Maas Klinikum
+SYMBOL:HOSPITAL:N051.45.52.622:E006.33.54.900:Kalkar:0:-13	// Kalkar
+SYMBOL:HOSPITAL:N051.19.16.612:E006.34.57.000:Krefeld Klinikum:0:-13	// Krefeld Klinikum
+SYMBOL:HOSPITAL:N050.19.37.200:E006.38.26.999:Goennersdorf am Achelshof:0:-13	// Goennersdorf am Achelshof
+SYMBOL:HOSPITAL:N049.45.46.199:E006.39.00.094:Trier Barmherzige Muetter:0:-13	// Trier Barmherzige Muetter
+SYMBOL:HOSPITAL:N050.35.31.460:E006.47.09.672:Mechernich Kreiskrankenhaus:0:-13	// Mechernich Kreiskrankenhaus
+SYMBOL:HOSPITAL:N051.22.53.055:E006.47.12.351:Duisburg BG Dach:0:-13	// Duisburg BG Dach
+SYMBOL:HOSPITAL:N051.22.50.301:E006.47.21.311:Duisburg BG Boden:0:-13	// Duisburg BG Boden
+SYMBOL:HOSPITAL:N051.11.42.929:E006.48.33.336:Duesseldorf Uniklink:0:-13	// Duesseldorf Uniklink
+SYMBOL:HOSPITAL:N051.04.25.421:E006.53.35.002:Dormagen:0:-13	// Dormagen
+SYMBOL:HOSPITAL:N049.59.59.000:E006.55.11.259:Wittlich St. Elisabeth:0:-13	// Wittlich St. Elisabeth
+SYMBOL:HOSPITAL:N050.55.26.141:E006.56.44.751:Koeln Uniklinik UKK2:0:-13	// Koeln Uniklinik UKK2
+SYMBOL:HOSPITAL:N050.58.00.311:E006.58.51.251:Nippes St. Vinzenz:0:-13	// Nippes St. Vinzenz
+SYMBOL:HOSPITAL:N050.56.35.470:E006.59.20.602:Koelndeutz Messe:0:-13	// Koelndeutz Messe
+SYMBOL:HOSPITAL:N051.26.00.820:E007.03.14.800:Essen Uniklinikum:0:-13	// Essen Uniklinikum
+SYMBOL:HOSPITAL:N050.56.19.000:E007.05.22.082:Koelnmerheim:0:-13	// Koelnmerheim
+SYMBOL:HOSPITAL:N050.34.36.902:E007.06.08.662:Grafschaft Haribo:0:-13	// Grafschaft Haribo
+SYMBOL:HOSPITAL:N050.42.06.390:E007.07.05.182:Venusberg Uni:0:-13	// Venusberg Uni
+SYMBOL:HOSPITAL:N050.47.48.531:E007.07.26.001:St. Johanneskrankenhaus:0:-13	// St. Johanneskrankenhaus
+SYMBOL:HOSPITAL:N051.39.50.001:E006.37.51.201:Marl:0:-13	// Marl
+SYMBOL:HOSPITAL:N049.45.15.700:E006.56.35.002:Trier Mutterhaus:0:-13	// Trier Mutterhaus
+SYMBOL:HOSPITAL:N050.19.52.000:E006.15.52.082:Zuerburgring Hotel:0:-13	// Zuerburgring Hotel
+SYMBOL:HOSPITAL:N050.49.06.532:E006.46.00.221:Eschweiler St. Antonius:0:-13	// Eschweiler St. Antonius
+SYMBOL:HOSPITAL:N051.30.57.021:E006.48.31.360:Duisburg Nord Ev.:0:-13	// Duisburg Nord Ev.
+SYMBOL:HOSPITAL:N050.55.23.380:E006.25.17.760:Frechen Katharinen:0:-13	// Frechen Katharinen
+SYMBOL:HOSPITAL:N051.13.02.309:E006.46.57.202:MGL St. Franziskus:0:-13	// MGL St. Franziskus
+SYMBOL:HOSPITAL:N051.23.45.701:E007.10.29.151:Duisburg Wedau Sana Kliniken:0:-13	// Duisburg Wedau Sana Kliniken
+SYMBOL:HOSPITAL:N051.56.38.084:E007.12.39.129:Coesfeld:0:-13	// Coesfeld
+SYMBOL:HOSPITAL:N051.28.07.266:E007.18.10.091:Bochum:0:-13	// Bochum
+SYMBOL:HOSPITAL:N050.33.26.630:E007.18.52.000:Dattenberg Firma SP:0:-13	// Dattenberg Firma SP
+SYMBOL:HOSPITAL:N050.32.40.000:E007.19.43.068:Leubsdorf:0:-13	// Leubsdorf
+SYMBOL:HOSPITAL:N051.17.33.339:E007.23.57.030:Ennepetal Oelklinghausen:0:-13	// Ennepetal Oelklinghausen
+SYMBOL:HOSPITAL:N051.24.02.294:E007.25.27.034:Herdecke:0:-13	// Herdecke
+SYMBOL:HOSPITAL:N050.21.11.708:E007.25.50.920:DHD Heliservice:0:-13	// DHD Heliservice
+SYMBOL:HOSPITAL:N050.22.26.879:E007.27.17.000:Saffig:0:-13	// Saffig
+SYMBOL:HOSPITAL:N051.32.00.000:E007.28.17.400:DO Klinikzentrum Nord:0:-13	// DO Klinikzentrum Nord
+SYMBOL:HOSPITAL:N050.25.40.800:E007.30.54.969:Neuwied Elisabeth:0:-13	// Neuwied Elisabeth
+SYMBOL:HOSPITAL:N051.37.08.210:E007.32.43.001:Luenen St. Marienhospital:0:-13	// Luenen St. Marienhospital
+SYMBOL:HOSPITAL:N050.22.04.001:E007.34.05.949:Koblenz BWZK:0:-13	// Koblenz BWZK
+SYMBOL:HOSPITAL:N051.00.53.446:E007.35.26.002:Gummersbach Kreiskrankenhaus:0:-13	// Gummersbach Kreiskrankenhaus
+SYMBOL:HOSPITAL:N051.57.38.002:E007.35.44.949:Muenster Zentralklinikum:0:-13	// Muenster Zentralklinikum
+SYMBOL:HOSPITAL:N050.15.22.745:E007.51.43.802:Boppard Jakobsberg:0:-13	// Boppard Jakobsberg
+SYMBOL:HOSPITAL:N049.50.49.200:E007.54.34.762:Bad Kreuznach Marienwoerth:0:-13	// Bad Kreuznach Marienwoerth
+SYMBOL:HOSPITAL:N051.47.01.148:E008.01.05.718:Ahlennord:0:-13	// Ahlennord
+SYMBOL:HOSPITAL:N050.51.06.516:E008.15.16.769:Siegen Jungstillkrankenhaus:0:-13	// Siegen Jungstillkrankenhaus
+SYMBOL:HOSPITAL:N049.59.38.872:E008.20.26.535:Mainz Uniklinikum:0:-13	// Mainz Uniklinikum
+SYMBOL:HOSPITAL:N051.36.40.216:E008.21.49.518:Erwitte:0:-13	// Erwitte
+SYMBOL:HOSPITAL:N051.50.19.126:E008.22.43.526:Lintel:0:-13	// Lintel
+SYMBOL:HOSPITAL:N051.02.59.442:E008.25.12.490:Bad Berleburg:0:-13	// Bad Berleburg
+SYMBOL:HOSPITAL:N051.54.27.098:E008.32.39.423:Guetersloh:0:-13	// Guetersloh
+SYMBOL:HOSPITAL:N052.00.53.054:E008.32.49.611:Bielefeld Krankenhaus:0:-13	// Bielefeld Krankenhaus
+SYMBOL:HOSPITAL:N050.06.35.370:E008.36.10.394:Frankfurt Hoechst:0:-13	// Frankfurt Hoechst
+SYMBOL:HOSPITAL:N051.52.03.116:E008.37.10.427:Stukenbrock:0:-13	// Stukenbrock
+SYMBOL:HOSPITAL:N050.09.02.801:E008.38.50.367:Frankfurt am Main Nordwestkrankenhaus:0:-13	// Frankfurt am Main Nordwestkrankenhaus
+SYMBOL:HOSPITAL:N051.56.43.084:E008.39.45.000:Oerlinghausen:0:-13	// Oerlinghausen
+SYMBOL:HOSPITAL:N050.05.43.800:E008.39.58.800:Frankfurt am Main Uniklinik:0:-13	// Frankfurt am Main Uniklinik
+SYMBOL:HOSPITAL:N050.15.51.600:E008.40.01.402:Burgholzhausen Rotorflug:0:-13	// Burgholzhausen Rotorflug
+SYMBOL:HOSPITAL:N050.34.32.902:E008.09.56.999:Giessen Uniklinikum:0:-13	// Giessen Uniklinikum
+SYMBOL:HOSPITAL:N052.06.48.000:E008.48.27.641:Bad Rothenfelde Kliniken:0:-13	// Bad Rothenfelde Kliniken
+SYMBOL:HOSPITAL:N050.48.53.129:E008.30.52.000:Marburg:0:-13	// Marburg
+SYMBOL:HOSPITAL:N050.09.00.000:E008.37.09.002:Bad Soden:0:-13	// Bad Soden
+SYMBOL:HOSPITAL:N050.12.44.702:E008.38.43.242:Bad Homburg Hochtaunuskliniken:0:-13	// Bad Homburg Hochtaunuskliniken
+SYMBOL:HOSPITAL:N049.52.28.474:E008.31.42.219:Darmstadt Klinikum:0:-13	// Darmstadt Klinikum
+SYMBOL:HOSPITAL:N050.32.13.791:E008.39.09.472:Wetzlar Lahndillkliniken:0:-13	// Wetzlar Lahndillkliniken
+SYMBOL:HOSPITAL:N050.34.20.640:E009.21.32.541:Giessen Johanniter:0:-13	// Giessen Johanniter
+SYMBOL:HOSPITAL:N048.37.43.749:E009.26.35.088:Nuertingen Medius Klinik:0:-13	// Nuertingen Medius Klinik
+SYMBOL:HOSPITAL:N048.39.07.427:E009.01.55.920:Kirchheim unter Teck Medius:0:-13	// Kirchheim unter Teck Medius
+SYMBOL:HOSPITAL:N048.41.26.020:E008.59.08.319:Boeblingen Krankenhaus:0:-13	// Boeblingen Krankenhaus
+SYMBOL:HOSPITAL:N048.41.34.400:E008.44.48.002:Sindelfingen Daimler AG:0:-13	// Sindelfingen Daimler AG
+SYMBOL:HOSPITAL:N048.42.54.000:E009.15.16.600:Calw Kreiskrankenhaus:0:-13	// Calw Kreiskrankenhaus
+SYMBOL:HOSPITAL:N048.44.30.502:E009.14.23.180:Ostfildernruit Medius:0:-13	// Ostfildernruit Medius
+SYMBOL:HOSPITAL:N048.46.55.370:E009.10.23.214:Untertuerkheim Daimler AG:0:-13	// Untertuerkheim Daimler AG
+SYMBOL:HOSPITAL:N048.47.02.364:E009.03.46.271:Stuttgart Katharinen:0:-13	// Stuttgart Katharinen
+SYMBOL:HOSPITAL:N048.47.07.361:E008.59.57.304:Gerlingen Firma Bosch:0:-13	// Gerlingen Firma Bosch
+SYMBOL:HOSPITAL:N048.48.11.351:E009.47.13.902:Leonberg Kreiskrankenhaus:0:-13	// Leonberg Kreiskrankenhaus
+SYMBOL:HOSPITAL:N048.49.12.368:E009.04.55.258:Mutlangen Stauferklinikum:0:-13	// Mutlangen Stauferklinikum
+SYMBOL:HOSPITAL:N048.53.01.320:E008.42.43.355:Schwieberdingen Bosch:0:-13	// Schwieberdingen Bosch
+SYMBOL:HOSPITAL:N048.53.19.259:E009.12.14.195:Pforzheim Klinikum:0:-13	// Pforzheim Klinikum
+SYMBOL:HOSPITAL:N048.53.58.319:E009.06.32.001:Ludwigsburg Klinik:0:-13	// Ludwigsburg Klinik
+SYMBOL:HOSPITAL:N048.54.32.001:E009.24.07.082:Markgroeningen Klinik:0:-13	// Markgroeningen Klinik
+SYMBOL:HOSPITAL:N049.05.22.247:E009.44.29.904:Loewenstein Klink:0:-13	// Loewenstein Klink
+SYMBOL:HOSPITAL:N049.07.30.242:E009.11.24.465:Schwäbisch Hall Diakonie:0:-13	// Schwäbisch Hall Diakonie
+SYMBOL:HOSPITAL:N049.09.10.865:E009.33.30.759:Klinikum am Gesundbrunnen:0:-13	// Klinikum am Gesundbrunnen
+SYMBOL:HOSPITAL:N049.11.02.750:E009.14.12.239:Obersoellbach Firma Helix:0:-13	// Obersoellbach Firma Helix
+SYMBOL:HOSPITAL:N049.12.46.833:E009.14.03.858:Bad Friedrichshall Klinikum:0:-13	// Bad Friedrichshall Klinikum
+SYMBOL:HOSPITAL:N049.14.29.325:E009.09.09.699:Oedheim:0:-13	// Oedheim
+SYMBOL:HOSPITAL:N049.21.20.000:E009.00.06.081:Mosbach Kreiskrankenhaus:0:-13	// Mosbach Kreiskrankenhaus
+SYMBOL:HOSPITAL:N049.39.07.150:E010.05.12.250:Erbach Odenwald Kreiskrankenhaus:0:-13	// Erbach Odenwald Kreiskrankenhaus
+SYMBOL:HOSPITAL:N049.39.34.960:E010.16.56.770:Ochsenfurt Kreiskrankenhaus:0:-13	// Ochsenfurt Kreiskrankenhaus
+SYMBOL:HOSPITAL:N049.41.41.500:E009.57.22.752:Iphofen Firma Knauf:0:-13	// Iphofen Firma Knauf
+SYMBOL:HOSPITAL:N049.48.29.967:E008.56.07.880:Wuerzburg:0:-13	// Wuerzburg
+SYMBOL:HOSPITAL:N049.51.59.966:E008.45.25.258:Grossumstadt Kreisklinik:0:-13	// Grossumstadt Kreisklinik
+SYMBOL:HOSPITAL:N050.05.40.222:E008.42.32.469:Offenbach Klinikum:0:-13	// Offenbach Klinikum
+SYMBOL:HOSPITAL:N050.08.43.610:E009.52.32.772:Frankfurt BG:0:-13	// Frankfurt BG
+SYMBOL:HOSPITAL:N050.09.25.823:E010.04.57.501:Hammelburg Unterer Thal:0:-13	// Hammelburg Unterer Thal
+SYMBOL:HOSPITAL:N050.11.24.990:E009.23.35.560:Bad Kissingen Elisabeth:0:-13	// Bad Kissingen Elisabeth
+SYMBOL:HOSPITAL:N048.52.12.699:E009.09.49.882:Winnenden Klinik:0:-13	// Winnenden Klinik
+SYMBOL:HOSPITAL:N048.45.39.867:E009.19.37.190:Stuttgart Marienhospital:0:-13	// Stuttgart Marienhospital
+SYMBOL:HOSPITAL:N048.44.15.119:E009.20.27.302:Esslingen Klinikum:0:-13	// Esslingen Klinikum
+SYMBOL:HOSPITAL:N049.31.41.520:E009.01.28.294:Seitenbacher:0:-13	// Seitenbacher
+SYMBOL:HOSPITAL:N048.42.54.389:E009.45.46.811:Sindelfingen Staedt Krankenhaus:0:-13	// Sindelfingen Staedt Krankenhaus
+SYMBOL:HOSPITAL:N049.29.21.452:E008.42.36.720:Bad Mergentheim Krankenhaus:0:-13	// Bad Mergentheim Krankenhaus
+SYMBOL:HOSPITAL:N050.08.43.682:E010.14.06.270:Frankfurt BGU LRZ Dach:0:-13	// Frankfurt BGU LRZ Dach
+SYMBOL:HOSPITAL:N050.19.21.641:E009.11.07.682:Bad Neustadt Saale:0:-13	// Bad Neustadt Saale
+SYMBOL:HOSPITAL:N048.48.49.940:E009.11.07.682:Bad Cannstadt Robert Bosch:0:-13	// Bad Cannstadt Robert Bosch
