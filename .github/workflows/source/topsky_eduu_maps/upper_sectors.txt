@@ -7,6 +7,29 @@ MAP:Sectors
 FOLDER:Upper
 COLOR:DFSGrey
 ACTIVE:1
-#import .github/workflows/source/data/sectors/eduu/eduu_all.txt
-#import .github/workflows/source/data/loa_lines/pilam_area.txt
+#import .github/workflows/source/data/sectors/eduu/ebg_central/ffm.txt
+#import .github/workflows/source/data/sectors/eduu/ebg_central/ful.txt
+#import .github/workflows/source/data/sectors/eduu/ebg_central/wur.txt
+#import .github/workflows/source/data/sectors/eduu/ebg_east/erl.txt
+#import .github/workflows/source/data/sectors/eduu/ebg_east/hvl.txt
+#import .github/workflows/source/data/sectors/eduu/ebg_east/ose.txt
+#import .github/workflows/source/data/sectors/eduu/ebg_east/sal.txt
+#import .github/workflows/source/data/sectors/eduu/ebg_east/spe.txt
+#import .github/workflows/source/data/sectors/eduu/ebg_south/alp.txt
+#import .github/workflows/source/data/sectors/eduu/ebg_south/chi.txt
+#import .github/workflows/source/data/sectors/eduu/ebg_south/don.txt
+#import .github/workflows/source/data/sectors/eduu/ebg_south/isa.txt
+#import .github/workflows/source/data/sectors/eduu/ebg_west/ntm.txt
+#import .github/workflows/source/data/sectors/eduu/ebg_west/sln.txt
+#import .github/workflows/source/data/sectors/eduu/ebg_west/tgo.txt
 
+MAP:Neighbors
+FOLDER:Upper
+COLOR:DFSGrey
+ACTIVE:1
+#import .github/workflows/source/data/sectors/edyy/hannover_group/cel.txt
+#import .github/workflows/source/data/sectors/edyy/hannover_group/mns.txt
+#import .github/workflows/source/data/sectors/edyy/hannover_group/rhr.txt
+#import .github/workflows/source/data/sectors/edyy/hannover_group/sol.txt
+#import .github/workflows/source/data/sectors/lfee/upper_east.txt
+#import .github/workflows/source/data/sectors/lsas/upper/zurich.txt
