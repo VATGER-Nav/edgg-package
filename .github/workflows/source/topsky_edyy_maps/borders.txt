@@ -38,7 +38,7 @@ MAP:Lower Borders
 FOLDER:Borders
 COLOR:greysector
 LAYER:1
-STYLE:Solid:1
+STYLE:DashDot:1
 #import .github/workflows/source/data/sectors/edgg/ebg_1/bot.txt
 #import .github/workflows/source/data/sectors/edgg/ebg_1/dus.txt
 #import .github/workflows/source/data/sectors/edgg/ebg_2/bad.txt
