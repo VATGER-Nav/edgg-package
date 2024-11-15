@@ -202,6 +202,26 @@ ACTIVE:RWY:ARR:*:DEP:EDFQ29
 ACTIVE:RWY:ARR:*:DEP:EDFQ11
 #import .github/workflows/source/data/airspace/rmz/edfq_rmz.txt
 
+MAP:EDTD RMZ 
+FOLDER:Controlzone
+STYLE:Dot:1
+COLOR:DFSGrey
+ACTIVE:RWY:ARR:EDTD18:DEP:*
+ACTIVE:RWY:ARR:EDTD36:DEP:*
+ACTIVE:RWY:ARR:*:DEP:EDTD18
+ACTIVE:RWY:ARR:*:DEP:EDTD36
+#import .github/workflows/source/data/airspace/rmz/edtd_rmz.txt
+
+MAP:EDTM RMZ 
+FOLDER:Controlzone
+STYLE:Dot:1
+COLOR:DFSGrey
+ACTIVE:RWY:ARR:EDTM07:DEP:*
+ACTIVE:RWY:ARR:EDTM25:DEP:*
+ACTIVE:RWY:ARR:*:DEP:EDTM07
+ACTIVE:RWY:ARR:*:DEP:EDTM25
+#import .github/workflows/source/data/airspace/rmz/edtm_rmz.txt
+
 MAP:EDLW TMZ
 FOLDER:Airspace
 COLOR:DFSGrey
