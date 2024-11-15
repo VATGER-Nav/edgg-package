@@ -56,7 +56,6 @@
 
     ".github/workflows/source/topsky_eduu_maps/borders.txt",
     ".github/workflows/source/topsky_eduu_maps/upper_sectors.txt",
-    ".github/workflows/source/topsky_eduu_maps/lower_sectors.txt",
 
     ".github/workflows/source/topsky_eduu_maps/eduu_tools.txt",
 
