@@ -29,16 +29,52 @@ STYLE:Solid:1
 #import .github/workflows/source/data/sectors/edyy/hannover_group/mns.txt
 #import .github/workflows/source/data/sectors/edyy/hannover_group/rhr.txt
 #import .github/workflows/source/data/sectors/edyy/hannover_group/sol.txt
-#import .github/workflows/source/data/sectors/lsas/upper/geneva.txt
-#import .github/workflows/source/data/sectors/lsas/upper/zurich.txt
+#import .github/workflows/source/data/sectors/egpx/humber.txt
+#import .github/workflows/source/data/sectors/egtt/clacton.txt
+#import .github/workflows/source/data/sectors/egtt/dover.txt
+#import .github/workflows/source/data/sectors/egtt/north_sea.txt
+#import .github/workflows/source/data/sectors/egtt/upper_east.txt
+#import .github/workflows/source/data/sectors/ekdk/A.txt
+#import .github/workflows/source/data/sectors/ekdk/B.txt
+#import .github/workflows/source/data/sectors/ekdk/C.txt
+#import .github/workflows/source/data/sectors/ekdk/D.txt
+#import .github/workflows/source/data/sectors/ekdk/I.txt
+#import .github/workflows/source/data/sectors/ekdk/N.txt
+#import .github/workflows/source/data/sectors/ekdk/S.txt
+#import .github/workflows/source/data/sectors/epww/B.txt
+#import .github/workflows/source/data/sectors/epww/D.txt
+#import .github/workflows/source/data/sectors/epww/T.txt
+#import .github/workflows/source/data/sectors/esaa/esmm-8.txt
+#import .github/workflows/source/data/sectors/esaa/esmm-9.txt
 #import .github/workflows/source/data/sectors/lfee/upper_east.txt
 #import .github/workflows/source/data/sectors/lfee/upper_west.txt
+#import .github/workflows/source/data/sectors/limm/NE6.txt
+#import .github/workflows/source/data/sectors/lkaa/north.txt
+#import .github/workflows/source/data/sectors/lkaa/west.txt
+#import .github/workflows/source/data/sectors/lovv/B.txt
+#import .github/workflows/source/data/sectors/lovv/N.txt
+#import .github/workflows/source/data/sectors/lovv/W.txt
+#import .github/workflows/source/data/sectors/lsas/upper/geneva.txt
+#import .github/workflows/source/data/sectors/lsas/upper/zurich.txt
 
 MAP:Lower Borders
 FOLDER:Borders
 COLOR:grey
-LAYER:1
+LAYER:-1
 STYLE:DashDot:1
+#import .github/workflows/source/data/sectors/ebbu/cta/ehs.txt
+#import .github/workflows/source/data/sectors/ebbu/cta/els.txt
+#import .github/workflows/source/data/sectors/ebbu/cta/nls.txt
+#import .github/workflows/source/data/sectors/ebbu/cta/whs.txt
+#import .github/workflows/source/data/sectors/ebbu/cta/wls.txt
+#import .github/workflows/source/data/sectors/ebbu/tma/beauvechain.txt
+#import .github/workflows/source/data/sectors/ebbu/tma/brussels.txt
+#import .github/workflows/source/data/sectors/ebbu/tma/charleroi.txt
+#import .github/workflows/source/data/sectors/ebbu/tma/florennes.txt
+#import .github/workflows/source/data/sectors/ebbu/tma/kleine_brogel.txt
+#import .github/workflows/source/data/sectors/ebbu/tma/liege.txt
+#import .github/workflows/source/data/sectors/ebbu/tma/luxembourg.txt
+#import .github/workflows/source/data/sectors/ebbu/tma/oostende.txt
 #import .github/workflows/source/data/sectors/edgg/ebg_1/bot.txt
 #import .github/workflows/source/data/sectors/edgg/ebg_1/dus.txt
 #import .github/workflows/source/data/sectors/edgg/ebg_2/bad.txt
@@ -110,29 +146,14 @@ STYLE:DashDot:1
 #import .github/workflows/source/data/sectors/edww/ebg_sued/ems.txt
 #import .github/workflows/source/data/sectors/edww/ebg_sued/han.txt
 #import .github/workflows/source/data/sectors/edww/ebg_sued/hrz.txt
-#import .github/workflows/source/data/sectors/ebbu/cta/brussels_east.txt
-#import .github/workflows/source/data/sectors/ebbu/cta/brussels_lower.txt
-#import .github/workflows/source/data/sectors/ebbu/cta/brussels_south.txt
-#import .github/workflows/source/data/sectors/ebbu/cta/brussels_west.txt
-#import .github/workflows/source/data/sectors/ebbu/cta/florennes.txt
-#import .github/workflows/source/data/sectors/ebbu/cta/kleine_brogel.txt
-#import .github/workflows/source/data/sectors/ebbu/tma/beauvechain.txt
-#import .github/workflows/source/data/sectors/ebbu/tma/brussels.txt
-#import .github/workflows/source/data/sectors/ebbu/tma/charleroi.txt
-#import .github/workflows/source/data/sectors/ebbu/tma/florennes.txt
-#import .github/workflows/source/data/sectors/ebbu/tma/kleine_brogel.txt
-#import .github/workflows/source/data/sectors/ebbu/tma/liege.txt
-#import .github/workflows/source/data/sectors/ebbu/tma/luxembourg.txt
-#import .github/workflows/source/data/sectors/ebbu/tma/oostende.txt
 #import .github/workflows/source/data/sectors/ehaa/cta/amsterdam_east.txt
 #import .github/workflows/source/data/sectors/ehaa/cta/amsterdam_south.txt
 #import .github/workflows/source/data/sectors/ehaa/cta/amsterdam_west.txt
-#import .github/workflows/source/data/sectors/ehaa/cta/nieuw_milligen_north.txt
+#import .github/workflows/source/data/sectors/ehaa/cta/nieuw_milligen.txt
 #import .github/workflows/source/data/sectors/ehaa/tma/eelde.txt
 #import .github/workflows/source/data/sectors/ehaa/tma/eindhoven.txt
 #import .github/workflows/source/data/sectors/ehaa/tma/lelystad.txt
 #import .github/workflows/source/data/sectors/ehaa/tma/maastricht.txt
-#import .github/workflows/source/data/sectors/ehaa/tma/nieuw_milligen.txt
 #import .github/workflows/source/data/sectors/ehaa/tma/rotterdam.txt
 #import .github/workflows/source/data/sectors/ehaa/tma/schiphol.txt
 #import .github/workflows/source/data/sectors/lfee/lfsb.txt
@@ -143,6 +164,8 @@ STYLE:DashDot:1
 #import .github/workflows/source/data/sectors/lsas/geneva_lower/ini_north.txt
 #import .github/workflows/source/data/sectors/lsas/geneva_lower/ini_south.txt
 #import .github/workflows/source/data/sectors/lsas/geneva_lower/sion.txt
+#import .github/workflows/source/data/sectors/lsas/military/duebendorf.txt
+#import .github/workflows/source/data/sectors/lsas/military/emmen.txt
 #import .github/workflows/source/data/sectors/lsas/zurich_lower/arfa.txt
 #import .github/workflows/source/data/sectors/lsas/zurich_lower/bern.txt
 #import .github/workflows/source/data/sectors/lsas/zurich_lower/low_east.txt
