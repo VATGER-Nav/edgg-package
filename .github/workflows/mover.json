@@ -139,7 +139,6 @@
 
     ".github/workflows/source/topsky_edyy_maps/borders.txt",
     ".github/workflows/source/topsky_edyy_maps/upper_sectors.txt",
-    ".github/workflows/source/topsky_edyy_maps/lower_sectors.txt",
 
     ".github/workflows/source/topsky_edyy_maps/topo.txt"
   ],
