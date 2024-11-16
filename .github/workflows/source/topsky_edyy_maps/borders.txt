@@ -2,7 +2,7 @@ MAP:Upper Borders
 FOLDER:Borders
 COLOR:greysector
 LAYER:2
-STYLE:Solid:1
+STYLE:Dot:1
 #import .github/workflows/source/data/sectors/eduu/ebg_central/ffm.txt
 #import .github/workflows/source/data/sectors/eduu/ebg_central/ful.txt
 #import .github/workflows/source/data/sectors/eduu/ebg_central/wur.txt
