@@ -3,7 +3,8 @@ ACTIVE:1
 ASRDATA:EDGG,EDDK,EDDL,EDDS
 COLOR:DFSGrey
 STYLE:Solid:1
-#import .github/workflows/source/data/sectors/ebbu/cta/brussels_east.txt
+#import .github/workflows/source/data/sectors/ebbu/cta/els.txt
+#import .github/workflows/source/data/sectors/ebbu/cta/ehs.txt
 #import .github/workflows/source/data/sectors/ebbu/tma/liege.txt
 #import .github/workflows/source/data/sectors/ebbu/tma/luxembourg.txt
 #import .github/workflows/source/data/sectors/edmm/ebg_approach/ilr.txt
