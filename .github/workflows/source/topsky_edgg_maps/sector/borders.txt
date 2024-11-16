@@ -3,16 +3,37 @@ FOLDER:Borders
 COLOR:green
 LAYER:2
 STYLE:Solid:1
-#import .github/workflows/source/data/sectors/eduu
-#import .github/workflows/source/data/sectors/edyy
-#import .github/workflows/source/data/sectors/lfee/upper_east.txt
-#import .github/workflows/source/data/sectors/lfee/upper_west.txt
-#import .github/workflows/source/data/sectors/lsas/upper
+#import .github/workflows/source/data/sectors/eduu/ebg_central/ffm.txt
+#import .github/workflows/source/data/sectors/eduu/ebg_central/ful.txt
+#import .github/workflows/source/data/sectors/eduu/ebg_central/wur.txt
+#import .github/workflows/source/data/sectors/eduu/ebg_east/erl.txt
+#import .github/workflows/source/data/sectors/eduu/ebg_east/hvl.txt
+#import .github/workflows/source/data/sectors/eduu/ebg_east/ose.txt
+#import .github/workflows/source/data/sectors/eduu/ebg_east/sal.txt
+#import .github/workflows/source/data/sectors/eduu/ebg_east/spe.txt
+#import .github/workflows/source/data/sectors/eduu/ebg_south/alp.txt
+#import .github/workflows/source/data/sectors/eduu/ebg_south/chi.txt
+#import .github/workflows/source/data/sectors/eduu/ebg_south/don.txt
+#import .github/workflows/source/data/sectors/eduu/ebg_south/isa.txt
+#import .github/workflows/source/data/sectors/eduu/ebg_west/ntm.txt
+#import .github/workflows/source/data/sectors/eduu/ebg_west/sln.txt
+#import .github/workflows/source/data/sectors/eduu/ebg_west/tgo.txt
+#import .github/workflows/source/data/sectors/edyy/brussels_group/kok.txt
+#import .github/workflows/source/data/sectors/edyy/brussels_group/lux.txt
+#import .github/workflows/source/data/sectors/edyy/brussels_group/nik.txt
+#import .github/workflows/source/data/sectors/edyy/brussels_group/oln.txt
+#import .github/workflows/source/data/sectors/edyy/deco_group/dwst.txt
+#import .github/workflows/source/data/sectors/edyy/deco_group/hol.txt
+#import .github/workflows/source/data/sectors/edyy/deco_group/jev.txt
+#import .github/workflows/source/data/sectors/edyy/hannover_group/cel.txt
+#import .github/workflows/source/data/sectors/edyy/hannover_group/mns.txt
+#import .github/workflows/source/data/sectors/edyy/hannover_group/rhr.txt
+#import .github/workflows/source/data/sectors/edyy/hannover_group/sol.txt
 
 MAP:Lower Borders
 FOLDER:Borders
 COLOR:DFSGrey
-LAYER:1
+LAYER:-1
 STYLE:Solid:1
 #import .github/workflows/source/data/sectors/ebbu/cta/ehs.txt
 #import .github/workflows/source/data/sectors/ebbu/cta/els.txt
@@ -98,11 +119,31 @@ STYLE:Solid:1
 #import .github/workflows/source/data/sectors/edww/ebg_sued/ems.txt
 #import .github/workflows/source/data/sectors/edww/ebg_sued/han.txt
 #import .github/workflows/source/data/sectors/edww/ebg_sued/hrz.txt
-#import 
-#import 
-#import 
-#import 
-#import 
-#import 
-#import 
-#import 
+#import .github/workflows/source/data/sectors/ehaa/cta/amsterdam_east.txt
+#import .github/workflows/source/data/sectors/ehaa/cta/amsterdam_south.txt
+#import .github/workflows/source/data/sectors/ehaa/cta/amsterdam_west.txt
+#import .github/workflows/source/data/sectors/ehaa/cta/nieuw_milligen.txt
+#import .github/workflows/source/data/sectors/ehaa/tma/eelde.txt
+#import .github/workflows/source/data/sectors/ehaa/tma/eindhoven.txt
+#import .github/workflows/source/data/sectors/ehaa/tma/lelystad.txt
+#import .github/workflows/source/data/sectors/ehaa/tma/maastricht.txt
+#import .github/workflows/source/data/sectors/ehaa/tma/rotterdam.txt
+#import .github/workflows/source/data/sectors/ehaa/tma/schiphol.txt
+#import .github/workflows/source/data/sectors/lfee/lfsb.txt
+#import .github/workflows/source/data/sectors/lfee/lfst.txt
+#import .github/workflows/source/data/sectors/lfee/lower.txt
+#import .github/workflows/source/data/sectors/lsas/geneva_lower/geneva.txt
+#import .github/workflows/source/data/sectors/lsas/geneva_lower/ini_east.txt
+#import .github/workflows/source/data/sectors/lsas/geneva_lower/ini_north.txt
+#import .github/workflows/source/data/sectors/lsas/geneva_lower/ini_south.txt
+#import .github/workflows/source/data/sectors/lsas/geneva_lower/sion.txt
+#import .github/workflows/source/data/sectors/lsas/military/duebendorf.txt
+#import .github/workflows/source/data/sectors/lsas/military/emmen.txt
+#import .github/workflows/source/data/sectors/lsas/zurich_lower/arfa.txt
+#import .github/workflows/source/data/sectors/lsas/zurich_lower/bern.txt
+#import .github/workflows/source/data/sectors/lsas/zurich_lower/low_east.txt
+#import .github/workflows/source/data/sectors/lsas/zurich_lower/low_north.txt
+#import .github/workflows/source/data/sectors/lsas/zurich_lower/low_south.txt
+#import .github/workflows/source/data/sectors/lsas/zurich_lower/low_west.txt
+#import .github/workflows/source/data/sectors/lsas/zurich_lower/zurich_east.txt
+#import .github/workflows/source/data/sectors/lsas/zurich_lower/zurich_west.txt
