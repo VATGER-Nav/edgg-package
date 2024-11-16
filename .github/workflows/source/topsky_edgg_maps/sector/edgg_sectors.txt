@@ -4,32 +4,4 @@ COLOR:DFSGrey
 FOLDER:Langen Radar
 ASRDATA:EDGG
 STYLE:Solid:1
-#import .github/workflows/source/data/sectors/edgg/ebg_1/bot.txt
-#import .github/workflows/source/data/sectors/edgg/ebg_1/dus.txt
-#import .github/workflows/source/data/sectors/edgg/ebg_2/bad.txt
-#import .github/workflows/source/data/sectors/edgg/ebg_2/lbu.txt
-#import .github/workflows/source/data/sectors/edgg/ebg_2/man.txt
-#import .github/workflows/source/data/sectors/edgg/ebg_2/nkrh.txt
-#import .github/workflows/source/data/sectors/edgg/ebg_2/nkrl.txt
-#import .github/workflows/source/data/sectors/edgg/ebg_3/ged.txt
-#import .github/workflows/source/data/sectors/edgg/ebg_3/gin.txt
-#import .github/workflows/source/data/sectors/edgg/ebg_3/hef.txt
-#import .github/workflows/source/data/sectors/edgg/ebg_3/sig.txt
-#import .github/workflows/source/data/sectors/edgg/ebg_3/tau.txt
-#import .github/workflows/source/data/sectors/edgg/ebg_4/dkb.txt
-#import .github/workflows/source/data/sectors/edgg/ebg_4/hab.txt
-#import .github/workflows/source/data/sectors/edgg/ebg_4/kng.txt
-#import .github/workflows/source/data/sectors/edgg/ebg_4/ktg.txt
-#import .github/workflows/source/data/sectors/edgg/ebg_4/psa.txt
-#import .github/workflows/source/data/sectors/edgg/ebg_5/eif.txt
-#import .github/workflows/source/data/sectors/edgg/ebg_5/kir.txt
-#import .github/workflows/source/data/sectors/edgg/ebg_5/pfa.txt
-#import .github/workflows/source/data/sectors/edgg/ebg_5/rud.txt
-#import .github/workflows/source/data/sectors/edgg/ebg_6/hmm.txt
-#import .github/workflows/source/data/sectors/edgg/ebg_6/padh.txt
-#import .github/workflows/source/data/sectors/edgg/ebg_6/padl.txt
-#import .github/workflows/source/data/sectors/edgg/ebg_7/dka.txt
-#import .github/workflows/source/data/sectors/edgg/ebg_7/nor.txt
-#import .github/workflows/source/data/sectors/edgg/ebg_8/reu.txt
-#import .github/workflows/source/data/sectors/edgg/ebg_8/stg.txt
-#import .github/workflows/source/data/sectors/edgg/ebg_10/adf.txt
+#import .github/workflows/source/data/sectors/edgg
