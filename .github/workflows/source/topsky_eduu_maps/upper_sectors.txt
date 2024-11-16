@@ -36,6 +36,9 @@ ACTIVE:1
 #import .github/workflows/source/data/sectors/edyy/hannover_group/sol.txt
 #import .github/workflows/source/data/sectors/ekdk/A.txt
 #import .github/workflows/source/data/sectors/ekdk/B.txt
+#import .github/workflows/source/data/sectors/epww/B.txt
+#import .github/workflows/source/data/sectors/epww/D.txt
+#import .github/workflows/source/data/sectors/epww/T.txt
 #import .github/workflows/source/data/sectors/esaa/esmm-8.txt
 #import .github/workflows/source/data/sectors/esaa/esmm-9.txt
 #import .github/workflows/source/data/sectors/lfee/upper_east.txt
