@@ -38,8 +38,5 @@ ACTIVE:1
 #import .github/workflows/source/data/sectors/ekdk/I.txt
 #import .github/workflows/source/data/sectors/ekdk/N.txt
 #import .github/workflows/source/data/sectors/ekdk/S.txt
-#import .github/workflows/source/data/sectors/epww/B.txt
-#import .github/workflows/source/data/sectors/epww/D.txt
-#import .github/workflows/source/data/sectors/epww/T.txt
 #import .github/workflows/source/data/sectors/lfee/upper_east.txt
 #import .github/workflows/source/data/sectors/lfee/upper_west.txt
