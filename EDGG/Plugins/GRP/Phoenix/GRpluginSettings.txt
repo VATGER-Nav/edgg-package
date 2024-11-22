@@ -195,6 +195,7 @@ Airport_Runway_Closed_Dep=25R
 Airport_Runway_Closed_Dep=07L
 Window_APP_AltFilter=10000
 System_RIM=0
+Maps_Font=Lucida Sans Unicode
 
 [EDDL]
 Airport_Runway_Area_LVP=23L:90
