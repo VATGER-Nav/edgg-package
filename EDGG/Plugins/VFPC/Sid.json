@@ -89,6 +89,12 @@
                "direction": "ANY",
 			   "forbidden_fls": 250,
 			   "airways": ["N858"]
+            },
+			{
+               "direction": "ANY",
+			   "max_fl": 90,
+			   "airways": ["GULKO"],
+			   "destinations": ["EDDK"]
             }
          ],
          "ULKIG": [
