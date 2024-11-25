@@ -204,7 +204,7 @@
          "NETEX": [
             {
                "direction": "ANY",
-               "airways": ["L179"],
+               "airways": ["L179","RASCA","DELOM"],
                "forbidden_fls": 250
             },
             {
