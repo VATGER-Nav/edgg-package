@@ -54,8 +54,8 @@
 
     ".github/workflows/source/topsky_eduu_maps/fixes.txt",
 
+    ".github/workflows/source/topsky_eduu_maps/borders.txt",
     ".github/workflows/source/topsky_eduu_maps/upper_sectors.txt",
-    ".github/workflows/source/topsky_eduu_maps/lower_sectors.txt",
 
     ".github/workflows/source/topsky_eduu_maps/eduu_tools.txt",
 
@@ -77,7 +77,7 @@
 
     ".github/workflows/source/topsky_edgg_maps/areas.txt",
 
-    ".github/workflows/source/topsky_edgg_maps/sector/upper_borders.txt",
+    ".github/workflows/source/topsky_edgg_maps/sector/borders.txt",
     ".github/workflows/source/topsky_edgg_maps/sector/edgg_sectors.txt",
     ".github/workflows/source/topsky_edgg_maps/sector/edgg_border_sectors.txt",
 
@@ -137,9 +137,8 @@
     ".github/workflows/source/topsky_edyy_maps/fixes.txt",
     ".github/workflows/source/topsky_edyy_maps/edyy_airways.txt",
 
+    ".github/workflows/source/topsky_edyy_maps/borders.txt",
     ".github/workflows/source/topsky_edyy_maps/upper_sectors.txt",
-
-    ".github/workflows/source/topsky_edyy_maps/lower_sectors.txt",
 
     ".github/workflows/source/topsky_edyy_maps/topo.txt"
   ],

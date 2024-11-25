@@ -1,7 +1,0 @@
-MAP:Sectors
-FOLDER:Lower
-COLOR:greysector
-LAYER:-1
-#import .github\workflows\source\data\sectors\edgg\edyy_edgg_lower.txt
-#import .github\workflows\source\data\sectors\ehaa.txt
-#import .github\workflows\source\data\sectors\ebbu.txt

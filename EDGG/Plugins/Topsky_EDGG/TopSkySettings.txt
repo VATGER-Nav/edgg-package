@@ -227,7 +227,7 @@ Shortcut_Map_Target=1,MVA\MVA Germany Winter
 Shortcut_Map_Target=2,Airspace\Airspace LEVEL
 Shortcut_Map_Target=3,Tools\Seperation Guide Lower
 Shortcut_Map_Target=4,Tools\Seperation Guide Upper
-Shortcut_Map_Target=5,Upper\Upper Borders
+Shortcut_Map_Target=5,Borders
 Shortcut_Map_Target=6,VFR\VFR Reporting Points
 
 STCA_Sep_Lat_SepLevel=24500
