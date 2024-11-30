@@ -57,6 +57,9 @@ COLORDEF:tora-label:200:200:200
 
 COLORDEF:lvp-marking:185:59:46
 COLORDEF:lvp-areas:60:12:15
+COLORDEF:lvp-critical:113:37:39
+COLORDEF:lvp-sensitive:140:129:13
+COLORDEF:lvp-orthogonal:138:75:32
 
 COLORDEF:restrictions-AB:185:59:46
 COLORDEF:restrictions-C:210:116:7
