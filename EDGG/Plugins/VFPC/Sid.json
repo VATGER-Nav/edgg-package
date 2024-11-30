@@ -30,7 +30,7 @@
 			   {
                "direction": "ANY",
 			   "forbidden_fls": 250,
-			   "airways": ["Y161"]
+			   "airways": ["Y161","ASLEP"]
             }
          ],
          "KOMIB": [
@@ -89,6 +89,12 @@
                "direction": "ANY",
 			   "forbidden_fls": 250,
 			   "airways": ["N858"]
+            },
+			{
+               "direction": "ANY",
+			   "max_fl": 90,
+			   "airways": ["GULKO"],
+			   "destinations": ["EDDK"]
             }
          ],
          "ULKIG": [
@@ -204,7 +210,7 @@
          "NETEX": [
             {
                "direction": "ANY",
-               "airways": ["L179"],
+               "airways": ["L179","RASCA","DELOM"],
                "forbidden_fls": 250
             },
             {

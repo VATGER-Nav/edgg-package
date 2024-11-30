@@ -18,5 +18,4 @@ MAP:German-France Border
 FOLDER:TOPO
 COLOR:DFSGrey
 ASRDATA:EDDS
-ACTIVE:1
 #import .github/workflows/source/data/topographie/german-france-border.txt

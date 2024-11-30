@@ -8,7 +8,8 @@ MAP:Border REU/STG
 COLOR:DFSGrey
 FOLDER:EDDS
 STYLE:Solid:1
-#import .github/workflows/source/data/sectors/edgg/stg.txt
+#import .github/workflows/source/data/sectors/edgg/ebg_8/reu.txt
+#import .github/workflows/source/data/sectors/edgg/ebg_8/stg.txt
 
 MAP:EDDS RELEASE LINE
 FOLDER:EDDS

@@ -1,23 +1,35 @@
 MAP:Langen Neighbours
 ACTIVE:1
-ASRDATA:EDGG,EDDK,EDDL
+ASRDATA:EDGG,EDDK,EDDL,EDDS
 COLOR:DFSGrey
 STYLE:Solid:1
-#import .github/workflows/source/data/sectors/lsas/arfa.txt
-#import .github/workflows/source/data/sectors/lsas/lsasze.txt
-#import .github/workflows/source/data/sectors/lsas/lsaszn.txt
-#import .github/workflows/source/data/sectors/lsas/lsas-ape.txt
-#import .github/workflows/source/data/sectors/edmm/alb.txt
-#import .github/workflows/source/data/sectors/edmm/frk.txt
-#import .github/workflows/source/data/sectors/edmm/fue.txt
-#import .github/workflows/source/data/sectors/edmm/ger.txt
-#import .github/workflows/source/data/sectors/edmm/hal.txt
-#import .github/workflows/source/data/sectors/edmm/ndg.txt
-#import .github/workflows/source/data/sectors/edmm/trn.txt
-#import .github/workflows/source/data/sectors/edmm/trs.txt
-#import .github/workflows/source/data/sectors/edww/dst.txt
-#import .github/workflows/source/data/sectors/edww/ems.txt
-#import .github/workflows/source/data/sectors/edww/hrz.txt
-#import .github/workflows/source/data/sectors/ehaa.txt
-#import .github/workflows/source/data/sectors/ebbu.txt
-#import .github/workflows/source/data/sectors/lfee.txt
+#import .github/workflows/source/data/sectors/ebbu/cta/els.txt
+#import .github/workflows/source/data/sectors/ebbu/cta/ehs.txt
+#import .github/workflows/source/data/sectors/ebbu/tma/liege.txt
+#import .github/workflows/source/data/sectors/ebbu/tma/luxembourg.txt
+#import .github/workflows/source/data/sectors/edmm/ebg_approach/ilr.txt
+#import .github/workflows/source/data/sectors/edmm/ebg_approach/swa.txt
+#import .github/workflows/source/data/sectors/edmm/ebg_ost/bbg.txt
+#import .github/workflows/source/data/sectors/edmm/ebg_ost/frk.txt
+#import .github/workflows/source/data/sectors/edmm/ebg_ost/ger.txt
+#import .github/workflows/source/data/sectors/edmm/ebg_ost/hal.txt
+#import .github/workflows/source/data/sectors/edmm/ebg_ost/trn.txt
+#import .github/workflows/source/data/sectors/edmm/ebg_ost/trs.txt
+#import .github/workflows/source/data/sectors/edmm/ebg_west/alb.txt
+#import .github/workflows/source/data/sectors/edmm/ebg_west/fue.txt
+#import .github/workflows/source/data/sectors/edmm/ebg_west/ndg.txt
+#import .github/workflows/source/data/sectors/edmm/ebg_west/wld.txt
+#import .github/workflows/source/data/sectors/edww/ebg_sued/dst.txt
+#import .github/workflows/source/data/sectors/edww/ebg_sued/ems.txt
+#import .github/workflows/source/data/sectors/edww/ebg_sued/han.txt
+#import .github/workflows/source/data/sectors/edww/ebg_sued/hrz.txt
+#import .github/workflows/source/data/sectors/ehaa/cta/amsterdam_east.txt
+#import .github/workflows/source/data/sectors/ehaa/tma/maastricht.txt
+#import .github/workflows/source/data/sectors/lfee/lfsb.txt
+#import .github/workflows/source/data/sectors/lfee/lfst.txt
+#import .github/workflows/source/data/sectors/lfee/lower.txt
+#import .github/workflows/source/data/sectors/lfee/upper_east.txt
+#import .github/workflows/source/data/sectors/lsas/zurich_lower/arfa.txt
+#import .github/workflows/source/data/sectors/lsas/zurich_lower/low_east.txt
+#import .github/workflows/source/data/sectors/lsas/zurich_lower/low_north.txt
+#import .github/workflows/source/data/sectors/lsas/zurich_lower/zurich_east.txt
