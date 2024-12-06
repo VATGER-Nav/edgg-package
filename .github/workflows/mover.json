@@ -7,17 +7,9 @@
     ".github/workflows/source/grp_phoenix_maps/eddf.txt",
     ".github/workflows/source/grp_phoenix_maps/eddl.txt",
     ".github/workflows/source/grp_phoenix_maps/eddk.txt",
+    ".github/workflows/source/grp_phoenix_maps/edds.txt",
     ".github/workflows/source/grp_phoenix_maps/eddg.txt",
     ".github/workflows/source/grp_phoenix_maps/eddr.txt",
-
-    ".github/workflows/source/grp_phoenix_maps/edds/second_window.txt",
-    ".github/workflows/source/grp_phoenix_maps/edds/app_window.txt",
-    ".github/workflows/source/grp_phoenix_maps/edds/dfs_layout.txt",
-    ".github/workflows/source/grp_phoenix_maps/edds/reduced_runway_separation.txt",
-    ".github/workflows/source/grp_phoenix_maps/edds/tora.txt",
-    ".github/workflows/source/grp_phoenix_maps/edds/restrictions.txt",
-    ".github/workflows/source/grp_phoenix_maps/edds/closures.txt",
-
     ".github/workflows/source/grp_phoenix_maps/edfh.txt",
     ".github/workflows/source/grp_phoenix_maps/edfm.txt",
     ".github/workflows/source/grp_phoenix_maps/edln.txt",

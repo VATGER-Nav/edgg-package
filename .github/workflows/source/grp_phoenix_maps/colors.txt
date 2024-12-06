@@ -39,6 +39,7 @@ COLORDEF:layout-holdingpoint-red:185:59:46
 COLORDEF:layout-holdingpoint-grey:130:130:130
 COLORDEF:layout-label-taxiway:220:220:220
 COLORDEF:layout-label-stand:180:180:180
+COLORDEF:layout-label-yellow:203:167:62
 
 COLORDEF:aor-gnd-a:98:133:29
 COLORDEF:aor-gnd-b:151:162:51
@@ -54,6 +55,7 @@ COLORDEF:aor-app-b:216:112:44
 
 COLORDEF:rrs-marker:80:104:84
 COLORDEF:tora-label:200:200:200
+COLORDEF:runway-label:200:200:200
 
 COLORDEF:lvp-marking:185:59:46
 COLORDEF:lvp-areas:60:12:15
