@@ -1,0 +1,29 @@
+// -------------------------- Runway Info ---------------------------
+
+MAP:TORA 27
+AIRPORT:EDFM
+FOLDER:Runway Info
+COLOR:tora-label
+ZOOM:600
+TEXTALIGN:RC
+{{ data.edfm_layout['layout']['TORA']['27'] | to_text('1060') }}
+
+MAP:TORA 09
+AIRPORT:EDFM
+FOLDER:Runway Info
+COLOR:tora-label
+ZOOM:600
+TEXTALIGN:LC
+{{ data.edfm_layout['layout']['TORA']['09'] | to_text('1010') }}
+
+MAP:Runway Designators
+AIRPORT:EDFM
+FOLDER:Runway Info
+ACTIVE:1
+{{ data.edfm_layout['layout']['Markings']['27'] | to_multipoly('27', 'layout-runway-marking') }}
+{{ data.edfm_layout['layout']['Markings']['09'] | to_multipoly('09', 'layout-runway-marking') }}
+
+MAP:Runway Markings
+AIRPORT:EDFM
+FOLDER:Runway Info
+{{ data.edfm_layout['layout']['Markings']['Runway Marking'] | to_multipoly('', 'layout-runway-marking') }}

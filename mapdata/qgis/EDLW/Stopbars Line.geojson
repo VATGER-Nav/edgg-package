@@ -1,0 +1,13 @@
+{
+"type": "FeatureCollection",
+"name": "Stopbars Line — stopbars",
+"crs": { "type": "name", "properties": { "name": "urn:ogc:def:crs:EPSG::32632" } },
+"features": [
+{ "type": "Feature", "properties": { "Name": "B I", "description": null, "timestamp": null, "begin": null, "end": null, "altitudeMode": null, "tessellate": -1, "extrude": 0, "visibility": -1, "drawOrder": null, "icon": null }, "geometry": { "type": "LineString", "coordinates": [ [ 403320.47254112851806, 5708041.904684820212424 ], [ 403324.100922222831286, 5708056.133836617693305 ] ] } },
+{ "type": "Feature", "properties": { "Name": "A I", "description": null, "timestamp": null, "begin": null, "end": null, "altitudeMode": null, "tessellate": -1, "extrude": 0, "visibility": -1, "drawOrder": null, "icon": null }, "geometry": { "type": "LineString", "coordinates": [ [ 403243.687939587573055, 5707915.404047737829387 ], [ 403232.953274740255438, 5707934.687908636406064 ] ] } },
+{ "type": "Feature", "properties": { "Name": "C I", "description": null, "timestamp": null, "begin": null, "end": null, "altitudeMode": null, "tessellate": -1, "extrude": 0, "visibility": -1, "drawOrder": null, "icon": null }, "geometry": { "type": "LineString", "coordinates": [ [ 404492.652472036657855, 5708701.559276559390128 ], [ 404512.28779291047249, 5708712.373094780370593 ] ] } },
+{ "type": "Feature", "properties": { "Name": "D I", "description": null, "timestamp": null, "begin": null, "end": null, "altitudeMode": null, "tessellate": -1, "extrude": 0, "visibility": -1, "drawOrder": null, "icon": null }, "geometry": { "type": "LineString", "coordinates": [ [ 404719.92569992429344, 5708725.909562926739454 ], [ 404730.828840336413123, 5708706.113100572489202 ] ] } },
+{ "type": "Feature", "properties": { "Name": "STOP 2", "description": null, "timestamp": null, "begin": null, "end": null, "altitudeMode": null, "tessellate": -1, "extrude": 0, "visibility": -1, "drawOrder": null, "icon": null }, "geometry": { "type": "LineString", "coordinates": [ [ 403572.580295710184146, 5708057.629915091209114 ], [ 403608.725894049974158, 5708067.413940136320889 ] ] } },
+{ "type": "Feature", "properties": { "Name": "STOP 1", "description": null, "timestamp": null, "begin": null, "end": null, "altitudeMode": null, "tessellate": -1, "extrude": 0, "visibility": -1, "drawOrder": null, "icon": null }, "geometry": { "type": "LineString", "coordinates": [ [ 403297.314628075633664, 5707876.662094834260643 ], [ 403306.702660496113822, 5707860.010657857172191 ] ] } }
+]
+}

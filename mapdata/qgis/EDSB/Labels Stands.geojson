@@ -1,0 +1,27 @@
+{
+"type": "FeatureCollection",
+"name": "Labels Stands",
+"crs": { "type": "name", "properties": { "name": "urn:ogc:def:crs:EPSG::32632" } },
+"features": [
+{ "type": "Feature", "properties": { "name": "18" }, "geometry": { "type": "Point", "coordinates": [ 433242.421670804847963, 5403781.247424906119704 ] } },
+{ "type": "Feature", "properties": { "name": "20" }, "geometry": { "type": "Point", "coordinates": [ 433174.744579525489826, 5403674.083847750909626 ] } },
+{ "type": "Feature", "properties": { "name": "26" }, "geometry": { "type": "Point", "coordinates": [ 432964.17252213176107, 5403345.939520900137722 ] } },
+{ "type": "Feature", "properties": { "name": "27" }, "geometry": { "type": "Point", "coordinates": [ 432929.270478953723796, 5403291.110795589163899 ] } },
+{ "type": "Feature", "properties": { "name": "22" }, "geometry": { "type": "Point", "coordinates": [ 433095.343966650194488, 5403570.621398931369185 ] } },
+{ "type": "Feature", "properties": { "name": "18A" }, "geometry": { "type": "Point", "coordinates": [ 433263.43769647780573, 5403803.70625276491046 ] } },
+{ "type": "Feature", "properties": { "name": "19" }, "geometry": { "type": "Point", "coordinates": [ 433210.34300637076376, 5403720.203566847369075 ] } },
+{ "type": "Feature", "properties": { "name": "25" }, "geometry": { "type": "Point", "coordinates": [ 432999.052382844791282, 5403400.751650262624025 ] } },
+{ "type": "Feature", "properties": { "name": "24" }, "geometry": { "type": "Point", "coordinates": [ 433025.548075160419103, 5403460.948861084878445 ] } },
+{ "type": "Feature", "properties": { "name": "23" }, "geometry": { "type": "Point", "coordinates": [ 433060.452648280421272, 5403515.840346996672451 ] } },
+{ "type": "Feature", "properties": { "name": "21" }, "geometry": { "type": "Point", "coordinates": [ 433139.919892641308252, 5403619.281546389684081 ] } },
+{ "type": "Feature", "properties": { "name": "Police" }, "geometry": { "type": "Point", "coordinates": [ 432817.35654080711538, 5403087.70335400197655 ] } },
+{ "type": "Feature", "properties": { "name": "Business Aviation" }, "geometry": { "type": "Point", "coordinates": [ 432550.811666575726122, 5402620.353339064866304 ] } },
+{ "type": "Feature", "properties": { "name": "APN 4" }, "geometry": { "type": "Point", "coordinates": [ 432264.447113023488782, 5402217.65423780400306 ] } },
+{ "type": "Feature", "properties": { "name": "APN 2" }, "geometry": { "type": "Point", "coordinates": [ 433019.171842299168929, 5403560.38954203389585 ] } },
+{ "type": "Feature", "properties": { "name": "APN 1" }, "geometry": { "type": "Point", "coordinates": [ 433390.350239730149042, 5404101.893489381298423 ] } },
+{ "type": "Feature", "properties": { "name": "DRF#1" }, "geometry": { "type": "Point", "coordinates": [ 432472.092483914340846, 5402651.959799654781818 ] } },
+{ "type": "Feature", "properties": { "name": "DRF#2" }, "geometry": { "type": "Point", "coordinates": [ 432455.827521819679532, 5402387.66841091029346 ] } },
+{ "type": "Feature", "properties": { "name": "DRF#3" }, "geometry": { "type": "Point", "coordinates": [ 432390.87024498305982, 5402338.957499532029033 ] } },
+{ "type": "Feature", "properties": { "name": "GAT" }, "geometry": { "type": "Point", "coordinates": [ 432355.578269018267747, 5402206.170137852430344 ] } }
+]
+}

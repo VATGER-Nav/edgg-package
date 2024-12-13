@@ -1,0 +1,21 @@
+{
+"type": "FeatureCollection",
+"name": "Restrictions Labels",
+"crs": { "type": "name", "properties": { "name": "urn:ogc:def:crs:EPSG::32632" } },
+"features": [
+{ "type": "Feature", "properties": { "name": "N/M_" }, "geometry": { "type": "Point", "coordinates": [ 368068.844774707104079, 5638356.300100728869438 ] } },
+{ "type": "Feature", "properties": { "name": "B/L_" }, "geometry": { "type": "Point", "coordinates": [ 368109.727209174598102, 5637728.555759260430932 ] } },
+{ "type": "Feature", "properties": { "name": "B#1_" }, "geometry": { "type": "Point", "coordinates": [ 367911.150156939926092, 5637445.194923113100231 ] } },
+{ "type": "Feature", "properties": { "name": "B#2_" }, "geometry": { "type": "Point", "coordinates": [ 367887.095453380199615, 5636589.050338315777481 ] } },
+{ "type": "Feature", "properties": { "name": "T/D_" }, "geometry": { "type": "Point", "coordinates": [ 368436.484149777970742, 5636564.200954399071634 ] } },
+{ "type": "Feature", "properties": { "name": "T2_" }, "geometry": { "type": "Point", "coordinates": [ 368168.321687191608362, 5636857.323583552613854 ] } },
+{ "type": "Feature", "properties": { "name": "Apron 2_" }, "geometry": { "type": "Point", "coordinates": [ 367574.75548123678891, 5636614.194818641059101 ] } },
+{ "type": "Feature", "properties": { "name": "Apron U_" }, "geometry": { "type": "Point", "coordinates": [ 367627.422907352854963, 5636965.622049470432103 ] } },
+{ "type": "Feature", "properties": { "name": "Apron Z_" }, "geometry": { "type": "Point", "coordinates": [ 367978.955790800508112, 5635681.93917724955827 ] } },
+{ "type": "Feature", "properties": { "name": "C_" }, "geometry": { "type": "Point", "coordinates": [ 368491.006391082657501, 5635828.391214471310377 ] } },
+{ "type": "Feature", "properties": { "name": "D_" }, "geometry": { "type": "Point", "coordinates": [ 369844.772026362246834, 5637056.432348319329321 ] } },
+{ "type": "Feature", "properties": { "name": "Ref" }, "geometry": { "type": "Point", "coordinates": [ 367379.788889867661055, 5637737.04802512191236 ] } },
+{ "type": "Feature", "properties": { "name": "A1_" }, "geometry": { "type": "Point", "coordinates": [ 370542.174602802610025, 5635422.862231244333088 ] } },
+{ "type": "Feature", "properties": { "name": "L_" }, "geometry": { "type": "Point", "coordinates": [ 367567.462371668196283, 5637813.285186587832868 ] } }
+]
+}

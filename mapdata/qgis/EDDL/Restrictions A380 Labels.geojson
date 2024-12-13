@@ -1,0 +1,22 @@
+{
+"type": "FeatureCollection",
+"name": "Restrictions A380 Labels",
+"crs": { "type": "name", "properties": { "name": "urn:ogc:def:crs:EPSG::32632" } },
+"features": [
+{ "type": "Feature", "properties": { "name": "L7" }, "geometry": { "type": "Point", "coordinates": [ 343749.900812848471105, 5683614.75851571187377 ] } },
+{ "type": "Feature", "properties": { "name": "1" }, "geometry": { "type": "Point", "coordinates": [ 343649.961362177506089, 5683307.25188048556447 ] } },
+{ "type": "Feature", "properties": { "name": "2" }, "geometry": { "type": "Point", "coordinates": [ 343375.048938938474748, 5683094.355266501195729 ] } },
+{ "type": "Feature", "properties": { "name": "3" }, "geometry": { "type": "Point", "coordinates": [ 343637.827818793186452, 5683099.892518488690257 ] } },
+{ "type": "Feature", "properties": { "name": "4" }, "geometry": { "type": "Point", "coordinates": [ 343799.248779843968805, 5683096.644554438069463 ] } },
+{ "type": "Feature", "properties": { "name": "5" }, "geometry": { "type": "Point", "coordinates": [ 344271.370181179372594, 5683977.450212367810309 ] } },
+{ "type": "Feature", "properties": { "name": "6" }, "geometry": { "type": "Point", "coordinates": [ 344906.385154433082789, 5684428.246006330475211 ] } },
+{ "type": "Feature", "properties": { "name": "7" }, "geometry": { "type": "Point", "coordinates": [ 345547.007755473954603, 5684866.529274017550051 ] } },
+{ "type": "Feature", "properties": { "name": "8" }, "geometry": { "type": "Point", "coordinates": [ 345411.283187627326697, 5684543.447468204423785 ] } },
+{ "type": "Feature", "properties": { "name": "Stop L6" }, "geometry": { "type": "Point", "coordinates": [ 343837.732544058468193, 5683568.359512799419463 ] } },
+{ "type": "Feature", "properties": { "name": "9" }, "geometry": { "type": "Point", "coordinates": [ 343181.155214413069189, 5683474.482753213495016 ] } },
+{ "type": "Feature", "properties": { "name": "10" }, "geometry": { "type": "Point", "coordinates": [ 343666.273651663796045, 5683820.514371613040566 ] } },
+{ "type": "Feature", "properties": { "name": "11" }, "geometry": { "type": "Point", "coordinates": [ 345194.781964544730727, 5684910.788755412213504 ] } },
+{ "type": "Feature", "properties": { "name": "12" }, "geometry": { "type": "Point", "coordinates": [ 345573.514900818991009, 5685180.936333440244198 ] } },
+{ "type": "Feature", "properties": { "name": "13" }, "geometry": { "type": "Point", "coordinates": [ 344061.345748083665967, 5683580.919833186082542 ] } }
+]
+}

@@ -1,0 +1,10 @@
+{
+"type": "FeatureCollection",
+"name": "AoR Labels",
+"crs": { "type": "name", "properties": { "name": "urn:ogc:def:crs:EPSG::32632" } },
+"features": [
+{ "type": "Feature", "properties": { "name": "LWT_" }, "geometry": { "type": "Point", "coordinates": [ 403889.249975074839313, 5708406.525057445280254 ] } },
+{ "type": "Feature", "properties": { "name": "LWG_" }, "geometry": { "type": "Point", "coordinates": [ 403925.877652002614923, 5708340.446979102678597 ] } },
+{ "type": "Feature", "properties": { "name": "PADL_" }, "geometry": { "type": "Point", "coordinates": [ 403792.932750561099965, 5708580.285930123180151 ] } }
+]
+}

@@ -1,0 +1,37 @@
+// -------------------------- Runway Info ---------------------------
+
+MAP:TORA 21
+AIRPORT:EDSB
+FOLDER:Runway Info
+COLOR:tora-label
+ZOOM:500
+TEXTALIGN:RC
+{{ data.edsb_layout['layout']['TORA']['21 A'] | to_text('3000') }}
+{{ data.edsb_layout['layout']['TORA']['21 B'] | to_text('2100') }}
+{{ data.edsb_layout['layout']['TORA']['21 C'] | to_text('1460') }}
+{{ data.edsb_layout['layout']['TORA']['21 D'] | to_text('780') }}
+
+MAP:TORA 06
+AIRPORT:EDSB
+FOLDER:Runway Info
+COLOR:tora-label
+ZOOM:500
+TEXTALIGN:LC
+{{ data.edsb_layout['layout']['TORA']['03 E'] | to_text('3000') }}
+{{ data.edsb_layout['layout']['TORA']['03 D'] | to_text('2250') }}
+{{ data.edsb_layout['layout']['TORA']['03 C'] | to_text('1580') }}
+{{ data.edsb_layout['layout']['TORA']['03 B'] | to_text('920') }}
+
+MAP:Runway Designators
+AIRPORT:EDSB
+FOLDER:Runway Info
+ACTIVE:1
+{{ data.edsb_layout['layout']['Markings']['21'] | to_multipoly('21', 'layout-runway-marking') }}
+{{ data.edsb_layout['layout']['Markings']['03'] | to_multipoly('03', 'layout-runway-marking') }}
+
+MAP:Runway Markings
+AIRPORT:EDSB
+FOLDER:Runway Info
+{% for id, geom in data.edsb['RunwayMarking'].items() %}
+{{- geom | to_poly(id, 'layout-runway-marking') }}
+{% endfor %}

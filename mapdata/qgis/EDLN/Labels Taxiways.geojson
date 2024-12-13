@@ -1,0 +1,15 @@
+{
+"type": "FeatureCollection",
+"name": "Labels Taxiways",
+"crs": { "type": "name", "properties": { "name": "urn:ogc:def:crs:EPSG::32632" } },
+"features": [
+{ "type": "Feature", "properties": { "name": "B" }, "geometry": { "type": "Point", "coordinates": [ 325284.501224557345267, 5678742.45284937415272 ] } },
+{ "type": "Feature", "properties": { "name": "F" }, "geometry": { "type": "Point", "coordinates": [ 325380.916194819146767, 5678858.538405739702284 ] } },
+{ "type": "Feature", "properties": { "name": "C" }, "geometry": { "type": "Point", "coordinates": [ 325563.695929762267042, 5678465.0775236049667 ] } },
+{ "type": "Feature", "properties": { "name": "D" }, "geometry": { "type": "Point", "coordinates": [ 325868.080953912169207, 5678205.457222416996956 ] } },
+{ "type": "Feature", "properties": { "name": "A#1" }, "geometry": { "type": "Point", "coordinates": [ 326004.386167295160703, 5678048.014568435028195 ] } },
+{ "type": "Feature", "properties": { "name": "A#2" }, "geometry": { "type": "Point", "coordinates": [ 325347.563131247123238, 5678610.61736376862973 ] } },
+{ "type": "Feature", "properties": { "name": "E#1" }, "geometry": { "type": "Point", "coordinates": [ 325567.102775357780047, 5678363.702497441321611 ] } },
+{ "type": "Feature", "properties": { "name": "E#2" }, "geometry": { "type": "Point", "coordinates": [ 325292.373811473720707, 5678596.997896943241358 ] } }
+]
+}

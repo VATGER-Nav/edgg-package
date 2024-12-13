@@ -1,0 +1,15 @@
+{
+"type": "FeatureCollection",
+"name": "Labels Stands",
+"crs": { "type": "name", "properties": { "name": "urn:ogc:def:crs:EPSG::32632" } },
+"features": [
+{ "type": "Feature", "properties": { "name": "A1" }, "geometry": { "type": "Point", "coordinates": [ 325632.810460513224825, 5678286.400353877805173 ] } },
+{ "type": "Feature", "properties": { "name": "A2" }, "geometry": { "type": "Point", "coordinates": [ 325658.277002109680325, 5678264.627776586450636 ] } },
+{ "type": "Feature", "properties": { "name": "A3" }, "geometry": { "type": "Point", "coordinates": [ 325683.740607208921574, 5678242.891928381286561 ] } },
+{ "type": "Feature", "properties": { "name": "A4" }, "geometry": { "type": "Point", "coordinates": [ 325709.154996409779415, 5678221.109229343943298 ] } },
+{ "type": "Feature", "properties": { "name": "A5" }, "geometry": { "type": "Point", "coordinates": [ 325734.629029790521599, 5678199.255265415646136 ] } },
+{ "type": "Feature", "properties": { "name": "A6" }, "geometry": { "type": "Point", "coordinates": [ 325760.158391798497178, 5678177.436257646419108 ] } },
+{ "type": "Feature", "properties": { "name": "Commercial Area" }, "geometry": { "type": "Point", "coordinates": [ 325110.51212634309195, 5678342.189728123135865 ] } },
+{ "type": "Feature", "properties": { "name": "Maintenance" }, "geometry": { "type": "Point", "coordinates": [ 325573.579139076871797, 5678881.613098538480699 ] } }
+]
+}

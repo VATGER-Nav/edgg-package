@@ -1,0 +1,14 @@
+{
+"type": "FeatureCollection",
+"name": "Labels Heli",
+"crs": { "type": "name", "properties": { "name": "urn:ogc:def:crs:EPSG::32632" } },
+"features": [
+{ "type": "Feature", "properties": { "name": "POL2" }, "geometry": { "type": "Point", "coordinates": [ 514275.816056176321581, 5392121.753734644502401 ] } },
+{ "type": "Feature", "properties": { "name": "POL3" }, "geometry": { "type": "Point", "coordinates": [ 514297.165565737290308, 5392116.479310276918113 ] } },
+{ "type": "Feature", "properties": { "name": "POL4" }, "geometry": { "type": "Point", "coordinates": [ 514318.64755476108985, 5392111.061394940130413 ] } },
+{ "type": "Feature", "properties": { "name": "POL5" }, "geometry": { "type": "Point", "coordinates": [ 514339.69680029922165, 5392105.881874358281493 ] } },
+{ "type": "Feature", "properties": { "name": "POL6" }, "geometry": { "type": "Point", "coordinates": [ 514361.767623079998884, 5392106.908453310839832 ] } },
+{ "type": "Feature", "properties": { "name": "Helipad N" }, "geometry": { "type": "Point", "coordinates": [ 516181.252233914390672, 5393079.248748885467649 ] } },
+{ "type": "Feature", "properties": { "name": "Helipad S" }, "geometry": { "type": "Point", "coordinates": [ 514503.902914072270505, 5392262.909201212227345 ] } }
+]
+}

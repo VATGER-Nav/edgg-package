@@ -1,0 +1,55 @@
+// -------------------------- Ground Layout -------------------------
+{% set default = 0.000005 %}
+MAP:Taxiway Movement Area
+AIRPORT:EDLW
+FOLDER:Airport Layout
+ACTIVE:1
+{% for taxiway, geom in data.edlw['TaxiwayElement'].items() %}
+{{ geom | simplify(default) | to_poly(taxiway, 'layout-taxiway') }}
+{% endfor %}
+
+MAP:Runway
+AIRPORT:EDLW
+FOLDER:Airport Layout
+ACTIVE:1
+{% for runway, geom in data.edlw['RunwayElement'].items() %}
+{{ geom | simplify(0.00001) | to_poly('Runway 24/06','layout-runway') }}
+{% endfor %}
+{% for blastpad, geom in data.edlw['RunwayBlastPad'].items() %}
+{{ geom | simplify(0.00001) | to_poly('BlastPad','layout-apron') }}
+{% endfor %}
+
+MAP:Leadin Lines
+AIRPORT:EDLW
+FOLDER:Airport Layout
+ACTIVE:1
+COLOR:layout-taxiline-grey
+{{ data.edlw_layout['layout']['Markings']['Solid'] | join_segments | simplify(default) | to_multiline('') }}
+{% for taxilane in ['GAT_SEGMENT_62', 'GAT_SEGMENT_63', 'GAT_SEGMENT_64', 'GAT_SEGMENT_65'] %}
+{{- data.edlw['GuidanceLineByDesig'][ taxilane | string ] | join_segments | simplify(default) | to_line(taxilane) }}
+{% endfor %}
+{{ data.edlw_layout['layout']['Markings']['Poly'] | to_multipoly('', 'layout-taxiline-grey') }}
+COLOR:layout-taxiline-grey
+STYLE:Dot:1
+{{ data.edlw_layout['layout']['Markings']['Dash'] | join_segments | simplify(default) | to_multiline('') }}
+
+MAP:Taxi Lanes
+AIRPORT:EDLW
+FOLDER:Airport Layout
+ACTIVE:1
+COLOR:layout-taxiline-yellow
+{% for taxilane in ['D_SEGMENT_2', 'D_SEGMENT_1', 'M_SEGMENT_12', 'M_SEGMENT_10', 'M_SEGMENT_11', 'B_SEGMENT_1', 'L_SEGMENT_7', 'A_SEGMENT_2', 'M_SEGMENT_5', 'M_SEGMENT_7', 'M_SEGMENT_2', 'M_SEGMENT_1', 'M_SEGMENT_6', 'M_SEGMENT_4', 'L_SEGMENT_9', 'C_SEGMENT_1', 'D_SEGMENT_3', 'L_SEGMENT_4', 'C_SEGMENT_2', 'C_SEGMENT_3', 'L_SEGMENT_6', 'L_SEGMENT_10', 'L_SEGMENT_11', 'L_SEGMENT_14', 'L_SEGMENT_15', 'L_SEGMENT_16', 'L_SEGMENT_17', 'L_SEGMENT_18', 'L_SEGMENT_19', 'M_SEGMENT_8', 'M_SEGMENT_9', 'M_SEGMENT_14', 'M_SEGMENT_13', 'M_SEGMENT_15', 'GAT_SEGMENT_1', 'GAT_SEGMENT_10', 'GAT_SEGMENT_20', 'GAT_SEGMENT_23', 'GAT_SEGMENT_32', 'GAT_SEGMENT_33', 'GAT_SEGMENT_45', 'GAT_SEGMENT_48', 'GAT_SEGMENT_59', 'GAT_SEGMENT_61', 'GAT_SEGMENT_60', 'L_SEGMENT_2', 'L_SEGMENT_1', 'L_SEGMENT_5', 'K_SEGMENT_1', 'L_SEGMENT_3', 'A_SEGMENT1', 'B_SEGMENT_2', 'B_SEGMENT_3', 'L_SEGMENT_12', 'L_SEGMENT_13', 'L_SEGMENT_8', 'M_SEGMENT_3', 'PARALLEL_5-12'] %}
+{{- data.edlw['GuidanceLineByDesig'][ taxilane | string ] | join_segments | simplify(default) | to_line(taxilane) }}
+{% endfor %}
+
+MAP:Buildings
+AIRPORT:EDLW
+FOLDER:Airport Layout
+ACTIVE:1
+{% for building, geom in data.edlw_layout['layout']['Buildings'].items() %}
+{{ geom | simplify(default) | to_poly(building, 'layout-building') }}
+{% endfor %}
+COLOR:layout-building
+{% for structure, geom in data.edlw_layout['layout']['Vertical Structure'].items() %}
+{{ geom | to_line(structure) }}
+{% endfor %}

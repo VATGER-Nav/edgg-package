@@ -1,0 +1,9 @@
+{
+"type": "FeatureCollection",
+"name": "Closures",
+"crs": { "type": "name", "properties": { "name": "urn:ogc:def:crs:EPSG::32632" } },
+"features": [
+{ "type": "Feature", "properties": { "name": "_1" }, "geometry": { "type": "Point", "coordinates": [ 403273.839218980283476, 5707825.649674645625055 ] } },
+{ "type": "Feature", "properties": { "name": "_2" }, "geometry": { "type": "Point", "coordinates": [ 404273.271790840546601, 5708434.832140473648906 ] } }
+]
+}

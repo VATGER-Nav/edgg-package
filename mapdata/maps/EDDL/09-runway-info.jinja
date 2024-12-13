@@ -1,0 +1,162 @@
+// -------------------------- Runway Info ---------------------------
+
+MAP:TORA 23L
+AIRPORT:EDDL
+FOLDER:Runway Info
+COLOR:tora-label
+ZOOM:600
+TEXTALIGN:LC
+{{ data.eddl_layout['layout']['TORA']['23L L1'] | to_text('2700') }}
+TEXTALIGN:RC
+{{ data.eddl_layout['layout']['TORA']['23L L2'] | to_text('2500') }}
+{{ data.eddl_layout['layout']['TORA']['23L L3'] | to_text('2235') }}
+
+MAP:TORA 05R
+AIRPORT:EDDL
+FOLDER:Runway Info
+COLOR:tora-label
+ZOOM:600
+TEXTALIGN:LC
+{{ data.eddl_layout['layout']['TORA']['05R L9'] | to_text('2700') }}
+{{ data.eddl_layout['layout']['TORA']['05R L8'] | to_text('2475') }}
+{{ data.eddl_layout['layout']['TORA']['05R L6'] | to_text('2030') }}
+
+MAP:TORA 23R
+AIRPORT:EDDL
+FOLDER:Runway Info
+COLOR:tora-label
+ZOOM:600
+TEXTALIGN:LC
+{{ data.eddl_layout['layout']['TORA']['23R K'] | to_text('2400') }}
+TEXTALIGN:RC
+{{ data.eddl_layout['layout']['TORA']['23R K1'] | to_text('2280') }}
+{{ data.eddl_layout['layout']['TORA']['23R K2'] | to_text('2060') }}
+
+MAP:TORA 05L
+AIRPORT:EDDL
+FOLDER:Runway Info
+COLOR:tora-label
+ZOOM:600
+TEXTALIGN:LC
+{{ data.eddl_layout['layout']['TORA']['05L K5'] | to_text('2400') }}
+{{ data.eddl_layout['layout']['TORA']['05L K3'] | to_text('1720') }}
+
+MAP:RRS 23L
+AIRPORT:EDDL
+FOLDER:Runway Info
+ACTIVE:RWY:ARR:*:DEP:EDDL23L
+ACTIVE:RWY:ARR:EDDL23L:DEP:*
+COLOR:rrs-marker
+{{ data.eddl_layout['layout']['RRS']['23L 600'] | to_symbol('RRS') }}
+{{ data.eddl_layout['layout']['RRS']['23L 1500'] | to_symbol('RRS') }}
+{{ data.eddl_layout['layout']['RRS']['23L 2400'] | to_symbol('RRS') }}
+FONTSIZE:=:12
+ZOOM:600
+TEXTALIGN:CB
+{{ data.eddl_layout['layout']['RRS']['23L 600'] | to_text('600:0:-10') }}
+{{ data.eddl_layout['layout']['RRS']['23L 1500'] | to_text('1500:0:-10') }}
+{{ data.eddl_layout['layout']['RRS']['23L 2400'] | to_text('2400:0:-10') }}
+
+MAP:RRS 05R
+AIRPORT:EDDL
+FOLDER:Runway Info
+ACTIVE:RWY:ARR:*:DEP:EDDL05R
+ACTIVE:RWY:ARR:EDDL05R:DEP:*
+COLOR:rrs-marker
+{{ data.eddl_layout['layout']['RRS']['05R 600'] | to_symbol('RRS') }}
+{{ data.eddl_layout['layout']['RRS']['05R 1500'] | to_symbol('RRS') }}
+{{ data.eddl_layout['layout']['RRS']['05R 2400'] | to_symbol('RRS') }}
+FONTSIZE:=:12
+ZOOM:600
+TEXTALIGN:CB
+{{ data.eddl_layout['layout']['RRS']['05R 600'] | to_text('600:0:-10') }}
+{{ data.eddl_layout['layout']['RRS']['05R 1500'] | to_text('1500:0:-10') }}
+{{ data.eddl_layout['layout']['RRS']['05R 2400'] | to_text('2400:0:-10') }}
+
+MAP:RRS 23R
+AIRPORT:EDDL
+FOLDER:Runway Info
+ACTIVE:RWY:ARR:*:DEP:EDDL23R
+ACTIVE:RWY:ARR:EDDL23R:DEP:*
+COLOR:rrs-marker
+{{ data.eddl_layout['layout']['RRS']['23R 600'] | to_symbol('RRS') }}
+{{ data.eddl_layout['layout']['RRS']['23R 1500'] | to_symbol('RRS') }}
+{{ data.eddl_layout['layout']['RRS']['23R 2400'] | to_symbol('RRS') }}
+FONTSIZE:=:12
+ZOOM:600
+TEXTALIGN:CB
+{{ data.eddl_layout['layout']['RRS']['23R 600'] | to_text('600:0:-10') }}
+{{ data.eddl_layout['layout']['RRS']['23R 1500'] | to_text('1500:0:-10') }}
+{{ data.eddl_layout['layout']['RRS']['23R 2400'] | to_text('2400:0:-10') }}
+
+
+MAP:RRS 05L
+AIRPORT:EDDL
+FOLDER:Runway Info
+ACTIVE:RWY:ARR:*:DEP:EDDL05L
+ACTIVE:RWY:ARR:EDDL05L:DEP:*
+COLOR:rrs-marker
+{{ data.eddl_layout['layout']['RRS']['05L 600'] | to_symbol('RRS') }}
+{{ data.eddl_layout['layout']['RRS']['05L 1500'] | to_symbol('RRS') }}
+{{ data.eddl_layout['layout']['RRS']['05L 2400'] | to_symbol('RRS') }}
+FONTSIZE:=:12
+ZOOM:600
+TEXTALIGN:CB
+{{ data.eddl_layout['layout']['RRS']['05L 600'] | to_text('600:0:-10') }}
+{{ data.eddl_layout['layout']['RRS']['05L 1500'] | to_text('1500:0:-10') }}
+{{ data.eddl_layout['layout']['RRS']['05L 2400'] | to_text('2400:0:-10') }}
+
+MAP:Runway Designators
+AIRPORT:EDDL
+FOLDER:Runway Info
+ACTIVE:1
+{{ data.eddl_layout['layout']['Runways']['Marking']['23L'] | to_multipoly('23L', 'layout-runway-marking') }}
+{{ data.eddl_layout['layout']['Runways']['Marking']['23R'] | to_multipoly('23R', 'layout-runway-marking') }}
+{{ data.eddl_layout['layout']['Runways']['Marking']['05L'] | to_multipoly('05L', 'layout-runway-marking') }}
+{{ data.eddl_layout['layout']['Runways']['Marking']['05R'] | to_multipoly('05R', 'layout-runway-marking') }}
+
+MAP:Runway Markings
+AIRPORT:EDDL
+FOLDER:Runway Info
+{% for marking, geom in data.eddl['RunwayMarking'].items() if not marking in [
+    'de162807-48f2-d2fc-e053-86c812acd642',
+    'de162807-48f4-d2fc-e053-86c812acd642',
+    'de162807-48f5-d2fc-e053-86c812acd642',
+    'de162807-48f6-d2fc-e053-86c812acd642',
+    'de162807-48f7-d2fc-e053-86c812acd642',
+    'de162807-48f8-d2fc-e053-86c812acd642',
+    'de162807-48f9-d2fc-e053-86c812acd642',
+    'de162807-48fa-d2fc-e053-86c812acd642',
+    'de162807-48fb-d2fc-e053-86c812acd642',
+    'de162807-48fc-d2fc-e053-86c812acd642',
+    'de162807-48fd-d2fc-e053-86c812acd642',
+    'de162807-48fe-d2fc-e053-86c812acd642',
+    'de162807-48ff-d2fc-e053-86c812acd642',
+    'de162807-4900-d2fc-e053-86c812acd642',
+    'de162807-4901-d2fc-e053-86c812acd642',
+    'de162807-4902-d2fc-e053-86c812acd642',
+    'de162807-4903-d2fc-e053-86c812acd642',
+    'de162807-4904-d2fc-e053-86c812acd642',
+    'de162807-4905-d2fc-e053-86c812acd642',
+    'de162807-4906-d2fc-e053-86c812acd642',
+    'de162807-4907-d2fc-e053-86c812acd642',
+    'de162807-4908-d2fc-e053-86c812acd642',
+    'de162807-4909-d2fc-e053-86c812acd642',
+    'de162807-490a-d2fc-e053-86c812acd642',
+    'de162807-490b-d2fc-e053-86c812acd642',
+    'de162807-490c-d2fc-e053-86c812acd642',
+    'de162807-490d-d2fc-e053-86c812acd642',
+    'de162807-490e-d2fc-e053-86c812acd642',
+    'de162807-490f-d2fc-e053-86c812acd642',
+    'de162807-4910-d2fc-e053-86c812acd642',
+    'de162807-4911-d2fc-e053-86c812acd642',
+    'de162807-4912-d2fc-e053-86c812acd642',
+    'de162807-4913-d2fc-e053-86c812acd642',
+    'de162807-4914-d2fc-e053-86c812acd642',
+    'de162807-4915-d2fc-e053-86c812acd642'
+] %}
+{{- geom | to_poly(marking, 'layout-runway-marking') }}
+{% endfor %}
+{% for marking in ['48f2', '48f4', '48f5', '48f6', '48f7', '48f8', '48f9', '48fa', '48fb', '48fc', '48fd', '48fe', '48ff', '4900', '4901', '4902', '4903', '4904', '4905', '4906', '4907', '4908', '4909', '490a', '490b', '490c', '490d', '490e', '490f', '4910', '4911', '4912', '4913', '4914', '4915'] %}
+{{- data.eddl['RunwayMarking']['de162807-' + marking + '-d2fc-e053-86c812acd642' | string] | to_poly(marking, 'layout-taxiway') }}
+{% endfor %}

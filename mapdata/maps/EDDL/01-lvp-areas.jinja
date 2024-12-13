@@ -1,0 +1,9 @@
+// --------------------------- LVP Areas ----------------------------
+
+MAP:Critical Areas
+AIRPORT:EDDL
+FOLDER:LVP
+ACTIVE:LVP:EDDL:1
+COORDTYPE:OTHER:REGION:\
+{{ data.eddl_layout['layout']['LVP']['Critical Area'] | to_multipoly('Critical Area', 'lvp-areas') }}
+{{ data.eddl_layout['layout']['LVP']['Sensitive Area'] | to_multiline('Sensitive Area') }}

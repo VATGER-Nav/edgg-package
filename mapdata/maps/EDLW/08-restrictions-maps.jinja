@@ -1,0 +1,25 @@
+// ------------------------ Restriction Maps ------------------------
+
+MAP:Restrictions
+AIRPORT:EDLW
+FOLDER:Restrictions
+ZOOM:600
+COORDTYPE:OTHER:REGION:/
+// B
+COLOR:restrictions-AB
+{{ data.edlw_layout['layout']['Restrictions']['B'] | to_poly('') }}
+TEXTALIGN:RC
+{{ data.edlw_layout['layout']['Restrictions']['B_'] | to_text('Max MTOW 20t') }}
+
+// L, K
+COLOR:restrictions-C
+{{ data.edlw_layout['layout']['Restrictions']['L K'] | to_poly('') }}
+TEXTALIGN:CC
+{{ data.edlw_layout['layout']['Restrictions']['L K_'] | to_text('Max code C') }}
+
+// Reference
+COLOR:layout-label-stand
+TEXTALIGN:CT
+{{ data.edlw_layout['layout']['Restrictions']['Ref'] | to_text('Reference:0:12') }}
+{{ data.edlw_layout['layout']['Restrictions']['Ref'] | to_text('Code C   - Wingspan < 36m (A321/B739):0:24') }}
+{{ data.edlw_layout['layout']['Restrictions']['Ref'] | to_text('MTOW 20t - Aircraft up to ATR-42     :0:36') }}

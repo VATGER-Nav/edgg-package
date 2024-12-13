@@ -1,0 +1,13 @@
+// ------------------------- NOTAM Closures -------------------------
+
+MAP:NOTAM A3920/24 - TWY P4
+AIRPORT:EDDL
+FOLDER:Construction
+ACTIVE:240723:250331:0:2130:2359
+BLOCKS:EDDL:B05,B06,B07,B08,V61A
+LIMITS:EDDL:B04:C
+{{ data.eddl_notam['notam']['Apron'] | to_poly('Apron','layout-apron') }}
+{{ data.eddl_notam['notam']['Taxiway'] | to_poly('Taxiway','layout-taxiway') }}
+STYLE:Solid:2
+COORDTYPE:TWYCLOSED:POLYGON
+{{ data.eddl_notam['notam']['P4'] | to_poly('P4','closure') }}

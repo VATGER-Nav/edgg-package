@@ -1,0 +1,17 @@
+{
+"type": "FeatureCollection",
+"name": "Closures",
+"crs": { "type": "name", "properties": { "name": "urn:ogc:def:crs:EPSG::32632" } },
+"features": [
+{ "type": "Feature", "properties": { "name": "E#1" }, "geometry": { "type": "Point", "coordinates": [ 325398.708427498582751, 5678508.351213841699064 ] } },
+{ "type": "Feature", "properties": { "name": "E#2" }, "geometry": { "type": "Point", "coordinates": [ 325472.923189693072345, 5678444.741469458676875 ] } },
+{ "type": "Feature", "properties": { "name": "E#3" }, "geometry": { "type": "Point", "coordinates": [ 325533.997318083478604, 5678392.031976877711713 ] } },
+{ "type": "Feature", "properties": { "name": "E#4" }, "geometry": { "type": "Point", "coordinates": [ 325601.253496649675071, 5678335.111727080307901 ] } },
+{ "type": "Feature", "properties": { "name": "Apron#1" }, "geometry": { "type": "Point", "coordinates": [ 325312.935398103378247, 5678602.900336723774672 ] } },
+{ "type": "Feature", "properties": { "name": "Apron#2" }, "geometry": { "type": "Point", "coordinates": [ 325358.3004780926276, 5678564.017760580405593 ] } },
+{ "type": "Feature", "properties": { "name": "Apron#3" }, "geometry": { "type": "Point", "coordinates": [ 325760.22364618309075, 5678276.461407645605505 ] } },
+{ "type": "Feature", "properties": { "name": "Apron#4" }, "geometry": { "type": "Point", "coordinates": [ 325841.247510839544702, 5678213.180326807312667 ] } },
+{ "type": "Feature", "properties": { "name": "Runway 28#1" }, "geometry": { "type": "Point", "coordinates": [ 325347.362380084523465, 5678904.114633641205728 ] } },
+{ "type": "Feature", "properties": { "name": "Runway 28#2" }, "geometry": { "type": "Point", "coordinates": [ 325224.081003226863686, 5678932.901242437772453 ] } }
+]
+}

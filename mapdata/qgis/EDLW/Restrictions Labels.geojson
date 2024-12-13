@@ -1,0 +1,10 @@
+{
+"type": "FeatureCollection",
+"name": "Restrictions Labels",
+"crs": { "type": "name", "properties": { "name": "urn:ogc:def:crs:EPSG::32632" } },
+"features": [
+{ "type": "Feature", "properties": { "name": "L K_" }, "geometry": { "type": "Point", "coordinates": [ 403044.969166239898186, 5707765.40371413808316 ] } },
+{ "type": "Feature", "properties": { "name": "B_" }, "geometry": { "type": "Point", "coordinates": [ 403276.980077222164255, 5708049.708785030059516 ] } },
+{ "type": "Feature", "properties": { "name": "Ref" }, "geometry": { "type": "Point", "coordinates": [ 403959.436745993734803, 5707858.791696508415043 ] } }
+]
+}
