@@ -1,0 +1,44 @@
+name: mapbuilder
+run-name: Building maps for commit ${{ github.sha }} by ${{ github.actor }}
+on:
+  push:
+    branches:
+      - "*"
+      - "*/**"
+      - "!main"
+    paths:
+      - mapdata
+permissions: write-all
+jobs:
+  build-maps:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v4
+      - name: Restore cached sources
+        uses: actions/cache/restore@v4
+        with:
+          path: .cache
+          key: sources
+      - name: Run mapbuilder
+        uses: vatger-nav/mapbuilder@main
+        with:
+          target-path: './EDGG'
+          source-path: 'mapdata'
+      - name: Store cached sources
+        uses: actions/cache/save@v4
+        with:
+          path: .cache
+          key: sources
+
+      - name: Commit files
+        run: |
+          git config --local user.email "action@github.com"
+          git config --local user.name "GitHub Action"
+          git add -A
+          git diff-index --quiet HEAD || (git commit -a -m "[AUTO] mapbuilder ${{ github.sha }}" --allow-empty)
+
+      - name: push changes
+        uses: ad-m/github-push-action@v0.6.0
+        with:
+          github_token: ${{ secrets.GITHUB_TOKEN }}
+          branch: ${{ github.ref }}
