@@ -7,7 +7,7 @@ on:
       - "*/**"
       - "!main"
     paths:
-      - 'mapdata'
+      - 'mapdata/**'
 permissions: write-all
 jobs:
   build-maps:
@@ -22,7 +22,7 @@ jobs:
       - name: Run mapbuilder
         uses: sergej-singer/mapbuilder@edgg
         with:
-          target-path: './EDGG'
+          target-path: 'EDGG'
           source-path: 'mapdata'
       - name: Store cached sources
         uses: actions/cache/save@v4
