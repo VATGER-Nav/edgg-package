@@ -1,14 +1,14 @@
-name: maps-creator
-run-name: Push by ${{ github.actor }} is building Maps
+name: mapbuilder
+run-name: Building maps for commit ${{ github.sha }} by ${{ github.actor }}
 on:
   push:
     branches:
       - "*"
-      - "**"
+      - "*/**"
       - "!main"
     paths:
-      - "mapbuilder/**"
-
+      - 'mapdata/**'
+permissions: write-all
 jobs:
   build-maps:
     runs-on: ubuntu-latest
@@ -20,17 +20,17 @@ jobs:
           path: .cache
           key: sources
       - name: Run mapbuilder
-        uses: vatger-nav/edgg-package/.github/mapbuilder@main
+        uses: sergej-singer/mapbuilder@edgg
+          
+      - name: Commit files
+        run: |
+          git config --local user.email "action@github.com"
+          git config --local user.name "GitHub Action"
+          git add -A
+          git diff-index --quiet HEAD || (git commit -a -m "[AUTO] mapbuilder ${{ github.sha }}" --allow-empty)
+
+      - name: Push changes
+        uses: ad-m/github-push-action@v0.6.0
         with:
-          target-path: '.'
-          source-path: 'mapbuilder'
-      - name: Store cached sources
-        uses: actions/cache/save@v4
-        with:
-          path: .cache
-          key: sources
-      - uses: stefanzweifel/git-auto-commit-action@v5
-        with:
-          commit_message: "[AUTO] mapbuilder ${{ github.sha }}"
-          commit_user_name: mapbuilder
-          file_pattern: '*.txt'
+          github_token: ${{ secrets.GITHUB_TOKEN }}
+          branch: ${{ github.ref }}
