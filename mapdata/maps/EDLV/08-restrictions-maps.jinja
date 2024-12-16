@@ -1,0 +1,34 @@
+// ------------------------ Restriction Maps ------------------------
+{% set default = 0.000005 %}
+MAP:Restrictions
+AIRPORT:EDLV
+FOLDER:Restrictions
+ZOOM:600
+// F, G
+COLOR:restrictions-AB
+COORDTYPE:OTHER:REGION:/
+{{ data.edlv_layout['layout']['Restrictions']['F'] | simplify(default) | to_poly('') }}
+COORDTYPE:OTHER:REGION:/
+{{ data.edlv_layout['layout']['Restrictions']['G'] | simplify(default) | to_poly('') }}
+TEXTALIGN:LC
+{{ data.edlv_layout['layout']['Restrictions']['F_'] | to_text('Max code B') }}
+TEXTALIGN:RC
+{{ data.edlv_layout['layout']['Restrictions']['G_'] | to_text('Max code B') }}
+
+// B, C
+COLOR:restrictions-C
+COORDTYPE:OTHER:REGION:/
+{{ data.edlv_layout['layout']['Restrictions']['B'] | simplify(default) | to_poly('') }}
+COORDTYPE:OTHER:REGION:/
+{{ data.edlv_layout['layout']['Restrictions']['C'] | simplify(default) | to_poly('') }}
+TEXTALIGN:LC
+{{ data.edlv_layout['layout']['Restrictions']['B_'] | to_text('Max code C') }}
+TEXTALIGN:RC
+{{ data.edlv_layout['layout']['Restrictions']['C_'] | to_text('Max code C') }}
+
+// Reference
+COLOR:layout-label-stand
+TEXTALIGN:CT
+{{ data.edlv_layout['layout']['Restrictions']['Ref'] | to_text('Reference:0:12') }}
+{{ data.edlv_layout['layout']['Restrictions']['Ref'] | to_text('Code B - Wingspan < 24m (CRJ2/C700):0:24') }}
+{{ data.edlv_layout['layout']['Restrictions']['Ref'] | to_text('Code C - Wingspan < 36m (A321/B739):0:36') }}

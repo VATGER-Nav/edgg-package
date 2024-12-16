@@ -1,0 +1,13 @@
+// ------------------------- Holding Points -------------------------
+
+MAP:Holding Points CAT I
+AIRPORT:EDFM
+FOLDER:Holding Points
+ACTIVE:1
+{% for holdingpoint in ['A', 'B', 'C', 'D W', 'D E', 'F'] %}
+{{- data.edfm_layout['layout']['Holding Points']['P'][ holdingpoint | string ] | to_poly(holdingpoint, 'layout-holdingpoint') }}
+{% endfor %}
+COLOR:layout-holdingpoint
+{% for holdingpoint in ['A', 'B', 'C', 'D W', 'D E', 'F'] %}
+{{- data.edfm_layout['layout']['Holding Points']['L'][ holdingpoint | string ] | to_line(holdingpoint) }}
+{% endfor %}
