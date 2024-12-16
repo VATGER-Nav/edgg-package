@@ -1,0 +1,10 @@
+// ----------------------- Permament Closures -----------------------
+
+MAP:X
+AIRPORT:EDDS
+FOLDER:Closures
+ACTIVE:1
+COORDTYPE:TWYCLOSED:NONE
+{{ data.edds_layout['layout']['Closures']['X'] | to_poly('') }}
+COORDTYPE:OTHER:REGION
+{{ data.edds_layout['layout']['Closures']['X_'] | to_multipoly('Cross','closure-symbol') }}

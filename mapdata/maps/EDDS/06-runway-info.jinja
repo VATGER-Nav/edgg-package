@@ -1,0 +1,84 @@
+// -------------------------- Runway Info ---------------------------
+
+MAP:TORA 25
+AIRPORT:EDDS
+FOLDER:Runway Info
+COLOR:tora-label
+ZOOM:300
+TEXTALIGN:RC
+{{ data.edds_layout['layout']['TORA']['25 A'] | to_text('3045') }}
+{{ data.edds_layout['layout']['TORA']['25 B'] | to_text('2435') }}
+{{ data.edds_layout['layout']['TORA']['25 C'] | to_text('2175') }}
+{{ data.edds_layout['layout']['TORA']['25 D'] | to_text('1990') }}
+{{ data.edds_layout['layout']['TORA']['25 E'] | to_text('1665') }}
+
+MAP:TORA 07
+AIRPORT:EDDS
+FOLDER:Runway Info
+COLOR:tora-label
+ZOOM:300
+TEXTALIGN:LC
+{{ data.edds_layout['layout']['TORA']['07 K'] | to_text('3345') }}
+{{ data.edds_layout['layout']['TORA']['07 I'] | to_text('3090') }}
+{{ data.edds_layout['layout']['TORA']['07 W'] | to_text('2520') }}
+{{ data.edds_layout['layout']['TORA']['07 H'] | to_text('2515') }}
+{{ data.edds_layout['layout']['TORA']['07 G'] | to_text('2210') }}
+{{ data.edds_layout['layout']['TORA']['07 F'] | to_text('2020') }}
+{{ data.edds_layout['layout']['TORA']['07 E'] | to_text('1400') }}
+
+MAP:RRS 25
+AIRPORT:EDDS
+FOLDER:Runway Info
+ACTIVE:RWY:ARR:*:DEP:EDDS25
+ACTIVE:RWY:ARR:EDDS25:DEP:*
+COLOR:runway-label
+{{ data.edds_layout['layout']['RRS']['25 600'] | to_symbol('RRS-S') }}
+{{ data.edds_layout['layout']['RRS']['25 1500'] | to_symbol('RRS-S') }}
+{{ data.edds_layout['layout']['RRS']['25 2400'] | to_symbol('RRS-S') }}
+FONTSIZE:=:12
+ZOOM:400
+TEXTALIGN:CT
+{{ data.edds_layout['layout']['RRS']['25 600'] | to_text('600:0:12') }}
+{{ data.edds_layout['layout']['RRS']['25 1500'] | to_text('C600:0:12') }}
+{{ data.edds_layout['layout']['RRS']['25 1500'] | to_text('1500:0:24') }}
+{{ data.edds_layout['layout']['RRS']['25 2400'] | to_text('2400:0:12') }}
+
+MAP:RRS 07
+AIRPORT:EDDS
+FOLDER:Runway Info
+ACTIVE:RWY:ARR:*:DEP:EDDS07
+ACTIVE:RWY:ARR:EDDS07:DEP:*
+COLOR:runway-label
+{{ data.edds_layout['layout']['RRS']['07 600'] | to_symbol('RRS-S') }}
+{{ data.edds_layout['layout']['RRS']['07 1500'] | to_symbol('RRS-S') }}
+{{ data.edds_layout['layout']['RRS']['07 2400'] | to_symbol('RRS-S') }}
+FONTSIZE:=:12
+ZOOM:400
+TEXTALIGN:CT
+{{ data.edds_layout['layout']['RRS']['07 600'] | to_text('600:0:12') }}
+{{ data.edds_layout['layout']['RRS']['25 1500'] | to_text('G600:0:12') }}
+{{ data.edds_layout['layout']['RRS']['25 1500'] | to_text('1500:0:24') }}
+{{ data.edds_layout['layout']['RRS']['07 2400'] | to_text('2400:0:12') }}
+
+MAP:Runway Thresholds
+AIRPORT:EDDS
+FOLDER:Runway Info
+ACTIVE:1
+COLOR:runway-label
+STYLE:SOLID:2
+{{ data.edds_layout['layout']['Markings']['Runways']['THR 25'] | to_line('25') }}
+{{ data.edds_layout['layout']['Markings']['Runways']['THR 07'] | to_line('07') }}
+
+MAP:Runway Designators
+AIRPORT:EDDS
+FOLDER:Runway Info
+ACTIVE:1
+{{ data.edds_layout['layout']['Markings']['Runways']['25'] | to_multipoly('25', 'runway-label') }}
+{{ data.edds_layout['layout']['Markings']['Runways']['07'] | to_multipoly('07', 'runway-label') }}
+
+MAP:Runway Markings
+AIRPORT:EDDS
+FOLDER:Runway Info
+{% for id, geom in data.edds['RunwayMarking'].items() %}
+{{- geom | to_poly('', 'layout-runway-marking') }}
+{% endfor %}

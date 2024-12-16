@@ -1,0 +1,104 @@
+// ------------------------ Restriction Maps ------------------------
+{% set default = 0.000005 %}
+MAP:Restrictions
+AIRPORT:EDFH
+FOLDER:Restrictions
+ZOOM:600
+
+// Backtrack RWY 03
+COLOR:restrictions-D
+STYLE:SOLID:2
+TEXTALIGN:CC
+{{ data.edfh['GuidanceLineByDesig']['RWY END 21 TURN'] | simplify(default) | to_line('') }}
+{{ data.edfh_layout['layout']['Restrictions']['03='] | to_poly('', 'restrictions-D') }}
+{{ data.edfh_layout['layout']['Restrictions']['03_'] | to_text('Max code D') }}
+
+// A, C
+COLOR:restrictions-C
+COORDTYPE:OTHER:REGION:/
+STYLE:SOLID:1
+TEXTALIGN:CC
+{{ data.edfh_layout['layout']['Restrictions']['A'] | to_poly('') }}
+{{ data.edfh_layout['layout']['Restrictions']['A_'] | to_text('Max code C') }}
+
+// D
+COLOR:restrictions-AB
+COORDTYPE:OTHER:REGION:/
+STYLE:SOLID:1
+TEXTALIGN:RC
+{{ data.edfh_layout['layout']['Restrictions']['D'] | to_poly('') }}
+{{ data.edfh_layout['layout']['Restrictions']['D_'] | to_text('Max MTOW 14t') }}
+
+// Restriction Stands New
+TEXTALIGN:CC
+FONTSIZE:=:9
+COLOR:restrictions-C
+{% for desig in ['311', '312', '313', '314', '315', '316', '321', '322', '323', '324', '325', '333', '332'] %}
+{{- data.edfh_layout['layout']['Restrictions']['Stands New'][desig | string] | to_symbol('STAND') }}
+{% endfor %}
+{% for desig in ['334'] %}
+{{- data.edfh_layout['layout']['Restrictions']['Stands New'][desig | string] | to_symbol('STAND_S') }}
+{% endfor %}
+COLOR:restrictions-E
+{% for desig in ['341', '351', '411', '441', '451'] %}
+{{- data.edfh_layout['layout']['Restrictions']['Stands New'][desig | string] | to_symbol('STAND') }}
+{% endfor %}
+{% for desig in ['326'] %}
+{{- data.edfh_layout['layout']['Restrictions']['Stands New'][desig | string] | to_symbol('STAND_S') }}
+{% endfor %}
+COLOR:restrictions-F
+{% for desig in ['421', '431'] %}
+{{- data.edfh_layout['layout']['Restrictions']['Stands New'][desig | string] | to_symbol('STAND') }}
+{% endfor %}
+{% for desig in ['331'] %}
+{{- data.edfh_layout['layout']['Restrictions']['Stands New'][desig | string] | to_symbol('STAND_S') }}
+{% endfor %}
+
+{#
+// Restriction Stands
+TEXTALIGN:CC
+FONTSIZE:=:9
+COLOR:restrictions-C
+{% for desig in ['A1', 'A2', 'A3', 'A4', 'A5', 'A6', 'B1', 'B2', 'B3', 'B4', 'B5', 'D1', 'D3'] %}
+{{- data.edfh_layout['layout']['Restrictions']['Stands'][desig | string] | to_symbol('STAND') }}
+{% endfor %}
+{% for desig in ['D4'] %}
+{{- data.edfh_layout['layout']['Restrictions']['Stands'][desig | string] | to_symbol('STAND_S') }}
+{% endfor %}
+COLOR:restrictions-E
+{% for desig in ['E', 'F', 'G1', 'G4', 'G5'] %}
+{{- data.edfh_layout['layout']['Restrictions']['Stands'][desig | string] | to_symbol('STAND') }}
+{% endfor %}
+{% for desig in ['C'] %}
+{{- data.edfh_layout['layout']['Restrictions']['Stands'][desig | string] | to_symbol('STAND_S') }}
+{% endfor %}
+COLOR:restrictions-F
+{% for desig in ['G2', 'G3'] %}
+{{- data.edfh_layout['layout']['Restrictions']['Stands'][desig | string] | to_symbol('STAND') }}
+{% endfor %}
+{% for desig in ['D2'] %}
+{{- data.edfh_layout['layout']['Restrictions']['Stands'][desig | string] | to_symbol('STAND_S') }}
+{% endfor %}
+#}
+
+// Reference
+COLOR:layout-label-stand
+FONTSIZE:=:12
+{{ data.edfh_layout['layout']['Restrictions']['Ref'] | to_text('Reference  ') }}
+{{ data.edfh_layout['layout']['Restrictions']['Ref'] | to_text('MTOW 14t - up to D-Cxxx :0:15') }}
+{{ data.edfh_layout['layout']['Restrictions']['Ref'] | to_text('Code C < 36m (A321/B739):0:30') }}
+{{ data.edfh_layout['layout']['Restrictions']['Ref'] | to_text('Code D < 52m (A310/B763):0:45') }}
+{{ data.edfh_layout['layout']['Restrictions']['Ref'] | to_text('Code E < 65m (A343/B77W):0:60') }}
+{{ data.edfh_layout['layout']['Restrictions']['Ref'] | to_text('Code F < 80m (A124/B748):0:75') }}
+
+FONTSIZE:=:70
+COLOR:restrictions-AB
+{{ data.edfh_layout['layout']['Restrictions']['Ref'] | to_text('.:-95:-39') }}
+COLOR:restrictions-C
+{{ data.edfh_layout['layout']['Restrictions']['Ref'] | to_text('.:-95:-24') }}
+COLOR:restrictions-D
+{{ data.edfh_layout['layout']['Restrictions']['Ref'] | to_text('.:-95:-9') }}
+COLOR:restrictions-E
+{{ data.edfh_layout['layout']['Restrictions']['Ref'] | to_text('.:-95:6') }}
+COLOR:restrictions-F
+{{ data.edfh_layout['layout']['Restrictions']['Ref'] | to_text('.:-95:21') }}
