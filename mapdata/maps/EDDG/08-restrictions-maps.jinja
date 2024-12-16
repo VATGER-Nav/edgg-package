@@ -1,0 +1,114 @@
+// ------------------------ Restriction Maps ------------------------
+{% set default = 0.000005 %}
+MAP:Restrictions
+AIRPORT:EDDG
+FOLDER:Restrictions
+ZOOM:600
+
+// Glider
+COLOR:restrictions-AB
+COORDTYPE:OTHER:REGION:/
+STYLE:SOLID:1
+{{ data.eddg_layout['layout']['Restrictions']['Glider'] | to_poly('') }}
+TEXTALIGN:LC
+{{ data.eddg_layout['layout']['Restrictions']['Glider_'] | to_text('Max code A') }}
+
+// G
+COLOR:restrictions-D
+COORDTYPE:OTHER:REGION:/
+STYLE:SOLID:1
+{{ data.eddg_layout['layout']['Restrictions']['G'] | to_poly('') }}
+TEXTALIGN:CC
+{{ data.eddg_layout['layout']['Restrictions']['G_'] | to_text('Max code D') }}
+
+// 10x
+COLOR:restrictions-AB
+COORDTYPE:OTHER:REGION:/
+STYLE:SOLID:1
+{{ data.eddg_layout['layout']['Restrictions']['10x'] | to_poly('') }}
+TEXTALIGN:CC
+{{ data.eddg_layout['layout']['Restrictions']['10x_'] | to_text('Max code A') }}
+
+// 20x
+COLOR:restrictions-AB
+COORDTYPE:OTHER:REGION:/
+STYLE:SOLID:1
+{{ data.eddg_layout['layout']['Restrictions']['20x'] | to_poly('') }}
+TEXTALIGN:LC
+{{ data.eddg_layout['layout']['Restrictions']['20x_'] | to_text('Max code B') }}
+
+// 30x
+COLOR:restrictions-AB
+COORDTYPE:OTHER:REGION:/
+STYLE:SOLID:1
+{{ data.eddg_layout['layout']['Restrictions']['30x'] | to_poly('') }}
+TEXTALIGN:CC
+{{ data.eddg_layout['layout']['Restrictions']['30x_'] | to_text('Max wingspan 20m') }}
+
+// 40x
+COLOR:restrictions-AB
+COORDTYPE:OTHER:REGION:\
+STYLE:SOLID:1
+{{ data.eddg_layout['layout']['Restrictions']['40x'] | to_poly('') }}
+TEXTALIGN:RC
+{{ data.eddg_layout['layout']['Restrictions']['40x_'] | to_text('Max wingspan 12m') }}
+
+// 18-19
+COLOR:restrictions-AB
+COORDTYPE:OTHER:REGION:/
+STYLE:SOLID:1
+{{ data.eddg_layout['layout']['Restrictions']['18-19'] | to_poly('') }}
+TEXTALIGN:CC
+{{ data.eddg_layout['layout']['Restrictions']['18-19_'] | to_text('Max wingspan 20m') }}
+
+// Restriction Stands
+
+TEXTALIGN:CC
+FONTSIZE:=:9
+COLOR:restrictions-AB
+{% for desig in ['7', '8'] %}
+{{- data.eddg_layout['layout']['Restrictions']['Stands'][desig | string] | to_symbol('STAND') }}
+{% endfor %}
+COLOR:restrictions-C
+{% for desig in ['9A', '9B', '20', '21A', '21B', '22', '24A', '24B'] %}
+{{- data.eddg_layout['layout']['Restrictions']['Stands'][desig | string] | to_symbol('STAND') }}
+{% endfor %}
+{% for desig in ['21A', '21B'] %}
+{{- data.eddg_layout['layout']['Restrictions']['Stands'][desig | string] | to_text('MAX AT72:0:15') }}
+{% endfor %}
+COLOR:restrictions-D
+{% for desig in ['9', '10', '13', '14', '21', '11', '12', '25'] %}
+{{- data.eddg_layout['layout']['Restrictions']['Stands'][desig | string] | to_symbol('STAND') }}
+{% endfor %}
+{% for desig in ['11', '12', '25'] %}
+{{- data.eddg_layout['layout']['Restrictions']['Stands'][desig | string] | to_text('MAX B753:0:15') }}
+{% endfor %}
+COLOR:restrictions-E
+{% for desig in ['24'] %}
+{{- data.eddg_layout['layout']['Restrictions']['Stands'][desig | string] | to_symbol('STAND') }}
+{% endfor %}
+{% for desig in ['24'] %}
+{{- data.eddg_layout['layout']['Restrictions']['Stands'][desig | string] | to_text('MAX A343:0:15') }}
+{% endfor %}
+
+// Reference
+COLOR:layout-label-stand
+FONTSIZE:=:12
+{{ data.eddg_layout['layout']['Restrictions']['Ref'] | to_text('Reference  :0:-45') }}
+{{ data.eddg_layout['layout']['Restrictions']['Ref'] | to_text('Code A < 15m (P28R/C172):0:-30') }}
+{{ data.eddg_layout['layout']['Restrictions']['Ref'] | to_text('Code B < 24m (CRJ2/C700):0:-15') }}
+{{ data.eddg_layout['layout']['Restrictions']['Ref'] | to_text('Code C < 36m (A321/B739):0:0') }}
+{{ data.eddg_layout['layout']['Restrictions']['Ref'] | to_text('Code D < 52m (A310/B763):0:15') }}
+{{ data.eddg_layout['layout']['Restrictions']['Ref'] | to_text('Code E < 65m (A343/A333):0:30') }}
+
+FONTSIZE:=:70
+COLOR:restrictions-AB
+{{ data.eddg_layout['layout']['Restrictions']['Ref'] | to_text('.:-95:-84') }}
+COLOR:restrictions-AB
+{{ data.eddg_layout['layout']['Restrictions']['Ref'] | to_text('.:-95:-69') }}
+COLOR:restrictions-C
+{{ data.eddg_layout['layout']['Restrictions']['Ref'] | to_text('.:-95:-54') }}
+COLOR:restrictions-D
+{{ data.eddg_layout['layout']['Restrictions']['Ref'] | to_text('.:-95:-39') }}
+COLOR:restrictions-E
+{{ data.eddg_layout['layout']['Restrictions']['Ref'] | to_text('.:-95:-24') }}

@@ -1,0 +1,109 @@
+// ----------------------- Restriction Checks -----------------------
+
+MAP:Checks
+AIRPORT:EDDF
+FOLDER:Restrictions
+COORDTYPE:TWYTYPE:NONE
+ACTIVE:1
+
+// M19
+RESTRICTION:MAXCODE:E
+{{ data.eddf_layout['layout']['Restrictions']['M19'] | to_poly('') }}
+
+// N-South
+RESTRICTION:MAXCODE:D
+{{ data.eddf_layout['layout']['Restrictions']['N-South'] | to_multipoly('') }}
+
+// L-North
+RESTRICTION:MAXCODE:E
+{{ data.eddf_layout['layout']['Restrictions']['L-North'] | to_poly('') }}
+
+// 25R/07L
+RESTRICTION:MAXCODE:E
+{{ data.eddf_layout['layout']['Restrictions']['25R/07L'] | to_poly('') }}
+
+// N3
+RESTRICTION:MAXCODE:E
+{{ data.eddf_layout['layout']['Restrictions']['N3'] | to_poly('') }}
+
+// N4
+RESTRICTION:MAXCODE:E
+{{ data.eddf_layout['layout']['Restrictions']['N4'] | to_poly('') }}
+
+// N7/N8
+RESTRICTION:MAXCODE:E
+{{ data.eddf_layout['layout']['Restrictions']['N7'] | to_poly('') }}
+RESTRICTION:MAXCODE:C
+{{ data.eddf_layout['layout']['Restrictions']['N8'] | to_poly('') }}
+
+// S8/S9
+RESTRICTION:MAXCODE:E
+{{ data.eddf_layout['layout']['Restrictions']['S8/S9'] | to_poly('') }}
+
+// L
+RESTRICTION:MAXCODE:C
+{{ data.eddf_layout['layout']['Restrictions']['L'] | to_poly('') }}
+
+// Y7
+RESTRICTION:MAXCODE:C
+{{ data.eddf_layout['layout']['Restrictions']['Y7#2'] | to_poly('') }}
+RESTRICTION:MAXCODE:B
+{{ data.eddf_layout['layout']['Restrictions']['Y7#1'] | to_poly('') }}
+
+// S5
+RESTRICTION:MAXCODE:C
+{{ data.eddf_layout['layout']['Restrictions']['S5'] | to_poly('') }}
+
+// L8
+RESTRICTION:MAXCODE:C
+{{ data.eddf_layout['layout']['Restrictions']['L8'] | to_poly('') }}
+
+// L19
+RESTRICTION:MAXCODE:E
+RESTRICTION:NOTATYP:A388,B748,A225,C5M,A124,A225,A346,A35K,B77W,B773
+{{ data.eddf_layout['layout']['Restrictions']['L19'] | to_poly('') }}
+
+// W
+RESTRICTION:MAXCODE:E
+RESTRICTION:NOTATYP:A388,B748,A225,C5M,A124,A225,A346,A35K,B77W,B773
+{{ data.eddf_layout['layout']['Restrictions']['W'] | to_poly('') }}
+
+// N13
+RESTRICTION:MAXCODE:E
+RESTRICTION:NOTATYP:A388,B748,A225,C5M,A124,A225,A346,A35K,B77W,B773
+{{ data.eddf_layout['layout']['Restrictions']['N13'] | to_poly('') }}
+
+// N14
+RESTRICTION:MAXCODE:E
+RESTRICTION:NOTATYP:A388,B748,A225,C5M,A124,A225,A346,A35K,B77W,B773
+{{ data.eddf_layout['layout']['Restrictions']['N14'] | to_poly('') }}
+
+// N5
+RESTRICTION:MAXCODE:E
+RESTRICTION:NOTATYP:A388,B748,A225,C5M,A124,A225,A346,A35K,B77W,B773
+{{ data.eddf_layout['layout']['Restrictions']['N5'] | to_poly('') }}
+
+// S13
+RESTRICTION:MAXCODE:E
+RESTRICTION:NOTATYP:A388,B748,A225,C5M,A124,A225,A346,A35K,B77W,B773
+{{ data.eddf_layout['layout']['Restrictions']['S13'] | to_poly('') }}
+
+// N6
+RESTRICTION:MAXCODE:F
+RESTRICTION:NOTATYP:A388,A225,C5M,A124,A225
+{{ data.eddf_layout['layout']['Restrictions']['N6'] | to_poly('') }}
+
+// N11
+RESTRICTION:MAXCODE:F
+RESTRICTION:NOTATYP:A388,A225,C5M,A124,A225
+{{ data.eddf_layout['layout']['Restrictions']['N11'] | to_poly('') }}
+
+// Y5
+RESTRICTION:MAXCODE:F
+RESTRICTION:NOTATYP:A388,A225,C5M,A124,A225
+{{ data.eddf_layout['layout']['Restrictions']['Y5'] | to_poly('') }}
+
+// S4
+RESTRICTION:MAXCODE:F
+RESTRICTION:NOTATYP:A388,A225,C5M,A124,A225
+{{ data.eddf_layout['layout']['Restrictions']['S4'] | to_poly('') }}
