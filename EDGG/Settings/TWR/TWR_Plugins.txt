@@ -268,4 +268,15 @@ VCH:vch_ctl_t:1
 VCH:vch_ctl:20.000000
 VCH:vch_blink:0
 VCH:vch_c_ctl:000255000
+RDF Plugin for Euroscope:Endpoint:127.0.0.1:49080
+RDF Plugin for Euroscope:RGB:0:255:65
+RDF Plugin for Euroscope:ConcurrentTransmissionRGB:255:0:0
+RDF Plugin for Euroscope:Radius:20
+RDF Plugin for Euroscope:Threshold:-1
+RDF Plugin for Euroscope:Precision:0
+RDF Plugin for Euroscope:LowAltitude:0
+RDF Plugin for Euroscope:HighAltitude:0
+RDF Plugin for Euroscope:LowPrecision:0
+RDF Plugin for Euroscope:HighPrecision:0
+RDF Plugin for Euroscope:DrawControllers:0
 END
