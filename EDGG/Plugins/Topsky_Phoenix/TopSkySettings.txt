@@ -115,7 +115,7 @@ Menu_MaxListItems=12
 MSAW=0
 MTCD=0
 
-RDF_Mode=0
+RDF_Mode=-1
 RDF_Accuracy=0
 RDF_Floor=0
 

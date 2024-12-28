@@ -39,7 +39,7 @@ Sounds	Sound18	\EDGG\Sounds\startup_silent.wav
 Plugins	Plugin0	\EDGG\Plugins\Topsky_Phoenix\TopSky.dll
 Plugins	Plugin0Display0	Standard ES radar screen
 Plugins	Plugin0Display1	Ground Radar display
-Plugins	Plugin1	\EDGG\Plugins\AfvEuroScopeBridge.dll
+Plugins	Plugin1	\EDGG\Plugins\RDF.dll
 Plugins	Plugin2	\EDGG\Plugins\CCAMS.dll
 Plugins	Plugin2Display0	Ground Radar display
 Plugins	Plugin2Display1	Standard ES radar screen
