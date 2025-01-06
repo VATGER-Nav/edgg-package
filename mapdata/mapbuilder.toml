@@ -22,27 +22,27 @@ source = "https://aip.dfs.de/datasets/scripts/getItem.php?amdt=0&content=aerodro
 
 [data.edlp]
 type = "aixm"
-source = "https://aip.dfs.de/datasets/scripts/getItem.php?amdt=1&content=aerodrome_mapping/EDLP_AerodromeMapping_2024-11-28_2024-12-26_revision.zip"
+source = "https://aip.dfs.de/datasets/scripts/getItem.php?amdt=0&content=aerodrome_mapping/EDLP_AerodromeMapping_2024-11-28_2024-12-26_revision.zip"
 
 [data.edlw]
 type = "aixm"
-source = "https://aip.dfs.de/datasets/scripts/getItem.php?amdt=1&content=aerodrome_mapping/EDLW_AerodromeMapping_2024-11-28_2024-12-26_revision.zip"
+source = "https://aip.dfs.de/datasets/scripts/getItem.php?amdt=0&content=aerodrome_mapping/EDLW_AerodromeMapping_2024-11-28_2024-12-26_revision.zip"
 
 [data.edln]
 type = "aixm"
-source = "https://aip.dfs.de/datasets/scripts/getItem.php?amdt=1&content=aerodrome_mapping/EDLN_AerodromeMapping_2024-11-28_2024-12-26_revision.zip"
+source = "https://aip.dfs.de/datasets/scripts/getItem.php?amdt=0&content=aerodrome_mapping/EDLN_AerodromeMapping_2024-11-28_2024-12-26_revision.zip"
 
 [data.edlv]
 type = "aixm"
-source = "https://aip.dfs.de/datasets/scripts/getItem.php?amdt=1&content=aerodrome_mapping/EDLV_AerodromeMapping_2024-11-28_2024-12-26_revision.zip"
+source = "https://aip.dfs.de/datasets/scripts/getItem.php?amdt=0&content=aerodrome_mapping/EDLV_AerodromeMapping_2024-11-28_2024-12-26_revision.zip"
 
 [data.edfh]
 type = "aixm"
-source = "https://aip.dfs.de/datasets/scripts/getItem.php?amdt=1&content=aerodrome_mapping/EDFH_AerodromeMapping_2024-11-28_2024-12-26_revision.zip"
+source = "https://aip.dfs.de/datasets/scripts/getItem.php?amdt=0&content=aerodrome_mapping/EDFH_AerodromeMapping_2024-11-28_2024-12-26_revision.zip"
 
 [data.edsb]
 type = "aixm"
-source = "https://aip.dfs.de/datasets/scripts/getItem.php?amdt=1&content=aerodrome_mapping/EDSB_AerodromeMapping_2024-11-28_2024-12-26_revision.zip"
+source = "https://aip.dfs.de/datasets/scripts/getItem.php?amdt=0&content=aerodrome_mapping/EDSB_AerodromeMapping_2024-11-28_2024-12-26_revision.zip"
 
 [data.eddf_layout]
 type = "kml"
