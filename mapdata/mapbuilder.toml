@@ -105,39 +105,17 @@ type = "kml"
 source = "kml/notam.kml"
 
 
-
 [profiles]
 
 [profiles.TWR_NIGHT]
 maps = [
-    { map = "EDDF", target = "grp/eddf.txt" },
-    { map = "EDDL", target = "grp/eddl.txt" },
-    { map = "EDDK", target = "grp/eddk.txt" },
-    { map = "EDDS", target = "grp/edds.txt" },
-    { map = "EDDG", target = "grp/eddg.txt" },
-    { map = "EDDR", target = "grp/eddr.txt" },
-    { map = "EDLP", target = "grp/edlp.txt" },
-    { map = "EDLW", target = "grp/edlw.txt" },
-    { map = "EDLN", target = "grp/edln.txt" },
-    { map = "EDLV", target = "grp/edlv.txt" },
-    { map = "EDFH", target = "grp/edfh.txt" },
-    { map = "EDFM", target = "grp/edfm.txt" },
-    { map = "EDSB", target = "grp/edsb.txt" },
-    { map = "EDTL", target = "grp/edtl.txt" },
+    # { map = "grp-phoenix-settings", target = "Plugins/GRP/Phoenix/GRpluginSettings.txt" },
+    { map = "grp-phoenix-maps", target = "Plugins/GRP/Phoenix/GRpluginMaps.txt" },
+    { map = "grp-stands", target = "Plugins/GRP/Phoenix/GRpluginStands.txt" },
 ]
-dir = "grp"
-aliases = [ "Default" ]
+dir = "Plugins/GRP/Phoenix/"
+aliases = [ "dark" ]
 
-
-#[profiles.TWR_DAY]
-#maps = [
-#    { map = "settings-grplugin-phoenix", target = "Plugins/EDWW FIR beta/TWR_DAY/GRpluginSettings.txt" },
-#    { map = "settings-topsky-phoenix", target = "Plugins/EDWW FIR beta/TWR_DAY/TopSkySettings.txt" },
-#    { map = "grplugin-phoenix", target = "Plugins/EDWW FIR beta/TWR_DAY/GRpluginMaps.txt" },
-#    { map = "topsky-phoenix", target = "Plugins/EDWW FIR beta/TWR_DAY/TopSkyMaps.txt" },
-#]
-#dir = "Plugins/EDWW FIR beta/TWR_DAY/"
-#aliases = [ "bright" ]
 
 [runways]
 
