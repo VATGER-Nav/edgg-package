@@ -1,3 +1,6 @@
+# Direct from Repository
+
+
 name: mapbuilder
 run-name: Building maps for commit ${{ github.sha }} by ${{ github.actor }}
 on:
@@ -10,25 +13,38 @@ on:
       - 'mapdata/**'
 permissions: write-all
 jobs:
-  build-maps:
+  mapbuilder-build-maps:
     runs-on: ubuntu-latest
     steps:
-      - uses: actions/checkout@v4
-      - name: Restore cached sources
-        uses: actions/cache/restore@v4
+      - name: Checkout repo content
+        uses: actions/checkout@v4 # checkout the repository content
+
+      - name: Install Python
+        uses: actions/setup-python@v4
         with:
-          path: .cache
-          key: sources
-      - name: Run mapbuilder
-        uses: sergej-singer/mapbuilder@edgg
+          python-version: "3.12" # install the python version needed
+
+      - name: Install poetry
+        uses: abatilo/actions-poetry@v2
+
+      - name: Setup a local virtual environment (if no poetry.toml file)
+        run: |
+          poetry config virtualenvs.create true --local
+          poetry config virtualenvs.in-project true --local
+
+      - uses: actions/cache@v3
+        name: Define a cache for the virtual environment based on the dependencies lock file
         with:
-          target-path: 'EDGG'
-          source-path: 'mapdata'
-      - name: Store cached sources
-        uses: actions/cache/save@v4
-        with:
-          path: .cache
-          key: sources
+          path: ./.venv
+          key: venv-${{ hashFiles('poetry.lock') }}
+
+      - name: Install the project dependencies
+        working-directory: ./.github/workflows
+        run: poetry install
+
+      - name: Execute script # run mapbuilder
+        working-directory: ./.github/workflows
+        run: poetry run mapbuilder --debug -s "../../mapdata" "../../EDGG"
 
       - name: Commit files
         run: |
@@ -42,3 +58,53 @@ jobs:
         with:
           github_token: ${{ secrets.GITHUB_TOKEN }}
           branch: ${{ github.ref }}
+
+
+
+# via Docker
+
+
+# name: mapbuilder
+# run-name: Building maps for commit ${{ github.sha }} by ${{ github.actor }}
+# on:
+#   push:
+#     branches:
+#       - "*"
+#       - "*/**"
+#       - "!main"
+#     paths:
+#       - 'mapdata/**'
+# permissions: write-all
+# jobs:
+#   build-maps:
+#     runs-on: ubuntu-latest
+#     steps:
+#       - uses: actions/checkout@v4
+#       - name: Restore cached sources
+#         uses: actions/cache/restore@v4
+#         with:
+#           path: .cache
+#           key: sources
+#       - name: Run mapbuilder
+#         uses: sergej-singer/mapbuilder@edgg
+#         with:
+#           target-path: 'EDGG'
+#           source-path: 'mapdata'
+#       - name: Store cached sources
+#         uses: actions/cache/save@v4
+#         with:
+#           path: .cache
+#           key: sources
+# 
+#       - name: Commit files
+#         run: |
+#           git config --local user.email "action@github.com"
+#           git config --local user.name "GitHub Action"
+#           git add -A
+#           git diff-index --quiet HEAD || (git commit -a -m "[AUTO] mapbuilder ${{ github.sha }}" --allow-empty)
+# 
+#       - name: push changes
+#         uses: ad-m/github-push-action@v0.6.0
+#         with:
+#           github_token: ${{ secrets.GITHUB_TOKEN }}
+#           branch: ${{ github.ref }}
