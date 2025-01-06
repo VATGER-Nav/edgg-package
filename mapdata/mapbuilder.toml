@@ -1,36 +1,60 @@
 [data]
-#
-#[data.rawdata]
-#type = "raw"
-#source = "data"
 
 [data.eddf]
 type = "aixm"
-source = "aixm/EDDF_AerodromeMapping_2024-10-31_2024-10-31_snapshot.xml"
+source = "https://aip.dfs.de/datasets/scripts/getItem.php?amdt=0&content=aerodrome_mapping/EDDF_AerodromeMapping_2024-11-28_2024-12-26_revision.zip"
+
+[data.eddl]
+type = "aixm"
+source = "https://aip.dfs.de/datasets/scripts/getItem.php?amdt=0&content=aerodrome_mapping/EDDL_AerodromeMapping_2024-11-28_2024-12-26_revision.zip"
+
+[data.eddk]
+type = "aixm"
+source = "https://aip.dfs.de/datasets/scripts/getItem.php?amdt=0&content=aerodrome_mapping/EDDK_AerodromeMapping_2024-11-28_2024-12-26_revision.zip"
+
+[data.edds]
+type = "aixm"
+source = "https://aip.dfs.de/datasets/scripts/getItem.php?amdt=0&content=aerodrome_mapping/EDDS_AerodromeMapping_2024-11-28_2024-12-26_revision.zip"
+
+[data.eddr]
+type = "aixm"
+source = "https://aip.dfs.de/datasets/scripts/getItem.php?amdt=1&content=aerodrome_mapping/EDDR_AerodromeMapping_2024-11-28_2024-12-26_revision.zip"
+
+[data.edlp]
+type = "aixm"
+source = "https://aip.dfs.de/datasets/scripts/getItem.php?amdt=1&content=aerodrome_mapping/EDLP_AerodromeMapping_2024-11-28_2024-12-26_revision.zip"
+
+[data.edlw]
+type = "aixm"
+source = "https://aip.dfs.de/datasets/scripts/getItem.php?amdt=1&content=aerodrome_mapping/EDLW_AerodromeMapping_2024-11-28_2024-12-26_revision.zip"
+
+[data.edln]
+type = "aixm"
+source = "https://aip.dfs.de/datasets/scripts/getItem.php?amdt=1&content=aerodrome_mapping/EDLN_AerodromeMapping_2024-11-28_2024-12-26_revision.zip"
+
+[data.edlv]
+type = "aixm"
+source = "https://aip.dfs.de/datasets/scripts/getItem.php?amdt=1&content=aerodrome_mapping/EDLV_AerodromeMapping_2024-11-28_2024-12-26_revision.zip"
+
+[data.edfh]
+type = "aixm"
+source = "https://aip.dfs.de/datasets/scripts/getItem.php?amdt=1&content=aerodrome_mapping/EDFH_AerodromeMapping_2024-11-28_2024-12-26_revision.zip"
+
+[data.edsb]
+type = "aixm"
+source = "https://aip.dfs.de/datasets/scripts/getItem.php?amdt=1&content=aerodrome_mapping/EDSB_AerodromeMapping_2024-11-28_2024-12-26_revision.zip"
 
 [data.eddf_layout]
 type = "kml"
 source = "kml/eddf.kml"
 
-[data.eddl]
-type = "aixm"
-source = "aixm/EDDL_AerodromeMapping_2024-06-13_2024-06-13_snapshot.xml"
-
 [data.eddl_layout]
 type = "kml"
 source = "kml/eddl.kml"
 
-[data.eddk]
-type = "aixm"
-source = "aixm/EDDK_AerodromeMapping_2024-09-05_2024-09-05_snapshot.xml"
-
 [data.eddk_layout]
 type = "kml"
 source = "kml/eddk.kml"
-
-[data.edds]
-type = "aixm"
-source = "aixm/EDDS_AerodromeMapping_2024-11-28_2024-11-28_snapshot.xml"
 
 [data.edds_layout]
 type = "kml"
@@ -40,49 +64,25 @@ source = "kml/edds.kml"
 type = "kml"
 source = "kml/eddg.kml"
 
-[data.eddr]
-type = "aixm"
-source = "aixm/EDDR_AerodromeMapping_2024-07-11_2024-07-11_snapshot.xml"
-
 [data.eddr_layout]
 type = "kml"
 source = "kml/eddr.kml"
-
-[data.edlp]
-type = "aixm"
-source = "aixm/EDLP_AerodromeMapping_2024-05-16_2024-05-16_snapshot.xml"
 
 [data.edlp_layout]
 type = "kml"
 source = "kml/edlp.kml"
 
-[data.edlw]
-type = "aixm"
-source = "aixm/EDLW_AerodromeMapping_2024-05-16_2024-05-16_snapshot.xml"
-
 [data.edlw_layout]
 type = "kml"
 source = "kml/edlw.kml"
-
-[data.edln]
-type = "aixm"
-source = "aixm/EDLN_AerodromeMapping_2024-06-13_2024-06-13_snapshot.xml"
 
 [data.edln_layout]
 type = "kml"
 source = "kml/edln.kml"
 
-[data.edlv]
-type = "aixm"
-source = "aixm/EDLV_AerodromeMapping_2024-06-13_2024-06-13_snapshot.xml"
-
 [data.edlv_layout]
 type = "kml"
 source = "kml/edlv.kml"
-
-[data.edfh]
-type = "aixm"
-source = "aixm/EDFH_AerodromeMapping_2024-07-11_2024-07-11_snapshot.xml"
 
 [data.edfh_layout]
 type = "kml"
@@ -91,10 +91,6 @@ source = "kml/edfh.kml"
 [data.edfm_layout]
 type = "kml"
 source = "kml/edfm.kml"
-
-[data.edsb]
-type = "aixm"
-source = "aixm/EDSB_AerodromeMapping_2024-07-11_2024-07-11_snapshot.xml"
 
 [data.edsb_layout]
 type = "kml"
@@ -112,7 +108,7 @@ source = "kml/notam.kml"
 
 [profiles]
 
-[profiles.Default]
+[profiles.TWR_NIGHT]
 maps = [
     { map = "EDDF", target = "grp/eddf.txt" },
     { map = "EDDL", target = "grp/eddl.txt" },

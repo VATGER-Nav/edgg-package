@@ -1,0 +1,22 @@
+// ----------------------------- Labels -----------------------------
+
+MAP:Taxiways
+AIRPORT:EDTL
+FOLDER:Labels
+ACTIVE:1
+ZOOM:400
+{{ data.edtl_layout['layout']['Labels']['Buffer'] | to_multipoly('', 'layout-taxiway') }}
+FONTSIZE:=:10
+COLOR:layout-label-taxiway
+{% for taxiway, geom in data.edtl_layout['layout']['Labels']['Taxiways'].items() %}
+{{- geom | to_text(taxiway) }}
+{% endfor %}
+
+MAP:Stands
+AIRPORT:EDTL
+FOLDER:Labels
+ACTIVE:1
+ZOOM:500
+FONTSIZE:=:9
+COLOR:layout-label-stand
+{{data.edtl_layout['layout']['Labels']['Parking Area'] | to_text('Parking Area') }}

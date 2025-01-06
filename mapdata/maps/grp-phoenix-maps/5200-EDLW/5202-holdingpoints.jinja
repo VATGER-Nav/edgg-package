@@ -1,0 +1,34 @@
+// ------------------------- Holding Points -------------------------
+
+MAP:Holding Points CAT I
+AIRPORT:EDLW
+FOLDER:Holding Points
+ACTIVE:LVP:EDLW:0
+{% for holdingpoint in ['A I', 'B I', 'C I', 'D I'] %}
+{{- data.edlw_layout['layout']['Holding Points']['P'][ holdingpoint | string ] | to_poly(holdingpoint, 'layout-holdingpoint') }}
+{% endfor %}
+{% for holdingpoint in ['A III', 'B III', 'C III', 'D III'] %}
+{{- data.edlw_layout['layout']['Holding Points']['P'][ holdingpoint | string ] | to_poly(holdingpoint, 'layout-holdingpoint-grey') }}
+{% endfor %}
+COLOR:layout-holdingpoint
+{% for holdingpoint in ['A I', 'B I', 'C I', 'D I'] %}
+{{- data.edlw_layout['layout']['Holding Points']['L'][ holdingpoint | string ] | to_line(holdingpoint) }}
+{% endfor %}
+
+MAP:Holding Points CAT II
+AIRPORT:EDLW
+FOLDER:Holding Points
+ACTIVE:LVP:EDLW:1
+COLOR:layout-holdingpoint
+{% for holdingpoint in ['A III', 'B III', 'C III', 'D III'] %}
+{{- data.edlw_layout['layout']['Holding Points']['P'][ holdingpoint | string ] | to_poly(holdingpoint, 'layout-holdingpoint') }}
+{% endfor %}
+
+MAP:Apron Stopbars
+AIRPORT:EDLW
+FOLDER:Holding Points
+ACTIVE:1
+COLOR:layout-holdingpoint
+{% for holdingpoint in ['STOP 1', 'STOP 2'] %}
+{{- data.edlw_layout['layout']['Holding Points']['L'][ holdingpoint | string ] | to_line(holdingpoint) }}
+{% endfor %}

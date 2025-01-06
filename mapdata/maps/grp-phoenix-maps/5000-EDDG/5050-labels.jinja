@@ -1,0 +1,35 @@
+// ----------------------------- Labels -----------------------------
+MAP:Taxiways
+AIRPORT:EDDG
+FOLDER:Labels
+ACTIVE:1
+ZOOM:400
+{{ data.eddg_layout['layout']['Labels']['Buffer'] | to_multipoly('', 'layout-taxiway') }}
+FONTSIZE:=:10
+COLOR:layout-label-taxiway
+{% for taxiway, geom in data.eddg_layout['layout']['Labels']['Taxiways'].items() %}
+{{- geom | to_text(taxiway) }}
+{% endfor %}
+{{ data.eddg_layout['layout']['Labels']['Taxiways']['A1'] | to_text('Run-up:0:15') }}
+{{ data.eddg_layout['layout']['Labels']['Taxiways']['B1'] | to_text('Run-up:0:15') }}
+
+MAP:Stands
+AIRPORT:EDDG
+FOLDER:Labels
+ACTIVE:1
+ZOOM:600
+FONTSIZE:=:9
+COLOR:layout-label-stand
+{% for stand, geom in data.eddg_layout['layout']['Labels']['Stands'].items() %}
+{{- geom | to_text(stand) }}
+{% endfor %}
+
+MAP:Aprons
+AIRPORT:EDDG
+FOLDER:Labels
+ZOOM:400
+FONTSIZE:=:9
+COLOR:layout-label-stand
+{{ data.eddg_layout['layout']['Labels']['Apron West'] | to_text('Apron West') }}
+{{ data.eddg_layout['layout']['Labels']['Central Apron'] | to_text('Central Apron') }}
+{{ data.eddg_layout['layout']['Labels']['Apron East'] | to_text('Apron East') }}

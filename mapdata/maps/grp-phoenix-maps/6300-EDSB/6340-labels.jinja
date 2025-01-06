@@ -1,0 +1,36 @@
+// ----------------------------- Labels -----------------------------
+
+MAP:Taxiways
+AIRPORT:EDSB
+FOLDER:Labels
+ACTIVE:1
+ZOOM:400
+{{ data.edsb_layout['layout']['Labels']['Buffer'] | to_multipoly('', 'layout-taxiway') }}
+FONTSIZE:=:10
+COLOR:layout-label-taxiway
+{% for taxiway, geom in data.edsb_layout['layout']['Labels']['Taxiways'].items() %}
+{{- geom | to_text(taxiway) }}
+{% endfor %}
+
+MAP:Stands
+AIRPORT:EDSB
+FOLDER:Labels
+ACTIVE:1
+ZOOM:600
+FONTSIZE:=:9
+COLOR:layout-label-stand
+{% for stand, geom in data.edsb_layout['layout']['Labels']['Stands'].items() if stand != '19' %}
+{{- geom | to_text(stand) }}
+{% endfor %}
+{{ data.edsb_layout['layout']['Labels']['Stands']['19'] | to_text('19/19A') }}
+
+MAP:Aprons
+AIRPORT:EDSB
+FOLDER:Labels
+ZOOM:400
+FONTSIZE:=:9
+COLOR:layout-label-stand
+{{ data.edsb_layout['layout']['Labels']['APN 1'] | to_text('APN 1') }}
+{{ data.edsb_layout['layout']['Labels']['APN 2'] | to_text('APN 2') }}
+{{ data.edsb_layout['layout']['Labels']['Stands']['Business Aviation'] | to_text('APN 3:0:-12') }}
+{{ data.edsb_layout['layout']['Labels']['APN 4'] | to_text('APN 4') }}

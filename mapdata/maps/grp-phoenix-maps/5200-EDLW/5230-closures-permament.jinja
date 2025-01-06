@@ -1,0 +1,22 @@
+// ----------------------- Permament Closures -----------------------
+
+MAP:GAT Apron
+AIRPORT:EDLW
+FOLDER:Closures
+COORDTYPE:TWYCLOSED:REGION
+STYLE:Solid:2
+ACTIVE:1
+//ASRDATA:GND
+{{ data.edlw['TaxiwayElement']['f6191ec5-3472-4034-bc0d-f94b7f6c1346'] | simplify(0.000005) | to_poly('GAT Apron','closure') }}
+COLOR:closure-symbol
+{{ data.edlw_layout['layout']['Closures']['_1'] | to_symbol('CROSS_S') }}
+
+MAP:Apron
+AIRPORT:EDLW
+FOLDER:Closures
+COORDTYPE:TWYCLOSED:REGION
+STYLE:Solid:2
+ACTIVE:1
+//ASRDATA:GND
+COLOR:closure-symbol
+{{ data.edlw_layout['layout']['Closures']['_2'] | to_symbol('CROSS') }}

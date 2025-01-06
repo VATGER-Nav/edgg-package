@@ -1,0 +1,63 @@
+// ------------------------------------------------------------------
+//                                 EDTL
+// ------------------------------------------------------------------
+
+// -------------------------- Ground Layout -------------------------
+{% set default = 0.000005 %}
+MAP:Perimeter
+AIRPORT:EDTL
+FOLDER:Airport Layout
+//ACTIVE:1
+{{ data.edtl_layout['layout']['Base']['Base'] | to_poly('Base', 'layout-base') }}
+
+MAP:Apron Area
+AIRPORT:EDTL
+FOLDER:Airport Layout
+ACTIVE:1
+{{ data.edtl_layout['layout']['Apron']['Apron'] | to_multipoly('', 'layout-apron') }}
+
+MAP:Roads
+AIRPORT:EDTL
+FOLDER:Airport Layout
+COLOR:layout-taxiway
+{{ data.edtl_layout['layout']['Roads']['Roads'] | to_multiline('Roads') }}
+
+MAP:Taxiway Movement Area
+AIRPORT:EDTL
+FOLDER:Airport Layout
+ACTIVE:1
+{{ data.edtl_layout['layout']['Taxiways']['Taxiways'] | to_poly('', 'layout-taxiway') }}
+
+MAP:Runway
+AIRPORT:EDTL
+FOLDER:Airport Layout
+ACTIVE:1
+{{ data.edtl_layout['layout']['Runway']['21/03'] | to_poly('Runway 21/03', 'layout-runway') }}
+
+MAP:Leadin Lines
+AIRPORT:EDTL
+FOLDER:Airport Layout
+ACTIVE:1
+COLOR:layout-taxiline-grey
+{{ data.edtl_layout['layout']['Markings']['Leadin Lines'] | to_multiline('') }}
+
+MAP:Taxi Lanes
+AIRPORT:EDTL
+FOLDER:Airport Layout
+ACTIVE:1
+COLOR:layout-taxiline-yellow
+{{ data.edtl_layout['layout']['Markings']['Taxilanes'] | to_multiline('') }}
+
+MAP:Buildings
+AIRPORT:EDTL
+FOLDER:Airport Layout
+ACTIVE:1
+{{ data.edtl_layout['layout']['Buildings']['Buildings'] | to_multipoly('', 'layout-building') }}
+
+MAP:Fence
+AIRPORT:EDTL
+FOLDER:Airport Layout
+ACTIVE:1
+COLOR:layout-building
+{{ data.edtl_layout['layout']['Fence']['Fence'] | to_multiline('Fence') }}
+

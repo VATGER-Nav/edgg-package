@@ -1,0 +1,17 @@
+// ------------------------ Pushback Stands -------------------------
+
+MAP:Pushback Stands
+AIRPORT:EDDS
+FOLDER:Apron Info
+ACTIVE:1
+COLOR:layout-runway
+{{ data.edds_layout['layout']['Apron Info']['Pushback'] | to_multiline('') }}
+
+MAP:Aircraft Outlines
+AIRPORT:EDDS
+FOLDER:Apron Info
+ACTIVE:1
+COORDTYPE:OTHER:REGION
+{{ data.edds_layout['layout']['Apron Info']['Primary'] | to_multipoly('Primary', 'layout-runway') }}
+COORDTYPE:OTHER:POLYGON
+{{ data.edds_layout['layout']['Apron Info']['Secondary'] | to_multipoly('Secondary', 'layout-runway') }}

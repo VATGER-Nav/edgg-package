@@ -1,0 +1,246 @@
+// ----------------------------- Labels -----------------------------
+
+MAP:Taxiways
+AIRPORT:EDDF
+FOLDER:Labels
+ACTIVE:1
+ZOOM:300
+FONTSIZE:=:10
+COLOR:layout-label-taxiway
+{% for desig, geom in data.eddf_layout['layout']['Labels']['Taxiways'].items() %}
+{{- geom | to_text(desig) }}
+{% endfor %}
+
+MAP:Stands
+AIRPORT:EDDF
+FOLDER:Labels
+ACTIVE:1
+ZOOM:400
+FONTSIZE:=:9
+COLOR:layout-label-stand
+{% for desig, geom in data.eddf_layout['layout']['Labels']['Stands'].items() if not desig in [
+    'A54A',
+    'A54B',
+    'A58A',
+    'A58B',
+    'A62A',
+    'A62B',
+    'A66A',
+    'A66B',
+    'C15A',
+    'C15B',
+    'C16A',
+    'C16B',
+    'D1A',
+    'D4A',
+    'D4B',
+    'D5A',
+    'D8A',
+    'E2A',
+    'E2B',
+    'E5A',
+    'E5B',
+    'E6A',
+    'E9A',
+    'F221',
+    'F223',
+    'F225',
+    'F232A',
+    'F233A',
+    'J2A',
+    'J2B',
+    'J6A',
+    'J6B',
+    'G16A',
+    'V119',
+    'V121',
+    'V123',
+    'V125',
+    'V126',
+    'V128',
+    'V130',
+    'V134',
+    'V136',
+    'V151',
+    'V153',
+    'V158',
+    'V160',
+    'V162',
+    'V171A',
+    'V171B',
+    'V173A',
+    'V173B',
+    'V701',
+    'V702',
+    'V704',
+    'V706',
+    'V708',
+    'V711',
+    'V712',
+    'V713',
+    'V714',
+    'V715',
+    'V716',
+    'V717',
+    'V718',
+    'V719',
+    'V721',
+    'A28',
+    'A34',
+    'A38',
+    'V108',
+    'V109',
+    'V112',
+    'V115',
+    'V116',
+    'V172',
+    'V175',
+    'V177',
+    'V267',
+    'V269',
+    'J7',
+    'J9',
+    'J11',
+] %}
+{{- geom | to_text(desig) }}
+{% endfor %}
+
+{{ data.eddf_layout['layout']['Labels']['GAT'] | to_text('GAT - V7xx') }}
+
+ZOOM:600
+{% for desig in [
+    'A28',
+    'A34',
+    'A38',
+    'V108',
+    'V109',
+    'V112',
+    'V115',
+    'V116',
+    'V172',
+    'V175',
+    'V177',
+    'V267',
+    'V269',
+] %}
+{{- data.eddf_layout['layout']['Labels']['Stands'][desig | string] | to_text(desig) }}
+{% endfor %}
+
+ZOOM:800
+{% for desig in [
+    'A54A',
+    'A54B',
+    'A58A',
+    'A58B',
+    'A62A',
+    'A62B',
+    'A66A',
+    'A66B',
+    'C15A',
+    'C15B',
+    'C16A',
+    'C16B',
+    'D1A',
+    'D4A',
+    'D4B',
+    'D5A',
+    'D8A',
+    'E2A',
+    'E2B',
+    'E5A',
+    'E5B',
+    'E6A',
+    'E9A',
+    'F221',
+    'F223',
+    'F225',
+    'F232A',
+    'F233A',
+    'J2A',
+    'J2B',
+    'J6A',
+    'J6B',
+    'G16A',
+    'V119',
+    'V121',
+    'V123',
+    'V125',
+    'V126',
+    'V128',
+    'V130',
+    'V134',
+    'V136',
+    'V151',
+    'V153',
+    'V158',
+    'V160',
+    'V162',
+    'V171A',
+    'V171B',
+    'V173A',
+    'V173B',
+    'V701',
+    'V702',
+    'V704',
+    'V706',
+    'V708',
+    'V711',
+    'V712',
+    'V713',
+    'V714',
+    'V715',
+    'V716',
+    'V717',
+    'V718',
+    'V719',
+    'V721',
+] %}
+{{- data.eddf_layout['layout']['Labels']['Stands'][desig | string] | to_text(desig) }}
+{% endfor %}
+{% for desig in ['C14', 'C15', 'C16'] %}
+{{- data.eddf_layout['layout']['Labels']['Stands'][desig | string] | to_text(' ' + desig + 'S:0:12') }}
+{% endfor %}
+
+MAP:Stopbars
+AIRPORT:EDDF
+FOLDER:Labels
+ACTIVE:1
+ZOOM:400
+FONTSIZE:=:9
+COLOR:layout-label-stand
+TEXTALIGN:CC
+{% for desig in ['T8', 'Y12'] %}
+{{- data.eddf_layout['layout']['Labels']['Stopbars'][desig | string] | to_text(desig) }}
+{% endfor %}
+TEXTALIGN:LC
+{% for desig in ['M2', 'S40', 'T2', 'T4', 'T6', 'W10', 'W4', 'W6', 'W8', 'Y4', 'Y6'] %}
+{{- data.eddf_layout['layout']['Labels']['Stopbars'][desig | string] | to_text(desig) }}
+{% endfor %}
+TEXTALIGN:RC
+{% for desig in ['U2', 'U4', 'U6', 'U8', 'W2', 'Y10', 'Y2'] %}
+{{- data.eddf_layout['layout']['Labels']['Stopbars'][desig | string] | to_text(desig) }}
+{% endfor %}
+
+MAP:Links
+AIRPORT:EDDF
+FOLDER:Labels
+ACTIVE:1
+ZOOM:800
+FONTSIZE:=:9
+COLOR:layout-label-stand
+TEXTALIGN:CC
+{{ data.eddf_layout['layout']['Labels']['Link 3'] | to_text('Link 3') }}
+TEXTALIGN:LC
+{{ data.eddf_layout['layout']['Labels']['Link 4'] | to_text('Link 4') }}
+TEXTALIGN:RC
+{{ data.eddf_layout['layout']['Labels']['Link 5'] | to_text('Link 5') }}
+
+
+MAP:Heli Stands
+AIRPORT:EDDF
+FOLDER:Labels
+ZOOM:400
+FONTSIZE:=:10
+COLOR:layout-label-stand
+{{ data.eddf_layout['layout']['Restrictions']['Stands']['V701'] | to_text('H:-1:0') }}
+{{ data.eddf_layout['layout']['Restrictions']['Stands']['V701'] | to_symbol('CIRCLE') }}

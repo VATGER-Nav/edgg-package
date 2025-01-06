@@ -1,0 +1,9 @@
+// ------------------------- NOTAM Closures -------------------------
+
+MAP:W/Z
+AIRPORT:EDDS
+FOLDER:Closures
+ACTIVE:1
+STYLE:Solid:2
+COORDTYPE:TWYCLOSED:REGION
+{{ data.edds_layout['layout']['Closures']['W/Z'] | to_poly('','closure') }}

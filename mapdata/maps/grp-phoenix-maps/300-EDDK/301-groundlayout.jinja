@@ -1,0 +1,19 @@
+// -------------------------- Ground Layout -------------------------
+{% set default = 0.000005 %}
+
+MAP:Taxiway Movement Area
+AIRPORT:EDDK
+FOLDER:Airport Layout
+ACTIVE:1
+{{ data.eddk_layout['layout']['Taxiways']['Taxiways'] | to_multipoly('Taxi Area','layout-taxiway') }}
+
+MAP:Runways
+AIRPORT:EDDK
+FOLDER:Airport Layout
+ACTIVE:1
+{{ data.eddk_layout['layout']['Apron']['31R/13L'] | to_multipoly('Runway 31R/13L','layout-apron') }}
+{{ data.eddk_layout['layout']['Apron']['31L/13R'] | to_multipoly('Runway 31L/13R','layout-apron') }}
+{{ data.eddk_layout['layout']['Apron']['24/06'] | to_multipoly('Runway 24/06','layout-apron') }}
+{{ data.eddk_layout['layout']['Runways']['31R/13L'] | to_poly('Runway 31R/13L','layout-taxiway') }}
+{{ data.eddk_layout['layout']['Runways']['31L/13R'] | to_poly('Runway 31L/13R','layout-taxiway') }}
+{{ data.eddk_layout['layout']['Runways']['24/06'] | to_poly('Runway 24/06','layout-taxiway') }}
