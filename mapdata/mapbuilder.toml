@@ -128,6 +128,7 @@ maps = [
 dir = "grp"
 aliases = [ "Default" ]
 
+
 #[profiles.TWR_DAY]
 #maps = [
 #    { map = "settings-grplugin-phoenix", target = "Plugins/EDWW FIR beta/TWR_DAY/GRpluginSettings.txt" },
