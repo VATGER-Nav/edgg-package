@@ -39,12 +39,12 @@ jobs:
           key: venv-${{ hashFiles('poetry.lock') }}
 
       - name: Install the project dependencies
-        working-directory: ./.github/workflows
+        working-directory: ./.github/workflows/mapbuilder
         run: poetry install
 
       - name: Execute script # run mapbuilder
-        working-directory: ./.github/workflows
-        run: poetry run mapbuilder --debug -s "../../mapdata" "../../EDGG"
+        working-directory: ./.github/workflows/mapbuilder
+        run: poetry run mapbuilder --debug -s "../../../mapdata" "../../../EDGG"
 
       - name: Commit files
         run: |
