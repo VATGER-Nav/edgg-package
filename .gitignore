@@ -8,3 +8,4 @@ EDGG/ICAO/*
 EDGG/NavData/*
 EDGG/Plugins/Maestro/Documentation/*
 EDGG/.cache
+poetry.toml
