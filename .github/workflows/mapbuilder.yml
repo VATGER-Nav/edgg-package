@@ -44,7 +44,7 @@ jobs:
 
       - name: Execute script # run mapbuilder
         working-directory: ./.github/workflows/mapbuilder
-        run: poetry run mapbuilder --debug -s "../../../mapdata" "../../../EDGG"
+        run: poetry run mapbuilder --debug -s "../../../mapdata" -c "/.cache" "../../../EDGG"
 
       - name: Commit files
         run: |
