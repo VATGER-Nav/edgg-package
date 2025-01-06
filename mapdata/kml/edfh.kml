@@ -2497,15 +2497,17 @@
 					<fill>0</fill>
 				</PolyStyle>
 			</Style>
-			<Polygon>
-				<outerBoundaryIs>
-					<LinearRing>
-						<coordinates>
-							7.27159023645006,49.9510843706751,0 7.27142275195568,49.951003649985,0 7.27154234828998,49.9509530714894,0 7.27159023645006,49.9510843706751,0 
-						</coordinates>
-					</LinearRing>
-				</outerBoundaryIs>
-			</Polygon>
+			<MultiGeometry>
+				<Polygon>
+					<outerBoundaryIs>
+						<LinearRing>
+							<coordinates>
+								7.27158274535983,49.95108636970041,0 7.2714152608714,49.9510056489997,0 7.27153485721836,49.9509550705119,0 7.27158274535983,49.95108636970041,0 
+							</coordinates>
+						</LinearRing>
+					</outerBoundaryIs>
+				</Polygon>
+			</MultiGeometry>
 		</Placemark>
 	</Folder>
 	<Folder>
