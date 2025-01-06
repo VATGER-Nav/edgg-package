@@ -7,4 +7,4 @@ VoiceChannels.txt
 EDGG/ICAO/*
 EDGG/NavData/*
 EDGG/Plugins/Maestro/Documentation/*
-.github/workflows/mapbuilder/.cache
+EDGG/.cache
