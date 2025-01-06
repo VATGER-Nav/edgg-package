@@ -107,7 +107,7 @@ source = "kml/notam.kml"
 
 [profiles]
 
-[profiles.TWR_NIGHT]
+[profiles.TWR-NIGHT]
 maps = [
     { map = "GRP-PHOENIX-SETTINGS", target = "Plugins/GRP/Phoenix/GRpluginSettings.txt" },
     { map = "GRP-PHOENIX-MAPS", target = "Plugins/GRP/Phoenix/GRpluginMaps.txt" },
