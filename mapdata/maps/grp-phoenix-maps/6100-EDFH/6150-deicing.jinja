@@ -1,5 +1,5 @@
 // ------------------------- Deicing Areas --------------------------
-
+{% set default = 0.000005 %}
 MAP:De-Icing
 AIRPORT:EDFH
 FOLDER:Ice/Snow
@@ -17,7 +17,7 @@ COORDTYPE:OTHER:REGION
 // Taxilines
 COLOR:layout-runway-marking
 STYLE:Solid:2
-{{ data.edfh_layout['layout']['Deicing']['N-'] | to_line('') }}
+{{ data.edfh['GuidanceLine']['23c5d030-95af-4d04-af3a-d0ae048d5031'] | simplify(default) | to_line('') }}
 
 // Outlines
 STYLE:Solid:2

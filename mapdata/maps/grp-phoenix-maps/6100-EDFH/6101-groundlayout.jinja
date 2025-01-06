@@ -19,13 +19,48 @@ AIRPORT:EDFH
 FOLDER:Airport Layout
 ACTIVE:1
 COLOR:layout-taxiline-grey
-{% for desig in ['A1_POS', 'A2_POS', 'A3_POS', 'A4_POS', 'A5_POS', 'A6_POS', 'ABAY', 'ABAY_EINROLL_N', 'ABAY_EINROLL_S', 'APRON5', 'APRON5_MAINT_1', 'APRON5_MAINT_3', 'APRON5_MAINT_4', 'APRON5_MAINT_5', 'B1_POS', 'B2_POS', 'B3_POS', 'B4_POS', 'B5_POS', 'BBAY', 'BBAY_EINROLL_N', 'BBAY_EINROLL_S', 'D1_POS', 'D3_POS', 'E_POS', 'F_POS', 'G1_POS', 'G2_POS', 'G3_POS', 'G4_POS', 'M_APRON5_FW'] %}
-{{- data.edfh['GuidanceLineByDesig'][ desig | string ] | join_segments | simplify(default) | to_line(desig) -}}
+{% for id in [
+    '016e53c7-e2f4-474f-99eb-3e07b699639c',
+    '107d6bbc-73ea-4ccb-ab46-89e0b075ec69',
+    '14a40010-66e3-43f4-9f5d-c043fb94070c',
+    '1dd0c1cd-1325-4dd3-8a1f-c19627c1aff6',
+    '23bd045b-6aed-4fbf-b39b-1026ed64c247',
+    '369f229a-88d3-44f6-a62d-4890f1fa2358',
+    '36fe4f86-718c-4a3c-8880-a4848ee7d655',
+    '37d5b678-f20e-4508-9e1c-9e8b46fba8b4',
+    '37ee4993-5c3c-4848-87a4-8b704e585778',
+    '3e6bc3ac-9c4c-4047-be6b-ef3a1c590b19',
+    '49bfcc15-c530-4fd3-b825-e2c285539381',
+    '4e693ee6-525e-40d5-9ab3-bbfccab8dff6',
+    '5d4c7788-9272-44df-b76a-c129afd79476',
+    '6f5124b6-c7bb-4a5d-a5ad-9f0b922811c8',
+    '86961366-f961-4b27-b37f-c5faeb7a3eab',
+    '87866e47-b54b-40d8-a468-55357802c106',
+    '8b08c6d1-d7c8-4a7a-b2aa-f6559df3ff28',
+    '8dddb17c-a5d8-49ff-bf5d-87db8a9daacb',
+    'a54b7a3b-032a-4de3-839a-84164f313dc8',
+    'a893a09f-ac1c-451e-9ddb-c0da423f6385',
+    'af3eaf88-065d-4585-8c1b-a8140c2c6a7e',
+    'b37d61b4-ed7a-4f31-a6d9-2b97e0de04d1',
+    'baf394eb-f110-4087-936a-089d9139f3d9',
+    'd25e520a-c669-4674-b301-1f34052e37a4',
+    'e70a83d9-b99f-4810-8a4d-f11b6c0a3404',
+    'f7af29ee-ad62-44e4-86de-0e74249a06f5',
+    'fbcc919f-c5ed-4d66-b4e6-84b80dca3265',
+] %}
+{{- data.edfh['GuidanceLine'][ id | string ] | join_segments | simplify(default) | to_line(id) -}}
 {% endfor %}
 COLOR:layout-taxiline-grey
 STYLE:Dot:1
-{% for desig in ['APRON5_MAINT_2', 'C_POS', 'D2_POS', 'D4_POS', 'G5_POS'] %}
-{{- data.edfh['GuidanceLineByDesig'][ desig | string ] | join_segments | simplify(default) | to_line(desig) -}}
+{% for desig in [
+    '326',
+    '331',
+    '334',
+    '451',
+    '511',
+    'M2',
+] %}
+{{- data.edfh_layout['layout']['Markings']['Leadin Lines'][ desig | string ] | to_multiline(desig) -}}
 {% endfor %}
 
 MAP:Taxi Lanes
@@ -33,8 +68,44 @@ AIRPORT:EDFH
 FOLDER:Airport Layout
 ACTIVE:1
 COLOR:layout-taxiline-yellow
-{% for desig in ['A (APRON3-C)', 'A (C-B1)', 'A_E-F', 'APRON5_M', 'B1', 'B2', 'B2_EINROLL_N', 'B2_EINROLL_S', 'B2_RWY_N', 'B2_RWY_S', 'C', 'D', 'D_EINROLL_N', 'D_EINROLL_S', 'D_RWY_N', 'D_RWY_S', 'E', 'E_EINROLL_N', 'E_EINROLL_S', 'E_RWY_N', 'E_RWY_S', 'F_N', 'F_RWY_N', 'F_RWY_S', 'F_S', 'G', 'G_EINROLL_F_N', 'G_EINROLL_F_S', 'G_EINROLL_M_N', 'G_EINROLL_M_S', 'M', 'M_EINROLL_F_N', 'M_EINROLL_F_S', 'RWY END 21 TURN', 'RWY_END_03_TURN'] %}
-{{- data.edfh['GuidanceLineByDesig'][ desig | string ] | join_segments | simplify(default) | to_line(desig) -}}
+{% for id in [
+    '068246ad-a89c-47b0-967d-8f2d6e81c337',
+    '11210420-e1ab-4036-8273-3ab3d1f960a9',
+    '19575819-6563-4139-bd32-527e65837899',
+    '19ea464f-68bd-4ba8-a9ab-543003c8bfb6',
+    '1bbf3673-6f9e-4963-96f1-4570948d7203',
+    '24fb4cbe-e349-43ba-b5df-1ae5f2889dc5',
+    '25f1fe9a-1707-44e2-ae3e-be2111f8892e',
+    '2671bb3e-5548-4a22-9988-bc4149d4b5c4',
+    '3ce30914-2bb1-4172-bbdc-5cbfa53171c9',
+    '3decc191-7859-43b9-8af4-7fe8b33223b2',
+    '41024f25-2168-497a-b1b5-d885ca56a18f',
+    '4e646ce1-f530-4dab-a5e1-4a3b3086a864',
+    '61b4100e-b836-4cda-848a-a7d97ef78718',
+    '724af53a-d0d9-4f2d-9f1d-c94389d0902f',
+    '7471e964-22c7-4c7d-ada2-dfd876d4a69d',
+    '776464c9-e4f6-48ba-95de-b3e924250895',
+    '77b46284-0a5c-4e6e-8068-08d7d92dfea7',
+    '7bb476c3-3eed-42dc-b79a-7ae34d7e3aae',
+    '7e0d37b4-6f29-4b1b-a950-2db23ce26af9',
+    '7f1b2258-02bf-4981-bb4b-7c867852603a',
+    '80d5105e-bbfc-4615-bfab-997d8c7b7b95',
+    '88e78394-a9e1-485c-9d51-82e2577a4e15',
+    '8f67f69f-9913-4f17-aa0c-835dce464a3a',
+    '9a669162-54f8-4b00-b816-4c3592599ff0',
+    'a476608e-e79a-4a0f-b178-9027ccafcb7b',
+    'a871337c-3383-4a70-839a-7783acadf043',
+    'acfa2700-fc26-4836-a82e-c9a095afd17d',
+    'c9338cba-db82-4e46-8dc3-5110f360c3f9',
+    'c9cf9447-8ecb-4333-b59a-6a14eaefce60',
+    'd3076620-cca5-49b7-bb9b-a708f85f2e25',
+    'd7a61012-0782-4bab-b496-c617f493b150',
+    'e4616d7f-798b-42c0-91d3-1c6cfbee1a5b',
+    'ec1a4f1d-292d-4300-b81a-8011ceebcd23',
+    'f5ae414f-03d4-43d7-84cd-6c17c246138f',
+    'feec1bf1-ca70-48fc-aaf9-95f43e800de1',
+] %}
+{{- data.edfh['GuidanceLine'][ id | string ] | join_segments | simplify(default) | to_line(id) -}}
 {% endfor %}
 
 MAP:Buildings

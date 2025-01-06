@@ -109,9 +109,9 @@ source = "kml/notam.kml"
 
 [profiles.TWR_NIGHT]
 maps = [
-    # { map = "grp-phoenix-settings", target = "Plugins/GRP/Phoenix/GRpluginSettings.txt" },
-    { map = "grp-phoenix-maps", target = "Plugins/GRP/Phoenix/GRpluginMaps.txt" },
-    { map = "grp-stands", target = "Plugins/GRP/Phoenix/GRpluginStands.txt" },
+    # { map = "GRP-PHOENIX-SETTINGS", target = "Plugins/GRP/Phoenix/GRpluginSettings.txt" },
+    { map = "GRP-PHOENIX-MAPS", target = "Plugins/GRP/Phoenix/GRpluginMaps.txt" },
+    { map = "GRP-STANDS", target = "Plugins/GRP/Phoenix/GRpluginStands.txt" },
 ]
 dir = "Plugins/GRP/Phoenix/"
 aliases = [ "dark" ]
