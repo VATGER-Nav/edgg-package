@@ -18,7 +18,7 @@ source = "https://aip.dfs.de/datasets/scripts/getItem.php?amdt=0&content=aerodro
 
 [data.eddr]
 type = "aixm"
-source = "https://aip.dfs.de/datasets/scripts/getItem.php?amdt=1&content=aerodrome_mapping/EDDR_AerodromeMapping_2024-11-28_2024-12-26_revision.zip"
+source = "https://aip.dfs.de/datasets/scripts/getItem.php?amdt=0&content=aerodrome_mapping/EDDR_AerodromeMapping_2024-11-28_2024-12-26_revision.zip"
 
 [data.edlp]
 type = "aixm"
