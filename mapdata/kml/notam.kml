@@ -2,11 +2,14 @@
 <kml xmlns="http://www.opengis.net/kml/2.2" xmlns:gx="http://www.google.com/kml/ext/2.2" xmlns:kml="http://www.opengis.net/kml/2.2" xmlns:atom="http://www.w3.org/2005/Atom">
 <Folder>
 	<name>notam</name>
+	<visibility>0</visibility>
 	<open>1</open>
 	<Folder>
 		<name>EDDF</name>
+		<visibility>0</visibility>
 		<Placemark>
 			<name>W</name>
+			<visibility>0</visibility>
 			<Style>
 				<LineStyle>
 					<color>ff0000ff</color>
@@ -27,6 +30,7 @@
 		</Placemark>
 		<Placemark>
 			<name>DP2</name>
+			<visibility>0</visibility>
 			<Style>
 				<LineStyle>
 					<color>ff0000ff</color>
@@ -47,6 +51,7 @@
 		</Placemark>
 		<Placemark>
 			<name>L9</name>
+			<visibility>0</visibility>
 			<Style>
 				<LineStyle>
 					<color>ff0000ff</color>
@@ -68,8 +73,10 @@
 	</Folder>
 	<Folder>
 		<name>EDDL</name>
+		<visibility>0</visibility>
 		<Placemark>
 			<name>PAD3W- NOTAM</name>
+			<visibility>0</visibility>
 			<Style>
 				<LineStyle>
 					<color>ff0000ff</color>
@@ -86,6 +93,7 @@
 		</Placemark>
 		<Placemark>
 			<name>PAD4W- NOTAM</name>
+			<visibility>0</visibility>
 			<Style>
 				<LineStyle>
 					<color>ff0000ff</color>
@@ -102,6 +110,7 @@
 		</Placemark>
 		<Placemark>
 			<name>PAD1W- NOTAM</name>
+			<visibility>0</visibility>
 			<Style>
 				<LineStyle>
 					<color>ff0000ff</color>
@@ -118,24 +127,28 @@
 		</Placemark>
 		<Placemark>
 			<name>PAD1W_ NOTAM</name>
+			<visibility>0</visibility>
 			<Point>
 				<coordinates>6.75887121699667,51.27972062081739,0</coordinates>
 			</Point>
 		</Placemark>
 		<Placemark>
 			<name>PAD3W_ NOTAM</name>
+			<visibility>0</visibility>
 			<Point>
 				<coordinates>6.758697154243301,51.27585702428311,0</coordinates>
 			</Point>
 		</Placemark>
 		<Placemark>
 			<name>PAD4W_ NOTAM</name>
+			<visibility>0</visibility>
 			<Point>
 				<coordinates>6.759042969254961,51.27544474916,0</coordinates>
 			</Point>
 		</Placemark>
 		<Placemark>
 			<name>PAD4W NOTAM</name>
+			<visibility>0</visibility>
 			<Style>
 				<LineStyle>
 					<color>ff0000ff</color>
@@ -156,6 +169,7 @@
 		</Placemark>
 		<Placemark>
 			<name>PAD3W NOTAM</name>
+			<visibility>0</visibility>
 			<Style>
 				<LineStyle>
 					<color>ff0000ff</color>
@@ -176,6 +190,7 @@
 		</Placemark>
 		<Placemark>
 			<name>PAD1W NOTAM</name>
+			<visibility>0</visibility>
 			<Style>
 				<LineStyle>
 					<color>ff0000ff</color>
@@ -196,6 +211,7 @@
 		</Placemark>
 		<Placemark>
 			<name>PAD= NOTAM</name>
+			<visibility>0</visibility>
 			<snippet></snippet>
 			<Style>
 				<LineStyle>
@@ -255,6 +271,7 @@
 		</Placemark>
 		<Placemark>
 			<name>P4</name>
+			<visibility>0</visibility>
 			<Style>
 				<LineStyle>
 					<color>ff0000ff</color>
@@ -275,6 +292,7 @@
 		</Placemark>
 		<Placemark>
 			<name>Taxiway</name>
+			<visibility>0</visibility>
 			<Style>
 				<LineStyle>
 					<color>ff0000ff</color>
@@ -295,6 +313,7 @@
 		</Placemark>
 		<Placemark>
 			<name>Apron</name>
+			<visibility>0</visibility>
 			<Style>
 				<LineStyle>
 					<color>ff0000ff</color>
@@ -308,6 +327,31 @@
 					<LinearRing>
 						<coordinates>
 							6.76004978028323,51.2806318523398,0 6.761237216255229,51.2811912031238,0 6.76169840170182,51.2805091128383,0 6.76180262921501,51.28028401612,0 6.76178808722983,51.2800563244101,0 6.7614764461334,51.2792828116433,0 6.7613525582726,51.27910070752719,0 6.7605075056002,51.2788995147649,0 6.75971040024768,51.2789131949338,0 6.759760861816719,51.2790965069258,0 6.75979355474654,51.2792903168768,0 6.75981172971654,51.2795323938156,0 6.75979937995045,51.2798737444318,0 6.759781339795891,51.28016548458971,0 6.760239063238,51.2803856607717,0 6.7602348818684,51.2804882491042,0 6.7602135220362,51.2805313539439,0 6.760182694116699,51.2805652619398,0 6.7601334133785,51.2806013572409,0 6.7600853429634,51.2806239615952,0 6.76004978028323,51.2806318523398,0 
+						</coordinates>
+					</LinearRing>
+				</outerBoundaryIs>
+			</Polygon>
+		</Placemark>
+	</Folder>
+	<Folder>
+		<name>EDFH</name>
+		<visibility>0</visibility>
+		<Placemark>
+			<name>Apron</name>
+			<visibility>0</visibility>
+			<Style>
+				<LineStyle>
+					<color>ff0000ff</color>
+				</LineStyle>
+				<PolyStyle>
+					<fill>0</fill>
+				</PolyStyle>
+			</Style>
+			<Polygon>
+				<outerBoundaryIs>
+					<LinearRing>
+						<coordinates>
+							7.26941761985507,49.9474623380965,0 7.26986485237946,49.9479089949577,0 7.27036150079055,49.9477019268912,0 7.269913501030551,49.9472545084235,0 7.26941761985507,49.9474623380965,0 
 						</coordinates>
 					</LinearRing>
 				</outerBoundaryIs>
