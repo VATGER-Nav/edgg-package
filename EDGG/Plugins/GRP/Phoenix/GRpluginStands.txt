@@ -1121,6 +1121,13 @@ BLOCKS:E9
 //                            Apron Positions Frankfurt
 // ------------------------------------------------------------------------
 
+// V93
+STAND:EDDF:V93:N050.02.59.401:E008.35.59.419:25
+USE:A
+CODE:C
+CALLSIGN:GROUP_EDDF_Kindergarten
+PRIORITY:+3
+
 // V94
 STAND:EDDF:V94:N050.02.58.465:E008.35.55.629:25
 USE:A
