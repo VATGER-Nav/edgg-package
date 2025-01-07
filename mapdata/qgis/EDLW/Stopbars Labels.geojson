@@ -1,0 +1,9 @@
+{
+"type": "FeatureCollection",
+"name": "Stopbars Labels",
+"crs": { "type": "name", "properties": { "name": "urn:ogc:def:crs:EPSG::32632" } },
+"features": [
+{ "type": "Feature", "properties": { "name": "STOP 2" }, "geometry": { "type": "Point", "coordinates": [ 403561.913450287014712, 5708052.605675211176276 ] } },
+{ "type": "Feature", "properties": { "name": "STOP 1" }, "geometry": { "type": "Point", "coordinates": [ 403293.805401866615284, 5707884.084194460883737 ] } }
+]
+}

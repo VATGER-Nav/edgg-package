@@ -1,0 +1,37 @@
+// ------------------------------------------------------------------
+//                                 EDLW
+// ------------------------------------------------------------------
+
+// ---------------------------- Perimeter ---------------------------
+
+MAP:Perimeter
+AIRPORT:EDLW
+FOLDER:Airport Layout
+//ACTIVE:1
+{{ data.edlw_layout['layout']['Base']['Base'] | to_poly('Base', 'layout-base') }}
+
+// ---------------------------- Apron Area --------------------------
+
+MAP:Apron Area
+AIRPORT:EDLW
+FOLDER:Airport Layout
+ACTIVE:1
+{{ data.edlw_layout['layout']['Apron']['Apron'] | to_poly('Apron', 'layout-apron') }}
+{{ data.edlw_layout['layout']['Apron']['L'] | to_poly('L', 'layout-apron') }}
+
+// --------------------------- Parking Area -------------------------
+
+MAP:Parking Area
+AIRPORT:EDLW
+FOLDER:Airport Layout
+ACTIVE:1
+COLOR:layout-taxiway
+{{ data.edlw_layout['layout']['Markings']['Parking'] | to_multiline('Parking Area') }}
+
+// ------------------------------- Roads ----------------------------
+
+MAP:Roads
+AIRPORT:EDLW
+FOLDER:Airport Layout
+COLOR:layout-taxiway
+{{ data.edlw_layout['layout']['Roads']['Roads'] | to_multiline('Roads') }}

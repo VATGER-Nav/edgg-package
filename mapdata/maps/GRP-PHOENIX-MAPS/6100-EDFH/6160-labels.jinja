@@ -1,0 +1,47 @@
+// ----------------------------- Labels -----------------------------
+
+MAP:Taxiways
+AIRPORT:EDFH
+FOLDER:Labels
+ACTIVE:1
+ZOOM:400
+{{ data.edfh_layout['layout']['Labels']['Buffer'] | to_multipoly('', 'layout-taxiway') }}
+FONTSIZE:=:10
+COLOR:layout-label-taxiway
+{% for taxiway, geom in data.edfh_layout['layout']['Labels']['Taxiways'].items() %}
+{{- geom | to_text(taxiway) }}
+{% endfor %}
+
+MAP:Stands
+AIRPORT:EDFH
+FOLDER:Labels
+ACTIVE:1
+ZOOM:500
+FONTSIZE:=:9
+COLOR:layout-label-stand
+{% for stand, geom in data.edfh_layout['layout']['Labels']['Stands New'].items() %}
+{{- geom | to_text(stand) }}
+{% endfor %}
+{{ data.edfh_layout['layout']['Labels']['APN 5'] | to_text('Maintenance') }}
+
+MAP:Stands Old
+AIRPORT:EDFH
+FOLDER:Labels
+ZOOM:500
+FONTSIZE:=:9
+COLOR:layout-label-stand
+{% for stand, geom in data.edfh_layout['layout']['Labels']['Stands'].items() %}
+{{- geom | to_text(stand) }}
+{% endfor %}
+{{ data.edfh_layout['layout']['Labels']['APN 5'] | to_text('Maintenance') }}
+
+MAP:Aprons
+AIRPORT:EDFH
+FOLDER:Labels
+ZOOM:400
+FONTSIZE:=:9
+COLOR:layout-label-stand
+{{ data.edfh_layout['layout']['Labels']['APN 2'] | to_text('APN 2') }}
+{{ data.edfh_layout['layout']['Labels']['APN 3'] | to_text('APN 3') }}
+{{ data.edfh_layout['layout']['Labels']['APN 4'] | to_text('APN 4') }}
+{{ data.edfh_layout['layout']['Labels']['APN 5'] | to_text('APN 5:0:-12') }}

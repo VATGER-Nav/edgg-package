@@ -1,0 +1,46 @@
+// ------------------------- Approach Window ------------------------
+
+MAP:EDFM CTR:A
+AIRPORT:EDFM
+FOLDER:Approach Window
+ACTIVE:1
+STYLE:SOLID:1
+COLOR:layout-runway
+LINE:N049.31.38.000:E008.22.54.000:N049.31.05.000:E008.39.06.000
+LINE:N049.31.05.000:E008.39.06.000:N049.25.05.000:E008.38.36.000
+LINE:N049.25.05.000:E008.38.36.000:N049.25.38.000:E008.22.28.000
+LINE:N049.25.38.000:E008.22.28.000:N049.31.38.000:E008.22.54.000
+
+MAP:Extended Centerlines:A
+AIRPORT:EDFM
+FOLDER:Approach Window
+ACTIVE:1
+STYLE:SOLID:1
+COLOR:layout-runway
+// 27
+{{ ecl_dashes(runways.EDFM['27'], 15) }}
+{{ marker_ticks(runways.EDFM['27'], [4], 0, 0.325) }}
+{{ marker_ticks(runways.EDFM['27'], [11.9], 0.5, 1) }}
+// 09
+{{ ecl_dashes(runways.EDFM['09'], 15) }}
+{{ marker_ticks(runways.EDFM['09'], [4], 0, 0.325) }}
+
+MAP:Airfields:A
+AIRPORT:EDFM
+FOLDER:Approach Window
+ACTIVE:1
+COLOR:layout-runway
+SYMBOL:AIRPORT:EDFV
+SYMBOL:AIRPORT:EDRF
+SYMBOL:AIRPORT:EDRY
+SYMBOL:AIRPORT:EDGM
+
+MAP:VFR Points:A
+AIRPORT:EDFM
+FOLDER:Approach Window
+COLOR:layout-runway
+SYMBOL:VFR:FM-R:R:10:-7
+SYMBOL:VFR:FM-W:W:10:-7
+SYMBOL:VFR:FM-S:S:10:-7
+SYMBOL:VFR:FM-K:K:10:-7
+SYMBOL:VFR:FM-E:E:10:-7

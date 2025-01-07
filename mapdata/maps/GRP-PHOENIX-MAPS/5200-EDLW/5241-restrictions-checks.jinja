@@ -1,0 +1,13 @@
+// ----------------------- Restriction Checks -----------------------
+
+MAP:Checks
+AIRPORT:EDLW
+FOLDER:Restrictions
+COORDTYPE:TWYTYPE:NONE
+ACTIVE:1
+// L, K
+RESTRICTION:MAXCODE:C
+{{ data.edlw_layout['layout']['Restrictions']['L K'] | to_poly('') }}
+// B
+RESTRICTION:MAXWEIGHT:20000
+{{ data.edlw_layout['layout']['Restrictions']['B'] | to_poly('') }}

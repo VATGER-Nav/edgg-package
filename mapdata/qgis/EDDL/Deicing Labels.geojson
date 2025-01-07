@@ -1,0 +1,21 @@
+{
+"type": "FeatureCollection",
+"name": "Deicing Labels",
+"crs": { "type": "name", "properties": { "name": "urn:ogc:def:crs:EPSG::32632" } },
+"features": [
+{ "type": "Feature", "properties": { "name": "V11B_" }, "geometry": { "type": "Point", "coordinates": [ 344946.115869821282104, 5684202.029036511667073 ] } },
+{ "type": "Feature", "properties": { "name": "PAD4E_" }, "geometry": { "type": "Point", "coordinates": [ 345117.474924818263389, 5684309.219604671001434 ] } },
+{ "type": "Feature", "properties": { "name": "PAD3E_" }, "geometry": { "type": "Point", "coordinates": [ 345201.171466254512779, 5684368.919767484068871 ] } },
+{ "type": "Feature", "properties": { "name": "PAD2E_" }, "geometry": { "type": "Point", "coordinates": [ 345293.244146541401278, 5684401.884432014077902 ] } },
+{ "type": "Feature", "properties": { "name": "PAD1E_" }, "geometry": { "type": "Point", "coordinates": [ 345384.866434624360409, 5684397.199224760755897 ] } },
+{ "type": "Feature", "properties": { "name": "PAD1W_" }, "geometry": { "type": "Point", "coordinates": [ 343661.68816045683343, 5683309.173001209273934 ] } },
+{ "type": "Feature", "properties": { "name": "PAD2W_" }, "geometry": { "type": "Point", "coordinates": [ 343653.696301454096101, 5683229.268969326280057 ] } },
+{ "type": "Feature", "properties": { "name": "PAD3W_" }, "geometry": { "type": "Point", "coordinates": [ 343651.826797940186225, 5683162.611820521764457 ] } },
+{ "type": "Feature", "properties": { "name": "PAD4W_" }, "geometry": { "type": "Point", "coordinates": [ 343642.833890062524006, 5683033.555980065837502 ] } },
+{ "type": "Feature", "properties": { "name": "23L/05R" }, "geometry": { "type": "Point", "coordinates": [ 344321.116831293562427, 5684232.917227304540575 ] } },
+{ "type": "Feature", "properties": { "name": "23R/05L" }, "geometry": { "type": "Point", "coordinates": [ 344033.002042388019618, 5684636.839264224283397 ] } },
+{ "type": "Feature", "properties": { "name": "PAD1W_ NOTAM" }, "geometry": { "type": "Point", "coordinates": [ 343696.980803810060024, 5683317.193485205993056 ] } },
+{ "type": "Feature", "properties": { "name": "PAD3W_ NOTAM" }, "geometry": { "type": "Point", "coordinates": [ 343671.724736753210891, 5682887.96833186969161 ] } },
+{ "type": "Feature", "properties": { "name": "PAD4W_ NOTAM" }, "geometry": { "type": "Point", "coordinates": [ 343694.44276077975519, 5682841.390852043405175 ] } }
+]
+}

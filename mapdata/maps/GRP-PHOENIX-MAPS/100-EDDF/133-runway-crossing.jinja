@@ -1,0 +1,98 @@
+// ------------------------- Runway Crossing ------------------------
+{% set default = 0.000005 %}
+MAP:25
+AIRPORT:EDDF
+FOLDER:Runway Crossing
+
+// T
+COLOR:restrictions-F
+STYLE:SOLID:3
+{{ data.eddf_layout['layout']['Runway Crossing']['T'] | to_line('') }}
+STYLE:SOLID:1
+{{ data.eddf_layout['layout']['Runway Crossing']['T='] | to_poly('', 'restrictions-F') }}
+{{ data.eddf_layout['layout']['Holding Points']['CAT I P']['T2'] | to_poly('', 'layout-holdingpoint') }}
+STYLE:SOLID:2
+COLOR:layout-holdingpoint
+{{ data.eddf_layout['layout']['Holding Points']['CAT I L']['T2'] | to_line('') }}
+
+// M8
+COLOR:restrictions-D
+STYLE:SOLID:3
+{{ data.eddf_layout['layout']['Runway Crossing']['M8 25'] | to_line('') }}
+STYLE:SOLID:1
+{{ data.eddf_layout['layout']['Runway Crossing']['M8 25='] | to_poly('', 'restrictions-D') }}
+STYLE:SOLID:2
+COLOR:layout-holdingpoint
+{{ data.eddf['TaxiwayMarking']['7233e590-7fc6-dc2b-e053-b4472c0a9450'] | to_line('') }}
+
+// M30
+COLOR:restrictions-E
+STYLE:SOLID:3
+{{ data.eddf_layout['layout']['Runway Crossing']['M30'] | to_line('') }}
+STYLE:SOLID:1
+{{ data.eddf_layout['layout']['Runway Crossing']['M30='] | to_poly('', 'restrictions-E') }}
+STYLE:SOLID:2
+COLOR:layout-holdingpoint
+{{ data.eddf['TaxiwayMarking']['61f3b1e6-5ffb-4693-bf3f-8de116c4ef99'] | to_line('') }}
+
+// Y
+COLOR:restrictions-AB
+STYLE:SOLID:3
+{{ data.eddf_layout['layout']['Runway Crossing']['Y'] | to_line('') }}
+STYLE:SOLID:1
+{{ data.eddf_layout['layout']['Runway Crossing']['Y='] | to_poly('', 'restrictions-AB') }}
+STYLE:SOLID:2
+COLOR:layout-holdingpoint
+{{ data.eddf['TaxiwayMarking']['05091d27-5df6-4f84-9c3b-af410b6d525d'] | to_line('') }}
+
+// Stands
+COLOR:restrictions-F
+{{ data.eddf_layout['layout']['Runway Crossing']['Stands_E1'] | to_multiline('') }}
+COLOR:restrictions-D
+{{ data.eddf_layout['layout']['Runway Crossing']['Stands_E2'] | to_multiline('') }}
+COLOR:restrictions-E
+{{ data.eddf_layout['layout']['Runway Crossing']['Stands_C'] | to_multiline('') }}
+COLOR:restrictions-AB
+{{ data.eddf_layout['layout']['Runway Crossing']['Stands_W'] | to_multiline('') }}
+
+MAP:07
+AIRPORT:EDDF
+FOLDER:Runway Crossing
+
+// T
+COLOR:restrictions-F
+STYLE:SOLID:3
+{{ data.eddf_layout['layout']['Runway Crossing']['T'] | to_line('') }}
+STYLE:SOLID:1
+{{ data.eddf_layout['layout']['Runway Crossing']['T='] | to_poly('', 'restrictions-F') }}
+{{ data.eddf_layout['layout']['Holding Points']['CAT I P']['T2'] | to_poly('', 'layout-holdingpoint') }}
+STYLE:SOLID:2
+COLOR:layout-holdingpoint
+{{ data.eddf_layout['layout']['Holding Points']['CAT I L']['T2'] | to_line('') }}
+
+// M6
+COLOR:restrictions-D
+STYLE:SOLID:3
+{{ data.eddf_layout['layout']['Runway Crossing']['M6'] | to_line('') }}
+STYLE:SOLID:1
+{{ data.eddf_layout['layout']['Runway Crossing']['M6='] | to_poly('', 'restrictions-D') }}
+{{ data.eddf_layout['layout']['Holding Points']['CAT III']['L1 III'] | to_poly('', 'layout-holdingpoint') }}
+
+// M8
+COLOR:restrictions-E
+STYLE:SOLID:3
+{{ data.eddf_layout['layout']['Runway Crossing']['M8 07'] | to_line('') }}
+STYLE:SOLID:1
+{{ data.eddf_layout['layout']['Runway Crossing']['M8 07='] | to_poly('', 'restrictions-E') }}
+STYLE:SOLID:2
+COLOR:layout-holdingpoint
+{{ data.eddf['TaxiwayMarking']['5627e7e0-c30d-7c0d-e053-b3472c0a22ab'] | to_line('') }}
+
+// Stands
+COLOR:restrictions-F
+{{ data.eddf_layout['layout']['Runway Crossing']['Stands_E1'] | to_multiline('') }}
+COLOR:restrictions-D
+{{ data.eddf_layout['layout']['Runway Crossing']['Stands_E2'] | to_multiline('') }}
+COLOR:restrictions-E
+{{ data.eddf_layout['layout']['Runway Crossing']['Stands_C'] | to_multiline('') }}
+{{ data.eddf_layout['layout']['Runway Crossing']['Stands_W'] | to_multiline('') }}

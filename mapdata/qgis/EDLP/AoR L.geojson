@@ -1,0 +1,9 @@
+{
+"type": "FeatureCollection",
+"name": "AoR L",
+"crs": { "type": "name", "properties": { "name": "urn:ogc:def:crs:EPSG::32632" } },
+"features": [
+{ "type": "Feature", "properties": { "Name": "LPT", "description": null, "timestamp": null, "begin": null, "end": null, "altitudeMode": null, "tessellate": -1, "extrude": 0, "visibility": -1, "drawOrder": null, "icon": null }, "geometry": { "type": "LineString", "coordinates": [ [ 472251.965541987097822, 5717374.514253752306104 ], [ 474492.947906724759378, 5718823.410370105877519 ] ] } },
+{ "type": "Feature", "properties": { "Name": "LPG", "description": null, "timestamp": null, "begin": null, "end": null, "altitudeMode": null, "tessellate": -1, "extrude": 0, "visibility": -1, "drawOrder": null, "icon": null }, "geometry": { "type": "LineString", "coordinates": [ [ 474496.536145980353467, 5718817.153423527255654 ], [ 472255.55204588297056, 5717368.255630899220705 ], [ 474496.536115905502811, 5718817.153327419422567 ] ] } }
+]
+}

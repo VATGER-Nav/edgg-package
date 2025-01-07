@@ -1,0 +1,11 @@
+{
+"type": "FeatureCollection",
+"name": "TORA",
+"crs": { "type": "name", "properties": { "name": "urn:ogc:def:crs:EPSG::32632" } },
+"features": [
+{ "type": "Feature", "properties": { "Name": "24 B", "description": null, "timestamp": null, "begin": null, "end": null, "altitudeMode": null, "tessellate": -1, "extrude": 0, "visibility": -1, "drawOrder": null, "icon": null }, "geometry": { "type": "Point", "coordinates": [ 473507.419201862590853, 5718186.003117666579783 ] } },
+{ "type": "Feature", "properties": { "Name": "06 C", "description": null, "timestamp": null, "begin": null, "end": null, "altitudeMode": null, "tessellate": -1, "extrude": 0, "visibility": -1, "drawOrder": null, "icon": null }, "geometry": { "type": "Point", "coordinates": [ 473099.140216718718875, 5717922.323379103094339 ] } },
+{ "type": "Feature", "properties": { "Name": "24 A", "description": null, "timestamp": null, "begin": null, "end": null, "altitudeMode": null, "tessellate": null, "extrude": null, "visibility": null, "drawOrder": null, "icon": null }, "geometry": { "type": "Point", "coordinates": [ 474331.857636914704926, 5718719.210095713846385 ] } },
+{ "type": "Feature", "properties": { "Name": "06 D", "description": null, "timestamp": null, "begin": null, "end": null, "altitudeMode": null, "tessellate": null, "extrude": null, "visibility": null, "drawOrder": null, "icon": null }, "geometry": { "type": "Point", "coordinates": [ 472583.567839121504221, 5717588.966496780514717 ] } }
+]
+}

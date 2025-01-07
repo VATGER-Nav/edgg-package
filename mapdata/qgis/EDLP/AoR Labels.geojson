@@ -1,0 +1,9 @@
+{
+"type": "FeatureCollection",
+"name": "AoR Labels",
+"crs": { "type": "name", "properties": { "name": "urn:ogc:def:crs:EPSG::32632" } },
+"features": [
+{ "type": "Feature", "properties": { "Name": "LPG_", "description": null, "timestamp": null, "begin": null, "end": null, "altitudeMode": null, "tessellate": -1, "extrude": 0, "visibility": -1, "drawOrder": null, "icon": null }, "geometry": { "type": "Point", "coordinates": [ 473330.773290040902793, 5718009.469784501008689 ] } },
+{ "type": "Feature", "properties": { "Name": "LPT_", "description": null, "timestamp": null, "begin": null, "end": null, "altitudeMode": null, "tessellate": -1, "extrude": 0, "visibility": -1, "drawOrder": null, "icon": null }, "geometry": { "type": "Point", "coordinates": [ 473239.003643695730716, 5718152.056713944301009 ] } }
+]
+}

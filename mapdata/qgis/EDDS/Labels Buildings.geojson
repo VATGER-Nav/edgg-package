@@ -1,0 +1,23 @@
+{
+"type": "FeatureCollection",
+"name": "Labels Buildings",
+"crs": { "type": "name", "properties": { "name": "urn:ogc:def:crs:EPSG::32632" } },
+"features": [
+{ "type": "Feature", "properties": { "name": "Tower" }, "geometry": { "type": "Point", "coordinates": [ 516207.647355736349709, 5392427.818136568181217 ] } },
+{ "type": "Feature", "properties": { "name": "Fire Department" }, "geometry": { "type": "Point", "coordinates": [ 515971.572763178439345, 5393279.738956232555211 ] } },
+{ "type": "Feature", "properties": { "name": "Lufthansa Technik" }, "geometry": { "type": "Point", "coordinates": [ 514923.662725286965724, 5393247.05802945420146 ] } },
+{ "type": "Feature", "properties": { "name": "DC Aviation" }, "geometry": { "type": "Point", "coordinates": [ 514815.578967485344037, 5393217.808364511467516 ] } },
+{ "type": "Feature", "properties": { "name": "Terminal 1" }, "geometry": { "type": "Point", "coordinates": [ 514152.608974008413497, 5392957.558320385403931 ] } },
+{ "type": "Feature", "properties": { "name": "Terminal 2" }, "geometry": { "type": "Point", "coordinates": [ 514281.552330550563056, 5392995.246945579536259 ] } },
+{ "type": "Feature", "properties": { "name": "Terminal 3" }, "geometry": { "type": "Point", "coordinates": [ 514370.337582566891797, 5393019.28026622813195 ] } },
+{ "type": "Feature", "properties": { "name": "Terminal 4" }, "geometry": { "type": "Point", "coordinates": [ 514511.619018627738114, 5393059.568644207902253 ] } },
+{ "type": "Feature", "properties": { "name": "Cargo Center" }, "geometry": { "type": "Point", "coordinates": [ 515050.728423068881966, 5392181.095926648005843 ] } },
+{ "type": "Feature", "properties": { "name": "DB Schenker" }, "geometry": { "type": "Point", "coordinates": [ 515435.316262019623537, 5392354.962648618035018 ] } },
+{ "type": "Feature", "properties": { "name": "DHL Express" }, "geometry": { "type": "Point", "coordinates": [ 515552.328991019632667, 5392383.785700253210962 ] } },
+{ "type": "Feature", "properties": { "name": "Hangar 1" }, "geometry": { "type": "Point", "coordinates": [ 514420.402104067150503, 5392024.651851081289351 ] } },
+{ "type": "Feature", "properties": { "name": "Hangar 2" }, "geometry": { "type": "Point", "coordinates": [ 514529.010047572723124, 5391995.320090037770569 ] } },
+{ "type": "Feature", "properties": { "name": "Hangar 3" }, "geometry": { "type": "Point", "coordinates": [ 514619.837834207923152, 5391963.041603257879615 ] } },
+{ "type": "Feature", "properties": { "name": "Hangar 4" }, "geometry": { "type": "Point", "coordinates": [ 514686.621614102448802, 5392008.606097910553217 ] } },
+{ "type": "Feature", "properties": { "name": "Hangar 5" }, "geometry": { "type": "Point", "coordinates": [ 514725.048266139870975, 5392076.174526274204254 ] } }
+]
+}

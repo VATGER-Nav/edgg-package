@@ -1,0 +1,9 @@
+{
+"type": "FeatureCollection",
+"name": "AoR Labels",
+"crs": { "type": "name", "properties": { "name": "urn:ogc:def:crs:EPSG::32632" } },
+"features": [
+{ "type": "Feature", "properties": { "name": "SBG_" }, "geometry": { "type": "Point", "coordinates": [ 432685.918923272518441, 5403480.115346506237984 ] } },
+{ "type": "Feature", "properties": { "name": "SBT_" }, "geometry": { "type": "Point", "coordinates": [ 432516.188267954043113, 5403588.037582140415907 ] } }
+]
+}

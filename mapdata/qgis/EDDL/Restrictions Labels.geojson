@@ -1,0 +1,19 @@
+{
+"type": "FeatureCollection",
+"name": "Restrictions Labels",
+"crs": { "type": "name", "properties": { "name": "urn:ogc:def:crs:EPSG::32632" } },
+"features": [
+{ "type": "Feature", "properties": { "name": "Ref" }, "geometry": { "type": "Point", "coordinates": [ 343896.239767956547439, 5684099.979439345188439 ] } },
+{ "type": "Feature", "properties": { "name": "R2" }, "geometry": { "type": "Point", "coordinates": [ 344327.902076505124569, 5683766.40011502802372 ] } },
+{ "type": "Feature", "properties": { "name": "R1#1" }, "geometry": { "type": "Point", "coordinates": [ 344038.689884108956903, 5683615.078007005155087 ] } },
+{ "type": "Feature", "properties": { "name": "R1#2" }, "geometry": { "type": "Point", "coordinates": [ 343425.27508600638248, 5683177.56078072078526 ] } },
+{ "type": "Feature", "properties": { "name": "R3" }, "geometry": { "type": "Point", "coordinates": [ 345684.294984346139245, 5684865.786176889203489 ] } },
+{ "type": "Feature", "properties": { "name": "L6_" }, "geometry": { "type": "Point", "coordinates": [ 343859.52459483849816, 5683557.056862509809434 ] } },
+{ "type": "Feature", "properties": { "name": "GAT_" }, "geometry": { "type": "Point", "coordinates": [ 343165.749407388153486, 5682846.876982353627682 ] } },
+{ "type": "Feature", "properties": { "name": "A05_" }, "geometry": { "type": "Point", "coordinates": [ 344397.567695663659833, 5683607.043293658643961 ] } },
+{ "type": "Feature", "properties": { "name": "L3_" }, "geometry": { "type": "Point", "coordinates": [ 345320.004177005437668, 5684518.205581861548126 ] } },
+{ "type": "Feature", "properties": { "name": "L2#1_" }, "geometry": { "type": "Point", "coordinates": [ 345485.775397129531484, 5684807.367439485155046 ] } },
+{ "type": "Feature", "properties": { "name": "L2#2_" }, "geometry": { "type": "Point", "coordinates": [ 345471.343978231830988, 5684943.013563998043537 ] } },
+{ "type": "Feature", "properties": { "name": "Ref 2" }, "geometry": { "type": "Point", "coordinates": [ 344674.096706470591016, 5684666.453735974617302 ] } }
+]
+}
