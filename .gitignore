@@ -7,8 +7,8 @@ EDGG/ICAO/*
 EDGG/NavData/*
 EDGG/Plugins/Maestro/Documentation/*
 EDGG/.cache
+mapdata/aixm
 poetry.toml
-/mapdata/aixm
 
 aeronav_copyright.txt
 VoiceChannels.txt
