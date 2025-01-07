@@ -51,7 +51,6 @@ COLOR:layout-taxiline-grey
 {{- data.edfh['GuidanceLine'][ id | string ] | join_segments | simplify(default) | to_line(id) -}}
 {% endfor %}
 COLOR:layout-taxiline-grey
-STYLE:Dot:1
 {% for desig in [
     '326',
     '331',
