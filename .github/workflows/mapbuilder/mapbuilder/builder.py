@@ -3,6 +3,7 @@ from datetime import UTC, datetime
 from pathlib import Path
 
 from .cache import Cache
+from json import load
 from .data.aixm2 import parse_aixm
 from .data.kml import KMLParser
 from .data.rwy import parse_runway
@@ -67,6 +68,12 @@ class Builder:
                     "fixes": fixes,
                     "lines": sectors_to_lines(fixes),
                 }
+            elif data_source_type == "json":
+                logging.debug(f"Loading JSON source {data_source}...")
+                with (source_dir / config["data"][data_source]["source"]).open(
+                        encoding="iso-8859-1",
+                ) as f:
+                    self.data[data_source] = load(f)
             else:
                 logging.error(f"Unknown data source type for data source {data_source}")
 
