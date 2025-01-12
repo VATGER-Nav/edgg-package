@@ -38,6 +38,8 @@ class JinjaHandler:
             render_runways=render_runways,
             render_cl=render_cl,
             render_sectorlines=render_sectorlines,
+            sector_sub=sector_sub,
+            sector_and=sector_and,
         )
         jinja_env.filters.update(
             geoms=geoms,
@@ -278,8 +280,6 @@ def _render_coords(lines, linestring):
         for point in geometry.coords:
             lines.append(f"COORD:{point[0]}:{point[1]}")
 
-        lines.append("")
-
 
 def _render_linestring(lines, linestring):
     for geometry in linestring:
@@ -293,7 +293,6 @@ def _render_linestring(lines, linestring):
                 f"LINE:{coord2es((point[0], point[1]))}"
                 f":{coord2es((geometry.coords[idx + 1][0], geometry.coords[idx + 1][1]))}",
             )
-        lines.append("")
 
 
 def simplify(geometries, tolerance):
@@ -318,3 +317,9 @@ def coord2es(coord):
 def render_sectorlines(*lines):
     unique_lines = list(unique_everseen(chain(*lines)))
     return "\n".join(map(str, unique_lines))
+
+
+def sector_sub(a, b):
+    return [item for item in a if item not in b]
+def sector_and(a, b):
+    return [item for item in a if item in b]
