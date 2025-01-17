@@ -1,0 +1,166 @@
+{%- set EDMM = data['sectors']['lines']['EDMM'] -%}
+{%- set EDGG = data['sectors']['lines']['EDGG'] -%}
+{%- set EDWW = data['sectors']['lines']['EDWW'] -%}
+{%- set LOVV = data['sectors']['lines']['LOVV'] -%}
+{%- set LSAS = data['sectors']['lines']['LSAS'] -%}
+{%- set LKAA = data['sectors']['lines']['LKAA'] -%}
+{%- set LIMM = data['sectors']['lines']['LIMM'] -%}
+{%- set EPWW = data['sectors']['lines']['EPWW'] -%}
+MAP:EDMM ACC Sectors
+FOLDER:SECTORLINES
+COLOR:Active_Map_Type_20
+STYLE:Solid:1
+ACTIVE:1
+ASRDATA:CTR
+LAYER:-2
+{{ render_sectorlines(
+        EDMM['EDMMEGG']['000-195'],
+        EDMM['EDMMEGG']['195-245'],
+        EDMM['EDMMRDG']['000-135'],
+        EDMM['EDMMRDG']['135-245'],
+        EDMM['EDMMALB']['000-105'],
+        EDMM['EDMMALB']['105-135'],
+        EDMM['EDMMALB']['135-245'],
+        EDMM['EDMMALB']['245-305'],
+        EDMM['EDMMWLD']['000-105'],
+        EDMM['EDMMNDG']['145-195'],
+        EDMM['EDMMFUE']['195-245'],
+        sector_sub(EDMM['EDMMFUE']['000-105'], LSAS['ARFA']['000-105']),
+        EDMM['EDMMZUG']['000-105'],
+        EDMM['EDMMZUG']['105-165'],
+        EDMM['EDMMZUG']['165-245'],
+        EDMM['EDMMSTA']['000-165'],
+        EDMM['EDMMSTA']['165-245'],
+        EDMM['EDMMTEG']['000-165'],
+        EDMM['EDMMTEG']['165-195'],
+        EDMM['EDMMTEG']['195-245'],
+        EDMM['EDMMTRU']['000-125'],
+        EDMM['EDMMTRU']['125-195'],
+        EDMM['EDMMTRU']['195-245'],
+        EDMM['EDMMHOF']['195-245'],
+        EDMM['EDMMBBG']['195-245'],
+        EDMM['EDMMBBG']['245-315'],
+        EDMM['EDMMMEI']['165-245'],
+        EDMM['EDMMMEI']['285-315'],
+        EDMM['EDMMGER']['195-245'],
+        EDMM['EDMMGER']['285-315'],
+        EDMM['EDMMHAL']['195-245'],
+        EDMM['EDMMHAL']['285-315'],
+        sector_sub(EDMM['EDMMILR1']['000-105'], EDGG['REU1']['000-145']),
+        sector_sub(EDMM['EDMMTMASH']['095-195'], EDMM['EDMMTMANH']['095-195'])
+) }}
+
+STYLE:TMABorder:1
+{{ render_sectorlines(
+        EDMM['EDMMTRN']['055-145'],
+        sector_and(EDMM['EDMMTRN']['000-145'], EDMM['EDMMTRS']['000-145']),
+        sector_and(EDMM['EDMMTMANH']['095-195'], EDMM['EDMMTMASH']['095-195'])
+) }}
+
+// PILAM AREA
+STYLE:DashDot:1
+LINE:N050.25.11.000:E010.27.10.000:N050.21.45.000:E010.51.45.000
+LINE:N050.21.45.000:E010.51.45.000:N050.27.34.000:E010.53.50.000
+LINE:N050.27.34.000:E010.53.50.000:N050.30.42.000:E010.32.05.000
+
+// EDUUTGO
+STYLE:DashDot:1
+LINE:N049.00.00.000:E009.40.00.000:N048.48.38.000:E009.46.35.000
+LINE:N048.48.38.000:E009.46.35.000:N048.41.55.000:E009.41.11.000
+LINE:N048.41.55.000:E009.41.11.000:N048.37.17.000:E009.37.28.000
+LINE:N048.37.17.000:E009.37.28.000:N048.35.40.000:E009.36.12.000
+LINE:N048.35.40.000:E009.36.12.000:N048.31.40.000:E009.33.00.000
+LINE:N048.31.40.000:E009.33.00.000:N048.25.04.000:E009.33.00.000
+LINE:N048.25.04.000:E009.33.00.000:N048.10.00.000:E009.33.00.000
+LINE:N048.10.00.000:E009.33.00.000:N048.10.01.638:E009.06.27.943
+LINE:N048.10.01.638:E009.06.27.943:N048.41.10.000:E009.11.25.000
+LINE:N048.41.10.000:E009.11.25.000:N049.00.02.000:E009.14.29.000
+LINE:N049.00.02.000:E009.14.29.000:N049.00.00.000:E009.40.00.000
+
+MAP:EXT ACC Sectors
+FOLDER:SECTORLINES
+COLOR:Active_Map_Type_20
+STYLE:Solid:1
+ACTIVE:1
+ASRDATA:CTR
+LAYER:-2
+{{ render_sectorlines(
+        LKAA['W1L']['125-245'],
+        LKAA['W1L']['245-305'],
+        LKAA['N1L']['125-245'],
+        LKAA['N1L']['245-305'],
+        LOVV['ACC-N1']['165-245'],
+        LOVV['ACC-N1']['245-305'],
+        LOVV['ACC-B1']['125-245'],
+        sector_sub(LOVV['ACC-W1']['165-245'], LOVV['ACC-W1 EDMM']['165-245']),
+        LIMM['LIPP-NE4']['195-245'],
+        LSAS['LSASZS']['000-125'],
+        LSAS['LSASZS']['125-245'],
+        LSAS['LSASZE']['000-105'],
+        LSAS['LSASZE']['105-195'],
+        LSAS['LSASZE']['125-245'],
+        EDGG['KTG1']['135-245'],
+        EDGG['KTG2']['085-195'],
+        EDGG['KTG3']['135-195'],
+        EDGG['DKB1']['000-085'],
+        EDGG['DKB2']['105-245'],
+        EDGG['DKB3']['085-245'],
+        EDGG['GED4']['175-245'],
+        EDGG['GED7']['245-255'],
+        EDGG['HEF4']['000-215'],
+        EDGG['HEF6']['000-245'],
+        EDGG['HEF10']['145-175'],
+        EDGG['HAB1']['000-245'],
+        EDGG['HAB2']['195-245'],
+        sector_sub(EDGG['LBU1']['145-245'], EDGG['LBU2']['145-235']),
+        sector_sub(EDGG['LBU2']['145-235'], EDGG['LBU1']['145-245']),
+        EDWW['EDWWBOR1']['000-285'],
+        EDWW['EDWWBOR3']['165-285'],
+        EDWW['EDWWFLG3']['165-285'],
+        EDWW['EDWWHRZ10']['000-235'],
+        EDWW['EDWWHRZ3']['055-245'],
+        EDWW['EDWWHRZ4']['000-245'],
+        EPWW['EPWWD']['245-295'],
+        EPWW['EPWWT']['245-285']
+) }}
+
+STYLE:Dash:1
+{{ render_sectorlines(
+        EDGG['FUL23']['355-375'],
+        EDGG['FUL132']['255-355'],
+        EDGG['WUR34']['355-375'],
+        EDGG['TGO23']['355-375'],
+        EDWW['EDUUHVL12']['285-365'],
+        EDWW['EDYYSO']['245-355'],
+        LSAS['LSASZ']['315-999'],
+        LKAA['N1H']['305-660'],
+        EPWW['EPWWT']['295-365']
+) }}
+
+STYLE:TMABorder:1
+{{ render_sectorlines(
+        EDGG['STG1']['000-145'],
+        EDGG['STG7']['000-105'],
+        EDGG['REU1']['000-145'],
+        LSAS['ARFA']['000-105'],
+        LSAS['ARFA-LDG14-34']['000-085'],
+        LSAS['ARFA-LDG14-34']['085-105'],
+        LSAS['ARFA-LDG28']['000-085'],
+        LSAS['ARFA-ROREM']['000-095'],
+        LKAA['KVY_CTA_S']['003-125'],
+        LKAA['KVY_CTA_U']['095-125'],
+        LKAA['KVY_CTA_W']['003-125'],
+        LKAA['KVY_CTA_N']['003-125'],
+        LKAA['LKKV_TMA1']['035-095'],
+        LKAA['OVA_CTA_HDO']['003-095'],
+        LKAA['LKPR_HDO']['095-125'],
+        EPWW['EPWWD']['095-195'],
+        EPWW['CTA05']['125-195'],
+        LOVV['LOWS_SR']['000-125'],
+        LOVV['LOWS_SR2']['000-125'],
+        LOVV['LOWI_IR_NW_HIGH']['125-165'],
+        LOVV['LOWI_IR_SW_HIGH']['125-165'],
+        LOVV['LOWI_IR_NE_HIGH']['125-165'],
+        LOVV['LOWI_IR_SE_HIGH']['125-165'],
+        LIMM['LIPP-NE1']['000-135']
+) }}

@@ -1,325 +1,588 @@
-[data]
-
-[data.eddf]
-type = "aixm"
-source = "https://aip.dfs.de/datasets/scripts/getItem.php?amdt=0&content=aerodrome_mapping/EDDF_AerodromeMapping_2024-11-28_2024-12-26_revision.zip"
-
-[data.eddl]
-type = "aixm"
-source = "https://aip.dfs.de/datasets/scripts/getItem.php?amdt=0&content=aerodrome_mapping/EDDL_AerodromeMapping_2024-11-28_2024-12-26_revision.zip"
-
-[data.eddk]
-type = "aixm"
-source = "https://aip.dfs.de/datasets/scripts/getItem.php?amdt=0&content=aerodrome_mapping/EDDK_AerodromeMapping_2024-11-28_2024-12-26_revision.zip"
-
-[data.edds]
-type = "aixm"
-source = "https://aip.dfs.de/datasets/scripts/getItem.php?amdt=0&content=aerodrome_mapping/EDDS_AerodromeMapping_2024-11-28_2024-12-26_revision.zip"
-
-[data.eddr]
-type = "aixm"
-source = "https://aip.dfs.de/datasets/scripts/getItem.php?amdt=0&content=aerodrome_mapping/EDDR_AerodromeMapping_2024-11-28_2024-12-26_revision.zip"
-
-[data.edlp]
-type = "aixm"
-source = "https://aip.dfs.de/datasets/scripts/getItem.php?amdt=0&content=aerodrome_mapping/EDLP_AerodromeMapping_2024-11-28_2024-12-26_revision.zip"
-
-[data.edlw]
-type = "aixm"
-source = "https://aip.dfs.de/datasets/scripts/getItem.php?amdt=0&content=aerodrome_mapping/EDLW_AerodromeMapping_2024-11-28_2024-12-26_revision.zip"
-
-[data.edln]
-type = "aixm"
-source = "https://aip.dfs.de/datasets/scripts/getItem.php?amdt=0&content=aerodrome_mapping/EDLN_AerodromeMapping_2024-11-28_2024-12-26_revision.zip"
-
-[data.edlv]
-type = "aixm"
-source = "https://aip.dfs.de/datasets/scripts/getItem.php?amdt=0&content=aerodrome_mapping/EDLV_AerodromeMapping_2024-11-28_2024-12-26_revision.zip"
-
-[data.edfh]
-type = "aixm"
-source = "https://aip.dfs.de/datasets/scripts/getItem.php?amdt=0&content=aerodrome_mapping/EDFH_AerodromeMapping_2024-11-28_2024-12-26_revision.zip"
-
-[data.edsb]
-type = "aixm"
-source = "https://aip.dfs.de/datasets/scripts/getItem.php?amdt=0&content=aerodrome_mapping/EDSB_AerodromeMapping_2024-11-28_2024-12-26_revision.zip"
-
-[data.eddf_layout]
-type = "kml"
-source = "kml/eddf.kml"
-
-[data.eddl_layout]
-type = "kml"
-source = "kml/eddl.kml"
-
-[data.eddk_layout]
-type = "kml"
-source = "kml/eddk.kml"
-
-[data.edds_layout]
-type = "kml"
-source = "kml/edds.kml"
-
-[data.eddg_layout]
-type = "kml"
-source = "kml/eddg.kml"
-
-[data.eddr_layout]
-type = "kml"
-source = "kml/eddr.kml"
-
-[data.edlp_layout]
-type = "kml"
-source = "kml/edlp.kml"
-
-[data.edlw_layout]
-type = "kml"
-source = "kml/edlw.kml"
-
-[data.edln_layout]
-type = "kml"
-source = "kml/edln.kml"
-
-[data.edlv_layout]
-type = "kml"
-source = "kml/edlv.kml"
-
-[data.edfh_layout]
-type = "kml"
-source = "kml/edfh.kml"
-
-[data.edfm_layout]
-type = "kml"
-source = "kml/edfm.kml"
-
-[data.edsb_layout]
-type = "kml"
-source = "kml/edsb.kml"
-
-[data.edtl_layout]
-type = "kml"
-source = "kml/edtl.kml"
-
-[data.notam]
-type = "kml"
-source = "kml/notam.kml"
-
-
 [profiles]
 
 [profiles.TWR-NIGHT]
 maps = [
-    { map = "GRP-PHOENIX-SETTINGS", target = "Plugins/GRP/Phoenix/GRpluginSettings.txt" },
-    { map = "GRP-PHOENIX-MAPS", target = "Plugins/GRP/Phoenix/GRpluginMaps.txt" },
-    { map = "GRP-STANDS", target = "Plugins/GRP/Phoenix/GRpluginStands.txt" },
+    { map = "TOPSKY-PHOENIX-MAPS", target = "Plugins/Topsky_Phoenix/TopSkyMaps.txt" },
+    # { map = "GRP-PHOENIX-SETTINGS", target = "Plugins/GRP/Phoenix/GRpluginSettings.txt" },
+    # { map = "GRP-PHOENIX-MAPS", target = "Plugins/GRP/Phoenix/GRpluginMaps.txt" },
+    # { map = "GRP-STANDS", target = "Plugins/GRP/Phoenix/GRpluginStands.txt" },
 ]
 dir = "Plugins/GRP/Phoenix/"
 aliases = [ "dark" ]
 
+[data]
+
+#------------Common------------
+
+[data.topsky]
+type = "kml"
+source = "kml/topsky.kml"
+
+[data.aerodromes]
+type = "json"
+source = "misc/aerodromes.json"
+
+[data.airspace]
+type = "sectors"
+source = "misc/airspace.txt"
+
+[data.sectors]
+type = "sectors"
+source = "misc/sectors.txt"
+
+[data.aor]
+type = "sectors"
+source = "misc/aor.txt"
+
+[data.airspace_labels]
+type = "raw"
+source = "misc/airspace-labels.txt"
+
+#--------------MVA-------------
+
+[data.mva_su]
+type = "raw"
+source = "misc/mva/mva_summer.txt"
+
+[data.mva_wi]
+type = "raw"
+source = "misc/mva/mva_winter.txt"
+
+[data.mva_mil]
+type = "raw"
+source = "misc/mva/mva_military.txt"
+
+#--------------VFR-------------
+
+[data.reporting_points]
+type = "json"
+source = "misc/vfr/reporting-points.json"
+
+[data.fis]
+type = "raw"
+source = "misc/vfr/fis.txt"
+
+
+# #-------Groundlayouts AIXM-----
+
+# [data.eddf]
+# type = "aixm"
+# source = "https://aip.dfs.de/datasets/scripts/getItem.php?amdt=0&content=aerodrome_mapping/EDDF_AerodromeMapping_2024-11-28_2024-12-26_revision.zip"
+
+# [data.eddl]
+# type = "aixm"
+# source = "https://aip.dfs.de/datasets/scripts/getItem.php?amdt=0&content=aerodrome_mapping/EDDL_AerodromeMapping_2024-11-28_2024-12-26_revision.zip"
+
+# [data.eddk]
+# type = "aixm"
+# source = "https://aip.dfs.de/datasets/scripts/getItem.php?amdt=0&content=aerodrome_mapping/EDDK_AerodromeMapping_2024-11-28_2024-12-26_revision.zip"
+
+# [data.edds]
+# type = "aixm"
+# source = "https://aip.dfs.de/datasets/scripts/getItem.php?amdt=0&content=aerodrome_mapping/EDDS_AerodromeMapping_2024-11-28_2024-12-26_revision.zip"
+
+# [data.eddr]
+# type = "aixm"
+# source = "https://aip.dfs.de/datasets/scripts/getItem.php?amdt=0&content=aerodrome_mapping/EDDR_AerodromeMapping_2024-11-28_2024-12-26_revision.zip"
+
+# [data.edlp]
+# type = "aixm"
+# source = "https://aip.dfs.de/datasets/scripts/getItem.php?amdt=0&content=aerodrome_mapping/EDLP_AerodromeMapping_2024-11-28_2024-12-26_revision.zip"
+
+# [data.edlw]
+# type = "aixm"
+# source = "https://aip.dfs.de/datasets/scripts/getItem.php?amdt=0&content=aerodrome_mapping/EDLW_AerodromeMapping_2024-11-28_2024-12-26_revision.zip"
+
+# [data.edln]
+# type = "aixm"
+# source = "https://aip.dfs.de/datasets/scripts/getItem.php?amdt=0&content=aerodrome_mapping/EDLN_AerodromeMapping_2024-11-28_2024-12-26_revision.zip"
+
+# [data.edlv]
+# type = "aixm"
+# source = "https://aip.dfs.de/datasets/scripts/getItem.php?amdt=0&content=aerodrome_mapping/EDLV_AerodromeMapping_2024-11-28_2024-12-26_revision.zip"
+
+# [data.edfh]
+# type = "aixm"
+# source = "https://aip.dfs.de/datasets/scripts/getItem.php?amdt=0&content=aerodrome_mapping/EDFH_AerodromeMapping_2024-11-28_2024-12-26_revision.zip"
+
+# [data.edsb]
+# type = "aixm"
+# source = "https://aip.dfs.de/datasets/scripts/getItem.php?amdt=0&content=aerodrome_mapping/EDSB_AerodromeMapping_2024-11-28_2024-12-26_revision.zip"
+
+
+# #-------Groundlayouts KML------
+
+# [data.eddf_layout]
+# type = "kml"
+# source = "kml/eddf.kml"
+
+# [data.eddl_layout]
+# type = "kml"
+# source = "kml/eddl.kml"
+
+# [data.eddk_layout]
+# type = "kml"
+# source = "kml/eddk.kml"
+
+# [data.edds_layout]
+# type = "kml"
+# source = "kml/edds.kml"
+
+# [data.eddg_layout]
+# type = "kml"
+# source = "kml/eddg.kml"
+
+# [data.eddr_layout]
+# type = "kml"
+# source = "kml/eddr.kml"
+
+# [data.edlp_layout]
+# type = "kml"
+# source = "kml/edlp.kml"
+
+# [data.edlw_layout]
+# type = "kml"
+# source = "kml/edlw.kml"
+
+# [data.edln_layout]
+# type = "kml"
+# source = "kml/edln.kml"
+
+# [data.edlv_layout]
+# type = "kml"
+# source = "kml/edlv.kml"
+
+# [data.edfh_layout]
+# type = "kml"
+# source = "kml/edfh.kml"
+
+# [data.edfm_layout]
+# type = "kml"
+# source = "kml/edfm.kml"
+
+# [data.edsb_layout]
+# type = "kml"
+# source = "kml/edsb.kml"
+
+# [data.edtl_layout]
+# type = "kml"
+# source = "kml/edtl.kml"
+
+# [data.notam]
+# type = "kml"
+# source = "kml/notam.kml"
+
+# #------------Runways-----------
 
 [runways]
 
-#-----------EDDF--------------
+#------------EDDF--------------
+
+[runways.EDDF.07R]
+thr = [ 50.027549, 8.534168 ]
+bearing = 69.65
+loc = [ 50.041533, 8.592718 ]
 
 [runways.EDDF.25L]
 thr = [ 50.040063, 8.586539 ]
-bearing = 249.5
+bearing = 249.65
 loc = [ 50.026429, 8.529514 ]
 
-[runways.EDDF.07R]
-thr = [ 50.027549, 8.534168 ] 
-bearing = 69.5
-loc = [ 50.041533, 8.592718 ]
+[runways.EDDF.07C]
+thr = [ 50.032623, 8.534621 ]
+bearing = 69.65
+loc = [ 50.046411, 8.592353 ]
 
 [runways.EDDF.25C]
 thr = [ 50.045128, 8.586970 ]
-bearing = 249.5
+bearing = 249.65
 loc = [ 50.031371, 8.529415 ]
 
-[runways.EDDF.07C]
-thr = [ 50.032623, 8.534621 ] 
-bearing = 69.5
-loc = [ 50.046411, 8.592353 ]
+[runways.EDDF.07L]
+thr = [ 50.037055, 8.497062 ]
+bearing = 69.65
+loc = [ 50.047195, 8.539341 ]
 
 [runways.EDDF.25R]
 thr = [ 50.045830, 8.533712 ]
-bearing = 249.5
+bearing = 249.65
 loc = [ 50.035716, 8.491459 ]
 
-[runways.EDDF.07L]
-thr = [ 50.037055, 8.497062 ] 
-bearing = 69.5
-loc = [ 50.047195, 8.539341 ]
+[runways.EDDF.18]
+thr = [ 50.034088, 8.525946 ]
 
-#-----------EDDL--------------
+[runways.EDDF.36]
+thr = [ 49.998495, 8.526292 ]
+
+#------------EDDL--------------
+
+[runways.EDDL.05R]
+thr = [ 51.281248, 6.755424 ]
+bearing = 52.8
+loc = [ 51.297669, 6.789874 ]
 
 [runways.EDDL.23L]
 thr = [ 51.294278, 6.782787 ]
-bearing = 233
+bearing = 232.8
 loc = [ 51.277864, 6.748345 ]
 
-[runways.EDDL.05R]
-thr = [ 51.281248, 6.755424 ] 
-bearing = 53
-loc = [ 51.297669, 6.789874 ]
+[runways.EDDL.05L]
+thr = [ 51.285295, 6.752085 ]
+bearing = 52.8
+loc = [ 51.300616, 6.784241 ]
 
 [runways.EDDL.23R]
 thr = [ 51.296757, 6.776128 ]
-bearing = 233
+bearing = 232.8
 loc = [ 51.281945, 6.745040 ]
 
-[runways.EDDL.05L]
-thr = [ 51.285295, 6.752085 ] 
-bearing = 53
-loc = [ 51.300616, 6.784241 ]
+#------------EDDK--------------
 
-#-----------EDDK--------------
+[runways.EDDK.13R]
+thr = [ 50.870811, 7.120923 ]
+bearing = 137.5
 
 [runways.EDDK.31L]
 thr = [ 50.858539, 7.138712 ]
-bearing = 317
+bearing = 317.5
 
-[runways.EDDK.13R]
-thr = [ 50.870811, 7.120923 ] 
-bearing = 137
+[runways.EDDK.13L]
+thr = [ 50.880434, 7.129133 ]
+bearing = 137.5
+loc = [ 50.852869, 7.169062 ]
 
 [runways.EDDK.31R]
 thr = [ 50.855240, 7.165640 ]
-bearing = 317
+bearing = 317.5
 loc = [ 50.884460, 7.123307 ]
 
-[runways.EDDK.13L]
-thr = [ 50.880434, 7.129133 ] 
-bearing = 137
-loc = [ 50.852869, 7.169062 ]
+[runways.EDDK.06]
+thr = [ 50.860151, 7.123862 ]
+bearing = 64.4
 
 [runways.EDDK.24]
 thr = [ 50.869653, 7.155208 ]
-bearing = 244
+bearing = 244.4
 loc = [ 50.858977, 7.120022 ]
 
-[runways.EDDK.06]
-thr = [ 50.860151, 7.123862 ] 
-bearing = 64
+#------------EDDS--------------
 
-#-----------EDDS--------------
+[runways.EDDS.07]
+thr = [ 48.686475, 9.204020 ]
+bearing = 74.02
+loc = [ 48.694752, 9.247719 ]
 
 [runways.EDDS.25]
 thr = [ 48.694023, 9.243802 ]
-bearing = 254
+bearing = 254.02
 loc = [ 48.683494, 9.188385 ]
 
-[runways.EDDS.07]
-thr = [ 48.686475, 9.204020 ] 
-bearing = 74
-loc = [ 48.694752, 9.247719 ]
+#------------EDDG--------------
 
-#-----------EDDG--------------
+[runways.EDDG.07]
+thr = [ 52.131519, 7.670055 ]
+bearing = 71.05
+loc = [ 52.138294, 7.702111 ]
 
 [runways.EDDG.25]
 thr = [ 52.137267, 7.697269 ]
-bearing = 251
+bearing = 251.05
 loc = [ 52.130467, 7.665046 ]
 
-[runways.EDDG.07]
-thr = [ 52.131519, 7.670055 ] 
-bearing = 71
-loc = [ 52.138294, 7.702111 ]
+#------------EDDR--------------
 
-#-----------EDDR--------------
+[runways.EDDR.09]
+thr = [ 49.214188, 7.097121 ]
+bearing = 87.44
 
 [runways.EDDR.27]
 thr = [ 49.214936, 7.122372 ]
-bearing = 268
+bearing = 267.44
 
-[runways.EDDR.09]
-thr = [ 49.214188, 7.097121 ] 
-bearing = 88
+#------------EDFH--------------
 
-#-----------EDLP--------------
-
-[runways.EDLP.24]
-thr = [ 51.619440, 8.629478 ]
-bearing = 237
-
-[runways.EDLP.06]
-thr = [ 51.608713, 8.603167 ] 
-bearing = 57
-
-#-----------EDLW--------------
-
-[runways.EDLW.24]
-thr = [ 51.522206, 7.623252 ]
-bearing = 241
-loc = [ 51.513317, 7.598003 ]
-
-[runways.EDLW.06]
-thr = [ 51.516019, 7.605664 ] 
-bearing = 61
-loc = [ 51.524903, 7.630898 ]
-
-#-----------EDLN--------------
-
-[runways.EDLN.31]
-thr = [ 51.226991, 6.511213 ]
-bearing = 308
-
-[runways.EDLN.13]
-thr = [ 51.233725, 6.497791 ] 
-bearing = 128
-
-#-----------EDLV--------------
-
-[runways.EDLV.27]
-thr = [ 51.602069, 6.159739 ]
-bearing = 272
-loc = [ 51.602973, 6.118241 ]
-
-[runways.EDLV.09]
-thr = [ 51.602834, 6.124530 ] 
-bearing = 92
-
-#-----------EDFH--------------
+[runways.EDFH.03]
+thr = [ 49.933671, 7.249122 ]
+bearing = 32.47
+loc = [ 49.962504, 7.277585 ]
 
 [runways.EDFH.21]
 thr = [ 49.957952, 7.273052 ]
-bearing = 212
+bearing = 212.47
 loc = [ 49.928704, 7.244244 ]
 
-[runways.EDFH.03]
-thr = [ 49.933671, 7.249122 ] 
-bearing = 32
-loc = [ 49.962504, 7.277585 ]
-
-#-----------EDFM--------------
+#------------EDFM--------------
 
 [runways.EDFM.27]
 thr = [ 49.472512, 8.520011 ]
 bearing = 273
 
 [runways.EDFM.09]
-thr = [ 49.472991, 8.506099 ] 
+thr = [ 49.472991, 8.506099 ]
 bearing = 93
 
-#-----------EDSB--------------
+#------------EDFE--------------
+
+[runways.EDFE.08]
+thr = [ 49.960346, 8.631713 ]
+
+[runways.EDFE.26]
+thr = [ 49.961121, 8.647896 ]
+
+#------------EDFQ--------------
+
+[runways.EDFQ.11]
+thr = [ 51.037585, 8.672752 ]
+bearing = 113.44
+
+[runways.EDFQ.29]
+thr = [ 51.033152, 8.688971 ]
+bearing = 293.44
+
+#------------EDGS--------------
+
+[runways.EDGS.13]
+thr = [ 50.712757, 8.072675 ]
+bearing = 128
+
+[runways.EDGS.31]
+thr = [ 50.703788, 8.090727 ]
+bearing = 308
+
+#------------EDLN--------------
+
+[runways.EDLN.13]
+thr = [ 51.233725, 6.497791 ]
+bearing = 128.6
+
+[runways.EDLN.31]
+thr = [ 51.226991, 6.511213 ]
+bearing = 308.6
+
+#------------EDLP--------------
+
+[runways.EDLP.06]
+thr = [ 51.608713, 8.603167 ]
+bearing = 56.78
+
+[runways.EDLP.24]
+thr = [ 51.619440, 8.629478 ]
+bearing = 236.78
+
+#------------EDLV--------------
+
+[runways.EDLV.09]
+thr = [ 51.602834, 6.124530 ]
+bearing = 92
+
+[runways.EDLV.27]
+thr = [ 51.602069, 6.159739 ]
+bearing = 272
+loc = [ 51.602973, 6.118241 ]
+
+#------------EDLW--------------
+
+[runways.EDLW.06]
+thr = [ 51.516019, 7.605664 ]
+bearing = 60.57
+loc = [ 51.524903, 7.630898 ]
+
+[runways.EDLW.24]
+thr = [ 51.522206, 7.623252 ]
+bearing = 240.57
+loc = [ 51.513317, 7.598003 ]
+
+#------------EDLE--------------
+
+[runways.EDLE.06]
+thr = [ 51.400171, 6.928702 ]
+
+[runways.EDLE.24]
+thr = [ 51.404491, 6.944543 ]
+
+#------------EDQG--------------
+
+[runways.EDQG.08]
+thr = [ 49.646446, 9.954282 ]
+bearing = 78
+
+[runways.EDQG.26]
+thr = [ 49.649710, 9.977938 ]
+bearing = 258
+
+#------------EDRY--------------
+
+[runways.EDRY.16]
+thr = [ 49.306991, 8.450856 ]
+bearing = 165
+
+[runways.EDRY.34]
+thr = [ 49.297231, 8.454808 ]
+bearing = 345
+
+#------------EDRZ--------------
+
+[runways.EDRZ.03]
+thr = [ 49.200182, 7.392416 ]
+bearing = 30
+
+[runways.EDRZ.21]
+thr = [ 49.218863, 7.408885 ]
+bearing = 210
+
+#------------EDSB--------------
+
+[runways.EDSB.03]
+thr = [ 48.769861, 8.071612 ]
+bearing = 31.8
+loc = [ 48.792711, 8.093026 ]
 
 [runways.EDSB.21]
 thr = [ 48.788850, 8.089408 ]
-bearing = 212
+bearing = 211.8
 loc = [ 48.766042, 8.068028 ]
 
-[runways.EDSB.03]
-thr = [ 48.769861, 8.071612 ] 
-bearing = 32
-loc = [ 48.792711, 8.093026 ]
+#------------EDTD--------------
 
-#-----------EDTL--------------
+[runways.EDTD.18]
+thr = [ 47.979043, 8.521991 ]
+
+[runways.EDTD.36]
+thr = [ 47.968266, 8.522413 ]
+
+#------------EDTL--------------
 
 [runways.EDTL.21]
 thr = [ 48.381150, 7.837373 ]
-bearing = 208
+bearing = 208.29
 loc = [ 48.355481, 7.816612 ]
 
 [runways.EDTL.03]
-thr = [ 48.357353, 7.818134 ] 
-bearing = 28
+thr = [ 48.357353, 7.818134 ]
+bearing = 28.29
+
+#------------EDTM--------------
+
+[runways.EDTM.07]
+thr = [ 48.052721, 9.365691 ]
+
+[runways.EDTM.25]
+thr = [ 48.055360, 9.382221 ]
+
+#------------EDTY--------------
+
+[runways.EDTY.10]
+thr = [ 49.119166, 9.775574 ]
+bearing = 99
+
+[runways.EDTY.28]
+thr = [ 49.117466, 9.792335 ]
+bearing = 279
+
+#------------ETAD--------------
+
+[runways.ETAD.04]
+thr = [ 49.966777, 6.683543 ]
+bearing = 44.67
+
+[runways.ETAD.22]
+thr = [ 49.986299, 6.713466 ]
+bearing = 224.67
+
+#------------ETAR--------------
+
+[runways.ETAR.09]
+thr = [ 49.435859, 7.575711 ]
+bearing = 86.26
+
+[runways.ETAR.27]
+thr = [ 49.437607, 7.616844 ]
+bearing = 266.26
+
+[runways.ETAR.08]
+thr = [ 49.432570, 7.578812 ]
+bearing = 82.27
+
+[runways.ETAR.26]
+thr = [ 49.436423, 7.622461 ]
+bearing = 262.27
+
+#------------ETEB--------------
+
+[runways.ETEB.08]
+thr = [ 49.307832, 10.63616 ]
+bearing = 78.46
+
+[runways.ETEB.26]
+thr = [ 49.308500, 10.64116 ]
+bearing = 258.46
+
+#------------ETHF--------------
+
+[runways.ETHF.11]
+thr = [ 51.116818, 9.279330 ]
+bearing = 118.61
+
+[runways.ETHF.29]
+thr = [ 51.112332, 9.292400 ]
+bearing = 298.61
+
+#------------ETHN--------------
+
+[runways.ETHN.07]
+thr = [ 49.390193, 9.948802 ]
+bearing = 74.64
+
+[runways.ETHN.25]
+thr = [ 49.393077, 9.964871 ]
+bearing = 254.64
+
+#------------ETIK--------------
+
+[runways.ETIK.06]
+thr = [ 49.472166, 10.38250 ]
+bearing = 63.63
+
+[runways.ETIK.24]
+thr = [ 49.475500, 10.39316 ]
+bearing = 243.63
+
+#------------ETNG--------------
+
+[runways.ETNG.09]
+thr = [ 50.961024, 6.022193 ]
+bearing = 90.91
+
+[runways.ETNG.27]
+thr = [ 50.960625, 6.061357 ]
+bearing = 270.91
+
+#------------ETNN--------------
+
+[runways.ETNN.06]
+thr = [ 50.826896, 6.642182 ]
+bearing = 66.82
+
+[runways.ETNN.24]
+thr = [ 50.835532, 6.674046 ]
+bearing = 246.82
+
+#------------ETOU--------------
+
+[runways.ETOU.07]
+thr = [ 50.047051, 8.311047 ]
+bearing = 73.31
+
+[runways.ETOU.25]
+thr = [ 50.052500, 8.339325 ]
+bearing = 253.31
+
+#------------ETSB--------------
+
+[runways.ETSB.03]
+thr = [ 50.164025, 7.054777 ]
+bearing = 29.29
+
+[runways.ETSB.21]
+thr = [ 50.183685, 7.071950 ]
+bearing = 209.29
