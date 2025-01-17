@@ -11,6 +11,13 @@ on:
       - "!main"
     paths:
       - 'mapdata/**'
+  workflow_dispatch:
+    branches:
+      - "*"
+      - "*/**"
+      - "!main"
+    paths:
+      - 'mapdata/**'
 permissions: write-all
 jobs:
   mapbuilder-build-maps:
@@ -68,6 +75,13 @@ jobs:
 # run-name: Building maps for commit ${{ github.sha }} by ${{ github.actor }}
 # on:
 #   push:
+#     branches:
+#       - "*"
+#       - "*/**"
+#       - "!main"
+#     paths:
+#       - 'mapdata/**'
+#   workflow_dispatch:
 #     branches:
 #       - "*"
 #       - "*/**"
