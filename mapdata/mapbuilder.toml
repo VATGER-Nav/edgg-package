@@ -3,6 +3,7 @@
 [profiles.TWR-NIGHT]
 maps = [
     { map = "TOPSKY-PHOENIX-MAPS", target = "Plugins/Topsky_Phoenix/TopSkyMaps.txt" },
+    { map = "TOPSKY-PHOENIX-SETTINGS", target = "Plugins/Topsky_Phoenix/TopSkySettings.txt" },
     # { map = "GRP-PHOENIX-SETTINGS", target = "Plugins/GRP/Phoenix/GRpluginSettings.txt" },
     # { map = "GRP-PHOENIX-MAPS", target = "Plugins/GRP/Phoenix/GRpluginMaps.txt" },
     # { map = "GRP-STANDS", target = "Plugins/GRP/Phoenix/GRpluginStands.txt" },
