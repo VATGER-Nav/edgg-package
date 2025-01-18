@@ -82,22 +82,27 @@ ACTIVE:RWY:ARR:*:DEP:EDLN31
 // 05R
 {{ ecl_dashes(runways.EDDL['05R'], 14) }}
 {{ marker_ticks(runways.EDDL['05R'], [6, 10], 0.5, 0.5, 'R') }}
-// 23L
-{{ ecl_dashes(runways.EDDL['23L'], 14) }}
-{{ marker_ticks(runways.EDDL['23L'], [6, 10], 0.5, 0.5, 'L') }}
 // 05L
 {{ ecl_dashes(runways.EDDL['05L'], 14) }}
 {{ marker_ticks(runways.EDDL['05L'], [6, 10], 0.5, 0.5, 'L') }}
+// 23L
+{{ ecl_dashes(runways.EDDL['23L'], 14) }}
+{{ marker_ticks(runways.EDDL['23L'], [6, 10], 0.5, 0.5, 'L') }}
 // 23R
 {{ ecl_dashes(runways.EDDL['23R'], 14) }}
 {{ marker_ticks(runways.EDDL['23R'], [6, 10], 0.5, 0.5, 'R') }}
 // Long Ticks
-// 05R
-{%- for rwy in ['05R', '23L', '05L', '23R'] %}
+{%- for rwy in ['05R', '05L', '23L', '23R'] %}
 {%- set brg = brg(runways.EDDL[rwy]['bearing']).invert() %}
 {%- set thr = runways.EDDL[rwy]['thr'] %}
 // {{ rwy }}
 {{ fix(thr).move_to(15, brg).line_to(5, brg) }}
+{%- endfor %}
+// Longer Ticks
+{%- for rwy in ['23L', '23R'] %}
+{%- set brg = brg(runways.EDDL[rwy]['bearing']).invert() %}
+{%- set thr = runways.EDDL[rwy]['thr'] %}
+{{ fix(thr).move_to(25, brg).line_to(5, brg) }}
 {%- endfor %}
 
 MAP:EDDK ECL
