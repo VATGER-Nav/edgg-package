@@ -1,0 +1,47 @@
+//---------------------------------------------------------------
+//                            Topographie
+//---------------------------------------------------------------
+
+MAP:Topography
+FOLDER:Topography
+ASRDATA:PHOENIX
+STYLE:Solid:1
+TEXTALIGN:LC
+COLOR:Highway
+{% for name, geom in data.topsky['common']['Topo']['Autobahn EDGG'].items() %}
+{{- geom | to_multicoordline(name) }}
+{% endfor %}
+{% for label, geom in data.topsky['common']['Topo']['Autobahn EDGG Labels'].items() %}
+{{- geom | to_text(label) }}
+{% endfor %}
+COLOR:River
+{{ data.topsky['common']['EDDL']['Lake'] | to_poly('Baldeneysee', 'River', 100) }}
+{% for name, geom in data.topsky['common']['Topo']['Rivers EDGG'].items() %}
+{{- geom | to_multicoordline(name) }}
+{% endfor %}
+{% for label, geom in data.topsky['common']['Topo']['Rivers EDGG Labels'].items() %}
+{{- geom | to_text(label) }}
+{% endfor %}
+
+MAP:Highways
+FOLDER:Topography
+ASRDATA:PHOENIX
+COLOR:Highway
+STYLE:Solid:1
+ACTIVE:ID:DSC,DSG,DST,STG,DSAT,REU:*:*:*
+{% for name, geom in data.topsky['common']['Topo']['Autobahn EDGG'].items() %}
+{{- geom | to_multicoordline(name) }}
+{% endfor %}
+
+MAP:Rivers
+FOLDER:Topography
+ASRDATA:PHOENIX
+COLOR:River
+STYLE:Solid:1
+ACTIVE:ID:DLC,DLGE,DLGW,DLT,DLA,DLAT,DLD,BOT:*:*:*
+ACTIVE:ID:DKC,DKG,DKT,DKA,DKAT,NOR:*:*:*
+ACTIVE:ID:DSC,DSG,DST,STG,DSAT,REU:*:*:*
+{{ data.topsky['common']['EDDL']['Lake'] | to_poly('Baldeneysee', 'River', 100) }}
+{% for name, geom in data.topsky['common']['Topo']['Rivers EDGG'].items() %}
+{{- geom | to_multicoordline(name) }}
+{% endfor %}

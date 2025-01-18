@@ -1,5 +1,19 @@
 MAP:Navaids
 FOLDER:ALL
+ASRDATA:PHOENIX
 COLOR:Standard
-TEXTALIGN:LB
-
+ACTIVE:1
+LAYER:-2
+{%- for type in ['DME', 'VOR', 'NDB', 'TACAN'] %}
+{%- for fx in data.navdata['Navaids'][type] %}
+SYMBOL:{{type}}:{{fx}}
+{%- endfor %}
+{%- endfor %}
+{%- for fx in data.navdata['Navaids']['VORDME'] %}
+SYMBOL:VOR:{{fx}}
+SYMBOL:DME:{{fx}}
+{%- endfor %}
+{%- for fx in data.navdata['Navaids']['VORTAC'] %}
+SYMBOL:TACAN:{{fx}}
+SYMBOL:VORTAC:{{fx}}
+{%- endfor %}

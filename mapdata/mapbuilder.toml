@@ -19,9 +19,9 @@ aliases = [ "dark" ]
 type = "kml"
 source = "kml/topsky.kml"
 
-[data.aerodromes]
+[data.navdata]
 type = "json"
-source = "misc/aerodromes.json"
+source = "misc/navdata.json"
 
 [data.airspace]
 type = "sectors"
