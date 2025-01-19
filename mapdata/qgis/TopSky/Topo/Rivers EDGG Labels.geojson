@@ -6,7 +6,7 @@
 { "type": "Feature", "properties": { "name": "Main#1" }, "geometry": { "type": "Point", "coordinates": [ 9.1853225, 49.898754444444442 ] } },
 { "type": "Feature", "properties": { "name": "Main#2" }, "geometry": { "type": "Point", "coordinates": [ 10.177557222222221, 49.71383 ] } },
 { "type": "Feature", "properties": { "name": "Main#3" }, "geometry": { "type": "Point", "coordinates": [ 10.560227777777779, 50.031464722222218 ] } },
-{ "type": "Feature", "properties": { "name": "Main#4" }, "geometry": { "type": "Point", "coordinates": [ 11.448149554010996, 50.125529101129239 ] } },
+{ "type": "Feature", "properties": { "name": "Ems#3" }, "geometry": { "type": "Point", "coordinates": [ 7.320724457501703, 52.499919040572919 ] } },
 { "type": "Feature", "properties": { "name": "Rhein#1" }, "geometry": { "type": "Point", "coordinates": [ 8.621598333333333, 47.551587777777776 ] } },
 { "type": "Feature", "properties": { "name": "Rhein#2" }, "geometry": { "type": "Point", "coordinates": [ 7.797216714373095, 48.413853150164783 ] } },
 { "type": "Feature", "properties": { "name": "Rhein#3" }, "geometry": { "type": "Point", "coordinates": [ 8.408090368780613, 49.166989994577214 ] } },
@@ -31,11 +31,10 @@
 { "type": "Feature", "properties": { "name": "Iller" }, "geometry": { "type": "Point", "coordinates": [ 10.221088760291796, 48.075634159131248 ] } },
 { "type": "Feature", "properties": { "name": "Mosel#1" }, "geometry": { "type": "Point", "coordinates": [ 7.399084913466287, 50.172669072368492 ] } },
 { "type": "Feature", "properties": { "name": "Mosel#2" }, "geometry": { "type": "Point", "coordinates": [ 6.934601836973399, 49.826473066502317 ] } },
-{ "type": "Feature", "properties": { "name": "Mosel#3" }, "geometry": { "type": "Point", "coordinates": [ 6.381810649968966, 49.527414019856685 ] } },
+{ "type": "Feature", "properties": { "name": "Hase" }, "geometry": { "type": "Point", "coordinates": [ 7.999675315640652, 52.671802440460425 ] } },
 { "type": "Feature", "properties": { "name": "Saar" }, "geometry": { "type": "Point", "coordinates": [ 6.91352609121434, 49.26674950790914 ] } },
 { "type": "Feature", "properties": { "name": "Nahe" }, "geometry": { "type": "Point", "coordinates": [ 7.471714744947992, 49.761929385085253 ] } },
 { "type": "Feature", "properties": { "name": "Ahr" }, "geometry": { "type": "Point", "coordinates": [ 7.048140875642971, 50.500677165780317 ] } },
-{ "type": "Feature", "properties": { "name": "Weser#2" }, "geometry": { "type": "Point", "coordinates": [ 9.130049943146696, 52.518429671771599 ] } },
 { "type": "Feature", "properties": { "name": "Weser#3" }, "geometry": { "type": "Point", "coordinates": [ 9.403988611111112, 51.69476916666666 ] } },
 { "type": "Feature", "properties": { "name": "Fulda" }, "geometry": { "type": "Point", "coordinates": [ 9.630833636102457, 50.783086878816455 ] } },
 { "type": "Feature", "properties": { "name": "Werra" }, "geometry": { "type": "Point", "coordinates": [ 10.031728333333334, 50.862464444444448 ] } },
@@ -47,8 +46,13 @@
 { "type": "Feature", "properties": { "name": "Lippe#2" }, "geometry": { "type": "Point", "coordinates": [ 7.91392925987519, 51.717715490320508 ] } },
 { "type": "Feature", "properties": { "name": "Lippe#3" }, "geometry": { "type": "Point", "coordinates": [ 8.438758582263949, 51.716841505793717 ] } },
 { "type": "Feature", "properties": { "name": "Alme" }, "geometry": { "type": "Point", "coordinates": [ 8.583882585628137, 51.557184927580856 ] } },
-{ "type": "Feature", "properties": { "name": "Unstrut#1" }, "geometry": { "type": "Point", "coordinates": [ 11.664913453166735, 51.282640485474438 ] } },
-{ "type": "Feature", "properties": { "name": "Unstrut#2" }, "geometry": { "type": "Point", "coordinates": [ 10.787948888888888, 51.115755277777779 ] } },
-{ "type": "Feature", "properties": { "name": "Helme" }, "geometry": { "type": "Point", "coordinates": [ 10.652490277777778, 51.531726666666664 ] } }
+{ "type": "Feature", "properties": { "name": "Niers" }, "geometry": { "type": "Point", "coordinates": [ 6.322413463698414, 51.483576890310857 ] } },
+{ "type": "Feature", "properties": { "name": "Maas" }, "geometry": { "type": "Point", "coordinates": [ 6.179884828543938, 51.38224092076787 ] } },
+{ "type": "Feature", "properties": { "name": "Helme" }, "geometry": { "type": "Point", "coordinates": [ 10.652490277777778, 51.531726666666664 ] } },
+{ "type": "Feature", "properties": { "name": "Rur" }, "geometry": { "type": "Point", "coordinates": [ 6.445810215851995, 50.863829938989355 ] } },
+{ "type": "Feature", "properties": { "name": "Mosel#3" }, "geometry": { "type": "Point", "coordinates": [ 6.190947934474634, 49.327704629473764 ] } },
+{ "type": "Feature", "properties": { "name": "Sauer" }, "geometry": { "type": "Point", "coordinates": [ 6.324629858545958, 49.878238786097199 ] } },
+{ "type": "Feature", "properties": { "name": "Main#4" }, "geometry": { "type": "Point", "coordinates": [ 11.272266686503704, 50.143054632829305 ] } },
+{ "type": "Feature", "properties": { "name": "Unstrut#2" }, "geometry": { "type": "Point", "coordinates": [ 10.817448988912091, 51.103038277825043 ] } }
 ]
 }

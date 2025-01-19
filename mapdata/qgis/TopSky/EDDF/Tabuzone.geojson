@@ -1,0 +1,10 @@
+{
+"type": "FeatureCollection",
+"name": "Tabuzone",
+"crs": { "type": "name", "properties": { "name": "urn:ogc:def:crs:OGC:1.3:CRS84" } },
+"features": [
+{ "type": "Feature", "properties": { "name": "25L" }, "geometry": { "type": "LineString", "coordinates": [ [ 8.586796111111111, 50.038120555555551 ], [ 8.684898611111111, 50.061460833333328 ] ] } },
+{ "type": "Feature", "properties": { "name": "25R" }, "geometry": { "type": "LineString", "coordinates": [ [ 8.545912222222222, 50.050920833333329 ], [ 8.630828573120317, 50.071133218735049 ] ] } },
+{ "type": "Feature", "properties": { "name": "07R" }, "geometry": { "type": "LineString", "coordinates": [ [ 8.525789444444445, 50.023337777777776 ], [ 8.438098333333334, 50.002300833333337 ] ] } }
+]
+}

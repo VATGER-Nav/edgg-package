@@ -4,7 +4,7 @@
 
 MAP:VFR Points | Labels
 FOLDER:ALL
-COLOR:Standard
+COLOR:standard
 TEXTALIGN:LB
 {%- for icao, fxnames in data.reporting_points['VFR'].items() %}
 // {{icao}}
@@ -15,7 +15,7 @@ SYMBOL:VFR:{{icao | replace('ED', '')}}-{{fx['name']}}:{{fx['name']}}:5:0
 
 MAP:Mil VFR Points | Labels
 FOLDER:ALL
-COLOR:Standard
+COLOR:standard
 TEXTALIGN:LB
 {%- for icao, fxnames in data.reporting_points['MIL'].items() %}
 // {{icao}}
@@ -30,7 +30,7 @@ SYMBOL:VFR:{{fx['fix']}}:{{fx['name']}}:5:0
 
 MAP:VFR Points
 FOLDER:ALL
-COLOR:Standard
+COLOR:standard
 ACTIVE:1
 {%- for icao, fxnames in data.reporting_points['VFR'].items() %}
 // {{icao}}
@@ -48,14 +48,14 @@ SYMBOL:VFR:{{fx['fix']}}
 
 MAP:Hospitals | Labels
 FOLDER:ALL
-COLOR:Standard
+COLOR:standard
 {%- for name, geom in data.topsky['common']['VFR']['Hospitals EDGG'].items() %}
 {{ geom | to_symbol('HOSPITAL') }}:{{name}}:0:-13
 {%- endfor %}
 
 MAP:Hospitals
 FOLDER:ALL
-COLOR:Standard
+COLOR:standard
 ACTIVE:1
 {%- for name, geom in data.topsky['common']['VFR']['Hospitals EDGG'].items() %}
 {{ geom | to_symbol('HOSPITAL') }}  // {{name}}
