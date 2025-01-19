@@ -173,7 +173,7 @@ source = "misc/vfr/fis.txt"
 # type = "kml"
 # source = "kml/notam.kml"
 
-# #------------Runways-----------
+#------------Runways-----------
 
 [runways]
 
