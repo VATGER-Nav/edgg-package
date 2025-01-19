@@ -3,17 +3,6 @@ DisplayTypeNeedRadarContent:1
 DisplayTypeGeoReferenced:1
 SECTORFILE:
 SECTORTITLE:
-ARTCC low boundary:Centerlines EDDL 05L:
-ARTCC low boundary:Centerlines EDDL 05R:
-ARTCC low boundary:Centerlines EDDL 23L:
-ARTCC low boundary:Centerlines EDDL 23R:
-ARTCC low boundary:Centerlines EDLN 13:
-ARTCC low boundary:Centerlines EDLN 31:
-Geo:EDZZ Landmark River Germany:
-NDBs:BOT:symbol
-NDBs:LMA:symbol
-VORs:BAM:symbol
-VORs:MHV:symbol
 SHOWC:1
 SHOWSB:0
 BELOW:180
