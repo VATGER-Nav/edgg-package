@@ -273,7 +273,7 @@ COLOR:layout-taxiline-grey
     '0ad6ba94-3988-4ffa-bb57-e1f3a6ae001d',
     '747204e3-38da-42b9-b28a-6a09135f2076'
     ] %}
-{{- data.eddf['GuidanceLineMarking'][id | string] | join_segments | simplify(default) | to_line('') -}}
+{{- data.eddf['GuidanceLineMarking'][id | string] | join_segments | simplify(default) | to_line('') }}
 {% endfor %}
 {% for desig in [
     'H12',
