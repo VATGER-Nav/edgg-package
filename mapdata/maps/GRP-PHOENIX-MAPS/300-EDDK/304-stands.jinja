@@ -29,7 +29,7 @@ COLOR:layout-taxiline-grey
     'GL_APA_[A32]',
     'GL_APA_[A34]',
     ] %}
-{{- data.eddk['GuidanceLineByDesig'][desig | string] | join_segments | simplify(default) | to_line(desig) -}}
+{{- data.eddk['GuidanceLineByDesig'][desig | string] | join_segments | simplify(default) | to_line(desig) }}
 {% endfor %}
 {% for desig in ['A01', 'A03', 'A05', 'A07', 'A11', 'A17', 'A21', 'A23'] %}
 {{- data.eddk_layout['layout']['Markings']['Leadin Lines'][desig | string] | to_multiline('Dashed ' + desig) }}
@@ -63,7 +63,7 @@ COLOR:layout-taxiline-grey
     'GL_APB_[B30_1]',
     'GL_APB_[B30-2]',
     ] %}
-{{- data.eddk['GuidanceLineByDesig'][desig | string] | join_segments | simplify(default) | to_line(desig) -}}
+{{- data.eddk['GuidanceLineByDesig'][desig | string] | join_segments | simplify(default) | to_line(desig) }}
 {% endfor %}
 {% for desig in ['B11', 'B17', 'B21', 'B23', 'B27', 'B29'] %}
 {{- data.eddk_layout['layout']['Markings']['Leadin Lines'][desig | string] | to_multiline('Dashed ' + desig) }}
@@ -110,7 +110,7 @@ COLOR:layout-taxiline-grey
     'GL_APC_[C14B]_36',
     'GL_APC_[C14C]_35',
     ] %}
-{{- data.eddk['GuidanceLineByDesig'][desig | string] | join_segments | simplify(default) | to_line(desig) -}}
+{{- data.eddk['GuidanceLineByDesig'][desig | string] | join_segments | simplify(default) | to_line(desig) }}
 {% endfor %}
 {% for desig in ['C50'] %}
 {{- data.eddk_layout['layout']['Markings']['Leadin Lines'][desig | string] | to_multiline('Dashed ' + desig) }}
@@ -223,7 +223,7 @@ COLOR:layout-taxiline-grey
     'GL_APD_[D64B]_13',
     'GL_APD_[D64C]_13',
     ] %}
-{{- data.eddk['GuidanceLineByDesig'][desig | string] | join_segments | simplify(default) | to_line(desig) -}}
+{{- data.eddk['GuidanceLineByDesig'][desig | string] | join_segments | simplify(default) | to_line(desig) }}
 {% endfor %}
 {% for desig in ['D11', 'D15', 'D19', 'D23', 'D51', 'D53', 'D57'] %}
 {{- data.eddk_layout['layout']['Markings']['Leadin Lines'][desig | string] | to_multiline('Dashed ' + desig) }}
@@ -280,7 +280,7 @@ COLOR:layout-taxiline-grey
     'GL_APE_[E45B]_88',
     'GL_APE_[E45C]_87',
     ] %}
-{{- data.eddk['GuidanceLineByDesig'][desig | string] | join_segments | simplify(default) | to_line(desig) -}}
+{{- data.eddk['GuidanceLineByDesig'][desig | string] | join_segments | simplify(default) | to_line(desig) }}
 {% endfor %}
 {% for desig in ['E10', 'E12', 'E14', 'E16', 'E20', 'E22', 'E24', 'E30', 'E32', 'E34', 'E36', 'E40', 'E42', 'E44', 'E46'] %}
 {{- data.eddk_layout['layout']['Markings']['Leadin Lines'][desig | string] | to_multiline('Dashed ' + desig) }}
@@ -311,7 +311,7 @@ COLOR:layout-taxiline-grey
     'GL_APF_[F34A]_30',
     'GL_APF_[F34B]_29',
     ] %}
-{{- data.eddk['GuidanceLineByDesig'][desig | string] | join_segments | simplify(default) | to_line(desig) -}}
+{{- data.eddk['GuidanceLineByDesig'][desig | string] | join_segments | simplify(default) | to_line(desig) }}
 {% endfor %}
 {% for desig in ['F20', 'F22', 'F24', 'F26'] %}
 {{- data.eddk_layout['layout']['Markings']['Leadin Lines'][desig | string] | to_multiline('Dashed ' + desig) }}
@@ -341,7 +341,7 @@ STYLE:Solid
     'GL_APU_[U26-1]28',
     'GL_APU_[U26-2]29',
     ] %}
-{{- data.eddk['GuidanceLineByDesig'][desig | string] | join_segments | simplify(default) | to_line(desig) -}}
+{{- data.eddk['GuidanceLineByDesig'][desig | string] | join_segments | simplify(default) | to_line(desig) }}
 {% endfor %}
 {% for desig in ['U14'] %}
 {{- data.eddk_layout['layout']['Markings']['Leadin Lines'][desig | string] | to_multiline('Dashed ' + desig) }}
@@ -408,7 +408,7 @@ STYLE:Solid
     'GL_APV_[V59-]_1',
     'GL_APV_[V59-1]_2',
 ] %}
-{{- data.eddk['GuidanceLineByDesig'][desig | string] | join_segments | simplify(default) | to_line(desig) -}}
+{{- data.eddk['GuidanceLineByDesig'][desig | string] | join_segments | simplify(default) | to_line(desig) }}
 {% endfor %}
 {% for desig in ['V10-V14', 'V-Dash', 'V35', 'V45', 'V55'] %}
 {{- data.eddk_layout['layout']['Markings']['Leadin Lines'][desig | string] | to_multiline('Dashed ' + desig) }}
@@ -461,7 +461,7 @@ STYLE:Solid
     'GL_APW_[W34A]_3',
     'GL_APW_[W34B]_2',
 ] %}
-{{- data.eddk['GuidanceLineByDesig'][desig | string] | join_segments | simplify(default) | to_line(desig) -}}
+{{- data.eddk['GuidanceLineByDesig'][desig | string] | join_segments | simplify(default) | to_line(desig) }}
 {% endfor %}
 
 // Bundeswehr-Stands
@@ -480,7 +480,7 @@ STYLE:Solid
     'GL_TWYT_31',
     'GL_TWYT_32',
 ] %}
-{{- data.eddk['GuidanceLineByDesig'][desig | string] | join_segments | simplify(default) | to_line('') -}}
+{{- data.eddk['GuidanceLineByDesig'][desig | string] | join_segments | simplify(default) | to_line('') }}
 {% endfor %}
 
 // Taxi-Out Stands
@@ -515,7 +515,7 @@ COLOR:layout-taxiline-orange
     'GL_APV_[V550-]_9',
     'GL_APV_[V550-1]_',
 ] %}
-{{- data.eddk['GuidanceLineByDesig'][desig | string] | join_segments | simplify(default) | to_line(desig) -}}
+{{- data.eddk['GuidanceLineByDesig'][desig | string] | join_segments | simplify(default) | to_line(desig) }}
 {% endfor %}
 
 // V-Stands Declutter
@@ -533,7 +533,7 @@ ZOOM:1200
     'GL_APV_[V421-1]_',
     'GL_APV_[V421-2]_',
 ] %}
-{{- data.eddk['GuidanceLineByDesig'][desig | string] | join_segments | simplify(default) | to_line(desig) -}}
+{{- data.eddk['GuidanceLineByDesig'][desig | string] | join_segments | simplify(default) | to_line(desig) }}
 {% endfor %}
 
 // -------------------------- Stand Labels --------------------------

@@ -230,5 +230,5 @@ COLOR:layout-taxiline-yellow
     'f9cc4217-198d-420c-99e8-a7675d511713',
     'd3bea00e-5612-4182-b861-b0cfb9310b3b',
     ] %}
-{{- data.edds['GuidanceLineMarking'][id | string] | join_segments | simplify(default) | to_line('') -}}
+{{- data.edds['GuidanceLineMarking'][id | string] | join_segments | simplify(default) | to_line('') }}
 {% endfor %}
