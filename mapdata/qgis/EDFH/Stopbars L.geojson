@@ -1,0 +1,12 @@
+{
+"type": "FeatureCollection",
+"name": "Stopbars L",
+"crs": { "type": "name", "properties": { "name": "urn:ogc:def:crs:EPSG::32632" } },
+"features": [
+{ "type": "Feature", "properties": { "name": "E I" }, "geometry": { "type": "LineString", "coordinates": [ [ 375685.135376146936323, 5534562.965234408155084 ], [ 375710.443123974022456, 5534563.420134941115975 ] ] } },
+{ "type": "Feature", "properties": { "name": "C I" }, "geometry": { "type": "LineString", "coordinates": [ [ 374939.558595078648068, 5533253.772995087318122 ], [ 374951.747808996238746, 5533271.981025450862944 ] ] } },
+{ "type": "Feature", "properties": { "name": "D I" }, "geometry": { "type": "LineString", "coordinates": [ [ 375307.880033979658037, 5534002.947079348377883 ], [ 375315.804799879493657, 5534014.784953316673636 ] ] } },
+{ "type": "Feature", "properties": { "name": "F I" }, "geometry": { "type": "LineString", "coordinates": [ [ 376192.455442858219612, 5535328.673778402619064 ], [ 376176.67150663479697, 5535305.118380685336888 ] ] } },
+{ "type": "Feature", "properties": { "name": "A I" }, "geometry": { "type": "LineString", "coordinates": [ [ 374525.0840039436589, 5532625.517761969007552 ], [ 374502.630941891169641, 5532640.596117592416704 ], [ 374502.402599286695477, 5532640.740864241495728 ] ] } }
+]
+}

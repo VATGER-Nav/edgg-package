@@ -25,12 +25,12 @@ ATIS3:Coverage at vatglasses.uk - only above FL245!
 ATIS4:You have feedback? Submit it! feedback.vatger.de
 
 PROFILE:EDUU_SLN_CTR:300:6
-ATIS2:Rhein Radar SLN - CPDLC [EDUS]
+ATIS2:Rhein Radar - CPDLC [EDUS]
 ATIS3:Coverage at vatglasses.uk - only above FL245!
 ATIS4:You have feedback? Submit it! feedback.vatger.de
 
 PROFILE:EDUU_TGO_CTR:300:6
-ATIS2:Rhein Radar TGO - CPDLC [EDUT]
+ATIS2:Rhein Radar - CPDLC [EDUT]
 ATIS3:Coverage at vatglasses.uk - only above FL245!
 ATIS4:You have feedback? Submit it! feedback.vatger.de
 

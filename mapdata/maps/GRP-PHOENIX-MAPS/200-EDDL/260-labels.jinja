@@ -1,0 +1,45 @@
+// ----------------------------- Labels -----------------------------
+MAP:Taxiways
+AIRPORT:EDDL
+FOLDER:Labels
+ACTIVE:1
+ZOOM:400
+{{ data.eddl_layout['layout']['Labels']['Buffer T'] | to_multipoly('', 'layout-taxiway') }}
+{{ data.eddl_layout['layout']['Labels']['Buffer A'] | to_multipoly('', 'layout-apron') }}
+FONTSIZE:=:10
+COLOR:layout-label-taxiway
+{% for desig, geom in data.eddl_layout['layout']['Labels']['Taxiways'].items() %}
+{{- geom | to_text(desig) }}
+{% endfor %}
+
+MAP:Checkpoint 1
+AIRPORT:EDDL
+FOLDER:Labels
+ACTIVE:1
+ZOOM:800
+FONTSIZE:=:9
+COLOR:layout-holdingpoint
+TEXTALIGN:CC
+{{ data.eddl_layout['layout']['Labels']['CP 1'] | to_text('Check:0:-9') }}
+{{ data.eddl_layout['layout']['Labels']['CP 1'] | to_text(' point 1') }}
+
+MAP:Checkpoint 2
+AIRPORT:EDDL
+FOLDER:Labels
+ZOOM:800
+FONTSIZE:=:9
+COLOR:layout-holdingpoint
+TEXTALIGN:LC
+{{ data.eddl_layout['layout']['Labels']['CP 2'] | to_text('Check:0:-9') }}
+{{ data.eddl_layout['layout']['Labels']['CP 2'] | to_text('point 2') }}
+
+MAP:Areas
+AIRPORT:EDDL
+FOLDER:Labels
+ACTIVE:1
+ZOOM:400
+FONTSIZE:=:9
+COLOR:layout-label-stand
+{% for desig in ['GAT', 'Police'] %}
+{{- data.eddl_layout['layout']['Labels']['Stands'][desig | string] | to_text(desig) }}
+{% endfor %}

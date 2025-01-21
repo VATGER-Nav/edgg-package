@@ -1,0 +1,48 @@
+// -------------------------- Ground Layout -------------------------
+{% set default = 0.000005 %}
+MAP:Taxiway Movement Area
+AIRPORT:EDDG
+FOLDER:Airport Layout
+ACTIVE:1
+{{ data.eddg_layout['layout']['Taxiways']['Taxiways'] | to_poly('Taxi Area','layout-taxiway') }}
+
+MAP:Runways
+AIRPORT:EDDG
+FOLDER:Airport Layout
+ACTIVE:1
+{{ data.eddg_layout['layout']['Apron']['Blast Area'] | to_multipoly('Runway 23L/05R','layout-apron') }}
+{{ data.eddg_layout['layout']['Runways']['25/07'] | to_poly('Runway 23L/05R','layout-runway') }}
+
+MAP:Glider Strips
+AIRPORT:EDDG
+FOLDER:Airport Layout
+ACTIVE:1
+COLOR:layout-taxiway
+STYLE:DOT
+{{ data.eddg_layout['layout']['Runways']['Glider'] | to_multiline('') }}
+
+MAP:Leadin Lines
+AIRPORT:EDDG
+FOLDER:Airport Layout
+ACTIVE:1
+COLOR:layout-taxiline-grey
+{{ data.eddg_layout['layout']['Markings']['Leadin Lines S'] | join_segments | to_multiline('') }}
+{{ data.eddg_layout['layout']['Markings']['Test'] | join_segments | to_line('') }}
+{{ data.eddg_layout['layout']['Markings']['Poly'] | to_multipoly('Arrows', 'layout-taxiline-grey') }}
+STYLE:DOT
+{{ data.eddg_layout['layout']['Markings']['Leadin Lines D'] | join_segments | to_multiline('') }}
+
+MAP:Taxi Lanes
+AIRPORT:EDDG
+FOLDER:Airport Layout
+ACTIVE:1
+COLOR:layout-taxiline-yellow
+{{ data.eddg_layout['layout']['Markings']['Taxilanes'] | to_multiline('') }}
+
+MAP:Buildings
+AIRPORT:EDDG
+FOLDER:Airport Layout
+ACTIVE:1
+{{ data.eddg_layout['layout']['Buildings']['Buildings'] | to_multipoly('', 'layout-building') }}
+COLOR:layout-building
+{{ data.eddg_layout['layout']['Fence']['Fence'] | to_multiline('Fence') }}

@@ -1,0 +1,9 @@
+{
+"type": "FeatureCollection",
+"name": "AoR Labels",
+"crs": { "type": "name", "properties": { "name": "urn:ogc:def:crs:EPSG::32632" } },
+"features": [
+{ "type": "Feature", "properties": { "name": "LNG_" }, "geometry": { "type": "Point", "coordinates": [ 325725.654003363742959, 5678341.266628524288535 ] } },
+{ "type": "Feature", "properties": { "name": "LNT_" }, "geometry": { "type": "Point", "coordinates": [ 325824.204311562294606, 5678456.247246008366346 ] } }
+]
+}

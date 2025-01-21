@@ -1,0 +1,579 @@
+// ------------------------ Restriction Maps ------------------------
+{% set default = 0.000005 %}
+MAP:Restrictions
+AIRPORT:EDDK
+FOLDER:Restrictions
+
+// Restrictions
+ZOOM:400
+
+// N/M Orange/Blue Lines
+COLOR:restrictions-C
+COORDTYPE:OTHER:REGION:/
+STYLE:SOLID:1
+{{ data.eddk_layout['layout']['Restrictions']['N/M#1'] | to_poly('') }}
+TEXTALIGN:CC
+{{ data.eddk_layout['layout']['Restrictions']['N/M_'] | to_text('      - Max code C:0:-12') }}
+COLOR:layout-taxiline-blue
+{{ data.eddk_layout['layout']['Restrictions']['N/M_'] | to_text('_____             :0:-15') }}
+COLOR:layout-taxiline-orange
+{{ data.eddk_layout['layout']['Restrictions']['N/M_'] | to_text('_____             :0:-18') }}
+
+// N/M Center Line
+COLOR:restrictions-E
+COORDTYPE:OTHER:REGION:/
+STYLE:SOLID:1
+{{ data.eddk_layout['layout']['Restrictions']['N/M#2'] | to_poly('') }}
+TEXTALIGN:CC
+{{ data.eddk_layout['layout']['Restrictions']['N/M_'] | to_text('      - Max code E') }}
+COLOR:layout-taxiline-white
+{{ data.eddk_layout['layout']['Restrictions']['N/M_'] | to_text('_____             :0:-4') }}
+
+// B and L
+COLOR:restrictions-E
+COORDTYPE:OTHER:REGION:/
+STYLE:SOLID:1
+{{ data.eddk_layout['layout']['Restrictions']['B/L'] | to_poly('') }}
+TEXTALIGN:LC
+{{ data.eddk_layout['layout']['Restrictions']['B/L_'] | to_text('Max code E') }}
+
+// L
+COLOR:restrictions-C
+COORDTYPE:OTHER:REGION:/
+STYLE:SOLID:1
+{{ data.eddk_layout['layout']['Restrictions']['L'] | to_poly('') }}
+TEXTALIGN:RC
+{{ data.eddk_layout['layout']['Restrictions']['L_'] | to_text('Max code C') }}
+
+// B (Bridge)
+COLOR:restrictions-D
+COORDTYPE:OTHER:REGION:/
+STYLE:SOLID:1
+{{ data.eddk_layout['layout']['Restrictions']['B#1'] | to_poly('') }}
+TEXTALIGN:RC
+{{ data.eddk_layout['layout']['Restrictions']['B#1_'] | to_text('Max code D') }}
+{{ data.eddk_layout['layout']['Restrictions']['B#1_'] | to_text('Max 200t:0:12') }}
+
+// B (South)
+COLOR:restrictions-E
+COORDTYPE:OTHER:REGION:/
+STYLE:SOLID:1
+{{ data.eddk_layout['layout']['Restrictions']['B#2'] | to_poly('') }}
+TEXTALIGN:LC
+{{ data.eddk_layout['layout']['Restrictions']['B#2_'] | to_text('Max code E') }}
+
+// T and D (South of 31R/13L)
+COLOR:restrictions-E
+COORDTYPE:OTHER:REGION:/
+STYLE:SOLID:1
+{{ data.eddk_layout['layout']['Restrictions']['T/D'] | to_poly('') }}
+TEXTALIGN:CC
+{{ data.eddk_layout['layout']['Restrictions']['T/D_'] | to_text('Max code E') }}
+
+// T2
+COLOR:restrictions-C
+COORDTYPE:OTHER:REGION:/
+STYLE:SOLID:1
+{{ data.eddk_layout['layout']['Restrictions']['T2'] | to_poly('') }}
+TEXTALIGN:RC
+{{ data.eddk_layout['layout']['Restrictions']['T2_'] | to_text('Max code C') }}
+
+// Apron U
+COLOR:restrictions-C
+COORDTYPE:OTHER:REGION:/
+STYLE:SOLID:1
+{{ data.eddk_layout['layout']['Restrictions']['Apron U'] | to_poly('') }}
+TEXTALIGN:RC
+{{ data.eddk_layout['layout']['Restrictions']['Apron U_'] | to_text('Max code C') }}
+
+// Apron 2
+COLOR:restrictions-AB
+COORDTYPE:OTHER:REGION:/
+STYLE:SOLID:1
+{{ data.eddk_layout['layout']['Restrictions']['Apron 2'] | to_poly('') }}
+TEXTALIGN:RC
+{{ data.eddk_layout['layout']['Restrictions']['Apron 2_'] | to_text('Military only') }}
+
+// Apron Z
+COLOR:restrictions-AB
+COORDTYPE:OTHER:REGION:/
+STYLE:SOLID:1
+{{ data.eddk_layout['layout']['Restrictions']['Apron Z'] | to_poly('') }}
+TEXTALIGN:RC
+{{ data.eddk_layout['layout']['Restrictions']['Apron Z_'] | to_text('Military only') }}
+
+// C
+COLOR:restrictions-C
+COORDTYPE:OTHER:REGION:/
+STYLE:SOLID:1
+{{ data.eddk_layout['layout']['Restrictions']['C'] | to_poly('') }}
+TEXTALIGN:RC
+{{ data.eddk_layout['layout']['Restrictions']['C_'] | to_text('Max code C') }}
+
+// D (North of 31R/13L)
+COLOR:restrictions-E
+COORDTYPE:OTHER:REGION:/
+STYLE:SOLID:1
+{{ data.eddk_layout['layout']['Restrictions']['D'] | to_poly('') }}
+TEXTALIGN:RC
+{{ data.eddk_layout['layout']['Restrictions']['D_'] | to_text('Max code E') }}
+{{ data.eddk_layout['layout']['Restrictions']['D_'] | to_text('+ B747-8:0:12') }}
+
+// A1
+COLOR:restrictions-AB
+TEXTALIGN:RC
+{{ data.eddk_layout['layout']['Restrictions']['A1_'] | to_text('No A340-600 via A1') }}
+
+// Restriction Stands
+
+TEXTALIGN:CC
+FONTSIZE:=:9
+COLOR:restrictions-AB
+{% for desig in [
+    'V10',
+    'V11',
+    'V12',
+    'V13',
+    'V14',
+    'V30',
+    'V40',
+    'V41',
+    'V42',
+    'V59',
+] %}
+{{- data.eddk_layout['layout']['Restrictions']['Stands'][desig | string] | to_symbol('STAND') }}
+{% endfor %}
+// Secondary Stands
+{% for desig in [
+    'V35',
+    'V45',
+    'V52',
+    'V54',
+    'V211',
+    'V221',
+    'V231',
+    'V310',
+    'V320',
+    'V330',
+    'V410',
+    'V430',
+    'V440',
+    'V510',
+    'V530',
+    'V550',
+] %}
+{{- data.eddk_layout['layout']['Restrictions']['Stands'][desig | string] | to_symbol('STAND_S') }}
+{% endfor %}
+
+COLOR:restrictions-C
+{% for desig in [
+    'A10',
+    'A12',
+    'A14',
+    'A16',
+    'A18',
+    'A20',
+    'A22',
+    'A24',
+    'A26',
+    'A28',
+    'A30',
+    'A32',
+    'A34',
+    'B10',
+    'B12',
+    'B14',
+    'B16',
+    'B18',
+    'B20',
+    'B22',
+    'B24',
+    'B26',
+    'B28',
+    'B30',
+    'C01',
+    'C02',
+    'C03',
+    'C04',
+    'C05',
+    'C06',
+    'C10',
+    'C12',
+    'C14',
+    'D10',
+    'D12',
+    'D14',
+    'D16',
+    'D18',
+    'D20',
+    'D22',
+    'D24',
+    'D26',
+    'D28',
+    'D30',
+    'D32',
+    'D34',
+    'D36',
+    'D38',
+    'D40',
+    'D42',
+    'D50',
+    'D52',
+    'D54',
+    'D56',
+    'D58',
+    'D60',
+    'D62',
+    'D64',
+    'V20',
+    'V21',
+    'V22',
+    'V23',
+    'V31',
+    'V32',
+    'V33',
+    'V43',
+    'V44',
+    'V51',
+    'V53',
+    'V56',
+] %}
+{{- data.eddk_layout['layout']['Restrictions']['Stands'][desig | string] | to_symbol('STAND') }}
+{% endfor %}
+// Secondary Stands
+{% for desig in ['V55'] %}
+{{- data.eddk_layout['layout']['Restrictions']['Stands'][desig | string] | to_symbol('STAND_S') }}
+{% endfor %}
+
+COLOR:restrictions-D
+{% for desig in [
+    'F32',
+    'F34',
+    'W10',
+    'W12',
+    'W14',
+    'W16',
+    'W18',
+    'W20',
+    'W22',
+    'W24',
+    'W26',
+    'W28',
+    'W30',
+    'W32',
+    'W34',
+] %}
+{{- data.eddk_layout['layout']['Restrictions']['Stands'][desig | string] | to_symbol('STAND') }}
+{% endfor %}
+// Secondary Stands
+{% for desig in [
+    'B27',
+    'B29',
+    'D51',
+    'D53',
+    'D57',
+    'E10',
+    'E12',
+    'E14',
+    'E16',
+    'E20',
+    'E22',
+    'E24',
+    'E30',
+    'E32',
+    'E34',
+    'E36',
+    'E40',
+    'E42',
+    'E44',
+    'E46',
+    'F20',
+    'F22',
+    'F24',
+    'F26',
+] %}
+{{- data.eddk_layout['layout']['Restrictions']['Stands'][desig | string] | to_symbol('STAND_S') }}
+{% endfor %}
+
+COLOR:restrictions-E
+{% for desig in [
+    'E09',
+    'E13',
+    'E15',
+    'E17',
+    'E21',
+    'E23',
+] %}
+{{- data.eddk_layout['layout']['Restrictions']['Stands'][desig | string] | to_symbol('STAND') }}
+{% endfor %}
+// Secondary Stands
+{% for desig in [
+    'A01',
+    'A03',
+    'A05',
+    'A07',
+    'A11',
+    'A17',
+    'A21',
+    'A23',
+    'B11',
+    'B17',
+    'B21',
+    'B23',
+    'C50',
+    'D11',
+    'D15',
+    'D19',
+    'D23',
+] %}
+{{- data.eddk_layout['layout']['Restrictions']['Stands'][desig | string] | to_symbol('STAND_S') }}
+{% endfor %}
+{#{% for desig in [
+    'A01',
+    'A03',
+    'A05',
+    'A07',
+    'A11',
+    'A17',
+    'A21',
+    'A23',
+    'B11',
+    'D23',
+] %}
+{{- data.eddk_layout['layout']['Restrictions']['Stands'][desig | string] | to_text('MAX A343:0:15') }}
+{% endfor %}#}
+
+
+
+COLOR:restrictions-F
+{% for desig in [
+    'E31',
+    'E33',
+    'E35',
+    'E41',
+    'E43',
+    'E45',
+    'F21',
+    'F23',
+    'F25',
+    'F31',
+] %}
+{{- data.eddk_layout['layout']['Restrictions']['Stands'][desig | string] | to_symbol('STAND') }}
+{% endfor %}
+
+
+// Reference
+COLOR:layout-label-stand
+FONTSIZE:=:12
+TEXTALIGN:CC
+{{ data.eddk_layout['layout']['Restrictions']['Ref'] | to_text('Reference  :0:-45') }}
+{{ data.eddk_layout['layout']['Restrictions']['Ref'] | to_text('Code B < 24m (CRJ2/C700):0:-30') }}
+{{ data.eddk_layout['layout']['Restrictions']['Ref'] | to_text('Code C < 36m (A321/B739):0:-15') }}
+{{ data.eddk_layout['layout']['Restrictions']['Ref'] | to_text('Code D < 52m (A310/B763):0:0') }}
+{{ data.eddk_layout['layout']['Restrictions']['Ref'] | to_text('Code E < 65m (A343/B77W):0:15') }}
+{{ data.eddk_layout['layout']['Restrictions']['Ref'] | to_text('Code F < 80m (A124/B748):0:30') }}
+
+FONTSIZE:=:70
+COLOR:restrictions-AB
+{{ data.eddk_layout['layout']['Restrictions']['Ref'] | to_text('.:-95:-84') }}
+COLOR:restrictions-C
+{{ data.eddk_layout['layout']['Restrictions']['Ref'] | to_text('.:-95:-69') }}
+COLOR:restrictions-D
+{{ data.eddk_layout['layout']['Restrictions']['Ref'] | to_text('.:-95:-54') }}
+COLOR:restrictions-E
+{{ data.eddk_layout['layout']['Restrictions']['Ref'] | to_text('.:-95:-39') }}
+COLOR:restrictions-F
+{{ data.eddk_layout['layout']['Restrictions']['Ref'] | to_text('.:-95:-24') }}
+
+
+// Stand Labels
+ZOOM:500
+FONTSIZE:=:9
+COLOR:layout-label-stand
+{% for desig, geom in data.eddk_layout['layout']['Labels']['Stands'].items() if not desig in [
+    'A01',
+    'A03',
+    'A05',
+    'A07',
+    'A11',
+    'A17',
+    'A21',
+    'A23',
+    'B11',
+    'B17',
+    'B21',
+    'B23',
+    'B27',
+    'B29',
+    'C50',
+    'D11',
+    'D15',
+    'D19',
+    'D23',
+    'D51',
+    'D53',
+    'D57',
+    'E10',
+    'E12',
+    'E14',
+    'E16',
+    'E20',
+    'E22',
+    'E24',
+    'E30',
+    'E32',
+    'E34',
+    'E36',
+    'E40',
+    'E42',
+    'E44',
+    'E46',
+    'F20',
+    'F22',
+    'F24',
+    'F26',
+    'U16',
+    'U18',
+    'U20',
+    'U22',
+    'U24',
+    'U26',
+    'V35',
+    'V45',
+    'V50',
+    'V52',
+    'V54',
+    'V55',
+    'V10',
+    'V11',
+    'V12',
+    'V13',
+    'V14',
+    'V101',
+    'V111',
+    'V121',
+    'V131',
+    'V211',
+    'V221',
+    'V231',
+    'V310',
+    'V320',
+    'V330',
+    'V410',
+    'V430',
+    'V440',
+    'V510',
+    'V530',
+    'V550',
+    'V1x/V1x1|',
+    'V3x0|',
+    'V4x0|',
+    'V5x0|',
+] %}
+{{- geom | to_text(desig) }}
+{% endfor %}
+{{ data.eddk_layout['layout']['Labels']['Stands']['V1x/V1x1|'] | to_text('    |') }}
+{{ data.eddk_layout['layout']['Labels']['Stands']['V1x/V1x1|'] | to_text(' V1x :0:-5') }}
+{{ data.eddk_layout['layout']['Labels']['Stands']['V1x/V1x1|'] | to_text('V1x1 :0:5') }}
+COLOR:layout-holdingpoint
+{% for desig in [
+    'V3x0|',
+    'V4x0|',
+    'V5x0|',
+] %}
+{{- data.eddk_layout['layout']['Labels']['Stands'][desig | string] | to_text(desig) }}
+{% endfor %}
+
+ZOOM:1500
+COLOR:layout-label-stand
+{% for desig in [
+    'A01',
+    'A03',
+    'A05',
+    'A07',
+    'A11',
+    'A17',
+    'A21',
+    'A23',
+    'B11',
+    'B17',
+    'B21',
+    'B23',
+    'B27',
+    'B29',
+    'C50',
+    'D11',
+    'D15',
+    'D19',
+    'D23',
+    'D51',
+    'D53',
+    'D57',
+    'E10',
+    'E12',
+    'E14',
+    'E16',
+    'E20',
+    'E22',
+    'E24',
+    'E30',
+    'E32',
+    'E34',
+    'E36',
+    'E40',
+    'E42',
+    'E44',
+    'E46',
+    'F20',
+    'F22',
+    'F24',
+    'F26',
+    'U16',
+    'U18',
+    'U20',
+    'U22',
+    'U24',
+    'U26',
+    'V35',
+    'V45',
+    'V50',
+    'V52',
+    'V54',
+    'V55',
+] %}
+{{- data.eddk_layout['layout']['Labels']['Stands'][desig | string] | to_text(desig) }}
+{% endfor %}
+
+// GAT Additional Stans
+ZOOM:2500
+COLOR:layout-label-stand
+{% for desig in [
+    'V10',
+    'V11',
+    'V12',
+    'V13',
+    'V14',
+    'V101',
+    'V111',
+    'V121',
+    'V131',
+    'V211',
+    'V221',
+    'V231',
+] %}
+{{- data.eddk_layout['layout']['Labels']['Stands'][desig | string] | to_text(desig) }}
+{% endfor %}
+COLOR:layout-holdingpoint
+{% for desig in [
+    'V310',
+    'V320',
+    'V330',
+    'V410',
+    'V430',
+    'V440',
+    'V510',
+    'V530',
+    'V550',
+] %}
+{{- data.eddk_layout['layout']['Labels']['Stands'][desig | string] | to_text(desig) }}
+{% endfor %}

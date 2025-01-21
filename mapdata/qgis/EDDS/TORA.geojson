@@ -1,0 +1,19 @@
+{
+"type": "FeatureCollection",
+"name": "TORA",
+"crs": { "type": "name", "properties": { "name": "urn:ogc:def:crs:EPSG::32632" } },
+"features": [
+{ "type": "Feature", "properties": { "name": "25 A" }, "geometry": { "type": "Point", "coordinates": [ 517857.600589126581326, 5393501.599773463793099 ] } },
+{ "type": "Feature", "properties": { "name": "25 B" }, "geometry": { "type": "Point", "coordinates": [ 517247.536692616646178, 5393324.936998290941119 ] } },
+{ "type": "Feature", "properties": { "name": "25 C" }, "geometry": { "type": "Point", "coordinates": [ 517054.025978946476243, 5393268.900016102008522 ] } },
+{ "type": "Feature", "properties": { "name": "25 D" }, "geometry": { "type": "Point", "coordinates": [ 516816.217632026702631, 5393200.035291003063321 ] } },
+{ "type": "Feature", "properties": { "name": "25 E" }, "geometry": { "type": "Point", "coordinates": [ 516562.089104435814079, 5393126.444555358029902 ] } },
+{ "type": "Feature", "properties": { "name": "07 K" }, "geometry": { "type": "Point", "coordinates": [ 514779.303653997660149, 5392610.184165234677494 ] } },
+{ "type": "Feature", "properties": { "name": "07 I" }, "geometry": { "type": "Point", "coordinates": [ 515057.523876863881014, 5392690.75139263831079 ] } },
+{ "type": "Feature", "properties": { "name": "07 H" }, "geometry": { "type": "Point", "coordinates": [ 515598.809869117510971, 5392847.497409082017839 ] } },
+{ "type": "Feature", "properties": { "name": "07 G" }, "geometry": { "type": "Point", "coordinates": [ 515838.561094688950107, 5392916.924754484556615 ] } },
+{ "type": "Feature", "properties": { "name": "07 F" }, "geometry": { "type": "Point", "coordinates": [ 516077.923744529834948, 5392986.239575826562941 ] } },
+{ "type": "Feature", "properties": { "name": "07 E" }, "geometry": { "type": "Point", "coordinates": [ 516621.541191165626515, 5393143.660736633464694 ] } },
+{ "type": "Feature", "properties": { "name": "07 W" }, "geometry": { "type": "Point", "coordinates": [ 515579.095065901870839, 5392735.234765809029341 ] } }
+]
+}

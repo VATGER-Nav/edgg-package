@@ -1,0 +1,19 @@
+{
+"type": "FeatureCollection",
+"name": "Labels Taxiways",
+"crs": { "type": "name", "properties": { "name": "urn:ogc:def:crs:EPSG::32632" } },
+"features": [
+{ "type": "Feature", "properties": { "name": "D#1" }, "geometry": { "type": "Point", "coordinates": [ 464289.042523589683697, 5480117.658583031967282 ] } },
+{ "type": "Feature", "properties": { "name": "D#2" }, "geometry": { "type": "Point", "coordinates": [ 464640.969303672551177, 5480072.491691327653825 ] } },
+{ "type": "Feature", "properties": { "name": "D#3" }, "geometry": { "type": "Point", "coordinates": [ 465062.879129771434236, 5480047.699317921884358 ] } },
+{ "type": "Feature", "properties": { "name": "C" }, "geometry": { "type": "Point", "coordinates": [ 464465.753800342441536, 5480113.924039853736758 ] } },
+{ "type": "Feature", "properties": { "name": "B" }, "geometry": { "type": "Point", "coordinates": [ 464806.332915629784111, 5480095.249671296216547 ] } },
+{ "type": "Feature", "properties": { "name": "F" }, "geometry": { "type": "Point", "coordinates": [ 465297.123826697992627, 5480138.954437052831054 ] } },
+{ "type": "Feature", "properties": { "name": "A#1" }, "geometry": { "type": "Point", "coordinates": [ 465333.784003931155894, 5480114.99896533600986 ] } },
+{ "type": "Feature", "properties": { "name": "A#2" }, "geometry": { "type": "Point", "coordinates": [ 465344.436053188168444, 5480285.800207892432809 ] } },
+{ "type": "Feature", "properties": { "name": "G" }, "geometry": { "type": "Point", "coordinates": [ 465314.740419869194739, 5480285.697563003748655 ] } },
+{ "type": "Feature", "properties": { "name": "Grass Runway" }, "geometry": { "type": "Point", "coordinates": [ 464851.005687978758942, 5480208.098615715280175 ] } },
+{ "type": "Feature", "properties": { "name": "Glider Area" }, "geometry": { "type": "Point", "coordinates": [ 464776.17396186478436, 5480331.438191884197295 ] } },
+{ "type": "Feature", "properties": { "name": "Glider Winch" }, "geometry": { "type": "Point", "coordinates": [ 464875.378868721891195, 5480275.266375134699047 ] } }
+]
+}

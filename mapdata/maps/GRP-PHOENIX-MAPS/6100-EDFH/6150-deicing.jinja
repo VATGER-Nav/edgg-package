@@ -1,0 +1,35 @@
+// ------------------------- Deicing Areas --------------------------
+{% set default = 0.000005 %}
+MAP:De-Icing
+AIRPORT:EDFH
+FOLDER:Ice/Snow
+
+// Areas
+COORDTYPE:OTHER:REGION:x
+STYLE:Solid:1
+{{ data.edfh_layout['layout']['Deicing']['N'] | to_poly('DP North', 'layout-runway') }}
+{{ data.edfh_layout['layout']['Deicing']['S'] | to_poly('DP South', 'layout-runway') }}
+
+// Arrows
+COORDTYPE:OTHER:REGION
+{{ data.edfh_layout['layout']['Deicing']['N='] | to_poly('', 'layout-taxiline-white') }}
+
+// Taxilines
+COLOR:layout-runway-marking
+STYLE:Solid:2
+{{ data.edfh['GuidanceLine']['23c5d030-95af-4d04-af3a-d0ae048d5031'] | simplify(default) | to_line('') }}
+
+// Outlines
+STYLE:Solid:2
+COLOR:deicing
+{{ data.edfh_layout['layout']['Deicing']['N'] | to_line('DP North') }}
+{{ data.edfh_layout['layout']['Deicing']['S'] | to_line('DP South') }}
+
+// Reference
+COLOR:layout-label-stand
+TEXTALIGN:CC
+FONTSIZE:=:12
+{{ data.edfh_layout['layout']['Restrictions']['Ref'] | to_text('De-icing Pads are permitted:') }}
+{{ data.edfh_layout['layout']['Restrictions']['Ref'] | to_text('only for aircraft up to Code C:0:15') }}
+{{ data.edfh_layout['layout']['Restrictions']['Ref'] | to_text('De-icing for aircraft > Code C:0:35') }}
+{{ data.edfh_layout['layout']['Restrictions']['Ref'] | to_text('is provided on Apron Area:0:50') }}

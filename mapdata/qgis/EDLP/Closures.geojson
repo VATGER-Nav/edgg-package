@@ -1,0 +1,11 @@
+{
+"type": "FeatureCollection",
+"name": "Closures",
+"crs": { "type": "name", "properties": { "name": "urn:ogc:def:crs:EPSG::32632" } },
+"features": [
+{ "type": "Feature", "properties": { "Name": "E#1", "description": null, "timestamp": null, "begin": null, "end": null, "altitudeMode": null, "tessellate": -1, "extrude": 0, "visibility": -1, "drawOrder": null, "icon": null }, "geometry": { "type": "Point", "coordinates": [ 472320.002085856685881, 5717380.512112070806324 ] } },
+{ "type": "Feature", "properties": { "Name": "E#2", "description": null, "timestamp": null, "begin": null, "end": null, "altitudeMode": null, "tessellate": -1, "extrude": 0, "visibility": -1, "drawOrder": null, "icon": null }, "geometry": { "type": "Point", "coordinates": [ 472525.758261276700068, 5717380.92656634375453 ] } },
+{ "type": "Feature", "properties": { "Name": "E#3", "description": null, "timestamp": null, "begin": null, "end": null, "altitudeMode": null, "tessellate": -1, "extrude": 0, "visibility": -1, "drawOrder": null, "icon": null }, "geometry": { "type": "Point", "coordinates": [ 472298.328609897056594, 5717451.766460443846881 ] } },
+{ "type": "Feature", "properties": { "Name": "E#4", "description": null, "timestamp": null, "begin": null, "end": null, "altitudeMode": null, "tessellate": -1, "extrude": 0, "visibility": -1, "drawOrder": null, "icon": null }, "geometry": { "type": "Point", "coordinates": [ 472392.03844376449706, 5717511.642394451424479 ] } }
+]
+}

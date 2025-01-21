@@ -1,138 +1,12 @@
 DisplayTypeName:Ground Radar display
 DisplayTypeNeedRadarContent:0
 DisplayTypeGeoReferenced:1
-SECTORFILE:
-SECTORTITLE:
-Free Text:EDDS Parking\10:freetext
-Free Text:EDDS Parking\100:freetext
-Free Text:EDDS Parking\101:freetext
-Free Text:EDDS Parking\102:freetext
-Free Text:EDDS Parking\104:freetext
-Free Text:EDDS Parking\105:freetext
-Free Text:EDDS Parking\106:freetext
-Free Text:EDDS Parking\11:freetext
-Free Text:EDDS Parking\12:freetext
-Free Text:EDDS Parking\13:freetext
-Free Text:EDDS Parking\14:freetext
-Free Text:EDDS Parking\15:freetext
-Free Text:EDDS Parking\16:freetext
-Free Text:EDDS Parking\17:freetext
-Free Text:EDDS Parking\18:freetext
-Free Text:EDDS Parking\19:freetext
-Free Text:EDDS Parking\200:freetext
-Free Text:EDDS Parking\201:freetext
-Free Text:EDDS Parking\202:freetext
-Free Text:EDDS Parking\203:freetext
-Free Text:EDDS Parking\204:freetext
-Free Text:EDDS Parking\24:freetext
-Free Text:EDDS Parking\24A:freetext
-Free Text:EDDS Parking\25:freetext
-Free Text:EDDS Parking\26:freetext
-Free Text:EDDS Parking\26A:freetext
-Free Text:EDDS Parking\27:freetext
-Free Text:EDDS Parking\28:freetext
-Free Text:EDDS Parking\28A:freetext
-Free Text:EDDS Parking\29:freetext
-Free Text:EDDS Parking\30:freetext
-Free Text:EDDS Parking\31:freetext
-Free Text:EDDS Parking\32:freetext
-Free Text:EDDS Parking\33:freetext
-Free Text:EDDS Parking\34:freetext
-Free Text:EDDS Parking\35:freetext
-Free Text:EDDS Parking\36:freetext
-Free Text:EDDS Parking\40:freetext
-Free Text:EDDS Parking\41:freetext
-Free Text:EDDS Parking\42:freetext
-Free Text:EDDS Parking\43:freetext
-Free Text:EDDS Parking\45:freetext
-Free Text:EDDS Parking\46:freetext
-Free Text:EDDS Parking\47:freetext
-Free Text:EDDS Parking\48:freetext
-Free Text:EDDS Parking\50:freetext
-Free Text:EDDS Parking\51:freetext
-Free Text:EDDS Parking\52:freetext
-Free Text:EDDS Parking\53:freetext
-Free Text:EDDS Parking\54:freetext
-Free Text:EDDS Parking\55:freetext
-Free Text:EDDS Parking\56:freetext
-Free Text:EDDS Parking\60:freetext
-Free Text:EDDS Parking\61:freetext
-Free Text:EDDS Parking\62:freetext
-Free Text:EDDS Parking\63:freetext
-Free Text:EDDS Parking\64:freetext
-Free Text:EDDS Parking\71:freetext
-Free Text:EDDS Parking\71A:freetext
-Free Text:EDDS Parking\72:freetext
-Free Text:EDDS Parking\73:freetext
-Free Text:EDDS Parking\74:freetext
-Free Text:EDDS Parking\74A:freetext
-Free Text:EDDS Parking\75:freetext
-Free Text:EDDS Parking\9:freetext
-Free Text:EDDS Parking\901:freetext
-Free Text:EDDS Parking\902A:freetext
-Free Text:EDDS Parking\902B:freetext
-Free Text:EDDS Parking\903A:freetext
-Free Text:EDDS Parking\903B:freetext
-Free Text:EDDS Parking\904:freetext
-Free Text:EDDS Parking\H:freetext
-Free Text:EDDS Parking\H:freetext
-Free Text:EDDS Taxiway\A:freetext
-Free Text:EDDS Taxiway\B:freetext
-Free Text:EDDS Taxiway\B:freetext
-Free Text:EDDS Taxiway\C:freetext
-Free Text:EDDS Taxiway\D:freetext
-Free Text:EDDS Taxiway\D:freetext
-Free Text:EDDS Taxiway\DP1:freetext
-Free Text:EDDS Taxiway\DP2:freetext
-Free Text:EDDS Taxiway\DP3:freetext
-Free Text:EDDS Taxiway\DP4:freetext
-Free Text:EDDS Taxiway\E:freetext
-Free Text:EDDS Taxiway\E:freetext
-Free Text:EDDS Taxiway\EXIT1:freetext
-Free Text:EDDS Taxiway\EXIT2:freetext
-Free Text:EDDS Taxiway\EXIT3:freetext
-Free Text:EDDS Taxiway\F:freetext
-Free Text:EDDS Taxiway\F:freetext
-Free Text:EDDS Taxiway\G:freetext
-Free Text:EDDS Taxiway\G:freetext
-Free Text:EDDS Taxiway\H:freetext
-Free Text:EDDS Taxiway\H:freetext
-Free Text:EDDS Taxiway\H:freetext
-Free Text:EDDS Taxiway\I:freetext
-Free Text:EDDS Taxiway\K:freetext
-Free Text:EDDS Taxiway\L2:freetext
-Free Text:EDDS Taxiway\L3:freetext
-Free Text:EDDS Taxiway\M:freetext
-Free Text:EDDS Taxiway\M:freetext
-Free Text:EDDS Taxiway\M:freetext
-Free Text:EDDS Taxiway\M:freetext
-Free Text:EDDS Taxiway\N:freetext
-Free Text:EDDS Taxiway\N:freetext
-Free Text:EDDS Taxiway\N:freetext
-Free Text:EDDS Taxiway\N:freetext
-Free Text:EDDS Taxiway\O:freetext
-Free Text:EDDS Taxiway\P1:freetext
-Free Text:EDDS Taxiway\P2:freetext
-Free Text:EDDS Taxiway\R:freetext
-Free Text:EDDS Taxiway\S:freetext
-Free Text:EDDS Taxiway\S:freetext
-Free Text:EDDS Taxiway\S:freetext
-Free Text:EDDS Taxiway\S:freetext
-Free Text:EDDS Taxiway\W:freetext
-Free Text:EDDS Taxiway\Y:freetext
-Free Text:EDDS Taxiway\Z:freetext
-Free Text:EDDS Taxiway\Z:freetext
-Free Text:EDDS Taxiway\Z:freetext
-Geo:EDDS Groundlayout Orange Line:
-Geo:EDDS Groundlayout Stands:
-Geo:EDDS Groundlayout Taxilines:
-Regions:EDDS Groundlayout:polygon
-Regions:EDDS Holdshorts:polygon
-Regions:EDDS Holdshorts CATII_III:polygon
+SECTORFILE:D:\Github\edgg-package\EDGG-FULL_20241031142405-241101-0001.sct
+SECTORTITLE:EDGG-FULL_20241031142405-241101-0001.sct
 SHOWC:1
 SHOWSB:0
 BELOW:0
-ABOVE:10000
+ABOVE:5000
 LEADER:-1
 SHOWLEADER:0
 TURNLEADER:0
@@ -140,7 +14,7 @@ HISTORY_DOTS:0
 SIMULATION_MODE:1
 DISABLEPANNING:0
 DISABLEZOOMING:0
-DisplayRotation:16.20000
+DisplayRotation:16.45000
 TAGFAMILY:Phoenix Ground
 WINDOWAREA:48.677986:9.182213:48.701511:9.251514
 PLUGIN:Ground Radar plugin:AirportElevation:1276

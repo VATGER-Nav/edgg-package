@@ -1,0 +1,48 @@
+// -------------------------- Runway Info ---------------------------
+
+MAP:TORA 27
+AIRPORT:EDDR
+FOLDER:Runway Info
+COLOR:tora-label
+ZOOM:500
+TEXTALIGN:RC
+{{ data.eddr_layout['layout']['TORA']['27 A'] | to_text('1930') }}
+{{ data.eddr_layout['layout']['TORA']['27 B'] | to_text('980') }}
+
+MAP:TORA 09
+AIRPORT:EDDR
+FOLDER:Runway Info
+COLOR:tora-label
+ZOOM:500
+TEXTALIGN:LC
+{{ data.eddr_layout['layout']['TORA']['09 C'] | to_text('1900') }}
+{{ data.eddr_layout['layout']['TORA']['09 B'] | to_text('890') }}
+
+MAP:Runway Designators
+AIRPORT:EDDR
+FOLDER:Runway Info
+ACTIVE:1
+{{ data.eddr_layout['layout']['Markings']['27'] | to_multipoly('27', 'layout-runway-marking') }}
+{{ data.eddr_layout['layout']['Markings']['09'] | to_multipoly('09', 'layout-runway-marking') }}
+
+MAP:Runway Markings
+AIRPORT:EDDR
+FOLDER:Runway Info
+{% for id, geom in data.eddr['RunwayMarking'].items() if not marking in [
+    '44e67b12-fa94-459a-9257-f69fed4d8ee1',
+    '54c7ff6b-f00c-4590-b8fc-7b3e2347fcdb',
+    'b30495dd-65d3-4ea6-bdfa-160d66d67a52',
+    'b5a4100f-7a4a-4009-92b5-178261890ea8',
+    'e183acf0-e8f8-48a8-931c-c43e413e8903'
+    ] %}
+{{- geom | to_poly(id, 'layout-runway-marking') }}
+{% endfor %}
+{% for id in [
+    '44e67b12-fa94-459a-9257-f69fed4d8ee1',
+    '54c7ff6b-f00c-4590-b8fc-7b3e2347fcdb',
+    'b30495dd-65d3-4ea6-bdfa-160d66d67a52',
+    'b5a4100f-7a4a-4009-92b5-178261890ea8',
+    'e183acf0-e8f8-48a8-931c-c43e413e8903'
+    ] %}
+{{- data.eddr['RunwayMarking'][ id | string ] | to_poly(marking, 'layout-runway') }}
+{% endfor %}

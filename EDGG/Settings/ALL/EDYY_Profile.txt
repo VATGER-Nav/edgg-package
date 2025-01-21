@@ -4,13 +4,43 @@ ATIS2:
 ATIS3:
 ATIS4:
 
-PROFILE:EDYY_RHR_CTR:450:6
-ATIS2:Maastricht Radar RHR - CPDLC [EDYR]
+PROFILE:EDYY_ML_CTR:450:6
+ATIS2:Maastricht Radar - CPDLC [EDYM]
 ATIS3:Coverage at vatglasses.uk - only above FL245!
 ATIS4:You have feedback? Submit it! feedback.vatger.de
 
-PROFILE:EDYY_MNS_CTR:450:6
-ATIS2:Maastricht Radar MNS - CPDLC [EDYM]
+PROFILE:EDYY_MH_CTR:450:6
+ATIS2:Maastricht Radar - CPDLC [EDNH]
+ATIS3:Coverage at vatglasses.uk - only above FL245!
+ATIS4:You have feedback? Submit it! feedback.vatger.de
+
+PROFILE:EDYY_RL_CTR:450:6
+ATIS2:Maastricht Radar - CPDLC [EDYR]
+ATIS3:Coverage at vatglasses.uk - only above FL245!
+ATIS4:You have feedback? Submit it! feedback.vatger.de
+
+PROFILE:EDYY_RH_CTR:450:6
+ATIS2:Maastricht Radar - CPDLC [EDRH]
+ATIS3:Coverage at vatglasses.uk - only above FL245!
+ATIS4:You have feedback? Submit it! feedback.vatger.de
+
+PROFILE:EDYY_SL_CTR:450:6
+ATIS2:Maastricht Radar - CPDLC [EDYS]
+ATIS3:Coverage at vatglasses.uk - only above FL245!
+ATIS4:You have feedback? Submit it! feedback.vatger.de
+
+PROFILE:EDYY_SH_CTR:450:6
+ATIS2:Maastricht Radar - CPDLC [EDSH]
+ATIS3:Coverage at vatglasses.uk - only above FL245!
+ATIS4:You have feedback? Submit it! feedback.vatger.de
+
+PROFILE:EDYY_CL_CTR:450:6
+ATIS2:Maastricht Radar - CPDLC [EDYC]
+ATIS3:Coverage at vatglasses.uk - only above FL245!
+ATIS4:You have feedback? Submit it! feedback.vatger.de
+
+PROFILE:EDYY_CH_CTR:450:6
+ATIS2:Maastricht Radar - CPDLC [EDCH]
 ATIS3:Coverage at vatglasses.uk - only above FL245!
 ATIS4:You have feedback? Submit it! feedback.vatger.de
 

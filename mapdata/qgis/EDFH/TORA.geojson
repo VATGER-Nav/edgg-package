@@ -1,0 +1,15 @@
+{
+"type": "FeatureCollection",
+"name": "TORA",
+"crs": { "type": "name", "properties": { "name": "urn:ogc:def:crs:EPSG::32632" } },
+"features": [
+{ "type": "Feature", "properties": { "name": "03 B1" }, "geometry": { "type": "Point", "coordinates": [ 374254.220855714287609, 5532489.088062443770468 ] } },
+{ "type": "Feature", "properties": { "name": "03 C" }, "geometry": { "type": "Point", "coordinates": [ 374843.782125438388903, 5533369.764172727242112 ] } },
+{ "type": "Feature", "properties": { "name": "03 D" }, "geometry": { "type": "Point", "coordinates": [ 375304.00002889870666, 5534057.229469237849116 ] } },
+{ "type": "Feature", "properties": { "name": "21" }, "geometry": { "type": "Point", "coordinates": [ 376277.957228756567929, 5535512.109364510513842 ] } },
+{ "type": "Feature", "properties": { "name": "21 F" }, "geometry": { "type": "Point", "coordinates": [ 376132.755671993421856, 5535295.209868590347469 ] } },
+{ "type": "Feature", "properties": { "name": "21 E" }, "geometry": { "type": "Point", "coordinates": [ 375656.844767517759465, 5534584.302647037431598 ] } },
+{ "type": "Feature", "properties": { "name": "21 D" }, "geometry": { "type": "Point", "coordinates": [ 375262.537468322552741, 5533995.293435706757009 ] } },
+{ "type": "Feature", "properties": { "name": "03 B2" }, "geometry": { "type": "Point", "coordinates": [ 374369.192736837198026, 5532660.831008018925786 ] } }
+]
+}
