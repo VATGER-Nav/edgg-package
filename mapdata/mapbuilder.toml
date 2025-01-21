@@ -2,47 +2,47 @@
 
 [data.eddf]
 type = "aixm"
-source = "https://aip.dfs.de/datasets/scripts/getItem.php?amdt=0&content=aerodrome_mapping/EDDF_AerodromeMapping_2024-12-26_2025-01-23_revision.zip"
+source = "https://aip.dfs.de/datasets/scripts/getItem.php?amdt=1&content=aerodrome_mapping/EDDF_AerodromeMapping_2024-12-26_2025-01-23_revision.zip"
 
 [data.eddl]
 type = "aixm"
-source = "https://aip.dfs.de/datasets/scripts/getItem.php?amdt=0&content=aerodrome_mapping/EDDL_AerodromeMapping_2024-12-26_2025-01-23_revision.zip"
+source = "https://aip.dfs.de/datasets/scripts/getItem.php?amdt=1&content=aerodrome_mapping/EDDL_AerodromeMapping_2024-12-26_2025-01-23_revision.zip"
 
 [data.eddk]
 type = "aixm"
-source = "https://aip.dfs.de/datasets/scripts/getItem.php?amdt=0&content=aerodrome_mapping/EDDK_AerodromeMapping_2024-12-26_2025-01-23_revision.zip"
+source = "https://aip.dfs.de/datasets/scripts/getItem.php?amdt=1&content=aerodrome_mapping/EDDK_AerodromeMapping_2024-12-26_2025-01-23_revision.zip"
 
 [data.edds]
 type = "aixm"
-source = "https://aip.dfs.de/datasets/scripts/getItem.php?amdt=0&content=aerodrome_mapping/EDDS_AerodromeMapping_2024-12-26_2025-01-23_revision.zip"
+source = "https://aip.dfs.de/datasets/scripts/getItem.php?amdt=1&content=aerodrome_mapping/EDDS_AerodromeMapping_2024-12-26_2025-01-23_revision.zip"
 
 [data.eddr]
 type = "aixm"
-source = "https://aip.dfs.de/datasets/scripts/getItem.php?amdt=0&content=aerodrome_mapping/EDDR_AerodromeMapping_2024-12-26_2025-01-23_revision.zip"
+source = "https://aip.dfs.de/datasets/scripts/getItem.php?amdt=1&content=aerodrome_mapping/EDDR_AerodromeMapping_2024-12-26_2025-01-23_revision.zip"
 
 [data.edlp]
 type = "aixm"
-source = "https://aip.dfs.de/datasets/scripts/getItem.php?amdt=0&content=aerodrome_mapping/EDLP_AerodromeMapping_2024-12-26_2025-01-23_revision.zip"
+source = "https://aip.dfs.de/datasets/scripts/getItem.php?amdt=1&content=aerodrome_mapping/EDLP_AerodromeMapping_2024-12-26_2025-01-23_revision.zip"
 
 [data.edlw]
 type = "aixm"
-source = "https://aip.dfs.de/datasets/scripts/getItem.php?amdt=0&content=aerodrome_mapping/EDLW_AerodromeMapping_2024-12-26_2025-01-23_revision.zip"
+source = "https://aip.dfs.de/datasets/scripts/getItem.php?amdt=1&content=aerodrome_mapping/EDLW_AerodromeMapping_2024-12-26_2025-01-23_revision.zip"
 
 [data.edln]
 type = "aixm"
-source = "https://aip.dfs.de/datasets/scripts/getItem.php?amdt=0&content=aerodrome_mapping/EDLN_AerodromeMapping_2024-12-26_2025-01-23_revision.zip"
+source = "https://aip.dfs.de/datasets/scripts/getItem.php?amdt=1&content=aerodrome_mapping/EDLN_AerodromeMapping_2024-12-26_2025-01-23_revision.zip"
 
 [data.edlv]
 type = "aixm"
-source = "https://aip.dfs.de/datasets/scripts/getItem.php?amdt=0&content=aerodrome_mapping/EDLV_AerodromeMapping_2024-12-26_2025-01-23_revision.zip"
+source = "https://aip.dfs.de/datasets/scripts/getItem.php?amdt=1&content=aerodrome_mapping/EDLV_AerodromeMapping_2024-12-26_2025-01-23_revision.zip"
 
 [data.edfh]
 type = "aixm"
-source = "https://aip.dfs.de/datasets/scripts/getItem.php?amdt=0&content=aerodrome_mapping/EDFH_AerodromeMapping_2024-12-26_2025-01-23_revision.zip"
+source = "https://aip.dfs.de/datasets/scripts/getItem.php?amdt=1&content=aerodrome_mapping/EDFH_AerodromeMapping_2024-12-26_2025-01-23_revision.zip"
 
 [data.edsb]
 type = "aixm"
-source = "https://aip.dfs.de/datasets/scripts/getItem.php?amdt=0&content=aerodrome_mapping/EDSB_AerodromeMapping_2024-12-26_2025-01-23_revision.zip"
+source = "https://aip.dfs.de/datasets/scripts/getItem.php?amdt=1&content=aerodrome_mapping/EDSB_AerodromeMapping_2024-12-26_2025-01-23_revision.zip"
 
 [data.eddf_layout]
 type = "kml"
