@@ -32,5 +32,5 @@ AIRPORT:EDSB
 FOLDER:Holding Points
 COLOR:layout-holdingpoint
 {% for id, geom in data.edsb['TaxiwayMarking'].items() if geom.marking_location == 'TWY_INT' %}
-    {{- geom | to_line(id) -}}
+    {{- geom | to_line(id) }}
 {% endfor %}

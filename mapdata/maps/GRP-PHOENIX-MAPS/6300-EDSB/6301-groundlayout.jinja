@@ -81,7 +81,7 @@ COLOR:layout-taxiline-grey
     'de2308ca-c903-4fe1-a96e-e0d04bd5b08f',
     'f60f916c-9aaa-46a6-b33c-a742d4d07496'
     ] %}
-{{- data.edsb['GuidanceLine'][ id | string ] | join_segments | simplify(default) | to_line(id) -}}
+{{- data.edsb['GuidanceLine'][ id | string ] | join_segments | simplify(default) | to_line(id) }}
 {% endfor %}
 COLOR:layout-taxiline-grey
 STYLE:Dot:1
@@ -95,7 +95,7 @@ STYLE:Dot:1
     '9e396b04-5d6c-496a-b59c-6c26eaf808f8',
     'd951d1c6-190a-43d4-a83b-8a3ac18eb9ab'
     ] %}
-{{- data.edsb['GuidanceLine'][ id | string ] | join_segments | simplify(default) | to_line(id) -}}
+{{- data.edsb['GuidanceLine'][ id | string ] | join_segments | simplify(default) | to_line(id) }}
 {% endfor %}
 
 MAP:Taxi Lanes
@@ -178,7 +178,7 @@ COLOR:layout-taxiline-yellow
     'fe413fd8-31bd-4beb-9680-59088fba60ba',
     'ffceab23-afc4-4122-8193-98bfcb42ba56'
     ] %}
-{{- data.edsb['GuidanceLine'][ id | string ] | join_segments | simplify(default) | to_line(id) -}}
+{{- data.edsb['GuidanceLine'][ id | string ] | join_segments | simplify(default) | to_line(id) }}
 {% endfor %}
 
 MAP:Buildings
