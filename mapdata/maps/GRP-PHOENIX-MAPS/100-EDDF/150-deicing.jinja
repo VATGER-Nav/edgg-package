@@ -134,3 +134,10 @@ COLOR:restrictions-C
 {{ data.eddf_layout['layout']['Restrictions']['Ref'] | to_text('.:-95:-39') }}
 COLOR:restrictions-F
 {{ data.eddf_layout['layout']['Restrictions']['Ref'] | to_text('.:-95:-24') }}
+
+MAP:Closed TWY P1
+AIRPORT:EDDF
+FOLDER:Closures
+STYLE:Solid:2
+COORDTYPE:TWYCLOSED:REGION
+{{ data.eddf_layout['layout']['Closures']['P1'] | to_poly('','closure') }}
