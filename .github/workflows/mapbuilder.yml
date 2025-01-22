@@ -9,15 +9,15 @@ on:
       - "*"
       - "*/**"
       - "!main"
-    paths:
-      - 'mapdata/**'
+    # paths:
+    #   - 'mapdata/**'
   workflow_dispatch:
     branches:
       - "*"
       - "*/**"
       - "!main"
-    paths:
-      - 'mapdata/**'
+    # paths:
+    #   - 'mapdata/**'
 permissions: write-all
 jobs:
   mapbuilder-build-maps:
@@ -53,6 +53,12 @@ jobs:
         working-directory: ./.github/workflows/mapbuilder
         run: poetry run mapbuilder --debug -s "../../../mapdata" "../../../EDGG"
 
+
+        - name: Execute old Mover script # run moverWithImports.py
+        working-directory: .
+        run: python .github/workflows/moverWithImports.py
+
+        
       - name: Commit files
         run: |
           git config --local user.email "action@github.com"
