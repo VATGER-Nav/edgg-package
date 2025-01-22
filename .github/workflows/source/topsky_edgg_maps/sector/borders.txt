@@ -174,3 +174,16 @@ STYLE:Solid:1
 #import .github/workflows/source/data/sectors/lsas/zurich_lower/low_west.txt
 #import .github/workflows/source/data/sectors/lsas/zurich_lower/zurich_east.txt
 #import .github/workflows/source/data/sectors/lsas/zurich_lower/zurich_west.txt
+
+MAP:PADH Upper Borders
+COLOR:DFSGrey
+STYLE:Solid:1
+ACTIVE:ID:ML,MH,MM,RH,RL:*:*:*
+ACTIVE:ID:PADH:*:*:RL,RL,MM,ML,MH
+#import .github/workflows/source/data/sectors/edyy/hannover_group/cel.txt
+#import .github/workflows/source/data/sectors/edyy/hannover_group/mns.txt
+#import .github/workflows/source/data/sectors/edyy/hannover_group/rhr.txt
+#import .github/workflows/source/data/sectors/edyy/hannover_group/sol.txt
+#import .github/workflows/source/data/sectors/edyy/deco_group/jev.txt
+#import .github/workflows/source/data/sectors/edyy/brussels_group/oln.txt
+
