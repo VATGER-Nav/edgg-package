@@ -1,0 +1,71 @@
+//---------------------------------------------------------------
+//                            Topography
+//---------------------------------------------------------------
+
+MAP:Topography
+FOLDER:Topography
+ASRDATA:PHOENIX
+LAYER:-2
+STYLE:Solid:1
+TEXTALIGN:LC
+{{ data.topsky['common']['Topo']['Urban Area EDGG'] | to_multipoly('Urban Area', 'topo_urban', 100) }}
+COLOR:topo_road
+{% for name, geom in data.topsky['common']['Topo']['Autobahn EDGG'].items() %}
+{{- geom | to_multicoordline(name) }}
+{% endfor %}
+{% for label, geom in data.topsky['common']['Topo']['Autobahn EDGG Labels'].items() %}
+{{- geom | to_text(label) }}
+{% endfor %}
+COLOR:topo_water
+{% for name, geom in data.topsky['common']['Topo']['Rivers EDGG'].items() %}
+{{- geom | to_multicoordline(name) }}
+{% endfor %}
+{% for label, geom in data.topsky['common']['Topo']['Rivers EDGG Labels'].items() %}
+{{- geom | to_text(label) }}
+{% endfor %}
+{% for name, geom in data.topsky['common']['Topo']['Lakes EDGG'].items() %}
+{{- geom | to_poly(name, 'topo_water', 100) }}
+{% endfor %}
+
+MAP:Highways
+FOLDER:Topography
+ASRDATA:PHOENIX
+LAYER:-2
+COLOR:topo_road
+STYLE:Solid:1
+ACTIVE:ID:*:DFC,DFGW,DFGC,DFGE,DFGI,DFG,DFTC,DFTS,DFTN,DFTW,DFAN,DFAS,DFANT,DFAST:*:*
+ACTIVE:ID:*:DLC,DLGE,DLGW,DLT,DLA,DLAT,DLD,BOT:*:*
+ACTIVE:ID:*:DKC,DKG,DKT,DKA,DKAT,NOR:*:*
+{% for name, geom in data.topsky['common']['Topo']['Autobahn EDGG'].items() %}
+{{- geom | to_multicoordline(name) }}
+{% endfor %}
+
+MAP:Rivers/Lakes
+FOLDER:Topography
+ASRDATA:PHOENIX
+LAYER:-2
+COLOR:topo_water
+STYLE:Solid:1
+ACTIVE:ID:*:DFC,DFGW,DFGC,DFGE,DFGI,DFG,DFTC,DFTS,DFTN,DFTW,DFAN,DFAS,DFANT,DFAST:*:*
+{% for name, geom in data.topsky['common']['Topo']['Rivers EDGG'].items() %}
+{{- geom | to_multicoordline(name) }}
+{% endfor %}
+{% for name, geom in data.topsky['common']['Topo']['Lakes EDGG'].items() %}
+{{- geom | to_poly(name, 'topo_water', 100) }}
+{% endfor %}
+
+MAP:Urban Area
+FOLDER:Topography
+ASRDATA:PHOENIX
+LAYER:-4
+ACTIVE:ID:*:DFC,DFGW,DFGC,DFGE,DFGI,DFG,DFTC,DFTS,DFTN,DFTW,DFAN,DFAS,DFANT,DFAST:*:*
+{{ data.topsky['common']['Topo']['Urban Area EDGG'] | to_multipoly('Urban Area', 'topo_urban', 100) }}
+
+MAP:DE Border
+FOLDER:Topography
+ASRDATA:PHOENIX
+LAYER:-3
+COLOR:topo_border
+STYLE:Solid:1
+ACTIVE:1
+{{ data.topsky['common']['Topo']['Border EDGG'] | to_multicoordline('') }}

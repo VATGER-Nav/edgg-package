@@ -1,0 +1,365 @@
+{ "Aerodromes": [
+    "EDEH",
+    "EDEL",
+    "EDER",
+    "EDFA",
+    "EDFB",
+    "EDFC",
+    "EDFG",
+    "EDFU",
+    "EDFV",
+    "EDFY",
+    "EDFZ",
+    "EDGP",
+    "EDKA",
+    "EDKB",
+    "EDKF",
+    "EDKL",
+    "EDKM",
+    "EDLI",
+    "EDLM",
+    "EDLO",
+    "EDLT",
+    "EDPA",
+    "EDPU",
+    "EDPY",
+    "EDRA",
+    "EDRF",
+    "EDRJ",
+    "EDRK",
+    "EDRM",
+    "EDSH",
+    "EDTC",
+    "EDTF",
+    "EDTH",
+    "EDTO",
+    "EDTQ",
+    "EDTS",
+    "EDTU",
+    "EDTW",
+    "EDTZ",
+    "EDFO",
+    "EDLZ",
+    "EDLD",
+    "EDLH",
+    "EDST",
+    "EDGO",
+    "EDKN",
+    "EDEM",
+    "EDEN",
+    "EDEP",
+    "EDEW",
+    "EDFD",
+    "EDFI",
+    "EDFJ",
+    "EDFK",
+    "EDFL",
+    "EDFN",
+    "EDFP",
+    "EDFR",
+    "EDFS",
+    "EDFT",
+    "EDFW",
+    "EDFX",
+    "EDGA",
+    "EDGB",
+    "EDGE",
+    "EDGF",
+    "EDGH",
+    "EDGI",
+    "EDGK",
+    "EDGM",
+    "EDGQ",
+    "EDGR",
+    "EDGT",
+    "EDGU",
+    "EDGW",
+    "EDGX",
+    "EDGY",
+    "EDGZ",
+    "EDKD",
+    "EDKH",
+    "EDKI",
+    "EDKO",
+    "EDKP",
+    "EDKR",
+    "EDKU",
+    "EDKV",
+    "EDKW",
+    "EDKZ",
+    "EDLA",
+    "EDLB",
+    "EDLC",
+    "EDLF",
+    "EDLG",
+    "EDLJ",
+    "EDLK",
+    "EDLQ",
+    "EDLR",
+    "EDLS",
+    "EDLX",
+    "EDLY",
+    "EDQB",
+    "EDQF",
+    "EDRB",
+    "EDRC",
+    "EDRD",
+    "EDRE",
+    "EDRG",
+    "EDRH",
+    "EDRI",
+    "EDRL",
+    "EDRN",
+    "EDRO",
+    "EDRP",
+    "EDRS",
+    "EDRT",
+    "EDRV",
+    "EDRW",
+    "EDRX",
+    "EDSA",
+    "EDSD",
+    "EDSG",
+    "EDSI",
+    "EDSK",
+    "EDSL",
+    "EDSM",
+    "EDSN",
+    "EDSP",
+    "EDSR",
+    "EDSV",
+    "EDSW",
+    "EDSZ",
+    "EDTA",
+    "EDTB",
+    "EDTE",
+    "EDTG",
+    "EDTK",
+    "EDTN",
+    "EDTP",
+    "EDTR",
+    "EDGJ",
+    "EDSF",
+    "EDSX",
+    "LFST"
+],
+"Runways": {
+    "EDDF": [
+        ["07R", "25L"],
+        ["07C", "25C"],
+        ["07L", "25R"],
+        ["18", "36"]
+    ],
+    "EDDL": [
+        ["05R", "23L"],
+        ["05L", "23R"]
+    ],
+    "EDDK": [
+        ["13R", "31L"],
+        ["13L", "31R"],
+        ["06", "24"]
+    ],
+    "EDDS": [
+        ["07", "25"]
+    ],
+    "EDDG": [
+        ["07", "25"]
+    ],
+    "EDDR": [
+        ["09", "27"]
+    ],
+    "EDFH": [
+        ["03", "21"]
+    ],
+    "EDFM": [
+        ["09", "27"]
+    ],
+    "EDFE": [
+        ["08", "26"]
+    ],
+    "EDFQ": [
+        ["11", "29"]
+    ],
+    "EDLP": [
+        ["06", "24"]
+    ],
+    "EDLW": [
+        ["06", "24"]
+    ],
+    "EDLN": [
+        ["13", "31"]
+    ],
+    "EDLV": [
+        ["09", "27"]
+    ],
+    "EDLE": [
+        ["06", "24"]
+    ],
+    "EDGS": [
+        ["13", "31"]
+    ],
+    "EDQG": [
+        ["08", "26"]
+    ],
+    "EDRY": [
+        ["16", "34"]
+    ],
+    "EDRZ": [
+        ["03", "21"]
+    ],
+    "EDSB": [
+        ["03", "21"]
+    ],
+    "EDTD": [
+        ["18", "36"]
+    ],
+    "EDTL": [
+        ["03", "21"]
+    ],
+    "EDTM": [
+        ["07", "25"]
+    ],
+    "EDTY": [
+        ["10", "28"]
+    ],
+    "ETAD": [
+        ["04", "22"]
+    ],
+    "ETAR": [
+        ["09", "27"],
+        ["08", "26"]
+    ],
+    "ETEB": [
+        ["08", "26"]
+    ],
+    "ETHF": [
+        ["11", "29"]
+    ],
+    "ETHN": [
+        ["07", "25"]
+    ],
+    "ETIK": [
+        ["06", "24"]
+    ],
+    "ETNG": [
+        ["09", "27"]
+    ],
+    "ETNN": [
+        ["06", "24"]
+    ],
+    "ETOU": [
+        ["07", "25"]
+    ],
+    "ETSB": [
+        ["03", "21"]
+    ]
+},
+"Navaids": {
+    "DME": [
+        "AUG",
+        "CHA",
+        "DKS",
+        "FHH",
+        "GSB",
+        "HOC",
+        "KBD",
+        "LIE",
+        "LNO",
+        "LRD",
+        "MHD",
+        "MND",
+        "MOD",
+        "NDD",
+        "NID",
+        "PAT",
+        "RDG",
+        "RKN",
+        "SAD",
+        "SHD",
+        "SLD",
+        "SPY",
+        "TRA" 
+    ],
+    "VOR": [
+        "MHV",
+        "MTR",
+        "OSN",
+        "SUL",
+        "VFM",
+        "WYP"
+    ],
+    "VORDME": [
+        "BAM",
+        "BLM",
+        "COL",
+        "DIK",
+        "DKB",
+        "DOR",
+        "DUS",
+        "DRN",
+        "ERF",
+        "ERL",
+        "FKS",
+        "FUL",
+        "GMH",
+        "GOT",
+        "GTQ",
+        "HLZ",
+        "HMM",
+        "KBO",
+        "KLF",
+        "KLO",
+        "KPT",
+        "KRH",
+        "LBU",
+        "LUX",
+        "MAG",
+        "MAH",
+        "MAS",
+        "NIE",
+        "OKG",
+        "OTT",
+        "SAS",
+        "SBG",
+        "SPI",
+        "STG",
+        "TAU",
+        "WLD",
+        "WRB",
+        "ZUE",
+        "ZWN"
+    ],
+    "NDB": [
+        "ALG",
+        "ANS",
+        "BOT",
+        "HAN",
+        "ILM",
+        "INN",
+        "KBA",
+        "LAA",
+        "LHR",
+        "LMA",
+        "MIQ",
+        "MYN",
+        "NKR",
+        "PAD",
+        "RTT",
+        "SIL",
+        "SR",
+        "WSN"
+    ],
+    "TACAN": [
+        "BUE",
+        "GED",
+        "GIX",
+        "RMS",
+        "SPA",
+        "WIB" 
+    ],
+    "VORTAC": [
+        "FFM",
+        "NVO"
+    ]  
+}
+}

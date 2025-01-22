@@ -3,16 +3,6 @@ DisplayTypeNeedRadarContent:1
 DisplayTypeGeoReferenced:1
 SECTORFILE:
 SECTORTITLE:
-Airports:EDLC:symbol
-Airports:EDLG:symbol
-Airports:EDLX:symbol
-ARTCC boundary:FIR border EHAA:
-ARTCC low boundary:Centerlines EDLV 09:
-ARTCC low boundary:Centerlines EDLV 27:
-ARTCC low boundary:Tower CTR EDLV (HX):
-Geo:EDZZ Landmark Highway Germany:
-Geo:EDZZ Landmark River Germany:
-Runways:EDLV 09-27:centerline
 SHOWC:1
 SHOWSB:0
 BELOW:180

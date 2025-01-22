@@ -3,14 +3,6 @@ DisplayTypeNeedRadarContent:1
 DisplayTypeGeoReferenced:1
 SECTORFILE:
 SECTORTITLE:
-ARTCC low boundary:Centerlines EDFH 03:
-ARTCC low boundary:Centerlines EDFH 21:
-ARTCC low boundary:Centerlines ETAD 05:
-ARTCC low boundary:Centerlines ETAD 23:
-ARTCC low boundary:Centerlines ETSB 03:
-ARTCC low boundary:Centerlines ETSB 21:
-Geo:EDZZ Landmark Highway Germany:
-Geo:EDZZ Landmark River Germany:
 SHOWC:1
 SHOWSB:0
 BELOW:1660

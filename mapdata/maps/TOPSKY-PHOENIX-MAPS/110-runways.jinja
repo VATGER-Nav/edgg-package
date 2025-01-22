@@ -1,0 +1,11 @@
+MAP:Runways
+FOLDER:ALL
+COLOR:white
+STYLE:Solid:2
+ASRDATA:PHOENIX
+ACTIVE:1
+{%- for icao, rwys in data.navdata['Runways'].items() %}
+{%- for rwy in rwys %}
+{{ fix(runways[icao][rwy[0]]['thr']).line_to_fix(fix(runways[icao][rwy[1]]['thr'])) }}    // {{icao}} {{rwy[0]}}/{{rwy[1]}}
+{%- endfor %}
+{%- endfor %}
