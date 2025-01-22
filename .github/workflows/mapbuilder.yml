@@ -54,9 +54,9 @@ jobs:
         run: poetry run mapbuilder --debug -s "../../../mapdata" "../../../EDGG"
 
 
-        - name: Execute old Mover script # run moverWithImports.py
-        working-directory: .
-        run: python .github/workflows/moverWithImports.py
+      - name: Execute old Mover script # run moverWithImports.py
+      working-directory: .
+      run: python .github/workflows/moverWithImports.py
 
         
       - name: Commit files
