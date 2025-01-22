@@ -55,8 +55,8 @@ jobs:
 
 
       - name: Execute old Mover script # run moverWithImports.py
-      working-directory: .
-      run: python .github/workflows/moverWithImports.py
+        working-directory: .
+        run: python .github/workflows/moverWithImports.py
 
         
       - name: Commit files
