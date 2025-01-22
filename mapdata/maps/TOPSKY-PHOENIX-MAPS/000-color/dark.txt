@@ -11,5 +11,5 @@ COLORDEF:label:166:255:166
 
 COLORDEF:topo_water:33:64:154
 COLORDEF:topo_road:139:94:60
-COLORDEF:topo_border:50:50:50
-COLORDEF:topo_urban:30:30:30
+COLORDEF:topo_border:35:35:35
+COLORDEF:topo_urban:20:20:20
