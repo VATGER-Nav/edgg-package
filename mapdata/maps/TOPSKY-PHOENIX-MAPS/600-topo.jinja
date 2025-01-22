@@ -34,8 +34,8 @@ LAYER:-2
 COLOR:topo_road
 STYLE:Solid:1
 ACTIVE:ID:*:DFC,DFGW,DFGC,DFGE,DFGI,DFG,DFTC,DFTS,DFTN,DFTW,DFAN,DFAS,DFANT,DFAST:*:*
-ACTIVE:ID:*:DLC,DLGE,DLGW,DLT,DLA,DLAT,DLD,BOT:*:*
-ACTIVE:ID:*:DKC,DKG,DKT,DKA,DKAT,NOR:*:*
+AND_ACTIVE:ID:*:DLC,DLGE,DLGW,DLT,DLA,DLAT,DLD,BOT:*:*
+AND_ACTIVE:ID:*:DKC,DKG,DKT,DKA,DKAT,NOR:*:*
 {% for name, geom in data.topsky['common']['Topo']['Autobahn EDGG'].items() %}
 {{- geom | to_multicoordline(name) }}
 {% endfor %}
