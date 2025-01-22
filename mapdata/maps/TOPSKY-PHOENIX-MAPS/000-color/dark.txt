@@ -12,4 +12,4 @@ COLORDEF:label:166:255:166
 COLORDEF:topo_water:33:64:154
 COLORDEF:topo_road:139:94:60
 COLORDEF:topo_border:30:30:30
-COLORDEF:topo_city:15:15:15
+COLORDEF:topo_urban:15:15:15
