@@ -30,6 +30,8 @@ STYLE:DashDot:1
 #import .github/workflows/source/data/airspace/ctr/eddk.txt
 #import .github/workflows/source/data/airspace/ctr/eddl.txt
 #import .github/workflows/source/data/airspace/ctr/edln.txt
+#import .github/workflows/source/data/airspace/ctr/etnn.txt
+#import .github/workflows/source/data/airspace/ctr/etng.txt
 
 // All CTR Maps
 
