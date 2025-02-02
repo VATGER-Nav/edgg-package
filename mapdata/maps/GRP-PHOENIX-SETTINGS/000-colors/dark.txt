@@ -1,5 +1,5 @@
 Color_Arrival=244,202,3
-Color_Departure=0,185,255
+Color_Departure=72,184,251
 Color_RawVideo=161,192,76
 Color_Unknown=120,120,120
 
