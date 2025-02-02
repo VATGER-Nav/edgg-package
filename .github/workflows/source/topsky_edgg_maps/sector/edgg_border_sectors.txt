@@ -3,10 +3,6 @@ ACTIVE:1
 ASRDATA:EDGG,EDDK,EDDL,EDDS
 COLOR:DFSGrey
 STYLE:Solid:1
-#import .github/workflows/source/data/sectors/ebbu/cta/els.txt
-#import .github/workflows/source/data/sectors/ebbu/cta/ehs.txt
-#import .github/workflows/source/data/sectors/ebbu/tma/liege.txt
-#import .github/workflows/source/data/sectors/ebbu/tma/luxembourg.txt
 #import .github/workflows/source/data/sectors/edmm/ebg_approach/ilr.txt
 #import .github/workflows/source/data/sectors/edmm/ebg_approach/swa.txt
 #import .github/workflows/source/data/sectors/edmm/ebg_ost/bbg.txt
@@ -23,8 +19,6 @@ STYLE:Solid:1
 #import .github/workflows/source/data/sectors/edww/ebg_sued/ems.txt
 #import .github/workflows/source/data/sectors/edww/ebg_sued/han.txt
 #import .github/workflows/source/data/sectors/edww/ebg_sued/hrz.txt
-#import .github/workflows/source/data/sectors/ehaa/cta/amsterdam_east.txt
-#import .github/workflows/source/data/sectors/ehaa/tma/maastricht.txt
 #import .github/workflows/source/data/sectors/lfee/lfsb.txt
 #import .github/workflows/source/data/sectors/lfee/lfst.txt
 #import .github/workflows/source/data/sectors/lfee/lower.txt

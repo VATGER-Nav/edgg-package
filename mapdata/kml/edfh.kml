@@ -1769,6 +1769,7 @@
 	<Folder>
 		<name>Labels</name>
 		<visibility>0</visibility>
+		<open>1</open>
 		<Placemark>
 			<name>Buffer</name>
 			<visibility>0</visibility>
@@ -2025,23 +2026,75 @@
 			</Placemark>
 		</Folder>
 		<Folder>
+			<name>Buildings</name>
+			<visibility>0</visibility>
+			<Placemark>
+				<name>Prestwick</name>
+				<visibility>0</visibility>
+				<Point>
+					<coordinates>7.2816374648859,49.9583177988111,0</coordinates>
+				</Point>
+			</Placemark>
+			<Placemark>
+				<name>Hangar 901</name>
+				<visibility>0</visibility>
+				<Point>
+					<coordinates>7.28072924766726,49.956923585621,0</coordinates>
+				</Point>
+			</Placemark>
+			<Placemark>
+				<name>Cargo#1</name>
+				<visibility>0</visibility>
+				<Point>
+					<coordinates>7.27716698768896,49.9532661099528,0</coordinates>
+				</Point>
+			</Placemark>
+			<Placemark>
+				<name>Cargo#2</name>
+				<visibility>0</visibility>
+				<Point>
+					<coordinates>7.27580949538022,49.9518495986925,0</coordinates>
+				</Point>
+			</Placemark>
+			<Placemark>
+				<name>Cargo#3</name>
+				<visibility>0</visibility>
+				<Point>
+					<coordinates>7.2733014509242,49.949672970956,0</coordinates>
+				</Point>
+			</Placemark>
+			<Placemark>
+				<name>Cargo#4</name>
+				<visibility>0</visibility>
+				<Point>
+					<coordinates>7.27155948311921,49.9478799680632,0</coordinates>
+				</Point>
+			</Placemark>
+			<Placemark>
+				<name>Terminal</name>
+				<visibility>0</visibility>
+				<Point>
+					<coordinates>7.26985484306333,49.9463819809992,0</coordinates>
+				</Point>
+			</Placemark>
+			<Placemark>
+				<name>Fire Department</name>
+				<visibility>0</visibility>
+				<Point>
+					<coordinates>7.267620765812611,49.9455152053732,0</coordinates>
+				</Point>
+			</Placemark>
+			<Placemark>
+				<name>Hangers</name>
+				<visibility>0</visibility>
+				<Point>
+					<coordinates>7.26383130990053,49.9417402145186,0</coordinates>
+				</Point>
+			</Placemark>
+		</Folder>
+		<Folder>
 			<name>Stands New</name>
 			<visibility>0</visibility>
-			<open>1</open>
-			<Placemark>
-				<name>#M3</name>
-				<visibility>0</visibility>
-				<Point>
-					<coordinates>7.28040730828048,49.9579722549497,0</coordinates>
-				</Point>
-			</Placemark>
-			<Placemark>
-				<name>#M1</name>
-				<visibility>0</visibility>
-				<Point>
-					<coordinates>7.279828834936089,49.9568045870188,0</coordinates>
-				</Point>
-			</Placemark>
 			<Placemark>
 				<name>325</name>
 				<visibility>0</visibility>
@@ -2071,13 +2124,6 @@
 				</Point>
 			</Placemark>
 			<Placemark>
-				<name>#M2</name>
-				<visibility>0</visibility>
-				<Point>
-					<coordinates>7.28064185519067,49.95762833433229,0</coordinates>
-				</Point>
-			</Placemark>
-			<Placemark>
 				<name>411</name>
 				<visibility>0</visibility>
 				<Point>
@@ -2089,13 +2135,6 @@
 				<visibility>0</visibility>
 				<Point>
 					<coordinates>7.26849506165164,49.9475566135221,0</coordinates>
-				</Point>
-			</Placemark>
-			<Placemark>
-				<name>#M5</name>
-				<visibility>0</visibility>
-				<Point>
-					<coordinates>7.281588711152799,49.9585874952329,0</coordinates>
 				</Point>
 			</Placemark>
 			<Placemark>
@@ -2183,13 +2222,6 @@
 				</Point>
 			</Placemark>
 			<Placemark>
-				<name>#M4</name>
-				<visibility>0</visibility>
-				<Point>
-					<coordinates>7.281274528849659,49.9582693317827,0</coordinates>
-				</Point>
-			</Placemark>
-			<Placemark>
 				<name>341</name>
 				<visibility>0</visibility>
 				<Point>
@@ -2235,7 +2267,6 @@
 		<Folder>
 			<name>Stands</name>
 			<visibility>0</visibility>
-			<open>1</open>
 			<Placemark>
 				<name>M3</name>
 				<visibility>0</visibility>

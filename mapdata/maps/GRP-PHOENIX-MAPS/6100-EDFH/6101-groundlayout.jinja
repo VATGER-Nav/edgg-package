@@ -48,10 +48,9 @@ COLOR:layout-taxiline-grey
     'f7af29ee-ad62-44e4-86de-0e74249a06f5',
     'fbcc919f-c5ed-4d66-b4e6-84b80dca3265',
 ] %}
-{{- data.edfh['GuidanceLine'][ id | string ] | join_segments | simplify(default) | to_line(id) -}}
+{{- data.edfh['GuidanceLine'][ id | string ] | join_segments | simplify(default) | to_line(id) }}
 {% endfor %}
 COLOR:layout-taxiline-grey
-STYLE:Dot:1
 {% for desig in [
     '326',
     '331',
@@ -60,7 +59,7 @@ STYLE:Dot:1
     '511',
     'M2',
 ] %}
-{{- data.edfh_layout['layout']['Markings']['Leadin Lines'][ desig | string ] | to_multiline(desig) -}}
+{{- data.edfh_layout['layout']['Markings']['Leadin Lines'][ desig | string ] | to_multiline(desig) }}
 {% endfor %}
 
 MAP:Taxi Lanes
@@ -105,7 +104,7 @@ COLOR:layout-taxiline-yellow
     'f5ae414f-03d4-43d7-84cd-6c17c246138f',
     'feec1bf1-ca70-48fc-aaf9-95f43e800de1',
 ] %}
-{{- data.edfh['GuidanceLine'][ id | string ] | join_segments | simplify(default) | to_line(id) -}}
+{{- data.edfh['GuidanceLine'][ id | string ] | join_segments | simplify(default) | to_line(id) }}
 {% endfor %}
 
 MAP:Buildings

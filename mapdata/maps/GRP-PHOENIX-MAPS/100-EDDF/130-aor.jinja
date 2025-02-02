@@ -87,6 +87,16 @@ FONTSIZE:=:13
 TEXTALIGN:LC
 {{ data.eddf_layout['layout']['AoR']['DFGS#2_'] | to_text('DFGS 121.655') }}
 
+MAP:EDDF_ICE_GND
+AIRPORT:EDDF
+FOLDER:AoR
+COLOR:aor-ice-a
+STYLE:Dot
+{{ data.eddf_layout['layout']['AoR']['DFGI'] | to_line('') }}
+ZOOM:300
+FONTSIZE:=:13
+{{ data.eddf_layout['layout']['AoR']['DFGW_'] | to_text('DFGI 121.985:0:20') }}
+
 MAP:EDDF_GND
 AIRPORT:EDDF
 FOLDER:AoR

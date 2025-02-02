@@ -48,8 +48,8 @@ Datablock:detailed background:1310720:4.0:0:0:7
 Datablock:active item background:16711680:4.0:0:1:7
 Datablock:arrival background:1310720:3.5:0:0:7
 Datablock:departure background:1310720:3.5:0:0:7
-Datablock:AC list background:5854542:3.2:0:0:7
-Datablock:AC list selected background:4538938:3.2:0:0:7
+Datablock:AC list background:1973790:3.2:0:0:7
+Datablock:AC list selected background:3289650:3.2:0:0:7
 Datablock:dimmed at conflict detection:8421504:3.5:0:0:7
 Datablock:SCTA warning rectangle:255:4.0:0:1:7
 Datablock:SCTA CFL used warning rectangle:1313548:3.5:0:0:7
@@ -58,7 +58,7 @@ Datablock:SCTA CFL used warning leader:65535:3.5:0:3:7
 Controller:normal:65535:3.5:0:0:7
 Controller:breaking:12163583:3.5:0:0:7
 Controller:timeout:16777215:4.0:0:0:7
-Metar:normal:16776960:3.5:0:0:7
+Metar:normal:16764192:3.5:0:0:7
 Metar:modified:12163583:3.5:0:0:7
 Metar:timeout:33023:3.5:0:0:7
 Other:wait:16777215:3.5:0:0:7
@@ -89,9 +89,9 @@ Other:normal menu item:16777215:3.5:0:0:7
 Other:disabled menu item:8421504:3.5:0:0:7
 Transitions:transition grid:5263440:3.0:0:0:7
 Chat:text:16777215:3.5:0:0:7
-Chat:background:3947580:3.5:0:0:7
+Chat:background:1973790:3.5:0:0:7
 Chat:name normal:16777215:3.5:0:0:7
-Chat:name unread:16776960:3.5:0:0:7
+Chat:name unread:16764192:3.5:0:0:7
 Ground Network:exit:16711680:3.5:0:3:7
 Ground Network:taxiway:65535:3.5:0:3:7
 Ground Network:terminal taxiway:255:3.5:0:3:7

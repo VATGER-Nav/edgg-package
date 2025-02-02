@@ -1,0 +1,11 @@
+// ------------------------- NOTAM Closures -------------------------
+
+MAP:NOTAM C0007/25 - STANDS 321 & 326
+AIRPORT:EDFH
+FOLDER:Closures
+ACTIVE:250101:250331:0:1438:2359
+BLOCKS:EDFH:326,321
+STYLE:Solid:2
+{{ data.notam['notam']['EDFH']['Apron'] | to_poly('','layout-apron') }}
+COORDTYPE:TWYCLOSED:POLYGON
+{{ data.notam['notam']['EDFH']['Apron'] | to_poly('','closure') }}

@@ -12,6 +12,9 @@ COLOR:layout-label-taxiway
 {{- geom | to_text(taxiway) }}
 {% endfor %}
 
+// Closed due to NOTAM C0007/25:
+// 321, 326
+
 MAP:Stands
 AIRPORT:EDFH
 FOLDER:Labels
@@ -19,10 +22,20 @@ ACTIVE:1
 ZOOM:500
 FONTSIZE:=:9
 COLOR:layout-label-stand
-{% for stand, geom in data.edfh_layout['layout']['Labels']['Stands New'].items() %}
+{% for stand, geom in data.edfh_layout['layout']['Labels']['Stands New'].items() if not stand in ['321', '326'] %}
 {{- geom | to_text(stand) }}
 {% endfor %}
 {{ data.edfh_layout['layout']['Labels']['APN 5'] | to_text('Maintenance') }}
+
+MAP:Closed Stands
+AIRPORT:EDFH
+FOLDER:Labels
+ZOOM:500
+FONTSIZE:=:9
+COLOR:layout-label-stand
+{% for desig in ['321', '326'] %}
+{{- data.edfh_layout['layout']['Labels']['Stands New'][desig | string] | to_text(desig) }}
+{% endfor %}
 
 MAP:Stands Old
 AIRPORT:EDFH
@@ -45,3 +58,25 @@ COLOR:layout-label-stand
 {{ data.edfh_layout['layout']['Labels']['APN 3'] | to_text('APN 3') }}
 {{ data.edfh_layout['layout']['Labels']['APN 4'] | to_text('APN 4') }}
 {{ data.edfh_layout['layout']['Labels']['APN 5'] | to_text('APN 5:0:-12') }}
+
+MAP:Buildings
+AIRPORT:EDFH
+FOLDER:Labels
+ZOOM:500
+FONTSIZE:=:9
+COLOR:layout-label-stand
+{% for desig in [
+    'Hangar 901',
+    'Cargo#1',
+    'Cargo#2',
+    'Cargo#3',
+    'Cargo#4',
+    'Terminal',
+    'Hangers',
+] %}
+{{- data.edfh_layout['layout']['Labels']['Buildings'][desig | string] | to_text(desig) }}
+{% endfor %}
+{{ data.edfh_layout['layout']['Labels']['Buildings']['Prestwick'] | to_text('Prestwick:0:-6') }}
+{{ data.edfh_layout['layout']['Labels']['Buildings']['Prestwick'] | to_text('(Ryanair):0:6') }}
+{{ data.edfh_layout['layout']['Labels']['Buildings']['Fire Department'] | to_text('Fire:0:-6') }}
+{{ data.edfh_layout['layout']['Labels']['Buildings']['Fire Department'] | to_text('Department:0:6') }}

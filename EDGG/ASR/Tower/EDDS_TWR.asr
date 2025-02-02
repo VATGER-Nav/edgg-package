@@ -3,10 +3,6 @@ DisplayTypeNeedRadarContent:1
 DisplayTypeGeoReferenced:1
 SECTORFILE:
 SECTORTITLE:
-ARTCC low boundary:Centerlines EDDS 07:
-ARTCC low boundary:Centerlines EDDS 25:
-Geo:EDDS Landmark Rivers / Highway EDDS PRO:
-Regions:EDDS City:polygon
 SHOWC:1
 SHOWSB:0
 BELOW:1280

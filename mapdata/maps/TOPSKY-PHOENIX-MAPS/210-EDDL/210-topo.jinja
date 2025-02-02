@@ -1,0 +1,14 @@
+//---------------------------------------------------------------
+//                              EDDL
+//---------------------------------------------------------------
+
+MAP:Bridges
+FOLDER:EDDL
+ASRDATA:PHOENIX
+COLOR:standard
+STYLE:Solid:1
+ACTIVE:ID:DLT:*:*:*
+// Bridges
+{% for name, geom in data.topsky['common']['EDDL']['Bridges'].items() %}
+{{- geom | to_line(name) }}
+{% endfor %}

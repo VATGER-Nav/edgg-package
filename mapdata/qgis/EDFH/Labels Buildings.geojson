@@ -1,0 +1,16 @@
+{
+"type": "FeatureCollection",
+"name": "Labels Buildings",
+"crs": { "type": "name", "properties": { "name": "urn:ogc:def:crs:EPSG::32632" } },
+"features": [
+{ "type": "Feature", "properties": { "name": "Prestwick" }, "geometry": { "type": "Point", "coordinates": [ 376746.705652626114897, 5535411.473575450479984 ] } },
+{ "type": "Feature", "properties": { "name": "Hangar 901" }, "geometry": { "type": "Point", "coordinates": [ 376678.003310089174192, 5535257.96817235276103 ] } },
+{ "type": "Feature", "properties": { "name": "Cargo#1" }, "geometry": { "type": "Point", "coordinates": [ 376413.135391213407274, 5534857.225291969254613 ] } },
+{ "type": "Feature", "properties": { "name": "Cargo#2" }, "geometry": { "type": "Point", "coordinates": [ 376312.132265218358953, 5534701.987560616806149 ] } },
+{ "type": "Feature", "properties": { "name": "Cargo#3" }, "geometry": { "type": "Point", "coordinates": [ 376126.638399723568, 5534464.149700072593987 ] } },
+{ "type": "Feature", "properties": { "name": "Cargo#4" }, "geometry": { "type": "Point", "coordinates": [ 375997.071631554805208, 5534267.697797142900527 ] } },
+{ "type": "Feature", "properties": { "name": "Terminal" }, "geometry": { "type": "Point", "coordinates": [ 375870.931998843618203, 5534103.985354110598564 ] } },
+{ "type": "Feature", "properties": { "name": "Fire Department" }, "geometry": { "type": "Point", "coordinates": [ 375708.425843954086304, 5534011.329811899922788 ] } },
+{ "type": "Feature", "properties": { "name": "Hangers" }, "geometry": { "type": "Point", "coordinates": [ 375426.824222962604836, 5533597.946771077811718 ] } }
+]
+}

@@ -3,10 +3,6 @@ DisplayTypeNeedRadarContent:1
 DisplayTypeGeoReferenced:1
 SECTORFILE:
 SECTORTITLE:
-ARTCC low boundary:Centerlines EDLP 06:
-ARTCC low boundary:Centerlines EDLP 24:
-Geo:EDZZ Landmark Highway Germany:
-Geo:EDZZ Landmark River Germany:
 SHOWC:1
 SHOWSB:0
 BELOW:180

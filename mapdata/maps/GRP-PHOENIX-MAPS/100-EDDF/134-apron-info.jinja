@@ -86,7 +86,7 @@ COLOR:break-away-area
     'Y7 2a',
     'Y7 3a',
 ] %}
-{{- data.eddf_layout['layout']['Breakaway'][desig | string] | to_line('') -}}
+{{- data.eddf_layout['layout']['Breakaway'][desig | string] | to_line('') }}
 {% endfor %}
 STYLE:Solid:2
 {% for desig in [
@@ -132,7 +132,7 @@ STYLE:Solid:2
     'Y7 2b',
     'Y7 3b',
 ] %}
-{{- data.eddf_layout['layout']['Breakaway'][desig | string] | to_line('') -}}
+{{- data.eddf_layout['layout']['Breakaway'][desig | string] | to_line('') }}
 {% endfor %}
 {% for desig in [
     '1#L',
