@@ -14,7 +14,7 @@ Color_Background=24,24,24
 Color_Foreground=200,200,200
 
 Color_CPDLC_Discarded=128,128,128
-Color_CPDLC_DM_Request=118,172,214
+Color_CPDLC_DM_Request=102,202,196
 Color_CPDLC_Failed=212,128,44
 Color_CPDLC_Pilot_Late=212,128,44
 Color_CPDLC_Standby=212,128,44
