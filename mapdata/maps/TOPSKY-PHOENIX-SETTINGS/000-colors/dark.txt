@@ -13,6 +13,15 @@ Color_Field_Highlight=72,72,73
 Color_Background=24,24,24
 Color_Foreground=200,200,200
 
+Color_CPDLC_Discarded=128,128,128
+Color_CPDLC_DM_Request=102,202,196
+Color_CPDLC_Failed=212,128,44
+Color_CPDLC_Pilot_Late=212,128,44
+Color_CPDLC_Standby=212,128,44
+Color_CPDLC_UM_Clearance=27,117,187
+Color_CPDLC_Unable=212,128,44
+Color_CPDLC_Urgency=225,25,25
+
 Color_Flight_Leg=0,170,0
 Color_Freq_Indicator=237,237,237
 Color_Inactive_Sector=67,73,76

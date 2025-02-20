@@ -1,13 +1,5 @@
 Color_Active_Sector=52,58,62
 Color_AIW_Intrusion=255,152,0
-Color_CPDLC_Discarded=128,128,128
-Color_CPDLC_DM_Request=30,250,250
-Color_CPDLC_Failed=212,128,44
-Color_CPDLC_Pilot_Late=212,124,44
-Color_CPDLC_Standby=212,128,44
-Color_CPDLC_UM_Clearance=0,0,205
-Color_CPDLC_Unable=212,128,44
-Color_CPDLC_Urgency=225,25,25
 Color_Flight_Highlight=36,41,45
 Color_SEP_Tool_1=153,217,234
 Color_SEP_Tool_2=255,153,184
