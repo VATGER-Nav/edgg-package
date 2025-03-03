@@ -1,6 +1,6 @@
 {
 "type": "FeatureCollection",
-"name": "Hospitals EDXX",
+"name": "EDXX_hospitals",
 "crs": { "type": "name", "properties": { "name": "urn:ogc:def:crs:OGC:1.3:CRS84" } },
 "features": [
     { "type": "Feature", "properties": { "name": "Hamelnpyrmont Sana" }, "geometry": { "type": "Point", "coordinates": [ 9.3509722222222, 52.1083333333330 ] } },

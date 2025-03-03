@@ -22160,7 +22160,94 @@
 	<Folder>
 		<name>EDDF</name>
 		<visibility>0</visibility>
-		<open>1</open>
+		<Folder>
+			<name>ntz</name>
+			<visibility>0</visibility>
+			<Placemark>
+				<name>07L-07C</name>
+				<visibility>0</visibility>
+				<Style>
+					<LineStyle>
+						<color>ff0000ff</color>
+					</LineStyle>
+					<PolyStyle>
+						<fill>0</fill>
+					</PolyStyle>
+				</Style>
+				<Polygon>
+					<outerBoundaryIs>
+						<LinearRing>
+							<coordinates>
+								8.01494888888889,49.9177641666667,0 8.49856527777778,50.0345794444444,0 8.50253277777778,50.0278536111111,0 8.019008888888891,49.9110641666667,0 8.01494888888889,49.9177641666667,0 
+							</coordinates>
+						</LinearRing>
+					</outerBoundaryIs>
+				</Polygon>
+			</Placemark>
+			<Placemark>
+				<name>07L-07R</name>
+				<visibility>0</visibility>
+				<Style>
+					<LineStyle>
+						<color>ff0000ff</color>
+					</LineStyle>
+					<PolyStyle>
+						<fill>0</fill>
+					</PolyStyle>
+				</Style>
+				<Polygon>
+					<outerBoundaryIs>
+						<LinearRing>
+							<coordinates>
+								8.01494888888889,49.9177641666667,0 8.49856527777778,50.0345794444444,0 8.50510444444445,50.0234986111111,0 8.02172277777778,49.9067177777778,0 8.01494888888889,49.9177641666667,0 
+							</coordinates>
+						</LinearRing>
+					</outerBoundaryIs>
+				</Polygon>
+			</Placemark>
+			<Placemark>
+				<name>25R-25C</name>
+				<visibility>0</visibility>
+				<Style>
+					<LineStyle>
+						<color>ff0000ff</color>
+					</LineStyle>
+					<PolyStyle>
+						<fill>0</fill>
+					</PolyStyle>
+				</Style>
+				<Polygon>
+					<outerBoundaryIs>
+						<LinearRing>
+							<coordinates>
+								8.58154166666667,50.0543916666667,0 9.06773083333333,50.1691716666667,0 9.071668611111109,50.1624847222222,0 8.58551888888889,50.0476866666667,0 8.58154166666667,50.0543916666667,0 
+							</coordinates>
+						</LinearRing>
+					</outerBoundaryIs>
+				</Polygon>
+			</Placemark>
+			<Placemark>
+				<name>25R-25L</name>
+				<visibility>0</visibility>
+				<Style>
+					<LineStyle>
+						<color>ff0000ff</color>
+					</LineStyle>
+					<PolyStyle>
+						<fill>0</fill>
+					</PolyStyle>
+				</Style>
+				<Polygon>
+					<outerBoundaryIs>
+						<LinearRing>
+							<coordinates>
+								8.578534166666669,50.05367527777779,0 9.064645000000001,50.1684469444444,0 9.071283888888891,50.1574244444444,0 8.585068888888889,50.0425877777778,0 8.578534166666669,50.05367527777779,0 
+							</coordinates>
+						</LinearRing>
+					</outerBoundaryIs>
+				</Polygon>
+			</Placemark>
+		</Folder>
 		<Folder>
 			<name>depfreq</name>
 			<visibility>0</visibility>
@@ -22177,78 +22264,6 @@
 				<Point>
 					<coordinates>8.843389444444449,49.8937761111111,0</coordinates>
 				</Point>
-			</Placemark>
-		</Folder>
-		<Folder>
-			<name>ntz</name>
-			<visibility>0</visibility>
-			<Placemark>
-				<name>07L-07C</name>
-				<visibility>0</visibility>
-				<Style>
-					<LineStyle>
-						<color>ff0000ff</color>
-					</LineStyle>
-					<PolyStyle>
-						<fill>0</fill>
-					</PolyStyle>
-				</Style>
-				<LineString>
-					<coordinates>
-						8.01494888888889,49.9177641666667,0 8.49856527777778,50.0345794444444,0 8.49856527777778,50.0345794444444,0 8.50253277777778,50.0278536111111,0 8.50253277777778,50.0278536111111,0 8.019008888888891,49.9110641666667,0 8.019008888888891,49.9110641666667,0 8.01494888888889,49.9177641666667,0 
-					</coordinates>
-				</LineString>
-			</Placemark>
-			<Placemark>
-				<name>07L-07R</name>
-				<visibility>0</visibility>
-				<Style>
-					<LineStyle>
-						<color>ff0000ff</color>
-					</LineStyle>
-					<PolyStyle>
-						<fill>0</fill>
-					</PolyStyle>
-				</Style>
-				<LineString>
-					<coordinates>
-						8.01494888888889,49.9177641666667,0 8.49856527777778,50.0345794444444,0 8.49856527777778,50.0345794444444,0 8.50510444444445,50.0234986111111,0 8.50510444444445,50.0234986111111,0 8.02172277777778,49.9067177777778,0 8.02172277777778,49.9067177777778,0 8.01494888888889,49.9177641666667,0 
-					</coordinates>
-				</LineString>
-			</Placemark>
-			<Placemark>
-				<name>25R-25C</name>
-				<visibility>0</visibility>
-				<Style>
-					<LineStyle>
-						<color>ff0000ff</color>
-					</LineStyle>
-					<PolyStyle>
-						<fill>0</fill>
-					</PolyStyle>
-				</Style>
-				<LineString>
-					<coordinates>
-						8.58154166666667,50.0543916666667,0 9.06773083333333,50.1691716666667,0 9.06773083333333,50.1691716666667,0 9.071668611111109,50.1624847222222,0 9.071668611111109,50.1624847222222,0 8.58551888888889,50.0476866666667,0 8.58551888888889,50.0476866666667,0 8.58154166666667,50.0543916666667,0 
-					</coordinates>
-				</LineString>
-			</Placemark>
-			<Placemark>
-				<name>25R-25L</name>
-				<visibility>0</visibility>
-				<Style>
-					<LineStyle>
-						<color>ff0000ff</color>
-					</LineStyle>
-					<PolyStyle>
-						<fill>0</fill>
-					</PolyStyle>
-				</Style>
-				<LineString>
-					<coordinates>
-						8.578534166666669,50.05367527777779,0 9.064645000000001,50.1684469444444,0 9.064645000000001,50.1684469444444,0 9.071283888888891,50.1574244444444,0 9.071283888888891,50.1574244444444,0 8.585068888888889,50.0425877777778,0 8.585068888888889,50.0425877777778,0 8.578534166666669,50.05367527777779,0 
-					</coordinates>
-				</LineString>
 			</Placemark>
 		</Folder>
 		<Folder>
