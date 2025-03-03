@@ -59,8 +59,14 @@ ASRDATA:PHOENIX
             EDGG['EDDFCTR']['000-025']
             ),
 ) }}
-{{ data.topsky['common']['Airspace']['EHBK CTR'] | to_multiline('EHBK CTR') }}
-{{ data.topsky['common']['Airspace']['EHDP EHVK CTR'] | to_multiline('EHDP EHVK CTR') }}
+// EHBKCTR
+{{ data.topsky['common']['airspace']['EHBKCTR_a'] | to_line('') -}}
+{{ data.topsky['common']['airspace']['EHBKCTR_b'] | to_line('') -}}
+// EHVKCTR
+{{ data.topsky['common']['airspace']['EHVKCTR_a'] | to_line('') -}}
+{{ data.topsky['common']['airspace']['EHVKCTR_b'] | to_line('') -}}
+// EHDPCTR
+{{ data.topsky['common']['airspace']['EHDPCTR'] | to_line('') -}}
 
 MAP:Airspace C
 FOLDER:Airspace
@@ -69,10 +75,16 @@ ACTIVE:1
 LAYER:+2
 STYLE:DOT:1
 ASRDATA:PHOENIX
-{{ data.topsky['common']['Airspace']['EDDF C'] | to_multiline('EDDF C') }}
+// EDDFCLC
+{% for uuid, geom in data.topsky['common']['airspace']['EDDFCLC'].items() %}
+{{- geom | to_line('') -}}
+{% endfor %}
 {{ render_sectorlines(data.aor['lines']['EDGG']['EDDFAPP']['000-135']) }}
-{{ data.topsky['common']['Airspace']['EDDL EDDK C'] | to_multiline('EDDL EDDK C') }}
-// EDDS C
+// EDDLCLC & EDDKCLC
+{% for uuid, geom in data.topsky['common']['airspace']['EDLLCLC'].items() %}
+{{- geom | to_line('') -}}
+{% endfor %}
+// EDDSCLC
 {{ render_sectorlines(EDGG['EDDSCLC']['035-055']) }}
 
 MAP:Airspace D

@@ -2,8 +2,8 @@ MAP:DEP FREQ
 FOLDER:EDDF
 COLOR:blue
 ASRDATA:PHOENIX
-TEXT:N050.04.39.386:E008.18.28.341:120.155
-TEXT:N049.53.37.594:E008.50.36.202:136.130
+{{ data.topsky['common']['EDDF']['depfreq']['DFDN'] | to_text('120.155') }}
+{{ data.topsky['common']['EDDF']['depfreq']['DFDS'] | to_text('136.130') }}
 
 MAP:DI DEP 18
 FOLDER:EDDF
@@ -45,7 +45,7 @@ COLOR:red
 STYLE:Solid:1
 ASRDATA:PHOENIX
 ACTIVE:RWY:ARR:EDDF25L:DEP:*
-{{ data.topsky['common']['EDDF']['Tabuzone']['25L'] | to_line('') }}
+{{ data.topsky['common']['EDDF']['tabuzone']['25L'] | to_line('') -}}
 
 MAP:Distance Indicator 25R
 FOLDER:EDDF
@@ -53,7 +53,7 @@ COLOR:red
 STYLE:Solid:1
 ASRDATA:PHOENIX
 ACTIVE:RWY:ARR:EDDF25R:DEP:*
-{{ data.topsky['common']['EDDF']['Tabuzone']['25R'] | to_line('') }}
+{{ data.topsky['common']['EDDF']['tabuzone']['25R'] | to_line('') -}}
 
 MAP:Distance Indicator 07
 FOLDER:EDDF
@@ -61,4 +61,4 @@ COLOR:red
 STYLE:Solid:1
 ASRDATA:PHOENIX
 ACTIVE:RWY:ARR:EDDF07R:DEP:*
-{{ data.topsky['common']['EDDF']['Tabuzone']['07R'] | to_line('') }}
+{{ data.topsky['common']['EDDF']['tabuzone']['07R'] | to_line('') -}}
