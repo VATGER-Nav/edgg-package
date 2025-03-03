@@ -5,8 +5,8 @@ AIRPORT:EDDF
 FOLDER:Airport Layout
 ACTIVE:1
 COLOR:layout-taxiline-yellow
-
-{% for id in [
+{% for uuid in
+[
     '54cd8038-e6f8-466f-8495-fb4cba5dfa6d',
     '0022ad53-34f9-4f29-8c49-ca67898605e9',
     '002ce268-0bb2-4449-a502-34186f5c5867',
@@ -1602,13 +1602,14 @@ COLOR:layout-taxiline-yellow
     'ff6112dc-86dc-4203-a86a-a02181d05ea8',
     'ff6a4358-327c-453b-bd52-ad1de44a9cc8',
     'ffbadb86-c6fc-4d44-9325-96e973500a26',
-    ] %}
-{{- data.eddf['GuidanceLineMarking'][id | string] | join_segments | simplify(default) | to_line('') }}
+] %}
+{{- data.eddf_aixm['GuidanceLineMarking'][uuid] | join_segments | simplify(default) | to_line(uuid) -}}
 {% endfor %}
 
 // Orange Lines
 COLOR:layout-taxiline-orange
-{% for id in [
+{% for uuid in
+[
     '01b1ba27-02b9-453d-bb0b-339c7baa83d3',
     '06770b1c-8c42-48f1-a594-0521c7e2b0dd',
     '07632f87-c5f5-42da-8624-89211f9d93e9',
@@ -1662,13 +1663,14 @@ COLOR:layout-taxiline-orange
     'e4b2f9af-d027-4053-84e4-cb20a9e5551a',
     '8bfd325b-b3eb-4bdc-92f8-3a38a93c050f',
     'cac24b89-f487-4b23-beef-f9ce3266c442',
-    ] %}
-{{- data.eddf['GuidanceLineMarking'][id | string] | join_segments | simplify(default) | to_line('') }}
+] %}
+{{- data.eddf_aixm['GuidanceLineMarking'][uuid] | join_segments | simplify(default) | to_line(uuid) -}}
 {% endfor %}
 
 // Blue Lines
 COLOR:layout-taxiline-blue
-{% for id in [
+{% for uuid in
+[
     '003a65bf-bffd-420e-8303-c43a6e645d15',
     '01faf291-cb21-440a-bba8-8e8ba36f2677',
     '038e4818-8ce6-4605-aeee-8c07a9ff1f30',
@@ -1719,6 +1721,7 @@ COLOR:layout-taxiline-blue
     'feb22e3b-8439-4f3e-92b7-a025fe1eb628',
     '00655446-55d7-48ba-b919-e225ce82ca15',
     'a4ed2f03-79e9-4378-9b90-51f233d89e42',
-    ] %}
-{{- data.eddf['GuidanceLineMarking'][id | string] | join_segments | simplify(default) | to_line('') }}
+] 
+%}
+{{- data.eddf_aixm['GuidanceLineMarking'][uuid] | join_segments | simplify(default) | to_line(uuid) -}}
 {% endfor %}

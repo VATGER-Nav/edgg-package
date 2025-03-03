@@ -7,7 +7,8 @@ ACTIVE:1
 COLOR:layout-taxiline-grey
 
 // Solid Leadin Lines
-{% for id in [
+{% for uuid in
+[
     '173ad939-d6f8-4f07-e063-0f4b2c0a28cc',
     '173ad939-d6f9-4f07-e063-0f4b2c0a28cc',
     '1736f2af-42b0-9ee2-e063-024b2c0aa5dc',
@@ -272,10 +273,11 @@ COLOR:layout-taxiline-grey
     'ffb522bb-48e2-45aa-8cd2-471bbbe24b0c',
     '0ad6ba94-3988-4ffa-bb57-e1f3a6ae001d',
     '747204e3-38da-42b9-b28a-6a09135f2076'
-    ] %}
-{{- data.eddf['GuidanceLineMarking'][id | string] | join_segments | simplify(default) | to_line('') }}
+] %}
+{{- data.eddf_aixm['GuidanceLineMarking'][uuid] | join_segments | simplify(default) | to_line(uuid) -}}
 {% endfor %}
-{% for desig in [
+{% for desig in
+[
     'H12',
     'H10',
     'H8',
@@ -283,7 +285,7 @@ COLOR:layout-taxiline-grey
     'H4',
     'H2',
 ] %}
-{{- data.eddf_layout['layout']['Markings']['Leadin Lines'][desig | string] | to_line(desig) }}
+{{- data.eddf_kml['layout']['markings']['leadin_solid'][desig] | to_line(desig) -}}
 {% endfor %}
 
 // J7 J9 J11 - closed
@@ -292,64 +294,11 @@ COLOR:layout-taxiline-grey
 // 1d2be0cb-a3b6-43ea-a500-f579c8150ab3
 
 // Dash Leadin Lines
-{% for desig in [
-    'A1',
-    'A54A',
-    'A54B',
-    'A58A',
-    'A58B',
-    'A62A',
-    'A62B',
-    'A66A',
-    'A66B',
-    'B10',
-    'C2',
-    'C15A',
-    'C15B',
-    'C16A',
-    'C16B',
-    'D1A',
-    'D4A',
-    'D4B',
-    'D5A',
-    'D8A',
-    'E2A',
-    'E2B',
-    'E5A',
-    'E5B',
-    'E6A',
-    'E9A',
-    'F221',
-    'F223',
-    'F225',
-    'F232A',
-    'F233A',
-    'G16A',
-    'J2A',
-    'J2B',
-    'J6A',
-    'J6B',
-    'V119',
-    'V120',
-    'V121',
-    'V123',
-    'V125',
-    'V126',
-    'V128',
-    'V134',
-    'V136',
-    'V151',
-    'V153',
-    'V158',
-    'V160',
-    'V162',
-    'V171A',
-    'V171B',
-    'V173A',
-    'V173B',
-] %}
-{{- data.eddf_layout['layout']['Markings']['Leadin Lines'][desig | string] | to_multiline('Dashed ' + desig) }}
+{% for uuid, geom in data.eddf_kml['layout']['markings']['leadin_dash'].items() if uuid not in [] %}
+{{- geom | to_line('') -}}
 {% endfor %}
 
-// Taxi-Out Stands
-{{ data.eddf_layout['layout']['Markings']['Arrows'] | to_multipoly('','layout-taxiline-grey') }}
+// Taxi-Out Arrows
+{% for uuid, geom in data.eddf_kml['layout']['markings']['arrows'].items() %}
+{{- geom | to_poly(uuid, 'layout-taxiline-grey') }}
+{% endfor %}

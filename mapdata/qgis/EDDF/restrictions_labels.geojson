@@ -1,0 +1,23 @@
+{
+"type": "FeatureCollection",
+"name": "restrictions_labels",
+"crs": { "type": "name", "properties": { "name": "urn:ogc:def:crs:EPSG::32632" } },
+"features": [
+{ "type": "Feature", "properties": { "name": "reference_1" }, "geometry": { "type": "Point", "coordinates": [ 467424.749624605057761, 5543859.378366444259882 ] } },
+{ "type": "Feature", "properties": { "name": "07L-25R_a" }, "geometry": { "type": "Point", "coordinates": [ 467611.325266612402629, 5543528.854890533722937 ] } },
+{ "type": "Feature", "properties": { "name": "07L-25R_b" }, "geometry": { "type": "Point", "coordinates": [ 465687.577615840360522, 5542669.274092050269246 ] } },
+{ "type": "Feature", "properties": { "name": "07L-25R_c" }, "geometry": { "type": "Point", "coordinates": [ 465907.061556064058095, 5543244.925082034431398 ] } },
+{ "type": "Feature", "properties": { "name": "N1" }, "geometry": { "type": "Point", "coordinates": [ 470412.082863804418594, 5544068.213900056667626 ] } },
+{ "type": "Feature", "properties": { "name": "Nob_a" }, "geometry": { "type": "Point", "coordinates": [ 470946.128412179183215, 5544275.324621429666877 ] } },
+{ "type": "Feature", "properties": { "name": "N7ob" }, "geometry": { "type": "Point", "coordinates": [ 468737.097559635527432, 5543430.497231069020927 ] } },
+{ "type": "Feature", "properties": { "name": "N8ob_a" }, "geometry": { "type": "Point", "coordinates": [ 468782.766996999445837, 5543844.355543944984674 ] } },
+{ "type": "Feature", "properties": { "name": "L19" }, "geometry": { "type": "Point", "coordinates": [ 467176.890580882842187, 5542695.2026656428352 ] } },
+{ "type": "Feature", "properties": { "name": "M19" }, "geometry": { "type": "Point", "coordinates": [ 468116.100968528480735, 5542533.301026606932282 ] } },
+{ "type": "Feature", "properties": { "name": "W" }, "geometry": { "type": "Point", "coordinates": [ 465784.530861794017255, 5541637.50019920244813 ] } },
+{ "type": "Feature", "properties": { "name": "Nob_b" }, "geometry": { "type": "Point", "coordinates": [ 470454.237952544121072, 5544163.192379334941506 ] } },
+{ "type": "Feature", "properties": { "name": "Nob_c" }, "geometry": { "type": "Point", "coordinates": [ 469941.296597365173511, 5543976.836903475224972 ] } },
+{ "type": "Feature", "properties": { "name": "N8ob_b" }, "geometry": { "type": "Point", "coordinates": [ 468383.568245911446866, 5543708.67529717925936 ] } },
+{ "type": "Feature", "properties": { "name": "reference_2" }, "geometry": { "type": "Point", "coordinates": [ 470119.491527645441238, 5544783.364135971292853 ] } },
+{ "type": "Feature", "properties": { "name": "L_2" }, "geometry": { "type": "Point", "coordinates": [ 466046.434011833742261, 5542334.5341538451612 ] } }
+]
+}

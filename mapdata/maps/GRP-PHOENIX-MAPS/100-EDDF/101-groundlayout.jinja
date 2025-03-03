@@ -4,13 +4,15 @@ MAP:Taxiway Movement Area
 AIRPORT:EDDF
 FOLDER:Airport Layout
 ACTIVE:1
-{{ data.eddf_layout['layout']['Taxiways']['Taxiways'] | to_multipoly('Taxi Area','layout-taxiway') }}
+{% for uuid, geom in data.eddf_kml['layout']['taxiways'].items() %}
+{{- geom | to_poly('', 'layout-taxiway') }}
+{% endfor %}
 
 MAP:Runways
 AIRPORT:EDDF
 FOLDER:Airport Layout
 ACTIVE:1
-{{ data.eddf_layout['layout']['Runways']['25L/07R'] | to_poly('Runway 25L/07R','layout-runway') }}
-{{ data.eddf_layout['layout']['Runways']['25C/07C'] | to_poly('Runway 25C/07C','layout-runway') }}
-{{ data.eddf_layout['layout']['Runways']['25R/07L'] | to_poly('Runway 25R/07L','layout-runway') }}
-{{ data.eddf_layout['layout']['Runways']['18'] | to_poly('Runway 18','layout-runway') }}
+{{ data.eddf_kml['layout']['runways']['07R-25L'] | to_poly('Runway 07R/25L', 'layout-runway') }}
+{{ data.eddf_kml['layout']['runways']['07C-25C'] | to_poly('Runway 07C/25C', 'layout-runway') }}
+{{ data.eddf_kml['layout']['runways']['07L-25R'] | to_poly('Runway 07L/25R', 'layout-runway') }}
+{{ data.eddf_kml['layout']['runways']['18'] | to_poly('Runway 18', 'layout-runway') }}

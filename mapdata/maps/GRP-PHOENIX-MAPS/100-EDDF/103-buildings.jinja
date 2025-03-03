@@ -4,7 +4,8 @@ MAP:Buildings
 AIRPORT:EDDF
 FOLDER:Airport Layout
 ACTIVE:1
-{% for id, geom in data.eddf['VerticalStructure'].items() if id in [
+{% for uuid in 
+[
     '01d5864d-b9dc-4894-836b-3e43477dc8be',
     '0203b36e-996d-42f9-a778-5c76df51e1a4',
     '024fcad5-eb34-4687-bfa4-cb9735c5d9df',
@@ -656,14 +657,18 @@ ACTIVE:1
     'f7f3f6d3-7e12-4986-b6b0-9aef8eaac38f',
     'f840bc55-8c12-4e2e-9ca1-2b04ff21c076',
     'f8f821f5-7e7f-49de-bc37-67d43fe0d0b7',
-    ] %}
-{{- geom | simplify(default) | to_poly(id, 'layout-building') }}
+] %}
+{{- data.eddf_aixm['VerticalStructure'][uuid] | simplify(default) | to_poly(uuid, 'layout-building') }}
 {% endfor %}
-{{ data.eddf_layout['layout']['Buildings']['Buildings'] | to_multipoly('Buildings', 'layout-building') }}
+{% for uuid, geom in data.eddf_kml['layout']['buildings'].items() %}
+{{- geom | to_poly('', 'layout-building') }}
+{% endfor %}
 
 MAP:Fence
 AIRPORT:EDDF
 FOLDER:Airport Layout
 ACTIVE:1
 COLOR:layout-building
-{{ data.eddf_layout['layout']['Fence']['Fence'] | to_multiline('Fence') }}
+{% for uuid, geom in data.eddf_kml['layout']['fence'].items() %}
+{{- geom | to_line('') -}}
+{% endfor %}
