@@ -1,0 +1,263 @@
+// ------------------------ Restriction Maps ------------------------
+
+MAP:Restrictions
+AIRPORT:EDDS
+FOLDER:Restrictions
+ZOOM:400
+
+// Turn S - I
+COLOR:restrictions-C
+STYLE:SOLID:4
+{{ data.edds_kml['layout']['restrictions']['line']['S_I'] | to_line('') -}}
+
+// M (Between H and Exit 3)
+COLOR:restrictions-C
+STYLE:SOLID:4
+{{ data.edds_kml['layout']['restrictions']['line']['M_a'] | to_line('') -}}
+{{ data.edds_kml['layout']['restrictions']['line']['M_b'] | to_line('') -}}
+
+// W/Z
+COLOR:restrictions-D
+STYLE:SOLID:4
+{{ data.edds_kml['layout']['restrictions']['line']['W_Z'] | to_line('') -}}
+TEXTALIGN:LC
+{{ data.edds_kml['layout']['restrictions']['labels']['W_Z'] | to_text('Max wingspan 42m') }}
+{{ data.edds_kml['layout']['restrictions']['labels']['W_Z'] | to_text('e.g. A400:0:12') }}
+
+// C
+COLOR:restrictions-D
+STYLE:SOLID:4
+{{ data.edds_kml['layout']['restrictions']['line']['C'] | to_line('') -}}
+
+// E
+COLOR:restrictions-D
+STYLE:SOLID:4
+{{ data.edds_kml['layout']['restrictions']['line']['E_a'] | to_line('') -}}
+{{ data.edds_kml['layout']['restrictions']['line']['E_b'] | to_line('') -}}
+
+// G
+COLOR:restrictions-D
+STYLE:SOLID:4
+{{ data.edds_kml['layout']['restrictions']['line']['G_a'] | to_line('') -}}
+{{ data.edds_kml['layout']['restrictions']['line']['G_b'] | to_line('') -}}
+
+// Turn L2 - O
+COLOR:restrictions-D
+STYLE:SOLID:4
+{{ data.edds_kml['layout']['restrictions']['line']['L2_O'] | to_line('') -}}
+
+// Z
+COLOR:restrictions-D
+STYLE:SOLID:4
+{{ data.edds_kml['layout']['restrictions']['line']['Z_a'] | to_line('') -}}
+{{ data.edds_kml['layout']['restrictions']['line']['Z_b'] | to_line('') -}}
+
+// D
+COLOR:restrictions-E
+STYLE:SOLID:4
+{{ data.edds_kml['layout']['restrictions']['line']['D'] | to_line('') -}}
+
+// M/H/O/L2/L3
+COLOR:restrictions-E
+STYLE:SOLID:4
+{{ data.edds_kml['layout']['restrictions']['line']['M_L3_O_H'] | to_line('') -}}
+{{ data.edds_kml['layout']['restrictions']['line']['L2_a'] | to_line('') -}}
+{{ data.edds_kml['layout']['restrictions']['line']['L2_b'] | to_line('') -}}
+
+// GAT 29m
+COLOR:restrictions-AB
+COORDTYPE:OTHER:REGION:/
+STYLE:SOLID:1
+{{ data.edds_kml['layout']['restrictions']['poly']['GAT1'] | to_poly('') }}
+TEXTALIGN:LC
+{{ data.edds_kml['layout']['restrictions']['labels']['GAT1'] | to_text('Max wingspan 29m') }}
+
+// GAT 20m
+COLOR:restrictions-AB
+COORDTYPE:OTHER:REGION:\
+STYLE:SOLID:1
+{{ data.edds_kml['layout']['restrictions']['poly']['GAT2'] | to_poly('') }}
+TEXTALIGN:LC
+{{ data.edds_kml['layout']['restrictions']['labels']['GAT2'] | to_text('Max wingspan 20m') }}
+
+TEXTALIGN:CC
+FONTSIZE:=:9
+COLOR:restrictions-AB
+{% for desig in ['65'] %}
+{{- data.edds_kml['layout']['restrictions']['stands'][desig] | to_symbol('STAND') }}
+{% endfor %}
+COLOR:restrictions-C
+{% for desig in
+[
+    '10',
+    '12',
+    '13',
+    '14',
+    '15',
+    '16',
+    '17',
+    '18',
+    '19',
+    '25',
+    '27',
+    '30',
+    '31',
+    '32',
+    '33',
+    '34',
+    '35',
+    '36',
+    '40',
+    '41',
+    '42',
+    '43',
+    '45',
+    '46',
+    '47',
+    '48',
+    '50',
+    '60',
+    '61',
+    '62',
+    '63',
+    '64',
+    '71',
+    '72',
+    '73',
+    '74',
+    '75',
+] %}
+{{- data.edds_kml['layout']['restrictions']['stands'][desig] | to_symbol('STAND') }}
+{% endfor %}
+// Secondary Stands
+{% for desig in
+[
+    '24',
+    '26',
+    '28',
+    '200',
+    '201',
+    '202',
+    '203',
+    '204',
+] %}
+{{- data.edds_kml['layout']['restrictions']['stands'][desig] | to_symbol('STAND_S') }}
+{% endfor %}
+COLOR:restrictions-D
+{% for desig in
+[
+    '11',
+    '100',
+    '101',
+    '102',
+    '103',
+    '104',
+    '51',
+    '52',
+    '53',
+    '54',
+    '55',
+    '56',
+] %}
+{{- data.edds_kml['layout']['restrictions']['stands'][desig] | to_symbol('STAND') }}
+{% endfor %}
+{% for desig in
+[
+    '51',
+    '52',
+    '53',
+    '54',
+    '55',
+    '56',
+] %}
+{{- data.edds_kml['layout']['restrictions']['stands'][desig] | to_text('MAX B753:0:15') }}
+{% endfor %}
+COLOR:restrictions-E
+{% for desig in
+[
+    '9',
+    '24A',
+    '26A',
+    '28A',
+    ] %}
+{{- data.edds_kml['layout']['restrictions']['stands'][desig] | to_symbol('STAND') }}
+{% endfor %}
+
+// Secondary Stands
+{% for desig in
+[
+    '9A',
+    '71A',
+    '74A',
+] %}
+{{- data.edds_kml['layout']['restrictions']['stands'][desig] | to_symbol('STAND_S') }}
+{% endfor %}
+
+COLOR:restrictions-F
+{% for desig in [
+    '105',
+    '106',
+] %}
+{{- data.edds_kml['layout']['restrictions']['stands'][desig] | to_symbol('STAND') }}
+{% endfor %}
+
+// Reference
+COLOR:layout-label-stand
+FONTSIZE:=:12
+TEXTALIGN:CC
+{{ data.edds_kml['layout']['restrictions']['labels']['reference'] | to_text('Reference  :0:-45') }}
+{{ data.edds_kml['layout']['restrictions']['labels']['reference'] | to_text('Code B < 24m (CRJ2/C700):0:-30') }}
+{{ data.edds_kml['layout']['restrictions']['labels']['reference'] | to_text('Code C < 36m (A321/B739):0:-15') }}
+{{ data.edds_kml['layout']['restrictions']['labels']['reference'] | to_text('Code D < 52m (A310/B763):0:0') }}
+{{ data.edds_kml['layout']['restrictions']['labels']['reference'] | to_text('Code E < 65m (A343/B77W):0:15') }}
+{{ data.edds_kml['layout']['restrictions']['labels']['reference'] | to_text('Code F < 80m (A124/B748):0:30') }}
+
+FONTSIZE:=:70
+COLOR:restrictions-AB
+{{ data.edds_kml['layout']['restrictions']['labels']['reference'] | to_text('.:-95:-84') }}
+COLOR:restrictions-C
+{{ data.edds_kml['layout']['restrictions']['labels']['reference'] | to_text('.:-95:-69') }}
+COLOR:restrictions-D
+{{ data.edds_kml['layout']['restrictions']['labels']['reference'] | to_text('.:-95:-54') }}
+COLOR:restrictions-E
+{{ data.edds_kml['layout']['restrictions']['labels']['reference'] | to_text('.:-95:-39') }}
+COLOR:restrictions-F
+{{ data.edds_kml['layout']['restrictions']['labels']['reference'] | to_text('.:-95:-24') }}
+
+// Stand Labels
+ZOOM:600
+FONTSIZE:=:9
+COLOR:layout-label-yellow
+{% for desig, geom in data.edds_kml['layout']['labels']['stands'].items() if not desig in
+[
+    '9A',
+    '24',
+    '26',
+    '28',
+    '71A',
+    '74A',
+    '200',
+    '201',
+    '202',
+    '203',
+    '204',
+] %}
+{{- geom | to_text(desig) }}
+{% endfor %}
+ZOOM:1200
+{% for desig in
+[
+    '9A',
+    '24',
+    '26',
+    '28',
+    '71A',
+    '74A',
+    '200',
+    '201',
+    '202',
+    '203',
+    '204',
+] %}
+{{- data.edds_kml['layout']['labels']['stands'][desig] | to_text(desig) }}
+{% endfor %}

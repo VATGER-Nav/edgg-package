@@ -5,6 +5,7 @@ AIRPORT:EDDS
 FOLDER:Closures
 ACTIVE:1
 COORDTYPE:TWYCLOSED:NONE
-{{ data.edds_layout['layout']['Closures']['X'] | to_poly('') }}
+{{ data.edds_kml['layout']['closures']['poly']['X'] | to_poly('') }}
 COORDTYPE:OTHER:REGION
-{{ data.edds_layout['layout']['Closures']['X_'] | to_multipoly('Cross','closure-symbol') }}
+{{ data.edds_kml['layout']['closures']['symb']['X_a'] | to_poly('Cross','closure-symbol') }}
+{{ data.edds_kml['layout']['closures']['symb']['X_b'] | to_poly('Cross','closure-symbol') }}

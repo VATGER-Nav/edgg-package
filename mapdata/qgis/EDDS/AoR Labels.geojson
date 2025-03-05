@@ -1,9 +1,0 @@
-{
-"type": "FeatureCollection",
-"name": "AoR Labels",
-"crs": { "type": "name", "properties": { "name": "urn:ogc:def:crs:EPSG::32632" } },
-"features": [
-{ "type": "Feature", "properties": { "name": "DSG_" }, "geometry": { "type": "Point", "coordinates": [ 514510.455269687692635, 5392480.528096316382289 ] } },
-{ "type": "Feature", "properties": { "name": "DST_" }, "geometry": { "type": "Point", "coordinates": [ 516439.763764897128567, 5392942.63259379658848 ] } }
-]
-}

@@ -5,14 +5,16 @@ AIRPORT:EDDS
 FOLDER:Labels
 ACTIVE:1
 ZOOM:400
-{{ data.edds_layout['layout']['Labels']['Buffer'] | to_multipoly('', 'layout-taxiway') }}
+{% for uuid, geom in data.edds_kml['layout']['labels']['buffer'].items() %}
+{{- geom | to_poly('', 'layout-taxiway') }}
+{% endfor %}
 FONTSIZE:=:10
 COLOR:layout-label-yellow
-{% for desig, geom in data.edds_layout['layout']['Labels']['Taxiways'].items() %}
+{% for desig, geom in data.edds_kml['layout']['labels']['taxiways'].items() if desig not in ['Exit 3'] %}
 {{- geom | to_text(desig) }}
 {% endfor %}
 TEXTALIGN:LC
-{{ data.edds_layout['layout']['Labels']['Exit 3'] | to_text('Exit 3') }}
+{{ data.edds_kml['layout']['labels']['taxiways']['Exit 3'] | to_text('Exit 3') }}
 
 MAP:Stands
 AIRPORT:EDDS
@@ -21,7 +23,8 @@ ACTIVE:1
 ZOOM:600
 FONTSIZE:=:9
 COLOR:layout-label-yellow
-{% for desig, geom in data.edds_layout['layout']['Labels']['Stands'].items() if not desig in [
+{% for desig, geom in data.edds_kml['layout']['labels']['stands'].items() if not desig in
+[
     '9A',
     '24',
     '26',
@@ -37,7 +40,8 @@ COLOR:layout-label-yellow
 {{- geom | to_text(desig) }}
 {% endfor %}
 ZOOM:1200
-{% for desig in [
+{% for desig in
+[
     '9A',
     '24',
     '26',
@@ -50,7 +54,7 @@ ZOOM:1200
     '203',
     '204',
 ] %}
-{{- data.edds_layout['layout']['Labels']['Stands'][desig | string] | to_text(desig) }}
+{{- data.edds_kml['layout']['labels']['stands'][desig] | to_text(desig) }}
 {% endfor %}
 
 MAP:Areas
@@ -60,9 +64,9 @@ ACTIVE:1
 ZOOM:400
 FONTSIZE:=:10
 COLOR:layout-label-stand
-{{ data.edds_layout['layout']['Labels']['GAT'] | to_text('GAT') }}
-{{ data.edds_layout['layout']['Labels']['Police'] | to_text('Police') }}
-{{ data.edds_layout['layout']['Labels']['US Army'] | to_text('US Army') }}
+{{ data.edds_kml['layout']['labels']['GAT'] | to_text('GAT') }}
+{{ data.edds_kml['layout']['labels']['Police'] | to_text('Police') }}
+{{ data.edds_kml['layout']['labels']['US Army'] | to_text('US Army') }}
 
 MAP:Buildings
 AIRPORT:EDDS
@@ -70,6 +74,6 @@ FOLDER:Labels
 ZOOM:400
 FONTSIZE:=:9
 COLOR:layout-label-stand
-{% for desig, geom in data.edds_layout['layout']['Labels']['Buildings'].items() %}
+{% for desig, geom in data.edds_kml['layout']['labels']['buildings'].items() %}
 {{- geom | to_text(desig) }}
 {% endfor %}

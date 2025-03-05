@@ -4,7 +4,8 @@ MAP:Buildings
 AIRPORT:EDDS
 FOLDER:Airport Layout
 ACTIVE:1
-{% for id, geom in data.edds['VerticalStructure'].items() if id in [
+{% for uuid in
+[
     '01288bba-42f6-4c69-9584-f16234b1e8ba',
     '014799f6-9184-46c2-b8a6-c219429c3a5a',
     '02ec5a41-dac7-454b-9a56-99baab49a942',
@@ -298,7 +299,7 @@ ACTIVE:1
     'fec8eb5a-b48c-49dc-9883-75b5b30a0312',
     'ff21e3b8-aaf3-4e89-928f-452aa1eb6646',
     ] %}
-{{- geom | simplify(default) | to_poly(id, 'layout-building') }}
+{{- data.edds_aixm['VerticalStructure'][uuid] | simplify(default) | to_poly(uuid, 'layout-building') }}
 {% endfor %}
 
 MAP:Jetways
@@ -306,7 +307,8 @@ AIRPORT:EDDS
 FOLDER:Airport Layout
 ACTIVE:1
 COLOR:layout-building
-{% for id, geom in data.edds['VerticalStructure'].items() if id in [
+{% for uuid in
+[
     '2ae69908-0caa-4508-8025-c6da90c02875',
     '33d8ec23-cc71-4b76-ae7f-6b08d7a9afe1',
     '35ac7e32-3e77-400a-a72c-081481662773',
@@ -316,7 +318,7 @@ COLOR:layout-building
     'b8612a2d-2b2a-4f7f-a758-983bce3b0c74',
     'd0a2f0cc-c45f-4c8c-8bc5-2e2c7f734701',
     ] %}
-{{- geom | simplify(0.0000005) | to_line(id) }}
+{{- data.edds_aixm['VerticalStructure'][uuid] | simplify(0.0000005) | to_line(uuid) -}}
 {% endfor %}
 
 MAP:Fence
@@ -324,4 +326,6 @@ AIRPORT:EDDS
 FOLDER:Airport Layout
 ACTIVE:1
 COLOR:layout-building
-{{ data.edds_layout['layout']['Fence']['Fence'] | to_multiline('Fence') }}
+{% for uuid, geom in data.edds_kml['layout']['fence'].items() %}
+{{- geom | to_line('') -}}
+{% endfor %}
