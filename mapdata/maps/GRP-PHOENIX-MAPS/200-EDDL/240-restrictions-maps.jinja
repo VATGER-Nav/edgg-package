@@ -9,64 +9,64 @@ ZOOM:600
 // L6
 COLOR:restrictions-C
 STYLE:SOLID:2
-{{ data.eddl_layout['layout']['Restrictions']['L6'] | to_line('') }}
-{{ data.eddl_layout['layout']['Restrictions']['L6='] | to_poly('', 'restrictions-C') }}
+{{ data.eddl_kml['layout']['Restrictions']['L6'] | to_line('') }}
+{{ data.eddl_kml['layout']['Restrictions']['L6='] | to_poly('', 'restrictions-C') }}
 TEXTALIGN:LC
-{{ data.eddl_layout['layout']['Restrictions']['L6_'] | to_text('Max code C') }}
+{{ data.eddl_kml['layout']['Restrictions']['L6_'] | to_text('Max code C') }}
 
 // A05
 COLOR:restrictions-D
 STYLE:SOLID:2
-{{ data.eddl_layout['layout']['Restrictions']['A05'] | to_line('') }}
-{{ data.eddl_layout['layout']['Restrictions']['A05='] | to_poly('', 'restrictions-D') }}
+{{ data.eddl_kml['layout']['Restrictions']['A05'] | to_line('') }}
+{{ data.eddl_kml['layout']['Restrictions']['A05='] | to_poly('', 'restrictions-D') }}
 TEXTALIGN:LC
-{{ data.eddl_layout['layout']['Restrictions']['A05_'] | to_text('Max code D') }}
-{{ data.eddl_layout['layout']['Restrictions']['A05_'] | to_text('P1 > A05:0:12') }}
+{{ data.eddl_kml['layout']['Restrictions']['A05_'] | to_text('Max code D') }}
+{{ data.eddl_kml['layout']['Restrictions']['A05_'] | to_text('P1 > A05:0:12') }}
 
 // L3
 COLOR:restrictions-C
 STYLE:SOLID:2
-{{ data.eddl_layout['layout']['Restrictions']['L3'] | to_line('') }}
-{{ data.eddl_layout['layout']['Restrictions']['L3='] | to_multipoly('', 'restrictions-C') }}
+{{ data.eddl_kml['layout']['Restrictions']['L3'] | to_line('') }}
+{{ data.eddl_kml['layout']['Restrictions']['L3='] | to_multipoly('', 'restrictions-C') }}
 TEXTALIGN:RC
-{{ data.eddl_layout['layout']['Restrictions']['L3_'] | to_text('Max code C') }}
+{{ data.eddl_kml['layout']['Restrictions']['L3_'] | to_text('Max code C') }}
 
 // L2 #2
 COLOR:restrictions-AB
 STYLE:SOLID:2
-{{ data.eddl_layout['layout']['Restrictions']['L2#2'] | to_line('') }}
-{{ data.eddl_layout['layout']['Restrictions']['L2='] | to_poly('', 'restrictions-AB') }}
+{{ data.eddl_kml['layout']['Restrictions']['L2#2'] | to_line('') }}
+{{ data.eddl_kml['layout']['Restrictions']['L2='] | to_poly('', 'restrictions-AB') }}
 TEXTALIGN:RC
-{{ data.eddl_layout['layout']['Restrictions']['L2#2_'] | to_text('No Exit') }}
+{{ data.eddl_kml['layout']['Restrictions']['L2#2_'] | to_text('No Exit') }}
 
 // L2 #1
 COLOR:restrictions-E
 COORDTYPE:OTHER:REGION:/
 STYLE:SOLID:1
-{{ data.eddl_layout['layout']['Restrictions']['L2#1'] | to_poly('') }}
+{{ data.eddl_kml['layout']['Restrictions']['L2#1'] | to_poly('') }}
 TEXTALIGN:RC
-{{ data.eddl_layout['layout']['Restrictions']['L2#1_'] | to_text('Max code E:0:-12') }}
-{{ data.eddl_layout['layout']['Restrictions']['L2#1_'] | to_text('(No B777/A346)') }}
+{{ data.eddl_kml['layout']['Restrictions']['L2#1_'] | to_text('Max code E:0:-12') }}
+{{ data.eddl_kml['layout']['Restrictions']['L2#1_'] | to_text('(No B777/A346)') }}
 
 // GAT
 COLOR:restrictions-AB
 COORDTYPE:OTHER:REGION:/
 STYLE:SOLID:1
-{{ data.eddl_layout['layout']['Restrictions']['GAT'] | to_poly('') }}
+{{ data.eddl_kml['layout']['Restrictions']['GAT'] | to_poly('') }}
 TEXTALIGN:RC
-{{ data.eddl_layout['layout']['Restrictions']['GAT_'] | to_text('Max wingspan 29m') }}
+{{ data.eddl_kml['layout']['Restrictions']['GAT_'] | to_text('Max wingspan 29m') }}
 
 // Restrictions
 COLOR:restrictions-C
 TEXTALIGN:CC
-{{ data.eddl_layout['layout']['Restrictions']['R1#1'] | to_text('1') }}
-{{ data.eddl_layout['layout']['Restrictions']['R1#2'] | to_text('1') }}
-{{ data.eddl_layout['layout']['Restrictions']['R2'] | to_text('2') }}
-{{ data.eddl_layout['layout']['Restrictions']['R3'] | to_text('3') }}
-{{ data.eddl_layout['layout']['Restrictions']['R1#1'] | to_symbol('CIRCLE') }}
-{{ data.eddl_layout['layout']['Restrictions']['R1#2'] | to_symbol('CIRCLE') }}
-{{ data.eddl_layout['layout']['Restrictions']['R2'] | to_symbol('CIRCLE') }}
-{{ data.eddl_layout['layout']['Restrictions']['R3'] | to_symbol('CIRCLE') }}
+{{ data.eddl_kml['layout']['Restrictions']['R1#1'] | to_text('1') }}
+{{ data.eddl_kml['layout']['Restrictions']['R1#2'] | to_text('1') }}
+{{ data.eddl_kml['layout']['Restrictions']['R2'] | to_text('2') }}
+{{ data.eddl_kml['layout']['Restrictions']['R3'] | to_text('3') }}
+{{ data.eddl_kml['layout']['Restrictions']['R1#1'] | to_symbol('CIRCLE') }}
+{{ data.eddl_kml['layout']['Restrictions']['R1#2'] | to_symbol('CIRCLE') }}
+{{ data.eddl_kml['layout']['Restrictions']['R2'] | to_symbol('CIRCLE') }}
+{{ data.eddl_kml['layout']['Restrictions']['R3'] | to_symbol('CIRCLE') }}
 
 
 // Restriction Stands
@@ -75,59 +75,59 @@ TEXTALIGN:CC
 FONTSIZE:=:9
 COLOR:restrictions-C
 {% for desig in ['A01', 'A02', 'A03', 'A04', 'A08', 'A09', 'A12', 'A13', 'A15', 'A16', 'B01', 'B05', 'B07', 'B10', 'B11', 'C03A', 'V02A', 'V03A', 'V04A', 'V05A', 'V07A', 'V08A', 'V08C', 'V11A', 'V11C', 'V24', 'V25', 'V26', 'V27', 'V28', 'V29', 'V38', 'V39', 'V40', 'V41', 'V42', 'V43', 'V44', 'V45', 'V46', 'V47', 'V49', 'V51', 'V61', 'V62', 'V63', 'V70', 'V71', 'V72', 'V73', 'V74', 'V75', 'V76', 'V80', 'V81', 'V82', 'V83', 'V84', 'V85', 'V86', 'V87', 'V91', 'V92', 'V93', 'V94', 'V95', 'V96', 'V97', 'V102', 'V103', 'V104', 'V105', 'V106', 'V107', 'V108'] %}
-{{- data.eddl_layout['layout']['Restrictions']['Stands'][desig | string] | to_symbol('STAND') }}
+{{- data.eddl_kml['layout']['Restrictions']['Stands'][desig | string] | to_symbol('STAND') }}
 {% endfor %}
 COLOR:restrictions-D
 {% for desig in ['A10', 'B02', 'B04', 'C04', 'V02', 'V03', 'V04', 'V05', 'V06', 'V07', 'V12', 'V14', 'V16', 'V17', 'V19', 'V20', 'V22', 'V23'] %}
-{{- data.eddl_layout['layout']['Restrictions']['Stands'][desig | string] | to_symbol('STAND') }}
+{{- data.eddl_kml['layout']['Restrictions']['Stands'][desig | string] | to_symbol('STAND') }}
 {% endfor %}
 {% for desig in ['V12', 'V14', 'V16', 'V17', 'V19', 'V20', 'V22', 'V23'] %}
-{{- data.eddl_layout['layout']['Restrictions']['Stands'][desig | string] | to_text('MAX B753:0:15') }}
+{{- data.eddl_kml['layout']['Restrictions']['Stands'][desig | string] | to_text('MAX B753:0:15') }}
 {% endfor %}
 COLOR:restrictions-E
 {% for desig in ['A05', 'A07', 'A11', 'A12A', 'B03', 'B06', 'B08', 'B09', 'C02', 'C03', 'C05', 'V01', 'V82A', 'V91A', 'V101', 'C01', 'C06', 'C07', 'V38A', 'V39A', 'V41A', 'V61A', 'V72A', 'V103A', 'V104A', 'V106A', 'V107A'] %}
-{{- data.eddl_layout['layout']['Restrictions']['Stands'][desig | string] | to_symbol('STAND') }}
+{{- data.eddl_kml['layout']['Restrictions']['Stands'][desig | string] | to_symbol('STAND') }}
 {% endfor %}
 {% for desig in ['C01', 'C06', 'C07', 'V38A', 'V39A', 'V41A', 'V61A', 'V72A', 'V101', 'V103A', 'V104A', 'V106A', 'V107A'] %}
-{{- data.eddl_layout['layout']['Restrictions']['Stands'][desig | string] | to_text('MAX A343:0:15') }}
+{{- data.eddl_kml['layout']['Restrictions']['Stands'][desig | string] | to_text('MAX A343:0:15') }}
 {% endfor %}
 COLOR:restrictions-F
 {% for desig in ['C02A', 'V08B', 'V11B', 'V38B'] %}
-{{- data.eddl_layout['layout']['Restrictions']['Stands'][desig | string] | to_symbol('STAND') }}
+{{- data.eddl_kml['layout']['Restrictions']['Stands'][desig | string] | to_symbol('STAND') }}
 {% endfor %}
 
 // Reference
 COLOR:layout-label-stand
 FONTSIZE:=:12
-{{ data.eddl_layout['layout']['Restrictions']['Ref'] | to_text('Reference  :0:-45') }}
-{{ data.eddl_layout['layout']['Restrictions']['Ref'] | to_text('Code B < 24m (CRJ2/C700):0:-30') }}
-{{ data.eddl_layout['layout']['Restrictions']['Ref'] | to_text('Code C < 36m (A321/B739):0:-15') }}
-{{ data.eddl_layout['layout']['Restrictions']['Ref'] | to_text('Code D < 52m (A310/B763):0:0') }}
-{{ data.eddl_layout['layout']['Restrictions']['Ref'] | to_text('Code E < 65m (A343/B77W):0:15') }}
-{{ data.eddl_layout['layout']['Restrictions']['Ref'] | to_text('Code F < 80m (A388/B748):0:30') }}
+{{ data.eddl_kml['layout']['Restrictions']['Ref'] | to_text('Reference  :0:-45') }}
+{{ data.eddl_kml['layout']['Restrictions']['Ref'] | to_text('Code B < 24m (CRJ2/C700):0:-30') }}
+{{ data.eddl_kml['layout']['Restrictions']['Ref'] | to_text('Code C < 36m (A321/B739):0:-15') }}
+{{ data.eddl_kml['layout']['Restrictions']['Ref'] | to_text('Code D < 52m (A310/B763):0:0') }}
+{{ data.eddl_kml['layout']['Restrictions']['Ref'] | to_text('Code E < 65m (A343/B77W):0:15') }}
+{{ data.eddl_kml['layout']['Restrictions']['Ref'] | to_text('Code F < 80m (A388/B748):0:30') }}
 
 FONTSIZE:=:70
 COLOR:restrictions-AB
-{{ data.eddl_layout['layout']['Restrictions']['Ref'] | to_text('.:-95:-84') }}
+{{ data.eddl_kml['layout']['Restrictions']['Ref'] | to_text('.:-95:-84') }}
 COLOR:restrictions-C
-{{ data.eddl_layout['layout']['Restrictions']['Ref'] | to_text('.:-95:-69') }}
+{{ data.eddl_kml['layout']['Restrictions']['Ref'] | to_text('.:-95:-69') }}
 COLOR:restrictions-D
-{{ data.eddl_layout['layout']['Restrictions']['Ref'] | to_text('.:-95:-54') }}
+{{ data.eddl_kml['layout']['Restrictions']['Ref'] | to_text('.:-95:-54') }}
 COLOR:restrictions-E
-{{ data.eddl_layout['layout']['Restrictions']['Ref'] | to_text('.:-95:-39') }}
+{{ data.eddl_kml['layout']['Restrictions']['Ref'] | to_text('.:-95:-39') }}
 COLOR:restrictions-F
-{{ data.eddl_layout['layout']['Restrictions']['Ref'] | to_text('.:-95:-24') }}
+{{ data.eddl_kml['layout']['Restrictions']['Ref'] | to_text('.:-95:-24') }}
 
 COLOR:layout-label-stand
 FONTSIZE:=:12
-{{ data.eddl_layout['layout']['Restrictions']['Ref 2'] | to_text('   Parallel taxiing on M and T/T1:0:-45') }}
-{{ data.eddl_layout['layout']['Restrictions']['Ref 2'] | to_text('   only for ACFT up to code E    :0:-30') }}
-{{ data.eddl_layout['layout']['Restrictions']['Ref 2'] | to_text('   Parallel taxiing on P1 and L5 :0:-15') }}
-{{ data.eddl_layout['layout']['Restrictions']['Ref 2'] | to_text('   only for ACFT up to code E    :0:0') }}
-{{ data.eddl_layout['layout']['Restrictions']['Ref 2'] | to_text('   Overtaking on L1 and L2 only  :0:15') }}
-{{ data.eddl_layout['layout']['Restrictions']['Ref 2'] | to_text('   for ACFT up to A330/A343      :0:30') }}
+{{ data.eddl_kml['layout']['Restrictions']['Ref 2'] | to_text('   Parallel taxiing on M and T/T1:0:-45') }}
+{{ data.eddl_kml['layout']['Restrictions']['Ref 2'] | to_text('   only for ACFT up to code E    :0:-30') }}
+{{ data.eddl_kml['layout']['Restrictions']['Ref 2'] | to_text('   Parallel taxiing on P1 and L5 :0:-15') }}
+{{ data.eddl_kml['layout']['Restrictions']['Ref 2'] | to_text('   only for ACFT up to code E    :0:0') }}
+{{ data.eddl_kml['layout']['Restrictions']['Ref 2'] | to_text('   Overtaking on L1 and L2 only  :0:15') }}
+{{ data.eddl_kml['layout']['Restrictions']['Ref 2'] | to_text('   for ACFT up to A330/A343      :0:30') }}
 COLOR:restrictions-C
-{{ data.eddl_layout['layout']['Restrictions']['Ref 2'] | to_text('1.                               :0:-45') }}
-{{ data.eddl_layout['layout']['Restrictions']['Ref 2'] | to_text('2.                               :0:-15') }}
-{{ data.eddl_layout['layout']['Restrictions']['Ref 2'] | to_text('3.                               :0:15') }}
+{{ data.eddl_kml['layout']['Restrictions']['Ref 2'] | to_text('1.                               :0:-45') }}
+{{ data.eddl_kml['layout']['Restrictions']['Ref 2'] | to_text('2.                               :0:-15') }}
+{{ data.eddl_kml['layout']['Restrictions']['Ref 2'] | to_text('3.                               :0:15') }}
 #}

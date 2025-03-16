@@ -1,0 +1,20 @@
+// ----------------------------- Stands -----------------------------
+
+MAP:Closed Stands 
+AIRPORT:EDDL
+FOLDER:Stands
+ZOOM:600
+FONTSIZE:=:9
+COLOR:layout-label-stand
+
+// Closed due to NOTAM A0899/25:
+// 'B06', 'B08'
+// 'B05', 'B07', 'V61A'
+
+{% for desig in ['B06', 'B08'] %}
+{{- data.eddl_kml['layout']['labels']['stands'][desig] | to_text(desig) }}
+{% endfor %}
+ZOOM:1200
+{% for desig in ['B05', 'B07', 'V61A'] %}
+{{- data.eddl_kml['layout']['labels']['stands'][desig] | to_text(desig) }}
+{% endfor %}

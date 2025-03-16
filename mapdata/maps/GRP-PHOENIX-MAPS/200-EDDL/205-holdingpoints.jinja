@@ -1,0 +1,98 @@
+// ------------------------- Holding Points -------------------------
+{% set default = 0.000005 %}
+MAP:Holding Points CAT I
+AIRPORT:EDDL
+FOLDER:Holding Points
+ACTIVE:LVP:EDDL:0
+{% for desig, geom in data.eddl_kml['layout']['holdingpoints']['cat1'].items() %}
+{{- geom | to_poly(desig, 'layout-holdingpoint') }}
+{% endfor %}
+COLOR:layout-holdingpoint
+{% for desig, geom in data.eddl_kml['layout']['holdingpoints']['line'].items() %}
+{{- geom | to_line(desig) -}}
+{% endfor %}
+
+
+MAP:Holding Points CAT II/III
+AIRPORT:EDDL
+FOLDER:Holding Points
+ACTIVE:LVP:EDDL:1
+COLOR:layout-holdingpoint
+{% for desig, geom in data.eddl_kml['layout']['holdingpoints']['cat3'].items() %}
+{{- geom | to_poly(desig + ' CATIII', 'layout-holdingpoint') }}
+{% endfor %}
+
+MAP:Checkpoints
+AIRPORT:EDDL
+FOLDER:Holding Points
+ACTIVE:1
+COLOR:layout-holdingpoint
+STYLE:SOLID:2
+{% for uuid, geom in data.eddl_kml['layout']['markings']['stopbars_dash'].items() %}
+{{- geom | to_line('') -}}
+{% endfor %}
+
+MAP:All Stopbars
+AIRPORT:EDDL
+FOLDER:Holding Points
+COLOR:layout-holdingpoint
+{% for uuid in
+[
+    '0861cd97-686e-cb82-e063-86c812ac72e3',
+    '0861cd97-686f-cb82-e063-86c812ac72e3',
+    '0861cd97-6870-cb82-e063-86c812ac72e3',
+    '0861cd97-6871-cb82-e063-86c812ac72e3',
+    '0861cd97-6872-cb82-e063-86c812ac72e3',
+    '0861cd97-6873-cb82-e063-86c812ac72e3',
+    '0861cd97-6874-cb82-e063-86c812ac72e3',
+    '0861cd97-6875-cb82-e063-86c812ac72e3',
+    '0861cd97-6876-cb82-e063-86c812ac72e3',
+    '0861cd97-6877-cb82-e063-86c812ac72e3',
+    '0861cd97-6878-cb82-e063-86c812ac72e3',
+    '0861cd97-6879-cb82-e063-86c812ac72e3',
+    '0861cd97-687a-cb82-e063-86c812ac72e3',
+    '0861cd97-687d-cb82-e063-86c812ac72e3',
+    '0861cd97-687e-cb82-e063-86c812ac72e3',
+    '0861cd97-687f-cb82-e063-86c812ac72e3',
+    '0861cd97-6880-cb82-e063-86c812ac72e3',
+    '0861cd97-6881-cb82-e063-86c812ac72e3',
+    '0861cd97-6882-cb82-e063-86c812ac72e3',
+    '0861cd97-6883-cb82-e063-86c812ac72e3',
+    '0861cd97-6884-cb82-e063-86c812ac72e3',
+    '0861cd97-6885-cb82-e063-86c812ac72e3',
+    '0861cd97-6886-cb82-e063-86c812ac72e3',
+    '0861cd97-6887-cb82-e063-86c812ac72e3',
+    'd082bc96-1da0-294e-e053-54c812accd13',
+    'd082bc96-1da1-294e-e053-54c812accd13',
+    'd082bc96-1da2-294e-e053-54c812accd13',
+    'd082bc96-1da4-294e-e053-54c812accd13',
+    'd082bc96-1da5-294e-e053-54c812accd13',
+    'd082bc96-1da6-294e-e053-54c812accd13',
+    'd082bc96-1da7-294e-e053-54c812accd13',
+    'd091e9ef-f393-7e64-e053-54c812ac018e',
+    'd091e9ef-f394-7e64-e053-54c812ac018e',
+    'd091e9ef-f395-7e64-e053-54c812ac018e',
+    'd091e9ef-f396-7e64-e053-54c812ac018e',
+    'd091e9ef-f397-7e64-e053-54c812ac018e',
+    'd091e9ef-f398-7e64-e053-54c812ac018e',
+    'd091e9ef-f399-7e64-e053-54c812ac018e',
+    'd091e9ef-f39a-7e64-e053-54c812ac018e',
+    'd091e9ef-f39b-7e64-e053-54c812ac018e',
+    'd091e9ef-f39c-7e64-e053-54c812ac018e',
+    'd091e9ef-f39d-7e64-e053-54c812ac018e',
+    'd091e9ef-f39e-7e64-e053-54c812ac018e',
+    'd091e9ef-f39f-7e64-e053-54c812ac018e',
+    'd091e9ef-f3a0-7e64-e053-54c812ac018e',
+    'd091e9ef-f3a1-7e64-e053-54c812ac018e',
+    'd091e9ef-f3a2-7e64-e053-54c812ac018e',
+    'd091e9ef-f3a3-7e64-e053-54c812ac018e',
+    'd15cb684-e509-641f-e053-54c812ac648a',
+    'e6d426bb-4abf-59ac-e053-86c812ac3ae1',
+    'e6d426bb-4ac0-59ac-e053-86c812ac3ae1',
+    'e6d426bb-4ac1-59ac-e053-86c812ac3ae1',
+    'e6d426bb-4ac2-59ac-e053-86c812ac3ae1',
+    'e6d426bb-4ac3-59ac-e053-86c812ac3ae1',
+    'ee46ca86-49c8-70ac-e053-86c812ac5dd8'
+] %}
+{{- data.eddl_aixm['TaxiwayMarking'][uuid] | to_line(uuid) -}}
+{% endfor %}

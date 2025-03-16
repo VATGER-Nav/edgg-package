@@ -1,0 +1,10 @@
+{
+"type": "FeatureCollection",
+"name": "notam_deicing_labels",
+"crs": { "type": "name", "properties": { "name": "urn:ogc:def:crs:EPSG::32632" } },
+"features": [
+{ "type": "Feature", "properties": { "name": "DP1W" }, "geometry": { "type": "Point", "coordinates": [ 343696.980803810060024, 5683317.193485205993056 ] } },
+{ "type": "Feature", "properties": { "name": "DP3W" }, "geometry": { "type": "Point", "coordinates": [ 343671.724736753210891, 5682887.96833186969161 ] } },
+{ "type": "Feature", "properties": { "name": "DP4W" }, "geometry": { "type": "Point", "coordinates": [ 343694.44276077975519, 5682841.390852043405175 ] } }
+]
+}

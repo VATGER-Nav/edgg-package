@@ -6,10 +6,10 @@ FOLDER:Runway Info
 COLOR:tora-label
 ZOOM:600
 TEXTALIGN:LC
-{{ data.eddl_layout['layout']['TORA']['23L L1'] | to_text('2700') }}
+{{ data.eddl_kml['layout']['tora']['23L_L1'] | to_text('2700') }}
 TEXTALIGN:RC
-{{ data.eddl_layout['layout']['TORA']['23L L2'] | to_text('2500') }}
-{{ data.eddl_layout['layout']['TORA']['23L L3'] | to_text('2235') }}
+{{ data.eddl_kml['layout']['tora']['23L_L2'] | to_text('2500') }}
+{{ data.eddl_kml['layout']['tora']['23L_L3'] | to_text('2235') }}
 
 MAP:TORA 05R
 AIRPORT:EDDL
@@ -17,9 +17,9 @@ FOLDER:Runway Info
 COLOR:tora-label
 ZOOM:600
 TEXTALIGN:LC
-{{ data.eddl_layout['layout']['TORA']['05R L9'] | to_text('2700') }}
-{{ data.eddl_layout['layout']['TORA']['05R L8'] | to_text('2475') }}
-{{ data.eddl_layout['layout']['TORA']['05R L6'] | to_text('2030') }}
+{{ data.eddl_kml['layout']['tora']['05R_L9'] | to_text('2700') }}
+{{ data.eddl_kml['layout']['tora']['05R_L8'] | to_text('2475') }}
+{{ data.eddl_kml['layout']['tora']['05R_L6'] | to_text('2031') }}
 
 MAP:TORA 23R
 AIRPORT:EDDL
@@ -27,10 +27,10 @@ FOLDER:Runway Info
 COLOR:tora-label
 ZOOM:600
 TEXTALIGN:LC
-{{ data.eddl_layout['layout']['TORA']['23R K'] | to_text('2400') }}
+{{ data.eddl_kml['layout']['tora']['23R_K'] | to_text('2400') }}
 TEXTALIGN:RC
-{{ data.eddl_layout['layout']['TORA']['23R K1'] | to_text('2280') }}
-{{ data.eddl_layout['layout']['TORA']['23R K2'] | to_text('2060') }}
+{{ data.eddl_kml['layout']['tora']['23R_K1'] | to_text('2280') }}
+{{ data.eddl_kml['layout']['tora']['23R_K2'] | to_text('2062') }}
 
 MAP:TORA 05L
 AIRPORT:EDDL
@@ -38,8 +38,8 @@ FOLDER:Runway Info
 COLOR:tora-label
 ZOOM:600
 TEXTALIGN:LC
-{{ data.eddl_layout['layout']['TORA']['05L K5'] | to_text('2400') }}
-{{ data.eddl_layout['layout']['TORA']['05L K3'] | to_text('1720') }}
+{{ data.eddl_kml['layout']['tora']['05L_K5'] | to_text('2400') }}
+{{ data.eddl_kml['layout']['tora']['05L_K3'] | to_text('1720') }}
 
 MAP:RRS 23L
 AIRPORT:EDDL
@@ -47,15 +47,15 @@ FOLDER:Runway Info
 ACTIVE:RWY:ARR:*:DEP:EDDL23L
 ACTIVE:RWY:ARR:EDDL23L:DEP:*
 COLOR:rrs-marker
-{{ data.eddl_layout['layout']['RRS']['23L 600'] | to_symbol('RRS') }}
-{{ data.eddl_layout['layout']['RRS']['23L 1500'] | to_symbol('RRS') }}
-{{ data.eddl_layout['layout']['RRS']['23L 2400'] | to_symbol('RRS') }}
+{{ data.eddl_kml['layout']['rrs']['23L_600'] | to_symbol('RRS') }}
+{{ data.eddl_kml['layout']['rrs']['23L_1500'] | to_symbol('RRS') }}
+{{ data.eddl_kml['layout']['rrs']['23L_2400'] | to_symbol('RRS') }}
 FONTSIZE:=:12
 ZOOM:600
 TEXTALIGN:CB
-{{ data.eddl_layout['layout']['RRS']['23L 600'] | to_text('600:0:-10') }}
-{{ data.eddl_layout['layout']['RRS']['23L 1500'] | to_text('1500:0:-10') }}
-{{ data.eddl_layout['layout']['RRS']['23L 2400'] | to_text('2400:0:-10') }}
+{{ data.eddl_kml['layout']['rrs']['23L_600'] | to_text('600:0:-10') }}
+{{ data.eddl_kml['layout']['rrs']['23L_1500'] | to_text('1500:0:-10') }}
+{{ data.eddl_kml['layout']['rrs']['23L_2400'] | to_text('2400:0:-10') }}
 
 MAP:RRS 05R
 AIRPORT:EDDL
@@ -63,15 +63,15 @@ FOLDER:Runway Info
 ACTIVE:RWY:ARR:*:DEP:EDDL05R
 ACTIVE:RWY:ARR:EDDL05R:DEP:*
 COLOR:rrs-marker
-{{ data.eddl_layout['layout']['RRS']['05R 600'] | to_symbol('RRS') }}
-{{ data.eddl_layout['layout']['RRS']['05R 1500'] | to_symbol('RRS') }}
-{{ data.eddl_layout['layout']['RRS']['05R 2400'] | to_symbol('RRS') }}
+{{ data.eddl_kml['layout']['rrs']['05R_600'] | to_symbol('RRS') }}
+{{ data.eddl_kml['layout']['rrs']['05R_1500'] | to_symbol('RRS') }}
+{{ data.eddl_kml['layout']['rrs']['05R_2400'] | to_symbol('RRS') }}
 FONTSIZE:=:12
 ZOOM:600
 TEXTALIGN:CB
-{{ data.eddl_layout['layout']['RRS']['05R 600'] | to_text('600:0:-10') }}
-{{ data.eddl_layout['layout']['RRS']['05R 1500'] | to_text('1500:0:-10') }}
-{{ data.eddl_layout['layout']['RRS']['05R 2400'] | to_text('2400:0:-10') }}
+{{ data.eddl_kml['layout']['rrs']['05R_600'] | to_text('600:0:-10') }}
+{{ data.eddl_kml['layout']['rrs']['05R_1500'] | to_text('1500:0:-10') }}
+{{ data.eddl_kml['layout']['rrs']['05R_2400'] | to_text('2400:0:-10') }}
 
 MAP:RRS 23R
 AIRPORT:EDDL
@@ -79,16 +79,13 @@ FOLDER:Runway Info
 ACTIVE:RWY:ARR:*:DEP:EDDL23R
 ACTIVE:RWY:ARR:EDDL23R:DEP:*
 COLOR:rrs-marker
-{{ data.eddl_layout['layout']['RRS']['23R 600'] | to_symbol('RRS') }}
-{{ data.eddl_layout['layout']['RRS']['23R 1500'] | to_symbol('RRS') }}
-{{ data.eddl_layout['layout']['RRS']['23R 2400'] | to_symbol('RRS') }}
+{{ data.eddl_kml['layout']['rrs']['23R_600'] | to_symbol('RRS') }}
+{{ data.eddl_kml['layout']['rrs']['23R_1500'] | to_symbol('RRS') }}
 FONTSIZE:=:12
 ZOOM:600
 TEXTALIGN:CB
-{{ data.eddl_layout['layout']['RRS']['23R 600'] | to_text('600:0:-10') }}
-{{ data.eddl_layout['layout']['RRS']['23R 1500'] | to_text('1500:0:-10') }}
-{{ data.eddl_layout['layout']['RRS']['23R 2400'] | to_text('2400:0:-10') }}
-
+{{ data.eddl_kml['layout']['rrs']['23R_600'] | to_text('600:0:-10') }}
+{{ data.eddl_kml['layout']['rrs']['23R_1500'] | to_text('1500:0:-10') }}
 
 MAP:RRS 05L
 AIRPORT:EDDL
@@ -96,29 +93,309 @@ FOLDER:Runway Info
 ACTIVE:RWY:ARR:*:DEP:EDDL05L
 ACTIVE:RWY:ARR:EDDL05L:DEP:*
 COLOR:rrs-marker
-{{ data.eddl_layout['layout']['RRS']['05L 600'] | to_symbol('RRS') }}
-{{ data.eddl_layout['layout']['RRS']['05L 1500'] | to_symbol('RRS') }}
-{{ data.eddl_layout['layout']['RRS']['05L 2400'] | to_symbol('RRS') }}
+{{ data.eddl_kml['layout']['rrs']['05L_600'] | to_symbol('RRS') }}
+{{ data.eddl_kml['layout']['rrs']['05L_1500'] | to_symbol('RRS') }}
 FONTSIZE:=:12
 ZOOM:600
 TEXTALIGN:CB
-{{ data.eddl_layout['layout']['RRS']['05L 600'] | to_text('600:0:-10') }}
-{{ data.eddl_layout['layout']['RRS']['05L 1500'] | to_text('1500:0:-10') }}
-{{ data.eddl_layout['layout']['RRS']['05L 2400'] | to_text('2400:0:-10') }}
+{{ data.eddl_kml['layout']['rrs']['05L_600'] | to_text('600:0:-10') }}
+{{ data.eddl_kml['layout']['rrs']['05L_1500'] | to_text('1500:0:-10') }}
 
 MAP:Runway Designators
 AIRPORT:EDDL
 FOLDER:Runway Info
 ACTIVE:1
-{{ data.eddl_layout['layout']['Runways']['Marking']['23L'] | to_multipoly('23L', 'layout-runway-marking') }}
-{{ data.eddl_layout['layout']['Runways']['Marking']['23R'] | to_multipoly('23R', 'layout-runway-marking') }}
-{{ data.eddl_layout['layout']['Runways']['Marking']['05L'] | to_multipoly('05L', 'layout-runway-marking') }}
-{{ data.eddl_layout['layout']['Runways']['Marking']['05R'] | to_multipoly('05R', 'layout-runway-marking') }}
+{% for uuid, geom in data.eddl_kml['layout']['markings']['runways'].items() %}
+{{- geom | to_poly('', 'layout-runway-marking') }}
+{% endfor %}
 
 MAP:Runway Markings
 AIRPORT:EDDL
 FOLDER:Runway Info
-{% for marking, geom in data.eddl['RunwayMarking'].items() if not marking in [
+{% for uuid in 
+[
+    '6bc8d0df-d0a5-679e-e055-0a00272b55b3',
+    '6bc8d0df-d0a6-679e-e055-0a00272b55b3',
+    '6bc8d0df-d0a7-679e-e055-0a00272b55b3',
+    '6bc8d0df-d0a8-679e-e055-0a00272b55b3',
+    '6bc8d0df-d0a9-679e-e055-0a00272b55b3',
+    '6bc8d0df-d0aa-679e-e055-0a00272b55b3',
+    '6bc8d0df-d0ab-679e-e055-0a00272b55b3',
+    '6bc8d0df-d0ac-679e-e055-0a00272b55b3',
+    '6bc8d0df-d0ad-679e-e055-0a00272b55b3',
+    '6bc8d0df-d0ae-679e-e055-0a00272b55b3',
+    '6bc8d0df-d0af-679e-e055-0a00272b55b3',
+    '6bc8d0df-d0b0-679e-e055-0a00272b55b3',
+    '6bc8d0df-d0b2-679e-e055-0a00272b55b3',
+    '6bc8d0df-d0b3-679e-e055-0a00272b55b3',
+    '6bc8d0df-d0b4-679e-e055-0a00272b55b3',
+    '6bc8d0df-d0b5-679e-e055-0a00272b55b3',
+    '6bc8d0df-d0b6-679e-e055-0a00272b55b3',
+    '6bc8d0df-d0b7-679e-e055-0a00272b55b3',
+    '6bc8d0df-d0b8-679e-e055-0a00272b55b3',
+    '6bc8d0df-d0b9-679e-e055-0a00272b55b3',
+    '6bc8d0df-d0ba-679e-e055-0a00272b55b3',
+    '6bc8d0df-d0bb-679e-e055-0a00272b55b3',
+    '6bc8d0df-d0bc-679e-e055-0a00272b55b3',
+    '6bc8d0df-d0bd-679e-e055-0a00272b55b3',
+    '6bc8d0df-d0be-679e-e055-0a00272b55b3',
+    '6bc8d0df-d0bf-679e-e055-0a00272b55b3',
+    '6bc8d0df-d0c0-679e-e055-0a00272b55b3',
+    '6bc8d0df-d0c1-679e-e055-0a00272b55b3',
+    '6bc8d0df-d0c2-679e-e055-0a00272b55b3',
+    '6bc8d0df-d0c3-679e-e055-0a00272b55b3',
+    '6bc8d0df-d0c4-679e-e055-0a00272b55b3',
+    '6bc8d0df-d0c5-679e-e055-0a00272b55b3',
+    '6bc8d0df-d0c6-679e-e055-0a00272b55b3',
+    '6bc8d0df-d0c7-679e-e055-0a00272b55b3',
+    '6bc8d0df-d0c8-679e-e055-0a00272b55b3',
+    '6bc8d0df-d0c9-679e-e055-0a00272b55b3',
+    '6bc8d0df-d0ca-679e-e055-0a00272b55b3',
+    '6bc8d0df-d0cb-679e-e055-0a00272b55b3',
+    '6bc8d0df-d0cc-679e-e055-0a00272b55b3',
+    '6bc8d0df-d0cd-679e-e055-0a00272b55b3',
+    '6bc8d0df-d0ce-679e-e055-0a00272b55b3',
+    '6bc8d0df-d0cf-679e-e055-0a00272b55b3',
+    '6bc8d0df-d0d0-679e-e055-0a00272b55b3',
+    '6bc8d0df-d0d1-679e-e055-0a00272b55b3',
+    '6bc8d0df-d0d2-679e-e055-0a00272b55b3',
+    '6bc8d0df-d0d3-679e-e055-0a00272b55b3',
+    '6bc8d0df-d0d4-679e-e055-0a00272b55b3',
+    '6bc8d0df-d0d5-679e-e055-0a00272b55b3',
+    '6bc8d0df-d0d6-679e-e055-0a00272b55b3',
+    '6bc8d0df-d0d7-679e-e055-0a00272b55b3',
+    '6bc8d0df-d0d8-679e-e055-0a00272b55b3',
+    '6bc8d0df-d0d9-679e-e055-0a00272b55b3',
+    '6bc8d0df-d0da-679e-e055-0a00272b55b3',
+    '6bc8d0df-d0db-679e-e055-0a00272b55b3',
+    '6bc8d0df-d0dc-679e-e055-0a00272b55b3',
+    '6bc8d0df-d0dd-679e-e055-0a00272b55b3',
+    '6bc8d0df-d0de-679e-e055-0a00272b55b3',
+    '6bc8d0df-d0df-679e-e055-0a00272b55b3',
+    '6bc8d0df-d0e0-679e-e055-0a00272b55b3',
+    '6bc8d0df-d0e1-679e-e055-0a00272b55b3',
+    '6bc8d0df-d0e2-679e-e055-0a00272b55b3',
+    '6bc8d0df-d0e3-679e-e055-0a00272b55b3',
+    '6bc8d0df-d0e4-679e-e055-0a00272b55b3',
+    '6bc8d0df-d0e5-679e-e055-0a00272b55b3',
+    '6bc8d0df-d0e6-679e-e055-0a00272b55b3',
+    '6bc8d0df-d0e7-679e-e055-0a00272b55b3',
+    '6bc8d0df-d0e8-679e-e055-0a00272b55b3',
+    '6bc8d0df-d0e9-679e-e055-0a00272b55b3',
+    '6bc8d0df-d0ea-679e-e055-0a00272b55b3',
+    '6bc8d0df-d0eb-679e-e055-0a00272b55b3',
+    '6bc8d0df-d0ec-679e-e055-0a00272b55b3',
+    '6bc8d0df-d0ed-679e-e055-0a00272b55b3',
+    '6bc8d0df-d0ee-679e-e055-0a00272b55b3',
+    '6bc8d0df-d0ef-679e-e055-0a00272b55b3',
+    '6bc8d0df-d0f0-679e-e055-0a00272b55b3',
+    '6bc8d0df-d0f1-679e-e055-0a00272b55b3',
+    '6bc8d0df-d0f2-679e-e055-0a00272b55b3',
+    '6bc8d0df-d0f3-679e-e055-0a00272b55b3',
+    '6bc8d0df-d0f4-679e-e055-0a00272b55b3',
+    '6bc8d0df-d0f5-679e-e055-0a00272b55b3',
+    '6bc8d0df-d0f6-679e-e055-0a00272b55b3',
+    '6bc8d0df-d0f7-679e-e055-0a00272b55b3',
+    '6bc8d0df-d0f8-679e-e055-0a00272b55b3',
+    '6bc8d0df-d0f9-679e-e055-0a00272b55b3',
+    '6bc8d0df-d0fa-679e-e055-0a00272b55b3',
+    '6bc8d0df-d0fb-679e-e055-0a00272b55b3',
+    '6bc8d0df-d0fc-679e-e055-0a00272b55b3',
+    '6bc8d0df-d0fd-679e-e055-0a00272b55b3',
+    '6bc8d0df-d0fe-679e-e055-0a00272b55b3',
+    '6bc8d0df-d0ff-679e-e055-0a00272b55b3',
+    '6bc8d0df-d100-679e-e055-0a00272b55b3',
+    '6bc8d0df-d101-679e-e055-0a00272b55b3',
+    '6bc8d0df-d102-679e-e055-0a00272b55b3',
+    '6bc8d0df-d103-679e-e055-0a00272b55b3',
+    '6bc8d0df-d104-679e-e055-0a00272b55b3',
+    '6bc8d0df-d105-679e-e055-0a00272b55b3',
+    '6bc8d0df-d106-679e-e055-0a00272b55b3',
+    '6bc8d0df-d107-679e-e055-0a00272b55b3',
+    '6bc8d0df-d108-679e-e055-0a00272b55b3',
+    '6bc8d0df-d109-679e-e055-0a00272b55b3',
+    '6bc8d0df-d10a-679e-e055-0a00272b55b3',
+    '6bc8d0df-d10c-679e-e055-0a00272b55b3',
+    '6bc8d0df-d10d-679e-e055-0a00272b55b3',
+    '6bc8d0df-d10e-679e-e055-0a00272b55b3',
+    '6bc8d0df-d10f-679e-e055-0a00272b55b3',
+    '6bc8d0df-d110-679e-e055-0a00272b55b3',
+    '6bc8d0df-d111-679e-e055-0a00272b55b3',
+    '6bc8d0df-d112-679e-e055-0a00272b55b3',
+    '6bc8d0df-d113-679e-e055-0a00272b55b3',
+    '6bc8d0df-d114-679e-e055-0a00272b55b3',
+    '6bc8d0df-d115-679e-e055-0a00272b55b3',
+    '6bc8d0df-d116-679e-e055-0a00272b55b3',
+    '6bc8d0df-d117-679e-e055-0a00272b55b3',
+    '6bc8d0df-d118-679e-e055-0a00272b55b3',
+    '6bc8d0df-d119-679e-e055-0a00272b55b3',
+    '6bc8d0df-d11a-679e-e055-0a00272b55b3',
+    '6bc8d0df-d11b-679e-e055-0a00272b55b3',
+    '6bc8d0df-d11c-679e-e055-0a00272b55b3',
+    '6bc8d0df-d11d-679e-e055-0a00272b55b3',
+    '6bc8d0df-d11e-679e-e055-0a00272b55b3',
+    '6bc8d0df-d11f-679e-e055-0a00272b55b3',
+    '6bc8d0df-d120-679e-e055-0a00272b55b3',
+    '6bc8d0df-d121-679e-e055-0a00272b55b3',
+    '6bc8d0df-d122-679e-e055-0a00272b55b3',
+    '6bc8d0df-d123-679e-e055-0a00272b55b3',
+    '6bc8d0df-d124-679e-e055-0a00272b55b3',
+    '6bc8d0df-d125-679e-e055-0a00272b55b3',
+    '6bc8d0df-d126-679e-e055-0a00272b55b3',
+    '6bc8d0df-d127-679e-e055-0a00272b55b3',
+    '6bc8d0df-d128-679e-e055-0a00272b55b3',
+    '6bc8d0df-d129-679e-e055-0a00272b55b3',
+    '6bc8d0df-d12a-679e-e055-0a00272b55b3',
+    '6bc8d0df-d12b-679e-e055-0a00272b55b3',
+    '6bc8d0df-d12c-679e-e055-0a00272b55b3',
+    '6bc8d0df-d12d-679e-e055-0a00272b55b3',
+    '6bc8d0df-d12e-679e-e055-0a00272b55b3',
+    '6bc8d0df-d12f-679e-e055-0a00272b55b3',
+    '6bc8d0df-d130-679e-e055-0a00272b55b3',
+    '6bc8d0df-d131-679e-e055-0a00272b55b3',
+    '6bc8d0df-d132-679e-e055-0a00272b55b3',
+    '6bc8d0df-d133-679e-e055-0a00272b55b3',
+    '6bc8d0df-d134-679e-e055-0a00272b55b3',
+    '6bc8d0df-d135-679e-e055-0a00272b55b3',
+    '6bc8d0df-d136-679e-e055-0a00272b55b3',
+    '6bc8d0df-d137-679e-e055-0a00272b55b3',
+    '6bc8d0df-d138-679e-e055-0a00272b55b3',
+    '6bc8d0df-d139-679e-e055-0a00272b55b3',
+    '6bc8d0df-d13a-679e-e055-0a00272b55b3',
+    '6bc8d0df-d13b-679e-e055-0a00272b55b3',
+    '6bc8d0df-d13c-679e-e055-0a00272b55b3',
+    '6bc8d0df-d13d-679e-e055-0a00272b55b3',
+    '6bc8d0df-d13e-679e-e055-0a00272b55b3',
+    '6bc8d0df-d13f-679e-e055-0a00272b55b3',
+    '6bc8d0df-d140-679e-e055-0a00272b55b3',
+    '6bc8d0df-d141-679e-e055-0a00272b55b3',
+    '6bc8d0df-d142-679e-e055-0a00272b55b3',
+    '6bc8d0df-d143-679e-e055-0a00272b55b3',
+    '6bc8d0df-d144-679e-e055-0a00272b55b3',
+    '6bc8d0df-d145-679e-e055-0a00272b55b3',
+    '6bc8d0df-d146-679e-e055-0a00272b55b3',
+    '6bc8d0df-d147-679e-e055-0a00272b55b3',
+    '6bc8d0df-d148-679e-e055-0a00272b55b3',
+    '6bc8d0df-d149-679e-e055-0a00272b55b3',
+    '6bc8d0df-d14a-679e-e055-0a00272b55b3',
+    '6bc8d0df-d14b-679e-e055-0a00272b55b3',
+    '6bc8d0df-d14c-679e-e055-0a00272b55b3',
+    '6bc8d0df-d14d-679e-e055-0a00272b55b3',
+    '6bc8d0df-d14e-679e-e055-0a00272b55b3',
+    '6bc8d0df-d14f-679e-e055-0a00272b55b3',
+    '6bc8d0df-d150-679e-e055-0a00272b55b3',
+    '6bc8d0df-d151-679e-e055-0a00272b55b3',
+    '6bc8d0df-d152-679e-e055-0a00272b55b3',
+    '6bc8d0df-d153-679e-e055-0a00272b55b3',
+    '6bc8d0df-d154-679e-e055-0a00272b55b3',
+    '6bc8d0df-d155-679e-e055-0a00272b55b3',
+    '6bc8d0df-d156-679e-e055-0a00272b55b3',
+    '6bc8d0df-d157-679e-e055-0a00272b55b3',
+    '6bc8d0df-d158-679e-e055-0a00272b55b3',
+    '6bc8d0df-d159-679e-e055-0a00272b55b3',
+    '6bc8d0df-d15a-679e-e055-0a00272b55b3',
+    '6bc8d0df-d15b-679e-e055-0a00272b55b3',
+    '6bc8d0df-d15c-679e-e055-0a00272b55b3',
+    '6bc8d0df-d15d-679e-e055-0a00272b55b3',
+    '6bc8d0df-d15e-679e-e055-0a00272b55b3',
+    '6bc8d0df-d15f-679e-e055-0a00272b55b3',
+    '6bc8d0df-d160-679e-e055-0a00272b55b3',
+    '6bc8d0df-d161-679e-e055-0a00272b55b3',
+    '6bc8d0df-d162-679e-e055-0a00272b55b3',
+    '6bc8d0df-d163-679e-e055-0a00272b55b3',
+    '6bc8d0df-d164-679e-e055-0a00272b55b3',
+    '6bc8d0df-d165-679e-e055-0a00272b55b3',
+    '6bc8d0df-d166-679e-e055-0a00272b55b3',
+    '6bc8d0df-d167-679e-e055-0a00272b55b3',
+    '6bc8d0df-d168-679e-e055-0a00272b55b3',
+    '6bc8d0df-d169-679e-e055-0a00272b55b3',
+    '6bc8d0df-d16a-679e-e055-0a00272b55b3',
+    '6bc8d0df-d16b-679e-e055-0a00272b55b3',
+    '6bc8d0df-d16c-679e-e055-0a00272b55b3',
+    '6bc8d0df-d16d-679e-e055-0a00272b55b3',
+    '6bc8d0df-d16e-679e-e055-0a00272b55b3',
+    '6bc8d0df-d16f-679e-e055-0a00272b55b3',
+    '6bc8d0df-d170-679e-e055-0a00272b55b3',
+    '6bc8d0df-d171-679e-e055-0a00272b55b3',
+    '6bc8d0df-d172-679e-e055-0a00272b55b3',
+    '6bc8d0df-d173-679e-e055-0a00272b55b3',
+    '6bc8d0df-d174-679e-e055-0a00272b55b3',
+    '6bc8d0df-d175-679e-e055-0a00272b55b3',
+    '6bc8d0df-d176-679e-e055-0a00272b55b3',
+    '6bc8d0df-d177-679e-e055-0a00272b55b3',
+    '6bc8d0df-d178-679e-e055-0a00272b55b3',
+    '6bc8d0df-d179-679e-e055-0a00272b55b3',
+    '6bc8d0df-d17a-679e-e055-0a00272b55b3',
+    '6bc8d0df-d17b-679e-e055-0a00272b55b3',
+    '6bc8d0df-d17c-679e-e055-0a00272b55b3',
+    '6bc8d0df-d17d-679e-e055-0a00272b55b3',
+    '6bc8d0df-d17e-679e-e055-0a00272b55b3',
+    '6bc8d0df-d17f-679e-e055-0a00272b55b3',
+    '6bc8d0df-d180-679e-e055-0a00272b55b3',
+    '6bc8d0df-d181-679e-e055-0a00272b55b3',
+    '6bc8d0df-d182-679e-e055-0a00272b55b3',
+    '6bc8d0df-d183-679e-e055-0a00272b55b3',
+    '6bc8d0df-d184-679e-e055-0a00272b55b3',
+    '6bc8d0df-d185-679e-e055-0a00272b55b3',
+    '6bc8d0df-d186-679e-e055-0a00272b55b3',
+    '6bc8d0df-d187-679e-e055-0a00272b55b3',
+    '6bc8d0df-d188-679e-e055-0a00272b55b3',
+    '6bc8d0df-d189-679e-e055-0a00272b55b3',
+    '6bc8d0df-d18a-679e-e055-0a00272b55b3',
+    '6bc8d0df-d18b-679e-e055-0a00272b55b3',
+    '6bc8d0df-d18c-679e-e055-0a00272b55b3',
+    '6bc8d0df-d18d-679e-e055-0a00272b55b3',
+    '6bc8d0df-d18e-679e-e055-0a00272b55b3',
+    '6bc8d0df-d18f-679e-e055-0a00272b55b3',
+    '6bc8d0df-d190-679e-e055-0a00272b55b3',
+    '6bc8d0df-d191-679e-e055-0a00272b55b3',
+    '6bc8d0df-d192-679e-e055-0a00272b55b3',
+    '6bc8d0df-d193-679e-e055-0a00272b55b3',
+    '6bc8d0df-d194-679e-e055-0a00272b55b3',
+    '6bc8d0df-d195-679e-e055-0a00272b55b3',
+    '6bc8d0df-d196-679e-e055-0a00272b55b3',
+    '6bc8d0df-d197-679e-e055-0a00272b55b3',
+    '6bc8d0df-d198-679e-e055-0a00272b55b3',
+    '6bc8d0df-d199-679e-e055-0a00272b55b3',
+    '6bc8d0df-d19a-679e-e055-0a00272b55b3',
+    '6bc8d0df-d19b-679e-e055-0a00272b55b3',
+    '6bc8d0df-d19c-679e-e055-0a00272b55b3',
+    '6bc8d0df-d19d-679e-e055-0a00272b55b3',
+    '6bc8d0df-d19e-679e-e055-0a00272b55b3',
+    '6bc8d0df-d19f-679e-e055-0a00272b55b3',
+    '6bc8d0df-d1a0-679e-e055-0a00272b55b3',
+    '6bc8d0df-d1a1-679e-e055-0a00272b55b3',
+    '6bc8d0df-d1a2-679e-e055-0a00272b55b3',
+    '6bc8d0df-d1a3-679e-e055-0a00272b55b3',
+    '6bc8d0df-d1a4-679e-e055-0a00272b55b3',
+    '6bc8d0df-d1a6-679e-e055-0a00272b55b3',
+    '6bc8d0df-d1a7-679e-e055-0a00272b55b3',
+    '6bc8d0df-d1a8-679e-e055-0a00272b55b3',
+    '6bc8d0df-d1a9-679e-e055-0a00272b55b3',
+    '6bc8d0df-d1aa-679e-e055-0a00272b55b3',
+    '6bc8d0df-d1ab-679e-e055-0a00272b55b3',
+    '6bc8d0df-d1ac-679e-e055-0a00272b55b3',
+    '6bc8d0df-d1ad-679e-e055-0a00272b55b3',
+    '6bc8d0df-d1ae-679e-e055-0a00272b55b3',
+    '6bc8d0df-d1af-679e-e055-0a00272b55b3',
+    '6cf39825-9d9d-4de2-e055-0a0027980ba7',
+    '6cf39825-9d9f-4de2-e055-0a0027980ba7',
+    '6cf39825-9da0-4de2-e055-0a0027980ba7',
+    '6cf39825-9da1-4de2-e055-0a0027980ba7',
+    '6cf39825-9da3-4de2-e055-0a0027980ba7',
+    '6cf39825-9da4-4de2-e055-0a0027980ba7',
+    '6d074c81-c2b2-05f7-e055-0a0027980ba7',
+    '6d3fa502-92a0-73a9-e055-0a0027980ba7',
+    '6d3fa502-92a1-73a9-e055-0a0027980ba7',
+    '6d3fa502-92a2-73a9-e055-0a0027980ba7',
+    '6d3fa502-92a3-73a9-e055-0a0027980ba7',
+    '6d3fa502-92a4-73a9-e055-0a0027980ba7',
+    '6d3fa502-92a5-73a9-e055-0a0027980ba7',
+] %}
+{{- data.eddl_aixm['RunwayMarking'][uuid] | to_poly('', 'layout-runway-marking') }}
+{% endfor %}
+{% for uuid in
+[
     'de162807-48f2-d2fc-e053-86c812acd642',
     'de162807-48f4-d2fc-e053-86c812acd642',
     'de162807-48f5-d2fc-e053-86c812acd642',
@@ -153,10 +430,7 @@ FOLDER:Runway Info
     'de162807-4912-d2fc-e053-86c812acd642',
     'de162807-4913-d2fc-e053-86c812acd642',
     'de162807-4914-d2fc-e053-86c812acd642',
-    'de162807-4915-d2fc-e053-86c812acd642'
+    'de162807-4915-d2fc-e053-86c812acd642',
 ] %}
-{{- geom | to_poly(marking, 'layout-runway-marking') }}
-{% endfor %}
-{% for marking in ['48f2', '48f4', '48f5', '48f6', '48f7', '48f8', '48f9', '48fa', '48fb', '48fc', '48fd', '48fe', '48ff', '4900', '4901', '4902', '4903', '4904', '4905', '4906', '4907', '4908', '4909', '490a', '490b', '490c', '490d', '490e', '490f', '4910', '4911', '4912', '4913', '4914', '4915'] %}
-{{- data.eddl['RunwayMarking']['de162807-' + marking + '-d2fc-e053-86c812acd642' | string] | to_poly(marking, 'layout-taxiway') }}
+{{- data.eddl_aixm['RunwayMarking'][uuid] | to_poly('', 'layout-taxiway') }}
 {% endfor %}

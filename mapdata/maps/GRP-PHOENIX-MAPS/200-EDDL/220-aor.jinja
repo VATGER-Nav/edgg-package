@@ -5,30 +5,30 @@ AIRPORT:EDDL
 FOLDER:AoR
 COLOR:aor-gnd-a
 STYLE:Dot
-{{ data.eddl_layout['layout']['AoR']['DLGE'] | to_line('DLGE') }}
+{{ data.eddl_kml['layout']['aor']['line']['DLGE'] | to_line('DLGE') }}
 ZOOM:400
 FONTSIZE:=:13
-{{ data.eddl_layout['layout']['AoR']['DLGE_'] | to_text('DLGE 121.605') }}
+{{ data.eddl_kml['layout']['aor']['labels']['DLGE'] | to_text('DLGE 121.605') }}
 
 MAP:EDDL_W_GND
 AIRPORT:EDDL
 FOLDER:AoR
 COLOR:aor-gnd-b
 STYLE:Dot
-{{ data.eddl_layout['layout']['AoR']['DLGW'] | to_line('DLGW') }}
+{{ data.eddl_kml['layout']['aor']['line']['DLGW'] | to_line('DLGW') }}
 ZOOM:400
 FONTSIZE:=:13
-{{ data.eddl_layout['layout']['AoR']['DLGW_'] | to_text('DLGW 121.680') }}
+{{ data.eddl_kml['layout']['aor']['labels']['DLGW'] | to_text('DLGW 121.680') }}
 
 MAP:EDDL_TWR
 AIRPORT:EDDL
 FOLDER:AoR
 COLOR:aor-twr-a
 STYLE:Dot
-{{ data.eddl_layout['layout']['AoR']['DLT'] | to_line('DLT') }}
+{{ data.eddl_kml['layout']['aor']['line']['DLT'] | to_line('DLT') }}
 ZOOM:400
 FONTSIZE:=:13
-{{ data.eddl_layout['layout']['AoR']['DLT_'] | to_text('DLT  118.305:0:10') }}
+{{ data.eddl_kml['layout']['aor']['labels']['DLT'] | to_text('DLT  118.305:0:10') }}
 
 MAP:EDDL_DEP
 AIRPORT:EDDL
@@ -36,7 +36,7 @@ FOLDER:AoR
 COLOR:aor-app-a
 ZOOM:400
 FONTSIZE:=:13
-{{ data.eddl_layout['layout']['AoR']['DLT_'] | to_text('DLD  121.355:0:-10') }}
+{{ data.eddl_kml['layout']['aor']['labels']['DLT'] | to_text('DLD  121.355:0:-10') }}
 
 MAP:EDGG_PAH_CTR
 AIRPORT:EDDL
@@ -44,4 +44,4 @@ FOLDER:AoR
 COLOR:aor-app-a
 ZOOM:400
 FONTSIZE:=:13
-{{ data.eddl_layout['layout']['AoR']['DLT_'] | to_text('PADH 135.650:0:-10') }}
+{{ data.eddl_kml['layout']['aor']['labels']['DLT'] | to_text('PADH 135.650:0:-10') }}
