@@ -74,7 +74,7 @@ source = "https://aip.dfs.de/datasets/scripts/getItem.php?amdt=0&content=aerodro
 type = "aixm"
 source = "https://aip.dfs.de/datasets/scripts/getItem.php?amdt=0&content=aerodrome_mapping/EDDL_AerodromeMapping_2025-01-23_2025-02-20_revision.zip"
 
-[data.eddk]
+[data.eddk_aixm]
 type = "aixm"
 source = "https://aip.dfs.de/datasets/scripts/getItem.php?amdt=0&content=aerodrome_mapping/EDDK_AerodromeMapping_2025-01-23_2025-02-20_revision.zip"
 
@@ -121,7 +121,7 @@ source = "kml/eddf.kml"
 type = "kml"
 source = "kml/eddl.kml"
 
-[data.eddk_layout]
+[data.eddk_kml]
 type = "kml"
 source = "kml/eddk.kml"
 
