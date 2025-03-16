@@ -214,7 +214,7 @@ Airport_Runway_Buffer_LVP=05R:150
 Airport_Runway_Buffer_LVP=23R:150
 Airport_Runway_Buffer_LVP=05L:150
 Airport_Runway_NotATYP=23R:A388,B741,B742,B743,B744,B748,A124,A225
-Window_APP_Rotation=36.7
+Window_APP_Rotation=37.25
 Window_APP_AltFilter=10000
 
 [EDDK]
