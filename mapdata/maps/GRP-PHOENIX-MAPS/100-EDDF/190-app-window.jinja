@@ -49,6 +49,16 @@ COLOR:appwindow-ecl
 // 25R
 {{ ecl_dashes(runways.EDDF['25R'], 25) }}
 {{ marker_ticks(runways.EDDF['25R'], [4, 10, 20], 0, 0.5, 'R') }}
+COLOR:appwindow-runway
+STYLE:SOLID:2
+// 07R/25L
+{{ fix(runways['EDDF']['07R']['thr']).line_to_fix(fix(runways['EDDF']['25L']['thr'])) }}
+// 07C/25C
+{{ fix(runways['EDDF']['07C']['thr']).line_to_fix(fix(runways['EDDF']['25C']['thr'])) }}
+// 07L/25R
+{{ fix(runways['EDDF']['07L']['thr']).line_to_fix(fix(runways['EDDF']['25R']['thr'])) }}
+// 18
+{{ fix(runways['EDDF']['18']['thr']).line_to_fix(fix(runways['EDDF']['36']['thr'])) }}
 
 MAP:ECL 25C/07C:A
 AIRPORT:EDDF
@@ -127,6 +137,7 @@ SYMBOL:AIRPORT:EDFA
 SYMBOL:AIRPORT:EDFP
 SYMBOL:AIRPORT:EDFB
 COLOR:appwindow-runway
+STYLE:SOLID:2
 // ETOU 07/25
 {{ fix(runways['ETOU']['07']['thr']).line_to_fix(fix(runways['ETOU']['25']['thr'])) }}
 
