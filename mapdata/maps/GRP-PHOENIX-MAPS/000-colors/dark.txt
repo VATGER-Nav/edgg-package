@@ -72,7 +72,7 @@ COLORDEF:deicing-line:54:65:92
 
 COLORDEF:break-away-area:58:159:65
 
-COLORDEF:appwindow-runway:160:160:160
+COLORDEF:appwindow-runway:255:255:255
 COLORDEF:appwindow-background:0:0:0
 COLORDEF:appwindow-standard:131:131:131
 COLORDEF:appwindow-ecl:131:131:131
