@@ -153,6 +153,6 @@ ACTIVE:1
 MAP:Runway Markings
 AIRPORT:EDDK
 FOLDER:Runway Info
-{% for marking, geom in data.eddk_aixm['RunwayMarking'].items() %}
-{{- geom | to_poly(marking, 'layout-runway-marking') }}
+{% for uuid, geom in data.eddk_aixm['RunwayMarking'].items() %}
+{{- geom | to_poly('', 'layout-runway-marking') }}
 {% endfor %}
