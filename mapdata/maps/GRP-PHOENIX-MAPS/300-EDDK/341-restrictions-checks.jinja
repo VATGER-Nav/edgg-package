@@ -42,15 +42,14 @@ RESTRICTION:MAXCODE:C
 RESTRICTION:MAXCODE:C
 {{ data.eddk_kml['layout']['restrictions']['poly']['C'] | to_poly('') }}
 
-// D (North of 31R/13L)
-RESTRICTION:MAXCODE:F
-RESTRICTION:NOTATYP:A388,A225,C5M,A124,A225
-{{ data.eddk_kml['layout']['restrictions']['poly']['D'] | to_poly('') }}
-
 // A1
 RESTRICTION:MAXCODE:E
 RESTRICTION:NOTATYP:A346
 {{ data.eddk_kml['layout']['restrictions']['poly']['A1'] | to_poly('') }}
+
+// D (North of 31R/13L)
+RESTRICTION:MAXWINGSPAN:69
+{{ data.eddk_kml['layout']['restrictions']['poly']['D'] | to_poly('') }}
 
 // B (Bridge)
 RESTRICTION:MAXCODE:D

@@ -76,7 +76,8 @@ STYLE:SOLID:4
 {{ data.eddk_kml['layout']['restrictions']['line']['B_1b'] | to_line('') -}}
 {{ data.eddk_kml['layout']['restrictions']['line']['B_1c'] | to_line('') -}}
 TEXTALIGN:RC
-{{ data.eddk_kml['layout']['restrictions']['labels']['B_1'] | to_text('Max 200t') }}
+{{ data.eddk_kml['layout']['restrictions']['labels']['B_1'] | to_text('Max code D') }}
+{{ data.eddk_kml['layout']['restrictions']['labels']['B_1'] | to_text('Max 200t:0:12') }}
 
 // N/M Yellow Line
 COLOR:restrictions-E
@@ -107,12 +108,11 @@ STYLE:SOLID:4
 {{ data.eddk_kml['layout']['restrictions']['line']['T_b'] | to_line('') -}}
 
 // D
-COLOR:restrictions-E
+COLOR:restrictions-F
 STYLE:SOLID:4
 {{ data.eddk_kml['layout']['restrictions']['line']['D'] | to_line('') -}}
 TEXTALIGN:RC
-{{ data.eddk_kml['layout']['restrictions']['labels']['D'] | to_text('Max code E') }}
-{{ data.eddk_kml['layout']['restrictions']['labels']['D'] | to_text('+ B747-8:0:12') }}
+{{ data.eddk_kml['layout']['restrictions']['labels']['D'] | to_text('Max B748') }}
 
 // Apron U
 COLOR:restrictions-C
@@ -141,7 +141,7 @@ TEXTALIGN:RC
 // A1
 COLOR:restrictions-AB
 TEXTALIGN:RC
-{{ data.eddk_kml['layout']['restrictions']['labels']['A1'] | to_text('No A340-600 via A1') }}
+{{ data.eddk_kml['layout']['restrictions']['labels']['A1'] | to_text('No A346 via A1') }}
 
 // Restriction Stands
 
