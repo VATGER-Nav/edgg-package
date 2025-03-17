@@ -1,0 +1,9 @@
+{
+"type": "FeatureCollection",
+"name": "restrictions_line",
+"crs": { "type": "name", "properties": { "name": "urn:ogc:def:crs:EPSG::32632" } },
+"features": [
+{ "type": "Feature", "properties": { "name": "G" }, "geometry": { "type": "LineString", "coordinates": [ [ 410558.474588685203344, 5776572.001778072677553 ], [ 410515.893776941287797, 5776703.426551231183112 ] ] } },
+{ "type": "Feature", "properties": { "name": "glider" }, "geometry": { "type": "LineString", "coordinates": [ [ 409804.340100445318967, 5776799.615354181267321 ], [ 409711.368056590727065, 5776931.964817347936332 ] ] } }
+]
+}

@@ -129,7 +129,7 @@ source = "kml/eddk.kml"
 type = "kml"
 source = "kml/edds.kml"
 
-[data.eddg_layout]
+[data.eddg_kml]
 type = "kml"
 source = "kml/eddg.kml"
 

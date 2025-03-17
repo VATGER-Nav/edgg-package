@@ -6,8 +6,8 @@ FOLDER:Runway Info
 COLOR:tora-label
 ZOOM:600
 TEXTALIGN:RC
-{{ data.eddg_layout['layout']['TORA']['25 A'] | to_text('2170') }}
-{{ data.eddg_layout['layout']['TORA']['25 C'] | to_text('900') }}
+{{ data.eddg_kml['layout']['tora']['25_A'] | to_text('2170') }}
+{{ data.eddg_kml['layout']['tora']['25_C'] | to_text('890') }}
 
 MAP:TORA 07
 AIRPORT:EDDG
@@ -15,17 +15,48 @@ FOLDER:Runway Info
 COLOR:tora-label
 ZOOM:600
 TEXTALIGN:LC
-{{ data.eddg_layout['layout']['TORA']['07 B'] | to_text('2170') }}
-{{ data.eddg_layout['layout']['TORA']['07 C'] | to_text('1290') }}
+{{ data.eddg_kml['layout']['tora']['07_B'] | to_text('2170') }}
+{{ data.eddg_kml['layout']['tora']['07_C'] | to_text('1285') }}
+
+MAP:RRS 25
+AIRPORT:EDDG
+FOLDER:Runway Info
+ACTIVE:RWY:ARR:*:DEP:EDDG25
+ACTIVE:RWY:ARR:EDDG25:DEP:*
+COLOR:rrs-marker
+{{ data.eddg_kml['layout']['rrs']['25_600'] | to_symbol('RRS') }}
+{{ data.eddg_kml['layout']['rrs']['25_1500'] | to_symbol('RRS') }}
+FONTSIZE:=:12
+ZOOM:400
+TEXTALIGN:CB
+{{ data.eddg_kml['layout']['rrs']['25_600'] | to_text('600:0:-10') }}
+{{ data.eddg_kml['layout']['rrs']['25_1500'] | to_text('1500:0:-10') }}
+
+MAP:RRS 07
+AIRPORT:EDDG
+FOLDER:Runway Info
+ACTIVE:RWY:ARR:*:DEP:EDDG07
+ACTIVE:RWY:ARR:EDDG07:DEP:*
+COLOR:rrs-marker
+{{ data.eddg_kml['layout']['rrs']['07_600'] | to_symbol('RRS') }}
+{{ data.eddg_kml['layout']['rrs']['07_1500'] | to_symbol('RRS') }}
+FONTSIZE:=:12
+ZOOM:400
+TEXTALIGN:CB
+{{ data.eddg_kml['layout']['rrs']['07_600'] | to_text('600:0:-10') }}
+{{ data.eddg_kml['layout']['rrs']['07_1500'] | to_text('1500:0:-10') }}
 
 MAP:Runway Designators
 AIRPORT:EDDG
 FOLDER:Runway Info
 ACTIVE:1
-{{ data.eddg_layout['layout']['Markings']['25'] | to_multipoly('25', 'layout-runway-marking') }}
-{{ data.eddg_layout['layout']['Markings']['07'] | to_multipoly('07', 'layout-runway-marking') }}
+{% for uuid, geom in data.eddg_kml['layout']['markings']['runways'].items() %}
+{{- geom | to_poly('', 'layout-runway-marking') }}
+{% endfor %}
 
 MAP:Runway Markings
 AIRPORT:EDDG
 FOLDER:Runway Info
-{{ data.eddg_layout['layout']['Markings']['Runway Marking'] | to_multipoly('', 'layout-runway-marking') }}
+{% for uuid, geom in data.eddg_kml['layout']['markings']['poly'].items() %}
+{{- geom | to_poly('', 'layout-runway-marking') }}
+{% endfor %}

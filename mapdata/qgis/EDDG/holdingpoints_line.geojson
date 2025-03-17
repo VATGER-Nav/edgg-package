@@ -1,0 +1,11 @@
+{
+"type": "FeatureCollection",
+"name": "holdingpoints_line",
+"crs": { "type": "name", "properties": { "name": "urn:ogc:def:crs:EPSG::32632" } },
+"features": [
+{ "type": "Feature", "properties": { "name": "B" }, "geometry": { "type": "LineString", "coordinates": [ [ 408995.02128262387123, 5776419.146087585948408 ], [ 409018.90953146177344, 5776426.921371411532164 ] ] } },
+{ "type": "Feature", "properties": { "name": "C" }, "geometry": { "type": "LineString", "coordinates": [ [ 409851.168622762779705, 5776693.974677013233304 ], [ 409830.934573988779448, 5776687.419901781715453 ] ] } },
+{ "type": "Feature", "properties": { "name": "A" }, "geometry": { "type": "LineString", "coordinates": [ [ 411059.758729805238545, 5777084.372013934887946 ], [ 411035.849626874085516, 5777076.865759128704667 ] ] } },
+{ "type": "Feature", "properties": { "name": "glider" }, "geometry": { "type": "LineString", "coordinates": [ [ 409772.935928196588065, 5776849.492497861385345 ], [ 409767.853415332268924, 5776846.215423009358346 ] ] } }
+]
+}

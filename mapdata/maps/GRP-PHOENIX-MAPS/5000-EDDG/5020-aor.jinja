@@ -6,27 +6,28 @@ FOLDER:AoR
 ACTIVE:1
 COLOR:layout-taxiline-grey
 STYLE:Dot
-{{ data.eddg_layout['layout']['AoR']['Area'] | to_line('Non-movement Area') }}
+{{ data.eddg_kml['layout']['aor']['line']['area'] | to_line('Non-movement Area') }}
 
 MAP:EDDG_GND
 AIRPORT:EDDG
 FOLDER:AoR
 COLOR:aor-gnd-a
 STYLE:Dot
-{{ data.eddg_layout['layout']['AoR']['DGG'] | to_line('DGG') }}
+{{ data.eddg_kml['layout']['aor']['line']['DGG'] | to_line('DGG') }}
 ZOOM:400
 FONTSIZE:=:13
-{{ data.eddg_layout['layout']['AoR']['DGG_'] | to_text('DGG  121.880') }}
+{{ data.eddg_kml['layout']['aor']['labels']['DGG'] | to_text('DGG  121.880') }}
 
 MAP:EDDG_TWR
 AIRPORT:EDDG
 FOLDER:AoR
 COLOR:aor-twr-a
 STYLE:Dot
-{{ data.eddg_layout['layout']['AoR']['DGT'] | to_multiline('DGT') }}
+{{ data.eddg_kml['layout']['aor']['line']['DGT_a'] | to_line('DGG') }}
+{{ data.eddg_kml['layout']['aor']['line']['DGT_b'] | to_line('DGG') }}
 ZOOM:400
 FONTSIZE:=:13
-{{ data.eddg_layout['layout']['AoR']['DGT_'] | to_text('DGT  129.805') }}
+{{ data.eddg_kml['layout']['aor']['labels']['DGT'] | to_text('DGT  129.805') }}
 
 MAP:EDDG_HMM_APP
 AIRPORT:EDDG
@@ -34,7 +35,7 @@ FOLDER:AoR
 COLOR:aor-app-a
 ZOOM:400
 FONTSIZE:=:13
-{{ data.eddg_layout['layout']['AoR']['DGT_'] | to_text('HMM  129.300:0:-20') }}
+{{ data.eddg_kml['layout']['aor']['labels']['DGT'] | to_text('HMM  129.300:0:-20') }}
 
 MAP:EDGG_PAH_CTR
 AIRPORT:EDDG
@@ -42,4 +43,4 @@ FOLDER:AoR
 COLOR:aor-app-a
 ZOOM:400
 FONTSIZE:=:13
-{{ data.eddg_layout['layout']['AoR']['DGT_'] | to_text('PADH 135.650:0:-20') }}
+{{ data.eddg_kml['layout']['aor']['labels']['DGT'] | to_text('PADH 135.650:0:-20') }}
