@@ -98,4 +98,14 @@ PROFILE:EDSB_TWR:50:4
 ATIS2:Baden Tower
 ATIS3:PDC/DCL Datalink [EDSB] - Pilotbriefing vats.im/edsb
 ATIS4:You have feedback? Submit it! feedback.vatger.de
+
+PROFILE:EDLN_TWR:50:4
+ATIS2:Moenchengladbach Tower
+ATIS3:PDC/DCL Datalink [EDLN] - Pilotbriefing vats.im/edln
+ATIS4:You have feedback? Submit it! feedback.vatger.de
+
+PROFILE:EDLV_TWR:50:4
+ATIS2:Niederrhein Tower
+ATIS3:PDC/DCL Datalink [EDLV] - Pilotbriefing vats.im/edlv
+ATIS4:You have feedback? Submit it! feedback.vatger.de
 END
