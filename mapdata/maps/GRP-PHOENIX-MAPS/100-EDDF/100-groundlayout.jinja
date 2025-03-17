@@ -1,0 +1,51 @@
+// ------------------------------------------------------------------
+//                                 EDDF
+// ------------------------------------------------------------------
+
+// -------------------------- Ground Layout -------------------------
+{%- set default = 0.000005 %}
+
+MAP:Apron Area
+AIRPORT:EDDF
+FOLDER:Airport Layout
+ACTIVE:1
+{% for uuid, geom in data.eddf_kml['layout']['aprons'].items() %}
+{{- geom | to_poly('', 'layout-apron') }}
+{% endfor %}
+{% for name in
+[
+    'rwyBlastpad25L',
+    'rwyBlastpad07R',
+    'rwyBlastpad25C',
+    'rwyBlastpad07C',
+    'rwyBlastpad25R',
+    'rwyBlastpad07L'
+] %}
+{{- data.eddf_kml['layout']['runways'][name] | to_poly(name, 'layout-apron') }}
+{% endfor %}
+
+MAP:Roads
+AIRPORT:EDDF
+FOLDER:Airport Layout
+COLOR:layout-taxiway
+{% for uuid, geom in data.eddf_kml['layout']['roads'].items() %}
+{{- geom | simplify(default) | to_line('') -}}
+{% endfor %}
+
+{% set default = 0.000005 %}
+MAP:Taxiway Movement Area
+AIRPORT:EDDF
+FOLDER:Airport Layout
+ACTIVE:1
+{% for uuid, geom in data.eddf_kml['layout']['taxiways'].items() %}
+{{- geom | to_poly('', 'layout-taxiway') }}
+{% endfor %}
+
+MAP:Runways
+AIRPORT:EDDF
+FOLDER:Airport Layout
+ACTIVE:1
+{{ data.eddf_kml['layout']['runways']['07R-25L'] | to_poly('Runway 07R/25L', 'layout-runway') }}
+{{ data.eddf_kml['layout']['runways']['07C-25C'] | to_poly('Runway 07C/25C', 'layout-runway') }}
+{{ data.eddf_kml['layout']['runways']['07L-25R'] | to_poly('Runway 07L/25R', 'layout-runway') }}
+{{ data.eddf_kml['layout']['runways']['18'] | to_poly('Runway 18', 'layout-runway') }}

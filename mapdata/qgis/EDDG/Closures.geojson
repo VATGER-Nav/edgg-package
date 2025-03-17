@@ -1,8 +1,0 @@
-{
-"type": "FeatureCollection",
-"name": "Closures",
-"crs": { "type": "name", "properties": { "name": "urn:ogc:def:crs:EPSG::32632" } },
-"features": [
-{ "type": "Feature", "properties": { "name": "Apron" }, "geometry": { "type": "Point", "coordinates": [ 410000.244284499669448, 5776603.520416445098817 ] } }
-]
-}

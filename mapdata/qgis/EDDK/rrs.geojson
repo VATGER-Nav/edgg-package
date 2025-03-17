@@ -1,0 +1,19 @@
+{
+"type": "FeatureCollection",
+"name": "rrs",
+"crs": { "type": "name", "properties": { "name": "urn:ogc:def:crs:EPSG::32632" } },
+"features": [
+{ "type": "Feature", "properties": { "name": "13L_600" }, "geometry": { "type": "Point", "coordinates": [ 368802.555995535338297, 5637767.640529720112681 ] } },
+{ "type": "Feature", "properties": { "name": "13L_1500" }, "geometry": { "type": "Point", "coordinates": [ 369394.193716750072781, 5637089.433476648293436 ] } },
+{ "type": "Feature", "properties": { "name": "13L_2400" }, "geometry": { "type": "Point", "coordinates": [ 369985.831437965040095, 5636411.226423577405512 ] } },
+{ "type": "Feature", "properties": { "name": "31R_600" }, "geometry": { "type": "Point", "coordinates": [ 370519.690622897702269, 5635797.028108126483858 ] } },
+{ "type": "Feature", "properties": { "name": "31R_1500" }, "geometry": { "type": "Point", "coordinates": [ 369928.052901682967786, 5636475.235161198303103 ] } },
+{ "type": "Feature", "properties": { "name": "31R_2400" }, "geometry": { "type": "Point", "coordinates": [ 369336.415180468000472, 5637153.442214269191027 ] } },
+{ "type": "Feature", "properties": { "name": "24_600" }, "geometry": { "type": "Point", "coordinates": [ 369663.297291304916143, 5636680.211567929945886 ] } },
+{ "type": "Feature", "properties": { "name": "24_1500" }, "geometry": { "type": "Point", "coordinates": [ 368842.067546571022831, 5636311.99735532514751 ] } },
+{ "type": "Feature", "properties": { "name": "06_600" }, "geometry": { "type": "Point", "coordinates": [ 368510.880620092037134, 5636163.587693246081471 ] } },
+{ "type": "Feature", "properties": { "name": "06_1500" }, "geometry": { "type": "Point", "coordinates": [ 369332.110364825930446, 5636531.801905850879848 ] } },
+{ "type": "Feature", "properties": { "name": "13R_600" }, "geometry": { "type": "Point", "coordinates": [ 368197.989018283667974, 5636712.596023187972605 ] } },
+{ "type": "Feature", "properties": { "name": "31L_600" }, "geometry": { "type": "Point", "coordinates": [ 368632.740408688143361, 5636213.059311218559742 ] } }
+]
+}

@@ -293,6 +293,7 @@ def _render_linestring(lines, linestring):
                 f"LINE:{coord2es((point[0], point[1]))}"
                 f":{coord2es((geometry.coords[idx + 1][0], geometry.coords[idx + 1][1]))}",
             )
+        lines.append("")
 
 
 def simplify(geometries, tolerance):

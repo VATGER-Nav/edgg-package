@@ -1,0 +1,11 @@
+{
+"type": "FeatureCollection",
+"name": "labels_aprons",
+"crs": { "type": "name", "properties": { "name": "urn:ogc:def:crs:EPSG::32632" } },
+"features": [
+{ "type": "Feature", "properties": { "name": "Apron West" }, "geometry": { "type": "Point", "coordinates": [ 409943.237927181937266, 5776421.076007133349776 ] } },
+{ "type": "Feature", "properties": { "name": "Central Apron" }, "geometry": { "type": "Point", "coordinates": [ 410225.643587723432574, 5776446.466294387355447 ] } },
+{ "type": "Feature", "properties": { "name": "Apron East" }, "geometry": { "type": "Point", "coordinates": [ 410607.896901534229983, 5776573.476038173772395 ] } },
+{ "type": "Feature", "properties": { "name": "Glider Area" }, "geometry": { "type": "Point", "coordinates": [ 409594.955391038150992, 5776941.350467290729284 ] } }
+]
+}

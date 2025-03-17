@@ -6,9 +6,10 @@ FOLDER:Closures
 ACTIVE:1
 STYLE:Solid:2
 COORDTYPE:TWYCLOSED:REGION
-{{ data.eddf_layout['layout']['Closures']['M3'] | to_poly('','closure') }}
-STYLE:Solid:1
-{{ data.eddf_layout['layout']['Closures']['M3_'] | to_multipoly('Cross','closure-symbol') }}
+{{ data.eddf_kml['layout']['closures']['poly']['M3'] | to_poly('','closure') }}
+STYLE:Solid:1 
+{{ data.eddf_kml['layout']['closures']['symb']['M3_a'] | to_poly('','closure-symbol') }}
+{{ data.eddf_kml['layout']['closures']['symb']['M3_b'] | to_poly('','closure-symbol') }}
 
 MAP:M16
 AIRPORT:EDDF
@@ -16,9 +17,9 @@ FOLDER:Closures
 ACTIVE:1
 STYLE:Solid:2
 COORDTYPE:TWYCLOSED:REGION
-{{ data.eddf_layout['layout']['Closures']['M16'] | to_poly('','closure') }}
+{{ data.eddf_kml['layout']['closures']['poly']['M16'] | to_poly('','closure') }}
 STYLE:Solid:1
-{{ data.eddf_layout['layout']['Closures']['M16_'] | to_poly('Cross','closure-symbol') }}
+{{ data.eddf_kml['layout']['closures']['symb']['M16'] | to_poly('','closure-symbol') }}
 
 MAP:R
 AIRPORT:EDDF
@@ -26,9 +27,11 @@ FOLDER:Closures
 ACTIVE:1
 STYLE:Solid:2
 COORDTYPE:TWYCLOSED:REGION
-{{ data.eddf_layout['layout']['Closures']['R#1'] | to_poly('','closure') }}
+{{ data.eddf_kml['layout']['closures']['poly']['R_1'] | to_poly('','closure') }}
 STYLE:Solid:1
-{{ data.eddf_layout['layout']['Closures']['R#1_'] | to_multipoly('Cross','closure-symbol') }}
+{{ data.eddf_kml['layout']['closures']['symb']['R_1a'] | to_poly('','closure-symbol') }}
+{{ data.eddf_kml['layout']['closures']['symb']['R_1b'] | to_poly('','closure-symbol') }}
+{{ data.eddf_kml['layout']['closures']['symb']['R_1c'] | to_poly('','closure-symbol') }}
 
 MAP:R
 AIRPORT:EDDF
@@ -36,9 +39,9 @@ FOLDER:Closures
 ACTIVE:1
 STYLE:Solid:2
 COORDTYPE:TWYCLOSED:REGION
-{{ data.eddf_layout['layout']['Closures']['R#2'] | to_poly('','closure') }}
+{{ data.eddf_kml['layout']['closures']['poly']['R_2'] | to_poly('','closure') }}
 STYLE:Solid:1
-{{ data.eddf_layout['layout']['Closures']['R#2_'] | to_poly('Cross','closure-symbol') }}
+{{ data.eddf_kml['layout']['closures']['symb']['R_2'] | to_poly('','closure-symbol') }}
 
 MAP:W, W9
 AIRPORT:EDDF
@@ -54,9 +57,10 @@ FOLDER:Closures
 ACTIVE:1
 STYLE:Solid:2
 COORDTYPE:TWYCLOSED:REGION
-{{ data.eddf_layout['layout']['Closures']['W7'] | to_poly('','closure') }}
+{{ data.eddf_kml['layout']['closures']['poly']['W7'] | to_poly('','closure') }}
 STYLE:Solid:1
-{{ data.eddf_layout['layout']['Closures']['W7_'] | to_multipoly('Cross','closure-symbol') }}
+{{ data.eddf_kml['layout']['closures']['symb']['W7_a'] | to_poly('','closure-symbol') }}
+{{ data.eddf_kml['layout']['closures']['symb']['W7_b'] | to_poly('','closure-symbol') }}
 
 MAP:Y
 AIRPORT:EDDF
@@ -64,9 +68,10 @@ FOLDER:Closures
 ACTIVE:1
 STYLE:Solid:2
 COORDTYPE:TWYCLOSED:REGION
-{{ data.eddf_layout['layout']['Closures']['Y'] | to_poly('','closure') }}
+{{ data.eddf_kml['layout']['closures']['poly']['Y'] | to_poly('','closure') }}
 STYLE:Solid:1
-{{ data.eddf_layout['layout']['Closures']['Y_'] | to_multipoly('Cross','closure-symbol') }}
+{{ data.eddf_kml['layout']['closures']['symb']['Y_a'] | to_poly('','closure-symbol') }}
+{{ data.eddf_kml['layout']['closures']['symb']['Y_b'] | to_poly('','closure-symbol') }}
 
 MAP:S
 AIRPORT:EDDF
@@ -74,14 +79,14 @@ FOLDER:Closures
 ACTIVE:1
 STYLE:Solid:2
 COORDTYPE:TWYCLOSED:REGION
-{{ data.eddf_layout['layout']['Closures']['S'] | to_poly('','closure') }}
+{{ data.eddf_kml['layout']['closures']['poly']['S'] | to_poly('','closure') }}
 
 MAP:S10
 AIRPORT:EDDF
 FOLDER:Closures
 ACTIVE:1
 STYLE:Solid:1
-{{ data.eddf_layout['layout']['Closures']['S10_'] | to_multipoly('Cross','closure-symbol') }}
+{{ data.eddf_kml['layout']['closures']['symb']['S10'] | to_poly('','closure-symbol') }}
 
 // -------------------------- Constructions --------------------------
 
@@ -91,11 +96,12 @@ FOLDER:Constructions
 ACTIVE:1
 STYLE:Solid:2
 COORDTYPE:TWYCLOSED:POLYGON
-{{ data.eddf_layout['layout']['Closures']['S16/S21'] | to_poly('','closure') }}
+{{ data.eddf_kml['layout']['closures']['poly']['S16_S21'] | to_poly('','closure') }}
 STYLE:Solid:1
 COORDTYPE:TWYCLOSED:REGION
-{{ data.eddf_layout['layout']['Closures']['S16/S21_'] | to_multipoly('Cross','closure-symbol') }}
-{{ data.eddf_layout['layout']['Closures']['S_'] | to_poly('Cross','closure-symbol') }}
+{{ data.eddf_kml['layout']['closures']['symb']['S16'] | to_poly('','closure-symbol') }}
+{{ data.eddf_kml['layout']['closures']['symb']['S21'] | to_poly('','closure-symbol') }}
+{{ data.eddf_kml['layout']['closures']['symb']['S'] | to_poly('','closure-symbol') }}
 
 MAP:Terminal 3
 AIRPORT:EDDF
@@ -103,4 +109,4 @@ FOLDER:Constructions
 ACTIVE:1
 STYLE:Solid:2
 COORDTYPE:TWYCLOSED:POLYGON
-{{ data.eddf_layout['layout']['Closures']['Terminal 3'] | to_poly('','closure') }}
+{{ data.eddf_kml['layout']['closures']['poly']['terminal3'] | to_poly('','closure') }}

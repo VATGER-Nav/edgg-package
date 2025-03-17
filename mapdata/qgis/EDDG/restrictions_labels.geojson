@@ -1,0 +1,14 @@
+{
+"type": "FeatureCollection",
+"name": "restrictions_labels",
+"crs": { "type": "name", "properties": { "name": "urn:ogc:def:crs:EPSG::32632" } },
+"features": [
+{ "type": "Feature", "properties": { "name": "glider" }, "geometry": { "type": "Point", "coordinates": [ 409772.315191036090255, 5776880.501438681036234 ] } },
+{ "type": "Feature", "properties": { "name": "10x" }, "geometry": { "type": "Point", "coordinates": [ 409808.710129939543549, 5776506.451091258786619 ] } },
+{ "type": "Feature", "properties": { "name": "20x" }, "geometry": { "type": "Point", "coordinates": [ 409881.355845302343369, 5776504.817233522422612 ] } },
+{ "type": "Feature", "properties": { "name": "30x" }, "geometry": { "type": "Point", "coordinates": [ 410022.744816950755194, 5776474.067574544809759 ] } },
+{ "type": "Feature", "properties": { "name": "40x" }, "geometry": { "type": "Point", "coordinates": [ 410098.660127742856275, 5776369.962501217611134 ] } },
+{ "type": "Feature", "properties": { "name": "18-19" }, "geometry": { "type": "Point", "coordinates": [ 410163.185169668635353, 5776563.301418146118522 ] } },
+{ "type": "Feature", "properties": { "name": "reference" }, "geometry": { "type": "Point", "coordinates": [ 411013.110200456692837, 5776749.393027225509286 ] } }
+]
+}

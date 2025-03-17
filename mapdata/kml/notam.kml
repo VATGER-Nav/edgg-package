@@ -75,201 +75,6 @@
 		<name>EDDL</name>
 		<visibility>0</visibility>
 		<Placemark>
-			<name>PAD3W- NOTAM</name>
-			<visibility>0</visibility>
-			<Style>
-				<LineStyle>
-					<color>ff0000ff</color>
-				</LineStyle>
-				<PolyStyle>
-					<fill>0</fill>
-				</PolyStyle>
-			</Style>
-			<LineString>
-				<coordinates>
-					6.75853294606075,51.2758896984446,0 6.76038987953614,51.2764721323949,0 
-				</coordinates>
-			</LineString>
-		</Placemark>
-		<Placemark>
-			<name>PAD4W- NOTAM</name>
-			<visibility>0</visibility>
-			<Style>
-				<LineStyle>
-					<color>ff0000ff</color>
-				</LineStyle>
-				<PolyStyle>
-					<fill>0</fill>
-				</PolyStyle>
-			</Style>
-			<LineString>
-				<coordinates>
-					6.75885501186176,51.275487942637,0 6.760583996255609,51.27603027006531,0 
-				</coordinates>
-			</LineString>
-		</Placemark>
-		<Placemark>
-			<name>PAD1W- NOTAM</name>
-			<visibility>0</visibility>
-			<Style>
-				<LineStyle>
-					<color>ff0000ff</color>
-				</LineStyle>
-				<PolyStyle>
-					<fill>0</fill>
-				</PolyStyle>
-			</Style>
-			<LineString>
-				<coordinates>
-					6.75816755250809,51.2789052621545,0 6.758785383234169,51.2788873020432,0 6.75887875900801,51.2788964761946,0 6.75897835503064,51.2789247140237,0 6.759059810059911,51.2789641345608,0 6.759115909212801,51.27901388417,0 6.759142202510929,51.2790738529081,0 6.759141866634081,51.2794014019222,0 6.75912385441563,51.27946956181729,0 6.75906715351043,51.27953220685,0 6.759000595892511,51.2795746289143,0 6.75891267435871,51.2796085874496,0 6.758815940022389,51.2796271325468,0 6.75821321739165,51.2796377449534,0 
-				</coordinates>
-			</LineString>
-		</Placemark>
-		<Placemark>
-			<name>PAD1W_ NOTAM</name>
-			<visibility>0</visibility>
-			<Point>
-				<coordinates>6.75887121699667,51.27972062081739,0</coordinates>
-			</Point>
-		</Placemark>
-		<Placemark>
-			<name>PAD3W_ NOTAM</name>
-			<visibility>0</visibility>
-			<Point>
-				<coordinates>6.758697154243301,51.27585702428311,0</coordinates>
-			</Point>
-		</Placemark>
-		<Placemark>
-			<name>PAD4W_ NOTAM</name>
-			<visibility>0</visibility>
-			<Point>
-				<coordinates>6.759042969254961,51.27544474916,0</coordinates>
-			</Point>
-		</Placemark>
-		<Placemark>
-			<name>PAD4W NOTAM</name>
-			<visibility>0</visibility>
-			<Style>
-				<LineStyle>
-					<color>ff0000ff</color>
-				</LineStyle>
-				<PolyStyle>
-					<fill>0</fill>
-				</PolyStyle>
-			</Style>
-			<Polygon>
-				<outerBoundaryIs>
-					<LinearRing>
-						<coordinates>
-							6.76018304557497,51.27615346864849,0 6.76051390234077,51.2757384633145,0 6.75931862545994,51.2753683166172,0 6.75917586473561,51.2755496767386,0 6.75898787040019,51.2757832274104,0 6.76018304557497,51.27615346864849,0 
-						</coordinates>
-					</LinearRing>
-				</outerBoundaryIs>
-			</Polygon>
-		</Placemark>
-		<Placemark>
-			<name>PAD3W NOTAM</name>
-			<visibility>0</visibility>
-			<Style>
-				<LineStyle>
-					<color>ff0000ff</color>
-				</LineStyle>
-				<PolyStyle>
-					<fill>0</fill>
-				</PolyStyle>
-			</Style>
-			<Polygon>
-				<outerBoundaryIs>
-					<LinearRing>
-						<coordinates>
-							6.75985610173737,51.2765635326589,0 6.760183026039931,51.27615348071569,0 6.75898774125436,51.27578333056301,0 6.75880651573964,51.27601293068999,0 6.758663329313719,51.2761941595482,0 6.75985610173737,51.2765635326589,0 
-						</coordinates>
-					</LinearRing>
-				</outerBoundaryIs>
-			</Polygon>
-		</Placemark>
-		<Placemark>
-			<name>PAD1W NOTAM</name>
-			<visibility>0</visibility>
-			<Style>
-				<LineStyle>
-					<color>ff0000ff</color>
-				</LineStyle>
-				<PolyStyle>
-					<fill>0</fill>
-				</PolyStyle>
-			</Style>
-			<Polygon>
-				<outerBoundaryIs>
-					<LinearRing>
-						<coordinates>
-							6.758560826655219,51.2796059995839,0 6.75971319860546,51.2795893870663,0 6.75968191876667,51.2789085234289,0 6.759116383642399,51.2789176226926,0 6.75851637657231,51.2789274420736,0 6.758560826655219,51.2796059995839,0 
-						</coordinates>
-					</LinearRing>
-				</outerBoundaryIs>
-			</Polygon>
-		</Placemark>
-		<Placemark>
-			<name>PAD= NOTAM</name>
-			<visibility>0</visibility>
-			<snippet></snippet>
-			<Style>
-				<LineStyle>
-					<color>ff0000ff</color>
-				</LineStyle>
-				<PolyStyle>
-					<fill>0</fill>
-				</PolyStyle>
-			</Style>
-			<MultiGeometry>
-				<Polygon>
-					<outerBoundaryIs>
-						<LinearRing>
-							<coordinates>
-								6.759013216398279,51.2760409549718,0 6.75922665079774,51.2760571045061,0 6.759160167225899,51.27613937512709,0 6.759013216398279,51.2760409549718,0 
-							</coordinates>
-						</LinearRing>
-					</outerBoundaryIs>
-				</Polygon>
-				<Polygon>
-					<outerBoundaryIs>
-						<LinearRing>
-							<coordinates>
-								6.759347221464549,51.2756414439898,0 6.75956065415242,51.2756575928945,0 6.75949417177086,51.275739863725,0 6.759347221464549,51.2756414439898,0 
-							</coordinates>
-						</LinearRing>
-					</outerBoundaryIs>
-				</Polygon>
-				<Polygon>
-					<outerBoundaryIs>
-						<LinearRing>
-							<coordinates>
-								6.75914197250448,51.27941869520599,0 6.75906658026447,51.2792924169344,0 6.75921363855424,51.2792915668309,0 6.75914197250448,51.27941869520599,0 
-							</coordinates>
-						</LinearRing>
-					</outerBoundaryIs>
-				</Polygon>
-				<Polygon>
-					<outerBoundaryIs>
-						<LinearRing>
-							<coordinates>
-								6.758672143864469,51.2772720816954,0 6.75887160525265,51.27722176949211,0 6.758876502698821,51.2773139534379,0 6.758672143864469,51.2772720816954,0 
-							</coordinates>
-						</LinearRing>
-					</outerBoundaryIs>
-				</Polygon>
-				<Polygon>
-					<outerBoundaryIs>
-						<LinearRing>
-							<coordinates>
-								6.75871642699353,51.2784497547343,0 6.75891589347901,51.2783994425272,0 6.75892079106535,51.27849162645649,0 6.75871642699353,51.2784497547343,0 
-							</coordinates>
-						</LinearRing>
-					</outerBoundaryIs>
-				</Polygon>
-			</MultiGeometry>
-		</Placemark>
-		<Placemark>
 			<name>P4</name>
 			<visibility>0</visibility>
 			<Style>
@@ -284,14 +89,35 @@
 				<outerBoundaryIs>
 					<LinearRing>
 						<coordinates>
-							6.76123733282324,51.28119136004289,0 6.759915270976639,51.2805686242132,0 6.759768163006,51.2803379027302,0 6.759797839204611,51.2795147545828,0 6.759784789490781,51.2793028780785,0 6.75975374590063,51.27908740132811,0 6.759703394135659,51.2789133032116,0 6.76050852807607,51.2788994274637,0 6.761354609250251,51.27910012758349,0 6.76147548983302,51.27928313640101,0 6.76155707787047,51.2794735330368,0 6.76170501286435,51.279847523028,0 6.76178832616312,51.2800558593382,0 6.7618054181861,51.2801847900876,0 6.76180326675881,51.2802824227672,0 6.761697423015129,51.2805107459434,0 6.76123733282324,51.28119136004289,0 
+							6.76123733282324,51.28119136004289,0 6.759915270976639,51.2805686242132,0 6.759768163006,51.2803379027301,0 6.759797839204611,51.2795147545828,0 6.759784789490781,51.2793028780784,0 6.75975374590063,51.27908740132811,0 6.759703394135659,51.2789133032116,0 6.76050852807607,51.2788994274637,0 6.761354609250251,51.27910012758349,0 6.76147548983302,51.27928313640101,0 6.76155707787047,51.2794735330368,0 6.76170501286435,51.279847523028,0 6.76178832616312,51.2800558593382,0 6.7618054181861,51.2801847900876,0 6.76180326675881,51.2802824227672,0 6.761697423015129,51.2805107459434,0 6.76123733282324,51.28119136004289,0 
 						</coordinates>
 					</LinearRing>
 				</outerBoundaryIs>
 			</Polygon>
 		</Placemark>
 		<Placemark>
-			<name>Taxiway</name>
+			<name>apron</name>
+			<visibility>0</visibility>
+			<Style>
+				<LineStyle>
+					<color>ff0000ff</color>
+				</LineStyle>
+				<PolyStyle>
+					<fill>0</fill>
+				</PolyStyle>
+			</Style>
+			<Polygon>
+				<outerBoundaryIs>
+					<LinearRing>
+						<coordinates>
+							6.76004978028323,51.2806318523398,0 6.761237216255229,51.2811912031238,0 6.76169840170182,51.2805091128383,0 6.76180262921501,51.28028401612,0 6.76178808722983,51.2800563244101,0 6.7614764461334,51.2792828116433,0 6.7613525582726,51.27910070752719,0 6.7605075056002,51.2788995147649,0 6.75971040024768,51.2789131949338,0 6.759760861816719,51.2790965069258,0 6.75979355474654,51.2792903168768,0 6.75981172971654,51.2795323938156,0 6.75979937995045,51.2798737444318,0 6.759781339795891,51.28016548458971,0 6.760239063238,51.2803856607717,0 6.7602348818684,51.2804882491042,0 6.7602135220362,51.2805313539439,0 6.760182694116699,51.2805652619398,0 6.7601334133785,51.2806013572409,0 6.7600853429634,51.2806239615952,0 6.76004978028323,51.2806318523398,0 
+						</coordinates>
+					</LinearRing>
+				</outerBoundaryIs>
+			</Polygon>
+		</Placemark>
+		<Placemark>
+			<name>taxiway</name>
 			<visibility>0</visibility>
 			<Style>
 				<LineStyle>
@@ -311,8 +137,336 @@
 				</outerBoundaryIs>
 			</Polygon>
 		</Placemark>
+		<Folder>
+			<name>deicing</name>
+			<visibility>0</visibility>
+			<Folder>
+				<name>poly</name>
+				<visibility>0</visibility>
+				<Placemark>
+					<name>DP1W</name>
+					<visibility>0</visibility>
+					<Style>
+						<LineStyle>
+							<color>ff0000ff</color>
+						</LineStyle>
+						<PolyStyle>
+							<fill>0</fill>
+						</PolyStyle>
+					</Style>
+					<Polygon>
+						<outerBoundaryIs>
+							<LinearRing>
+								<coordinates>
+									6.758560826655219,51.2796059995839,0 6.75971319860546,51.2795893870663,0 6.75968191876667,51.2789085234289,0 6.759116383642399,51.2789176226926,0 6.75851637657231,51.2789274420736,0 6.758560826655219,51.2796059995839,0 
+								</coordinates>
+							</LinearRing>
+						</outerBoundaryIs>
+					</Polygon>
+				</Placemark>
+				<Placemark>
+					<name>DP3W</name>
+					<visibility>0</visibility>
+					<Style>
+						<LineStyle>
+							<color>ff0000ff</color>
+						</LineStyle>
+						<PolyStyle>
+							<fill>0</fill>
+						</PolyStyle>
+					</Style>
+					<Polygon>
+						<outerBoundaryIs>
+							<LinearRing>
+								<coordinates>
+									6.75985610173737,51.2765635326589,0 6.760183026039931,51.27615348071569,0 6.75898774125436,51.27578333056301,0 6.75880651573964,51.27601293068999,0 6.758663329313719,51.2761941595482,0 6.75985610173737,51.2765635326589,0 
+								</coordinates>
+							</LinearRing>
+						</outerBoundaryIs>
+					</Polygon>
+				</Placemark>
+				<Placemark>
+					<name>DP4W</name>
+					<visibility>0</visibility>
+					<Style>
+						<LineStyle>
+							<color>ff0000ff</color>
+						</LineStyle>
+						<PolyStyle>
+							<fill>0</fill>
+						</PolyStyle>
+					</Style>
+					<Polygon>
+						<outerBoundaryIs>
+							<LinearRing>
+								<coordinates>
+									6.76018304557497,51.27615346864849,0 6.76051390234077,51.2757384633145,0 6.75931862545994,51.2753683166172,0 6.75917586473561,51.2755496767386,0 6.75898787040019,51.2757832274104,0 6.76018304557497,51.27615346864849,0 
+								</coordinates>
+							</LinearRing>
+						</outerBoundaryIs>
+					</Polygon>
+				</Placemark>
+			</Folder>
+			<Folder>
+				<name>line</name>
+				<visibility>0</visibility>
+				<Placemark>
+					<name>DP1W</name>
+					<visibility>0</visibility>
+					<Style>
+						<LineStyle>
+							<color>ff0000ff</color>
+						</LineStyle>
+						<PolyStyle>
+							<fill>0</fill>
+						</PolyStyle>
+					</Style>
+					<LineString>
+						<coordinates>
+							6.75816755250809,51.2789052621545,0 6.758785383234169,51.2788873020432,0 6.75887875900801,51.2788964761946,0 6.75897835503064,51.2789247140237,0 6.759059810059911,51.2789641345608,0 6.759115909212801,51.27901388417,0 6.759142202510929,51.2790738529081,0 6.759141866634081,51.2794014019222,0 6.75912385441563,51.27946956181729,0 6.75906715351043,51.27953220685,0 6.759000595892511,51.2795746289143,0 6.75891267435871,51.2796085874496,0 6.758815940022389,51.2796271325468,0 6.75821321739165,51.2796377449534,0 
+						</coordinates>
+					</LineString>
+				</Placemark>
+				<Placemark>
+					<name>DP3W</name>
+					<visibility>0</visibility>
+					<Style>
+						<LineStyle>
+							<color>ff0000ff</color>
+						</LineStyle>
+						<PolyStyle>
+							<fill>0</fill>
+						</PolyStyle>
+					</Style>
+					<LineString>
+						<coordinates>
+							6.75853294606075,51.2758896984446,0 6.76038987953614,51.2764721323949,0 
+						</coordinates>
+					</LineString>
+				</Placemark>
+				<Placemark>
+					<name>DP4W</name>
+					<visibility>0</visibility>
+					<Style>
+						<LineStyle>
+							<color>ff0000ff</color>
+						</LineStyle>
+						<PolyStyle>
+							<fill>0</fill>
+						</PolyStyle>
+					</Style>
+					<LineString>
+						<coordinates>
+							6.75885501186176,51.275487942637,0 6.760583996255609,51.27603027006531,0 
+						</coordinates>
+					</LineString>
+				</Placemark>
+			</Folder>
+			<Folder>
+				<name>arrows</name>
+				<visibility>0</visibility>
+				<Placemark>
+					<name>DP1W</name>
+					<visibility>0</visibility>
+					<Style>
+						<LineStyle>
+							<color>ff0000ff</color>
+						</LineStyle>
+						<PolyStyle>
+							<fill>0</fill>
+						</PolyStyle>
+					</Style>
+					<Polygon>
+						<outerBoundaryIs>
+							<LinearRing>
+								<coordinates>
+									6.75914197250448,51.27941869520599,0 6.75906658026447,51.2792924169344,0 6.75921363855424,51.2792915668309,0 6.75914197250448,51.27941869520599,0 
+								</coordinates>
+							</LinearRing>
+						</outerBoundaryIs>
+					</Polygon>
+				</Placemark>
+				<Placemark>
+					<name>DP3W</name>
+					<visibility>0</visibility>
+					<Style>
+						<LineStyle>
+							<color>ff0000ff</color>
+						</LineStyle>
+						<PolyStyle>
+							<fill>0</fill>
+						</PolyStyle>
+					</Style>
+					<Polygon>
+						<outerBoundaryIs>
+							<LinearRing>
+								<coordinates>
+									6.759013216398279,51.2760409549718,0 6.75922665079774,51.2760571045061,0 6.759160167225899,51.27613937512709,0 6.759013216398279,51.2760409549718,0 
+								</coordinates>
+							</LinearRing>
+						</outerBoundaryIs>
+					</Polygon>
+				</Placemark>
+				<Placemark>
+					<name>DP4W</name>
+					<visibility>0</visibility>
+					<Style>
+						<LineStyle>
+							<color>ff0000ff</color>
+						</LineStyle>
+						<PolyStyle>
+							<fill>0</fill>
+						</PolyStyle>
+					</Style>
+					<Polygon>
+						<outerBoundaryIs>
+							<LinearRing>
+								<coordinates>
+									6.759347221464549,51.2756414439898,0 6.75956065415242,51.2756575928945,0 6.75949417177086,51.275739863725,0 6.759347221464549,51.2756414439898,0 
+								</coordinates>
+							</LinearRing>
+						</outerBoundaryIs>
+					</Polygon>
+				</Placemark>
+			</Folder>
+			<Folder>
+				<name>labels</name>
+				<visibility>0</visibility>
+				<Placemark>
+					<name>DP1W</name>
+					<visibility>0</visibility>
+					<Point>
+						<coordinates>6.75887121699667,51.27972062081739,0</coordinates>
+					</Point>
+				</Placemark>
+				<Placemark>
+					<name>DP3W</name>
+					<visibility>0</visibility>
+					<Point>
+						<coordinates>6.758697154243301,51.27585702428311,0</coordinates>
+					</Point>
+				</Placemark>
+				<Placemark>
+					<name>DP4W</name>
+					<visibility>0</visibility>
+					<Point>
+						<coordinates>6.759042969254961,51.27544474916,0</coordinates>
+					</Point>
+				</Placemark>
+			</Folder>
+		</Folder>
+	</Folder>
+	<Folder>
+		<name>EDDS</name>
+		<Folder>
+			<name>taxilanes</name>
+			<Placemark>
+				<name>M</name>
+				<Style>
+					<LineStyle>
+						<color>ff0000ff</color>
+					</LineStyle>
+					<PolyStyle>
+						<fill>0</fill>
+					</PolyStyle>
+				</Style>
+				<LineString>
+					<coordinates>
+						9.19998056077748,48.6896682217888,0 9.199853691044099,48.68961605151501,0 9.199778067621651,48.6895805668174,0 9.199729988700501,48.6895495711326,0 9.199682668073891,48.68951419495291,0 9.19924888381337,48.68914830991299,0 9.19920636942132,48.6891176162399,0 9.19916820027616,48.6890979274801,0 9.199127469860089,48.6890815227938,0 9.19908162069463,48.6890690477375,0 9.1979277969435,48.6888450790346,0 9.1977377279447,48.6888092865076,0 9.197717904619401,48.6888055045376,0 9.197198026395,48.68870666908721,0 9.19715273528873,48.6886980881032,0 
+					</coordinates>
+				</LineString>
+			</Placemark>
+			<Placemark>
+				<name>L2</name>
+				<Style>
+					<LineStyle>
+						<color>ff0000ff</color>
+					</LineStyle>
+					<PolyStyle>
+						<fill>0</fill>
+					</PolyStyle>
+				</Style>
+				<LineString>
+					<coordinates>
+						9.198809785243011,48.6887184479271,0 9.19880930181511,48.68874060130559,0 9.198814830967439,48.6887646502995,0 9.19882435105305,48.68878474404801,0 9.19883778278604,48.6888036952711,0 9.19885204635094,48.6888194110918,0 9.199249259125891,48.6891487582034,0 
+					</coordinates>
+				</LineString>
+			</Placemark>
+		</Folder>
+		<Folder>
+			<name>restrictions</name>
+			<Placemark>
+				<name>L2</name>
+				<Style>
+					<LineStyle>
+						<color>ff0000ff</color>
+					</LineStyle>
+					<PolyStyle>
+						<fill>0</fill>
+					</PolyStyle>
+				</Style>
+				<LineString>
+					<coordinates>
+						9.19940415427592,48.689279588068,0 9.199247870087479,48.68914736338181,0 9.19885276020176,48.6888197351407,0 9.19883834574545,48.6888043677087,0 9.19882506490319,48.6887850680971,0 9.19881490641297,48.6887644761052,0 9.198809301815089,48.68874060130559,0 9.198809417626279,48.6887127225822,0 
+					</coordinates>
+				</LineString>
+			</Placemark>
+			<Placemark>
+				<name>M_2</name>
+				<Style>
+					<LineStyle>
+						<color>ff0000ff</color>
+					</LineStyle>
+					<PolyStyle>
+						<fill>0</fill>
+					</PolyStyle>
+				</Style>
+				<LineString>
+					<coordinates>
+						9.199404904905659,48.6892804846476,0 9.19968112812608,48.68951314852639,0 9.199728448750619,48.6895485247067,0 9.19977727831064,48.68958041696921,0 9.199887891112789,48.6896300710537,0 9.20016627841621,48.6897445506473,0 
+					</coordinates>
+				</LineString>
+			</Placemark>
+			<Placemark>
+				<name>M_1</name>
+				<Style>
+					<LineStyle>
+						<color>ff0000ff</color>
+					</LineStyle>
+					<PolyStyle>
+						<fill>0</fill>
+					</PolyStyle>
+				</Style>
+				<LineString>
+					<coordinates>
+						9.197147147624991,48.6886965978429,0 9.19907763646744,48.6890683855701,0 9.19912874763971,48.6890818596455,0 9.19916737325207,48.6890978647251,0 9.19920697011152,48.6891182015785,0 9.199247306163381,48.689147350578,0 
+					</coordinates>
+				</LineString>
+			</Placemark>
+			<Placemark>
+				<name>M_L2</name>
+				<visibility>0</visibility>
+				<Style>
+					<LineStyle>
+						<color>ff0000ff</color>
+					</LineStyle>
+					<PolyStyle>
+						<fill>0</fill>
+					</PolyStyle>
+				</Style>
+				<Polygon>
+					<outerBoundaryIs>
+						<LinearRing>
+							<coordinates>
+								9.199539224715419,48.6885788399874,0 9.19867868033743,48.6880451474555,0 9.198210834745201,48.68843162901879,0 9.19798392159456,48.6884967635059,0 9.19733027564185,48.688370339999,0 9.19704241528051,48.68905478347419,0 9.19767166666667,48.6891758333333,0 9.198768255627961,48.6896082624354,0 9.19970521556003,48.6891150883699,0 9.199392818006469,48.68887711812061,0 9.199539224715419,48.6885788399874,0 
+							</coordinates>
+						</LinearRing>
+					</outerBoundaryIs>
+				</Polygon>
+			</Placemark>
+		</Folder>
 		<Placemark>
-			<name>Apron</name>
+			<name>apron</name>
 			<visibility>0</visibility>
 			<Style>
 				<LineStyle>
@@ -326,7 +480,48 @@
 				<outerBoundaryIs>
 					<LinearRing>
 						<coordinates>
-							6.76004978028323,51.2806318523398,0 6.761237216255229,51.2811912031238,0 6.76169840170182,51.2805091128383,0 6.76180262921501,51.28028401612,0 6.76178808722983,51.2800563244101,0 6.7614764461334,51.2792828116433,0 6.7613525582726,51.27910070752719,0 6.7605075056002,51.2788995147649,0 6.75971040024768,51.2789131949338,0 6.759760861816719,51.2790965069258,0 6.75979355474654,51.2792903168768,0 6.75981172971654,51.2795323938156,0 6.75979937995045,51.2798737444318,0 6.759781339795891,51.28016548458971,0 6.760239063238,51.2803856607717,0 6.7602348818684,51.2804882491042,0 6.7602135220362,51.2805313539439,0 6.760182694116699,51.2805652619398,0 6.7601334133785,51.2806013572409,0 6.7600853429634,51.2806239615952,0 6.76004978028323,51.2806318523398,0 
+							9.19852056664863,48.68918414804919,0 9.197104541633429,48.68891618498539,0 9.19684350867861,48.68952082671151,0 9.19689981243739,48.689587943345,0 9.19681747185442,48.6897786694871,0 9.196988311755129,48.6898109995397,0 9.197002902110389,48.6897772036293,0 9.197110201214629,48.68979750895461,0 9.197095553114661,48.6898314387871,0 9.1976107769786,48.6899289383398,0 9.19762491107346,48.68989619833991,0 9.19773848504958,48.68991769040611,0 9.19772383576646,48.68995162395611,0 9.198232831632261,48.69004794172001,0 9.198246954360631,48.6900152271168,0 9.198359277944681,48.6900364818601,0 9.198379584422391,48.6899894425871,0 9.1985830231379,48.690027938518,0 9.19890460228619,48.6892829921141,0 9.19852056664863,48.68918414804919,0 
+						</coordinates>
+					</LinearRing>
+				</outerBoundaryIs>
+			</Polygon>
+		</Placemark>
+		<Placemark>
+			<name>taxiway</name>
+			<Style>
+				<LineStyle>
+					<color>ff0000ff</color>
+				</LineStyle>
+				<PolyStyle>
+					<fill>0</fill>
+				</PolyStyle>
+			</Style>
+			<Polygon>
+				<outerBoundaryIs>
+					<LinearRing>
+						<coordinates>
+							9.198765845711449,48.6896046500334,0 9.198897796565371,48.68946818153589,0 9.19906600167913,48.68953743669019,0 9.19921410305894,48.6893970094409,0 9.199889076955261,48.68968165820529,0 9.199963843447829,48.68961398790309,0 9.19936415181839,48.6890715527697,0 9.197785494873379,48.6887826631147,0 9.19785920129411,48.6886208886238,0 9.197779517437739,48.6886033513456,0 9.197707725631091,48.6887691010502,0 9.197204160186359,48.6886722842412,0 9.197039931261919,48.6890655991372,0 9.197513205297801,48.6891601698191,0 9.1979373826334,48.6892761945214,0 9.198357988101501,48.6894369448117,0 9.198765845711449,48.6896046500334,0 
+						</coordinates>
+					</LinearRing>
+				</outerBoundaryIs>
+			</Polygon>
+		</Placemark>
+		<Placemark>
+			<name>construction</name>
+			<visibility>0</visibility>
+			<Style>
+				<LineStyle>
+					<color>ff0000ff</color>
+				</LineStyle>
+				<PolyStyle>
+					<fill>0</fill>
+				</PolyStyle>
+			</Style>
+			<Polygon>
+				<outerBoundaryIs>
+					<LinearRing>
+						<coordinates>
+							9.19852056664863,48.68918414804919,0 9.197104541633429,48.68891618498539,0 9.19684350867861,48.68952082671151,0 9.19689981243739,48.689587943345,0 9.19681747185442,48.6897786694871,0 9.196988311755129,48.6898109995397,0 9.197002902110389,48.6897772036293,0 9.197110201214629,48.68979750895461,0 9.197095553114661,48.6898314387871,0 9.1976107769786,48.6899289383398,0 9.19762491107346,48.68989619833991,0 9.19773848504958,48.68991769040611,0 9.19772383576646,48.68995162395611,0 9.198232831632261,48.69004794172001,0 9.198246954360631,48.6900152271168,0 9.198359277944681,48.6900364818601,0 9.198379584422391,48.6899894425871,0 9.1985830231379,48.690027938518,0 9.19890460228619,48.6892829921141,0 9.19852056664863,48.68918414804919,0 
 						</coordinates>
 					</LinearRing>
 				</outerBoundaryIs>
@@ -358,5 +553,6 @@
 			</Polygon>
 		</Placemark>
 	</Folder>
+	<atom:link rel="app" href="https://www.google.com/earth/about/versions/#earth-pro" title="Google Earth Pro 7.3.6.10201"></atom:link>
 </Folder>
 </kml>

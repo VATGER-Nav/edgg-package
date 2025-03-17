@@ -1,0 +1,115 @@
+// ------------------------- Holding Points -------------------------
+
+MAP:Holding Points CAT I
+AIRPORT:EDDF
+FOLDER:Holding Points
+ACTIVE:LVP:EDDF:0
+{% for desig, geom in data.eddf_kml['layout']['holdingpoints']['cat1'].items() %}
+{{- geom | to_poly(desig, 'layout-holdingpoint') }}
+{% endfor %}
+{% for desig, geom in data.eddf_kml['layout']['stopbars']['poly'].items() %}
+{{- geom | to_poly(desig, 'layout-holdingpoint-grey') }}
+{% endfor %}
+{% for desig, geom in data.eddf_kml['layout']['holdingpoints']['cat3'].items() %}
+{{- geom | to_poly(desig + ' CATIII', 'layout-holdingpoint-grey') }}
+{% endfor %}
+STYLE:SOLID:2
+COLOR:layout-holdingpoint
+{% for desig, geom in data.eddf_kml['layout']['holdingpoints']['line'].items() %}
+{{- geom | to_line(desig) -}}
+{% endfor %}
+COLOR:layout-holdingpoint-grey
+{% for desig, geom in data.eddf_kml['layout']['stopbars']['line'].items() %}
+{{- geom | to_line(desig) -}}
+{% endfor %}
+
+MAP:Holding Points CAT II/III
+AIRPORT:EDDF
+FOLDER:Holding Points
+ACTIVE:LVP:EDDF:1
+{% for desig in
+[
+    'M2',
+    'S40',
+    'T2',
+    'T4',
+    'T6',
+    'T8',
+    'U2',
+    'U4',
+    'U6',
+    'U8',
+    'W10',
+    'W2',
+    'W4',
+    'W6',
+    'W8',
+    'Y10',
+    'Y12',
+    'Y2',
+    'Y4',
+    'Y6',
+] %}
+{{- data.eddf_kml['layout']['stopbars']['poly'][desig] | to_poly(desig, 'layout-holdingpoint-red') }}
+{% endfor %}
+{% for desig in
+[
+    'L',
+    'M',
+    'N',
+    'N-South',
+    'S',
+    'W1',
+    'W3',
+    'W9',
+    'Y5',
+    'Y9',
+] %}
+{{- data.eddf_kml['layout']['stopbars']['poly'][desig] | to_poly(desig, 'layout-holdingpoint-grey') }}
+{% endfor %}
+{% for desig, geom in data.eddf_kml['layout']['holdingpoints']['cat3'].items() %}
+{{- geom | to_poly(desig + ' CATIII', 'layout-holdingpoint-red') }}
+{% endfor %}
+STYLE:SOLID:2
+COLOR:layout-holdingpoint-red
+{% for desig in
+[
+    'M2',
+    'S40',
+    'T2',
+    'T4',
+    'T6',
+    'T8',
+    'U2',
+    'U4',
+    'U6',
+    'U8',
+    'W10',
+    'W2',
+    'W4',
+    'W6',
+    'W8',
+    'Y10',
+    'Y12',
+    'Y2',
+    'Y4',
+    'Y6',
+] %}
+{{- data.eddf_kml['layout']['stopbars']['line'][desig] | to_line(desig) -}}
+{% endfor %}
+COLOR:layout-holdingpoint-grey
+{% for desig in
+[
+    'L',
+    'M',
+    'N',
+    'N-South',
+    'S',
+    'W1',
+    'W3',
+    'W9',
+    'Y5',
+    'Y9',
+] %}
+{{- data.eddf_kml['layout']['stopbars']['line'][desig] | to_line(desig) -}}
+{% endfor %}

@@ -4,37 +4,37 @@
 
 // -------------------------- Ground Layout -------------------------
 {% set default = 0.000005 %}
-MAP:Perimeter
-AIRPORT:EDDS
-FOLDER:Airport Layout
-//ACTIVE:1
-{{ data.edds_layout['layout']['Base']['Base'] | to_poly('Base', 'layout-base') }}
-
 MAP:Apron Area
 AIRPORT:EDDS
 FOLDER:Airport Layout
 ACTIVE:1
-{{ data.edds_layout['layout']['Apron']['Apron'] | to_multipoly('Apron','layout-apron') }}
+{% for uuid, geom in data.edds_kml['layout']['aprons'].items() %}
+{{- geom | to_poly('', 'layout-apron') }}
+{% endfor %}
 
 MAP:Roads
 AIRPORT:EDDS
 FOLDER:Airport Layout
 COLOR:layout-taxiway
-{{ data.edds_layout['layout']['Roads']['Roads'] | simplify(default) | to_multiline('Roads') }}
+{% for uuid, geom in data.edds_kml['layout']['roads'].items() %}
+{{- geom | simplify(default) | to_line('') -}}
+{% endfor %}
 
 MAP:Taxiway Movement Area
 AIRPORT:EDDS
 FOLDER:Airport Layout
 ACTIVE:1
-{{ data.edds_layout['layout']['Taxiways']['Taxiways'] | to_multipoly('Taxi Area','layout-taxiway') }}
+{% for uuid, geom in data.edds_kml['layout']['taxiways'].items() %}
+{{- geom | to_poly('', 'layout-taxiway') }}
+{% endfor %}
 
 MAP:Taxi Lanes
 AIRPORT:EDDS
 FOLDER:Airport Layout
 ACTIVE:1
 COLOR:layout-taxiline-yellow
-
-{% for id in [
+{% for uuid in
+[
     '028790ac-8298-4a69-9d36-a0317269c2f7',
     '03307136-8b65-4bb9-aed6-79d79a75e363',
     '039b1cea-37d2-4312-a90c-78ae4ab2b0e4',
@@ -124,38 +124,35 @@ COLOR:layout-taxiline-yellow
     'fd178ea3-0193-4b04-9fd5-472f771840a4',
     'feb604d3-95b8-4ddc-a0ab-b25cd84affe7',
     ] %}
-{{- data.edds['GuidanceLineMarking'][id | string] | join_segments | simplify(default) | to_line('') }}
-{% endfor %}
-
-{% for desig in [
-    'Link N-S',
-    'DP1',
-    'DP2',
-    'DP3',
-    'DP4',
-] %}
-{{- data.edds_layout['layout']['Markings'][desig | string] | to_multiline('Dashed ' + desig) }}
+{{- data.edds_aixm['GuidanceLineMarking'][uuid] | join_segments | simplify(default) | to_line(uuid) -}}
 {% endfor %}
 
 // Orange Lines
 COLOR:layout-taxiline-orange
 {% for id in ['30150913-33b8-49be-80d3-5a4df618ac80'] %}
-{{- data.edds['GuidanceLineMarking'][id | string] | join_segments | simplify(default) | to_line('') }}
+{{- data.edds_aixm['GuidanceLineMarking'][uuid] | join_segments | simplify(default) | to_line(uuid) -}}
+{% endfor %}
+
+// Dashed Lines
+COLOR:layout-taxiline-yellow
+{% for uuid, geom in data.edds_kml['layout']['markings']['taxilanes_dash'].items() if uuid not in [] %}
+{{- geom | to_line('') -}}
 {% endfor %}
 
 MAP:Runways
 AIRPORT:EDDS
 FOLDER:Airport Layout
 ACTIVE:1
-{{ data.edds['RunwayElement']['0d48f5ad-f099-464d-b13d-94cf0014d057'] | simplify(0.00001) | to_poly('Runway 25/07','layout-runway') }}
-{{ data.edds['RunwayElement']['5f954a0a-08d7-48c3-9875-19263da9b4de'] | simplify(0.00001) | to_poly('Runway 25/07','layout-runway') }}
+{{ data.edds_aixm['RunwayElement']['0d48f5ad-f099-464d-b13d-94cf0014d057'] | simplify(0.00001) | to_poly('Runway 07/25','layout-runway') }}
+{{ data.edds_aixm['RunwayElement']['5f954a0a-08d7-48c3-9875-19263da9b4de'] | simplify(0.00001) | to_poly('Runway 07/25','layout-runway') }}
 
 MAP:Leadin Lines
 AIRPORT:EDDS
 FOLDER:Airport Layout
 ACTIVE:1
 COLOR:layout-taxiline-yellow
-{% for id in [
+{% for uuid in
+[
     '0842facd-5464-4bc2-9a7a-b6147e417ed2',
     '319f19df-41e1-4621-bb6a-157fa3379183',
     '80f43be9-5077-4e45-84f0-f3643923d0a3',
@@ -230,5 +227,5 @@ COLOR:layout-taxiline-yellow
     'f9cc4217-198d-420c-99e8-a7675d511713',
     'd3bea00e-5612-4182-b861-b0cfb9310b3b',
     ] %}
-{{- data.edds['GuidanceLineMarking'][id | string] | join_segments | simplify(default) | to_line('') }}
+{{- data.edds_aixm['GuidanceLineMarking'][uuid] | join_segments | simplify(default) | to_line(uuid) }}
 {% endfor %}

@@ -1,0 +1,72 @@
+// ------------------------- Holding Points -------------------------
+{% set default = 0.000005 %}
+MAP:Holding Points CAT I
+AIRPORT:EDDK
+FOLDER:Holding Points
+ACTIVE:LVP:EDDK:0
+{% for desig, geom in data.eddk_kml['layout']['holdingpoints']['cat1'].items() %}
+{{- geom | to_poly(desig, 'layout-holdingpoint') }}
+{% endfor %}
+COLOR:layout-holdingpoint
+STYLE:SOLID:2
+{% for desig, geom in data.eddk_kml['layout']['holdingpoints']['line'].items() %}
+{{- geom | to_line(desig) -}}
+{% endfor %}
+
+MAP:Holding Points CAT II/III
+AIRPORT:EDDK
+FOLDER:Holding Points
+ACTIVE:LVP:EDDK:1
+{% for desig in
+[
+    '06_13L',
+    '06_13R',
+    '24_13R',
+    'A_24_n',
+    'A_24_s',
+    'B_06',
+    'B_13R_e',
+    'B_13R_w',
+    'C_06',
+    'C_31L',
+    'D_24',
+    'E',
+    'T',
+    'T2',
+    'Z1',
+] %}
+{{- data.eddk_kml['layout']['holdingpoints']['cat1'][desig] | to_poly(desig, 'layout-holdingpoint') }}
+{% endfor %}
+{% for desig, geom in data.eddk_kml['layout']['holdingpoints']['cat3'].items() %}
+{{- geom | to_poly(desig + ' CATIII', 'layout-holdingpoint') }}
+{% endfor %}
+COLOR:layout-holdingpoint
+STYLE:SOLID:2
+{% for desig in
+[
+    '06_13L',
+    '06_13R',
+    '24_13R',
+    'A_24_n',
+    'A_24_s',
+    'B_06',
+    'B_13R_e',
+    'B_13R_w',
+    'C_06',
+    'C_31L',
+    'D_24',
+    'E',
+    'T',
+    'T2',
+    'Z1',
+] %}
+{{- data.eddk_kml['layout']['holdingpoints']['line'][desig] | to_line(desig) }}
+{% endfor %}
+
+MAP:All Stopbars
+AIRPORT:EDDK
+FOLDER:Holding Points
+COLOR:layout-holdingpoint
+{% for uuid, geom in data.eddk_kml['layout']['stopbars'].items() %}
+{{- geom | to_line('') -}}
+{% endfor %}

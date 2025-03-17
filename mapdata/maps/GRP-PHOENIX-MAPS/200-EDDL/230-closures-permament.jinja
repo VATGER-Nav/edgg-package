@@ -6,7 +6,10 @@ FOLDER:Closures
 COORDTYPE:TWYCLOSED:REGION
 STYLE:Solid:2
 ACTIVE:1
-{{ data.eddl_layout['layout']['Closures']['K4'] | to_poly('K4','closure') }}
-{{ data.eddl_layout['layout']['Closures']['K4/Runway 15'] | to_multipoly('K4','closure-symbol-yellow') }}
+{{ data.eddl_kml['layout']['closures']['poly']['K4'] | to_poly('K4','closure') }}
+{{ data.eddl_kml['layout']['closures']['symb']['K4_a'] | to_poly('','closure-symbol-yellow') }}
+{{ data.eddl_kml['layout']['closures']['symb']['K4_b'] | to_poly('','closure-symbol-yellow') }}
+{{ data.eddl_kml['layout']['closures']['symb']['K4_c'] | to_poly('','closure-symbol-yellow') }}
+{{ data.eddl_kml['layout']['closures']['symb']['15'] | to_poly('','closure-symbol-yellow') }}
 COORDTYPE:TWYCLOSED:NONE
-{{ data.eddl_layout['layout']['Closures']['Runway 15'] | to_multipoly('Runway 15') }}
+{{ data.eddl_kml['layout']['closures']['poly']['15'] | to_poly('Runway 15') }}

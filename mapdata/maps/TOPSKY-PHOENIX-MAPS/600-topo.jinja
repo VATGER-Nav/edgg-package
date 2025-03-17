@@ -8,22 +8,24 @@ ASRDATA:PHOENIX
 LAYER:-2
 STYLE:Solid:1
 TEXTALIGN:LC
-{{ data.topsky['common']['Topo']['Urban Area EDGG'] | to_multipoly('Urban Area', 'topo_urban', 100) }}
-COLOR:topo_road
-{% for name, geom in data.topsky['common']['Topo']['Autobahn EDGG'].items() %}
-{{- geom | to_multicoordline(name) }}
+{% for uuid, geom in data.topsky['common']['topo']['EDGG_urban'].items() %}
+{{- geom | to_poly('', 'topo_urban', 100) }}
 {% endfor %}
-{% for label, geom in data.topsky['common']['Topo']['Autobahn EDGG Labels'].items() %}
+COLOR:topo_road
+{% for uuid, geom in data.topsky['common']['topo']['EDGG_autobahn'].items() %}
+{{- geom | to_coordline('') }}
+{% endfor %}
+{% for label, geom in data.topsky['common']['topo']['EDGG_autobahn_labels'].items() %}
 {{- geom | to_text(label) }}
 {% endfor %}
 COLOR:topo_water
-{% for name, geom in data.topsky['common']['Topo']['Rivers EDGG'].items() %}
-{{- geom | to_multicoordline(name) }}
+{% for uuid, geom in data.topsky['common']['topo']['EDGG_rivers'].items() %}
+{{- geom | to_coordline('') }}
 {% endfor %}
-{% for label, geom in data.topsky['common']['Topo']['Rivers EDGG Labels'].items() %}
+{% for label, geom in data.topsky['common']['topo']['EDGG_rivers_labels'].items() %}
 {{- geom | to_text(label) }}
 {% endfor %}
-{% for name, geom in data.topsky['common']['Topo']['Lakes EDGG'].items() %}
+{% for name, geom in data.topsky['common']['topo']['EDGG_lakes'].items() %}
 {{- geom | to_poly(name, 'topo_water', 100) }}
 {% endfor %}
 
@@ -36,8 +38,8 @@ STYLE:Solid:1
 ACTIVE:ID:*:DFC,DFGW,DFGC,DFGE,DFGI,DFG,DFTC,DFTS,DFTN,DFTW,DFAN,DFAS,DFANT,DFAST:*:*
 AND_ACTIVE:ID:*:DLC,DLGE,DLGW,DLT,DLA,DLAT,DLD,BOT:*:*
 AND_ACTIVE:ID:*:DKC,DKG,DKT,DKA,DKAT,NOR:*:*
-{% for name, geom in data.topsky['common']['Topo']['Autobahn EDGG'].items() %}
-{{- geom | to_multicoordline(name) }}
+{% for uuid, geom in data.topsky['common']['topo']['EDGG_autobahn'].items() %}
+{{- geom | to_coordline('') }}
 {% endfor %}
 
 MAP:Rivers/Lakes
@@ -47,10 +49,10 @@ LAYER:-2
 COLOR:topo_water
 STYLE:Solid:1
 ACTIVE:ID:*:DFC,DFGW,DFGC,DFGE,DFGI,DFG,DFTC,DFTS,DFTN,DFTW,DFAN,DFAS,DFANT,DFAST:*:*
-{% for name, geom in data.topsky['common']['Topo']['Rivers EDGG'].items() %}
-{{- geom | to_multicoordline(name) }}
+{% for uuid, geom in data.topsky['common']['topo']['EDGG_rivers'].items() %}
+{{- geom | to_coordline('') }}
 {% endfor %}
-{% for name, geom in data.topsky['common']['Topo']['Lakes EDGG'].items() %}
+{% for name, geom in data.topsky['common']['topo']['EDGG_lakes'].items() %}
 {{- geom | to_poly(name, 'topo_water', 100) }}
 {% endfor %}
 
@@ -59,7 +61,9 @@ FOLDER:Topography
 ASRDATA:PHOENIX
 LAYER:-4
 ACTIVE:ID:*:DFC,DFGW,DFGC,DFGE,DFGI,DFG,DFTC,DFTS,DFTN,DFTW,DFAN,DFAS,DFANT,DFAST:*:*
-{{ data.topsky['common']['Topo']['Urban Area EDGG'] | to_multipoly('Urban Area', 'topo_urban', 100) }}
+{% for uuid, geom in data.topsky['common']['topo']['EDGG_urban'].items() %}
+{{- geom | to_poly('', 'topo_urban', 100) }}
+{% endfor %}
 
 MAP:DE Border
 FOLDER:Topography
@@ -68,4 +72,6 @@ LAYER:-3
 COLOR:topo_border
 STYLE:Solid:1
 ACTIVE:1
-{{ data.topsky['common']['Topo']['Border EDGG'] | to_multicoordline('') }}
+{% for uuid, geom in data.topsky['common']['topo']['EDGG_border_de'].items() %}
+{{- geom | to_coordline('') }}
+{% endfor %}
