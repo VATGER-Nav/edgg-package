@@ -1,15 +1,77 @@
 // ------------------------------ LVP -------------------------------
 
-MAP:LVP
+MAP:Heavy  31R
 AIRPORT:EDDK
 FOLDER:LVP
-ACTIVE:LVP:EDDK:1
-COLOR:lvp-marking
+COORDTYPE:OTHER:REGION:\
+// Orthogonal
+{{ data.eddk_kml['layout']['lvp']['heavy']['31R_orthogonal_a'] | to_poly('', 'lvp-orthogonal') }}
+{{ data.eddk_kml['layout']['lvp']['heavy']['31R_orthogonal_b'] | to_poly('', 'lvp-orthogonal') }}
+// Sensitive
+{{ data.eddk_kml['layout']['lvp']['heavy']['31R_sensitive'] | to_poly('', 'lvp-sensitive') }}
+// Critical
 STYLE:SOLID:2
+{{ data.eddk_kml['layout']['lvp']['heavy']['31R_critical_loc'] | to_poly('', 'lvp-critical') }}
+{{ data.eddk_kml['layout']['lvp']['heavy']['31R_critical_gs'] | to_poly('', 'lvp-critical') }}
 // LOC
-{{ loc_tick(runways.EDDK['31R'], 0, 0.01) }}
+STYLE:SOLID:2
+COLOR:lvp-marking
 {{ loc_tick(runways.EDDK['31R'], 0, -0.01) }}
-{{ loc_tick(runways.EDDK['13L'], 0, 0.01) }}
+{{ loc_tick(runways.EDDK['31R'], 0, 0.01) }}
+
+MAP:       13L 
+AIRPORT:EDDK
+FOLDER:LVP
+COORDTYPE:OTHER:REGION:\
+// Orthogonal
+{{ data.eddk_kml['layout']['lvp']['heavy']['13L_orthogonal_a'] | to_poly('', 'lvp-orthogonal') }}
+{{ data.eddk_kml['layout']['lvp']['heavy']['13L_orthogonal_b'] | to_poly('', 'lvp-orthogonal') }}
+// Sensitive
+{{ data.eddk_kml['layout']['lvp']['heavy']['13L_sensitive'] | to_poly('', 'lvp-sensitive') }}
+// Critical
+STYLE:SOLID:2
+{{ data.eddk_kml['layout']['lvp']['heavy']['13L_critical_loc'] | to_poly('', 'lvp-critical') }}
+{{ data.eddk_kml['layout']['lvp']['heavy']['13L_critical_gs'] | to_poly('', 'lvp-critical') }}
+// LOC
+STYLE:SOLID:2
+COLOR:lvp-marking
 {{ loc_tick(runways.EDDK['13L'], 0, -0.01) }}
-{{ loc_tick(runways.EDDK['24'], 0, 0.01) }}
-{{ loc_tick(runways.EDDK['24'], 0, -0.01) }}
+{{ loc_tick(runways.EDDK['13L'], 0, 0.01) }}
+
+MAP:Super  31R
+AIRPORT:EDDK
+FOLDER:LVP
+COORDTYPE:OTHER:REGION:\
+// Orthogonal
+{{ data.eddk_kml['layout']['lvp']['super']['31R_orthogonal_a'] | to_poly('', 'lvp-orthogonal') }}
+{{ data.eddk_kml['layout']['lvp']['super']['31R_orthogonal_b'] | to_poly('', 'lvp-orthogonal') }}
+// Sensitive
+{{ data.eddk_kml['layout']['lvp']['super']['31R_sensitive'] | to_poly('', 'lvp-sensitive') }}
+// Critical
+STYLE:SOLID:2
+{{ data.eddk_kml['layout']['lvp']['super']['31R_critical_loc'] | to_poly('', 'lvp-critical') }}
+{{ data.eddk_kml['layout']['lvp']['super']['31R_critical_gs'] | to_poly('', 'lvp-critical') }}
+// LOC
+STYLE:SOLID:2
+COLOR:lvp-marking
+{{ loc_tick(runways.EDDK['31R'], 0, -0.01) }}
+{{ loc_tick(runways.EDDK['31R'], 0, 0.01) }}
+
+MAP:       13L 
+AIRPORT:EDDK
+FOLDER:LVP
+COORDTYPE:OTHER:REGION:\
+// Orthogonal
+{{ data.eddk_kml['layout']['lvp']['super']['13L_orthogonal_a'] | to_poly('', 'lvp-orthogonal') }}
+{{ data.eddk_kml['layout']['lvp']['super']['13L_orthogonal_b'] | to_poly('', 'lvp-orthogonal') }}
+// Sensitive
+{{ data.eddk_kml['layout']['lvp']['super']['13L_sensitive'] | to_poly('', 'lvp-sensitive') }}
+// Critical
+STYLE:SOLID:2
+{{ data.eddk_kml['layout']['lvp']['super']['13L_critical_loc'] | to_poly('', 'lvp-critical') }}
+{{ data.eddk_kml['layout']['lvp']['super']['13L_critical_gs'] | to_poly('', 'lvp-critical') }}
+// LOC
+STYLE:SOLID:2
+COLOR:lvp-marking
+{{ loc_tick(runways.EDDK['13L'], 0, -0.01) }}
+{{ loc_tick(runways.EDDK['13L'], 0, 0.01) }}
