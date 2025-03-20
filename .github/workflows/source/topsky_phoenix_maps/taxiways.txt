@@ -1,8 +1,0 @@
-//---------------------------------------------------------------
-//                            Taxiways
-//---------------------------------------------------------------
-
-MAP:Taxiways ALL
-FOLDER:Taxiways
-FONTSIZE:=:10
-#import .github/workflows/source/data/taxiways/
