@@ -5,20 +5,20 @@ AIRPORT:EDDK
 FOLDER:AoR
 COLOR:aor-gnd-a
 STYLE:Dot
-{{ data.eddk_layout['layout']['AoR']['DKG'] | to_line('DKG') }}
+{{ data.eddk_kml['layout']['aor']['line']['DKG'] | to_line('DKG') }}
 ZOOM:400
 FONTSIZE:=:13
-{{ data.eddk_layout['layout']['AoR']['DKG_'] | to_text('DKG  121.730') }}
+{{ data.eddk_kml['layout']['aor']['labels']['DKG'] | to_text('DKG  121.730') }}
 
 MAP:EDDK_TWR
 AIRPORT:EDDK
 FOLDER:AoR
 COLOR:aor-twr-a
 STYLE:Dot
-{{ data.eddk_layout['layout']['AoR']['DKT'] | to_line('DKT') }}
+{{ data.eddk_kml['layout']['aor']['line']['DKT'] | to_line('DKT') }}
 ZOOM:400
 FONTSIZE:=:13
-{{ data.eddk_layout['layout']['AoR']['DKT_'] | to_text('DKT  124.980') }}
+{{ data.eddk_kml['layout']['aor']['labels']['DKT'] | to_text('DKT  124.980') }}
 
 MAP:EDDK_APP
 AIRPORT:EDDK
@@ -26,7 +26,7 @@ FOLDER:AoR
 COLOR:aor-app-a
 ZOOM:400
 FONTSIZE:=:13
-{{ data.eddk_layout['layout']['AoR']['DKT_'] | to_text('DKA  135.350:0:-20') }}
+{{ data.eddk_kml['layout']['aor']['labels']['DKT'] | to_text('DKA  135.350:0:-20') }}
 
 MAP:EDGG_PAH_CTR
 AIRPORT:EDDK
@@ -34,4 +34,4 @@ FOLDER:AoR
 COLOR:aor-app-a
 ZOOM:400
 FONTSIZE:=:13
-{{ data.eddk_layout['layout']['AoR']['DKT_'] | to_text('PADH 135.650:0:-20') }}
+{{ data.eddk_kml['layout']['aor']['labels']['DKT'] | to_text('PADH 135.650:0:-20') }}

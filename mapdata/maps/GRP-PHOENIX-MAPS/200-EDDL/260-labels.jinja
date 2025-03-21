@@ -4,11 +4,15 @@ AIRPORT:EDDL
 FOLDER:Labels
 ACTIVE:1
 ZOOM:400
-{{ data.eddl_layout['layout']['Labels']['Buffer T'] | to_multipoly('', 'layout-taxiway') }}
-{{ data.eddl_layout['layout']['Labels']['Buffer A'] | to_multipoly('', 'layout-apron') }}
+{% for uuid, geom in data.eddl_kml['layout']['labels']['buffer_a'].items() %}
+{{- geom | to_poly('', 'layout-taxiway') }}
+{% endfor %}
+{% for uuid, geom in data.eddl_kml['layout']['labels']['buffer_b'].items() %}
+{{- geom | to_poly('', 'layout-apron') }}
+{% endfor %}
 FONTSIZE:=:10
 COLOR:layout-label-taxiway
-{% for desig, geom in data.eddl_layout['layout']['Labels']['Taxiways'].items() %}
+{% for desig, geom in data.eddl_kml['layout']['labels']['taxiways'].items() %}
 {{- geom | to_text(desig) }}
 {% endfor %}
 
@@ -20,8 +24,8 @@ ZOOM:800
 FONTSIZE:=:9
 COLOR:layout-holdingpoint
 TEXTALIGN:CC
-{{ data.eddl_layout['layout']['Labels']['CP 1'] | to_text('Check:0:-9') }}
-{{ data.eddl_layout['layout']['Labels']['CP 1'] | to_text(' point 1') }}
+{{ data.eddl_kml['layout']['labels']['stopbars']['CP1'] | to_text('Check:0:-9') }}
+{{ data.eddl_kml['layout']['labels']['stopbars']['CP1'] | to_text(' point 1') }}
 
 MAP:Checkpoint 2
 AIRPORT:EDDL
@@ -30,8 +34,8 @@ ZOOM:800
 FONTSIZE:=:9
 COLOR:layout-holdingpoint
 TEXTALIGN:LC
-{{ data.eddl_layout['layout']['Labels']['CP 2'] | to_text('Check:0:-9') }}
-{{ data.eddl_layout['layout']['Labels']['CP 2'] | to_text('point 2') }}
+{{ data.eddl_kml['layout']['labels']['stopbars']['CP2'] | to_text('Check:0:-9') }}
+{{ data.eddl_kml['layout']['labels']['stopbars']['CP2'] | to_text('point 2') }}
 
 MAP:Areas
 AIRPORT:EDDL
@@ -40,6 +44,5 @@ ACTIVE:1
 ZOOM:400
 FONTSIZE:=:9
 COLOR:layout-label-stand
-{% for desig in ['GAT', 'Police'] %}
-{{- data.eddl_layout['layout']['Labels']['Stands'][desig | string] | to_text(desig) }}
-{% endfor %}
+{{ data.eddl_kml['layout']['labels']['GAT'] | to_text('GAT') }}
+{{ data.eddl_kml['layout']['labels']['Police'] | to_text('Police') }}

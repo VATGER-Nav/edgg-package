@@ -29,6 +29,7 @@ COLOR:DFSGrey
 STYLE:DashDot:1
 #import .github/workflows/source/data/airspace/ctr/eddk.txt
 #import .github/workflows/source/data/airspace/ctr/eddl.txt
+#import .github/workflows/source/data/airspace/ctr/edle.txt
 #import .github/workflows/source/data/airspace/ctr/edln.txt
 #import .github/workflows/source/data/airspace/ctr/etnn.txt
 #import .github/workflows/source/data/airspace/ctr/etng.txt
@@ -148,6 +149,24 @@ ACTIVE:RWY:ARR:*:DEP:EDDF18
 ACTIVE:RWY:ARR:*:DEP:EDFE08
 ACTIVE:RWY:ARR:*:DEP:EDFE26
 #import .github/workflows/source/data/airspace/ctr/edfe.txt
+
+MAP:EDLE ATZ
+FOLDER:Controlzone
+STYLE:DashDot:1
+COLOR:DFSGrey
+ACTIVE:RWY:ARR:EDDL05L:DEP:*
+ACTIVE:RWY:ARR:EDDL05R:DEP:*
+ACTIVE:RWY:ARR:EDDL23L:DEP:*
+ACTIVE:RWY:ARR:EDDL23R:DEP:*
+ACTIVE:RWY:ARR:*:DEP:EDDL05L
+ACTIVE:RWY:ARR:*:DEP:EDDL05R
+ACTIVE:RWY:ARR:*:DEP:EDDL23L
+ACTIVE:RWY:ARR:*:DEP:EDDL23R
+ACTIVE:RWY:ARR:EDLE06:DEP:*
+ACTIVE:RWY:ARR:EDLE24:DEP:*
+ACTIVE:RWY:ARR:*:DEP:EDLE06
+ACTIVE:RWY:ARR:*:DEP:EDLE24
+#import .github/workflows/source/data/airspace/ctr/edle.txt
 
 MAP:EDFH CTR
 FOLDER:Controlzone

@@ -1,0 +1,12 @@
+{
+"type": "FeatureCollection",
+"name": "deicing_labels",
+"crs": { "type": "name", "properties": { "name": "urn:ogc:def:crs:EPSG::32632" } },
+"features": [
+{ "type": "Feature", "properties": { "name": "DP1" }, "geometry": { "type": "Point", "coordinates": [ 514833.418950435472652, 5392750.376160965301096 ] } },
+{ "type": "Feature", "properties": { "name": "DP2" }, "geometry": { "type": "Point", "coordinates": [ 515084.780951434629969, 5392822.81526309158653 ] } },
+{ "type": "Feature", "properties": { "name": "DP3" }, "geometry": { "type": "Point", "coordinates": [ 515390.607337407534942, 5392911.72720517590642 ] } },
+{ "type": "Feature", "properties": { "name": "DP4" }, "geometry": { "type": "Point", "coordinates": [ 515507.025108336121775, 5392945.439553356729448 ] } },
+{ "type": "Feature", "properties": { "name": "07-25" }, "geometry": { "type": "Point", "coordinates": [ 516260.40531316556735, 5392984.848666015081108 ] } }
+]
+}

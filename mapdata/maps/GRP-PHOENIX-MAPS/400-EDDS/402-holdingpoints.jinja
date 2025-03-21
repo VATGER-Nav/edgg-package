@@ -4,58 +4,21 @@ MAP:Holding Points CAT I
 AIRPORT:EDDS
 FOLDER:Holding Points
 ACTIVE:LVP:EDDS:0
-{% for desig in [
-    'A',
-    'B',
-    'C',
-    'D',
-    'E',
-    'F',
-    'G',
-    'H',
-    'I',
-    'K',
-    'W',
-    'Y',
-] %}
-{{- data.edds_layout['layout']['Holding Points']['CAT I P'][ desig | string ] | to_poly(desig, 'layout-holdingpoint') }}
+{% for desig, geom in data.edds_kml['layout']['holdingpoints']['cat1'].items() %}
+{{- geom | to_poly(desig, 'layout-holdingpoint') }}
 {% endfor %}
 STYLE:SOLID:2
 COLOR:layout-holdingpoint
-{% for desig in [
-    'A',
-    'B',
-    'C',
-    'D',
-    'E',
-    'F',
-    'G',
-    'H',
-    'I',
-    'K',
-    'W',
-    'Y',
-] %}
-{{- data.edds_layout['layout']['Holding Points']['CAT I L'][ desig | string ] | to_line(desig) }}
+{% for desig, geom in data.edds_kml['layout']['holdingpoints']['line'].items() %}
+{{- geom | to_line(desig) -}}
 {% endfor %}
 
 MAP:Holding Points CAT II/III
 AIRPORT:EDDS
 FOLDER:Holding Points
 ACTIVE:LVP:EDDS:1
-{% for desig in [
-    'A',
-    'B',
-    'C/D',
-    'E',
-    'F/G',
-    'H',
-    'I',
-    'K',
-    'W',
-    'Y',
-] %}
-{{- data.edds_layout['layout']['Holding Points']['CAT III'][ desig | string ] | to_poly(desig, 'layout-holdingpoint') }}
+{% for desig, geom in data.edds_kml['layout']['holdingpoints']['cat3'].items() %}
+{{- geom | to_poly(desig + ' CATIII', 'layout-holdingpoint') }}
 {% endfor %}
 
 MAP:Stopbars
@@ -64,19 +27,21 @@ FOLDER:Holding Points
 ACTIVE:1
 STYLE:SOLID:2
 COLOR:layout-holdingpoint
-{% for id in [
+{% for uuid in
+[
     '530847d5-56be-419d-9498-d55037cdf5c4',
     '612fa43e-486f-48b3-b246-709b5a057425',
     '6a300d95-440c-44f6-916f-33fb9839cffa',
 ] %}
-{{- data.edds['TaxiwayMarking'][ id | string ] | to_line(desig) }}
+{{- data.edds_aixm['TaxiwayMarking'][uuid] | to_line(desig) -}}
 {% endfor %}
 
 MAP:All Stopbars
 AIRPORT:EDDS
 FOLDER:Holding Points
 COLOR:layout-holdingpoint
-{% for id in [
+{% for uuid in
+[
     '0888a2b6-53e8-4188-b6dc-8f12edc83569',
     '0a0e4d6a-dac7-43bc-8dc2-20908687f29d',
     '13b0f71f-1cfc-4441-98c4-f8f427dc309c',
@@ -119,5 +84,5 @@ COLOR:layout-holdingpoint
     'f0057ac3-7413-4a97-b40d-0919f4e14340',
     'fe219b88-75ca-430f-97ed-f9f952bff08d',
 ] %}
-{{- data.edds['TaxiwayMarking'][ id | string ] | to_line(desig) }}
+{{- data.edds_aixm['TaxiwayMarking'][uuid] | to_line(desig) -}}
 {% endfor %}

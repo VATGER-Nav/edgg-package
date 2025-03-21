@@ -10,13 +10,21 @@ COORDTYPE:OTHER:POLYGON
 STYLE:SOLID:1
 CIRCLE:48.6905437586201:9.21987023265402:0.02:5
 CIRCLE:48.68324116544369:9.19704996959923:0.02:5
-{{ data.edds_layout['layout']['Labels']['Helipad N'] | to_symbol('HELIPAD') }}
-{{ data.edds_layout['layout']['Labels']['Helipad S'] | to_symbol('HELIPAD') }}
+{{ data.edds_kml['layout']['labels']['heli']['Helipad_N'] | to_symbol('HELIPAD') }}
+{{ data.edds_kml['layout']['labels']['heli']['Helipad_S'] | to_symbol('HELIPAD') }}
 
 MAP:Heli Stands
 AIRPORT:EDDS
 FOLDER:Heli
 ZOOM:600
 COLOR:layout-label-stand
-{{ data.edds_layout['layout']['Labels']['Police Stands'] | to_multisymbol('CIRCLE') }}
-{{ data.edds_layout['layout']['Labels']['Police Stands'] | to_multitext('H') }}
+{{ data.edds_kml['layout']['labels']['heli']['POL2'] | to_symbol('CIRCLE') }}
+{{ data.edds_kml['layout']['labels']['heli']['POL3'] | to_symbol('CIRCLE') }}
+{{ data.edds_kml['layout']['labels']['heli']['POL4'] | to_symbol('CIRCLE') }}
+{{ data.edds_kml['layout']['labels']['heli']['POL5'] | to_symbol('CIRCLE') }}
+{{ data.edds_kml['layout']['labels']['heli']['POL6'] | to_symbol('CIRCLE') }}
+{{ data.edds_kml['layout']['labels']['heli']['POL2'] | to_text('H') }}
+{{ data.edds_kml['layout']['labels']['heli']['POL3'] | to_text('H') }}
+{{ data.edds_kml['layout']['labels']['heli']['POL4'] | to_text('H') }}
+{{ data.edds_kml['layout']['labels']['heli']['POL5'] | to_text('H') }}
+{{ data.edds_kml['layout']['labels']['heli']['POL6'] | to_text('H') }}

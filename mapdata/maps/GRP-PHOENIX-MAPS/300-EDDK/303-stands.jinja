@@ -1,0 +1,755 @@
+// ----------------------------- Stands -----------------------------
+{% set default = 0.000005 %}
+MAP:Leadin Lines
+AIRPORT:EDDK
+FOLDER:Airport Layout
+ACTIVE:1
+COLOR:layout-taxiline-grey
+
+// A-Stands
+{% for desig in
+[
+    'GL_APA_[A10]',
+    'GL_APA_[A12]',
+    'GL_APA_[A14_1]',
+    'GL_APA_[A14-2]',
+    'GL_APA_[A14-3]',
+    'GL_APA_[A16]',
+    'GL_APA_[A18]',
+    'GL_APA_[A18_2]',
+    'GL_APA_[A18_3]',
+    'GL_APA_[A20]',
+    'GL_APA_[A22_1]',
+    'GL_APA_[A22_2]',
+    'GL_APA_[A22_3]',
+    'GL_APA_[A24]',
+    'GL_APA_[A26',
+    'GL_APA_[A28]',
+    'GL_APA_[A30]',
+    'GL_APA_[A32]',
+    'GL_APA_[A34]',
+] %}
+{{- data.eddk_aixm['GuidanceLineByDesig'][desig] | join_segments | simplify(default) | to_line(desig) -}}
+{% endfor %}
+
+// B-Stands
+{% for desig in
+[
+    'GL_APB_[B10-]_71',
+    'GL_APB_[B10A]_73',
+    'GL_APB_[B10B]_72',
+    'GL_APB_[B12-]_67',
+    'GL_APB_[B12A]_74',
+    'GL_APB_[B12B]_68',
+    'GL_APB_[B14-]_63',
+    'GL_APB_[B14A]_66',
+    'GL_APB_[B14B]_65',
+    'GL_APB_[B14C]_64',
+    'GL_APB_[B16-]_61',
+    'GL_APB_[B16A]_75',
+    'GL_APB_[B16B]_62',
+    'GL_APB_[B18-]_56',
+    'GL_APB_[B18A]_58',
+    'GL_APB_[B18B]_57',
+    'GL_APB_[B18C]_77',
+    'GL_APB_[B20]',
+    'GL_APB_[B22]',
+    'GL_APB_[B24]',
+    'GL_APB_[B26]',
+    'GL_APB_[B28]',
+    'GL_APB_[B30_1]',
+    'GL_APB_[B30-2]',
+] %}
+{{- data.eddk_aixm['GuidanceLineByDesig'][desig] | join_segments | simplify(default) | to_line(desig) -}}
+{% endfor %}
+
+// C-Stands
+{% for desig in
+[
+    'GL_APC_[C01-]_25',
+    'GL_APC_[C01A]_28',
+    'GL_APC_[C01B]_27',
+    'GL_APC_[C01C]_26',
+    'GL_APC_[C02-]_15',
+    'GL_APC_[C02A]_17',
+    'GL_APC_[C02B]_17',
+    'GL_APC_[C02C]_16',
+    'GL_APC_[C03A]_14',
+    'GL_APC_[C03B]_14',
+    'GL_APC_[C03C]_13',
+    'GL_APC_[C03E]_14',
+    'GL_APC_[C04-]_9',
+    'GL_APC_[C04A]_11',
+    'GL_APC_[C04B]_10',
+    'GL_APC_[C05-]_3',
+    'GL_APC_[C05-1]_6',
+    'GL_APC_[C05A]_5',
+    'GL_APC_[C05B]_4',
+    'GL_APC_[C05C]_38',
+    'GL_APC_[C06-]_1',
+    'GL_APC_[C06A]_40',
+    'GL_APC_[C06B]_39',
+    'GL_APC_[C06C]_2',
+    'GL_APC_[C10-]_18',
+    'GL_APC_[C10A]_21',
+    'GL_APC_[C10B]_20',
+    'GL_APC_[C10C]_19',
+    'GL_APC_[C12-]_30',
+    'GL_APC_[C12A]_33',
+    'GL_APC_[C12B]_32',
+    'GL_APC_[C12C]_31',
+    'GL_APC_[C14-]_34',
+    'GL_APC_[C14-2]_4',
+    'GL_APC_[C14A]_37',
+    'GL_APC_[C14B]_36',
+    'GL_APC_[C14C]_35',
+] %}
+{{- data.eddk_aixm['GuidanceLineByDesig'][desig] | join_segments | simplify(default) | to_line(desig) -}}
+{% endfor %}
+
+// D-Stands
+{% for desig in
+[
+    'GL_APD_[D10-]_1',
+    'GL_APD_[D10A]_4',
+    'GL_APD_[D10B]_3',
+    'GL_APD_[D10C]_2',
+    'GL_APD_[D12-]_10',
+    'GL_APD_[D12A]_13',
+    'GL_APD_[D12B]_12',
+    'GL_APD_[D12C]_11',
+    'GL_APD_[D14-]_14',
+    'GL_APD_[D14A]_16',
+    'GL_APD_[D14B]_15',
+    'GL_APD_[D16-]_22',
+    'GL_APD_[D16A]_25',
+    'GL_APD_[D16B]_24',
+    'GL_APD_[D16C]_23',
+    'GL_APD_[D18-]_26',
+    'GL_APD_[D18A]_29',
+    'GL_APD_[D18B]_28',
+    'GL_APD_[D18C]_27',
+    'GL_APD_[D20-]_35',
+    'GL_APD_[D20A]_38',
+    'GL_APD_[D20B]_37',
+    'GL_APD_[D20C]_36',
+    'GL_APD_[D22-]_39',
+    'GL_APD_[D22A]_42',
+    'GL_APD_[D22B]_41',
+    'GL_APD_[D22C]_40',
+    'GL_APD_[D24-]_47',
+    'GL_APD_[D24A]_50',
+    'GL_APD_[D24B]_49',
+    'GL_APD_[D24C]_48',
+    'GL_APD_[D26-]_51',
+    'GL_APD_[D26A]_55',
+    'GL_APD_[D26B]_54',
+    'GL_APD_[D26C]_53',
+    'GL_APD_[D26D]_52',
+    'GL_APD_[D28-]_56',
+    'GL_APD_[D28A]_59',
+    'GL_APD_[D28B]_58',
+    'GL_APD_[D28C]_57',
+    'GL_APD_[D30-]_60',
+    'GL_APD_[D30A]_63',
+    'GL_APD_[D30B]_62',
+    'GL_APD_[D30C]_61',
+    'GL_APD_[D32-]_64',
+    'GL_APD_[D32A]_67',
+    'GL_APD_[D32B]_66',
+    'GL_APD_[D32C]_65',
+    'GL_APD_[D34-]_68',
+    'GL_APD_[D34-1]_1',
+    'GL_APD_[D34A]_71',
+    'GL_APD_[D34B]_70',
+    'GL_APD_[D34C]_69',
+    'GL_APD_[D36-]_72',
+    'GL_APD_[D36A]_75',
+    'GL_APD_[D36B]_74',
+    'GL_APD_[D36C]_73',
+    'GL_APD_[D38-]_76',
+    'GL_APD_[D38A]_79',
+    'GL_APD_[D38B]_78',
+    'GL_APD_[D38C]_77',
+    'GL_APD_[D40-]_80',
+    'GL_APD_[D40A]_83',
+    'GL_APD_[D40B]_82',
+    'GL_APD_[D40C]_81',
+    'GL_APD_[D42-]_84',
+    'GL_APD_[D42-1]_8',
+    'GL_APD_[D42-2]_8',
+    'GL_APD_[D42B]_86',
+    'GL_APD_[D42C]_85',
+    'GL_APD_[D50-]_90',
+    'GL_APD_[D50-2]_9',
+    'GL_APD_[D50A]_93',
+    'GL_APD_[D50B]_92',
+    'GL_APD_[D50C]_91',
+    'GL_APD_[D52-]_10',
+    'GL_APD_[D52A]_10',
+    'GL_APD_[D52B]_10',
+    'GL_APD_[D52C]_10',
+    'GL_APD_[D54-]_10',
+    'GL_APD_[D54A]_11',
+    'GL_APD_[D54B]_11',
+    'GL_APD_[D54C]_10',
+    'GL_APD_[D56-]_11',
+    'GL_APD_[D56A]_11',
+    'GL_APD_[D56B]_11',
+    'GL_APD_[D56C]_11',
+    'GL_APD_[D58-]_12',
+    'GL_APD_[D58A]_12',
+    'GL_APD_[D58B]_12',
+    'GL_APD_[D58C]_12',
+    'GL_APD_[D60-]_12',
+    'GL_APD_[D60A]_12',
+    'GL_APD_[D60B]_12',
+    'GL_APD_[D60C]_12',
+    'GL_APD_[D62-]_12',
+    'GL_APD_[D62A]_13',
+    'GL_APD_[D62B]_13',
+    'GL_APD_[D62C]_12',
+    'GL_APD_[D64-]_13',
+    'GL_APD_[D64A]_13',
+    'GL_APD_[D64B]_13',
+    'GL_APD_[D64C]_13',
+] %}
+{{- data.eddk_aixm['GuidanceLineByDesig'][desig] | join_segments | simplify(default) | to_line(desig) -}}
+{% endfor %}
+
+// E-Stands
+{% for desig in
+[
+    'GL_APE_[E09-]_1',
+    'GL_APE_[E09A]_3',
+    'GL_APE_[E09B]_2',
+    'GL_APE_[E13-]_10',
+    'GL_APE_[E13A]_13',
+    'GL_APE_[E13B]_12',
+    'GL_APE_[E13C]_11',
+    'GL_APE_[E15-]_17',
+    'GL_APE_[E15A]_20',
+    'GL_APE_[E15B]_19',
+    'GL_APE_[E15C]_18',
+    'GL_APE_[E17-]_24',
+    'GL_APE_[E17A]_27',
+    'GL_APE_[E17B]_26',
+    'GL_APE_[E17C]_25',
+    'GL_APE_[E21-]_31',
+    'GL_APE_[E21A]_34',
+    'GL_APE_[E21B]_33',
+    'GL_APE_[E21C]_32',
+    'GL_APE_[E23-]_38',
+    'GL_APE_[E23A]_41',
+    'GL_APE_[E23B]_40',
+    'GL_APE_[E23C]_39',
+    'GL_APE_[E31-]_48',
+    'GL_APE_[E31A]_51',
+    'GL_APE_[E31B]_50',
+    'GL_APE_[E31C]_49',
+    'GL_APE_[E33-]_55',
+    'GL_APE_[E33A]_58',
+    'GL_APE_[E33B]_57',
+    'GL_APE_[E33C]_56',
+    'GL_APE_[E35-]_62',
+    'GL_APE_[E35A]_65',
+    'GL_APE_[E35B]_64',
+    'GL_APE_[E35C]_63',
+    'GL_APE_[E41-]_72',
+    'GL_APE_[E41A]_75',
+    'GL_APE_[E41B]_74',
+    'GL_APE_[E41C]_73',
+    'GL_APE_[E43-]_79',
+    'GL_APE_[E43A]_82',
+    'GL_APE_[E43B]_81',
+    'GL_APE_[E43C]_80',
+    'GL_APE_[E45-]_86',
+    'GL_APE_[E45A]_89',
+    'GL_APE_[E45B]_88',
+    'GL_APE_[E45C]_87',
+] %}
+{{- data.eddk_aixm['GuidanceLineByDesig'][desig] | join_segments | simplify(default) | to_line(desig) -}}
+{% endfor %}
+
+// F-Stands
+{% for desig in
+[
+    'GL_APF_[F21-]_4',
+    'GL_APF_[F21A]_7',
+    'GL_APF_[F21B]_6',
+    'GL_APF_[F21C]_5',
+    'GL_APF_[F23-]_11',
+    'GL_APF_[F23A]_14',
+    'GL_APF_[F23B]_13',
+    'GL_APF_[F23C]_12',
+    'GL_APF_[F25-]_17',
+    'GL_APF_[F25A]_20',
+    'GL_APF_[F25B]_19',
+    'GL_APF_[F25C]_18',
+    'GL_APF_[F31-]_23',
+    'GL_APF_[F31A]_25',
+    'GL_APF_[F31B]_24',
+    'GL_APF_[F32-]_26',
+    'GL_APF_[F32A]_27',
+    'GL_APF_[F34-]_28',
+    'GL_APF_[F34-1]_3',
+    'GL_APF_[F34A]_30',
+    'GL_APF_[F34B]_29',
+] %}
+{{- data.eddk_aixm['GuidanceLineByDesig'][desig] | join_segments | simplify(default) | to_line(desig) -}}
+{% endfor %}
+
+// U-Stands
+STYLE:Solid
+{% for desig in
+[
+    'GL_APU_[U10-]_10',
+    'GL_APU_[U10-1]_2',
+    'GL_APU_[U12-]_12',
+    'GL_APU_[U12-1]_4',
+    'GL_APU_[U16-]_8',
+    'GL_APU_[U16-1]_9',
+    'GL_APU_[U18-]_1',
+    'GL_APU_[U18-1]_2',
+    'GL_APU_[U18-6]_7',
+    'GL_APU_[U20-]_20',
+    'GL_APU_[U20-1]21',
+    'GL_APU_[U22-]_22',
+    'GL_APU_[U22-1]23',
+    'GL_APU_[U22-2]24',
+    'GL_APU_[U24-]_25',
+    'GL_APU_[U24-1]26',
+    'GL_APU_[U26-]_27',
+    'GL_APU_[U26-1]28',
+    'GL_APU_[U26-2]29',
+] %}
+{{- data.eddk_aixm['GuidanceLineByDesig'][desig] | join_segments | simplify(default) | to_line(desig) -}}
+{% endfor %}
+
+// V-Stands
+{% for desig in
+[
+    'GL_APV_[V20-]_10',
+    'GL_APV_[V20-1]_1',
+    'GL_APV_[V20-2]_1',
+    'GL_APV_[V21-]_11',
+    'GL_APV_[V21-1]_1',
+    'GL_APV_[V21-2]_1',
+    'GL_APV_[V21-3]_1',
+    'GL_APV_[V22-]_12',
+    'GL_APV_[V22-1]_1',
+    'GL_APV_[V22-2]_1',
+    'GL_APV_[V23-]_12',
+    'GL_APV_[V23-1]_1',
+    'GL_APV_[V23-2]_1',
+    'GL_APV_[V30-]_94',
+    'GL_APV_[V30-1]_9',
+    'GL_APV_[V31-]_91',
+    'GL_APV_[V31-1]_9',
+    'GL_APV_[V31-2]_9',
+    'GL_APV_[V32-]_88',
+    'GL_APV_[V32-1]_8',
+    'GL_APV_[V32-2]_9',
+    'GL_APV_[V33-]_86',
+    'GL_APV_[V33-1]_8',
+    'GL_APV_[V33-2]_2',
+    'GL_APV_[V40-]_43',
+    'GL_APV_[V40-1]_4',
+    'GL_APV_[V41-]_48',
+    'GL_APV_[V41-1]_4',
+    'GL_APV_[V42-]_56',
+    'GL_APV_[V42-1]_5',
+    'GL_APV_[V43-]_58',
+    'GL_APV_[V43-1]_5',
+    'GL_APV_[V43-2]_6',
+    'GL_APV_[V44-]_61',
+    'GL_APV_[V44-1]_6',
+    'GL_APV_[V44-2]_6',
+    'GL_APV_[V50-]_29',
+    'GL_APV_[V50-1]_3',
+    'GL_APV_[V50-2]_3',
+    'GL_APV_[V51-]_26',
+    'GL_APV_[V51-1]_2',
+    'GL_APV_[V51-2]_2',
+    'GL_APV_[V52-]_23',
+    'GL_APV_[V52-1]_2',
+    'GL_APV_[V52-2]_2',
+    'GL_APV_[V53-]_20',
+    'GL_APV_[V53-1]_2',
+    'GL_APV_[V53-2]_2',
+    'GL_APV_[V54-]_17',
+    'GL_APV_[V54-1]_1',
+    'GL_APV_[V54-2]_1',
+    'GL_APV_[V56-]_14',
+    'GL_APV_[V56-1]_1',
+    'GL_APV_[V56-2]_1',
+    'GL_APV_[V59-]_1',
+    'GL_APV_[V59-1]_2',
+] %}
+{{- data.eddk_aixm['GuidanceLineByDesig'][desig] | join_segments | simplify(default) | to_line(desig) -}}
+{% endfor %}
+{% for desig in
+[
+    'V10',
+    'V11',
+    'V12',
+    'V13',
+    'V14',
+] %}
+{{- data.eddk_kml['layout']['markings']['leadin_solid'][desig] | join_segments | simplify(default) | to_line(desig) -}}
+{% endfor %}
+
+// W-Stands
+{% for desig in
+[
+    'GL_APW_[W10-]_47',
+    'GL_APW_[W10A]_50',
+    'GL_APW_[W10B]_49',
+    'GL_APW_[W10C]_48',
+    'GL_APW_[W12-]_43',
+    'GL_APW_[W12A]_46',
+    'GL_APW_[W12B]_45',
+    'GL_APW_[W12C]_44',
+    'GL_APW_[W14-]_39',
+    'GL_APW_[W14A]_42',
+    'GL_APW_[W14B]_41',
+    'GL_APW_[W14C]_40',
+    'GL_APW_[W16-]_35',
+    'GL_APW_[W16A]_38',
+    'GL_APW_[W16B]_37',
+    'GL_APW_[W16C]_36',
+    'GL_APW_[W18-]_31',
+    'GL_APW_[W18B]_33',
+    'GL_APW_[W18C]_32',
+    'GL_APW_[W20-]_27',
+    'GL_APW_[W20B]_29',
+    'GL_APW_[W20C]_28',
+    'GL_APW_[W22-]_23',
+    'GL_APW_[W22B]_25',
+    'GL_APW_[W22C]_24',
+    'GL_APW_[W24-]_18',
+    'GL_APW_[W24C]_20',
+    'GL_APW_[W24D]_19',
+    'GL_APW_[W26-]_13',
+    'GL_APW_[W26C]_15',
+    'GL_APW_[W26D]_14',
+    'GL_APW_[W28-]_10',
+    'GL_APW_[W28A]_12',
+    'GL_APW_[W28B]_11',
+    'GL_APW_[W30-]_7',
+    'GL_APW_[W30A]_9',
+    'GL_APW_[W30B]_8',
+    'GL_APW_[W32-]_4',
+    'GL_APW_[W32A]_6',
+    'GL_APW_[W32B]_5',
+    'GL_APW_[W34-]_1',
+    'GL_APW_[W34A]_3',
+    'GL_APW_[W34B]_2',
+] %}
+{{- data.eddk_aixm['GuidanceLineByDesig'][desig] | join_segments | simplify(default) | to_line(desig) -}}
+{% endfor %}
+
+// Bundeswehr-Stands
+{% for desig in
+[
+    'BW1',
+    'BW2',
+    'BW3',
+    'BW4',
+    'BW5',
+    'BW6',
+    'BW7',
+] %}
+{{- data.eddk_kml['layout']['markings']['leadin_solid'][desig] | join_segments | simplify(default) | to_line(desig) -}}
+{% endfor %}
+
+// Noise Protection Facility
+{% for desig in
+[
+    'GL_APV_[LSAA]_22',
+    'GL_APV_[LSAB]_22',
+    'GL_APV_[LSAC]_22',
+    'GL_APV_[LSAD]_21',
+    'GL_APV_[LSAE]_21',
+    'GL_APV_[LSAE]_22',
+    'GL_APV_[LSAE]_23',
+    'GL_APV_[LSAE]_24',
+    'GL_TWYT_31',
+    'GL_TWYT_32',
+] %}
+{{- data.eddk_aixm['GuidanceLineByDesig'][desig] | join_segments | simplify(default) | to_line(desig) -}}
+{% endfor %}
+
+// Dash Leadin Lines
+{% for uuid, geom in data.eddk_kml['layout']['markings']['leadin_dash'].items() if uuid not in [] %}
+{{- geom | to_line('') -}}
+{% endfor %}
+
+// Taxi-Out Arrows
+{% for uuid, geom in data.eddk_kml['layout']['markings']['arrows'].items() %}
+{{- geom | to_poly('', 'layout-taxiline-grey') }}
+{% endfor %}
+
+// V-Stands Orange
+COLOR:layout-taxiline-orange
+{% for desig in
+[
+    'GL_APV_[V310-]_7',
+    'GL_APV_[V310-1]_',
+    'GL_APV_[V310-2]_',
+    'GL_APV_[V310-3]_',
+    'GL_APV_[V320-]_8',
+    'GL_APV_[V320-1]_',
+    'GL_APV_[V330-]_8',
+    'GL_APV_[V330-1]_',
+    'GL_APV_[V410-]_6',
+    'GL_APV_[V410-1]_',
+    'GL_APV_[V410-2]_',
+    'GL_APV_[V410-3]_',
+    'GL_APV_[V430-]_7',
+    'GL_APV_[V430-1]_',
+    'GL_APV_[V440-]_7',
+    'GL_APV_[V440-1]_',
+    'GL_APV_[V510-]_3',
+    'GL_APV_[V510-1]_',
+    'GL_APV_[V510-2]_',
+    'GL_APV_[V510-3]_',
+    'GL_APV_[V530-]_7',
+    'GL_APV_[V530-1]_',
+    'GL_APV_[V550-]_9',
+    'GL_APV_[V550-1]_',
+] %}
+{{- data.eddk_aixm['GuidanceLineByDesig'][desig] | join_segments | simplify(default) | to_line(desig) -}}
+{% endfor %}
+
+// V-Stands Declutter
+COLOR:layout-taxiline-grey
+ZOOM:1200
+{% for desig in
+[
+    'GL_APV_[V401-]_4',
+    'GL_APV_[V401-1]_',
+    'GL_APV_[V401-2]_',
+    'GL_APV_[V411-]_5',
+    'GL_APV_[V411-1]_',
+    'GL_APV_[V411-2]_',
+    'GL_APV_[V421-]_5',
+    'GL_APV_[V421-1]_',
+    'GL_APV_[V421-2]_',
+] %}
+{{- data.eddk_aixm['GuidanceLineByDesig'][desig] | join_segments | simplify(default) | to_line(desig) -}}
+{% endfor %}
+
+// -------------------------- Stand Labels --------------------------
+
+MAP:Stands
+AIRPORT:EDDK
+FOLDER:Stands
+ACTIVE:1
+ZOOM:500
+FONTSIZE:=:9
+COLOR:layout-label-stand
+{% for desig, geom in data.eddk_kml['layout']['labels']['stands'].items() if not desig in
+[
+    'A01',
+    'A03',
+    'A05',
+    'A07',
+    'A11',
+    'A17',
+    'A21',
+    'A23',
+    'B11',
+    'B17',
+    'B21',
+    'B23',
+    'B27',
+    'B29',
+    'C50',
+    'D11',
+    'D15',
+    'D19',
+    'D23',
+    'D51',
+    'D53',
+    'D57',
+    'E10',
+    'E12',
+    'E14',
+    'E16',
+    'E20',
+    'E22',
+    'E24',
+    'E30',
+    'E32',
+    'E34',
+    'E36',
+    'E40',
+    'E42',
+    'E44',
+    'E46',
+    'F20',
+    'F22',
+    'F24',
+    'F26',
+    'U16',
+    'U18',
+    'U20',
+    'U22',
+    'U24',
+    'U26',
+    'V35',
+    'V45',
+    'V50',
+    'V52',
+    'V54',
+    'V55',
+    'V10',
+    'V11',
+    'V12',
+    'V13',
+    'V14',
+    'V101',
+    'V111',
+    'V121',
+    'V131',
+    'V211',
+    'V221',
+    'V231',
+    'V310',
+    'V320',
+    'V330',
+    'V410',
+    'V430',
+    'V440',
+    'V510',
+    'V530',
+    'V550',
+] %}
+{{- geom | to_text(desig) }}
+{% endfor %}
+{{ data.eddk_kml['layout']['labels']['V1x/V1x1|'] | to_text('      |') }}
+{{ data.eddk_kml['layout']['labels']['V1x/V1x1|'] | to_text(' V1x:0:-5') }}
+{{ data.eddk_kml['layout']['labels']['V1x/V1x1|'] | to_text('V1x1:0:5') }}
+{{ data.eddk_kml['layout']['labels']['V2x1|'] | to_text('V2x1|') }}
+COLOR:layout-holdingpoint
+{% for desig in
+[
+    'V3x0|',
+    'V4x0|',
+    'V5x0|',
+] %}
+{{- data.eddk_kml['layout']['labels'][desig] | to_text(desig) }}
+{% endfor %}
+
+ZOOM:1500
+COLOR:layout-label-stand
+{% for desig in
+[
+    'A01',
+    'A03',
+    'A05',
+    'A07',
+    'A11',
+    'A17',
+    'A21',
+    'A23',
+    'B11',
+    'B17',
+    'B21',
+    'B23',
+    'B27',
+    'B29',
+    'C50',
+    'D11',
+    'D15',
+    'D19',
+    'D23',
+    'D51',
+    'D53',
+    'D57',
+    'E10',
+    'E12',
+    'E14',
+    'E16',
+    'E20',
+    'E22',
+    'E24',
+    'E30',
+    'E32',
+    'E34',
+    'E36',
+    'E40',
+    'E42',
+    'E44',
+    'E46',
+    'F20',
+    'F22',
+    'F24',
+    'F26',
+    'U16',
+    'U18',
+    'U20',
+    'U22',
+    'U24',
+    'U26',
+    'V35',
+    'V45',
+    'V50',
+    'V52',
+    'V54',
+    'V55',
+] %}
+{{- data.eddk_kml['layout']['labels']['stands'][desig] | to_text(desig) }}
+{% endfor %}
+
+// GAT Additional Stans
+ZOOM:2500
+COLOR:layout-label-stand
+{% for desig in
+[
+    'V10',
+    'V11',
+    'V12',
+    'V13',
+    'V14',
+    'V101',
+    'V111',
+    'V121',
+    'V131',
+    'V211',
+    'V221',
+    'V231',
+] %}
+{{- data.eddk_kml['layout']['labels']['stands'][desig] | to_text(desig) }}
+{% endfor %}
+COLOR:layout-holdingpoint
+{% for desig in
+[
+    'V310',
+    'V320',
+    'V330',
+    'V410',
+    'V430',
+    'V440',
+    'V510',
+    'V530',
+    'V550',
+] %}
+{{- data.eddk_kml['layout']['labels']['stands'][desig] | to_text(desig) }}
+{% endfor %}
+
+// --------------------------- Heli Stands --------------------------
+
+MAP:Heli Stands
+AIRPORT:EDDK
+FOLDER:Stands
+ZOOM:500
+FONTSIZE:=:10
+COLOR:layout-label-stand
+{% for desig, geom in data.eddk_kml['layout']['labels']['heli'].items() %}
+{{- geom | to_text('H:-1:0') }}
+{% endfor %}
+{% for desig, geom in data.eddk_kml['layout']['labels']['heli'].items() %}
+{{- geom | to_symbol('CIRCLE') }}
+{% endfor %}

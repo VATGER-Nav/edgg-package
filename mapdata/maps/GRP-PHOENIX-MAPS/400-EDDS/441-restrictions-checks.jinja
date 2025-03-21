@@ -8,48 +8,58 @@ ACTIVE:1
 
 // GAT 29m
 RESTRICTION:MAXWINGSPAN:29
-{{ data.edds_layout['layout']['Restrictions']['GAT-1'] | to_poly('') }}
+{{ data.edds_kml['layout']['restrictions']['poly']['GAT1'] | to_poly('') }}
 
 // GAT 20m
 RESTRICTION:MAXWINGSPAN:20
-{{ data.edds_layout['layout']['Restrictions']['GAT-2'] | to_poly('') }}
+{{ data.edds_kml['layout']['restrictions']['poly']['GAT2'] | to_poly('') }}
 
 // Turn S - I
 RESTRICTION:MAXCODE:C
-{{ data.edds_layout['layout']['Restrictions']['Checks']['S/I'] | to_poly('') }}
+{{ data.edds_kml['layout']['restrictions']['poly']['S_I'] | to_poly('') }}
 
 // M (Between H and Exit 3)
 RESTRICTION:MAXCODE:C
-{{ data.edds_layout['layout']['Restrictions']['Checks']['M'] | to_poly('') }}
+{{ data.edds_kml['layout']['restrictions']['poly']['M'] | to_poly('') }}
 
 // W/Z
 RESTRICTION:MAXWINGSPAN:43
-{{ data.edds_layout['layout']['Restrictions']['Checks']['W/Z'] | to_poly('') }}
+{{ data.edds_kml['layout']['restrictions']['poly']['W_Z'] | to_poly('') }}
 
 // C
 RESTRICTION:MAXCODE:D
-{{ data.edds_layout['layout']['Restrictions']['Checks']['C'] | to_poly('') }}
+{{ data.edds_kml['layout']['restrictions']['poly']['C'] | to_poly('') }}
 
 // E
 RESTRICTION:MAXCODE:D
-{{ data.edds_layout['layout']['Restrictions']['Checks']['E'] | to_multipoly('','red') }}
+{{ data.edds_kml['layout']['restrictions']['poly']['E_a'] | to_poly('', 'red') }}
+{{ data.edds_kml['layout']['restrictions']['poly']['E_b'] | to_poly('', 'red') }}
 
 // G
 RESTRICTION:MAXCODE:D
-{{ data.edds_layout['layout']['Restrictions']['Checks']['G'] | to_multipoly('','red') }}
+{{ data.edds_kml['layout']['restrictions']['poly']['G_a'] | to_poly('', 'red') }}
+{{ data.edds_kml['layout']['restrictions']['poly']['G_b'] | to_poly('', 'red') }}
+{{ data.edds_kml['layout']['restrictions']['poly']['G_c'] | to_poly('', 'red') }}
 
 // Turn L2 - O
 RESTRICTION:MAXCODE:D
-{{ data.edds_layout['layout']['Restrictions']['Checks']['L2/O'] | to_poly('') }}
+{{ data.edds_kml['layout']['restrictions']['poly']['L2_O'] | to_poly('') }}
 
 // Z
 RESTRICTION:MAXCODE:D
-{{ data.edds_layout['layout']['Restrictions']['Checks']['Z'] | to_poly('') }}
+{{ data.edds_kml['layout']['restrictions']['poly']['Z'] | to_poly('') }}
 
 // D
 RESTRICTION:MAXCODE:E
-{{ data.edds_layout['layout']['Restrictions']['Checks']['D'] | to_multipoly('','red') }}
+{{ data.edds_kml['layout']['restrictions']['poly']['D_a'] | to_poly('', 'red') }}
+{{ data.edds_kml['layout']['restrictions']['poly']['D_b'] | to_poly('', 'red') }}
+{{ data.edds_kml['layout']['restrictions']['poly']['D_c'] | to_poly('', 'red') }}
 
 // M/H/L2/L3/O
 RESTRICTION:MAXCODE:E
-{{ data.edds_layout['layout']['Restrictions']['Checks']['M/H/L2/L3/O'] | to_poly('') }}
+{{ data.edds_kml['layout']['restrictions']['poly']['M_H_L2_L3_O'] | to_poly('') }}
+
+// N
+RESTRICTION:MAXWINGSPAN:69
+{{ data.edds_kml['layout']['restrictions']['poly']['N_a'] | to_poly('', 'red') }}
+{{ data.edds_kml['layout']['restrictions']['poly']['N_b'] | to_poly('', 'red') }}

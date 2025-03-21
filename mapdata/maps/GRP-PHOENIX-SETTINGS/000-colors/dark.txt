@@ -7,6 +7,7 @@ Color_New_Stand=255,110,0
 
 Color_Warning=255,120,0
 Color_APP_Background=0,0,0
+Color_APP_Runway=255,255,255
 Color_TSW2_Background=0,0,0
 
 Color_SelectedLabelFill_Gnd=50,50,50

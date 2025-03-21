@@ -1,0 +1,17 @@
+{
+"type": "FeatureCollection",
+"name": "labels_taxiways",
+"crs": { "type": "name", "properties": { "name": "urn:ogc:def:crs:EPSG::32632" } },
+"features": [
+{ "type": "Feature", "properties": { "name": "A#1" }, "geometry": { "type": "Point", "coordinates": [ 410740.859034952882212, 5776879.895464546978474 ] } },
+{ "type": "Feature", "properties": { "name": "A#2" }, "geometry": { "type": "Point", "coordinates": [ 411040.38610899343621, 5777006.08908365201205 ] } },
+{ "type": "Feature", "properties": { "name": "A1" }, "geometry": { "type": "Point", "coordinates": [ 411057.757011074398179, 5776958.816179804503918 ] } },
+{ "type": "Feature", "properties": { "name": "C#1" }, "geometry": { "type": "Point", "coordinates": [ 409849.922822744701989, 5776660.724874632433057 ] } },
+{ "type": "Feature", "properties": { "name": "B#1" }, "geometry": { "type": "Point", "coordinates": [ 409494.103414437675383, 5776476.423030747100711 ] } },
+{ "type": "Feature", "properties": { "name": "B#2" }, "geometry": { "type": "Point", "coordinates": [ 409060.282926489249803, 5776372.736306678503752 ] } },
+{ "type": "Feature", "properties": { "name": "B1" }, "geometry": { "type": "Point", "coordinates": [ 409070.567814499954693, 5776318.225245485082269 ] } },
+{ "type": "Feature", "properties": { "name": "D" }, "geometry": { "type": "Point", "coordinates": [ 410248.130407788441516, 5776653.879826399497688 ] } },
+{ "type": "Feature", "properties": { "name": "G" }, "geometry": { "type": "Point", "coordinates": [ 410505.045783650013618, 5776737.545660396106541 ] } },
+{ "type": "Feature", "properties": { "name": "C#2" }, "geometry": { "type": "Point", "coordinates": [ 409880.632411393045913, 5776566.874815262854099 ] } }
+]
+}

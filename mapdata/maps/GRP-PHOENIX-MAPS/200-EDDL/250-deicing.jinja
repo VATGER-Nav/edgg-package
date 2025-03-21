@@ -6,8 +6,10 @@ FOLDER:Ice/Snow
 COORDTYPE:RWYCLOSED:REGION
 STYLE:Solid:2
 FONTSIZE:=:14
-{{ data.eddl_layout['layout']['Runways']['23L/05R'] | to_poly('Runway 23L/05R', 'closure') }}
-{{ data.eddl_layout['layout']['Deicing']['23L/05R'] | to_text('SNOW REMOVAL') }}
+{{ data.eddl_kml['layout']['runways']['05R-23L'] | to_poly('Runway 23L/05R', 'closure') }}
+COLOR:closure-symbol
+ZOOM:600
+{{ data.eddl_kml['layout']['deicing']['labels']['05R-23L'] | to_text('SNOW REMOVAL') }}
 
 
 MAP:Snow 23R/05L
@@ -16,8 +18,10 @@ FOLDER:Ice/Snow
 COORDTYPE:RWYCLOSED:REGION
 STYLE:Solid:2
 FONTSIZE:=:14
-{{ data.eddl_layout['layout']['Runways']['23R/05L'] | to_poly('Runway 23R/05L', 'closure') }}
-{{ data.eddl_layout['layout']['Deicing']['23R/05L'] | to_text('SNOW REMOVAL') }}
+{{ data.eddl_kml['layout']['runways']['05L-23R'] | to_poly('Runway 23R/05L', 'closure') }}
+COLOR:closure-symbol
+ZOOM:600
+{{ data.eddl_kml['layout']['deicing']['labels']['05L-23R'] | to_text('SNOW REMOVAL') }}
 
 
 MAP:De-Icing 23L/R
@@ -27,75 +31,111 @@ FOLDER:Ice/Snow
 // Areas
 COORDTYPE:OTHER:REGION:x
 STYLE:Solid:1
-{% for desig in ['PAD1E', 'PAD2E', 'PAD3E', 'PAD4E'] %}
-{{- data.eddl_layout['layout']['Deicing'][desig | string] | to_poly(desig, 'layout-runway') }}
-{% endfor %}
-{{ data.eddl_layout['layout']['Deicing']['V11B'] | to_poly('V11B', 'layout-runway') }}
+{{ data.eddl_kml['layout']['deicing']['poly']['DP1E'] | to_poly('DP1E', 'layout-runway') }}
+{{ data.eddl_kml['layout']['deicing']['poly']['DP2E'] | to_poly('DP2E', 'layout-runway') }}
+{{ data.eddl_kml['layout']['deicing']['poly']['DP3E'] | to_poly('DP3E', 'layout-runway') }}
+{{ data.eddl_kml['layout']['deicing']['poly']['DP4E'] | to_poly('DP4E', 'layout-runway') }}
+{{ data.eddl_kml['layout']['deicing']['poly']['V11B'] | to_poly('V11B', 'layout-runway') }}
 
 // Arrows
 COORDTYPE:OTHER:REGION
-{{ data.eddl_layout['layout']['Deicing']['PADE='] | to_multipoly('', 'layout-taxiline-white') }}
+{{ data.eddl_kml['layout']['deicing']['arrows']['DP1E'] | to_poly('', 'layout-taxiline-white') }}
+{{ data.eddl_kml['layout']['deicing']['arrows']['DP2E'] | to_poly('', 'layout-taxiline-white') }}
+{{ data.eddl_kml['layout']['deicing']['arrows']['DP3E'] | to_poly('', 'layout-taxiline-white') }}
+{{ data.eddl_kml['layout']['deicing']['arrows']['DP4E'] | to_poly('', 'layout-taxiline-white') }}
+{{ data.eddl_kml['layout']['deicing']['arrows']['V11B'] | to_poly('', 'layout-taxiline-white') }}
 
 // Taxilines
 COLOR:layout-taxiline-white
 STYLE:Solid:2
-{% for desig in ['AE_V11B_O', 'AE_V11B_W', 'DEICI_O_2', 'DEICI_O_3', 'DEICI_O_4_1', 'DEICI_O_4_2', 'DEICI_O_5', 'DEICI_O_6', 'DEICI_O_7', 'DEICI_O_8', 'DEICI_O_9', 'DEICI_O_M2', 'DEICI_O_O', 'DEICI_O_W', 'TLL3_2', 'TLL3_3', 'TLT_53', 'TLT_54', 'TLT_55', 'TLT_56', 'TLT_57', 'TLT_58', 'TLT_59', 'TLT_60', 'TLT_61', 'TLT_62', 'TLT_63'] %}
-{{- data.eddl['GuidanceLineByDesig'][desig | string] | join_segments | simplify(default) | to_line(desig) }}
+{% for desig in
+[
+    'AE_V11B_O',
+    'AE_V11B_W',
+    'DEICI_O_2',
+    'DEICI_O_3',
+    'DEICI_O_4_1',
+    'DEICI_O_4_2',
+    'DEICI_O_5',
+    'DEICI_O_6',
+    'DEICI_O_7',
+    'DEICI_O_8',
+    'DEICI_O_9',
+    'DEICI_O_M2',
+    'DEICI_O_O',
+    'DEICI_O_W',
+    'TLL3_2',
+    'TLL3_3',
+    'TLT_53',
+    'TLT_54',
+    'TLT_55',
+    'TLT_56',
+    'TLT_57',
+    'TLT_58',
+    'TLT_59',
+    'TLT_60',
+    'TLT_61',
+    'TLT_62',
+    'TLT_63'
+] %}
+{{- data.eddl_aixm['GuidanceLineByDesig'][desig] | join_segments | simplify(default) | to_line(desig) -}}
 {% endfor %}
-{{ data.eddl_layout['layout']['Deicing']['PAD1E-'] | to_line('') }}
+{{ data.eddl_kml['layout']['deicing']['line']['DP1E'] | to_line('') -}}
 
 // Outlines
 STYLE:Solid:2
 COLOR:deicing
-{% for desig in ['PAD1E', 'PAD2E', 'PAD3E', 'PAD4E', 'V11B'] %}
-{{- data.eddl_layout['layout']['Deicing'][desig | string] | to_line(desig) }}
-{% endfor %}
+{{ data.eddl_kml['layout']['deicing']['poly']['DP1E'] | to_line('') -}}
+{{ data.eddl_kml['layout']['deicing']['poly']['DP2E'] | to_line('') -}}
+{{ data.eddl_kml['layout']['deicing']['poly']['DP3E'] | to_line('') -}}
+{{ data.eddl_kml['layout']['deicing']['poly']['DP4E'] | to_line('') -}}
+{{ data.eddl_kml['layout']['deicing']['poly']['V11B'] | to_line('') -}}
 
 // Labels
 ZOOM:600
 COLOR:layout-label-stand
 TEXTALIGN:LC
 FONTSIZE:=:11
-{{ data.eddl_layout['layout']['Deicing']['PAD1E_'] | to_text('DP1:10:0') }}
-{{ data.eddl_layout['layout']['Deicing']['PAD2E_'] | to_text('DP2:10:0') }}
+{{ data.eddl_kml['layout']['deicing']['labels']['DP1E'] | to_text('DP1:10:0') }}
+{{ data.eddl_kml['layout']['deicing']['labels']['DP2E'] | to_text('DP2:10:0') }}
 TEXTALIGN:CC
-{{ data.eddl_layout['layout']['Deicing']['PAD3E_'] | to_text('DP3:3:0') }}
-{{ data.eddl_layout['layout']['Deicing']['PAD4E_'] | to_text('DP4:3:0') }}
-{{ data.eddl_layout['layout']['Deicing']['V11B_'] | to_text('V11B:3:0') }}
+{{ data.eddl_kml['layout']['deicing']['labels']['DP3E'] | to_text('DP3:3:0') }}
+{{ data.eddl_kml['layout']['deicing']['labels']['DP4E'] | to_text('DP4:3:0') }}
+{{ data.eddl_kml['layout']['deicing']['labels']['V11B'] | to_text('V11B:3:0') }}
 
 FONTSIZE:=:60
 TEXTALIGN:LC
 COLOR:restrictions-E
-{{ data.eddl_layout['layout']['Deicing']['PAD1E_'] | to_text('.:-14:-17') }}
+{{ data.eddl_kml['layout']['deicing']['labels']['DP1E'] | to_text('.:-14:-17') }}
 COLOR:restrictions-E
-{{ data.eddl_layout['layout']['Deicing']['PAD2E_'] | to_text('.:-14:-17') }}
+{{ data.eddl_kml['layout']['deicing']['labels']['DP2E'] | to_text('.:-14:-17') }}
 TEXTALIGN:CC
 COLOR:restrictions-D
-{{ data.eddl_layout['layout']['Deicing']['PAD3E_'] | to_text('.:-14:-17') }}
+{{ data.eddl_kml['layout']['deicing']['labels']['DP3E'] | to_text('.:-14:-17') }}
 COLOR:restrictions-C
-{{ data.eddl_layout['layout']['Deicing']['PAD4E_'] | to_text('.:-14:-17') }}
+{{ data.eddl_kml['layout']['deicing']['labels']['DP4E'] | to_text('.:-14:-17') }}
 COLOR:restrictions-F
-{{ data.eddl_layout['layout']['Deicing']['V11B_'] | to_text('.:-16:-17') }}
+{{ data.eddl_kml['layout']['deicing']['labels']['V11B'] | to_text('.:-16:-17') }}
 
 // Reference
 COLOR:layout-label-stand
 TEXTALIGN:CC
 FONTSIZE:=:12
-{{ data.eddl_layout['layout']['Restrictions']['Ref 2'] | to_text('Reference  :0:-30') }}
-{{ data.eddl_layout['layout']['Restrictions']['Ref 2'] | to_text('Code C < 36m (A321/B739):0:-15') }}
-{{ data.eddl_layout['layout']['Restrictions']['Ref 2'] | to_text('Code D < 52m (A310/B763):0:0') }}
-{{ data.eddl_layout['layout']['Restrictions']['Ref 2'] | to_text('Code E < 65m (A343/B77W):0:15') }}
-{{ data.eddl_layout['layout']['Restrictions']['Ref 2'] | to_text('Code F < 80m (A388/B748):0:30') }}
+{{ data.eddl_kml['layout']['restrictions']['labels']['reference_2'] | to_text('Reference  :0:-30') }}
+{{ data.eddl_kml['layout']['restrictions']['labels']['reference_2'] | to_text('Code C < 36m (A321/B739):0:-15') }}
+{{ data.eddl_kml['layout']['restrictions']['labels']['reference_2'] | to_text('Code D < 52m (A310/B763):0:0') }}
+{{ data.eddl_kml['layout']['restrictions']['labels']['reference_2'] | to_text('Code E < 65m (A343/B77W):0:15') }}
+{{ data.eddl_kml['layout']['restrictions']['labels']['reference_2'] | to_text('Code F < 80m (A388/B748):0:30') }}
 
 FONTSIZE:=:70
 COLOR:restrictions-C
-{{ data.eddl_layout['layout']['Restrictions']['Ref 2'] | to_text('.:-95:-69') }}
+{{ data.eddl_kml['layout']['restrictions']['labels']['reference_2'] | to_text('.:-95:-69') }}
 COLOR:restrictions-D
-{{ data.eddl_layout['layout']['Restrictions']['Ref 2'] | to_text('.:-95:-54') }}
+{{ data.eddl_kml['layout']['restrictions']['labels']['reference_2'] | to_text('.:-95:-54') }}
 COLOR:restrictions-E
-{{ data.eddl_layout['layout']['Restrictions']['Ref 2'] | to_text('.:-95:-39') }}
+{{ data.eddl_kml['layout']['restrictions']['labels']['reference_2'] | to_text('.:-95:-39') }}
 COLOR:restrictions-F
-{{ data.eddl_layout['layout']['Restrictions']['Ref 2'] | to_text('.:-95:-24') }}
+{{ data.eddl_kml['layout']['restrictions']['labels']['reference_2'] | to_text('.:-95:-24') }}
 
 
 MAP:De-Icing 05L/R
@@ -105,46 +145,52 @@ FOLDER:Ice/Snow
 // Areas
 COORDTYPE:OTHER:REGION:x
 STYLE:Solid:1
-{% for desig in ['PAD1W', 'PAD2W', 'PAD3W', 'PAD4W'] %}
-{{- data.eddl_layout['layout']['Deicing'][desig | string] | to_poly(desig, 'layout-runway') }}
-{% endfor %}
+{{ data.eddl_kml['layout']['deicing']['poly']['DP1W'] | to_poly('DP1W', 'layout-runway') }}
+{{ data.eddl_kml['layout']['deicing']['poly']['DP2W'] | to_poly('DP2W', 'layout-runway') }}
+{{ data.eddl_kml['layout']['deicing']['poly']['DP3W'] | to_poly('DP3W', 'layout-runway') }}
+{{ data.eddl_kml['layout']['deicing']['poly']['DP4W'] | to_poly('DP4W', 'layout-runway') }}
 
 // Arrows
 COORDTYPE:OTHER:REGION
-{{ data.eddl_layout['layout']['Deicing']['PADW='] | to_multipoly('', 'layout-taxiline-white') }}
+{{ data.eddl_kml['layout']['deicing']['arrows']['DP1W'] | to_poly('', 'layout-taxiline-white') }}
+{{ data.eddl_kml['layout']['deicing']['arrows']['DP2W'] | to_poly('', 'layout-taxiline-white') }}
+{{ data.eddl_kml['layout']['deicing']['arrows']['DP3W'] | to_poly('', 'layout-taxiline-white') }}
+{{ data.eddl_kml['layout']['deicing']['arrows']['DP4W'] | to_poly('', 'layout-taxiline-white') }}
 
 // Taxilines
 COLOR:layout-taxiline-white
 STYLE:Solid:2
-{% for desig in ['PAD1W-', 'PAD2W-', 'PAD3W-', 'PAD4W-'] %}
-{{- data.eddl_layout['layout']['Deicing'][desig | string] | to_line(desig) }}
-{% endfor %}
+{{ data.eddl_kml['layout']['deicing']['line']['DP1W'] | to_line('') -}}
+{{ data.eddl_kml['layout']['deicing']['line']['DP2W'] | to_line('') -}}
+{{ data.eddl_kml['layout']['deicing']['line']['DP3W'] | to_line('') -}}
+{{ data.eddl_kml['layout']['deicing']['line']['DP4W'] | to_line('') -}}
 
 // Outlines
 STYLE:Solid:2
 COLOR:deicing
-{% for desig in ['PAD1W', 'PAD2W', 'PAD3W', 'PAD4W'] %}
-{{- data.eddl_layout['layout']['Deicing'][desig | string] | to_line(desig) }}
-{% endfor %}
+{{ data.eddl_kml['layout']['deicing']['poly']['DP1W'] | to_line('') -}}
+{{ data.eddl_kml['layout']['deicing']['poly']['DP2W'] | to_line('') -}}
+{{ data.eddl_kml['layout']['deicing']['poly']['DP3W'] | to_line('') -}}
+{{ data.eddl_kml['layout']['deicing']['poly']['DP4W'] | to_line('') -}}
 
 // Labels
 ZOOM:600
 COLOR:layout-label-stand
 TEXTALIGN:RC
 FONTSIZE:=:11
-{{ data.eddl_layout['layout']['Deicing']['PAD1W_'] | to_text('DP1') }}
-{{ data.eddl_layout['layout']['Deicing']['PAD2W_'] | to_text('DP2') }}
-{{ data.eddl_layout['layout']['Deicing']['PAD3W_'] | to_text('DP3') }}
-{{ data.eddl_layout['layout']['Deicing']['PAD4W_'] | to_text('DP4') }}
+{{ data.eddl_kml['layout']['deicing']['labels']['DP1W'] | to_text('DP1') }}
+{{ data.eddl_kml['layout']['deicing']['labels']['DP2W'] | to_text('DP2') }}
+{{ data.eddl_kml['layout']['deicing']['labels']['DP3W'] | to_text('DP3') }}
+{{ data.eddl_kml['layout']['deicing']['labels']['DP4W'] | to_text('DP4') }}
 FONTSIZE:=:60
 COLOR:restrictions-E
-{{ data.eddl_layout['layout']['Deicing']['PAD1W_'] | to_text('.:-9:-45') }}
+{{ data.eddl_kml['layout']['deicing']['labels']['DP1W'] | to_text('.:-9:-45') }}
 COLOR:restrictions-C
-{{ data.eddl_layout['layout']['Deicing']['PAD2W_'] | to_text('.:-9:-45') }}
+{{ data.eddl_kml['layout']['deicing']['labels']['DP2W'] | to_text('.:-9:-45') }}
 COLOR:restrictions-F
-{{ data.eddl_layout['layout']['Deicing']['PAD3W_'] | to_text('.:-9:-45') }}
+{{ data.eddl_kml['layout']['deicing']['labels']['DP3W'] | to_text('.:-9:-45') }}
 COLOR:restrictions-E
-{{ data.eddl_layout['layout']['Deicing']['PAD4W_'] | to_text('.:-9:-45') }}
+{{ data.eddl_kml['layout']['deicing']['labels']['DP4W'] | to_text('.:-9:-45') }}
 
 
 
@@ -152,18 +198,18 @@ COLOR:restrictions-E
 COLOR:layout-label-stand
 TEXTALIGN:CC
 FONTSIZE:=:12
-{{ data.eddl_layout['layout']['Restrictions']['Ref'] | to_text('Reference  :0:-30') }}
-{{ data.eddl_layout['layout']['Restrictions']['Ref'] | to_text('Code C < 36m (A321/B739):0:-15') }}
-{{ data.eddl_layout['layout']['Restrictions']['Ref'] | to_text('Code D < 52m (A310/B763):0:0') }}
-{{ data.eddl_layout['layout']['Restrictions']['Ref'] | to_text('Code E < 65m (A343/B77W):0:15') }}
-{{ data.eddl_layout['layout']['Restrictions']['Ref'] | to_text('Code F < 80m (A388/B748):0:30') }}
+{{ data.eddl_kml['layout']['restrictions']['labels']['reference_1'] | to_text('Reference  :0:-30') }}
+{{ data.eddl_kml['layout']['restrictions']['labels']['reference_1'] | to_text('Code C < 36m (A321/B739):0:-15') }}
+{{ data.eddl_kml['layout']['restrictions']['labels']['reference_1'] | to_text('Code D < 52m (A310/B763):0:0') }}
+{{ data.eddl_kml['layout']['restrictions']['labels']['reference_1'] | to_text('Code E < 65m (A343/B77W):0:15') }}
+{{ data.eddl_kml['layout']['restrictions']['labels']['reference_1'] | to_text('Code F < 80m (A388/B748):0:30') }}
 
 FONTSIZE:=:70
 COLOR:restrictions-C
-{{ data.eddl_layout['layout']['Restrictions']['Ref'] | to_text('.:-95:-69') }}
+{{ data.eddl_kml['layout']['restrictions']['labels']['reference_1'] | to_text('.:-95:-69') }}
 COLOR:restrictions-D
-{{ data.eddl_layout['layout']['Restrictions']['Ref'] | to_text('.:-95:-54') }}
+{{ data.eddl_kml['layout']['restrictions']['labels']['reference_1'] | to_text('.:-95:-54') }}
 COLOR:restrictions-E
-{{ data.eddl_layout['layout']['Restrictions']['Ref'] | to_text('.:-95:-39') }}
+{{ data.eddl_kml['layout']['restrictions']['labels']['reference_1'] | to_text('.:-95:-39') }}
 COLOR:restrictions-F
-{{ data.eddl_layout['layout']['Restrictions']['Ref'] | to_text('.:-95:-24') }}
+{{ data.eddl_kml['layout']['restrictions']['labels']['reference_1'] | to_text('.:-95:-24') }}

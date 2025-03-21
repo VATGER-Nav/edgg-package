@@ -1,0 +1,15 @@
+{
+"type": "FeatureCollection",
+"name": "restrictions_labels",
+"crs": { "type": "name", "properties": { "name": "urn:ogc:def:crs:EPSG::32632" } },
+"features": [
+{ "type": "Feature", "properties": { "name": "N_M" }, "geometry": { "type": "Point", "coordinates": [ 368068.844774707104079, 5638356.300100728869438 ] } },
+{ "type": "Feature", "properties": { "name": "B_1" }, "geometry": { "type": "Point", "coordinates": [ 367930.56274389725877, 5637426.617985041812062 ] } },
+{ "type": "Feature", "properties": { "name": "apron_2" }, "geometry": { "type": "Point", "coordinates": [ 367574.75548123678891, 5636614.194818641059101 ] } },
+{ "type": "Feature", "properties": { "name": "apron_U" }, "geometry": { "type": "Point", "coordinates": [ 367627.422907352854963, 5636965.622049470432103 ] } },
+{ "type": "Feature", "properties": { "name": "apron_Z" }, "geometry": { "type": "Point", "coordinates": [ 367978.955790800508112, 5635681.93917724955827 ] } },
+{ "type": "Feature", "properties": { "name": "D" }, "geometry": { "type": "Point", "coordinates": [ 369844.772026362246834, 5637056.432348319329321 ] } },
+{ "type": "Feature", "properties": { "name": "reference" }, "geometry": { "type": "Point", "coordinates": [ 367379.788889867661055, 5637737.04802512191236 ] } },
+{ "type": "Feature", "properties": { "name": "A1" }, "geometry": { "type": "Point", "coordinates": [ 370542.174602802610025, 5635422.862231244333088 ] } }
+]
+}

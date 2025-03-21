@@ -1,0 +1,13 @@
+{
+"type": "FeatureCollection",
+"name": "restrictions_labels",
+"crs": { "type": "name", "properties": { "name": "urn:ogc:def:crs:EPSG::32632" } },
+"features": [
+{ "type": "Feature", "properties": { "name": "GAT1" }, "geometry": { "type": "Point", "coordinates": [ 515570.833156743668951, 5393319.934794940985739 ] } },
+{ "type": "Feature", "properties": { "name": "reference" }, "geometry": { "type": "Point", "coordinates": [ 513808.237953892501537, 5392611.376806018874049 ] } },
+{ "type": "Feature", "properties": { "name": "W_Z" }, "geometry": { "type": "Point", "coordinates": [ 515611.215991419507191, 5392584.594687321223319 ] } },
+{ "type": "Feature", "properties": { "name": "GAT2" }, "geometry": { "type": "Point", "coordinates": [ 515732.04634273488773, 5393277.607509113848209 ] } },
+{ "type": "Feature", "properties": { "name": "D" }, "geometry": { "type": "Point", "coordinates": [ 516995.316854203527328, 5393437.688771688379347 ] } },
+{ "type": "Feature", "properties": { "name": "N" }, "geometry": { "type": "Point", "coordinates": [ 516289.187078049813863, 5393314.633380155079067 ] } }
+]
+}

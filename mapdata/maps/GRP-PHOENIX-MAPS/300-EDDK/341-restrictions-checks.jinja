@@ -8,51 +8,50 @@ ACTIVE:1
 
 // N
 RESTRICTION:MAXCODE:C
-{{ data.eddk_layout['layout']['Restrictions']['N'] | to_poly('') }}
+{{ data.eddk_kml['layout']['restrictions']['poly']['N'] | to_poly('') }}
 
 // N/M Center Line
 RESTRICTION:MAXCODE:E
-{{ data.eddk_layout['layout']['Restrictions']['N/M#2'] | to_poly('') }}
+{{ data.eddk_kml['layout']['restrictions']['poly']['N_M'] | to_poly('') }}
 
 // B and L
 RESTRICTION:MAXCODE:E
-{{ data.eddk_layout['layout']['Restrictions']['B/L'] | to_poly('') }}
+{{ data.eddk_kml['layout']['restrictions']['poly']['B_L'] | to_poly('') }}
 
 // L
 RESTRICTION:MAXCODE:C
-{{ data.eddk_layout['layout']['Restrictions']['L'] | to_poly('') }}
+{{ data.eddk_kml['layout']['restrictions']['poly']['L'] | to_poly('') }}
 
 // B (South)
 RESTRICTION:MAXCODE:E
-{{ data.eddk_layout['layout']['Restrictions']['B#2'] | to_poly('') }}
+{{ data.eddk_kml['layout']['restrictions']['poly']['B_2'] | to_poly('') }}
 
 // T and D (South of 31R/13L)
 RESTRICTION:MAXCODE:E
-{{ data.eddk_layout['layout']['Restrictions']['T/D'] | to_poly('') }}
+{{ data.eddk_kml['layout']['restrictions']['poly']['T_D'] | to_poly('') }}
 
 // T2
 RESTRICTION:MAXCODE:C
-{{ data.eddk_layout['layout']['Restrictions']['T2'] | to_poly('') }}
+{{ data.eddk_kml['layout']['restrictions']['poly']['T2'] | to_poly('') }}
 
 // Apron U
 RESTRICTION:MAXCODE:C
-{{ data.eddk_layout['layout']['Restrictions']['Apron U'] | to_poly('') }}
+{{ data.eddk_kml['layout']['restrictions']['poly']['apron_U'] | to_poly('') }}
 
 // C
 RESTRICTION:MAXCODE:C
-{{ data.eddk_layout['layout']['Restrictions']['C'] | to_poly('') }}
-
-// D (North of 31R/13L)
-RESTRICTION:MAXCODE:F
-RESTRICTION:NOTATYP:A388,A225,C5M,A124,A225
-{{ data.eddk_layout['layout']['Restrictions']['D'] | to_poly('') }}
+{{ data.eddk_kml['layout']['restrictions']['poly']['C'] | to_poly('') }}
 
 // A1
 RESTRICTION:MAXCODE:E
 RESTRICTION:NOTATYP:A346
-{{ data.eddk_layout['layout']['Restrictions']['A1'] | to_poly('') }}
+{{ data.eddk_kml['layout']['restrictions']['poly']['A1'] | to_poly('') }}
+
+// D (North of 31R/13L)
+RESTRICTION:MAXWINGSPAN:69
+{{ data.eddk_kml['layout']['restrictions']['poly']['D'] | to_poly('') }}
 
 // B (Bridge)
 RESTRICTION:MAXCODE:D
 RESTRICTION:MAXWEIGHT:200000
-{{ data.eddk_layout['layout']['Restrictions']['B#1'] | to_poly('') }}
+{{ data.eddk_kml['layout']['restrictions']['poly']['B_1'] | to_poly('') }}
