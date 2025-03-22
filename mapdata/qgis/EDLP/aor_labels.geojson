@@ -1,0 +1,9 @@
+{
+"type": "FeatureCollection",
+"name": "aor_labels",
+"crs": { "type": "name", "properties": { "name": "urn:ogc:def:crs:EPSG::32632" } },
+"features": [
+{ "type": "Feature", "properties": { "name": "LPG" }, "geometry": { "type": "Point", "coordinates": [ 473348.319797927630134, 5717982.347012845799327 ] } },
+{ "type": "Feature", "properties": { "name": "LPT" }, "geometry": { "type": "Point", "coordinates": [ 473239.003643695730716, 5718152.056713944301009 ] } }
+]
+}

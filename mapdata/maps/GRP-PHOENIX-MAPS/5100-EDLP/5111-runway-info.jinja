@@ -6,8 +6,8 @@ FOLDER:Runway Info
 COLOR:tora-label
 ZOOM:500
 TEXTALIGN:RC
-{{ data.edlp_layout['layout']['TORA']['24 B'] | to_text('1240') }}
-{{ data.edlp_layout['layout']['TORA']['24 A'] | to_text('2180') }}
+{{ data.edlp_kml['layout']['tora']['24_B'] | to_text('1240') }}
+{{ data.edlp_kml['layout']['tora']['24_A'] | to_text('2180') }}
 
 MAP:TORA 06
 AIRPORT:EDLP
@@ -15,21 +15,23 @@ FOLDER:Runway Info
 COLOR:tora-label
 ZOOM:500
 TEXTALIGN:LC
-{{ data.edlp_layout['layout']['TORA']['06 C'] | to_text('1610') }}
-{{ data.edlp_layout['layout']['TORA']['06 D'] | to_text('2180') }}
+{{ data.edlp_kml['layout']['tora']['06_C'] | to_text('1610') }}
+{{ data.edlp_kml['layout']['tora']['06_D'] | to_text('2180') }}
 
 MAP:Runway Designators
 AIRPORT:EDLP
 FOLDER:Runway Info
 ACTIVE:1
-{{ data.edlp_layout['layout']['Markings']['24'] | to_multipoly('24', 'layout-runway-marking') }}
-{{ data.edlp_layout['layout']['Markings']['06'] | to_multipoly('06', 'layout-runway-marking') }}
+{% for uuid, geom in data.edlp_kml['layout']['markings']['runways'].items() %}
+{{- geom | to_poly('', 'layout-runway-marking') }}
+{% endfor %}
 
 MAP:Runway Markings
 AIRPORT:EDLP
 FOLDER:Runway Info
-{{ data.edlp_layout['layout']['Markings']['Runway'] | to_multipoly('', 'layout-runway') }}
-{% for marking, geom in data.edlp['RunwayMarking'].items() %}
-{{- geom | to_poly(marking, 'layout-runway-marking') }}
+{% for uuid, geom in data.edlp_aixm['RunwayMarking'].items() %}
+{{- geom | to_poly('', 'layout-runway-marking') }}
 {% endfor %}
-
+{% for uuid, geom in data.edlp_kml['layout']['markings']['poly'].items() %}
+{{- geom | to_poly('', 'layout-runway') }}
+{% endfor %}
