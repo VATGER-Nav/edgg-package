@@ -1,11 +1,11 @@
 {
 "type": "FeatureCollection",
-"name": "TORA",
+"name": "tora",
 "crs": { "type": "name", "properties": { "name": "urn:ogc:def:crs:EPSG::32632" } },
 "features": [
-{ "type": "Feature", "properties": { "name": "06 B" }, "geometry": { "type": "Point", "coordinates": [ 403315.616327711206395, 5708114.760121367871761 ] } },
-{ "type": "Feature", "properties": { "name": "24 C" }, "geometry": { "type": "Point", "coordinates": [ 404443.069423023436684, 5708725.498460941947997 ] } },
-{ "type": "Feature", "properties": { "name": "06 A" }, "geometry": { "type": "Point", "coordinates": [ 403063.42255106108496, 5707977.810651484876871 ] } },
-{ "type": "Feature", "properties": { "name": "24 D" }, "geometry": { "type": "Point", "coordinates": [ 404711.336384432157502, 5708870.64648678060621 ] } }
+{ "type": "Feature", "properties": { "name": "06_B" }, "geometry": { "type": "Point", "coordinates": [ 403315.616327711206395, 5708114.760121367871761 ] } },
+{ "type": "Feature", "properties": { "name": "24_C" }, "geometry": { "type": "Point", "coordinates": [ 404443.069423023436684, 5708725.498460941947997 ] } },
+{ "type": "Feature", "properties": { "name": "06_A" }, "geometry": { "type": "Point", "coordinates": [ 403063.42255106108496, 5707977.810651484876871 ] } },
+{ "type": "Feature", "properties": { "name": "24_D" }, "geometry": { "type": "Point", "coordinates": [ 404711.336384432157502, 5708870.64648678060621 ] } }
 ]
 }

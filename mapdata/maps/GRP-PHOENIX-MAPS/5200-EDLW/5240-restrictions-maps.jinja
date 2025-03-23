@@ -4,22 +4,76 @@ MAP:Restrictions
 AIRPORT:EDLW
 FOLDER:Restrictions
 ZOOM:600
-COORDTYPE:OTHER:REGION:/
+
 // B
 COLOR:restrictions-AB
-{{ data.edlw_layout['layout']['Restrictions']['B'] | to_poly('') }}
+STYLE:SOLID:4
+{{ data.edlw_kml['layout']['restrictions']['line']['B'] | to_line('') -}}
 TEXTALIGN:RC
-{{ data.edlw_layout['layout']['Restrictions']['B_'] | to_text('Max MTOW 20t') }}
+{{ data.edlw_kml['layout']['restrictions']['labels']['B'] | to_text('Max MTOW 20t') }}
 
-// L, K
+// K
+COLOR:restrictions-AB
+STYLE:SOLID:4
+{{ data.edlw_kml['layout']['restrictions']['line']['K'] | to_line('') -}}
+
+// L
 COLOR:restrictions-C
-{{ data.edlw_layout['layout']['Restrictions']['L K'] | to_poly('') }}
+STYLE:SOLID:4
+{{ data.edlw_kml['layout']['restrictions']['line']['L'] | to_line('') -}}
+COORDTYPE:OTHER:REGION:/
+STYLE:SOLID:1
+{{ data.edlw_kml['layout']['restrictions']['poly']['L'] | to_poly('') }}
+
+// Restriction Stands
 TEXTALIGN:CC
-{{ data.edlw_layout['layout']['Restrictions']['L K_'] | to_text('Max code C') }}
+FONTSIZE:=:9
+COLOR:restrictions-AB
+{% for desig in
+[
+    'B2',
+    'B3',
+    'B4',
+    'B5',
+    'B6',
+] %}
+{{- data.edlw_kml['layout']['restrictions']['stands'][desig] | to_symbol('STAND') }}
+{% endfor %}
+COLOR:restrictions-C
+{% for desig in
+[
+    '0',
+    '1',
+    '2',
+    '3',
+    '5',
+    '6',
+    '7',
+    '8',
+    '9',
+    '10',
+    '11',
+    '12',
+] %}
+{{- data.edlw_kml['layout']['restrictions']['stands'][desig] | to_symbol('STAND') }}
+{% endfor %}
+COLOR:restrictions-D
+{% for desig in ['4'] %}
+{{- data.edlw_kml['layout']['restrictions']['stands'][desig] | to_symbol('STAND') }}
+{% endfor %}
 
 // Reference
 COLOR:layout-label-stand
-TEXTALIGN:CT
-{{ data.edlw_layout['layout']['Restrictions']['Ref'] | to_text('Reference:0:12') }}
-{{ data.edlw_layout['layout']['Restrictions']['Ref'] | to_text('Code C   - Wingspan < 36m (A321/B739):0:24') }}
-{{ data.edlw_layout['layout']['Restrictions']['Ref'] | to_text('MTOW 20t - Aircraft up to ATR-42     :0:36') }}
+FONTSIZE:=:12
+{{ data.edlw_kml['layout']['restrictions']['labels']['reference'] | to_text('Reference  ') }}
+{{ data.edlw_kml['layout']['restrictions']['labels']['reference'] | to_text('MTOW 20t - up to D-Bxxx :0:15') }}
+{{ data.edlw_kml['layout']['restrictions']['labels']['reference'] | to_text('Code B < 24m (CRJ2/C700):0:30') }}
+{{ data.edlw_kml['layout']['restrictions']['labels']['reference'] | to_text('Code C < 36m (A321/B739):0:45') }}
+{{ data.edlw_kml['layout']['restrictions']['labels']['reference'] | to_text('Code D < 52m (A310/B763):0:60') }}
+FONTSIZE:=:70
+COLOR:restrictions-AB
+{{ data.edlw_kml['layout']['restrictions']['labels']['reference'] | to_text('.:-95:-24') }}
+COLOR:restrictions-C
+{{ data.edlw_kml['layout']['restrictions']['labels']['reference'] | to_text('.:-95:-9') }}
+COLOR:restrictions-D
+{{ data.edlw_kml['layout']['restrictions']['labels']['reference'] | to_text('.:-95:6') }}
