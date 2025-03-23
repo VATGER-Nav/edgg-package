@@ -161,7 +161,7 @@ ACTIVE:1
     '6df47241-d5e0-9fa2-e053-0100007fcd59',
     '6e979262-cae4-be43-e053-0100007f2647',
     '6e979262-cae5-be43-e053-0100007f2647',
-    ] %}
+] %}
 {{- data.edlp_aixm['VerticalStructure'][uuid] | simplify(default) | to_poly(uuid, 'layout-building') }}
 {% endfor %}
 

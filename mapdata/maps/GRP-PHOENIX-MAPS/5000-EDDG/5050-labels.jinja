@@ -9,8 +9,8 @@ ZOOM:400
 {% endfor %}
 FONTSIZE:=:10
 COLOR:layout-label-taxiway
-{% for taxiway, geom in data.eddg_kml['layout']['labels']['taxiways'].items() %}
-{{- geom | to_text(taxiway) }}
+{% for desig, geom in data.eddg_kml['layout']['labels']['taxiways'].items() %}
+{{- geom | to_text(desig) }}
 {% endfor %}
 {{ data.eddg_kml['layout']['labels']['Glider Area'] | to_text('Glider Area') }}
 {{ data.eddg_kml['layout']['labels']['taxiways']['A1'] | to_text('Run-up:0:15') }}
@@ -23,8 +23,8 @@ ACTIVE:1
 ZOOM:600
 FONTSIZE:=:9
 COLOR:layout-label-stand
-{% for stand, geom in data.eddg_kml['layout']['labels']['stands'].items() %}
-{{- geom | to_text(stand) }}
+{% for desig, geom in data.eddg_kml['layout']['labels']['stands'].items() %}
+{{- geom | to_text(desig) }}
 {% endfor %}
 
 MAP:Aprons
