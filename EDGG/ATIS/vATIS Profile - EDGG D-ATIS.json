@@ -2,6 +2,8 @@
   "version": 3,
   "name": "EDGG D-ATIS",
   "id": "5f41e667-a9e7-4223-83e2-9449f64de100",
+  "updateUrl": "https://raw.githubusercontent.com/VATGER-Nav/edgg-package/refs/heads/main/EDGG/ATIS/vATIS%20Profile%20-%20EDGG%20D-ATIS.json",
+  "updateSerial": 2025032800,
   "stations": [
     {
       "id": "0233ea9c-bd5c-481a-afd2-88387a5dfd4f",
