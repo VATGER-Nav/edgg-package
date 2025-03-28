@@ -2,6 +2,8 @@ name: Update Serial
 
 on:
   push:
+    branches:
+      - "*"
     paths:
       - 'EDGG/ATIS/vATIS Profile - EDGG D-ATIS.json'
       
