@@ -3,48 +3,51 @@
 // ------------------------------------------------------------------
 
 // -------------------------- Ground Layout -------------------------
-{% set default = 0.000005 %}
-MAP:Perimeter
-AIRPORT:EDFM
-FOLDER:Airport Layout
-//ACTIVE:1
-{{ data.edfm_layout['layout']['Base']['Base'] | to_poly('Base', 'layout-base') }}
+{%- set default = 0.000005 %}
 
 MAP:Apron Area
 AIRPORT:EDFM
 FOLDER:Airport Layout
 ACTIVE:1
-{{ data.edfm_layout['layout']['Apron']['Apron'] | to_multipoly('', 'layout-apron') }}
+{% for uuid, geom in data.edfm_kml['layout']['aprons'].items() %}
+{{- geom | to_poly('', 'layout-apron') }}
+{% endfor %}
 
 MAP:Parking Area
 AIRPORT:EDFM
 FOLDER:Airport Layout
 ACTIVE:1
 COLOR:layout-taxiway
-{{ data.edfm_layout['layout']['Markings']['Parking'] | to_multiline('Parking Area') }}
+{% for uuid, geom in data.edfm_kml['layout']['markings']['parking'].items() %}
+{{- geom | to_line('') -}}
+{% endfor %}
 STYLE:DOT:1
-{{ data.edfm_layout['layout']['Markings']['Parking Area'] | to_line('Parking Area Grass') }}
+{{ data.edfm_kml['layout']['markings']['grass']['parking'] | to_line('Parking Area Grass') -}}
 
 MAP:Roads
 AIRPORT:EDFM
 FOLDER:Airport Layout
 COLOR:layout-taxiway
-{{ data.edfm_layout['layout']['Roads']['Roads'] | to_multiline('Roads') }}
+{% for uuid, geom in data.edfm_kml['layout']['roads'].items() %}
+{{- geom | simplify(default) | to_line('') -}}
+{% endfor %}
 
 MAP:Taxiway Movement Area
 AIRPORT:EDFM
 FOLDER:Airport Layout
 ACTIVE:1
-{{ data.edfm_layout['layout']['Taxiways']['Taxiways'] | to_multipoly('', 'layout-taxiway') }}
+{% for uuid, geom in data.edfm_kml['layout']['taxiways'].items() %}
+{{- geom | to_poly('', 'layout-taxiway') }}
+{% endfor %}
 COLOR:layout-taxiway
 STYLE:DOT:1
-{{ data.edfm_layout['layout']['Taxiways']['G'] | to_multiline('G') }}
+{{ data.edfm_kml['layout']['markings']['grass']['G'] | to_line('G Grass') -}}
 
 MAP:Runway
 AIRPORT:EDFM
 FOLDER:Airport Layout
 ACTIVE:1
-{{ data.edfm_layout['layout']['Runways']['27/09'] | to_poly('Runway 27/09', 'layout-runway') }}
+{{ data.edfm_kml['layout']['runways']['09-27'] | to_poly('Runway 09/27', 'layout-runway') }}
 
 MAP:Grass Runway
 AIRPORT:EDFM
@@ -52,31 +55,52 @@ FOLDER:Airport Layout
 ACTIVE:1
 COLOR:layout-taxiway
 STYLE:DOT:1
-{{ data.edfm_layout['layout']['Runways']['Grass'] | to_line('Grass Runway') }}
+{{ data.edfm_kml['layout']['runways']['grass'] | to_line('Grass Runway') }}
 ZOOM:400
 FONTSIZE:=:11
 COLOR:layout-label-stand
-{{ data.edfm_layout['layout']['Runways']['Grass_'] | to_text('Grass Runway') }}
+{{ data.edfm_kml['layout']['labels']['Grass Runway'] | to_text('Grass Runway') }}
 
 MAP:Leadin Lines
 AIRPORT:EDFM
 FOLDER:Airport Layout
 ACTIVE:1
 COLOR:layout-taxiline-grey
-{{ data.edfm_layout['layout']['Markings']['Leadin Lines'] | to_multiline('') }}
+{% for uuid, geom in data.edfm_kml['layout']['markings']['leadin_solid'].items() %}
+{{- geom | to_line('') -}}
+{% endfor %}
 
 MAP:Taxi Lanes
 AIRPORT:EDFM
 FOLDER:Airport Layout
 ACTIVE:1
 COLOR:layout-taxiline-yellow
-{{ data.edfm_layout['layout']['Markings']['Taxilanes'] | to_multiline('') }}
+{% for uuid, geom in data.edfm_kml['layout']['markings']['taxilanes'].items() %}
+{{- geom | to_line('') -}}
+{% endfor %}
+
+MAP:Terrain
+AIRPORT:EDFM
+FOLDER:Airport Layout
+ACTIVE:1
+COLOR:layout-building
+{% for uuid, geom in data.edfm_kml['layout']['terrain'].items() %}
+{{- geom | to_line('') -}}
+{% endfor %}
 
 MAP:Buildings
 AIRPORT:EDFM
 FOLDER:Airport Layout
 ACTIVE:1
-{{ data.edfm_layout['layout']['Buildings']['Buildings'] | to_multipoly('', 'layout-building') }}
-COLOR:layout-building
-{{ data.edfm_layout['layout']['Fence']['Fence'] | to_multiline('Fence') }}
+{% for uuid, geom in data.edfm_kml['layout']['buildings'].items() %}
+{{- geom | to_poly('', 'layout-building') }}
+{% endfor %}
 
+MAP:Fence
+AIRPORT:EDFM
+FOLDER:Airport Layout
+ACTIVE:1
+COLOR:layout-building
+{% for uuid, geom in data.edfm_kml['layout']['fence'].items() %}
+{{- geom | to_line('') -}}
+{% endfor %}
