@@ -1,6 +1,6 @@
 {
 "type": "FeatureCollection",
-"name": "Labels Taxiways",
+"name": "labels_taxiways",
 "crs": { "type": "name", "properties": { "name": "urn:ogc:def:crs:EPSG::32632" } },
 "features": [
 { "type": "Feature", "properties": { "name": "B" }, "geometry": { "type": "Point", "coordinates": [ 412639.671844160358887, 5356593.074143937788904 ] } },

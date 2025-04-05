@@ -3,61 +3,72 @@
 // ------------------------------------------------------------------
 
 // -------------------------- Ground Layout -------------------------
-{% set default = 0.000005 %}
-MAP:Perimeter
-AIRPORT:EDTL
-FOLDER:Airport Layout
-//ACTIVE:1
-{{ data.edtl_layout['layout']['Base']['Base'] | to_poly('Base', 'layout-base') }}
+{%- set default = 0.000005 %}
 
 MAP:Apron Area
 AIRPORT:EDTL
 FOLDER:Airport Layout
 ACTIVE:1
-{{ data.edtl_layout['layout']['Apron']['Apron'] | to_multipoly('', 'layout-apron') }}
+{% for uuid, geom in data.edtl_kml['layout']['aprons'].items() %}
+{{- geom | to_poly('', 'layout-apron') }}
+{% endfor %}
+{{ data.edtl_kml['layout']['runways']['rwyBlastpad03'] | to_poly('','layout-apron') }}
+{{ data.edtl_kml['layout']['runways']['rwyBlastpad21'] | to_poly('','layout-apron') }}
 
 MAP:Roads
 AIRPORT:EDTL
 FOLDER:Airport Layout
 COLOR:layout-taxiway
-{{ data.edtl_layout['layout']['Roads']['Roads'] | to_multiline('Roads') }}
+{% for uuid, geom in data.edtl_kml['layout']['roads'].items() %}
+{{- geom | simplify(default) | to_line('') -}}
+{% endfor %}
 
 MAP:Taxiway Movement Area
 AIRPORT:EDTL
 FOLDER:Airport Layout
 ACTIVE:1
-{{ data.edtl_layout['layout']['Taxiways']['Taxiways'] | to_poly('', 'layout-taxiway') }}
+{% for uuid, geom in data.edtl_kml['layout']['taxiways'].items() %}
+{{- geom | to_poly('', 'layout-taxiway') }}
+{% endfor %}
 
 MAP:Runway
 AIRPORT:EDTL
 FOLDER:Airport Layout
 ACTIVE:1
-{{ data.edtl_layout['layout']['Runway']['21/03'] | to_poly('Runway 21/03', 'layout-runway') }}
+
+{{ data.edtl_kml['layout']['runways']['03-21'] | to_poly('Runway 03/21', 'layout-runway') }}
 
 MAP:Leadin Lines
 AIRPORT:EDTL
 FOLDER:Airport Layout
 ACTIVE:1
 COLOR:layout-taxiline-grey
-{{ data.edtl_layout['layout']['Markings']['Leadin Lines'] | to_multiline('') }}
+{% for uuid, geom in data.edtl_kml['layout']['markings']['leadin_solid'].items() %}
+{{- geom | to_line('') -}}
+{% endfor %}
 
 MAP:Taxi Lanes
 AIRPORT:EDTL
 FOLDER:Airport Layout
 ACTIVE:1
 COLOR:layout-taxiline-yellow
-{{ data.edtl_layout['layout']['Markings']['Taxilanes'] | to_multiline('') }}
+{% for uuid, geom in data.edtl_kml['layout']['markings']['taxilanes'].items() %}
+{{- geom | to_line('') -}}
+{% endfor %}
 
 MAP:Buildings
 AIRPORT:EDTL
 FOLDER:Airport Layout
 ACTIVE:1
-{{ data.edtl_layout['layout']['Buildings']['Buildings'] | to_multipoly('', 'layout-building') }}
+{% for uuid, geom in data.edtl_kml['layout']['buildings'].items() %}
+{{- geom | to_poly('', 'layout-building') }}
+{% endfor %}
 
 MAP:Fence
 AIRPORT:EDTL
 FOLDER:Airport Layout
 ACTIVE:1
 COLOR:layout-building
-{{ data.edtl_layout['layout']['Fence']['Fence'] | to_multiline('Fence') }}
-
+{% for uuid, geom in data.edtl_kml['layout']['fence'].items() %}
+{{- geom | to_line('') -}}
+{% endfor %}

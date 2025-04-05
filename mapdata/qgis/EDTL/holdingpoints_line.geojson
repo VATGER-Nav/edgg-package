@@ -1,6 +1,6 @@
 {
 "type": "FeatureCollection",
-"name": "Stopbars L",
+"name": "holdingpoints_line",
 "crs": { "type": "name", "properties": { "name": "urn:ogc:def:crs:EPSG::32632" } },
 "features": [
 { "type": "Feature", "properties": { "name": "B" }, "geometry": { "type": "LineString", "coordinates": [ [ 412522.162409945332911, 5356651.050945620983839 ], [ 412542.202866133942734, 5356681.473780735395849 ] ] } },

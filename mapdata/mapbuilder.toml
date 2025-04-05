@@ -165,7 +165,7 @@ source = "kml/edfm.kml"
 type = "kml"
 source = "kml/edsb.kml"
 
-[data.edtl_layout]
+[data.edtl_kml]
 type = "kml"
 source = "kml/edtl.kml"
 
