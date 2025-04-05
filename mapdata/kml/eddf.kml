@@ -2,6 +2,7 @@
 <kml xmlns="http://www.opengis.net/kml/2.2" xmlns:gx="http://www.google.com/kml/ext/2.2" xmlns:kml="http://www.opengis.net/kml/2.2" xmlns:atom="http://www.w3.org/2005/Atom">
 <Folder>
 	<name>layout</name>
+	<visibility>0</visibility>
 	<open>1</open>
 	<Folder>
 		<name>aprons</name>
@@ -5595,8 +5596,10 @@
 	</Folder>
 	<Folder>
 		<name>taxiways</name>
+		<visibility>0</visibility>
 		<Placemark>
 			<name>01955300-80a0-7004-927b-f273dea10bc8</name>
+			<visibility>0</visibility>
 			<Style>
 				<LineStyle>
 					<color>ff0000ff</color>
@@ -5617,6 +5620,7 @@
 		</Placemark>
 		<Placemark>
 			<name>01955300-80a0-74d8-bcbd-2f52fedc1668</name>
+			<visibility>0</visibility>
 			<Style>
 				<LineStyle>
 					<color>ff0000ff</color>
@@ -5637,6 +5641,7 @@
 		</Placemark>
 		<Placemark>
 			<name>01955300-80a0-7bdf-9ae1-4d1719a9785d</name>
+			<visibility>0</visibility>
 			<Style>
 				<LineStyle>
 					<color>ff0000ff</color>
@@ -5657,6 +5662,7 @@
 		</Placemark>
 		<Placemark>
 			<name>01955300-80a0-72d1-b543-9ea57a252540</name>
+			<visibility>0</visibility>
 			<Style>
 				<LineStyle>
 					<color>ff0000ff</color>
@@ -5677,6 +5683,7 @@
 		</Placemark>
 		<Placemark>
 			<name>01955300-80a0-74e6-bd4d-797baa823671</name>
+			<visibility>0</visibility>
 			<Style>
 				<LineStyle>
 					<color>ff0000ff</color>
@@ -5697,6 +5704,7 @@
 		</Placemark>
 		<Placemark>
 			<name>01955300-80a0-7b2c-962a-07864977d196</name>
+			<visibility>0</visibility>
 			<Style>
 				<LineStyle>
 					<color>ff0000ff</color>
@@ -5717,6 +5725,7 @@
 		</Placemark>
 		<Placemark>
 			<name>01955300-80a0-7095-b5f0-52fd0d6b2894</name>
+			<visibility>0</visibility>
 			<Style>
 				<LineStyle>
 					<color>ff0000ff</color>
@@ -5737,6 +5746,7 @@
 		</Placemark>
 		<Placemark>
 			<name>01955300-80a0-795c-9a75-c45d348039dc</name>
+			<visibility>0</visibility>
 			<Style>
 				<LineStyle>
 					<color>ff0000ff</color>
@@ -5757,6 +5767,7 @@
 		</Placemark>
 		<Placemark>
 			<name>01955300-80a0-793f-897f-3e9f0ade7b18</name>
+			<visibility>0</visibility>
 			<Style>
 				<LineStyle>
 					<color>ff0000ff</color>
@@ -5777,6 +5788,7 @@
 		</Placemark>
 		<Placemark>
 			<name>01955300-80a0-7687-8c36-62ce497248c7</name>
+			<visibility>0</visibility>
 			<Style>
 				<LineStyle>
 					<color>ff0000ff</color>
@@ -5797,6 +5809,7 @@
 		</Placemark>
 		<Placemark>
 			<name>01955300-80a1-7da1-bfb5-c2d113576fa3</name>
+			<visibility>0</visibility>
 			<Style>
 				<LineStyle>
 					<color>ff0000ff</color>
@@ -5817,6 +5830,7 @@
 		</Placemark>
 		<Placemark>
 			<name>01955300-80a1-7e32-a062-675878944ff0</name>
+			<visibility>0</visibility>
 			<Style>
 				<LineStyle>
 					<color>ff0000ff</color>
@@ -5837,6 +5851,7 @@
 		</Placemark>
 		<Placemark>
 			<name>01955300-80a1-7b9c-a00b-72478b8949cb</name>
+			<visibility>0</visibility>
 			<Style>
 				<LineStyle>
 					<color>ff0000ff</color>
@@ -5857,6 +5872,7 @@
 		</Placemark>
 		<Placemark>
 			<name>01955300-80a1-7c97-aa64-595e0a851463</name>
+			<visibility>0</visibility>
 			<Style>
 				<LineStyle>
 					<color>ff0000ff</color>
@@ -5877,6 +5893,7 @@
 		</Placemark>
 		<Placemark>
 			<name>01955300-80a1-75cc-a6b3-c6f8928ad1c1</name>
+			<visibility>0</visibility>
 			<Style>
 				<LineStyle>
 					<color>ff0000ff</color>
@@ -5897,6 +5914,7 @@
 		</Placemark>
 		<Placemark>
 			<name>01955300-80a1-7ae0-8d5b-201166093cd5</name>
+			<visibility>0</visibility>
 			<Style>
 				<LineStyle>
 					<color>ff0000ff</color>
@@ -5917,6 +5935,7 @@
 		</Placemark>
 		<Placemark>
 			<name>01955300-80a1-7c9b-b0f0-839db7c9552e</name>
+			<visibility>0</visibility>
 			<Style>
 				<LineStyle>
 					<color>ff0000ff</color>
@@ -5944,6 +5963,7 @@
 		</Placemark>
 		<Placemark>
 			<name>01955300-80a1-7d28-9f18-56b8ce721fc6</name>
+			<visibility>0</visibility>
 			<Style>
 				<LineStyle>
 					<color>ff0000ff</color>
@@ -5964,6 +5984,7 @@
 		</Placemark>
 		<Placemark>
 			<name>01955300-80a1-7d3c-aaaa-e411b7bf7c42</name>
+			<visibility>0</visibility>
 			<Style>
 				<LineStyle>
 					<color>ff0000ff</color>
@@ -5984,6 +6005,7 @@
 		</Placemark>
 		<Placemark>
 			<name>01955300-80a1-743d-a4a7-1264155ff17f</name>
+			<visibility>0</visibility>
 			<Style>
 				<LineStyle>
 					<color>ff0000ff</color>
@@ -6004,6 +6026,7 @@
 		</Placemark>
 		<Placemark>
 			<name>01955300-80a1-7fb6-8105-b6e6af5951db</name>
+			<visibility>0</visibility>
 			<Style>
 				<LineStyle>
 					<color>ff0000ff</color>
@@ -6024,6 +6047,7 @@
 		</Placemark>
 		<Placemark>
 			<name>01955300-80a1-7b6f-8791-f71d6eec8c7b</name>
+			<visibility>0</visibility>
 			<Style>
 				<LineStyle>
 					<color>ff0000ff</color>
@@ -6044,6 +6068,7 @@
 		</Placemark>
 		<Placemark>
 			<name>01955300-80a1-7b82-be85-ce91c91928a3</name>
+			<visibility>0</visibility>
 			<Style>
 				<LineStyle>
 					<color>ff0000ff</color>
@@ -6064,6 +6089,7 @@
 		</Placemark>
 		<Placemark>
 			<name>01955300-80a1-76cd-a69c-0dad3706cc0e</name>
+			<visibility>0</visibility>
 			<Style>
 				<LineStyle>
 					<color>ff0000ff</color>
@@ -6084,6 +6110,7 @@
 		</Placemark>
 		<Placemark>
 			<name>01955300-80a1-7e44-9752-f5debb707d49</name>
+			<visibility>0</visibility>
 			<Style>
 				<LineStyle>
 					<color>ff0000ff</color>
@@ -6104,6 +6131,7 @@
 		</Placemark>
 		<Placemark>
 			<name>01955300-80a1-71d0-be1a-ba73be81c0e6</name>
+			<visibility>0</visibility>
 			<Style>
 				<LineStyle>
 					<color>ff0000ff</color>
@@ -6124,6 +6152,7 @@
 		</Placemark>
 		<Placemark>
 			<name>01955300-80a1-7911-9395-5db31b6709c2</name>
+			<visibility>0</visibility>
 			<Style>
 				<LineStyle>
 					<color>ff0000ff</color>
@@ -6144,6 +6173,7 @@
 		</Placemark>
 		<Placemark>
 			<name>01955300-80a1-717b-a338-c300f460b5f8</name>
+			<visibility>0</visibility>
 			<Style>
 				<LineStyle>
 					<color>ff0000ff</color>
@@ -6164,6 +6194,7 @@
 		</Placemark>
 		<Placemark>
 			<name>01955300-80a1-7726-a329-778ba15e1dd7</name>
+			<visibility>0</visibility>
 			<Style>
 				<LineStyle>
 					<color>ff0000ff</color>
@@ -6184,6 +6215,7 @@
 		</Placemark>
 		<Placemark>
 			<name>01955300-80a1-77b4-a31b-fb1939cf1397</name>
+			<visibility>0</visibility>
 			<Style>
 				<LineStyle>
 					<color>ff0000ff</color>
@@ -6204,6 +6236,7 @@
 		</Placemark>
 		<Placemark>
 			<name>01955300-80a1-73e0-a4e9-c1b3be5f36d9</name>
+			<visibility>0</visibility>
 			<Style>
 				<LineStyle>
 					<color>ff0000ff</color>
@@ -6224,6 +6257,7 @@
 		</Placemark>
 		<Placemark>
 			<name>01955300-80a1-7c82-976c-7c119202ec5a</name>
+			<visibility>0</visibility>
 			<Style>
 				<LineStyle>
 					<color>ff0000ff</color>
@@ -6251,6 +6285,7 @@
 		</Placemark>
 		<Placemark>
 			<name>01955300-80a1-7c1e-9762-e83f8bce88da</name>
+			<visibility>0</visibility>
 			<Style>
 				<LineStyle>
 					<color>ff0000ff</color>
@@ -6271,6 +6306,7 @@
 		</Placemark>
 		<Placemark>
 			<name>01955300-80a1-70e2-b2f3-e7122ddd532c</name>
+			<visibility>0</visibility>
 			<Style>
 				<LineStyle>
 					<color>ff0000ff</color>
@@ -6291,6 +6327,7 @@
 		</Placemark>
 		<Placemark>
 			<name>01955300-80a1-71c5-bae2-afc51d55d213</name>
+			<visibility>0</visibility>
 			<Style>
 				<LineStyle>
 					<color>ff0000ff</color>
@@ -6311,6 +6348,7 @@
 		</Placemark>
 		<Placemark>
 			<name>01955300-80a1-7eff-b3dc-5a905135aa3d</name>
+			<visibility>0</visibility>
 			<Style>
 				<LineStyle>
 					<color>ff0000ff</color>
@@ -6331,6 +6369,7 @@
 		</Placemark>
 		<Placemark>
 			<name>0196075e-3d9c-78c8-b43c-3cc4124e9a46</name>
+			<visibility>0</visibility>
 			<Style>
 				<LineStyle>
 					<color>ff0000ff</color>
@@ -6358,6 +6397,7 @@
 		</Placemark>
 		<Placemark>
 			<name>01960778-cf4b-70c8-9e0d-b162616c9211</name>
+			<visibility>0</visibility>
 			<Style>
 				<LineStyle>
 					<color>ff0000ff</color>
@@ -6378,6 +6418,7 @@
 		</Placemark>
 		<Placemark>
 			<name>01960778-cf4b-7568-a806-499b0b85198d</name>
+			<visibility>0</visibility>
 			<Style>
 				<LineStyle>
 					<color>ff0000ff</color>
@@ -6398,6 +6439,7 @@
 		</Placemark>
 		<Placemark>
 			<name>01960778-cf4b-7974-a0f2-fa1b6a682c27</name>
+			<visibility>0</visibility>
 			<Style>
 				<LineStyle>
 					<color>ff0000ff</color>
@@ -38546,7 +38588,6 @@
 	</Folder>
 	<Folder>
 		<name>restrictions</name>
-		<visibility>0</visibility>
 		<Folder>
 			<name>poly</name>
 			<visibility>0</visibility>
@@ -39078,10 +39119,8 @@
 		</Folder>
 		<Folder>
 			<name>line</name>
-			<visibility>0</visibility>
 			<Placemark>
 				<name>N8o_a</name>
-				<visibility>0</visibility>
 				<Style>
 					<LineStyle>
 						<color>ff0000ff</color>
@@ -39098,7 +39137,6 @@
 			</Placemark>
 			<Placemark>
 				<name>N8o_c</name>
-				<visibility>0</visibility>
 				<Style>
 					<LineStyle>
 						<color>ff0000ff</color>
@@ -39115,7 +39153,6 @@
 			</Placemark>
 			<Placemark>
 				<name>N8o_b</name>
-				<visibility>0</visibility>
 				<Style>
 					<LineStyle>
 						<color>ff0000ff</color>
@@ -39132,7 +39169,6 @@
 			</Placemark>
 			<Placemark>
 				<name>No</name>
-				<visibility>0</visibility>
 				<Style>
 					<LineStyle>
 						<color>ff0000ff</color>
@@ -39149,7 +39185,6 @@
 			</Placemark>
 			<Placemark>
 				<name>L-North_a</name>
-				<visibility>0</visibility>
 				<Style>
 					<LineStyle>
 						<color>ff0000ff</color>
@@ -39160,13 +39195,12 @@
 				</Style>
 				<LineString>
 					<coordinates>
-						8.58728055685603,50.04773459331561,0 8.587171590086029,50.0477631691996,0 8.587025022784079,50.04777835207079,0 8.586913693940639,50.04777846785839,0 8.586761647349331,50.0477590828014,0 8.58662442318249,50.04772655816311,0 8.58070766545138,50.0463152064865,0 8.580540501221719,50.0462893913195,0 
+						8.587488430804839,50.0476365882558,0 8.587401449168659,50.047687288132,0 8.58728055685603,50.04773459331561,0 8.587171590086029,50.0477631691996,0 8.587025022784079,50.04777835207079,0 8.586913693940639,50.04777846785839,0 8.586761647349331,50.0477590828014,0 8.58662442318249,50.04772655816311,0 8.58070766545138,50.0463152064865,0 8.5805792284183,50.0462929735864,0 8.58042428625693,50.0462884933301,0 8.580311240906431,50.04630434415181,0 
 					</coordinates>
 				</LineString>
 			</Placemark>
 			<Placemark>
 				<name>L-North_b</name>
-				<visibility>0</visibility>
 				<Style>
 					<LineStyle>
 						<color>ff0000ff</color>
@@ -39183,7 +39217,6 @@
 			</Placemark>
 			<Placemark>
 				<name>N8b_a</name>
-				<visibility>0</visibility>
 				<Style>
 					<LineStyle>
 						<color>ff0000ff</color>
@@ -39200,7 +39233,6 @@
 			</Placemark>
 			<Placemark>
 				<name>N8b_b</name>
-				<visibility>0</visibility>
 				<Style>
 					<LineStyle>
 						<color>ff0000ff</color>
@@ -39217,7 +39249,6 @@
 			</Placemark>
 			<Placemark>
 				<name>N8b_c</name>
-				<visibility>0</visibility>
 				<Style>
 					<LineStyle>
 						<color>ff0000ff</color>
@@ -39234,7 +39265,6 @@
 			</Placemark>
 			<Placemark>
 				<name>L-North_c</name>
-				<visibility>0</visibility>
 				<Style>
 					<LineStyle>
 						<color>ff0000ff</color>
@@ -39251,7 +39281,6 @@
 			</Placemark>
 			<Placemark>
 				<name>Nb</name>
-				<visibility>0</visibility>
 				<Style>
 					<LineStyle>
 						<color>ff0000ff</color>
@@ -39268,7 +39297,6 @@
 			</Placemark>
 			<Placemark>
 				<name>N7o</name>
-				<visibility>0</visibility>
 				<Style>
 					<LineStyle>
 						<color>ff0000ff</color>
@@ -39285,7 +39313,6 @@
 			</Placemark>
 			<Placemark>
 				<name>N7b</name>
-				<visibility>0</visibility>
 				<Style>
 					<LineStyle>
 						<color>ff0000ff</color>
@@ -39302,7 +39329,6 @@
 			</Placemark>
 			<Placemark>
 				<name>N1</name>
-				<visibility>0</visibility>
 				<Style>
 					<LineStyle>
 						<color>ff0000ff</color>
@@ -39313,13 +39339,12 @@
 				</Style>
 				<LineString>
 					<coordinates>
-						8.58714733676643,50.04833049852291,0 8.58718277187749,50.0482439473948,0 8.58719039639926,50.04817681881801,0 8.587180187129929,50.04809931471829,0 8.58715079699383,50.0480241370868,0 8.58710172441674,50.0479542306325,0 8.5870563512192,50.04790895266251,0 8.58697981241081,50.04785165613409,0 8.586918326619671,50.0478178617573,0 8.58682951739433,50.04777985823191,0 8.58676271545877,50.04775933717921,0 
+						8.58689122943124,50.0478047107399,0 8.58697981241081,50.04785165613409,0 8.5870563512192,50.04790895266251,0 8.58710172441674,50.0479542306325,0 8.58715079699383,50.0480241370868,0 8.587180187129929,50.04809931471829,0 8.58719039639926,50.04817681881801,0 8.58718277187749,50.0482439473948,0 8.58714733676643,50.04833049852291,0 
 					</coordinates>
 				</LineString>
 			</Placemark>
 			<Placemark>
 				<name>S33</name>
-				<visibility>0</visibility>
 				<Style>
 					<LineStyle>
 						<color>ff0000ff</color>
@@ -39336,7 +39361,6 @@
 			</Placemark>
 			<Placemark>
 				<name>S5_1</name>
-				<visibility>0</visibility>
 				<Style>
 					<LineStyle>
 						<color>ff0000ff</color>
@@ -39353,7 +39377,6 @@
 			</Placemark>
 			<Placemark>
 				<name>M19</name>
-				<visibility>0</visibility>
 				<Style>
 					<LineStyle>
 						<color>ff0000ff</color>
@@ -39370,7 +39393,6 @@
 			</Placemark>
 			<Placemark>
 				<name>L_2</name>
-				<visibility>0</visibility>
 				<Style>
 					<LineStyle>
 						<color>ff0000ff</color>
@@ -39387,7 +39409,6 @@
 			</Placemark>
 			<Placemark>
 				<name>L_1</name>
-				<visibility>0</visibility>
 				<Style>
 					<LineStyle>
 						<color>ff0000ff</color>
@@ -39404,7 +39425,6 @@
 			</Placemark>
 			<Placemark>
 				<name>N4</name>
-				<visibility>0</visibility>
 				<Style>
 					<LineStyle>
 						<color>ff0000ff</color>
@@ -39421,7 +39441,6 @@
 			</Placemark>
 			<Placemark>
 				<name>L-North_d</name>
-				<visibility>0</visibility>
 				<Style>
 					<LineStyle>
 						<color>ff0000ff</color>
@@ -39432,13 +39451,12 @@
 				</Style>
 				<LineString>
 					<coordinates>
-						8.581484620033169,50.0465006047823,0 8.58142281366497,50.0464830667435,0 8.58134984761409,50.0464553640664,0 8.58127328344699,50.04641617043781,0 8.581101157283801,50.0462888456977,0 8.58120033705255,50.0463681430659,0 8.58079906629257,50.0460554979428,0 8.580725273833339,50.0459928815959,0 
+						8.581484620033169,50.0465006047823,0 8.58142281366497,50.0464830667435,0 8.58134984761409,50.0464553640664,0 8.58127328344699,50.04641617043781,0 8.581101157283801,50.0462888456977,0 8.58120033705255,50.0463681430659,0 8.58079906629257,50.0460554979428,0 8.58059147539346,50.04586876890421,0 
 					</coordinates>
 				</LineString>
 			</Placemark>
 			<Placemark>
 				<name>N6</name>
-				<visibility>0</visibility>
 				<Style>
 					<LineStyle>
 						<color>ff0000ff</color>
@@ -39455,7 +39473,6 @@
 			</Placemark>
 			<Placemark>
 				<name>N7_a</name>
-				<visibility>0</visibility>
 				<Style>
 					<LineStyle>
 						<color>ff0000ff</color>
@@ -39472,7 +39489,6 @@
 			</Placemark>
 			<Placemark>
 				<name>N8</name>
-				<visibility>0</visibility>
 				<Style>
 					<LineStyle>
 						<color>ff0000ff</color>
@@ -39489,7 +39505,6 @@
 			</Placemark>
 			<Placemark>
 				<name>N7_b</name>
-				<visibility>0</visibility>
 				<Style>
 					<LineStyle>
 						<color>ff0000ff</color>
@@ -39506,7 +39521,6 @@
 			</Placemark>
 			<Placemark>
 				<name>N7_c</name>
-				<visibility>0</visibility>
 				<Style>
 					<LineStyle>
 						<color>ff0000ff</color>
@@ -39523,7 +39537,6 @@
 			</Placemark>
 			<Placemark>
 				<name>N7_d</name>
-				<visibility>0</visibility>
 				<Style>
 					<LineStyle>
 						<color>ff0000ff</color>
@@ -39540,7 +39553,6 @@
 			</Placemark>
 			<Placemark>
 				<name>N7_e</name>
-				<visibility>0</visibility>
 				<Style>
 					<LineStyle>
 						<color>ff0000ff</color>
@@ -39557,7 +39569,6 @@
 			</Placemark>
 			<Placemark>
 				<name>N8o_d</name>
-				<visibility>0</visibility>
 				<Style>
 					<LineStyle>
 						<color>ff0000ff</color>
@@ -39574,7 +39585,6 @@
 			</Placemark>
 			<Placemark>
 				<name>L8_a</name>
-				<visibility>0</visibility>
 				<Style>
 					<LineStyle>
 						<color>ff0000ff</color>
@@ -39591,7 +39601,6 @@
 			</Placemark>
 			<Placemark>
 				<name>L8_b</name>
-				<visibility>0</visibility>
 				<Style>
 					<LineStyle>
 						<color>ff0000ff</color>
@@ -39608,7 +39617,6 @@
 			</Placemark>
 			<Placemark>
 				<name>N5_2</name>
-				<visibility>0</visibility>
 				<Style>
 					<LineStyle>
 						<color>ff0000ff</color>
@@ -39625,7 +39633,6 @@
 			</Placemark>
 			<Placemark>
 				<name>N5_1</name>
-				<visibility>0</visibility>
 				<Style>
 					<LineStyle>
 						<color>ff0000ff</color>
@@ -39642,7 +39649,6 @@
 			</Placemark>
 			<Placemark>
 				<name>N3</name>
-				<visibility>0</visibility>
 				<Style>
 					<LineStyle>
 						<color>ff0000ff</color>
@@ -39659,7 +39665,6 @@
 			</Placemark>
 			<Placemark>
 				<name>N11_2</name>
-				<visibility>0</visibility>
 				<Style>
 					<LineStyle>
 						<color>ff0000ff</color>
@@ -39676,7 +39681,6 @@
 			</Placemark>
 			<Placemark>
 				<name>N13</name>
-				<visibility>0</visibility>
 				<Style>
 					<LineStyle>
 						<color>ff0000ff</color>
@@ -39693,7 +39697,6 @@
 			</Placemark>
 			<Placemark>
 				<name>N14</name>
-				<visibility>0</visibility>
 				<Style>
 					<LineStyle>
 						<color>ff0000ff</color>
@@ -39710,7 +39713,6 @@
 			</Placemark>
 			<Placemark>
 				<name>L19</name>
-				<visibility>0</visibility>
 				<Style>
 					<LineStyle>
 						<color>ff0000ff</color>
@@ -39727,7 +39729,6 @@
 			</Placemark>
 			<Placemark>
 				<name>N-South</name>
-				<visibility>0</visibility>
 				<Style>
 					<LineStyle>
 						<color>ff0000ff</color>
@@ -39744,7 +39745,6 @@
 			</Placemark>
 			<Placemark>
 				<name>W</name>
-				<visibility>0</visibility>
 				<Style>
 					<LineStyle>
 						<color>ff0000ff</color>
@@ -39761,7 +39761,6 @@
 			</Placemark>
 			<Placemark>
 				<name>Y5</name>
-				<visibility>0</visibility>
 				<Style>
 					<LineStyle>
 						<color>ff0000ff</color>
@@ -39778,7 +39777,6 @@
 			</Placemark>
 			<Placemark>
 				<name>Y7_1</name>
-				<visibility>0</visibility>
 				<Style>
 					<LineStyle>
 						<color>ff0000ff</color>
@@ -39795,7 +39793,6 @@
 			</Placemark>
 			<Placemark>
 				<name>Y7_2</name>
-				<visibility>0</visibility>
 				<Style>
 					<LineStyle>
 						<color>ff0000ff</color>
@@ -39812,7 +39809,6 @@
 			</Placemark>
 			<Placemark>
 				<name>S11</name>
-				<visibility>0</visibility>
 				<Style>
 					<LineStyle>
 						<color>ff0000ff</color>
@@ -39829,7 +39825,6 @@
 			</Placemark>
 			<Placemark>
 				<name>S13_1</name>
-				<visibility>0</visibility>
 				<Style>
 					<LineStyle>
 						<color>ff0000ff</color>
@@ -39846,7 +39841,6 @@
 			</Placemark>
 			<Placemark>
 				<name>S13_2</name>
-				<visibility>0</visibility>
 				<Style>
 					<LineStyle>
 						<color>ff0000ff</color>
@@ -39863,7 +39857,6 @@
 			</Placemark>
 			<Placemark>
 				<name>S13_3a</name>
-				<visibility>0</visibility>
 				<Style>
 					<LineStyle>
 						<color>ff0000ff</color>
@@ -39880,7 +39873,6 @@
 			</Placemark>
 			<Placemark>
 				<name>S13_3b</name>
-				<visibility>0</visibility>
 				<Style>
 					<LineStyle>
 						<color>ff0000ff</color>
@@ -39897,7 +39889,6 @@
 			</Placemark>
 			<Placemark>
 				<name>S8</name>
-				<visibility>0</visibility>
 				<Style>
 					<LineStyle>
 						<color>ff0000ff</color>
@@ -39914,7 +39905,6 @@
 			</Placemark>
 			<Placemark>
 				<name>S9_a</name>
-				<visibility>0</visibility>
 				<Style>
 					<LineStyle>
 						<color>ff0000ff</color>
@@ -39931,7 +39921,6 @@
 			</Placemark>
 			<Placemark>
 				<name>S9_b</name>
-				<visibility>0</visibility>
 				<Style>
 					<LineStyle>
 						<color>ff0000ff</color>
@@ -39948,7 +39937,6 @@
 			</Placemark>
 			<Placemark>
 				<name>S9_c</name>
-				<visibility>0</visibility>
 				<Style>
 					<LineStyle>
 						<color>ff0000ff</color>
@@ -39965,7 +39953,6 @@
 			</Placemark>
 			<Placemark>
 				<name>S5_2a</name>
-				<visibility>0</visibility>
 				<Style>
 					<LineStyle>
 						<color>ff0000ff</color>
@@ -39982,7 +39969,6 @@
 			</Placemark>
 			<Placemark>
 				<name>S5_2b</name>
-				<visibility>0</visibility>
 				<Style>
 					<LineStyle>
 						<color>ff0000ff</color>
@@ -39999,7 +39985,6 @@
 			</Placemark>
 			<Placemark>
 				<name>S4</name>
-				<visibility>0</visibility>
 				<Style>
 					<LineStyle>
 						<color>ff0000ff</color>
@@ -40016,7 +40001,6 @@
 			</Placemark>
 			<Placemark>
 				<name>N11_1</name>
-				<visibility>0</visibility>
 				<Style>
 					<LineStyle>
 						<color>ff0000ff</color>
@@ -40028,6 +40012,73 @@
 				<LineString>
 					<coordinates>
 						8.54949773302476,50.0400210967113,0 8.54834777625079,50.0419827740638,0 8.54820613179408,50.04224957101259,0 8.54811365591368,50.0424462922557,0 8.54803119052464,50.0425845230826,0 8.547849321289259,50.0429007005659,0 8.54776271604756,50.0430512611636,0 8.54766264320693,50.0431738769682,0 
+					</coordinates>
+				</LineString>
+			</Placemark>
+		</Folder>
+		<Folder>
+			<name>dash</name>
+			<Placemark>
+				<name>66999a8d-N1</name>
+				<Style>
+					<LineStyle>
+						<color>ff0000ff</color>
+					</LineStyle>
+					<PolyStyle>
+						<fill>0</fill>
+					</PolyStyle>
+				</Style>
+				<LineString>
+					<coordinates>
+						8.586891077708289,50.047804566794,0 8.586977927460969,50.0478506571886,0 
+					</coordinates>
+				</LineString>
+			</Placemark>
+			<Placemark>
+				<name>f6dbdb2e-N1</name>
+				<Style>
+					<LineStyle>
+						<color>ff0000ff</color>
+					</LineStyle>
+					<PolyStyle>
+						<fill>0</fill>
+					</PolyStyle>
+				</Style>
+				<LineString>
+					<coordinates>
+						8.58705036805299,50.0479044737042,0 8.58710999291058,50.0479660095504,0 
+					</coordinates>
+				</LineString>
+			</Placemark>
+			<Placemark>
+				<name>a9dcbcd4-N1</name>
+				<Style>
+					<LineStyle>
+						<color>ff0000ff</color>
+					</LineStyle>
+					<PolyStyle>
+						<fill>0</fill>
+					</PolyStyle>
+				</Style>
+				<LineString>
+					<coordinates>
+						8.58715364362328,50.0480314185491,0 8.587180520409991,50.0481018448319,0 
+					</coordinates>
+				</LineString>
+			</Placemark>
+			<Placemark>
+				<name>d63bda10-N1</name>
+				<Style>
+					<LineStyle>
+						<color>ff0000ff</color>
+					</LineStyle>
+					<PolyStyle>
+						<fill>0</fill>
+					</PolyStyle>
+				</Style>
+				<LineString>
+					<coordinates>
+						8.58718986895496,50.0481728147083,0 8.58718277187749,50.0482439473948,0 8.58718226939102,50.0482451747326,0 
 					</coordinates>
 				</LineString>
 			</Placemark>
@@ -43751,7 +43802,7 @@
 				<name>N1</name>
 				<visibility>0</visibility>
 				<Point>
-					<coordinates>8.5869713888889,50.048004444444,0</coordinates>
+					<coordinates>8.587530111084209,50.0481433116303,0</coordinates>
 				</Point>
 			</Placemark>
 			<Placemark>
