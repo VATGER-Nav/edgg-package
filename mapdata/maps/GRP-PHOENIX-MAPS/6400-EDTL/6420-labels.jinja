@@ -5,10 +5,12 @@ AIRPORT:EDTL
 FOLDER:Labels
 ACTIVE:1
 ZOOM:400
-{{ data.edtl_layout['layout']['Labels']['Buffer'] | to_multipoly('', 'layout-taxiway') }}
+{% for uuid, geom in data.edtl_kml['layout']['labels']['buffer'].items() %}
+{{- geom | to_poly('', 'layout-taxiway') }}
+{% endfor %}
 FONTSIZE:=:10
 COLOR:layout-label-taxiway
-{% for taxiway, geom in data.edtl_layout['layout']['Labels']['Taxiways'].items() %}
+{% for taxiway, geom in data.edtl_kml['layout']['labels']['taxiways'].items() %}
 {{- geom | to_text(taxiway) }}
 {% endfor %}
 
@@ -19,4 +21,4 @@ ACTIVE:1
 ZOOM:500
 FONTSIZE:=:9
 COLOR:layout-label-stand
-{{data.edtl_layout['layout']['Labels']['Parking Area'] | to_text('Parking Area') }}
+{{data.edtl_kml['layout']['labels']['Parking Area'] | to_text('Parking Area') }}

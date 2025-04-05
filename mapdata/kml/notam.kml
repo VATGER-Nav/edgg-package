@@ -49,27 +49,6 @@
 				</outerBoundaryIs>
 			</Polygon>
 		</Placemark>
-		<Placemark>
-			<name>L9</name>
-			<visibility>0</visibility>
-			<Style>
-				<LineStyle>
-					<color>ff0000ff</color>
-				</LineStyle>
-				<PolyStyle>
-					<fill>0</fill>
-				</PolyStyle>
-			</Style>
-			<Polygon>
-				<outerBoundaryIs>
-					<LinearRing>
-						<coordinates>
-							8.5678009530083,50.040862224984,0 8.56496711095299,50.04018124166021,0 8.564917561518881,50.0402199986428,0 8.56499663038084,50.0402389346574,0 8.565175960228601,50.0402870626621,0 8.5655831859568,50.0404206003097,0 8.565882361777501,50.0405437299489,0 8.5660354080131,50.0406172125077,0 8.566232440356799,50.0407213300203,0 8.566374458656099,50.04080454189861,0 8.566638740134501,50.0409840631908,0 8.566769099898201,50.0410835341315,0 8.5669880727113,50.04128692458431,0 8.5671773952654,50.0415041004945,0 8.5672130794603,50.04156252837291,0 8.5672431662585,50.0416595313077,0 8.567268075759101,50.04177488234161,0 8.567256953313761,50.0418070604922,0 8.56778734363119,50.04192998117761,0 8.5680943367996,50.041890310307,0 8.567981886254,50.0415267666288,0 8.568004010979999,50.0415351367595,0 8.568018113635301,50.041535708098,0 8.567999034202,50.04145705990631,0 8.567880365279001,50.0410907105785,0 8.5678531450016,50.0409851852317,0 8.567766781872001,50.0408825228843,0 8.5677661009756,50.0408667061155,0 8.5678009530083,50.040862224984,0 
-						</coordinates>
-					</LinearRing>
-				</outerBoundaryIs>
-			</Polygon>
-		</Placemark>
 	</Folder>
 	<Folder>
 		<name>EDDL</name>
@@ -358,10 +337,13 @@
 	</Folder>
 	<Folder>
 		<name>EDDS</name>
+		<visibility>0</visibility>
 		<Folder>
 			<name>taxilanes</name>
+			<visibility>0</visibility>
 			<Placemark>
 				<name>M</name>
+				<visibility>0</visibility>
 				<Style>
 					<LineStyle>
 						<color>ff0000ff</color>
@@ -378,6 +360,7 @@
 			</Placemark>
 			<Placemark>
 				<name>L2</name>
+				<visibility>0</visibility>
 				<Style>
 					<LineStyle>
 						<color>ff0000ff</color>
@@ -395,8 +378,10 @@
 		</Folder>
 		<Folder>
 			<name>restrictions</name>
+			<visibility>0</visibility>
 			<Placemark>
 				<name>L2</name>
+				<visibility>0</visibility>
 				<Style>
 					<LineStyle>
 						<color>ff0000ff</color>
@@ -413,6 +398,7 @@
 			</Placemark>
 			<Placemark>
 				<name>M_2</name>
+				<visibility>0</visibility>
 				<Style>
 					<LineStyle>
 						<color>ff0000ff</color>
@@ -429,6 +415,7 @@
 			</Placemark>
 			<Placemark>
 				<name>M_1</name>
+				<visibility>0</visibility>
 				<Style>
 					<LineStyle>
 						<color>ff0000ff</color>
@@ -488,6 +475,7 @@
 		</Placemark>
 		<Placemark>
 			<name>taxiway</name>
+			<visibility>0</visibility>
 			<Style>
 				<LineStyle>
 					<color>ff0000ff</color>

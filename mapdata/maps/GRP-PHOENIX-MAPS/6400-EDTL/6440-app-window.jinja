@@ -1,52 +1,45 @@
 // ------------------------- Approach Window ------------------------
+{%- set EDGG = data.airspace['lines']['EDGG'] %}
 
 MAP:DE/FR Border:A
 AIRPORT:EDTL
 FOLDER:Approach Window
 ACTIVE:1
-COLOR:layout-taxiway
-{{ data.edtl_layout['layout']['Border']['Border'] | to_line('Border') }}
+COLOR:appwindow-border
+{% for uuid, geom in data.edtl_kml['layout']['border_de'].items() %}
+{{- geom | to_line('') -}}
+{% endfor %}
 
-MAP:EDTL CTR:A
+MAP:CTR:A
 AIRPORT:EDTL
 FOLDER:Approach Window
 ACTIVE:1
 STYLE:SOLID:1
-COLOR:layout-runway
-LINE:N048.21.49.000:E007.44.16.000:N048.28.45.000:E007.49.52.000
-LINE:N048.28.45.000:E007.49.52.000:N048.25.55.000:E007.57.50.000
-LINE:N048.25.55.000:E007.57.50.000:N048.15.41.000:E007.49.35.000
-LINE:N048.15.41.000:E007.49.35.000:N048.18.21.000:E007.42.01.000
-LINE:N048.18.21.000:E007.42.01.000:N048.18.22.000:E007.42.02.000
-LINE:N048.18.22.000:E007.42.02.000:N048.18.40.000:E007.42.38.000
-LINE:N048.18.40.000:E007.42.38.000:N048.18.55.000:E007.43.43.000
-LINE:N048.18.55.000:E007.43.43.000:N048.19.10.000:E007.44.25.000
-LINE:N048.19.10.000:E007.44.25.000:N048.19.39.000:E007.44.49.000
-LINE:N048.19.39.000:E007.44.49.000:N048.20.53.000:E007.44.30.000
-LINE:N048.20.53.000:E007.44.30.000:N048.21.22.000:E007.44.12.000
-LINE:N048.21.22.000:E007.44.12.000:N048.21.39.000:E007.44.08.000
-LINE:N048.21.39.000:E007.44.08.000:N048.21.49.000:E007.44.16.000
+COLOR:appwindow-standard
+{{ render_sectorlines(EDGG['EDTLCTR']['000-025']) }}
 
-MAP:Extended Centerlines:A
+MAP:ECL:A
 AIRPORT:EDTL
 FOLDER:Approach Window
 ACTIVE:1
 STYLE:SOLID:1
-COLOR:layout-runway
-// 21
-{{ ecl_dashes(runways.EDTL['21'], 15) }}
-{{ marker_ticks(runways.EDTL['21'], [4], 0, 0.325) }}
-{{ marker_ticks(runways.EDTL['21'], [10.8], 0.5, 1) }}
+COLOR:appwindow-standard
 // 03
-{{ ecl_dashes(runways.EDTL['03'], 15) }}
-{{ marker_ticks(runways.EDTL['03'], [4], 0, 0.325) }}
-{{ marker_ticks(runways.EDTL['03'], [10.8], 0.5, 1) }}
+{{ ecl_dashes(runways.EDTL['03'], 14) }}
+{{ marker_ticks(runways.EDTL['03'], [10], 0.5, 0.5) }}
+// 21
+{{ ecl_dashes(runways.EDTL['21'], 14) }}
+{{ marker_ticks(runways.EDTL['21'], [10], 0.5, 0.5) }}
+COLOR:appwindow-runway
+STYLE:SOLID:2
+// 03/21
+{{ fix(runways['EDTL']['03']['thr']).line_to_fix(fix(runways['EDTL']['21']['thr'])) }}
 
 MAP:Airfields:A
 AIRPORT:EDTL
 FOLDER:Approach Window
 ACTIVE:1
-COLOR:layout-runway
+COLOR:appwindow-standard
 SYMBOL:AIRPORT:EDTB
 SYMBOL:AIRPORT:EDSK
 SYMBOL:AIRPORT:EDTO
@@ -54,11 +47,10 @@ SYMBOL:AIRPORT:EDSB
 SYMBOL:AIRPORT:EDTF
 SYMBOL:AIRPORT:LFST
 
-
 MAP:VFR Points:A
 AIRPORT:EDTL
 FOLDER:Approach Window
-COLOR:layout-runway
+COLOR:appwindow-standard
 SYMBOL:VFR:TL-S2:S2:10:-7
 SYMBOL:VFR:TL-S1:S1:10:-7
 SYMBOL:VFR:TL-E:E:10:-7

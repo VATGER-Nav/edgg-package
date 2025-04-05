@@ -1,0 +1,15 @@
+{
+"type": "FeatureCollection",
+"name": "labels_taxiways",
+"crs": { "type": "name", "properties": { "name": "urn:ogc:def:crs:EPSG::32632" } },
+"features": [
+{ "type": "Feature", "properties": { "name": "D" }, "geometry": { "type": "Point", "coordinates": [ 404666.161245823488571, 5708685.025102926418185 ] } },
+{ "type": "Feature", "properties": { "name": "C" }, "geometry": { "type": "Point", "coordinates": [ 404517.463571018481161, 5708678.092325017787516 ] } },
+{ "type": "Feature", "properties": { "name": "M" }, "geometry": { "type": "Point", "coordinates": [ 404075.562559173384216, 5708365.938955371268094 ] } },
+{ "type": "Feature", "properties": { "name": "B" }, "geometry": { "type": "Point", "coordinates": [ 403415.247775636147708, 5708062.845319323241711 ] } },
+{ "type": "Feature", "properties": { "name": "A" }, "geometry": { "type": "Point", "coordinates": [ 403298.952640415052883, 5707957.689430414699018 ] } },
+{ "type": "Feature", "properties": { "name": "L#1" }, "geometry": { "type": "Point", "coordinates": [ 403503.120264668541495, 5707977.225836994126439 ] } },
+{ "type": "Feature", "properties": { "name": "L#2" }, "geometry": { "type": "Point", "coordinates": [ 402889.583057974814437, 5707645.645295285619795 ] } },
+{ "type": "Feature", "properties": { "name": "K" }, "geometry": { "type": "Point", "coordinates": [ 402963.46696445310954, 5707647.617208929732442 ] } }
+]
+}

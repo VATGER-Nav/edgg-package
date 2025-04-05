@@ -1,0 +1,9 @@
+{
+"type": "FeatureCollection",
+"name": "aor_labels",
+"crs": { "type": "name", "properties": { "name": "urn:ogc:def:crs:EPSG::32632" } },
+"features": [
+{ "type": "Feature", "properties": { "name": "DRG" }, "geometry": { "type": "Point", "coordinates": [ 362823.860585393209476, 5453173.075201015919447 ] } },
+{ "type": "Feature", "properties": { "name": "DRT" }, "geometry": { "type": "Point", "coordinates": [ 362827.810017951007467, 5452967.38609706889838 ] } }
+]
+}
