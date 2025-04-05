@@ -82,7 +82,7 @@ source = "https://aip.dfs.de/datasets/scripts/getItem.php?amdt=0&content=aerodro
 type = "aixm"
 source = "https://aip.dfs.de/datasets/scripts/getItem.php?amdt=0&content=aerodrome_mapping/EDDS_AerodromeMapping_2025-02-20_2025-03-20_revision.zip"
 
-[data.eddr]
+[data.eddr_aixm]
 type = "aixm"
 source = "https://aip.dfs.de/datasets/scripts/getItem.php?amdt=0&content=aerodrome_mapping/EDDR_AerodromeMapping_2025-02-20_2025-03-20_revision.zip"
 
@@ -133,7 +133,7 @@ source = "kml/edds.kml"
 type = "kml"
 source = "kml/eddg.kml"
 
-[data.eddr_layout]
+[data.eddr_kml]
 type = "kml"
 source = "kml/eddr.kml"
 
@@ -292,11 +292,11 @@ loc = [ 52.130467, 7.665046 ]
 
 #------------EDDR--------------
 
-[runways.EDDR.09]
+[runways.EDDR.08]
 thr = [ 49.214188, 7.097121 ]
 bearing = 87.44
 
-[runways.EDDR.27]
+[runways.EDDR.26]
 thr = [ 49.214936, 7.122372 ]
 bearing = 267.44
 

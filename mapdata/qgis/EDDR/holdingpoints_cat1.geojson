@@ -1,6 +1,6 @@
 {
 "type": "FeatureCollection",
-"name": "Stopbars P",
+"name": "holdingpoints_cat1",
 "crs": { "type": "name", "properties": { "name": "urn:ogc:def:crs:EPSG::32632" } },
 "features": [
 { "type": "Feature", "properties": { "name": "C" }, "geometry": { "type": "Polygon", "coordinates": [ [ [ 361516.253911175183021, 5453121.73754573520273 ], [ 361525.644319394719787, 5453101.753603916615248 ], [ 361528.359497422527056, 5453103.029459816403687 ], [ 361518.970546179043595, 5453123.010301010683179 ], [ 361516.253911175183021, 5453121.73754573520273 ] ] ] } },

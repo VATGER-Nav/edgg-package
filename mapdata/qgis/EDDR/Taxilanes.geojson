@@ -1,6 +1,6 @@
 {
 "type": "FeatureCollection",
-"name": "Taxilanes",
+"name": "taxilanes",
 "crs": { "type": "name", "properties": { "name": "urn:ogc:def:crs:EPSG::32632" } },
 "features": [
 { "type": "Feature", "properties": { "name": "140d090a-678d-4f2b-8983-4753b249904a" }, "geometry": { "type": "LineString", "coordinates": [ [ 362484.934728758933488, 5453340.048338416032493 ], [ 362487.978455653355923, 5453348.922770431265235 ], [ 362491.558101169473957, 5453358.930964266881347 ] ] } },

@@ -1,6 +1,6 @@
 {
 "type": "FeatureCollection",
-"name": "AoR L",
+"name": "aor",
 "crs": { "type": "name", "properties": { "name": "urn:ogc:def:crs:EPSG::32632" } },
 "features": [
 { "type": "Feature", "properties": { "name": "DRT" }, "geometry": { "type": "LineString", "coordinates": [ [ 361365.752799291803967, 5453089.514398768544197 ], [ 363365.667240273323841, 5453127.914717767387629 ] ] } },
