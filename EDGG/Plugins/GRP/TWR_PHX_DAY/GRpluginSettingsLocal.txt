@@ -1,0 +1,20 @@
+// Settings Phoenix Ground
+
+// Settings Frankfurt Apron - remove // to activate settings
+
+// Color_Arrival=248,248,255
+// Color_Departure=247,202,021
+// Color_RawVideo=0,100,0
+// Color_Unknown=120,120,120
+
+// Label=GND:ARR:0:ALRT,0,0:COMM,0,1 
+// Label=GND:ARR:1:CALLSIGN,0,0:STAND,0,1 
+// Label=GND:ARR:2:ATYP,0,0:WTC,0,1,0
+// Label=GND:ARR:3:RMK,0,1 
+
+// Label=GND:DEP:0:ALRT,0,0:ASSR_E,0,1:COMM,0,1 
+// Label=GND:DEP:1:CALLSIGN,0,0:DRWY,0,1,1 
+// Label=GND:DEP:2:ATYP,0,0:WTC,0,1,0
+// Label=GND:DEP:3:DEP,0,0:RMK,0,1
+
+// Individual Settings
