@@ -1,6 +1,6 @@
 [profiles]
 
-[profiles.TWR-NIGHT]
+[profiles.PHX-NIGHT]
 maps = [
     { map = "TOPSKY-PHOENIX-MAPS", target = "Plugins/Topsky/TWR_PHX_NIGHT/TopSkyMaps.txt" },
     { map = "TOPSKY-PHOENIX-SETTINGS", target = "Plugins/Topsky/TWR_PHX_NIGHT/TopSkySettings.txt" },
@@ -10,7 +10,7 @@ maps = [
 ]
 aliases = [ "dark" ]
 
-[profiles.TWR-DAY]
+[profiles.PHX-DAY]
 maps = [
     { map = "TOPSKY-PHOENIX-MAPS", target = "Plugins/Topsky/TWR_PHX_DAY/TopSkyMaps.txt" },
     { map = "TOPSKY-PHOENIX-SETTINGS", target = "Plugins/Topsky/TWR_PHX_DAY/TopSkySettings.txt" },
