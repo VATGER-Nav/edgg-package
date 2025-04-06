@@ -36,3 +36,9 @@ Color_VFR=55,156,255
 Color_Warning=255,204,0
 Color_Warning_FL=255,204,0
 Color_Weather_Map=30,44,45
+
+Color_WM_Active_Fg=20,20,21
+Color_WM_Fg=20,20,21
+Color_WM_Border=160,160,160
+Color_WM_Bg=160,160,160
+Color_WM_Frame=160,160,160
