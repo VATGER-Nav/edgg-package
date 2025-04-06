@@ -1,8 +1,0 @@
-[DCL]
-
-[FREETEXT]
-#import .github/workflows/source/topsky_cpdlc/freetext_general.txt
-#import .github/workflows/source/topsky_cpdlc/freetext_EDYY.txt
-
-[STATIONS]
-#import .github/workflows/source/topsky_cpdlc/stations.txt
