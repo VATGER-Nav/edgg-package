@@ -68,7 +68,7 @@ LastSession	atis_url1	http://uniatis.net/atis.php?metar=$metar($atisairportB)&ar
 LastSession	atis_url2	http://uniatis.net/atis.php?metar=$metar($atisairportC)&arr=$arrrwy($atisairportC)&dep=$deprwy($atisairportC)&apptype=ILS&info=$atiscodeC&depfreq=122.800
 LastSession	atis_url3	http://uniatis.net/atis.php?metar=$metar($atisairportD)&arr=$arrrwy($atisairportD)&dep=$deprwy($atisairportD)&apptype=ILS&info=$atiscodeD&depfreq=122.800
 LastSession	server	AUTOMATIC
-Settings	sector	\EDGG-TEST_20240613141011-240601-0001.sct
+Settings	sector	
 LastSession	atis_freq4	118000
 Plugins	Plugin10	\EDGG\Plugins\vSID\vSID Plugin TWR\vSID.dll
 Plugins	Plugin10Display0	Standard ES radar screen
