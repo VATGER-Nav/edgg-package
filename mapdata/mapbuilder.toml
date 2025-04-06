@@ -11,6 +11,31 @@ maps = [
 dir = "Plugins/GRP/Phoenix/"
 aliases = [ "dark" ]
 
+[profiles.CPDLC-PHX]
+maps = [
+    { map = "TOPSKY-CPDLC", target = "Plugins/Topsky_Phoenix/TopSkyCPDLC.txt" },                # Directory must be changed with release of Day Profile!
+    # { map = "TOPSKY-CPDLC", target = "Plugins/Topsky/TWR_PHX_DAY/TopSkyCPDLC.txt" },
+]
+aliases = [ "dcl", "no-general" ]
+
+[profiles.CPDLC-EDGG]
+maps = [
+    { map = "TOPSKY-CPDLC", target = "Plugins/Topsky_EDGG/TopSkyCPDLC.txt" },
+]
+aliases = [ "dcl", "general", "eduu", "edyy" ]
+
+[profiles.CPDLC-EDUU]
+maps = [
+    { map = "TOPSKY-CPDLC", target = "Plugins/Topsky_EDUU/TopSkyCPDLC.txt" },
+]
+aliases = [ "no-dcl", "general", "eduu" ]
+
+[profiles.CPDLC-EDYY]
+maps = [
+    { map = "TOPSKY-CPDLC", target = "Plugins/Topsky_EDYY/TopSkyCPDLC.txt" },
+]
+aliases = [ "no-dcl", "general", "edyy" ]
+
 [data]
 
 #------------Common------------
