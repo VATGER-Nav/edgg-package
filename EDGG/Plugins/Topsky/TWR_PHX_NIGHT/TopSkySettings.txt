@@ -168,9 +168,9 @@ System_MetarSourceVATSIM=1
 System_QNHTL_ForceMetarSourceVATSIM=1
 System_TaxiTime=10
 System_FPASD=0
-System_GUI_Font_1_Size=10
+System_GUI_Font_1_Size=12
 System_GUI_Font_2_Size=10
-System_GUI_Scale_Menus=0.9
+System_GUI_Scale_Menus=1
 System_ProxySounds=0
 
 Track_HistoryDots=5
