@@ -34,6 +34,7 @@ Color_Map_3=205,0,0
 Color_Map_4=205,0,0
 Color_Runway=255,170,0
 Color_Rwy_Locked=0,255,0
+Color_Select=151,215,150
 Color_Sid_Star_Allocation=0,255,0
 Color_VFR=55,156,255
 Color_Warning=255,204,0
