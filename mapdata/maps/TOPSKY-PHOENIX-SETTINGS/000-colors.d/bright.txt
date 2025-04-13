@@ -12,6 +12,7 @@ Color_Active_Text_Map=193,128,0
 Color_Field_Highlight=210,210,210
 Color_Background=195,195,185
 Color_Foreground=0,0,0
+Color_Global_Menu_Highlight=48,81,163
 
 Color_CPDLC_Discarded=128,128,128
 Color_CPDLC_DM_Request=35,97,173

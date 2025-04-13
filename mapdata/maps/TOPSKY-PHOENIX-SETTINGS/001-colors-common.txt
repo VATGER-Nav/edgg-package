@@ -6,7 +6,6 @@ Color_SEP_Tool_2=255,153,184
 Color_SEP_Tool_3=255,209,143
 Color_SEP_Tool_4=197,64,212
 Color_SEP_Tool_5=166,160,245
-Color_Global_Menu_Highlight=1,165,219
 Color_Heading_Vector=170,232,197
 Color_Info_Coord=1,255,255
 Color_Information=34,139,34
