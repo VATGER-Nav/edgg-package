@@ -5,7 +5,7 @@ m_Y:45
 m_LineNumber:0
 m_Resizable:1
 m_OrderingColumn:12
-m_HeaderOnly:1
+m_HeaderOnly:0
 m_Column:TIMER:5:1:645:0:0:0:vSID:::0:0.0
 m_Column:REQ:5:1:644:744:0:1:vSID:vSID::0:0.0
 m_Column:CALLSIGN:10:0:9:6:143:1::TopSky plugin:TopSky plugin:0:0.0
