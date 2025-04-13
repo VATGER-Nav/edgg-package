@@ -45,7 +45,7 @@ Plugins	Plugin4	\EDGG\Plugins\VCH.dll
 Plugins	Plugin5	\EDGG\Plugins\VFPC\VFPC.dll
 Plugins	Plugin6	\EDGG\Plugins\IASsure\IASsure.dll
 Plugins	Plugin7	\EDGG\Plugins\Squawk\EDGG\Squawks.dll
-Plugins	Plugin8	\EDGG\Plugins\vACDM\vACDM.dll
+Plugins	Plugin8	\EDGG\Plugins\vACDM\vACDM Bright\vACDM.dll
 Plugins	Plugin8Display0	Ground Radar display
 Plugins	Plugin8Display1	Standard ES radar screen
 Plugins	Plugin9	\EDGG\Plugins\AMAN\Aman.dll

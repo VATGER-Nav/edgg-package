@@ -31,10 +31,11 @@ Color_Map_3=170,170,170
 Color_Map_4=170,170,170
 Color_Runway=0,0,90
 Color_Rwy_Locked=0,90,0
+Color_Select=0,0,0
 Color_Sid_Star_Allocation=34,139,34
 Color_VFR=180,150,95
-Color_Warning=250,162,0
-Color_Warning_FL=250,162,0
+Color_Warning=219,142,39
+Color_Warning_FL=219,142,39
 Color_Weather_Map=100,100,100
 
 Color_WM_Active_Fg=0,0,0

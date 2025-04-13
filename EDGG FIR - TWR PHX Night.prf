@@ -48,9 +48,9 @@ Plugins	Plugin4	\EDGG\Plugins\GRP\TWR_PHX_NIGHT\GRplugin.dll
 Plugins	Plugin4Display0	Ground Radar display
 Plugins	Plugin4Display1	Standard ES radar screen
 Plugins	Plugin5	\EDGG\Plugins\VFPC\VFPC.dll
-Plugins	Plugin6	\EDGG\Plugins\Squawk\PHX\Squawks.dll
+Plugins	Plugin6	\EDGG\Plugins\Squawk\PHX_NIGHT\Squawks.dll
 Plugins	Plugin7	\EDGG\Plugins\IASsure\IASsure.dll
-Plugins	Plugin8	\EDGG\Plugins\vACDM\vACDM.dll
+Plugins	Plugin8	\EDGG\Plugins\vACDM\vACDM Dark\vACDM.dll
 Plugins	Plugin9	\EDGG\Plugins\AMAN\Aman.dll
 Plugins	Plugin9Display0	Ground Radar display
 Plugins	Plugin9Display1	Standard ES radar screen
