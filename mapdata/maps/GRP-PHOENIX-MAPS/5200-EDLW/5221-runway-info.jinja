@@ -23,7 +23,7 @@ AIRPORT:EDLW
 FOLDER:Runway Info
 ACTIVE:1
 {% for uuid, geom in data.edlw_kml['layout']['markings']['runways'].items() %}
-{{- geom | to_poly('', 'layout-runway-marking') }}
+{{- geom | to_poly('', 'runway-label') }}
 {% endfor %}
 
 MAP:Runway Markings

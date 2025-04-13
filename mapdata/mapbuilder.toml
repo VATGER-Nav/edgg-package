@@ -1,20 +1,29 @@
 [profiles]
 
-[profiles.TWR-NIGHT]
+[profiles.PHX-NIGHT]
 maps = [
-    { map = "TOPSKY-PHOENIX-MAPS", target = "Plugins/Topsky_Phoenix/TopSkyMaps.txt" },
-    { map = "TOPSKY-PHOENIX-SETTINGS", target = "Plugins/Topsky_Phoenix/TopSkySettings.txt" },
-    { map = "GRP-PHOENIX-SETTINGS", target = "Plugins/GRP/Phoenix/GRpluginSettings.txt" },
-    { map = "GRP-PHOENIX-MAPS", target = "Plugins/GRP/Phoenix/GRpluginMaps.txt" },
-    { map = "GRP-STANDS", target = "Plugins/GRP/Phoenix/GRpluginStands.txt" },
+    { map = "TOPSKY-PHOENIX-MAPS", target = "Plugins/Topsky/TWR_PHX_NIGHT/TopSkyMaps.txt" },
+    { map = "TOPSKY-PHOENIX-SETTINGS", target = "Plugins/Topsky/TWR_PHX_NIGHT/TopSkySettings.txt" },
+    { map = "GRP-PHOENIX-SETTINGS", target = "Plugins/GRP/TWR_PHX_NIGHT/GRpluginSettings.txt" },
+    { map = "GRP-PHOENIX-MAPS", target = "Plugins/GRP/TWR_PHX_NIGHT/GRpluginMaps.txt" },
+    { map = "GRP-STANDS", target = "Plugins/GRP/TWR_PHX_NIGHT/GRpluginStands.txt" },
 ]
-dir = "Plugins/GRP/Phoenix/"
 aliases = [ "dark" ]
+
+[profiles.PHX-DAY]
+maps = [
+    { map = "TOPSKY-PHOENIX-MAPS", target = "Plugins/Topsky/TWR_PHX_DAY/TopSkyMaps.txt" },
+    { map = "TOPSKY-PHOENIX-SETTINGS", target = "Plugins/Topsky/TWR_PHX_DAY/TopSkySettings.txt" },
+    { map = "GRP-PHOENIX-SETTINGS", target = "Plugins/GRP/TWR_PHX_DAY/GRpluginSettings.txt" },
+    { map = "GRP-PHOENIX-MAPS", target = "Plugins/GRP/TWR_PHX_DAY/GRpluginMaps.txt" },
+    { map = "GRP-STANDS", target = "Plugins/GRP/TWR_PHX_DAY/GRpluginStands.txt" },
+]
+aliases = [ "bright" ]
 
 [profiles.CPDLC-PHX]
 maps = [
-    { map = "TOPSKY-CPDLC", target = "Plugins/Topsky_Phoenix/TopSkyCPDLC.txt" },                # Directory must be changed with release of Day Profile!
-    # { map = "TOPSKY-CPDLC", target = "Plugins/Topsky/TWR_PHX_DAY/TopSkyCPDLC.txt" },
+    { map = "TOPSKY-CPDLC", target = "Plugins/Topsky/TWR_PHX_NIGHT/TopSkyCPDLC.txt" },
+    { map = "TOPSKY-CPDLC", target = "Plugins/Topsky/TWR_PHX_DAY/TopSkyCPDLC.txt" },
 ]
 aliases = [ "dcl", "no-general" ]
 
