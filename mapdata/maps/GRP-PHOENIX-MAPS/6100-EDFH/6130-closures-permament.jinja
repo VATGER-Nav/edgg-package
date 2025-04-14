@@ -1,17 +1,21 @@
 // ----------------------- Permament Closures -----------------------
 
-MAP:Runway Backtrack Areas
+MAP:Turn Pads
 AIRPORT:EDFH
 FOLDER:Closures
 ACTIVE:1
-//ASRDATA:GND
-COLOR:closure-symbol
-{{ data.edfh_layout['layout']['Closures']['Runway'] | to_multisymbol('CROSS_S') }}
+STYLE:Solid:1
+{{ data.edfh_kml['layout']['closures']['symb']['rwyTurnpad03'] | to_poly('','closure-symbol') }}
+{{ data.edfh_kml['layout']['closures']['symb']['rwyTurnpad21'] | to_poly('','closure-symbol') }}
+COORDTYPE:TWYCLOSED:NONE
+{{ data.edfh_kml['layout']['closures']['poly']['rwyTurnpad03'] | to_poly('','red') }}
+{{ data.edfh_kml['layout']['closures']['poly']['rwyTurnpad21'] | to_poly('','red') }}
 
 MAP:Apron
 AIRPORT:EDFH
 FOLDER:Closures
 ACTIVE:1
-//ASRDATA:GND
-COLOR:closure-symbol
-{{ data.edfh_layout['layout']['Closures']['Apron'] | to_symbol('CROSS_S') }}
+STYLE:Solid:1
+{{ data.edfh_kml['layout']['closures']['symb']['apron'] | to_poly('','closure-symbol') }}
+COORDTYPE:TWYCLOSED:NONE
+{{ data.edfh_kml['layout']['closures']['poly']['apron'] | to_poly('','red') }}

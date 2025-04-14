@@ -1,9 +1,0 @@
-// --------------------------- LVP Areas ----------------------------
-
-MAP:Critical Areas
-AIRPORT:EDFH
-FOLDER:LVP
-ACTIVE:LVP:EDFH:1
-COORDTYPE:OTHER:REGION:\
-{{ data.edfh_layout['layout']['LVP']['Critical Area'] | to_poly('Critical Area', 'lvp-areas') }}
-{{ data.edfh_layout['layout']['LVP']['Sensitive Area'] | to_multiline('Sensitive Area') }}

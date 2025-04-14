@@ -1,0 +1,12 @@
+{
+"type": "FeatureCollection",
+"name": "labels_aprons",
+"crs": { "type": "name", "properties": { "name": "urn:ogc:def:crs:EPSG::32632" } },
+"features": [
+{ "type": "Feature", "properties": { "name": "GAT" }, "geometry": { "type": "Point", "coordinates": [ 375514.686236357199959, 5533798.284572979435325 ] } },
+{ "type": "Feature", "properties": { "name": "APN 2" }, "geometry": { "type": "Point", "coordinates": [ 375404.014260585652664, 5533640.314122150652111 ] } },
+{ "type": "Feature", "properties": { "name": "APN 3" }, "geometry": { "type": "Point", "coordinates": [ 375914.934713480062783, 5534473.337024531327188 ] } },
+{ "type": "Feature", "properties": { "name": "APN 4" }, "geometry": { "type": "Point", "coordinates": [ 376175.026319885160774, 5534865.838137896731496 ] } },
+{ "type": "Feature", "properties": { "name": "APN 5" }, "geometry": { "type": "Point", "coordinates": [ 376582.791994314757176, 5535321.839296419173479 ] } }
+]
+}

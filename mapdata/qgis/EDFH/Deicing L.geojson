@@ -1,8 +1,0 @@
-{
-"type": "FeatureCollection",
-"name": "Deicing L",
-"crs": { "type": "name", "properties": { "name": "urn:ogc:def:crs:EPSG::32632" } },
-"features": [
-{ "type": "Feature", "properties": { "name": "23c5d030-95af-4d04-af3a-d0ae048d5031" }, "geometry": { "type": "LineString", "coordinates": [ [ 375891.689568448578939, 5534506.619474776089191 ], [ 375946.288912331336178, 5534533.454790604300797 ], [ 376010.22238678537542, 5534628.98781365621835 ], [ 376014.241340425098315, 5534689.791396073065698 ] ] } }
-]
-}
