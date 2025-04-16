@@ -1,0 +1,48 @@
+// ------------------------- Holding Points -------------------------
+
+MAP:Holding Points CAT I
+AIRPORT:EDSB
+FOLDER:Holding Points
+ACTIVE:LVP:EDSB:0
+{% for desig, geom in data.edsb_kml['layout']['holdingpoints']['cat1'].items() %}
+{{- geom | to_poly(desig, 'layout-holdingpoint') }}
+{% endfor %}
+COLOR:layout-holdingpoint
+{% for desig, geom in data.edsb_kml['layout']['holdingpoints']['line'].items() %}
+{{- geom | to_line(desig) -}}
+{% endfor %}
+
+MAP:Holding Points CAT II/III
+AIRPORT:EDSB
+FOLDER:Holding Points
+ACTIVE:LVP:EDSB:1
+{% for desig in 
+[
+    'B',
+    'C',
+    'D',
+    'Q',
+] %}
+{{- data.edsb_kml['layout']['holdingpoints']['cat1'][desig] | to_poly(desig, 'layout-holdingpoint') }}
+{% endfor %}
+{% for desig, geom in data.edsb_kml['layout']['holdingpoints']['cat3'].items() %}
+{{- geom | to_poly(desig + ' CATIII', 'layout-holdingpoint') }}
+{% endfor %}
+COLOR:layout-holdingpoint
+{% for desig in 
+[
+    'B',
+    'C',
+    'D',
+    'Q',
+] %}
+{{- data.edsb_kml['layout']['holdingpoints']['line'][desig] | to_line(desig) }}
+{% endfor %}
+
+MAP:All Stopbars
+AIRPORT:EDSB
+FOLDER:Holding Points
+COLOR:layout-holdingpoint
+{% for uuid, geom in data.edsb_aixm['TaxiwayMarking'].items() if geom.marking_location == 'TWY_INT' %}
+    {{- geom | to_line(uuid) }}
+{% endfor %}

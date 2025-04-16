@@ -7,11 +7,11 @@ FOLDER:Ice/Snow
 // Areas
 COORDTYPE:OTHER:REGION:x
 STYLE:Solid:1
-{{ data.edsb_layout['layout']['Deicing']['N'] | to_poly('DP North', 'layout-runway') }}
-{{ data.edsb_layout['layout']['Deicing']['S'] | to_poly('DP South', 'layout-runway') }}
+{{ data.edsb_kml['layout']['deicing']['poly']['DP_N'] | to_poly('DP North', 'layout-runway') }}
+{{ data.edsb_kml['layout']['deicing']['poly']['DP_S'] | to_poly('DP South', 'layout-runway') }}
 
 // Outlines
 STYLE:Solid:2
 COLOR:deicing
-{{ data.edsb_layout['layout']['Deicing']['N'] | to_line('DP North') }}
-{{ data.edsb_layout['layout']['Deicing']['S'] | to_line('DP South') }}
+{{ data.edsb_kml['layout']['deicing']['poly']['DP_N'] | to_line('DP North') -}}
+{{ data.edsb_kml['layout']['deicing']['poly']['DP_S'] | to_line('DP South') -}}

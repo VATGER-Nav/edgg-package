@@ -1,9 +1,0 @@
-// --------------------------- LVP Areas ----------------------------
-
-MAP:Critical Areas
-AIRPORT:EDSB
-FOLDER:LVP
-ACTIVE:LVP:EDSB:1
-COORDTYPE:OTHER:REGION:\
-{{ data.edsb_layout['layout']['LVP']['Critical Area'] | to_poly('Critical Area', 'lvp-areas') }}
-{{ data.edsb_layout['layout']['LVP']['Sensitive Area'] | to_multiline('Sensitive Area') }}

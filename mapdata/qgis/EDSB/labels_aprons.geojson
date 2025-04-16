@@ -1,0 +1,13 @@
+{
+"type": "FeatureCollection",
+"name": "labels_aprons",
+"crs": { "type": "name", "properties": { "name": "urn:ogc:def:crs:EPSG::32632" } },
+"features": [
+{ "type": "Feature", "properties": { "name": "Police" }, "geometry": { "type": "Point", "coordinates": [ 432817.35654080711538, 5403087.70335400197655 ] } },
+{ "type": "Feature", "properties": { "name": "Business Aviation" }, "geometry": { "type": "Point", "coordinates": [ 432550.811666575726122, 5402620.353339064866304 ] } },
+{ "type": "Feature", "properties": { "name": "APN 4" }, "geometry": { "type": "Point", "coordinates": [ 432264.447113023488782, 5402217.65423780400306 ] } },
+{ "type": "Feature", "properties": { "name": "APN 2" }, "geometry": { "type": "Point", "coordinates": [ 433019.171842299168929, 5403560.38954203389585 ] } },
+{ "type": "Feature", "properties": { "name": "APN 1" }, "geometry": { "type": "Point", "coordinates": [ 433390.350239730149042, 5404101.893489381298423 ] } },
+{ "type": "Feature", "properties": { "name": "GAT" }, "geometry": { "type": "Point", "coordinates": [ 432355.578269018267747, 5402206.170137852430344 ] } }
+]
+}
