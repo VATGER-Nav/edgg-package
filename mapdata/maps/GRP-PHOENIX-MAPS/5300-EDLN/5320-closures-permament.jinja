@@ -3,41 +3,37 @@
 MAP:E
 AIRPORT:EDLN
 FOLDER:Closures
-COORDTYPE:TWYCLOSED:REGION
-STYLE:Solid:2
 ACTIVE:1
-//ASRDATA:GND
-{{ data.edln['TaxiwayElement']['4682806b-ee10-c6ff-e053-1514a8c027b7'] | simplify(0.000005) | to_poly('E','closure') }}
-COLOR:closure-symbol
-{{ data.edln_layout['layout']['Closures']['E 1'] | to_multisymbol('CROSS') }}
-
-MAP:E
-AIRPORT:EDLN
-FOLDER:Closures
-COORDTYPE:TWYCLOSED:REGION
 STYLE:Solid:2
-ACTIVE:1
-//ASRDATA:GND
-{{ data.edln['TaxiwayElement']['4682806b-ee11-c6ff-e053-1514a8c027b7'] | simplify(0.000005) | to_poly('E','closure') }}
-COLOR:closure-symbol
-{{ data.edln_layout['layout']['Closures']['E 2'] | to_multisymbol('CROSS') }}
+COORDTYPE:TWYCLOSED:REGION
+{{ data.edln_kml['layout']['closures']['poly']['E_1'] | to_poly('','closure') }}
+{{ data.edln_kml['layout']['closures']['poly']['E_2'] | to_poly('','closure') }}
+STYLE:Solid:1
+{{ data.edln_kml['layout']['closures']['symb']['E_1a'] | to_poly('','closure-symbol') }}
+{{ data.edln_kml['layout']['closures']['symb']['E_1b'] | to_poly('','closure-symbol') }}
+{{ data.edln_kml['layout']['closures']['symb']['E_2a'] | to_poly('','closure-symbol') }}
+{{ data.edln_kml['layout']['closures']['symb']['E_2b'] | to_poly('','closure-symbol') }}
 
 MAP:Runway 28
 AIRPORT:EDLN
 FOLDER:Closures
-COORDTYPE:TWYCLOSED:REGION
-STYLE:Solid:2
 ACTIVE:1
-//ASRDATA:GND
-{{ data.edln['RunwayElement']['4682806b-edc5-c6ff-e053-1514a8c027b7'] | simplify(0.000005) | to_poly('Runway 28','closure') }}
-COLOR:closure-symbol
-{{ data.edln_layout['layout']['Closures']['Runway 28'] | to_multisymbol('CROSS') }}
+STYLE:Solid:2
+COORDTYPE:TWYCLOSED:REGION
+{{ data.edln_aixm['RunwayElement']['4682806b-edc5-c6ff-e053-1514a8c027b7'] | simplify(0.000005) | to_poly('Runway 28','closure') }}
+STYLE:Solid:1
+{{ data.edln_kml['layout']['closures']['symb']['28_a'] | to_poly('','closure-symbol') }}
+{{ data.edln_kml['layout']['closures']['symb']['28_b'] | to_poly('','closure-symbol') }}
 
 MAP:Apron
 AIRPORT:EDLN
 FOLDER:Closures
-COORDTYPE:TWYCLOSED:REGION
 ACTIVE:1
-//ASRDATA:GND
-COLOR:closure-symbol
-{{ data.edln_layout['layout']['Closures']['Apron'] | to_multisymbol('CROSS_S') }}
+STYLE:Solid:1
+{{ data.edln_kml['layout']['closures']['symb']['apron_1a'] | to_poly('','closure-symbol') }}
+{{ data.edln_kml['layout']['closures']['symb']['apron_1b'] | to_poly('','closure-symbol') }}
+{{ data.edln_kml['layout']['closures']['symb']['apron_2a'] | to_poly('','closure-symbol') }}
+{{ data.edln_kml['layout']['closures']['symb']['apron_2b'] | to_poly('','closure-symbol') }}
+COORDTYPE:TWYCLOSED:NONE
+{{ data.edln_kml['layout']['closures']['poly']['apron_1'] | to_poly('','red') }}
+{{ data.edln_kml['layout']['closures']['poly']['apron_2'] | to_poly('','red') }}

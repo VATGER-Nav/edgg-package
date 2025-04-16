@@ -1,56 +1,85 @@
 // ------------------------------------------------------------------
 //                                 EDLN
 // ------------------------------------------------------------------
+{%- set default = 0.000005 %}
 
 // -------------------------- Ground Layout -------------------------
-{% set default = 0.000005 %}
-MAP:Perimeter
-AIRPORT:EDLN
-FOLDER:Airport Layout
-//ACTIVE:1
-{{ data.edln_layout['layout']['Base']['Base'] | to_poly('Base', 'layout-base') }}
 
 MAP:Apron Area
 AIRPORT:EDLN
 FOLDER:Airport Layout
 ACTIVE:1
-{% for apron, geom in data.edln['ApronElement'].items() %}
-{{- geom | simplify(default) | to_poly(apron, 'layout-apron') }}
+{% for uuid, geom in data.edln_aixm['ApronElement'].items() %}
+{{- geom | simplify(default) | to_poly(uuid, 'layout-apron') }}
 {% endfor %}
-{{ data.edln['TaxiwayElement']['4682806b-ee15-c6ff-e053-1514a8c027b7'] | simplify(default) | to_poly('','layout-apron') }}
-{{ data.edln['TaxiwayElement']['4682806b-ee16-c6ff-e053-1514a8c027b7'] | simplify(default) | to_poly('','layout-apron') }}
-{{ data.edln['TaxiwayElement']['4682806b-ee18-c6ff-e053-1514a8c027b7'] | simplify(default) | to_poly('','layout-apron') }}
+{% for uuid in
+[
+    '4682806b-ee15-c6ff-e053-1514a8c027b7',
+    '4682806b-ee16-c6ff-e053-1514a8c027b7',
+    '4682806b-ee18-c6ff-e053-1514a8c027b7',
+] %}
+{{- data.edln_aixm['TaxiwayElement'][uuid] | simplify(default) | to_poly(uuid,'layout-apron') }}
+{% endfor %}
 
 MAP:Parking Area
 AIRPORT:EDLN
 FOLDER:Airport Layout
 ACTIVE:1
 COLOR:layout-taxiway
-{{ data.edln_layout['layout']['Markings']['Parking'] | to_multiline('Parking Area') }}
+{% for uuid, geom in data.edln_kml['layout']['markings']['parking'].items() %}
+{{- geom | to_line('') -}}
+{% endfor %}
 
 MAP:Roads
 AIRPORT:EDLN
 FOLDER:Airport Layout
 COLOR:layout-taxiway
-{{ data.edln_layout['layout']['Roads']['Roads'] | simplify(default) | to_multiline('Roads') }}
+{% for uuid, geom in data.edln_kml['layout']['roads'].items() %}
+{{- geom | simplify(default) | to_line('') -}}
+{% endfor %}
 
 MAP:Taxiway Movement Area
 AIRPORT:EDLN
 FOLDER:Airport Layout
 ACTIVE:1
-{% for taxiway, geom in data.edln['TaxiwayElement'].items() if not taxiway in ['4682806b-ee15-c6ff-e053-1514a8c027b7', '4682806b-ee16-c6ff-e053-1514a8c027b7', '4682806b-ee18-c6ff-e053-1514a8c027b7'] %}
-{{- geom | simplify(default) | to_poly(taxiway, 'layout-taxiway') }}
+{% for uuid in
+[
+    '4682806b-ee06-c6ff-e053-1514a8c027b7',
+    '4682806b-ee07-c6ff-e053-1514a8c027b7',
+    '4682806b-ee08-c6ff-e053-1514a8c027b7',
+    '4682806b-ee09-c6ff-e053-1514a8c027b7',
+    '4682806b-ee0a-c6ff-e053-1514a8c027b7',
+    '4682806b-ee0b-c6ff-e053-1514a8c027b7',
+    '4682806b-ee0c-c6ff-e053-1514a8c027b7',
+    '4682806b-ee0d-c6ff-e053-1514a8c027b7',
+    '4682806b-ee0e-c6ff-e053-1514a8c027b7',
+    '4682806b-ee0f-c6ff-e053-1514a8c027b7',
+    '4682806b-ee10-c6ff-e053-1514a8c027b7',
+    '4682806b-ee11-c6ff-e053-1514a8c027b7',
+    '4682806b-ee12-c6ff-e053-1514a8c027b7',
+    '4682806b-ee13-c6ff-e053-1514a8c027b7',
+    '4682806b-ee14-c6ff-e053-1514a8c027b7',
+    '4682806b-ee17-c6ff-e053-1514a8c027b7',
+    '4682806b-f4d1-c6ff-e053-1514a8c027b7',
+    '4682806b-f4d2-c6ff-e053-1514a8c027b7',
+] %}
+{{- data.edln_aixm['TaxiwayElement'][uuid] | simplify(default) | to_poly(uuid, 'layout-taxiway') }}
 {% endfor %}
-{{ data.edln['RunwayElement']['4682806b-f43c-c6ff-e053-1514a8c027b7'] | simplify(default) | to_poly('Runway 28','layout-taxiway') }}
-{{ data.edln['RunwayElement']['4682806b-edc5-c6ff-e053-1514a8c027b7'] | simplify(default) | to_poly('Runway 28','layout-taxiway') }}
+{% for uuid in
+[
+    '4682806b-f43c-c6ff-e053-1514a8c027b7',
+    '4682806b-edc5-c6ff-e053-1514a8c027b7',
+] %}
+{{- data.edln_aixm['RunwayElement'][uuid] | simplify(default) | to_poly(uuid,'layout-taxiway') }}
+{% endfor %}
 
 MAP:Runway
 AIRPORT:EDLN
 FOLDER:Airport Layout
 ACTIVE:1
-{{ data.edln['RunwayElement']['4682806b-f43d-c6ff-e053-1514a8c027b7'] | simplify(default) | to_poly('Runway 31/13','layout-runway') }}
-{% for blastpad, geom in data.edln['RunwayBlastPad'].items() %}
-{{- geom | simplify(0.00001) | to_poly('BlastPad','layout-apron') }}
+{{ data.edln_aixm['RunwayElement']['4682806b-f43d-c6ff-e053-1514a8c027b7'] | simplify(default) | to_poly('Runway 13/31','layout-runway') }}
+{% for uuid, geom in data.edln_aixm['RunwayBlastPad'].items() %}
+{{- geom | simplify(0.00001) | to_poly(uuid,'layout-apron') }}
 {% endfor %}
 
 MAP:Leadin Lines
@@ -58,29 +87,297 @@ AIRPORT:EDLN
 FOLDER:Airport Layout
 ACTIVE:1
 COLOR:layout-taxiline-grey
-{% for taxilane in ['f17a', 'f17b', 'f17c', 'f17d', 'f17e', 'f17f', 'f180', 'f181', 'f182', 'f183', 'f184', 'f185', 'f18d', 'f18e', 'f18f', 'f190', 'f191', 'f192', 'f193', 'f194', 'f195', 'f196', 'f197', 'f198', 'f199', 'f19a', 'f19b', 'f19c', 'f19d', 'f19e', 'f19f', 'f1a0', 'f1a1', 'f1a2', 'f1a3', 'f1a4', 'f1a5', 'f1a6', 'f1a7', 'f1a8', 'f1a9', 'f1ab', 'f1ac', 'f1b3', 'f1b4', 'f1b5', 'f1b6', 'f1b7', 'f1b8', 'f573', 'f578', 'f579', 'f57a', 'f57f', 'f581', 'f582', 'f583', 'f584', 'f586', 'f59c', 'f59d', 'f59e', 'f59f', 'f5a0', 'f5a1', 'f5a2', 'f5a3', 'f5a4', 'f5a5', 'f5a6', 'f5a9', 'f5aa','f186', 'f187', 'f188', 'f189', 'f18a', 'f18c', 'f18b', 'f1aa', 'f577'] %}
-{{- data.edln['GuidanceLine']['4682806b-' + taxilane + '-c6ff-e053-1514a8c027b7' | string] | join_segments | simplify(default) | to_line(taxilane) }}
+{% for uuid in
+[
+    '4682806b-f17a-c6ff-e053-1514a8c027b7',
+    '4682806b-f17b-c6ff-e053-1514a8c027b7',
+    '4682806b-f17c-c6ff-e053-1514a8c027b7',
+    '4682806b-f17d-c6ff-e053-1514a8c027b7',
+    '4682806b-f17e-c6ff-e053-1514a8c027b7',
+    '4682806b-f17f-c6ff-e053-1514a8c027b7',
+    '4682806b-f180-c6ff-e053-1514a8c027b7',
+    '4682806b-f181-c6ff-e053-1514a8c027b7',
+    '4682806b-f182-c6ff-e053-1514a8c027b7',
+    '4682806b-f183-c6ff-e053-1514a8c027b7',
+    '4682806b-f184-c6ff-e053-1514a8c027b7',
+    '4682806b-f185-c6ff-e053-1514a8c027b7',
+    '4682806b-f18d-c6ff-e053-1514a8c027b7',
+    '4682806b-f18e-c6ff-e053-1514a8c027b7',
+    '4682806b-f18f-c6ff-e053-1514a8c027b7',
+    '4682806b-f190-c6ff-e053-1514a8c027b7',
+    '4682806b-f191-c6ff-e053-1514a8c027b7',
+    '4682806b-f192-c6ff-e053-1514a8c027b7',
+    '4682806b-f193-c6ff-e053-1514a8c027b7',
+    '4682806b-f194-c6ff-e053-1514a8c027b7',
+    '4682806b-f195-c6ff-e053-1514a8c027b7',
+    '4682806b-f196-c6ff-e053-1514a8c027b7',
+    '4682806b-f197-c6ff-e053-1514a8c027b7',
+    '4682806b-f198-c6ff-e053-1514a8c027b7',
+    '4682806b-f199-c6ff-e053-1514a8c027b7',
+    '4682806b-f19a-c6ff-e053-1514a8c027b7',
+    '4682806b-f19b-c6ff-e053-1514a8c027b7',
+    '4682806b-f19c-c6ff-e053-1514a8c027b7',
+    '4682806b-f19d-c6ff-e053-1514a8c027b7',
+    '4682806b-f19e-c6ff-e053-1514a8c027b7',
+    '4682806b-f19f-c6ff-e053-1514a8c027b7',
+    '4682806b-f1a0-c6ff-e053-1514a8c027b7',
+    '4682806b-f1a1-c6ff-e053-1514a8c027b7',
+    '4682806b-f1a2-c6ff-e053-1514a8c027b7',
+    '4682806b-f1a3-c6ff-e053-1514a8c027b7',
+    '4682806b-f1a4-c6ff-e053-1514a8c027b7',
+    '4682806b-f1a5-c6ff-e053-1514a8c027b7',
+    '4682806b-f1a6-c6ff-e053-1514a8c027b7',
+    '4682806b-f1a7-c6ff-e053-1514a8c027b7',
+    '4682806b-f1a8-c6ff-e053-1514a8c027b7',
+    '4682806b-f1a9-c6ff-e053-1514a8c027b7',
+    '4682806b-f1ab-c6ff-e053-1514a8c027b7',
+    '4682806b-f1ac-c6ff-e053-1514a8c027b7',
+    '4682806b-f1b3-c6ff-e053-1514a8c027b7',
+    '4682806b-f1b4-c6ff-e053-1514a8c027b7',
+    '4682806b-f1b5-c6ff-e053-1514a8c027b7',
+    '4682806b-f1b6-c6ff-e053-1514a8c027b7',
+    '4682806b-f1b7-c6ff-e053-1514a8c027b7',
+    '4682806b-f1b8-c6ff-e053-1514a8c027b7',
+    '4682806b-f573-c6ff-e053-1514a8c027b7',
+    '4682806b-f578-c6ff-e053-1514a8c027b7',
+    '4682806b-f579-c6ff-e053-1514a8c027b7',
+    '4682806b-f57a-c6ff-e053-1514a8c027b7',
+    '4682806b-f57f-c6ff-e053-1514a8c027b7',
+    '4682806b-f581-c6ff-e053-1514a8c027b7',
+    '4682806b-f582-c6ff-e053-1514a8c027b7',
+    '4682806b-f583-c6ff-e053-1514a8c027b7',
+    '4682806b-f584-c6ff-e053-1514a8c027b7',
+    '4682806b-f586-c6ff-e053-1514a8c027b7',
+    '4682806b-f59c-c6ff-e053-1514a8c027b7',
+    '4682806b-f59d-c6ff-e053-1514a8c027b7',
+    '4682806b-f59e-c6ff-e053-1514a8c027b7',
+    '4682806b-f59f-c6ff-e053-1514a8c027b7',
+    '4682806b-f5a0-c6ff-e053-1514a8c027b7',
+    '4682806b-f5a1-c6ff-e053-1514a8c027b7',
+    '4682806b-f5a2-c6ff-e053-1514a8c027b7',
+    '4682806b-f5a3-c6ff-e053-1514a8c027b7',
+    '4682806b-f5a4-c6ff-e053-1514a8c027b7',
+    '4682806b-f5a5-c6ff-e053-1514a8c027b7',
+    '4682806b-f5a6-c6ff-e053-1514a8c027b7',
+    '4682806b-f5a9-c6ff-e053-1514a8c027b7',
+    '4682806b-f5aa-c6ff-e053-1514a8c027b7',
+    '4682806b-f186-c6ff-e053-1514a8c027b7',
+    '4682806b-f187-c6ff-e053-1514a8c027b7',
+    '4682806b-f188-c6ff-e053-1514a8c027b7',
+    '4682806b-f189-c6ff-e053-1514a8c027b7',
+    '4682806b-f18a-c6ff-e053-1514a8c027b7',
+    '4682806b-f18c-c6ff-e053-1514a8c027b7',
+    '4682806b-f18b-c6ff-e053-1514a8c027b7',
+    '4682806b-f1aa-c6ff-e053-1514a8c027b7',
+    '4682806b-f577-c6ff-e053-1514a8c027b7',
+] %}
+{{- data.edln_aixm['GuidanceLine'][uuid] | join_segments | simplify(default) | to_line(uuid) -}}
 {% endfor %}
-{{ data.edln_layout['layout']['Markings']['Solid'] | to_line('') }}
+{% for uuid, geom in data.edln_kml['layout']['markings']['leadin_solid'].items() %}
+{{- geom | to_line('') -}}
+{% endfor %}
 
 MAP:Taxi Lanes
 AIRPORT:EDLN
 FOLDER:Airport Layout
 ACTIVE:1
 COLOR:layout-taxiline-yellow
-{% for taxilane in ['F1', 'BE1', 'BE2', 'E1A', 'E-H4 1', 'H4 -AB', 'AE1', 'AE2', 'A0', 'AB 1', 'AE3', 'A1', 'A1A', 'A2', 'A3', 'AE 6', 'AE 5', 'AE 7', 'AE2A', 'AE 8', 'EA1', 'E2A', 'EA2', 'E-TL-FUEL 0', 'E3', 'E4', 'E4A', 'E4B', 'EA3', 'E TL FUEL1', 'E TL FUEL2', 'E2', 'A4', 'E5', 'A4A', 'AE 9', 'CE 0', 'C 4', 'AC 1A', 'AC 2A', 'AE 10', 'CE 3', 'E6', 'E7', 'E8', 'E8A', 'CE 4', 'E-H5/6 B', 'CE 2', 'CE 1', 'E-H5/6 A', 'E9', 'C1', 'C2', 'C3', 'AC 2', 'C3 A', 'AC 1', 'A 21', 'AD2', 'A 22', 'D1', 'RWY13 D2', 'RWY31 D2', 'RWY13 D1', 'RWY31D1', 'A 6', 'A7', 'A8', 'A9', 'A10', 'A11', 'A12', 'A 13', 'A 14', 'A 15', 'A 16', 'A 17', 'A 18', 'A 19', 'A 20', 'APR NORTH 1', 'APR NORTH 2', 'E-H5/6 A1', 'CE 2A', 'E-H5/6 B1', 'RWY13-C1', 'RWY31 C1', 'B1', 'B2', 'B3', 'A5', 'AE 4', 'A 23', 'AB 2', 'AB 2A', 'AD1', 'D 2'] %}
-{{- data.edln['GuidanceLineByDesig'][ taxilane | string ] | join_segments | simplify(default) | to_line(taxilane) }}
+{% for uuid in
+[
+    '4682806b-eead-c6ff-e053-1514a8c027b7',
+    '4682806b-eeae-c6ff-e053-1514a8c027b7',
+    '4682806b-eeaf-c6ff-e053-1514a8c027b7',
+    '4682806b-eeb0-c6ff-e053-1514a8c027b7',
+    '4682806b-eeb1-c6ff-e053-1514a8c027b7',
+    '4682806b-eeb2-c6ff-e053-1514a8c027b7',
+    '4682806b-eeb3-c6ff-e053-1514a8c027b7',
+    '4682806b-eeb4-c6ff-e053-1514a8c027b7',
+    '4682806b-eeb5-c6ff-e053-1514a8c027b7',
+    '4682806b-eeb6-c6ff-e053-1514a8c027b7',
+    '4682806b-eeb7-c6ff-e053-1514a8c027b7',
+    '4682806b-eeb8-c6ff-e053-1514a8c027b7',
+    '4682806b-eeb9-c6ff-e053-1514a8c027b7',
+    '4682806b-eeba-c6ff-e053-1514a8c027b7',
+    '4682806b-eebb-c6ff-e053-1514a8c027b7',
+    '4682806b-eebc-c6ff-e053-1514a8c027b7',
+    '4682806b-eebd-c6ff-e053-1514a8c027b7',
+    '4682806b-eebe-c6ff-e053-1514a8c027b7',
+    '4682806b-eebf-c6ff-e053-1514a8c027b7',
+    '4682806b-eec0-c6ff-e053-1514a8c027b7',
+    '4682806b-eec1-c6ff-e053-1514a8c027b7',
+    '4682806b-eec2-c6ff-e053-1514a8c027b7',
+    '4682806b-eec3-c6ff-e053-1514a8c027b7',
+    '4682806b-eec4-c6ff-e053-1514a8c027b7',
+    '4682806b-eec5-c6ff-e053-1514a8c027b7',
+    '4682806b-eec6-c6ff-e053-1514a8c027b7',
+    '4682806b-eec7-c6ff-e053-1514a8c027b7',
+    '4682806b-eec8-c6ff-e053-1514a8c027b7',
+    '4682806b-eec9-c6ff-e053-1514a8c027b7',
+    '4682806b-eeca-c6ff-e053-1514a8c027b7',
+    '4682806b-eecb-c6ff-e053-1514a8c027b7',
+    '4682806b-eecc-c6ff-e053-1514a8c027b7',
+    '4682806b-eecd-c6ff-e053-1514a8c027b7',
+    '4682806b-eece-c6ff-e053-1514a8c027b7',
+    '4682806b-eecf-c6ff-e053-1514a8c027b7',
+    '4682806b-eed0-c6ff-e053-1514a8c027b7',
+    '4682806b-eed1-c6ff-e053-1514a8c027b7',
+    '4682806b-eed2-c6ff-e053-1514a8c027b7',
+    '4682806b-eed3-c6ff-e053-1514a8c027b7',
+    '4682806b-eed4-c6ff-e053-1514a8c027b7',
+    '4682806b-eed5-c6ff-e053-1514a8c027b7',
+    '4682806b-eed6-c6ff-e053-1514a8c027b7',
+    '4682806b-eed7-c6ff-e053-1514a8c027b7',
+    '4682806b-eed8-c6ff-e053-1514a8c027b7',
+    '4682806b-eed9-c6ff-e053-1514a8c027b7',
+    '4682806b-eeda-c6ff-e053-1514a8c027b7',
+    '4682806b-eedb-c6ff-e053-1514a8c027b7',
+    '4682806b-eedc-c6ff-e053-1514a8c027b7',
+    '4682806b-eedd-c6ff-e053-1514a8c027b7',
+    '4682806b-eede-c6ff-e053-1514a8c027b7',
+    '4682806b-eedf-c6ff-e053-1514a8c027b7',
+    '4682806b-eee0-c6ff-e053-1514a8c027b7',
+    '4682806b-eee1-c6ff-e053-1514a8c027b7',
+    '4682806b-eee2-c6ff-e053-1514a8c027b7',
+    '4682806b-eee3-c6ff-e053-1514a8c027b7',
+    '4682806b-eee4-c6ff-e053-1514a8c027b7',
+    '4682806b-eee5-c6ff-e053-1514a8c027b7',
+    '4682806b-eee6-c6ff-e053-1514a8c027b7',
+    '4682806b-eee7-c6ff-e053-1514a8c027b7',
+    '4682806b-eee8-c6ff-e053-1514a8c027b7',
+    '4682806b-eee9-c6ff-e053-1514a8c027b7',
+    '4682806b-eeea-c6ff-e053-1514a8c027b7',
+    '4682806b-eeeb-c6ff-e053-1514a8c027b7',
+    '4682806b-eeec-c6ff-e053-1514a8c027b7',
+    '4682806b-eeed-c6ff-e053-1514a8c027b7',
+    '4682806b-eeee-c6ff-e053-1514a8c027b7',
+    '4682806b-f1b9-c6ff-e053-1514a8c027b7',
+    '4682806b-f1ba-c6ff-e053-1514a8c027b7',
+    '4682806b-f1bb-c6ff-e053-1514a8c027b7',
+    '4682806b-f1bc-c6ff-e053-1514a8c027b7',
+    '4682806b-f1bd-c6ff-e053-1514a8c027b7',
+    '4682806b-f1be-c6ff-e053-1514a8c027b7',
+    '4682806b-f1bf-c6ff-e053-1514a8c027b7',
+    '4682806b-f1c0-c6ff-e053-1514a8c027b7',
+    '4682806b-f1c1-c6ff-e053-1514a8c027b7',
+    '4682806b-f1c2-c6ff-e053-1514a8c027b7',
+    '4682806b-f1c3-c6ff-e053-1514a8c027b7',
+    '4682806b-f1c4-c6ff-e053-1514a8c027b7',
+    '4682806b-f1c5-c6ff-e053-1514a8c027b7',
+    '4682806b-f1c6-c6ff-e053-1514a8c027b7',
+    '4682806b-f1c7-c6ff-e053-1514a8c027b7',
+    '4682806b-f1c8-c6ff-e053-1514a8c027b7',
+    '4682806b-f1c9-c6ff-e053-1514a8c027b7',
+    '4682806b-f1ca-c6ff-e053-1514a8c027b7',
+    '4682806b-f1cb-c6ff-e053-1514a8c027b7',
+    '4682806b-f1cc-c6ff-e053-1514a8c027b7',
+    '4682806b-f574-c6ff-e053-1514a8c027b7',
+    '4682806b-f575-c6ff-e053-1514a8c027b7',
+    '4682806b-f576-c6ff-e053-1514a8c027b7',
+    '4682806b-f57b-c6ff-e053-1514a8c027b7',
+    '4682806b-f57c-c6ff-e053-1514a8c027b7',
+    '4682806b-f57d-c6ff-e053-1514a8c027b7',
+    '4682806b-f57e-c6ff-e053-1514a8c027b7',
+    '4682806b-f580-c6ff-e053-1514a8c027b7',
+    '4682806b-f589-c6ff-e053-1514a8c027b7',
+    '4682806b-f58a-c6ff-e053-1514a8c027b7',
+    '4682806b-f5a7-c6ff-e053-1514a8c027b7',
+    '4682806b-f5a8-c6ff-e053-1514a8c027b7',
+] %}
+{{- data.edln_aixm['GuidanceLine'][uuid] | join_segments | simplify(default) | to_line(uuid) -}}
 {% endfor %}
 
 MAP:Buildings
 AIRPORT:EDLN
 FOLDER:Airport Layout
 ACTIVE:1
-{% for building, geom in data.edln_layout['layout']['Buildings'].items() %}
-{{- geom | simplify(default) | to_poly(building, 'layout-building') }}
-{% endfor %}
-COLOR:layout-building
-{% for fence, geom in data.edln_layout['layout']['Fence'].items() %}
-{{- geom | to_line(fence) }}
+{% for uuid in
+[
+    '04a27399-1aaf-4c57-a88d-812ee8c432f7',
+    '28a614d1-9ad9-4f47-9e5a-5640b9e9c7f5',
+    '4682806b-eb72-c6ff-e053-1514a8c027b7',
+    '4682806b-eb73-c6ff-e053-1514a8c027b7',
+    '4682806b-eb74-c6ff-e053-1514a8c027b7',
+    '4682806b-eb75-c6ff-e053-1514a8c027b7',
+    '4682806b-eb76-c6ff-e053-1514a8c027b7',
+    '4682806b-eb77-c6ff-e053-1514a8c027b7',
+    '4682806b-eb78-c6ff-e053-1514a8c027b7',
+    '4682806b-eb79-c6ff-e053-1514a8c027b7',
+    '4682806b-eb7a-c6ff-e053-1514a8c027b7',
+    '4682806b-eb7b-c6ff-e053-1514a8c027b7',
+    '4682806b-eb7c-c6ff-e053-1514a8c027b7',
+    '4682806b-eb7d-c6ff-e053-1514a8c027b7',
+    '4682806b-eb7e-c6ff-e053-1514a8c027b7',
+    '4682806b-eb7f-c6ff-e053-1514a8c027b7',
+    '4682806b-eb82-c6ff-e053-1514a8c027b7',
+    '4682806b-eb83-c6ff-e053-1514a8c027b7',
+    '4682806b-eb84-c6ff-e053-1514a8c027b7',
+    '4682806b-eb85-c6ff-e053-1514a8c027b7',
+    '4682806b-eb86-c6ff-e053-1514a8c027b7',
+    '4682806b-eb87-c6ff-e053-1514a8c027b7',
+    '4682806b-eb88-c6ff-e053-1514a8c027b7',
+    '4682806b-eb89-c6ff-e053-1514a8c027b7',
+    '4682806b-eb8a-c6ff-e053-1514a8c027b7',
+    '4682806b-eb8b-c6ff-e053-1514a8c027b7',
+    '4682806b-eb8c-c6ff-e053-1514a8c027b7',
+    '4682806b-eb8d-c6ff-e053-1514a8c027b7',
+    '4682806b-eb8e-c6ff-e053-1514a8c027b7',
+    '4682806b-eb8f-c6ff-e053-1514a8c027b7',
+    '4682806b-eb90-c6ff-e053-1514a8c027b7',
+    '4682806b-eb91-c6ff-e053-1514a8c027b7',
+    '4682806b-eb92-c6ff-e053-1514a8c027b7',
+    '4682806b-eb93-c6ff-e053-1514a8c027b7',
+    '4682806b-eb94-c6ff-e053-1514a8c027b7',
+    '4682806b-eb95-c6ff-e053-1514a8c027b7',
+    '4682806b-eb96-c6ff-e053-1514a8c027b7',
+    '4682806b-eb97-c6ff-e053-1514a8c027b7',
+    '4682806b-eb98-c6ff-e053-1514a8c027b7',
+    '4682806b-eb99-c6ff-e053-1514a8c027b7',
+    '4682806b-eb9a-c6ff-e053-1514a8c027b7',
+    '4682806b-eb9b-c6ff-e053-1514a8c027b7',
+    '4682806b-eb9c-c6ff-e053-1514a8c027b7',
+    '4682806b-eb9d-c6ff-e053-1514a8c027b7',
+    '4682806b-eb9e-c6ff-e053-1514a8c027b7',
+    '4682806b-eba2-c6ff-e053-1514a8c027b7',
+    '4682806b-eba3-c6ff-e053-1514a8c027b7',
+    '4682806b-eba4-c6ff-e053-1514a8c027b7',
+    '4682806b-eba5-c6ff-e053-1514a8c027b7',
+    '4682806b-eba6-c6ff-e053-1514a8c027b7',
+    '4682806b-eba7-c6ff-e053-1514a8c027b7',
+    '4682806b-eba8-c6ff-e053-1514a8c027b7',
+    '4682806b-eba9-c6ff-e053-1514a8c027b7',
+    '4682806b-ebab-c6ff-e053-1514a8c027b7',
+    '4682806b-ebac-c6ff-e053-1514a8c027b7',
+    '4682806b-ebdc-c6ff-e053-1514a8c027b7',
+    '4682806b-ebdd-c6ff-e053-1514a8c027b7',
+    '4682806b-ebde-c6ff-e053-1514a8c027b7',
+    '4682806b-ebdf-c6ff-e053-1514a8c027b7',
+    '4682806b-ebe3-c6ff-e053-1514a8c027b7',
+    '4682806b-ebe4-c6ff-e053-1514a8c027b7',
+    '4682806b-ebe5-c6ff-e053-1514a8c027b7',
+    '4682806b-ebe6-c6ff-e053-1514a8c027b7',
+    '4682806b-ebf1-c6ff-e053-1514a8c027b7',
+    '4682806b-ec17-c6ff-e053-1514a8c027b7',
+    '4682806b-ef79-c6ff-e053-1514a8c027b7',
+    '4682806b-efcb-c6ff-e053-1514a8c027b7',
+    '4682806b-efcc-c6ff-e053-1514a8c027b7',
+    '6a8a8599-e63e-49c5-8687-0df796fa95ce',
+    '70861557-33a9-408e-9359-e528d71cfc76',
+    '862b6a29-5d8a-f9b7-e053-0100007f71a3',
+    '89b5014c-1e81-448c-8902-6b034ccdf746',
+    '8dcdec70-8b2d-496d-b976-08b48cab584c',
+    'aacf5182-1bbe-40cf-a2f6-880902b5210d',
+    'aea18ec9-d19e-4684-a1ac-be659bc7c277',
+    'b2b28b86-f1c7-43af-a35a-471a2241ae4e',
+    'e3047568-50ff-49d4-bba5-bc4f4a9473da',
+] %}
+{{- data.edln_aixm['VerticalStructure'][uuid] | join_segments | simplify(default) | to_poly(uuid, 'layout-building') }}
 {% endfor %}
 
+MAP:Fence
+AIRPORT:EDLN
+FOLDER:Airport Layout
+ACTIVE:1
+COLOR:layout-building
+{% for uuid, geom in data.edln_kml['layout']['fence'].items() %}
+{{- geom | to_line('') -}}
+{% endfor %}
