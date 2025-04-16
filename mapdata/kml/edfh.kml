@@ -2,6 +2,7 @@
 <kml xmlns="http://www.opengis.net/kml/2.2" xmlns:gx="http://www.google.com/kml/ext/2.2" xmlns:kml="http://www.opengis.net/kml/2.2" xmlns:atom="http://www.w3.org/2005/Atom">
 <Folder>
 	<name>layout</name>
+	<visibility>0</visibility>
 	<open>1</open>
 	<Folder>
 		<name>aprons</name>
@@ -3390,110 +3391,13 @@
 	</Folder>
 	<Folder>
 		<name>lvp</name>
+		<visibility>0</visibility>
 		<Folder>
 			<name>super</name>
-			<Placemark>
-				<name>03_sensitive</name>
-				<Style>
-					<LineStyle>
-						<color>ff0000ff</color>
-					</LineStyle>
-					<PolyStyle>
-						<fill>0</fill>
-					</PolyStyle>
-				</Style>
-				<Polygon>
-					<outerBoundaryIs>
-						<LinearRing>
-							<coordinates>
-								7.24990275835565,49.9320146112742,0 7.24841258030806,49.93127571146729,0 7.248118548771469,49.9313964831718,0 7.246158546173099,49.9294080812585,0 7.241798052641419,49.9311989415049,0 7.24639727920554,49.9358649332127,0 7.247690258333491,49.9353339178294,0 7.24933575175714,49.9370029922863,0 7.24980592900304,49.9368098856053,0 7.25021732249339,49.9372271490596,0 7.25024260321497,49.9372167658735,0 7.265100041381491,49.9522804494488,0 7.276505914807751,49.963585966948,0 7.27658079592852,49.963661816452,0 7.27740387699658,49.9633236894034,0 7.280024891265431,49.96597837436481,0 7.281435908497241,49.9653986829267,0 7.27881484648138,49.9627440291173,0 7.27963789647899,49.96240588583261,0 7.27956301240238,49.96233003825689,0 7.268510134911811,49.9508806869669,0 7.24990275835565,49.9320146112742,0 
-							</coordinates>
-						</LinearRing>
-					</outerBoundaryIs>
-				</Polygon>
-			</Placemark>
-			<Placemark>
-				<name>03_critical_gs</name>
-				<Style>
-					<LineStyle>
-						<color>ff0000ff</color>
-					</LineStyle>
-					<PolyStyle>
-						<fill>0</fill>
-					</PolyStyle>
-				</Style>
-				<Polygon>
-					<outerBoundaryIs>
-						<LinearRing>
-							<coordinates>
-								7.25124351999197,49.9362194304276,0 7.24933575175714,49.9370029922863,0 7.24309095479714,49.9306679762038,0 7.24499856885885,49.9298845146812,0 7.25124351999197,49.9362194304276,0 
-							</coordinates>
-						</LinearRing>
-					</outerBoundaryIs>
-				</Polygon>
-			</Placemark>
-			<Placemark>
-				<name>03_critical_loc</name>
-				<Style>
-					<LineStyle>
-						<color>ff0000ff</color>
-					</LineStyle>
-					<PolyStyle>
-						<fill>0</fill>
-					</PolyStyle>
-				</Style>
-				<Polygon>
-					<outerBoundaryIs>
-						<LinearRing>
-							<coordinates>
-								7.27650594327024,49.9635860081952,0 7.279563040866801,49.9623300795034,0 7.27110264456106,49.95375900186309,0 7.26804588100031,49.9550147127112,0 7.27650594327024,49.9635860081952,0 
-							</coordinates>
-						</LinearRing>
-					</outerBoundaryIs>
-				</Polygon>
-			</Placemark>
-			<Placemark>
-				<name>03_orthogonal_a</name>
-				<Style>
-					<LineStyle>
-						<color>ff0000ff</color>
-					</LineStyle>
-					<PolyStyle>
-						<fill>0</fill>
-					</PolyStyle>
-				</Style>
-				<Polygon>
-					<outerBoundaryIs>
-						<LinearRing>
-							<coordinates>
-								7.25248697637592,49.93329588886189,0 7.24990275835565,49.9320146112742,0 7.26850937763778,49.9508799195208,0 7.25363402441921,49.9344592723955,0 7.25248697637592,49.93329588886189,0 
-							</coordinates>
-						</LinearRing>
-					</outerBoundaryIs>
-				</Polygon>
-			</Placemark>
-			<Placemark>
-				<name>03_orthogonal_b</name>
-				<Style>
-					<LineStyle>
-						<color>ff0000ff</color>
-					</LineStyle>
-					<PolyStyle>
-						<fill>0</fill>
-					</PolyStyle>
-				</Style>
-				<Polygon>
-					<outerBoundaryIs>
-						<LinearRing>
-							<coordinates>
-								7.248344743145399,49.9366317900348,0 7.265100040141941,49.95228044887159,0 7.25024260273842,49.93721676606921,0 7.25021732249339,49.9372271490596,0 7.24980592900304,49.9368098856053,0 7.24933575175714,49.9370029922863,0 7.247690258333491,49.9353339178294,0 7.24724536734227,49.93551663369891,0 7.248344743145399,49.9366317900348,0 
-							</coordinates>
-						</LinearRing>
-					</outerBoundaryIs>
-				</Polygon>
-			</Placemark>
+			<visibility>0</visibility>
 			<Placemark>
 				<name>21_sensitive</name>
+				<visibility>0</visibility>
 				<Style>
 					<LineStyle>
 						<color>ff0000ff</color>
@@ -3514,6 +3418,7 @@
 			</Placemark>
 			<Placemark>
 				<name>21_critical_gs</name>
+				<visibility>0</visibility>
 				<Style>
 					<LineStyle>
 						<color>ff0000ff</color>
@@ -3534,6 +3439,7 @@
 			</Placemark>
 			<Placemark>
 				<name>21_critical_loc</name>
+				<visibility>0</visibility>
 				<Style>
 					<LineStyle>
 						<color>ff0000ff</color>
@@ -3554,6 +3460,7 @@
 			</Placemark>
 			<Placemark>
 				<name>21_orthogonal_a</name>
+				<visibility>0</visibility>
 				<Style>
 					<LineStyle>
 						<color>ff0000ff</color>
@@ -3574,6 +3481,7 @@
 			</Placemark>
 			<Placemark>
 				<name>21_orthogonal_b</name>
+				<visibility>0</visibility>
 				<Style>
 					<LineStyle>
 						<color>ff0000ff</color>
@@ -3595,108 +3503,10 @@
 		</Folder>
 		<Folder>
 			<name>heavy</name>
-			<Placemark>
-				<name>03_sensitive</name>
-				<Style>
-					<LineStyle>
-						<color>ff0000ff</color>
-					</LineStyle>
-					<PolyStyle>
-						<fill>0</fill>
-					</PolyStyle>
-				</Style>
-				<Polygon>
-					<outerBoundaryIs>
-						<LinearRing>
-							<coordinates>
-								7.25091353735086,49.9332963698917,0 7.24991951512295,49.9328035184066,0 7.24945874406581,49.932992778933,0 7.247042834562179,49.9305420119718,0 7.243669595358689,49.93192743402919,0 7.247745510019831,49.9360622822373,0 7.24833205287005,49.93582138885651,0 7.2494534336253,49.9369588219427,0 7.24980724054694,49.9368135094444,0 7.250406194134581,49.9374210062847,0 7.25060572807736,49.9373390541993,0 7.265201703251121,49.9521375468579,0 7.27666635942222,49.9634189027692,0 7.27674124054519,49.9634947521716,0 7.27732915392285,49.9632532326117,0 7.27995016030871,49.9659079192096,0 7.28136117633379,49.9653282286619,0 7.278740122200839,49.96267357321581,0 7.279328015721561,49.96243204327939,0 7.27925313209749,49.9623561955087,0 7.26825835480876,49.9508819092438,0 7.25091353735086,49.9332963698917,0 
-							</coordinates>
-						</LinearRing>
-					</outerBoundaryIs>
-				</Polygon>
-			</Placemark>
-			<Placemark>
-				<name>03_critical_gs</name>
-				<Style>
-					<LineStyle>
-						<color>ff0000ff</color>
-					</LineStyle>
-					<PolyStyle>
-						<fill>0</fill>
-					</PolyStyle>
-				</Style>
-				<Polygon>
-					<outerBoundaryIs>
-						<LinearRing>
-							<coordinates>
-								7.251246778332769,49.9362222546691,0 7.2494534336253,49.9369588219427,0 7.24455467516313,49.93198947043639,0 7.24634790618792,49.9312529771519,0 7.251246778332769,49.9362222546691,0 
-							</coordinates>
-						</LinearRing>
-					</outerBoundaryIs>
-				</Polygon>
-			</Placemark>
-			<Placemark>
-				<name>03_critical_loc</name>
-				<Style>
-					<LineStyle>
-						<color>ff0000ff</color>
-					</LineStyle>
-					<PolyStyle>
-						<fill>0</fill>
-					</PolyStyle>
-				</Style>
-				<Polygon>
-					<outerBoundaryIs>
-						<LinearRing>
-							<coordinates>
-								7.27666672431776,49.96341883377261,0 7.27925349698149,49.9623561265038,0 7.27356302495868,49.9565915589263,0 7.270976442388479,49.9576541422119,0 7.27666672431776,49.96341883377261,0 
-							</coordinates>
-						</LinearRing>
-					</outerBoundaryIs>
-				</Polygon>
-			</Placemark>
-			<Placemark>
-				<name>03_orthogonal_a</name>
-				<Style>
-					<LineStyle>
-						<color>ff0000ff</color>
-					</LineStyle>
-					<PolyStyle>
-						<fill>0</fill>
-					</PolyStyle>
-				</Style>
-				<Polygon>
-					<outerBoundaryIs>
-						<LinearRing>
-							<coordinates>
-								7.252690365351171,49.93417730254371,0 7.25091366397693,49.9332964326736,0 7.26825835383966,49.95088184262979,0 7.25316478962502,49.9346584799087,0 7.252690365351171,49.93417730254371,0 
-							</coordinates>
-						</LinearRing>
-					</outerBoundaryIs>
-				</Polygon>
-			</Placemark>
-			<Placemark>
-				<name>03_orthogonal_b</name>
-				<Style>
-					<LineStyle>
-						<color>ff0000ff</color>
-					</LineStyle>
-					<PolyStyle>
-						<fill>0</fill>
-					</PolyStyle>
-				</Style>
-				<Polygon>
-					<outerBoundaryIs>
-						<LinearRing>
-							<coordinates>
-								7.248815824501201,49.9364447722171,0 7.265200534095121,49.9521363619116,0 7.25060572807736,49.9373390541993,0 7.250406194134581,49.9374210062847,0 7.24980724054694,49.9368135094444,0 7.2494534336253,49.9369588219427,0 7.24833205287005,49.93582138885651,0 7.248238947075869,49.93585962780521,0 7.248815824501201,49.9364447722171,0 
-							</coordinates>
-						</LinearRing>
-					</outerBoundaryIs>
-				</Polygon>
-			</Placemark>
+			<visibility>0</visibility>
 			<Placemark>
 				<name>21_sensitive</name>
+				<visibility>0</visibility>
 				<Style>
 					<LineStyle>
 						<color>ff0000ff</color>
@@ -3717,6 +3527,7 @@
 			</Placemark>
 			<Placemark>
 				<name>21_critical_gs</name>
+				<visibility>0</visibility>
 				<Style>
 					<LineStyle>
 						<color>ff0000ff</color>
@@ -3737,6 +3548,7 @@
 			</Placemark>
 			<Placemark>
 				<name>21_critical_loc</name>
+				<visibility>0</visibility>
 				<Style>
 					<LineStyle>
 						<color>ff0000ff</color>
@@ -3757,6 +3569,7 @@
 			</Placemark>
 			<Placemark>
 				<name>21_orthogonal_a</name>
+				<visibility>0</visibility>
 				<Style>
 					<LineStyle>
 						<color>ff0000ff</color>
@@ -3777,6 +3590,7 @@
 			</Placemark>
 			<Placemark>
 				<name>21_orthogonal_b</name>
+				<visibility>0</visibility>
 				<Style>
 					<LineStyle>
 						<color>ff0000ff</color>
