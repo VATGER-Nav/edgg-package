@@ -9,14 +9,16 @@ COLOR:layout-holdingpoint
 COORDTYPE:OTHER:POLYGON
 STYLE:SOLID:1
 CIRCLE:48.77124909215549:8.07750740195221:0.02:5
-{{ data.edsb_layout['layout']['Labels']['Heli']['Helipad'] | to_symbol('HELIPAD') }}
+{{ data.edsb_kml['layout']['labels']['helipad'] | to_symbol('HELIPAD') }}
 
 MAP:Heli Stands
 AIRPORT:EDSB
 FOLDER:Heli
 ZOOM:600
 COLOR:layout-label-stand
-{{ data.edsb_layout['layout']['Labels']['Heli']['DRF'] | to_multisymbol('CIRCLE') }}
-{{ data.edsb_layout['layout']['Labels']['Heli']['DRF'] | to_multitext('H') }}
-{{ data.edsb_layout['layout']['Labels']['Heli']['Police'] | to_multisymbol('CIRCLE') }}
-{{ data.edsb_layout['layout']['Labels']['Heli']['Police'] | to_multitext('H') }}
+{% for desig, geom in data.edsb_kml['layout']['labels']['heli'].items() %}
+{{- geom | to_text('H:-1:0') }}
+{% endfor %}
+{% for desig, geom in data.edsb_kml['layout']['labels']['heli'].items() %}
+{{- geom | to_symbol('CIRCLE') }}
+{% endfor %}

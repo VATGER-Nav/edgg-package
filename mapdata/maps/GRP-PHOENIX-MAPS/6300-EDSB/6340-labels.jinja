@@ -5,11 +5,13 @@ AIRPORT:EDSB
 FOLDER:Labels
 ACTIVE:1
 ZOOM:400
-{{ data.edsb_layout['layout']['Labels']['Buffer'] | to_multipoly('', 'layout-taxiway') }}
+{% for uuid, geom in data.edsb_kml['layout']['labels']['buffer'].items() %}
+{{- geom | to_poly('', 'layout-taxiway') }}
+{% endfor %}
 FONTSIZE:=:10
 COLOR:layout-label-taxiway
-{% for taxiway, geom in data.edsb_layout['layout']['Labels']['Taxiways'].items() %}
-{{- geom | to_text(taxiway) }}
+{% for desig, geom in data.edsb_kml['layout']['labels']['taxiways'].items() %}
+{{- geom | to_text(desig) }}
 {% endfor %}
 
 MAP:Stands
@@ -19,10 +21,13 @@ ACTIVE:1
 ZOOM:600
 FONTSIZE:=:9
 COLOR:layout-label-stand
-{% for stand, geom in data.edsb_layout['layout']['Labels']['Stands'].items() if stand != '19' %}
-{{- geom | to_text(stand) }}
+{% for desig, geom in data.edsb_kml['layout']['labels']['stands'].items() if desig != '19' %}
+{{- geom | to_text(desig) }}
 {% endfor %}
-{{ data.edsb_layout['layout']['Labels']['Stands']['19'] | to_text('19/19A') }}
+{{ data.edsb_kml['layout']['labels']['stands']['19'] | to_text('19/19A') }}
+{{ data.edsb_kml['layout']['labels']['GAT'] | to_text('GAT') }}
+{{ data.edsb_kml['layout']['labels']['Police'] | to_text('Police') }}
+{{ data.edsb_kml['layout']['labels']['Business Aviation'] | to_text('Business Aviation') }}
 
 MAP:Aprons
 AIRPORT:EDSB
@@ -30,7 +35,7 @@ FOLDER:Labels
 ZOOM:400
 FONTSIZE:=:9
 COLOR:layout-label-stand
-{{ data.edsb_layout['layout']['Labels']['APN 1'] | to_text('APN 1') }}
-{{ data.edsb_layout['layout']['Labels']['APN 2'] | to_text('APN 2') }}
-{{ data.edsb_layout['layout']['Labels']['Stands']['Business Aviation'] | to_text('APN 3:0:-12') }}
-{{ data.edsb_layout['layout']['Labels']['APN 4'] | to_text('APN 4') }}
+{{ data.edsb_kml['layout']['labels']['aprons']['APN 1'] | to_text('APN 1') }}
+{{ data.edsb_kml['layout']['labels']['aprons']['APN 2'] | to_text('APN 2') }}
+{{ data.edsb_kml['layout']['labels']['Business Aviation'] | to_text('APN 3:0:-12') }}
+{{ data.edsb_kml['layout']['labels']['aprons']['APN 4'] | to_text('APN 4') }}

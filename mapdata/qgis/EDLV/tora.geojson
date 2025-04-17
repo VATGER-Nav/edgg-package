@@ -1,0 +1,9 @@
+{
+"type": "FeatureCollection",
+"name": "tora",
+"crs": { "type": "name", "properties": { "name": "urn:ogc:def:crs:EPSG::32632" } },
+"features": [
+{ "type": "Feature", "properties": { "name": "09_A_E" }, "geometry": { "type": "Point", "coordinates": [ 300905.108659691468347, 5720735.552236109972 ] } },
+{ "type": "Feature", "properties": { "name": "27_D_H" }, "geometry": { "type": "Point", "coordinates": [ 303257.56663715589093, 5720558.670032264664769 ] } }
+]
+}

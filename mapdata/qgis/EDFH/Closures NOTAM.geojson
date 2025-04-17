@@ -1,8 +1,0 @@
-{
-"type": "FeatureCollection",
-"name": "Closures NOTAM",
-"crs": { "type": "name", "properties": { "name": "urn:ogc:def:crs:EPSG::32632" } },
-"features": [
-{ "type": "Feature", "properties": { "name": "Apron" }, "geometry": { "type": "MultiPolygon", "coordinates": [ [ [ [ 375842.342844152823091, 5534224.81924959179014 ], [ 375875.575236233009491, 5534273.734360359609127 ], [ 375910.672125852259342, 5534249.889916826039553 ], [ 375877.382928919570986, 5534200.891194393858314 ], [ 375842.342844152823091, 5534224.81924959179014 ] ] ] ] } }
-]
-}

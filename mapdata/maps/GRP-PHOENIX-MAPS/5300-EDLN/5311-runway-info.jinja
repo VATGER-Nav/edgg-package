@@ -6,7 +6,7 @@ FOLDER:Runway Info
 COLOR:tora-label
 ZOOM:700
 TEXTALIGN:RC
-{{ data.edln_layout['layout']['TORA']['31 A'] | to_text('1200') }}
+{{ data.edln_kml['layout']['tora']['31_A'] | to_text('1200') }}
 
 MAP:TORA 13
 AIRPORT:EDLN
@@ -14,19 +14,89 @@ FOLDER:Runway Info
 COLOR:tora-label
 ZOOM:700
 TEXTALIGN:LC
-{{ data.edln_layout['layout']['TORA']['13 B F'] | to_text('1200') }}
+{{ data.edln_kml['layout']['tora']['13_B_F'] | to_text('1200') }}
 
 MAP:Runway Designators
 AIRPORT:EDLN
 FOLDER:Runway Info
 ACTIVE:1
-{{ data.edln_layout['layout']['Markings']['31'] | to_multipoly('31', 'runway-label') }}
-{{ data.edln_layout['layout']['Markings']['13'] | to_multipoly('13', 'runway-label') }}
+{% for uuid, geom in data.edln_kml['layout']['markings']['runways'].items() %}
+{{- geom | to_poly('', 'runway-label') }}
+{% endfor %}
 
 MAP:Runway Markings
 AIRPORT:EDLN
 FOLDER:Runway Info
-{% for marking, geom in data.edln['RunwayMarking'].items() if not marking in [
+{% for uuid in 
+[
+    '02e2a261-2bf1-4140-aca0-f832076ae63f',
+    '139b69ac-b4e4-42f3-a800-55cf1b2ca4ea',
+    '1bd45a2d-8dc1-4cf0-b1eb-c4a8a7127169',
+    '2396bb68-9c27-46dd-a52b-23e9bf26247a',
+    '3f403416-b4ea-4c75-82c8-b22f1c018288',
+    '4682806b-ecfe-c6ff-e053-1514a8c027b7',
+    '4682806b-ecff-c6ff-e053-1514a8c027b7',
+    '4682806b-ed00-c6ff-e053-1514a8c027b7',
+    '4682806b-ed01-c6ff-e053-1514a8c027b7',
+    '4682806b-ed02-c6ff-e053-1514a8c027b7',
+    '4682806b-ed03-c6ff-e053-1514a8c027b7',
+    '4682806b-ed04-c6ff-e053-1514a8c027b7',
+    '4682806b-ed05-c6ff-e053-1514a8c027b7',
+    '4682806b-ed06-c6ff-e053-1514a8c027b7',
+    '4682806b-ed07-c6ff-e053-1514a8c027b7',
+    '4682806b-ed08-c6ff-e053-1514a8c027b7',
+    '4682806b-ed09-c6ff-e053-1514a8c027b7',
+    '4682806b-ed0a-c6ff-e053-1514a8c027b7',
+    '4682806b-ed0b-c6ff-e053-1514a8c027b7',
+    '4682806b-ed0c-c6ff-e053-1514a8c027b7',
+    '4682806b-ed0d-c6ff-e053-1514a8c027b7',
+    '4682806b-ed0e-c6ff-e053-1514a8c027b7',
+    '4682806b-ed0f-c6ff-e053-1514a8c027b7',
+    '4682806b-ed10-c6ff-e053-1514a8c027b7',
+    '4682806b-ed11-c6ff-e053-1514a8c027b7',
+    '4682806b-ed12-c6ff-e053-1514a8c027b7',
+    '4682806b-ed13-c6ff-e053-1514a8c027b7',
+    '4682806b-ed14-c6ff-e053-1514a8c027b7',
+    '4682806b-ed15-c6ff-e053-1514a8c027b7',
+    '4682806b-ed16-c6ff-e053-1514a8c027b7',
+    '4682806b-ed17-c6ff-e053-1514a8c027b7',
+    '4682806b-ed18-c6ff-e053-1514a8c027b7',
+    '4682806b-ed19-c6ff-e053-1514a8c027b7',
+    '4682806b-ed1a-c6ff-e053-1514a8c027b7',
+    '4682806b-ed1b-c6ff-e053-1514a8c027b7',
+    '4682806b-ed1c-c6ff-e053-1514a8c027b7',
+    '4682806b-ed1d-c6ff-e053-1514a8c027b7',
+    '4682806b-ed1e-c6ff-e053-1514a8c027b7',
+    '4682806b-ed1f-c6ff-e053-1514a8c027b7',
+    '4682806b-ed20-c6ff-e053-1514a8c027b7',
+    '4682806b-ed21-c6ff-e053-1514a8c027b7',
+    '4682806b-ed22-c6ff-e053-1514a8c027b7',
+    '4682806b-ed23-c6ff-e053-1514a8c027b7',
+    '4682806b-ed24-c6ff-e053-1514a8c027b7',
+    '4682806b-ed25-c6ff-e053-1514a8c027b7',
+    '4682806b-ed26-c6ff-e053-1514a8c027b7',
+    '4682806b-ed27-c6ff-e053-1514a8c027b7',
+    '4682806b-ed28-c6ff-e053-1514a8c027b7',
+    '4c48cca4-62df-4b48-b524-6cef9ec0a806',
+    '56db18aa-54ee-4401-bc7c-15f4110d20c3',
+    '58630f06-4662-4c8b-b547-91d6e113b553',
+    '689deabe-9501-4a8f-a38d-a4f200570a4e',
+    '7a56f74c-6e33-437b-bfa7-d46fc3fc09e6',
+    '8cf78e05-386e-45ab-b4a3-96dbdc28fbd7',
+    '90de1827-8af2-4445-a4fd-cb137fef7a36',
+    '9f83824f-7198-4fed-b02a-7c15690caba8',
+    'a068c6bb-2f0c-4552-847c-619d06865270',
+    'ac110e72-8b4b-4ca1-90d1-a87ac1c06a43',
+    'b178ab49-a829-4d38-82c6-418290120433',
+    'c3da8153-0db5-444f-903d-8fe9a62ca430',
+    'ed20a69b-64f6-4af7-9ba5-f730a9dc73f4',
+    'ee723283-47f4-4b55-a1ec-9bac0ee97194',
+    'efb01f2c-eb13-4a11-98f8-7f76391492e2',
+] %}
+{{- data.edln_aixm['RunwayMarking'][uuid] | to_poly('', 'layout-runway-marking') }}
+{% endfor %}
+{% for uuid in
+[
     '4682806b-ed29-c6ff-e053-1514a8c027b7',
     '4682806b-ed2a-c6ff-e053-1514a8c027b7',
     '4682806b-ed2b-c6ff-e053-1514a8c027b7',
@@ -39,17 +109,34 @@ FOLDER:Runway Info
     '4682806b-ed32-c6ff-e053-1514a8c027b7',
     '4682806b-ed33-c6ff-e053-1514a8c027b7',
     '4682806b-ed34-c6ff-e053-1514a8c027b7',
-    '4682806b-ed39-c6ff-e053-1514a8c027b7',
-    '4682806b-ed3a-c6ff-e053-1514a8c027b7',
-    '4682806b-ed3b-c6ff-e053-1514a8c027b7',
-    '4682806b-ed3c-c6ff-e053-1514a8c027b7',
-    '4682806b-ed3d-c6ff-e053-1514a8c027b7',
-    '4682806b-ed3e-c6ff-e053-1514a8c027b7'] %}
-{{ geom | to_poly(marking, 'layout-runway-marking') }}
+] %}
+{{- data.edln_aixm['RunwayMarking'][uuid] | to_poly('', 'layout-runway') }}
 {% endfor %}
-{% for marking in ['ed29', 'ed2a', 'ed2b', 'ed2c', 'ed2d', 'ed2e', 'ed2f', 'ed30', 'ed31', 'ed32', 'ed33', 'ed34'] %}
-{{- data.edln['RunwayMarking']['4682806b-' + marking + '-c6ff-e053-1514a8c027b7' | string] | to_poly(marking, 'layout-runway') }}
-{% endfor %}
-{% for marking in ['f1cd', 'f1ce', 'f1cf', 'f1d1', 'f1d2', 'f1d3', 'f1d4', 'f1d5', 'f1d6', 'f1d7', 'f1d8', 'f1d9', 'f1da', 'f1db', 'f1dc', 'f1dd', 'f1de', 'f1df', 'f1e0', 'f1e1', 'f1e2', 'f1e3', 'f1d0'] %}
-{{- data.edln['TaxiwayMarking']['4682806b-' + marking + '-c6ff-e053-1514a8c027b7' | string] | to_poly(marking, 'layout-runway-marking') }}
+{% for uuid in
+[
+    '4682806b-f1cd-c6ff-e053-1514a8c027b7',
+    '4682806b-f1ce-c6ff-e053-1514a8c027b7',
+    '4682806b-f1cf-c6ff-e053-1514a8c027b7',
+    '4682806b-f1d1-c6ff-e053-1514a8c027b7',
+    '4682806b-f1d2-c6ff-e053-1514a8c027b7',
+    '4682806b-f1d3-c6ff-e053-1514a8c027b7',
+    '4682806b-f1d4-c6ff-e053-1514a8c027b7',
+    '4682806b-f1d5-c6ff-e053-1514a8c027b7',
+    '4682806b-f1d6-c6ff-e053-1514a8c027b7',
+    '4682806b-f1d7-c6ff-e053-1514a8c027b7',
+    '4682806b-f1d8-c6ff-e053-1514a8c027b7',
+    '4682806b-f1d9-c6ff-e053-1514a8c027b7',
+    '4682806b-f1da-c6ff-e053-1514a8c027b7',
+    '4682806b-f1db-c6ff-e053-1514a8c027b7',
+    '4682806b-f1dc-c6ff-e053-1514a8c027b7',
+    '4682806b-f1dd-c6ff-e053-1514a8c027b7',
+    '4682806b-f1de-c6ff-e053-1514a8c027b7',
+    '4682806b-f1df-c6ff-e053-1514a8c027b7',
+    '4682806b-f1e0-c6ff-e053-1514a8c027b7',
+    '4682806b-f1e1-c6ff-e053-1514a8c027b7',
+    '4682806b-f1e2-c6ff-e053-1514a8c027b7',
+    '4682806b-f1e3-c6ff-e053-1514a8c027b7',
+    '4682806b-f1d0-c6ff-e053-1514a8c027b7',
+] %}
+{{- data.edln_aixm['TaxiwayMarking'][uuid] | to_poly('', 'layout-runway-marking') }}
 {% endfor %}

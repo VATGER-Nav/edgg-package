@@ -1,0 +1,11 @@
+{
+"type": "FeatureCollection",
+"name": "aor_labels",
+"crs": { "type": "name", "properties": { "name": "urn:ogc:def:crs:EPSG::32632" } },
+"features": [
+{ "type": "Feature", "properties": { "name": "FHG" }, "geometry": { "type": "Point", "coordinates": [ 375522.513681361218914, 5534231.066048821434379 ] } },
+{ "type": "Feature", "properties": { "name": "FHT" }, "geometry": { "type": "Point", "coordinates": [ 375333.004224175470881, 5534357.931572819128633 ] } },
+{ "type": "Feature", "properties": { "name": "lvp_a" }, "geometry": { "type": "Point", "coordinates": [ 376212.796860492264386, 5535103.573904030025005 ] } },
+{ "type": "Feature", "properties": { "name": "lvp_b" }, "geometry": { "type": "Point", "coordinates": [ 375031.361196337849833, 5533109.592174899764359 ] } }
+]
+}

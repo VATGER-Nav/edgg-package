@@ -1,13 +1,20 @@
-// ------------------------------ LVP -------------------------------
+// ----------------------------- LVP Areas --------------------------
 
-MAP:LVP
+MAP:Heavy  21
 AIRPORT:EDSB
 FOLDER:LVP
-ACTIVE:LVP:EDSB:1
-COLOR:lvp-marking
+COORDTYPE:OTHER:REGION:\
+// Orthogonal
+{{ data.edsb_kml['layout']['lvp']['heavy']['21_orthogonal_a'] | to_poly('', 'lvp-orthogonal') }}
+{{ data.edsb_kml['layout']['lvp']['heavy']['21_orthogonal_b'] | to_poly('', 'lvp-orthogonal') }}
+// Sensitive
+{{ data.edsb_kml['layout']['lvp']['heavy']['21_sensitive'] | to_poly('', 'lvp-sensitive') }}
+// Critical
 STYLE:SOLID:2
+{{ data.edsb_kml['layout']['lvp']['heavy']['21_critical_loc'] | to_poly('', 'lvp-critical') }}
+{{ data.edsb_kml['layout']['lvp']['heavy']['21_critical_gs'] | to_poly('', 'lvp-critical') }}
 // LOC
+STYLE:SOLID:2
+COLOR:lvp-marking
 {{ loc_tick(runways.EDSB['21'], 0, -0.01) }}
 {{ loc_tick(runways.EDSB['21'], 0, 0.01) }}
-{{ loc_tick(runways.EDSB['03'], 0, -0.01) }}
-{{ loc_tick(runways.EDSB['03'], 0, 0.01) }}

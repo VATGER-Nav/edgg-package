@@ -5,9 +5,15 @@ AIRPORT:EDFH
 FOLDER:Restrictions
 COORDTYPE:TWYTYPE:NONE
 ACTIVE:1
+
 // A, C
 RESTRICTION:MAXCODE:C
-{{ data.edfh_layout['layout']['Restrictions']['A'] | to_poly('') }}
+{{ data.edfh_kml['layout']['restrictions']['poly']['A'] | to_poly('') }}
+
+// Backtrack RWY 03
+RESTRICTION:MAXCODE:D
+{{ data.edfh_kml['layout']['restrictions']['poly']['backtrack_a'] | to_poly('') }}
+
 // D
 RESTRICTION:MAXWEIGHT:14000
-{{ data.edfh_layout['layout']['Restrictions']['D'] | to_poly('') }}
+{{ data.edfh_kml['layout']['restrictions']['poly']['D'] | to_poly('') }}

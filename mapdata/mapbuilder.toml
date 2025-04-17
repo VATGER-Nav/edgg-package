@@ -128,19 +128,19 @@ source = "https://aip.dfs.de/datasets/scripts/getItem.php?amdt=0&content=aerodro
 type = "aixm"
 source = "https://aip.dfs.de/datasets/scripts/getItem.php?amdt=0&content=aerodrome_mapping/EDLW_AerodromeMapping_2025-02-20_2025-03-20_revision.zip"
 
-[data.edln]
+[data.edln_aixm]
 type = "aixm"
 source = "https://aip.dfs.de/datasets/scripts/getItem.php?amdt=0&content=aerodrome_mapping/EDLN_AerodromeMapping_2025-02-20_2025-03-20_revision.zip"
 
-[data.edlv]
+[data.edlv_aixm]
 type = "aixm"
 source = "https://aip.dfs.de/datasets/scripts/getItem.php?amdt=0&content=aerodrome_mapping/EDLV_AerodromeMapping_2025-02-20_2025-03-20_revision.zip"
 
-[data.edfh]
+[data.edfh_aixm]
 type = "aixm"
 source = "https://aip.dfs.de/datasets/scripts/getItem.php?amdt=0&content=aerodrome_mapping/EDFH_AerodromeMapping_2025-02-20_2025-03-20_revision.zip"
 
-[data.edsb]
+[data.edsb_aixm]
 type = "aixm"
 source = "https://aip.dfs.de/datasets/scripts/getItem.php?amdt=0&content=aerodrome_mapping/EDSB_AerodromeMapping_2025-02-20_2025-03-20_revision.zip"
 
@@ -179,15 +179,15 @@ source = "kml/edlp.kml"
 type = "kml"
 source = "kml/edlw.kml"
 
-[data.edln_layout]
+[data.edln_kml]
 type = "kml"
 source = "kml/edln.kml"
 
-[data.edlv_layout]
+[data.edlv_kml]
 type = "kml"
 source = "kml/edlv.kml"
 
-[data.edfh_layout]
+[data.edfh_kml]
 type = "kml"
 source = "kml/edfh.kml"
 
@@ -195,7 +195,7 @@ source = "kml/edfh.kml"
 type = "kml"
 source = "kml/edfm.kml"
 
-[data.edsb_layout]
+[data.edsb_kml]
 type = "kml"
 source = "kml/edsb.kml"
 

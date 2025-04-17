@@ -5,10 +5,12 @@ AIRPORT:EDLN
 FOLDER:Labels
 ACTIVE:1
 ZOOM:400
-{{ data.edln_layout['layout']['Labels']['Buffer'] | to_multipoly('', 'layout-taxiway') }}
+{% for uuid, geom in data.edln_kml['layout']['labels']['buffer'].items() if uuid != '01963f4e-8ce3-751f-841c-2f2753cfbc4c' %}
+{{- geom | to_poly('', 'layout-taxiway') }}
+{% endfor %}
 FONTSIZE:=:10
 COLOR:layout-label-taxiway
-{% for taxiway, geom in data.edln_layout['layout']['Labels']['Taxiways'].items() %}
+{% for taxiway, geom in data.edln_kml['layout']['labels']['taxiways'].items() %}
 {{- geom | to_text(taxiway) }}
 {% endfor %}
 
@@ -19,6 +21,6 @@ ACTIVE:1
 ZOOM:600
 FONTSIZE:=:9
 COLOR:layout-label-stand
-{% for stand, geom in data.edln_layout['layout']['Labels']['Stands'].items() %}
+{% for stand, geom in data.edln_kml['layout']['labels']['stands'].items() %}
 {{- geom | to_text(stand) }}
 {% endfor %}

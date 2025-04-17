@@ -1,0 +1,8 @@
+{
+"type": "FeatureCollection",
+"name": "deicing_arrows",
+"crs": { "type": "name", "properties": { "name": "urn:ogc:def:crs:EPSG::32632" } },
+"features": [
+{ "type": "Feature", "properties": { "name": "DP_N" }, "geometry": { "type": "Polygon", "coordinates": [ [ [ 376006.974526542471722, 5534624.130786143243313 ], [ 375994.752847802592441, 5534615.434202398173511 ], [ 376003.202114843996242, 5534609.612954740412533 ], [ 376006.974526542471722, 5534624.130786143243313 ] ] ] } }
+]
+}
