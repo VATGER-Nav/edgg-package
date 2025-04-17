@@ -1,6 +1,6 @@
 {
 "type": "FeatureCollection",
-"name": "Labels Stands",
+"name": "labels_stands",
 "crs": { "type": "name", "properties": { "name": "urn:ogc:def:crs:EPSG::32632" } },
 "features": [
 { "type": "Feature", "properties": { "name": "1" }, "geometry": { "type": "Point", "coordinates": [ 302550.996928098669741, 5720395.724248281680048 ] } },

@@ -1,55 +1,184 @@
+// ------------------------------------------------------------------
+//                                 EDLV
+// ------------------------------------------------------------------
+{%- set default = 0.000005 %}
+
 // -------------------------- Ground Layout -------------------------
-{% set default = 0.000005 %}
+
+MAP:Apron Area
+AIRPORT:EDLV
+FOLDER:Airport Layout
+ACTIVE:1
+{% for uuid, geom in data.edlv_kml['layout']['aprons'].items() %}
+{{- geom | to_poly('', 'layout-apron') }}
+{% endfor %}
+{{ data.edlv_aixm['ApronElement']['60ad4527-8fac-e1fa-e053-0100007f5781'] | to_poly('60ad4527-8fac-e1fa-e053-0100007f5781', 'layout-apron') }}
+
+MAP:Parking Area
+AIRPORT:EDLV
+FOLDER:Airport Layout
+ACTIVE:1
+COLOR:layout-taxiway
+{% for uuid, geom in data.edlv_kml['layout']['markings']['parking'].items() %}
+{{- geom | to_line('') -}}
+{% endfor %}
+
+MAP:Roads
+AIRPORT:EDLV
+FOLDER:Airport Layout
+COLOR:layout-taxiway
+{% for uuid, geom in data.edlv_kml['layout']['roads'].items() %}
+{{- geom | simplify(default) | to_line('') -}}
+{% endfor %}
+
 MAP:Taxiway Movement Area
 AIRPORT:EDLV
 FOLDER:Airport Layout
 ACTIVE:1
-{% for taxiway, geom in data.edlv['TaxiwayElement'].items() %}
-{{- geom | simplify(default) | to_poly(taxiway, 'layout-taxiway') }}
+{% for uuid, geom in data.edlv_aixm['TaxiwayElement'].items() %}
+{{- geom | simplify(default) | to_poly(uuid, 'layout-taxiway') }}
 {% endfor %}
 
 MAP:Runway
 AIRPORT:EDLV
 FOLDER:Airport Layout
 ACTIVE:1
-{{ data.edlv['RunwayElement']['60ad4527-93c0-e1fa-e053-0100007f5781'] | to_poly('Runway 27/09', 'layout-runway') }}
-{{ data.edlv['RunwayProtectArea']['60ad4527-8a1a-e1fa-e053-0100007f5781'] | to_poly('Blastpad', 'layout-apron') }}
-{{ data.edlv['RunwayProtectArea']['60ad4527-8a19-e1fa-e053-0100007f5781'] | to_poly('Blastpad', 'layout-apron') }}
+{{ data.edlv_aixm['RunwayElement']['60ad4527-93c0-e1fa-e053-0100007f5781'] | to_poly('Runway 09/27', 'layout-runway') }}
+{% for uuid in
+[
+    '60ad4527-8a1a-e1fa-e053-0100007f5781',
+    '60ad4527-8a19-e1fa-e053-0100007f5781',
+] %}
+{{- data.edlv_aixm['RunwayProtectArea'][uuid] | simplify(default) | to_poly(uuid, 'layout-apron') }}
+{% endfor %}
 
 MAP:Leadin Lines
 AIRPORT:EDLV
 FOLDER:Airport Layout
 ACTIVE:1
 COLOR:layout-taxiline-grey
-{{ data.edlv_layout['layout']['Markings']['Apron'] | to_multiline('Apron') }}
+{% for uuid, geom in data.edlv_kml['layout']['markings']['leadin_solid'].items() %}
+{{- geom | to_line(uuid) -}}
+{% endfor %}
 
 MAP:Taxi Lanes
 AIRPORT:EDLV
 FOLDER:Airport Layout
 ACTIVE:1
 COLOR:layout-taxiline-yellow
-{% for taxilane, geom in data.edlv['GuidanceLine'].items() if not taxilane in [
-    '60ad4527-8f9a-e1fa-e053-0100007f5781',
-    '60ad4527-8f9b-e1fa-e053-0100007f5781',
-    '60ad4527-8f9c-e1fa-e053-0100007f5781',
-    '60ad4527-8f9d-e1fa-e053-0100007f5781',
-    '60ad4527-8f9e-e1fa-e053-0100007f5781',
-    '60ad4527-8f9f-e1fa-e053-0100007f5781',
-    '60ad4527-8fa0-e1fa-e053-0100007f5781',
-    '60ad4527-8fa1-e1fa-e053-0100007f5781',
-    '60ad4527-9319-e1fa-e053-0100007f5781',
-    '60ad4527-931a-e1fa-e053-0100007f5781',
-    '60ad4527-931b-e1fa-e053-0100007f5781',
-    '60ad4527-9576-e1fa-e053-0100007f5781'] %}
-{{- geom | join_segments | simplify(default) | to_line(taxilane) }}
+{% for uuid in
+[
+    '60ad4527-8f91-e1fa-e053-0100007f5781',
+    '60ad4527-8f92-e1fa-e053-0100007f5781',
+    '60ad4527-8f93-e1fa-e053-0100007f5781',
+    '60ad4527-8f94-e1fa-e053-0100007f5781',
+    '60ad4527-8f95-e1fa-e053-0100007f5781',
+    '60ad4527-8f98-e1fa-e053-0100007f5781',
+    '60ad4527-8f99-e1fa-e053-0100007f5781',
+    '60ad4527-930e-e1fa-e053-0100007f5781',
+    '60ad4527-9310-e1fa-e053-0100007f5781',
+    '60ad4527-9311-e1fa-e053-0100007f5781',
+    '60ad4527-9312-e1fa-e053-0100007f5781',
+    '60ad4527-9313-e1fa-e053-0100007f5781',
+    '60ad4527-9314-e1fa-e053-0100007f5781',
+    '60ad4527-9315-e1fa-e053-0100007f5781',
+    '60ad4527-9316-e1fa-e053-0100007f5781',
+    '60ad4527-9317-e1fa-e053-0100007f5781',
+    '60ad4527-9318-e1fa-e053-0100007f5781',
+    '60ad4527-931c-e1fa-e053-0100007f5781',
+    '60ad4527-931d-e1fa-e053-0100007f5781',
+    '60ad4527-931e-e1fa-e053-0100007f5781',
+    '60ad4527-931f-e1fa-e053-0100007f5781',
+    '60ad4527-9324-e1fa-e053-0100007f5781',
+    '60ad4527-9325-e1fa-e053-0100007f5781',
+    '60ad4527-9326-e1fa-e053-0100007f5781',
+    '60ad4527-9327-e1fa-e053-0100007f5781',
+    '60ad4527-956c-e1fa-e053-0100007f5781',
+    '60ad4527-956d-e1fa-e053-0100007f5781',
+    '60ad4527-956e-e1fa-e053-0100007f5781',
+    '60ad4527-956f-e1fa-e053-0100007f5781',
+    '60ad4527-9570-e1fa-e053-0100007f5781',
+    '60ad4527-9571-e1fa-e053-0100007f5781',
+    '60ad4527-9572-e1fa-e053-0100007f5781',
+    '60ad4527-9573-e1fa-e053-0100007f5781',
+    '60ad4527-9574-e1fa-e053-0100007f5781',
+    '60ad4527-9575-e1fa-e053-0100007f5781',
+    '60ad4527-9577-e1fa-e053-0100007f5781',
+    '60ad4527-9578-e1fa-e053-0100007f5781',
+    '60ad4527-9579-e1fa-e053-0100007f5781',
+    '60ad4527-957a-e1fa-e053-0100007f5781',
+    '60ad4527-957b-e1fa-e053-0100007f5781',
+    '70166611-9978-0e44-e053-0100007f50ba',
+    '70166611-9979-0e44-e053-0100007f50ba',
+    '70166611-997a-0e44-e053-0100007f50ba',
+    '70166611-997d-0e44-e053-0100007f50ba',
+    '70166611-997e-0e44-e053-0100007f50ba',
+    '70166611-997f-0e44-e053-0100007f50ba',
+    '70166611-9980-0e44-e053-0100007f50ba',
+    '70166611-9981-0e44-e053-0100007f50ba',
+    '70166611-9982-0e44-e053-0100007f50ba',
+    '70166611-9983-0e44-e053-0100007f50ba',
+    '70166611-9984-0e44-e053-0100007f50ba',
+    '70166611-9985-0e44-e053-0100007f50ba',
+    '70166611-9986-0e44-e053-0100007f50ba',
+    '70166611-9987-0e44-e053-0100007f50ba',
+    '70166611-9988-0e44-e053-0100007f50ba',
+    '70166611-9989-0e44-e053-0100007f50ba',
+    '70166611-998a-0e44-e053-0100007f50ba',
+    '70166611-998b-0e44-e053-0100007f50ba',
+    '70166611-998c-0e44-e053-0100007f50ba',
+    '70166611-998d-0e44-e053-0100007f50ba',
+    '70166611-998e-0e44-e053-0100007f50ba',
+    '70166611-998f-0e44-e053-0100007f50ba',
+    '70166611-9990-0e44-e053-0100007f50ba',
+    '70166611-9991-0e44-e053-0100007f50ba',
+    '70166611-9992-0e44-e053-0100007f50ba',
+    '70166611-9993-0e44-e053-0100007f50ba',
+    '70166611-9994-0e44-e053-0100007f50ba',
+    '70166611-9995-0e44-e053-0100007f50ba',
+    '70166611-9996-0e44-e053-0100007f50ba',
+    '70166611-9997-0e44-e053-0100007f50ba',
+    '70166611-9998-0e44-e053-0100007f50ba',
+    '70166611-9999-0e44-e053-0100007f50ba',
+    '70166611-999a-0e44-e053-0100007f50ba',
+    '70166611-999b-0e44-e053-0100007f50ba',
+    '70166611-999c-0e44-e053-0100007f50ba',
+    '70166611-999d-0e44-e053-0100007f50ba',
+    '70166611-999e-0e44-e053-0100007f50ba',
+    '70166611-999f-0e44-e053-0100007f50ba',
+    '70166611-99a0-0e44-e053-0100007f50ba',
+    '70166611-99a1-0e44-e053-0100007f50ba',
+    '70166611-99a2-0e44-e053-0100007f50ba',
+    '70166611-99a3-0e44-e053-0100007f50ba',
+    '70166611-99a4-0e44-e053-0100007f50ba',
+    '70166611-99a5-0e44-e053-0100007f50ba',
+    '70166611-99a6-0e44-e053-0100007f50ba',
+    '70166611-99a7-0e44-e053-0100007f50ba',
+    '70166611-99a8-0e44-e053-0100007f50ba',
+    '70166611-99a9-0e44-e053-0100007f50ba',
+    '70166611-99aa-0e44-e053-0100007f50ba',
+    '70166611-99ab-0e44-e053-0100007f50ba',
+    '70166611-99ac-0e44-e053-0100007f50ba',
+    '70166611-99ad-0e44-e053-0100007f50ba',
+    '70166611-99ae-0e44-e053-0100007f50ba',
+    '70166611-99af-0e44-e053-0100007f50ba',
+    '70166611-99b0-0e44-e053-0100007f50ba',
+    '70166611-99b1-0e44-e053-0100007f50ba',
+    '70166611-99b2-0e44-e053-0100007f50ba',
+    '70166611-99b3-0e44-e053-0100007f50ba',
+] %}
+{{- data.edlv_aixm['GuidanceLine'][uuid] | join_segments | simplify(default) | to_line(uuid) -}}
 {% endfor %}
-{{ data.edlv_layout['layout']['Markings']['GAT 1'] | to_multiline('GAT 1') }}
+{% for uuid, geom in data.edlv_kml['layout']['markings']['taxilanes'].items() %}
+{{- geom | to_line(uuid) -}}
+{% endfor %}
 
 MAP:Buildings
 AIRPORT:EDLV
 FOLDER:Airport Layout
 ACTIVE:1
-{% for building in [
+{% for uuid in
+[
     '60ad4527-8ccd-e1fa-e053-0100007f5781',
     '60ad4527-8cd8-e1fa-e053-0100007f5781',
     '60ad4527-8cd9-e1fa-e053-0100007f5781',
@@ -305,8 +434,17 @@ ACTIVE:1
     '70166611-9a30-0e44-e053-0100007f50ba',
     '60ad4527-8d01-e1fa-e053-0100007f5781'
 ] %}
-{{- data.edlv['VerticalStructure'][building | string] | simplify(default) | to_poly(building, 'layout-building') }}
+{{- data.edlv_aixm['VerticalStructure'][uuid] | simplify(default) | to_poly(uuid, 'layout-building') }}
 {% endfor %}
-{{ data.edlv_layout['layout']['Solar Panels']['Solar Panels'] | to_multipoly('Solar Panels', 'layout-building') }}
+{% for uuid, geom in data.edlv_kml['layout']['buildings'].items() %}
+{{- geom | to_poly('', 'layout-building') }}
+{% endfor %}
+
+MAP:Fence
+AIRPORT:EDLV
+FOLDER:Airport Layout
+ACTIVE:1
 COLOR:layout-building
-{{ data.edlv_layout['layout']['Fence']['Fence'] | to_multiline('Fence') }}
+{% for uuid, geom in data.edlv_kml['layout']['fence'].items() %}
+{{- geom | to_line('') -}}
+{% endfor %}

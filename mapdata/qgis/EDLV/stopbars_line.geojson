@@ -1,0 +1,10 @@
+{
+"type": "FeatureCollection",
+"name": "stopbars_line",
+"crs": { "type": "name", "properties": { "name": "urn:ogc:def:crs:EPSG::32632" } },
+"features": [
+{ "type": "Feature", "properties": { "name": "0196432c-bb92-72ca-90e7-11661540dd52" }, "geometry": { "type": "LineString", "coordinates": [ [ 303302.320977937721182, 5720366.288462591357529 ], [ 303314.273704131948762, 5720385.965098779648542 ] ] } },
+{ "type": "Feature", "properties": { "name": "0196432c-bb92-7d92-af05-a220aa06ecf7" }, "geometry": { "type": "LineString", "coordinates": [ [ 302935.94204646430444, 5720379.157614065334201 ], [ 302947.111674059939105, 5720371.967852937057614 ] ] } },
+{ "type": "Feature", "properties": { "name": "0196432c-bb92-74f5-941c-94ce6b60991c" }, "geometry": { "type": "LineString", "coordinates": [ [ 302973.959235424990766, 5720358.32141260523349 ], [ 302990.142792738741264, 5720369.556990846991539 ] ] } }
+]
+}
