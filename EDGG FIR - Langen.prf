@@ -32,7 +32,7 @@ Voice	PPPT	18612224
 Voice	SPPT	18612224
 Voice	bass_filter	1
 Sounds	Sound18	\EDGG\Sounds\startup_silent.wav
-Plugins	Plugin0	\EDGG\Plugins\Topsky_EDGG\TopSky.dll
+Plugins	Plugin0	\EDGG\Plugins\Topsky\EDGG\TopSky.dll
 Plugins	Plugin0Display0	Ground Radar display
 Plugins	Plugin0Display1	Standard ES radar screen
 Plugins	Plugin1	\EDGG\Plugins\GRP\TWR_PHX_DAY\GRplugin.dll

@@ -1,5 +1,5 @@
 {
-  "EDGG/Plugins/Topsky_EDUU/TopSkyMaps.txt": [
+  "EDGG/Plugins/Topsky/EDUU/TopSkyMaps.txt": [
     ".github/workflows/source/topsky_eduu_maps/general.txt",
 
     ".github/workflows/source/topsky_eduu_maps/fixes.txt",
@@ -12,7 +12,7 @@
     ".github/workflows/source/topsky_eduu_maps/heuse_area.txt"
   ],
 
-  "EDGG/Plugins/Topsky_EDGG/TopSkyMaps.txt": [
+  "EDGG/Plugins/Topsky/EDGG/TopSkyMaps.txt": [
     ".github/workflows/source/topsky_edgg_maps/general.txt",
 
     ".github/workflows/source/topsky_edgg_maps/ecl/eddl.txt",
@@ -58,7 +58,7 @@
     ".github/workflows/source/topsky_edgg_maps/minor_rwy.txt"
   ],
 
-  "EDGG/Plugins/Topsky_EDYY/TopSkyMaps.txt": [
+  "EDGG/Plugins/Topsky/EDYY/TopSkyMaps.txt": [
     ".github/workflows/source/topsky_edyy_maps/general.txt",
 
     ".github/workflows/source/topsky_edyy_maps/fixes.txt",

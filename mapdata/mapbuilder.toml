@@ -29,19 +29,19 @@ aliases = [ "dcl", "no-general" ]
 
 [profiles.CPDLC-EDGG]
 maps = [
-    { map = "TOPSKY-CPDLC", target = "Plugins/Topsky_EDGG/TopSkyCPDLC.txt" },
+    { map = "TOPSKY-CPDLC", target = "Plugins/Topsky/EDGG/TopSkyCPDLC.txt" },
 ]
 aliases = [ "dcl", "general", "eduu", "edyy" ]
 
 [profiles.CPDLC-EDUU]
 maps = [
-    { map = "TOPSKY-CPDLC", target = "Plugins/Topsky_EDUU/TopSkyCPDLC.txt" },
+    { map = "TOPSKY-CPDLC", target = "Plugins/Topsky/EDUU/TopSkyCPDLC.txt" },
 ]
 aliases = [ "no-dcl", "general", "eduu" ]
 
 [profiles.CPDLC-EDYY]
 maps = [
-    { map = "TOPSKY-CPDLC", target = "Plugins/Topsky_EDYY/TopSkyCPDLC.txt" },
+    { map = "TOPSKY-CPDLC", target = "Plugins/Topsky/EDYY/TopSkyCPDLC.txt" },
 ]
 aliases = [ "no-dcl", "general", "edyy" ]
 
