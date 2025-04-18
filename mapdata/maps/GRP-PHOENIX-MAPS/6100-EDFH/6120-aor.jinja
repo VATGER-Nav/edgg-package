@@ -5,36 +5,38 @@ AIRPORT:EDFH
 FOLDER:AoR
 STYLE:Dot
 COLOR:aor-gnd-a
-{{ data.edfh_layout['layout']['AoR']['LVP FHG'] | to_multiline('FHG') }}
+{{ data.edfh_kml['layout']['aor']['line']['FHG_lvp_a'] | to_line('') -}}
+{{ data.edfh_kml['layout']['aor']['line']['FHG_lvp_b'] | to_line('') -}}
 COLOR:aor-twr-a
-{{ data.edfh_layout['layout']['AoR']['LVP FHT'] | to_multiline('FHT') }}
+{{ data.edfh_kml['layout']['aor']['line']['FHT_lvp_a'] | to_line('') -}}
+{{ data.edfh_kml['layout']['aor']['line']['FHT_lvp_b'] | to_line('') -}}
 ZOOM:400
 FONTSIZE:=:11
 COLOR:layout-label-taxiway
 TEXTALIGN:RC
-{{ data.edfh_layout['layout']['AoR']['LVP1_'] | to_text('During LVO') }}
+{{ data.edfh_kml['layout']['aor']['labels']['lvp_a'] | to_text('During LVO') }}
 TEXTALIGN:LC
-{{ data.edfh_layout['layout']['AoR']['LVP2_'] | to_text('During LVO') }}
+{{ data.edfh_kml['layout']['aor']['labels']['lvp_b'] | to_text('During LVO') }}
 
 MAP:EDFH_GND
 AIRPORT:EDFH
 FOLDER:AoR
 COLOR:aor-gnd-a
 STYLE:Dot
-{{ data.edfh_layout['layout']['AoR']['FHG'] | to_line('FHG') }}
+{{ data.edfh_kml['layout']['aor']['line']['FHG'] | to_line('FHG') }}
 ZOOM:400
 FONTSIZE:=:13
-{{ data.edfh_layout['layout']['AoR']['FHG_'] | to_text('FHG  121.980') }}
+{{ data.edfh_kml['layout']['aor']['labels']['FHG'] | to_text('FHG  121.980') }}
 
 MAP:EDFH_TWR
 AIRPORT:EDFH
 FOLDER:AoR
 COLOR:aor-twr-a
 STYLE:Dot
-{{ data.edfh_layout['layout']['AoR']['FHT'] | to_line('FHT') }}
+{{ data.edfh_kml['layout']['aor']['line']['FHT'] | to_line('FHT') }}
 ZOOM:400
 FONTSIZE:=:13
-{{ data.edfh_layout['layout']['AoR']['FHT_'] | to_text('FHT  119.655') }}
+{{ data.edfh_kml['layout']['aor']['labels']['FHT'] | to_text('FHT  119.655') }}
 
 MAP:EDFH_EIF_APP
 AIRPORT:EDFH
@@ -42,7 +44,7 @@ FOLDER:AoR
 COLOR:aor-app-a
 ZOOM:400
 FONTSIZE:=:13
-{{ data.edfh_layout['layout']['AoR']['FHT_'] | to_text('EIF  125.600:0:-20') }}
+{{ data.edfh_kml['layout']['aor']['labels']['FHT'] | to_text('EIF  125.600:0:-20') }}
 
 MAP:EDGG_RUD_CTR
 AIRPORT:EDFH
@@ -50,7 +52,7 @@ FOLDER:AoR
 COLOR:aor-app-a
 ZOOM:400
 FONTSIZE:=:13
-{{ data.edfh_layout['layout']['AoR']['FHT_'] | to_text('RUD  133.435:0:-20') }}
+{{ data.edfh_kml['layout']['aor']['labels']['FHT'] | to_text('RUD  133.435:0:-20') }}
 
 MAP:EDGG_GIN_CTR
 AIRPORT:EDFH
@@ -58,4 +60,4 @@ FOLDER:AoR
 COLOR:aor-app-a
 ZOOM:400
 FONTSIZE:=:13
-{{ data.edfh_layout['layout']['AoR']['FHT_'] | to_text('GIN  124.730:0:-20') }}
+{{ data.edfh_kml['layout']['aor']['labels']['FHT'] | to_text('GIN  124.730:0:-20') }}

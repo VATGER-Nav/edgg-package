@@ -6,27 +6,30 @@ FOLDER:AoR
 ACTIVE:1
 COLOR:layout-taxiline-grey
 STYLE:Dot
-{{ data.edln_layout['layout']['AoR']['Area'] | to_multiline('Non-movement Area') }}
+{{ data.edln_kml['layout']['aor']['line']['area_a'] | to_line('') -}}
+{{ data.edln_kml['layout']['aor']['line']['area_b'] | to_line('') -}}
 
 MAP:EDLN_GND
 AIRPORT:EDLN
 FOLDER:AoR
 COLOR:aor-gnd-a
 STYLE:Dot
-{{ data.edln_layout['layout']['AoR']['LNG'] | to_multiline('LWG') }}
+{{ data.edln_kml['layout']['aor']['line']['LNG_a'] | to_line('') -}}
+{{ data.edln_kml['layout']['aor']['line']['LNG_b'] | to_line('') -}}
 ZOOM:600
 FONTSIZE:=:13
-{{ data.edln_layout['layout']['AoR']['LNG_'] | to_text('LNG  121.930') }}
+{{ data.edln_kml['layout']['aor']['labels']['LNG'] | to_text('LNG  121.930') }}
 
 MAP:EDLN_TWR
 AIRPORT:EDLN
 FOLDER:AoR
 COLOR:aor-twr-a
 STYLE:Dot
-{{ data.edln_layout['layout']['AoR']['LNT'] | to_multiline('LNT') }}
+{{ data.edln_kml['layout']['aor']['line']['LNT_a'] | to_line('') -}}
+{{ data.edln_kml['layout']['aor']['line']['LNT_b'] | to_line('') -}}
 ZOOM:600
 FONTSIZE:=:13
-{{ data.edln_layout['layout']['AoR']['LNT_'] | to_text('LNT  120.455') }}
+{{ data.edln_kml['layout']['aor']['labels']['LNT'] | to_text('LNT  120.455') }}
 
 MAP:EDDL_APP
 AIRPORT:EDLN
@@ -34,7 +37,7 @@ FOLDER:AoR
 COLOR:aor-app-a
 ZOOM:600
 FONTSIZE:=:13
-{{ data.edln_layout['layout']['AoR']['LNT_'] | to_text('DLA  128.555:0:-20') }}
+{{ data.edln_kml['layout']['aor']['labels']['LNT'] | to_text('DLA  128.555:0:-20') }}
 
 MAP:EDDL_DEP
 AIRPORT:EDLN
@@ -42,7 +45,7 @@ FOLDER:AoR
 COLOR:aor-app-a
 ZOOM:600
 FONTSIZE:=:13
-{{ data.edln_layout['layout']['AoR']['LNT_'] | to_text('DLD  121.355:0:-20') }}
+{{ data.edln_kml['layout']['aor']['labels']['LNT'] | to_text('DLD  121.355:0:-20') }}
 
 MAP:EDDL_F_APP
 AIRPORT:EDLN
@@ -50,7 +53,7 @@ FOLDER:AoR
 COLOR:aor-app-a
 ZOOM:600
 FONTSIZE:=:13
-{{ data.edln_layout['layout']['AoR']['LNT_'] | to_text('DLAT 128.655:0:-20') }}
+{{ data.edln_kml['layout']['aor']['labels']['LNT'] | to_text('DLAT 128.655:0:-20') }}
 
 MAP:EDGG_PAH_CTR
 AIRPORT:EDLN
@@ -58,4 +61,4 @@ FOLDER:AoR
 COLOR:aor-app-a
 ZOOM:600
 FONTSIZE:=:13
-{{ data.edln_layout['layout']['AoR']['LNT_'] | to_text('PADH 135.650:0:-20') }}
+{{ data.edln_kml['layout']['aor']['labels']['LNT'] | to_text('PADH 135.650:0:-20') }}

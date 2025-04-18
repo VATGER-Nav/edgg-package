@@ -1,0 +1,30 @@
+{
+"type": "FeatureCollection",
+"name": "labels_taxiways",
+"crs": { "type": "name", "properties": { "name": "urn:ogc:def:crs:EPSG::32632" } },
+"features": [
+{ "type": "Feature", "properties": { "name": "D" }, "geometry": { "type": "Point", "coordinates": [ 432161.342913907312322, 5402652.843162753619254 ] } },
+{ "type": "Feature", "properties": { "name": "E" }, "geometry": { "type": "Point", "coordinates": [ 431755.028109125734773, 5402013.826766589656472 ] } },
+{ "type": "Feature", "properties": { "name": "C" }, "geometry": { "type": "Point", "coordinates": [ 432522.475118076719809, 5403220.800315511412919 ] } },
+{ "type": "Feature", "properties": { "name": "B" }, "geometry": { "type": "Point", "coordinates": [ 432867.382661116367672, 5403763.240739953704178 ] } },
+{ "type": "Feature", "properties": { "name": "A" }, "geometry": { "type": "Point", "coordinates": [ 433351.657989500788972, 5404524.866630651056767 ] } },
+{ "type": "Feature", "properties": { "name": "Q" }, "geometry": { "type": "Point", "coordinates": [ 431871.047698692127597, 5402021.519961893558502 ] } },
+{ "type": "Feature", "properties": { "name": "G#1" }, "geometry": { "type": "Point", "coordinates": [ 432009.792911887052469, 5402304.78438701108098 ] } },
+{ "type": "Feature", "properties": { "name": "G#2" }, "geometry": { "type": "Point", "coordinates": [ 432392.284163618169259, 5402906.333182104863226 ] } },
+{ "type": "Feature", "properties": { "name": "G#3" }, "geometry": { "type": "Point", "coordinates": [ 432748.15875607880298, 5403466.021622901782393 ] } },
+{ "type": "Feature", "properties": { "name": "G#4" }, "geometry": { "type": "Point", "coordinates": [ 433095.161128783191089, 5404011.756612265482545 ] } },
+{ "type": "Feature", "properties": { "name": "T" }, "geometry": { "type": "Point", "coordinates": [ 432054.449192871747073, 5402243.187654236331582 ] } },
+{ "type": "Feature", "properties": { "name": "P#1" }, "geometry": { "type": "Point", "coordinates": [ 432100.024026003142353, 5402174.475265495479107 ] } },
+{ "type": "Feature", "properties": { "name": "P#2" }, "geometry": { "type": "Point", "coordinates": [ 432308.423947565315757, 5402289.077605246566236 ] } },
+{ "type": "Feature", "properties": { "name": "Z#1" }, "geometry": { "type": "Point", "coordinates": [ 432302.578090326976962, 5402426.692459153942764 ] } },
+{ "type": "Feature", "properties": { "name": "Z#2" }, "geometry": { "type": "Point", "coordinates": [ 432364.4061670229421, 5402607.820941551588476 ] } },
+{ "type": "Feature", "properties": { "name": "Z#3" }, "geometry": { "type": "Point", "coordinates": [ 432565.054968917160295, 5402915.67958511505276 ] } },
+{ "type": "Feature", "properties": { "name": "N" }, "geometry": { "type": "Point", "coordinates": [ 432403.202392230625264, 5402769.847490794025362 ] } },
+{ "type": "Feature", "properties": { "name": "M" }, "geometry": { "type": "Point", "coordinates": [ 432642.154119337908924, 5403144.793845432810485 ] } },
+{ "type": "Feature", "properties": { "name": "K" }, "geometry": { "type": "Point", "coordinates": [ 432892.583717014349531, 5403536.935563813894987 ] } },
+{ "type": "Feature", "properties": { "name": "S#1" }, "geometry": { "type": "Point", "coordinates": [ 432833.455122081271838, 5403295.850531830452383 ] } },
+{ "type": "Feature", "properties": { "name": "J" }, "geometry": { "type": "Point", "coordinates": [ 432989.510462890029885, 5403685.949364517815411 ] } },
+{ "type": "Feature", "properties": { "name": "S#2" }, "geometry": { "type": "Point", "coordinates": [ 433235.982763539126609, 5403919.494506767019629 ] } },
+{ "type": "Feature", "properties": { "name": "H" }, "geometry": { "type": "Point", "coordinates": [ 433329.052069081226364, 5404211.390438229776919 ] } }
+]
+}

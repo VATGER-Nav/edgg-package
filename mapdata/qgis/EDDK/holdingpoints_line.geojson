@@ -21,7 +21,7 @@
 { "type": "Feature", "properties": { "name": "06_13R" }, "geometry": { "type": "LineString", "coordinates": [ [ 368501.970403107639868, 5636160.059931837953627 ], [ 368477.669700893922709, 5636213.803379900753498 ] ] } },
 { "type": "Feature", "properties": { "name": "T2" }, "geometry": { "type": "LineString", "coordinates": [ [ 368199.755730213189963, 5636795.48657479416579 ], [ 368175.107765022083186, 5636823.236147914081812 ] ] } },
 { "type": "Feature", "properties": { "name": "B_13R_e" }, "geometry": { "type": "LineString", "coordinates": [ [ 367845.546431046968792, 5637201.748062866739929 ], [ 367869.113428073760588, 5637174.667652814649045 ] ] } },
-{ "type": "Feature", "properties": { "name": "B-13R_w" }, "geometry": { "type": "LineString", "coordinates": [ [ 367735.101135251636151, 5636997.620963646098971 ], [ 367770.340285525715444, 5637000.00101154576987 ] ] } },
+{ "type": "Feature", "properties": { "name": "B_13R_w" }, "geometry": { "type": "LineString", "coordinates": [ [ 367735.101135251636151, 5636997.620963646098971 ], [ 367770.340285525715444, 5637000.00101154576987 ] ] } },
 { "type": "Feature", "properties": { "name": "B_06" }, "geometry": { "type": "LineString", "coordinates": [ [ 367965.205474286456592, 5636085.461810070089996 ], [ 367933.519742309697904, 5636077.904214854352176 ] ] } },
 { "type": "Feature", "properties": { "name": "Z1" }, "geometry": { "type": "LineString", "coordinates": [ [ 367986.324570486147422, 5635868.754190052859485 ], [ 368007.520375384425279, 5635873.985676476731896 ] ] } },
 { "type": "Feature", "properties": { "name": "C_06" }, "geometry": { "type": "LineString", "coordinates": [ [ 368066.20514527609339, 5635900.705105030909181 ], [ 368062.845769012346864, 5635886.701735221780837 ] ] } },

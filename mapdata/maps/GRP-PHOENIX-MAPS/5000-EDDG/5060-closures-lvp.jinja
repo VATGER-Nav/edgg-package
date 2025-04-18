@@ -1,0 +1,9 @@
+// -------------------------- LVP Closures --------------------------
+
+MAP:C
+AIRPORT:EDDG
+FOLDER:Closures
+ACTIVE:LVP:EDDG:1
+STYLE:Solid:2
+COORDTYPE:TWYCLOSED:REGION
+{{ data.eddg_kml['layout']['closures']['poly']['C'] | to_poly('','closure') }}

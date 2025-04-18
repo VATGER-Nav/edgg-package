@@ -1,0 +1,19 @@
+{
+"type": "FeatureCollection",
+"name": "labels_taxiways",
+"crs": { "type": "name", "properties": { "name": "urn:ogc:def:crs:EPSG::32632" } },
+"features": [
+{ "type": "Feature", "properties": { "name": "S#1" }, "geometry": { "type": "Point", "coordinates": [ 301466.05731058557285, 5720526.700204412452877 ] } },
+{ "type": "Feature", "properties": { "name": "N#1" }, "geometry": { "type": "Point", "coordinates": [ 301501.564425744116306, 5720950.128521061502397 ] } },
+{ "type": "Feature", "properties": { "name": "S#2" }, "geometry": { "type": "Point", "coordinates": [ 302697.173735600197688, 5720439.289997642859817 ] } },
+{ "type": "Feature", "properties": { "name": "N#2" }, "geometry": { "type": "Point", "coordinates": [ 302723.30455126229208, 5720860.480894352309406 ] } },
+{ "type": "Feature", "properties": { "name": "D" }, "geometry": { "type": "Point", "coordinates": [ 303287.049063538492192, 5720483.556040061637759 ] } },
+{ "type": "Feature", "properties": { "name": "H" }, "geometry": { "type": "Point", "coordinates": [ 303306.015518048079684, 5720735.801807269454002 ] } },
+{ "type": "Feature", "properties": { "name": "C" }, "geometry": { "type": "Point", "coordinates": [ 302949.711656517873053, 5720508.920567107386887 ] } },
+{ "type": "Feature", "properties": { "name": "G" }, "geometry": { "type": "Point", "coordinates": [ 302968.678111027460545, 5720761.16633431520313 ] } },
+{ "type": "Feature", "properties": { "name": "B" }, "geometry": { "type": "Point", "coordinates": [ 301214.833563268999569, 5720639.366706199944019 ] } },
+{ "type": "Feature", "properties": { "name": "F" }, "geometry": { "type": "Point", "coordinates": [ 301233.800017778587062, 5720891.612473407760262 ] } },
+{ "type": "Feature", "properties": { "name": "A" }, "geometry": { "type": "Point", "coordinates": [ 300873.640871597104706, 5720665.021113554947078 ] } },
+{ "type": "Feature", "properties": { "name": "E" }, "geometry": { "type": "Point", "coordinates": [ 300896.376555297407322, 5720916.983470995910466 ] } }
+]
+}

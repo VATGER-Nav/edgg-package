@@ -15,7 +15,7 @@
 
 MAP:Airspace Labels
 FOLDER:Airspace
-COLOR:standard
+COLOR:label
 LAYER:+4
 ASRDATA:PHOENIX
 {{ data.airspace_labels }}
@@ -366,6 +366,8 @@ ASRDATA:PHOENIX
         ),
 
 ) }}
+// EDDR TMZ
+{{ render_sectorlines(EDGG['EDDRTMZ']['025-065']) }}
 
 // RMZ
 {{ render_sectorlines(

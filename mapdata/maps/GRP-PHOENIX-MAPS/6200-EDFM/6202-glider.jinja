@@ -6,20 +6,21 @@ FOLDER:Glider
 ACTIVE:1
 COLOR:layout-taxiway
 STYLE:DOT:1
-{{ data.edfm_layout['layout']['Glider']['Glider'] | to_line('Glider Area') }}
+{{ data.edfm_kml['layout']['runways']['glider'] | to_line('Glider Area') -}}
 ZOOM:400
 FONTSIZE:=:11
 COLOR:layout-label-stand
-{{ data.edfm_layout['layout']['Glider']['Glider_'] | to_text('Glider Area') }}
+{{ data.edfm_kml['layout']['labels']['Glider Area'] | to_text('Glider Area') }}
 
 MAP:Winch Launching
 AIRPORT:EDFM
 FOLDER:Glider
-{{ data.edfm_layout['layout']['Glider']['Winch'] | to_multipoly('Winch', 'layout-taxiway') }}
+{{ data.edfm_kml['layout']['glider']['winch_b'] | to_poly('', 'layout-taxiway') }}
+{{ data.edfm_kml['layout']['glider']['winch_c'] | to_poly('', 'layout-taxiway') }}
 COLOR:layout-taxiway
 STYLE:DOT:1
-{{ data.edfm_layout['layout']['Glider']['Winch-'] | to_line('Winch') }}
+{{ data.edfm_kml['layout']['glider']['winch_a'] | to_line('') -}}
 ZOOM:400
 FONTSIZE:=:11
 COLOR:layout-label-stand
-{{ data.edfm_layout['layout']['Glider']['Winch_'] | to_text('Winch Launching:0:-8') }}
+{{ data.edfm_kml['layout']['labels']['Glider Winch'] | to_text('Winch Launching:0:-8') }}

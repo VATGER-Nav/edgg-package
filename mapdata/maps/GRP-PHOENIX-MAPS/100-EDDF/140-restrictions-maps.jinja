@@ -86,11 +86,10 @@ STYLE:SOLID:4
 
 // Turn N1 - L-North
 COLOR:restrictions-E
-STYLE:SOLID:6
-{{ data.eddf_kml['layout']['restrictions']['line']['N1'] | to_line('') -}}
-COLOR:restrictions-AB
-STYLE:DOT:1
-{{ data.eddf_kml['layout']['restrictions']['line']['N1'] | to_line('') -}}
+STYLE:SOLID:3
+{% for uuid, geom in data.eddf_kml['layout']['restrictions']['dash'].items() %}
+{{- geom | to_line('') -}}
+{% endfor %}
 COLOR:restrictions-C
 TEXTALIGN:CC
 {{ data.eddf_kml['layout']['restrictions']['labels']['N1'] | to_text('2') }}
@@ -213,7 +212,7 @@ TEXTALIGN:CC
 COLOR:restrictions-AB
 {{ data.eddf_kml['layout']['restrictions']['labels']['07L-25R_a'] | to_symbol('VERBOT_1') }}
 {{ data.eddf_kml['layout']['restrictions']['labels']['07L-25R_b'] | to_symbol('VERBOT_1') }}
-COLOR:layout-label-stand
+COLOR:white
 {{ data.eddf_kml['layout']['restrictions']['labels']['07L-25R_a'] | to_symbol('VERBOT_2') }}
 {{ data.eddf_kml['layout']['restrictions']['labels']['07L-25R_b'] | to_symbol('VERBOT_2') }}
 {{ data.eddf_kml['layout']['restrictions']['labels']['07L-25R_c'] | to_text('Only arriving traffic:0:-12') }}

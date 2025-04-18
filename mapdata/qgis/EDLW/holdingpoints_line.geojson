@@ -1,0 +1,11 @@
+{
+"type": "FeatureCollection",
+"name": "holdingpoints_line",
+"crs": { "type": "name", "properties": { "name": "urn:ogc:def:crs:EPSG::32632" } },
+"features": [
+{ "type": "Feature", "properties": { "name": "B" }, "geometry": { "type": "LineString", "coordinates": [ [ 403320.47254112851806, 5708041.904684820212424 ], [ 403324.100922222831286, 5708056.133836617693305 ] ] } },
+{ "type": "Feature", "properties": { "name": "A" }, "geometry": { "type": "LineString", "coordinates": [ [ 403243.687939587573055, 5707915.404047737829387 ], [ 403232.953274740255438, 5707934.687908636406064 ] ] } },
+{ "type": "Feature", "properties": { "name": "C" }, "geometry": { "type": "LineString", "coordinates": [ [ 404492.652472036657855, 5708701.559276559390128 ], [ 404512.28779291047249, 5708712.373094780370593 ] ] } },
+{ "type": "Feature", "properties": { "name": "D" }, "geometry": { "type": "LineString", "coordinates": [ [ 404719.92569992429344, 5708725.909562926739454 ], [ 404730.828840336413123, 5708706.113100572489202 ] ] } }
+]
+}

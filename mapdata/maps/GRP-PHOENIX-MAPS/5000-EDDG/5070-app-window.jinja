@@ -1,6 +1,14 @@
 // ------------------------- Approach Window ------------------------
 {%- set EDGG = data.airspace['lines']['EDGG'] %}
 
+MAP:Airspace D:A
+AIRPORT:EDDG
+FOLDER:Approach Window
+ACTIVE:1
+COLOR:appwindow-standard
+// EDDG D
+{{ render_sectorlines(EDGG['EDDGCLD']['025-045']) }}
+
 MAP:TMZ:A
 AIRPORT:EDDG
 FOLDER:Approach Window
@@ -32,7 +40,7 @@ STYLE:SOLID:1
 COLOR:appwindow-standard
 {{ render_sectorlines(EDGG['EDDGCTR']['000-025']) }}
 
-MAP:Extended Centerlines:A
+MAP:ECL:A
 AIRPORT:EDDG
 FOLDER:Approach Window
 ACTIVE:1

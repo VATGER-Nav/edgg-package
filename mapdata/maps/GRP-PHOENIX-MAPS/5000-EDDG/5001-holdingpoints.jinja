@@ -28,9 +28,10 @@ COLOR:layout-holdingpoint
 {{- data.eddg_kml['layout']['holdingpoints']['line'][desig] | to_line(desig) }}
 {% endfor %}
 
-MAP:Apron Stopbars
+MAP:Stopbars
 AIRPORT:EDDG
 FOLDER:Holding Points
+ACTIVE:1
 COLOR:layout-holdingpoint
 {% for uuid, geom in data.eddg_kml['layout']['stopbars'].items() %}
 {{- geom | to_line('') -}}

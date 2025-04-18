@@ -1,0 +1,14 @@
+{
+"type": "FeatureCollection",
+"name": "labels_stands",
+"crs": { "type": "name", "properties": { "name": "urn:ogc:def:crs:EPSG::32632" } },
+"features": [
+{ "type": "Feature", "properties": { "name": "1" }, "geometry": { "type": "Point", "coordinates": [ 465327.94128359091701, 5480431.373261235654354 ] } },
+{ "type": "Feature", "properties": { "name": "2" }, "geometry": { "type": "Point", "coordinates": [ 465307.990177370083984, 5480432.503339665010571 ] } },
+{ "type": "Feature", "properties": { "name": "3" }, "geometry": { "type": "Point", "coordinates": [ 465287.995429809030611, 5480433.635890044271946 ] } },
+{ "type": "Feature", "properties": { "name": "4" }, "geometry": { "type": "Point", "coordinates": [ 465268.035751182003878, 5480434.766454035416245 ] } },
+{ "type": "Feature", "properties": { "name": "5" }, "geometry": { "type": "Point", "coordinates": [ 465248.708092677348759, 5480435.861218893900514 ] } },
+{ "type": "Feature", "properties": { "name": "Parking Area" }, "geometry": { "type": "Point", "coordinates": [ 465170.443506406678353, 5480364.572109612636268 ] } },
+{ "type": "Feature", "properties": { "name": "Heli" }, "geometry": { "type": "Point", "coordinates": [ 465416.023092821240425, 5480454.988959156908095 ] } }
+]
+}

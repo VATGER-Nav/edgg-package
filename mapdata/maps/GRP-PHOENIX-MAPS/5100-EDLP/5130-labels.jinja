@@ -4,11 +4,13 @@ AIRPORT:EDLP
 FOLDER:Labels
 ACTIVE:1
 ZOOM:400
-{{ data.edlp_layout['layout']['Labels']['Buffer'] | to_multipoly('', 'layout-taxiway') }}
+{% for uuid, geom in data.edlp_kml['layout']['labels']['buffer'].items() %}
+{{- geom | to_poly('', 'layout-taxiway') }}
+{% endfor %}
 FONTSIZE:=:10
 COLOR:layout-label-taxiway
-{% for taxiway, geom in data.edlp_layout['layout']['Labels']['Taxiways'].items() %}
-{{- geom | to_text(taxiway) }}
+{% for desig, geom in data.edlp_kml['layout']['labels']['taxiways'].items() %}
+{{- geom | to_text(desig) }}
 {% endfor %}
 
 MAP:Stands
@@ -18,6 +20,6 @@ ACTIVE:1
 ZOOM:600
 FONTSIZE:=:9
 COLOR:layout-label-stand
-{% for stand, geom in data.edlp_layout['layout']['Labels']['Stands'].items() %}
-{{- geom | to_text(stand) }}
+{% for desig, geom in data.edlp_kml['layout']['labels']['stands'].items() %}
+{{- geom | to_text(desig) }}
 {% endfor %}

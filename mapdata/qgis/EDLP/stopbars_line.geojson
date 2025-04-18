@@ -1,0 +1,15 @@
+{
+"type": "FeatureCollection",
+"name": "stopbars_line",
+"crs": { "type": "name", "properties": { "name": "urn:ogc:def:crs:EPSG::32632" } },
+"features": [
+{ "type": "Feature", "properties": { "name": "0195bf75-5281-76e6-84b1-37f06d67ed29" }, "geometry": { "type": "LineString", "coordinates": [ [ 472732.030522064247634, 5717458.764195345342159 ], [ 472747.075196690275334, 5717468.71285539213568 ] ] } },
+{ "type": "Feature", "properties": { "name": "0195bf75-5281-78bf-b822-36fb57cd3eaa" }, "geometry": { "type": "LineString", "coordinates": [ [ 472777.498284318600781, 5717487.608586797490716 ], [ 472782.450166073453147, 5717490.689300931058824 ] ] } },
+{ "type": "Feature", "properties": { "name": "0195bf75-5281-7ace-82a6-e75b10f7ce3e" }, "geometry": { "type": "LineString", "coordinates": [ [ 472890.936922927678097, 5717560.252567329443991 ], [ 472896.634035465540364, 5717564.283080365508795 ] ] } },
+{ "type": "Feature", "properties": { "name": "0195bf75-5281-720a-9f17-f5e0edcee9cf" }, "geometry": { "type": "LineString", "coordinates": [ [ 472988.258432405535132, 5717624.708230645395815 ], [ 472994.238558428478427, 5717623.99949446413666 ] ] } },
+{ "type": "Feature", "properties": { "name": "0195bf75-5281-7865-a466-32f4bc1a2725" }, "geometry": { "type": "LineString", "coordinates": [ [ 473165.350565049157012, 5717656.007841114886105 ], [ 473177.129640147672035, 5717655.330115822143853 ], [ 473179.784164161595982, 5717655.685226779431105 ], [ 473200.005206472822465, 5717664.869061334058642 ] ] } },
+{ "type": "Feature", "properties": { "name": "0195bf75-5281-709f-bfd2-5d9f8f106e60" }, "geometry": { "type": "LineString", "coordinates": [ [ 473278.225945539423265, 5717664.640114388428628 ], [ 473289.429371407139115, 5717671.779906677082181 ] ] } },
+{ "type": "Feature", "properties": { "name": "0195bf75-5281-7de6-aba6-2b308e6c3a82" }, "geometry": { "type": "LineString", "coordinates": [ [ 473266.421148785098922, 5717737.362902250140905 ], [ 473272.911230578727555, 5717735.708135829307139 ] ] } },
+{ "type": "Feature", "properties": { "name": "0195bf75-5281-7386-8165-996d48fdfc3e" }, "geometry": { "type": "LineString", "coordinates": [ [ 473855.257788063434418, 5718186.213665083050728 ], [ 473861.091220807575155, 5718189.935915628448129 ] ] } }
+]
+}

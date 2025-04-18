@@ -1,0 +1,10 @@
+{
+"type": "FeatureCollection",
+"name": "restrictions_labels",
+"crs": { "type": "name", "properties": { "name": "urn:ogc:def:crs:EPSG::32632" } },
+"features": [
+{ "type": "Feature", "properties": { "name": "reference" }, "geometry": { "type": "Point", "coordinates": [ 376117.153781301982235, 5533833.004087422974408 ] } },
+{ "type": "Feature", "properties": { "name": "D" }, "geometry": { "type": "Point", "coordinates": [ 375365.404937156650703, 5533926.072325534187257 ] } },
+{ "type": "Feature", "properties": { "name": "backtrack" }, "geometry": { "type": "Point", "coordinates": [ 374583.097909443546087, 5533181.039077489636838 ] } }
+]
+}

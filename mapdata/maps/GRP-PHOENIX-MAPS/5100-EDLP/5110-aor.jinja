@@ -5,20 +5,20 @@ AIRPORT:EDLP
 FOLDER:AoR
 COLOR:aor-gnd-a
 STYLE:Dot
-{{ data.edlp_layout['layout']['AoR']['LPG'] | to_line('LPG') }}
+{{ data.edlp_kml['layout']['aor']['line']['LPG'] | to_line('LPG') }}
 ZOOM:400
 FONTSIZE:=:13
-{{ data.edlp_layout['layout']['AoR']['LPG_'] | to_text('LPG  121.930') }}
+{{ data.edlp_kml['layout']['aor']['labels']['LPG'] | to_text('LPG  121.930') }}
 
 MAP:EDLP_TWR
 AIRPORT:EDLP
 FOLDER:AoR
 COLOR:aor-twr-a
 STYLE:Dot
-{{ data.edlp_layout['layout']['AoR']['LPT'] | to_line('LPT') }}
+{{ data.edlp_kml['layout']['aor']['line']['LPT'] | to_line('LPT') }}
 ZOOM:400
 FONTSIZE:=:13
-{{ data.edlp_layout['layout']['AoR']['LPT_'] | to_text('LPT  133.380') }}
+{{ data.edlp_kml['layout']['aor']['labels']['LPT'] | to_text('LPT  133.380') }}
 
 MAP:EDLP_PAL_APP
 AIRPORT:EDLP
@@ -26,7 +26,7 @@ FOLDER:AoR
 COLOR:aor-app-a
 ZOOM:400
 FONTSIZE:=:13
-{{ data.edlp_layout['layout']['AoR']['LPT_'] | to_text('PADL 125.225:0:-20') }}
+{{ data.edlp_kml['layout']['aor']['labels']['LPT'] | to_text('PADL 125.225:0:-20') }}
 
 MAP:EDGG_PAH_CTR
 AIRPORT:EDLP
@@ -34,4 +34,4 @@ FOLDER:AoR
 COLOR:aor-app-a
 ZOOM:400
 FONTSIZE:=:13
-{{ data.edlp_layout['layout']['AoR']['LPT_'] | to_text('PADH 135.650:0:-20') }}
+{{ data.edlp_kml['layout']['aor']['labels']['LPT'] | to_text('PADH 135.650:0:-20') }}

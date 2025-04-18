@@ -1,0 +1,9 @@
+{
+"type": "FeatureCollection",
+"name": "stopbars_line",
+"crs": { "type": "name", "properties": { "name": "urn:ogc:def:crs:EPSG::32632" } },
+"features": [
+{ "type": "Feature", "properties": { "name": "L2" }, "geometry": { "type": "LineString", "coordinates": [ [ 403572.580295710184146, 5708057.629915091209114 ], [ 403608.725894049974158, 5708067.413940136320889 ] ] } },
+{ "type": "Feature", "properties": { "name": "L1" }, "geometry": { "type": "LineString", "coordinates": [ [ 403297.314628075633664, 5707876.662094834260643 ], [ 403306.702660496113822, 5707860.010657857172191 ] ] } }
+]
+}

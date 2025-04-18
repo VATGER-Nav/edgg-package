@@ -1,9 +1,0 @@
-{
-"type": "FeatureCollection",
-"name": "Closures",
-"crs": { "type": "name", "properties": { "name": "urn:ogc:def:crs:EPSG::32632" } },
-"features": [
-{ "type": "Feature", "properties": { "name": "Apron" }, "geometry": { "type": "MultiPoint", "coordinates": [ [ 376328.477018924080767, 5535100.757672575302422 ] ] } },
-{ "type": "Feature", "properties": { "name": "Runway" }, "geometry": { "type": "MultiPoint", "coordinates": [ [ 374846.889486939762719, 5533401.095436326228082 ], [ 376111.996234365098644, 5535292.490705842152238 ] ] } }
-]
-}

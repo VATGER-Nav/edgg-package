@@ -4,6 +4,4 @@ MAP:Apron
 AIRPORT:EDFM
 FOLDER:Closures
 ACTIVE:1
-//ASRDATA:GND
-COLOR:closure-symbol
-{{ data.edfm_layout['layout']['Closures']['Apron'] | to_symbol('CROSS') }}
+{{ data.edfm_kml['layout']['closures']['symb']['apron'] | to_poly('','closure-symbol') }}

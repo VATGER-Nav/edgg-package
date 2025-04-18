@@ -41,7 +41,7 @@ COLOR:restrictions-AB
 {% for uuid, geom in data.eddl_kml['layout']['restrictions_A380']['symb'].items() %}
 {{- geom | to_symbol('VERBOT_1') }}
 {% endfor %}
-COLOR:layout-label-stand
+COLOR:white
 {% for uuid, geom in data.eddl_kml['layout']['restrictions_A380']['symb'].items() %}
 {{- geom | to_symbol('VERBOT_2') }}
 {% endfor %}
@@ -124,7 +124,7 @@ COLOR:restrictions-AB
 ]%}
 {{- geom | to_symbol('VERBOT_1') }}
 {% endfor %}
-COLOR:layout-label-stand
+COLOR:white
 {% for uuid, geom in data.eddl_kml['layout']['restrictions_A380']['symb'].items() if uuid not in 
 [
     '01959eb3-e66f-755e-97d0-abe8eea8981d'

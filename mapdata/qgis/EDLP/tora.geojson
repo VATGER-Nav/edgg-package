@@ -1,0 +1,11 @@
+{
+"type": "FeatureCollection",
+"name": "tora",
+"crs": { "type": "name", "properties": { "name": "urn:ogc:def:crs:EPSG::32632" } },
+"features": [
+{ "type": "Feature", "properties": { "name": "24_B" }, "geometry": { "type": "Point", "coordinates": [ 473507.419201862590853, 5718186.003117666579783 ] } },
+{ "type": "Feature", "properties": { "name": "06_C" }, "geometry": { "type": "Point", "coordinates": [ 473099.140216718718875, 5717922.323379103094339 ] } },
+{ "type": "Feature", "properties": { "name": "24_A" }, "geometry": { "type": "Point", "coordinates": [ 474331.857636914704926, 5718719.210095713846385 ] } },
+{ "type": "Feature", "properties": { "name": "06_D" }, "geometry": { "type": "Point", "coordinates": [ 472583.567839121504221, 5717588.966496780514717 ] } }
+]
+}

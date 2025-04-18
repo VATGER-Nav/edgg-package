@@ -73,14 +73,6 @@ STYLE:Solid:1
 {{ data.eddf_kml['layout']['closures']['symb']['Y_a'] | to_poly('','closure-symbol') }}
 {{ data.eddf_kml['layout']['closures']['symb']['Y_b'] | to_poly('','closure-symbol') }}
 
-MAP:S
-AIRPORT:EDDF
-FOLDER:Closures
-ACTIVE:1
-STYLE:Solid:2
-COORDTYPE:TWYCLOSED:REGION
-{{ data.eddf_kml['layout']['closures']['poly']['S'] | to_poly('','closure') }}
-
 MAP:S10
 AIRPORT:EDDF
 FOLDER:Closures

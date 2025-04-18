@@ -89,7 +89,7 @@ M_7
 M_8
 M_9
 Q_1
-RWY A 
+RWY A
 RWY A1
 RWY B E
 RWY B W

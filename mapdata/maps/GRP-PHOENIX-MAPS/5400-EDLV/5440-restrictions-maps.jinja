@@ -3,32 +3,48 @@
 MAP:Restrictions
 AIRPORT:EDLV
 FOLDER:Restrictions
-ZOOM:600
+ZOOM:400
+
 // F, G
 COLOR:restrictions-AB
-COORDTYPE:OTHER:REGION:/
-{{ data.edlv_layout['layout']['Restrictions']['F'] | simplify(default) | to_poly('') }}
-COORDTYPE:OTHER:REGION:/
-{{ data.edlv_layout['layout']['Restrictions']['G'] | simplify(default) | to_poly('') }}
-TEXTALIGN:LC
-{{ data.edlv_layout['layout']['Restrictions']['F_'] | to_text('Max code B') }}
-TEXTALIGN:RC
-{{ data.edlv_layout['layout']['Restrictions']['G_'] | to_text('Max code B') }}
+STYLE:SOLID:4
+{{ data.edlv_kml['layout']['restrictions']['line']['F'] | to_line('') -}}
+{{ data.edlv_kml['layout']['restrictions']['line']['G'] | to_line('') -}}
 
 // B, C
 COLOR:restrictions-C
-COORDTYPE:OTHER:REGION:/
-{{ data.edlv_layout['layout']['Restrictions']['B'] | simplify(default) | to_poly('') }}
-COORDTYPE:OTHER:REGION:/
-{{ data.edlv_layout['layout']['Restrictions']['C'] | simplify(default) | to_poly('') }}
-TEXTALIGN:LC
-{{ data.edlv_layout['layout']['Restrictions']['B_'] | to_text('Max code C') }}
-TEXTALIGN:RC
-{{ data.edlv_layout['layout']['Restrictions']['C_'] | to_text('Max code C') }}
+STYLE:SOLID:4
+{{ data.edlv_kml['layout']['restrictions']['line']['B'] | to_line('') -}}
+{{ data.edlv_kml['layout']['restrictions']['line']['C_a'] | to_line('') -}}
+{{ data.edlv_kml['layout']['restrictions']['line']['C_b'] | to_line('') -}}
+
+// Restriction Stands
+TEXTALIGN:CC
+FONTSIZE:=:9
+COLOR:restrictions-C
+{% for desig in
+[
+    '1',
+    '2',
+    '3',
+    '4',
+    '5',
+    '6',
+    '7',
+    '8',
+    '9',
+] %}
+{{- data.edlv_kml['layout']['restrictions']['stands'][desig] | to_symbol('STAND') }}
+{% endfor %}
 
 // Reference
 COLOR:layout-label-stand
-TEXTALIGN:CT
-{{ data.edlv_layout['layout']['Restrictions']['Ref'] | to_text('Reference:0:12') }}
-{{ data.edlv_layout['layout']['Restrictions']['Ref'] | to_text('Code B - Wingspan < 24m (CRJ2/C700):0:24') }}
-{{ data.edlv_layout['layout']['Restrictions']['Ref'] | to_text('Code C - Wingspan < 36m (A321/B739):0:36') }}
+FONTSIZE:=:12
+{{ data.edlv_kml['layout']['restrictions']['labels']['reference'] | to_text('Reference  :0:-15') }}
+{{ data.edlv_kml['layout']['restrictions']['labels']['reference'] | to_text('Code B < 24m (CRJ2/C700):0:0') }}
+{{ data.edlv_kml['layout']['restrictions']['labels']['reference'] | to_text('Code C < 36m (A321/B739):0:15') }}
+FONTSIZE:=:70
+COLOR:restrictions-AB
+{{ data.edlv_kml['layout']['restrictions']['labels']['reference'] | to_text('.:-95:-54') }}
+COLOR:restrictions-C
+{{ data.edlv_kml['layout']['restrictions']['labels']['reference'] | to_text('.:-95:-39') }}

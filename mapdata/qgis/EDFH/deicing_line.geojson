@@ -1,0 +1,8 @@
+{
+"type": "FeatureCollection",
+"name": "deicing_line",
+"crs": { "type": "name", "properties": { "name": "urn:ogc:def:crs:EPSG::32632" } },
+"features": [
+{ "type": "Feature", "properties": { "name": "DP_N" }, "geometry": { "type": "LineString", "coordinates": [ [ 376002.649738248088397, 5534618.073963150382042 ], [ 375980.539017695758957, 5534584.566400374285877 ] ] } }
+]
+}
