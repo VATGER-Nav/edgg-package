@@ -1,5 +1,9 @@
 // ------------------------- Approach Window ------------------------
 {%- set EDGG = data.airspace['lines']['EDGG'] %}
+{%- set rwy05_brg = brg(runways.EDDL['05R']['bearing']).invert() %}
+{%- set rwy23_brg = brg(runways.EDDL['23L']['bearing']).invert() %}
+{%- set tick05_brg = rwy05_brg + 90 %}
+{%- set tick23_brg = rwy23_brg + 90 %}
 
 MAP:Airspace C:A
 AIRPORT:EDLN
@@ -53,16 +57,20 @@ STYLE:SOLID:1
 COLOR:appwindow-ecl
 // 05R
 {{ ecl_dashes(runways.EDDL['05R'], 14) }}
-{{ marker_ticks(runways.EDDL['05R'], [6, 10], 0.5, 0.5, 'R') }}
+{{ fix(runways.EDDL['05R']['thr']).move_to(6 , rwy05_brg).move_to(-0.5, tick05_brg).line_to(-0.5, tick05_brg) }}
+{{ fix(runways.EDDL['05R']['thr']).move_to(10, rwy05_brg).move_to(-0.5, tick05_brg).line_to(-0.5, tick05_brg) }}
 // 05L
 {{ ecl_dashes(runways.EDDL['05L'], 14) }}
-{{ marker_ticks(runways.EDDL['05L'], [6, 10], 0.5, 0.5, 'L') }}
+{{ fix(runways.EDDL['05L']['thr']).move_to(6 , rwy05_brg).move_to(0.5, tick05_brg).line_to(0.5, tick05_brg) }}
+{{ fix(runways.EDDL['05L']['thr']).move_to(10, rwy05_brg).move_to(0.5, tick05_brg).line_to(0.5, tick05_brg) }}
 // 23L
 {{ ecl_dashes(runways.EDDL['23L'], 14) }}
-{{ marker_ticks(runways.EDDL['23L'], [6, 10], 0.5, 0.5, 'L') }}
+{{ fix(runways.EDDL['23L']['thr']).move_to(6 , rwy23_brg).move_to(0.5, tick23_brg).line_to(0.5, tick23_brg) }}
+{{ fix(runways.EDDL['23L']['thr']).move_to(10, rwy23_brg).move_to(0.5, tick23_brg).line_to(0.5, tick23_brg) }}
 // 23R
 {{ ecl_dashes(runways.EDDL['23R'], 14) }}
-{{ marker_ticks(runways.EDDL['23R'], [6, 10], 0.5, 0.5, 'R') }}
+{{ fix(runways.EDDL['23R']['thr']).move_to(6 , rwy23_brg).move_to(-0.5, tick23_brg).line_to(-0.5, tick23_brg) }}
+{{ fix(runways.EDDL['23R']['thr']).move_to(10, rwy23_brg).move_to(-0.5, tick23_brg).line_to(-0.5, tick23_brg) }}
 // Long Ticks
 {%- for rwy in ['05R', '05L', '23L', '23R'] %}
 {%- set brg = brg(runways.EDDL[rwy]['bearing']).invert() %}
