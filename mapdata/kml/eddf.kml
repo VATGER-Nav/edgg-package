@@ -31366,427 +31366,6 @@
 				</Polygon>
 			</Placemark>
 		</Folder>
-		<Folder>
-			<name>dot</name>
-			<visibility>0</visibility>
-			<Placemark>
-				<name>U-S</name>
-				<visibility>0</visibility>
-				<MultiGeometry>
-					<Point>
-						<coordinates>8.59011971689946,50.03822855335039,0</coordinates>
-					</Point>
-					<Point>
-						<coordinates>8.59017459284733,50.0381318008394,0</coordinates>
-					</Point>
-					<Point>
-						<coordinates>8.590232108734901,50.03803039336619,0</coordinates>
-					</Point>
-					<Point>
-						<coordinates>8.59028962437907,50.0379289858621,0</coordinates>
-					</Point>
-				</MultiGeometry>
-			</Placemark>
-			<Placemark>
-				<name>R-S4</name>
-				<visibility>0</visibility>
-				<MultiGeometry>
-					<Point>
-						<coordinates>8.586335664336071,50.0382632127789,0</coordinates>
-					</Point>
-					<Point>
-						<coordinates>8.58639054791759,50.0381664620768,0</coordinates>
-					</Point>
-					<Point>
-						<coordinates>8.586448071806039,50.0380650564996,0</coordinates>
-					</Point>
-					<Point>
-						<coordinates>8.586505595451049,50.0379636508915,0</coordinates>
-					</Point>
-				</MultiGeometry>
-			</Placemark>
-			<Placemark>
-				<name>S4-S</name>
-				<visibility>0</visibility>
-				<MultiGeometry>
-					<Point>
-						<coordinates>8.58888491529823,50.03721497792851,0</coordinates>
-					</Point>
-					<Point>
-						<coordinates>8.588734697146281,50.0371796326537,0</coordinates>
-					</Point>
-					<Point>
-						<coordinates>8.58857725197498,50.0371425866478,0</coordinates>
-					</Point>
-					<Point>
-						<coordinates>8.58841980704708,50.0371055404287,0</coordinates>
-					</Point>
-				</MultiGeometry>
-			</Placemark>
-			<Placemark>
-				<name>S-S5</name>
-				<visibility>0</visibility>
-				<MultiGeometry>
-					<Point>
-						<coordinates>8.585763699015891,50.0370696384453,0</coordinates>
-					</Point>
-					<Point>
-						<coordinates>8.585821222898289,50.0369682331596,0</coordinates>
-					</Point>
-					<Point>
-						<coordinates>8.585878746537251,50.036866827843,0</coordinates>
-					</Point>
-					<Point>
-						<coordinates>8.58570881544016,50.03716638886921,0</coordinates>
-					</Point>
-				</MultiGeometry>
-			</Placemark>
-			<Placemark>
-				<name>S5-S</name>
-				<visibility>0</visibility>
-				<MultiGeometry>
-					<Point>
-						<coordinates>8.58549230155416,50.03640749516759,0</coordinates>
-					</Point>
-					<Point>
-						<coordinates>8.585342088435191,50.0363721455094,0</coordinates>
-					</Point>
-					<Point>
-						<coordinates>8.585184648539039,50.0363350949093,0</coordinates>
-					</Point>
-					<Point>
-						<coordinates>8.585027208886331,50.0362980440959,0</coordinates>
-					</Point>
-					<Point>
-						<coordinates>8.58486004851229,50.0362584287989,0</coordinates>
-					</Point>
-					<Point>
-						<coordinates>8.584709836326891,50.0362230783238,0</coordinates>
-					</Point>
-					<Point>
-						<coordinates>8.584552397409229,50.0361860268675,0</coordinates>
-					</Point>
-					<Point>
-						<coordinates>8.584394958735009,50.036148975198,0</coordinates>
-					</Point>
-				</MultiGeometry>
-			</Placemark>
-			<Placemark>
-				<name>S6-S</name>
-				<visibility>0</visibility>
-				<MultiGeometry>
-					<Point>
-						<coordinates>8.58257898848111,50.03570892585341,0</coordinates>
-					</Point>
-					<Point>
-						<coordinates>8.582428779700381,50.0356735724313,0</coordinates>
-					</Point>
-					<Point>
-						<coordinates>8.58227134435122,50.0356365178861,0</coordinates>
-					</Point>
-					<Point>
-						<coordinates>8.582113909245511,50.0355994631278,0</coordinates>
-					</Point>
-				</MultiGeometry>
-			</Placemark>
-			<Placemark>
-				<name>S7-S</name>
-				<visibility>0</visibility>
-				<MultiGeometry>
-					<Point>
-						<coordinates>8.580966110118309,50.035319312138,0</coordinates>
-					</Point>
-					<Point>
-						<coordinates>8.58080867706364,50.0352822556122,0</coordinates>
-					</Point>
-					<Point>
-						<coordinates>8.580651244252429,50.0352451988733,0</coordinates>
-					</Point>
-					<Point>
-						<coordinates>8.581116316709879,50.0353546674497,0</coordinates>
-					</Point>
-				</MultiGeometry>
-			</Placemark>
-			<Placemark>
-				<name>R-S7</name>
-				<visibility>0</visibility>
-				<MultiGeometry>
-					<Point>
-						<coordinates>8.579837777379099,50.03670745969239,0</coordinates>
-					</Point>
-					<Point>
-						<coordinates>8.579892672206739,50.03661071206589,0</coordinates>
-					</Point>
-					<Point>
-						<coordinates>8.579950207882341,50.0365093097123,0</coordinates>
-					</Point>
-					<Point>
-						<coordinates>8.580007743314461,50.03640790732771,0</coordinates>
-					</Point>
-				</MultiGeometry>
-			</Placemark>
-			<Placemark>
-				<name>S-S8</name>
-				<visibility>0</visibility>
-				<MultiGeometry>
-					<Point>
-						<coordinates>8.576654005519259,50.0350127418862,0</coordinates>
-					</Point>
-					<Point>
-						<coordinates>8.57670890478167,50.0349159957488,0</coordinates>
-					</Point>
-					<Point>
-						<coordinates>8.57676644510539,50.0348145949558,0</coordinates>
-					</Point>
-					<Point>
-						<coordinates>8.576823985185619,50.0347131941319,0</coordinates>
-					</Point>
-				</MultiGeometry>
-			</Placemark>
-			<Placemark>
-				<name>S8-S</name>
-				<visibility>0</visibility>
-				<MultiGeometry>
-					<Point>
-						<coordinates>8.5763339285269,50.03423847777031,0</coordinates>
-					</Point>
-					<Point>
-						<coordinates>8.57617650260493,50.03420141497241,0</coordinates>
-					</Point>
-					<Point>
-						<coordinates>8.57601907692646,50.03416435196141,0</coordinates>
-					</Point>
-					<Point>
-						<coordinates>8.576484128313201,50.03427383906629,0</coordinates>
-					</Point>
-				</MultiGeometry>
-			</Placemark>
-			<Placemark>
-				<name>S9-S</name>
-				<visibility>0</visibility>
-				<MultiGeometry>
-					<Point>
-						<coordinates>8.57502381641924,50.03392601128,0</coordinates>
-					</Point>
-					<Point>
-						<coordinates>8.57487510742707,50.03388812771911,0</coordinates>
-					</Point>
-					<Point>
-						<coordinates>8.574719244038279,50.0338484213099,0</coordinates>
-					</Point>
-					<Point>
-						<coordinates>8.57456338090763,50.0338087146917,0</coordinates>
-					</Point>
-				</MultiGeometry>
-			</Placemark>
-			<Placemark>
-				<name>R-S10</name>
-				<visibility>0</visibility>
-				<MultiGeometry>
-					<Point>
-						<coordinates>8.57096155187998,50.0345817756314,0</coordinates>
-					</Point>
-					<Point>
-						<coordinates>8.57101646206624,50.034485032208,0</coordinates>
-					</Point>
-					<Point>
-						<coordinates>8.571074013839331,50.0343836342596,0</coordinates>
-					</Point>
-					<Point>
-						<coordinates>8.571131565368869,50.0342822362804,0</coordinates>
-					</Point>
-				</MultiGeometry>
-			</Placemark>
-			<Placemark>
-				<name>S-S11</name>
-				<visibility>0</visibility>
-				<MultiGeometry>
-					<Point>
-						<coordinates>8.56893155868131,50.0331668942236,0</coordinates>
-					</Point>
-					<Point>
-						<coordinates>8.56898647130866,50.0330701517435,0</coordinates>
-					</Point>
-					<Point>
-						<coordinates>8.569044025640279,50.0329687547838,0</coordinates>
-					</Point>
-					<Point>
-						<coordinates>8.56910157972834,50.0328673577931,0</coordinates>
-					</Point>
-				</MultiGeometry>
-			</Placemark>
-			<Placemark>
-				<name>S11-S</name>
-				<visibility>0</visibility>
-				<MultiGeometry>
-					<Point>
-						<coordinates>8.568780939240741,50.0324078414817,0</coordinates>
-					</Point>
-					<Point>
-						<coordinates>8.5686307509862,50.03237247023511,0</coordinates>
-					</Point>
-					<Point>
-						<coordinates>8.568473337150881,50.032335397008,0</coordinates>
-					</Point>
-					<Point>
-						<coordinates>8.5683159235591,50.0322983235677,0</coordinates>
-					</Point>
-				</MultiGeometry>
-			</Placemark>
-			<Placemark>
-				<name>R-R11</name>
-				<visibility>0</visibility>
-				<MultiGeometry>
-					<Point>
-						<coordinates>8.55846763625221,50.03150305048201,0</coordinates>
-					</Point>
-					<Point>
-						<coordinates>8.55852521080471,50.0314016587658,0</coordinates>
-					</Point>
-					<Point>
-						<coordinates>8.558582785113559,50.03130026701871,0</coordinates>
-					</Point>
-					<Point>
-						<coordinates>8.55841270433211,50.0315997879591,0</coordinates>
-					</Point>
-				</MultiGeometry>
-			</Placemark>
-			<Placemark>
-				<name>R-R15</name>
-				<visibility>0</visibility>
-				<MultiGeometry>
-					<Point>
-						<coordinates>8.54656222566811,50.02878913263519,0</coordinates>
-					</Point>
-					<Point>
-						<coordinates>8.54661717811195,50.0286924007772,0</coordinates>
-					</Point>
-					<Point>
-						<coordinates>8.546674774175539,50.02859101495049,0</coordinates>
-					</Point>
-					<Point>
-						<coordinates>8.546732369995389,50.0284896290929,0</coordinates>
-					</Point>
-				</MultiGeometry>
-			</Placemark>
-			<Placemark>
-				<name>Y7-Y5</name>
-				<visibility>0</visibility>
-				<MultiGeometry>
-					<Point>
-						<coordinates>8.52933834169305,50.021634317823,0</coordinates>
-					</Point>
-					<Point>
-						<coordinates>8.529343999170701,50.02153137649159,0</coordinates>
-					</Point>
-					<Point>
-						<coordinates>8.529349928811889,50.021423482471,0</coordinates>
-					</Point>
-					<Point>
-						<coordinates>8.52935585842485,50.021315588448,0</coordinates>
-					</Point>
-				</MultiGeometry>
-			</Placemark>
-			<Placemark>
-				<name>Y5-Y7</name>
-				<visibility>0</visibility>
-				<MultiGeometry>
-					<Point>
-						<coordinates>8.52805760281122,50.0212155455891,0</coordinates>
-					</Point>
-					<Point>
-						<coordinates>8.528217476350839,50.02121592245639,0</coordinates>
-					</Point>
-					<Point>
-						<coordinates>8.52855260703255,50.02121671174,0</coordinates>
-					</Point>
-					<Point>
-						<coordinates>8.528385041689489,50.0212163172192,0</coordinates>
-					</Point>
-				</MultiGeometry>
-			</Placemark>
-			<Placemark>
-				<name>Y5-S</name>
-				<visibility>0</visibility>
-				<MultiGeometry>
-					<Point>
-						<coordinates>8.528044548332581,50.0225480250777,0</coordinates>
-					</Point>
-					<Point>
-						<coordinates>8.52820442629422,50.0225484019756,0</coordinates>
-					</Point>
-					<Point>
-						<coordinates>8.528371996267641,50.0225487967704,0</coordinates>
-					</Point>
-					<Point>
-						<coordinates>8.52853956624547,50.02254919132321,0</coordinates>
-					</Point>
-				</MultiGeometry>
-			</Placemark>
-			<Placemark>
-				<name>DP2-W</name>
-				<visibility>0</visibility>
-				<MultiGeometry>
-					<Point>
-						<coordinates>8.52103268045118,50.032040583388,0</coordinates>
-					</Point>
-					<Point>
-						<coordinates>8.52120028448628,50.032040629516,0</coordinates>
-					</Point>
-					<Point>
-						<coordinates>8.521360194952059,50.032040673301,0</coordinates>
-					</Point>
-					<Point>
-						<coordinates>8.52170589879726,50.0320410269838,0</coordinates>
-					</Point>
-					<Point>
-						<coordinates>8.52187350284135,50.0320410721397,0</coordinates>
-					</Point>
-					<Point>
-						<coordinates>8.5220334133157,50.0320411149971,0</coordinates>
-					</Point>
-					<Point>
-						<coordinates>8.521538294755199,50.03204098158599,0</coordinates>
-					</Point>
-				</MultiGeometry>
-			</Placemark>
-			<Placemark>
-				<name>P1-DP1</name>
-				<visibility>0</visibility>
-				<MultiGeometry>
-					<Point>
-						<coordinates>8.52088312439421,50.03549787842981,0</coordinates>
-					</Point>
-					<Point>
-						<coordinates>8.520883105817839,50.0353948728847,0</coordinates>
-					</Point>
-					<Point>
-						<coordinates>8.520883086346171,50.0352869115613,0</coordinates>
-					</Point>
-					<Point>
-						<coordinates>8.52088306687288,50.0351789502359,0</coordinates>
-					</Point>
-				</MultiGeometry>
-			</Placemark>
-			<Placemark>
-				<name>P1-N11</name>
-				<visibility>0</visibility>
-				<MultiGeometry>
-					<Point>
-						<coordinates>8.547890936305031,50.0432461423128,0</coordinates>
-					</Point>
-					<Point>
-						<coordinates>8.547748370592579,50.04319944342079,0</coordinates>
-					</Point>
-					<Point>
-						<coordinates>8.547598946093011,50.04315049757629,0</coordinates>
-					</Point>
-					<Point>
-						<coordinates>8.547449521898271,50.0431015515397,0</coordinates>
-					</Point>
-				</MultiGeometry>
-			</Placemark>
-		</Folder>
 	</Folder>
 	<Folder>
 		<name>lvp</name>
@@ -38588,6 +38167,7 @@
 	</Folder>
 	<Folder>
 		<name>restrictions</name>
+		<visibility>0</visibility>
 		<Folder>
 			<name>poly</name>
 			<visibility>0</visibility>
@@ -39119,8 +38699,10 @@
 		</Folder>
 		<Folder>
 			<name>line</name>
+			<visibility>0</visibility>
 			<Placemark>
 				<name>N8o_a</name>
+				<visibility>0</visibility>
 				<Style>
 					<LineStyle>
 						<color>ff0000ff</color>
@@ -39137,6 +38719,7 @@
 			</Placemark>
 			<Placemark>
 				<name>N8o_c</name>
+				<visibility>0</visibility>
 				<Style>
 					<LineStyle>
 						<color>ff0000ff</color>
@@ -39153,6 +38736,7 @@
 			</Placemark>
 			<Placemark>
 				<name>N8o_b</name>
+				<visibility>0</visibility>
 				<Style>
 					<LineStyle>
 						<color>ff0000ff</color>
@@ -39169,6 +38753,7 @@
 			</Placemark>
 			<Placemark>
 				<name>No</name>
+				<visibility>0</visibility>
 				<Style>
 					<LineStyle>
 						<color>ff0000ff</color>
@@ -39185,6 +38770,7 @@
 			</Placemark>
 			<Placemark>
 				<name>L-North_a</name>
+				<visibility>0</visibility>
 				<Style>
 					<LineStyle>
 						<color>ff0000ff</color>
@@ -39201,6 +38787,7 @@
 			</Placemark>
 			<Placemark>
 				<name>L-North_b</name>
+				<visibility>0</visibility>
 				<Style>
 					<LineStyle>
 						<color>ff0000ff</color>
@@ -39217,6 +38804,7 @@
 			</Placemark>
 			<Placemark>
 				<name>N8b_a</name>
+				<visibility>0</visibility>
 				<Style>
 					<LineStyle>
 						<color>ff0000ff</color>
@@ -39233,6 +38821,7 @@
 			</Placemark>
 			<Placemark>
 				<name>N8b_b</name>
+				<visibility>0</visibility>
 				<Style>
 					<LineStyle>
 						<color>ff0000ff</color>
@@ -39249,6 +38838,7 @@
 			</Placemark>
 			<Placemark>
 				<name>N8b_c</name>
+				<visibility>0</visibility>
 				<Style>
 					<LineStyle>
 						<color>ff0000ff</color>
@@ -39265,6 +38855,7 @@
 			</Placemark>
 			<Placemark>
 				<name>L-North_c</name>
+				<visibility>0</visibility>
 				<Style>
 					<LineStyle>
 						<color>ff0000ff</color>
@@ -39281,6 +38872,7 @@
 			</Placemark>
 			<Placemark>
 				<name>Nb</name>
+				<visibility>0</visibility>
 				<Style>
 					<LineStyle>
 						<color>ff0000ff</color>
@@ -39297,6 +38889,7 @@
 			</Placemark>
 			<Placemark>
 				<name>N7o</name>
+				<visibility>0</visibility>
 				<Style>
 					<LineStyle>
 						<color>ff0000ff</color>
@@ -39313,6 +38906,7 @@
 			</Placemark>
 			<Placemark>
 				<name>N7b</name>
+				<visibility>0</visibility>
 				<Style>
 					<LineStyle>
 						<color>ff0000ff</color>
@@ -39329,6 +38923,7 @@
 			</Placemark>
 			<Placemark>
 				<name>N1</name>
+				<visibility>0</visibility>
 				<Style>
 					<LineStyle>
 						<color>ff0000ff</color>
@@ -39345,6 +38940,7 @@
 			</Placemark>
 			<Placemark>
 				<name>S33</name>
+				<visibility>0</visibility>
 				<Style>
 					<LineStyle>
 						<color>ff0000ff</color>
@@ -39361,6 +38957,7 @@
 			</Placemark>
 			<Placemark>
 				<name>S5_1</name>
+				<visibility>0</visibility>
 				<Style>
 					<LineStyle>
 						<color>ff0000ff</color>
@@ -39377,6 +38974,7 @@
 			</Placemark>
 			<Placemark>
 				<name>M19</name>
+				<visibility>0</visibility>
 				<Style>
 					<LineStyle>
 						<color>ff0000ff</color>
@@ -39393,6 +38991,7 @@
 			</Placemark>
 			<Placemark>
 				<name>L_2</name>
+				<visibility>0</visibility>
 				<Style>
 					<LineStyle>
 						<color>ff0000ff</color>
@@ -39409,6 +39008,7 @@
 			</Placemark>
 			<Placemark>
 				<name>L_1</name>
+				<visibility>0</visibility>
 				<Style>
 					<LineStyle>
 						<color>ff0000ff</color>
@@ -39425,6 +39025,7 @@
 			</Placemark>
 			<Placemark>
 				<name>N4</name>
+				<visibility>0</visibility>
 				<Style>
 					<LineStyle>
 						<color>ff0000ff</color>
@@ -39441,6 +39042,7 @@
 			</Placemark>
 			<Placemark>
 				<name>L-North_d</name>
+				<visibility>0</visibility>
 				<Style>
 					<LineStyle>
 						<color>ff0000ff</color>
@@ -39457,6 +39059,7 @@
 			</Placemark>
 			<Placemark>
 				<name>N6</name>
+				<visibility>0</visibility>
 				<Style>
 					<LineStyle>
 						<color>ff0000ff</color>
@@ -39473,6 +39076,7 @@
 			</Placemark>
 			<Placemark>
 				<name>N7_a</name>
+				<visibility>0</visibility>
 				<Style>
 					<LineStyle>
 						<color>ff0000ff</color>
@@ -39489,6 +39093,7 @@
 			</Placemark>
 			<Placemark>
 				<name>N8</name>
+				<visibility>0</visibility>
 				<Style>
 					<LineStyle>
 						<color>ff0000ff</color>
@@ -39505,6 +39110,7 @@
 			</Placemark>
 			<Placemark>
 				<name>N7_b</name>
+				<visibility>0</visibility>
 				<Style>
 					<LineStyle>
 						<color>ff0000ff</color>
@@ -39521,6 +39127,7 @@
 			</Placemark>
 			<Placemark>
 				<name>N7_c</name>
+				<visibility>0</visibility>
 				<Style>
 					<LineStyle>
 						<color>ff0000ff</color>
@@ -39537,6 +39144,7 @@
 			</Placemark>
 			<Placemark>
 				<name>N7_d</name>
+				<visibility>0</visibility>
 				<Style>
 					<LineStyle>
 						<color>ff0000ff</color>
@@ -39553,6 +39161,7 @@
 			</Placemark>
 			<Placemark>
 				<name>N7_e</name>
+				<visibility>0</visibility>
 				<Style>
 					<LineStyle>
 						<color>ff0000ff</color>
@@ -39569,6 +39178,7 @@
 			</Placemark>
 			<Placemark>
 				<name>N8o_d</name>
+				<visibility>0</visibility>
 				<Style>
 					<LineStyle>
 						<color>ff0000ff</color>
@@ -39585,6 +39195,7 @@
 			</Placemark>
 			<Placemark>
 				<name>L8_a</name>
+				<visibility>0</visibility>
 				<Style>
 					<LineStyle>
 						<color>ff0000ff</color>
@@ -39601,6 +39212,7 @@
 			</Placemark>
 			<Placemark>
 				<name>L8_b</name>
+				<visibility>0</visibility>
 				<Style>
 					<LineStyle>
 						<color>ff0000ff</color>
@@ -39617,6 +39229,7 @@
 			</Placemark>
 			<Placemark>
 				<name>N5_2</name>
+				<visibility>0</visibility>
 				<Style>
 					<LineStyle>
 						<color>ff0000ff</color>
@@ -39633,6 +39246,7 @@
 			</Placemark>
 			<Placemark>
 				<name>N5_1</name>
+				<visibility>0</visibility>
 				<Style>
 					<LineStyle>
 						<color>ff0000ff</color>
@@ -39649,6 +39263,7 @@
 			</Placemark>
 			<Placemark>
 				<name>N3</name>
+				<visibility>0</visibility>
 				<Style>
 					<LineStyle>
 						<color>ff0000ff</color>
@@ -39665,6 +39280,7 @@
 			</Placemark>
 			<Placemark>
 				<name>N11_2</name>
+				<visibility>0</visibility>
 				<Style>
 					<LineStyle>
 						<color>ff0000ff</color>
@@ -39681,6 +39297,7 @@
 			</Placemark>
 			<Placemark>
 				<name>N13</name>
+				<visibility>0</visibility>
 				<Style>
 					<LineStyle>
 						<color>ff0000ff</color>
@@ -39697,6 +39314,7 @@
 			</Placemark>
 			<Placemark>
 				<name>N14</name>
+				<visibility>0</visibility>
 				<Style>
 					<LineStyle>
 						<color>ff0000ff</color>
@@ -39713,6 +39331,7 @@
 			</Placemark>
 			<Placemark>
 				<name>L19</name>
+				<visibility>0</visibility>
 				<Style>
 					<LineStyle>
 						<color>ff0000ff</color>
@@ -39729,6 +39348,7 @@
 			</Placemark>
 			<Placemark>
 				<name>N-South</name>
+				<visibility>0</visibility>
 				<Style>
 					<LineStyle>
 						<color>ff0000ff</color>
@@ -39745,6 +39365,7 @@
 			</Placemark>
 			<Placemark>
 				<name>W</name>
+				<visibility>0</visibility>
 				<Style>
 					<LineStyle>
 						<color>ff0000ff</color>
@@ -39761,6 +39382,7 @@
 			</Placemark>
 			<Placemark>
 				<name>Y5</name>
+				<visibility>0</visibility>
 				<Style>
 					<LineStyle>
 						<color>ff0000ff</color>
@@ -39777,6 +39399,7 @@
 			</Placemark>
 			<Placemark>
 				<name>Y7_1</name>
+				<visibility>0</visibility>
 				<Style>
 					<LineStyle>
 						<color>ff0000ff</color>
@@ -39793,6 +39416,7 @@
 			</Placemark>
 			<Placemark>
 				<name>Y7_2</name>
+				<visibility>0</visibility>
 				<Style>
 					<LineStyle>
 						<color>ff0000ff</color>
@@ -39809,6 +39433,7 @@
 			</Placemark>
 			<Placemark>
 				<name>S11</name>
+				<visibility>0</visibility>
 				<Style>
 					<LineStyle>
 						<color>ff0000ff</color>
@@ -39825,6 +39450,7 @@
 			</Placemark>
 			<Placemark>
 				<name>S13_1</name>
+				<visibility>0</visibility>
 				<Style>
 					<LineStyle>
 						<color>ff0000ff</color>
@@ -39841,6 +39467,7 @@
 			</Placemark>
 			<Placemark>
 				<name>S13_2</name>
+				<visibility>0</visibility>
 				<Style>
 					<LineStyle>
 						<color>ff0000ff</color>
@@ -39857,6 +39484,7 @@
 			</Placemark>
 			<Placemark>
 				<name>S13_3a</name>
+				<visibility>0</visibility>
 				<Style>
 					<LineStyle>
 						<color>ff0000ff</color>
@@ -39873,6 +39501,7 @@
 			</Placemark>
 			<Placemark>
 				<name>S13_3b</name>
+				<visibility>0</visibility>
 				<Style>
 					<LineStyle>
 						<color>ff0000ff</color>
@@ -39889,6 +39518,7 @@
 			</Placemark>
 			<Placemark>
 				<name>S8</name>
+				<visibility>0</visibility>
 				<Style>
 					<LineStyle>
 						<color>ff0000ff</color>
@@ -39905,6 +39535,7 @@
 			</Placemark>
 			<Placemark>
 				<name>S9_a</name>
+				<visibility>0</visibility>
 				<Style>
 					<LineStyle>
 						<color>ff0000ff</color>
@@ -39921,6 +39552,7 @@
 			</Placemark>
 			<Placemark>
 				<name>S9_b</name>
+				<visibility>0</visibility>
 				<Style>
 					<LineStyle>
 						<color>ff0000ff</color>
@@ -39937,6 +39569,7 @@
 			</Placemark>
 			<Placemark>
 				<name>S9_c</name>
+				<visibility>0</visibility>
 				<Style>
 					<LineStyle>
 						<color>ff0000ff</color>
@@ -39953,6 +39586,7 @@
 			</Placemark>
 			<Placemark>
 				<name>S5_2a</name>
+				<visibility>0</visibility>
 				<Style>
 					<LineStyle>
 						<color>ff0000ff</color>
@@ -39969,6 +39603,7 @@
 			</Placemark>
 			<Placemark>
 				<name>S5_2b</name>
+				<visibility>0</visibility>
 				<Style>
 					<LineStyle>
 						<color>ff0000ff</color>
@@ -39985,6 +39620,7 @@
 			</Placemark>
 			<Placemark>
 				<name>S4</name>
+				<visibility>0</visibility>
 				<Style>
 					<LineStyle>
 						<color>ff0000ff</color>
@@ -40001,6 +39637,7 @@
 			</Placemark>
 			<Placemark>
 				<name>N11_1</name>
+				<visibility>0</visibility>
 				<Style>
 					<LineStyle>
 						<color>ff0000ff</color>
@@ -40018,8 +39655,10 @@
 		</Folder>
 		<Folder>
 			<name>dash</name>
+			<visibility>0</visibility>
 			<Placemark>
 				<name>66999a8d-N1</name>
+				<visibility>0</visibility>
 				<Style>
 					<LineStyle>
 						<color>ff0000ff</color>
@@ -40036,6 +39675,7 @@
 			</Placemark>
 			<Placemark>
 				<name>f6dbdb2e-N1</name>
+				<visibility>0</visibility>
 				<Style>
 					<LineStyle>
 						<color>ff0000ff</color>
@@ -40052,6 +39692,7 @@
 			</Placemark>
 			<Placemark>
 				<name>a9dcbcd4-N1</name>
+				<visibility>0</visibility>
 				<Style>
 					<LineStyle>
 						<color>ff0000ff</color>
@@ -40068,6 +39709,7 @@
 			</Placemark>
 			<Placemark>
 				<name>d63bda10-N1</name>
+				<visibility>0</visibility>
 				<Style>
 					<LineStyle>
 						<color>ff0000ff</color>
