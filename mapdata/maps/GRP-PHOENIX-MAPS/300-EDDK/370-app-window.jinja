@@ -1,5 +1,9 @@
 // ------------------------- Approach Window ------------------------
 {%- set EDGG = data.airspace['lines']['EDGG'] %}
+{%- set rwy13_brg = brg(runways.EDDK['13L']['bearing']).invert() %}
+{%- set rwy31_brg = brg(runways.EDDK['31R']['bearing']).invert() %}
+{%- set tick13_brg = rwy13_brg + 90 %}
+{%- set tick31_brg = rwy31_brg + 90 %}
 
 MAP:Airspace C:A
 AIRPORT:EDDK
@@ -65,19 +69,23 @@ FOLDER:Approach Window
 // Masks
 STYLE:SOLID:2
 COLOR:appwindow-background
-{{ marker_ticks(runways.EDDK['13L'], [1], 0.01, 0.6, 'R') }}
-{{ marker_ticks(runways.EDDK['13L'], [6, 10], 0.4, 1.1, 'R') }}
-{{ marker_ticks(runways.EDDK['31R'], [1], 0.01, 0.6, 'L') }}
-{{ marker_ticks(runways.EDDK['31R'], [6, 10], 0.4, 1.1, 'L') }}
+{{ fix(runways.EDDK['13L']['thr']).move_to(1 , rwy13_brg).move_to(-0.01, tick13_brg).line_to(-0.6, tick13_brg) }}
+{{ fix(runways.EDDK['13L']['thr']).move_to(6 , rwy13_brg).move_to(-0.4 , tick13_brg).line_to(-1.1, tick13_brg) }}
+{{ fix(runways.EDDK['13L']['thr']).move_to(10, rwy13_brg).move_to(-0.4 , tick13_brg).line_to(-1.1, tick13_brg) }}
+{{ fix(runways.EDDK['31R']['thr']).move_to(1 , rwy31_brg).move_to(0.01, tick31_brg).line_to(0.6, tick31_brg) }}
+{{ fix(runways.EDDK['31R']['thr']).move_to(6 , rwy31_brg).move_to(0.4 , tick31_brg).line_to(1.1, tick31_brg) }}
+{{ fix(runways.EDDK['31R']['thr']).move_to(10, rwy31_brg).move_to(0.4 , tick31_brg).line_to(1.1, tick31_brg) }}
 STYLE:SOLID:1
 COLOR:appwindow-ecl
 // 13R/31R
 {{ ecl_dashes(runways.EDDK['13R'], 20) }}
-{{ marker_ticks(runways.EDDK['13R'], [1], 0, 0.5, 'R') }}
-{{ marker_ticks(runways.EDDK['13R'], [6, 10], 0.5, 1, 'R') }}
+{{ fix(runways.EDDK['13R']['thr']).move_to(1 , rwy13_brg).line_to(-0.5, tick13_brg) }}
+{{ fix(runways.EDDK['13R']['thr']).move_to(6 , rwy13_brg).move_to(-0.5, tick13_brg).line_to(-1, tick13_brg) }}
+{{ fix(runways.EDDK['13R']['thr']).move_to(10, rwy13_brg).move_to(-0.5, tick13_brg).line_to(-1, tick13_brg) }}
 {{ ecl_dashes(runways.EDDK['31L'], 20) }}
-{{ marker_ticks(runways.EDDK['31L'], [1], 0, 0.5, 'L') }}
-{{ marker_ticks(runways.EDDK['31L'], [6, 10], 0.5, 1, 'L') }}
+{{ fix(runways.EDDK['31L']['thr']).move_to(1 , rwy31_brg).line_to(0.5, tick31_brg) }}
+{{ fix(runways.EDDK['31L']['thr']).move_to(6 , rwy31_brg).move_to(0.5, tick31_brg).line_to(1, tick31_brg) }}
+{{ fix(runways.EDDK['31L']['thr']).move_to(10, rwy31_brg).move_to(0.5, tick31_brg).line_to(1, tick31_brg) }}
 
 MAP:Airfields:A
 AIRPORT:EDDK

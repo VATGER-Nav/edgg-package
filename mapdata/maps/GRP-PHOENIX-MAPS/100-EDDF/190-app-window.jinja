@@ -1,5 +1,9 @@
 // ------------------------- Approach Window ------------------------
 {%- set EDGG = data.airspace['lines']['EDGG'] %}
+{%- set rwy07_brg = brg(runways.EDDF['07C']['bearing']).invert() %}
+{%- set rwy25_brg = brg(runways.EDDF['25C']['bearing']).invert() %}
+{%- set tick07_brg = rwy07_brg + 90 %}
+{%- set tick25_brg = rwy25_brg + 90 %}
 
 MAP:Airspace C:A
 AIRPORT:EDDF
@@ -39,16 +43,24 @@ STYLE:SOLID:1
 COLOR:appwindow-ecl
 // 07R
 {{ ecl_dashes(runways.EDDF['07R'], 25) }}
-{{ marker_ticks(runways.EDDF['07R'], [4, 10, 20], 0, 0.5, 'R') }}
+{{ fix(runways.EDDF['07R']['thr']).move_to(4 , rwy07_brg).line_to(-0.5, tick07_brg) }}
+{{ fix(runways.EDDF['07R']['thr']).move_to(10, rwy07_brg).line_to(-0.5, tick07_brg) }}
+{{ fix(runways.EDDF['07R']['thr']).move_to(20, rwy07_brg).line_to(-0.5, tick07_brg) }}
 // 07L
 {{ ecl_dashes(runways.EDDF['07L'], 25) }}
-{{ marker_ticks(runways.EDDF['07L'], [4, 10, 20], 0, 0.5, 'L') }}
+{{ fix(runways.EDDF['07L']['thr']).move_to(4 , rwy07_brg).line_to(0.5, tick07_brg) }}
+{{ fix(runways.EDDF['07L']['thr']).move_to(10, rwy07_brg).line_to(0.5, tick07_brg) }}
+{{ fix(runways.EDDF['07L']['thr']).move_to(20, rwy07_brg).line_to(0.5, tick07_brg) }}
 // 25L
 {{ ecl_dashes(runways.EDDF['25L'], 25) }}
-{{ marker_ticks(runways.EDDF['25L'], [4, 10, 20], 0, 0.5, 'L') }}
+{{ fix(runways.EDDF['25L']['thr']).move_to(4 , rwy25_brg).line_to(0.5, tick25_brg) }}
+{{ fix(runways.EDDF['25L']['thr']).move_to(10, rwy25_brg).line_to(0.5, tick25_brg) }}
+{{ fix(runways.EDDF['25L']['thr']).move_to(20, rwy25_brg).line_to(0.5, tick25_brg) }}
 // 25R
 {{ ecl_dashes(runways.EDDF['25R'], 25) }}
-{{ marker_ticks(runways.EDDF['25R'], [4, 10, 20], 0, 0.5, 'R') }}
+{{ fix(runways.EDDF['25R']['thr']).move_to(4 , rwy25_brg).line_to(-0.5, tick25_brg) }}
+{{ fix(runways.EDDF['25R']['thr']).move_to(10, rwy25_brg).line_to(-0.5, tick25_brg) }}
+{{ fix(runways.EDDF['25R']['thr']).move_to(20, rwy25_brg).line_to(-0.5, tick25_brg) }}
 COLOR:appwindow-runway
 STYLE:SOLID:2
 // 07R/25L
@@ -65,12 +77,16 @@ AIRPORT:EDDF
 FOLDER:Approach Window
 STYLE:SOLID:1
 COLOR:appwindow-ecl
-// 25C
-{{ ecl_dashes(runways.EDDF['25C'], 25) }}
-{{ marker_ticks(runways.EDDF['25C'], [4, 10, 20], 0, 0.5, 'L') }}
 // 07C
 {{ ecl_dashes(runways.EDDF['07C'], 25) }}
-{{ marker_ticks(runways.EDDF['07C'], [4, 10, 20], 0, 0.5, 'R') }}
+{{ fix(runways.EDDF['07C']['thr']).move_to(4 , rwy07_brg).line_to(-0.5, tick07_brg) }}
+{{ fix(runways.EDDF['07C']['thr']).move_to(10, rwy07_brg).line_to(-0.5, tick07_brg) }}
+{{ fix(runways.EDDF['07C']['thr']).move_to(20, rwy07_brg).line_to(-0.5, tick07_brg) }}
+// 25C
+{{ ecl_dashes(runways.EDDF['25C'], 25) }}
+{{ fix(runways.EDDF['25C']['thr']).move_to(4 , rwy25_brg).line_to(0.5, tick25_brg) }}
+{{ fix(runways.EDDF['25C']['thr']).move_to(10, rwy25_brg).line_to(0.5, tick25_brg) }}
+{{ fix(runways.EDDF['25C']['thr']).move_to(20, rwy25_brg).line_to(0.5, tick25_brg) }}
 
 MAP:Distance Indicator 25L:A
 AIRPORT:EDDF
