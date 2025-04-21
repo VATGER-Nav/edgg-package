@@ -3,6 +3,7 @@
 MAP:EDDF_C_GND  25
 AIRPORT:EDDF
 FOLDER:AoR
+LAYER:6
 COLOR:aor-gnd-a
 STYLE:Dot
 {{ data.eddf_kml['layout']['aor']['line']['DFGC_25'] | to_line('') -}}
@@ -13,6 +14,7 @@ FONTSIZE:=:13
 MAP:            07
 AIRPORT:EDDF
 FOLDER:AoR
+LAYER:6
 COLOR:aor-gnd-a
 STYLE:Dot
 {{ data.eddf_kml['layout']['aor']['line']['DFGC_07'] | to_line('') -}}
@@ -28,6 +30,7 @@ COLOR:layout-label-taxiway
 MAP:EDDF_E_GND  25
 AIRPORT:EDDF
 FOLDER:AoR
+LAYER:6
 COLOR:aor-gnd-c
 STYLE:Dot
 {{ data.eddf_kml['layout']['aor']['line']['DFGE_25a'] | to_line('') -}}
@@ -39,6 +42,7 @@ FONTSIZE:=:13
 MAP:            07
 AIRPORT:EDDF
 FOLDER:AoR
+LAYER:6
 COLOR:aor-gnd-c
 STYLE:Dot
 {{ data.eddf_kml['layout']['aor']['line']['DFGE_07a'] | to_line('') -}}
@@ -55,6 +59,7 @@ COLOR:layout-label-taxiway
 MAP:EDDF_W_GND  25
 AIRPORT:EDDF
 FOLDER:AoR
+LAYER:6
 COLOR:aor-gnd-b
 STYLE:Dot
 {{ data.eddf_kml['layout']['aor']['line']['DFGW_25'] | to_line('') -}}
@@ -65,6 +70,7 @@ FONTSIZE:=:13
 MAP:            07
 AIRPORT:EDDF
 FOLDER:AoR
+LAYER:6
 COLOR:aor-gnd-b
 STYLE:Dot
 {{ data.eddf_kml['layout']['aor']['line']['DFGW_07'] | to_line('') -}}
@@ -80,6 +86,7 @@ COLOR:layout-label-taxiway
 MAP:EDDF_S_GND
 AIRPORT:EDDF
 FOLDER:AoR
+LAYER:6
 COLOR:aor-gnd-e
 STYLE:Dot
 {{ data.eddf_kml['layout']['aor']['line']['DFGS_a'] | to_line('') -}}
@@ -94,6 +101,7 @@ TEXTALIGN:LC
 MAP:EDDF_ICE_GND
 AIRPORT:EDDF
 FOLDER:AoR
+LAYER:6
 COLOR:aor-ice-a
 STYLE:Dot
 {{ data.eddf_kml['layout']['aor']['line']['DFGI'] | to_line('') -}}
@@ -104,6 +112,7 @@ FONTSIZE:=:13
 MAP:EDDF_GND
 AIRPORT:EDDF
 FOLDER:AoR
+LAYER:6
 COLOR:aor-gnd-d
 STYLE:Dot
 {{ data.eddf_kml['layout']['aor']['line']['DFG'] | to_line('') -}}
@@ -116,6 +125,7 @@ TEXTALIGN:RC
 MAP:EDDF_C_TWR
 AIRPORT:EDDF
 FOLDER:AoR
+LAYER:6
 COLOR:aor-twr-b
 STYLE:Dot
 {{ data.eddf_kml['layout']['aor']['line']['DFTC'] | to_line('') -}}
@@ -126,6 +136,7 @@ FONTSIZE:=:13
 MAP:EDDF_W_TWR
 AIRPORT:EDDF
 FOLDER:AoR
+LAYER:6
 COLOR:aor-twr-c
 STYLE:Dot
 {{ data.eddf_kml['layout']['aor']['line']['DFTW'] | to_line('') -}}
@@ -137,6 +148,7 @@ TEXTALIGN:LC
 MAP:EDDF_N_TWR
 AIRPORT:EDDF
 FOLDER:AoR
+LAYER:6
 COLOR:aor-twr-c
 STYLE:Dot
 {{ data.eddf_kml['layout']['aor']['line']['DFTN'] | to_line('') -}}
@@ -147,6 +159,7 @@ FONTSIZE:=:13
 MAP:EDDF_S_TWR
 AIRPORT:EDDF
 FOLDER:AoR
+LAYER:6
 COLOR:aor-twr-a
 STYLE:Dot
 {{ data.eddf_kml['layout']['aor']['line']['DFTS'] | to_line('') -}}
@@ -157,6 +170,8 @@ FONTSIZE:=:13
 MAP:EDDF_N_DEP
 AIRPORT:EDDF
 FOLDER:AoR
+LAYER:6
+OTHER_MAP_ACT:=:Approach Window\DEP Frequency
 COLOR:aor-app-a
 ZOOM:300
 FONTSIZE:=:13
@@ -166,6 +181,8 @@ FONTSIZE:=:13
 MAP:EDDF_S_DEP
 AIRPORT:EDDF
 FOLDER:AoR
+LAYER:6
+OTHER_MAP_ACT:=:Approach Window\DEP Frequency
 COLOR:aor-app-b
 ZOOM:300
 FONTSIZE:=:13

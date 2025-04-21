@@ -3,7 +3,10 @@
 MAP:Taxiways
 AIRPORT:EDDF
 FOLDER:Labels
+LAYER:6
 ACTIVE:1
+OTHER_MAP_ACT:=:Labels\Stopbars
+OTHER_MAP_ACT:=:Labels\Links
 ZOOM:300
 FONTSIZE:=:10
 COLOR:layout-label-taxiway
@@ -14,7 +17,7 @@ COLOR:layout-label-taxiway
 MAP:Stands
 AIRPORT:EDDF
 FOLDER:Labels
-ACTIVE:1
+LAYER:6
 ZOOM:400
 FONTSIZE:=:9
 COLOR:layout-label-stand
@@ -207,6 +210,7 @@ ZOOM:800
 MAP:Stopbars
 AIRPORT:EDDF
 FOLDER:Labels
+LAYER:6
 ACTIVE:1
 ZOOM:400
 FONTSIZE:=:9
@@ -227,6 +231,7 @@ TEXTALIGN:RC
 MAP:Links
 AIRPORT:EDDF
 FOLDER:Labels
+LAYER:6
 ACTIVE:1
 ZOOM:800
 FONTSIZE:=:9
@@ -238,10 +243,10 @@ TEXTALIGN:LC
 TEXTALIGN:RC
 {{ data.eddf_kml['layout']['labels']['Link 5'] | to_text('Link 5') }}
 
-
 MAP:Heli Stands
 AIRPORT:EDDF
 FOLDER:Labels
+LAYER:6
 ZOOM:400
 FONTSIZE:=:10
 COLOR:layout-label-stand

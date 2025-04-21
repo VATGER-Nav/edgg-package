@@ -3,10 +3,10 @@
 MAP:Break Away Areas
 AIRPORT:EDDF
 FOLDER:Apron Info
-ACTIVE:1
+LAYER:6
 ZOOM:300
 {% for desig, geom in data.eddf_kml['layout']['breakaway']['poly'].items() %}
-{{- geom | to_poly('', 'break-away-area') }}
+{{- geom | to_coordtype('', 'break-away-area') }}
 {% endfor %}
 COLOR:break-away-area
 {% for desig, geom in data.eddf_kml['layout']['breakaway']['line'].items() if 'a' in desig %}
@@ -25,6 +25,7 @@ STYLE:Solid:2
 MAP:Old South Apron
 AIRPORT:EDDF
 FOLDER:Apron Info
+LAYER:6
 COLOR:closure-symbol
 {% for uuid, geom in data.eddf_kml['layout']['oldgat']['taxilanes'].items() %}
 {{- geom | to_line('') -}}
@@ -33,7 +34,7 @@ COLOR:closure-symbol
 {{- geom | to_line('') -}}
 {% endfor %}
 {% for uuid, geom in data.eddf_kml['layout']['oldgat']['arrows'].items() %}
-{{- geom | to_poly('', 'closure-symbol') }}
+{{- geom | to_coordtype('', 'closure-symbol') }}
 {% endfor %}
 
 ZOOM:300
@@ -93,6 +94,7 @@ ZOOM:800
 MAP:vSID Areas
 AIRPORT:EDDF
 FOLDER:Apron Info
+LAYER:6
 STYLE:Solid:2
 FONTSIZE:=:18
 COLOR:white

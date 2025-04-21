@@ -28,6 +28,7 @@ MAP:Stopbars
 AIRPORT:EDDF
 FOLDER:Holding Points
 ACTIVE:1
+LAYER:5
 COLOR:layout-holdingpoint-grey
 {%- for desig, geoms in stopbars.items() %}
 // {{ desig }}
@@ -40,6 +41,7 @@ MAP:All Stopbars
 AIRPORT:EDDF
 FOLDER:Holding Points
 COLOR:layout-holdingpoint
+LAYER:5
 {% for uuid in
 [
     '0067e07a-459d-4b9a-92ca-e322271ba872',

@@ -301,5 +301,5 @@ COLOR:layout-taxiline-grey
 
 // Taxi-Out Arrows
 {% for uuid, geom in data.eddf_kml['layout']['markings']['arrows'].items() %}
-{{- geom | to_poly(uuid, 'layout-taxiline-grey') }}
+{{- geom | to_coordtype(uuid, 'layout-taxiline-grey') }}
 {% endfor %}
