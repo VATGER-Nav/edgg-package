@@ -242,13 +242,3 @@ TEXTALIGN:LC
 {{ data.eddf_kml['layout']['labels']['Link 4'] | to_text('Link 4') }}
 TEXTALIGN:RC
 {{ data.eddf_kml['layout']['labels']['Link 5'] | to_text('Link 5') }}
-
-MAP:Heli Stands
-AIRPORT:EDDF
-FOLDER:Labels
-LAYER:6
-ZOOM:400
-FONTSIZE:=:10
-COLOR:layout-label-stand
-{{ data.eddf_kml['layout']['restrictions']['stands']['V701'] | to_text('H:-1:0') }}
-{{ data.eddf_kml['layout']['restrictions']['stands']['V701'] | to_symbol('CIRCLE') }}
