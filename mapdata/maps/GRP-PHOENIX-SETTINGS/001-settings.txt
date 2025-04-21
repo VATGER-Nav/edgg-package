@@ -156,9 +156,22 @@ List_Outbound_TYPE=1
 List_Outbound_SID=1
 List_Outbound_ExpiryTime=300
 
+Shortcut_Map_Xfr_Key=1,0x54 ; T
+Shortcut_Map_Xfr_Key=2,0x47 ; G
+Shortcut_Map_Xfr_Key=3,0x52 ; R
+Shortcut_Map_Target=1,Labels\Taxiways
+Shortcut_Map_Target=2,Labels\Stands
+Shortcut_Map_Target=3,Restrictions\Restrictions
+
 AppPath=EDDF:ILS 25C:N050.06.32.915:E008.51.23.037:247:L:4000:3.0
 
 [EDDF]
+Shortcut_Map_Xfr_Key=7,0x42 ; B
+Shortcut_Map_Xfr_Key=8,0x44 ; D
+Shortcut_Map_Xfr_Key=9,0x46 ; F
+Shortcut_Map_Target=7,Apron Info\Break Away Areas
+Shortcut_Map_Target=8,Runway Crossing\25
+Shortcut_Map_Target=9,Runway Crossing\07
 Airport_Runway_Area_LVP=25L:90
 Airport_Runway_Area_LVP=07R:90
 Airport_Runway_Area_LVP=25C:90

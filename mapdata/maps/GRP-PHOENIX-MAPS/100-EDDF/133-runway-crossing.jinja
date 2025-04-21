@@ -3,14 +3,15 @@
 MAP:25
 AIRPORT:EDDF
 FOLDER:Runway Crossing
+LAYER:6
 
 // T
 COLOR:restrictions-F
 STYLE:SOLID:3
 {{ data.eddf_kml['layout']['runwaycrossing']['line']['T'] | to_line('') -}}
 STYLE:SOLID:1
-{{ data.eddf_kml['layout']['runwaycrossing']['poly']['T'] | to_poly('', 'restrictions-F') }}
-{{ data.eddf_kml['layout']['stopbars']['poly']['T2'] | to_poly('', 'layout-holdingpoint') }}
+{{ data.eddf_kml['layout']['runwaycrossing']['poly']['T'] | to_coordtype('', 'restrictions-F') }}
+{{ data.eddf_kml['layout']['stopbars']['poly']['T2'] | to_coordtype('', 'layout-holdingpoint') }}
 STYLE:SOLID:2
 COLOR:layout-holdingpoint
 {{ data.eddf_kml['layout']['stopbars']['line']['T2'] | to_line('') -}}
@@ -20,7 +21,7 @@ COLOR:restrictions-D
 STYLE:SOLID:3
 {{ data.eddf_kml['layout']['runwaycrossing']['line']['M8_25'] | to_line('') -}}
 STYLE:SOLID:1
-{{ data.eddf_kml['layout']['runwaycrossing']['poly']['M8_25'] | to_poly('', 'restrictions-D') }}
+{{ data.eddf_kml['layout']['runwaycrossing']['poly']['M8_25'] | to_coordtype('', 'restrictions-D') }}
 STYLE:SOLID:2
 COLOR:layout-holdingpoint
 {{ data.eddf_aixm['TaxiwayMarking']['7233e590-7fc6-dc2b-e053-b4472c0a9450'] | to_line('') -}}
@@ -30,7 +31,7 @@ COLOR:restrictions-E
 STYLE:SOLID:3
 {{ data.eddf_kml['layout']['runwaycrossing']['line']['M30'] | to_line('') -}}
 STYLE:SOLID:1
-{{ data.eddf_kml['layout']['runwaycrossing']['poly']['M30'] | to_poly('', 'restrictions-E') }}
+{{ data.eddf_kml['layout']['runwaycrossing']['poly']['M30'] | to_coordtype('', 'restrictions-E') }}
 STYLE:SOLID:2
 COLOR:layout-holdingpoint
 {{ data.eddf_aixm['TaxiwayMarking']['61f3b1e6-5ffb-4693-bf3f-8de116c4ef99'] | to_line('') -}}
@@ -40,7 +41,7 @@ COLOR:restrictions-AB
 STYLE:SOLID:3
 {{ data.eddf_kml['layout']['runwaycrossing']['line']['Y'] | to_line('') -}}
 STYLE:SOLID:1
-{{ data.eddf_kml['layout']['runwaycrossing']['poly']['Y'] | to_poly('', 'restrictions-AB') }}
+{{ data.eddf_kml['layout']['runwaycrossing']['poly']['Y'] | to_coordtype('', 'restrictions-AB') }}
 STYLE:SOLID:2
 COLOR:layout-holdingpoint
 {{ data.eddf_aixm['TaxiwayMarking']['05091d27-5df6-4f84-9c3b-af410b6d525d'] | to_line('') -}}
@@ -76,14 +77,15 @@ COLOR:restrictions-AB
 MAP:07
 AIRPORT:EDDF
 FOLDER:Runway Crossing
+LAYER:6
 
 // T
 COLOR:restrictions-F
 STYLE:SOLID:3
 {{ data.eddf_kml['layout']['runwaycrossing']['line']['T'] | to_line('') -}}
 STYLE:SOLID:1
-{{ data.eddf_kml['layout']['runwaycrossing']['poly']['T'] | to_poly('', 'restrictions-F') }}
-{{ data.eddf_kml['layout']['stopbars']['poly']['T2'] | to_poly('', 'layout-holdingpoint') }}
+{{ data.eddf_kml['layout']['runwaycrossing']['poly']['T'] | to_coordtype('', 'restrictions-F') }}
+{{ data.eddf_kml['layout']['stopbars']['poly']['T2'] | to_coordtype('', 'layout-holdingpoint') }}
 STYLE:SOLID:2
 COLOR:layout-holdingpoint
 {{ data.eddf_kml['layout']['stopbars']['line']['T2'] | to_line('') -}}
@@ -93,15 +95,15 @@ COLOR:restrictions-D
 STYLE:SOLID:3
 {{ data.eddf_kml['layout']['runwaycrossing']['line']['M6'] | to_line('') -}}
 STYLE:SOLID:1
-{{ data.eddf_kml['layout']['runwaycrossing']['poly']['M6'] | to_poly('', 'restrictions-D') }}
-{{ data.eddf_kml['layout']['holdingpoints']['cat3']['L1'] | to_poly('', 'layout-holdingpoint') }}
+{{ data.eddf_kml['layout']['runwaycrossing']['poly']['M6'] | to_coordtype('', 'restrictions-D') }}
+{{ data.eddf_kml['layout']['holdingpoints']['cat3']['L1'] | to_coordtype('', 'layout-holdingpoint') }}
 
 // M8
 COLOR:restrictions-E
 STYLE:SOLID:3
 {{ data.eddf_kml['layout']['runwaycrossing']['line']['M8_07'] | to_line('') -}}
 STYLE:SOLID:1
-{{ data.eddf_kml['layout']['runwaycrossing']['poly']['M8_07'] | to_poly('', 'restrictions-E') }}
+{{ data.eddf_kml['layout']['runwaycrossing']['poly']['M8_07'] | to_coordtype('', 'restrictions-E') }}
 STYLE:SOLID:2
 COLOR:layout-holdingpoint
 {{ data.eddf_aixm['TaxiwayMarking']['5627e7e0-c30d-7c0d-e053-b3472c0a22ab'] | to_line('') -}}
