@@ -3,55 +3,54 @@
 MAP:Checks
 AIRPORT:EDDK
 FOLDER:Restrictions
-COORDTYPE:TWYTYPE:NONE
 ACTIVE:1
 
 // N
 RESTRICTION:MAXCODE:C
-{{ data.eddk_kml['layout']['restrictions']['poly']['N'] | to_poly('') }}
+{{ data.eddk_kml['layout']['restrictions']['poly']['N'] | to_coordtype('', '', 'TWYTYPE', 'NONE') }}
 
 // N/M Center Line
 RESTRICTION:MAXCODE:E
-{{ data.eddk_kml['layout']['restrictions']['poly']['N_M'] | to_poly('') }}
+{{ data.eddk_kml['layout']['restrictions']['poly']['N_M'] | to_coordtype('', '', 'TWYTYPE', 'NONE') }}
 
 // B and L
 RESTRICTION:MAXCODE:E
-{{ data.eddk_kml['layout']['restrictions']['poly']['B_L'] | to_poly('') }}
+{{ data.eddk_kml['layout']['restrictions']['poly']['B_L'] | to_coordtype('', '', 'TWYTYPE', 'NONE') }}
 
 // L
 RESTRICTION:MAXCODE:C
-{{ data.eddk_kml['layout']['restrictions']['poly']['L'] | to_poly('') }}
+{{ data.eddk_kml['layout']['restrictions']['poly']['L'] | to_coordtype('', '', 'TWYTYPE', 'NONE') }}
 
 // B (South)
 RESTRICTION:MAXCODE:E
-{{ data.eddk_kml['layout']['restrictions']['poly']['B_2'] | to_poly('') }}
+{{ data.eddk_kml['layout']['restrictions']['poly']['B_2'] | to_coordtype('', '', 'TWYTYPE', 'NONE') }}
 
 // T and D (South of 31R/13L)
 RESTRICTION:MAXCODE:E
-{{ data.eddk_kml['layout']['restrictions']['poly']['T_D'] | to_poly('') }}
+{{ data.eddk_kml['layout']['restrictions']['poly']['T_D'] | to_coordtype('', '', 'TWYTYPE', 'NONE') }}
 
 // T2
 RESTRICTION:MAXCODE:C
-{{ data.eddk_kml['layout']['restrictions']['poly']['T2'] | to_poly('') }}
+{{ data.eddk_kml['layout']['restrictions']['poly']['T2'] | to_coordtype('', '', 'TWYTYPE', 'NONE') }}
 
 // Apron U
 RESTRICTION:MAXCODE:C
-{{ data.eddk_kml['layout']['restrictions']['poly']['apron_U'] | to_poly('') }}
+{{ data.eddk_kml['layout']['restrictions']['poly']['apron_U'] | to_coordtype('', '', 'TWYTYPE', 'NONE') }}
 
 // C
 RESTRICTION:MAXCODE:C
-{{ data.eddk_kml['layout']['restrictions']['poly']['C'] | to_poly('') }}
+{{ data.eddk_kml['layout']['restrictions']['poly']['C'] | to_coordtype('', '', 'TWYTYPE', 'NONE') }}
 
 // A1
 RESTRICTION:MAXCODE:E
 RESTRICTION:NOTATYP:A346
-{{ data.eddk_kml['layout']['restrictions']['poly']['A1'] | to_poly('') }}
+{{ data.eddk_kml['layout']['restrictions']['poly']['A1'] | to_coordtype('', '', 'TWYTYPE', 'NONE') }}
 
 // D (North of 31R/13L)
 RESTRICTION:MAXWINGSPAN:69
-{{ data.eddk_kml['layout']['restrictions']['poly']['D'] | to_poly('') }}
+{{ data.eddk_kml['layout']['restrictions']['poly']['D'] | to_coordtype('', '', 'TWYTYPE', 'NONE') }}
 
 // B (Bridge)
 RESTRICTION:MAXCODE:D
 RESTRICTION:MAXWEIGHT:200000
-{{ data.eddk_kml['layout']['restrictions']['poly']['B_1'] | to_poly('') }}
+{{ data.eddk_kml['layout']['restrictions']['poly']['B_1'] | to_coordtype('', '', 'TWYTYPE', 'NONE') }}

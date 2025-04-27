@@ -3,23 +3,23 @@
 MAP:31R/13L
 AIRPORT:EDDK
 FOLDER:Runway Crossing
+LAYER:6
 COLOR:closure-symbol-yellow
-COORDTYPE:OTHER:POLYGON
 STYLE:Solid:2
-{{ data.eddk_kml['layout']['runways']['13L-31R'] | to_poly('') }}
+{{ data.eddk_kml['layout']['runways']['13L-31R'] | to_coordtype('', '', 'OTHER', 'POLYGON') }}
 
 MAP:31L/13R
 AIRPORT:EDDK
 FOLDER:Runway Crossing
+LAYER:6
 COLOR:closure-symbol-yellow
-COORDTYPE:OTHER:POLYGON
 STYLE:Solid:2
-{{ data.eddk_kml['layout']['runways']['13R-31L'] | to_poly('') }}
+{{ data.eddk_kml['layout']['runways']['13R-31L'] | to_coordtype('', '', 'OTHER', 'POLYGON') }}
 
 MAP:24/06
 AIRPORT:EDDK
 FOLDER:Runway Crossing
+LAYER:6
 COLOR:closure-symbol-yellow
-COORDTYPE:OTHER:POLYGON
 STYLE:Solid:2
-{{ data.eddk_kml['layout']['runways']['06-24'] | to_poly('') }}
+{{ data.eddk_kml['layout']['runways']['06-24'] | to_coordtype('', '', 'OTHER', 'POLYGON') }}

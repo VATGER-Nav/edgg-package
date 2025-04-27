@@ -1,16 +1,24 @@
 // ----------------------------- Labels -----------------------------
 
-MAP:Taxiways
+MAP:Buffer   (EDDK)
 AIRPORT:EDDK
 FOLDER:Labels
-ACTIVE:1
+HIDDEN
+LAYER:3
 ZOOM:400
 {% for uuid, geom in data.eddk_kml['layout']['labels']['buffer_a'].items() %}
-{{- geom | to_poly('', 'layout-taxiway') }}
+{{- geom | to_coordtype('', 'layout-taxiway') }}
 {% endfor %}
 {% for uuid, geom in data.eddk_kml['layout']['labels']['buffer_b'].items() %}
-{{- geom | to_poly('', 'layout-apron') }}
+{{- geom | to_coordtype('', 'layout-apron') }}
 {% endfor %}
+
+MAP:Taxiways (EDDK)
+AIRPORT:EDDK
+FOLDER:Labels
+OTHER_MAP_ACT:=:Labels\Buffer   (EDDK)
+LAYER:6
+ZOOM:400
 FONTSIZE:=:10
 COLOR:layout-label-taxiway
 {% for desig, geom in data.eddk_kml['layout']['labels']['taxiways'].items() if desig != 'K1' %}
@@ -19,10 +27,208 @@ COLOR:layout-label-taxiway
 TEXTALIGN:RC
 {{ data.eddk_kml['layout']['labels']['taxiways']['K1'] | to_text('K1') }}
 
-MAP:Areas
+MAP:Stands   (EDDK)
 AIRPORT:EDDK
 FOLDER:Labels
-ACTIVE:1
+OTHER_MAP_ACT:=:Labels\Areas    (EDDK)
+LAYER:6
+ZOOM:500
+FONTSIZE:=:9
+COLOR:layout-label-stand
+{% for desig, geom in data.eddk_kml['layout']['labels']['stands'].items() if not desig in
+[
+    'A01',
+    'A03',
+    'A05',
+    'A07',
+    'A11',
+    'A17',
+    'A21',
+    'A23',
+    'B11',
+    'B17',
+    'B21',
+    'B23',
+    'B27',
+    'B29',
+    'C50',
+    'D11',
+    'D15',
+    'D19',
+    'D23',
+    'D51',
+    'D53',
+    'D57',
+    'E10',
+    'E12',
+    'E14',
+    'E16',
+    'E20',
+    'E22',
+    'E24',
+    'E30',
+    'E32',
+    'E34',
+    'E36',
+    'E40',
+    'E42',
+    'E44',
+    'E46',
+    'F20',
+    'F22',
+    'F24',
+    'F26',
+    'U16',
+    'U18',
+    'U20',
+    'U22',
+    'U24',
+    'U26',
+    'V35',
+    'V45',
+    'V50',
+    'V52',
+    'V54',
+    'V55',
+    'V10',
+    'V11',
+    'V12',
+    'V13',
+    'V14',
+    'V101',
+    'V111',
+    'V121',
+    'V131',
+    'V211',
+    'V221',
+    'V231',
+    'V310',
+    'V320',
+    'V330',
+    'V410',
+    'V430',
+    'V440',
+    'V510',
+    'V530',
+    'V550',
+] %}
+{{- geom | to_text(desig) }}
+{% endfor %}
+{{ data.eddk_kml['layout']['labels']['V1x/V1x1|'] | to_text('      |') }}
+{{ data.eddk_kml['layout']['labels']['V1x/V1x1|'] | to_text(' V1x:0:-5') }}
+{{ data.eddk_kml['layout']['labels']['V1x/V1x1|'] | to_text('V1x1:0:5') }}
+{{ data.eddk_kml['layout']['labels']['V2x1|'] | to_text('V2x1|') }}
+COLOR:layout-holdingpoint
+{% for desig in
+[
+    'V3x0|',
+    'V4x0|',
+    'V5x0|',
+] %}
+{{- data.eddk_kml['layout']['labels'][desig] | to_text(desig) }}
+{% endfor %}
+
+ZOOM:1500
+COLOR:layout-label-stand
+{% for desig in
+[
+    'A01',
+    'A03',
+    'A05',
+    'A07',
+    'A11',
+    'A17',
+    'A21',
+    'A23',
+    'B11',
+    'B17',
+    'B21',
+    'B23',
+    'B27',
+    'B29',
+    'C50',
+    'D11',
+    'D15',
+    'D19',
+    'D23',
+    'D51',
+    'D53',
+    'D57',
+    'E10',
+    'E12',
+    'E14',
+    'E16',
+    'E20',
+    'E22',
+    'E24',
+    'E30',
+    'E32',
+    'E34',
+    'E36',
+    'E40',
+    'E42',
+    'E44',
+    'E46',
+    'F20',
+    'F22',
+    'F24',
+    'F26',
+    'U16',
+    'U18',
+    'U20',
+    'U22',
+    'U24',
+    'U26',
+    'V35',
+    'V45',
+    'V50',
+    'V52',
+    'V54',
+    'V55',
+] %}
+{{- data.eddk_kml['layout']['labels']['stands'][desig] | to_text(desig) }}
+{% endfor %}
+
+// GAT Additional Stans
+ZOOM:2500
+COLOR:layout-label-stand
+{% for desig in
+[
+    'V10',
+    'V11',
+    'V12',
+    'V13',
+    'V14',
+    'V101',
+    'V111',
+    'V121',
+    'V131',
+    'V211',
+    'V221',
+    'V231',
+] %}
+{{- data.eddk_kml['layout']['labels']['stands'][desig] | to_text(desig) }}
+{% endfor %}
+COLOR:layout-holdingpoint
+{% for desig in
+[
+    'V310',
+    'V320',
+    'V330',
+    'V410',
+    'V430',
+    'V440',
+    'V510',
+    'V530',
+    'V550',
+] %}
+{{- data.eddk_kml['layout']['labels']['stands'][desig] | to_text(desig) }}
+{% endfor %}
+
+MAP:Areas    (EDDK)
+AIRPORT:EDDK
+FOLDER:Labels
+LAYER:6
 ZOOM:400
 FONTSIZE:=:10
 COLOR:layout-label-stand
@@ -32,9 +238,10 @@ COLOR:layout-label-stand
 {{ data.eddk_kml['layout']['labels']['Bundeswehr#2'] | to_text('Bundeswehr') }}
 {{ data.eddk_kml['layout']['labels']['Maintenance'] | to_text('Maintenance') }}
 
-MAP:Aprons
+MAP:Aprons   (EDDK)
 AIRPORT:EDDK
 FOLDER:Labels
+LAYER:6
 ZOOM:400
 FONTSIZE:=:10
 COLOR:layout-label-stand

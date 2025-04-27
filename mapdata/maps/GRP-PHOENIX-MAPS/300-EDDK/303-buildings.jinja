@@ -209,7 +209,7 @@ FOLDER:Airport Layout
     'fcf8c6d0-0783-4609-b6a4-494f038c873a',
     'ff2bf299-4cf8-4928-9a76-6ce2d67560f6',
 ] %}
-{{- data.eddk_aixm['VerticalStructure'][uuid] | simplify(default) | to_poly(uuid, 'layout-building') }}
+{{- data.eddk_aixm['VerticalStructure'][uuid] | simplify(default) | to_coordtype(uuid, 'layout-building') }}
 {% endfor %}
 
 MAP:Fence
