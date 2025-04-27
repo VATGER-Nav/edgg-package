@@ -3,6 +3,7 @@
 MAP:TORA 31R
 AIRPORT:EDDK
 FOLDER:Runway Info
+LAYER:6
 COLOR:tora-label
 ZOOM:400
 TEXTALIGN:RC
@@ -14,6 +15,7 @@ TEXTALIGN:RC
 MAP:TORA 13L
 AIRPORT:EDDK
 FOLDER:Runway Info
+LAYER:6
 COLOR:tora-label
 ZOOM:400
 TEXTALIGN:LC
@@ -25,6 +27,7 @@ TEXTALIGN:LC
 MAP:TORA 31L
 AIRPORT:EDDK
 FOLDER:Runway Info
+LAYER:6
 COLOR:tora-label
 ZOOM:400
 TEXTALIGN:RC
@@ -33,6 +36,7 @@ TEXTALIGN:RC
 MAP:TORA 13R
 AIRPORT:EDDK
 FOLDER:Runway Info
+LAYER:6
 COLOR:tora-label
 ZOOM:400
 TEXTALIGN:LC
@@ -42,6 +46,7 @@ TEXTALIGN:LC
 MAP:TORA 24
 AIRPORT:EDDK
 FOLDER:Runway Info
+LAYER:6
 COLOR:tora-label
 ZOOM:400
 TEXTALIGN:RC
@@ -52,6 +57,7 @@ TEXTALIGN:RC
 MAP:TORA 06
 AIRPORT:EDDK
 FOLDER:Runway Info
+LAYER:6
 COLOR:tora-label
 ZOOM:400
 TEXTALIGN:RC
@@ -61,6 +67,7 @@ TEXTALIGN:RC
 MAP:RRS 31R
 AIRPORT:EDDK
 FOLDER:Runway Info
+LAYER:6
 ACTIVE:RWY:ARR:*:DEP:EDDK31R
 ACTIVE:RWY:ARR:EDDK31R:DEP:*
 COLOR:rrs-marker
@@ -77,6 +84,7 @@ TEXTALIGN:CB
 MAP:RRS 13L
 AIRPORT:EDDK
 FOLDER:Runway Info
+LAYER:6
 ACTIVE:RWY:ARR:*:DEP:EDDK13L
 ACTIVE:RWY:ARR:EDDK13L:DEP:*
 COLOR:rrs-marker
@@ -93,6 +101,7 @@ TEXTALIGN:CB
 MAP:RRS 31L
 AIRPORT:EDDK
 FOLDER:Runway Info
+LAYER:6
 ACTIVE:RWY:ARR:*:DEP:EDDK31L
 ACTIVE:RWY:ARR:EDDK31L:DEP:*
 COLOR:rrs-marker
@@ -105,6 +114,7 @@ TEXTALIGN:CB
 MAP:RRS 13R
 AIRPORT:EDDK
 FOLDER:Runway Info
+LAYER:6
 ACTIVE:RWY:ARR:*:DEP:EDDK13R
 ACTIVE:RWY:ARR:EDDK13R:DEP:*
 COLOR:rrs-marker
@@ -117,6 +127,7 @@ TEXTALIGN:CB
 MAP:RRS 24
 AIRPORT:EDDK
 FOLDER:Runway Info
+LAYER:6
 ACTIVE:RWY:ARR:*:DEP:EDDK24
 ACTIVE:RWY:ARR:EDDK24:DEP:*
 COLOR:rrs-marker
@@ -131,6 +142,7 @@ TEXTALIGN:LC
 MAP:RRS 06
 AIRPORT:EDDK
 FOLDER:Runway Info
+LAYER:6
 ACTIVE:RWY:ARR:*:DEP:EDDK06
 ACTIVE:RWY:ARR:EDDK06:DEP:*
 COLOR:rrs-marker
@@ -145,14 +157,15 @@ TEXTALIGN:LC
 MAP:Runway Designators
 AIRPORT:EDDK
 FOLDER:Runway Info
+LAYER:6
 ACTIVE:1
 {% for uuid, geom in data.eddk_kml['layout']['markings']['runways'].items() %}
-{{- geom | to_poly('', 'runway-label') }}
+{{- geom | to_coordtype('', 'runway-label') }}
 {% endfor %}
 
 MAP:Runway Markings
 AIRPORT:EDDK
 FOLDER:Runway Info
 {% for uuid, geom in data.eddk_aixm['RunwayMarking'].items() %}
-{{- geom | to_poly('', 'layout-runway-marking') }}
+{{- geom | to_coordtype('', 'layout-runway-marking') }}
 {% endfor %}

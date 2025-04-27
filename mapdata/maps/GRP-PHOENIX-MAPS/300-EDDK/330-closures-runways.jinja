@@ -1,0 +1,50 @@
+// ------------------------ Runway Closures -------------------------
+
+MAP:EDDK 31R/13L
+AIRPORT:EDDK
+FOLDER:Auto Runway Closures
+HIDDEN
+ACTIVE:RWY:ARR:EDDK13L:DEP:*
+ACTIVE:RWY:ARR:*:DEP:EDDK13L
+ACTIVE:RWY:ARR:EDDK31R:DEP:*
+ACTIVE:RWY:ARR:*:DEP:EDDK31R
+{{ data.eddk_kml['layout']['runways']['13L-31R'] | to_coordtype('', 'green', 'OTHER', 'NONE') }}
+
+MAP:EDDK 31L/13R
+AIRPORT:EDDK
+FOLDER:Auto Runway Closures
+HIDDEN
+ACTIVE:RWY:ARR:EDDK13R:DEP:*
+ACTIVE:RWY:ARR:*:DEP:EDDK13R
+ACTIVE:RWY:ARR:EDDK31L:DEP:*
+ACTIVE:RWY:ARR:*:DEP:EDDK31L
+{{ data.eddk_kml['layout']['runways']['13R-31L'] | to_coordtype('', 'green', 'OTHER', 'NONE') }}
+
+MAP:31R/13L
+AIRPORT:EDDK
+FOLDER:Closures
+ACTIVE:MAP:!:Auto Runway Closures\EDDK 31R/13L
+LAYER:4
+RWYCLOSEDDEP:EDDK:13L,31R
+RWYCLOSEDARR:EDDK:13L,31R
+STYLE:Solid:2
+{{ data.eddk_kml['layout']['runways']['13L-31R'] | to_coordtype('', 'closure', 'RWYCLOSED') }}
+
+MAP:31L/13R
+AIRPORT:EDDK
+FOLDER:Closures
+ACTIVE:MAP:!:Auto Runway Closures\EDDK 31L/13R
+LAYER:4
+RWYCLOSEDDEP:EDDK:13R,31L
+RWYCLOSEDARR:EDDK:13R,31L
+STYLE:Solid:2
+{{ data.eddk_kml['layout']['runways']['13R-31L'] | to_coordtype('', 'closure', 'RWYCLOSED') }}
+
+MAP:24/06
+AIRPORT:EDDK
+FOLDER:Closures
+LAYER:4
+RWYCLOSEDDEP:EDDK:06,24
+RWYCLOSEDARR:EDDK:06,24
+STYLE:Solid:2
+{{ data.eddk_kml['layout']['runways']['06-24'] | to_coordtype('', 'closure', 'RWYCLOSED') }}
