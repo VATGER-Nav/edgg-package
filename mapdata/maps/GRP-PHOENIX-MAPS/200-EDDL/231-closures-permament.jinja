@@ -1,0 +1,15 @@
+// ----------------------- Permament Closures -----------------------
+
+MAP:K4/Runway 15
+AIRPORT:EDDL
+FOLDER:Closures
+LAYER:4
+ACTIVE:1
+STYLE:Solid:2
+{{ data.eddl_kml['layout']['closures']['poly']['K4'] | to_coordtype('K4', 'closure', 'TWYCLOSED') }}
+STYLE:Solid:1
+{{ data.eddl_kml['layout']['closures']['symb']['K4_a'] | to_coordtype('','closure-symbol-yellow') }}
+{{ data.eddl_kml['layout']['closures']['symb']['K4_b'] | to_coordtype('','closure-symbol-yellow') }}
+{{ data.eddl_kml['layout']['closures']['symb']['K4_c'] | to_coordtype('','closure-symbol-yellow') }}
+{{ data.eddl_kml['layout']['closures']['symb']['15'] | to_coordtype('','closure-symbol-yellow') }}
+{{ data.eddl_kml['layout']['closures']['poly']['15'] | to_coordtype('Runway 15', '', 'TWYCLOSED', 'NONE') }}

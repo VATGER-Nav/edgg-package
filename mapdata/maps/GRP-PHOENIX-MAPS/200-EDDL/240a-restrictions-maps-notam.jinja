@@ -1,8 +1,9 @@
-// ------------------------ Restriction Maps ------------------------
+// -------------------- Restriction Maps (NOTAM) --------------------
 {% set default = 0.000005 %}
-MAP:Restrictions
+MAP:Restrictions (EDDL)(NOTAM)
 AIRPORT:EDDL
 FOLDER:Restrictions
+LAYER:2
 
 // Restrictions
 ZOOM:600
@@ -22,7 +23,7 @@ COLOR:restrictions-D
 STYLE:SOLID:4
 {{ data.eddl_kml['layout']['restrictions']['line']['A05'] | to_line('') -}}
 STYLE:SOLID:1
-{{ data.eddl_kml['layout']['restrictions']['poly']['A05'] | to_poly('', 'restrictions-D') }}
+{{ data.eddl_kml['layout']['restrictions']['poly']['A05'] | to_coordtype('', 'restrictions-D') }}
 TEXTALIGN:LC
 {{ data.eddl_kml['layout']['restrictions']['labels']['A05'] | to_text('Max code D') }}
 {{ data.eddl_kml['layout']['restrictions']['labels']['A05'] | to_text('P1 >> A05:0:12') }}
@@ -42,7 +43,7 @@ COLOR:restrictions-AB
 STYLE:SOLID:4
 {{ data.eddl_kml['layout']['restrictions']['line']['L2_2'] | to_line('') -}}
 STYLE:SOLID:1
-{{ data.eddl_kml['layout']['restrictions']['poly']['L2_2'] | to_poly('', 'restrictions-AB') }}
+{{ data.eddl_kml['layout']['restrictions']['poly']['L2_2'] | to_coordtype('', 'restrictions-AB') }}
 TEXTALIGN:LC
 {{ data.eddl_kml['layout']['restrictions']['labels']['L2_2'] | to_text('No Exit') }}
 
@@ -51,9 +52,8 @@ COLOR:restrictions-AB
 STYLE:SOLID:4
 {{ data.eddl_kml['layout']['restrictions']['line']['GAT_a'] | to_line('') -}}
 {{ data.eddl_kml['layout']['restrictions']['line']['GAT_b'] | to_line('') -}}
-COORDTYPE:OTHER:REGION:/
 STYLE:SOLID:1
-{{ data.eddl_kml['layout']['restrictions']['poly']['GAT_a'] | to_poly('') }}
+{{ data.eddl_kml['layout']['restrictions']['poly']['GAT_a'] | to_coordtype('', '', 'OTHER', 'REGION', '\\') }}
 TEXTALIGN:RC
 {{ data.eddl_kml['layout']['restrictions']['labels']['GAT'] | to_text('Max wingspan 29m') }}
 
@@ -311,118 +311,3 @@ COLOR:restrictions-C
 {{ data.eddl_kml['layout']['restrictions']['labels']['reference_2'] | to_text('1.                               :0:-45') }}
 {{ data.eddl_kml['layout']['restrictions']['labels']['reference_2'] | to_text('2.                               :0:-15') }}
 {{ data.eddl_kml['layout']['restrictions']['labels']['reference_2'] | to_text('3.                               :0:15') }}
-
-// Labels
-ZOOM:600
-FONTSIZE:=:9
-COLOR:layout-label-stand
-
-// Closed due to NOTAM A3920/24:
-// 'B05', 'B06', 'B07', 'B08', 'V61A'
-
-{% for desig, geom in data.eddl_kml['layout']['labels']['stands'].items() if not desig in
-[
-    'A05',
-    'A11',
-    'A12A',
-    'B05',
-    'B07',
-    'C02A',
-    'C03A',
-    'V04',
-    'V06',
-    'V38A',
-    'V38B',
-    'V39A',
-    'V41A',
-    'V61A',
-    'V72A',
-    'V82A',
-    'V91A',
-    'V103A',
-    'V104A',
-    'V106A',
-    'V107A',
-    'V01',
-    'V02A',
-    'V03A',
-    'V04A',
-    'V05A',
-    'V07A',
-    'V08A',
-    'V08B',
-    'V08C',
-    'V11A',
-    'V11B',
-    'V11C',
-    'B06',
-    'B08'
-] %}
-{{- geom | to_text(desig) }}
-{% endfor %}
-ZOOM:1200
-{% for desig in
-[
-    'A05',
-    'A11',
-    'C03A',
-    'V04',
-    'V06',
-    'V38A',
-    'V38B',
-    'V39A',
-    'V41A',
-    'V72A',
-    'V82A',
-    'V91A',
-    'V103A',
-    'V104A',
-    'V106A',
-    'V107A'
-] %}
-{{- data.eddl_kml['layout']['labels']['stands'][desig] | to_text(desig) }}
-{% endfor %}
-{{ data.eddl_kml['layout']['labels']['stands']['A12'] | to_text('A12A:0:11') }}
-{{ data.eddl_kml['layout']['labels']['stands']['C02'] | to_text('C02A         ') }}
-{{ data.eddl_kml['layout']['restrictions']['stands']['V38B'] | to_text('V38B:0:-15') }}
-
-
-// Closed due to NOTAM A3920/24:
-// 'B06', 'B08'
-// 'B05', 'B07', 'V61A'
-
-MAP:Closed Stands
-AIRPORT:EDDL
-FOLDER:Restrictions
-ZOOM:600
-TEXTALIGN:CC
-FONTSIZE:=:9
-COLOR:restrictions-C
-{% for desig in ['B05', 'B07'] %}
-{{- data.eddl_kml['layout']['restrictions']['stands'][desig] | to_symbol('STAND_S') }}
-{% endfor %}
-COLOR:restrictions-E
-{% for desig in ['B06', 'B08'] %}
-{{- data.eddl_kml['layout']['restrictions']['stands'][desig] | to_symbol('STAND') }}
-{% endfor %}
-{{ data.eddl_kml['layout']['restrictions']['stands']['V61A'] | to_symbol('STAND_S') }}
-{{ data.eddl_kml['layout']['restrictions']['stands']['V61A'] | to_text('MAX A343:0:15') }}
-
-COLOR:layout-label-stand
-ZOOM:600
-{% for desig in ['B06', 'B08'] %}
-{{- data.eddl_kml['layout']['labels']['stands'][desig] | to_text(desig) }}
-{% endfor %}
-ZOOM:1200
-{% for desig in ['B05', 'B07', 'V61A'] %}
-{{- data.eddl_kml['layout']['labels']['stands'][desig] | to_text(desig) }}
-{% endfor %}
-
-{#
-COLOR:restrictions-C
-{% for desig in ['B05', 'B07'] %}
-{{- data.eddl_kml['layout']['restrictions']['stands'][desig] | to_symbol('STAND') }}
-{% endfor %}
-COLOR:restrictions-E
-{{ data.eddl_kml['layout']['restrictions']['stands']['V61A'] | to_symbol('STAND') }}
-#}

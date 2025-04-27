@@ -1,0 +1,14 @@
+// ------------------------- NOTAM Closures -------------------------
+
+MAP:NOTAM A1788/25 - TWY P4
+AIRPORT:EDDL
+FOLDER:Constructions
+LAYER:7
+OTHER_MAP_ACT:!:Labels\Checkpoint 2
+ACTIVE:1
+BLOCKS:EDDL:B05,B06,B07,B08,V61A
+LIMITS:EDDL:B04:C
+{{ data.notam['notam']['EDDL']['apron'] | to_coordtype('Apron','layout-apron') }}
+{{ data.notam['notam']['EDDL']['taxiway'] | to_coordtype('Taxiway','layout-taxiway') }}
+STYLE:Solid:2
+{{ data.notam['notam']['EDDL']['P4'] | to_coordtype('P4', 'closure', 'TWYCLOSED', 'POLYGON') }}

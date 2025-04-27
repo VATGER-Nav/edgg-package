@@ -3,16 +3,17 @@
 MAP:23L
 AIRPORT:EDDL
 FOLDER:A380
-{{ data.eddl_kml['layout']['restrictions_A380']['23']['poly']['23arr_a'] | to_poly('', 'restrictions-C') }}
-{{ data.eddl_kml['layout']['restrictions_A380']['23']['poly']['23arr_b'] | to_poly('', 'restrictions-C') }}
-{{ data.eddl_kml['layout']['restrictions_A380']['23']['poly']['23arr_c'] | to_poly('', 'restrictions-C') }}
-{{ data.eddl_kml['layout']['restrictions_A380']['23']['poly']['23arr_d'] | to_poly('', 'restrictions-C') }}
-{{ data.eddl_kml['layout']['restrictions_A380']['23']['poly']['23arr_e'] | to_poly('', 'restrictions-C') }}
-{{ data.eddl_kml['layout']['restrictions_A380']['23']['poly']['23arr_f'] | to_poly('', 'restrictions-C') }}
-{{ data.eddl_kml['layout']['restrictions_A380']['23']['poly']['23dep_a'] | to_poly('', 'restrictions-D') }}
-{{ data.eddl_kml['layout']['restrictions_A380']['23']['poly']['23dep_b'] | to_poly('', 'restrictions-D') }}
-{{ data.eddl_kml['layout']['restrictions_A380']['23']['poly']['23dep_c'] | to_poly('', 'restrictions-D') }}
-{{ data.eddl_kml['layout']['restrictions_A380']['23']['poly']['23dep_d'] | to_poly('', 'restrictions-D') }}
+LAYER:2
+{{ data.eddl_kml['layout']['restrictions_A380']['23']['poly']['23arr_a'] | to_coordtype('', 'restrictions-C') }}
+{{ data.eddl_kml['layout']['restrictions_A380']['23']['poly']['23arr_b'] | to_coordtype('', 'restrictions-C') }}
+{{ data.eddl_kml['layout']['restrictions_A380']['23']['poly']['23arr_c'] | to_coordtype('', 'restrictions-C') }}
+{{ data.eddl_kml['layout']['restrictions_A380']['23']['poly']['23arr_d'] | to_coordtype('', 'restrictions-C') }}
+{{ data.eddl_kml['layout']['restrictions_A380']['23']['poly']['23arr_e'] | to_coordtype('', 'restrictions-C') }}
+{{ data.eddl_kml['layout']['restrictions_A380']['23']['poly']['23arr_f'] | to_coordtype('', 'restrictions-C') }}
+{{ data.eddl_kml['layout']['restrictions_A380']['23']['poly']['23dep_a'] | to_coordtype('', 'restrictions-D') }}
+{{ data.eddl_kml['layout']['restrictions_A380']['23']['poly']['23dep_b'] | to_coordtype('', 'restrictions-D') }}
+{{ data.eddl_kml['layout']['restrictions_A380']['23']['poly']['23dep_c'] | to_coordtype('', 'restrictions-D') }}
+{{ data.eddl_kml['layout']['restrictions_A380']['23']['poly']['23dep_d'] | to_coordtype('', 'restrictions-D') }}
 STYLE:SOLID:3
 COLOR:restrictions-C
 {{ data.eddl_kml['layout']['restrictions_A380']['23']['line']['23arr_a'] | to_line('') -}}
@@ -89,14 +90,14 @@ COLOR:restrictions-F
 MAP:05R
 AIRPORT:EDDL
 FOLDER:A380
-{{ data.eddl_kml['layout']['restrictions_A380']['05']['poly']['05arr_a'] | to_poly('', 'restrictions-C') }}
-{{ data.eddl_kml['layout']['restrictions_A380']['05']['poly']['05arr_b'] | to_poly('', 'restrictions-C') }}
-{{ data.eddl_kml['layout']['restrictions_A380']['05']['poly']['05arr_c'] | to_poly('', 'restrictions-C') }}
-{{ data.eddl_kml['layout']['restrictions_A380']['05']['poly']['05arr_d'] | to_poly('', 'restrictions-C') }}
-{{ data.eddl_kml['layout']['restrictions_A380']['05']['poly']['05dep_a'] | to_poly('', 'restrictions-D') }}
-{{ data.eddl_kml['layout']['restrictions_A380']['05']['poly']['05dep_b'] | to_poly('', 'restrictions-D') }}
-{{ data.eddl_kml['layout']['restrictions_A380']['05']['poly']['05dep_c'] | to_poly('', 'restrictions-D') }}
-{{ data.eddl_kml['layout']['restrictions_A380']['05']['poly']['05dep_d'] | to_poly('', 'restrictions-D') }}
+{{ data.eddl_kml['layout']['restrictions_A380']['05']['poly']['05arr_a'] | to_coordtype('', 'restrictions-C') }}
+{{ data.eddl_kml['layout']['restrictions_A380']['05']['poly']['05arr_b'] | to_coordtype('', 'restrictions-C') }}
+{{ data.eddl_kml['layout']['restrictions_A380']['05']['poly']['05arr_c'] | to_coordtype('', 'restrictions-C') }}
+{{ data.eddl_kml['layout']['restrictions_A380']['05']['poly']['05arr_d'] | to_coordtype('', 'restrictions-C') }}
+{{ data.eddl_kml['layout']['restrictions_A380']['05']['poly']['05dep_a'] | to_coordtype('', 'restrictions-D') }}
+{{ data.eddl_kml['layout']['restrictions_A380']['05']['poly']['05dep_b'] | to_coordtype('', 'restrictions-D') }}
+{{ data.eddl_kml['layout']['restrictions_A380']['05']['poly']['05dep_c'] | to_coordtype('', 'restrictions-D') }}
+{{ data.eddl_kml['layout']['restrictions_A380']['05']['poly']['05dep_d'] | to_coordtype('', 'restrictions-D') }}
 STYLE:SOLID:3
 COLOR:restrictions-C
 {{ data.eddl_kml['layout']['restrictions_A380']['05']['line']['05arr_a'] | to_line('') -}}

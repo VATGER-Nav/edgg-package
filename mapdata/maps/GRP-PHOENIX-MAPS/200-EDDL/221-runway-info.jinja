@@ -3,6 +3,7 @@
 MAP:TORA 23L
 AIRPORT:EDDL
 FOLDER:Runway Info
+LAYER:6
 COLOR:tora-label
 ZOOM:600
 TEXTALIGN:LC
@@ -14,6 +15,7 @@ TEXTALIGN:RC
 MAP:TORA 05R
 AIRPORT:EDDL
 FOLDER:Runway Info
+LAYER:6
 COLOR:tora-label
 ZOOM:600
 TEXTALIGN:LC
@@ -24,6 +26,7 @@ TEXTALIGN:LC
 MAP:TORA 23R
 AIRPORT:EDDL
 FOLDER:Runway Info
+LAYER:6
 COLOR:tora-label
 ZOOM:600
 TEXTALIGN:LC
@@ -35,6 +38,7 @@ TEXTALIGN:RC
 MAP:TORA 05L
 AIRPORT:EDDL
 FOLDER:Runway Info
+LAYER:6
 COLOR:tora-label
 ZOOM:600
 TEXTALIGN:LC
@@ -44,6 +48,7 @@ TEXTALIGN:LC
 MAP:RRS 23L
 AIRPORT:EDDL
 FOLDER:Runway Info
+LAYER:6
 ACTIVE:RWY:ARR:*:DEP:EDDL23L
 ACTIVE:RWY:ARR:EDDL23L:DEP:*
 COLOR:rrs-marker
@@ -60,6 +65,7 @@ TEXTALIGN:CB
 MAP:RRS 05R
 AIRPORT:EDDL
 FOLDER:Runway Info
+LAYER:6
 ACTIVE:RWY:ARR:*:DEP:EDDL05R
 ACTIVE:RWY:ARR:EDDL05R:DEP:*
 COLOR:rrs-marker
@@ -76,6 +82,7 @@ TEXTALIGN:CB
 MAP:RRS 23R
 AIRPORT:EDDL
 FOLDER:Runway Info
+LAYER:6
 ACTIVE:RWY:ARR:*:DEP:EDDL23R
 ACTIVE:RWY:ARR:EDDL23R:DEP:*
 COLOR:rrs-marker
@@ -90,6 +97,7 @@ TEXTALIGN:CB
 MAP:RRS 05L
 AIRPORT:EDDL
 FOLDER:Runway Info
+LAYER:6
 ACTIVE:RWY:ARR:*:DEP:EDDL05L
 ACTIVE:RWY:ARR:EDDL05L:DEP:*
 COLOR:rrs-marker
@@ -104,9 +112,10 @@ TEXTALIGN:CB
 MAP:Runway Designators
 AIRPORT:EDDL
 FOLDER:Runway Info
+LAYER:6
 ACTIVE:1
 {% for uuid, geom in data.eddl_kml['layout']['markings']['runways'].items() %}
-{{- geom | to_poly('', 'runway-label') }}
+{{- geom | to_coordtype('', 'runway-label') }}
 {% endfor %}
 
 MAP:Runway Markings
@@ -392,7 +401,7 @@ FOLDER:Runway Info
     '6d3fa502-92a4-73a9-e055-0a0027980ba7',
     '6d3fa502-92a5-73a9-e055-0a0027980ba7',
 ] %}
-{{- data.eddl_aixm['RunwayMarking'][uuid] | to_poly('', 'layout-runway-marking') }}
+{{- data.eddl_aixm['RunwayMarking'][uuid] | to_coordtype('', 'layout-runway-marking') }}
 {% endfor %}
 {% for uuid in
 [
@@ -432,5 +441,5 @@ FOLDER:Runway Info
     'de162807-4914-d2fc-e053-86c812acd642',
     'de162807-4915-d2fc-e053-86c812acd642',
 ] %}
-{{- data.eddl_aixm['RunwayMarking'][uuid] | to_poly('', 'layout-taxiway') }}
+{{- data.eddl_aixm['RunwayMarking'][uuid] | to_coordtype('', 'layout-taxiway') }}
 {% endfor %}

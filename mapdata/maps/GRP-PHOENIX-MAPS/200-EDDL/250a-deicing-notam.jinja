@@ -1,23 +1,21 @@
-MAP:De-Icing 05L/R NOTAM
+MAP:De-Icing 05L/R (NOTAM)
 AIRPORT:EDDL
 FOLDER:Ice/Snow
 
 // Areas
-COORDTYPE:OTHER:REGION:x
 STYLE:Solid:1
-{{ data.eddl_kml['layout']['deicing']['poly']['DP3W'] | to_poly('DP1W', 'layout-runway') }}
-{{ data.eddl_kml['layout']['deicing']['poly']['DP4W'] | to_poly('DP2W', 'layout-runway') }}
-{{ data.notam['notam']['EDDL']['deicing']['poly']['DP1W'] | to_poly('DP1W', 'layout-runway') }}
-{{ data.notam['notam']['EDDL']['deicing']['poly']['DP3W'] | to_poly('DP3W', 'layout-runway') }}
-{{ data.notam['notam']['EDDL']['deicing']['poly']['DP4W'] | to_poly('DP4W', 'layout-runway') }}
+{{ data.eddl_kml['layout']['deicing']['poly']['DP3W'] | to_coordtype('DP1W', 'layout-runway', 'OTHER', 'REGION', 'X') }}
+{{ data.eddl_kml['layout']['deicing']['poly']['DP4W'] | to_coordtype('DP2W', 'layout-runway', 'OTHER', 'REGION', 'X') }}
+{{ data.notam['notam']['EDDL']['deicing']['poly']['DP1W'] | to_coordtype('DP1W', 'layout-runway', 'OTHER', 'REGION', 'X') }}
+{{ data.notam['notam']['EDDL']['deicing']['poly']['DP3W'] | to_coordtype('DP3W', 'layout-runway', 'OTHER', 'REGION', 'X') }}
+{{ data.notam['notam']['EDDL']['deicing']['poly']['DP4W'] | to_coordtype('DP4W', 'layout-runway', 'OTHER', 'REGION', 'X') }}
 
 // Arrows
-COORDTYPE:OTHER:REGION
-{{ data.eddl_kml['layout']['deicing']['arrows']['DP3W'] | to_poly('', 'layout-taxiline-white') }}
-{{ data.eddl_kml['layout']['deicing']['arrows']['DP4W'] | to_poly('', 'layout-taxiline-white') }}
-{{ data.notam['notam']['EDDL']['deicing']['arrows']['DP1W'] | to_poly('', 'layout-taxiline-white') }}
-{{ data.notam['notam']['EDDL']['deicing']['arrows']['DP3W'] | to_poly('', 'layout-taxiline-white') }}
-{{ data.notam['notam']['EDDL']['deicing']['arrows']['DP4W'] | to_poly('', 'layout-taxiline-white') }}
+{{ data.eddl_kml['layout']['deicing']['arrows']['DP3W'] | to_coordtype('', 'layout-taxiline-white') }}
+{{ data.eddl_kml['layout']['deicing']['arrows']['DP4W'] | to_coordtype('', 'layout-taxiline-white') }}
+{{ data.notam['notam']['EDDL']['deicing']['arrows']['DP1W'] | to_coordtype('', 'layout-taxiline-white') }}
+{{ data.notam['notam']['EDDL']['deicing']['arrows']['DP3W'] | to_coordtype('', 'layout-taxiline-white') }}
+{{ data.notam['notam']['EDDL']['deicing']['arrows']['DP4W'] | to_coordtype('', 'layout-taxiline-white') }}
 
 // Taxilines
 COLOR:layout-taxiline-white
@@ -60,8 +58,6 @@ COLOR:restrictions-F
 {{ data.eddl_kml['layout']['deicing']['labels']['DP3W'] | to_text('.:-9:-17') }}
 COLOR:restrictions-E
 {{ data.eddl_kml['layout']['deicing']['labels']['DP4W'] | to_text('.:-9:-17') }}
-
-
 
 // Reference
 COLOR:layout-label-stand
