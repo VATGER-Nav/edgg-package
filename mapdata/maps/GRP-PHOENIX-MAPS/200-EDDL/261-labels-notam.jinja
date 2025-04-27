@@ -1,8 +1,18 @@
-// ----------------------------- Stands -----------------------------
-
-MAP:Closed Stands 
+MAP:Checkpoint 2
 AIRPORT:EDDL
-FOLDER:Stands
+FOLDER:Labels
+LAYER:6
+ZOOM:800
+FONTSIZE:=:9
+COLOR:layout-holdingpoint
+TEXTALIGN:LC
+{{ data.eddl_kml['layout']['labels']['stopbars']['CP2'] | to_text('Check:0:-9') }}
+{{ data.eddl_kml['layout']['labels']['stopbars']['CP2'] | to_text('point 2') }}
+
+MAP:Closed Stands
+AIRPORT:EDDL
+FOLDER:Labels
+LAYER:6
 ZOOM:600
 FONTSIZE:=:9
 COLOR:layout-label-stand

@@ -1,48 +1,151 @@
 // ----------------------------- Labels -----------------------------
-MAP:Taxiways
+
+MAP:Buffer   (EDDL)
 AIRPORT:EDDL
 FOLDER:Labels
-ACTIVE:1
+HIDDEN
+LAYER:3
 ZOOM:400
 {% for uuid, geom in data.eddl_kml['layout']['labels']['buffer_a'].items() %}
-{{- geom | to_poly('', 'layout-taxiway') }}
+{{- geom | to_coordtype('', 'layout-taxiway') }}
 {% endfor %}
 {% for uuid, geom in data.eddl_kml['layout']['labels']['buffer_b'].items() %}
-{{- geom | to_poly('', 'layout-apron') }}
+{{- geom | to_coordtype('', 'layout-apron') }}
 {% endfor %}
+
+MAP:Taxiways (EDDL)
+AIRPORT:EDDL
+FOLDER:Labels
+OTHER_MAP_ACT:=:Labels\Buffer   (EDDL)
+LAYER:6
+ZOOM:400
 FONTSIZE:=:10
 COLOR:layout-label-taxiway
 {% for desig, geom in data.eddl_kml['layout']['labels']['taxiways'].items() %}
 {{- geom | to_text(desig) }}
 {% endfor %}
 
+MAP:Stands   (EDDL)
+AIRPORT:EDDL
+FOLDER:Labels
+OTHER_MAP_ACT:=:Labels\Areas    (EDDL)
+LAYER:6
+ZOOM:600
+FONTSIZE:=:9
+COLOR:layout-label-stand
+
+// Closed due to NOTAM A3920/24:
+// 'B05', 'B06', 'B07', 'B08', 'V61A'
+
+{% for desig, geom in data.eddl_kml['layout']['labels']['stands'].items() if not desig in
+[
+    'A05',
+    'A11',
+    'A12A',
+    'B05',
+    'B07',
+    'C02A',
+    'C03A',
+    'V04',
+    'V06',
+    'V38A',
+    'V38B',
+    'V39A',
+    'V41A',
+    'V61A',
+    'V72A',
+    'V82A',
+    'V91A',
+    'V103A',
+    'V104A',
+    'V106A',
+    'V107A',
+    'V01',
+    'V02A',
+    'V03A',
+    'V04A',
+    'V05A',
+    'V07A',
+    'V08A',
+    'V08B',
+    'V08C',
+    'V11A',
+    'V11B',
+    'V11C',
+    'B06',
+    'B08'
+] %}
+{{- geom | to_text(desig) }}
+{% endfor %}
+ZOOM:1200
+{% for desig in
+[
+    'A05',
+    'A11',
+    'C03A',
+    'V04',
+    'V06',
+    'V38A',
+    'V38B',
+    'V39A',
+    'V41A',
+    'V72A',
+    'V82A',
+    'V91A',
+    'V103A',
+    'V104A',
+    'V106A',
+    'V107A'
+] %}
+{{- data.eddl_kml['layout']['labels']['stands'][desig] | to_text(desig) }}
+{% endfor %}
+{{ data.eddl_kml['layout']['labels']['stands']['A12'] | to_text('A12A:0:11') }}
+{{ data.eddl_kml['layout']['labels']['stands']['C02'] | to_text('C02A         ') }}
+
+MAP:Areas    (EDDL)
+AIRPORT:EDDL
+FOLDER:Labels
+LAYER:6
+ZOOM:400
+FONTSIZE:=:9
+COLOR:layout-label-stand
+{{ data.eddl_kml['layout']['labels']['GAT'] | to_text('GAT') }}
+{{ data.eddl_kml['layout']['labels']['Police'] | to_text('Police') }}
+
+MAP:Additional Stands
+AIRPORT:EDDL
+FOLDER:Labels
+HIDDEN
+LAYER:6
+ZOOM:600
+FONTSIZE:=:9
+COLOR:layout-label-stand
+{% for desig in
+[
+    'V01',
+    'V02A',
+    'V03A',
+    'V04A',
+    'V05A',
+    'V07A',
+    'V08A',
+    'V08B',
+    'V08C',
+    'V11A',
+    'V11B',
+    'V11C'
+] %}
+{{- data.eddl_kml['layout']['labels']['stands'][desig] | to_text(desig) }}
+{% endfor %}
+
 MAP:Checkpoint 1
 AIRPORT:EDDL
 FOLDER:Labels
 ACTIVE:1
+LAYER:6
 ZOOM:800
 FONTSIZE:=:9
 COLOR:layout-holdingpoint
 TEXTALIGN:CC
 {{ data.eddl_kml['layout']['labels']['stopbars']['CP1'] | to_text('Check:0:-9') }}
 {{ data.eddl_kml['layout']['labels']['stopbars']['CP1'] | to_text(' point 1') }}
-
-MAP:Checkpoint 2
-AIRPORT:EDDL
-FOLDER:Labels
-ZOOM:800
-FONTSIZE:=:9
-COLOR:layout-holdingpoint
-TEXTALIGN:LC
-{{ data.eddl_kml['layout']['labels']['stopbars']['CP2'] | to_text('Check:0:-9') }}
-{{ data.eddl_kml['layout']['labels']['stopbars']['CP2'] | to_text('point 2') }}
-
-MAP:Areas
-AIRPORT:EDDL
-FOLDER:Labels
-ACTIVE:1
-ZOOM:400
-FONTSIZE:=:9
-COLOR:layout-label-stand
-{{ data.eddl_kml['layout']['labels']['GAT'] | to_text('GAT') }}
-{{ data.eddl_kml['layout']['labels']['Police'] | to_text('Police') }}

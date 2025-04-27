@@ -3,10 +3,12 @@
 MAP:Snow 23L/05R
 AIRPORT:EDDL
 FOLDER:Ice/Snow
-COORDTYPE:RWYCLOSED:REGION
+LAYER:4
+RWYCLOSEDDEP:EDDL:05R,23L
+RWYCLOSEDARR:EDDL:05R,23L
 STYLE:Solid:2
 FONTSIZE:=:14
-{{ data.eddl_kml['layout']['runways']['05R-23L'] | to_poly('Runway 23L/05R', 'closure') }}
+{{ data.eddl_kml['layout']['runways']['05R-23L'] | to_coordtype('Runway 23L/05R', 'closure', 'RWYCLOSED') }}
 COLOR:closure-symbol
 ZOOM:600
 {{ data.eddl_kml['layout']['deicing']['labels']['05R-23L'] | to_text('SNOW REMOVAL') }}
@@ -15,10 +17,12 @@ ZOOM:600
 MAP:Snow 23R/05L
 AIRPORT:EDDL
 FOLDER:Ice/Snow
-COORDTYPE:RWYCLOSED:REGION
+LAYER:4
+RWYCLOSEDDEP:EDDL:05L,23R
+RWYCLOSEDARR:EDDL:05L,23R
 STYLE:Solid:2
 FONTSIZE:=:14
-{{ data.eddl_kml['layout']['runways']['05L-23R'] | to_poly('Runway 23R/05L', 'closure') }}
+{{ data.eddl_kml['layout']['runways']['05L-23R'] | to_coordtype('Runway 23R/05L', 'closure', 'RWYCLOSED') }}
 COLOR:closure-symbol
 ZOOM:600
 {{ data.eddl_kml['layout']['deicing']['labels']['05L-23R'] | to_text('SNOW REMOVAL') }}
@@ -29,56 +33,55 @@ AIRPORT:EDDL
 FOLDER:Ice/Snow
 
 // Areas
-COORDTYPE:OTHER:REGION:x
 STYLE:Solid:1
-{{ data.eddl_kml['layout']['deicing']['poly']['DP1E'] | to_poly('DP1E', 'layout-runway') }}
-{{ data.eddl_kml['layout']['deicing']['poly']['DP2E'] | to_poly('DP2E', 'layout-runway') }}
-{{ data.eddl_kml['layout']['deicing']['poly']['DP3E'] | to_poly('DP3E', 'layout-runway') }}
-{{ data.eddl_kml['layout']['deicing']['poly']['DP4E'] | to_poly('DP4E', 'layout-runway') }}
-{{ data.eddl_kml['layout']['deicing']['poly']['V11B'] | to_poly('V11B', 'layout-runway') }}
+{{ data.eddl_kml['layout']['deicing']['poly']['DP1E'] | to_coordtype('DP1E', 'layout-runway', 'OTHER', 'REGION', 'X') }}
+{{ data.eddl_kml['layout']['deicing']['poly']['DP2E'] | to_coordtype('DP2E', 'layout-runway', 'OTHER', 'REGION', 'X') }}
+{{ data.eddl_kml['layout']['deicing']['poly']['DP3E'] | to_coordtype('DP3E', 'layout-runway', 'OTHER', 'REGION', 'X') }}
+{{ data.eddl_kml['layout']['deicing']['poly']['DP4E'] | to_coordtype('DP4E', 'layout-runway', 'OTHER', 'REGION', 'X') }}
+{{ data.eddl_kml['layout']['deicing']['poly']['V11B'] | to_coordtype('V11B', 'layout-runway', 'OTHER', 'REGION', 'X') }}
 
 // Arrows
-COORDTYPE:OTHER:REGION
-{{ data.eddl_kml['layout']['deicing']['arrows']['DP1E'] | to_poly('', 'layout-taxiline-white') }}
-{{ data.eddl_kml['layout']['deicing']['arrows']['DP2E'] | to_poly('', 'layout-taxiline-white') }}
-{{ data.eddl_kml['layout']['deicing']['arrows']['DP3E'] | to_poly('', 'layout-taxiline-white') }}
-{{ data.eddl_kml['layout']['deicing']['arrows']['DP4E'] | to_poly('', 'layout-taxiline-white') }}
-{{ data.eddl_kml['layout']['deicing']['arrows']['V11B'] | to_poly('', 'layout-taxiline-white') }}
+{{ data.eddl_kml['layout']['deicing']['arrows']['DP1E'] | to_coordtype('', 'layout-taxiline-white') }}
+{{ data.eddl_kml['layout']['deicing']['arrows']['DP2E'] | to_coordtype('', 'layout-taxiline-white') }}
+{{ data.eddl_kml['layout']['deicing']['arrows']['DP3E'] | to_coordtype('', 'layout-taxiline-white') }}
+{{ data.eddl_kml['layout']['deicing']['arrows']['DP4E'] | to_coordtype('', 'layout-taxiline-white') }}
+{{ data.eddl_kml['layout']['deicing']['arrows']['V11B'] | to_coordtype('', 'layout-taxiline-white') }}
 
 // Taxilines
 COLOR:layout-taxiline-white
 STYLE:Solid:2
-{% for desig in
+{% for uuid in
 [
-    'AE_V11B_O',
-    'AE_V11B_W',
-    'DEICI_O_2',
-    'DEICI_O_3',
-    'DEICI_O_4_1',
-    'DEICI_O_4_2',
-    'DEICI_O_5',
-    'DEICI_O_6',
-    'DEICI_O_7',
-    'DEICI_O_8',
-    'DEICI_O_9',
-    'DEICI_O_M2',
-    'DEICI_O_O',
-    'DEICI_O_W',
-    'TLL3_2',
-    'TLL3_3',
-    'TLT_53',
-    'TLT_54',
-    'TLT_55',
-    'TLT_56',
-    'TLT_57',
-    'TLT_58',
-    'TLT_59',
-    'TLT_60',
-    'TLT_61',
-    'TLT_62',
-    'TLT_63'
+    '6bc8aade-1c7c-665c-e055-0a00272b55b3',
+    '6bc8aade-1d54-665c-e055-0a00272b55b3',
+    '6e812470-b372-1a4b-e055-0a0027980ba7',
+    '6e812470-b37b-1a4b-e055-0a0027980ba7',
+    '6e812470-b37c-1a4b-e055-0a0027980ba7',
+    '6e812470-b37f-1a4b-e055-0a0027980ba7',
+    '6e812470-b380-1a4b-e055-0a0027980ba7',
+    '6e812470-b381-1a4b-e055-0a0027980ba7',
+    '6e812470-b383-1a4b-e055-0a0027980ba7',
+    '6e812470-b38f-1a4b-e055-0a0027980ba7',
+    '6e812470-b391-1a4b-e055-0a0027980ba7',
+    '6ee65c69-2ccb-7e3c-e055-0a0027980ba7',
+    '6ee65c69-2ccc-7e3c-e055-0a0027980ba7',
+    '70132de0-0f8a-71c5-e055-0a0027980ba7',
+    '70132de0-0f8b-71c5-e055-0a0027980ba7',
+    '70132de0-0fb3-71c5-e055-0a0027980ba7',
+    '702d3608-dfa2-77dd-e055-0a0027980ba7',
+    '702d3608-dfa3-77dd-e055-0a0027980ba7',
+    '702d3608-dfa4-77dd-e055-0a0027980ba7',
+    '702d3608-dfa5-77dd-e055-0a0027980ba7',
+    '702d3608-dfa6-77dd-e055-0a0027980ba7',
+    '703f062c-7f4e-5209-e055-0a0027980ba7',
+    '703f062c-7f4f-5209-e055-0a0027980ba7',
+    '703f062c-7f50-5209-e055-0a0027980ba7',
+    '703f062c-7f51-5209-e055-0a0027980ba7',
+    '70b6f1b8-397b-7771-e055-0a0027980ba7',
+    '70b6f1b8-397e-7771-e055-0a0027980ba7',
+    '70b6f1b8-397f-7771-e055-0a0027980ba7',
 ] %}
-{{- data.eddl_aixm['GuidanceLineByDesig'][desig] | join_segments | simplify(default) | to_line(desig) -}}
+{{- data.eddl_aixm['GuidanceLine'][uuid] | join_segments | simplify(default) | to_line(uuid) -}}
 {% endfor %}
 {{ data.eddl_kml['layout']['deicing']['line']['DP1E'] | to_line('') -}}
 
@@ -143,19 +146,17 @@ AIRPORT:EDDL
 FOLDER:Ice/Snow
 
 // Areas
-COORDTYPE:OTHER:REGION:x
 STYLE:Solid:1
-{{ data.eddl_kml['layout']['deicing']['poly']['DP1W'] | to_poly('DP1W', 'layout-runway') }}
-{{ data.eddl_kml['layout']['deicing']['poly']['DP2W'] | to_poly('DP2W', 'layout-runway') }}
-{{ data.eddl_kml['layout']['deicing']['poly']['DP3W'] | to_poly('DP3W', 'layout-runway') }}
-{{ data.eddl_kml['layout']['deicing']['poly']['DP4W'] | to_poly('DP4W', 'layout-runway') }}
+{{ data.eddl_kml['layout']['deicing']['poly']['DP1W'] | to_coordtype('DP1W', 'layout-runway', 'OTHER', 'REGION', 'X') }}
+{{ data.eddl_kml['layout']['deicing']['poly']['DP2W'] | to_coordtype('DP2W', 'layout-runway', 'OTHER', 'REGION', 'X') }}
+{{ data.eddl_kml['layout']['deicing']['poly']['DP3W'] | to_coordtype('DP3W', 'layout-runway', 'OTHER', 'REGION', 'X') }}
+{{ data.eddl_kml['layout']['deicing']['poly']['DP4W'] | to_coordtype('DP4W', 'layout-runway', 'OTHER', 'REGION', 'X') }}
 
 // Arrows
-COORDTYPE:OTHER:REGION
-{{ data.eddl_kml['layout']['deicing']['arrows']['DP1W'] | to_poly('', 'layout-taxiline-white') }}
-{{ data.eddl_kml['layout']['deicing']['arrows']['DP2W'] | to_poly('', 'layout-taxiline-white') }}
-{{ data.eddl_kml['layout']['deicing']['arrows']['DP3W'] | to_poly('', 'layout-taxiline-white') }}
-{{ data.eddl_kml['layout']['deicing']['arrows']['DP4W'] | to_poly('', 'layout-taxiline-white') }}
+{{ data.eddl_kml['layout']['deicing']['arrows']['DP1W'] | to_coordtype('', 'layout-taxiline-white') }}
+{{ data.eddl_kml['layout']['deicing']['arrows']['DP2W'] | to_coordtype('', 'layout-taxiline-white') }}
+{{ data.eddl_kml['layout']['deicing']['arrows']['DP3W'] | to_coordtype('', 'layout-taxiline-white') }}
+{{ data.eddl_kml['layout']['deicing']['arrows']['DP4W'] | to_coordtype('', 'layout-taxiline-white') }}
 
 // Taxilines
 COLOR:layout-taxiline-white
@@ -191,8 +192,6 @@ COLOR:restrictions-F
 {{ data.eddl_kml['layout']['deicing']['labels']['DP3W'] | to_text('.:-9:-45') }}
 COLOR:restrictions-E
 {{ data.eddl_kml['layout']['deicing']['labels']['DP4W'] | to_text('.:-9:-45') }}
-
-
 
 // Reference
 COLOR:layout-label-stand

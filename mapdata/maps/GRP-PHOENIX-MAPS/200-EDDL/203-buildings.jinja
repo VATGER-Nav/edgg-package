@@ -286,10 +286,10 @@ ACTIVE:1
     'efa095e4-d487-db43-e053-86c812acd57b',
     'efa095e4-d488-db43-e053-86c812acd57b',
     ] %}
-{{- data.eddl_aixm['VerticalStructure'][uuid] | simplify(default) | to_poly(uuid, 'layout-building') }}
+{{- data.eddl_aixm['VerticalStructure'][uuid] | simplify(default) | to_coordtype(uuid, 'layout-building') }}
 {% endfor %}
 {% for uuid, geom in data.eddl_kml['layout']['buildings'].items() %}
-{{- geom | to_poly('', 'layout-building') }}
+{{- geom | to_coordtype('', 'layout-building') }}
 {% endfor %}
 
 MAP:Fence

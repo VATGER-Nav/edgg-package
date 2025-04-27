@@ -1,0 +1,73 @@
+// ------------------------ Additional Stands -----------------------
+{%- set default = 0.000005 %}
+
+MAP:Additional Stands
+AIRPORT:EDDL
+FOLDER:Apron Info
+OTHER_MAP_ACT:=:Labels\Additional Stands
+
+// V02A, V03A, V04A, V05A, V07A
+COLOR:layout-taxiline-white
+{% for uuid in 
+[
+    '6e812470-b37c-1a4b-e055-0a0027980ba7',
+    '6e812470-b38f-1a4b-e055-0a0027980ba7',
+    '6ee65c69-2ccb-7e3c-e055-0a0027980ba7',
+    '6ee65c69-2ccc-7e3c-e055-0a0027980ba7',
+    '702d3608-dfa2-77dd-e055-0a0027980ba7',
+    '702d3608-dfa3-77dd-e055-0a0027980ba7',
+    '702d3608-dfa4-77dd-e055-0a0027980ba7',
+    '702d3608-dfa5-77dd-e055-0a0027980ba7',
+    '702d3608-dfa6-77dd-e055-0a0027980ba7',
+    '70b6f1b8-397e-7771-e055-0a0027980ba7',
+    '70b6f1b8-397f-7771-e055-0a0027980ba7',
+] %}
+{{- data.eddl_aixm['GuidanceLine'][uuid] | join_segments | simplify(default) | to_line(uuid) -}}
+{% endfor %}
+
+// V08A/B/C, V11A/B/C
+COLOR:layout-taxiline-grey
+{% for uuid in
+[
+    '6fa0d92f-ea39-7a20-e055-0a0027980ba7',
+    '70132de0-0f95-71c5-e055-0a0027980ba7',
+    '70132de0-0f96-71c5-e055-0a0027980ba7',
+    '70132de0-0f97-71c5-e055-0a0027980ba7',
+    '70132de0-0f98-71c5-e055-0a0027980ba7',
+    '70ba0f4e-9802-32de-e055-0a0027980ba7',
+    'e2a43267-3c66-83f7-e053-86c812ac4e43',
+    'e2a43267-3c67-83f7-e053-86c812ac4e43',
+] %}
+{{- data.eddl_aixm['GuidanceLine'][uuid] | join_segments | simplify(default) | to_line(uuid) -}}
+{% endfor %}
+
+// Dash Leadin Lines
+{% for uuid, geom in data.eddl_kml['layout']['markings']['leadin_dash_b'].items() if uuid not in [] %}
+{{- geom | to_line('') -}}
+{% endfor %}
+
+// Taxi-Out Arrows
+{% for uuid, geom in data.eddl_kml['layout']['markings']['arrows_b'].items() %}
+{{- geom | to_poly('', 'layout-taxiline-grey') }}
+{% endfor %}
+
+// V01
+COLOR:layout-taxiway
+STYLE:Solid
+{{ data.eddl_kml['layout']['markings']['parking_V01'] | to_line('Parking Area V01') }}
+
+// ------------------------- Heli Positions -------------------------
+
+MAP:Heli Positions
+AIRPORT:EDDL
+FOLDER:Apron Info
+LAYER:6
+ZOOM:600
+FONTSIZE:=:10
+COLOR:layout-label-stand
+{% for desig, geom in data.eddl_kml['layout']['labels']['heli'].items() %}
+{{- geom | to_text('H:-1:0') }}
+{% endfor %}
+{% for desig, geom in data.eddl_kml['layout']['labels']['heli'].items() %}
+{{- geom | to_symbol('CIRCLE') }}
+{% endfor %}

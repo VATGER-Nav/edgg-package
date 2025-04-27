@@ -10,7 +10,7 @@ AIRPORT:EDDL
 FOLDER:Airport Layout
 ACTIVE:1
 {% for uuid, geom in data.eddl_kml['layout']['aprons'].items() %}
-{{- geom | to_poly('', 'layout-apron') }}
+{{- geom | to_coordtype('', 'layout-apron') }}
 {% endfor %}
 
 MAP:Parking Area
@@ -36,15 +36,15 @@ AIRPORT:EDDL
 FOLDER:Airport Layout
 ACTIVE:1
 {% for uuid, geom in data.eddl_kml['layout']['taxiways'].items() %}
-{{- geom | to_poly('', 'layout-taxiway') }}
+{{- geom | to_coordtype('', 'layout-taxiway') }}
 {% endfor %}
 
 MAP:Runways
 AIRPORT:EDDL
 FOLDER:Airport Layout
 ACTIVE:1
-{{ data.eddl_kml['layout']['runways']['apron05R-23L'] | to_poly('','layout-apron') }}
-{{ data.eddl_kml['layout']['runways']['apron05L-23R'] | to_poly('','layout-apron') }}
-{{ data.eddl_kml['layout']['runways']['05R-23L'] | to_poly('','layout-taxiway') }}
-{{ data.eddl_kml['layout']['runways']['05L-23R'] | to_poly('','layout-taxiway') }}
-{{ data.eddl_kml['layout']['runways']['rwyBlastpad23R'] | to_poly('','layout-taxiway') }}
+{{ data.eddl_kml['layout']['runways']['apron05R-23L'] | to_coordtype('','layout-apron') }}
+{{ data.eddl_kml['layout']['runways']['apron05L-23R'] | to_coordtype('','layout-apron') }}
+{{ data.eddl_kml['layout']['runways']['05R-23L'] | to_coordtype('','layout-taxiway') }}
+{{ data.eddl_kml['layout']['runways']['05L-23R'] | to_coordtype('','layout-taxiway') }}
+{{ data.eddl_kml['layout']['runways']['rwyBlastpad23R'] | to_coordtype('','layout-taxiway') }}
