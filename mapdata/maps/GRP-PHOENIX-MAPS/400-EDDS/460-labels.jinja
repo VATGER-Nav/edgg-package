@@ -1,24 +1,34 @@
 // ----------------------------- Labels -----------------------------
 
-MAP:Taxiways
+MAP:Buffer   (EDDS)
 AIRPORT:EDDS
 FOLDER:Labels
-ACTIVE:1
+HIDDEN
+LAYER:3
 ZOOM:400
 {% for uuid, geom in data.edds_kml['layout']['labels']['buffer'].items() %}
-{{- geom | to_poly('', 'layout-taxiway') }}
+{{- geom | to_coordtype('', 'layout-taxiway') }}
 {% endfor %}
+
+MAP:Taxiways (EDDS)
+AIRPORT:EDDS
+FOLDER:Labels
+OTHER_MAP_ACT:=:Labels\Buffer   (EDDS)
+LAYER:6
+ZOOM:400
 FONTSIZE:=:10
 COLOR:layout-label-yellow
-{% for desig, geom in data.edds_kml['layout']['labels']['taxiways'].items() if desig not in ['Exit 3'] %}
+{% for desig, geom in data.edds_kml['layout']['labels']['taxiways'].items() if desig != 'Exit 3' %}
 {{- geom | to_text(desig) }}
 {% endfor %}
 TEXTALIGN:LC
 {{ data.edds_kml['layout']['labels']['taxiways']['Exit 3'] | to_text('Exit 3') }}
 
-MAP:Stands
+MAP:Stands   (EDDS)
 AIRPORT:EDDS
 FOLDER:Labels
+OTHER_MAP_ACT:=:Labels\Areas    (EDDS)
+LAYER:6
 ACTIVE:1
 ZOOM:600
 FONTSIZE:=:9
@@ -57,7 +67,7 @@ ZOOM:1200
 {{- data.edds_kml['layout']['labels']['stands'][desig] | to_text(desig) }}
 {% endfor %}
 
-MAP:Areas
+MAP:Areas    (EDDS)
 AIRPORT:EDDS
 FOLDER:Labels
 ACTIVE:1

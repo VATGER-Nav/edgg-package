@@ -223,7 +223,7 @@ System_RIM=0
 [EDDS]
 Shortcut_Map_Target=1,Labels\Taxiways (EDDS)
 Shortcut_Map_Target=2,Labels\Stands   (EDDS)
-Shortcut_Map_Target=3,Restrictions\Restrictions (EDDS)
+Shortcut_Map_Target=3,Restrictions\Restrictions (EDDS)(NOTAM)
 Airport_Runway_Area_LVP=25:90
 Airport_Runway_Area_LVP=07:90
 Airport_Runway_Buffer_LVP=25:150
