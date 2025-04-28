@@ -3,6 +3,7 @@
 MAP:TORA 25
 AIRPORT:EDDS
 FOLDER:Runway Info
+LAYER:6
 COLOR:tora-label
 ZOOM:300
 TEXTALIGN:RC
@@ -15,6 +16,7 @@ TEXTALIGN:RC
 MAP:TORA 07
 AIRPORT:EDDS
 FOLDER:Runway Info
+LAYER:6
 COLOR:tora-label
 ZOOM:300
 TEXTALIGN:LC
@@ -29,6 +31,7 @@ TEXTALIGN:LC
 MAP:RRS 25
 AIRPORT:EDDS
 FOLDER:Runway Info
+LAYER:6
 ACTIVE:RWY:ARR:*:DEP:EDDS25
 ACTIVE:RWY:ARR:EDDS25:DEP:*
 COLOR:runway-label
@@ -46,6 +49,7 @@ TEXTALIGN:CT
 MAP:RRS 07
 AIRPORT:EDDS
 FOLDER:Runway Info
+LAYER:6
 ACTIVE:RWY:ARR:*:DEP:EDDS07
 ACTIVE:RWY:ARR:EDDS07:DEP:*
 COLOR:runway-label
@@ -63,6 +67,7 @@ TEXTALIGN:CT
 MAP:Runway Thresholds
 AIRPORT:EDDS
 FOLDER:Runway Info
+LAYER:6
 ACTIVE:1
 COLOR:runway-label
 STYLE:SOLID:2
@@ -72,14 +77,15 @@ STYLE:SOLID:2
 MAP:Runway Designators
 AIRPORT:EDDS
 FOLDER:Runway Info
+LAYER:6
 ACTIVE:1
 {% for uuid, geom in data.edds_kml['layout']['markings']['runways'].items() %}
-{{- geom | to_poly('', 'runway-label') }}
+{{- geom | to_coordtype('', 'runway-label') }}
 {% endfor %}
 
 MAP:Runway Markings
 AIRPORT:EDDS
 FOLDER:Runway Info
 {% for uuid, geom in data.edds_aixm['RunwayMarking'].items() %}
-{{- geom | to_poly('', 'layout-runway-marking') }}
+{{- geom | to_coordtype('', 'layout-runway-marking') }}
 {% endfor %}

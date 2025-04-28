@@ -297,7 +297,7 @@ ACTIVE:1
     'fec8eb5a-b48c-49dc-9883-75b5b30a0312',
     'ff21e3b8-aaf3-4e89-928f-452aa1eb6646',
     ] %}
-{{- data.edds_aixm['VerticalStructure'][uuid] | simplify(default) | to_poly(uuid, 'layout-building') }}
+{{- data.edds_aixm['VerticalStructure'][uuid] | simplify(default) | to_coordtype(uuid, 'layout-building') }}
 {% endfor %}
 
 MAP:Jetways

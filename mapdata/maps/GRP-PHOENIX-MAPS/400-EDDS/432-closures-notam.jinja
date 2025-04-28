@@ -3,18 +3,30 @@
 MAP:W/Z
 AIRPORT:EDDS
 FOLDER:Closures
+LAYER:4
 ACTIVE:1
 STYLE:Solid:2
-COORDTYPE:TWYCLOSED:REGION
-{{ data.edds_kml['layout']['closures']['poly']['W_Z'] | to_poly('','closure') }}
+{{ data.edds_kml['layout']['closures']['poly']['W_Z'] | to_coordtype('', 'closure', 'TWYCLOSED') }}
 
-MAP:NOTAM A0758/25 - STANDS 16-18
+MAP:AIP SUP IFR 04/25 - STANDS 16-18
 AIRPORT:EDDS
-FOLDER:Construction
+FOLDER:Constructions
+LAYER:7
+OTHER_MAP_ACT:=:Constructions\Layout (AIP SUP IFR 04/25)
 ACTIVE:250401:250930:0:0000:2359
 BLOCKS:EDDS:16,17,18
-{{ data.notam['notam']['EDDS']['apron'] | to_poly('Apron','layout-apron') }}
-{{ data.notam['notam']['EDDS']['taxiway'] | to_poly('Taxiway','layout-taxiway') }}
+{{ data.notam['notam']['EDDS']['apron'] | to_coordtype('Apron','layout-apron') }}
+STYLE:Solid:2
+{{ data.notam['notam']['EDDS']['construction'] | to_coordtype('Construction', 'closure', 'TWYCLOSED', 'POLYGON') }}
+RESTRICTION:MAXCODE:C
+{{ data.notam['notam']['EDDS']['restrictions']['M_L2'] | to_coordtype('', '', 'TWYTYPE', 'NONE') }}
+
+MAP:Layout (AIP SUP IFR 04/25)
+AIRPORT:EDDS
+FOLDER:Constructions
+LAYER:1
+HIDDEN
+{{ data.notam['notam']['EDDS']['taxiway'] | to_coordtype('Taxiway','layout-taxiway') }}
 STYLE:Solid:4
 COLOR:layout-taxiway
 {{ data.edds_aixm['GuidanceLineMarking']['213e8273-6d19-4bb3-b7b9-7b30c2e31522'] | simplify(default) | to_line('') -}}
@@ -24,9 +36,3 @@ COLOR:layout-taxiline-yellow
 {{ data.edds_aixm['GuidanceLineMarking']['6a66009e-cfb9-4614-abdd-ca0906970826'] | simplify(default) | to_line('') -}}
 {{ data.notam['notam']['EDDS']['taxilanes']['M'] | to_line('') -}}
 {{ data.notam['notam']['EDDS']['taxilanes']['L2'] | to_line('') -}}
-STYLE:Solid:2
-COORDTYPE:TWYCLOSED:POLYGON
-{{ data.notam['notam']['EDDS']['construction'] | to_poly('Construction','closure') }}
-COORDTYPE:TWYTYPE:NONE
-RESTRICTION:MAXCODE:C
-{{ data.notam['notam']['EDDS']['restrictions']['M_L2'] | to_poly('','red') }}

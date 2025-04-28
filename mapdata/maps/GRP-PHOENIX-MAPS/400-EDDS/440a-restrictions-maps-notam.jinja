@@ -1,10 +1,22 @@
-// ------------------------ Restriction Maps ------------------------
+// -------------------- Restriction Maps (NOTAM) --------------------
 
-MAP:Restrictions (EDDS)
+MAP:Restrictions (EDDS)(NOTAM)
 AIRPORT:EDDS
 FOLDER:Restrictions
 LAYER:2
 ZOOM:400
+
+// Changes due to AIP IFR SUP 04/25:
+// Between stands 15 and 19 TWY M is restricted to code C
+// TWY L2 is restricted to code C
+
+// L2
+COLOR:restrictions-C
+STYLE:SOLID:4
+{{ data.notam['notam']['EDDS']['restrictions']['L2'] | to_line('') -}}
+{{ data.notam['notam']['EDDS']['restrictions']['M'] | to_line('') -}}
+{{ data.edds_kml['layout']['restrictions']['line']['L2_a'] | to_line('') -}}
+{{ data.edds_kml['layout']['restrictions']['line']['L2_O'] | to_line('') -}}
 
 // Turn S - I
 COLOR:restrictions-C
@@ -42,11 +54,6 @@ STYLE:SOLID:4
 {{ data.edds_kml['layout']['restrictions']['line']['G_a'] | to_line('') -}}
 {{ data.edds_kml['layout']['restrictions']['line']['G_b'] | to_line('') -}}
 
-// Turn L2 - O
-COLOR:restrictions-D
-STYLE:SOLID:4
-{{ data.edds_kml['layout']['restrictions']['line']['L2_O'] | to_line('') -}}
-
 // Z
 COLOR:restrictions-D
 STYLE:SOLID:4
@@ -68,9 +75,8 @@ TEXTALIGN:CC
 // M/H/O/L2/L3
 COLOR:restrictions-E
 STYLE:SOLID:4
-{{ data.edds_kml['layout']['restrictions']['line']['M_L3_O_H'] | to_line('') -}}
-{{ data.edds_kml['layout']['restrictions']['line']['L2_a'] | to_line('') -}}
-{{ data.edds_kml['layout']['restrictions']['line']['L2_b'] | to_line('') -}}
+{{ data.notam['notam']['EDDS']['restrictions']['M_L3_O'] | to_line('') -}}
+{{ data.notam['notam']['EDDS']['restrictions']['M_H'] | to_line('') -}}
 
 // GAT 29m
 COLOR:restrictions-AB
@@ -100,9 +106,6 @@ COLOR:restrictions-C
     '13',
     '14',
     '15',
-    '16',
-    '17',
-    '18',
     '19',
     '25',
     '27',

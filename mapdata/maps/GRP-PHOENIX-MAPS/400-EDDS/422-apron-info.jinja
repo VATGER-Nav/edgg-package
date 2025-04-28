@@ -13,11 +13,9 @@ MAP:Aircraft Outlines
 AIRPORT:EDDS
 FOLDER:Apron Info
 ACTIVE:1
-COORDTYPE:OTHER:REGION
 {% for uuid, geom in data.edds_kml['layout']['aproninfo']['aircraft_a'].items() %}
-{{- geom | to_poly('', 'layout-runway') }}
+{{- geom | to_coordtype('', 'layout-runway') }}
 {% endfor %}
-COORDTYPE:OTHER:POLYGON
 {% for uuid, geom in data.edds_kml['layout']['aproninfo']['aircraft_b'].items() %}
-{{- geom | to_poly('', 'layout-runway') }}
+{{- geom | to_coordtype('', 'layout-runway', 'OTHER', 'POLYGON') }}
 {% endfor %}
