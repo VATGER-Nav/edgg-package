@@ -3,17 +3,18 @@
 MAP:Helipad
 AIRPORT:EDSB
 FOLDER:Heli
+LAYER:6
 ACTIVE:1
 ZOOM:400
 COLOR:layout-holdingpoint
-COORDTYPE:OTHER:POLYGON
 STYLE:SOLID:1
-CIRCLE:48.77124909215549:8.07750740195221:0.02:5
-{{ data.edsb_kml['layout']['labels']['helipad'] | to_symbol('HELIPAD') }}
+{{ data.edsb_kml['layout']['heli']['poly']['helipad'] | to_coordtype('', '', 'OTHER', 'POLYGON') }}
+{{ data.edsb_kml['layout']['heli']['symb']['helipad'] | to_symbol('HELIPAD') }}
 
-MAP:Heli Stands
+MAP:Heli Positions
 AIRPORT:EDSB
 FOLDER:Heli
+LAYER:6
 ZOOM:600
 COLOR:layout-label-stand
 {% for desig, geom in data.edsb_kml['layout']['labels']['heli'].items() %}

@@ -10,7 +10,7 @@ AIRPORT:EDSB
 FOLDER:Airport Layout
 ACTIVE:1
 {% for uuid, geom in data.edsb_aixm['ApronElement'].items() %}
-{{- geom | simplify(default) | to_poly(uuid,'layout-apron') }}
+{{- geom | simplify(default) | to_coordtype(uuid,'layout-apron') }}
 {% endfor %}
 
 MAP:Parking Area
@@ -35,10 +35,10 @@ AIRPORT:EDSB
 FOLDER:Airport Layout
 ACTIVE:1
 {% for uuid, geom in data.edsb_aixm['TaxiwayElement'].items() %}
-{{- geom | simplify(default) | to_poly(uuid, 'layout-taxiway') }}
+{{- geom | simplify(default) | to_coordtype(uuid, 'layout-taxiway') }}
 {% endfor %}
 {% for uuid, geom in data.edsb_kml['layout']['taxiways'].items() %}
-{{- geom | to_poly('', 'layout-taxiway') }}
+{{- geom | to_coordtype('', 'layout-taxiway') }}
 {% endfor %}
 
 MAP:Runway
@@ -47,10 +47,10 @@ FOLDER:Airport Layout
 ACTIVE:1
 // Runway 03/21
 {% for uuid, geom in data.edsb_aixm['RunwayElement'].items() %}
-{{- geom | simplify(0.00001) | to_poly(uuid,'layout-runway') }}
+{{- geom | simplify(0.00001) | to_coordtype(uuid,'layout-runway') }}
 {% endfor %}
 {% for uuid, geom in data.edsb_aixm['RunwayBlastPad'].items() %}
-{{- geom | simplify(0.00001) | to_poly(uuid,'layout-apron') }}
+{{- geom | simplify(0.00001) | to_coordtype(uuid,'layout-apron') }}
 {% endfor %}
 
 MAP:Leadin Lines
@@ -334,11 +334,11 @@ ACTIVE:1
     'fcb36190-570f-458f-b511-c940bbac1bd1',
     'fea145c2-2ea8-4bae-95df-d7405894f492'
 ] %}
-{{- data.edsb_aixm['VerticalStructure'][uuid] | join_segments | simplify(default) | to_poly(uuid, 'layout-building') }}
+{{- data.edsb_aixm['VerticalStructure'][uuid] | join_segments | simplify(default) | to_coordtype(uuid, 'layout-building') }}
 {% endfor %}
 
 {% for uuid, geom in data.edsb_kml['layout']['buildings'].items() %}
-{{- geom | to_poly('', 'layout-building') }}
+{{- geom | to_coordtype('', 'layout-building') }}
 {% endfor %}
 
 MAP:Fence

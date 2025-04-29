@@ -1,0 +1,8 @@
+// ------------------------- Deicing Areas --------------------------
+
+MAP:De-Icing
+AIRPORT:EDSB
+FOLDER:Ice/Snow
+STYLE:Solid:2
+{{ data.edsb_kml['layout']['deicing']['poly']['DP_N'] | to_coordtype('DP North', 'deicing:layout-runway', 'OTHER', 'REGION', 'X') }}
+{{ data.edsb_kml['layout']['deicing']['poly']['DP_S'] | to_coordtype('DP South', 'deicing:layout-runway', 'OTHER', 'REGION', 'X') }}

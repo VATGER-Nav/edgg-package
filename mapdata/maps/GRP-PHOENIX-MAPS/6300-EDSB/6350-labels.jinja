@@ -1,22 +1,33 @@
 // ----------------------------- Labels -----------------------------
 
-MAP:Taxiways
+MAP:Buffer   (EDSB)
 AIRPORT:EDSB
 FOLDER:Labels
+HIDDEN
+LAYER:3
 ACTIVE:1
 ZOOM:400
 {% for uuid, geom in data.edsb_kml['layout']['labels']['buffer'].items() %}
-{{- geom | to_poly('', 'layout-taxiway') }}
+{{- geom | to_coordtype('', 'layout-taxiway') }}
 {% endfor %}
+
+MAP:Taxiways (EDSB)
+AIRPORT:EDSB
+FOLDER:Labels
+OTHER_MAP_ACT:=:Labels\Buffer   (EDSB)
+LAYER:6
+ACTIVE:1
+ZOOM:400
 FONTSIZE:=:10
 COLOR:layout-label-taxiway
 {% for desig, geom in data.edsb_kml['layout']['labels']['taxiways'].items() %}
 {{- geom | to_text(desig) }}
 {% endfor %}
 
-MAP:Stands
+MAP:Stands   (EDSB)
 AIRPORT:EDSB
 FOLDER:Labels
+LAYER:6
 ACTIVE:1
 ZOOM:600
 FONTSIZE:=:9
@@ -29,7 +40,7 @@ COLOR:layout-label-stand
 {{ data.edsb_kml['layout']['labels']['Police'] | to_text('Police') }}
 {{ data.edsb_kml['layout']['labels']['Business Aviation'] | to_text('Business Aviation') }}
 
-MAP:Aprons
+MAP:Aprons   (EDSB)
 AIRPORT:EDSB
 FOLDER:Labels
 ZOOM:400

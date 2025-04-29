@@ -4356,10 +4356,13 @@
 	</Folder>
 	<Folder>
 		<name>lvp</name>
+		<visibility>0</visibility>
 		<Folder>
 			<name>heavy</name>
+			<visibility>0</visibility>
 			<Placemark>
 				<name>21_sensitive</name>
+				<visibility>0</visibility>
 				<Style>
 					<LineStyle>
 						<color>ff0000ff</color>
@@ -4380,6 +4383,7 @@
 			</Placemark>
 			<Placemark>
 				<name>21_critical_gs</name>
+				<visibility>0</visibility>
 				<Style>
 					<LineStyle>
 						<color>ff0000ff</color>
@@ -4400,6 +4404,7 @@
 			</Placemark>
 			<Placemark>
 				<name>21_critical_loc</name>
+				<visibility>0</visibility>
 				<Style>
 					<LineStyle>
 						<color>ff0000ff</color>
@@ -4420,6 +4425,7 @@
 			</Placemark>
 			<Placemark>
 				<name>21_orthogonal_a</name>
+				<visibility>0</visibility>
 				<Style>
 					<LineStyle>
 						<color>ff0000ff</color>
@@ -4440,6 +4446,7 @@
 			</Placemark>
 			<Placemark>
 				<name>21_orthogonal_b</name>
+				<visibility>0</visibility>
 				<Style>
 					<LineStyle>
 						<color>ff0000ff</color>
@@ -4579,6 +4586,46 @@
 				<coordinates>8.091439761349051,48.790142883076,0</coordinates>
 			</Point>
 		</Placemark>
+	</Folder>
+	<Folder>
+		<name>heli</name>
+		<visibility>0</visibility>
+		<Folder>
+			<name>symb</name>
+			<visibility>0</visibility>
+			<Placemark>
+				<name>helipad</name>
+				<visibility>0</visibility>
+				<Point>
+					<coordinates>8.077507401952211,48.77124909215549,0</coordinates>
+				</Point>
+			</Placemark>
+		</Folder>
+		<Folder>
+			<name>poly</name>
+			<visibility>0</visibility>
+			<Placemark>
+				<name>helipad</name>
+				<visibility>0</visibility>
+				<Style>
+					<LineStyle>
+						<color>ff0000ff</color>
+					</LineStyle>
+					<PolyStyle>
+						<fill>0</fill>
+					</PolyStyle>
+				</Style>
+				<Polygon>
+					<outerBoundaryIs>
+						<LinearRing>
+							<coordinates>
+								8.07805172020246,48.7712534479582,0 8.07804604930714,48.7711971104201,0 8.078027115165749,48.7711420528739,0 8.07799538404006,48.771089631013,0 8.07795163728826,48.7710411356277,0 8.07789695212214,48.7709977608227,0 8.077832675080421,48.7709605746152,0 8.07776038887169,48.7709304926387,0 8.07768187340343,48.7709082555979,0 8.077599061956571,48.7708944110317,0 8.07751399358477,48.7708892998322,0 8.07742876290988,48.77089304785121,0 8.077345468549719,48.7709055628017,0 8.07726616144752,48.77092653653,0 8.07719279437476,48.7709554526034,0 8.0771271738507,48.7709915990247,0 8.07707091566197,48.7710340857635,0 8.077025405077389,48.77108186666991,0 8.076991762737499,48.77113376523239,0 8.07697081705879,48.77118850354719,0 8.076963083832419,48.7712447337824,0 8.076968753519861,48.7713010713659,0 8.07698768655885,48.7713561290777,0 8.07701941679551,48.7714085512082,0 8.07706316295867,48.7714570469408,0 8.077117847894179,48.7715004221367,0 8.07718212508588,48.7715376087404,0 8.0772544118105,48.7715676910797,0 8.077332928110071,48.7715899284144,0 8.07741574062227,48.7716037731768,0 8.07750081018918,48.7716088844556,0 8.077586042071941,48.7716051363912,0 8.077669337534511,48.7715926212751,0 8.077748645525739,48.7715716472771,0 8.07782201318714,48.7715427308565,0 8.07788763394182,48.77150658404431,0 8.07794389198056,48.7714640969092,0 8.077989402049241,48.7714163156401,0 8.078023043557829,48.77136441678359,0 8.078043988171199,48.7713096782727,0 8.07805172020246,48.7712534479582,0 
+							</coordinates>
+						</LinearRing>
+					</outerBoundaryIs>
+				</Polygon>
+			</Placemark>
+		</Folder>
 	</Folder>
 	<Folder>
 		<name>deicing</name>
@@ -5486,13 +5533,6 @@
 				</Polygon>
 			</Placemark>
 		</Folder>
-		<Placemark>
-			<name>helipad</name>
-			<visibility>0</visibility>
-			<Point>
-				<coordinates>8.077507401952211,48.77124909215549,0</coordinates>
-			</Point>
-		</Placemark>
 		<Placemark>
 			<name>Police</name>
 			<visibility>0</visibility>
