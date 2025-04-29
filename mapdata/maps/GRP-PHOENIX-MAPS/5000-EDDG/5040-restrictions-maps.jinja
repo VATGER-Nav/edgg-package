@@ -1,8 +1,9 @@
 // ------------------------ Restriction Maps ------------------------
 {% set default = 0.000005 %}
-MAP:Restrictions
+MAP:Restrictions (EDDG)
 AIRPORT:EDDG
 FOLDER:Restrictions
+LAYER:2
 ZOOM:600
 
 // Glider
@@ -19,41 +20,36 @@ STYLE:SOLID:4
 
 // 10x
 COLOR:restrictions-AB
-COORDTYPE:OTHER:REGION:/
 STYLE:SOLID:1
-{{ data.eddg_kml['layout']['restrictions']['poly']['10x'] | to_poly('') }}
+{{ data.eddg_kml['layout']['restrictions']['poly']['10x'] | to_coordtype('', '', 'OTHER', 'REGION', '/') }}
 TEXTALIGN:CC
 {{ data.eddg_kml['layout']['restrictions']['labels']['10x'] | to_text('Max code A') }}
 
 // 20x
 COLOR:restrictions-AB
-COORDTYPE:OTHER:REGION:/
 STYLE:SOLID:1
-{{ data.eddg_kml['layout']['restrictions']['poly']['20x'] | to_poly('') }}
+{{ data.eddg_kml['layout']['restrictions']['poly']['20x'] | to_coordtype('', '', 'OTHER', 'REGION', '/') }}
 TEXTALIGN:LC
 {{ data.eddg_kml['layout']['restrictions']['labels']['20x'] | to_text('Max code B') }}
 
 // 30x
 COLOR:restrictions-AB
-COORDTYPE:OTHER:REGION:/
 STYLE:SOLID:1
-{{ data.eddg_kml['layout']['restrictions']['poly']['30x'] | to_poly('') }}
+{{ data.eddg_kml['layout']['restrictions']['poly']['30x'] | to_coordtype('', '', 'OTHER', 'REGION', '/') }}
 TEXTALIGN:CC
 {{ data.eddg_kml['layout']['restrictions']['labels']['30x'] | to_text('Max wingspan 20m') }}
 
 // 40x
 COLOR:restrictions-AB
-COORDTYPE:OTHER:REGION:\
 STYLE:SOLID:1
-{{ data.eddg_kml['layout']['restrictions']['poly']['40x'] | to_poly('') }}
+{{ data.eddg_kml['layout']['restrictions']['poly']['40x'] | to_coordtype('', '', 'OTHER', 'REGION', '\\') }}
 TEXTALIGN:RC
 {{ data.eddg_kml['layout']['restrictions']['labels']['40x'] | to_text('Max wingspan 12m') }}
 
 // 18-19
 COLOR:restrictions-AB
-COORDTYPE:OTHER:REGION:/
 STYLE:SOLID:1
-{{ data.eddg_kml['layout']['restrictions']['poly']['18-19'] | to_poly('') }}
+{{ data.eddg_kml['layout']['restrictions']['poly']['18-19'] | to_coordtype('', '', 'OTHER', 'REGION', '/') }}
 TEXTALIGN:CC
 {{ data.eddg_kml['layout']['restrictions']['labels']['18-19'] | to_text('Max wingspan 20m') }}
 

@@ -3,14 +3,13 @@
 MAP:Checks
 AIRPORT:EDDG
 FOLDER:Restrictions
-COORDTYPE:TWYTYPE:NONE
 ACTIVE:1
 // Glider
 RESTRICTION:MAXCODE:A
-{{ data.eddg_kml['layout']['restrictions']['poly']['glider'] | to_poly('') }}
+{{ data.eddg_kml['layout']['restrictions']['poly']['glider'] | to_coordtype('', '', 'TWYTYPE', 'NONE') }}
 // G
 RESTRICTION:MAXCODE:D
-{{ data.eddg_kml['layout']['restrictions']['poly']['G'] | to_poly('') }}
+{{ data.eddg_kml['layout']['restrictions']['poly']['G'] | to_coordtype('', '', 'TWYTYPE', 'NONE') }}
 // 30x
 RESTRICTION:MAXWINGSPAN:20
-{{ data.eddg_kml['layout']['restrictions']['poly']['30x'] | to_poly('') }}
+{{ data.eddg_kml['layout']['restrictions']['poly']['30x'] | to_coordtype('', '', 'TWYTYPE', 'NONE') }}

@@ -3,5 +3,6 @@
 MAP:Apron
 AIRPORT:EDDG
 FOLDER:Closures
+LAYER:4
 ACTIVE:1
-{{ data.eddg_kml['layout']['closures']['symb']['apron'] | to_poly('','closure-symbol') }}
+{{ data.eddg_kml['layout']['closures']['symb']['apron'] | to_coordtype('','closure-symbol') }}

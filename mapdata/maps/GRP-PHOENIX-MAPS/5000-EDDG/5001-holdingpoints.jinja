@@ -3,9 +3,10 @@
 MAP:Holding Points CAT I
 AIRPORT:EDDG
 FOLDER:Holding Points
+LAYER:5
 ACTIVE:LVP:EDDG:0
 {% for desig, geom in data.eddg_kml['layout']['holdingpoints']['cat1'].items() %}
-{{- geom | to_poly(desig, 'layout-holdingpoint') }}
+{{- geom | to_coordtype(desig, 'layout-holdingpoint') }}
 {% endfor %}
 COLOR:layout-holdingpoint
 {% for desig, geom in data.eddg_kml['layout']['holdingpoints']['line'].items() %}
@@ -15,13 +16,14 @@ COLOR:layout-holdingpoint
 MAP:Holding Points CAT II/III
 AIRPORT:EDDG
 FOLDER:Holding Points
+LAYER:5
 ACTIVE:LVP:EDDG:1
 COLOR:layout-holdingpoint
 {% for desig in ['C'] %}
-{{- data.eddg_kml['layout']['holdingpoints']['cat1'][desig] | to_poly(desig, 'layout-holdingpoint') }}
+{{- data.eddg_kml['layout']['holdingpoints']['cat1'][desig] | to_coordtype(desig, 'layout-holdingpoint') }}
 {% endfor %}
 {% for desig, geom in data.eddg_kml['layout']['holdingpoints']['cat3'].items() %}
-{{- geom | to_poly(desig + ' CATIII', 'layout-holdingpoint') }}
+{{- geom | to_coordtype(desig + ' CATIII', 'layout-holdingpoint') }}
 {% endfor %}
 COLOR:layout-holdingpoint
 {% for desig in ['C'] %}
@@ -31,6 +33,7 @@ COLOR:layout-holdingpoint
 MAP:Stopbars
 AIRPORT:EDDG
 FOLDER:Holding Points
+LAYER:5
 ACTIVE:1
 COLOR:layout-holdingpoint
 {% for uuid, geom in data.eddg_kml['layout']['stopbars'].items() %}
