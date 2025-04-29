@@ -3,9 +3,10 @@
 MAP:Holding Points CAT I
 AIRPORT:EDDR
 FOLDER:Holding Points
+LAYER:5
 ACTIVE:1
 {% for desig, geom in data.eddr_kml['layout']['holdingpoints']['cat1'].items() %}
-{{- geom | to_poly(desig, 'layout-holdingpoint') }}
+{{- geom | to_coordtype(desig, 'layout-holdingpoint') }}
 {% endfor %}
 STYLE:SOLID:1
 COLOR:layout-holdingpoint
