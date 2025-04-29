@@ -3,37 +3,36 @@
 MAP:E
 AIRPORT:EDLN
 FOLDER:Closures
+LAYER:4
 ACTIVE:1
 STYLE:Solid:2
-COORDTYPE:TWYCLOSED:REGION
-{{ data.edln_kml['layout']['closures']['poly']['E_1'] | to_poly('','closure') }}
-{{ data.edln_kml['layout']['closures']['poly']['E_2'] | to_poly('','closure') }}
+{{ data.edln_kml['layout']['closures']['poly']['E_1'] | to_coordtype('', 'closure', 'TWYCLOSED') }}
+{{ data.edln_kml['layout']['closures']['poly']['E_2'] | to_coordtype('', 'closure', 'TWYCLOSED') }}
 STYLE:Solid:1
-{{ data.edln_kml['layout']['closures']['symb']['E_1a'] | to_poly('','closure-symbol') }}
-{{ data.edln_kml['layout']['closures']['symb']['E_1b'] | to_poly('','closure-symbol') }}
-{{ data.edln_kml['layout']['closures']['symb']['E_2a'] | to_poly('','closure-symbol') }}
-{{ data.edln_kml['layout']['closures']['symb']['E_2b'] | to_poly('','closure-symbol') }}
+{{ data.edln_kml['layout']['closures']['symb']['E_1a'] | to_coordtype('', 'closure-symbol') }}
+{{ data.edln_kml['layout']['closures']['symb']['E_1b'] | to_coordtype('', 'closure-symbol') }}
+{{ data.edln_kml['layout']['closures']['symb']['E_2a'] | to_coordtype('', 'closure-symbol') }}
+{{ data.edln_kml['layout']['closures']['symb']['E_2b'] | to_coordtype('', 'closure-symbol') }}
 
 MAP:Runway 28
 AIRPORT:EDLN
 FOLDER:Closures
+LAYER:4
 ACTIVE:1
 STYLE:Solid:2
-COORDTYPE:TWYCLOSED:REGION
-{{ data.edln_aixm['RunwayElement']['4682806b-edc5-c6ff-e053-1514a8c027b7'] | simplify(0.000005) | to_poly('Runway 28','closure') }}
+{{ data.edln_aixm['RunwayElement']['4682806b-edc5-c6ff-e053-1514a8c027b7'] | simplify(0.000005) | to_coordtype('Runway 28', 'closure', 'TWYCLOSED') }}
 STYLE:Solid:1
-{{ data.edln_kml['layout']['closures']['symb']['28_a'] | to_poly('','closure-symbol') }}
-{{ data.edln_kml['layout']['closures']['symb']['28_b'] | to_poly('','closure-symbol') }}
+{{ data.edln_kml['layout']['closures']['symb']['28_a'] | to_coordtype('', 'closure-symbol') }}
+{{ data.edln_kml['layout']['closures']['symb']['28_b'] | to_coordtype('', 'closure-symbol') }}
 
 MAP:Apron
 AIRPORT:EDLN
 FOLDER:Closures
+LAYER:4
 ACTIVE:1
-STYLE:Solid:1
-{{ data.edln_kml['layout']['closures']['symb']['apron_1a'] | to_poly('','closure-symbol') }}
-{{ data.edln_kml['layout']['closures']['symb']['apron_1b'] | to_poly('','closure-symbol') }}
-{{ data.edln_kml['layout']['closures']['symb']['apron_2a'] | to_poly('','closure-symbol') }}
-{{ data.edln_kml['layout']['closures']['symb']['apron_2b'] | to_poly('','closure-symbol') }}
-COORDTYPE:TWYCLOSED:NONE
-{{ data.edln_kml['layout']['closures']['poly']['apron_1'] | to_poly('','red') }}
-{{ data.edln_kml['layout']['closures']['poly']['apron_2'] | to_poly('','red') }}
+{{ data.edln_kml['layout']['closures']['symb']['apron_1a'] | to_coordtype('', 'closure-symbol') }}
+{{ data.edln_kml['layout']['closures']['symb']['apron_1b'] | to_coordtype('', 'closure-symbol') }}
+{{ data.edln_kml['layout']['closures']['symb']['apron_2a'] | to_coordtype('', 'closure-symbol') }}
+{{ data.edln_kml['layout']['closures']['symb']['apron_2b'] | to_coordtype('', 'closure-symbol') }}
+{{ data.edln_kml['layout']['closures']['poly']['apron_1'] | to_coordtype('', '', 'TWYCLOSED', 'NONE') }}
+{{ data.edln_kml['layout']['closures']['poly']['apron_2'] | to_coordtype('', '', 'TWYCLOSED', 'NONE') }}
