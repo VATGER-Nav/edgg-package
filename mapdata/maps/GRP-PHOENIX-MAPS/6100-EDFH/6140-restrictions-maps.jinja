@@ -1,8 +1,9 @@
 // ------------------------ Restriction Maps ------------------------
-{% set default = 0.000005 %}
-MAP:Restrictions
+
+MAP:Restrictions (EDFH)
 AIRPORT:EDFH
 FOLDER:Restrictions
+LAYER:2
 ZOOM:400
 
 // D
@@ -25,7 +26,7 @@ COLOR:restrictions-D
 STYLE:SOLID:4
 {{ data.edfh_kml['layout']['restrictions']['line']['backtrack'] | to_line('') -}}
 STYLE:SOLID:1
-{{ data.edfh_kml['layout']['restrictions']['poly']['backtrack_b'] | to_poly('', 'restrictions-D') }}
+{{ data.edfh_kml['layout']['restrictions']['poly']['backtrack_b'] | to_coordtype('', 'restrictions-D') }}
 TEXTALIGN:CC
 {{ data.edfh_kml['layout']['restrictions']['labels']['backtrack'] | to_text('Max code D') }}
 
