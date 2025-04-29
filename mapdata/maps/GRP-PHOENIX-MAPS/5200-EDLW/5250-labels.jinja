@@ -1,21 +1,34 @@
 // ----------------------------- Labels -----------------------------
-MAP:Taxiways
+
+MAP:Buffer   (EDLW)
 AIRPORT:EDLW
 FOLDER:Labels
+HIDDEN
+LAYER:3
 ACTIVE:1
 ZOOM:400
 {% for uuid, geom in data.edlw_kml['layout']['labels']['buffer'].items() %}
-{{- geom | to_poly('', 'layout-taxiway') }}
+{{- geom | to_coordtype('', 'layout-taxiway') }}
 {% endfor %}
+
+MAP:Taxiways (EDLW)
+AIRPORT:EDLW
+FOLDER:Labels
+OTHER_MAP_ACT:=:Labels\Buffer   (EDLW)
+OTHER_MAP_ACT:=:Labels\Stopbars (EDLW)
+LAYER:6
+ACTIVE:1
+ZOOM:400
 FONTSIZE:=:10
 COLOR:layout-label-taxiway
 {% for desig, geom in data.edlw_kml['layout']['labels']['taxiways'].items() %}
 {{- geom | to_text(desig) }}
 {% endfor %}
 
-MAP:Stands
+MAP:Stands   (EDLW)
 AIRPORT:EDLW
 FOLDER:Labels
+LAYER:6
 ACTIVE:1
 ZOOM:600
 FONTSIZE:=:9
@@ -24,9 +37,10 @@ COLOR:layout-label-stand
 {{- geom | to_text(desig) }}
 {% endfor %}
 
-MAP:Stopbars
+MAP:Stopbars (EDLW)
 AIRPORT:EDLW
 FOLDER:Labels
+LAYER:6
 ACTIVE:1
 ZOOM:600
 FONTSIZE:=:9

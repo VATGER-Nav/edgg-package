@@ -1,0 +1,17 @@
+// ----------------------- Permament Closures -----------------------
+
+MAP:GAT
+AIRPORT:EDLW
+FOLDER:Closures
+LAYER:4
+ACTIVE:1
+{{ data.edlw_kml['layout']['closures']['symb']['GAT'] | to_coordtype('', 'closure-symbol') }}
+{{ data.edlw_kml['layout']['closures']['poly']['GAT'] | to_coordtype('', '', 'TWYCLOSED', 'NONE') }}
+
+MAP:Apron
+AIRPORT:EDLW
+FOLDER:Closures
+LAYER:4
+ACTIVE:1
+{{ data.edlw_kml['layout']['closures']['symb']['apron'] | to_coordtype('', 'closure-symbol') }}
+{{ data.edlw_kml['layout']['closures']['poly']['apron'] | to_coordtype('', '', 'TWYCLOSED', 'NONE') }}

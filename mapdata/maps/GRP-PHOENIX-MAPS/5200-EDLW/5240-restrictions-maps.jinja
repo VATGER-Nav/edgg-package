@@ -1,8 +1,9 @@
 // ------------------------ Restriction Maps ------------------------
 
-MAP:Restrictions
+MAP:Restrictions (EDLW)
 AIRPORT:EDLW
 FOLDER:Restrictions
+LAYER:2
 ZOOM:600
 
 // B
@@ -21,9 +22,8 @@ STYLE:SOLID:4
 COLOR:restrictions-C
 STYLE:SOLID:4
 {{ data.edlw_kml['layout']['restrictions']['line']['L'] | to_line('') -}}
-COORDTYPE:OTHER:REGION:/
 STYLE:SOLID:1
-{{ data.edlw_kml['layout']['restrictions']['poly']['L'] | to_poly('') }}
+{{ data.edlw_kml['layout']['restrictions']['poly']['L'] | to_coordtype('', '', 'OTHER', 'REGION', '/') }}
 
 // Restriction Stands
 TEXTALIGN:CC

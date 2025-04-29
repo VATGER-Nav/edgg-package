@@ -10,7 +10,7 @@ AIRPORT:EDLW
 FOLDER:Airport Layout
 ACTIVE:1
 {% for uuid, geom in data.edlw_kml['layout']['aprons'].items() %}
-{{- geom | to_poly('', 'layout-apron') }}
+{{- geom | to_coordtype('', 'layout-apron') }}
 {% endfor %}
 
 MAP:Parking Area
@@ -51,7 +51,7 @@ ACTIVE:1
     'd7f65778-2e91-4458-9b60-b0c5140bb0af',
     'efb084d2-2863-42f6-ab1f-57a43fd2c1f6',
 ] %}
-{{- data.edlw_aixm['TaxiwayElement'][uuid] | simplify(default) | to_poly(uuid, 'layout-taxiway') }}
+{{- data.edlw_aixm['TaxiwayElement'][uuid] | simplify(default) | to_coordtype(uuid, 'layout-taxiway') }}
 {% endfor %}
 
 MAP:Runway
@@ -59,10 +59,10 @@ AIRPORT:EDLW
 FOLDER:Airport Layout
 ACTIVE:1
 {% for uuid, geom in data.edlw_aixm['RunwayElement'].items() %}
-{{ geom | simplify(0.00001) | to_poly('Runway 06/24','layout-runway') }}
+{{ geom | simplify(0.00001) | to_coordtype('Runway 06/24','layout-runway') }}
 {% endfor %}
 {% for uuid, geom in data.edlw_aixm['RunwayBlastPad'].items() %}
-{{ geom | simplify(0.00001) | to_poly('BlastPad','layout-apron') }}
+{{ geom | simplify(0.00001) | to_coordtype('BlastPad','layout-apron') }}
 {% endfor %}
 
 MAP:Leadin Lines
@@ -123,7 +123,7 @@ COLOR:layout-taxiline-grey
 {% endfor %}
 // Taxi-Out Arrows
 {% for uuid, geom in data.edlw_kml['layout']['markings']['arrows'].items() %}
-{{- geom | to_poly('', 'layout-taxiline-grey') }}
+{{- geom | to_coordtype('', 'layout-taxiline-grey') }}
 {% endfor %}
 
 MAP:Taxi Lanes
