@@ -183,9 +183,22 @@ List_Outbound_TYPE=1
 List_Outbound_SID=1
 List_Outbound_ExpiryTime=300
 
+Shortcut_Map_Xfr_Key=1,0x54 ; T
+Shortcut_Map_Xfr_Key=2,0x47 ; G
+Shortcut_Map_Xfr_Key=3,0x52 ; R
+
 AppPath=EDDF:ILS 25C:N050.06.32.915:E008.51.23.037:247:L:4000:3.0
 
 [EDDF]
+Shortcut_Map_Xfr_Key=7,0x42 ; B
+Shortcut_Map_Xfr_Key=8,0x44 ; D
+Shortcut_Map_Xfr_Key=9,0x46 ; F
+Shortcut_Map_Target=1,Labels\Taxiways (EDDF)
+Shortcut_Map_Target=2,Labels\Stands   (EDDF)
+Shortcut_Map_Target=3,Restrictions\Restrictions (EDDF)
+Shortcut_Map_Target=7,Apron Info\Break Away Areas
+Shortcut_Map_Target=8,Runway Crossing\25
+Shortcut_Map_Target=9,Runway Crossing\07
 Airport_Runway_Area_LVP=25L:90
 Airport_Runway_Area_LVP=07R:90
 Airport_Runway_Area_LVP=25C:90
@@ -206,6 +219,9 @@ Window_APP_AltFilter=10000
 System_RIM=0
 
 [EDDL]
+Shortcut_Map_Target=1,Labels\Taxiways (EDDL)
+Shortcut_Map_Target=2,Labels\Stands   (EDDL)
+Shortcut_Map_Target=3,Restrictions\Restrictions (EDDL)(NOTAM)
 Airport_Runway_Area_LVP=23L:90
 Airport_Runway_Area_LVP=05R:90
 Airport_Runway_Area_LVP=23R:90
@@ -219,6 +235,9 @@ Window_APP_Rotation=37.25
 Window_APP_AltFilter=10000
 
 [EDDK]
+Shortcut_Map_Target=1,Labels\Taxiways (EDDK)
+Shortcut_Map_Target=2,Labels\Stands   (EDDK)
+Shortcut_Map_Target=3,Restrictions\Restrictions (EDDK)
 Airport_Runway_Area_LVP=31R:90
 Airport_Runway_Area_LVP=13L:90
 Airport_Runway_Buffer_LVP=31R:150
@@ -229,6 +248,9 @@ Window_APP_AltFilter=10000
 System_RIM=0
 
 [EDDS]
+Shortcut_Map_Target=1,Labels\Taxiways (EDDS)
+Shortcut_Map_Target=2,Labels\Stands   (EDDS)
+Shortcut_Map_Target=3,Restrictions\Restrictions (EDDS)(NOTAM)
 Airport_Runway_Area_LVP=25:90
 Airport_Runway_Area_LVP=07:90
 Airport_Runway_Buffer_LVP=25:150
@@ -239,6 +261,9 @@ Window_APP_Rotation=16.2
 Window_APP_AltFilter=10000
 
 [EDDG]
+Shortcut_Map_Target=1,Labels\Taxiways (EDDG)
+Shortcut_Map_Target=2,Labels\Stands   (EDDG)
+Shortcut_Map_Target=3,Restrictions\Restrictions (EDDG)
 Airport_Runway_Area_LVP=25:90
 Airport_Runway_Area_LVP=07:90
 Airport_Runway_Buffer_LVP=25:150
@@ -247,14 +272,21 @@ Window_APP_Rotation=18.5
 Window_APP_AltFilter=10000
 
 [EDDR]
+Shortcut_Map_Target=1,Labels\Taxiways (EDDR)
+Shortcut_Map_Target=2,Labels\Stands   (EDDR)
 Window_APP_Rotation=2.6
 Window_APP_AltFilter=10000
 
 [EDLP]
+Shortcut_Map_Target=1,Labels\Taxiways (EDLP)
+Shortcut_Map_Target=2,Labels\Stands   (EDLP)
 Window_APP_Rotation=32.5
 Window_APP_AltFilter=10000
 
 [EDLW]
+Shortcut_Map_Target=1,Labels\Taxiways (EDLW)
+Shortcut_Map_Target=2,Labels\Stands   (EDLW)
+Shortcut_Map_Target=3,Restrictions\Restrictions (EDLW)
 Airport_Runway_Area_LVP=24:90
 Airport_Runway_Area_LVP=06:90
 Airport_Runway_Buffer_LVP=24:150
@@ -263,10 +295,15 @@ Window_APP_Rotation=28.7
 Window_APP_AltFilter=10000
 
 [EDLN]
+Shortcut_Map_Target=1,Labels\Taxiways (EDLN)
+Shortcut_Map_Target=2,Labels\Stands   (EDLN)
 Window_APP_Rotation=322
 Window_APP_AltFilter=10000
 
 [EDLV]
+Shortcut_Map_Target=1,Labels\Taxiways (EDLV)
+Shortcut_Map_Target=2,Labels\Stands   (EDLV)
+Shortcut_Map_Target=3,Restrictions\Restrictions (EDLV)
 Airport_Runway_Area_LVP=27:90
 Airport_Runway_Area_LVP=09:90
 Airport_Runway_Buffer_LVP=27:150
@@ -275,6 +312,9 @@ Window_APP_Rotation=358
 Window_APP_AltFilter=10000
 
 [EDFH]
+Shortcut_Map_Target=1,Labels\Taxiways (EDFH)
+Shortcut_Map_Target=2,Labels\Stands   (EDFH)
+Shortcut_Map_Target=3,Restrictions\Restrictions (EDFH)
 Airport_Runway_Area_LVP=21:90
 Airport_Runway_Area_LVP=03:90
 Airport_Runway_Buffer_LVP=21:150
@@ -286,10 +326,14 @@ Window_APP_AltFilter=10000
 //List_Inbound=*,2,1203,650
 
 [EDFM]
+Shortcut_Map_Target=1,Labels\Taxiways (EDFM)
+Shortcut_Map_Target=2,Labels\Stands   (EDFM)
 Window_APP_Rotation=356.9
 Window_APP_AltFilter=10000
 
 [EDSB]
+Shortcut_Map_Target=1,Labels\Taxiways (EDSB)
+Shortcut_Map_Target=2,Labels\Stands   (EDSB)
 Airport_Runway_Area_LVP=21:90
 Airport_Runway_Area_LVP=03:90
 Airport_Runway_Buffer_LVP=21:150
@@ -298,5 +342,7 @@ Window_APP_Rotation=58
 Window_APP_AltFilter=10000
 
 [EDTL]
+Shortcut_Map_Target=1,Labels\Taxiways (EDTL)
+Shortcut_Map_Target=2,Labels\Stands   (EDTL)
 Window_APP_Rotation=62
 Window_APP_AltFilter=10000
