@@ -55,12 +55,6 @@ class KMLParser:
                     )
                 elif "Point" in placemark:
                     geom = Point(self.parse_pos_list(placemark["Point"]["coordinates"]))
-                elif "MultiGeometry" in placemark:
-                    if len(placemark["MultiGeometry"]) != 1:
-                        msg = f"Placemark {placemark['name']}: in MultiGeometry only one type of Geometry is allowed"
-                        raise ValueError(msg)
-                    
-                    geom = self.parse_multigeometry(placemark["MultiGeometry"])
                 else:
                     msg = f"Placemark {placemark} unknown"
                     raise ValueError(msg)
@@ -70,28 +64,6 @@ class KMLParser:
                     result[name] = [geom]
                 else:
                     result[name].append(geom)
-    
-    def parse_multigeometry(self, root) -> list:
-        geom = []
-
-        if "LineString" in root:
-            for linestring in ensure_list(root["LineString"]):
-                geom.append(LineString(KMLParser.parse_pos_list(linestring["coordinates"])))
-        elif "Polygon" in root:
-            for polygon in ensure_list(root["Polygon"]):
-                geom.append(LinearRing(
-                    KMLParser.parse_pos_list(
-                        polygon["outerBoundaryIs"]["LinearRing"]["coordinates"],
-                    )
-                ))
-        elif "Point" in root:
-            for point in ensure_list(root["Point"]):
-                geom.append(Point(KMLParser.parse_pos_list(point["coordinates"])))
-        else:
-            msg = f"Geometry {root} unknown"
-            raise ValueError(msg)
-        
-        return geom
 
 
 def ensure_list(thing):

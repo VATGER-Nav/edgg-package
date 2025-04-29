@@ -1,5 +1,5 @@
-
 from mapbuilder.utils.geo import Brg, Fix, back_bearing
+
 
 def extrapolate_rwy(rwy_info, count: int, dist: float = 1) -> list[Fix]:
     """Extrapolates count points from the runway threshold, each spaced dist nautical miles apart
@@ -33,21 +33,16 @@ def draw_loc_tick(rwy_info, gap: float, length: float):
     return str(Fix(rwy_info["loc"]).move_to(gap, brg).line_to(length, brg))
 
 
-def draw_marker_ticks(rwy_info, at: list, gap: float, length: float, symmetry: str = "B"):
+def draw_marker_ticks(rwy_info, at: list, gap: float, length: float):
     lines = []
     brg = Brg(rwy_info["bearing"]).invert()
     tick_brg = brg + 90
     for dist in at:
         base = Fix(rwy_info["thr"]).move_to(dist, brg)
 
-        if symmetry == "B":
-            lines.extend((str(base.move_to(gap, tick_brg).line_to(length, tick_brg)),
-                        str(base.move_to(-gap, tick_brg).line_to(-length, tick_brg))))
-        elif symmetry == "L":
-            lines.append(str(base.move_to(gap, tick_brg).line_to(length, tick_brg)))
-        elif symmetry == "R":
-            lines.append(str(base.move_to(-gap, tick_brg).line_to(-length, tick_brg)))
-        else:
-            raise ValueError(f"Unknown argument {symmetry}")
+        lines.extend((
+            str(base.move_to(gap, tick_brg).line_to(length, tick_brg)),
+            str(base.move_to(-gap, tick_brg).line_to(-length, tick_brg)),
+        ))
 
     return "\n".join(lines)

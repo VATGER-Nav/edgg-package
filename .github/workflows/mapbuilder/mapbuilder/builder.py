@@ -1,5 +1,4 @@
 import logging
-import json
 from datetime import UTC, datetime
 from pathlib import Path
 
@@ -9,9 +8,12 @@ from .data.kml import KMLParser
 from .data.rwy import parse_runway
 from .data.sectors import parse_sectors, sectors_to_lines
 from .data.sidstar import parse_sidstar
-from .dfs import aixm
+from .dfs import datasets
 from .handlers.jinja import JinjaHandler
 from .handlers.plaintext import PlainTextHandler
+from .utils.geojson import load_geojson
+from .utils.geopackage import load_geopackage
+from .utils.json import load_json
 
 SUFFIXES = [".txt", ".jinja"]
 
@@ -29,9 +31,10 @@ class Builder:
             data_source_type = config["data"][data_source]["type"]
             if data_source_type == "aixm":
                 logging.debug(f"Loading AIXM source {data_source}...")
-                self.data[data_source] = self.__load_aixm(
-                    data_source, config["data"][data_source]["source"]
-                )
+
+                src = self.__load(data_source, config["data"][data_source]["source"])
+                if src is not None:
+                    self.data[data_source] = parse_aixm(src)
             elif data_source_type == "kml":
                 logging.debug(f"Loading KML source {data_source}...")
                 data_root = None
@@ -68,34 +71,45 @@ class Builder:
                     "fixes": fixes,
                     "lines": sectors_to_lines(fixes),
                 }
+            elif data_source_type == "gpkg":
+                logging.debug(f"Loading GeoPackage source {data_source}...")
+                self.data[data_source] = load_geopackage(
+                    source_dir / config["data"][data_source]["source"],
+                    config["data"][data_source]["layers"]
+                )
+            elif data_source_type == "geojson":
+                logging.debug(f"Loading GeoJSON source {data_source}...")
+
+                src = self.__load(data_source, config["data"][data_source]["source"])
+                if src is not None:
+                    self.data[data_source] = load_geojson(src)
             elif data_source_type == "json":
                 logging.debug(f"Loading JSON source {data_source}...")
-                with (source_dir / config["data"][data_source]["source"]).open(
-                        encoding="iso-8859-1",
-                ) as f:
-                    self.data[data_source] = json.load(f)
+                self.data[data_source] = load_json(
+                    source_dir / config["data"][data_source]["source"]
+                )
             else:
                 logging.error(f"Unknown data source type for data source {data_source}")
 
         self.jinja_handler = JinjaHandler(self.data, self.config)
 
-    def __load_aixm(self, name: str, src: str):
-        if src.startswith("aixm:dfs"):
-            _, _, amdt, leaf = src.split(":")
+    def __load(self, name: str, src: str):
+        if src.startswith("dfs:"):
+            _, amdt, leaf, data_format = src.split(":")
             amdt_id = int(amdt)
 
             if self.dfs_datasets is None:
-                self.dfs_datasets = aixm.get_dfs_aixm_datasets(self.cache)
+                self.dfs_datasets = datasets.get_dfs_datasets(self.cache)
 
-            url = aixm.get_dfs_aixm_url(self.dfs_datasets[amdt_id], amdt_id, leaf)
+            url = datasets.get_dfs_url(self.dfs_datasets[amdt_id], amdt_id, leaf, data_format)
             if url is None:
-                logging.error(f"Cannot get AIXM source URL for dataset {name}")
-                return {}
-            return parse_aixm(self.cache.get(f"aixm-{name}", url, 96))
+                logging.error(f"Cannot get source URL for DFS dataset {name}")
+                return None
+            return self.cache.get(f"dfs-{name}", url, 96)
         if src.startswith("http"):
-            return parse_aixm(self.cache.get(f"aixm-{name}", src, 96))
+            return self.cache.get(f"remote-{name}", src, 96)
         else:
-            return parse_aixm(self.source_dir / src)
+            return self.source_dir / src
 
     def build(self):
         for profile in self.config["profiles"]:
