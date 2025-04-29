@@ -10,7 +10,7 @@ AIRPORT:EDDR
 FOLDER:Airport Layout
 ACTIVE:1
 {% for uuid, geom in data.eddr_aixm['ApronElement'].items() %}
-{{- geom | simplify(default) | to_poly(uuid, 'layout-apron') }}
+{{- geom | simplify(default) | to_coordtype(uuid, 'layout-apron') }}
 {% endfor %}
 
 MAP:Parking Area
@@ -35,16 +35,16 @@ AIRPORT:EDDR
 FOLDER:Airport Layout
 ACTIVE:1
 {% for uuid, geom in data.eddr_aixm['TaxiwayElement'].items() %}
-{{- geom | simplify(default) | to_poly(uuid, 'layout-taxiway') }}
+{{- geom | simplify(default) | to_coordtype(uuid, 'layout-taxiway') }}
 {% endfor %}
 
 MAP:Runway
 AIRPORT:EDDR
 FOLDER:Airport Layout
 ACTIVE:1
-{{ data.eddr_kml['layout']['runways']['rwyBlastpad08'] | to_poly('Blastpad 08', 'layout-apron') }}
+{{ data.eddr_kml['layout']['runways']['rwyBlastpad08'] | to_coordtype('Blastpad 08', 'layout-apron') }}
 {% for uuid, geom in data.eddr_aixm['RunwayElement'].items() %}
-{{- geom | simplify(0.00001) | to_poly('Runway 08/26', 'layout-runway') }}
+{{- geom | simplify(0.00001) | to_coordtype('Runway 08/26', 'layout-runway') }}
 {% endfor %}
 
 MAP:Leadin Lines
