@@ -3,10 +3,10 @@
 MAP:E
 AIRPORT:EDLP
 FOLDER:Closures
+LAYER:4
 ACTIVE:1
 STYLE:Solid:2
-COORDTYPE:TWYCLOSED:REGION
-{{ data.edlp_kml['layout']['closures']['poly']['E'] | to_poly('','closure') }}
+{{ data.edlp_kml['layout']['closures']['poly']['E'] | to_coordtype('', 'closure', 'TWYCLOSED') }}
 STYLE:Solid:1 
-{{ data.edlp_kml['layout']['closures']['symb']['E_a'] | to_poly('','closure-symbol') }}
-{{ data.edlp_kml['layout']['closures']['symb']['E_b'] | to_poly('','closure-symbol') }}
+{{ data.edlp_kml['layout']['closures']['symb']['E_a'] | to_coordtype('', 'closure-symbol') }}
+{{ data.edlp_kml['layout']['closures']['symb']['E_b'] | to_coordtype('', 'closure-symbol') }}

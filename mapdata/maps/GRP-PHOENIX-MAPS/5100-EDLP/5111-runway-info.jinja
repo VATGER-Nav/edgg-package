@@ -3,6 +3,7 @@
 MAP:TORA 24
 AIRPORT:EDLP
 FOLDER:Runway Info
+LAYER:6
 COLOR:tora-label
 ZOOM:500
 TEXTALIGN:RC
@@ -12,6 +13,7 @@ TEXTALIGN:RC
 MAP:TORA 06
 AIRPORT:EDLP
 FOLDER:Runway Info
+LAYER:6
 COLOR:tora-label
 ZOOM:500
 TEXTALIGN:LC
@@ -21,17 +23,18 @@ TEXTALIGN:LC
 MAP:Runway Designators
 AIRPORT:EDLP
 FOLDER:Runway Info
+LAYER:6
 ACTIVE:1
 {% for uuid, geom in data.edlp_kml['layout']['markings']['runways'].items() %}
-{{- geom | to_poly('', 'runway-label') }}
+{{- geom | to_coordtype('', 'runway-label') }}
 {% endfor %}
 
 MAP:Runway Markings
 AIRPORT:EDLP
 FOLDER:Runway Info
 {% for uuid, geom in data.edlp_aixm['RunwayMarking'].items() %}
-{{- geom | to_poly('', 'layout-runway-marking') }}
+{{- geom | to_coordtype('', 'layout-runway-marking') }}
 {% endfor %}
 {% for uuid, geom in data.edlp_kml['layout']['markings']['poly'].items() %}
-{{- geom | to_poly('', 'layout-runway') }}
+{{- geom | to_coordtype('', 'layout-runway') }}
 {% endfor %}

@@ -3,9 +3,10 @@
 MAP:Holding Points CAT I
 AIRPORT:EDLP
 FOLDER:Holding Points
+LAYER:5
 ACTIVE:1
 {% for desig, geom in data.edlp_kml['layout']['holdingpoints']['cat1'].items() %}
-{{- geom | to_poly(desig, 'layout-holdingpoint') }}
+{{- geom | to_coordtype(desig, 'layout-holdingpoint') }}
 {% endfor %}
 STYLE:SOLID:1
 COLOR:layout-holdingpoint
@@ -16,6 +17,7 @@ COLOR:layout-holdingpoint
 MAP:Stopbars
 AIRPORT:EDLP
 FOLDER:Holding Points
+LAYER:5
 ACTIVE:1
 COLOR:layout-holdingpoint
 {% for uuid, geom in data.edlp_kml['layout']['stopbars'].items() %}
