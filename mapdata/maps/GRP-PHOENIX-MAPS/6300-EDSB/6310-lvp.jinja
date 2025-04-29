@@ -3,16 +3,15 @@
 MAP:Heavy  21
 AIRPORT:EDSB
 FOLDER:LVP
-COORDTYPE:OTHER:REGION:\
 // Orthogonal
-{{ data.edsb_kml['layout']['lvp']['heavy']['21_orthogonal_a'] | to_poly('', 'lvp-orthogonal') }}
-{{ data.edsb_kml['layout']['lvp']['heavy']['21_orthogonal_b'] | to_poly('', 'lvp-orthogonal') }}
+{{ data.edsb_kml['layout']['lvp']['heavy']['21_orthogonal_a'] | to_coordtype('', 'lvp-orthogonal', 'OTHER', 'REGION', '\\') }}
+{{ data.edsb_kml['layout']['lvp']['heavy']['21_orthogonal_b'] | to_coordtype('', 'lvp-orthogonal', 'OTHER', 'REGION', '\\') }}
 // Sensitive
-{{ data.edsb_kml['layout']['lvp']['heavy']['21_sensitive'] | to_poly('', 'lvp-sensitive') }}
+{{ data.edsb_kml['layout']['lvp']['heavy']['21_sensitive'] | to_coordtype('', 'lvp-sensitive', 'OTHER', 'REGION', '\\') }}
 // Critical
 STYLE:SOLID:2
-{{ data.edsb_kml['layout']['lvp']['heavy']['21_critical_loc'] | to_poly('', 'lvp-critical') }}
-{{ data.edsb_kml['layout']['lvp']['heavy']['21_critical_gs'] | to_poly('', 'lvp-critical') }}
+{{ data.edsb_kml['layout']['lvp']['heavy']['21_critical_loc'] | to_coordtype('', 'lvp-critical', 'OTHER', 'REGION', '\\') }}
+{{ data.edsb_kml['layout']['lvp']['heavy']['21_critical_gs'] | to_coordtype('', 'lvp-critical', 'OTHER', 'REGION', '\\') }}
 // LOC
 STYLE:SOLID:2
 COLOR:lvp-marking
