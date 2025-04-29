@@ -10,9 +10,9 @@ AIRPORT:EDLV
 FOLDER:Airport Layout
 ACTIVE:1
 {% for uuid, geom in data.edlv_kml['layout']['aprons'].items() %}
-{{- geom | to_poly('', 'layout-apron') }}
+{{- geom | to_coordtype('', 'layout-apron') }}
 {% endfor %}
-{{ data.edlv_aixm['ApronElement']['60ad4527-8fac-e1fa-e053-0100007f5781'] | to_poly('60ad4527-8fac-e1fa-e053-0100007f5781', 'layout-apron') }}
+{{ data.edlv_aixm['ApronElement']['60ad4527-8fac-e1fa-e053-0100007f5781'] | to_coordtype('60ad4527-8fac-e1fa-e053-0100007f5781', 'layout-apron') }}
 
 MAP:Parking Area
 AIRPORT:EDLV
@@ -36,20 +36,20 @@ AIRPORT:EDLV
 FOLDER:Airport Layout
 ACTIVE:1
 {% for uuid, geom in data.edlv_aixm['TaxiwayElement'].items() %}
-{{- geom | simplify(default) | to_poly(uuid, 'layout-taxiway') }}
+{{- geom | simplify(default) | to_coordtype(uuid, 'layout-taxiway') }}
 {% endfor %}
 
 MAP:Runway
 AIRPORT:EDLV
 FOLDER:Airport Layout
 ACTIVE:1
-{{ data.edlv_aixm['RunwayElement']['60ad4527-93c0-e1fa-e053-0100007f5781'] | to_poly('Runway 09/27', 'layout-runway') }}
+{{ data.edlv_aixm['RunwayElement']['60ad4527-93c0-e1fa-e053-0100007f5781'] | to_coordtype('Runway 09/27', 'layout-runway') }}
 {% for uuid in
 [
     '60ad4527-8a1a-e1fa-e053-0100007f5781',
     '60ad4527-8a19-e1fa-e053-0100007f5781',
 ] %}
-{{- data.edlv_aixm['RunwayProtectArea'][uuid] | simplify(default) | to_poly(uuid, 'layout-apron') }}
+{{- data.edlv_aixm['RunwayProtectArea'][uuid] | simplify(default) | to_coordtype(uuid, 'layout-apron') }}
 {% endfor %}
 
 MAP:Leadin Lines
@@ -434,10 +434,10 @@ ACTIVE:1
     '70166611-9a30-0e44-e053-0100007f50ba',
     '60ad4527-8d01-e1fa-e053-0100007f5781'
 ] %}
-{{- data.edlv_aixm['VerticalStructure'][uuid] | simplify(default) | to_poly(uuid, 'layout-building') }}
+{{- data.edlv_aixm['VerticalStructure'][uuid] | simplify(default) | to_coordtype(uuid, 'layout-building') }}
 {% endfor %}
 {% for uuid, geom in data.edlv_kml['layout']['buildings'].items() %}
-{{- geom | to_poly('', 'layout-building') }}
+{{- geom | to_coordtype('', 'layout-building') }}
 {% endfor %}
 
 MAP:Fence

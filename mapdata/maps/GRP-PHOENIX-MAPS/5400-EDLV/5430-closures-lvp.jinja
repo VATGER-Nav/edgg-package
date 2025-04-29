@@ -1,0 +1,11 @@
+// ------------------------------ LVP -------------------------------
+
+MAP:LVP Closures
+AIRPORT:EDLV
+FOLDER:Closures
+LAYER:4
+ACTIVE:LVP:EDLV:1
+STYLE:Solid:2
+{{ data.edlv_kml['layout']['closures']['poly']['B'] | to_coordtype('', 'closure', 'TWYCLOSED') }}
+{{ data.edlv_kml['layout']['closures']['poly']['C'] | to_coordtype('', 'closure', 'TWYCLOSED') }}
+{{ data.edlv_kml['layout']['closures']['poly']['N'] | to_coordtype('', 'closure', 'TWYCLOSED') }}

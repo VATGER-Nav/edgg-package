@@ -1,0 +1,9 @@
+// ----------------------- Permament Closures -----------------------
+
+MAP:Helipad North
+AIRPORT:EDLV
+FOLDER:Closures
+LAYER:4
+ACTIVE:1
+{{ data.edlv_kml['layout']['closures']['symb']['helipad'] | to_coordtype('', 'closure-symbol') }}
+{{ data.edlv_kml['layout']['closures']['poly']['helipad'] | to_coordtype('', '', 'TWYCLOSED', 'NONE') }}
