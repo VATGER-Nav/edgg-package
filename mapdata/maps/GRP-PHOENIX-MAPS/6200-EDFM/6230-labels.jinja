@@ -1,26 +1,37 @@
 // ----------------------------- Labels -----------------------------
 
-MAP:Taxiways
+MAP:Buffer   (EDFM)
 AIRPORT:EDFM
 FOLDER:Labels
+HIDDEN
+LAYER:3
 ACTIVE:1
 ZOOM:400
 {% for uuid, geom in data.edfm_kml['layout']['labels']['buffer'].items() %}
-{{- geom | to_poly('', 'layout-taxiway') }}
-{% endfor %}
-FONTSIZE:=:10
-COLOR:layout-label-taxiway
-{% for taxiway, geom in data.edfm_kml['layout']['labels']['taxiways'].items() %}
-{{- geom | to_text(taxiway) }}
+{{- geom | to_coordtype('', 'layout-taxiway') }}
 {% endfor %}
 
-MAP:Stands
+MAP:Taxiways (EDFM)
 AIRPORT:EDFM
 FOLDER:Labels
+OTHER_MAP_ACT:=:Labels\Buffer   (EDFM)
+LAYER:6
+ACTIVE:1
+ZOOM:400
+FONTSIZE:=:10
+COLOR:layout-label-taxiway
+{% for desig, geom in data.edfm_kml['layout']['labels']['taxiways'].items() %}
+{{- geom | to_text(desig) }}
+{% endfor %}
+
+MAP:Stands   (EDFM)
+AIRPORT:EDFM
+FOLDER:Labels
+LAYER:6
 ACTIVE:1
 ZOOM:600
 FONTSIZE:=:9
 COLOR:layout-label-stand
-{% for stand, geom in data.edfm_kml['layout']['labels']['stands'].items() %}
-{{- geom | to_text(stand) }}
+{% for desig, geom in data.edfm_kml['layout']['labels']['stands'].items() %}
+{{- geom | to_text(desig) }}
 {% endfor %}
