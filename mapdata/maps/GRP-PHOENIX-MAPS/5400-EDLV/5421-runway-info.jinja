@@ -3,6 +3,7 @@
 MAP:TORA 27
 AIRPORT:EDLV
 FOLDER:Runway Info
+LAYER:6
 COLOR:tora-label
 ZOOM:500
 TEXTALIGN:RC
@@ -11,6 +12,7 @@ TEXTALIGN:RC
 MAP:TORA 09
 AIRPORT:EDLV
 FOLDER:Runway Info
+LAYER:6
 COLOR:tora-label
 ZOOM:500
 TEXTALIGN:LC
@@ -19,9 +21,10 @@ TEXTALIGN:LC
 MAP:Runway Designators
 AIRPORT:EDLV
 FOLDER:Runway Info
+LAYER:6
 ACTIVE:1
 {% for uuid, geom in data.edlv_kml['layout']['markings']['runways'].items() %}
-{{- geom | to_poly('', 'runway-label') }}
+{{- geom | to_coordtype('', 'runway-label') }}
 {% endfor %}
 
 MAP:Runway Markings
@@ -137,7 +140,7 @@ FOLDER:Runway Info
     '60ad4527-8a18-e1fa-e053-0100007f5781',
     '60ad4527-9169-e1fa-e053-0100007f5781',
 ] %}
-{{- data.edlv_aixm['RunwayMarking'][uuid] | to_poly('', 'layout-runway-marking') }}
+{{- data.edlv_aixm['RunwayMarking'][uuid] | to_coordtype('', 'layout-runway-marking') }}
 {% endfor %}
 {% for uuid in
 [
@@ -164,5 +167,5 @@ FOLDER:Runway Info
     '60ad4527-8a16-e1fa-e053-0100007f5781',
     '60ad4527-8a17-e1fa-e053-0100007f5781',
 ] %}
-{{- data.edlv_aixm['RunwayMarking'][uuid] | to_poly('', 'layout-runway') }}
+{{- data.edlv_aixm['RunwayMarking'][uuid] | to_coordtype('', 'layout-runway') }}
 {% endfor %}
