@@ -1,13 +1,23 @@
 // ----------------------------- Labels -----------------------------
 
-MAP:Taxiways
+MAP:Buffer   (EDFH)
 AIRPORT:EDFH
 FOLDER:Labels
+HIDDEN
+LAYER:3
 ACTIVE:1
 ZOOM:400
 {% for uuid, geom in data.edfh_kml['layout']['labels']['buffer'].items() %}
-{{- geom | to_poly('', 'layout-taxiway') }}
+{{- geom | to_coordtype('', 'layout-taxiway') }}
 {% endfor %}
+
+MAP:Taxiways (EDFH)
+AIRPORT:EDFH
+FOLDER:Labels
+OTHER_MAP_ACT:=:Labels\Buffer   (EDFH)
+LAYER:6
+ACTIVE:1
+ZOOM:400
 FONTSIZE:=:10
 COLOR:layout-label-taxiway
 {% for desig, geom in data.edfh_kml['layout']['labels']['taxiways'].items() %}
@@ -17,9 +27,10 @@ COLOR:layout-label-taxiway
 // Closed due to NOTAM C0007/25:
 // 321, 326
 
-MAP:Stands
+MAP:Stands   (EDFH)
 AIRPORT:EDFH
 FOLDER:Labels
+LAYER:6
 ACTIVE:1
 ZOOM:500
 FONTSIZE:=:9
@@ -29,6 +40,17 @@ COLOR:layout-label-stand
 {% endfor %}
 {{ data.edfh_kml['layout']['labels']['GAT'] | to_text('GAT') }}
 {{ data.edfh_kml['layout']['labels']['aprons']['APN 5'] | to_text('Maintenance') }}
+
+MAP:Aprons   (EDFH)
+AIRPORT:EDFH
+FOLDER:Labels
+ZOOM:400
+FONTSIZE:=:9
+COLOR:layout-label-stand
+{{ data.edfh_kml['layout']['labels']['aprons']['APN 2'] | to_text('APN 2') }}
+{{ data.edfh_kml['layout']['labels']['aprons']['APN 3'] | to_text('APN 3') }}
+{{ data.edfh_kml['layout']['labels']['aprons']['APN 4'] | to_text('APN 4') }}
+{{ data.edfh_kml['layout']['labels']['aprons']['APN 5'] | to_text('APN 5:0:-12') }}
 
 MAP:Closed Stands
 AIRPORT:EDFH
@@ -51,17 +73,6 @@ COLOR:layout-label-stand
 {% endfor %}
 {{ data.edfh_kml['layout']['labels']['GAT'] | to_text('GAT') }}
 {{ data.edfh_kml['layout']['labels']['aprons']['APN 5'] | to_text('Maintenance') }}
-
-MAP:Aprons
-AIRPORT:EDFH
-FOLDER:Labels
-ZOOM:400
-FONTSIZE:=:9
-COLOR:layout-label-stand
-{{ data.edfh_kml['layout']['labels']['aprons']['APN 2'] | to_text('APN 2') }}
-{{ data.edfh_kml['layout']['labels']['aprons']['APN 3'] | to_text('APN 3') }}
-{{ data.edfh_kml['layout']['labels']['aprons']['APN 4'] | to_text('APN 4') }}
-{{ data.edfh_kml['layout']['labels']['aprons']['APN 5'] | to_text('APN 5:0:-12') }}
 
 MAP:Buildings
 AIRPORT:EDFH

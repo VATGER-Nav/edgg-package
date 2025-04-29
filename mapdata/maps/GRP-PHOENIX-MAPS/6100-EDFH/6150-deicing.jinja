@@ -5,25 +5,21 @@ AIRPORT:EDFH
 FOLDER:Ice/Snow
 
 // Areas
-COORDTYPE:OTHER:REGION:x
-STYLE:Solid:1
-{{ data.edfh_kml['layout']['deicing']['poly']['DP_N'] | to_poly('DP North', 'layout-runway') }}
-{{ data.edfh_kml['layout']['deicing']['poly']['DP_S'] | to_poly('DP South', 'layout-runway') }}
+{{ data.edfh_kml['layout']['deicing']['poly']['DP_N'] | to_coordtype('DP North', 'layout-runway', 'OTHER', 'REGION', 'X') }}
+{{ data.edfh_kml['layout']['deicing']['poly']['DP_S'] | to_coordtype('DP South', 'layout-runway', 'OTHER', 'REGION', 'X') }}
 
 // Arrows
-COORDTYPE:OTHER:REGION
-{{ data.edfh_kml['layout']['deicing']['arrows']['DP_N'] | to_poly('', 'layout-taxiline-white') }}
+{{ data.edfh_kml['layout']['deicing']['arrows']['DP_N'] | to_coordtype('', 'layout-taxiline-white') }}
 
 // Taxilines
-COLOR:layout-runway-marking
+COLOR:layout-taxiline-white
 STYLE:Solid:2
 {{ data.edfh_kml['layout']['deicing']['line']['DP_N'] | to_line('') -}}
 
 // Outlines
 STYLE:Solid:2
-COLOR:deicing
-{{ data.edfh_kml['layout']['deicing']['poly']['DP_N'] | to_line('DP North') -}}
-{{ data.edfh_kml['layout']['deicing']['poly']['DP_S'] | to_line('DP South') -}}
+{{ data.edfh_kml['layout']['deicing']['poly']['DP_N'] | to_coordtype('DP North', 'deicing', 'OTHER', 'POLYGON') }}
+{{ data.edfh_kml['layout']['deicing']['poly']['DP_S'] | to_coordtype('DP South', 'deicing', 'OTHER', 'POLYGON') }}
 
 // Reference
 COLOR:layout-label-stand

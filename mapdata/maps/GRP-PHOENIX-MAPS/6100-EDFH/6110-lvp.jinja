@@ -3,16 +3,15 @@
 MAP:Heavy  21
 AIRPORT:EDFH
 FOLDER:LVP
-COORDTYPE:OTHER:REGION:\
 // Orthogonal
-{{ data.edfh_kml['layout']['lvp']['heavy']['21_orthogonal_a'] | to_poly('', 'lvp-orthogonal') }}
-{{ data.edfh_kml['layout']['lvp']['heavy']['21_orthogonal_b'] | to_poly('', 'lvp-orthogonal') }}
+{{ data.edfh_kml['layout']['lvp']['heavy']['21_orthogonal_a'] | to_coordtype('', 'lvp-orthogonal', 'OTHER', 'REGION', '\\') }}
+{{ data.edfh_kml['layout']['lvp']['heavy']['21_orthogonal_b'] | to_coordtype('', 'lvp-orthogonal', 'OTHER', 'REGION', '\\') }}
 // Sensitive
-{{ data.edfh_kml['layout']['lvp']['heavy']['21_sensitive'] | to_poly('', 'lvp-sensitive') }}
+{{ data.edfh_kml['layout']['lvp']['heavy']['21_sensitive'] | to_coordtype('', 'lvp-sensitive', 'OTHER', 'REGION', '\\') }}
 // Critical
 STYLE:SOLID:2
-{{ data.edfh_kml['layout']['lvp']['heavy']['21_critical_loc'] | to_poly('', 'lvp-critical') }}
-{{ data.edfh_kml['layout']['lvp']['heavy']['21_critical_gs'] | to_poly('', 'lvp-critical') }}
+{{ data.edfh_kml['layout']['lvp']['heavy']['21_critical_loc'] | to_coordtype('', 'lvp-critical', 'OTHER', 'REGION', '\\') }}
+{{ data.edfh_kml['layout']['lvp']['heavy']['21_critical_gs'] | to_coordtype('', 'lvp-critical', 'OTHER', 'REGION', '\\') }}
 // LOC
 STYLE:SOLID:2
 COLOR:lvp-marking
@@ -22,16 +21,15 @@ COLOR:lvp-marking
 MAP:Super  21
 AIRPORT:EDFH
 FOLDER:LVP
-COORDTYPE:OTHER:REGION:\
 // Orthogonal
-{{ data.edfh_kml['layout']['lvp']['super']['21_orthogonal_a'] | to_poly('', 'lvp-orthogonal') }}
-{{ data.edfh_kml['layout']['lvp']['super']['21_orthogonal_b'] | to_poly('', 'lvp-orthogonal') }}
+{{ data.edfh_kml['layout']['lvp']['super']['21_orthogonal_a'] | to_coordtype('', 'lvp-orthogonal', 'OTHER', 'REGION', '\\') }}
+{{ data.edfh_kml['layout']['lvp']['super']['21_orthogonal_b'] | to_coordtype('', 'lvp-orthogonal', 'OTHER', 'REGION', '\\') }}
 // Sensitive
-{{ data.edfh_kml['layout']['lvp']['super']['21_sensitive'] | to_poly('', 'lvp-sensitive') }}
+{{ data.edfh_kml['layout']['lvp']['super']['21_sensitive'] | to_coordtype('', 'lvp-sensitive', 'OTHER', 'REGION', '\\') }}
 // Critical
 STYLE:SOLID:2
-{{ data.edfh_kml['layout']['lvp']['super']['21_critical_loc'] | to_poly('', 'lvp-critical') }}
-{{ data.edfh_kml['layout']['lvp']['super']['21_critical_gs'] | to_poly('', 'lvp-critical') }}
+{{ data.edfh_kml['layout']['lvp']['super']['21_critical_loc'] | to_coordtype('', 'lvp-critical', 'OTHER', 'REGION', '\\') }}
+{{ data.edfh_kml['layout']['lvp']['super']['21_critical_gs'] | to_coordtype('', 'lvp-critical', 'OTHER', 'REGION', '\\') }}
 // LOC
 STYLE:SOLID:2
 COLOR:lvp-marking

@@ -3,19 +3,17 @@
 MAP:Turn Pads
 AIRPORT:EDFH
 FOLDER:Closures
+LAYER:4
 ACTIVE:1
-STYLE:Solid:1
-{{ data.edfh_kml['layout']['closures']['symb']['rwyTurnpad03'] | to_poly('','closure-symbol') }}
-{{ data.edfh_kml['layout']['closures']['symb']['rwyTurnpad21'] | to_poly('','closure-symbol') }}
-COORDTYPE:TWYCLOSED:NONE
-{{ data.edfh_kml['layout']['closures']['poly']['rwyTurnpad03'] | to_poly('','red') }}
-{{ data.edfh_kml['layout']['closures']['poly']['rwyTurnpad21'] | to_poly('','red') }}
+{{ data.edfh_kml['layout']['closures']['symb']['rwyTurnpad03'] | to_coordtype('', 'closure-symbol') }}
+{{ data.edfh_kml['layout']['closures']['symb']['rwyTurnpad21'] | to_coordtype('', 'closure-symbol') }}
+{{ data.edfh_kml['layout']['closures']['poly']['rwyTurnpad03'] | to_coordtype('', '', 'TWYCLOSED', 'NONE') }}
+{{ data.edfh_kml['layout']['closures']['poly']['rwyTurnpad21'] | to_coordtype('', '', 'TWYCLOSED', 'NONE') }}
 
 MAP:Apron
 AIRPORT:EDFH
 FOLDER:Closures
+LAYER:4
 ACTIVE:1
-STYLE:Solid:1
-{{ data.edfh_kml['layout']['closures']['symb']['apron'] | to_poly('','closure-symbol') }}
-COORDTYPE:TWYCLOSED:NONE
-{{ data.edfh_kml['layout']['closures']['poly']['apron'] | to_poly('','red') }}
+{{ data.edfh_kml['layout']['closures']['symb']['apron'] | to_coordtype('', 'closure-symbol') }}
+{{ data.edfh_kml['layout']['closures']['poly']['apron'] | to_coordtype('', '', 'TWYCLOSED', 'NONE') }}
