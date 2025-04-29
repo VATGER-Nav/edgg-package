@@ -10,7 +10,7 @@ AIRPORT:EDLN
 FOLDER:Airport Layout
 ACTIVE:1
 {% for uuid, geom in data.edln_aixm['ApronElement'].items() %}
-{{- geom | simplify(default) | to_poly(uuid, 'layout-apron') }}
+{{- geom | simplify(default) | to_coordtype(uuid, 'layout-apron') }}
 {% endfor %}
 {% for uuid in
 [
@@ -18,7 +18,7 @@ ACTIVE:1
     '4682806b-ee16-c6ff-e053-1514a8c027b7',
     '4682806b-ee18-c6ff-e053-1514a8c027b7',
 ] %}
-{{- data.edln_aixm['TaxiwayElement'][uuid] | simplify(default) | to_poly(uuid,'layout-apron') }}
+{{- data.edln_aixm['TaxiwayElement'][uuid] | simplify(default) | to_coordtype(uuid,'layout-apron') }}
 {% endfor %}
 
 MAP:Parking Area
@@ -63,23 +63,23 @@ ACTIVE:1
     '4682806b-f4d1-c6ff-e053-1514a8c027b7',
     '4682806b-f4d2-c6ff-e053-1514a8c027b7',
 ] %}
-{{- data.edln_aixm['TaxiwayElement'][uuid] | simplify(default) | to_poly(uuid, 'layout-taxiway') }}
+{{- data.edln_aixm['TaxiwayElement'][uuid] | simplify(default) | to_coordtype(uuid, 'layout-taxiway') }}
 {% endfor %}
 {% for uuid in
 [
     '4682806b-f43c-c6ff-e053-1514a8c027b7',
     '4682806b-edc5-c6ff-e053-1514a8c027b7',
 ] %}
-{{- data.edln_aixm['RunwayElement'][uuid] | simplify(default) | to_poly(uuid,'layout-taxiway') }}
+{{- data.edln_aixm['RunwayElement'][uuid] | simplify(default) | to_coordtype(uuid,'layout-taxiway') }}
 {% endfor %}
 
 MAP:Runway
 AIRPORT:EDLN
 FOLDER:Airport Layout
 ACTIVE:1
-{{ data.edln_aixm['RunwayElement']['4682806b-f43d-c6ff-e053-1514a8c027b7'] | simplify(default) | to_poly('Runway 13/31','layout-runway') }}
+{{ data.edln_aixm['RunwayElement']['4682806b-f43d-c6ff-e053-1514a8c027b7'] | simplify(default) | to_coordtype('Runway 13/31','layout-runway') }}
 {% for uuid, geom in data.edln_aixm['RunwayBlastPad'].items() %}
-{{- geom | simplify(0.00001) | to_poly(uuid,'layout-apron') }}
+{{- geom | simplify(0.00001) | to_coordtype(uuid,'layout-apron') }}
 {% endfor %}
 
 MAP:Leadin Lines
@@ -370,7 +370,7 @@ ACTIVE:1
     'b2b28b86-f1c7-43af-a35a-471a2241ae4e',
     'e3047568-50ff-49d4-bba5-bc4f4a9473da',
 ] %}
-{{- data.edln_aixm['VerticalStructure'][uuid] | join_segments | simplify(default) | to_poly(uuid, 'layout-building') }}
+{{- data.edln_aixm['VerticalStructure'][uuid] | join_segments | simplify(default) | to_coordtype(uuid, 'layout-building') }}
 {% endfor %}
 
 MAP:Fence
