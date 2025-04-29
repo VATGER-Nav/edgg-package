@@ -15,8 +15,8 @@ COLOR:layout-label-stand
 MAP:Winch Launching
 AIRPORT:EDFM
 FOLDER:Glider
-{{ data.edfm_kml['layout']['glider']['winch_b'] | to_poly('', 'layout-taxiway') }}
-{{ data.edfm_kml['layout']['glider']['winch_c'] | to_poly('', 'layout-taxiway') }}
+{{ data.edfm_kml['layout']['glider']['winch_b'] | to_coordtype('', 'layout-taxiway') }}
+{{ data.edfm_kml['layout']['glider']['winch_c'] | to_coordtype('', 'layout-taxiway') }}
 COLOR:layout-taxiway
 STYLE:DOT:1
 {{ data.edfm_kml['layout']['glider']['winch_a'] | to_line('') -}}
