@@ -3,7 +3,7 @@
 MAP:B
 AIRPORT:EDLW
 FOLDER:Closures
+LAYER:4
 ACTIVE:LVP:EDLW:1
 STYLE:Solid:2
-COORDTYPE:TWYCLOSED:REGION
-{{ data.edlw_kml['layout']['closures']['poly']['B'] | to_poly('','closure') }}
+{{ data.edlw_kml['layout']['closures']['poly']['B'] | to_coordtype('', 'closure', 'TWYCLOSED') }}

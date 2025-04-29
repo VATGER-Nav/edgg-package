@@ -3,11 +3,10 @@
 MAP:Checks
 AIRPORT:EDLW
 FOLDER:Restrictions
-COORDTYPE:TWYTYPE:NONE
 ACTIVE:1
 // L, K
 RESTRICTION:MAXCODE:C
-{{ data.edlw_kml['layout']['restrictions']['poly']['L_K'] | to_poly('') }}
+{{ data.edlw_kml['layout']['restrictions']['poly']['L_K'] | to_coordtype('', '', 'TWYTYPE', 'NONE') }}
 // B
 RESTRICTION:MAXWEIGHT:20000
-{{ data.edlw_kml['layout']['restrictions']['poly']['B'] | to_poly('') }}
+{{ data.edlw_kml['layout']['restrictions']['poly']['B'] | to_coordtype('', '', 'TWYTYPE', 'NONE') }}

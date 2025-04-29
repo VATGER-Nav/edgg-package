@@ -85,7 +85,7 @@ ACTIVE:1
     'e9a6493c-5a3b-4c2f-b8e4-84fe6617688f',
     'ea9ccb95-da03-43c4-b49e-4bd90ea7fe00',
 ] %}
-{{- data.edlw_aixm['VerticalStructure'][uuid] | simplify(default) | to_poly(uuid, 'layout-building') }}
+{{- data.edlw_aixm['VerticalStructure'][uuid] | simplify(default) | to_coordtype(uuid, 'layout-building') }}
 {% endfor %}
 
 MAP:Fence
