@@ -28,7 +28,7 @@ LAYER:4
 RWYCLOSEDDEP:EDDL:05R,23L
 RWYCLOSEDARR:EDDL:05R,23L
 STYLE:Solid:2
-{{ data.eddl_kml['layout']['runways']['05R-23L'] | to_coordtype('', 'closure', 'RWYCLOSED') }}
+{{ data.eddl_kml['layout']['runways']['05R-23L'] | to_coordtype('', 'closure') }}
 
 MAP:23R/05L
 AIRPORT:EDDL
@@ -38,4 +38,4 @@ LAYER:4
 RWYCLOSEDDEP:EDDL:05L,23R
 RWYCLOSEDARR:EDDL:05L,23R
 STYLE:Solid:2
-{{ data.eddl_kml['layout']['runways']['05L-23R'] | to_coordtype('', 'closure', 'RWYCLOSED') }}
+{{ data.eddl_kml['layout']['runways']['05L-23R'] | to_coordtype('', 'closure') }}
