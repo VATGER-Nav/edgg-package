@@ -120,7 +120,6 @@ MAP:Stopbars
 AIRPORT:EDDF
 FOLDER:Holding Points
 ACTIVE:1
-LAYER:5
 {% for uuid, geom in data.eddf_kml['layout']['stopbars']['dot'].items() %}
 {{- geom | to_coordtype('', 'layout-taxiline-grey') }}
 {% endfor %}

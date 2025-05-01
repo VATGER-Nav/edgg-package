@@ -93,14 +93,13 @@ STYLE:Solid:2
 
 // Outlines
 STYLE:Solid:2
-COLOR:deicing
-{{ data.eddf_kml['layout']['deicing']['poly']['DP1'] | to_coordtype('DP1', 'layout-runway', 'OTHER', 'POLYGON') }}
-{{ data.eddf_kml['layout']['deicing']['poly']['DP2'] | to_coordtype('DP2', 'layout-runway', 'OTHER', 'POLYGON') }}
-{{ data.eddf_kml['layout']['deicing']['poly']['DP3E'] | to_coordtype('DP3E', 'layout-runway', 'OTHER', 'POLYGON') }}
-{{ data.eddf_kml['layout']['deicing']['poly']['DP3W'] | to_coordtype('DP3W', 'layout-runway', 'OTHER', 'POLYGON') }}
-{{ data.eddf_kml['layout']['deicing']['poly']['DP4E'] | to_coordtype('DP4E', 'layout-runway', 'OTHER', 'POLYGON') }}
-{{ data.eddf_kml['layout']['deicing']['poly']['DP4W'] | to_coordtype('DP4W', 'layout-runway', 'OTHER', 'POLYGON') }}
-{{ data.eddf_kml['layout']['deicing']['poly']['DP5'] | to_coordtype('DP5', 'layout-runway', 'OTHER', 'POLYGON') }}
+{{ data.eddf_kml['layout']['deicing']['poly']['DP1'] | to_coordtype('DP1', 'deicing', 'OTHER', 'POLYGON') }}
+{{ data.eddf_kml['layout']['deicing']['poly']['DP2'] | to_coordtype('DP2', 'deicing', 'OTHER', 'POLYGON') }}
+{{ data.eddf_kml['layout']['deicing']['poly']['DP3E'] | to_coordtype('DP3E', 'deicing', 'OTHER', 'POLYGON') }}
+{{ data.eddf_kml['layout']['deicing']['poly']['DP3W'] | to_coordtype('DP3W', 'deicing', 'OTHER', 'POLYGON') }}
+{{ data.eddf_kml['layout']['deicing']['poly']['DP4E'] | to_coordtype('DP4E', 'deicing', 'OTHER', 'POLYGON') }}
+{{ data.eddf_kml['layout']['deicing']['poly']['DP4W'] | to_coordtype('DP4W', 'deicing', 'OTHER', 'POLYGON') }}
+{{ data.eddf_kml['layout']['deicing']['poly']['DP5'] | to_coordtype('DP5', 'deicing', 'OTHER', 'POLYGON') }}
 
 // Labels
 ZOOM:300
