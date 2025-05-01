@@ -5,10 +5,12 @@ Color_Unknown=120,120,120
 
 Color_New_Stand=255,113,8
 
+Color_Information=0,72,0
+Color_InformationText=30,30,30
 Color_Warning=255,120,0
 Color_APP_Background=227,227,227
 Color_APP_Runway=89,89,89
-Color_TSW2_Background=0,0,0
+Color_TSW_Background=227,227,227
 
 Color_SelectedLabelFill_Gnd=220,220,220
 Color_SelectedLabelBorder_Gnd=255,255,255
