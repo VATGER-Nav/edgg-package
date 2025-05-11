@@ -1,20 +1,8 @@
 // ------------------------ Runway Closures -------------------------
 
-MAP:EDDS 25/07
-AIRPORT:EDDS
-FOLDER:Auto Runway Closures
-HIDDEN
-ACTIVE:RWY:ARR:EDDS07:DEP:*
-ACTIVE:RWY:ARR:*:DEP:EDDS07
-ACTIVE:RWY:ARR:EDDS25:DEP:*
-ACTIVE:RWY:ARR:*:DEP:EDDS25
-{{ data.edds_aixm['RunwayElement']['0d48f5ad-f099-464d-b13d-94cf0014d057'] | simplify(0.00001) | to_coordtype('', 'green', 'OTHER', 'NONE') }}
-{{ data.edds_aixm['RunwayElement']['5f954a0a-08d7-48c3-9875-19263da9b4de'] | simplify(0.00001) | to_coordtype('', 'green', 'OTHER', 'NONE') }}
-
 MAP:25/07
 AIRPORT:EDDS
 FOLDER:Closures
-ACTIVE:MAP:!:Auto Runway Closures\EDDS 25/07
 LAYER:4
 RWYCLOSEDDEP:EDDS:07,25
 RWYCLOSEDARR:EDDS:07,25

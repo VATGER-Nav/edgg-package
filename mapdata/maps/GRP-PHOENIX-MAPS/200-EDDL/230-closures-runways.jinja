@@ -1,29 +1,8 @@
 // ------------------------ Runway Closures -------------------------
 
-MAP:EDDL 23L/05R
-AIRPORT:EDDL
-FOLDER:Auto Runway Closures
-HIDDEN
-ACTIVE:RWY:ARR:EDDL05R:DEP:*
-ACTIVE:RWY:ARR:*:DEP:EDDL05R
-ACTIVE:RWY:ARR:EDDL23L:DEP:*
-ACTIVE:RWY:ARR:*:DEP:EDDL23L
-{{ data.eddl_kml['layout']['runways']['05R-23L'] | to_coordtype('', 'green', 'OTHER', 'NONE') }}
-
-MAP:EDDL 23R/05L
-AIRPORT:EDDL
-FOLDER:Auto Runway Closures
-HIDDEN
-ACTIVE:RWY:ARR:EDDL05L:DEP:*
-ACTIVE:RWY:ARR:*:DEP:EDDL05L
-ACTIVE:RWY:ARR:EDDL23R:DEP:*
-ACTIVE:RWY:ARR:*:DEP:EDDL23R
-{{ data.eddl_kml['layout']['runways']['05L-23R'] | to_coordtype('', 'green', 'OTHER', 'NONE') }}
-
 MAP:23L/05R
 AIRPORT:EDDL
 FOLDER:Closures
-ACTIVE:MAP:!:Auto Runway Closures\EDDL 23L/05R
 LAYER:4
 RWYCLOSEDDEP:EDDL:05R,23L
 RWYCLOSEDARR:EDDL:05R,23L
@@ -33,7 +12,6 @@ STYLE:Solid:2
 MAP:23R/05L
 AIRPORT:EDDL
 FOLDER:Closures
-ACTIVE:MAP:!:Auto Runway Closures\EDDL 23R/05L
 LAYER:4
 RWYCLOSEDDEP:EDDL:05L,23R
 RWYCLOSEDARR:EDDL:05L,23R
