@@ -20,6 +20,36 @@ TEXTALIGN:LC
 {{ data.eddr_kml['layout']['tora']['09_C'] | to_text('1900') }}
 {{ data.eddr_kml['layout']['tora']['09_B'] | to_text('889') }}
 
+MAP:RRS 26
+AIRPORT:EDDR
+FOLDER:Runway Info
+LAYER:6
+ACTIVE:RWY:ARR:*:DEP:EDDR26
+ACTIVE:RWY:ARR:EDDR26:DEP:*
+COLOR:rrs-marker
+{{ data.eddr_kml['layout']['rrs']['26_600'] | to_symbol('RRS-S') }}
+{{ data.eddr_kml['layout']['rrs']['26_1500'] | to_symbol('RRS-S') }}
+FONTSIZE:=:12
+ZOOM:400
+TEXTALIGN:CT
+{{ data.eddr_kml['layout']['rrs']['26_600'] | to_text('600:0:12') }}
+{{ data.eddr_kml['layout']['rrs']['26_1500'] | to_text('1500:0:12') }}
+
+MAP:RRS 08
+AIRPORT:EDDR
+FOLDER:Runway Info
+LAYER:6
+ACTIVE:RWY:ARR:*:DEP:EDDR08
+ACTIVE:RWY:ARR:EDDR08:DEP:*
+COLOR:rrs-marker
+{{ data.eddr_kml['layout']['rrs']['08_600'] | to_symbol('RRS-S') }}
+{{ data.eddr_kml['layout']['rrs']['08_1500'] | to_symbol('RRS-S') }}
+FONTSIZE:=:12
+ZOOM:400
+TEXTALIGN:CT
+{{ data.eddr_kml['layout']['rrs']['08_600'] | to_text('600:0:12') }}
+{{ data.eddr_kml['layout']['rrs']['08_1500'] | to_text('1500:0:12') }}
+
 MAP:Runway Designators
 AIRPORT:EDDR
 FOLDER:Runway Info
