@@ -1,11 +1,9 @@
 // ------------------------- NOTAM Closures -------------------------
 
-{#
-MAP:NOTAM A5213/24 - TWY L9
+MAP:AIP SUP IFR 04/25 - TWY M6
 AIRPORT:EDDF
 FOLDER:Closures
 LAYER:4
-ACTIVE:241007:241216:0:1100:0800
+ACTIVE:1
 STYLE:Solid:2
-{{ data.notam['notam']['EDDF']['L9'] | to_coordtype('', 'closure', 'TWYCLOSED') }}
-#}
+{{ data.notam['notam']['EDDF']['M6'] | to_coordtype('', 'closure', 'TWYCLOSED') }}
