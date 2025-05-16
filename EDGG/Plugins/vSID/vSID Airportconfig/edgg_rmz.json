@@ -226,7 +226,7 @@
         "elevation": 1133,
         "runways": "03,21",
         "transAlt": 5000,
-        "maxInitialClimb": 7000,
+        "maxInitialClimb": 4000,
 		"appSI": "PFA,EIF,RUD,GIN,KTG",
         "sids": {
             "initial": 4000,
@@ -234,14 +234,8 @@
                 "P": {
                     "1": {
                         "rwy": "03",
-                        "prio": 1
-                    }
-                },
-                "G": {
-                    "1": {
-                        "rwy": "03",
-                        "equip": {"NON-RNAV": true},
-                        "prio": 1
+                        "prio": 1,
+                        "climbvia": true
                     }
                 }
 			},
@@ -249,29 +243,18 @@
                 "P": {
                     "1": {
                         "rwy": "03",
-                        "prio": 1
-                    }
-                },
-                "G": {
-                    "1": {
-                        "rwy": "03",
-                        "equip": {"NON-RNAV": true},
-                        "prio": 1
+                        "prio": 1,
+                        "climbvia": true
                     }
                 }
 			},
 			"ZWN": {
-                "R": {
-                    "1": {
-                        "rwy": "21",
-                        "prio": 1
-                    }
-                },
                 "D": {
                     "1": {
                         "rwy": "21",
                         "equip": {"NON-RNAV": true},
-                        "prio": 1
+                        "prio": 1,
+                        "climbvia": true
                     }
                 }
 			},
@@ -286,7 +269,17 @@
                 "R": {
                     "1": {
                         "rwy": "21",
-                        "prio": 1
+                        "prio": 1,
+                        "climbvia": true
+                    }
+                }
+			},
+            "IXWIB": {
+                "R": {
+                    "1": {
+                        "rwy": "21",
+                        "prio": 1,
+                        "climbvia": true
                     }
                 }
 			},
@@ -297,14 +290,10 @@
                         "prio": 1,
                         "climbvia": true
                     }
-                },
-                "R": {
-                    "1": {
-                        "rwy": "21",
-                        "prio": 1
-                    }
-                },
-                "G": {
+                }
+			},
+            "EDRZ": {
+                "A": {
                     "1": {
                         "rwy": "03",
                         "equip": {"NON-RNAV": true},
