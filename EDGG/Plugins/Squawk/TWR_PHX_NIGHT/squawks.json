@@ -345,6 +345,11 @@
          "color":"#00ff00"
       },
       {
+         "code":"7601",
+         "message":"VMC",
+         "color":"#96960a"
+      },
+      {
          "code":"7740",
          "message":"FIS",
          "color":"#00ff00"
