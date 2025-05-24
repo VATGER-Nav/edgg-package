@@ -229,7 +229,7 @@ Shortcut_Map_Target=2,Labels\Stands   (EDDF)
 Shortcut_Map_Target=3,Restrictions\Restrictions (EDDF)
 Shortcut_Map_Target=7,Apron Info\Break Away Areas
 Shortcut_Map_Target=8,Runway Crossing\25
-Shortcut_Map_Target=9,Runway Crossing\07
+Shortcut_Map_Target=9,Runway Crossing\07 (NOTAM)
 System_RIM=0
 Window_TSW_Rotation=200.3
 

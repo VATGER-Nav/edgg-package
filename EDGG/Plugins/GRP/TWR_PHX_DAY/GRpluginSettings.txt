@@ -8,7 +8,7 @@ Color_Unknown=120,120,120
 
 Color_New_Stand=255,113,8
 
-Color_Information=0,72,0
+Color_Information=0,181,27
 Color_InformationText=30,30,30
 Color_Warning=255,120,0
 Color_APP_Background=227,227,227
@@ -229,7 +229,7 @@ Shortcut_Map_Target=2,Labels\Stands   (EDDF)
 Shortcut_Map_Target=3,Restrictions\Restrictions (EDDF)
 Shortcut_Map_Target=7,Apron Info\Break Away Areas
 Shortcut_Map_Target=8,Runway Crossing\25
-Shortcut_Map_Target=9,Runway Crossing\07
+Shortcut_Map_Target=9,Runway Crossing\07 (NOTAM)
 System_RIM=0
 Window_TSW_Rotation=200.3
 
