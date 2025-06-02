@@ -1,0 +1,205 @@
+{%- set EDGG = data.airspace['lines']['EDGG'] %}
+{%- set EDSB = {
+    'A': EDGG['EDSBCLDA']['015-065'],
+    'B': EDGG['EDSBCLDB']['015-065'],
+    'C': EDGG['EDSBCLDC']['025-065'],
+    'D': EDGG['EDSBCLDD']['025-065'],
+    'E': EDGG['EDSBCLDE']['025-065'],
+    'F': EDGG['EDSBCLDF']['035-065'],
+    'G': EDGG['EDSBCLDG']['035-065'],
+    'H': EDGG['EDSBCLDH']['045-065']
+} -%}
+
+MAP:EDDF C/D
+FOLDER:Airspace C/D/E
+ASRDATA:EDGG,EDDF
+COLOR:standard
+LAYER:-2
+STYLE:Solid:1
+ACTIVE:RWY:ARR:EDDF25R:DEP:*
+ACTIVE:RWY:ARR:EDDF25L:DEP:*
+ACTIVE:RWY:ARR:EDDF25C:DEP:*
+ACTIVE:RWY:ARR:EDDF07R:DEP:*
+ACTIVE:RWY:ARR:EDDF07L:DEP:*
+ACTIVE:RWY:ARR:EDDF07C:DEP:*
+ACTIVE:RWY:ARR:*:DEP:EDDF25R
+ACTIVE:RWY:ARR:*:DEP:EDDF25L
+ACTIVE:RWY:ARR:*:DEP:EDDF25C
+ACTIVE:RWY:ARR:*:DEP:EDDF07R
+ACTIVE:RWY:ARR:*:DEP:EDDF07L
+ACTIVE:RWY:ARR:*:DEP:EDDF07C
+{% for uuid, geom in data.topsky['common']['airspace']['EDDFCLC'].items() %}
+{{- geom | to_line('') -}}
+{% endfor %}
+{{ render_sectorlines(data.aor['lines']['EDGG']['EDDFAPP']['000-135']) }}
+
+
+MAP:DL/DK C/D
+FOLDER:Airspace C/D/E
+ASRDATA:EDGG,EDDL,EDDK
+COLOR:standard
+LAYER:-2
+STYLE:Solid:1
+ACTIVE:RWY:ARR:EDDL23R:DEP:*
+ACTIVE:RWY:ARR:EDDL23L:DEP:*
+ACTIVE:RWY:ARR:EDDL05R:DEP:*
+ACTIVE:RWY:ARR:EDDL05L:DEP:*
+ACTIVE:RWY:ARR:EDDK13R:DEP:*
+ACTIVE:RWY:ARR:EDDK13L:DEP:*
+ACTIVE:RWY:ARR:EDDK31R:DEP:*
+ACTIVE:RWY:ARR:EDDK31L:DEP:*
+ACTIVE:RWY:ARR:EDDK06:DEP:*
+ACTIVE:RWY:ARR:EDDK24:DEP:*
+ACTIVE:RWY:ARR:*:DEP:EDDL23R
+ACTIVE:RWY:ARR:*:DEP:EDDL23L
+ACTIVE:RWY:ARR:*:DEP:EDDL05R
+ACTIVE:RWY:ARR:*:DEP:EDDL05L
+ACTIVE:RWY:ARR:*:DEP:EDDK13R
+ACTIVE:RWY:ARR:*:DEP:EDDK13L
+ACTIVE:RWY:ARR:*:DEP:EDDK31R
+ACTIVE:RWY:ARR:*:DEP:EDDK31L
+ACTIVE:RWY:ARR:*:DEP:EDDK06
+ACTIVE:RWY:ARR:*:DEP:EDDK24
+{% for uuid, geom in data.topsky['common']['airspace']['EDLLCLC'].items() %}
+{{- geom | to_line('') -}}
+{% endfor %}
+
+MAP:EDDS C/D
+FOLDER:Airspace C/D/E
+COLOR:standard
+ASRDATA:EDGG,EDDS
+LAYER:-2
+STYLE:Solid:1
+ACTIVE:RWY:ARR:EDDS25:DEP:*
+ACTIVE:RWY:ARR:EDDS07:DEP:*
+ACTIVE:RWY:ARR:*:DEP:EDDS25
+ACTIVE:RWY:ARR:*:DEP:EDDS07
+// EDDSCLD
+{{ render_sectorlines(
+    EDGG['EDDSCLDF']['075-100'],
+    sector_sub(
+        EDGG['EDDSCLDE']['075-100'], 
+        EDGG['EDDSCLDC']['055-100']
+        ),
+    sector_sub(
+        EDGG['EDDSCLDC']['055-100'], 
+        EDGG['EDDSCLDF']['075-100']
+        ),
+    EDGG['EDDSCLDB']['055-100'],
+) }}
+
+MAP:EDDG D
+FOLDER:Airspace C/D/E
+COLOR:standard
+LAYER:-2
+STYLE:Solid:1
+ACTIVE:RWY:ARR:EDDG25:DEP:*
+ACTIVE:RWY:ARR:EDDG07:DEP:*
+ACTIVE:RWY:ARR:*:DEP:EDDG25
+ACTIVE:RWY:ARR:*:DEP:EDDG07
+{{ render_sectorlines(EDGG['EDDGCLD']['025-045']) }}
+
+MAP:EDFH D
+FOLDER:Airspace C/D/E
+COLOR:standard
+LAYER:-2
+STYLE:Solid:1
+ACTIVE:RWY:ARR:EDFH21:DEP:*
+ACTIVE:RWY:ARR:EDFH03:DEP:*
+ACTIVE:RWY:ARR:*:DEP:EDFH21
+ACTIVE:RWY:ARR:*:DEP:EDFH03
+{{ render_sectorlines(
+    sector_sub(
+        EDGG['EDFHCLDE']['035-065'], 
+        EDGG['EDFHCLDB']['025-065']
+        ),
+    sector_sub(
+        EDGG['EDFHCLDD']['035-065'], 
+        EDGG['EDFHCLDA']['025-065']
+        ),
+    sector_sub(
+        EDGG['EDFHCLDA']['025-065'], 
+        EDGG['EDFHCLDC']['035-065']
+        ),
+    sector_sub(
+        EDGG['EDFHCLDB']['025-065'], 
+        EDGG['EDFHCLDC']['035-065']
+        ),
+    EDGG['EDFHCLDC']['035-065'],
+) }}
+
+MAP:EDLV D
+FOLDER:Airspace C/D/E
+COLOR:standard
+LAYER:-2
+STYLE:Solid:1
+ACTIVE:RWY:ARR:EDLV27:DEP:*
+ACTIVE:RWY:ARR:EDLV09:DEP:*
+ACTIVE:RWY:ARR:*:DEP:EDLV27
+ACTIVE:RWY:ARR:*:DEP:EDLV09
+{{ render_sectorlines(EDGG['EDLVCLD']['025-065']) }}
+
+MAP:EDLW D
+FOLDER:Airspace C/D/E
+COLOR:standard
+LAYER:-2
+STYLE:Solid:1
+ACTIVE:RWY:ARR:EDLW24:DEP:*
+ACTIVE:RWY:ARR:EDLW06:DEP:*
+ACTIVE:RWY:ARR:*:DEP:EDLW24
+ACTIVE:RWY:ARR:*:DEP:EDLW06
+{{ render_sectorlines(
+    EDGG['EDLWCLDB']['025-045'],
+    sector_sub(
+        EDGG['EDLWCLDA']['020-045'],
+        EDGG['EDLWCLDB']['025-045']
+        ),
+) }}
+
+MAP:EDSB D
+FOLDER:Airspace C/D/E
+COLOR:standard
+LAYER:-2
+STYLE:Solid:1
+ACTIVE:RWY:ARR:EDSB03:DEP:*
+ACTIVE:RWY:ARR:EDSB21:DEP:*
+ACTIVE:RWY:ARR:*:DEP:EDSB03
+ACTIVE:RWY:ARR:*:DEP:EDSB21
+{{ render_sectorlines(
+    EDSB['C'],
+    EDSB['H'],
+
+    sector_sub(
+        sector_sub(
+            EDSB['B'],
+            EDSB['C']
+        ),
+        EDSB['H']
+    ),
+    sector_sub(
+        sector_sub(
+            EDSB['E'],
+            EDSB['B']
+        ),
+        EDSB['H']
+    ),
+    sector_sub(
+        sector_sub(
+            EDSB['G'],
+            EDSB['E']
+        ),
+        EDSB['H']
+    ),
+    sector_sub(
+            EDSB['A'],
+            EDSB['C']
+        ),
+    sector_sub(
+            EDSB['D'],
+            EDSB['A']
+        ),
+    sector_sub(
+            EDSB['F'],
+            EDSB['D']
+        ),
+) }}
