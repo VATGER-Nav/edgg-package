@@ -1,5 +1,13 @@
 Setup_COOPANS=1
 
+FlightLeg_Font=Lucida Sans Unicode
+Maps_Font=Lucida Sans Unicode
+System_GUI_Font_1=Lucida Sans Unicode
+System_GUI_Font_2=Lucida Sans Unicode
+System_GUI_Font_Fixed_1=EuroScope
+Vector_AHDG_Font=Lucida Sans Unicode
+Vector_MinSep_Font=Lucida Sans Unicode
+
 Airspace_ASSR_Type=2
 Airspace_ASSR_AutoAssign_Type=0
 Airspace_ModeS_Code_VFR=7000
