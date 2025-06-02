@@ -1,0 +1,45 @@
+{%- set fixes = [
+    'EBIPA',
+    'KERAX',
+    'MAMBU',
+    'OSPUL',
+    'RAMOB',
+    'SPESA',
+    'BIKMU',
+    'DOMUX',
+    'ELDAR',
+    'HALME',
+    'PISAP',
+    'DEPOK',
+    'ERNEP',
+    'GULKO',
+    'KOPAG',
+    'ARSUT',
+    'BADSO',
+    'NOSBU',
+    'REUTL',
+    'TEKSI',
+    'DODAS',
+    'LETKU',
+    'ROBEL',
+    'BETEX',
+    'BITBU',
+    'EXCOS',
+] %}
+
+MAP:TMA Fixes
+FOLDER:Fixes
+ACTIVE:1
+ASRDATA:EDGG,EDDK,EDDL,EDDS
+COLOR:standard
+{%- for fx in fixes %}
+SYMBOL:FIX3:{{fx}}
+{%- endfor %}
+
+MAP:TMA Fixes w/ L
+FOLDER:Fixes
+TEXTALIGN:LB
+COLOR:standard
+{%- for fx in fixes %}
+SYMBOL:FIX3:{{fx}}:{{fx}}:5:0
+{%- endfor %}
