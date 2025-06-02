@@ -143,7 +143,7 @@ Shortcut_Map_Target=1,MVA\MVA Warm (MAR-NOV)
 Shortcut_Map_Target=2,Airspace\Airspace Labels
 Shortcut_Map_Target=3,Tools\Seperation Guide Lower
 Shortcut_Map_Target=4,Tools\Seperation Guide Upper
-Shortcut_Map_Target=5,Borders
+Shortcut_Map_Target=5,Sectors\UAC Highlight
 Shortcut_Map_Target=6,VFR\VFR Reporting Points
 
 STCA_Sep_Lat_SepLevel=24500

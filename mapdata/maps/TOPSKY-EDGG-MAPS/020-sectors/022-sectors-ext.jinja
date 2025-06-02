@@ -1,0 +1,197 @@
+//---------------------------------------------------------------
+//                        Exteriour Sectors
+//---------------------------------------------------------------
+
+{%- set EDGG = data.sectors['lines']['EDGG'] %}
+{%- set EDMM = data.sectors['lines']['EDMM'] %}
+{%- set EDWW = data.sectors['lines']['EDWW'] %}
+{%- set EHAA = data.sectors['lines']['EHAA'] %}
+{%- set EBBU = data.sectors['lines']['EBBU'] %}
+{%- set LFEE = data.sectors['lines']['LFEE'] %}
+{%- set LSAS = data.sectors['lines']['LSAS'] %}
+{%- set EXT = data.sectors_ext['lines'] %}
+{%- set ADF = data.sectors_adf['lines']['EDGG'] %}
+
+MAP:EXT ACC
+ACTIVE:1
+COLOR:standard
+FOLDER:Sectors
+ASRDATA:EDGG
+STYLE:Solid:1
+// EDMM ACC 
+// EBG Approach - ILR
+{{ render_sectorlines(
+		EDMM['EDMMILR1']['000-105'],
+        EDMM['EDMMILR2']['095-105'],
+    ) }}
+
+// EBG West - ALB FUE NDG WLD
+{{ render_sectorlines(
+        EDMM['EDMMALB']['135-245'],
+
+        EDMM['EDMMFUE']['195-245'],
+        sector_sub(
+            EDMM['EDMMFUE']['105-145'],
+            EDMM['EDMMFUE']['195-245']
+            ),
+
+		EDMM['EDMMNDG']['195-245'],
+        sector_sub(
+            EDMM['EDMMNDG']['000-105'],
+            EDMM['EDMMNDG']['195-245']
+            ),
+
+        EDMM['EDMMWLD']['105-245'],
+    ) }}
+
+// EBG East - BBG FRK GER HAL TRN TRS
+{{ render_sectorlines(
+        sector_sub(
+            EDMM['EDMMBBG']['195-245'],
+            EDMM['EDMMFRK']['135-195']
+            ),
+
+        EDMM['EDMMFRK']['000-135'],
+        sector_sub(
+            EDMM['EDMMFRK']['135-195'],
+            EDMM['EDMMFRK']['000-135']
+            ),
+        
+        sector_and(
+            EDMM['EDMMGER']['195-245'],
+            EDMM['EDMMHAL']['195-245']
+            ),  
+
+        EDMM['EDMMTRN']['000-145'],
+        sector_sub(
+            EDMM['EDMMTRN']['145-165'],
+            EDMM['EDMMTRN']['000-145']
+            ),
+        sector_sub(
+            EDMM['EDMMTRN']['165-195'],
+            EDMM['EDMMTRN']['145-165']
+            ),
+
+        EDMM['EDMMTRS']['000-145'],
+        sector_sub(
+            EDMM['EDMMTRS']['145-195'],
+            EDMM['EDMMTRS']['000-145']
+            ),
+    ) }}
+
+// EDWW ACC
+// EBG South - EMS HRZ HAN
+{{ render_sectorlines(
+        EDWW['EDWWEMS1']['000-245'],
+        EDWW['EDWWEMS2']['105-245'],
+        EXT['EDWW']['EDWWEMS3']['000-025'],
+
+        EDWW['EDWWHRZ1']['000-245'],
+        EDWW['EDWWHRZ2']['105-245'],
+
+        sector_sub(
+            EDWW['EDWWHAN']['000-105'],
+            EDWW['EDWWHRZ2']['105-245']
+            ),
+    ) }}
+
+// EHAA ACC
+{{ render_sectorlines(
+        EHAA['EHBK TMA1']['015-095'],
+        EHAA['EHMC TMA C']['095-245'],
+        EHAA['EHMC TMA D']['015-245'],
+        EHAA['EHMC TMA D 2']['015-095'],
+        EHAA['EHMC TMA E']['015-095'],
+    ) }}
+
+// EBBU ACC
+{{ render_sectorlines(
+        EXT['EBBU']['ELLX TMA']['000-145'],
+        EXT['EBBU']['ELLX TMA']['000-165'],
+        EXT['EBBU']['ELLX TMA']['000-095'],
+
+        EXT['EBBU']['EBLG TMA1']['000-055'],
+        EXT['EBBU']['EBLG TMA3-4-5']['000-055'],
+
+        EXT['EBBU']['EBBU EHS']['195-245'],
+        sector_sub(
+            EXT['EBBU']['EBBU CTA E5']['095-185'],
+            EXT['EBBU']['EBBU EHS']['195-245']
+            ),
+        sector_sub(
+            EXT['EBBU']['EBBU ELS1']['045-055'],
+            EXT['EBBU']['EBBU EHS']['195-245']
+            ),
+        EXT['EBBU']['EBBU HUL']['185-245'],
+
+        sector_sub(
+            EXT['EBBU']['EBBU LUS']['145-165'],
+            EXT['EBBU']['ELLX TMA']['000-145']
+            ),
+    ) }}
+
+// LFEE ACC
+{{ render_sectorlines(
+        EXT['LFEE']['UE']['195-315'],
+        sector_sub(
+            LFEE['BO']['145-195'],
+            EXT['LFEE']['UE']['195-315']
+            ),
+        sector_sub(
+            LFEE['LFEE_SU1']['115-195'],
+            EXT['LFEE']['UE']['195-315']
+            ),
+        sector_sub(
+            LFEE['LFEE_SU2']['115-195'],
+            EXT['LFEE']['UE']['195-315']
+            ),
+        sector_sub(
+            EXT['LFEE']['UE1']['195-245'],
+            LFEE['LFEE_SU2']['115-195']
+            ),
+        
+        sector_sub(
+            LFEE['LFEE_BC']['115-145'],
+            LFEE['BO']['145-195']
+            ),
+    
+        LFEE['BALE_DELEG.LANGEN_NORD']['000-145'],
+    ) }}
+
+// LSAS ACC
+{{ render_sectorlines(
+        LSAS['ARFA']['000-105'],
+        sector_sub(
+            LSAS['LSASZE']['105-125'],
+            LSAS['ARFA']['000-105']
+            ),
+        sector_sub(
+            LSAS['LSASZE']['125-245'],
+            LSAS['LSASZE']['105-125'],
+            ),
+
+        LSAS['LSASZN']['125-245'],
+        sector_sub(
+            LSAS['LSASZN']['000-125'],
+            LSAS['LSASZN']['125-245'],
+            ),
+        sector_sub(
+            LSAS['LSASZN']['105-125'],
+            LSAS['LSASZN']['125-245'],
+            ),
+        sector_sub(
+            LSAS['LSASZN']['115-125'],
+            LSAS['LSASZN']['125-245'],
+            ),        
+
+        LSAS['LSASZW']['125-245'],
+
+        sector_sub(
+            LSAS['LSASZW']['115-125'],
+            LSAS['LSASZW']['125-245'],
+            ),
+        
+        EXT['LSAS']['LSZH-APD']['000-125'],
+        EXT['LSAS']['LSZH-APE']['000-125'],
+        EXT['LSAS']['LSZH-APW']['000-125'],
+    ) }}
