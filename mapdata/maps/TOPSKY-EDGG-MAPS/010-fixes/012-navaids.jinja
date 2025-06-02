@@ -1,0 +1,96 @@
+{%- set navaids = [
+    'ALG',
+    'ANS',
+    'AUG',
+    'BAM',
+    'BLM',
+    'BOT',
+    'CHA',
+    'COL',
+    'DIK',
+    'DKB',
+    'DOR',
+    'DRN',
+    'ERF',
+    'ERL',
+    'FFM',
+    'FHH',
+    'FUL',
+    'GED',
+    'GMH',
+    'GOT',
+    'GSB',
+    'GTQ',
+    'HAN',
+    'HLZ',
+    'HMM',
+    'HOC',
+    'ILM',
+    'INN',
+    'KBD',
+    'KLF',
+    'KLO',
+    'KPT',
+    'KRH',
+    'LAA',
+    'LBU',
+    'LIE',
+    'LMA',
+    'LNO',
+    'LUX',
+    'MAG',
+    'MAH',
+    'MAS',
+    'MHV',
+    'MIQ',
+    'MND',
+    'MTR',
+    'NIE',
+    'NKR',
+    'NTM',
+    'NVO',
+    'OKG',
+    'OSN',
+    'OTT',
+    'PAT',
+    'RDG',
+    'FKS',
+    'RKN',
+    'RMS',
+    'RTT',
+    'SAD',
+    'SAS',
+    'SBG',
+    'SHD',
+    'SPA',
+    'SPI',
+    'SPY',
+    'SUL',
+    'TAU',
+    'TRA',
+    'VFM',
+    'WIB',
+    'WLD',
+    'WRB',
+    'WSN',
+    'WYP',
+    'ZUE',
+    'ZWN',
+] %}
+
+MAP:Navaids
+FOLDER:Fixes
+ACTIVE:1
+ASRDATA:EDGG,EDDK,EDDL,EDDS
+COLOR:standard
+{%- for nav in navaids %}
+SYMBOL:VOR:{{nav}}
+{%- endfor %}
+
+MAP:Navaids w/ L
+FOLDER:Fixes
+TEXTALIGN:LB
+COLOR:standard
+{%- for nav in navaids %}
+SYMBOL:VOR:{{nav}}:{{nav}}:5:0
+{%- endfor %}
