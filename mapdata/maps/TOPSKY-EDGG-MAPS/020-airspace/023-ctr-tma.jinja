@@ -1,0 +1,52 @@
+{%- set EDGG = data.airspace['lines']['EDGG'] %}
+
+// Special CTR Maps for APP sectors
+
+MAP:EDDF TMA CTR
+FOLDER:D(CTR) | ATZ
+ACTIVE:1
+ASRDATA:EDDF
+COLOR:standard
+STYLE:DashDot:1
+{{ render_sectorlines(
+        EDGG['EDDFCTR']['000-025'],
+        sector_sub(
+            EDGG['ETOUCTR']['000-015'], 
+            EDGG['EDDFCTR']['000-025']
+            ),
+        sector_sub(
+            EDGG['EDFEATZ']['000-015'], 
+            EDGG['EDDFCTR']['000-025']
+            ),
+) }}
+
+MAP:DK/DL TMA CTR
+FOLDER:D(CTR) | ATZ
+ACTIVE:1
+ASRDATA:EDDK,EDDL
+COLOR:standard
+STYLE:DashDot:1
+{{ render_sectorlines(
+        EDGG['EDDLCTR']['000-025'],
+        EDGG['EDDKCTR']['000-025'],
+        EDGG['EDLNCTR']['000-020'],
+        EDGG['ETNGCTR']['000-030'],
+        EDGG['ETNNCTR']['000-029'],
+        EDGG['EDLEATZ']['000-015'],
+) }}
+// EHBKCTR
+{{ data.topsky['common']['airspace']['EHBKCTR_a'] | to_line('') -}}
+{{ data.topsky['common']['airspace']['EHBKCTR_b'] | to_line('') -}}
+
+MAP:EDDS TMA CTR
+FOLDER:D(CTR) | ATZ
+ACTIVE:1
+ASRDATA:EDDS
+COLOR:standard
+STYLE:DashDot:1
+{{ render_sectorlines(
+        EDGG['EDDSCTR']['000-035'],
+        EDGG['EDSBCTR']['000-025'],
+        EDGG['EDTLCTR']['000-025'],
+        EDGG['EDTYRMZ']['000-010'],
+) }}
