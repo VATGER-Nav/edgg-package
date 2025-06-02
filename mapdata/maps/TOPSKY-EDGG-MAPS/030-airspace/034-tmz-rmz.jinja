@@ -1,0 +1,226 @@
+//---------------------------------------------------------------
+//                             RMZ/TMZ
+//---------------------------------------------------------------
+{%- set EDGG = data.airspace['lines']['EDGG'] %}
+
+MAP:EDFQ RMZ
+FOLDER:RMZ/TMZ
+COLOR:standard
+STYLE:Dot:1
+ACTIVE:RWY:ARR:EDFQ29:DEP:*
+ACTIVE:RWY:ARR:EDFQ11:DEP:*
+ACTIVE:RWY:ARR:*:DEP:EDFQ29
+ACTIVE:RWY:ARR:*:DEP:EDFQ11
+{{ render_sectorlines(EDGG['EDFQRMZ']['000-010']) }}
+
+MAP:EDGS RMZ
+FOLDER:RMZ/TMZ
+COLOR:standard
+STYLE:Dot:1
+ACTIVE:RWY:ARR:EDGS31:DEP:*
+ACTIVE:RWY:ARR:EDGS13:DEP:*
+ACTIVE:RWY:ARR:*:DEP:EDGS31
+ACTIVE:RWY:ARR:*:DEP:EDGS13
+{{ render_sectorlines(EDGG['EDGSRMZ']['000-010']) }}
+
+MAP:EDQG RMZ
+FOLDER:RMZ/TMZ
+STYLE:Dot:1
+COLOR:standard
+ACTIVE:RWY:ARR:EDQG08:DEP:*
+ACTIVE:RWY:ARR:EDQG26:DEP:*
+ACTIVE:RWY:ARR:*:DEP:EDQG08
+ACTIVE:RWY:ARR:*:DEP:EDQG26
+{{ render_sectorlines(EDGG['EDQGRMZ']['000-010']) }}
+
+MAP:EDRY RMZ
+FOLDER:RMZ/TMZ
+STYLE:Dot:1
+COLOR:standard
+ACTIVE:RWY:ARR:EDRY34:DEP:*
+ACTIVE:RWY:ARR:EDRY16:DEP:*
+ACTIVE:RWY:ARR:*:DEP:EDRY34
+ACTIVE:RWY:ARR:*:DEP:EDRY16
+{{ render_sectorlines(EDGG['EDRYRMZ']['000-010']) }}
+
+MAP:EDRZ RMZ
+FOLDER:RMZ/TMZ
+STYLE:Dot:1
+COLOR:standard
+ACTIVE:RWY:ARR:EDDR26:DEP:*
+ACTIVE:RWY:ARR:EDDR08:DEP:*
+ACTIVE:RWY:ARR:EDRZ21:DEP:*
+ACTIVE:RWY:ARR:EDRZ03:DEP:*
+ACTIVE:RWY:ARR:*:DEP:EDDR26
+ACTIVE:RWY:ARR:*:DEP:EDDR08
+ACTIVE:RWY:ARR:*:DEP:EDRZ21
+ACTIVE:RWY:ARR:*:DEP:EDRZ03
+{{ render_sectorlines(EDGG['EDRZRMZ']['000-010']) }}
+
+MAP:EDTD RMZ
+FOLDER:RMZ/TMZ
+STYLE:Dot:1
+COLOR:standard
+ACTIVE:RWY:ARR:EDTD18:DEP:*
+ACTIVE:RWY:ARR:EDTD36:DEP:*
+ACTIVE:RWY:ARR:*:DEP:EDTD18
+ACTIVE:RWY:ARR:*:DEP:EDTD36
+{{ render_sectorlines(EDGG['EDTDRMZ']['000-010']) }}
+
+MAP:EDTM RMZ
+FOLDER:RMZ/TMZ
+STYLE:Dot:1
+COLOR:standard
+ACTIVE:RWY:ARR:EDTM07:DEP:*
+ACTIVE:RWY:ARR:EDTM25:DEP:*
+ACTIVE:RWY:ARR:*:DEP:EDTM07
+ACTIVE:RWY:ARR:*:DEP:EDTM25
+{{ render_sectorlines(EDGG['EDTMRMZ']['000-010']) }}
+
+MAP:EDTY RMZ
+FOLDER:RMZ/TMZ
+COLOR:standard
+STYLE:Dot:1
+ACTIVE:RWY:ARR:EDTY28:DEP:*
+ACTIVE:RWY:ARR:EDTY10:DEP:*
+ACTIVE:RWY:ARR:*:DEP:EDTY28
+ACTIVE:RWY:ARR:*:DEP:EDTY10
+{{ render_sectorlines(EDGG['EDTYRMZ']['000-010']) }}
+
+MAP:EDDG TMZ
+FOLDER:RMZ/TMZ
+COLOR:standard
+ACTIVE:RWY:ARR:EDDG25:DEP:*
+ACTIVE:RWY:ARR:EDDG07:DEP:*
+ACTIVE:RWY:ARR:*:DEP:EDDG25
+ACTIVE:RWY:ARR:*:DEP:EDDG07
+STYLE:Dash:1
+{{ render_sectorlines(
+    EDGG['EDDGTMZA']['045-060'],
+    sector_sub(
+        EDGG['EDDGTMZB']['035-060'],
+        EDGG['EDDGTMZA']['045-060']
+        ),
+    sector_sub(
+        EDGG['EDDGTMZC']['045-060'],
+        EDGG['EDDGTMZB']['035-060']
+        ),
+    sector_sub(
+        EDGG['EDDGTMZD']['045-060'],
+        EDGG['EDDGTMZB']['035-060']
+        ),
+) }}
+
+MAP:EDDR TMZ
+FOLDER:RMZ/TMZ
+COLOR:standard
+ACTIVE:RWY:ARR:EDDR26:DEP:*
+ACTIVE:RWY:ARR:EDDR08:DEP:*
+ACTIVE:RWY:ARR:*:DEP:EDDR26
+ACTIVE:RWY:ARR:*:DEP:EDDR08
+STYLE:Dash:1
+{{ render_sectorlines(EDGG['EDDRTMZ']['025-065']) }}
+
+MAP:EDFH TMZ
+FOLDER:RMZ/TMZ
+COLOR:standard
+ACTIVE:RWY:ARR:EDFH21:DEP:*
+ACTIVE:RWY:ARR:EDFH03:DEP:*
+ACTIVE:RWY:ARR:*:DEP:EDFH21
+ACTIVE:RWY:ARR:*:DEP:EDFH03
+STYLE:Dash:1
+{{ render_sectorlines(
+    EDGG['EDFHTMZC']['055-075'],
+    EDGG['EDFHTMZD']['055-075'],
+    sector_sub(
+        sector_sub(
+            EDGG['EDFHTMZA']['045-075'],
+            EDGG['EDFHTMZC']['055-075'],
+        ),
+        EDGG['EDFHTMZD']['055-075'],
+        ),
+    sector_sub(
+        sector_sub(
+            EDGG['EDFHTMZB']['045-075'],
+            EDGG['EDFHTMZC']['055-075'],
+        ),
+        EDGG['EDFHTMZD']['055-075'],
+        ),
+) }}
+
+MAP:EDLP TMZ
+FOLDER:RMZ/TMZ
+COLOR:standard
+ACTIVE:RWY:ARR:EDLP24:DEP:*
+ACTIVE:RWY:ARR:EDLP06:DEP:*
+ACTIVE:RWY:ARR:*:DEP:EDLP24
+ACTIVE:RWY:ARR:*:DEP:EDLP06
+STYLE:Dash:1
+{{ render_sectorlines(
+    EDGG['EDLPTMZA']['025-060'],
+    sector_sub(
+        EDGG['EDLPTMZB']['035-060'],
+        EDGG['EDLPTMZA']['025-060']
+        ),
+    sector_sub(
+        EDGG['EDLPTMZC']['035-060'],
+        EDGG['EDLPTMZA']['025-060']
+        ),
+    sector_sub(
+        EDGG['EDLPTMZD']['045-060'],
+        EDGG['EDLPTMZB']['035-060']
+        ),
+) }}
+
+MAP:EDLV TMZ
+FOLDER:RMZ/TMZ
+COLOR:standard
+ACTIVE:RWY:ARR:EDLV27:DEP:*
+ACTIVE:RWY:ARR:EDLV09:DEP:*
+ACTIVE:RWY:ARR:*:DEP:EDLV27
+ACTIVE:RWY:ARR:*:DEP:EDLV09
+STYLE:Dash:1
+{{ render_sectorlines(
+    EDGG['EDLVTMZD']['030-065'],
+    sector_sub(
+        EDGG['EDLVTMZC']['025-065'],
+        EDGG['EDLVTMZD']['030-065']
+        ),
+    sector_sub(
+        EDGG['EDLVTMZE']['035-065'],
+        EDGG['EDLVTMZC']['025-065']
+        ),
+    sector_sub(
+        EDGG['EDLVTMZF']['045-065'],
+        EDGG['EDLVTMZC']['025-065']
+        ),
+    sector_sub(
+        EDGG['EDLVTMZG']['045-065'],
+        EDGG['EDLVTMZE']['035-065']
+        ),
+    sector_sub(
+        sector_sub(
+            EDGG['EDLVTMZB']['025-065'],
+            EDGG['EDLVTMZE']['035-065'],
+        ),
+        EDGG['EDLVTMZG']['045-065'],
+        ),
+) }}
+
+MAP:EDLW TMZ
+FOLDER:RMZ/TMZ
+COLOR:standard
+ACTIVE:RWY:ARR:EDLW24:DEP:*
+ACTIVE:RWY:ARR:EDLW06:DEP:*
+ACTIVE:RWY:ARR:*:DEP:EDLW24
+ACTIVE:RWY:ARR:*:DEP:EDLW06
+STYLE:Dash:1
+{{ render_sectorlines(
+    EDGG['EDLWTMZA']['045-065'],
+    EDGG['EDLWTMZC']['035-065'],
+    sector_sub(
+        EDGG['EDLWTMZD']['045-065'],
+        EDGG['EDLWTMZC']['035-065']
+        ),
+
+) }}
