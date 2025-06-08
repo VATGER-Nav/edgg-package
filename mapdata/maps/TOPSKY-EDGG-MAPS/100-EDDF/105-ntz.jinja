@@ -1,0 +1,29 @@
+//------------------------ No Touching Zone ---------------------
+
+MAP:NTZ 25L/R
+FOLDER:EDDF
+LAYER:-2
+COLOR:orange
+STYLE:Solid:1
+{{ data.topsky['common']['EDDF']['ntz']['25R-25L'] | to_coordline('') }}
+
+MAP:NTZ 25C/R
+FOLDER:EDDF
+LAYER:-2
+COLOR:red
+STYLE:Solid:1
+{{ data.topsky['common']['EDDF']['ntz']['25R-25C'] | to_coordline('') }}
+
+MAP:NTZ 07R/L
+FOLDER:EDDF
+LAYER:-2
+COLOR:orange
+STYLE:Solid:1
+{{ data.topsky['common']['EDDF']['ntz']['07L-07R'] | to_coordline('') }}
+
+MAP:NTZ 07C/L
+FOLDER:EDDF
+LAYER:-2
+COLOR:red
+STYLE:Solid:1
+{{ data.topsky['common']['EDDF']['ntz']['07L-07C'] | to_coordline('') }}

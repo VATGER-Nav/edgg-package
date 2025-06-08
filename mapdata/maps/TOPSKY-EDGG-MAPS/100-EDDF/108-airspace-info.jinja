@@ -1,0 +1,17 @@
+//------------------------- Airspace Info -----------------------
+
+MAP:Airspace Info
+FOLDER:EDDF
+ACTIVE:1
+ASRDATA:EDDF
+COLOR:standard
+// Obstacles
+ZOOM:8
+{% for desig, geom in data.topsky['common']['EDDF']['obstacles'].items() %}
+{{- geom | to_symbol('OBSTACLE') }}
+{% endfor %}
+// EDDF Airspace Levels
+FONTSIZE:=:14
+{% for desig, geom in data.topsky['common']['EDDF']['airspace_levels'].items() %}
+{{- geom | to_text(desig) }}
+{% endfor %}
