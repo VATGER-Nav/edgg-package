@@ -1,0 +1,320 @@
+//------------------ RNAV-Transitions (Separate) ----------------
+
+{#-
+    Note: This is only the second of two .jinja files used to draw
+    transitions in EDDF. Fixes stored in dicts below have copies
+    in "102-transitions-a.jinja". This couldn't be done otherwise, 
+    as the order of folders in TopSky Maps menu will appear unadequate.
+    
+    When Mapbuilder will support officially .json files, this has
+    to be redone! Other transitions don't need such workaround, as
+    the order of the folders is only defined by the first maps in
+    said folders.
+    
+    Changing these, don't forget about the first file!
+#}
+{%- set trans = {
+    "07": [
+        'DF431',
+        'DF432',
+        'DF436',
+        'DF437',
+        'DF439',
+        'DF441',
+        'DF444',
+        'DF613',
+        'DF623',
+        'DF635',
+        'DF636',
+        'DF640',
+        'DF644',
+        'INBOS',
+    ],
+    "25": [
+        'DF401',
+        'DF402',
+        'DF403',
+        'DF406',
+        'DF407',
+        'DF408',
+        'DF411',
+        'DF416',
+        'DF600',
+        'DF601',
+        'DF606',
+        'DF609',
+        'DF610',
+        'DF616',
+        'DF617',
+    ]
+} %}
+{%- set downwind = {
+    "07": [
+        'DF442',
+        'DF443',
+        'DF641',
+        'DF642',
+        'DF643',
+    ],
+    "25": [
+        'DF409',
+        'DF410',
+        'DF412',
+        'DF413',
+        'DF414',
+        'DF415',
+        'DF611',
+        'DF612',
+        'DF613',
+        'DF614',
+        'DF615',
+    ]
+} %}
+{%- set final = {
+    "07R": [
+        'DF654',
+        'DF653',
+        'DF652',
+        'DF660',
+        'DF670',
+    ],
+    "07C": [
+        'DF554',
+        'DF553',
+        'DF552',
+        'DF560',
+        'DF570',
+        'DF571',
+        'DF572',
+    ],
+    "07L": [
+        'DF454',
+        'DF453',
+        'DF450',
+        'DF470',
+        'DF460',
+    ],
+    "25L": [
+        'DF626',
+        'DF625',
+        'DF624',
+        'DF623',
+        'DF622',
+        'DF620',
+        'DF680',
+    ],
+    "25C": [
+        'DF526',
+        'DF525',
+        'DF524',
+        'DF523',
+        'DF522',
+        'DF530',
+        'DF580',
+        'DF581',
+        'DF582',
+    ],
+    "25R": [
+        'DF426',
+        'DF425',
+        'DF424',
+        'DF423',
+        'DF480',
+        'DF420',
+        'DF430',
+    ],
+} %}
+
+MAP:FINAL 07C
+COLOR:standard
+FOLDER:EDDF
+{%- for fx in final['07C'] %}
+SYMBOL:FIX3_L:{{fx}}
+{%- endfor %}
+ZOOM:8
+FONTSIZE:=:12
+{%- for fx in final['07C'] if fx not in ['DF571', 'DF572'] %}
+TEXT:{{fx}}:{{fx | replace('DF', '')}}:-6:-13
+{%- endfor %}
+TEXT:DF571:571:7:13
+TEXT:DF572:572:7:13
+
+MAP:FINAL 07R
+COLOR:standard
+FOLDER:EDDF
+{%- for fx in final['07R'] %}
+SYMBOL:FIX3_L:{{fx}}
+{%- endfor %}
+ZOOM:8
+FONTSIZE:=:12
+{%- for fx in final['07R'] %}
+TEXT:{{fx}}:{{fx | replace('DF', '')}}:10:18
+{%- endfor %}
+
+MAP:FINAL 07L
+COLOR:standard
+FOLDER:EDDF
+{%- for fx in final['07L'] %}
+SYMBOL:FIX3_L:{{fx}}
+{%- endfor %}
+ZOOM:8
+FONTSIZE:=:12
+{%- for fx in final['07L'] %}
+TEXT:{{fx}}:{{fx | replace('DF', '')}}:-8:-18
+{%- endfor %}
+
+MAP:FINAL 07C w/o X
+COLOR:standard
+FOLDER:EDDF
+ACTIVE:RWY:ARR:EDDF07C:DEP:*
+ZOOM:8
+FONTSIZE:=:12
+{%- for fx in final['07C'] if fx not in ['DF571', 'DF572'] %}
+TEXT:{{fx}}:{{fx | replace('DF', '')}}:-6:-13
+{%- endfor %}
+TEXT:DF571:571:7:13
+TEXT:DF572:572:7:13
+
+MAP:FINAL 07R w/o X
+COLOR:standard
+FOLDER:EDDF
+ACTIVE:RWY:ARR:EDDF07R:DEP:*
+ZOOM:8
+FONTSIZE:=:12
+{%- for fx in final['07R'] %}
+TEXT:{{fx}}:{{fx | replace('DF', '')}}:10:18
+{%- endfor %}
+
+MAP:FINAL 07L w/o X
+COLOR:standard
+FOLDER:EDDF
+ACTIVE:RWY:ARR:EDDF07L:DEP:*
+ZOOM:8
+FONTSIZE:=:12
+{%- for fx in final['07L'] %}
+TEXT:{{fx}}:{{fx | replace('DF', '')}}:-8:-18
+{%- endfor %}
+
+MAP:TRANS 07 w/o X
+FOLDER:EDDF
+ACTIVE:RWY:ARR:EDDF07R:DEP:*
+ACTIVE:RWY:ARR:EDDF07L:DEP:*
+ACTIVE:RWY:ARR:EDDF07C:DEP:*
+COLOR:darkgreen
+SYMBOL:FIX3_L:DF441
+SYMBOL:FIX3_L:DF640
+ZOOM:8
+COLOR:standard
+FONTSIZE:=:12
+TEXTALIGN:LB
+{%- for fx in trans['07'] %}
+TEXT:{{fx}}:{{fx | replace('DF', '')}}:5:0
+{%- endfor %}
+
+MAP:DOWNWIND 07
+COLOR:standard
+FOLDER:EDDF
+ZOOM:8
+FONTSIZE:=:12
+TEXTALIGN:LB
+{%- for fx in downwind['07'] %}
+TEXT:{{fx}}:{{fx | replace('DF', '')}}:5:0
+{%- endfor %}
+
+MAP:FINAL 25C
+COLOR:standard
+FOLDER:EDDF
+{%- for fx in final['25C'] %}
+SYMBOL:FIX3_L:{{fx}}
+{%- endfor %}
+ZOOM:8
+FONTSIZE:=:12
+{%- for fx in final['25C'] if fx not in ['DF581', 'DF582'] %}
+TEXT:{{fx}}:{{fx | replace('DF', '')}}:-6:-13
+{%- endfor %}
+TEXT:DF581:581:7:13
+TEXT:DF582:582:7:13
+
+MAP:FINAL 25L
+COLOR:standard
+FOLDER:EDDF
+{%- for fx in final['25L'] %}
+SYMBOL:FIX3_L:{{fx}}
+{%- endfor %}
+ZOOM:8
+FONTSIZE:=:12
+{%- for fx in final['25L'] %}
+TEXT:{{fx}}:{{fx | replace('DF', '')}}:10:18
+{%- endfor %}
+
+MAP:FINAL 25R
+COLOR:standard
+FOLDER:EDDF
+{%- for fx in final['25R'] %}
+SYMBOL:FIX3_L:{{fx}}
+{%- endfor %}
+ZOOM:8
+FONTSIZE:=:12
+{%- for fx in final['25R'] %}
+TEXT:{{fx}}:{{fx | replace('DF', '')}}:-8:-18
+{%- endfor %}
+
+MAP:FINAL 25C w/o X
+COLOR:standard
+FOLDER:EDDF
+ACTIVE:RWY:ARR:EDDF25C:DEP:*
+ZOOM:8
+FONTSIZE:=:12
+{%- for fx in final['25C'] if fx not in ['DF581', 'DF582'] %}
+TEXT:{{fx}}:{{fx | replace('DF', '')}}:-6:-13
+{%- endfor %}
+TEXT:DF581:581:7:13
+TEXT:DF582:582:7:13
+
+MAP:FINAL 25L w/o X
+COLOR:standard
+FOLDER:EDDF
+ACTIVE:RWY:ARR:EDDF25R:DEP:*
+ZOOM:8
+FONTSIZE:=:12
+{%- for fx in final['25L'] %}
+TEXT:{{fx}}:{{fx | replace('DF', '')}}:10:18
+{%- endfor %}
+
+MAP:FINAL 25R w/o X
+COLOR:standard
+FOLDER:EDDF
+ACTIVE:RWY:ARR:EDDF25L:DEP:*
+ZOOM:8
+FONTSIZE:=:12
+{%- for fx in final['25R'] %}
+TEXT:{{fx}}:{{fx | replace('DF', '')}}:-8:-18
+{%- endfor %}
+
+MAP:TRANS 25 w/o X
+FOLDER:EDDF
+ACTIVE:RWY:ARR:EDDF25R:DEP:*
+ACTIVE:RWY:ARR:EDDF25L:DEP:*
+ACTIVE:RWY:ARR:EDDF25C:DEP:*
+COLOR:darkgreen
+SYMBOL:FIX3_L:DF411
+SYMBOL:FIX3_L:DF609
+ZOOM:8
+COLOR:standard
+FONTSIZE:=:12
+TEXTALIGN:LB
+{%- for fx in trans['25'] %}
+TEXT:{{fx}}:{{fx | replace('DF', '')}}:5:0
+{%- endfor %}
+FONTSIZE:=:14
+TEXT:MEFTO:MEFTO:5:-16
+
+MAP:DOWNWIND 25
+COLOR:standard
+FOLDER:EDDF
+ZOOM:8
+FONTSIZE:=:12
+TEXTALIGN:LB
+{%- for fx in downwind['25'] %}
+TEXT:{{fx}}:{{fx | replace('DF', '')}}:5:0
+{%- endfor %}

@@ -1,0 +1,25 @@
+//------------------------- IPA Turnareas -----------------------
+
+MAP:IPA Turnarea 07
+FOLDER:EDDF
+COLOR:darkgreen
+LAYER:-1
+STYLE:Solid:1
+ASRDATA:EDDF
+ACTIVE:RWY:ARR:EDDF07C,EDDF07L:DEP:*
+ACTIVE:RWY:ARR:EDDF07R,EDDF07L:DEP:*
+{{ data.topsky['common']['EDDF']['ipa']['07_FAP'] | to_line('07 FAP') -}}
+{{ data.topsky['common']['EDDF']['ipa']['07R_IPA'] | to_line('07R IPA') -}}
+{{ data.topsky['common']['EDDF']['ipa']['07L_IPA'] | to_line('07L IPA') -}}
+
+MAP:IPA Turnarea 25
+FOLDER:EDDF
+COLOR:darkgreen
+LAYER:-1
+STYLE:Solid:1
+ASRDATA:EDDF
+ACTIVE:RWY:ARR:EDDF25C,EDDF25R:DEP:*
+ACTIVE:RWY:ARR:EDDF25L,EDDF25R:DEP:*
+{{ data.topsky['common']['EDDF']['ipa']['25_FAP'] | to_line('25 FAP') -}}
+{{ data.topsky['common']['EDDF']['ipa']['25L_IPA'] | to_line('25L IPA') -}}
+{{ data.topsky['common']['EDDF']['ipa']['25R_IPA'] | to_line('25R IPA') -}}
