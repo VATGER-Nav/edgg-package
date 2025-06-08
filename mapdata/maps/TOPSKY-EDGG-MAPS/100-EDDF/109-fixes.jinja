@@ -1,0 +1,48 @@
+//---------------------------- TMA Fixes ------------------------
+
+{%- set fixes = [
+    'DIXAT',
+    'DEBHI',
+    'EMPAX',
+    'UNOKO',
+    'RASVO',
+    'IMCOM',
+    'PETIX',
+    'ROLIS',
+] %}
+{%- set navaids = [
+    'TAU',
+    'MTR',
+    'CHA',
+    'GED',
+    'FKS',
+    'VFM',
+] %}
+
+MAP:Fixes/Navaids
+FOLDER:EDDF
+ACTIVE:1
+ASRDATA:EDDF
+COLOR:standard
+FONTSIZE:=:14
+TEXTALIGN:LC
+TEXT:RAMOB:RAMOB:5:0
+TEXT:KERAX:KERAX:0:0
+TEXT:EBIPA:EBIPA:0:0
+TEXT:OSPUL:OSPUL:0:15   
+TEXT:RIPKU:RIPKU:0:0
+TEXT:ETOU:ETOU:10:-7
+TEXT:EDFE:EDFE:5:-5
+
+TEXTALIGN:LB
+SYMBOL:FIX2_L:SPESA:SPESA:5:0
+{%- for fx in fixes %}
+SYMBOL:FIX2:{{fx}}:{{fx}}:5:0
+{%- endfor %}
+{%- for nav in navaids %}
+SYMBOL:VOR:{{nav}}:{{nav}}:5:0
+{%- endfor %}
+
+TEXTALIGN:RT
+SYMBOL:VOR:WIB:WIB:-5:0
+SYMBOL:VOR:FFM

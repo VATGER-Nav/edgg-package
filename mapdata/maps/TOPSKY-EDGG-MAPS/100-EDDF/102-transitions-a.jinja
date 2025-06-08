@@ -1,0 +1,106 @@
+//------------------ RNAV-Transitions (Complete) ----------------
+
+{#-
+    Note: This is only the first of two .jinja files used to draw
+    transitions in EDDF. Fixes stored in dicts below have copies
+    in "106-transitions-b.jinja". This couldn't be done otherwise, 
+    as the order of folders in TopSky Maps menu will appear unadequate.
+
+    When Mapbuilder will support officially .json files, this has
+    to be redone! Other transitions don't need such workaround, as
+    the order of the folders is only defined by the first maps in
+    said folders.
+
+    Changing these, don't forget about the second file!
+#}
+{%- set trans = {
+    "07": [
+        'DF431',
+        'DF432',
+        'DF436',
+        'DF437',
+        'DF439',
+        'DF441',
+        'DF444',
+        'DF613',
+        'DF623',
+        'DF635',
+        'DF636',
+        'DF640',
+        'DF644',
+        'INBOS',
+    ],
+    "25": [
+        'DF401',
+        'DF402',
+        'DF403',
+        'DF406',
+        'DF407',
+        'DF408',
+        'DF411',
+        'DF416',
+        'DF600',
+        'DF601',
+        'DF606',
+        'DF609',
+        'DF610',
+        'DF616',
+        'DF617',
+    ]
+} %}
+{%- set downwind = {
+    "07": [
+        'DF442',
+        'DF443',
+        'DF641',
+        'DF642',
+        'DF643',
+    ],
+    "25": [
+        'DF409',
+        'DF410',
+        'DF412',
+        'DF413',
+        'DF414',
+        'DF415',
+        'DF611',
+        'DF612',
+        'DF613',
+        'DF614',
+        'DF615',
+    ]
+} %}
+
+MAP:EDDF 07
+COLOR:standard
+FOLDER:Transitions
+ACTIVE:RWY:ARR:EDDF07:DEP:*
+{%- for fx in trans['07'] %}
+SYMBOL:FIX3_L:{{fx}}
+{%- endfor %}
+{%- for fx in downwind['07'] %}
+SYMBOL:FIX3_L:{{fx}}
+{%- endfor %}
+ZOOM:8
+FONTSIZE:=:12
+TEXTALIGN:LB
+{%- for fx in trans['07'] %}
+TEXT:{{fx}}:{{fx | replace('DF', '')}}:5:0
+{%- endfor %}
+
+MAP:EDDF 25
+COLOR:standard
+FOLDER:Transitions
+ACTIVE:RWY:ARR:EDDF25:DEP:*
+{%- for fx in trans['25'] %}
+SYMBOL:FIX3_L:{{fx}}
+{%- endfor %}
+{%- for fx in downwind['25'] %}
+SYMBOL:FIX3_L:{{fx}}
+{%- endfor %}
+ZOOM:8
+FONTSIZE:=:12
+TEXTALIGN:LB
+{%- for fx in trans['25'] %}
+TEXT:{{fx}}:{{fx | replace('DF', '')}}:5:0
+{%- endfor %}
