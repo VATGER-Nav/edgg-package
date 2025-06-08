@@ -7969,10 +7969,13 @@
 	</Folder>
 	<Folder>
 		<name>sectors</name>
+		<visibility>0</visibility>
 		<Folder>
 			<name>uac_ext</name>
+			<visibility>0</visibility>
 			<Placemark id="uac_ext.1">
 				<name>019740d8-8abb-7425-a427-d3fce2598463</name>
+				<visibility>0</visibility>
 				<Style>
 					<LineStyle>
 						<color>ff0000ff</color>
@@ -7989,6 +7992,7 @@
 			</Placemark>
 			<Placemark id="uac_ext.2">
 				<name>019740d8-8abb-7861-8f2c-a3e7b51bbe7a</name>
+				<visibility>0</visibility>
 				<Style>
 					<LineStyle>
 						<color>ff0000ff</color>
@@ -8005,6 +8009,7 @@
 			</Placemark>
 			<Placemark id="uac_ext.3">
 				<name>019740d8-8abb-73e0-8fb0-e6e36c6f1af5</name>
+				<visibility>0</visibility>
 				<Style>
 					<LineStyle>
 						<color>ff0000ff</color>
@@ -8021,6 +8026,7 @@
 			</Placemark>
 			<Placemark id="uac_ext.4">
 				<name>019740d8-8abb-7a71-a954-9eb08b87fdbe</name>
+				<visibility>0</visibility>
 				<Style>
 					<LineStyle>
 						<color>ff0000ff</color>
@@ -8037,6 +8043,7 @@
 			</Placemark>
 			<Placemark id="uac_ext.5">
 				<name>019740d8-8abb-72c8-b9f3-c4e26136c068</name>
+				<visibility>0</visibility>
 				<Style>
 					<LineStyle>
 						<color>ff0000ff</color>
@@ -8053,6 +8060,7 @@
 			</Placemark>
 			<Placemark id="uac_ext.6">
 				<name>019740d8-8abb-77ef-a3b5-4cf22d8af610</name>
+				<visibility>0</visibility>
 				<Style>
 					<LineStyle>
 						<color>ff0000ff</color>
@@ -8069,6 +8077,7 @@
 			</Placemark>
 			<Placemark id="uac_ext.7">
 				<name>019740d8-8abb-7af8-91fd-d8a32692d94c</name>
+				<visibility>0</visibility>
 				<Style>
 					<LineStyle>
 						<color>ff0000ff</color>
@@ -8085,6 +8094,7 @@
 			</Placemark>
 			<Placemark id="uac_ext.8">
 				<name>019740d8-8abb-77f3-8404-65e2d62ebd23</name>
+				<visibility>0</visibility>
 				<Style>
 					<LineStyle>
 						<color>ff0000ff</color>
@@ -8101,6 +8111,7 @@
 			</Placemark>
 			<Placemark id="uac_ext.9">
 				<name>019740d8-8abb-7edc-a6f4-6f29b8e26066</name>
+				<visibility>0</visibility>
 				<Style>
 					<LineStyle>
 						<color>ff0000ff</color>
@@ -8117,6 +8128,7 @@
 			</Placemark>
 			<Placemark id="uac_ext.10">
 				<name>019740d8-8abb-76df-83ac-b6516853b78a</name>
+				<visibility>0</visibility>
 				<Style>
 					<LineStyle>
 						<color>ff0000ff</color>
@@ -8133,6 +8145,7 @@
 			</Placemark>
 			<Placemark id="uac_ext.11">
 				<name>019740d8-8abb-747b-9d22-4414462482b5</name>
+				<visibility>0</visibility>
 				<Style>
 					<LineStyle>
 						<color>ff0000ff</color>
@@ -8149,6 +8162,7 @@
 			</Placemark>
 			<Placemark id="uac_ext.12">
 				<name>019740d8-8abb-7009-bc32-4a0dc9091410</name>
+				<visibility>0</visibility>
 				<Style>
 					<LineStyle>
 						<color>ff0000ff</color>
@@ -8165,6 +8179,7 @@
 			</Placemark>
 			<Placemark id="uac_ext.13">
 				<name>019740d8-8abb-758e-99d9-6163997c92d1</name>
+				<visibility>0</visibility>
 				<Style>
 					<LineStyle>
 						<color>ff0000ff</color>
@@ -8181,6 +8196,7 @@
 			</Placemark>
 			<Placemark id="uac_ext.14">
 				<name>019740d8-8abb-7fa2-8ac0-a8e68e455886</name>
+				<visibility>0</visibility>
 				<Style>
 					<LineStyle>
 						<color>ff0000ff</color>
@@ -8197,6 +8213,7 @@
 			</Placemark>
 			<Placemark id="uac_ext.15">
 				<name>019740d8-8abb-7384-a9ed-4b3cd598e45c</name>
+				<visibility>0</visibility>
 				<Style>
 					<LineStyle>
 						<color>ff0000ff</color>
@@ -8213,6 +8230,7 @@
 			</Placemark>
 			<Placemark id="uac_ext.16">
 				<name>019740d8-8abb-7014-8cc3-afcb3bb6765d</name>
+				<visibility>0</visibility>
 				<Style>
 					<LineStyle>
 						<color>ff0000ff</color>
@@ -8229,6 +8247,7 @@
 			</Placemark>
 			<Placemark id="uac_ext.17">
 				<name>019740d8-8abb-728c-aa5a-2c2a855006b3</name>
+				<visibility>0</visibility>
 				<Style>
 					<LineStyle>
 						<color>ff0000ff</color>
@@ -8245,6 +8264,7 @@
 			</Placemark>
 			<Placemark id="uac_ext.18">
 				<name>019740d8-8abb-757d-af84-26095b49dd09</name>
+				<visibility>0</visibility>
 				<Style>
 					<LineStyle>
 						<color>ff0000ff</color>
@@ -8261,6 +8281,7 @@
 			</Placemark>
 			<Placemark id="uac_ext.19">
 				<name>019740d8-8abb-7bea-8a20-7596b895cb14</name>
+				<visibility>0</visibility>
 				<Style>
 					<LineStyle>
 						<color>ff0000ff</color>
@@ -8277,6 +8298,7 @@
 			</Placemark>
 			<Placemark id="uac_ext.20">
 				<name>019740d8-8abb-7f1d-8baf-cbb9fcb19f1a</name>
+				<visibility>0</visibility>
 				<Style>
 					<LineStyle>
 						<color>ff0000ff</color>
@@ -8293,6 +8315,7 @@
 			</Placemark>
 			<Placemark id="uac_ext.21">
 				<name>019740d8-8abb-77f6-b221-616f6905636b</name>
+				<visibility>0</visibility>
 				<Style>
 					<LineStyle>
 						<color>ff0000ff</color>
@@ -8309,6 +8332,7 @@
 			</Placemark>
 			<Placemark id="uac_ext.22">
 				<name>019740d8-8abb-78a4-8d72-1eddb5c6983d</name>
+				<visibility>0</visibility>
 				<Style>
 					<LineStyle>
 						<color>ff0000ff</color>
@@ -8325,6 +8349,7 @@
 			</Placemark>
 			<Placemark id="uac_ext.23">
 				<name>019740d8-8abb-77b3-a82b-ed991a2346f3</name>
+				<visibility>0</visibility>
 				<Style>
 					<LineStyle>
 						<color>ff0000ff</color>
@@ -8341,6 +8366,7 @@
 			</Placemark>
 			<Placemark id="uac_ext.24">
 				<name>019740d8-8abb-79e3-b343-f727b783ec8a</name>
+				<visibility>0</visibility>
 				<Style>
 					<LineStyle>
 						<color>ff0000ff</color>
@@ -8357,6 +8383,7 @@
 			</Placemark>
 			<Placemark id="uac_ext.25">
 				<name>019740d8-8abb-7bfb-be0e-f793a52791c9</name>
+				<visibility>0</visibility>
 				<Style>
 					<LineStyle>
 						<color>ff0000ff</color>
@@ -8373,6 +8400,7 @@
 			</Placemark>
 			<Placemark id="uac_ext.26">
 				<name>019740d8-8abb-7768-959f-a09524e63138</name>
+				<visibility>0</visibility>
 				<Style>
 					<LineStyle>
 						<color>ff0000ff</color>
@@ -8389,6 +8417,7 @@
 			</Placemark>
 			<Placemark id="uac_ext.27">
 				<name>019740d8-8abb-7a0e-9ef8-fbb23f4b887c</name>
+				<visibility>0</visibility>
 				<Style>
 					<LineStyle>
 						<color>ff0000ff</color>
@@ -8405,6 +8434,7 @@
 			</Placemark>
 			<Placemark id="uac_ext.28">
 				<name>019740d8-8abb-7e99-989e-34baac285a78</name>
+				<visibility>0</visibility>
 				<Style>
 					<LineStyle>
 						<color>ff0000ff</color>
@@ -8421,6 +8451,7 @@
 			</Placemark>
 			<Placemark id="uac_ext.29">
 				<name>019740d8-8abb-7963-b5fc-6de32bb2860d</name>
+				<visibility>0</visibility>
 				<Style>
 					<LineStyle>
 						<color>ff0000ff</color>
@@ -8437,6 +8468,7 @@
 			</Placemark>
 			<Placemark id="uac_ext.30">
 				<name>019740d8-8abb-72d0-908b-1c1dc3ecbe55</name>
+				<visibility>0</visibility>
 				<Style>
 					<LineStyle>
 						<color>ff0000ff</color>
@@ -8453,6 +8485,7 @@
 			</Placemark>
 			<Placemark id="uac_ext.31">
 				<name>019740d8-8abb-7896-92f0-a07d23249bb3</name>
+				<visibility>0</visibility>
 				<Style>
 					<LineStyle>
 						<color>ff0000ff</color>
@@ -8469,6 +8502,7 @@
 			</Placemark>
 			<Placemark id="uac_ext.32">
 				<name>019740d8-8abb-7030-a58a-4da6fe9e8c83</name>
+				<visibility>0</visibility>
 				<Style>
 					<LineStyle>
 						<color>ff0000ff</color>
@@ -8485,6 +8519,7 @@
 			</Placemark>
 			<Placemark id="uac_ext.33">
 				<name>019740d8-8abb-704b-a1bd-cd4a31884803</name>
+				<visibility>0</visibility>
 				<Style>
 					<LineStyle>
 						<color>ff0000ff</color>
@@ -43368,7 +43403,132 @@
 	</Folder>
 	<Folder>
 		<name>EDDF</name>
-		<visibility>0</visibility>
+		<Folder>
+			<name>airspace_levels</name>
+			<Placemark id="airspace_levels.1">
+				<name>15</name>
+				<Point>
+					<coordinates>8.46457,49.90068472222219,0</coordinates>
+				</Point>
+			</Placemark>
+			<Placemark id="airspace_levels.2">
+				<name>35</name>
+				<Point>
+					<coordinates>8.964568333333331,49.9074116666667,0</coordinates>
+				</Point>
+			</Placemark>
+			<Placemark id="airspace_levels.3">
+				<name>45#1</name>
+				<Point>
+					<coordinates>8.248639722222221,49.7043425,0</coordinates>
+				</Point>
+			</Placemark>
+			<Placemark id="airspace_levels.4">
+				<name>45#2</name>
+				<Point>
+					<coordinates>8.515298924226929,50.2387070527694,0</coordinates>
+				</Point>
+			</Placemark>
+			<Placemark id="airspace_levels.5">
+				<name>55#1</name>
+				<Point>
+					<coordinates>9.35738888888889,49.9558527777778,0</coordinates>
+				</Point>
+			</Placemark>
+			<Placemark id="airspace_levels.6">
+				<name>45#3</name>
+				<Point>
+					<coordinates>7.775002777777779,49.9573211111111,0</coordinates>
+				</Point>
+			</Placemark>
+			<Placemark id="airspace_levels.7">
+				<name>55#2</name>
+				<Point>
+					<coordinates>8.76042277777778,50.3747797222222,0</coordinates>
+				</Point>
+			</Placemark>
+			<Placemark id="airspace_levels.8">
+				<name>65#1</name>
+				<Point>
+					<coordinates>7.83131638888889,50.13059527777781,0</coordinates>
+				</Point>
+			</Placemark>
+			<Placemark id="airspace_levels.9">
+				<name>65#2</name>
+				<Point>
+					<coordinates>9.4963225,50.184355,0</coordinates>
+				</Point>
+			</Placemark>
+			<Placemark id="airspace_levels.10">
+				<name>85#1</name>
+				<Point>
+					<coordinates>8.068280833333329,50.3169441666667,0</coordinates>
+				</Point>
+			</Placemark>
+			<Placemark id="airspace_levels.11">
+				<name>85#2</name>
+				<Point>
+					<coordinates>9.331290555555549,49.704915,0</coordinates>
+				</Point>
+			</Placemark>
+			<Placemark id="airspace_levels.12">
+				<name>85#3</name>
+				<Point>
+					<coordinates>9.61521389003811,50.5090158255862,0</coordinates>
+				</Point>
+			</Placemark>
+			<Placemark id="airspace_levels.13">
+				<name>25#1</name>
+				<Point>
+					<coordinates>8.47799361111111,49.8188983333333,0</coordinates>
+				</Point>
+			</Placemark>
+			<Placemark id="airspace_levels.14">
+				<name>25#2</name>
+				<Point>
+					<coordinates>8.910470555555561,50.06478527777781,0</coordinates>
+				</Point>
+			</Placemark>
+			<Placemark id="airspace_levels.15">
+				<name>65#3</name>
+				<Point>
+					<coordinates>7.72115055555556,49.85039861111111,0</coordinates>
+				</Point>
+			</Placemark>
+		</Folder>
+		<Folder>
+			<name>obstacles</name>
+			<Placemark id="eddf_obstacles.1">
+				<name>01975018-91b5-72ac-beef-5251b68bdf41</name>
+				<Point>
+					<coordinates>8.46393055555555,50.2304547222222,0</coordinates>
+				</Point>
+			</Placemark>
+			<Placemark id="eddf_obstacles.2">
+				<name>01975018-91b5-7a78-b700-6b731177fd16</name>
+				<Point>
+					<coordinates>8.732117777777781,50.22408055555561,0</coordinates>
+				</Point>
+			</Placemark>
+			<Placemark id="eddf_obstacles.3">
+				<name>01975018-91b5-79c5-95d9-b2d3e9b9dffb</name>
+				<Point>
+					<coordinates>8.872589444444451,50.1996905555556,0</coordinates>
+				</Point>
+			</Placemark>
+			<Placemark id="eddf_obstacles.4">
+				<name>01975018-91b5-76bf-af0c-9f808e0f8693</name>
+				<Point>
+					<coordinates>8.859934166666671,50.1826172222222,0</coordinates>
+				</Point>
+			</Placemark>
+			<Placemark id="eddf_obstacles.5">
+				<name>01975018-91b5-74cf-acd3-ad0b188f805d</name>
+				<Point>
+					<coordinates>8.64859388888889,50.1370888888889,0</coordinates>
+				</Point>
+			</Placemark>
+		</Folder>
 		<Folder>
 			<name>ntz</name>
 			<visibility>0</visibility>
@@ -43455,6 +43615,105 @@
 						</LinearRing>
 					</outerBoundaryIs>
 				</Polygon>
+			</Placemark>
+		</Folder>
+		<Folder>
+			<name>ipa</name>
+			<Placemark id="eddf_ipa.1">
+				<name>25_FAP</name>
+				<Style>
+					<LineStyle>
+						<color>ff0000ff</color>
+					</LineStyle>
+					<PolyStyle>
+						<fill>0</fill>
+					</PolyStyle>
+				</Style>
+				<LineString>
+					<coordinates>
+						8.83028166666667,50.1526194444444,0 8.876726111111109,50.0681686111111,0 
+					</coordinates>
+				</LineString>
+			</Placemark>
+			<Placemark id="eddf_ipa.2">
+				<name>25R_IPA</name>
+				<Style>
+					<LineStyle>
+						<color>ff0000ff</color>
+					</LineStyle>
+					<PolyStyle>
+						<fill>0</fill>
+					</PolyStyle>
+				</Style>
+				<LineString>
+					<coordinates>
+						8.939278333333331,50.14255,0 8.91336083333333,50.18833861111109,0 9.2794475,50.2757530555556,0 
+					</coordinates>
+				</LineString>
+			</Placemark>
+			<Placemark id="eddf_ipa.3">
+				<name>25L_IPA</name>
+				<Style>
+					<LineStyle>
+						<color>ff0000ff</color>
+					</LineStyle>
+					<PolyStyle>
+						<fill>0</fill>
+					</PolyStyle>
+				</Style>
+				<LineString>
+					<coordinates>
+						9.025940555555559,50.1441111111111,0 9.050238333333329,50.0983225,0 9.341811944444441,50.1675255555556,0 
+					</coordinates>
+				</LineString>
+			</Placemark>
+			<Placemark id="eddf_ipa.4">
+				<name>07_FAP</name>
+				<Style>
+					<LineStyle>
+						<color>ff0000ff</color>
+					</LineStyle>
+					<PolyStyle>
+						<fill>0</fill>
+					</PolyStyle>
+				</Style>
+				<LineString>
+					<coordinates>
+						8.231141666666669,50.0100005555556,0 8.28010027777778,49.9269247222222,0 
+					</coordinates>
+				</LineString>
+			</Placemark>
+			<Placemark id="eddf_ipa.5">
+				<name>07L_IPA</name>
+				<Style>
+					<LineStyle>
+						<color>ff0000ff</color>
+					</LineStyle>
+					<PolyStyle>
+						<fill>0</fill>
+					</PolyStyle>
+				</Style>
+				<LineString>
+					<coordinates>
+						8.100386388888889,49.9412397222222,0 8.07866527777778,49.9788908333333,0 7.82311694444444,49.9162852777778,0 
+					</coordinates>
+				</LineString>
+			</Placemark>
+			<Placemark id="eddf_ipa.6">
+				<name>07R_IPA</name>
+				<Style>
+					<LineStyle>
+						<color>ff0000ff</color>
+					</LineStyle>
+					<PolyStyle>
+						<fill>0</fill>
+					</PolyStyle>
+				</Style>
+				<LineString>
+					<coordinates>
+						8.05378416666667,49.9109572222222,0 8.077110277777781,49.8693313888889,0 7.878580833333329,49.8227102777778,0 
+					</coordinates>
+				</LineString>
 			</Placemark>
 		</Folder>
 		<Folder>

@@ -1,0 +1,35 @@
+{%- set EDGG = data.airspace['lines']['EDGG'] %}
+
+MAP:ADF CTRs
+FOLDER:CTR/ATZ
+ACTIVE:1
+ASRDATA:EDDF
+COLOR:standard
+STYLE:DashDot:1
+{{ render_sectorlines(
+        EDGG['EDDFCTR']['000-025'],
+        sector_sub(
+            EDGG['ETOUCTR']['000-015'], 
+            EDGG['EDDFCTR']['000-025']
+            ),
+        sector_sub(
+            EDGG['EDFEATZ']['000-015'], 
+            EDGG['EDDFCTR']['000-025']
+            ),
+) }}
+
+MAP:Airspace Info
+FOLDER:EDDF
+ACTIVE:1
+ASRDATA:EDDF
+COLOR:standard
+// Obstacles
+ZOOM:8
+{% for desig, geom in data.topsky['common']['EDDF']['obstacles'].items() %}
+{{- geom | to_symbol('OBSTACLE') }}
+{% endfor %}
+// EDDF Airspace Levels
+FONTSIZE:=:14
+{% for desig, geom in data.topsky['common']['EDDF']['airspace_levels'].items() %}
+{{- geom | to_text(desig) }}
+{% endfor %}
