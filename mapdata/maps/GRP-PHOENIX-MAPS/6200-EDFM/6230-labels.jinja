@@ -1,6 +1,6 @@
 // ----------------------------- Labels -----------------------------
 
-MAP:Buffer   (EDFM)
+MAP:Buffer EDFM
 AIRPORT:EDFM
 FOLDER:Labels
 HIDDEN
@@ -11,10 +11,10 @@ ZOOM:400
 {{- geom | to_coordtype('', 'layout-taxiway') }}
 {% endfor %}
 
-MAP:Taxiways (EDFM)
+MAP:Taxiways
 AIRPORT:EDFM
 FOLDER:Labels
-OTHER_MAP_ACT:=:Labels\Buffer   (EDFM)
+OTHER_MAP_ACT:=:Labels\Buffer EDFM
 LAYER:6
 ACTIVE:1
 ZOOM:400
@@ -24,7 +24,7 @@ COLOR:layout-label-taxiway
 {{- geom | to_text(desig) }}
 {% endfor %}
 
-MAP:Stands   (EDFM)
+MAP:Stands
 AIRPORT:EDFM
 FOLDER:Labels
 LAYER:6

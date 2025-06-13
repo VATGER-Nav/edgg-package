@@ -1,6 +1,6 @@
 // ----------------------------- Labels -----------------------------
 
-MAP:Buffer   (EDDS)
+MAP:Buffer EDDS
 AIRPORT:EDDS
 FOLDER:Labels
 HIDDEN
@@ -10,10 +10,10 @@ ZOOM:400
 {{- geom | to_coordtype('', 'layout-taxiway') }}
 {% endfor %}
 
-MAP:Taxiways (EDDS)
+MAP:Taxiways
 AIRPORT:EDDS
 FOLDER:Labels
-OTHER_MAP_ACT:=:Labels\Buffer   (EDDS)
+OTHER_MAP_ACT:=:Labels\Buffer EDDS
 LAYER:6
 ZOOM:400
 FONTSIZE:=:10
@@ -24,10 +24,10 @@ COLOR:layout-label-yellow
 TEXTALIGN:LC
 {{ data.edds_kml['layout']['labels']['taxiways']['Exit 3'] | to_text('Exit 3') }}
 
-MAP:Stands   (EDDS)
+MAP:Stands
 AIRPORT:EDDS
 FOLDER:Labels
-OTHER_MAP_ACT:=:Labels\Areas    (EDDS)
+OTHER_MAP_ACT:=:Labels\Areas  
 LAYER:6
 ACTIVE:1
 ZOOM:600
@@ -67,7 +67,8 @@ ZOOM:1200
 {{- data.edds_kml['layout']['labels']['stands'][desig] | to_text(desig) }}
 {% endfor %}
 
-MAP:Areas    (EDDS)
+// There is 2 space symbols at the end of the map name to avoid accidental activation by EDDL and EDDK stand maps
+MAP:Areas  
 AIRPORT:EDDS
 FOLDER:Labels
 ACTIVE:1
