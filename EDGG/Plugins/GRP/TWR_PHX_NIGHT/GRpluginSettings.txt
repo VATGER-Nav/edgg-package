@@ -22,9 +22,11 @@ Color_WTitleBar=160,160,160
 Color_WTitleText=25,25,25
 Color_WBackground=24,24,24
 Color_WBackground2=24,24,24
-Color_WBackground3=70,70,70
+Color_WBackground3=24,24,24
+Color_WBackground4=24,24,24
 Color_WForeground=250,250,250
 Color_WForeground2=255,255,255
+Color_WForeground3=255,255,255
 Color_Text_Notes=255,255,255
 
 Equip_ProMode=0
@@ -160,6 +162,8 @@ Window_APP_Draw_Runways=0
 Window_TSW_DefPos=1400,100
 Window_TSW_DefSize=400,400
 Window_TSW_Scale=200
+Window_Maps_Items=50
+Window_Maps_Sorting=1
 
 List_Arrival=1,10,550
 List_Arrival_MaxTime=30
@@ -224,9 +228,9 @@ Airport_Runway_Closed_Dep=07L
 Shortcut_Map_Xfr_Key=7,0x42 ; B
 Shortcut_Map_Xfr_Key=8,0x44 ; D
 Shortcut_Map_Xfr_Key=9,0x46 ; F
-Shortcut_Map_Target=1,Labels\Taxiways (EDDF)
-Shortcut_Map_Target=2,Labels\Stands   (EDDF)
-Shortcut_Map_Target=3,Restrictions\Restrictions (EDDF)
+Shortcut_Map_Target=1,Labels\Taxiways
+Shortcut_Map_Target=2,Labels\Stands
+Shortcut_Map_Target=3,Restrictions\Restrictions
 Shortcut_Map_Target=7,Apron Info\Break Away Areas
 Shortcut_Map_Target=8,Runway Crossing\25
 Shortcut_Map_Target=9,Runway Crossing\07 (NOTAM)
@@ -243,9 +247,9 @@ Airport_Runway_Buffer_LVP=05R:150
 Airport_Runway_Buffer_LVP=23R:150
 Airport_Runway_Buffer_LVP=05L:150
 Airport_Runway_NotATYP=23R:A388,B741,B742,B743,B744,B748,A124,A225
-Shortcut_Map_Target=1,Labels\Taxiways (EDDL)
-Shortcut_Map_Target=2,Labels\Stands   (EDDL)
-Shortcut_Map_Target=3,Restrictions\Restrictions (EDDL)(NOTAM)
+Shortcut_Map_Target=1,Labels\Taxiways
+Shortcut_Map_Target=2,Labels\Stands
+Shortcut_Map_Target=3,Restrictions\Restrictions (NOTAM)
 Window_APP_Rotation=37.25
 Window_TSW_Rotation=37.25
 
@@ -256,9 +260,9 @@ Airport_Runway_Buffer_LVP=31R:150
 Airport_Runway_Buffer_LVP=13L:150
 Airport_Runway_NotATYP=31L:A388,B741,B742,B743,B744,B748,A124,A225,A346
 Airport_Runway_NotATYP=24:A388,A124,A225,C5M
-Shortcut_Map_Target=1,Labels\Taxiways (EDDK)
-Shortcut_Map_Target=2,Labels\Stands   (EDDK)
-Shortcut_Map_Target=3,Restrictions\Restrictions (EDDK)
+Shortcut_Map_Target=1,Labels\Taxiways
+Shortcut_Map_Target=2,Labels\Stands
+Shortcut_Map_Target=3,Restrictions\Restrictions
 System_RIM=0
 Window_TSW_Rotation=312.9
 
@@ -267,9 +271,9 @@ Airport_Runway_Area_LVP=25:90
 Airport_Runway_Area_LVP=07:90
 Airport_Runway_Buffer_LVP=25:150
 Airport_Runway_Buffer_LVP=07:150
-Shortcut_Map_Target=1,Labels\Taxiways (EDDS)
-Shortcut_Map_Target=2,Labels\Stands   (EDDS)
-Shortcut_Map_Target=3,Restrictions\Restrictions (EDDS)(NOTAM)
+Shortcut_Map_Target=1,Labels\Taxiways
+Shortcut_Map_Target=2,Labels\Stands
+Shortcut_Map_Target=3,Restrictions\Restrictions (NOTAM)
 Window_APP=0,750,620,1100,300
 Window_APP_Scale=25
 Window_APP_Rotation=16.2
@@ -280,23 +284,23 @@ Airport_Runway_Area_LVP=25:90
 Airport_Runway_Area_LVP=07:90
 Airport_Runway_Buffer_LVP=25:150
 Airport_Runway_Buffer_LVP=07:150
-Shortcut_Map_Target=1,Labels\Taxiways (EDDG)
-Shortcut_Map_Target=2,Labels\Stands   (EDDG)
-Shortcut_Map_Target=3,Restrictions\Restrictions (EDDG)
+Shortcut_Map_Target=1,Labels\Taxiways
+Shortcut_Map_Target=2,Labels\Stands
+Shortcut_Map_Target=3,Restrictions\Restrictions
 Window_APP_Rotation=18.5
 Window_TSW_Rotation=18.5
 
 [EDDR]
 Airport_LVP=0
-Shortcut_Map_Target=1,Labels\Taxiways (EDDR)
-Shortcut_Map_Target=2,Labels\Stands   (EDDR)
+Shortcut_Map_Target=1,Labels\Taxiways
+Shortcut_Map_Target=2,Labels\Stands
 Window_APP_Rotation=2.6
 Window_TSW_Rotation=2.6
 
 [EDLP]
 Airport_LVP=0
-Shortcut_Map_Target=1,Labels\Taxiways (EDLP)
-Shortcut_Map_Target=2,Labels\Stands   (EDLP)
+Shortcut_Map_Target=1,Labels\Taxiways
+Shortcut_Map_Target=2,Labels\Stands
 Window_APP_Rotation=32.5
 Window_TSW_Rotation=32.5
 
@@ -305,16 +309,16 @@ Airport_Runway_Area_LVP=24:90
 Airport_Runway_Area_LVP=06:90
 Airport_Runway_Buffer_LVP=24:150
 Airport_Runway_Buffer_LVP=06:150
-Shortcut_Map_Target=1,Labels\Taxiways (EDLW)
-Shortcut_Map_Target=2,Labels\Stands   (EDLW)
-Shortcut_Map_Target=3,Restrictions\Restrictions (EDLW)
+Shortcut_Map_Target=1,Labels\Taxiways
+Shortcut_Map_Target=2,Labels\Stands
+Shortcut_Map_Target=3,Restrictions\Restrictions
 Window_APP_Rotation=28.7
 Window_TSW_Rotation=28.7
 
 [EDLN]
 Airport_LVP=0
-Shortcut_Map_Target=1,Labels\Taxiways (EDLN)
-Shortcut_Map_Target=2,Labels\Stands   (EDLN)
+Shortcut_Map_Target=1,Labels\Taxiways
+Shortcut_Map_Target=2,Labels\Stands
 Window_APP_Rotation=322
 Window_TSW_Rotation=322
 
@@ -323,9 +327,9 @@ Airport_Runway_Area_LVP=27:90
 Airport_Runway_Area_LVP=09:90
 Airport_Runway_Buffer_LVP=27:150
 Airport_Runway_Buffer_LVP=09:150
-Shortcut_Map_Target=1,Labels\Taxiways (EDLV)
-Shortcut_Map_Target=2,Labels\Stands   (EDLV)
-Shortcut_Map_Target=3,Restrictions\Restrictions (EDLV)
+Shortcut_Map_Target=1,Labels\Taxiways
+Shortcut_Map_Target=2,Labels\Stands
+Shortcut_Map_Target=3,Restrictions\Restrictions
 Window_APP_Rotation=358
 Window_TSW_Rotation=358
 
@@ -334,9 +338,9 @@ Airport_Runway_Area_LVP=21:90
 Airport_Runway_Area_LVP=03:90
 Airport_Runway_Buffer_LVP=21:150
 Airport_Runway_Buffer_LVP=03:150
-Shortcut_Map_Target=1,Labels\Taxiways (EDFH)
-Shortcut_Map_Target=2,Labels\Stands   (EDFH)
-Shortcut_Map_Target=3,Restrictions\Restrictions (EDFH)
+Shortcut_Map_Target=1,Labels\Taxiways
+Shortcut_Map_Target=2,Labels\Stands
+Shortcut_Map_Target=3,Restrictions\Restrictions
 Window_APP_Rotation=57.6
 Window_TSW_Rotation=57.6
 
@@ -345,8 +349,8 @@ Window_TSW_Rotation=57.6
 
 [EDFM]
 Airport_LVP=0
-Shortcut_Map_Target=1,Labels\Taxiways (EDFM)
-Shortcut_Map_Target=2,Labels\Stands   (EDFM)
+Shortcut_Map_Target=1,Labels\Taxiways
+Shortcut_Map_Target=2,Labels\Stands
 Window_APP_Rotation=356.9
 Window_TSW_Rotation=356.9
 
@@ -355,14 +359,14 @@ Airport_Runway_Area_LVP=21:90
 Airport_Runway_Area_LVP=03:90
 Airport_Runway_Buffer_LVP=21:150
 Airport_Runway_Buffer_LVP=03:150
-Shortcut_Map_Target=1,Labels\Taxiways (EDSB)
-Shortcut_Map_Target=2,Labels\Stands   (EDSB)
+Shortcut_Map_Target=1,Labels\Taxiways
+Shortcut_Map_Target=2,Labels\Stands
 Window_APP_Rotation=58
 Window_TSW_Rotation=58
 
 [EDTL]
 Airport_LVP=0
-Shortcut_Map_Target=1,Labels\Taxiways (EDTL)
-Shortcut_Map_Target=2,Labels\Stands   (EDTL)
+Shortcut_Map_Target=1,Labels\Taxiways
+Shortcut_Map_Target=2,Labels\Stands
 Window_APP_Rotation=62
 Window_TSW_Rotation=62
