@@ -1,6 +1,6 @@
 // ----------------------------- Labels -----------------------------
 
-MAP:Buffer   (EDFH)
+MAP:Buffer EDFH
 AIRPORT:EDFH
 FOLDER:Labels
 HIDDEN
@@ -11,10 +11,10 @@ ZOOM:400
 {{- geom | to_coordtype('', 'layout-taxiway') }}
 {% endfor %}
 
-MAP:Taxiways (EDFH)
+MAP:Taxiways
 AIRPORT:EDFH
 FOLDER:Labels
-OTHER_MAP_ACT:=:Labels\Buffer   (EDFH)
+OTHER_MAP_ACT:=:Labels\Buffer EDFH
 LAYER:6
 ACTIVE:1
 ZOOM:400
@@ -27,7 +27,7 @@ COLOR:layout-label-taxiway
 // Closed due to NOTAM C0007/25:
 // 321, 326
 
-MAP:Stands   (EDFH)
+MAP:Stands
 AIRPORT:EDFH
 FOLDER:Labels
 LAYER:6
@@ -41,7 +41,7 @@ COLOR:layout-label-stand
 {{ data.edfh_kml['layout']['labels']['GAT'] | to_text('GAT') }}
 {{ data.edfh_kml['layout']['labels']['aprons']['APN 5'] | to_text('Maintenance') }}
 
-MAP:Aprons   (EDFH)
+MAP:Aprons
 AIRPORT:EDFH
 FOLDER:Labels
 ZOOM:400

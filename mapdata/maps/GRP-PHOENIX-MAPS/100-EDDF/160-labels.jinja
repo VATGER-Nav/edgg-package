@@ -1,11 +1,11 @@
 // ----------------------------- Labels -----------------------------
 
-MAP:Taxiways (EDDF)
+MAP:Taxiways
 AIRPORT:EDDF
 FOLDER:Labels
 LAYER:6
 ACTIVE:1
-OTHER_MAP_ACT:=:Labels\Stopbars (EDDF)
+OTHER_MAP_ACT:=:Labels\Stopbars
 OTHER_MAP_ACT:=:Labels\Links
 ZOOM:300
 FONTSIZE:=:10
@@ -14,7 +14,7 @@ COLOR:layout-label-taxiway
 {{- geom | to_text(desig) }}
 {% endfor %}
 
-MAP:Stands   (EDDF)
+MAP:Stands
 AIRPORT:EDDF
 FOLDER:Labels
 LAYER:6
@@ -207,7 +207,7 @@ ZOOM:800
 {{- data.eddf_kml['layout']['labels']['stands'][desig] | to_text(' ' + desig + 'S:0:12') }}
 {% endfor %}
 
-MAP:Stopbars (EDDF)
+MAP:Stopbars
 AIRPORT:EDDF
 FOLDER:Labels
 LAYER:6

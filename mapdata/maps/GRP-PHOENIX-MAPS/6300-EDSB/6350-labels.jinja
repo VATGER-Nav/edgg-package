@@ -1,6 +1,6 @@
 // ----------------------------- Labels -----------------------------
 
-MAP:Buffer   (EDSB)
+MAP:Buffer EDSB
 AIRPORT:EDSB
 FOLDER:Labels
 HIDDEN
@@ -11,10 +11,10 @@ ZOOM:400
 {{- geom | to_coordtype('', 'layout-taxiway') }}
 {% endfor %}
 
-MAP:Taxiways (EDSB)
+MAP:Taxiways
 AIRPORT:EDSB
 FOLDER:Labels
-OTHER_MAP_ACT:=:Labels\Buffer   (EDSB)
+OTHER_MAP_ACT:=:Labels\Buffer EDSB
 LAYER:6
 ACTIVE:1
 ZOOM:400
@@ -24,7 +24,7 @@ COLOR:layout-label-taxiway
 {{- geom | to_text(desig) }}
 {% endfor %}
 
-MAP:Stands   (EDSB)
+MAP:Stands
 AIRPORT:EDSB
 FOLDER:Labels
 LAYER:6
@@ -40,7 +40,7 @@ COLOR:layout-label-stand
 {{ data.edsb_kml['layout']['labels']['Police'] | to_text('Police') }}
 {{ data.edsb_kml['layout']['labels']['Business Aviation'] | to_text('Business Aviation') }}
 
-MAP:Aprons   (EDSB)
+MAP:Aprons
 AIRPORT:EDSB
 FOLDER:Labels
 ZOOM:400

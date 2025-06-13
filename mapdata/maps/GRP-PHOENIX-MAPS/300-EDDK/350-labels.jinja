@@ -1,6 +1,6 @@
 // ----------------------------- Labels -----------------------------
 
-MAP:Buffer   (EDDK)
+MAP:Buffer EDDK
 AIRPORT:EDDK
 FOLDER:Labels
 HIDDEN
@@ -13,10 +13,10 @@ ZOOM:400
 {{- geom | to_coordtype('', 'layout-apron') }}
 {% endfor %}
 
-MAP:Taxiways (EDDK)
+MAP:Taxiways
 AIRPORT:EDDK
 FOLDER:Labels
-OTHER_MAP_ACT:=:Labels\Buffer   (EDDK)
+OTHER_MAP_ACT:=:Labels\Buffer EDDK
 LAYER:6
 ZOOM:400
 FONTSIZE:=:10
@@ -27,10 +27,10 @@ COLOR:layout-label-taxiway
 TEXTALIGN:RC
 {{ data.eddk_kml['layout']['labels']['taxiways']['K1'] | to_text('K1') }}
 
-MAP:Stands   (EDDK)
+MAP:Stands
 AIRPORT:EDDK
 FOLDER:Labels
-OTHER_MAP_ACT:=:Labels\Areas    (EDDK)
+OTHER_MAP_ACT:=:Labels\Areas 
 LAYER:6
 ZOOM:500
 FONTSIZE:=:9
@@ -225,7 +225,8 @@ COLOR:layout-holdingpoint
 {{- data.eddk_kml['layout']['labels']['stands'][desig] | to_text(desig) }}
 {% endfor %}
 
-MAP:Areas    (EDDK)
+// There is a space symbol at the end of the map name to avoid accidental activation by EDDL and EDDS stand maps
+MAP:Areas 
 AIRPORT:EDDK
 FOLDER:Labels
 LAYER:6
@@ -238,7 +239,7 @@ COLOR:layout-label-stand
 {{ data.eddk_kml['layout']['labels']['Bundeswehr#2'] | to_text('Bundeswehr') }}
 {{ data.eddk_kml['layout']['labels']['Maintenance'] | to_text('Maintenance') }}
 
-MAP:Aprons   (EDDK)
+MAP:Aprons
 AIRPORT:EDDK
 FOLDER:Labels
 LAYER:6

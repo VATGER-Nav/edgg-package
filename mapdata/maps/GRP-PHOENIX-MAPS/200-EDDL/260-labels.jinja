@@ -1,6 +1,6 @@
 // ----------------------------- Labels -----------------------------
 
-MAP:Buffer   (EDDL)
+MAP:Buffer EDDL
 AIRPORT:EDDL
 FOLDER:Labels
 HIDDEN
@@ -13,10 +13,10 @@ ZOOM:400
 {{- geom | to_coordtype('', 'layout-apron') }}
 {% endfor %}
 
-MAP:Taxiways (EDDL)
+MAP:Taxiways
 AIRPORT:EDDL
 FOLDER:Labels
-OTHER_MAP_ACT:=:Labels\Buffer   (EDDL)
+OTHER_MAP_ACT:=:Labels\Buffer EDDL
 LAYER:6
 ZOOM:400
 FONTSIZE:=:10
@@ -25,10 +25,10 @@ COLOR:layout-label-taxiway
 {{- geom | to_text(desig) }}
 {% endfor %}
 
-MAP:Stands   (EDDL)
+MAP:Stands
 AIRPORT:EDDL
 FOLDER:Labels
-OTHER_MAP_ACT:=:Labels\Areas    (EDDL)
+OTHER_MAP_ACT:=:Labels\Areas
 LAYER:6
 ZOOM:600
 FONTSIZE:=:9
@@ -102,7 +102,7 @@ ZOOM:1200
 {{ data.eddl_kml['layout']['labels']['stands']['A12'] | to_text('A12A:0:11') }}
 {{ data.eddl_kml['layout']['labels']['stands']['C02'] | to_text('C02A         ') }}
 
-MAP:Areas    (EDDL)
+MAP:Areas
 AIRPORT:EDDL
 FOLDER:Labels
 LAYER:6

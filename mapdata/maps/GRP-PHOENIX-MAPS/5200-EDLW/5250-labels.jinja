@@ -1,6 +1,6 @@
 // ----------------------------- Labels -----------------------------
 
-MAP:Buffer   (EDLW)
+MAP:Buffer EDLW
 AIRPORT:EDLW
 FOLDER:Labels
 HIDDEN
@@ -11,11 +11,11 @@ ZOOM:400
 {{- geom | to_coordtype('', 'layout-taxiway') }}
 {% endfor %}
 
-MAP:Taxiways (EDLW)
+MAP:Taxiways
 AIRPORT:EDLW
 FOLDER:Labels
-OTHER_MAP_ACT:=:Labels\Buffer   (EDLW)
-OTHER_MAP_ACT:=:Labels\Stopbars (EDLW)
+OTHER_MAP_ACT:=:Labels\Buffer EDLW
+OTHER_MAP_ACT:=:Labels\Stopbars 
 LAYER:6
 ACTIVE:1
 ZOOM:400
@@ -25,7 +25,7 @@ COLOR:layout-label-taxiway
 {{- geom | to_text(desig) }}
 {% endfor %}
 
-MAP:Stands   (EDLW)
+MAP:Stands
 AIRPORT:EDLW
 FOLDER:Labels
 LAYER:6
@@ -37,7 +37,8 @@ COLOR:layout-label-stand
 {{- geom | to_text(desig) }}
 {% endfor %}
 
-MAP:Stopbars (EDLW)
+// There is a space symbol at the end of the map name to avoid accidental activation by EDDF taxiway map
+MAP:Stopbars 
 AIRPORT:EDLW
 FOLDER:Labels
 LAYER:6
