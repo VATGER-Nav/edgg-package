@@ -1,7 +1,0 @@
-// 4k-Settings - To activate delete the "//" in following rows
-
-// System_GUI_Scale_GlobalMenu=1.4
-// System_GUI_Scale_Menus=1.4
-// System_GUI_Scale_Screen=1.4
-// System_GUI_Scale_Tracks=1.5
-// System_GUI_Scale_Windows=1.4
