@@ -2,16 +2,6 @@
 
 Setup_COOPANS=1
 
-//4k-Settings - To activate delete this row and the "/" in following rows
-//System_GUI_Scale_GlobalMenu=1.4
-//System_GUI_Scale_Menus=1.4
-//System_GUI_Scale_Screen=1.4
-//System_GUI_Scale_Tracks=1.5
-//System_GUI_Scale_Windows=1.4
-//Window_QNHTL=3,3250,44
-//Window_CPDLC_Current=3,2800,44
-//Window_CARD=3,3100,1220,738,420
-
 Airspace_ASSR_Type=2
 Airspace_ASSR_AutoAssign_Type=0
 Airspace_ModeS_Code_VFR=7000

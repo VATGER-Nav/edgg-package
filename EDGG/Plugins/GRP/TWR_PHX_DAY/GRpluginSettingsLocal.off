@@ -1,0 +1,19 @@
+// Individual Settings
+// You can enter any individual settings here
+
+// To activate this config change extention of this file from [.off] to [.txt], 
+// so your settings wouldn't be overwritten by the next AIRAC update
+
+// You can always reload settings within GRP using RELOAD SETTINGS option
+// It's in the GRP menu on the right
+
+// Don't forget to copy your settings to the night profile!
+
+
+// Example settings for 4K screens
+
+System_GUI_Scale_GlobalMenu=1.4
+System_GUI_Scale_Lists=1.4
+System_GUI_Scale_Screen=1.4
+System_GUI_Scale_Tracks=1.5
+System_GUI_Scale_Windows=1.4
