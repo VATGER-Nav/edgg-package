@@ -1,0 +1,131 @@
+//------------------------ RNAV-Transitions ---------------------
+{%- set trans = {
+    "05": [
+        'BIKMU',
+        'BOMBA',
+        'DIKMI',
+        'DOLAV',
+        'DOMUX',
+        'ELDAR',
+        'GAPNU',
+        'HALME',
+        'IBIKO',
+        'NATOS',
+        'PISAP',
+        'RONAD',
+        'VALSU',
+        'DL501',
+        'DL502',
+        'DL510',
+        'DL513',
+        'DL530',
+        'DL550',
+        'DL555',
+    ],
+    "23": [
+        'AGEDA',
+        'BIKMU',
+        'DOMUX',
+        'HALME',
+        'METMA',
+        'PISAP',
+        'REGNO',
+        'XAMOD',
+        'DL405',
+        'DL406',
+        'DL410',
+        'DL422',
+        'DL426',
+        'DL430',
+        'DL450',
+        'DL452',
+        'DL454',
+        'DL455',
+    ]
+} %}
+{%- set downwind = {
+    "05": [
+        'DL503',
+        'DL504',
+        'DL505',
+        'DL514',
+        'DL517',
+        'DL518',
+        'DL519',
+        'DL522',
+        'DL524',
+        'DL525',
+    ],
+    "23": [
+        'DL402',
+        'DL403',
+        'DL404',
+        'DL407',
+        'DL408',
+        'DL409',
+        'DL420',
+        'DL421',
+        'DL428',
+        'DL429',
+    ]
+} %}
+
+// Complete Transitions
+
+MAP:EDDL 05
+COLOR:standard
+FOLDER:Transitions
+ACTIVE:RWY:ARR:EDDL05R:DEP:*
+ACTIVE:RWY:ARR:EDDL05L:DEP:*
+{%- for fx in trans['05'] %}
+SYMBOL:FIX3_L:{{fx}}
+{%- endfor %}
+{%- for fx in downwind['05'] %}
+SYMBOL:FIX3_L:{{fx}}
+{%- endfor %}
+ZOOM:8
+FONTSIZE:=:12
+TEXTALIGN:LB
+{%- for fx in trans['05'] if fx not in ['DIKMI', 'NATOS', 'DOMUX', 'PISAP', 'HALME', 'ELDAR', 'BIKMU'] %}
+TEXT:{{fx}}:{{fx | replace('DL', '')}}:5:0
+{%- endfor %}
+
+MAP:EDDL 23
+COLOR:standard
+FOLDER:Transitions
+ACTIVE:RWY:ARR:EDDL23R:DEP:*
+ACTIVE:RWY:ARR:EDDL23L:DEP:*
+{%- for fx in trans['23'] %}
+SYMBOL:FIX3_L:{{fx}}
+{%- endfor %}
+{%- for fx in downwind['23'] %}
+SYMBOL:FIX3_L:{{fx}}
+{%- endfor %}
+ZOOM:8
+FONTSIZE:=:12
+TEXTALIGN:LB
+{%- for fx in trans['23'] if fx not in ['REGNO', 'METMA', 'DOMUX', 'PISAP', 'HALME', 'BIKMU'] %}
+TEXT:{{fx}}:{{fx | replace('DL', '')}}:5:0
+{%- endfor %}
+
+// Maps specific for EDDL
+
+MAP:DOWNWIND 05
+COLOR:standard
+FOLDER:EDDL
+ZOOM:8
+FONTSIZE:=:12
+TEXTALIGN:LB
+{%- for fx in downwind['05'] %}
+TEXT:{{fx}}:{{fx | replace('DL', '')}}:5:0
+{%- endfor %}
+
+MAP:DOWNWIND 23
+COLOR:standard
+FOLDER:EDDL
+ZOOM:8
+FONTSIZE:=:12
+TEXTALIGN:LB
+{%- for fx in downwind['23'] %}
+TEXT:{{fx}}:{{fx | replace('DL', '')}}:5:0
+{%- endfor %}
