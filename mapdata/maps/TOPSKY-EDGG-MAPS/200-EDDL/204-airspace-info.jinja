@@ -1,0 +1,58 @@
+//------------------------- Airspace Info -----------------------
+{%- set idl = {
+    "EDGG": [
+        'EDKL',
+        'EDKN',
+        'EDKZ',
+        'EDKF',
+        'EDKH',
+        'EDKP',
+        'EDKU',
+        'EDKR',
+        'EDGQ',
+        'EDKD',
+        'EDKS',
+        'EDKW',
+        'EDKM',
+        'EDKO',
+        'EDLR',
+        'EDLZ',
+        'EDLA',
+        'EDLF',
+        'EDLK',
+        'EDLC',
+        'EDLD',
+        'EDLX',
+        'EDLG',
+        'EDLY',
+        'EDLS',
+        'EDLB',
+        'EDLM',
+        'EDLT',
+        'EDLH',
+        'EDLQ',
+        'EDLU',
+        'EDLI',
+        'EDLO',
+    ],
+    "EHAA": [
+        'EHTW',
+        'EHVK',
+        'EHEH',
+        'EHBD',
+        'EHBK',
+    ]
+} %}
+
+MAP:ADs IDL Area
+FOLDER:EDDL
+ACTIVE:1
+ASRDATA:EDDL,EDDK
+COLOR:standard
+ZOOM:8
+{%- for ad in idl['EDGG'] %}
+SYMBOL:AIRPORT:{{ ad }}
+{%- endfor %}
+{%- for ad in idl['EHAA'] %}
+SYMBOL:AIRPORT:{{ ad }}
+{%- endfor %}

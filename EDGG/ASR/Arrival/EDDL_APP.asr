@@ -3,12 +3,6 @@ DisplayTypeNeedRadarContent:1
 DisplayTypeGeoReferenced:1
 SECTORFILE:
 SECTORTITLE:
-ARTCC boundary:AoR APP EDDK:
-ARTCC boundary:AoR APP EDDL:
-ARTCC boundary:AoR HMM + PADL:
-ARTCC boundary:EDGG NOR:
-ARTCC boundary:EDGG SIG:
-ARTCC boundary:EDGG TAU:
 SHOWC:1
 SHOWSB:0
 BELOW:0
