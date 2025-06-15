@@ -1,0 +1,24 @@
+//---------------------------- Airspace -------------------------
+{%- set EDGG = data.airspace['lines']['EDGG'] %}
+
+MAP:DUS/BOT CTRs
+FOLDER:CTR/ATZ
+ACTIVE:1
+ASRDATA:EDDL,EDDK
+COLOR:standard
+STYLE:DashDot:1
+{{ render_sectorlines(
+        EDGG['EDDLCTR']['000-025'],
+        EDGG['EDLNCTR']['000-020'],
+        EDGG['EDLVCTR']['000-030'],
+        EDGG['ETNGCTR']['000-030'],
+        EDGG['EDLEATZ']['000-015'],
+) }}
+// EHBKCTR
+{{ data.topsky['common']['airspace']['EHBKCTR_a'] | to_line('') -}}
+{{ data.topsky['common']['airspace']['EHBKCTR_b'] | to_line('') -}}
+// EHVKCTR
+{{ data.topsky['common']['airspace']['EHVKCTR_a'] | to_line('') -}}
+{{ data.topsky['common']['airspace']['EHVKCTR_b'] | to_line('') -}}
+// EHDPCTR
+{{ data.topsky['common']['airspace']['EHDPCTR'] | to_line('') -}}
