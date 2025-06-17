@@ -1,0 +1,39 @@
+//------------------------- Airspace Info -----------------------
+{%- set idr_eddk = {
+    "EDGG": [
+        'EDRX',
+        'EDRQ',
+        'EDRK',
+        'EDRE',
+        'EDRV',
+        'EDKV',
+        'EDRA',
+        'EDGA',
+        'EDFY',
+        'EDFL',
+        'EDGB',
+        'EDFI',
+        'EDGT',
+        'EDKI',
+        'EDKB',
+        'EDKA',
+    ],
+    "EBBU": [
+        'EBBL',
+        'EBZW',
+        'EBSL',
+    ]
+} %}
+
+MAP:ADs IDR Area
+FOLDER:EDDK
+ACTIVE:1
+ASRDATA:EDDL,EDDK
+COLOR:standard
+ZOOM:8
+{%- for ad in idr_eddk['EDGG'] %}
+SYMBOL:AIRPORT:{{ ad }}
+{%- endfor %}
+{%- for ad in idr_eddk['EBBU'] %}
+SYMBOL:AIRPORT:{{ ad }}
+{%- endfor %}
