@@ -1,0 +1,212 @@
+//---------------------------------------------------------------
+//                      EDDK - Cologne/Bonn
+//---------------------------------------------------------------
+{%- set EDGG = data.sectors['lines']['EDGG'] %}
+{%- set EDWW = data.sectors['lines']['EDWW'] %}
+{%- set EHAA = data.sectors['lines']['EHAA'] %}
+{%- set EBBU = data.sectors['lines']['EBBU'] %}
+{%- set EXT = data.sectors_ext['lines'] %}
+
+//-------------------------- Cologne TMA ------------------------
+
+MAP:EDGG DKA/NOR
+FOLDER:Sectors
+ASRDATA:EDDK
+ACTIVE:1
+COLOR:standard
+STYLE:Solid:1
+// BOT/DUS + DKA/NOR
+// It's easier not to draw DKA sector itself, but only its bordering sectors
+{{ render_sectorlines(
+        EDGG['BOT2']['000-205'],
+        EDGG['BOT3']['030-195'],
+        EDGG['BOT4']['015-195'],
+        EDGG['BOT5']['000-105'],
+        sector_and(
+            EDGG['BOT1']['000-245'],
+            EHAA['EHBK TMA1']['015-095']
+            ),
+        sector_and(
+            EDGG['BOT1']['000-245'],
+            EDGG['HMM1']['000-245']
+            ),
+        sector_and(
+            EDGG['BOT7']['155-245'],
+            EDGG['HMM1']['000-245']
+            ),
+        sector_and(
+            EDGG['DUS5']['000-245'],
+            EDGG['DKA1']['000-145']
+            ),    
+        EDGG['DUS6']['105-245'],
+
+        EDGG['PADL4']['000-065'],
+
+        EDGG['NOR2']['155-245'],
+        EDGG['NOR5']['245-265'],
+        sector_sub(
+            EDGG['NOR4']['205-245'],
+            EDGG['NOR5']['245-265']
+            ),
+        EDGG['NOR7']['195-245'],
+        EDGG['NOR8']['245-255'],       
+    ) }}
+// HMM/PADL/PADH
+{{ render_sectorlines(
+        EDGG['HMM1']['000-245'],
+        EDGG['HMM2']['000-205'],
+        EDGG['HMM3']['075-245'],
+        EDGG['HMM4']['000-105'],
+        EDGG['HMM5']['000-105'],
+        EDGG['HMM6']['135-245'],
+
+        EDGG['PADH1']['135-245'],
+        sector_sub(
+            EDGG['PADH2']['115-245'],
+            EDGG['PADH1']['135-245']
+            ),
+        EDGG['PADL5']['000-075'],
+        sector_sub(
+            EDGG['PADL7']['075-135'],
+            EDGG['PADH1']['135-245']
+            ),
+    ) }}
+// TAU/SIG
+{{ render_sectorlines(
+        sector_sub(
+            EDGG['TAU1']['000-245'],
+            EDGG['TAU4']['135-245']
+            ),
+        EDGG['TAU3']['075-225'],
+        EDGG['TAU5']['135-245'],
+        sector_and(
+            EDGG['SIG4']['145-245'],
+            EDGG['TAU2']['145-245']
+            ),
+        sector_and(
+            EDGG['NOR3']['145-245'],
+            EDGG['TAU2']['145-245']
+            ),
+        sector_sub(
+            EDGG['TAU6']['000-205'],
+            EDGG['NOR4']['205-245']
+            ),
+
+        EDGG['SIG1']['000-245'],
+        EDGG['SIG3']['135-245'],
+        EDGG['SIG5']['175-245'],
+    ) }}
+// GIN/HEF/GED
+{{ render_sectorlines(       
+        EDGG['GIN1']['000-245'],
+        EDGG['GIN2']['195-245'],
+        EDGG['GIN3']['135-245'],
+        sector_and(
+            EDGG['GIN4']['135-175'],
+            EDGG['GIN6']['000-175']
+            ),
+
+        sector_sub(
+            EDGG['GED3']['135-215'],
+            EDGG['GED2']['105-215']
+            ),
+        sector_sub(
+            EDGG['GED2']['105-215'],
+            EDGG['GED3']['135-215']
+            ),
+        sector_and(
+            EDGG['HEF1']['000-245'],
+            EDGG['GED1']['000-215']
+            ),
+        sector_and(
+            EDGG['GED1']['000-215'],
+            EDGG['HAB1']['000-245']
+            ),    
+        sector_and(
+            EDGG['HEF8']['000-245'],
+            EDGG['HAB1']['000-245']
+            ),
+        sector_and(
+            EDGG['HAB3']['135-245'],
+            EDGG['HAB1']['000-245']
+            ),
+    ) }}
+// RUD/KIR
+{{ render_sectorlines(
+        EDGG['RUD1']['105-245'],
+        EDGG['RUD5']['165-245'],
+
+        sector_and(
+            EDGG['KIR2']['135-245'],
+            EDGG['KIR1']['105-245']
+            ),
+        sector_and(
+            EDGG['KIR2']['135-245'],
+            EDGG['MAN3']['175-245']
+            ),
+        sector_sub(
+            sector_sub(
+                EDGG['KIR3']['165-245'],
+                EDGG['PFA6']['095-245']
+                ),
+            EDGG['PFA1']['000-245']
+            ),
+        
+    ) }}
+// HRZ/EMS
+{{ render_sectorlines(
+        sector_and(
+            EDGG['GIN1']['000-245'],
+            EDWW['EDWWHRZ1']['000-245']
+            ),
+        sector_and(
+            EDGG['GIN2']['195-245'],
+            EDWW['EDWWHRZ1']['000-245']
+            ),
+        sector_and(
+            EDGG['HEF1']['000-245'],
+            EDWW['EDWWHRZ1']['000-245']
+            ),
+        sector_and(
+            EDGG['HEF4']['000-215'],
+            EDWW['EDWWHRZ4']['000-235']
+            ),
+        sector_and(
+            EDWW['EDWWEMS2']['105-245'],
+            EDWW['EDWWHRZ2']['105-245']
+            ),
+    ) }}
+// EHAA ACC
+{{ render_sectorlines(
+        sector_and(
+            EHAA['EHMC TMA C']['095-245'],
+            EDWW['EDWWEMS1']['000-245']
+            ),
+        sector_and(
+            EHAA['EHMC TMA C']['095-245'],
+            EDWW['EDWWEMS2']['105-245']
+            ),
+        sector_and(
+            EHAA['EHMC TMA C']['095-245'],
+            EHAA['EHAA CTA E2']['095-245']
+            ),
+        sector_and(
+            EHAA['EHMC TMA D']['015-245'],
+            EHAA['EHAA CTA E2']['095-245']
+            ),
+        EHAA['EHMC TMA D 2']['015-095'],
+        EHAA['EHBK TMA1']['015-095'],
+    ) }}
+// EBBU ACC
+{{ render_sectorlines(
+        EXT['EBBU']['EBLG TMA1']['000-055'],
+        EXT['EBBU']['EBLG TMA3-4-5']['000-055'],
+        EXT['EBBU']['EBBU ELS1']['045-055'],
+        EXT['EBBU']['EBBU EHS']['195-245'],
+        sector_and(
+            EXT['EBBU']['EBBU LUS']['145-165'],
+            EXT['EBBU']['EBBU HUL']['185-245']
+            ),
+    ) }}
+// EBBU HUL
+LINE:N050.44.18.000:E005.08.43.000:N050.37.14.000:E004.29.00.000
