@@ -1,0 +1,230 @@
+//------------------------ RNAV-Transitions ---------------------
+{%- set trans = {
+    "13": [
+        'GULKO',
+        'KOPAG',
+        'LEGDU',
+        'DK415',
+        'DK416',
+        'DK417',
+        'DK418',
+        'DK428',
+        'DK435',
+        'DK437',
+        'DK455',
+    ],
+    "31": [
+        'GULKO',
+        'KOPAG',
+        'RARIX',
+        'DK615',
+        'DK616',
+        'DK617',
+        'DK627',
+        'DK635',
+        'DK636',
+        'DK637',
+        'DK638',
+        'DK654',
+        'DK654',
+    ],
+    "06": [
+        'BEBSA',
+        'GULKO',
+        'KOPAG',
+        'DK705',
+        'DK717',
+        'DK718',
+        'DK719',
+        'DK729',
+        'DK755',
+    ],
+    "24": [
+        'GULKO',
+        'KOPAG',
+        'KUKIT',
+        'DK515',
+        'DK527',
+        'DK535',
+        'DK536',
+        'DK537',
+        'DK545',
+        'DK546',
+        'DK547',
+        'DK554',
+    ],
+    "13N": [
+        'DEPOK',
+        'ERNEP',
+        'GULKO',
+        'KOPAG',
+        'LEGDU',
+        'DK451',
+        'DK452',
+        'DK453',
+        'DK454',
+        'DK455',
+        'DK481',
+        'DK482',
+        'DK483',
+        'DK484',
+        'DK485',
+        'DK491',
+        'DK492',
+        'DK493',
+        'DK494',
+        'DK495',
+        'DK687',
+    ],
+    "31N": [
+        'DEPOK',
+        'ERNEP',
+        'GULKO',
+        'KOPAG',
+        'RARIX',
+        'DK650',
+        'DK651',
+        'DK652',
+        'DK653',
+        'DK654',
+        'DK680',
+        'DK681',
+        'DK682',
+        'DK683',
+        'DK684',
+        'DK685',
+        'DK686',
+        'DK687',
+        'DK690',
+        'DK691',
+        'DK692',
+        'DK693',
+        'DK694',
+    ]
+} %}
+
+MAP:EDDK 13
+COLOR:standard
+FOLDER:Transitions
+ACTIVE:RWY:ARR:EDDK13L:DEP:*
+ACTIVE:RWY:ARR:EDDK13R:DEP:*
+{%- for fx in trans['13'] %}
+SYMBOL:FIX3_L:{{fx}}
+{%- endfor %}
+FONTSIZE:=:12
+TEXTALIGN:LB
+TEXT:DK455:455:5:0
+TEXT:LEGDU:LEGDU:5:0
+
+MAP:EDDK 31
+COLOR:standard
+FOLDER:Transitions
+ACTIVE:RWY:ARR:EDDK31R:DEP:*
+ACTIVE:RWY:ARR:EDDK31L:DEP:*
+{%- for fx in trans['31'] %}
+SYMBOL:FIX3_L:{{fx}}
+{%- endfor %}
+FONTSIZE:=:12
+TEXTALIGN:LB
+TEXT:DK654:654:5:0
+TEXT:RARIX:RARIX:5:0
+
+MAP:EDDK 06
+COLOR:standard
+FOLDER:Transitions
+ACTIVE:RWY:ARR:EDDK06:DEP:*
+{%- for fx in trans['06'] %}
+SYMBOL:FIX3_L:{{fx}}
+{%- endfor %}
+FONTSIZE:=:12
+TEXTALIGN:LB
+TEXT:DK755:755:5:0
+TEXT:BEBSA:BEBSA:5:0
+
+MAP:EDDK 24
+COLOR:standard
+FOLDER:Transitions
+ACTIVE:RWY:ARR:EDDK24:DEP:*
+{%- for fx in trans['24'] %}
+SYMBOL:FIX3_L:{{fx}}
+{%- endfor %}
+FONTSIZE:=:12
+TEXTALIGN:LB
+TEXT:DK554:654:5:0
+TEXT:KUKIT:KUKIT:5:0
+
+// Night Transitions
+
+MAP:S TRANS 13 (Night)
+COLOR:standard
+FOLDER:EDDK
+FONTSIZE:=:12
+TEXTALIGN:LB
+{%- for fx in trans['13N'] if fx not in ['GULKO', 'KOPAG', 'DEPOK', 'ERNEP'] %}
+SYMBOL:FIX3_L:{{fx}}:{{fx | replace('DK', '')}}:5:0
+{%- endfor %}
+{%- for fx in ['GULKO', 'KOPAG', 'DEPOK', 'ERNEP'] %}
+SYMBOL:FIX3_L:{{fx}}
+{%- endfor %}
+
+MAP:N TRANS 31 (Night)
+COLOR:standard
+FOLDER:EDDK
+FONTSIZE:=:12
+TEXTALIGN:LB
+{%- for fx in trans['31N'] if fx not in ['GULKO', 'KOPAG', 'DEPOK', 'ERNEP'] %}
+SYMBOL:FIX3_L:{{fx}}:{{fx | replace('DK', '')}}:5:0
+{%- endfor %}
+{%- for fx in ['GULKO', 'KOPAG', 'DEPOK', 'ERNEP'] %}
+SYMBOL:FIX3_L:{{fx}}
+{%- endfor %}
+
+// +Labels
+
+MAP:TRANS 13 w/ L
+COLOR:standard
+FOLDER:EDDK
+FONTSIZE:=:12
+TEXTALIGN:LB
+{%- for fx in trans['13'] if fx not in ['GULKO', 'KOPAG'] %}
+SYMBOL:FIX3_L:{{fx}}:{{fx | replace('DK', '')}}:5:0
+{%- endfor %}
+{%- for fx in ['GULKO', 'KOPAG'] %}
+SYMBOL:FIX3_L:{{fx}}
+{%- endfor %}
+
+MAP:TRANS 31 w/ L
+COLOR:standard
+FOLDER:EDDK
+FONTSIZE:=:12
+TEXTALIGN:LB
+{%- for fx in trans['31'] if fx not in ['GULKO', 'KOPAG'] %}
+SYMBOL:FIX3_L:{{fx}}:{{fx | replace('DK', '')}}:5:0
+{%- endfor %}
+{%- for fx in ['GULKO', 'KOPAG'] %}
+SYMBOL:FIX3_L:{{fx}}
+{%- endfor %}
+
+MAP:TRANS 06 w/ L
+COLOR:standard
+FOLDER:EDDK
+FONTSIZE:=:12
+TEXTALIGN:LB
+{%- for fx in trans['06'] if fx not in ['GULKO', 'KOPAG'] %}
+SYMBOL:FIX3_L:{{fx}}:{{fx | replace('DK', '')}}:5:0
+{%- endfor %}
+{%- for fx in ['GULKO', 'KOPAG'] %}
+SYMBOL:FIX3_L:{{fx}}
+{%- endfor %}
+
+MAP:TRANS 24 w/ L
+COLOR:standard
+FOLDER:EDDK
+FONTSIZE:=:12
+TEXTALIGN:LB
+{%- for fx in trans['24'] if fx not in ['GULKO', 'KOPAG'] %}
+SYMBOL:FIX3_L:{{fx}}:{{fx | replace('DK', '')}}:5:0
+{%- endfor %}
+{%- for fx in ['GULKO', 'KOPAG'] %}
+SYMBOL:FIX3_L:{{fx}}
+{%- endfor %}
