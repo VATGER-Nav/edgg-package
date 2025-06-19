@@ -1,0 +1,44 @@
+//---------------------------------------------------------------
+//                          EDRY - Speyer
+//---------------------------------------------------------------
+
+{%- set rnp = {
+    "16": [
+        'NORFE',
+        'RY200',
+    ],
+    "34": [
+        'KRH',
+        'ITJET',
+        'RY100',
+    ]
+} %}
+
+MAP:EDRY RNP 16
+FOLDER:RNAV/RNP
+ACTIVE:RWY:ARR:EDRY16:DEP:*
+COLOR:standard
+{%- for fx in rnp['16'] %}
+SYMBOL:FIX3:{{fx}}
+{%- endfor %}
+ZOOM:8
+FONTSIZE:=:11
+TEXTALIGN:LB
+{%- for fx in rnp['16'] %}
+TEXT:{{fx}}:{{fx}}:5:0
+{%- endfor %}
+
+MAP:EDRY RNP 34
+FOLDER:RNAV/RNP
+ACTIVE:RWY:ARR:EDRY34:DEP:*
+COLOR:standard
+SYMBOL:VOR:KRH
+{%- for fx in rnp['34'] if fx not in ['KRH'] %}
+SYMBOL:FIX3:{{fx}}
+{%- endfor %}
+ZOOM:8
+FONTSIZE:=:11
+TEXTALIGN:LB
+{%- for fx in rnp['34'] %}
+TEXT:{{fx}}:{{fx}}:5:0
+{%- endfor %}

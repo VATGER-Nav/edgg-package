@@ -1,0 +1,109 @@
+//---------------------------------------------------------------
+//                           EDTL - Lahr
+//---------------------------------------------------------------
+{%- set rnp = {
+    "03": [
+        'LHR',
+        'RIGNU',
+        'TL030',
+        'TL031',
+        'TL032',
+    ],
+    "21": [
+        'KBA',
+        'LHR',
+        'SUL',
+        'APVER',
+        'TL210',
+        'TL211',
+        'TL212',
+        'TL213',
+    ]
+} %}
+
+MAP:EDTL RNP 03
+FOLDER:RNAV/RNP
+ACTIVE:RWY:ARR:EDTL03:DEP:*
+COLOR:standard
+SYMBOL:VOR:LHR
+{%- for fx in rnp['03'] if fx not in ['LHR'] %}
+SYMBOL:FIX3:{{fx}}
+{%- endfor %}
+ZOOM:8
+FONTSIZE:=:11
+TEXTALIGN:LB
+{%- for fx in rnp['03'] %}
+TEXT:{{fx}}:{{fx}}:5:0
+{%- endfor %}
+
+MAP:EDTL RNP 21
+FOLDER:RNAV/RNP
+ACTIVE:RWY:ARR:EDTL21:DEP:*
+COLOR:standard
+SYMBOL:VOR:KBA
+SYMBOL:VOR:LHR
+SYMBOL:VOR:SUL
+{%- for fx in rnp['21'] if fx not in ['KBA', 'LHR', 'SUL'] %}
+SYMBOL:FIX3:{{fx}}
+{%- endfor %}
+ZOOM:8
+FONTSIZE:=:11
+TEXTALIGN:LB
+{%- for fx in rnp['21'] %}
+TEXT:{{fx}}:{{fx}}:5:0
+{%- endfor %}
+
+MAP:EDTL NDB 03
+FOLDER:NON-RNAV
+LAYER:3
+STYLE:Dot:1
+COLOR:orange
+// via LHR
+COORD:LHR
+COORD_FD:189M:LRD:12.3
+COORD_DF:189M:R:1.65:10:RIGNU
+COORD:LHR
+COORDLINE
+// Fixes
+SYMBOL:VOR:LHR
+SYMBOL:FIX3:RIGNU
+// Altitudes
+TEXTALIGN:LT
+TEXT:N048.09.54.700:E007.45.17.300:A50:5:0
+TEXT:RIGNU:A40:5:0
+
+MAP:EDTL ILS/NDB 21
+FOLDER:NON-RNAV
+LAYER:3
+STYLE:Dot:1
+COLOR:orange
+// via KBA
+COORD:KBA
+COORD:APVER
+COORDLINE
+// via SUL
+COORD:SUL
+COORD_CR:317M:STR:078M
+COORD_TURN:2.01:10:317M:-61
+COORD_PBD:STR:076.3M:17.8
+COORD_DF:256M:L:2.74:10:APVER
+COORDLINE
+// via LHR
+COORD:LHR
+COORD_FD:041M:LRD:13
+COORD_TURN:1.59:10:041M:-145
+COORDLINE
+// Fixes
+SYMBOL:VOR:KBA
+SYMBOL:VOR:LHR
+SYMBOL:VOR:SUL
+SYMBOL:FIX3:APVER
+// Altitudes
+TEXTALIGN:RB
+TEXT:N048.34.43.400:E008.08.27.400:060:-5:0
+TEXTALIGN:LB
+TEXT:N048.35.29.500:E008.22.33.900:070:5:0
+TEXTALIGN:LT
+TEXT:N048.31.09.800:E008.03.24.000:A50:5:0
+TEXT:KBA:A40:5:0
+TEXT:APVER:A40:5:0

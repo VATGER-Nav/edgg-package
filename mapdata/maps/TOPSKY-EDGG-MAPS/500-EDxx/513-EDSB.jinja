@@ -1,0 +1,92 @@
+//---------------------------------------------------------------
+//                 EDSB - Karlsruhe/Baden-Baden
+//---------------------------------------------------------------
+{%- set rnp = {
+    "03": [
+        'KBA',
+        'RENBO',
+        'SB420',
+        'SB421',
+        'SB422',
+    ],
+    "21": [
+        'KBA',
+        'KRH',
+        'BITSU',
+        'SB400',
+        'SB401',
+        'SB402',
+    ]
+} %}
+
+MAP:EDSB RNP 03
+FOLDER:RNAV/RNP
+ACTIVE:RWY:ARR:EDSB03:DEP:*
+COLOR:standard
+SYMBOL:VOR:KBA
+{%- for fx in rnp['03'] if fx not in ['KBA'] %}
+SYMBOL:FIX3:{{fx}}
+{%- endfor %}
+ZOOM:8
+FONTSIZE:=:11
+TEXTALIGN:LB
+{%- for fx in rnp['03'] %}
+TEXT:{{fx}}:{{fx}}:5:0
+{%- endfor %}
+
+MAP:EDSB RNP 21
+FOLDER:RNAV/RNP
+ACTIVE:RWY:ARR:EDSB21:DEP:*
+COLOR:standard
+SYMBOL:VOR:KBA
+SYMBOL:VOR:KRH
+{%- for fx in rnp['21'] if fx not in ['KBA', 'KRH'] %}
+SYMBOL:FIX3:{{fx}}
+{%- endfor %}
+ZOOM:8
+FONTSIZE:=:11
+TEXTALIGN:LB
+{%- for fx in rnp['21'] %}
+TEXT:{{fx}}:{{fx}}:5:0
+{%- endfor %}
+
+MAP:EDSB ILS/NDB 03
+FOLDER:NON-RNAV
+LAYER:3
+STYLE:Dot:1
+COLOR:orange
+// via KBA
+COORD:KBA
+COORD_FD:197M:KBD:13
+COORD_DF:197M:R:1.49:10:RENBO
+COORDLINE
+// Fixes
+SYMBOL:VOR:KBA
+SYMBOL:FIX3:RENBO
+// Altitudes
+TEXTALIGN:LT
+TEXT:N048.34.34.900:E007.58.40.900:A50:5:0
+TEXT:RENBO:A40:5:0
+
+MAP:EDSB ILS/NDB 21
+FOLDER:NON-RNAV
+LAYER:3
+STYLE:Dot:1
+COLOR:orange
+// via KBA
+COORD:KBA
+COORD_FD:046M:KBD:12.5
+COORD_TURN:1.71:10:046M:-196
+COORDLINE
+// via KRH
+COORD:KRH
+COORD_FC:263M:12
+COORD_DF:263M:L:1.11:10:BITSU
+COORDLINE
+// Fixes
+SYMBOL:VOR:KBA
+SYMBOL:VOR:KRH
+SYMBOL:FIX3:BITSU
+// Altitudes
+TEXTALIGN:LT
+TEXT:BITSU:A40:5:0
