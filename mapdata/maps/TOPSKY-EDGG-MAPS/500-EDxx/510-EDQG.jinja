@@ -1,0 +1,49 @@
+//---------------------------------------------------------------
+//                       EDQG - Giebelstadt
+//---------------------------------------------------------------
+{%- set rnp = {
+    "08": [
+        'COSJE',
+        'GIPAV',
+        'QG080',
+        'QG081',
+        'QG082',
+    ],
+    "26": [
+        'COSJE',
+        'SODGU',
+        'QG260',
+        'QG261',
+        'QG262',
+    ]
+} %}
+
+MAP:EDQG RNP 08
+FOLDER:RNAV/RNP
+ACTIVE:RWY:ARR:EDQG08:DEP:*
+COLOR:standard
+SYMBOL:FIX2:COSJE
+{%- for fx in rnp['08'] if fx not in ['COSJE'] %}
+SYMBOL:FIX3:{{fx}}
+{%- endfor %}
+ZOOM:8
+FONTSIZE:=:11
+TEXTALIGN:LB
+{%- for fx in rnp['08'] %}
+TEXT:{{fx}}:{{fx}}:5:0
+{%- endfor %}
+
+MAP:EDQG RNP 26
+FOLDER:RNAV/RNP
+ACTIVE:RWY:ARR:EDQG26:DEP:*
+COLOR:standard
+SYMBOL:FIX2:COSJE
+{%- for fx in rnp['26'] if fx not in ['COSJE'] %}
+SYMBOL:FIX3:{{fx}}
+{%- endfor %}
+ZOOM:8
+FONTSIZE:=:11
+TEXTALIGN:LB
+{%- for fx in rnp['26'] %}
+TEXT:{{fx}}:{{fx}}:5:0
+{%- endfor %}

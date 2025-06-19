@@ -1,0 +1,83 @@
+//---------------------------------------------------------------
+//                         EDLW - Dortmund
+//---------------------------------------------------------------
+{%- set rnp = {
+    "06": [
+        'DOR',
+        'KOLOT',
+        'LW007',
+        'LW008',
+        'LW009',
+    ],
+    "24": [
+        'DOR',
+        'ELVUL',
+        'LW010',
+        'LW011',
+    ]
+} %}
+
+MAP:EDLW RNP 06
+FOLDER:RNAV/RNP
+ACTIVE:RWY:ARR:EDLW06:DEP:*
+COLOR:standard
+SYMBOL:VOR:DOR
+{%- for fx in rnp['06'] if fx not in ['DOR'] %}
+SYMBOL:FIX3:{{fx}}
+{%- endfor %}
+ZOOM:8
+FONTSIZE:=:11
+TEXTALIGN:LB
+{%- for fx in rnp['06'] %}
+TEXT:{{fx}}:{{fx}}:5:0
+{%- endfor %}
+
+MAP:EDLW RNP 24
+FOLDER:RNAV/RNP
+ACTIVE:RWY:ARR:EDLW24:DEP:*
+COLOR:standard
+SYMBOL:VOR:DOR
+{%- for fx in rnp['24'] if fx not in ['DOR'] %}
+SYMBOL:FIX3:{{fx}}
+{%- endfor %}
+ZOOM:8
+FONTSIZE:=:11
+TEXTALIGN:LB
+{%- for fx in rnp['24'] %}
+TEXT:{{fx}}:{{fx}}:5:0
+{%- endfor %}
+
+MAP:EDLW ILS/VOR 06
+FOLDER:NON-RNAV
+LAYER:3
+STYLE:Dot:1
+COLOR:orange
+// via DOR
+COORD:DOR
+COORD_FC:218M:8.6
+COORD_DF:218M:R:1.51:10:KOLOT
+COORDLINE
+// Fixes
+SYMBOL:VOR:DOR
+SYMBOL:FIX3:KOLOT
+// Altitudes
+TEXTALIGN:LT
+TEXT:N051.24.59.400:E007.28.55.500:A30:5:0
+TEXT:KOLOT:A25:5:0
+
+MAP:EDLW ILS/VOR 24
+FOLDER:NON-RNAV
+LAYER:3
+STYLE:Dot:1
+COLOR:orange
+// via DOR
+COORD:DOR
+COORD_FC:079M:9.2
+COORD_DF:079M:L:1.7:10:ELVUL
+COORDLINE
+// Fixes
+SYMBOL:VOR:DOR
+SYMBOL:FIX3:ELVUL
+// Altitudes
+TEXTALIGN:LT
+TEXT:ELVUL:A30:5:0
