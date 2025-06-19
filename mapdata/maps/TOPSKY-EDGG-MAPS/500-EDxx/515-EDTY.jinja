@@ -1,0 +1,53 @@
+//---------------------------------------------------------------
+//                    EDTY - Schwaebisch Hall
+//---------------------------------------------------------------
+{%- set rnp = {
+    "10": [
+        'DKB',
+        'ABHOL',
+        'WUERT',
+        'WUHFU',
+        'TY091',
+        'TY100',
+        'TY111',
+    ],
+    "28": [
+        'DKB',
+        'ABHOL',
+        'YOLFO',
+        'ZIFID',
+        'TY271',
+        'TY280',
+        'TY291',
+    ]
+} %}
+
+MAP:EDTY RNP 10
+FOLDER:RNAV/RNP
+ACTIVE:RWY:ARR:EDTY10:DEP:*
+COLOR:standard
+SYMBOL:VOR:DKB
+{%- for fx in rnp['10'] if fx not in ['DKB'] %}
+SYMBOL:FIX3:{{fx}}
+{%- endfor %}
+ZOOM:8
+FONTSIZE:=:11
+TEXTALIGN:LB
+{%- for fx in rnp['10'] %}
+TEXT:{{fx}}:{{fx}}:5:0
+{%- endfor %}
+
+MAP:EDTY RNP 28
+FOLDER:RNAV/RNP
+ACTIVE:RWY:ARR:EDTY28:DEP:*
+COLOR:standard
+SYMBOL:VOR:DKB
+{%- for fx in rnp['28'] if fx not in ['DKB'] %}
+SYMBOL:FIX3:{{fx}}
+{%- endfor %}
+ZOOM:8
+FONTSIZE:=:11
+TEXTALIGN:LB
+{%- for fx in rnp['28'] %}
+TEXT:{{fx}}:{{fx}}:5:0
+{%- endfor %}

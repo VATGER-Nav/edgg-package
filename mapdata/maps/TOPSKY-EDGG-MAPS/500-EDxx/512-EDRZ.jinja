@@ -1,0 +1,106 @@
+//---------------------------------------------------------------
+//                       EDRZ - Zweibruecken
+//---------------------------------------------------------------
+{#- 
+    At moment, when this map was created, GNG lacked necessary
+    Navdata for the RNAV/RNP waypoints!
+#}
+{%- set coord = {
+    "IXWIB": 'N049.13.23.100:E007.24.45.400',
+    "RZ200": 'N049.18.06.700:E007.28.56.100',
+    "RZ201": 'N049.21.34.200:E007.32.00.000',
+    "RZ202": 'N049.19.27.200:E007.30.07.100',
+    "RZ203": 'N049.21.11.000:E007.31.39.000',
+    "RZ210": 'N049.19.03.600:E007.38.36.600',
+    "RZ300": 'N049.07.03.300:E007.19.11.200',
+    "RZ301": 'N049.05.20.800:E007.17.41.700',
+    "RZ302": 'N049.03.35.600:E007.16.08.800',
+    "RZ310": 'N049.06.05.200:E007.09.33.400',
+} %}
+{%- set rnp = {
+    "03": [
+        'IXWIB',
+        'RZ300',
+        'RZ302',
+        'RZ310',
+    ],
+    "21": [
+        'IXWIB',
+        'RZ200',
+        'RZ201',
+        'RZ210',
+    ]
+} %}
+
+MAP:EDRZ RNP 03
+FOLDER:RNAV/RNP
+ACTIVE:RWY:ARR:EDRZ03:DEP:*
+COLOR:standard
+{%- for fx in rnp['03'] %}
+SYMBOL:FIX3:{{coord[fx]}}
+{%- endfor %}
+ZOOM:8
+FONTSIZE:=:11
+TEXTALIGN:LB
+{%- for fx in rnp['03'] %}
+TEXT:{{coord[fx]}}:{{fx}}:5:0
+{%- endfor %}
+
+MAP:EDRZ RNP 21
+FOLDER:RNAV/RNP
+ACTIVE:RWY:ARR:EDRZ21:DEP:*
+COLOR:standard
+{%- for fx in rnp['21'] %}
+SYMBOL:FIX3:{{coord[fx]}}
+{%- endfor %}
+ZOOM:8
+FONTSIZE:=:11
+TEXTALIGN:LB
+{%- for fx in rnp['21'] %}
+TEXT:{{coord[fx]}}:{{fx}}:5:0
+{%- endfor %}
+
+MAP:EDRZ VOR 03
+FOLDER:NON-RNAV
+LAYER:3
+STYLE:Dot:1
+COLOR:orange
+// via ZWN
+COORD:ZWN
+COORD_FC:225M:9.9
+COORD_DF:225M:L:1.53:10:{{coord['RZ301']}}
+COORD:{{coord['RZ300']}}
+COORD:EDRZ/03
+COORDLINE
+// Fixes
+SYMBOL:VOR:ZWN
+SYMBOL:FIX3:{{coord['RZ301']}}
+SYMBOL:FIX3:{{coord['RZ300']}}
+// Altitudes
+TEXTALIGN:RB
+TEXT:N049.07.02.800:E007.13.54.000:210KT:-5:-12
+TEXT:N049.07.02.800:E007.13.54.000:A40:-5:0
+TEXTALIGN:LT
+TEXT:{{coord['RZ301']}}:A30:5:0
+
+MAP:EDRZ VOR 21
+FOLDER:NON-RNAV
+LAYER:3
+STYLE:Dot:1
+COLOR:orange
+// via ZWN
+COORD:ZWN
+COORD_FC:048M:8.8
+COORD_DF:048M:L:1.6:10:{{coord['RZ203']}}
+COORD:{{coord['RZ202']}}
+COORD:EDRZ/21
+COORDLINE
+// Fixes
+SYMBOL:VOR:ZWN
+SYMBOL:FIX3:{{coord['RZ202']}}
+SYMBOL:FIX3:{{coord['RZ203']}}
+// Altitudes
+TEXTALIGN:LT
+TEXT:N049.19.20.000:E007.35.29.100:210KT:5:0
+TEXT:N049.19.20.000:E007.35.29.100:A40:5:12
+TEXT:{{coord['RZ203']}}:A35:5:0
