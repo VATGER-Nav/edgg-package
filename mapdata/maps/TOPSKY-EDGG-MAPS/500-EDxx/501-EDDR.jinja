@@ -1,0 +1,115 @@
+//---------------------------------------------------------------
+//                       EDDR - Saarbruecken
+//---------------------------------------------------------------
+{#- 
+    At moment, when this map was created, GNG lacked necessary
+    Navdata for the RNAV/RNP waypoints!
+#}
+{%- set coord = {
+    "IXWIB": 'N049.13.23.100:E007.24.45.400',
+    "DR009": 'N049.12.15.600:E006.54.10.500',
+    "DR013": 'N049.13.18.300:E007.21.50.100',
+    "DR550": 'N049.13.13.300:E007.18.47.500',
+    "DR600": 'N049.12.19.900:E006.48.56.200',
+    "DR601": 'N049.15.43.600:E006.45.26.100',
+    "DR603": 'N049.18.06.200:E006.50.49.100',
+    "DR650": 'N049.12.29.900:E006.54.12.900',
+} %}
+{%- set rnav = {
+    "08": [
+        'IXWIB',
+        'DR600',
+        'DR601',
+        'DR603',
+        'DR650',
+    ],
+    "26": [
+        'IXWIB',
+        'DR550',
+    ]
+} %}
+
+MAP:EDDR RNP 08
+FOLDER:RNAV/RNP
+ACTIVE:RWY:ARR:EDDR08:DEP:*
+COLOR:standard
+{%- for fx in rnav['08'] %}
+SYMBOL:FIX3:{{coord[fx]}}
+{%- endfor %}
+ZOOM:8
+FONTSIZE:=:11
+TEXTALIGN:LB
+{%- for fx in rnav['08'] if not fx in ['IXWIB'] %}
+TEXT:{{coord[fx]}}:{{fx}}:5:0
+{%- endfor %}
+TEXTALIGN:LT
+TEXT:IXWIB:IXWIB:5:0
+
+MAP:EDDR RNP 26
+FOLDER:RNAV/RNP
+ACTIVE:RWY:ARR:EDDR26:DEP:*
+COLOR:standard
+{%- for fx in rnav['26'] %}
+SYMBOL:FIX3:{{coord[fx]}}
+{%- endfor %}
+ZOOM:8
+FONTSIZE:=:11
+TEXTALIGN:LB
+{%- for fx in rnav['26'] if not fx in ['IXWIB'] %}
+TEXT:{{coord[fx]}}:{{fx}}:5:0
+{%- endfor %}
+TEXTALIGN:LT
+TEXT:IXWIB:IXWIB:5:0
+
+MAP:EDDR VOR 08
+FOLDER:NON-RNAV
+LAYER:3
+STYLE:Dot:1
+COLOR:orange
+// via ZWN
+COORD:ZWN
+COORD_FC:273M:22
+COORD_DF:273M:L:1.83:10:{{coord['DR009']}}
+COORD_FC:83.4M:6.9
+COORDLINE
+// Fixes
+SYMBOL:VOR:ZWN
+SYMBOL:FIX3:{{coord['DR009']}}
+// Altitudes
+TEXTALIGN:LB
+TEXT:N049.15.45.300:E006.51.29.900:A50:5:0
+TEXTALIGN:RC
+TEXT:N049.13.51.900:E006.48.28.400:210KT:-5:0
+TEXTALIGN:LT
+TEXT:{{coord['DR009']}}:A35:5:0
+
+MAP:EDDR ILS 26
+FOLDER:NON-RNAV
+LAYER:3
+STYLE:Dot:1
+// via ZWN
+COLOR:orange
+COORD:{{coord['DR550']}}
+COORD:{{coord['DR013']}}
+COORD_DF:084M:L:2.7:2:ZWN
+COORDLINE
+// Fixes
+SYMBOL:VOR:ZWN
+SYMBOL:FIX3:{{coord['DR550']}}
+SYMBOL:FIX3:{{coord['DR013']}}
+// Altitudes
+TEXTALIGN:CB
+TEXT:ZWN:A40:0:-5
+TEXTALIGN:LT
+TEXT:{{coord['DR550']}}:A35:5:0
+
+// via IXWIB
+COLOR:grey
+COORD:{{coord['DR013']}}
+COORD:IXWIB
+COORDLINE
+// Fixes
+SYMBOL:FIX3:IXWIB
+// Altitudes
+TEXTALIGN:CT
+TEXT:IXWIB:A40:0:5

@@ -1,0 +1,29 @@
+//---------------------------------------------------------------
+//                      EDFQ - Allendorf/Eder
+//---------------------------------------------------------------
+{%- set rnav = {
+    "29": [
+        'ALEXU',
+        'EDEGI',
+        'OHMAR',
+        'FQ001',
+        'FQ002',
+        'FQ003',
+    ]
+} %}
+
+MAP:EDFQ RNAV 29
+FOLDER:RNAV/RNP
+ACTIVE:RWY:ARR:EDFQ29:DEP:*
+COLOR:standard
+SYMBOL:FIX2:ALEXU
+SYMBOL:FIX2:OHMAR
+{%- for fx in rnav['29'] if fx not in ['ALEXU', 'OHMAR'] %}
+SYMBOL:FIX3:{{fx}}
+{%- endfor %}
+ZOOM:8
+FONTSIZE:=:11
+TEXTALIGN:LB
+{%- for fx in rnav['29'] %}
+TEXT:{{fx}}:{{fx}}:5:0
+{%- endfor %}
