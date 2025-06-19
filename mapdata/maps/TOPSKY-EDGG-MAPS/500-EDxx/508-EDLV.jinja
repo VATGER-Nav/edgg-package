@@ -1,0 +1,70 @@
+//---------------------------------------------------------------
+//                      EDLV - Niederrhein
+//---------------------------------------------------------------
+{%- set rnp = {
+    "09": [
+        'LAA',
+        'LMA',
+        'LERPA',
+        'SOBTU',
+        'LV300',
+        'LV301',
+        'LV302',
+        'LV303',
+        'LV700',
+        'LV701',
+    ]
+} %}
+
+MAP:EDLV RNP 09
+FOLDER:RNAV/RNP
+ACTIVE:RWY:ARR:EDLV09:DEP:*
+COLOR:standard
+SYMBOL:VOR:LAA
+SYMBOL:VOR:LMA
+SYMBOL:FIX2:SOBTU
+{%- for fx in rnp['09'] if fx not in ['LAA', 'LMA', 'SOBTU'] %}
+SYMBOL:FIX3:{{fx}}
+{%- endfor %}
+ZOOM:8
+FONTSIZE:=:11
+TEXTALIGN:LB
+{%- for fx in rnp['09'] %}
+TEXT:{{fx}}:{{fx}}:5:0
+{%- endfor %}
+
+MAP:EDLV NDB 09
+FOLDER:NON-RNAV
+LAYER:3
+STYLE:Dot:1
+COLOR:orange
+// via LAA
+COORD:LAA
+COORD_FD:255M:NID:9.1
+COORD_DF:255M:R:1.35:10:LERPA
+COORDLINE
+// Fixes
+SYMBOL:VOR:LAA
+SYMBOL:FIX3:LERPA
+// Altitudes
+TEXTALIGN:LT
+TEXT:N051.33.48.200:E005.54.22.300:A30:5:0
+TEXTALIGN:CT
+TEXT:LERPA:A25:0:5
+
+MAP:EDLV ILS/NDB 27
+FOLDER:NON-RNAV
+LAYER:3
+STYLE:Dot:1
+COLOR:orange
+// via LAA
+COORD:LAA
+COORD_FD:073M:NID:10.6
+COORD_DF:073M:R:1.41:10:RIMAD
+COORDLINE
+// Fixes
+SYMBOL:VOR:LAA
+SYMBOL:FIX3:RIMAD
+// Altitudes
+TEXTALIGN:CT
+TEXT:RIMAD:A30:0:5
