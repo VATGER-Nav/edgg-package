@@ -1,0 +1,68 @@
+//---------------------------------------------------------------
+//                        EDGS - Siegerland
+//---------------------------------------------------------------
+{%- set rnp = {
+    "13": [
+        'COL',
+        'SIL',
+        'BETUX',
+        'GS130',
+        'GS131',
+    ],
+    "31": [
+        'SIL',
+        'BEDSI',
+        'EBOGI',
+        'GS311',
+        'GS312',
+        'GS313',
+    ]
+} %}
+
+MAP:EDGS RNP 13
+FOLDER:RNAV/RNP
+ACTIVE:RWY:ARR:EDGS13:DEP:*
+COLOR:standard
+SYMBOL:VOR:SIL
+SYMBOL:VOR:COL
+{%- for fx in rnp['13'] if fx not in ['COL', 'SIL'] %}
+SYMBOL:FIX3:{{fx}}
+{%- endfor %}
+ZOOM:8
+FONTSIZE:=:11
+TEXTALIGN:LB
+{%- for fx in rnp['13'] %}
+TEXT:{{fx}}:{{fx}}:5:0
+{%- endfor %}
+
+MAP:EDGS RNP 31
+FOLDER:RNAV/RNP
+ACTIVE:RWY:ARR:EDGS31:DEP:*
+COLOR:standard
+SYMBOL:VOR:SIL
+{%- for fx in rnp['31'] if fx not in ['SIL'] %}
+SYMBOL:FIX3:{{fx}}
+{%- endfor %}
+ZOOM:8
+FONTSIZE:=:11
+TEXTALIGN:LB
+{%- for fx in rnp['31'] %}
+TEXT:{{fx}}:{{fx}}:5:0
+{%- endfor %}
+
+MAP:EDGS ILS 31
+FOLDER:NON-RNAV
+LAYER:3
+STYLE:Dot:1
+COLOR:orange
+// via SIL
+COORD:SIL
+COORD_FD:109M:SLD:14.1
+COORD_DF:109M:R:1.65:10:BEDSI
+COORDLINE
+// Fixes
+SYMBOL:VOR:SIL
+SYMBOL:FIX3:BEDSI
+// Altitudes
+TEXTALIGN:RT
+TEXT:BEDSI:A60:-5:0
