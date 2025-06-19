@@ -43403,94 +43403,111 @@
 	</Folder>
 	<Folder>
 		<name>EDDF</name>
+		<visibility>0</visibility>
 		<Folder>
 			<name>airspace_levels</name>
+			<visibility>0</visibility>
 			<Placemark id="airspace_levels.1">
 				<name>15</name>
+				<visibility>0</visibility>
 				<Point>
 					<coordinates>8.46457,49.90068472222219,0</coordinates>
 				</Point>
 			</Placemark>
 			<Placemark id="airspace_levels.2">
 				<name>35</name>
+				<visibility>0</visibility>
 				<Point>
 					<coordinates>8.964568333333331,49.9074116666667,0</coordinates>
 				</Point>
 			</Placemark>
 			<Placemark id="airspace_levels.3">
 				<name>45#1</name>
+				<visibility>0</visibility>
 				<Point>
 					<coordinates>8.248639722222221,49.7043425,0</coordinates>
 				</Point>
 			</Placemark>
 			<Placemark id="airspace_levels.4">
 				<name>45#2</name>
+				<visibility>0</visibility>
 				<Point>
 					<coordinates>8.515298924226929,50.2387070527694,0</coordinates>
 				</Point>
 			</Placemark>
 			<Placemark id="airspace_levels.5">
 				<name>55#1</name>
+				<visibility>0</visibility>
 				<Point>
 					<coordinates>9.35738888888889,49.9558527777778,0</coordinates>
 				</Point>
 			</Placemark>
 			<Placemark id="airspace_levels.6">
 				<name>45#3</name>
+				<visibility>0</visibility>
 				<Point>
 					<coordinates>7.775002777777779,49.9573211111111,0</coordinates>
 				</Point>
 			</Placemark>
 			<Placemark id="airspace_levels.7">
 				<name>55#2</name>
+				<visibility>0</visibility>
 				<Point>
 					<coordinates>8.76042277777778,50.3747797222222,0</coordinates>
 				</Point>
 			</Placemark>
 			<Placemark id="airspace_levels.8">
 				<name>65#1</name>
+				<visibility>0</visibility>
 				<Point>
 					<coordinates>7.83131638888889,50.13059527777781,0</coordinates>
 				</Point>
 			</Placemark>
 			<Placemark id="airspace_levels.9">
 				<name>65#2</name>
+				<visibility>0</visibility>
 				<Point>
 					<coordinates>9.4963225,50.184355,0</coordinates>
 				</Point>
 			</Placemark>
 			<Placemark id="airspace_levels.10">
 				<name>85#1</name>
+				<visibility>0</visibility>
 				<Point>
 					<coordinates>8.068280833333329,50.3169441666667,0</coordinates>
 				</Point>
 			</Placemark>
 			<Placemark id="airspace_levels.11">
 				<name>85#2</name>
+				<visibility>0</visibility>
 				<Point>
 					<coordinates>9.331290555555549,49.704915,0</coordinates>
 				</Point>
 			</Placemark>
 			<Placemark id="airspace_levels.12">
 				<name>85#3</name>
+				<visibility>0</visibility>
 				<Point>
 					<coordinates>9.61521389003811,50.5090158255862,0</coordinates>
 				</Point>
 			</Placemark>
 			<Placemark id="airspace_levels.13">
 				<name>25#1</name>
+				<visibility>0</visibility>
 				<Point>
 					<coordinates>8.47799361111111,49.8188983333333,0</coordinates>
 				</Point>
 			</Placemark>
 			<Placemark id="airspace_levels.14">
 				<name>25#2</name>
+				<visibility>0</visibility>
 				<Point>
 					<coordinates>8.910470555555561,50.06478527777781,0</coordinates>
 				</Point>
 			</Placemark>
 			<Placemark id="airspace_levels.15">
 				<name>65#3</name>
+				<visibility>0</visibility>
 				<Point>
 					<coordinates>7.72115055555556,49.85039861111111,0</coordinates>
 				</Point>
@@ -43498,32 +43515,38 @@
 		</Folder>
 		<Folder>
 			<name>obstacles</name>
+			<visibility>0</visibility>
 			<Placemark id="eddf_obstacles.1">
 				<name>01975018-91b5-72ac-beef-5251b68bdf41</name>
+				<visibility>0</visibility>
 				<Point>
 					<coordinates>8.46393055555555,50.2304547222222,0</coordinates>
 				</Point>
 			</Placemark>
 			<Placemark id="eddf_obstacles.2">
 				<name>01975018-91b5-7a78-b700-6b731177fd16</name>
+				<visibility>0</visibility>
 				<Point>
 					<coordinates>8.732117777777781,50.22408055555561,0</coordinates>
 				</Point>
 			</Placemark>
 			<Placemark id="eddf_obstacles.3">
 				<name>01975018-91b5-79c5-95d9-b2d3e9b9dffb</name>
+				<visibility>0</visibility>
 				<Point>
 					<coordinates>8.872589444444451,50.1996905555556,0</coordinates>
 				</Point>
 			</Placemark>
 			<Placemark id="eddf_obstacles.4">
 				<name>01975018-91b5-76bf-af0c-9f808e0f8693</name>
+				<visibility>0</visibility>
 				<Point>
 					<coordinates>8.859934166666671,50.1826172222222,0</coordinates>
 				</Point>
 			</Placemark>
 			<Placemark id="eddf_obstacles.5">
 				<name>01975018-91b5-74cf-acd3-ad0b188f805d</name>
+				<visibility>0</visibility>
 				<Point>
 					<coordinates>8.64859388888889,50.1370888888889,0</coordinates>
 				</Point>
@@ -43619,8 +43642,10 @@
 		</Folder>
 		<Folder>
 			<name>ipa</name>
+			<visibility>0</visibility>
 			<Placemark id="eddf_ipa.1">
 				<name>25_FAP</name>
+				<visibility>0</visibility>
 				<Style>
 					<LineStyle>
 						<color>ff0000ff</color>
@@ -43637,6 +43662,7 @@
 			</Placemark>
 			<Placemark id="eddf_ipa.2">
 				<name>25R_IPA</name>
+				<visibility>0</visibility>
 				<Style>
 					<LineStyle>
 						<color>ff0000ff</color>
@@ -43653,6 +43679,7 @@
 			</Placemark>
 			<Placemark id="eddf_ipa.3">
 				<name>25L_IPA</name>
+				<visibility>0</visibility>
 				<Style>
 					<LineStyle>
 						<color>ff0000ff</color>
@@ -43669,6 +43696,7 @@
 			</Placemark>
 			<Placemark id="eddf_ipa.4">
 				<name>07_FAP</name>
+				<visibility>0</visibility>
 				<Style>
 					<LineStyle>
 						<color>ff0000ff</color>
@@ -43685,6 +43713,7 @@
 			</Placemark>
 			<Placemark id="eddf_ipa.5">
 				<name>07L_IPA</name>
+				<visibility>0</visibility>
 				<Style>
 					<LineStyle>
 						<color>ff0000ff</color>
@@ -43701,6 +43730,7 @@
 			</Placemark>
 			<Placemark id="eddf_ipa.6">
 				<name>07R_IPA</name>
+				<visibility>0</visibility>
 				<Style>
 					<LineStyle>
 						<color>ff0000ff</color>
@@ -43948,6 +43978,28 @@
 						6.775642500000001,51.1877905555556,0 6.77434055555556,51.1823730555556,0 
 					</coordinates>
 				</LineString>
+			</Placemark>
+		</Folder>
+	</Folder>
+	<Folder>
+		<name>EDDS</name>
+		<visibility>0</visibility>
+		<Folder>
+			<name>obstacles</name>
+			<visibility>0</visibility>
+			<Placemark id="edds_obstacles.1">
+				<name>019787c4-5b56-7fb9-87fe-2963035db3c4</name>
+				<visibility>0</visibility>
+				<Point>
+					<coordinates>9.19005555555556,48.7556944444444,0</coordinates>
+				</Point>
+			</Placemark>
+			<Placemark id="edds_obstacles.2">
+				<name>019787c4-5b56-7ced-a45c-186b5f666763</name>
+				<visibility>0</visibility>
+				<Point>
+					<coordinates>9.14522222222222,48.618,0</coordinates>
+				</Point>
 			</Placemark>
 		</Folder>
 	</Folder>
