@@ -1,0 +1,173 @@
+//------------------------ RNAV-Transitions ---------------------
+{%- set trans = {
+    "07N": [
+        'BADSO',
+        'NOSBU',
+        'DS416',
+        'DS417',
+        'DS418',
+        'DS419',
+        'DS421',
+        'DS422',
+        'DS423',
+        'DS424',
+    ],
+    "07S": [
+        'IBIRU',
+        'REUTL',
+        'TEKSI',
+        'DS426',
+        'DS427',
+        'DS428',
+        'DS429',
+        'DS431',
+        'DS432',
+        'DS433',
+        'DS434',
+    ],
+    "25N": [
+        'BADSO',
+        'DS529',
+        'DS530',
+        'DS531',
+        'DS532',
+        'DS533',
+        'DS534',
+        'DS535',
+    ],
+    "25S": [
+        'ARSUT',
+        'IBIRU',
+        'REUTL',
+        'TEKSI',
+        'DS520',
+        'DS522',
+        'DS523',
+        'DS524',
+        'DS525',
+        'DS542',
+        'DS543',
+        'DS544',
+        'DS545',
+    ]
+} %}
+{%- set final = {
+    "07": [
+        'VATER',
+        'DS411',
+        'DS412',
+        'DS413',
+        'DS414',
+    ],
+    "25": [
+        'UNSER',
+        'DS512',
+        'DS513',
+        'DS514',
+        'DS515',
+    ]
+} %}
+
+// Complete Transitions
+
+MAP:EDDS 07
+COLOR:standard
+FOLDER:Transitions
+ACTIVE:RWY:ARR:EDDS07:DEP:*
+AND_ACTIVE:ID:*:STG,REU,DSAT:*:*
+{%- for fx in trans['07N'] %}
+SYMBOL:FIX3_L:{{fx}}
+{%- endfor %}
+{%- for fx in trans['07S'] %}
+SYMBOL:FIX3_L:{{fx}}
+{%- endfor %}
+{%- for fx in final['07'] %}
+SYMBOL:FIX3_L:{{fx}}
+{%- endfor %}
+ZOOM:7
+FONTSIZE:=:12
+TEXTALIGN:CC
+{%- for fx in trans['07N'] if fx not in ['BADSO', 'NOSBU'] %}
+TEXT:{{fx}}:{{fx | replace('DS', '')}}:-6:-13
+{%- endfor %}
+{%- for fx in trans['07S'] if fx not in ['IBIRU', 'REUTL', 'TEKSI'] %}
+TEXT:{{fx}}:{{fx | replace('DS', '')}}:2:13
+{%- endfor %}
+{%- for fx in final['07'] if fx not in ['VATER'] %}
+TEXT:{{fx}}:{{fx | replace('DS', '')}}:-6:-13
+{%- endfor %}
+TEXT:VATER:VA:-6:-13
+
+MAP:EDDS 25
+COLOR:standard
+FOLDER:Transitions
+ACTIVE:RWY:ARR:EDDS25:DEP:*
+AND_ACTIVE:ID:*:STG,REU,DSAT:*:*
+{%- for fx in trans['25N'] %}
+SYMBOL:FIX3_L:{{fx}}
+{%- endfor %}
+{%- for fx in trans['25S'] %}
+SYMBOL:FIX3_L:{{fx}}
+{%- endfor %}
+{%- for fx in final['25'] %}
+SYMBOL:FIX3_L:{{fx}}
+{%- endfor %}
+ZOOM:7
+FONTSIZE:=:12
+TEXTALIGN:CC
+{%- for fx in trans['25N'] if fx not in ['BADSO'] %}
+TEXT:{{fx}}:{{fx | replace('DS', '')}}:-6:-13
+{%- endfor %}
+{%- for fx in trans['25S'] if fx not in ['ARSUT', 'IBIRU', 'REUTL', 'TEKSI'] %}
+TEXT:{{fx}}:{{fx | replace('DS', '')}}:2:13
+{%- endfor %}
+{%- for fx in final['25'] if fx not in ['UNSER'] %}
+TEXT:{{fx}}:{{fx | replace('DS', '')}}:-6:-13
+{%- endfor %}
+TEXT:UNSER:UN:-6:-13
+
+// Maps specific for EDDS
+
+MAP:TRANS 07 w/o X
+COLOR:standard
+FOLDER:EDDS
+ACTIVE:RWY:ARR:EDDS07:DEP:*
+ASRDATA:EDDS
+{%- for fx in ['BADSO', 'IBIRU', 'NOSBU', 'REUTL', 'TEKSI'] %}
+SYMBOL:FIX3_L:{{fx}}
+{%- endfor %}
+ZOOM:7
+FONTSIZE:=:12
+TEXTALIGN:CC
+{%- for fx in trans['07N'] if fx not in ['BADSO', 'NOSBU'] %}
+TEXT:{{fx}}:{{fx | replace('DS', '')}}:-6:-13
+{%- endfor %}
+{%- for fx in trans['07S'] if fx not in ['IBIRU', 'REUTL', 'TEKSI'] %}
+TEXT:{{fx}}:{{fx | replace('DS', '')}}:2:13
+{%- endfor %}
+{%- for fx in final['07'] if fx not in ['VATER'] %}
+TEXT:{{fx}}:{{fx | replace('DS', '')}}:-6:-13
+{%- endfor %}
+TEXT:VATER:VA:-6:-13
+
+MAP:TRANS 25 w/o X
+COLOR:standard
+FOLDER:EDDS
+ACTIVE:RWY:ARR:EDDS25:DEP:*
+ASRDATA:EDDS
+{%- for fx in ['ARSUT', 'BADSO', 'IBIRU', 'REUTL', 'TEKSI'] %}
+SYMBOL:FIX3_L:{{fx}}
+{%- endfor %}
+ZOOM:7
+FONTSIZE:=:12
+TEXTALIGN:CC
+{%- for fx in trans['07N'] if fx not in ['BADSO', 'NOSBU'] %}
+TEXT:{{fx}}:{{fx | replace('DS', '')}}:-6:-13
+{%- endfor %}
+{%- for fx in trans['07S'] if fx not in ['IBIRU', 'REUTL', 'TEKSI'] %}
+TEXT:{{fx}}:{{fx | replace('DS', '')}}:2:13
+{%- endfor %}
+{%- for fx in final['25'] if fx not in ['UNSER'] %}
+TEXT:{{fx}}:{{fx | replace('DS', '')}}:-6:-13
+{%- endfor %}
+TEXT:UNSER:UN:-6:-13

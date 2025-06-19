@@ -1,0 +1,15 @@
+//---------------------------- Airspace -------------------------
+{%- set EDGG = data.airspace['lines']['EDGG'] %}
+
+MAP:STG/REU CTRs
+FOLDER:CTR/ATZ
+ACTIVE:1
+ASRDATA:EDDS
+COLOR:standard
+STYLE:DashDot:1
+{{ render_sectorlines(
+        EDGG['EDDSCTR']['000-035'],
+        EDGG['EDSBCTR']['000-025'],
+        EDGG['EDTLCTR']['000-025'],
+        EDGG['EDTYRMZ']['000-010'],
+) }}
