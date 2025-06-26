@@ -1,0 +1,48 @@
+//---------------------------------------------------------------
+//                          ETIK - Illesheim
+//---------------------------------------------------------------
+{%- set rnav = {
+    "06": [
+        'ANS',
+        'IK410',
+        'IK413',
+        'IK700',
+    ],
+    "24": [
+        'DKB',
+        'IK402',
+        'IK403',
+        'IK405',
+        'IK406'
+    ]
+} %}
+
+MAP:ETIK RNAV 06
+FOLDER:RNAV/RNP
+ACTIVE:RWY:ARR:ETIK06:DEP:*
+COLOR:standard
+SYMBOL:VOR:ANS
+{%- for fx in rnav['06'] if not fx in ['ANS'] %}
+SYMBOL:FIX3:{{fx}}
+{%- endfor %}
+ZOOM:8
+FONTSIZE:=:11
+TEXTALIGN:LB
+{%- for fx in rnav['06'] %}
+TEXT:{{fx}}:{{fx}}:5:0
+{%- endfor %}
+
+MAP:ETIK RNAV 24
+FOLDER:RNAV/RNP
+ACTIVE:RWY:ARR:ETIK24:DEP:*
+COLOR:standard
+SYMBOL:VOR:DKB
+{%- for fx in rnav['24'] if not fx in ['DKB'] %}
+SYMBOL:FIX3:{{fx}}
+{%- endfor %}
+ZOOM:8
+FONTSIZE:=:11
+TEXTALIGN:LB
+{%- for fx in rnav['24'] %}
+TEXT:{{fx}}:{{fx}}:5:0
+{%- endfor %}
