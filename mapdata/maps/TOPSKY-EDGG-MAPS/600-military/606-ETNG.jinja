@@ -1,0 +1,55 @@
+//---------------------------------------------------------------
+//                     ETNG - Geilenkirchen
+//---------------------------------------------------------------
+{%- set EDGG = data.sectors['lines']['EDGG'] %}
+{%- set rnav = {
+    "09": [
+        'ALESU',
+        'GELNU',
+        'VALOB',
+        'NG402',
+    ],
+    "27": [
+        'ALESU',
+        'KETIG',
+        'LINPU',
+        'TETGI',
+        'NG401',
+    ]
+} %}
+
+MAP:ETNG AoR
+FOLDER:Sectors
+ACTIVE:ID:*:*:TNGA:*
+ACTIVE:ID:TNGA:*:*:*
+COLOR:standard
+STYLE:Solid:1
+{{ render_sectorlines(EDGG['ETNG']['000-035']) }}
+
+MAP:ETNG RNAV 09
+FOLDER:RNAV/RNP
+ACTIVE:RWY:ARR:ETNG09:DEP:*
+COLOR:standard
+{%- for fx in rnav['09'] %}
+SYMBOL:FIX3:{{fx}}
+{%- endfor %}
+ZOOM:8
+FONTSIZE:=:11
+TEXTALIGN:LB
+{%- for fx in rnav['09'] %}
+TEXT:{{fx}}:{{fx}}:5:0
+{%- endfor %}
+
+MAP:ETNG RNAV 27
+FOLDER:RNAV/RNP
+ACTIVE:RWY:ARR:ETNG27:DEP:*
+COLOR:standard
+{%- for fx in rnav['27'] %}
+SYMBOL:FIX3:{{fx}}
+{%- endfor %}
+ZOOM:8
+FONTSIZE:=:11
+TEXTALIGN:LB
+{%- for fx in rnav['27'] %}
+TEXT:{{fx}}:{{fx}}:5:0
+{%- endfor %}

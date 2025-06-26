@@ -1,0 +1,30 @@
+//---------------------------------------------------------------
+//                    AWACS - E-3A Orbit Areas
+//---------------------------------------------------------------
+{%- set NG41 = 'N048.44.00.000:E008.31.00.000' %}
+{%- set NG42 = 'N048.10.40.000:E008.10.00.000' %}
+{%- set NG71 = 'N050.14.00.000:E009.36.00.000' %}
+
+MAP:AWACS - NG4
+FOLDER:Military
+COLOR:holding_ctr
+STYLE:Solid:1
+{{ data.topsky['common']['military']['awacs']['NG4'] | to_coordline('') }}
+// NG41
+COORD_CIRCLE:{{NG41}}:14:10
+COORDPOLY:0
+TEXT:{{NG41}}:NG41
+// NG42
+COORD_CIRCLE:{{NG42}}:15:10
+COORDPOLY:0
+TEXT:{{NG42}}:NG42
+
+MAP:AWACS - NG7
+FOLDER:Military
+COLOR:holding_ctr
+STYLE:Solid:1
+{{ data.topsky['common']['military']['awacs']['NG7'] | to_coordline('') }}
+// NG71
+COORD_CIRCLE:{{NG71}}:15:10
+COORDPOLY:0
+TEXT:{{NG71}}:NG71

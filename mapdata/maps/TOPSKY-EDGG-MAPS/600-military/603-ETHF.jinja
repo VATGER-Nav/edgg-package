@@ -1,0 +1,38 @@
+//---------------------------------------------------------------
+//                          ETHF - Fritzlar
+//---------------------------------------------------------------
+{%- set EDGG = data.sectors['lines']['EDGG'] %}
+{%- set rnp = {
+    "29": [
+        'KEMAD',
+        'RANIN',
+        'HF401',
+        'HF402',
+        'HF403',
+    ]
+} %}
+
+MAP:ETHF AoR
+FOLDER:Sectors
+ACTIVE:ID:*:*:THFA:*
+ACTIVE:ID:THFA:*:*:*
+COLOR:standard
+STYLE:Solid:1
+{{ render_sectorlines(EDGG['ETHF']['000-065']) }}
+
+MAP:ETHF RNP 29
+FOLDER:RNAV/RNP
+ACTIVE:RWY:ARR:ETHF11:DEP:*
+ACTIVE:RWY:ARR:ETHF29:DEP:*
+COLOR:standard
+SYMBOL:FIX2:KEMAD
+SYMBOL:FIX2:RANIN
+{%- for fx in rnp['29'] if not fx in ['KEMAD', 'RANIN'] %}
+SYMBOL:FIX3:{{fx}}
+{%- endfor %}
+ZOOM:8
+FONTSIZE:=:11
+TEXTALIGN:LB
+{%- for fx in rnp['29'] %}
+TEXT:{{fx}}:{{fx}}:5:0
+{%- endfor %}

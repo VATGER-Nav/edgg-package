@@ -1,0 +1,54 @@
+//---------------------------------------------------------------
+//                      ETHN - Niederstetten
+//---------------------------------------------------------------
+{%- set EDGG = data.sectors['lines']['EDGG'] %}
+{%- set rnp = {
+    "07": [
+        'NIBKO',
+        'UMKAB',
+        'HN401',
+        'HN402',
+    ],
+    "25": [
+        'NENVU',
+        'TIMLO',
+        'HN421',
+        'HN422',
+    ]
+} %}
+
+MAP:ETHN AoR
+FOLDER:Sectors
+ACTIVE:ID:*:*:THNA:*
+ACTIVE:ID:THNA:*:*:*
+COLOR:standard
+STYLE:Solid:1
+{{ render_sectorlines(EDGG['ETHN']['000-055']) }}
+
+MAP:ETHN RNP 07
+FOLDER:RNAV/RNP
+ACTIVE:RWY:ARR:ETHN07:DEP:*
+COLOR:standard
+{%- for fx in rnp['07'] %}
+SYMBOL:FIX3:{{fx}}
+{%- endfor %}
+ZOOM:8
+FONTSIZE:=:11
+TEXTALIGN:LB
+{%- for fx in rnp['07'] %}
+TEXT:{{fx}}:{{fx}}:5:0
+{%- endfor %}
+
+MAP:ETHN RNP 25
+FOLDER:RNAV/RNP
+ACTIVE:RWY:ARR:ETHN25:DEP:*
+COLOR:standard
+{%- for fx in rnp['25'] %}
+SYMBOL:FIX3:{{fx}}
+{%- endfor %}
+ZOOM:8
+FONTSIZE:=:11
+TEXTALIGN:LB
+{%- for fx in rnp['25'] %}
+TEXT:{{fx}}:{{fx}}:5:0
+{%- endfor %}

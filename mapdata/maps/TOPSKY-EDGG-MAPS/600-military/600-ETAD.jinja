@@ -1,0 +1,66 @@
+//---------------------------------------------------------------
+//                       ETAD - Spangdahlem
+//---------------------------------------------------------------
+{%- set EDGG = data.sectors['lines']['EDGG'] %}
+{%- set SPA = 'N049.58.44.300:E006.41.51.700' %}
+{%- set rnp = {
+    "04": [
+        'ABDOB',
+        'MAVEP',
+        'NESEE',
+        'OXCAM',
+        'PONIG',
+        'ULMEN',
+        'USAPA',
+    ],
+    "22": [
+        'BEJOS',
+        'MAVEP',
+        'NESEE',
+        'SUSEK',
+        'ULMEN',
+    ]
+} %}
+
+MAP:ETAD AoR
+FOLDER:Sectors
+ACTIVE:ID:*:*:TADA:*
+ACTIVE:ID:TADA:*:*:*
+COLOR:standard
+STYLE:Solid:1
+{{ render_sectorlines(
+		EDGG['ETAD_A']['000-050'],
+        EDGG['ETAD_D1']['040-050'],
+        EDGG['ETAD_D2']['030-050'],
+    ) }}
+
+MAP:ETAD RNP 04
+FOLDER:RNAV/RNP
+ACTIVE:RWY:ARR:ETAD04:DEP:*
+COLOR:standard
+SYMBOL:VOR:{{SPA}}
+SYMBOL:FIX2:PONIG
+{%- for fx in rnp['04'] if not fx in ['PONIG'] %}
+SYMBOL:FIX3:{{fx}}
+{%- endfor %}
+ZOOM:8
+FONTSIZE:=:11
+TEXTALIGN:LB
+TEXT:{{SPA}}:SPA:5:0
+{%- for fx in rnp['04'] %}
+TEXT:{{fx}}:{{fx}}:5:0
+{%- endfor %}
+
+MAP:ETAD RNP 22
+FOLDER:RNAV/RNP
+ACTIVE:RWY:ARR:ETAD22:DEP:*
+COLOR:standard
+{%- for fx in rnp['22'] %}
+SYMBOL:FIX3:{{fx}}
+{%- endfor %}
+ZOOM:8
+FONTSIZE:=:11
+TEXTALIGN:LB
+{%- for fx in rnp['22'] %}
+TEXT:{{fx}}:{{fx}}:5:0
+{%- endfor %}
