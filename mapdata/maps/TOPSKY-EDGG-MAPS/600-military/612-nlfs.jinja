@@ -1,0 +1,28 @@
+//---------------------------------------------------------------
+//                NLFS - Night Low Flying System
+//---------------------------------------------------------------
+
+MAP:NLFS (ED-R150)
+FOLDER:Military
+COLOR:standard
+// ED-R150
+STYLE:Solid:1
+{% for uuid, geom in data.topsky['common']['military']['nlfs']['line'].items() %}
+{{- geom | to_coordline('') }}
+{% endfor %}
+// ED-R150 Segments excluded from terrain following
+STYLE:Dot:1
+{% for uuid, geom in data.topsky['common']['military']['nlfs']['terrain'].items() %}
+{{- geom | to_coordline('') }}
+{% endfor %}
+// Waypoints
+{% for desig, geom in data.topsky['common']['military']['nlfs']['waypoints'].items() %}
+{{- geom | to_text(desig) }}
+{% endfor %}
+// Levels
+FONTSIZE:=:10
+{%- for level, geom in data.topsky['common']['military']['nlfs']['levels'].items() %}
+{{ geom | to_text(level) }}:0:-6
+{{ geom | to_text('---') }}:0:0
+{{ geom | to_text('005') }}:0:6
+{%- endfor %}

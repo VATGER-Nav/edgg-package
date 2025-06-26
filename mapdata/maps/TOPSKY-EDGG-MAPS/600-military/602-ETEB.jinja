@@ -1,0 +1,49 @@
+//---------------------------------------------------------------
+//                          ETEB - Ansbach
+//---------------------------------------------------------------
+{%- set rnp = {
+    "08": [
+        'DKB',
+        'NUB',
+        'EB418',
+        'EB419',
+    ],
+    "26": [
+        'DKB',
+        'NUB',
+        'EB401',
+        'EB402',
+    ]
+} %}
+
+MAP:ETEB RNP 08
+FOLDER:RNAV/RNP
+ACTIVE:RWY:ARR:ETEB08:DEP:*
+COLOR:standard
+SYMBOL:VOR:DKB
+SYMBOL:VOR:NUB
+{%- for fx in rnp['08'] if not fx in ['DKB', 'NUB'] %}
+SYMBOL:FIX3:{{fx}}
+{%- endfor %}
+ZOOM:8
+FONTSIZE:=:11
+TEXTALIGN:LB
+{%- for fx in rnp['08'] %}
+TEXT:{{fx}}:{{fx}}:5:0
+{%- endfor %}
+
+MAP:ETEB RNP 26
+FOLDER:RNAV/RNP
+ACTIVE:RWY:ARR:ETEB26:DEP:*
+COLOR:standard
+SYMBOL:VOR:DKB
+SYMBOL:VOR:NUB
+{%- for fx in rnp['26'] if not fx in ['DKB', 'NUB'] %}
+SYMBOL:FIX3:{{fx}}
+{%- endfor %}
+ZOOM:8
+FONTSIZE:=:11
+TEXTALIGN:LB
+{%- for fx in rnp['26'] %}
+TEXT:{{fx}}:{{fx}}:5:0
+{%- endfor %}

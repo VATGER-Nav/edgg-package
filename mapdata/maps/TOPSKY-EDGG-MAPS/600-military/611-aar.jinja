@@ -1,0 +1,72 @@
+//---------------------------------------------------------------
+//                  AAR - Air Refuelling Anchors
+//---------------------------------------------------------------
+{%- set aar = {
+    "angie": {
+        "desig":  'Angie',
+        "coord":  'N048.31.49.000:E008.21.79.000',
+        "inbd":   '017',
+        "turn":   'L',
+        "length": '30',
+        "radius": '7',
+        "level_up":  '230',
+        "level_lo":  '200'
+    },
+    "jojo": {
+        "desig":  'Jojo',
+        "coord":  'N051.39.85.000:E006.36.38.000',
+        "inbd":   '346',
+        "turn":   'L',
+        "length": '30',
+        "radius": '6',
+        "level_up":  '300',
+        "level_lo":  '270'
+    },
+    "luca": {
+        "desig":  'Luca',
+        "coord":  'N049.38.65.000:E007.56.64.000',
+        "inbd":   '333',
+        "turn":   'L',
+        "length": '26',
+        "radius": '5',
+        "level_up":  '230',
+        "level_lo":  '130'
+    },
+    "virgin": {
+        "desig":  'Virgin',
+        "coord":  'N049.19.39.000:E007.53.33.000',
+        "inbd":   '101',
+        "turn":   'L',
+        "length": '40',
+        "radius": '9',
+        "level_up":  '660',
+        "level_lo":  '260'
+    }
+} %}
+{% set points = data.topsky['common']['military']['aar']['points'] %}
+{% set levels = data.topsky['common']['military']['aar']['levels'] %}
+
+{%- for desig, hold in aar.items() %}
+MAP:AAR - {{hold.desig}}
+FOLDER:Military
+COLOR:holding_ctr
+STYLE:Solid:1
+COORD_HM:{{hold.coord}}:{{hold.inbd}}M:{{hold.turn}}:{{hold.length}}:{{hold.radius}}:10
+COORDPOLY:0
+// Anchor Points
+TEXTALIGN:LB
+SYMBOL:FIX3_L:{{hold.coord}}:AP1:7:0
+{{ points['TP1_' + desig] | to_symbol('FIX3_L') }}:TP1:7:0
+{{ points['AP2_' + desig] | to_symbol('FIX3_L') }}:AP2:7:0
+{{ points['TP2_' + desig] | to_symbol('FIX3_L') }}:TP2:7:0
+{%- if 'RP_' + desig in points %}
+{{ points['RP_' + desig] | to_symbol('FIX3_L') }}:RP:7:0
+{%- endif %}
+// Levels
+FONTSIZE:=:11
+TEXTALIGN:CC
+{{ levels[desig] | to_text(hold.level_up) }}:0:-7
+{{ levels[desig] | to_text(hold.level_lo) }}:0:8
+FONTSIZE:=:12
+{{ levels[desig] | to_text('---') }}:0:-1
+{% endfor %}

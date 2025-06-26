@@ -1,0 +1,95 @@
+//---------------------------------------------------------------
+//                          ETAR - Ramstein
+//---------------------------------------------------------------
+{%- set EDGG = data.sectors['lines']['EDGG'] %}
+{%- set rnp = {
+    "08": [
+        'INBUG',
+        'MAPIG',
+        'AR687',
+    ],
+    "26": [
+        'XIDOD',
+        'AR118',
+        'AR793',
+    ],
+    "09": [
+        'MAPIG',
+        'TEQUI',
+        'AR135',
+        'AR263',
+    ],
+    "27": [
+        'XIDOD',
+        'AR117',
+        'AR586',
+    ]
+} %}
+
+MAP:ETAR AoR
+FOLDER:Sectors
+ACTIVE:ID:*:*:TARA:*
+ACTIVE:ID:TARA:*:*:*
+COLOR:standard
+STYLE:Solid:1
+{{ render_sectorlines(EDGG['ETAR']['000-050']) }}
+
+MAP:ETAR RNP 08
+FOLDER:RNAV/RNP
+ACTIVE:RWY:ARR:ETAR08:DEP:*
+COLOR:standard
+SYMBOL:FIX2:MAPIG
+{%- for fx in rnp['08'] if not fx in ['MAPIG'] %}
+SYMBOL:FIX3:{{fx}}
+{%- endfor %}
+ZOOM:8
+FONTSIZE:=:11
+TEXTALIGN:LB
+{%- for fx in rnp['08'] %}
+TEXT:{{fx}}:{{fx}}:5:0
+{%- endfor %}
+
+MAP:ETAR RNP 26
+FOLDER:RNAV/RNP
+ACTIVE:RWY:ARR:ETAR26:DEP:*
+COLOR:standard
+SYMBOL:FIX2:XIDOD
+{%- for fx in rnp['26'] if fx not in ['XIDOD'] %}
+SYMBOL:FIX3:{{fx}}
+{%- endfor %}
+ZOOM:8
+FONTSIZE:=:11
+TEXTALIGN:LB
+{%- for fx in rnp['26'] %}
+TEXT:{{fx}}:{{fx}}:5:0
+{%- endfor %}
+
+MAP:ETAR RNP 09
+FOLDER:RNAV/RNP
+ACTIVE:RWY:ARR:ETAR09:DEP:*
+COLOR:standard
+SYMBOL:FIX2:MAPIG
+{%- for fx in rnp['09'] if not fx in ['MAPIG'] %}
+SYMBOL:FIX3:{{fx}}
+{%- endfor %}
+ZOOM:8
+FONTSIZE:=:11
+TEXTALIGN:LB
+{%- for fx in rnp['09'] %}
+TEXT:{{fx}}:{{fx}}:5:0
+{%- endfor %}
+
+MAP:ETAR RNP 27
+FOLDER:RNAV/RNP
+ACTIVE:RWY:ARR:ETAR27:DEP:*
+COLOR:standard
+SYMBOL:FIX2:XIDOD
+{%- for fx in rnp['27'] if fx not in ['XIDOD'] %}
+SYMBOL:FIX3:{{fx}}
+{%- endfor %}
+ZOOM:8
+FONTSIZE:=:11
+TEXTALIGN:LB
+{%- for fx in rnp['27'] %}
+TEXT:{{fx}}:{{fx}}:5:0
+{%- endfor %}

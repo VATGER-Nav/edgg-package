@@ -1,0 +1,12 @@
+//---------------------------------------------------------------
+//                          ETSB - Buchel
+//---------------------------------------------------------------
+{%- set EDGG = data.sectors['lines']['EDGG'] %}
+
+MAP:ETSB AoR
+FOLDER:Sectors
+ACTIVE:ID:*:*:TSBA:*
+ACTIVE:ID:TSBA:*:*:*
+COLOR:standard
+STYLE:Solid:1
+{{ render_sectorlines(EDGG['ETSB']['000-040']) }}

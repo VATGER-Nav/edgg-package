@@ -1,0 +1,81 @@
+//---------------------------------------------------------------
+//                        ETOU - Wiesbaden
+//---------------------------------------------------------------
+{%- set rnp = {
+    "07": [
+        'ELTIL',
+        'TABUM',
+        'OU402',
+        'OU451',
+        'OU452',
+        'OU455',
+    ]
+} %}
+{%- set ils = {
+    "25": [
+        'OU109',
+        'OU110',
+        'OU115',
+        'OU117',
+        'OU120',
+        'OU121',
+        'OU122',
+        'OU124',
+    ]
+} %}
+{%- set rnav = {
+    "25": [
+        'BASDA',
+        'OU401',
+        'OU420',
+        'OU421',
+    ]
+} %}
+
+MAP:ETOU RNP 07
+FOLDER:RNAV/RNP
+ACTIVE:RWY:ARR:ETOU07:DEP:*
+COLOR:standard
+SYMBOL:FIX2:TABUM
+{%- for fx in rnp['07'] if not fx in ['TABUM'] %}
+SYMBOL:FIX3:{{fx}}
+{%- endfor %}
+ZOOM:8
+FONTSIZE:=:12
+TEXTALIGN:LB
+{%- for fx in rnp['07'] if not fx in ['OU402'] %}
+TEXT:{{fx}}:{{fx}}:5:0
+{%- endfor %}
+
+MAP:ETOU ILS 25
+FOLDER:RNAV/RNP
+ACTIVE:RWY:ARR:ETOU25:DEP:*
+COLOR:standard
+SYMBOL:VOR:TAU
+{%- for fx in ils['25'] %}
+SYMBOL:FIX3:{{fx}}
+{%- endfor %}
+ZOOM:8
+FONTSIZE:=:12
+TEXTALIGN:LB
+{%- for fx in ['OU115', 'OU117', 'OU122', 'OU124'] %}
+TEXT:{{fx}}:{{fx}}:5:0
+{%- endfor %}
+FONTSIZE:=:14
+TEXT:TAU:TAU:5:0
+
+MAP:ETOU RNAV 25
+FOLDER:RNAV/RNP
+COLOR:standard
+SYMBOL:VOR:MTR
+{%- for fx in rnav['25'] %}
+SYMBOL:FIX3:{{fx}}
+{%- endfor %}
+ZOOM:8
+FONTSIZE:=:12
+TEXTALIGN:LB
+{%- for fx in rnav['25'] if fx not in ['OU401'] %}
+TEXT:{{fx}}:{{fx}}:5:0
+{%- endfor %}
+FONTSIZE:=:14
+TEXT:MTR:MTR:5:0
