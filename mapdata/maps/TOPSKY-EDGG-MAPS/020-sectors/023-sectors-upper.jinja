@@ -1,0 +1,140 @@
+//---------------------------------------------------------------
+//                          Upper Sectors
+//---------------------------------------------------------------
+
+{%- set EDGG = data.sectors['lines']['EDGG'] %}
+{%- set EDMM = data.sectors['lines']['EDMM'] %}
+{%- set EDWW = data.sectors['lines']['EDWW'] %}
+{%- set EHAA = data.sectors['lines']['EHAA'] %}
+{%- set EBBU = data.sectors['lines']['EBBU'] %}
+{%- set LFEE = data.sectors['lines']['LFEE'] %}
+{%- set LSAS = data.sectors['lines']['LSAS'] %}
+{%- set EXT = data.sectors_ext['lines'] %}
+{%- set ADF = data.sectors_adf['lines']['EDGG'] %}
+
+MAP:UAC Highlight
+COLOR:upper
+FOLDER:Sectors
+LAYER:2
+STYLE:Solid:2
+// EDUU UAC
+// Over EDGG FIR
+{{ render_sectorlines(
+		EDGG['NTM142']['265-325'],
+        sector_sub(
+            EDGG['NTM141']['245-265'],
+            EDGG['NTM142']['265-325']
+            ),
+        
+        EDGG['FFM141']['245-325'],
+        sector_sub(
+            EDGG['FFM142']['245-295'],
+            EDGG['FFM141']['245-325']
+            ),
+        sector_sub(
+            EDGG['FFM24']['325-355'],
+            EDGG['FFM141']['245-325']
+            ),
+        
+        EDGG['FUL133']['325-355'],
+        sector_sub(
+            EDGG['FUL132']['255-325'],
+            EDGG['FUL133']['325-355']
+            ),
+        sector_sub(
+            EDGG['FUL134']['295-315'],
+            EDGG['FUL133']['325-355']
+            ),
+        sector_sub(
+            EDGG['FUL131']['245-255'],
+            EDGG['FUL133']['325-355']
+            ),
+        
+        EDGG['WUR141']['305-325'],
+        sector_sub(
+            EDGG['WUR142']['245-305'],
+            EDGG['WUR141']['305-325']
+            ),
+
+        EDGG['TGO131']['245-355'],
+        sector_sub(
+            EDGG['TGO132']['235-245'],
+            EDGG['TGO131']['245-355']
+            ),
+
+        EDGG['SLN13']['245-355'],
+    ) }}
+// Over EDMM FIR
+{{ render_sectorlines(
+		EDMM['EDUUALP14']['315-355'],
+        EDMM['EDUUISA14']['315-355'],
+        EDMM['EDUUDON14']['315-355'],
+        EDMM['EDUUERL12']['315-365'],
+        EDMM['EDUUSAL12']['315-365'],
+        EXT['EDMM']['EDUUCHI141']['315-355'],
+        EXT['EDMM']['EDUUSPE12']['315-365'],
+    ) }}
+// Over EDWW FIR
+{{ render_sectorlines(
+        EXT['EDWW']['EDUUHVL12']['285-365'],
+        EXT['EDWW']['EDUUOSE12']['285-365'],
+    ) }}
+
+
+// EDYY UAC
+// Over EDGG FIR
+{{ render_sectorlines(
+        EDGG['YYRL1']['245-355'],
+        EDGG['YYRAB']['245-315'],
+
+        EDGG['YYML1']['245-355'],
+        EDGG['YYML2']['295-355'],
+        EDGG['YYML4']['245-315'],
+        EDGG['YYMAB']['245-315'],
+    ) }}
+// Over EDWW FIR
+{{ render_sectorlines(
+        EDWW['EDYYSL1']['245-355'],
+        EDWW['EDYYSL2']['255-355'],
+
+        EDWW['EDYYCL1']['245-355'],
+        EDWW['EDYYCL2']['245-315'],
+
+        EDWW['EDYYHL1']['245-365'],
+        EDWW['EDYYJL']['245-365'],
+    ) }}
+// Over EHAA FIR
+{{ render_sectorlines(
+        EHAA['EDYYDLT']['245-315'],
+    ) }}
+// Over EBBU FIR
+{{ render_sectorlines(
+        EBBU['EDYYLNH_SCT']['245-660'],
+        EBBU['EDYYLNH_SCT 2']['255-660'],
+        EXT['EBBU']['EDYYLXH']['245-660'],
+        EXT['EBBU']['EDYYNIH']['245-660'],
+        EXT['EBBU']['EDYYKOH']['245-660'],
+    ) }}
+
+
+// LFEE UAC
+{{ render_sectorlines(
+        sector_sub(
+            sector_sub(
+                LFEE['HE']['365-660'],
+                EDGG['NTM142']['265-325'],
+            ),
+            EDGG['SLN13']['245-355'],
+            ),
+    ) }}
+
+// LSAS UAC
+{{ render_sectorlines(
+        LSAS['LSASZ']['315-999'],
+    ) }}
+
+
+// UACs beyond
+{% for uuid, geom in data.topsky['common']['sectors']['uac_ext'].items() %}
+{{- geom | to_line('') -}}
+{% endfor %}

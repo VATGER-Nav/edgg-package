@@ -1,0 +1,40 @@
+{%- set EDGG = data.sectors['lines']['EDGG'] %}
+{%- set EDWW = data.sectors['lines']['EDWW'] %}
+{%- set EHAA = data.sectors['lines']['EHAA'] %}
+{%- set EBBU = data.sectors['lines']['EBBU'] %}
+{%- set EXT = data.sectors_ext['lines'] %}
+
+MAP:EDYY RHR/MNS
+ACTIVE:ID:ML,MH,MM,RH,RL:*:*:*
+ACTIVE:ID:PADH:*:*:RL,RL,MM,ML,MH
+COLOR:standard
+FOLDER:Sectors
+ASRDATA:EDGG
+STYLE:Solid:1
+{{ render_sectorlines(
+        EDGG['YYRL1']['245-355'],
+        EDGG['YYRAB']['245-315'],
+        EDGG['FFM142']['245-295'],
+
+        EDGG['YYML1']['245-355'],
+        EDGG['YYML2']['295-355'],
+        EDGG['YYML4']['245-315'],
+        EDGG['YYMAB']['245-315'],
+
+        EHAA['EDYYDLT']['245-315'],
+
+        EDWW['EDYYSL1']['245-355'],
+        EDWW['EDYYSL2']['255-355'],
+
+        EDWW['EDYYCL1']['245-355'],
+        EDWW['EDYYCL2']['245-315'],
+
+        EDWW['EDYYHL1']['245-365'],
+        EDWW['EDYYJL']['245-365'],
+
+        EBBU['EDYYLNH_SCT']['245-660'],
+        EBBU['EDYYLNH_SCT 2']['255-660'],
+        EXT['EBBU']['EDYYLXH']['245-660'],
+        EXT['EBBU']['EDYYNIH']['245-660'],
+        EXT['EBBU']['EDYYKOH']['245-660'],
+    ) }}
