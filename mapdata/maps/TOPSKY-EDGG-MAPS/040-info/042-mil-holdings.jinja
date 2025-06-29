@@ -1,0 +1,83 @@
+{%- set holdings = {
+        "ALESU":  {"inbd": "077", "turn": "L", "leg": "1MIN",   "radius": "250KTS", "lvllo": "A25", "lvlup": null,  "symb": "FIX3_L"},
+        "ANS":    {"inbd": "256", "turn": "R", "leg": "3MIN",   "radius": "120KTS", "lvllo": "A35", "lvlup": null,  "symb": "VOR"   },
+        "BUGAL":  {"inbd": "234", "turn": "R", "leg": "7",      "radius": "250KTS", "lvllo": "070", "lvlup": "120", "symb": "FIX3_L"},
+        "DKB":    {"inbd": "128", "turn": "L", "leg": "1MIN",   "radius": "250KTS", "lvllo": "A50", "lvlup": null,  "symb": "VOR"   },
+        "EB401":  {"inbd": "256", "turn": "R", "leg": "2.5",    "radius": "120KTS", "lvllo": "A34", "lvlup": "A50", "symb": "FIX3_L"},
+        "EB419":  {"inbd": "076", "turn": "R", "leg": "2.5",    "radius": "120KTS", "lvllo": "A35", "lvlup": "A50", "symb": "FIX3_L"},
+        "GIX38":  {"inbd": "197", "turn": "R", "leg": "7",      "radius": "250KTS", "lvllo": null,  "lvlup": null,  "symb": "FIX3_L"},
+        "HN200":  {"inbd": "251", "turn": "L", "leg": "1MIN",   "radius": "250KTS", "lvllo": null,  "lvlup": null,  "symb": "FIX3_L"},
+        "IK402":  {"inbd": "240", "turn": "R", "leg": "3",      "radius": "120KTS", "lvllo": "A38", "lvlup": null,  "symb": "FIX3_L"},
+        "IK413":  {"inbd": "282", "turn": "R", "leg": "2.5",    "radius": "120KTS", "lvllo": "A35", "lvlup": null,  "symb": "FIX3_L"},
+        "ILM":    {"inbd": "240", "turn": "L", "leg": "2.5MIN", "radius": "090KTS", "lvllo": "A35", "lvlup": "A40", "symb": "VOR"   },
+        "IZWOK":  {"inbd": "353", "turn": "L", "leg": "1MIN",   "radius": "250KTS", "lvllo": null,  "lvlup": null,  "symb": "FIX3_L"},
+        "MAPIG":  {"inbd": "089", "turn": "R", "leg": "7",      "radius": "250KTS", "lvllo": "A50", "lvlup": "135", "symb": "FIX2_L"},
+        "MAVEP":  {"inbd": "222", "turn": "R", "leg": "7",      "radius": "250KTS", "lvllo": "070", "lvlup": "140", "symb": "FIX3_L"},
+        "MTR":    {"inbd": "241", "turn": "R", "leg": "4",      "radius": "250KTS", "lvllo": "A40", "lvlup": "080", "symb": "VOR"   },
+        "NIBKO":  {"inbd": "244", "turn": "R", "leg": "1MIN",   "radius": "250KTS", "lvllo": null,  "lvlup": null,  "symb": "FIX3_L"},
+        "OU117":  {"inbd": "193", "turn": "R", "leg": "1MIN",   "radius": "250KTS", "lvllo": "A40", "lvlup": "A60", "symb": "FIX3_L"},
+        "R114N":  {"inbd": "114", "turn": "L", "leg": "4",      "radius": "250KTS", "lvllo": null,  "lvlup": null,  "symb": "FIX3_L"},
+        "RANIN":  {"inbd": "079", "turn": "L", "leg": "1MIN",   "radius": "250KTS", "lvllo": "A50", "lvlup": null,  "symb": "FIX2_L"},
+        "TAU 07": {"inbd": "227", "turn": "R", "leg": "1MIN",   "radius": "250KTS", "lvllo": "A50", "lvlup": "070", "symb": "VOR"   },
+        "TAU 25": {"inbd": "038", "turn": "R", "leg": "1MIN",   "radius": "250KTS", "lvllo": "A44", "lvlup": "A64", "symb": "VOR"   },
+        "TIMLO":  {"inbd": "085", "turn": "L", "leg": "1MIN",   "radius": "250KTS", "lvllo": null,  "lvlup": null,  "symb": "FIX3_L"},
+        "WEZEL":  {"inbd": "224", "turn": "R", "leg": "7",      "radius": "250KTS", "lvllo": "070", "lvlup": "140", "symb": "FIX3_L"},
+        "XIDOD":  {"inbd": "263", "turn": "R", "leg": "7",      "radius": "250KTS", "lvllo": "A50", "lvlup": "135", "symb": "FIX2_L"}
+    } %}
+
+MAP:Holdings MIL
+FOLDER:Airspace Info
+COLOR:holding_mil
+LAYER:4
+STYLE:Solid:1
+TEXTALIGN:LB
+FONTSIZE:=:11
+{% for desig, hold in holdings.items() if not desig in ['GIX38', 'MAVEP', 'R114N', 'TAU 07', 'TAU 25'] %}
+// {{desig}}
+COORD_HM:{{desig}}:{{hold.inbd}}M:{{hold.turn}}:{{hold.leg}}:{{hold.radius}}:10
+COORDPOLY:0
+SYMBOL:{{hold.symb}}:{{desig}}:{{desig}}:10:0
+TEXT:{{desig}}:{{hold.turn}} {{hold.inbd}}:10:13
+{%- if hold.lvllo != null %}
+TEXT:{{desig}}:{{hold.lvllo}}:10:26
+{%- elif hold.lvlup != null %}
+TEXT:{{desig}}:{{hold.lvllo}}-{{hold.lvlup}}:10:26
+{%- endif %}
+{% endfor %}
+
+// GIX 38 NM
+COORD_HM:GIX38:{{holdings['GIX38'].inbd}}M:{{holdings['GIX38'].turn}}:{{holdings['GIX38'].leg}}:{{holdings['GIX38'].radius}}:10
+COORDPOLY:0
+SYMBOL:{{holdings['GIX38'].symb}}:GIX38:GIX 38:10:0
+TEXT:GIX38:{{holdings['GIX38'].turn}} {{holdings['GIX38'].inbd}}:10:13
+
+// MAVEP
+COORD_HM:MAVEP:{{holdings['MAVEP'].inbd}}M:{{holdings['MAVEP'].turn}}:{{holdings['MAVEP'].leg}}:{{holdings['MAVEP'].radius}}:10
+COORDPOLY:0
+TEXTALIGN:RB
+SYMBOL:{{holdings['MAVEP'].symb}}:MAVEP:MAVEP:-10:0
+TEXT:MAVEP:{{holdings['MAVEP'].turn}} {{holdings['MAVEP'].inbd}}:-10:13
+TEXT:MAVEP:{{holdings['MAVEP'].lvllo}}-{{holdings['MAVEP'].lvlup}}:-10:26
+
+// MAS R114
+COORD_HM:R114N:{{holdings['R114N'].inbd}}M:{{holdings['R114N'].turn}}:{{holdings['R114N'].leg}}:{{holdings['R114N'].radius}}:10
+COORDPOLY:0
+TEXTALIGN:RB
+SYMBOL:{{holdings['R114N'].symb}}:R114N:MAS R114:-10:0
+TEXT:R114N:{{holdings['R114N'].turn}} {{holdings['R114N'].inbd}}:-10:13
+
+// TAU 07 (ETOU)
+COORD_HM:TAU:{{holdings['TAU 07'].inbd}}M:{{holdings['TAU 07'].turn}}:{{holdings['TAU 07'].leg}}:{{holdings['TAU 07'].radius}}:10
+COORDPOLY:0
+TEXTALIGN:LB
+SYMBOL:{{holdings['TAU 07'].symb}}:TAU:TAU (07):10:0
+TEXT:TAU:{{holdings['TAU 07'].turn}} {{holdings['TAU 07'].inbd}}:10:13
+TEXT:TAU:{{holdings['TAU 07'].lvllo}}-{{holdings['TAU 07'].lvlup}}:10:26
+
+// TAU 25 (ETOU)
+COORD_HM:TAU:{{holdings['TAU 25'].inbd}}M:{{holdings['TAU 25'].turn}}:{{holdings['TAU 25'].leg}}:{{holdings['TAU 25'].radius}}:10
+COORDPOLY:0
+TEXTALIGN:RB
+SYMBOL:{{holdings['TAU 25'].symb}}:TAU:TAU (25):-10:0
+TEXT:TAU:{{holdings['TAU 25'].turn}} {{holdings['TAU 25'].inbd}}:-10:13
+TEXT:TAU:{{holdings['TAU 25'].lvllo}}-{{holdings['TAU 25'].lvlup}}:-10:26

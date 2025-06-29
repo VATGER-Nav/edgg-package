@@ -1,0 +1,82 @@
+{%- set PAD_NDB = 'N051.37.24.500:E008.38.21.800' %}
+{%- set holdings = {
+        "ABHOL": {"inbd": "275", "turn": "R", "lvllo": "A50", "lvlup": null,  "symb": "FIX3_L"},
+        "ADEMI": {"inbd": "284", "turn": "L", "lvllo": "A60", "lvlup": null,  "symb": "FIX2_L"},
+        "ALEXU": {"inbd": "191", "turn": "R", "lvllo": "A60", "lvlup": null,  "symb": "FIX2_L"},
+        "BADSO": {"inbd": "174", "turn": "L", "lvllo": "A70", "lvlup": null,  "symb": "FIX3_L"},
+        "CHA":   {"inbd": "283", "turn": "R", "lvllo": "A50", "lvlup": "100", "symb": "VOR"   },
+        "COL":   {"inbd": "296", "turn": "L", "lvllo": "A50", "lvlup": "130", "symb": "VOR"   },
+        "COSJE": {"inbd": "346", "turn": "R", "lvllo": "A50", "lvlup": null,  "symb": "FIX2_L"},
+        "DL409": {"inbd": "050", "turn": "R", "lvllo": "A40", "lvlup": null,  "symb": "FIX3_L"},
+        "DL429": {"inbd": "050", "turn": "L", "lvllo": "A40", "lvlup": null,  "symb": "FIX3_L"},
+        "DL503": {"inbd": "230", "turn": "L", "lvllo": "A40", "lvlup": null,  "symb": "FIX3_L"},
+        "DL524": {"inbd": "230", "turn": "R", "lvllo": "A40", "lvlup": null,  "symb": "FIX3_L"},
+        "DOMEG": {"inbd": "170", "turn": "L", "lvllo": "A50", "lvlup": null,  "symb": "FIX2_L"},
+        "DOR":   {"inbd": "059", "turn": "R", "lvllo": "A30", "lvlup": null,  "symb": "VOR"   },
+        "DUS":   {"inbd": "146", "turn": "L", "lvllo": "A30", "lvlup": null,  "symb": "VOR"   },
+        "ELNAT": {"inbd": "306", "turn": "L", "lvllo": "A50", "lvlup": null,  "symb": "FIX2_L"},
+        "FH415": {"inbd": "031", "turn": "L", "lvllo": "A60", "lvlup": "140", "symb": "FIX3_L"},
+        "FH515": {"inbd": "211", "turn": "R", "lvllo": "A50", "lvlup": "140", "symb": "FIX3_L"},
+        "FKS":   {"inbd": "244", "turn": "R", "lvllo": "A50", "lvlup": null,  "symb": "VOR"   },
+        "GED":   {"inbd": "179", "turn": "R", "lvllo": "A60", "lvlup": null,  "symb": "VOR"   },
+        "GESBI": {"inbd": "139", "turn": "R", "lvllo": "A30", "lvlup": null,  "symb": "FIX2_L"},
+        "HAN":   {"inbd": "120", "turn": "L", "lvllo": "A50", "lvlup": null,  "symb": "VOR"   },
+        "HMM":   {"inbd": "257", "turn": "L", "lvllo": "A50", "lvlup": "240", "symb": "VOR"   },
+        "IBIRU": {"inbd": "346", "turn": "L", "lvllo": "A50", "lvlup": null,  "symb": "FIX3_L"},
+        "ITJET": {"inbd": "339", "turn": "R", "lvllo": "A35", "lvlup": null,  "symb": "FIX3_L"},
+        "KBA":   {"inbd": "030", "turn": "R", "lvllo": "A60", "lvlup": null,  "symb": "VOR"   },
+        "KETEG": {"inbd": "317", "turn": "L", "lvllo": "A50", "lvlup": null,  "symb": "FIX2_L"},
+        "KOPAG": {"inbd": "203", "turn": "L", "lvllo": "A50", "lvlup": null,  "symb": "FIX3_L"},
+        "KRH":   {"inbd": "194", "turn": "R", "lvllo": "A60", "lvlup": null,  "symb": "VOR"   },
+        "LAA":   {"inbd": "272", "turn": "R", "lvllo": "A30", "lvlup": null,  "symb": "VOR"   },
+        "LBU":   {"inbd": "177", "turn": "L", "lvllo": "A50", "lvlup": null,  "symb": "VOR"   },
+        "LHR":   {"inbd": "358", "turn": "R", "lvllo": "A60", "lvlup": "110", "symb": "VOR"   },
+        "LMA":   {"inbd": "239", "turn": "R", "lvllo": "A40", "lvlup": "240", "symb": "VOR"   },
+        "MEFTO": {"inbd": "066", "turn": "L", "lvllo": "A50", "lvlup": null,  "symb": "FIX3_L"},
+        "MHV":   {"inbd": "359", "turn": "L", "lvllo": "A20", "lvlup": null,  "symb": "VOR"   },
+        "NORFE": {"inbd": "162", "turn": "L", "lvllo": "A30", "lvlup": null,  "symb": "FIX3_L"},
+        "NVO":   {"inbd": "066", "turn": "R", "lvllo": "A60", "lvlup": "130", "symb": "VOR"   },
+        "OHMAR": {"inbd": "118", "turn": "L", "lvllo": "A60", "lvlup": null,  "symb": "FIX2_L"},
+        "OSN":   {"inbd": "207", "turn": "R", "lvllo": "A50", "lvlup": null,  "symb": "VOR"   },
+        "PAD":   {"inbd": "055", "turn": "R", "lvllo": "A30", "lvlup": null,  "symb": "VOR"   },
+        "REUTL": {"inbd": "346", "turn": "L", "lvllo": "A60", "lvlup": null,  "symb": "FIX3_L"},
+        "RINEX": {"inbd": "351", "turn": "L", "lvllo": "A50", "lvlup": null,  "symb": "FIX2_L"},
+        "SIL":   {"inbd": "108", "turn": "R", "lvllo": "A60", "lvlup": null,  "symb": "VOR"   },
+        "SOBTU": {"inbd": "267", "turn": "R", "lvllo": "A40", "lvlup": null,  "symb": "FIX2_L"},
+        "STG":   {"inbd": "346", "turn": "L", "lvllo": "A50", "lvlup": null,  "symb": "VOR"   },
+        "SUL":   {"inbd": "188", "turn": "R", "lvllo": "A70", "lvlup": null,  "symb": "VOR"   },
+        "TAU":   {"inbd": "224", "turn": "R", "lvllo": "A50", "lvlup": null,  "symb": "VOR"   },
+        "TEKSI": {"inbd": "268", "turn": "R", "lvllo": "A60", "lvlup": null,  "symb": "FIX3_L"},
+        "WRB":   {"inbd": "065", "turn": "R", "lvllo": "A50", "lvlup": null,  "symb": "VOR"   },
+        "WUHFU": {"inbd": "275", "turn": "L", "lvllo": "A50", "lvlup": null,  "symb": "FIX3_L"},
+        "WYP":   {"inbd": "259", "turn": "L", "lvllo": "A30", "lvlup": "130", "symb": "VOR"   },
+        "XAROL": {"inbd": "008", "turn": "L", "lvllo": "A50", "lvlup": null,  "symb": "FIX2_L"},
+        "YOLFO": {"inbd": "095", "turn": "R", "lvllo": "A50", "lvlup": null,  "symb": "FIX3_L"},
+        "ZWN":   {"inbd": "255", "turn": "R", "lvllo": "A40", "lvlup": "140", "symb": "VOR"   }
+    } %}
+
+MAP:Holdings APP
+FOLDER:Airspace Info
+COLOR:holding_app
+LAYER:4
+STYLE:Solid:1
+TEXTALIGN:LB
+FONTSIZE:=:11
+{% for desig, hold in holdings.items() if not desig in ['PAD'] %}
+// {{desig}}
+COORD_HM:{{desig}}:{{hold.inbd}}M:{{hold.turn}}:1MIN:250KTS:10
+COORDPOLY:0
+SYMBOL:{{hold.symb}}:{{desig}}:{{desig}}:10:0
+TEXT:{{desig}}:{{hold.turn}} {{hold.inbd}}:10:13
+{%- if hold.lvlup == null %}
+TEXT:{{desig}}:{{hold.lvllo}}:10:26
+{%- else %}
+TEXT:{{desig}}:{{hold.lvllo}}-{{hold.lvlup}}:10:26
+{%- endif %}
+{% endfor %}
+// PAD
+COORD_HM:{{PAD_NDB}}:{{holdings['PAD'].inbd}}M:{{holdings['PAD'].turn}}:1MIN:250KTS:10
+COORDPOLY:0
+SYMBOL:{{holdings['PAD'].symb}}:{{PAD_NDB}}:PAD:10:0
+TEXT:{{PAD_NDB}}:{{holdings['PAD'].turn}} {{holdings['PAD'].inbd}}:10:13
+TEXT:{{PAD_NDB}}:{{holdings['PAD'].lvllo}}:10:26
