@@ -1,0 +1,326 @@
+{%- set idf = {
+    "EDGG": [
+        'ETHF',
+        'EDEP',
+        'EDGZ',
+        'EDFO',
+        'EDFU',
+        'EDEW',
+        'EDGU',
+        'ETHN',
+        'EDFR',
+        'ETIK',
+        'EDQB',
+        'EDQN',
+        'EDQG',
+        'EDGJ',
+        'EDGY',
+        'EDGH',
+        'EDFW',
+        'EDFJ',
+        'EDFS',
+        'EDQT',
+        'EDFK',
+        'EDFD',
+        'EDER',
+        'EDFC',
+        'EDFG',
+        'EDFB',
+        'EDFP',
+        'EDGF',
+        'EDES',
+        'EDGR',
+        'EDFT',
+        'EDFN',
+        'EDEM',
+        'EDEN',
+    ],
+    "EDMM": [
+        'EDQS',
+    ]
+} %}
+{%- set idl = {
+    "EDGG": [
+        'EDFQ',
+        'EDKL',
+        'EDKN',
+        'EDKZ',
+        'EDKF',
+        'EDKH',
+        'EDKP',
+        'EDKU',
+        'EDKR',
+        'EDGQ',
+        'EDKD',
+        'EDKS',
+        'EDKW',
+        'EDKM',
+        'EDKO',
+        'EDLR',
+        'EDLZ',
+        'EDLA',
+        'EDLF',
+        'EDLK',
+        'EDLC',
+        'EDLD',
+        'EDLX',
+        'EDLG',
+        'EDLY',
+        'EDLS',
+        'EDLB',
+        'EDLM',
+        'EDLT',
+        'EDLH',
+        'EDLQ',
+        'EDLU',
+        'EDLI',
+        'EDLO',
+    ],
+    "EHAA": [
+        'EHTW',
+        'EHVK',
+        'EHEH',
+        'EHBD',
+        'EHBK',
+    ]
+} %}
+{%- set idr = {
+    "EDGG": [
+        'EDRO',
+        'EDRL',
+        'EDRF',
+        'EDRP',
+        'EDRJ',
+        'EDRX',
+        'EDRH',
+        'EDRQ',
+        'EDRG',
+        'EDRS',
+        'EDRN',
+        'EDRD',
+        'EDRT',
+        'EDRB',
+        'EDRM',
+        'EDRK',
+        'EDRE',
+        'EDRV',
+        'EDKV',
+        'EDRA',
+        'EDGA',
+        'EDFA',
+        'EDFY',
+        'EDFL',
+        'EDFZ',
+        'EDFV',
+        'EDGP',
+        'EDGB',
+        'EDFI',
+        'EDGT',
+        'EDKI',
+        'EDKB',
+        'EDKA',
+        'EDEL',
+    ],
+    "LFEE": [
+        'LFGU',
+        'LFQU',
+        'LFSH',
+    ],
+    "EBBU": [
+        'EBBL',
+        'EBZW',
+        'EBSL',
+        'ELUS',
+        'ELNT',
+        'ELLX',
+    ]
+} %}
+{%- set ids = {
+    "EDGG": [
+        'EDEH',
+        'EDRY',
+        'EDFX',
+        'EDGX',
+        'EDTK',
+        'EDGM',
+        'EDGI',
+        'EDRI',
+        'EDTC',
+        'EDTX',
+        'EDTY',
+        'EDSE',
+        'EDST',
+        'EDTN',
+        'EDSG',
+        'EDTQ',
+        'EDSH',
+        'EDSV',
+        'EDSD',
+        'EDSP',
+        'EDTE',
+        'EDSA',
+        'EDSZ',
+        'EDTW',
+        'EDSF',
+        'EDSW',
+        'EDTO',
+        'EDSK',
+        'EDTB',
+    ],
+    "EDMM": [
+        'EDND',
+        'EDPY',
+        'EDNO',
+        'EDNQ',
+        'EDPA',
+        'EDTH',
+        'EDPU',
+        'EDPM',
+        'EDPT',
+        'EDNG',
+        'EDMU',
+        'EDMG',
+        'EDSO',
+        'EDPB',
+        'EDPJ',
+        'EDMC',
+        'EDNE',
+        'EDNW',
+        'EDMI',
+        'ETHL',
+        'EDMB',
+        'EDMZ',
+    ],
+    "LSAS-EDxx": [
+        'EDTA',
+        'EDTR',
+        'EDSM',
+        'EDTG',
+        'EDTF',
+        'EDTU',
+        'EDTM',
+        'EDTP',
+        'EDTZ',
+        'EDSR',
+        'EDSN',
+        'EDSI',
+        'EDSL',
+        'EDTD',
+        'EDTS',
+    ],
+    "LFEE": [
+        'LFST',
+        'LFSH',
+        'LFGC',
+        'LFGA',
+        'LFGB',
+        'LFSB',
+    ],
+    "LSAS": [
+        'LSZI',
+        'LSPF',
+        'LSPA',
+    ]
+} %}
+{%- set idv = {
+    "EDGG": [
+        'EDGK',
+        'EDGW',
+        'EDGE',
+    ],
+    "EDMM": [
+        'EDEG',
+        'EDBA',
+        'EDEB',
+        'EDEQ',
+        'EDCO',
+        'EDBS',
+        'EDOF',
+        'EDAO',
+        'EDCB',
+        'EDCQ',
+    ],
+    "EDWW": [
+        'EDBC',
+        'EDOM',
+        'EDOZ',
+        'EDOL',
+        'EDBM',
+        'EDVG',
+        'EDVK',
+        'EDHD',
+        'EDLJ',
+        'EDVF',
+        'EDVW',
+        'EDVI',
+        'EDVT',
+        'EDVL',
+        'EDVD',
+        'EDVA',
+        'EDVN',
+        'EDVJ',
+        'EDVS',
+        'EDVM',
+        'EDVR',
+        'EDVY',
+        'ETHB',
+        'ETNW',
+        'EDDV',
+        'ETHC',
+        'EDVP',
+        'EDVQ',
+        'EDVE',
+        'EDXI',
+    ],
+    "LFEE": [
+        'LFST',
+        'LFSH',
+        'LFGC',
+        'LFGA',
+        'LFGB',
+        'LFSB',
+    ],
+    "LSAS": [
+        'LSZI',
+        'LSPF',
+        'LSPA',
+    ]
+} %}
+
+MAP:AD_Hotspots
+FOLDER:Aerodromes
+COLOR:standard
+// Aerodromes IDF FIS Area
+{%- for acc, ads in idf.items() %}
+{%- for ad in ads %}
+SYMBOL:AIRPORT:{{ ad }}
+{%- endfor %}
+{%- endfor %}
+
+// Aerodromes IDL FIS Area
+{%- for acc, ads in idl.items() %}
+{%- for ad in ads %}
+SYMBOL:AIRPORT:{{ ad }}
+{%- endfor %}
+{%- endfor %}
+
+// Aerodromes IDR FIS Area
+{%- for acc, ads in idr.items() %}
+{%- for ad in ads %}
+SYMBOL:AIRPORT:{{ ad }}
+{%- endfor %}
+{%- endfor %}
+
+// Aerodromes IDS FIS Area
+{%- for acc, ads in ids.items() %}
+{%- for ad in ads %}
+SYMBOL:AIRPORT:{{ ad }}
+{%- endfor %}
+{%- endfor %}
+
+// Aerodromes IDV FIS Area
+{%- for acc, ads in idv.items() %}
+{%- for ad in ads %}
+SYMBOL:AIRPORT:{{ ad }}
+{%- endfor %}
+{%- endfor %}
