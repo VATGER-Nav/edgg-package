@@ -1,0 +1,18 @@
+{
+"type": "FeatureCollection",
+"name": "fis_labels",
+"crs": { "type": "name", "properties": { "name": "urn:ogc:def:crs:OGC:1.3:CRS84" } },
+"features": [
+{ "type": "Feature", "properties": { "name": "FDR" }, "geometry": { "type": "Point", "coordinates": [ 7.320031111111111, 50.153786388888889 ] } },
+{ "type": "Feature", "properties": { "name": "FDF" }, "geometry": { "type": "Point", "coordinates": [ 9.686272777777779, 50.224405 ] } },
+{ "type": "Feature", "properties": { "name": "FDS" }, "geometry": { "type": "Point", "coordinates": [ 9.141396944444445, 48.621947777777777 ] } },
+{ "type": "Feature", "properties": { "name": "FDL" }, "geometry": { "type": "Point", "coordinates": [ 7.467260277777778, 51.690336388888888 ] } },
+{ "type": "Feature", "properties": { "name": "FDV" }, "geometry": { "type": "Point", "coordinates": [ 10.26162388888889, 51.850156944444443 ] } },
+{ "type": "Feature", "properties": { "name": "FDM" }, "geometry": { "type": "Point", "coordinates": [ 11.246921388888888, 47.973974444444444 ] } },
+{ "type": "Feature", "properties": { "name": "FDO" }, "geometry": { "type": "Point", "coordinates": [ 11.634545277777777, 49.010950555555553 ] } },
+{ "type": "Feature", "properties": { "name": "FSW" }, "geometry": { "type": "Point", "coordinates": [ 7.71449, 53.556777222222216 ] } },
+{ "type": "Feature", "properties": { "name": "FDH" }, "geometry": { "type": "Point", "coordinates": [ 9.747964722222221, 53.873954166666664 ] } },
+{ "type": "Feature", "properties": { "name": "FDC" }, "geometry": { "type": "Point", "coordinates": [ 12.06682, 50.81249555555555 ] } },
+{ "type": "Feature", "properties": { "name": "FDB" }, "geometry": { "type": "Point", "coordinates": [ 12.335187222222222, 52.972136111111112 ] } }
+]
+}
