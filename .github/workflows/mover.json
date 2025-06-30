@@ -12,52 +12,6 @@
     ".github/workflows/source/topsky_eduu_maps/heuse_area.txt"
   ],
 
-  "EDGG/Plugins/Topsky/EDGG/TopSkyMaps.txt": [
-    ".github/workflows/source/topsky_edgg_maps/general.txt",
-
-    ".github/workflows/source/topsky_edgg_maps/ecl/eddl.txt",
-    ".github/workflows/source/topsky_edgg_maps/ecl/eddk.txt",
-    ".github/workflows/source/topsky_edgg_maps/ecl/military.txt",
-    ".github/workflows/source/topsky_edgg_maps/ecl/minor.txt",
-
-    ".github/workflows/source/topsky_edgg_maps/controlzones.txt",
-    ".github/workflows/source/topsky_edgg_maps/airspace.txt",
-
-    ".github/workflows/source/topsky_edgg_maps/edgg_fixes.txt",
-
-    ".github/workflows/source/topsky_edgg_maps/areas.txt",
-
-    ".github/workflows/source/topsky_edgg_maps/sector/borders.txt",
-    ".github/workflows/source/topsky_edgg_maps/sector/edgg_sectors.txt",
-    ".github/workflows/source/topsky_edgg_maps/sector/edgg_border_sectors.txt",
-
-    ".github/workflows/source/topsky_edgg_maps/eddf/eddf_rnp.txt",
-    ".github/workflows/source/topsky_edgg_maps/eddf/eddf_ntz.txt",
-    ".github/workflows/source/topsky_edgg_maps/eddf/transition.txt",
-    ".github/workflows/source/topsky_edgg_maps/eddf/eddf_ipa.txt",
-    ".github/workflows/source/topsky_edgg_maps/eddf/eddf_app_maps.txt",
-
-    ".github/workflows/source/topsky_edgg_maps/eddk.txt",
-    ".github/workflows/source/topsky_edgg_maps/edds.txt",
-    ".github/workflows/source/topsky_edgg_maps/edfh.txt",
-    ".github/workflows/source/topsky_edgg_maps/eddl.txt",
-    ".github/workflows/source/topsky_edgg_maps/approaches.txt",
-
-    ".github/workflows/source/topsky_edgg_maps/military.txt",
-
-    ".github/workflows/source/topsky_edgg_maps/holdings.txt",
-    ".github/workflows/source/topsky_edgg_maps/mva.txt",
-    ".github/workflows/source/topsky_edgg_maps/topo.txt",
-    ".github/workflows/source/topsky_edgg_maps/vfr.txt",
-
-    ".github/workflows/source/topsky_edgg_maps/tools_app.txt",
-    ".github/workflows/source/topsky_edgg_maps/tools_ctr.txt",
-
-    ".github/workflows/source/topsky_edgg_maps/ecl/eddf.txt",
-
-    ".github/workflows/source/topsky_edgg_maps/minor_rwy.txt"
-  ],
-
   "EDGG/Plugins/Topsky/EDYY/TopSkyMaps.txt": [
     ".github/workflows/source/topsky_edyy_maps/general.txt",
 

@@ -20,6 +20,11 @@ maps = [
 ]
 aliases = [ "bright" ]
 
+[profiles.EDGG]
+maps = [
+    { map = "TOPSKY-EDGG-MAPS", target = "Plugins/Topsky/EDGG/TopSkyMaps.txt" },
+]
+
 [profiles.CPDLC-PHX]
 maps = [
     { map = "TOPSKY-CPDLC", target = "Plugins/Topsky/TWR_PHX_NIGHT/TopSkyCPDLC.txt" },
@@ -64,6 +69,14 @@ source = "misc/airspace.txt"
 [data.sectors]
 type = "sectors"
 source = "misc/sectors.txt"
+
+[data.sectors_ext]
+type = "sectors"
+source = "misc/sectors-ext.txt"
+
+[data.sectors_adf]
+type = "sectors"
+source = "misc/sectors-adf.txt"
 
 [data.aor]
 type = "sectors"
