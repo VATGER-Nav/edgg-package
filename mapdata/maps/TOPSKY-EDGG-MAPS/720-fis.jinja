@@ -1,0 +1,30 @@
+//---------------------------------------------------------------
+//                               VFR
+//---------------------------------------------------------------
+{%- set labels = {
+    "FDR": 'FDR - 4451',
+    "FDF": 'FDF - 4450',
+    "FDS": 'FDS - 4452',
+    "FDL": 'FDL - 7742',
+    "FDV": 'FDV - 7743',
+    "FDM": 'FDM - 4453',
+    "FDO": 'FDO - 4454',
+    "FSW": 'FSW',
+    "FDH": 'FDH - 7740',
+    "FDC": 'FDC - 7744',
+    "FDB": 'FDB - 7741',
+} %}
+{%- set fis = data.topsky['common']['vfr']['fis'] %}
+
+MAP:FIS Sectors + Squawks
+FOLDER:VFR
+COLOR:fis
+STYLE:Solid:1
+FONTSIZE:=:20
+FONTSTYLE:700:0:0:0
+{% for uuid, geom in fis['line'].items() %}
+{{- geom | to_line('') -}}
+{% endfor %}
+{% for desig, text in labels.items() %}
+{{- fis['labels'][desig] | to_text(text) }}
+{% endfor %}

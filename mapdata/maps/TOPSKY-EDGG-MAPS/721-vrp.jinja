@@ -1,0 +1,32 @@
+MAP:VRPs
+FOLDER:VFR
+COLOR:standard
+TEXTALIGN:LB
+{%- for icao, fxnames in data.reporting_points['VFR'].items() %}
+// {{icao}}
+{%- for fx in fxnames %}
+SYMBOL:VFR:{{icao | replace('ED', '')}}-{{fx['name']}}:{{fx['name']}}:5:0
+{%- endfor %}
+{%- endfor %}
+
+MAP:MIL VRPs
+FOLDER:VFR
+COLOR:standard
+TEXTALIGN:LB
+{%- for icao, fxnames in data.reporting_points['MIL'].items() %}
+// {{icao}}
+{%- for fx in fxnames %}
+{%- if fx["text_align"] == 'RB' %}
+SYMBOL/{{fx["text_align"]}}:VFR:{{fx['fix']}}:{{fx['name']}}:-5:0
+{%- else %}
+SYMBOL:VFR:{{fx['fix']}}:{{fx['name']}}:5:0
+{%- endif%}
+{%- endfor %}
+{%- endfor %}
+
+MAP:Hospitals
+FOLDER:VFR
+COLOR:standard
+{%- for name, geom in data.topsky['common']['vfr']['EDGG_hospitals'].items() %}
+{{ geom | to_symbol('HOSPITAL') }}:{{name}}:0:-13
+{%- endfor %}
