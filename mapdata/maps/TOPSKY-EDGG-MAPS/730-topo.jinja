@@ -1,0 +1,39 @@
+//---------------------------------------------------------------
+//                            Topography
+//---------------------------------------------------------------
+
+MAP:Highways
+FOLDER:Topography
+LAYER:-2
+COLOR:topo_road
+STYLE:Solid:1
+{% for uuid, geom in data.topsky['common']['topo']['EDGG_autobahn'].items() %}
+{{- geom | to_coordline('') }}
+{% endfor %}
+{% for label, geom in data.topsky['common']['topo']['EDGG_autobahn_labels'].items() %}
+{{- geom | to_text(label) }}
+{% endfor %}
+
+MAP:Rivers/Lakes
+FOLDER:Topography
+LAYER:-2
+COLOR:topo_water
+STYLE:Solid:1
+{% for uuid, geom in data.topsky['common']['topo']['EDGG_rivers'].items() %}
+{{- geom | to_coordline('') }}
+{% endfor %}
+{% for label, geom in data.topsky['common']['topo']['EDGG_rivers_labels'].items() %}
+{{- geom | to_text(label) }}
+{% endfor %}
+{% for name, geom in data.topsky['common']['topo']['EDGG_lakes'].items() %}
+{{- geom | to_poly(name, 'topo_water', 100) }}
+{% endfor %}
+
+MAP:DE Border
+FOLDER:Topography
+LAYER:-3
+COLOR:topo_border
+STYLE:Solid:1
+{% for uuid, geom in data.topsky['common']['topo']['EDGG_border_de'].items() %}
+{{- geom | to_coordline('') }}
+{% endfor %}
