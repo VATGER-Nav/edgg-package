@@ -18,7 +18,8 @@ MAP:EDRY RNP 16
 FOLDER:RNAV/RNP
 ACTIVE:RWY:ARR:EDRY16:DEP:*
 COLOR:standard
-{%- for fx in rnp['16'] %}
+SYMBOL:FIX2:NORFE
+{%- for fx in rnp['16'] if fx not in ['NORFE'] %}
 SYMBOL:FIX3:{{fx}}
 {%- endfor %}
 ZOOM:8
@@ -33,7 +34,8 @@ FOLDER:RNAV/RNP
 ACTIVE:RWY:ARR:EDRY34:DEP:*
 COLOR:standard
 SYMBOL:VOR:KRH
-{%- for fx in rnp['34'] if fx not in ['KRH'] %}
+SYMBOL:FIX2:ITJET
+{%- for fx in rnp['34'] if fx not in ['KRH', 'ITJET'] %}
 SYMBOL:FIX3:{{fx}}
 {%- endfor %}
 ZOOM:8
