@@ -1,8 +1,11 @@
+{%- set BAM = 'N051.19.39.900:E007.10.37.100' %}
+{%- set PAD = 'N051.37.24.500:E008.38.21.800' %}
+{%- set SPA = 'N049.58.44.300:E006.41.51.700' %}
+{%- set STR = 'N048.30.19.400:E007.34.19.100' %}
 {%- set navaids = [
     'ALG',
     'ANS',
     'AUG',
-    'BAM',
     'BLM',
     'BOT',
     'CHA',
@@ -47,7 +50,6 @@
     'MTR',
     'NIE',
     'NKR',
-    'NTM',
     'NVO',
     'OKG',
     'OSN',
@@ -62,7 +64,6 @@
     'SAS',
     'SBG',
     'SHD',
-    'SPA',
     'SPI',
     'SPY',
     'SUL',
@@ -86,6 +87,10 @@ COLOR:standard
 {%- for nav in navaids %}
 SYMBOL:VOR:{{nav}}
 {%- endfor %}
+SYMBOL:VOR:{{BAM}}
+SYMBOL:VOR:{{PAD}}
+SYMBOL:VOR:{{SPA}}
+SYMBOL:VOR:{{STR}}
 
 MAP:Navaids w/ L
 FOLDER:Fixes
@@ -94,3 +99,7 @@ COLOR:standard
 {%- for nav in navaids %}
 SYMBOL:VOR:{{nav}}:{{nav}}:5:0
 {%- endfor %}
+SYMBOL:VOR:{{BAM}}:BAM
+SYMBOL:VOR:{{PAD}}:PAD
+SYMBOL:VOR:{{SPA}}:SPA
+SYMBOL:VOR:{{STR}}:STR
