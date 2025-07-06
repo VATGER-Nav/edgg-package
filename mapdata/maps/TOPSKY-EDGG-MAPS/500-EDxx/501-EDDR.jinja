@@ -6,7 +6,6 @@
     Navdata for the RNAV/RNP waypoints!
 #}
 {%- set coord = {
-    "IXWIB": 'N049.13.23.100:E007.24.45.400',
     "DR009": 'N049.12.15.600:E006.54.10.500',
     "DR013": 'N049.13.18.300:E007.21.50.100',
     "DR550": 'N049.13.13.300:E007.18.47.500',
@@ -33,7 +32,8 @@ MAP:EDDR RNP 08
 FOLDER:RNAV/RNP
 ACTIVE:RWY:ARR:EDDR08:DEP:*
 COLOR:standard
-{%- for fx in rnav['08'] %}
+SYMBOL:FIX2:IXWIB
+{%- for fx in rnav['08'] if not fx in ['IXWIB'] %}
 SYMBOL:FIX3:{{coord[fx]}}
 {%- endfor %}
 ZOOM:8
@@ -49,7 +49,8 @@ MAP:EDDR RNP 26
 FOLDER:RNAV/RNP
 ACTIVE:RWY:ARR:EDDR26:DEP:*
 COLOR:standard
-{%- for fx in rnav['26'] %}
+SYMBOL:FIX2:IXWIB
+{%- for fx in rnav['26'] if not fx in ['IXWIB'] %}
 SYMBOL:FIX3:{{coord[fx]}}
 {%- endfor %}
 ZOOM:8
@@ -109,7 +110,7 @@ COORD:{{coord['DR013']}}
 COORD:IXWIB
 COORDLINE
 // Fixes
-SYMBOL:FIX3:IXWIB
+SYMBOL:FIX2:IXWIB
 // Altitudes
 TEXTALIGN:CT
 TEXT:IXWIB:A40:0:5
