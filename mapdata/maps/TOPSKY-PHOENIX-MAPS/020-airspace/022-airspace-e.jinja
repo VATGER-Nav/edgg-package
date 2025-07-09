@@ -1,0 +1,93 @@
+{%- set EDGG = data.airspace['lines']['EDGG'] -%}
+
+MAP:Airspace E
+FOLDER:Airspace
+ASRDATA:PHOENIX
+COLOR:blue
+STYLE:DASH:1
+LAYER:+3
+// EDDE E
+{{ render_sectorlines(EDGG['EDDECLE']['010-100']) }}
+// EDDF E
+{{ render_sectorlines(EDGG['EDDFCLE']['010-100']) }}
+// EDDG E
+{{ render_sectorlines(EDGG['EDDGCLE']['010-100']) }}
+// EDDL E
+{{ render_sectorlines(EDGG['EDDLCLE']['010-100']) }}
+// EDDN E
+{{ render_sectorlines(EDGG['EDDNCLE']['010-100']) }}
+// EDDS E
+{{ render_sectorlines(EDGG['EDDSCLE']['010-100']) }}
+// EDFH E
+{{ render_sectorlines(
+    sector_sub(
+        EDGG['EDFHCLE']['017-100'],
+        EDGG['EDDFCLE']['010-100']
+        ),
+) }}
+// EDFR E
+{{ render_sectorlines(
+    sector_sub(
+        EDGG['EDFRCLE']['017-100'],
+        EDGG['EDDNCLE']['010-100']
+        ),
+) }}
+// EDGS E
+{{ render_sectorlines(EDGG['EDGSCLE']['010-100']) }}
+// EDLP E
+{{ render_sectorlines(EDGG['EDLPCLE']['010-100']) }}
+// EDNY D
+{{ render_sectorlines(
+    EDGG['EDNYCLEA']['017-100'],
+    sector_sub(
+        EDGG['EDNYCLEB']['017-130'],
+        EDGG['EDNYCLEA']['017-100']
+        ),
+    sector_sub(
+        EDGG['EDNYCLEC']['010-100'],
+        EDGG['EDNYCLEA']['017-100']
+        ),
+) }}
+// EDQA E
+{{ render_sectorlines(
+    sector_sub(
+        EDGG['EDQACLE']['010-100'],
+        EDGG['EDDNCLE']['010-100']
+        ),
+) }}
+// EDQN E
+{{ render_sectorlines(
+    sector_sub(
+        EDGG['EDQNCLE']['017-100'],
+        EDGG['EDDNCLE']['010-100']
+        ),
+) }}
+// EDSB E
+{{ render_sectorlines(EDGG['EDSBCLE']['010-100']) }}
+// EDTD E
+{{ render_sectorlines(EDGG['EDTDCLE']['010-100']) }}
+// ETAR E
+{{ render_sectorlines(
+    sector_sub(
+        EDGG['ETARCLE']['017-100'],
+        EDGG['EDDFCLE']['010-100']
+        ),
+) }}
+// ETFH E
+{{ render_sectorlines(
+    sector_sub(
+        EDGG['ETFHCLE']['010-100'],
+        EDGG['EDLPCLE']['010-100']
+        ),
+) }}
+// ETHL E
+{{ render_sectorlines(
+    sector_sub(
+        EDGG['ETHLCLEA']['010-100'],
+        EDGG['EDNYCLEA']['017-100']
+        ),
+    sector_sub(
+        EDGG['ETHLCLEB']['017-100'],
+        EDGG['ETHLCLEA']['010-100']
+        ),
+) }}

@@ -1,0 +1,135 @@
+{%- set BAM = 'N051.19.39.900:E007.10.37.100' %} {# Double Entry in GNG #}
+{%- set PAD = 'N051.37.24.500:E008.38.21.800' %} {# NDB and DME have the same designator PAD, coordinates of the PAD NDB #}
+{%- set SPA = 'N049.58.44.300:E006.41.51.700' %} {# Double Entry in GNG #}
+{%- set STR = 'N048.30.19.400:E007.34.19.100' %} {# Double Entry in GNG (?) #}
+{%- set navaids = {
+        'DME': [
+            'AUG',
+            'CHA',
+            'DKS',
+            'FHH',
+            'GSB',
+            'HOC',
+            'KBD',
+            'LIE',
+            'LNO',
+            'LRD',
+            'MHD',
+            'MND',
+            'MOD',
+            'NDD',
+            'NID',
+            'PAT',
+            'RDG',
+            'RKN',
+            'SAD',
+            'SHD',
+            'SLD',
+            'SPY',
+            'TRA' 
+        ],
+        'VOR': [
+            'MHV',
+            'MTR',
+            'OSN',
+            'SUL',
+            'VFM',
+            'WYP'
+        ],
+        'VORDME': [
+            'BLM',
+            'COL',
+            'DIK',
+            'DKB',
+            'DOR',
+            'DUS',
+            'DRN',
+            'ERF',
+            'ERL',
+            'FKS',
+            'FUL',
+            'GMH',
+            'GOT',
+            'GTQ',
+            'HLZ',
+            'HMM',
+            'KBO',
+            'KLF',
+            'KLO',
+            'KPT',
+            'KRH',
+            'LBU',
+            'LUX',
+            'MAG',
+            'MAH',
+            'MAS',
+            'NIE',
+            'OKG',
+            'OTT',
+            'SAS',
+            'SBG',
+            'SPI',
+            'STG',
+            'TAU',
+            'WLD',
+            'WRB',
+            'ZUE',
+            'ZWN'
+        ],
+        'NDB': [
+            'ALG',
+            'ANS',
+            'BOT',
+            'HAN',
+            'ILM',
+            'INN',
+            'KBA',
+            'LAA',
+            'LHR',
+            'LMA',
+            'MIQ',
+            'MYN',
+            'NKR',
+            'RTT',
+            'SIL',
+            'SR',
+            'WSN'
+        ],
+        'TACAN': [
+            'BUE',
+            'GED',
+            'GIX',
+            'RMS',
+            'WIB' 
+        ],
+        'VORTAC': [
+            'FFM',
+            'NVO'
+        ]  
+} %}
+MAP:Navaids
+FOLDER:Fixes
+ASRDATA:PHOENIX
+COLOR:standard
+LAYER:-2
+{%- for type in ['DME', 'VOR', 'NDB', 'TACAN'] %}
+{%- for fx in navaids[type] %}
+SYMBOL:{{type}}:{{fx}}
+{%- endfor %}
+{%- endfor %}
+{%- for fx in navaids['VORDME'] %}
+SYMBOL:VOR:{{fx}}
+SYMBOL:DME:{{fx}}
+{%- endfor %}
+{%- for fx in navaids['VORTAC'] %}
+SYMBOL:TACAN:{{fx}}
+SYMBOL:VORTAC:{{fx}}
+{%- endfor %}
+{# Manually defined Navaids #}
+SYMBOL:VOR:{{BAM}}
+SYMBOL:DME:{{BAM}}
+SYMBOL:VOR:{{STR}}
+SYMBOL:DME:{{STR}}
+SYMBOL:NDB:{{PAD}}
+SYMBOL:TACAN:{{SPA}}
+SYMBOL:VORTAC:{{SPA}}

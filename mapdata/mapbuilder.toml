@@ -58,10 +58,6 @@ aliases = [ "no-dcl", "general", "edyy" ]
 type = "kml"
 source = "kml/topsky.kml"
 
-[data.navdata]
-type = "json"
-source = "misc/navdata.json"
-
 [data.airspace]
 type = "sectors"
 source = "misc/airspace.txt"
@@ -82,10 +78,6 @@ source = "misc/sectors-adf.txt"
 type = "sectors"
 source = "misc/aor.txt"
 
-[data.airspace_labels]
-type = "raw"
-source = "misc/airspace-labels.txt"
-
 #--------------MVA-------------
 
 [data.mva_su]
@@ -105,10 +97,6 @@ source = "misc/mva/mva_military.txt"
 [data.reporting_points]
 type = "json"
 source = "misc/vfr/reporting-points.json"
-
-[data.fis]
-type = "raw"
-source = "misc/vfr/fis.txt"
 
 
 #-------Groundlayouts AIXM-----

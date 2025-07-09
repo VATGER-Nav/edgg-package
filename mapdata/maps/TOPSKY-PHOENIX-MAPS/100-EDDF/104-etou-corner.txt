@@ -1,4 +1,6 @@
-MAP:ETOU corner
+//-------------------------- ETOU Corner ------------------------
+
+MAP:ETOU Corner
 FOLDER:EDDF
 COLOR:yellow
 STYLE:Solid:1
