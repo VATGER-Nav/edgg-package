@@ -1,0 +1,159 @@
+{%- set EDGG = data.airspace['lines']['EDGG'] -%}
+
+MAP:CTR/ATZ
+FOLDER:Airspace
+ASRDATA:PHOENIX
+COLOR:standard
+ACTIVE:1
+STYLE:Solid:1
+{{ render_sectorlines(
+        EDGG['EDDFCTR']['000-025'],
+        EDGG['EDDLCTR']['000-025'],
+        EDGG['EDDKCTR']['000-025'],
+        EDGG['EDDSCTR']['000-035'],
+        EDGG['EDDGCTR']['000-025'],
+        EDGG['EDDRCTR']['000-036'],
+        EDGG['EDFHCTR']['000-035'],
+        EDGG['EDFMCTR']['000-020'],
+        EDGG['EDLNCTR']['000-020'],
+        EDGG['EDLPCTR']['000-025'],
+        EDGG['EDLVCTR']['000-030'],
+        EDGG['EDLWCTR']['000-025'],
+        EDGG['EDSBCTR']['000-025'],
+        EDGG['EDTLCTR']['000-025'],
+        EDGG['ETADCTR']['000-037'],
+        EDGG['ETARCTR']['000-036'],
+        EDGG['ETEBCTR']['000-030'],
+        EDGG['ETHFCTR']['000-027'],
+        EDGG['ETHNCTR']['000-035'],
+        EDGG['ETIKCTR']['000-030'],
+        EDGG['ETNGCTR']['000-030'],
+        EDGG['ETNNCTR']['000-029'],
+        sector_sub(
+            EDGG['ETOUCTR']['000-015'], 
+            EDGG['EDDFCTR']['000-025']
+            ),
+        EDGG['ETSBCTR']['000-041'],
+        sector_sub(
+            EDGG['EDFEATZ']['000-015'], 
+            EDGG['EDDFCTR']['000-025']
+            ),
+        EDGG['EDLEATZ']['000-015'],
+) }}
+// EHBKCTR
+{{ data.topsky['common']['airspace']['EHBKCTR_a'] | to_line('') -}}
+{{ data.topsky['common']['airspace']['EHBKCTR_b'] | to_line('') -}}
+// EHVKCTR
+{{ data.topsky['common']['airspace']['EHVKCTR_a'] | to_line('') -}}
+{{ data.topsky['common']['airspace']['EHVKCTR_b'] | to_line('') -}}
+// EHDPCTR
+{{ data.topsky['common']['airspace']['EHDPCTR'] | to_line('') -}}
+
+MAP:RMZ/TMZ
+FOLDER:Airspace
+ASRDATA:PHOENIX
+COLOR:standard
+ACTIVE:1
+STYLE:DASH:1
+// RMZ
+{{ render_sectorlines(
+        EDGG['EDFQRMZ']['000-010'],
+        EDGG['EDGSRMZ']['000-010'],
+        EDGG['EDQGRMZ']['000-010'],
+        EDGG['EDRYRMZ']['000-010'],
+        EDGG['EDRZRMZ']['000-010'],
+        EDGG['EDTDRMZ']['000-010'],
+        EDGG['EDTMRMZ']['000-010'],
+        EDGG['EDTYRMZ']['000-010'],
+) }}
+
+// EDDG TMZ
+{{ render_sectorlines(
+    EDGG['EDDGTMZA']['045-060'],
+    sector_sub(
+        EDGG['EDDGTMZB']['035-060'],
+        EDGG['EDDGTMZA']['045-060']
+        ),
+    sector_sub(
+        EDGG['EDDGTMZC']['045-060'],
+        EDGG['EDDGTMZB']['035-060']
+        ),
+    sector_sub(
+        EDGG['EDDGTMZD']['045-060'],
+        EDGG['EDDGTMZB']['035-060']
+        ),
+) }}
+// EDFH TMZ
+{{ render_sectorlines(
+    EDGG['EDFHTMZC']['055-075'],
+    EDGG['EDFHTMZD']['055-075'],
+    sector_sub(
+        sector_sub(
+            EDGG['EDFHTMZA']['045-075'],
+            EDGG['EDFHTMZC']['055-075'],
+        ),
+        EDGG['EDFHTMZD']['055-075'],
+        ),
+    sector_sub(
+        sector_sub(
+            EDGG['EDFHTMZB']['045-075'],
+            EDGG['EDFHTMZC']['055-075'],
+        ),
+        EDGG['EDFHTMZD']['055-075'],
+        ),
+) }}
+// EDLP TMZ
+{{ render_sectorlines(
+    EDGG['EDLPTMZA']['025-060'],
+    sector_sub(
+        EDGG['EDLPTMZB']['035-060'],
+        EDGG['EDLPTMZA']['025-060']
+        ),
+    sector_sub(
+        EDGG['EDLPTMZC']['035-060'],
+        EDGG['EDLPTMZA']['025-060']
+        ),
+    sector_sub(
+        EDGG['EDLPTMZD']['045-060'],
+        EDGG['EDLPTMZB']['035-060']
+        ),
+) }}
+// EDLV TMZ
+{{ render_sectorlines(
+    EDGG['EDLVTMZD']['030-065'],
+    sector_sub(
+        EDGG['EDLVTMZC']['025-065'],
+        EDGG['EDLVTMZD']['030-065']
+        ),
+    sector_sub(
+        EDGG['EDLVTMZE']['035-065'],
+        EDGG['EDLVTMZC']['025-065']
+        ),
+    sector_sub(
+        EDGG['EDLVTMZF']['045-065'],
+        EDGG['EDLVTMZC']['025-065']
+        ),
+    sector_sub(
+        EDGG['EDLVTMZG']['045-065'],
+        EDGG['EDLVTMZE']['035-065']
+        ),
+    sector_sub(
+        sector_sub(
+            EDGG['EDLVTMZB']['025-065'],
+            EDGG['EDLVTMZE']['035-065'],
+        ),
+        EDGG['EDLVTMZG']['045-065'],
+        ),
+) }}
+// EDLW TMZ
+{{ render_sectorlines(
+    EDGG['EDLWTMZA']['045-065'],
+    EDGG['EDLWTMZC']['035-065'],
+    sector_sub(
+        EDGG['EDLWTMZD']['045-065'],
+        EDGG['EDLWTMZC']['035-065']
+        ),
+
+) }}
+// EDDR TMZ
+{{ render_sectorlines(EDGG['EDDRTMZ']['025-065']) }}

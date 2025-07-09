@@ -1,0 +1,16 @@
+MAP:Hospitals
+FOLDER:Aerodromes
+ASRDATA:PHOENIX
+COLOR:standard
+ACTIVE:1
+{%- for name, geom in data.topsky['common']['vfr']['EDGG_hospitals'].items() %}
+{{ geom | to_symbol('HOSPITAL') }}  // {{name}}
+{%- endfor %}
+
+MAP:Hospitals w/ L
+FOLDER:Aerodromes
+ASRDATA:PHOENIX
+COLOR:standard
+{%- for name, geom in data.topsky['common']['vfr']['EDGG_hospitals'].items() %}
+{{ geom | to_symbol('HOSPITAL') }}:{{name}}:0:-13
+{%- endfor %}

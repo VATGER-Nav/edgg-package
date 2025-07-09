@@ -1,0 +1,47 @@
+//---------------------------------------------------------------
+//                            Airspace
+//---------------------------------------------------------------
+{% set levels = data.topsky['common']['airspace']['levels'] %}
+
+MAP:Airspace Levels
+FOLDER:Airspace
+ASRDATA:PHOENIX
+COLOR:label
+LAYER:+4
+{%- for id, geom in levels.items() if id not in [
+    'CD-A35-A55-100_5ff3d1e7',
+    'DC-A15-A25-100_48410efe',
+    'DC-A15-A25-100_1ab06cc7',
+] %}
+{%- set lvl = id.split('_')[0] %}
+{%- set class = lvl.split('-')[0] %}
+{%- set lower = lvl.split('-')[1] %}
+{%- set upper = lvl.split('-')[2] %}
+
+{{ geom | to_text(class + ':-20:0') }}
+{{ geom | to_text(upper + ':0:-8') }}
+{{ geom | to_text('----:0:-1') }}
+{{ geom | to_text(lower + ':0:8') }}
+{%- endfor %}
+
+{%- for id in [
+    'DC-A15-A25-100_48410efe',
+    'DC-A15-A25-100_1ab06cc7',
+] %}
+
+{{ levels[id] | to_text('C:-21:-8') }}
+{{ levels[id] | to_text('D:-20:8') }}
+{{ levels[id] | to_text('100:0:-16') }}
+{{ levels[id] | to_text('----:0:-9') }}
+{{ levels[id] | to_text('A25:0:0') }}
+{{ levels[id] | to_text('----:0:7') }}
+{{ levels[id] | to_text('A15:0:16') }}
+{%- endfor %}
+
+{{ levels['CD-A35-A55-100_5ff3d1e7'] | to_text('D:-20:-8') }}
+{{ levels['CD-A35-A55-100_5ff3d1e7'] | to_text('C:-21:8') }}
+{{ levels['CD-A35-A55-100_5ff3d1e7'] | to_text('100:0:-16') }}
+{{ levels['CD-A35-A55-100_5ff3d1e7'] | to_text('----:0:-9') }}
+{{ levels['CD-A35-A55-100_5ff3d1e7'] | to_text('A55:0:0') }}
+{{ levels['CD-A35-A55-100_5ff3d1e7'] | to_text('----:0:7') }}
+{{ levels['CD-A35-A55-100_5ff3d1e7'] | to_text('A35:0:16') }}
