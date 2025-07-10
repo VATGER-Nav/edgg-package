@@ -1,8 +1,8 @@
 // ------------------------------- AoR ------------------------------
 
-MAP:EDDF_C_GND  25
+MAP:EDDF_C_GND
 AIRPORT:EDDF
-FOLDER:AoR
+FOLDER:AoR|EDDF_x_GND 25
 LAYER:6
 COLOR:aor-gnd-a
 STYLE:Dot
@@ -11,9 +11,33 @@ ZOOM:300
 FONTSIZE:=:13
 {{ data.eddf_kml['layout']['aor']['labels']['DFGC'] | to_text('DFGC 121.855') }}
 
-MAP:            07
+
+MAP:EDDF_E_GND
 AIRPORT:EDDF
-FOLDER:AoR
+FOLDER:AoR|EDDF_x_GND 25
+LAYER:6
+COLOR:aor-gnd-c
+STYLE:Dot
+{{ data.eddf_kml['layout']['aor']['line']['DFGE_25a'] | to_line('') -}}
+{{ data.eddf_kml['layout']['aor']['line']['DFGE_25b'] | to_line('') -}}
+ZOOM:300
+FONTSIZE:=:13
+{{ data.eddf_kml['layout']['aor']['labels']['DFGE'] | to_text('DFGE 121.955') }}
+
+MAP:EDDF_W_GND
+AIRPORT:EDDF
+FOLDER:AoR|EDDF_x_GND 25
+LAYER:6
+COLOR:aor-gnd-b
+STYLE:Dot
+{{ data.eddf_kml['layout']['aor']['line']['DFGW_25'] | to_line('') -}}
+ZOOM:300
+FONTSIZE:=:13
+{{ data.eddf_kml['layout']['aor']['labels']['DFGW'] | to_text('DFGW 121.755') }}
+
+MAP:EDDF_C_GND
+AIRPORT:EDDF
+FOLDER:AoR|EDDF_x_GND 07
 LAYER:6
 COLOR:aor-gnd-a
 STYLE:Dot
@@ -27,21 +51,9 @@ COLOR:aor-gnd-a
 COLOR:layout-label-taxiway
 {{ data.eddf_kml['layout']['aor']['labels']['mixed_area'] | to_text('MIXED AREA') }}
 
-MAP:EDDF_E_GND  25
+MAP:EDDF_E_GND
 AIRPORT:EDDF
-FOLDER:AoR
-LAYER:6
-COLOR:aor-gnd-c
-STYLE:Dot
-{{ data.eddf_kml['layout']['aor']['line']['DFGE_25a'] | to_line('') -}}
-{{ data.eddf_kml['layout']['aor']['line']['DFGE_25b'] | to_line('') -}}
-ZOOM:300
-FONTSIZE:=:13
-{{ data.eddf_kml['layout']['aor']['labels']['DFGE'] | to_text('DFGE 121.955') }}
-
-MAP:            07
-AIRPORT:EDDF
-FOLDER:AoR
+FOLDER:AoR|EDDF_x_GND 07
 LAYER:6
 COLOR:aor-gnd-c
 STYLE:Dot
@@ -56,20 +68,9 @@ COLOR:aor-gnd-c
 COLOR:layout-label-taxiway
 {{ data.eddf_kml['layout']['aor']['labels']['mixed_area'] | to_text('MIXED AREA') }}
 
-MAP:EDDF_W_GND  25
+MAP:EDDF_W_GND
 AIRPORT:EDDF
-FOLDER:AoR
-LAYER:6
-COLOR:aor-gnd-b
-STYLE:Dot
-{{ data.eddf_kml['layout']['aor']['line']['DFGW_25'] | to_line('') -}}
-ZOOM:300
-FONTSIZE:=:13
-{{ data.eddf_kml['layout']['aor']['labels']['DFGW'] | to_text('DFGW 121.755') }}
-
-MAP:            07
-AIRPORT:EDDF
-FOLDER:AoR
+FOLDER:AoR|EDDF_x_GND 07
 LAYER:6
 COLOR:aor-gnd-b
 STYLE:Dot
@@ -171,7 +172,7 @@ MAP:EDDF_N_DEP
 AIRPORT:EDDF
 FOLDER:AoR
 LAYER:6
-OTHER_MAP_ACT:=:Approach Window\DEP Frequency
+OTHER_MAP_ACT:=:EDDF\DEP Frequency
 COLOR:aor-app-a
 ZOOM:300
 FONTSIZE:=:13
@@ -182,7 +183,7 @@ MAP:EDDF_S_DEP
 AIRPORT:EDDF
 FOLDER:AoR
 LAYER:6
-OTHER_MAP_ACT:=:Approach Window\DEP Frequency
+OTHER_MAP_ACT:=:EDDF\DEP Frequency
 COLOR:aor-app-b
 ZOOM:300
 FONTSIZE:=:13
