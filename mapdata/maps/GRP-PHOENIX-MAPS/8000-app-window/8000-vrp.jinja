@@ -1,0 +1,53 @@
+// ------------------------------------------------------------------
+//                          Approach Window
+// ------------------------------------------------------------------
+
+// ----------------------------- Fixes ------------------------------
+
+MAP:VRPs:A
+FOLDER:Fixes
+COLOR:appwindow-standard
+ACTIVE:1
+{%- for icao, fxnames in data.reporting_points['VFR'].items() %}
+// {{icao}}
+{%- for fx in fxnames %}
+SYMBOL:VFR:{{icao | replace('ED', '')}}-{{fx['name']}}
+{%- endfor %}
+{%- endfor %}
+
+MAP:VRPs w/ L:A
+FOLDER:Fixes
+COLOR:appwindow-standard
+TEXTALIGN:LB
+{%- for icao, fxnames in data.reporting_points['VFR'].items() %}
+// {{icao}}
+{%- for fx in fxnames %}
+SYMBOL:VFR:{{icao | replace('ED', '')}}-{{fx['name']}}:{{fx['name']}}:5:0
+{%- endfor %}
+{%- endfor %}
+
+MAP:MIL VRPs:A
+FOLDER:Fixes
+COLOR:appwindow-standard
+ACTIVE:1
+{%- for icao, fxnames in data.reporting_points['MIL'].items() %}
+// {{icao}}
+{%- for fx in fxnames if fx['default_vis'] == true %}
+SYMBOL:VFR:{{fx['fix']}}
+{%- endfor %}
+{%- endfor %}
+
+MAP:MIL VRPs w/ L:A
+FOLDER:Fixes
+COLOR:appwindow-standard
+TEXTALIGN:LB
+{%- for icao, fxnames in data.reporting_points['MIL'].items() %}
+// {{icao}}
+{%- for fx in fxnames %}
+{%- if fx["text_align"] == 'RB' %}
+SYMBOL/{{fx["text_align"]}}:VFR:{{fx['fix']}}:{{fx['name']}}:-5:0
+{%- else %}
+SYMBOL:VFR:{{fx['fix']}}:{{fx['name']}}:5:0
+{%- endif%}
+{%- endfor %}
+{%- endfor %}

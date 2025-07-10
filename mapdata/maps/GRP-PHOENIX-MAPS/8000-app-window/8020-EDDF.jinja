@@ -1,0 +1,51 @@
+// ------------------------------ EDDF ------------------------------
+
+MAP:Distance Indicator 25L:A
+AIRPORT:EDDF
+FOLDER:EDDF
+ACTIVE:RWY:ARR:EDDF25L:DEP:*
+COLOR:red
+{{ data.topsky['common']['EDDF']['tabuzone']['25L'] | to_line('') }}
+
+MAP:Distance Indicator 25R:A
+AIRPORT:EDDF
+FOLDER:EDDF
+ACTIVE:RWY:ARR:EDDF25R:DEP:*
+COLOR:red
+{{ data.topsky['common']['EDDF']['tabuzone']['25R'] | to_line('') }}
+
+MAP:Distance Indicator 07R:A
+AIRPORT:EDDF
+FOLDER:EDDF
+ACTIVE:RWY:ARR:EDDF07R:DEP:*
+COLOR:red
+{{ data.topsky['common']['EDDF']['tabuzone']['07R'] | to_line('') }}
+
+MAP:M/H-DEP Line:A
+AIRPORT:EDDF
+FOLDER:EDDF
+STYLE:DOT:1
+ACTIVE:RWY:ARR:*:DEP:EDDF25C
+ACTIVE:RWY:ARR:*:DEP:EDDF25L
+COLOR:appwindow-standard
+LINE:N049.57.40.655:E008.28.15.964:N050.00.45.160:E008.29.03.830
+
+MAP:NTZ 25:A
+AIRPORT:EDDF
+FOLDER:EDDF
+COLOR:orange
+{{ data.topsky['common']['EDDF']['ntz']['25R-25L'] | to_line('') }}
+
+MAP:NTZ 07:A
+AIRPORT:EDDF
+FOLDER:EDDF
+COLOR:orange
+{{ data.topsky['common']['EDDF']['ntz']['07L-07R'] | to_line('') }}
+
+MAP:DEP Frequency:A
+AIRPORT:EDDF
+FOLDER:EDDF
+COLOR:aor-app-a
+{{ data.topsky['common']['EDDF']['depfreq']['DFDN'] | to_text('120.155') }}
+COLOR:aor-app-b
+{{ data.topsky['common']['EDDF']['depfreq']['DFDS'] | to_text('136.130') }}

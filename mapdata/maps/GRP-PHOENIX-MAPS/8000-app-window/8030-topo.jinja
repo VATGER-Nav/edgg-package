@@ -1,0 +1,11 @@
+// --------------------------- Topography ---------------------------
+
+MAP:DE Border:A
+FOLDER:Topography
+LAYER:-3
+COLOR:appwindow-border
+STYLE:Solid:1
+ACTIVE:1
+{% for uuid, geom in data.topsky['common']['topo']['EDGG_border_de'].items() %}
+{{- geom | to_line('') -}}
+{% endfor %}

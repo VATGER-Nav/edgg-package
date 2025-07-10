@@ -1,0 +1,121 @@
+// ---------------------------- Airspace ----------------------------
+{%- set EDGG = data.airspace['lines']['EDGG'] %}
+{%- set EDSB = {
+    'A': EDGG['EDSBCLDA']['015-065'],
+    'B': EDGG['EDSBCLDB']['015-065'],
+    'C': EDGG['EDSBCLDC']['025-065'],
+    'D': EDGG['EDSBCLDD']['025-065'],
+    'E': EDGG['EDSBCLDE']['025-065'],
+    'F': EDGG['EDSBCLDF']['035-065'],
+    'G': EDGG['EDSBCLDG']['035-065'],
+    'H': EDGG['EDSBCLDH']['045-065']
+} %}
+
+MAP:Airspace C:A
+FOLDER:Airspace
+COLOR:appwindow-standard
+ACTIVE:1
+LAYER:+2
+STYLE:DOT:1
+// EDDFCLC
+{% for uuid, geom in data.topsky['common']['airspace']['EDDFCLC'].items() %}
+{{- geom | to_line('') -}}
+{% endfor %}
+{{ render_sectorlines(data.aor['lines']['EDGG']['EDDFAPP']['000-135']) }}
+// EDDLCLC & EDDKCLC
+{% for uuid, geom in data.topsky['common']['airspace']['EDLLCLC'].items() %}
+{{- geom | to_line('') -}}
+{% endfor %}
+// EDDSCLC
+{{ render_sectorlines(EDGG['EDDSCLC']['035-055']) }}
+
+MAP:Airspace D:A
+FOLDER:Airspace
+COLOR:appwindow-standard
+ACTIVE:1
+LAYER:+1
+STYLE:Solid:1
+// EDDG D
+{{ render_sectorlines(EDGG['EDDGCLD']['025-045']) }}
+// EDDS D
+{{ render_sectorlines(
+    EDGG['EDDSCLDF']['075-100'],
+    sector_sub(
+        EDGG['EDDSCLDE']['075-100'], 
+        EDGG['EDDSCLDC']['055-100']
+        ),
+    sector_sub(
+        EDGG['EDDSCLDC']['055-100'], 
+        EDGG['EDDSCLDF']['075-100']
+        ),
+    EDGG['EDDSCLDB']['055-100'],
+) }}
+// EDFH D
+{{ render_sectorlines(
+    sector_sub(
+        EDGG['EDFHCLDE']['035-065'], 
+        EDGG['EDFHCLDB']['025-065']
+        ),
+    sector_sub(
+        EDGG['EDFHCLDD']['035-065'], 
+        EDGG['EDFHCLDA']['025-065']
+        ),
+    sector_sub(
+        EDGG['EDFHCLDA']['025-065'], 
+        EDGG['EDFHCLDC']['035-065']
+        ),
+    sector_sub(
+        EDGG['EDFHCLDB']['025-065'], 
+        EDGG['EDFHCLDC']['035-065']
+        ),
+    EDGG['EDFHCLDC']['035-065'],
+) }}
+// EDLV D
+{{ render_sectorlines(EDGG['EDLVCLD']['025-065']) }}
+// EDLW D
+{{ render_sectorlines(
+    EDGG['EDLWCLDB']['025-045'],
+    sector_sub(
+        EDGG['EDLWCLDA']['020-045'],
+        EDGG['EDLWCLDB']['025-045']
+        ),
+) }}
+// EDSB D
+{{ render_sectorlines(
+    EDSB['C'],
+    EDSB['H'],
+
+    sector_sub(
+        sector_sub(
+            EDSB['B'],
+            EDSB['C']
+        ),
+        EDSB['H']
+    ),
+    sector_sub(
+        sector_sub(
+            EDSB['E'],
+            EDSB['B']
+        ),
+        EDSB['H']
+    ),
+    sector_sub(
+        sector_sub(
+            EDSB['G'],
+            EDSB['E']
+        ),
+        EDSB['H']
+    ),
+    sector_sub(
+            EDSB['A'],
+            EDSB['C']
+        ),
+    sector_sub(
+            EDSB['D'],
+            EDSB['A']
+        ),
+    sector_sub(
+            EDSB['F'],
+            EDSB['D']
+        ),
+) }}
