@@ -12,7 +12,7 @@ m_Column:W:2:1:10032:104:0:1:TopSky plugin:TopSky plugin::0:0.0
 m_Column:ETA:4:1:10033:0:0:1:TopSky plugin:::0:0.0
 m_Column:ARWY:5:1:163:19:0:1:TopSky plugin:::1:0.0
 m_Column:STND:6:1:2:1:13:1:Ground Radar plugin:Ground Radar plugin:Ground Radar plugin:1:0.0
-m_Column:aSSR:5:1:643:871:869:1:vSID:CCAMS:CCAMS:8:0.0
+m_Column:aSSR:5:1:643:62:62:1:vSID:TopSky plugin:TopSky plugin:8:0.0
 m_Column:ADEP:5:1:10007:1001:7:0:TopSky plugin:TopSky plugin::0:0.0
 m_Column:ADES:5:1:10008:39:7:0:TopSky plugin:TopSky plugin::0:0.0
 m_Column:SI:6:1:10061:0:0:1:TopSky plugin:::1:0.0
