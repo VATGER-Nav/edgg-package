@@ -1,0 +1,680 @@
+// --------------------------- Centerlines --------------------------
+{%- set DF07 = runways.EDDF['07C'].bearing %}
+{%- set DF25 = runways.EDDF['25C'].bearing %}
+
+{%- set DL05 = runways.EDDL['05R'].bearing %}
+{%- set DL23 = runways.EDDL['23L'].bearing %}
+
+{%- set DK13 = runways.EDDK['13L'].bearing %}
+{%- set DK31 = runways.EDDK['31R'].bearing %}
+{%- set DK06 = runways.EDDK['06'].bearing %}
+{%- set DK24 = runways.EDDK['24'].bearing %}
+
+{%- set DS07 = runways.EDDS['07'].bearing %}
+{%- set DS25 = runways.EDDS['25'].bearing %}
+
+{%- set DG07 = runways.EDDG['07'].bearing %}
+{%- set DG25 = runways.EDDG['25'].bearing %}
+
+{%- set AR08 = runways.ETAR['08'].bearing %}
+{%- set AR26 = runways.ETAR['26'].bearing %}
+{%- set AR09 = runways.ETAR['09'].bearing %}
+{%- set AR27 = runways.ETAR['27'].bearing %}
+
+MAP:EDDF ECL 07C:A
+FOLDER:ECL
+COLOR:appwindow-ecl
+STYLE:Solid:1
+ACTIVE:RWY:ARR:EDDF25C:DEP:*
+ACTIVE:RWY:ARR:EDDF07C:DEP:*
+{{ ecl_dashes(runways.EDDF['07C'], 25) }}
+{{ fix(runways.EDDF['07C'].thr).move_to(-4 , DF07).line_to(0.5, DF07+90) }}
+{{ fix(runways.EDDF['07C'].thr).move_to(-10, DF07).line_to(0.5, DF07+90) }}
+{{ fix(runways.EDDF['07C'].thr).move_to(-20, DF07).line_to(0.5, DF07+90) }}
+
+MAP:EDDF ECL 07R:A
+FOLDER:ECL
+COLOR:appwindow-ecl
+STYLE:Solid:1
+ACTIVE:RWY:ARR:EDDF25L:DEP:*
+ACTIVE:RWY:ARR:EDDF07R:DEP:*
+{{ ecl_dashes(runways.EDDF['07R'], 25) }}
+{{ fix(runways.EDDF['07R'].thr).move_to(-4 , DF07).line_to(0.5, DF07+90) }}
+{{ fix(runways.EDDF['07R'].thr).move_to(-10, DF07).line_to(0.5, DF07+90) }}
+{{ fix(runways.EDDF['07R'].thr).move_to(-20, DF07).line_to(0.5, DF07+90) }}
+
+MAP:EDDF ECL 07L:A
+FOLDER:ECL
+COLOR:appwindow-ecl
+STYLE:Solid:1
+ACTIVE:RWY:ARR:EDDF25R:DEP:*
+ACTIVE:RWY:ARR:EDDF07L:DEP:*
+{{ ecl_dashes(runways.EDDF['07L'], 25) }}
+{{ fix(runways.EDDF['07L'].thr).move_to(-4 , DF07).line_to(-0.5, DF07+90) }}
+{{ fix(runways.EDDF['07L'].thr).move_to(-10, DF07).line_to(-0.5, DF07+90) }}
+{{ fix(runways.EDDF['07L'].thr).move_to(-20, DF07).line_to(-0.5, DF07+90) }}
+
+MAP:EDDF ECL 25C:A
+FOLDER:ECL
+COLOR:appwindow-ecl
+STYLE:Solid:1
+ACTIVE:RWY:ARR:EDDF25C:DEP:*
+ACTIVE:RWY:ARR:EDDF07C:DEP:*
+{{ ecl_dashes(runways.EDDF['25C'], 25) }}
+{{ fix(runways.EDDF['25C'].thr).move_to(-4 , DF25).line_to(0.5, DF25-90) }}
+{{ fix(runways.EDDF['25C'].thr).move_to(-10, DF25).line_to(0.5, DF25-90) }}
+{{ fix(runways.EDDF['25C'].thr).move_to(-20, DF25).line_to(0.5, DF25-90) }}
+
+MAP:EDDF ECL 25L:A
+FOLDER:ECL
+COLOR:appwindow-ecl
+STYLE:Solid:1
+ACTIVE:RWY:ARR:EDDF25L:DEP:*
+ACTIVE:RWY:ARR:EDDF07R:DEP:*
+{{ ecl_dashes(runways.EDDF['25L'], 25) }}
+{{ fix(runways.EDDF['25L'].thr).move_to(-4 , DF25).line_to(0.5, DF25-90) }}
+{{ fix(runways.EDDF['25L'].thr).move_to(-10, DF25).line_to(0.5, DF25-90) }}
+{{ fix(runways.EDDF['25L'].thr).move_to(-20, DF25).line_to(0.5, DF25-90) }}
+
+MAP:EDDF ECL 25R:A
+FOLDER:ECL
+COLOR:appwindow-ecl
+STYLE:Solid:1
+ACTIVE:RWY:ARR:EDDF25R:DEP:*
+ACTIVE:RWY:ARR:EDDF07L:DEP:*
+{{ ecl_dashes(runways.EDDF['25R'], 25) }}
+{{ fix(runways.EDDF['25R'].thr).move_to(-4 , DF25).line_to(-0.5, DF25-90) }}
+{{ fix(runways.EDDF['25R'].thr).move_to(-10, DF25).line_to(-0.5, DF25-90) }}
+{{ fix(runways.EDDF['25R'].thr).move_to(-20, DF25).line_to(-0.5, DF25-90) }}
+
+MAP:EDDL ECL:A
+FOLDER:ECL
+COLOR:appwindow-ecl
+STYLE:Solid:1
+ACTIVE:RWY:ARR:EDDL23R:DEP:*
+ACTIVE:RWY:ARR:EDDL23L:DEP:*
+ACTIVE:RWY:ARR:EDDL05R:DEP:*
+ACTIVE:RWY:ARR:EDDL05L:DEP:*
+ACTIVE:RWY:ARR:EDLN13:DEP:*
+ACTIVE:RWY:ARR:EDLN31:DEP:*
+ACTIVE:RWY:ARR:*:DEP:EDDL23R
+ACTIVE:RWY:ARR:*:DEP:EDDL23L
+ACTIVE:RWY:ARR:*:DEP:EDDL05R
+ACTIVE:RWY:ARR:*:DEP:EDDL05L
+ACTIVE:RWY:ARR:*:DEP:EDLN13
+ACTIVE:RWY:ARR:*:DEP:EDLN31
+// 05R
+{{ ecl_dashes(runways.EDDL['05R'], 14) }}
+{{ fix(runways.EDDL['05R'].thr).move_to(-6 , DL05).move_to(0.5, DL05+90).line_to(0.5, DL05+90) }}
+{{ fix(runways.EDDL['05R'].thr).move_to(-10, DL05).move_to(0.5, DL05+90).line_to(0.5, DL05+90) }}
+// 05L
+{{ ecl_dashes(runways.EDDL['05L'], 14) }}
+{{ fix(runways.EDDL['05L'].thr).move_to(-6 , DL05).move_to(-0.5, DL05+90).line_to(-0.5, DL05+90) }}
+{{ fix(runways.EDDL['05L'].thr).move_to(-10, DL05).move_to(-0.5, DL05+90).line_to(-0.5, DL05+90) }}
+// 23L
+{{ ecl_dashes(runways.EDDL['23L'], 14) }}
+{{ fix(runways.EDDL['23L'].thr).move_to(-6 , DL23).move_to(0.5, DL23-90).line_to(0.5, DL23-90) }}
+{{ fix(runways.EDDL['23L'].thr).move_to(-10, DL23).move_to(0.5, DL23-90).line_to(0.5, DL23-90) }}
+// 23R
+{{ ecl_dashes(runways.EDDL['23R'], 14) }}
+{{ fix(runways.EDDL['23R'].thr).move_to(-6 , DL23).move_to(-0.5, DL23-90).line_to(-0.5, DL23-90) }}
+{{ fix(runways.EDDL['23R'].thr).move_to(-10, DL23).move_to(-0.5, DL23-90).line_to(-0.5, DL23-90) }}
+// Long Ticks
+{{ fix(runways.EDDL['05R'].thr).move_to(-15, DL05).line_to(-5, DL05) }}
+{{ fix(runways.EDDL['05L'].thr).move_to(-15, DL05).line_to(-5, DL05) }}
+{{ fix(runways.EDDL['23L'].thr).move_to(-15, DL23).line_to(-5, DL23) }}
+{{ fix(runways.EDDL['23R'].thr).move_to(-15, DL23).line_to(-5, DL23) }}
+{{ fix(runways.EDDL['23L'].thr).move_to(-25, DL23).line_to(-5, DL23) }}
+{{ fix(runways.EDDL['23R'].thr).move_to(-25, DL23).line_to(-5, DL23) }}
+
+MAP:EDDK ECL:A
+FOLDER:ECL
+COLOR:appwindow-ecl
+STYLE:Solid:1
+ACTIVE:RWY:ARR:EDDK13L:DEP:*
+ACTIVE:RWY:ARR:EDDK31R:DEP:*
+ACTIVE:RWY:ARR:EDDK06:DEP:*
+ACTIVE:RWY:ARR:EDDK24:DEP:*
+ACTIVE:RWY:ARR:*:DEP:EDDK13L
+ACTIVE:RWY:ARR:*:DEP:EDDK31R
+ACTIVE:RWY:ARR:*:DEP:EDDK06
+ACTIVE:RWY:ARR:*:DEP:EDDK24
+ACTIVE:RWY:ARR:ETNN24:DEP:*
+ACTIVE:RWY:ARR:ETNN06:DEP:*
+// 13L
+{{ ecl_dashes(runways.EDDK['13L'], 12) }}
+{{ marker_ticks(runways.EDDK['13L'], [6, 10], 0.5, 0.5) }}
+// 31R
+{{ ecl_dashes(runways.EDDK['31R'], 12) }}
+{{ marker_ticks(runways.EDDK['31R'], [6, 10], 0.5, 0.5) }}
+// 06
+{{ ecl_dashes(runways.EDDK['06'], 12) }}
+{{ marker_ticks(runways.EDDK['06'], [6, 10], 0.5, 0.5) }}
+// 24
+{{ ecl_dashes(runways.EDDK['24'], 12) }}
+{{ marker_ticks(runways.EDDK['24'], [6, 10], 0.5, 0.5) }}
+// Long Ticks
+{{ fix(runways.EDDK['13L'].thr).move_to(-13, DK13).line_to(-5, DK13) }}
+{{ fix(runways.EDDK['31R'].thr).move_to(-13, DK31).line_to(-5, DK31) }}
+{{ fix(runways.EDDK['06'].thr).move_to(-13, DK06).line_to(-5, DK06) }}
+{{ fix(runways.EDDK['24'].thr).move_to(-13, DK24).line_to(-5, DK24) }}
+// Red Ticks
+COLOR:red
+{{ marker_ticks(runways.EDDK['13L'], [1], 0, 0.25) }}
+{{ marker_ticks(runways.EDDK['31R'], [1], 0, 0.25) }}
+{{ marker_ticks(runways.EDDK['06'], [1], 0, 0.25) }}
+{{ marker_ticks(runways.EDDK['24'], [1], 0, 0.25) }}
+
+MAP:EDDK ECL 13R/31L:A
+FOLDER:ECL
+ACTIVE:RWY:ARR:EDDK13R:DEP:*
+ACTIVE:RWY:ARR:EDDK31L:DEP:*
+// Masks
+STYLE:SOLID:2
+COLOR:appwindow-background
+// 13L
+{{ fix(runways.EDDK['13L'].thr).move_to(-6 , DK13).move_to(0.4, DK13+90).line_to(0.6, DK13+90) }}
+{{ fix(runways.EDDK['13L'].thr).move_to(-10, DK13).move_to(0.4, DK13+90).line_to(0.6, DK13+90) }}
+// 31R
+{{ fix(runways.EDDK['31R'].thr).move_to(-6 , DK31).move_to(0.4, DK31-90).line_to(0.6, DK31-90) }}
+{{ fix(runways.EDDK['31R'].thr).move_to(-10, DK31).move_to(0.4, DK31-90).line_to(0.6, DK31-90) }}
+STYLE:SOLID:1
+COLOR:appwindow-ecl
+// 13R
+{{ ecl_dashes(runways.EDDK['13R'], 12) }}
+{{ fix(runways.EDDK['13R'].thr).move_to(-6 , DK13).move_to(0.5, DK13+90).line_to(0.5, DK13+90) }}
+{{ fix(runways.EDDK['13R'].thr).move_to(-10, DK13).move_to(0.5, DK13+90).line_to(0.5, DK13+90) }}
+{{ fix(runways.EDDK['13R'].thr).move_to(-13, DK13).line_to(-5, DK13) }}
+// 31L
+{{ ecl_dashes(runways.EDDK['31L'], 12) }}
+{{ fix(runways.EDDK['31L'].thr).move_to(-6 , DK31).move_to(0.5, DK31-90).line_to(0.5, DK31-90) }}
+{{ fix(runways.EDDK['31L'].thr).move_to(-10, DK31).move_to(0.5, DK31-90).line_to(0.5, DK31-90) }}
+{{ fix(runways.EDDK['31L'].thr).move_to(-13, DK31).line_to(-5, DK31) }}
+COLOR:red
+{{ marker_ticks(runways.EDDK['13R'], [1], 0, 0.25) }}
+{{ marker_ticks(runways.EDDK['31L'], [1], 0, 0.25) }}
+
+MAP:EDDS ECL:A
+FOLDER:ECL
+COLOR:appwindow-ecl
+STYLE:Solid:1
+ACTIVE:RWY:ARR:EDDS25:DEP:*
+ACTIVE:RWY:ARR:EDDS07:DEP:*
+ACTIVE:RWY:ARR:*:DEP:EDDS25
+ACTIVE:RWY:ARR:*:DEP:EDDS07
+// 07
+{{ ecl_dashes(runways.EDDS['07'], 20) }}
+{{ marker_ticks(runways.EDDS['07'], [0.5], 0, 0.5) }}
+{{ marker_ticks(runways.EDDS['07'], [6, 10, 20], 0.5, 0.5) }}
+// 25
+{{ ecl_dashes(runways.EDDS['25'], 20) }}
+{{ marker_ticks(runways.EDDS['25'], [0.5], 0, 0.5) }}
+{{ marker_ticks(runways.EDDS['25'], [6, 10, 20], 0.5, 0.5) }}
+// Long Ticks
+{{ fix(runways.EDDS['07'].thr).move_to(-25, DS07).line_to(-5, DS07) }}
+{{ fix(runways.EDDS['25'].thr).move_to(-25, DS25).line_to(-5, DS25) }}
+
+MAP:EDDG ECL:A
+FOLDER:ECL
+COLOR:appwindow-ecl
+STYLE:Solid:1
+ACTIVE:RWY:ARR:EDDG25:DEP:*
+ACTIVE:RWY:ARR:EDDG07:DEP:*
+ACTIVE:RWY:ARR:*:DEP:EDDG25
+ACTIVE:RWY:ARR:*:DEP:EDDG07
+// 07
+{{ ecl_dashes(runways.EDDG['07'], 12) }}
+{{ marker_ticks(runways.EDDG['07'], [0.5], 0, 0.5) }}
+{{ marker_ticks(runways.EDDG['07'], [6, 10], 0.5, 0.5) }}
+// 25
+{{ ecl_dashes(runways.EDDG['25'], 12) }}
+{{ marker_ticks(runways.EDDG['25'], [0.5], 0, 0.5) }}
+{{ marker_ticks(runways.EDDG['25'], [6, 10], 0.5, 0.5) }}
+// Long Ticks
+{{ fix(runways.EDDG['07'].thr).move_to(-15, DS07).line_to(-5, DS07) }}
+{{ fix(runways.EDDG['25'].thr).move_to(-15, DS25).line_to(-5, DS25) }}
+
+MAP:EDDR ECL:A
+FOLDER:ECL
+COLOR:appwindow-ecl
+STYLE:Solid:1
+ACTIVE:RWY:ARR:EDDR26:DEP:*
+ACTIVE:RWY:ARR:EDDR08:DEP:*
+ACTIVE:RWY:ARR:*:DEP:EDDR26
+ACTIVE:RWY:ARR:*:DEP:EDDR08
+ACTIVE:RWY:ARR:EDRZ03:DEP:*
+ACTIVE:RWY:ARR:EDRZ21:DEP:*
+ACTIVE:RWY:ARR:*:DEP:EDRZ03
+ACTIVE:RWY:ARR:*:DEP:EDRZ21
+// 08
+{{ ecl_dashes(runways.EDDR['08'], 12) }}
+{{ marker_ticks(runways.EDDR['08'], [0.5], 0, 0.5) }}
+{{ marker_ticks(runways.EDDR['08'], [10], 0.5, 0.5) }}
+// 26
+{{ ecl_dashes(runways.EDDR['26'], 14) }}
+{{ marker_ticks(runways.EDDR['26'], [0.5], 0, 0.5) }}
+{{ marker_ticks(runways.EDDR['26'], [10], 0.5, 0.5) }}
+
+MAP:EDFH ECL:A
+FOLDER:ECL
+COLOR:appwindow-ecl
+STYLE:Solid:1
+ACTIVE:RWY:ARR:EDFH21:DEP:*
+ACTIVE:RWY:ARR:EDFH03:DEP:*
+ACTIVE:RWY:ARR:*:DEP:EDFH21
+ACTIVE:RWY:ARR:*:DEP:EDFH03
+// 03
+{{ ecl_dashes(runways.EDFH['03'], 20) }}
+{{ marker_ticks(runways.EDFH['03'], [0.5], 0, 0.5) }}
+{{ marker_ticks(runways.EDFH['03'], [6, 10, 20], 0.5, 0.5) }}
+// 21
+{{ ecl_dashes(runways.EDFH['21'], 20) }}
+{{ marker_ticks(runways.EDFH['21'], [0.5], 0, 0.5) }}
+{{ marker_ticks(runways.EDFH['21'], [6, 10, 20], 0.5, 0.5) }}
+
+MAP:EDFM ECL:A
+FOLDER:ECL
+COLOR:appwindow-ecl
+STYLE:Solid:1
+ACTIVE:RWY:ARR:EDFM27:DEP:*
+ACTIVE:RWY:ARR:EDFM09:DEP:*
+ACTIVE:RWY:ARR:*:DEP:EDFM27
+ACTIVE:RWY:ARR:*:DEP:EDFM09
+// 09
+{{ ecl_dashes(runways.EDFM['09'], 12) }}
+{{ marker_ticks(runways.EDFM['09'], [0.5], 0, 0.5) }}
+{{ marker_ticks(runways.EDFM['09'], [10], 0.5, 0.5) }}
+// 27
+{{ ecl_dashes(runways.EDFM['27'], 16) }}
+{{ marker_ticks(runways.EDFM['27'], [0.5], 0, 0.5) }}
+{{ marker_ticks(runways.EDFM['27'], [10], 0.5, 0.5) }}
+
+MAP:EDFQ ECL:A
+FOLDER:ECL
+COLOR:appwindow-ecl
+STYLE:Solid:1
+ACTIVE:RWY:ARR:EDFQ29:DEP:*
+ACTIVE:RWY:ARR:EDFQ11:DEP:*
+ACTIVE:RWY:ARR:*:DEP:EDFQ29
+ACTIVE:RWY:ARR:*:DEP:EDFQ11
+// 11
+{{ ecl_dashes(runways.EDFQ['11'], 12) }}
+{{ marker_ticks(runways.EDFQ['11'], [0.5], 0, 0.5) }}
+{{ marker_ticks(runways.EDFQ['11'], [10], 0.5, 0.5) }}
+// 29
+{{ ecl_dashes(runways.EDFQ['29'], 16) }}
+{{ marker_ticks(runways.EDFQ['29'], [0.5], 0, 0.5) }}
+{{ marker_ticks(runways.EDFQ['29'], [10], 0.5, 0.5) }}
+
+MAP:EDGS ECL:A
+FOLDER:ECL
+COLOR:appwindow-ecl
+STYLE:Solid:1
+ACTIVE:RWY:ARR:EDGS31:DEP:*
+ACTIVE:RWY:ARR:EDGS13:DEP:*
+ACTIVE:RWY:ARR:*:DEP:EDGS31
+ACTIVE:RWY:ARR:*:DEP:EDGS13
+// 13
+{{ ecl_dashes(runways.EDGS['13'], 12) }}
+{{ marker_ticks(runways.EDGS['13'], [0.5], 0, 0.5) }}
+{{ marker_ticks(runways.EDGS['13'], [10], 0.5, 0.5) }}
+// 31
+{{ ecl_dashes(runways.EDGS['31'], 16) }}
+{{ marker_ticks(runways.EDGS['31'], [0.5], 0, 0.5) }}
+{{ marker_ticks(runways.EDGS['31'], [10], 0.5, 0.5) }}
+
+MAP:EDLN ECL:A
+FOLDER:ECL
+COLOR:appwindow-ecl
+STYLE:Solid:1
+ACTIVE:RWY:ARR:EDDL23R:DEP:*
+ACTIVE:RWY:ARR:EDDL23L:DEP:*
+ACTIVE:RWY:ARR:EDDL05R:DEP:*
+ACTIVE:RWY:ARR:EDDL05L:DEP:*
+ACTIVE:RWY:ARR:EDLN13:DEP:*
+ACTIVE:RWY:ARR:EDLN31:DEP:*
+ACTIVE:RWY:ARR:*:DEP:EDDL23R
+ACTIVE:RWY:ARR:*:DEP:EDDL23L
+ACTIVE:RWY:ARR:*:DEP:EDDL05R
+ACTIVE:RWY:ARR:*:DEP:EDDL05L
+ACTIVE:RWY:ARR:*:DEP:EDLN13
+ACTIVE:RWY:ARR:*:DEP:EDLN31
+// 13
+{{ ecl_dashes(runways.EDLN['13'], 10) }}
+{{ marker_ticks(runways.EDLN['13'], [0.5], 0, 0.5) }}
+{{ marker_ticks(runways.EDLN['13'], [6, 10], 0.5, 0.5) }}
+// 31
+{{ ecl_dashes(runways.EDLN['31'], 10) }}
+{{ marker_ticks(runways.EDLN['31'], [0.5], 0, 0.5) }}
+{{ marker_ticks(runways.EDLN['31'], [6, 10], 0.5, 0.5) }}
+
+MAP:EDLP ECL:A
+FOLDER:ECL
+COLOR:appwindow-ecl
+STYLE:Solid:1
+ACTIVE:RWY:ARR:EDLP24:DEP:*
+ACTIVE:RWY:ARR:EDLP06:DEP:*
+ACTIVE:RWY:ARR:*:DEP:EDLP24
+ACTIVE:RWY:ARR:*:DEP:EDLP06
+// 06
+{{ ecl_dashes(runways.EDLP['06'], 14) }}
+{{ marker_ticks(runways.EDLP['06'], [0.5], 0, 0.5) }}
+{{ marker_ticks(runways.EDLP['06'], [6, 10], 0.5, 0.5) }}
+// 24
+{{ ecl_dashes(runways.EDLP['24'], 14) }}
+{{ marker_ticks(runways.EDLP['24'], [0.5], 0, 0.5) }}
+{{ marker_ticks(runways.EDLP['24'], [6, 10], 0.5, 0.5) }}
+
+MAP:EDLV ECL:A
+FOLDER:ECL
+COLOR:appwindow-ecl
+STYLE:Solid:1
+ACTIVE:RWY:ARR:EDLV27:DEP:*
+ACTIVE:RWY:ARR:EDLV09:DEP:*
+ACTIVE:RWY:ARR:*:DEP:EDLV27
+ACTIVE:RWY:ARR:*:DEP:EDLV09
+// 09
+{{ ecl_dashes(runways.EDLV['09'], 14) }}
+{{ marker_ticks(runways.EDLV['09'], [0.5], 0, 0.5) }}
+{{ marker_ticks(runways.EDLV['09'], [6, 10], 0.5, 0.5) }}
+// 27
+{{ ecl_dashes(runways.EDLV['27'], 14) }}
+{{ marker_ticks(runways.EDLV['27'], [0.5], 0, 0.5) }}
+{{ marker_ticks(runways.EDLV['27'], [6, 10], 0.5, 0.5) }}
+
+MAP:EDLW ECL:A
+FOLDER:ECL
+COLOR:appwindow-ecl
+STYLE:Solid:1
+ACTIVE:RWY:ARR:EDLW24:DEP:*
+ACTIVE:RWY:ARR:EDLW06:DEP:*
+ACTIVE:RWY:ARR:*:DEP:EDLW24
+ACTIVE:RWY:ARR:*:DEP:EDLW06
+// 06
+{{ ecl_dashes(runways.EDLW['06'], 12) }}
+{{ marker_ticks(runways.EDLW['06'], [0.5], 0, 0.5) }}
+{{ marker_ticks(runways.EDLW['06'], [6, 10], 0.5, 0.5) }}
+// 24
+{{ ecl_dashes(runways.EDLW['24'], 12) }}
+{{ marker_ticks(runways.EDLW['24'], [0.5], 0, 0.5) }}
+{{ marker_ticks(runways.EDLW['24'], [6, 10], 0.5, 0.5) }}
+
+MAP:EDQG ECL:A
+FOLDER:ECL
+COLOR:appwindow-ecl
+STYLE:Solid:1
+ACTIVE:RWY:ARR:EDQG08:DEP:*
+ACTIVE:RWY:ARR:EDQG26:DEP:*
+ACTIVE:RWY:ARR:*:DEP:EDQG08
+ACTIVE:RWY:ARR:*:DEP:EDQG26
+// 08
+{{ ecl_dashes(runways.EDQG['08'], 14) }}
+{{ marker_ticks(runways.EDQG['08'], [0.5], 0, 0.5) }}
+{{ marker_ticks(runways.EDQG['08'], [10], 0.5, 0.5) }}
+// 26
+{{ ecl_dashes(runways.EDQG['26'], 14) }}
+{{ marker_ticks(runways.EDQG['26'], [0.5], 0, 0.5) }}
+{{ marker_ticks(runways.EDQG['26'], [10], 0.5, 0.5) }}
+
+MAP:EDRY ECL:A
+FOLDER:ECL
+COLOR:appwindow-ecl
+STYLE:Solid:1
+ACTIVE:RWY:ARR:EDRY16:DEP:*
+ACTIVE:RWY:ARR:EDRY34:DEP:*
+ACTIVE:RWY:ARR:*:DEP:EDRY16
+ACTIVE:RWY:ARR:*:DEP:EDRY34
+// 16
+{{ ecl_dashes(runways.EDRY['16'], 12) }}
+{{ marker_ticks(runways.EDRY['16'], [0.5], 0, 0.5) }}
+{{ marker_ticks(runways.EDRY['16'], [10], 0.5, 0.5) }}
+// 34
+{{ ecl_dashes(runways.EDRY['34'], 12) }}
+{{ marker_ticks(runways.EDRY['34'], [0.5], 0, 0.5) }}
+{{ marker_ticks(runways.EDRY['34'], [10], 0.5, 0.5) }}
+
+MAP:EDRZ ECL:A
+FOLDER:ECL
+COLOR:appwindow-ecl
+STYLE:Solid:1
+ACTIVE:RWY:ARR:EDDR26:DEP:*
+ACTIVE:RWY:ARR:EDDR08:DEP:*
+ACTIVE:RWY:ARR:*:DEP:EDDR26
+ACTIVE:RWY:ARR:*:DEP:EDDR08
+ACTIVE:RWY:ARR:EDRZ03:DEP:*
+ACTIVE:RWY:ARR:EDRZ21:DEP:*
+ACTIVE:RWY:ARR:*:DEP:EDRZ03
+ACTIVE:RWY:ARR:*:DEP:EDRZ21
+// 03
+{{ ecl_dashes(runways.EDRZ['03'], 12) }}
+{{ marker_ticks(runways.EDRZ['03'], [0.5], 0, 0.5) }}
+{{ marker_ticks(runways.EDRZ['03'], [10], 0.5, 0.5) }}
+// 21
+{{ ecl_dashes(runways.EDRZ['21'], 12) }}
+{{ marker_ticks(runways.EDRZ['21'], [0.5], 0, 0.5) }}
+{{ marker_ticks(runways.EDRZ['21'], [10], 0.5, 0.5) }}
+
+MAP:EDSB ECL:A
+FOLDER:ECL
+COLOR:appwindow-ecl
+STYLE:Solid:1
+ACTIVE:RWY:ARR:EDSB03:DEP:*
+ACTIVE:RWY:ARR:EDSB21:DEP:*
+ACTIVE:RWY:ARR:*:DEP:EDSB03
+ACTIVE:RWY:ARR:*:DEP:EDSB21
+// 03
+{{ ecl_dashes(runways.EDSB['03'], 16) }}
+{{ marker_ticks(runways.EDSB['03'], [0.5], 0, 0.5) }}
+{{ marker_ticks(runways.EDSB['03'], [6, 10], 0.5, 0.5) }}
+// 21
+{{ ecl_dashes(runways.EDSB['21'], 16) }}
+{{ marker_ticks(runways.EDSB['21'], [0.5], 0, 0.5) }}
+{{ marker_ticks(runways.EDSB['21'], [6, 10], 0.5, 0.5) }}
+
+MAP:EDTL ECL:A
+FOLDER:ECL
+COLOR:appwindow-ecl
+STYLE:Solid:1
+ACTIVE:RWY:ARR:EDTL03:DEP:*
+ACTIVE:RWY:ARR:EDTL21:DEP:*
+ACTIVE:RWY:ARR:*:DEP:EDTL03
+ACTIVE:RWY:ARR:*:DEP:EDTL21
+// 03
+{{ ecl_dashes(runways.EDTL['03'], 16) }}
+{{ marker_ticks(runways.EDTL['03'], [0.5], 0, 0.5) }}
+{{ marker_ticks(runways.EDTL['03'], [6, 10], 0.5, 0.5) }}
+// 21
+{{ ecl_dashes(runways.EDTL['21'], 16) }}
+{{ marker_ticks(runways.EDTL['21'], [0.5], 0, 0.5) }}
+{{ marker_ticks(runways.EDTL['21'], [6, 10], 0.5, 0.5) }}
+
+MAP:EDTY ECL:A
+FOLDER:ECL
+COLOR:appwindow-ecl
+STYLE:Solid:1
+ACTIVE:RWY:ARR:EDTY10:DEP:*
+ACTIVE:RWY:ARR:EDTY28:DEP:*
+ACTIVE:RWY:ARR:*:DEP:EDTY10
+ACTIVE:RWY:ARR:*:DEP:EDTY28
+// 10
+{{ ecl_dashes(runways.EDTY['10'], 10) }}
+{{ marker_ticks(runways.EDTY['10'], [0.5], 0, 0.5) }}
+{{ marker_ticks(runways.EDTY['10'], [10], 0.5, 0.5) }}
+// 28
+{{ ecl_dashes(runways.EDTY['28'], 10) }}
+{{ marker_ticks(runways.EDTY['28'], [0.5], 0, 0.5) }}
+{{ marker_ticks(runways.EDTY['28'], [10], 0.5, 0.5) }}
+
+MAP:ETAD ECL:A
+FOLDER:ECL
+COLOR:appwindow-ecl
+STYLE:Solid:1
+ACTIVE:RWY:ARR:ETAD04:DEP:*
+ACTIVE:RWY:ARR:ETAD22:DEP:*
+ACTIVE:RWY:ARR:*:DEP:ETAD04
+ACTIVE:RWY:ARR:*:DEP:ETAD22
+// 04
+{{ ecl_dashes(runways.ETAD['04'], 12) }}
+{{ marker_ticks(runways.ETAD['04'], [0.5], 0, 0.5) }}
+{{ marker_ticks(runways.ETAD['04'], [10], 0.5, 0.5) }}
+// 22
+{{ ecl_dashes(runways.ETAD['22'], 12) }}
+{{ marker_ticks(runways.ETAD['22'], [0.5], 0, 0.5) }}
+{{ marker_ticks(runways.ETAD['22'], [10], 0.5, 0.5) }}
+
+MAP:ETAR ECL:A
+FOLDER:ECL
+COLOR:appwindow-ecl
+STYLE:Solid:1
+ACTIVE:RWY:ARR:ETAR08:DEP:*
+ACTIVE:RWY:ARR:ETAR09:DEP:*
+ACTIVE:RWY:ARR:ETAR26:DEP:*
+ACTIVE:RWY:ARR:ETAR27:DEP:*
+ACTIVE:RWY:ARR:*:DEP:ETAR08
+ACTIVE:RWY:ARR:*:DEP:ETAR09
+ACTIVE:RWY:ARR:*:DEP:ETAR26
+ACTIVE:RWY:ARR:*:DEP:ETAR27
+// 08
+{{ ecl_dashes(runways.ETAR['08'], 12) }}
+{{ fix(runways.ETAR['08'].thr).move_to(-10, AR08).move_to(0.5, AR08+90).line_to(0.5, AR08+90) }}
+// 26
+{{ ecl_dashes(runways.ETAR['26'], 12) }}
+{{ fix(runways.ETAR['26'].thr).move_to(-10, AR26).move_to(-0.5, AR26-90).line_to(-0.5, AR26-90) }}
+// 09
+{{ ecl_dashes(runways.ETAR['09'], 12) }}
+{{ fix(runways.ETAR['09'].thr).move_to(-10, AR09).move_to(-0.5, AR09+90).line_to(-0.5, AR09+90) }}
+// 27
+{{ ecl_dashes(runways.ETAR['27'], 12) }}
+{{ fix(runways.ETAR['27'].thr).move_to(-10, AR27).move_to(0.5, AR27-90).line_to(0.5, AR27-90) }}
+
+MAP:ETEB ECL:A
+FOLDER:ECL
+COLOR:appwindow-ecl
+STYLE:Solid:1
+ACTIVE:RWY:ARR:ETEB08:DEP:*
+ACTIVE:RWY:ARR:ETEB26:DEP:*
+ACTIVE:RWY:ARR:*:DEP:ETEB08
+ACTIVE:RWY:ARR:*:DEP:ETEB26
+// 26
+{{ ecl_dashes(runways.ETEB['26'], 12) }}
+{{ marker_ticks(runways.ETEB['26'], [0.5], 0, 0.5) }}
+{{ marker_ticks(runways.ETEB['26'], [10], 0.5, 0.5) }}
+
+MAP:ETHF ECL:A
+FOLDER:ECL
+COLOR:appwindow-ecl
+STYLE:Solid:1
+ACTIVE:RWY:ARR:ETHF11:DEP:*
+ACTIVE:RWY:ARR:ETHF29:DEP:*
+ACTIVE:RWY:ARR:*:DEP:ETHF11
+ACTIVE:RWY:ARR:*:DEP:ETHF29
+// 11
+{{ ecl_dashes(runways.ETHF['11'], 12) }}
+{{ marker_ticks(runways.ETHF['11'], [0.5], 0, 0.5) }}
+{{ marker_ticks(runways.ETHF['11'], [10], 0.5, 0.5) }}
+// 29
+{{ ecl_dashes(runways.ETHF['29'], 12) }}
+{{ marker_ticks(runways.ETHF['29'], [0.5], 0, 0.5) }}
+{{ marker_ticks(runways.ETHF['29'], [10], 0.5, 0.5) }}
+
+MAP:ETHN ECL:A
+FOLDER:ECL
+COLOR:appwindow-ecl
+STYLE:Solid:1
+ACTIVE:RWY:ARR:ETHN07:DEP:*
+ACTIVE:RWY:ARR:ETHN25:DEP:*
+ACTIVE:RWY:ARR:*:DEP:ETHN07
+ACTIVE:RWY:ARR:*:DEP:ETHN25
+// 07
+{{ ecl_dashes(runways.ETHN['07'], 12) }}
+{{ marker_ticks(runways.ETHN['07'], [0.5], 0, 0.5) }}
+{{ marker_ticks(runways.ETHN['07'], [10], 0.5, 0.5) }}
+// 25
+{{ ecl_dashes(runways.ETHN['25'], 12) }}
+{{ marker_ticks(runways.ETHN['25'], [0.5], 0, 0.5) }}
+{{ marker_ticks(runways.ETHN['25'], [10], 0.5, 0.5) }}
+
+MAP:ETIK ECL:A
+FOLDER:ECL
+COLOR:appwindow-ecl
+STYLE:Solid:1
+ACTIVE:RWY:ARR:ETIK06:DEP:*
+ACTIVE:RWY:ARR:ETIK24:DEP:*
+ACTIVE:RWY:ARR:*:DEP:ETIK06
+ACTIVE:RWY:ARR:*:DEP:ETIK24
+// 24
+{{ ecl_dashes(runways.ETIK['24'], 12) }}
+{{ marker_ticks(runways.ETIK['24'], [0.5], 0, 0.5) }}
+{{ marker_ticks(runways.ETIK['24'], [10], 0.5, 0.5) }}
+
+MAP:ETNG ECL:A
+FOLDER:ECL
+COLOR:appwindow-ecl
+STYLE:Solid:1
+ACTIVE:RWY:ARR:ETNG09:DEP:*
+ACTIVE:RWY:ARR:ETNG27:DEP:*
+ACTIVE:RWY:ARR:*:DEP:ETNG09
+ACTIVE:RWY:ARR:*:DEP:ETNG27
+// 09
+{{ ecl_dashes(runways.ETNG['09'], 14) }}
+{{ marker_ticks(runways.ETNG['09'], [0.5], 0, 0.5) }}
+{{ marker_ticks(runways.ETNG['09'], [6, 10], 0.5, 0.5) }}
+// 27
+{{ ecl_dashes(runways.ETNG['27'], 14) }}
+{{ marker_ticks(runways.ETNG['27'], [0.5], 0, 0.5) }}
+{{ marker_ticks(runways.ETNG['27'], [6, 10], 0.5, 0.5) }}
+
+MAP:ETNN ECL:A
+FOLDER:ECL
+COLOR:appwindow-ecl
+STYLE:Solid:1
+ACTIVE:RWY:ARR:ETNN24:DEP:*
+ACTIVE:RWY:ARR:ETNN06:DEP:*
+ACTIVE:RWY:ARR:*:DEP:ETNN06
+ACTIVE:RWY:ARR:*:DEP:ETNN24
+ACTIVE:RWY:ARR:EDDK13L:DEP:*
+ACTIVE:RWY:ARR:EDDK31R:DEP:*
+ACTIVE:RWY:ARR:EDDK06:DEP:*
+ACTIVE:RWY:ARR:EDDK24:DEP:*
+ACTIVE:RWY:ARR:*:DEP:EDDK13L
+ACTIVE:RWY:ARR:*:DEP:EDDK31R
+ACTIVE:RWY:ARR:*:DEP:EDDK06
+ACTIVE:RWY:ARR:*:DEP:EDDK24
+// 06
+{{ ecl_dashes(runways.ETNN['06'], 14) }}
+{{ marker_ticks(runways.ETNN['06'], [6, 10], 0.5, 0.5) }}
+// 24
+{{ ecl_dashes(runways.ETNN['24'], 10) }}
+{{ marker_ticks(runways.ETNN['24'], [6, 10], 0.5, 0.5) }}
+
+MAP:ETOU ECL:A
+FOLDER:ECL
+COLOR:appwindow-ecl
+STYLE:Solid:1
+ACTIVE:RWY:ARR:ETOU25:DEP:*
+ACTIVE:RWY:ARR:ETOU07:DEP:*
+ACTIVE:RWY:ARR:*:DEP:ETOU25
+ACTIVE:RWY:ARR:*:DEP:ETOU07
+// 07
+{{ ecl_dashes(runways.ETOU['07'], 12) }}
+{{ marker_ticks(runways.ETOU['07'], [10], 0.5, 0.5) }}
+// 25
+{{ ecl_dashes(runways.ETOU['25'], 12) }}
+{{ marker_ticks(runways.ETOU['25'], [10], 0.5, 0.5) }}
+
+MAP:ETSB ECL:A
+FOLDER:ECL
+COLOR:appwindow-ecl
+STYLE:Solid:1
+ACTIVE:RWY:ARR:ETSB03:DEP:*
+ACTIVE:RWY:ARR:ETSB21:DEP:*
+ACTIVE:RWY:ARR:*:DEP:ETSB03
+ACTIVE:RWY:ARR:*:DEP:ETSB21
+// 03
+{{ ecl_dashes(runways.ETSB['03'], 12) }}
+{{ marker_ticks(runways.ETSB['03'], [0.5], 0, 0.5) }}
+{{ marker_ticks(runways.ETSB['03'], [10], 0.5, 0.5) }}
+// 21
+{{ ecl_dashes(runways.ETSB['21'], 12) }}
+{{ marker_ticks(runways.ETSB['21'], [0.5], 0, 0.5) }}
+{{ marker_ticks(runways.ETSB['21'], [10], 0.5, 0.5) }}
