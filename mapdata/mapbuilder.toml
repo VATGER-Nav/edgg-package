@@ -103,47 +103,47 @@ source = "misc/vfr/reporting-points.json"
 
 [data.eddf_aixm]
 type = "aixm"
-source = "https://aip.dfs.de/datasets/scripts/getItem.php?amdt=0&content=aerodrome_mapping/EDDF_AerodromeMapping_2025-05-15_2025-06-12_revision.zip"
+source = "dfs:0:EDDF AerodromeMapping:AIXM 5.1.1"
 
 [data.eddl_aixm]
 type = "aixm"
-source = "https://aip.dfs.de/datasets/scripts/getItem.php?amdt=0&content=aerodrome_mapping/EDDL_AerodromeMapping_2025-05-15_2025-06-12_revision.zip"
+source = "dfs:0:EDDL AerodromeMapping:AIXM 5.1.1"
 
 [data.eddk_aixm]
 type = "aixm"
-source = "https://aip.dfs.de/datasets/scripts/getItem.php?amdt=0&content=aerodrome_mapping/EDDK_AerodromeMapping_2025-05-15_2025-06-12_revision.zip"
+source = "dfs:0:EDDK AerodromeMapping:AIXM 5.1.1"
 
 [data.edds_aixm]
 type = "aixm"
-source = "https://aip.dfs.de/datasets/scripts/getItem.php?amdt=0&content=aerodrome_mapping/EDDS_AerodromeMapping_2025-05-15_2025-06-12_revision.zip"
+source = "dfs:0:EDDS AerodromeMapping:AIXM 5.1.1"
 
 [data.eddr_aixm]
 type = "aixm"
-source = "https://aip.dfs.de/datasets/scripts/getItem.php?amdt=0&content=aerodrome_mapping/EDDR_AerodromeMapping_2025-05-15_2025-06-12_revision.zip"
+source = "dfs:0:EDDR AerodromeMapping:AIXM 5.1.1"
 
 [data.edlp_aixm]
 type = "aixm"
-source = "https://aip.dfs.de/datasets/scripts/getItem.php?amdt=0&content=aerodrome_mapping/EDLP_AerodromeMapping_2025-05-15_2025-06-12_revision.zip"
+source = "dfs:0:EDLP AerodromeMapping:AIXM 5.1.1"
 
 [data.edlw_aixm]
 type = "aixm"
-source = "https://aip.dfs.de/datasets/scripts/getItem.php?amdt=0&content=aerodrome_mapping/EDLW_AerodromeMapping_2025-05-15_2025-06-12_revision.zip"
+source = "dfs:0:EDLW AerodromeMapping:AIXM 5.1.1"
 
 [data.edln_aixm]
 type = "aixm"
-source = "https://aip.dfs.de/datasets/scripts/getItem.php?amdt=0&content=aerodrome_mapping/EDLN_AerodromeMapping_2025-05-15_2025-06-12_revision.zip"
+source = "dfs:0:EDLN AerodromeMapping:AIXM 5.1.1"
 
 [data.edlv_aixm]
 type = "aixm"
-source = "https://aip.dfs.de/datasets/scripts/getItem.php?amdt=0&content=aerodrome_mapping/EDLV_AerodromeMapping_2025-05-15_2025-06-12_revision.zip"
+source = "dfs:0:EDLV AerodromeMapping:AIXM 5.1.1"
 
 [data.edfh_aixm]
 type = "aixm"
-source = "https://aip.dfs.de/datasets/scripts/getItem.php?amdt=0&content=aerodrome_mapping/EDFH_AerodromeMapping_2025-05-15_2025-06-12_revision.zip"
+source = "dfs:0:EDFH AerodromeMapping:AIXM 5.1.1"
 
 [data.edsb_aixm]
 type = "aixm"
-source = "https://aip.dfs.de/datasets/scripts/getItem.php?amdt=0&content=aerodrome_mapping/EDSB_AerodromeMapping_2025-05-15_2025-06-12_revision.zip"
+source = "dfs:0:EDSB AerodromeMapping:AIXM 5.1.1"
 
 
 #-------Groundlayouts KML------
