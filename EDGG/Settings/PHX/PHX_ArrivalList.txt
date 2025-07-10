@@ -7,7 +7,7 @@ m_Resizable:1
 m_OrderingColumn:5
 m_HeaderOnly:0
 m_Column:CALLSIGN:10:0:9:6:100:1::TopSky plugin:TopSky plugin:1:0.0
-m_Column:ADEP:5:1:10007:39:871:0:TopSky plugin:TopSky plugin:CCAMS:1:0.0
+m_Column:ADEP:5:1:10007:39:62:0:TopSky plugin:TopSky plugin:TopSky plugin:1:0.0
 m_Column:ATYP:5:1:10028:2:32:1:TopSky plugin:TopSky plugin::8:0.0
 m_Column:W:2:0:10032:104:0:1:TopSky plugin:TopSky plugin::0:0.0
 m_Column:ETA:6:1:10033:0:0:1:TopSky plugin:::0:0.0

@@ -23,7 +23,7 @@ m_Column:RWY:4:1:642:743:17:1:vSID:vSID::1:0.0
 m_Column:SID:9:1:641:741:742:1:vSID:vSID:vSID:0:0.0
 m_Column:CLMB:5:1:640:740:109:0:vSID:vSID:TopSky plugin:0:0.0
 m_Column:RFL:5:1:10062:30:59:1:TopSky plugin::TopSky plugin:0:0.0
-m_Column:aSSR:5:1:643:871:869:0:vSID:CCAMS:CCAMS:0:0.0
+m_Column:aSSR:5:1:643:62:62:0:vSID:TopSky plugin:TopSky plugin:0:0.0
 m_Column:FPC:5:1:1:100:0:0:VFPC:VFPC::0:0.0
 m_Column:DCL:4:1:10128:155:0:0:TopSky plugin:TopSky plugin::0:0.0
 m_Column:C:2:1:10046:27:19:0:TopSky plugin::vACDM:0:0.0
