@@ -88,14 +88,6 @@ RawVideo_MaxHistory=0
 
 Equip_ModeS=WZLCISG
 
-System_OSM=1
-System_CVM=1
-System_ECM=1
-System_APM=1
-System_RIM=1
-System_RVM=1
-System_SRM=1
-
 System_State_OnFreq=STBY
 System_State_StartUp=SUG
 System_State_Push=PBG
