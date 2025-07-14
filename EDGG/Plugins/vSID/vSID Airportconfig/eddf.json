@@ -863,27 +863,6 @@
 						"initial": 5000
 					}
                 }
-            },
-            "TAU": {
-				"Q": {
-					"1":{
-						"rwy": "25C,25L",
-						"initial": 5000,
-						"equip": {"NON-RNAV": true},
-						"prio": 99
-					}
-                }
-            },
-            "MTR": {
-				"C": {
-					"1":{
-						"rwy": "07C,07R",
-						"initial": 5000,
-						"climbvia": true,
-						"equip": {"NON-RNAV": true},
-						"prio": 99
-					}
-                }
             }
         },
 		"areas": {
