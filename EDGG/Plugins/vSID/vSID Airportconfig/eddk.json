@@ -13,6 +13,7 @@
                     "1": {
                         "rwy": "13L",
                         "climbvia": true,
+                        "dest": {"EDDF": true, "EDDK": true},
                         "prio": 2
                     }
                 },
@@ -23,6 +24,7 @@
                         "prio": 1,
                         "wtc": "H",
                         "engineType": "J",
+                        "dest": {"EDDF": true, "EDDK": true},
                         "engineCount": 3
                     }
                 },
@@ -30,11 +32,13 @@
                     "1": {
                         "rwy": "31R",
                         "climbvia": true,
+                        "dest": {"EDDF": true, "EDDK": true},
                         "prio": 3
                     }
                 },
                 "R":{
                     "climbvia": true,
+                    "dest": {"EDDF": true, "EDDK": true},
                     "1": {
                         "rwy": "31R",
                         "prio": 2,
@@ -51,7 +55,8 @@
                         "rwy": "24",
                         "climbvia": true,
                         "prio": 3,
-                        "acftType": {"A388": false}
+                        "acftType": {"A388": false},
+                        "dest": {"EDDF": true, "EDDK": true}
                     }
                 },
                 "K":{
@@ -59,11 +64,13 @@
                         "rwy": "06",
                         "climbvia": false,
                         "prio": 3,
-                        "acftType": {"A388": false}
+                        "acftType": {"A388": false},
+                        "dest": {"EDDF": true, "EDDK": true}
                     }
                 },
                 "E":{
                     "climbvia": true,
+                    "dest": {"EDDF": true, "EDDK": true},
                     "1": {
                         "rwy": "13R",
                         "prio": 1,
@@ -83,6 +90,7 @@
                 },
                 "M":{
                     "climbvia": true,
+                    "dest": {"EDDF": true, "EDDK": true},
                     "1": {
                         "rwy": "31L",
                         "prio": 1,
