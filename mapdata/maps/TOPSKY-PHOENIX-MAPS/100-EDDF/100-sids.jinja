@@ -1,0 +1,354 @@
+//---------------------------------------------------------------
+//                       EDDF - Frankfurt-Main
+//---------------------------------------------------------------
+
+//------------------------------ SIDs ---------------------------
+
+{%- set DF171 = 'N049.56.27.900:E008.35.49.300' %}
+{%- set DF173 = 'N049.56.14.000:E008.41.44.600' %}
+{%- set DF174 = 'N049.53.05.600:E008.45.12.500' %}
+{%- set DF175 = 'N050.04.09.600:E009.42.08.200' %}
+
+{%- set sids = {
+    "07_N": {
+        "MARUNxE": ['EDDF/25C', 'DF139', 'DF146', 'ODAGA', 'TESGA', 'ALIDI', 'MARUN'],
+        "OBOKAxE": ['ODAGA', 'KUSOM', 'GUBAX', 'RAVKI', 'DITAM', 'OBOKA'],
+        "TOBAKxD": ['EDDF/25C', 'DF149', 'MEFTO', 'TOBAK'],
+        "xE_R":    ['EDDF/25L', 'DF140', 'DF139'],
+        "xD_R":    ['EDDF/25L', 'DF149'],
+        "MARUNxD": ['TOBAK', 'APROX', 'MARUN'],
+        "OBOKAxD": ['MEFTO', 'ODAGA'],
+    },
+    "07_S": {
+        "ANEKIxE": ['DF148', 'DF154', 'DF160', 'DF101', 'ANEKI'],
+        "SOBRAxE": ['DF160', 'DF198', 'DF201', 'DONAB', 'SOBRA'],
+        "CINDYxD": ['DF150', 'DF153', 'AMTIX', 'CINDY'],
+        "KOMIBxD": ['DF149', 'DF151', 'DF167', DF175, 'KOMIB'],
+        "SULUSxD": ['KOMIB', 'SULUS'],
+        "ANEKIxD": ['DF153', 'DF157', 'ANEKI'],
+        "SOBRAxD": ['DF157', 'ROSIG'],
+    },
+    "25_N": {
+        "MARUNxM": ['VFM', 'DF180', 'ROXAP', 'ADEVO', 'LISKU', 'TABUM', 'LIKSI', 'LORPA', 'MARUN'],
+        "OBOKAxM": ['DF180', 'DF172', 'PABVI', 'SIVDO', 'KUPIP', 'MASIR', 'RAVKI', 'DITAM', 'OBOKA'],
+        "TOBAKxM": ['TABUM', 'TESGA', 'TOBAK'],
+        "xF_C":    ['DF999', 'DF234', 'DF133', 'DF233', 'DF132', 'TABUM'],
+        "xF_L":    ['DF235', 'DF133'],
+        "xG":      ['DF133', 'DF131', 'DF238', 'TABUM'], 
+        "OBOKAxG": ['DF131', 'DF136', 'ESUPI', 'MASIR'],
+    },
+    "25_S": {
+        "ANEKIxF": ['DF142', 'DF143', 'DF137', 'DF101', 'ANEKI'],
+        "CINDYxF": ['DF137', DF171, DF173, DF174, 'DF170', 'AMTIX', 'CINDY'],
+        "SOBRAxF": ['DF143', 'DF163', 'DF199', 'DF201', 'DONAB', 'SOBRA'],
+        "SULUSxF": ['CINDY', 'GIBSA', 'COSJE', 'SULUS'],
+        "SOBRAxP": ['DF138', 'DF147', 'DONAB'],        
+    },
+    "18": {
+        "ANEKIxL": ['EDDF/36', 'DF158', 'DF160', 'DF101', 'ANEKI'],
+        "CINDYxS": ['DF158', DF171, DF173, DF174, 'DF170', 'AMTIX', 'CINDY'],
+        "MARUNxS": ['DF197', 'DF156', 'DF164', 'KUPIP', 'TABUM', 'LIKSI', 'LORPA', 'MARUN'],
+        "OBOKAxS": ['KUPIP', 'MASIR', 'RAVKI', 'DITAM', 'OBOKA'],
+        "SOBRAxL": ['DF160', 'DF198', 'DF201', 'DONAB', 'SOBRA'],
+        "SULUSxS": ['CINDY', 'GIBSA', 'COSJE', 'SULUS'],
+        "TOBAKxS": ['TABUM', 'TESGA', 'TOBAK'],
+        "ULKIGxL": ['DF198', 'DF200', 'PIPIX', 'GISNO', 'ULKIG'],
+        "CINDYxL": ['DF101', 'DF102', 'AMTIX'],
+        "OBOKAxL": ['DF160', 'XAMUB', 'MASIR'],      
+    },
+    "night": {
+        "MARUNxN": ['KUPIP', 'TABUM', 'LIKSI', 'LORPA', 'MARUN'],
+        "OBOKAxN": ['KUPIP', 'MASIR', 'RAVKI', 'DITAM', 'OBOKA'],
+        "SOBRAxN": ['DF161', 'DF201', 'DONAB', 'SOBRA'],
+        "TOBAKxN": ['TABUM', 'TESGA', 'TOBAK'],
+        "MARUNxR": ['EDDF/36', 'DF158', 'DF159', 'DF168', 'TUKRU', 'MEFTO', 'TOBAK', 'APROX', 'MARUN'],
+        "OBOKAxR": ['MEFTO', 'ODAGA', 'KUSOM', 'GUBAX', 'RAVKI', 'DITAM', 'OBOKA'],
+    }
+} %}
+
+MAP:EDDF 07 - N'bound
+FOLDER:SIDs
+ASRDATA:PHOENIX
+LAYER:3
+STYLE:Solid
+COLOR:blue
+{%- for desig, fixes in sids['07_N'].items() if desig not in ['MARUNxD', 'OBOKAxD'] %}
+// {{desig}}
+{%- for fx in fixes %}
+COORD:{{fx}}
+{%- endfor %}
+COORDLINE
+{%- endfor %}
+
+STYLE:alternate
+{%- for sid in ['MARUNxD', 'OBOKAxD'] %}
+// {{sid}}
+{%- for fx in sids['07_N'][sid] %}
+COORD:{{fx}}
+{%- endfor %}
+COORDLINE
+{%- endfor %}
+
+// Fixes
+TEXTALIGN:LB
+SYMBOL:PLUS:MARUN:MA:5:0
+SYMBOL:PLUS:OBOKA:OB:5:0
+SYMBOL:PLUS:TOBAK:TO:5:0
+
+// Labels
+TEXTALIGN:RT
+TEXT:N050.11.19.200:E008.37.43.400:E:-5:0
+TEXTALIGN:LT
+TEXT:N050.10.51.100:E008.47.06.900:D:5:0
+
+
+MAP:EDDF 07 - S'bound
+FOLDER:SIDs
+ASRDATA:PHOENIX
+LAYER:3
+STYLE:Solid
+COLOR:blue
+// Initial Turn xE
+COORD:EDDF/25C
+COORD:DF144
+COORD_DF:066M:R:1.7:10:DF148
+COORDLINE
+COORD:EDDF/25L
+COORD:DF145
+COORD_TURN:1.56:10:066M:167
+COORDLINE
+// Initial Turn xD
+LINE:EDDF/25C:DF149
+LINE:EDDF/25L:DF149
+LINE:EDDF/25C:DF152
+COORDLINE
+COORD:EDDF/25L
+COORD:DF152
+COORD_DF:066M:R:1.55:10:DF150
+COORDLINE
+{%- for desig, fixes in sids['07_S'].items() if desig not in ['ANEKIxD', 'SOBRAxD'] %}
+// {{desig}}
+{%- for fx in fixes %}
+COORD:{{fx}}
+{%- endfor %}
+COORDLINE
+{%- endfor %}
+
+STYLE:alternate
+{%- for sid in ['ANEKIxD', 'SOBRAxD'] %}
+// {{sid}}
+{%- for fx in sids['07_S'][sid] %}
+COORD:{{fx}}
+{%- endfor %}
+COORDLINE
+{%- endfor %}
+
+// Fixes
+TEXTALIGN:LB
+SYMBOL:PLUS:ANEKI:AN:5:0
+SYMBOL:PLUS:CINDY:CI:5:0
+SYMBOL:PLUS:KOMIB:KO:5:0
+SYMBOL:PLUS:SOBRA:SO:5:0
+SYMBOL:PLUS:SULUS:SU:5:0
+
+// Labels
+TEXTALIGN:RB
+TEXT:DF148:E:-5:0
+TEXTALIGN:LT
+TEXT:DF150:D:5:0
+TEXTALIGN:LB
+TEXT:DF151:D:5:0
+
+
+MAP:EDDF 25 - N'bound
+FOLDER:SIDs
+ASRDATA:PHOENIX
+LAYER:3
+STYLE:Solid
+COLOR:blue
+// Initial Turn
+COORD:EDDF/07C
+COORD:DF999
+COORD_DF:246M:L:1.3:10:VFM
+COORDLINE
+COORD:EDDF/07R
+COORD:DF980
+COORD_TURN:1.45:10:246M:-53
+COORDLINE
+{%- for desig, fixes in sids['25_N'].items() if desig not in ['xF_C', 'xF_L', 'xG', 'OBOKAxG'] %}
+// {{desig}}
+{%- for fx in fixes %}
+COORD:{{fx}}
+{%- endfor %}
+COORDLINE
+{%- endfor %}
+
+STYLE:alternate
+{%- for sid in ['xF_C', 'xF_L', 'xG', 'OBOKAxG'] %}
+// {{sid}}
+{%- for fx in sids['25_N'][sid] %}
+COORD:{{fx}}
+{%- endfor %}
+COORDLINE
+{%- endfor %}
+
+// Fixes
+TEXTALIGN:LB
+SYMBOL:PLUS:MARUN:MA:5:0
+SYMBOL:PLUS:OBOKA:OB:5:0
+SYMBOL:PLUS:TOBAK:TO:5:0
+
+// Labels
+TEXTALIGN:LT
+TEXT:DF172:M/H:5:0
+TEXTALIGN:LB
+TEXT:N050.04.21.200:E008.22.29.700:F:5:0
+TEXTALIGN:RB
+TEXT:DF238:G:-5:0
+TEXTALIGN:LB
+TEXT:ESUPI:G:5:0
+
+
+MAP:EDDF 25 - S'bound
+FOLDER:SIDs
+ASRDATA:PHOENIX
+COLOR:blue
+LAYER:3
+STYLE:Solid
+// Initial Turn
+COORD:EDDF/07C
+COORD:DF134
+COORD_DF:246M:L:1.15:10:DF141
+COORD:DF142
+COORDLINE
+COORD:EDDF/07R
+COORD:DF135
+COORD_TURN:1.63:10:246M:-48
+COORDLINE
+{%- for desig, fixes in sids['25_S'].items() if desig != 'SOBRAxP' %}
+// {{desig}}
+{%- for fx in fixes %}
+COORD:{{fx}}
+{%- endfor %}
+COORDLINE
+{%- endfor %}
+
+STYLE:alternate
+// Initial Turn
+COORD:DF134
+COORD_DF:246M:L:1.15:10:DF138
+COORDLINE
+COORD:DF135
+COORD_DF:246M:L:1.63:8:DF138
+COORDLINE
+{%- for sid in ['SOBRAxP'] %}
+// {{sid}}
+{%- for fx in sids['25_S'][sid] %}
+COORD:{{fx}}
+{%- endfor %}
+COORDLINE
+{%- endfor %}
+
+// Fixes
+TEXTALIGN:LB
+SYMBOL:PLUS:ANEKI:AN:5:0
+SYMBOL:PLUS:CINDY:CI:5:0
+SYMBOL:PLUS:SOBRA:SO:5:0
+SYMBOL:PLUS:SULUS:SU:5:0
+
+// Labels
+TEXTALIGN:LT
+TEXT:N049.51.17.200:E008.20.20.400:F:5:0
+TEXTALIGN:LB
+TEXT:{{DF173}}:F:5:0
+TEXT:FKS:F:5:0
+TEXTALIGN:RB
+TEXT:N049.54.25.600:E008.15.23.300:P:-5:0
+
+
+MAP:EDDF - Night
+FOLDER:SIDs
+ASRDATA:PHOENIX
+COLOR:blue
+LAYER:3
+STYLE:Solid
+// Initial Turn
+COORD:EDDF/07C
+COORD:DF134
+COORD_DF:246M:L:1.3:10:DF162
+COORD:DF165
+COORDLINE
+COORD:EDDF/07R
+COORD:DF135
+COORD_DF:246M:L:1.3:10:DF165
+COORD:DF166
+COORD:DF161
+COORD_DF:221M:R:4.6:5:KUPIP
+COORDLINE
+{%- for desig, fixes in sids['night'].items() %}
+// {{desig}}
+{%- for fx in fixes %}
+COORD:{{fx}}
+{%- endfor %}
+COORDLINE
+{%- endfor %}
+
+// Fixes
+TEXTALIGN:LB
+SYMBOL:PLUS:MARUN:MA:5:0
+SYMBOL:PLUS:OBOKA:OB:5:0
+SYMBOL:PLUS:SOBRA:SO:5:0
+SYMBOL:PLUS:TOBAK:TO:5:0
+
+// Labels
+TEXTALIGN:LB
+TEXT:DF159:R:5:0
+TEXTALIGN:RB
+TEXT:N049.55.28.800:E008.26.37.900:S:-5:0
+
+
+MAP:EDDF 18
+FOLDER:SIDs
+ASRDATA:PHOENIX
+COLOR:blue
+LAYER:3
+STYLE:Solid
+{%- for desig, fixes in sids['18'].items() if desig not in ['CINDYxL', 'OBOKAxL'] %}
+// {{desig}}
+{%- for fx in fixes %}
+COORD:{{fx}}
+{%- endfor %}
+COORDLINE
+{%- endfor %}
+
+STYLE:alternate
+{%- for sid in ['CINDYxL', 'OBOKAxL'] %}
+// {{sid}}
+{%- for fx in sids['18'][sid] %}
+COORD:{{fx}}
+{%- endfor %}
+COORDLINE
+{%- endfor %}
+
+// Fixes
+TEXTALIGN:LB
+SYMBOL:PLUS:ANEKI:AN:5:0
+SYMBOL:PLUS:CINDY:CI:5:0
+SYMBOL:PLUS:MARUN:MA:5:0
+SYMBOL:PLUS:OBOKA:OB:5:0
+SYMBOL:PLUS:SOBRA:SO:5:0
+SYMBOL:PLUS:SULUS:SU:5:0
+SYMBOL:PLUS:TOBAK:TO:5:0
+TEXTALIGN:RB
+SYMBOL:PLUS:ULKIG:UL:-5:0
+
+// Labels
+TEXTALIGN:LB
+TEXT:DF160:L:5:0
+TEXT:{{DF173}}:S:5:0
+TEXTALIGN:RB
+TEXT:N049.55.28.800:E008.26.37.900:S:-5:0
+TEXTALIGN:RB
+TEXT:N049.50.53.100:E008.28.12.500:L:-5:0
+TEXTALIGN:LB
+TEXT:N049.46.36.600:E008.40.57.000:L:0:-5
