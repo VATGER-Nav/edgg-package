@@ -1,7 +1,7 @@
 //---------------------- Non-RNAV Procedures --------------------
 
 MAP:EDDL ILS 05
-FOLDER:NON-RNAV
+FOLDER:NON-RNAV APP
 LAYER:3
 STYLE:Dot:1
 // 05L via DUS
@@ -32,7 +32,7 @@ TEXTALIGN:LT
 TEXT:NATOS:A30:5:0
 
 MAP:EDDL ILS 23
-FOLDER:NON-RNAV
+FOLDER:NON-RNAV APP
 LAYER:3
 STYLE:Dot:1
 // 23R via DUS

@@ -33,7 +33,7 @@
 } %}
 
 MAP:EDRZ RNP 03
-FOLDER:RNAV/RNP
+FOLDER:RNAV/RNP APP
 ACTIVE:RWY:ARR:EDRZ03:DEP:*
 COLOR:standard
 {%- for fx in rnp['03'] %}
@@ -47,7 +47,7 @@ TEXT:{{coord[fx]}}:{{fx}}:5:0
 {%- endfor %}
 
 MAP:EDRZ RNP 21
-FOLDER:RNAV/RNP
+FOLDER:RNAV/RNP APP
 ACTIVE:RWY:ARR:EDRZ21:DEP:*
 COLOR:standard
 {%- for fx in rnp['21'] %}
@@ -61,7 +61,7 @@ TEXT:{{coord[fx]}}:{{fx}}:5:0
 {%- endfor %}
 
 MAP:EDRZ VOR 03
-FOLDER:NON-RNAV
+FOLDER:NON-RNAV APP
 LAYER:3
 STYLE:Dot:1
 COLOR:orange
@@ -84,7 +84,7 @@ TEXTALIGN:LT
 TEXT:{{coord['RZ301']}}:A30:5:0
 
 MAP:EDRZ VOR 21
-FOLDER:NON-RNAV
+FOLDER:NON-RNAV APP
 LAYER:3
 STYLE:Dot:1
 COLOR:orange
