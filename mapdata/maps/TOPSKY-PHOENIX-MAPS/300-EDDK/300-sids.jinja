@@ -1,0 +1,198 @@
+//---------------------------------------------------------------
+//                      EDDK - Cologne/Bonn
+//---------------------------------------------------------------
+
+//------------------------------ SIDs ---------------------------
+
+{%- set sids = {
+    "13": {
+        "COL":   ['DK142', 'DK141', 'DK143', 'COL'],
+        "KUMIK": ['COL', 'KUMIK'],
+        "PODIP": ['COL', 'PODIP'],
+        "WYP":   ['DK143', 'DK144', 'DK145', 'DK149', 'WYP'],
+    },
+    "31": {
+        "COL":   ['DK035', 'DK036', 'DK037', 'COL'],
+        "KUMIL": ['DK037', 'DK038', 'PODIP', 'KUMIK'],
+        "NVO":   ['DK030', 'DK919', 'NVO'],
+        "WYP":   ['DK036', 'WYP'],
+    },
+    "06": {
+        "COL":   ['EDDK/24', 'DK073', 'COL'],
+        "KUMIL": ['DK073', 'DK071', 'PODIP', 'KUMIK'],
+        "NVO":   ['DK071', 'DK070', 'DK074', 'NVO'],
+        "WYP":   ['DK074','WYP'],
+    },
+    "24": {
+        "COL":   ['EDDK/06', 'DK020', 'DK021', 'DK022', 'DK024', 'DK023', 'COL'],
+        "KUMIL": ['COL', 'KUMIK'],
+        "NVO":   ['DK020', 'DK025', 'NVO'],
+        "PODIP": ['COL', 'PODIP'],
+        "WYP":   ['DK023', 'WYP'],
+    },
+} %}
+
+MAP:EDDK 13
+FOLDER:SIDs
+ASRDATA:PHOENIX
+LAYER:3
+STYLE:Solid
+COLOR:blue
+// Initial Turn
+COORD:EDDK/31R
+COORD:DK130
+COORD_DF:134M:L:2.27:10:DK141
+COORDLINE
+COORD:DK141
+COORD:DK142
+COORD_DF:276M:R:2.4:10:EDDK/31L
+COORDLINE
+// NVO F
+LINE:DK130:DK133
+COORD:N050.49.15.500:E007.11.46.800
+COORD:DK133
+COORD_DF:134M:R:1:10:DK134
+COORD:DK135
+COORD:NVO
+COORDLINE
+{%- for desig, fixes in sids['13'].items() %}
+// {{desig}}
+{%- for fx in fixes %}
+COORD:{{fx}}
+{%- endfor %}
+COORDLINE
+{%- endfor %}
+
+STYLE:alternate
+// NVO P
+COORD:DK133
+COORD:DK132
+COORD:DK146
+COORD_DF:168M:R:2.5:10:DK152
+COORD:NVO
+COORDLINE
+// NVO V/W
+COORD:DK149
+COORD:NVO
+COORDLINE
+
+// Fixes
+TEXTALIGN:LT
+SYMBOL:PLUS:COL:COL:5:0
+TEXTALIGN:RB
+SYMBOL:PLUS:NVO:NVO:-5:0
+TEXTALIGN:LB
+SYMBOL:PLUS:WYP:WYP:5:0
+SYMBOL:PLUS:KUMIK:KU:5:0
+SYMBOL:PLUS:PODIP:PO:5:0
+
+// Labels
+TEXTALIGN:LB
+TEXT:DK130:E/F/X:5:0
+TEXTALIGN:RB
+TEXT:N050.51.48.400:E006.56.20.200:V/W:-5:0
+TEXTALIGN:RT
+TEXT:N050.40.32.200:E007.02.26.800:C/P:-5:0
+
+
+MAP:EDDK 31
+FOLDER:SIDs
+ASRDATA:PHOENIX
+LAYER:3
+STYLE:Solid
+COLOR:blue
+// Initial Turn
+COORD:EDDK/13L
+COORD:DK041
+COORD_DF:316M:R:1.79:10:DK035
+COORDLINE
+COORD:EDDK/13R
+COORD:DK033
+COORD_DF:325M:R:2.3:10:DK035
+COORDLINE
+COORD:DK033
+COORD:DK030
+COORDLINE
+COORD:DK041
+COORD:DK040
+COORD:DK030
+COORDLINE
+{%- for desig, fixes in sids['31'].items() %}
+// {{desig}}
+{%- for fx in fixes %}
+COORD:{{fx}}
+{%- endfor %}
+COORDLINE
+{%- endfor %}
+
+// Fixes
+TEXTALIGN:LT
+SYMBOL:PLUS:COL:COL:5:0
+TEXTALIGN:RB
+SYMBOL:PLUS:NVO:NVO:-5:0
+TEXTALIGN:LB
+SYMBOL:PLUS:WYP:WYP:5:0
+SYMBOL:PLUS:KUMIK:KU:5:0
+SYMBOL:PLUS:PODIP:PO:5:0
+
+// Labels
+TEXTALIGN:LB
+TEXT:DK041:B/M/R:5:0
+
+
+MAP:EDDK 06
+FOLDER:SIDs
+ASRDATA:PHOENIX
+LAYER:3
+STYLE:Solid
+COLOR:blue
+{%- for desig, fixes in sids['06'].items() %}
+// {{desig}}
+{%- for fx in fixes %}
+COORD:{{fx}}
+{%- endfor %}
+COORDLINE
+{%- endfor %}
+
+// Fixes
+TEXTALIGN:LT
+SYMBOL:PLUS:COL:COL:5:0
+TEXTALIGN:RB
+SYMBOL:PLUS:NVO:NVO:-5:0
+TEXTALIGN:LB
+SYMBOL:PLUS:WYP:WYP:5:0
+SYMBOL:PLUS:KUMIK:KU:5:0
+SYMBOL:PLUS:PODIP:PO:5:0
+
+// Labels
+TEXTALIGN:RB
+TEXT:DK069:K:-5:0
+
+
+MAP:EDDK 24
+FOLDER:SIDs
+ASRDATA:PHOENIX
+LAYER:3
+STYLE:Solid
+COLOR:blue
+{%- for desig, fixes in sids['24'].items() %}
+// {{desig}}
+{%- for fx in fixes %}
+COORD:{{fx}}
+{%- endfor %}
+COORDLINE
+{%- endfor %}
+
+// Fixes
+TEXTALIGN:LT
+SYMBOL:PLUS:COL:COL:5:0
+TEXTALIGN:RB
+SYMBOL:PLUS:NVO:NVO:-5:0
+TEXTALIGN:LB
+SYMBOL:PLUS:WYP:WYP:5:0
+SYMBOL:PLUS:KUMIK:KU:5:0
+SYMBOL:PLUS:PODIP:PO:5:0
+
+// Labels
+TEXTALIGN:RB
+TEXT:N050.51.01.900:E007.05.44.200:D:-5:0
