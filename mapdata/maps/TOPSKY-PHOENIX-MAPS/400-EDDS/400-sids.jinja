@@ -1,0 +1,140 @@
+//---------------------------------------------------------------
+//                        EDDS - Stuttgart
+//---------------------------------------------------------------
+
+//------------------------------ SIDs ---------------------------
+
+{%- set sids = {
+    "07": {
+        "ABTAL": ['DS039', 'DS032', 'DS035', 'ABTAL'],
+        "DKB":   ['KEMAV', 'DKB'],
+        "ETASA": ['DS038', 'LBU', 'ETASA'],
+        "GEBNO": ['DS032', 'KEMAV', 'DS051', 'GEBNO'],
+        "KRH":   ['LBU', 'ABGAN', 'KRH'],
+        "OKIBA": ['DS035', 'NOTGA', 'OKIBA'],
+        "ROTWE": ['DS034', 'TEDGO', 'ROTWE'],
+        "SUL":   ['TEDGO', 'DS045', 'SUL'],
+        "TAGIK": ['ABGAN', 'TAGIK'],
+        "VESID": ['ABGAN', 'VESID'],
+    },
+    "25": {
+        "ABTAL": ['DS048', 'TEDGO', 'ABTAL'],
+        "DKB":   ['DS040', 'DS041', 'LBU', 'DS051', 'DKB'],
+        "ETASA": ['DS041', 'DS043', 'KOVAN', 'ETASA'],
+        "GEBNO": ['DS051', 'GEBNO'],
+        "KRH":   ['DS043', 'ABGAN', 'KRH'],
+        "KUNOD": ['TEDGO', 'KUNOD'],
+        "OKIBA": ['LBU', 'OKIBA'],
+        "ROTWE": ['DS046', 'DS044', 'DS049', 'ROTWE'],
+        "SUL":   ['DS044', 'DS045', 'SUL'],
+        "TAGIK": ['ABGAN', 'TAGIK'],
+        "VESID": ['ABGAN', 'VESID'],
+    },
+} %}
+
+MAP:EDDS 07
+FOLDER:SIDs
+ASRDATA:PHOENIX
+LAYER:3
+STYLE:Solid
+COLOR:blue
+// Initial Turn
+COORD:EDDS/25
+COORD:DS030
+COORD_DF:072M:R:1.8:10:DS034
+COORDLINE
+COORD:DS030
+COORD:DS031
+COORD_DF:072M:L:2.65:10:DS038
+COORDLINE
+// KUNOD
+COORD:DS031
+COORD:DS039
+COORD_DF:072M:R:1.85:10:DS055
+COORD:KUNOD
+COORDLINE
+// STG
+COORD:DS030
+COORD_DF:072M:R:0.71:10:DS037
+COORD:STG
+COORDLINE
+{%- for desig, fixes in sids['07'].items() %}
+// {{desig}}
+{%- for fx in fixes %}
+COORD:{{fx}}
+{%- endfor %}
+COORDLINE
+{%- endfor %}
+
+// Fixes
+TEXTALIGN:RB
+SYMBOL:PLUS:STG:STG:-5:0
+SYMBOL:PLUS:SUL:SUL:-5:0
+SYMBOL:PLUS:ROTWE:RO:-5:0
+SYMBOL:PLUS:TEDGO:TE:-5:0
+TEXTALIGN:LB
+SYMBOL:PLUS:DKB:DKB:5:0
+SYMBOL:PLUS:KRH:KRH:5:0
+SYMBOL:PLUS:ABTAL:AB:5:0
+SYMBOL:PLUS:ETASA:ET:5:0
+SYMBOL:PLUS:GEBNO:GE:5:0
+SYMBOL:PLUS:KUNOD:KU:5:0
+SYMBOL:PLUS:OKIBA:OK:5:0
+SYMBOL:PLUS:TAGIK:TA:5:0
+SYMBOL:PLUS:VESID:VE:5:0
+
+// Labels
+TEXTALIGN:RB
+TEXT:N048.42.37.400:E009.20.04.700:H:-5:0
+
+
+MAP:EDDS 25
+FOLDER:SIDs
+ASRDATA:PHOENIX
+LAYER:3
+STYLE:Solid
+COLOR:blue
+// Initial Turn
+COORD:EDDS/07
+COORD:DS050
+COORD_DF:252M:R:1.8:10:DS040
+COORDLINE
+COORD:DS050
+COORD:DS046
+COORD_DF:252M:L:1.74:10:DS048
+COORDLINE
+// STG
+COORD:DS046
+COORD_DF:252M:L:1.05:10:DS047
+COORD:DS052
+COORD_DF:164M:L:0.7:10:DS053
+COORD:STG
+COORDLINE
+{%- for desig, fixes in sids['25'].items() %}
+// {{desig}}
+{%- for fx in fixes %}
+COORD:{{fx}}
+{%- endfor %}
+COORDLINE
+{%- endfor %}
+
+// Fixes
+TEXTALIGN:RB
+SYMBOL:PLUS:STG:STG:-5:0
+SYMBOL:PLUS:SUL:SUL:-5:0
+SYMBOL:PLUS:ROTWE:RO:-5:0
+SYMBOL:PLUS:TEDGO:TE:-5:0
+TEXTALIGN:LB
+SYMBOL:PLUS:DKB:DKB:5:0
+SYMBOL:PLUS:KRH:KRH:5:0
+SYMBOL:PLUS:ABTAL:AB:5:0
+SYMBOL:PLUS:ETASA:ET:5:0
+SYMBOL:PLUS:GEBNO:GE:5:0
+SYMBOL:PLUS:KUNOD:KU:5:0
+SYMBOL:PLUS:OKIBA:OK:5:0
+SYMBOL:PLUS:TAGIK:TA:5:0
+SYMBOL:PLUS:VESID:VE:5:0
+
+// Labels
+TEXTALIGN:RB
+TEXT:N048.39.34.600:E009.04.00.000:B:-5:0
