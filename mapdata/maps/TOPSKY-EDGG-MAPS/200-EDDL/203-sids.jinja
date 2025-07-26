@@ -1,0 +1,125 @@
+//------------------------------ SIDs ---------------------------
+
+{%- set BAM = 'N051.19.39.900:E007.10.37.100' %}
+
+{%- set sids = {
+    "05": {
+        "COL":   ['DL050', 'DL058', BAM, 'LIPMI', 'COL'],
+        "DODEN": [BAM, 'ELBAL', 'BETZO', 'DODEN'],
+        "GMH":   [BAM, 'ANAVI', 'MAMIB', 'GMH'],
+        "KUMIK": ['ANAVI', 'DEGOM', 'KUMIK'],
+        "MEVEL": ['NIKOG', 'LUSIX', 'MEVEL'],
+        "MODRU": ['DL050', 'DL053', 'NIKOG', 'ORSOV', 'VEBAK', 'NETEX', 'MODRU'],
+        "NUDGO": ['MAMIB', 'KULIX', 'NUDGO'],
+        "NVO":   [BAM, 'NVO'],
+        "SONEB": ['LUSIX', 'DL054', 'SONEB'],
+    },
+    "23": {
+        "COL":   ['DL239', 'DL241', 'DL244', 'LIPMI', 'COL'],
+        "DODEN": ['DL244', 'DL242', 'ELBAL', 'BETZO', 'DODEN'],
+        "GMH":   ['DEGOM', 'GMH'],
+        "KUMIK": ['ELBAL', 'DEGOM', 'KUMIK'],
+        "LMA":   ['DL236', 'LMA'],
+        "NETEX": ['LMA', 'NETEX'],
+        "NUDGO": ['ELBAL', 'MAMIB', 'KULIX', 'NUDGO'],
+        "NVO":   ['DL241', 'NVO'],
+        "SONEB": ['ERKUM', 'DL245', 'SONEB'],
+    },
+} %}
+
+MAP:EDDL 05
+FOLDER:SIDs
+LAYER:3
+STYLE:Solid
+COLOR:blue
+// Initial Turn
+LINE:EDDL/23R:DL050
+LINE:EDDL/23L:DL050
+// LMA
+COORD:DL050
+COORD:DL051
+COORD_DF:051M:L:2.37:10:DL052
+COORD:LMA
+COORDLINE
+{%- for desig, fixes in sids['05'].items() %}
+// {{desig}}
+{%- for fx in fixes %}
+COORD:{{fx}}
+{%- endfor %}
+COORDLINE
+{%- endfor %}
+
+// Fixes
+TEXTALIGN:LB
+SYMBOL:VOR:COL:COL:5:0
+SYMBOL:VOR:LMA:LMA:5:0
+SYMBOL:VOR:GMH:GMH:5:0
+SYMBOL:VOR:NVO:NVO:5:0
+SYMBOL:FIX2_L:DODEN:DO:5:0
+SYMBOL:FIX2_L:KUMIK:KU:5:0
+SYMBOL:FIX2_L:MEVEL:ME:5:0
+SYMBOL:FIX2_L:MODRU:MO:5:0
+SYMBOL:FIX2_L:NETEX:NE:5:0
+SYMBOL:FIX2_L:NUDGO:NU:5:0
+SYMBOL:FIX2_L:SONEB:SO:5:0
+
+// Labels
+TEXTALIGN:LT
+TEXT:DL050:Z/J:5:0
+
+
+MAP:EDDL 23
+FOLDER:SIDs
+LAYER:3
+STYLE:Solid
+COLOR:blue
+// Initial Turn
+LINE:EDDL/05L:DL239
+LINE:EDDL/05R:DL240
+// MODRU Z/J
+// NETEX X/Y
+COORD:DL247
+COORD:UBORO
+COORD_DF:318M:L:3.58:10:NETEX
+COORD:MODRU
+COORDLINE
+// MEVEL
+COORD:DL230
+COORD_DF:230M:R:1.16:10:DL235
+COORD:DL235
+COORD:DL246
+COORDLINE
+COORD:EDDL/05L
+COORD:DL231
+COORD_DF:230M:R:1.16:10:DL234
+COORD:DL246
+COORD:DL248
+COORD:ERKUM
+COORD:LUSIX
+COORD:MEVEL
+COORDLINE
+{%- for desig, fixes in sids['23'].items() %}
+// {{desig}}
+{%- for fx in fixes %}
+COORD:{{fx}}
+{%- endfor %}
+COORDLINE
+{%- endfor %}
+
+// Fixes
+TEXTALIGN:LB
+SYMBOL:VOR:COL:COL:5:0
+SYMBOL:VOR:LMA:LMA:5:0
+SYMBOL:VOR:GMH:GMH:5:0
+SYMBOL:VOR:NVO:NVO:5:0
+SYMBOL:FIX2_L:DODEN:DO:5:0
+SYMBOL:FIX2_L:KUMIK:KU:5:0
+SYMBOL:FIX2_L:MEVEL:ME:5:0
+SYMBOL:FIX2_L:MODRU:MO:5:0
+SYMBOL:FIX2_L:NETEX:NE:5:0
+SYMBOL:FIX2_L:NUDGO:NU:5:0
+SYMBOL:FIX2_L:SONEB:SO:5:0
+
+// Labels
+TEXTALIGN:LT
+TEXT:DL236:T/H:5:0
