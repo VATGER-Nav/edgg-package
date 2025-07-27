@@ -11,14 +11,112 @@
 MAP:MVA Warm (MAR-NOV)
 FOLDER:MVA
 COLOR:mva
-{{ data.mva_su }}
+STYLE:Solid:1
+{% for uuid, geom in data.topsky['common']['mva']['line'].items() if uuid not in
+[
+    '01984d4d-a7f8-772f-b075-e284bb254a89',
+    '01984d4d-aa4b-75b9-92fb-9ae829417aa5',
+    '01984d4d-aade-73ec-978b-4eeb4b00a645',
+    '01984d4d-ac1f-74b2-ac34-14d5ea4c3af6',
+    '01984d4d-ac78-701a-babb-f1369c1b7232',
+    '01984d4d-ad95-764c-9955-d1d6b1f9f2b8',
+    '01984d4d-ae27-77e8-8575-6f0617c13561',
+    '01984d4d-b0bb-72fb-8b9b-aa0cef6a9f52',
+    '01984d4d-b0d6-7688-a5d7-06cac01fb138',
+    '01984d4d-b38d-714a-b60c-34e2a2bd95a3',
+    '01984d4d-b3db-75fa-ab40-3bf11f18f014',
+    '01984d4d-c7bf-738a-bf08-76444bfcfef6',
+    '01984d4d-cb65-735b-9b4d-49f7dc28c15a',
+    '01984d4d-cb81-748e-a78f-5af98f6d3f2a',
+    '01984d4d-cdb0-737f-938d-b028a0e707fc',
+    '01984d4d-d1c1-7241-aa9f-7d809203cc44',
+    '01984d4d-d28a-76e5-8904-fecfe6155782',
+    '01984d4d-d521-74af-851d-50bf4dafd586',
+    '01984d4d-d5e1-7220-af6a-01f0c3a578ef',
+    '01984d4d-d848-71e2-8ff7-21817d543b37',
+    '01984d4d-d872-77aa-8606-1037de4ce30c',
+    '01984d4d-db92-755c-8f80-10d069bc1b9a',
+    '01984d4d-dca8-7769-ab64-559ca2945570',
+] %}
+{{- geom | to_line('') -}}
+{% endfor %}
+
+// Labels
+{%- for id, geom in data.topsky['common']['mva']['labels'].items() %}
+{%- set lvl = id.split('_')[0] %}
+{{ geom | to_text(lvl) }}
+{%- endfor %}
 
 MAP:MVA Cold (NOV-MAR)
 FOLDER:MVA
 COLOR:mva
-{{ data.mva_wi }}
+STYLE:Solid:1
+{% for uuid, geom in data.topsky['common']['mva']['line'].items() if uuid not in
+[
+    '01984d4d-a1f2-7290-8663-83c29996aff0',
+    '01984d4d-a20e-711d-9a19-b5998dc961c0',
+    '01984d4d-a236-71f7-94fe-22e0dc99ca78',
+    '01984d4d-a706-76b0-b575-92356abfe51f',
+    '01984d4d-a9c7-7534-9fe5-0812513c7c31',
+    '01984d4d-aa4b-75b9-92fb-9ae829417aa5',
+    '01984d4d-aa54-758e-8885-9a1cac2ca8dd',
+    '01984d4d-ab4c-73b5-b359-9d1995de6f8d',
+    '01984d4d-ab60-771a-bd28-9b922d503bcd',
+    '01984d4d-ab72-7637-aaf0-9bd986bedbcb',
+    '01984d4d-abd6-70fb-b9dc-742cc084d556',
+    '01984d4d-ac78-701a-babb-f1369c1b7232',
+    '01984d4d-ac8b-717d-8889-fb1af0e6cd81',
+    '01984d4d-ae27-77e8-8575-6f0617c13561',
+    '01984d4d-af39-7279-9461-ca540e158b8b',
+    '01984d4d-b1fa-77eb-b861-753ed8bd9f00',
+    '01984d4d-b635-71be-a08c-dbab45a8a657',
+    '01984d4d-bfe0-77ff-a918-4d25ef37b537',
+    '01984d4d-c3fc-760b-a39f-df62687d566a',
+    '01984d4d-c405-7765-a5e1-055d656252dd',
+    '01984d4d-c70e-7348-bf77-a71735ff619d',
+    '01984d4d-c7bf-738a-bf08-76444bfcfef6',
+    '01984d4d-c812-74be-9b9c-6c7dbe4bfc44',
+    '01984d4d-c83e-732a-870c-e9126e256c68',
+    '01984d4d-ce23-729d-9192-ae448dd4c424',
+    '01984d4d-d1c1-7241-aa9f-7d809203cc44',
+    '01984d4d-d521-74af-851d-50bf4dafd586',
+    '01984d4d-d5e1-7220-af6a-01f0c3a578ef',
+    '01984d4d-d905-7180-a713-b348f441f31d',
+    '01984d4d-dbff-701c-b884-5086ea233500',
+    '01984d4d-dca8-7769-ab64-559ca2945570',
+    '01984d4d-dddb-74c9-ad9d-c3c5399a1b55',
+    '01984d4d-e093-73ff-9771-6faa5a254fd6',
+] %}
+{{- geom | to_line('') -}}
+{% endfor %}
+
+// Labels
+{%- for id, geom in data.topsky['common']['mva']['labels'].items() if id not in
+[
+    '22_24_cf882fe0',
+    '33_35_7d1541a5',
+    '33_35_f4bb3784',
+] %}
+{%- set lvl = id.split('_')[1] %}
+{{ geom | to_text(lvl) }}
+{%- endfor %}
 
 MAP:MVA Military
 FOLDER:MVA
-COLOR:mva
-{{ data.mva_mil }}
+COLOR:mva_mil
+STYLE:Solid:1
+{% for uuid, geom in data.topsky['common']['mva']['mil_line'].items() %}
+{{- geom | to_line('') -}}
+{% endfor %}
+
+// Labels
+{%- for id, geom in data.topsky['common']['mva']['mil_labels'].items() %}
+{%- set lvl_warm = id.split('_')[0] %}
+{%- set lvl_cold = id.split('_')[1] %}
+{%- if lvl_warm == lvl_cold %}
+{{ geom | to_text(lvl_warm) }}
+{%- else %}
+{{ geom | to_text(lvl_warm + ':0:-5') }}
+{{ geom | to_text('[' + lvl_cold + ']:0:6') }}
+{%- endif %}
+{%- endfor %}
