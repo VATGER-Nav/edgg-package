@@ -1,3 +1,10 @@
+{#- 
+    WARNING: When performing any changes on this file,
+    please bring them to the following files as well:
+    
+     * TOPSKY-PHOENIX-MAPS\020-airspace\021-airspace-cd.jinja
+     * GRP-PHOENIX-MAPS\8000-app-window\8010-airspace-cd.jinja
+#}
 {%- set EDGG = data.airspace['lines']['EDGG'] %}
 {%- set EDSB = {
     'A': EDGG['EDSBCLDA']['015-065'],
