@@ -4,21 +4,19 @@
     
      * TOPSKY-EDGG-MAPS\720-fis.jinja
 #}
-
-{%- set labels = {
-    "FDR": 'FDR - 4451',
-    "FDF": 'FDF - 4450',
-    "FDS": 'FDS - 4452',
-    "FDL": 'FDL - 7742',
-    "FDV": 'FDV - 7743',
-    "FDM": 'FDM - 4453',
-    "FDO": 'FDO - 4454',
-    "FSW": 'FSW',
-    "FDH": 'FDH - 7740',
-    "FDC": 'FDC - 7744',
-    "FDB": 'FDB - 7741',
+{%- set squawks = {
+    "FDR": '4451',
+    "FDF": '4450',
+    "FDS": '4452',
+    "FDL": '7742',
+    "FDV": '7743',
+    "FDM": '4453',
+    "FDO": '4454',
+    "FSW": '7745',
+    "FDH": '7740',
+    "FDC": '7744',
+    "FDB": '7741',
 } %}
-{%- set fis = data.topsky['common']['vfr']['fis'] -%}
 
 MAP:FIS Sectors + Squawks
 FOLDER:Airspace
@@ -27,9 +25,9 @@ COLOR:fis
 STYLE:Solid:1
 FONTSIZE:=:20
 FONTSTYLE:700:0:0:0
-{% for uuid, geom in fis['line'].items() %}
+{% for uuid, geom in data.topsky['common']['vfr']['fis']['line'].items() %}
 {{- geom | to_line('') -}}
 {% endfor %}
-{% for desig, text in labels.items() %}
-{{- fis['labels'][desig] | to_text(text) }}
+{% for desig, geom in data.topsky['common']['vfr']['fis']['labels'].items() %}
+{{- geom | to_text(desig + ' - ' + squawks[desig]) }}
 {% endfor %}
