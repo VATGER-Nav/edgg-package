@@ -29,7 +29,7 @@ Areas_Label_Times=0
 CPDLC_PDC_PlaySound=1
 CPDLC_FSM_RCD_Header=FSM <hour><min> <year2><month2><day> <adep2> <callsign>
 CPDLC_FSM_CLD_Header=CLD <hour><min> <year2><month2><day> <adep2> PDC <number> <callsign>
-CPDLC_FSM_CDA_Header=CDA <hour><min> <year2><month2><day> <adep2> PDC <number>
+CPDLC_FSM_CDA_Header=FSM <hour><min> <year2><month2><day> <adep2> <callsign>
 
 Divergence_CLAM=0
 Divergence_RAM=0
