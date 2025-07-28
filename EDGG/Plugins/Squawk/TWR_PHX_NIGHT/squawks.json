@@ -242,7 +242,7 @@
          "message":"SVFR",
          "color":"#00ff00"
       },
-            {
+      {
          "range": {
             "start": "6130",
             "end": "6136"
@@ -361,42 +361,10 @@
          "color":"#00ff00"
       },
       {
-         "code":"7740",
-         "message":"FIS",
-         "color":"#00ff00"
-      },
-	   {
-         "code":"7741",
-         "message":"FIS",
-         "color":"#00ff00"
-      },
-	   {
-         "code":"7742",
-         "message":"FIS",
-         "color":"#00ff00"
-      },
-      {
-         "code":"7743",
-         "message":"FIS",
-         "color":"#00ff00"
-      },
-	   {
-         "code":"7744",
-         "message":"FIS",
-         "color":"#00ff00"
-      },
-      {
-         "code":"7745",
-         "message":"FIS",
-         "color":"#00ff00"
-      },
-      {
-         "code":"7746",
-         "message":"FIS",
-         "color":"#00ff00"
-      },
-      {
-         "code":"7747",
+         "range": {
+            "start": "7740",
+            "end": "7747"
+         },
          "message":"FIS",
          "color":"#00ff00"
       },
