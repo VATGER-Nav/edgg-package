@@ -110,6 +110,14 @@
          "color":"#B4965F"
       },
       {
+         "range": {
+            "start": "4201",
+            "end": "4207"
+         },
+         "message":"GCA",
+         "color":"#B4965F"
+      },
+      {
          "code":"4426",
          "message":"HUM",
          "color":"#B4965F"
@@ -224,11 +232,6 @@
          "message":"TW",
          "color":"#B4965F"
       },
-      {
-         "code":"6103",
-         "message":"RAFIS",
-         "color":"#B4965F"
-      },
 	   {
          "code":"6104",
          "message":"TG",
@@ -237,6 +240,71 @@
       {
          "code":"6105",
          "message":"SVFR",
+         "color":"#B4965F"
+      },
+            {
+         "range": {
+            "start": "6130",
+            "end": "6136"
+         },
+         "message":"HN",
+         "color":"#B4965F"
+      },
+      {
+         "code":"6137",
+         "message":"HNV",
+         "color":"#B4965F"
+      },
+      {
+         "range": {
+            "start": "6140",
+            "end": "6146"
+         },
+         "message":"HF",
+         "color":"#B4965F"
+      },
+      {
+         "code":"6147",
+         "message":"HFV",
+         "color":"#B4965F"
+      },
+      {
+         "range": {
+            "start": "6150",
+            "end": "6156"
+         },
+         "message":"SB",
+         "color":"#B4965F"
+      },
+      {
+         "code":"6157",
+         "message":"SBV",
+         "color":"#B4965F"
+      },
+      {
+         "range": {
+            "start": "6160",
+            "end": "6166"
+         },
+         "message":"NN",
+         "color":"#B4965F"
+      },
+      {
+         "code":"6167",
+         "message":"NNV",
+         "color":"#B4965F"
+      },
+      {
+         "range": {
+            "start": "6170",
+            "end": "6176"
+         },
+         "message":"NG",
+         "color":"#B4965F"
+      },
+      {
+         "code":"6177",
+         "message":"NGV",
          "color":"#B4965F"
       },
       {
@@ -255,82 +323,25 @@
          "color":"#B4965F"
       },
 	   {
-         "code":"7000",
-         "message":"V",
-         "color":"#B4965F"
-      },
-	   {
          "code":"7001",
          "message":"VOUT",
          "color":"#B4965F"
       },
-	   {
+      {
          "code":"7002",
          "message":"VIN",
          "color":"#B4965F"
       },
-	   {
+      {
          "code":"7003",
          "message":"TWR",
          "color":"#B4965F"
       },
-	   {
-         "code":"7004",
-         "message":"VX",
-         "color":"#B4965F"
-      },
       {
-         "code":"7005",
-         "message":"TWR",
-         "color":"#B4965F"
-      },
-      {
-         "code":"7006",
-         "message":"TWR",
-         "color":"#B4965F"
-      },
-      {
-         "code":"7007",
-         "message":"TWR",
-         "color":"#B4965F"
-      },
-      {
-         "code":"7010",
-         "message":"TWR",
-         "color":"#B4965F"
-      },
-      {
-         "code":"7011",
-         "message":"TWR",
-         "color":"#B4965F"
-      },
-      {
-         "code":"7012",
-         "message":"TWR",
-         "color":"#B4965F"
-      },
-      {
-         "code":"7013",
-         "message":"TWR",
-         "color":"#B4965F"
-      },
-      {
-         "code":"7014",
-         "message":"TWR",
-         "color":"#B4965F"
-      },
-      {
-         "code":"7015",
-         "message":"TWR",
-         "color":"#B4965F"
-      },
-      {
-         "code":"7016",
-         "message":"TWR",
-         "color":"#B4965F"
-      },
-      {
-         "code":"7017",
+         "range": {
+            "start": "7004",
+            "end": "7067"
+         },
          "message":"TWR",
          "color":"#B4965F"
       },
@@ -347,45 +358,13 @@
       {
          "code":"7601",
          "message":"VMC",
-         "color":"#96960a"
-      },
-      {
-         "code":"7740",
-         "message":"FIS",
-         "color":"#B4965F"
-      },
-	   {
-         "code":"7741",
-         "message":"FIS",
-         "color":"#B4965F"
-      },
-	   {
-         "code":"7742",
-         "message":"FIS",
          "color":"#B4965F"
       },
       {
-         "code":"7743",
-         "message":"FIS",
-         "color":"#B4965F"
-      },
-	   {
-         "code":"7744",
-         "message":"FIS",
-         "color":"#B4965F"
-      },
-      {
-         "code":"7745",
-         "message":"FIS",
-         "color":"#B4965F"
-      },
-      {
-         "code":"7746",
-         "message":"FIS",
-         "color":"#B4965F"
-      },
-      {
-         "code":"7747",
+         "range": {
+            "start": "7740",
+            "end": "7747"
+         },
          "message":"FIS",
          "color":"#B4965F"
       },

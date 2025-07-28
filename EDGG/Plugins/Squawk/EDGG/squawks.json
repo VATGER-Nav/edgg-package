@@ -120,42 +120,10 @@
          "color":"#96960a"
       },
       {
-         "code":"4201",
-         "message":"GCA",
-         "color":"#96960a"
-      },
-      {
-         "code":"4202",
-         "message":"GCA",
-         "color":"#96960a"
-      },
-      {
-         "code":"4203",
-         "message":"GCA",
-         "color":"#96960a"
-      },
-      {
-         "code":"4204",
-         "message":"GCA",
-         "color":"#96960a"
-      },
-      {
-         "code":"4205",
-         "message":"GCA",
-         "color":"#96960a"
-      },
-      {
-         "code":"4206",
-         "message":"GCA",
-         "color":"#96960a"
-      },
-      {
-         "code":"4207",
-         "message":"GCA",
-         "color":"#96960a"
-      },
-      {
-         "code":"4210",
+         "range": {
+            "start": "4201",
+            "end": "4207"
+         },
          "message":"GCA",
          "color":"#96960a"
       },
@@ -279,11 +247,6 @@
          "message":"TW",
          "color":"#96960a"
       },
-      {
-         "code":"6103",
-         "message":"RAFIS",
-         "color":"#96960a"
-      },
 	   {
          "code":"6104",
          "message":"TG",
@@ -295,243 +258,68 @@
          "color":"#96960a"
       },
       {
-         "code":"6130",
-         "message":"HN",
-         "color":"#96960a"
-      },
-      {
-         "code":"6131",
-         "message":"HN",
-         "color":"#96960a"
-      },
-      {
-         "code":"6132",
-         "message":"HN",
-         "color":"#96960a"
-      },
-      {
-         "code":"6133",
-         "message":"HN",
-         "color":"#96960a"
-      },
-      {
-         "code":"6134",
-         "message":"HN",
-         "color":"#96960a"
-      },
-      {
-         "code":"6135",
-         "message":"HN",
-         "color":"#96960a"
-      },
-      {
-         "code":"6136",
+         "range": {
+            "start": "6130",
+            "end": "6136"
+         },
          "message":"HN",
          "color":"#96960a"
       },
       {
          "code":"6137",
-         "message":"RAFIS",
+         "message":"HNV",
          "color":"#96960a"
       },
       {
-         "code":"6140",
-         "message":"HF",
-         "color":"#96960a"
-      },
-      {
-         "code":"6140",
-         "message":"HF",
-         "color":"#96960a"
-      },
-      {
-         "code":"6141",
-         "message":"HF",
-         "color":"#96960a"
-      },
-      {
-         "code":"6142",
-         "message":"HF",
-         "color":"#96960a"
-      },
-      {
-         "code":"6143",
-         "message":"HF",
-         "color":"#96960a"
-      },
-      {
-         "code":"6144",
-         "message":"HF",
-         "color":"#96960a"
-      },
-      {
-         "code":"6145",
-         "message":"HF",
-         "color":"#96960a"
-      },
-      {
-         "code":"6146",
+         "range": {
+            "start": "6140",
+            "end": "6146"
+         },
          "message":"HF",
          "color":"#96960a"
       },
       {
          "code":"6147",
-         "message":"RAFIS",
+         "message":"HFV",
          "color":"#96960a"
       },
       {
-         "code":"6141",
-         "message":"HF",
-         "color":"#96960a"
-      },
-      {
-         "code":"6142",
-         "message":"HF",
-         "color":"#96960a"
-      },
-      {
-         "code":"6143",
-         "message":"HF",
-         "color":"#96960a"
-      },
-      {
-         "code":"6144",
-         "message":"HF",
-         "color":"#96960a"
-      },
-      {
-         "code":"6145",
-         "message":"HF",
-         "color":"#96960a"
-      },
-      {
-         "code":"6146",
-         "message":"HF",
-         "color":"#96960a"
-      },
-      {
-         "code":"6147",
-         "message":"RAFIS",
-         "color":"#96960a"
-      },
-      {
-         "code":"6150",
-         "message":"SB",
-         "color":"#96960a"
-      },
-      {
-         "code":"6151",
-         "message":"SB",
-         "color":"#96960a"
-      },
-      {
-         "code":"6152",
-         "message":"SB",
-         "color":"#96960a"
-      },
-      {
-         "code":"6153",
-         "message":"SB",
-         "color":"#96960a"
-      },
-      {
-         "code":"6154",
-         "message":"SB",
-         "color":"#96960a"
-      },
-      {
-         "code":"6155",
-         "message":"SB",
-         "color":"#96960a"
-      },
-      {
-         "code":"6156",
+         "range": {
+            "start": "6150",
+            "end": "6156"
+         },
          "message":"SB",
          "color":"#96960a"
       },
       {
          "code":"6157",
-         "message":"RAFIS",
+         "message":"SBV",
          "color":"#96960a"
       },
       {
-         "code":"6160",
-         "message":"NN",
-         "color":"#96960a"
-      },
-      {
-         "code":"6161",
-         "message":"NN",
-         "color":"#96960a"
-      },
-      {
-         "code":"6162",
-         "message":"NN",
-         "color":"#96960a"
-      },
-      {
-         "code":"6163",
-         "message":"NN",
-         "color":"#96960a"
-      },
-      {
-         "code":"6164",
-         "message":"NN",
-         "color":"#96960a"
-      },
-      {
-         "code":"6165",
-         "message":"NN",
-         "color":"#96960a"
-      },
-      {
-         "code":"6166",
+         "range": {
+            "start": "6160",
+            "end": "6166"
+         },
          "message":"NN",
          "color":"#96960a"
       },
       {
          "code":"6167",
-         "message":"RAFIS",
+         "message":"NNV",
          "color":"#96960a"
       },
       {
-         "code":"6170",
-         "message":"NG",
-         "color":"#96960a"
-      },
-      {
-         "code":"6171",
-         "message":"NG",
-         "color":"#96960a"
-      },
-      {
-         "code":"6172",
-         "message":"NG",
-         "color":"#96960a"
-      },
-      {
-         "code":"6173",
-         "message":"NG",
-         "color":"#96960a"
-      },
-      {
-         "code":"6174",
-         "message":"NG",
-         "color":"#96960a"
-      },
-      {
-         "code":"6175",
-         "message":"NG",
-         "color":"#96960a"
-      },
-      {
-         "code":"6176",
+         "range": {
+            "start": "6170",
+            "end": "6176"
+         },
          "message":"NG",
          "color":"#96960a"
       },
       {
          "code":"6177",
-         "message":"RAFIS",
+         "message":"NGV",
          "color":"#96960a"
       },
       {
@@ -554,333 +342,26 @@
          "message":"V",
          "color":"#96960a"
       },
-	   {
+      {
          "code":"7001",
          "message":"VOUT",
          "color":"#96960a"
       },
-	   {
+      {
          "code":"7002",
          "message":"VIN",
          "color":"#96960a"
       },
-	   {
+      {
          "code":"7003",
          "message":"TWR",
          "color":"#96960a"
       },
-	   {
-         "code":"7004",
-         "message":"TWR",
-         "color":"#96960a"
-      },
       {
-         "code":"7005",
-         "message":"TWR",
-         "color":"#96960a"
-      },
-      {
-         "code":"7006",
-         "message":"TWR",
-         "color":"#96960a"
-      },
-      {
-         "code":"7007",
-         "message":"TWR",
-         "color":"#96960a"
-      },
-      {
-         "code":"7010",
-         "message":"TWR",
-         "color":"#96960a"
-      },
-      {
-         "code":"7011",
-         "message":"TWR",
-         "color":"#96960a"
-      },
-      {
-         "code":"7012",
-         "message":"TWR",
-         "color":"#96960a"
-      },
-      {
-         "code":"7013",
-         "message":"TWR",
-         "color":"#96960a"
-      },
-      {
-         "code":"7014",
-         "message":"TWR",
-         "color":"#96960a"
-      },
-      {
-         "code":"7015",
-         "message":"TWR",
-         "color":"#96960a"
-      },
-      {
-         "code":"7016",
-         "message":"TWR",
-         "color":"#96960a"
-      },
-      {
-         "code":"7017",
-         "message":"TWR",
-         "color":"#96960a"
-      },
-      {
-         "code":"7020",
-         "message":"TWR",
-         "color":"#96960a"
-      },
-      {
-         "code":"7021",
-         "message":"TWR",
-         "color":"#96960a"
-      },
-      {
-         "code":"7020",
-         "message":"TWR",
-         "color":"#96960a"
-      },
-      {
-         "code":"7021",
-         "message":"TWR",
-         "color":"#96960a"
-      },
-      {
-         "code":"7022",
-         "message":"TWR",
-         "color":"#96960a"
-      },
-      {
-         "code":"7023",
-         "message":"TWR",
-         "color":"#96960a"
-      },
-      {
-         "code":"7024",
-         "message":"TWR",
-         "color":"#96960a"
-      },
-      {
-         "code":"7025",
-         "message":"TWR",
-         "color":"#96960a"
-      },
-      {
-         "code":"7026",
-         "message":"TWR",
-         "color":"#96960a"
-      },
-      {
-         "code":"7027",
-         "message":"TWR",
-         "color":"#96960a"
-      },
-      {
-         "code":"7030",
-         "message":"VFR",
-         "color":"#96960a"
-      },
-      {
-         "code":"7031",
-         "message":"VFR",
-         "color":"#96960a"
-      },
-      {
-         "code":"7032",
-         "message":"VFR",
-         "color":"#96960a"
-      },
-      {
-         "code":"7033",
-         "message":"VFR",
-         "color":"#96960a"
-      },
-      {
-         "code":"7034",
-         "message":"VFR",
-         "color":"#96960a"
-      },
-      {
-         "code":"7035",
-         "message":"VFR",
-         "color":"#96960a"
-      },
-      {
-         "code":"7036",
-         "message":"VFR",
-         "color":"#96960a"
-      },
-      {
-         "code":"7037",
-         "message":"VFR",
-         "color":"#96960a"
-      },
-      {
-         "code":"7040",
-         "message":"TWR",
-         "color":"#96960a"
-      },
-      {
-         "code":"7041",
-         "message":"TWR",
-         "color":"#96960a"
-      },
-      {
-         "code":"7042",
-         "message":"TWR",
-         "color":"#96960a"
-      },
-      {
-         "code":"7043",
-         "message":"TWR",
-         "color":"#96960a"
-      },
-      {
-         "code":"7044",
-         "message":"TWR",
-         "color":"#96960a"
-      },
-      {
-         "code":"7045",
-         "message":"TWR",
-         "color":"#96960a"
-      },
-      {
-         "code":"7046",
-         "message":"TWR",
-         "color":"#96960a"
-      },
-      {
-         "code":"7047",
-         "message":"TWR",
-         "color":"#96960a"
-      },
-      {
-         "code":"7050",
-         "message":"TWR",
-         "color":"#96960a"
-      },
-      {
-         "code":"7051",
-         "message":"TWR",
-         "color":"#96960a"
-      },
-      {
-         "code":"7052",
-         "message":"TWR",
-         "color":"#96960a"
-      },
-      {
-         "code":"7053",
-         "message":"TWR",
-         "color":"#96960a"
-      },
-      {
-         "code":"7054",
-         "message":"TWR",
-         "color":"#96960a"
-      },
-      {
-         "code":"7055",
-         "message":"TWR",
-         "color":"#96960a"
-      },
-      {
-         "code":"7056",
-         "message":"TWR",
-         "color":"#96960a"
-      },
-      {
-         "code":"7057",
-         "message":"TWR",
-         "color":"#96960a"
-      },
-      {
-         "code":"7060",
-         "message":"TWR",
-         "color":"#96960a"
-      },
-      {
-         "code":"7061",
-         "message":"TWR",
-         "color":"#96960a"
-      },
-      {
-         "code":"7062",
-         "message":"TWR",
-         "color":"#96960a"
-      },
-      {
-         "code":"7063",
-         "message":"TWR",
-         "color":"#96960a"
-      },
-      {
-         "code":"7064",
-         "message":"TWR",
-         "color":"#96960a"
-      },
-      {
-         "code":"7065",
-         "message":"TWR",
-         "color":"#96960a"
-      },
-      {
-         "code":"7066",
-         "message":"TWR",
-         "color":"#96960a"
-      },
-      {
-         "code":"7067",
-         "message":"TWR",
-         "color":"#96960a"
-      },
-      {
-         "code":"7070",
-         "message":"TWR",
-         "color":"#96960a"
-      },
-      {
-         "code":"7071",
-         "message":"TWR",
-         "color":"#96960a"
-      },
-      {
-         "code":"7072",
-         "message":"TWR",
-         "color":"#96960a"
-      },
-      {
-         "code":"7072",
-         "message":"TWR",
-         "color":"#96960a"
-      },
-      {
-         "code":"7073",
-         "message":"TWR",
-         "color":"#96960a"
-      },
-      {
-         "code":"7074",
-         "message":"TWR",
-         "color":"#96960a"
-      },
-      {
-         "code":"7075",
-         "message":"TWR",
-         "color":"#96960a"
-      },
-      {
-         "code":"7076",
-         "message":"TWR",
-         "color":"#96960a"
-      },
-      {
-         "code":"7077",
+         "range": {
+            "start": "7004",
+            "end": "7067"
+         },
          "message":"TWR",
          "color":"#96960a"
       },
@@ -915,17 +396,10 @@
          "color":"#96960a"
       },
       {
-         "code":"7745",
-         "message":"FIS",
-         "color":"#96960a"
-      },
-      {
-         "code":"7746",
-         "message":"FIS",
-         "color":"#96960a"
-      },
-      {
-         "code":"7747",
+         "range": {
+            "start": "7745",
+            "end": "7747"
+         },
          "message":"FIS",
          "color":"#96960a"
       },
