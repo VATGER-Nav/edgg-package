@@ -78,26 +78,11 @@ source = "misc/sectors-adf.txt"
 type = "sectors"
 source = "misc/aor.txt"
 
-#--------------MVA-------------
-
-[data.mva_su]
-type = "raw"
-source = "misc/mva/mva_summer.txt"
-
-[data.mva_wi]
-type = "raw"
-source = "misc/mva/mva_winter.txt"
-
-[data.mva_mil]
-type = "raw"
-source = "misc/mva/mva_military.txt"
-
 #--------------VFR-------------
 
 [data.reporting_points]
 type = "json"
 source = "misc/vfr/reporting-points.json"
-
 
 #-------Groundlayouts AIXM-----
 
@@ -144,7 +129,6 @@ source = "dfs:0:EDFH AerodromeMapping:AIXM 5.1.1"
 [data.edsb_aixm]
 type = "aixm"
 source = "dfs:0:EDSB AerodromeMapping:AIXM 5.1.1"
-
 
 #-------Groundlayouts KML------
 

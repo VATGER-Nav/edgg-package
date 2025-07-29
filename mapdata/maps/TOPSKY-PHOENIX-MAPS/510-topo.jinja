@@ -68,6 +68,8 @@ FOLDER:Topography
 ASRDATA:PHOENIX
 LAYER:-4
 ACTIVE:ID:*:DFC,DFGW,DFGC,DFGE,DFGI,DFG,DFTC,DFTS,DFTN,DFTW,DFAN,DFAS,DFANT,DFAST:*:*
+AND_ACTIVE:ID:*:DLC,DLGE,DLGW,DLT,DLA,DLAT,DLD,BOT:*:*
+AND_ACTIVE:ID:*:DKC,DKG,DKT,DKA,DKAT,NOR:*:*
 {% for uuid, geom in data.topsky['common']['topo']['EDGG_urban'].items() %}
 {{- geom | to_poly('', 'topo_urban', 100) }}
 {% endfor %}
