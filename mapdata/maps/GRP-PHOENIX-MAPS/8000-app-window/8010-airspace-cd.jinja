@@ -41,9 +41,6 @@ FOLDER:Airspace
 COLOR:appwindow-standard
 ACTIVE:1
 LAYER:+1
-STYLE:Solid:1
-// EDDG D
-{{ render_sectorlines(EDGG['EDDGCLD']['025-045']) }}
 // EDDS D
 {{ render_sectorlines(
     EDGG['EDDSCLDF']['075-100'],
@@ -79,14 +76,6 @@ STYLE:Solid:1
 ) }}
 // EDLV D
 {{ render_sectorlines(EDGG['EDLVCLD']['025-065']) }}
-// EDLW D
-{{ render_sectorlines(
-    EDGG['EDLWCLDB']['025-045'],
-    sector_sub(
-        EDGG['EDLWCLDA']['020-045'],
-        EDGG['EDLWCLDB']['025-045']
-        ),
-) }}
 // EDSB D
 {{ render_sectorlines(
     EDSB['C'],
@@ -124,5 +113,17 @@ STYLE:Solid:1
     sector_sub(
             EDSB['F'],
             EDSB['D']
+        ),
+) }}
+
+STYLE:Dot:1
+// EDDG D
+{{ render_sectorlines(EDGG['EDDGCLD']['025-045']) }}
+// EDLW D
+{{ render_sectorlines(
+    EDGG['EDLWCLDB']['025-045'],
+    sector_sub(
+        EDGG['EDLWCLDA']['020-045'],
+        EDGG['EDLWCLDB']['025-045']
         ),
 ) }}

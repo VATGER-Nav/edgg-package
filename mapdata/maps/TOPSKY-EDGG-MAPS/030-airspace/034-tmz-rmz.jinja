@@ -103,7 +103,6 @@ ACTIVE:RWY:ARR:*:DEP:EDDG25
 ACTIVE:RWY:ARR:*:DEP:EDDG07
 STYLE:Dash:1
 {{ render_sectorlines(
-    EDGG['EDDGTMZA']['045-060'],
     sector_sub(
         EDGG['EDDGTMZB']['035-060'],
         EDGG['EDDGTMZA']['045-060']
@@ -177,6 +176,7 @@ STYLE:Dash:1
         EDGG['EDLPTMZD']['045-060'],
         EDGG['EDLPTMZB']['035-060']
         ),
+    EDGG['EDLPTMZE']['019-060'],
 ) }}
 
 MAP:EDLV TMZ
@@ -223,11 +223,15 @@ ACTIVE:RWY:ARR:*:DEP:EDLW24
 ACTIVE:RWY:ARR:*:DEP:EDLW06
 STYLE:Dash:1
 {{ render_sectorlines(
-    EDGG['EDLWTMZA']['045-065'],
-    EDGG['EDLWTMZC']['035-065'],
     sector_sub(
-        EDGG['EDLWTMZD']['045-065'],
-        EDGG['EDLWTMZC']['035-065']
+        EDGG['EDLWTMZC']['035-065'],
+        EDGG['EDLWTMZB']['045-065']
         ),
-
+    sector_sub(
+        sector_sub(
+            EDGG['EDLWTMZD']['045-065'],
+            EDGG['EDLWTMZC']['035-065']
+            ),
+        EDGG['EDLWTMZB']['045-065']
+        ),
 ) }}
