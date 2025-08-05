@@ -14660,10 +14660,11 @@ RANGE:6020:6037
 IFR
 ADESAREA:ED
 
-// ('61', '01', '77', 'EUR-B', 'EDDG', 'CIV', 'ENR', '', 'A', 'EDDG', '', '', To be used within former EDLL FIR, 'V4.5')
-RANGE:6101:6177
-IFR
-ADES:EDDL:EDDK:EDLN:EDLV:EDDG:EDLP:EDLW
+// Reserved for MIL
+// // ('61', '01', '77', 'EUR-B', 'EDDG', 'CIV', 'ENR', '', 'A', 'EDDG', '', '', To be used within former EDLL FIR, 'V4.5')
+// RANGE:6101:6177
+// IFR
+// ADES:EDDL:EDDK:EDLN:EDLV:EDDG:EDLP:EDLW
 
 // ('63', '01', '77', 'EUR-B', 'ED', 'CIV', 'ENR', '', 'A', 'ED', '', '', None, 'V4.5')
 RANGE:6301:6377
@@ -14692,10 +14693,11 @@ RANGE:6640:6677
 IFR
 PROTECTION:LB
 
-// ('70', '01', '77', 'EUR-B', 'ED', 'CIV', 'APP', '', 'A', 'ED', '', '', None, 'V4.5')
-RANGE:7001:7077
-IFR
-ADESAREA:ED
+// Reserved for VFR
+// // ('70', '01', '77', 'EUR-B', 'ED', 'CIV', 'APP', '', 'A', 'ED', '', '', None, 'V4.5')
+// RANGE:7001:7077
+// IFR
+// ADESAREA:ED
 
 // ('72', '60', '77', 'EUR-B', 'EDUU EDWW', 'CIV', 'ENR', '', 'A', 'EY EP EUR-C UMKK', '', '', None, 'V4.5')
 RANGE:7260:7277
