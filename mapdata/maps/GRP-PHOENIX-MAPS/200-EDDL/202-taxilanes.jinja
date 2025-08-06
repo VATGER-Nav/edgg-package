@@ -4,7 +4,7 @@ MAP:Taxi Lanes
 AIRPORT:EDDL
 FOLDER:Airport Layout
 ACTIVE:1
-COLOR:layout-taxiline-white
+COLOR:layout-taxiline-yellow
 {% for uuid in
 [
     '05b20e81-cd41-6683-e063-86c812acd49d',
@@ -38,6 +38,7 @@ COLOR:layout-taxiline-white
     '1cf49191-73e2-9ed4-e063-86c812ac0f84',
     '1cf49191-73f5-9ed4-e063-86c812ac0f84',
     '1cf49191-73f7-9ed4-e063-86c812ac0f84',
+    '348722a9-3461-2421-e063-86c812ac445a',
     '348722a9-3462-2421-e063-86c812ac445a',
     '348722a9-3464-2421-e063-86c812ac445a',
     '348722a9-3469-2421-e063-86c812ac445a',
@@ -150,6 +151,7 @@ COLOR:layout-taxiline-white
     '6e812470-b2c5-1a4b-e055-0a0027980ba7',
     '6e812470-b2c6-1a4b-e055-0a0027980ba7',
     '6e812470-b2ca-1a4b-e055-0a0027980ba7',
+    '6e812470-b2cb-1a4b-e055-0a0027980ba7',
     '6e812470-b2d1-1a4b-e055-0a0027980ba7',
     '6e812470-b2d2-1a4b-e055-0a0027980ba7',
     '6e812470-b2d5-1a4b-e055-0a0027980ba7',
@@ -210,12 +212,10 @@ COLOR:layout-taxiline-white
     '6e812470-b371-1a4b-e055-0a0027980ba7',
     '6e812470-b372-1a4b-e055-0a0027980ba7',
     '6e812470-b37b-1a4b-e055-0a0027980ba7',
-    '6e812470-b37c-1a4b-e055-0a0027980ba7',
     '6e812470-b37f-1a4b-e055-0a0027980ba7',
     '6e812470-b380-1a4b-e055-0a0027980ba7',
     '6e812470-b381-1a4b-e055-0a0027980ba7',
     '6e812470-b383-1a4b-e055-0a0027980ba7',
-    '6e812470-b38f-1a4b-e055-0a0027980ba7',
     '6e812470-b391-1a4b-e055-0a0027980ba7',
     '6ea97ec1-4407-482e-e055-0a0027980ba7',
     '6ee65c69-2c8c-7e3c-e055-0a0027980ba7',
@@ -230,8 +230,6 @@ COLOR:layout-taxiline-white
     '6ee65c69-2cb1-7e3c-e055-0a0027980ba7',
     '6ee65c69-2cb8-7e3c-e055-0a0027980ba7',
     '6ee65c69-2cb9-7e3c-e055-0a0027980ba7',
-    '6ee65c69-2ccb-7e3c-e055-0a0027980ba7',
-    '6ee65c69-2ccc-7e3c-e055-0a0027980ba7',
     '6f754c83-e8ca-26c6-e055-0a0027980ba7',
     '6f754c83-e8cb-26c6-e055-0a0027980ba7',
     '6f754c83-e8cd-26c6-e055-0a0027980ba7',
@@ -246,11 +244,6 @@ COLOR:layout-taxiline-white
     '7016d750-b014-1924-e055-0a0027980ba7',
     '7016d750-b01a-1924-e055-0a0027980ba7',
     '7016d750-b01b-1924-e055-0a0027980ba7',
-    '702d3608-dfa2-77dd-e055-0a0027980ba7',
-    '702d3608-dfa3-77dd-e055-0a0027980ba7',
-    '702d3608-dfa4-77dd-e055-0a0027980ba7',
-    '702d3608-dfa5-77dd-e055-0a0027980ba7',
-    '702d3608-dfa6-77dd-e055-0a0027980ba7',
     '703f062c-7f4e-5209-e055-0a0027980ba7',
     '703f062c-7f4f-5209-e055-0a0027980ba7',
     '703f062c-7f50-5209-e055-0a0027980ba7',
@@ -263,8 +256,6 @@ COLOR:layout-taxiline-white
     '7053366e-3bb1-55b8-e055-0a0027980ba7',
     '7090849c-541b-6c70-e055-0a0027980ba7',
     '7090849c-541c-6c70-e055-0a0027980ba7',
-    '70b6f1b8-397e-7771-e055-0a0027980ba7',
-    '70b6f1b8-397f-7771-e055-0a0027980ba7',
     '70b6f1b8-3985-7771-e055-0a0027980ba7',
     '70b6f1b8-3986-7771-e055-0a0027980ba7',
     '70ca9114-c76e-5e22-e055-0a0027980ba7',
@@ -404,9 +395,14 @@ COLOR:layout-taxiline-white
 [
     'L2_a',
     'L2_b',
+    'K4',
+    'J1',
+    'J2',
+    'J3',
 ] %}
 {{- data.eddl_kml['layout']['markings']['taxilane_solid'][desig] | to_line(desig) -}}
 {% endfor %}
+
 {% for uuid, geom in data.eddl_kml['layout']['markings']['taxilane_dash'].items() %}
 {{- geom | to_line('') -}}
 {% endfor %}

@@ -20,7 +20,7 @@ OTHER_MAP_ACT:=:Labels\Buffer EDDL
 LAYER:6
 ZOOM:400
 FONTSIZE:=:10
-COLOR:layout-label-taxiway
+COLOR:layout-label-yellow
 {% for desig, geom in data.eddl_kml['layout']['labels']['taxiways'].items() %}
 {{- geom | to_text(desig) }}
 {% endfor %}
@@ -28,15 +28,12 @@ COLOR:layout-label-taxiway
 MAP:Stands
 AIRPORT:EDDL
 FOLDER:Labels
+ACTIVE:1
 OTHER_MAP_ACT:=:Labels\Areas
 LAYER:6
 ZOOM:600
 FONTSIZE:=:9
-COLOR:layout-label-stand
-
-// Closed due to NOTAM A3920/24:
-// 'B05', 'B06', 'B07', 'B08', 'V61A'
-
+COLOR:layout-label-yellow
 {% for desig, geom in data.eddl_kml['layout']['labels']['stands'].items() if not desig in
 [
     'A05',
@@ -72,8 +69,6 @@ COLOR:layout-label-stand
     'V11A',
     'V11B',
     'V11C',
-    'B06',
-    'B08'
 ] %}
 {{- geom | to_text(desig) }}
 {% endfor %}
@@ -82,13 +77,30 @@ ZOOM:1200
 [
     'A05',
     'A11',
+    'A12A',
+    'B05',
+    'B07',
+    'C02A',
     'C03A',
+    'V01',
+    'V02A',
+    'V03A',
     'V04',
+    'V04A',
+    'V05A',
     'V06',
+    'V07A',
+    'V08A',
+    'V08B',
+    'V08C',
+    'V11A',
+    'V11B',
+    'V11C',
     'V38A',
     'V38B',
     'V39A',
     'V41A',
+    'V61A',
     'V72A',
     'V82A',
     'V91A',
@@ -99,12 +111,11 @@ ZOOM:1200
 ] %}
 {{- data.eddl_kml['layout']['labels']['stands'][desig] | to_text(desig) }}
 {% endfor %}
-{{ data.eddl_kml['layout']['labels']['stands']['A12'] | to_text('A12A:0:11') }}
-{{ data.eddl_kml['layout']['labels']['stands']['C02'] | to_text('C02A         ') }}
 
 MAP:Areas
 AIRPORT:EDDL
 FOLDER:Labels
+ACTIVE:1
 LAYER:6
 ZOOM:400
 FONTSIZE:=:9
@@ -112,40 +123,42 @@ COLOR:layout-label-stand
 {{ data.eddl_kml['layout']['labels']['GAT'] | to_text('GAT') }}
 {{ data.eddl_kml['layout']['labels']['Police'] | to_text('Police') }}
 
-MAP:Additional Stands
-AIRPORT:EDDL
-FOLDER:Labels
-HIDDEN
-LAYER:6
-ZOOM:600
-FONTSIZE:=:9
-COLOR:layout-label-stand
-{% for desig in
-[
-    'V01',
-    'V02A',
-    'V03A',
-    'V04A',
-    'V05A',
-    'V07A',
-    'V08A',
-    'V08B',
-    'V08C',
-    'V11A',
-    'V11B',
-    'V11C'
-] %}
-{{- data.eddl_kml['layout']['labels']['stands'][desig] | to_text(desig) }}
-{% endfor %}
-
-MAP:Checkpoint 1
+MAP:Checkpoints
 AIRPORT:EDDL
 FOLDER:Labels
 ACTIVE:1
 LAYER:6
 ZOOM:800
-FONTSIZE:=:9
+FONTSIZE:=:10
 COLOR:layout-holdingpoint
 TEXTALIGN:CC
-{{ data.eddl_kml['layout']['labels']['stopbars']['CP1'] | to_text('Check:0:-9') }}
-{{ data.eddl_kml['layout']['labels']['stopbars']['CP1'] | to_text(' point 1') }}
+{{ data.eddl_kml['layout']['labels']['stopbars']['CP1'] | to_text('Check-:0:-10') }}
+{{ data.eddl_kml['layout']['labels']['stopbars']['CP1'] | to_text('point 1') }}
+{{ data.eddl_kml['layout']['labels']['stopbars']['CP2'] | to_text('Check-:10:-10') }}
+{{ data.eddl_kml['layout']['labels']['stopbars']['CP2'] | to_text('point 2:10:0') }}
+
+MAP:Buildings
+AIRPORT:EDDL
+FOLDER:Labels
+ZOOM:400
+FONTSIZE:=:9
+COLOR:layout-label-stand
+{% for desig, geom in data.eddl_kml['layout']['labels']['buildings'].items() if not desig in
+[
+    'Fire station',
+    'Hangar 9',
+    'Photo-voltaic',
+] %}
+{{- geom | to_text(desig) }}
+{% endfor %}
+{{ data.eddl_kml['layout']['labels']['buildings']['Fire station'] | to_text('Fire:0:-6') }}
+{{ data.eddl_kml['layout']['labels']['buildings']['Fire station'] | to_text('station:0:6') }}
+{{ data.eddl_kml['layout']['labels']['buildings']['Condor Technik'] | to_text('7:0:12') }}
+{{ data.eddl_kml['layout']['labels']['buildings']['Nayak'] | to_text('8:0:12') }}
+{{ data.eddl_kml['layout']['labels']['buildings']['Hangar 9'] | to_text('Noise:0:-12') }}
+{{ data.eddl_kml['layout']['labels']['buildings']['Hangar 9'] | to_text('protection') }}
+{{ data.eddl_kml['layout']['labels']['buildings']['Hangar 9'] | to_text('hangar:0:12') }}
+{{ data.eddl_kml['layout']['labels']['buildings']['Hangar 9'] | to_text('9:0:24') }}
+{{ data.eddl_kml['layout']['labels']['Police'] | to_text('10:0:12') }}
+{{ data.eddl_kml['layout']['labels']['buildings']['Photo-voltaic'] | to_text('Photo-voltaic:0:-6') }}
+{{ data.eddl_kml['layout']['labels']['buildings']['Photo-voltaic'] | to_text('facility:0:6') }}

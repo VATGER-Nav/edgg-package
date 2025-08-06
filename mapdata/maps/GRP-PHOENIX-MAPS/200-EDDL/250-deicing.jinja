@@ -97,22 +97,22 @@ COLOR:deicing
 // Labels
 ZOOM:600
 COLOR:layout-label-stand
-TEXTALIGN:LC
 FONTSIZE:=:11
-{{ data.eddl_kml['layout']['deicing']['labels']['DP1E'] | to_text('DP1:10:0') }}
-{{ data.eddl_kml['layout']['deicing']['labels']['DP2E'] | to_text('DP2:10:0') }}
+TEXTALIGN:RC
+{{ data.eddl_kml['layout']['deicing']['labels']['DP1E'] | to_text('DP1') }}
 TEXTALIGN:CC
+{{ data.eddl_kml['layout']['deicing']['labels']['DP2E'] | to_text('DP2:3:0') }}
 {{ data.eddl_kml['layout']['deicing']['labels']['DP3E'] | to_text('DP3:3:0') }}
 {{ data.eddl_kml['layout']['deicing']['labels']['DP4E'] | to_text('DP4:3:0') }}
 {{ data.eddl_kml['layout']['deicing']['labels']['V11B'] | to_text('V11B:3:0') }}
 
 FONTSIZE:=:60
-TEXTALIGN:LC
+TEXTALIGN:RC
 COLOR:restrictions-E
-{{ data.eddl_kml['layout']['deicing']['labels']['DP1E'] | to_text('.:-14:-17') }}
+{{ data.eddl_kml['layout']['deicing']['labels']['DP1E'] | to_text('.:-9:-17') }}
+TEXTALIGN:CC
 COLOR:restrictions-E
 {{ data.eddl_kml['layout']['deicing']['labels']['DP2E'] | to_text('.:-14:-17') }}
-TEXTALIGN:CC
 COLOR:restrictions-D
 {{ data.eddl_kml['layout']['deicing']['labels']['DP3E'] | to_text('.:-14:-17') }}
 COLOR:restrictions-C

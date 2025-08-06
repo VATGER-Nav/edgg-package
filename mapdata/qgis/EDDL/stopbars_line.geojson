@@ -57,8 +57,6 @@
 { "type": "Feature", "properties": { "name": "0861cd97-6887-cb82-e063-86c812ac72e3" }, "geometry": { "type": "LineString", "coordinates": [ [ 345415.376165529713035, 5684683.388882062397897 ], [ 345434.56429385417141, 5684668.484321472235024 ] ] } },
 { "type": "Feature", "properties": { "name": "d091e9ef-f39b-7e64-e053-54c812ac018e" }, "geometry": { "type": "LineString", "coordinates": [ [ 344146.722275495994836, 5683676.404737601056695 ], [ 344126.934520570677705, 5683662.290427395142615 ] ] } },
 { "type": "Feature", "properties": { "name": "d091e9ef-f398-7e64-e053-54c812ac018e" }, "geometry": { "type": "LineString", "coordinates": [ [ 343880.938866002950817, 5683565.04757134988904 ], [ 343895.031308729026932, 5683545.237666631117463 ] ] } },
-{ "type": "Feature", "properties": { "name": "d091e9ef-f399-7e64-e053-54c812ac018e" }, "geometry": { "type": "LineString", "coordinates": [ [ 344141.567101456632372, 5683751.369323275052011 ], [ 344156.052326238481328, 5683730.960955835878849 ] ] } },
-{ "type": "Feature", "properties": { "name": "CP1" }, "geometry": { "type": "LineString", "coordinates": [ [ 343807.679797979129944, 5683524.629714996553957 ], [ 343836.714945764571894, 5683483.923939078114927 ] ] } },
-{ "type": "Feature", "properties": { "name": "CP2" }, "geometry": { "type": "LineString", "coordinates": [ [ 343849.547391715168487, 5683465.76109707634896 ], [ 343883.80886610224843, 5683417.728281493298709 ] ] } }
+{ "type": "Feature", "properties": { "name": "d091e9ef-f399-7e64-e053-54c812ac018e" }, "geometry": { "type": "LineString", "coordinates": [ [ 344141.567101456632372, 5683751.369323275052011 ], [ 344156.052326238481328, 5683730.960955835878849 ] ] } }
 ]
 }

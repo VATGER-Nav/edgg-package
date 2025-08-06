@@ -109,6 +109,16 @@ TEXTALIGN:CB
 {{ data.eddl_kml['layout']['rrs']['05L_600'] | to_text('600:0:-10') }}
 {{ data.eddl_kml['layout']['rrs']['05L_1500'] | to_text('1500:0:-10') }}
 
+MAP:Runway Thresholds
+AIRPORT:EDDL
+FOLDER:Runway Info
+LAYER:6
+ACTIVE:1
+{{ data.eddl_kml['layout']['markings']['poly']['thr05R'] | to_poly('05R', 'runway-label') }}
+{{ data.eddl_kml['layout']['markings']['poly']['thr23L'] | to_poly('23L', 'runway-label') }}
+{{ data.eddl_kml['layout']['markings']['poly']['thr05L'] | to_poly('05L', 'runway-label') }}
+{{ data.eddl_kml['layout']['markings']['poly']['thr23R'] | to_poly('23R', 'runway-label') }}
+
 MAP:Runway Designators
 AIRPORT:EDDL
 FOLDER:Runway Info
@@ -412,13 +422,6 @@ FOLDER:Runway Info
     'de162807-4903-d2fc-e053-86c812acd642',
     'de162807-4904-d2fc-e053-86c812acd642',
     'de162807-4905-d2fc-e053-86c812acd642',
-    'de162807-4906-d2fc-e053-86c812acd642',
-    'de162807-4907-d2fc-e053-86c812acd642',
-    'de162807-4908-d2fc-e053-86c812acd642',
-    'de162807-4909-d2fc-e053-86c812acd642',
-    'de162807-490a-d2fc-e053-86c812acd642',
-    'de162807-490b-d2fc-e053-86c812acd642',
-    'de162807-490c-d2fc-e053-86c812acd642',
     'de162807-490d-d2fc-e053-86c812acd642',
     'de162807-490e-d2fc-e053-86c812acd642',
     'de162807-490f-d2fc-e053-86c812acd642',
@@ -430,4 +433,16 @@ FOLDER:Runway Info
     'de162807-4915-d2fc-e053-86c812acd642',
 ] %}
 {{- data.eddl_aixm['RunwayMarking'][uuid] | to_coordtype('', 'layout-taxiway') }}
+{% endfor %}
+{% for uuid in
+[
+    'de162807-4906-d2fc-e053-86c812acd642',
+    'de162807-4907-d2fc-e053-86c812acd642',
+    'de162807-4908-d2fc-e053-86c812acd642',
+    'de162807-4909-d2fc-e053-86c812acd642',
+    'de162807-490a-d2fc-e053-86c812acd642',
+    'de162807-490b-d2fc-e053-86c812acd642',
+    'de162807-490c-d2fc-e053-86c812acd642',
+] %}
+{{- data.eddl_aixm['RunwayMarking'][uuid] | to_coordtype('', 'layout-runway') }}
 {% endfor %}

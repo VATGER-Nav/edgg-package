@@ -66,7 +66,7 @@ COLOR:restrictions-C
 // C02A, V08B, V11B, V38B
 ZOOM:600
 FONTSIZE:=:9
-COLOR:layout-label-stand
+COLOR:layout-label-yellow
 {% for desig in
 [
     'C02A',
@@ -74,7 +74,8 @@ COLOR:layout-label-stand
     'V11B',
     'V38B'
 ] %}
-{{- data.eddl_kml['layout']['labels']['stands'][desig] | to_text(desig) }}
+{{- data.eddl_kml['layout']['labels']['stands'][desig] | to_text(desig + ':0:1') }}
+{{ data.eddl_kml['layout']['labels']['stands'][desig] | to_text('____:0:1') }}
 {% endfor %}
 COLOR:restrictions-F
 {% for desig in
@@ -147,7 +148,7 @@ COLOR:restrictions-C
 // C02A, V08B, V11B, V38B
 ZOOM:600
 FONTSIZE:=:9
-COLOR:layout-label-stand
+COLOR:layout-label-yellow
 {% for desig in
 [
     'C02A',
@@ -155,7 +156,8 @@ COLOR:layout-label-stand
     'V11B',
     'V38B'
 ] %}
-{{- data.eddl_kml['layout']['labels']['stands'][desig] | to_text(desig) }}
+{{- data.eddl_kml['layout']['labels']['stands'][desig] | to_text(desig + ':0:1') }}
+{{ data.eddl_kml['layout']['labels']['stands'][desig] | to_text('____:0:1') }}
 {% endfor %}
 COLOR:restrictions-F
 {% for desig in
