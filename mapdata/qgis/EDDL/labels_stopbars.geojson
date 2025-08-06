@@ -3,7 +3,7 @@
 "name": "labels_stopbars",
 "crs": { "type": "name", "properties": { "name": "urn:ogc:def:crs:EPSG::32632" } },
 "features": [
-{ "type": "Feature", "properties": { "name": "CP1" }, "geometry": { "type": "Point", "coordinates": [ 343801.980960280750878, 5683532.716530441306531 ] } },
-{ "type": "Feature", "properties": { "name": "CP2" }, "geometry": { "type": "Point", "coordinates": [ 343860.12960033287527, 5683473.796667724847794 ] } }
+{ "type": "Feature", "properties": { "name": "CP1" }, "geometry": { "type": "Point", "coordinates": [ 343804.518101917987224, 5683528.925998641178012 ] } },
+{ "type": "Feature", "properties": { "name": "CP2" }, "geometry": { "type": "Point", "coordinates": [ 343850.028122907562647, 5683465.306668840348721 ] } }
 ]
 }

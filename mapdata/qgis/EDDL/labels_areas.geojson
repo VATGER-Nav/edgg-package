@@ -1,0 +1,9 @@
+{
+"type": "FeatureCollection",
+"name": "labels_areas",
+"crs": { "type": "name", "properties": { "name": "urn:ogc:def:crs:EPSG::32632" } },
+"features": [
+{ "type": "Feature", "properties": { "name": "GAT" }, "geometry": { "type": "Point", "coordinates": [ 343218.993461914418731, 5682876.075120590627193 ] } },
+{ "type": "Feature", "properties": { "name": "Police" }, "geometry": { "type": "Point", "coordinates": [ 345548.396731074608397, 5684330.837683442980051 ] } }
+]
+}

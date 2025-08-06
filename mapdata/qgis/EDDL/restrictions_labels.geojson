@@ -11,7 +11,7 @@
 { "type": "Feature", "properties": { "name": "GAT" }, "geometry": { "type": "Point", "coordinates": [ 343165.749407388153486, 5682846.876982353627682 ] } },
 { "type": "Feature", "properties": { "name": "A05" }, "geometry": { "type": "Point", "coordinates": [ 344397.567695663659833, 5683607.043293658643961 ] } },
 { "type": "Feature", "properties": { "name": "L2_1a" }, "geometry": { "type": "Point", "coordinates": [ 345485.775397129531484, 5684807.367439485155046 ] } },
-{ "type": "Feature", "properties": { "name": "L2_2" }, "geometry": { "type": "Point", "coordinates": [ 345526.303289741219487, 5684962.064653386361897 ] } },
+{ "type": "Feature", "properties": { "name": "L2_2" }, "geometry": { "type": "Point", "coordinates": [ 345428.93229056452401, 5684949.148995822295547 ] } },
 { "type": "Feature", "properties": { "name": "reference_2" }, "geometry": { "type": "Point", "coordinates": [ 344674.096706470591016, 5684666.453735974617302 ] } },
 { "type": "Feature", "properties": { "name": "L2_1b" }, "geometry": { "type": "Point", "coordinates": [ 345519.867612068192102, 5685084.043761126697063 ] } }
 ]

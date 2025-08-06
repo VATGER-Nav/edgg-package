@@ -1,15 +1,21 @@
 // ----------------------- Permament Closures -----------------------
 
-MAP:K4/Runway 15
+MAP:K4
 AIRPORT:EDDL
 FOLDER:Closures
 LAYER:4
 ACTIVE:1
-STYLE:Solid:2
-{{ data.eddl_kml['layout']['closures']['poly']['K4'] | to_coordtype('K4', 'closure', 'TWYCLOSED') }}
-STYLE:Solid:1
-{{ data.eddl_kml['layout']['closures']['symb']['K4_a'] | to_coordtype('','closure-symbol-yellow') }}
-{{ data.eddl_kml['layout']['closures']['symb']['K4_b'] | to_coordtype('','closure-symbol-yellow') }}
-{{ data.eddl_kml['layout']['closures']['symb']['K4_c'] | to_coordtype('','closure-symbol-yellow') }}
-{{ data.eddl_kml['layout']['closures']['symb']['15'] | to_coordtype('','closure-symbol-yellow') }}
-{{ data.eddl_kml['layout']['closures']['poly']['15'] | to_coordtype('Runway 15', '', 'TWYCLOSED', 'NONE') }}
+{{ data.eddl_kml['layout']['closures']['symb']['K4_a'] | to_coordtype('','closure-symbol') }}
+{{ data.eddl_kml['layout']['closures']['symb']['K4_b'] | to_coordtype('','closure-symbol') }}
+{{ data.eddl_kml['layout']['closures']['poly']['K4'] | to_coordtype('K4', '', 'TWYCLOSED', 'NONE') }}
+
+MAP:J1/J2/J3
+AIRPORT:EDDL
+FOLDER:Closures
+LAYER:4
+ACTIVE:1
+{{ data.eddl_kml['layout']['closures']['symb']['J1'] | to_coordtype('','closure-symbol') }}
+{{ data.eddl_kml['layout']['closures']['symb']['J2'] | to_coordtype('','closure-symbol') }}
+{{ data.eddl_kml['layout']['closures']['symb']['J3_a'] | to_coordtype('','closure-symbol') }}
+{{ data.eddl_kml['layout']['closures']['symb']['J3_b'] | to_coordtype('','closure-symbol') }}
+{{ data.eddl_kml['layout']['closures']['poly']['J1_J2_J3'] | to_coordtype('J1/J2/J3', '', 'TWYCLOSED', 'NONE') }}
