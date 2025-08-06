@@ -46,7 +46,7 @@
 { "type": "Feature", "properties": { "name": "K1" }, "geometry": { "type": "Point", "coordinates": [ 345526.424097742303275, 5685272.701392178423703 ] } },
 { "type": "Feature", "properties": { "name": "K" }, "geometry": { "type": "Point", "coordinates": [ 345317.168162647169083, 5685362.43862616084516 ] } },
 { "type": "Feature", "properties": { "name": "K2" }, "geometry": { "type": "Point", "coordinates": [ 345132.876025649369694, 5684991.98628047015518 ] } },
-{ "type": "Feature", "properties": { "name": "K3" }, "geometry": { "type": "Point", "coordinates": [ 343608.464138926065061, 5683904.633849050849676 ] } },
+{ "type": "Feature", "properties": { "name": "K3" }, "geometry": { "type": "Point", "coordinates": [ 343598.268472956260666, 5683922.825878114439547 ] } },
 { "type": "Feature", "properties": { "name": "K5" }, "geometry": { "type": "Point", "coordinates": [ 343137.602114144363441, 5683568.771230838261545 ] } },
 { "type": "Feature", "properties": { "name": "R#2" }, "geometry": { "type": "Point", "coordinates": [ 343720.133075853518676, 5683173.999652687460184 ] } },
 { "type": "Feature", "properties": { "name": "L8#2" }, "geometry": { "type": "Point", "coordinates": [ 343499.929517457145266, 5683229.417684561572969 ] } },
