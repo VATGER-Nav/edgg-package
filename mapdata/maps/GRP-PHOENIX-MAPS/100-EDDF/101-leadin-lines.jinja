@@ -42,7 +42,6 @@ COLOR:layout-taxiline-grey
     '1b2ec086-7efb-4466-a66e-d636d7edaad9',
     '1b4ce629-afee-4b4a-b0af-fbe1708120a8',
     '1b58e021-53da-4176-a6b1-4e0c221e4a23',
-    '1d2be0cb-a3b6-43ea-a500-f579c8150ab3',
     '1d724a5e-fc82-463b-bda0-34dc5e7ef7a5',
     '1deff8cf-e902-4424-98bf-e3ce7bacfc7b',
     '1eaf96fe-2099-43de-a130-0d3a8df940da',
@@ -104,7 +103,6 @@ COLOR:layout-taxiline-grey
     '572b4b3d-5855-4c0b-83f8-2b7bdf9096ab',
     '574f40c1-2f1d-4849-a21f-04a3ff474d83',
     '57c21a60-1cda-4084-8835-c537934aae35',
-    '583533a4-1128-4514-936a-e3fec8c148a1',
     '58982520-9e06-14b4-e053-b3472c0a70d2',
     '58987080-bd0f-0d1a-e053-b4472c0aa97d',
     '58987080-be27-0d1a-e053-b4472c0aa97d',
@@ -141,6 +139,7 @@ COLOR:layout-taxiline-grey
     '6dd5619d-d18c-4d7e-b598-971c30bb7c58',
     '6de3f323-3211-48a5-a573-4c5f7256e6cd',
     '6e6cfb26-7abb-430d-beab-2f16e77cb13a',
+    '71b43705-8668-4fa3-b4d2-993e444fd6a6',
     '71d391b4-2444-cbfa-e053-b4472c0a9042',
     '71d391b4-2462-cbfa-e053-b4472c0a9042',
     '71d391b4-2494-cbfa-e053-b4472c0a9042',
@@ -193,7 +192,6 @@ COLOR:layout-taxiline-grey
     '92a06e1b-89df-49f0-b3bc-cd1aff505f61',
     '935319c5-484d-4a1b-a80e-cadd9581823d',
     '949cf7ba-1703-4fba-ba79-d7df51c3c443',
-    '94af06de-f397-4a8a-8204-7028c1938b6f',
     '953d370c-c1df-436d-afba-137c0b138ed6',
     '958f68e8-fcd7-46b9-98a1-8e5dceae29c5',
     '9599bf1b-59d1-457d-81d8-58c91735db81',
@@ -248,7 +246,6 @@ COLOR:layout-taxiline-grey
     'd9bee34f-95dd-423f-953a-a21635641e95',
     'da50790c-28ab-47b4-a437-c87e7c4fa593',
     'dc202213-ddd5-458c-bb9b-f7f4911663dc',
-    'dc48c8d3-c9a2-4efe-858f-0ae6a5c64bb1',
     'e031868d-040c-48b1-8143-350f42309495',
     'e116b60f-51e2-48fe-a795-9b4a4cd3fa67',
     'e2a2d8b6-6a5a-4b38-93cd-65625a87eea9',
@@ -284,10 +281,13 @@ COLOR:layout-taxiline-grey
 {{- data.eddf_aixm['GuidanceLineMarking'][uuid] | join_segments | simplify(default) | to_line(uuid) -}}
 {% endfor %}
 
-// J7 J9 J11 - closed
-// 583533a4-1128-4514-936a-e3fec8c148a1
-// dc48c8d3-c9a2-4efe-858f-0ae6a5c64bb1
-// 1d2be0cb-a3b6-43ea-a500-f579c8150ab3
+{% for desig in
+[
+    'J5',
+    'J13',
+] %}
+{{- data.eddf_kml['layout']['markings']['leadin_solid'][desig] | to_line('') -}}
+{% endfor %}
 
 // Dash Leadin Lines
 {% for uuid, geom in data.eddf_kml['layout']['markings']['leadin_dash'].items() if uuid not in [] %}
