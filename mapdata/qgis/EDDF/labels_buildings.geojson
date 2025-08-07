@@ -1,0 +1,26 @@
+{
+"type": "FeatureCollection",
+"name": "labels_buildings",
+"crs": { "type": "name", "properties": { "name": "urn:ogc:def:crs:EPSG::32632" } },
+"features": [
+{ "type": "Feature", "properties": { "name": "Lufthansa Technik#3" }, "geometry": { "type": "Point", "coordinates": [ 467425.341568248346448, 5541412.90525403432548 ] } },
+{ "type": "Feature", "properties": { "name": "Run-up position" }, "geometry": { "type": "Point", "coordinates": [ 467157.831353755609598, 5541537.103486918844283 ] } },
+{ "type": "Feature", "properties": { "name": "Railway station" }, "geometry": { "type": "Point", "coordinates": [ 469154.36733267136151, 5544590.547142853029072 ] } },
+{ "type": "Feature", "properties": { "name": "Fire station#1" }, "geometry": { "type": "Point", "coordinates": [ 469431.934941531158984, 5543700.337231822311878 ] } },
+{ "type": "Feature", "properties": { "name": "Fire station#2" }, "geometry": { "type": "Point", "coordinates": [ 466791.618337874533609, 5541426.470466006547213 ] } },
+{ "type": "Feature", "properties": { "name": "Terminal 1" }, "geometry": { "type": "Point", "coordinates": [ 469359.96852006186964, 5544311.649036719463766 ] } },
+{ "type": "Feature", "properties": { "name": "Terminal 2" }, "geometry": { "type": "Point", "coordinates": [ 470445.876369372941554, 5544454.2918287711218 ] } },
+{ "type": "Feature", "properties": { "name": "Terminal 3" }, "geometry": { "type": "Point", "coordinates": [ 470009.518384008959401, 5541973.693146470934153 ] } },
+{ "type": "Feature", "properties": { "name": "Lufthansa Technik#1" }, "geometry": { "type": "Point", "coordinates": [ 468175.04353724833345, 5543758.623251225799322 ] } },
+{ "type": "Feature", "properties": { "name": "Tower" }, "geometry": { "type": "Point", "coordinates": [ 468348.065892419486772, 5543795.976974593475461 ] } },
+{ "type": "Feature", "properties": { "name": "5" }, "geometry": { "type": "Point", "coordinates": [ 468207.596517082769424, 5543670.936975159682333 ] } },
+{ "type": "Feature", "properties": { "name": "6" }, "geometry": { "type": "Point", "coordinates": [ 468149.077113212551922, 5543835.591574455611408 ] } },
+{ "type": "Feature", "properties": { "name": "Lufthansa Cargo#1" }, "geometry": { "type": "Point", "coordinates": [ 467274.533997671445832, 5543472.239606000483036 ] } },
+{ "type": "Feature", "properties": { "name": "Lufthansa Cargo#2" }, "geometry": { "type": "Point", "coordinates": [ 466918.937143977615051, 5542984.540789729915559 ] } },
+{ "type": "Feature", "properties": { "name": "Cargo Center" }, "geometry": { "type": "Point", "coordinates": [ 466650.239195391652174, 5543110.772820542566478 ] } },
+{ "type": "Feature", "properties": { "name": "Fuel" }, "geometry": { "type": "Point", "coordinates": [ 467952.385720300138928, 5543426.848796080797911 ] } },
+{ "type": "Feature", "properties": { "name": "CargoCity South" }, "geometry": { "type": "Point", "coordinates": [ 469027.635079267318361, 5541402.811690359376371 ] } },
+{ "type": "Feature", "properties": { "name": "Condor Technik" }, "geometry": { "type": "Point", "coordinates": [ 468159.093714954855386, 5541860.790780969895422 ] } },
+{ "type": "Feature", "properties": { "name": "Lufthansa Technik#2" }, "geometry": { "type": "Point", "coordinates": [ 467823.464643039449584, 5541693.934843256138265 ] } }
+]
+}

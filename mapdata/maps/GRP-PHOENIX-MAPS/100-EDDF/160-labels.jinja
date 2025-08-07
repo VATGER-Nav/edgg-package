@@ -18,6 +18,7 @@ MAP:Stands
 AIRPORT:EDDF
 FOLDER:Labels
 LAYER:6
+ACTIVE:1
 ZOOM:400
 FONTSIZE:=:9
 COLOR:layout-label-stand
@@ -242,3 +243,30 @@ TEXTALIGN:LC
 {{ data.eddf_kml['layout']['labels']['Link 4'] | to_text('Link 4') }}
 TEXTALIGN:RC
 {{ data.eddf_kml['layout']['labels']['Link 5'] | to_text('Link 5') }}
+
+MAP:Buildings
+AIRPORT:EDDF
+FOLDER:Labels
+ZOOM:400
+FONTSIZE:=:9
+COLOR:layout-label-stand
+{% for desig, geom in data.eddf_kml['layout']['labels']['buildings'].items() if not desig in
+[
+    'Run-up position',
+    'Condor Technik',
+    'Lufthansa Technik#2',
+    'Lufthansa Technik#3',
+] %}
+{{- geom | to_text(desig) }}
+{% endfor %}
+{{ data.eddf_kml['layout']['labels']['buildings']['Run-up position'] | to_text('Run-up:0:-6') }}
+{{ data.eddf_kml['layout']['labels']['buildings']['Run-up position'] | to_text('position:0:6') }}
+{{ data.eddf_kml['layout']['labels']['buildings']['Condor Technik'] | to_text('Condor:0:-12') }}
+{{ data.eddf_kml['layout']['labels']['buildings']['Condor Technik'] | to_text('Technik:0:0') }}
+{{ data.eddf_kml['layout']['labels']['buildings']['Condor Technik'] | to_text('9:0:12') }}
+{{ data.eddf_kml['layout']['labels']['buildings']['Lufthansa Technik#2'] | to_text('Lufthansa:0:-12') }}
+{{ data.eddf_kml['layout']['labels']['buildings']['Lufthansa Technik#2'] | to_text('Technik:0:0') }}
+{{ data.eddf_kml['layout']['labels']['buildings']['Lufthansa Technik#2'] | to_text('12:0:12') }}
+{{ data.eddf_kml['layout']['labels']['buildings']['Lufthansa Technik#3'] | to_text('Lufthansa:0:-12') }}
+{{ data.eddf_kml['layout']['labels']['buildings']['Lufthansa Technik#3'] | to_text('Technik:0:0') }}
+{{ data.eddf_kml['layout']['labels']['buildings']['Lufthansa Technik#3'] | to_text('7:0:12') }}
