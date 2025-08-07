@@ -1,9 +1,0 @@
-{
-"type": "FeatureCollection",
-"name": "markings_line",
-"crs": { "type": "name", "properties": { "name": "urn:ogc:def:crs:EPSG::32632" } },
-"features": [
-{ "type": "Feature", "properties": { "name": "thr07" }, "geometry": { "type": "LineString", "coordinates": [ [ 515005.859895243658684, 5392663.574062668718398 ], [ 515029.271248150907923, 5392582.728388398885727 ] ] } },
-{ "type": "Feature", "properties": { "name": "thr25" }, "geometry": { "type": "LineString", "coordinates": [ [ 517929.805396622454282, 5393510.292463287711143 ], [ 517953.21674952970352, 5393429.446789017878473 ] ] } }
-]
-}

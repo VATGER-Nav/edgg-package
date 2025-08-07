@@ -85,6 +85,8 @@ FOLDER:Labels
 ZOOM:400
 FONTSIZE:=:9
 COLOR:layout-label-stand
-{% for desig, geom in data.edds_kml['layout']['labels']['buildings'].items() %}
+{% for desig, geom in data.edds_kml['layout']['labels']['buildings'].items() if not desig in ['Lufthansa Technik'] %}
 {{- geom | to_text(desig) }}
 {% endfor %}
+{{ data.edds_kml['layout']['labels']['buildings']['Lufthansa Technik'] | to_text('Lufthansa:0:-6') }}
+{{ data.edds_kml['layout']['labels']['buildings']['Lufthansa Technik'] | to_text('Technik:0:6') }}
