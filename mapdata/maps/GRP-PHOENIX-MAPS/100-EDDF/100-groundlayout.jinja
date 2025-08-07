@@ -24,14 +24,6 @@ ACTIVE:1
 {{- data.eddf_kml['layout']['runways'][name] | to_coordtype(name, 'layout-apron') }}
 {% endfor %}
 
-MAP:Roads
-AIRPORT:EDDF
-FOLDER:Airport Layout
-COLOR:layout-taxiway
-{% for uuid, geom in data.eddf_kml['layout']['roads'].items() %}
-{{- geom | simplify(default) | to_line('') -}}
-{% endfor %}
-
 {% set default = 0.000005 %}
 MAP:Taxiway Movement Area
 AIRPORT:EDDF

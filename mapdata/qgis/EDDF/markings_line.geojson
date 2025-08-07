@@ -1,0 +1,12 @@
+{
+"type": "FeatureCollection",
+"name": "markings_line",
+"crs": { "type": "name", "properties": { "name": "urn:ogc:def:crs:EPSG::32632" } },
+"features": [
+{ "type": "Feature", "properties": { "name": "J13" }, "geometry": { "type": "LineString", "coordinates": [ [ 469288.192991505900864, 5542209.641461119987071 ], [ 469243.100767314259429, 5542112.977462406270206 ] ] } },
+{ "type": "Feature", "properties": { "name": "J5" }, "geometry": { "type": "LineString", "coordinates": [ [ 469631.77812578540761, 5542053.892820969223976 ], [ 469584.959086648246739, 5541953.412971001118422 ] ] } },
+{ "type": "Feature", "properties": { "name": "J7" }, "geometry": { "type": "LineString", "coordinates": [ [ 469530.694058389228303, 5542097.300393055193126 ], [ 469484.89226854336448, 5541998.997250290587544 ] ] } },
+{ "type": "Feature", "properties": { "name": "J9" }, "geometry": { "type": "LineString", "coordinates": [ [ 469447.340496206597891, 5542136.161718659102917 ], [ 469401.120161182247102, 5542036.987015356309712 ] ] } },
+{ "type": "Feature", "properties": { "name": "J11" }, "geometry": { "type": "LineString", "coordinates": [ [ 469372.125818065484054, 5542171.198780441656709 ], [ 469326.16309998917859, 5542072.456778454594314 ] ] } }
+]
+}

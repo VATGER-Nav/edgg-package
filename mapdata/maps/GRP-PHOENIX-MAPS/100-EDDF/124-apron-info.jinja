@@ -35,10 +35,20 @@ COLOR:layout-label-stand
 
 // ----------------------------- Old GAT ----------------------------
 
+MAP:Old Apron Layout
+AIRPORT:EDDF
+FOLDER:Apron Info
+HIDDEN
+LAYER:1
+COLOR:closure-symbol
+{{ data.eddf_kml['layout']['oldgat']['aprons']['oldgat_a'] | to_coordtype('', 'layout-apron') }}
+{{ data.eddf_kml['layout']['oldgat']['aprons']['oldgat_b'] | to_coordtype('', 'layout-apron') }}
+
 MAP:Old South Apron
 AIRPORT:EDDF
 FOLDER:Apron Info
 LAYER:6
+OTHER_MAP_ACT:=:Apron Info\Old Apron Layout
 COLOR:closure-symbol
 {% for uuid, geom in data.eddf_kml['layout']['oldgat']['taxilanes'].items() %}
 {{- geom | to_line('') -}}
