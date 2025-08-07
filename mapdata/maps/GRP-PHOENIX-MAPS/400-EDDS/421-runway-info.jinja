@@ -69,10 +69,8 @@ AIRPORT:EDDS
 FOLDER:Runway Info
 LAYER:6
 ACTIVE:1
-COLOR:runway-label
-STYLE:SOLID:2
-{{ data.edds_kml['layout']['markings']['line']['thr25'] | to_line('25') -}}
-{{ data.edds_kml['layout']['markings']['line']['thr07'] | to_line('07') }}
+{{ data.edds_kml['layout']['markings']['poly']['thr07'] | to_poly('07', 'runway-label') }}
+{{ data.edds_kml['layout']['markings']['poly']['thr25'] | to_poly('25', 'runway-label') }}
 
 MAP:Runway Designators
 AIRPORT:EDDS
