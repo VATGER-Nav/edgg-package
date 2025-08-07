@@ -1,0 +1,10 @@
+{
+"type": "FeatureCollection",
+"name": "labels_areas",
+"crs": { "type": "name", "properties": { "name": "urn:ogc:def:crs:EPSG::32632" } },
+"features": [
+{ "type": "Feature", "properties": { "name": "Police" }, "geometry": { "type": "Point", "coordinates": [ 514281.545938974188175, 5392069.738567464984953 ] } },
+{ "type": "Feature", "properties": { "name": "US Army" }, "geometry": { "type": "Point", "coordinates": [ 514632.487522819894366, 5392089.693741600960493 ] } },
+{ "type": "Feature", "properties": { "name": "GAT" }, "geometry": { "type": "Point", "coordinates": [ 515572.043040857766755, 5393204.015409117564559 ] } }
+]
+}
