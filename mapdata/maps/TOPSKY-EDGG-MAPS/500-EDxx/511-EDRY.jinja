@@ -1,7 +1,12 @@
 //---------------------------------------------------------------
 //                          EDRY - Speyer
 //---------------------------------------------------------------
-
+{#- 
+    WARNING: When performing any changes on this file,
+    please bring them to the following files as well:
+    
+     * TOPSKY-PHOENIX-MAPS\500-EDxx\511-EDRY.jinja
+#}
 {%- set rnp = {
     "16": [
         'NORFE',
@@ -28,6 +33,7 @@ TEXTALIGN:LB
 {%- for fx in rnp['16'] %}
 TEXT:{{fx}}:{{fx}}:5:0
 {%- endfor %}
+
 
 MAP:EDRY RNP 34
 FOLDER:RNAV/RNP APP

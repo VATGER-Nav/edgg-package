@@ -5,21 +5,12 @@
     WARNING: When performing any changes on this file,
     please bring them to the following files as well:
     
-     * TOPSKY-PHOENIX-MAPS\500-EDxx\504-EDFQ.jinja
+     * TOPSKY-EDGG-MAPS\500-EDxx\504-EDFQ.jinja
 #}
-{%- set rnav = {
-    "29": [
-        'ALEXU',
-        'EDEGI',
-        'OHMAR',
-        'FQ001',
-        'FQ002',
-        'FQ003',
-    ]
-} %}
 
 MAP:EDFQ 11/29
 FOLDER:SIDs
+ASRDATA:PHOENIX
 LAYER:3
 
 // ---- RWY 11 ----
@@ -88,20 +79,3 @@ TEXTALIGN:LB
 TEXT:KULIX:KU:5:0
 TEXT:OHMAR:OH:5:0
 TEXT:WRB:WR:5:0
-
-
-MAP:EDFQ RNAV 29
-FOLDER:RNAV/RNP APP
-ACTIVE:RWY:ARR:EDFQ29:DEP:*
-COLOR:standard
-SYMBOL:FIX2:ALEXU
-SYMBOL:FIX2:OHMAR
-{%- for fx in rnav['29'] if fx not in ['ALEXU', 'OHMAR'] %}
-SYMBOL:FIX3:{{fx}}
-{%- endfor %}
-ZOOM:8
-FONTSIZE:=:11
-TEXTALIGN:LB
-{%- for fx in rnav['29'] %}
-TEXT:{{fx}}:{{fx}}:5:0
-{%- endfor %}

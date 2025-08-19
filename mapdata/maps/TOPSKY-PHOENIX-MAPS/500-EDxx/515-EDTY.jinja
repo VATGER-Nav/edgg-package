@@ -5,31 +5,12 @@
     WARNING: When performing any changes on this file,
     please bring them to the following files as well:
     
-     * TOPSKY-PHOENIX-MAPS\500-EDxx\515-EDTY.jinja
+     * TOPSKY-EDGG-MAPS\500-EDxx\515-EDTY.jinja
 #}
-{%- set rnp = {
-    "10": [
-        'DKB',
-        'ABHOL',
-        'WUERT',
-        'WUHFU',
-        'TY091',
-        'TY100',
-        'TY111',
-    ],
-    "28": [
-        'DKB',
-        'ABHOL',
-        'YOLFO',
-        'ZIFID',
-        'TY271',
-        'TY280',
-        'TY291',
-    ]
-} %}
 
 MAP:EDTY 10/28
 FOLDER:SIDs
+ASRDATA:PHOENIX
 LAYER:3
 
 // ---- RWY 10 ----
@@ -154,35 +135,3 @@ TEXT:GUPIN:GU:5:0
 TEXTALIGN:LB
 TEXT:DKB:DK:5:0
 TEXT:LAMPU:LA:5:0
-
-
-MAP:EDTY RNP 10
-FOLDER:RNAV/RNP APP
-ACTIVE:RWY:ARR:EDTY10:DEP:*
-COLOR:standard
-SYMBOL:VOR:DKB
-{%- for fx in rnp['10'] if fx not in ['DKB'] %}
-SYMBOL:FIX3:{{fx}}
-{%- endfor %}
-ZOOM:8
-FONTSIZE:=:11
-TEXTALIGN:LB
-{%- for fx in rnp['10'] %}
-TEXT:{{fx}}:{{fx}}:5:0
-{%- endfor %}
-
-
-MAP:EDTY RNP 28
-FOLDER:RNAV/RNP APP
-ACTIVE:RWY:ARR:EDTY28:DEP:*
-COLOR:standard
-SYMBOL:VOR:DKB
-{%- for fx in rnp['28'] if fx not in ['DKB'] %}
-SYMBOL:FIX3:{{fx}}
-{%- endfor %}
-ZOOM:8
-FONTSIZE:=:11
-TEXTALIGN:LB
-{%- for fx in rnp['28'] %}
-TEXT:{{fx}}:{{fx}}:5:0
-{%- endfor %}

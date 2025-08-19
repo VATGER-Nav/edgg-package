@@ -5,21 +5,12 @@
     WARNING: When performing any changes on this file,
     please bring them to the following files as well:
     
-     * TOPSKY-PHOENIX-MAPS\500-EDxx\503-EDFM.jinja
+     * TOPSKY-EDGG-MAPS\500-EDxx\503-EDFM.jinja
 #}
-{%- set rnav = {
-    "27": [
-        'NKR',
-        'EPOMA',
-        'KETEG',
-        'RINEX',
-        'FM001',
-        'FM002',
-    ]
-} %}
 
 MAP:EDFM 09/27
 FOLDER:SIDs
+ASRDATA:PHOENIX
 LAYER:3
 
 // ---- RWY 09 ----
@@ -144,48 +135,3 @@ TEXT:UMDAS:UM:5:0
 TEXTALIGN:LT
 TEXT:MANEM:MA:5:0
 TEXT:RINEX:RI:5:0
-
-
-MAP:EDFM RNAV 27
-FOLDER:RNAV/RNP APP
-ACTIVE:RWY:ARR:EDFM27:DEP:*
-COLOR:standard
-SYMBOL:VOR:NKR
-SYMBOL:FIX2:KETEG
-SYMBOL:FIX2:RINEX
-{%- for fx in rnav['27'] if fx not in ['NKR', 'KETEG', 'RINEX'] %}
-SYMBOL:FIX3:{{fx}}
-{%- endfor %}
-ZOOM:8
-FONTSIZE:=:11
-TEXTALIGN:LB
-{%- for fx in rnav['27'] %}
-TEXT:{{fx}}:{{fx}}:5:0
-{%- endfor %}
-
-
-MAP:EDFM LOC 27
-FOLDER:NON-RNAV APP
-LAYER:3
-STYLE:Dot:1
-COLOR:nonrnav
-// via RINEX
-COORD:RINEX
-COORD:NKR
-COORD_CR:050M:RID:147M
-COORD_DF:050M:L:1.8:10:EPOMA
-COORD_FD:270.4M:MND:1
-COORDLINE
-// via KETEG
-COORD:KETEG
-COORD_FC:273M:3.4
-COORD_TURN:45:1:273M:-2.1
-COORDLINE
-// Fixes
-SYMBOL:VOR:NKR
-SYMBOL:FIX3:EPOMA
-SYMBOL:FIX3:KETEG
-SYMBOL:FIX3:RINEX
-// Altitudes
-TEXTALIGN:CT
-TEXT:EPOMA:A50:0:5
