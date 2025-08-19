@@ -5,24 +5,12 @@
     WARNING: When performing any changes on this file,
     please bring them to the following files as well:
     
-     * TOPSKY-PHOENIX-MAPS\500-EDxx\501-EDDR.jinja
+     * TOPSKY-EDGG-MAPS\500-EDxx\501-EDDR.jinja
 #}
-{%- set rnav = {
-    "08": [
-        'IXWIB',
-        'DR600',
-        'DR601',
-        'DR603',
-        'DR650',
-    ],
-    "26": [
-        'IXWIB',
-        'DR550',
-    ]
-} %}
 
 MAP:EDDR 08/26
 FOLDER:SIDs
+ASRDATA:PHOENIX
 LAYER:3
 
 // ---- RWY 08 ----
@@ -124,94 +112,3 @@ TEXT:GTQ:GT:5:0
 TEXT:IXWIB:IX:5:0
 TEXTALIGN:LB
 TEXT:TOMPI:TO:5:0
-
-
-MAP:EDDR RNP 08
-FOLDER:RNAV/RNP APP
-ACTIVE:RWY:ARR:EDDR08:DEP:*
-COLOR:standard
-SYMBOL:FIX2:IXWIB
-{%- for fx in rnav['08'] if not fx in ['IXWIB'] %}
-SYMBOL:FIX3:{{fx}}
-{%- endfor %}
-ZOOM:8
-FONTSIZE:=:11
-TEXTALIGN:LB
-{%- for fx in rnav['08'] if not fx in ['IXWIB'] %}
-TEXT:{{fx}}:{{fx}}:5:0
-{%- endfor %}
-TEXTALIGN:LT
-TEXT:IXWIB:IXWIB:5:0
-
-
-MAP:EDDR RNP 26
-FOLDER:RNAV/RNP APP
-ACTIVE:RWY:ARR:EDDR26:DEP:*
-COLOR:standard
-SYMBOL:FIX2:IXWIB
-{%- for fx in rnav['26'] if not fx in ['IXWIB'] %}
-SYMBOL:FIX3:{{fx}}
-{%- endfor %}
-ZOOM:8
-FONTSIZE:=:11
-TEXTALIGN:LB
-{%- for fx in rnav['26'] if not fx in ['IXWIB'] %}
-TEXT:{{fx}}:{{fx}}:5:0
-{%- endfor %}
-TEXTALIGN:LT
-TEXT:IXWIB:IXWIB:5:0
-
-
-MAP:EDDR VOR 08
-FOLDER:NON-RNAV APP
-LAYER:3
-STYLE:Dot:1
-COLOR:nonrnav
-// via ZWN
-COORD:ZWN
-COORD_FC:273M:22
-COORD_DF:273M:L:1.83:10:DR009
-COORD_FC:83.4M:6.9
-COORDLINE
-// Fixes
-SYMBOL:VOR:ZWN
-SYMBOL:FIX3:DR009
-// Altitudes
-TEXTALIGN:LB
-TEXT:N049.15.45.300:E006.51.29.900:A50:5:0
-TEXTALIGN:RC
-TEXT:N049.13.51.900:E006.48.28.400:210KT:-5:0
-TEXTALIGN:LT
-TEXT:DR009:A35:5:0
-
-
-MAP:EDDR ILS 26
-FOLDER:NON-RNAV APP
-LAYER:3
-STYLE:Dot:1
-// via ZWN
-COLOR:nonrnav
-COORD:DR550
-COORD:DR013
-COORD_DF:084M:L:2.7:2:ZWN
-COORDLINE
-// Fixes
-SYMBOL:VOR:ZWN
-SYMBOL:FIX3:DR550
-SYMBOL:FIX3:DR013
-// Altitudes
-TEXTALIGN:CB
-TEXT:ZWN:A40:0:-5
-TEXTALIGN:LT
-TEXT:DR550:A35:5:0
-
-// via IXWIB
-COLOR:grey
-COORD:DR013
-COORD:IXWIB
-COORDLINE
-// Fixes
-SYMBOL:FIX2:IXWIB
-// Altitudes
-TEXTALIGN:CT
-TEXT:IXWIB:A40:0:5

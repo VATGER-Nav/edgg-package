@@ -2,21 +2,11 @@
 //                       EDRZ - Zweibruecken
 //---------------------------------------------------------------
 {#- 
-    At moment, when this map was created, GNG lacked necessary
-    Navdata for the RNAV/RNP waypoints!
+    WARNING: When performing any changes on this file,
+    please bring them to the following files as well:
+    
+     * TOPSKY-PHOENIX-MAPS\500-EDxx\512-EDRZ.jinja
 #}
-{%- set coord = {
-    "IXWIB": 'N049.13.23.100:E007.24.45.400',
-    "RZ200": 'N049.18.06.700:E007.28.56.100',
-    "RZ201": 'N049.21.34.200:E007.32.00.000',
-    "RZ202": 'N049.19.27.200:E007.30.07.100',
-    "RZ203": 'N049.21.11.000:E007.31.39.000',
-    "RZ210": 'N049.19.03.600:E007.38.36.600',
-    "RZ300": 'N049.07.03.300:E007.19.11.200',
-    "RZ301": 'N049.05.20.800:E007.17.41.700',
-    "RZ302": 'N049.03.35.600:E007.16.08.800',
-    "RZ310": 'N049.06.05.200:E007.09.33.400',
-} %}
 {%- set rnp = {
     "03": [
         'IXWIB',
@@ -32,33 +22,127 @@
     ]
 } %}
 
+MAP:EDRZ 03/21
+FOLDER:SIDs
+LAYER:3
+
+// ---- RWY 03 ----
+STYLE:Solid
+COLOR:sid_east
+// LADAT
+COORD:EDRZ/21
+COORD:RZ050
+COORD:RZ051
+COORD_DF:027M:R:2.36:8:RZ052
+COORD:RZ054
+COORD:LADAT
+COORDLINE
+// PIREK
+COORD:RZ051
+COORD_DF:027M:R:2.36:8:RZ053
+COORD:RZ055
+COORD:PIREK
+COORDLINE
+// SARRI
+COORD:RZ050
+COORD_DF:027M:L:1.95:10:RZ056
+COORD:RZ057
+COORD:SARRI
+COORDLINE
+// TOMPI
+COORD:RZ057
+COORD:TOMPI
+COORDLINE
+
+// Labels
+TEXTALIGN:CB
+TEXT:N049.16.54.400:E007.26.55.700:P
+
+
+// ---- RWY 21 ----
+STYLE:Solid
+COLOR:sid_west
+// IXWIB
+COORD:EDRZ/03
+COORD:RZ060
+COORD:RZ061
+COORD_DF:207M:R:2.37:10:RZ064
+COORD:IXWIB
+COORDLINE
+// SARRI
+COORD:RZ060
+COORD_DF:207M:R:2.38:10:RZ062
+COORD:SARRI
+COORDLINE
+// ZWN
+COORD:N049.11.08.500:E007.15.32.100     // Continuation of the IXWIBxR right turn
+COORD:ZWN
+COORDLINE
+
+// Labels
+TEXTALIGN:LT
+TEXT:RZ060:D/R:5:0
+
+// Fixes
+COLOR:sid_east
+SYMBOL:FIX_SID_A:LADAT
+SYMBOL:FIX_SID_A:PIREK
+SYMBOL:FIX_SID_A:TOMPI
+SYMBOL:FIX_SID_A:SARRI
+TEXTALIGN:LB
+TEXT:LADAT:LA:5:0
+TEXT:PIREK:PI:5:0
+TEXT:TOMPI:TO:5:0
+
+COLOR:sid_west
+SYMBOL:FIX_SID_A:ZWN
+SYMBOL:FIX_SID_A:IXWIB
+SYMBOL:FIX_SID_B:SARRI
+TEXTALIGN:RB
+TEXT:ZWN:ZW:-5:0
+TEXTALIGN:LT
+TEXT:IXWIB:IX:5:0
+
+COLOR:label
+TEXTALIGN:RB
+TEXT:SARRI:SA:-5:0
+
+
 MAP:EDRZ RNP 03
 FOLDER:RNAV/RNP APP
 ACTIVE:RWY:ARR:EDRZ03:DEP:*
 COLOR:standard
-{%- for fx in rnp['03'] %}
-SYMBOL:FIX3:{{coord[fx]}}
+SYMBOL:FIX2:IXWIB
+{%- for fx in rnp['03'] if not fx in ['IXWIB'] %}
+SYMBOL:FIX3:{{fx}}
 {%- endfor %}
 ZOOM:8
 FONTSIZE:=:11
 TEXTALIGN:LB
-{%- for fx in rnp['03'] %}
-TEXT:{{coord[fx]}}:{{fx}}:5:0
+{%- for fx in rnp['03'] if not fx in ['IXWIB'] %}
+TEXT:{{fx}}:{{fx}}:5:0
 {%- endfor %}
+TEXTALIGN:LT
+TEXT:IXWIB:IXWIB:5:0
+
 
 MAP:EDRZ RNP 21
 FOLDER:RNAV/RNP APP
 ACTIVE:RWY:ARR:EDRZ21:DEP:*
 COLOR:standard
-{%- for fx in rnp['21'] %}
-SYMBOL:FIX3:{{coord[fx]}}
+SYMBOL:FIX2:IXWIB
+{%- for fx in rnp['21'] if not fx in ['IXWIB'] %}
+SYMBOL:FIX3:{{fx}}
 {%- endfor %}
 ZOOM:8
 FONTSIZE:=:11
 TEXTALIGN:LB
-{%- for fx in rnp['21'] %}
-TEXT:{{coord[fx]}}:{{fx}}:5:0
+{%- for fx in rnp['21'] if not fx in ['IXWIB'] %}
+TEXT:{{fx}}:{{fx}}:5:0
 {%- endfor %}
+TEXTALIGN:LT
+TEXT:IXWIB:IXWIB:5:0
+
 
 MAP:EDRZ VOR 03
 FOLDER:NON-RNAV APP
@@ -68,20 +152,21 @@ COLOR:nonrnav
 // via ZWN
 COORD:ZWN
 COORD_FC:225M:9.9
-COORD_DF:225M:L:1.53:10:{{coord['RZ301']}}
-COORD:{{coord['RZ300']}}
+COORD_DF:225M:L:1.53:10:RZ301
+COORD:RZ300
 COORD:EDRZ/03
 COORDLINE
 // Fixes
 SYMBOL:VOR:ZWN
-SYMBOL:FIX3:{{coord['RZ301']}}
-SYMBOL:FIX3:{{coord['RZ300']}}
+SYMBOL:FIX3:RZ301
+SYMBOL:FIX3:RZ300
 // Altitudes
 TEXTALIGN:RB
 TEXT:N049.07.02.800:E007.13.54.000:210KT:-5:-12
 TEXT:N049.07.02.800:E007.13.54.000:A40:-5:0
 TEXTALIGN:LT
-TEXT:{{coord['RZ301']}}:A30:5:0
+TEXT:RZ301:A30:5:0
+
 
 MAP:EDRZ VOR 21
 FOLDER:NON-RNAV APP
@@ -91,16 +176,16 @@ COLOR:nonrnav
 // via ZWN
 COORD:ZWN
 COORD_FC:048M:8.8
-COORD_DF:048M:L:1.6:10:{{coord['RZ203']}}
-COORD:{{coord['RZ202']}}
+COORD_DF:048M:L:1.6:10:RZ203
+COORD:RZ202
 COORD:EDRZ/21
 COORDLINE
 // Fixes
 SYMBOL:VOR:ZWN
-SYMBOL:FIX3:{{coord['RZ202']}}
-SYMBOL:FIX3:{{coord['RZ203']}}
+SYMBOL:FIX3:RZ202
+SYMBOL:FIX3:RZ203
 // Altitudes
 TEXTALIGN:LT
 TEXT:N049.19.20.000:E007.35.29.100:210KT:5:0
 TEXT:N049.19.20.000:E007.35.29.100:A40:5:12
-TEXT:{{coord['RZ203']}}:A35:5:0
+TEXT:RZ203:A35:5:0

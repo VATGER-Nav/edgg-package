@@ -5,27 +5,12 @@
     WARNING: When performing any changes on this file,
     please bring them to the following files as well:
     
-     * TOPSKY-PHOENIX-MAPS\500-EDxx\507-EDLP.jinja
+     * TOPSKY-EDGG-MAPS\500-EDxx\507-EDLP.jinja
 #}
-{%- set PAD_NDB = 'N051.37.24.500:E008.38.21.800' %}
-{%- set rnp = {
-    "06": [
-        'KOMIL',
-        'LP025',
-        'LP026',
-        'LP027',
-    ],
-    "24": [
-        'WRB',
-        'IBEGO',
-        'LP020',
-        'LP021',
-        'LP022',
-    ]
-} %}
 
 MAP:EDLP 06/24
 FOLDER:SIDs
+ASRDATA:PHOENIX
 LAYER:3
 
 // ---- RWY 06 ----
@@ -122,80 +107,3 @@ TEXTALIGN:LB
 TEXT:GISDI:GI:5:0
 TEXT:HMM:HM:5:0
 TEXT:WRB:WR:5:0
-
-
-MAP:EDLP RNP 06
-FOLDER:RNAV/RNP APP
-ACTIVE:RWY:ARR:EDLP06:DEP:*
-COLOR:standard
-SYMBOL:VOR:{{PAD_NDB}}
-{%- for fx in rnp['06'] %}
-SYMBOL:FIX3:{{fx}}
-{%- endfor %}
-ZOOM:8
-FONTSIZE:=:11
-TEXTALIGN:LB
-TEXT:{{PAD_NDB}}:PAD:5:0
-{%- for fx in rnp['06'] %}
-TEXT:{{fx}}:{{fx}}:5:0
-{%- endfor %}
-
-
-MAP:EDLP RNP 24
-FOLDER:RNAV/RNP APP
-ACTIVE:RWY:ARR:EDLP24:DEP:*
-COLOR:standard
-SYMBOL:VOR:{{PAD_NDB}}
-SYMBOL:VOR:WRB
-{%- for fx in rnp['24'] if fx not in ['WRB'] %}
-SYMBOL:FIX3:{{fx}}
-{%- endfor %}
-ZOOM:8
-FONTSIZE:=:11
-TEXTALIGN:LB
-TEXT:{{PAD_NDB}}:PAD:5:0
-{%- for fx in rnp['24'] %}
-TEXT:{{fx}}:{{fx}}:5:0
-{%- endfor %}
-
-
-MAP:EDLP ILS/NDB 06
-FOLDER:NON-RNAV APP
-LAYER:3
-STYLE:Dot:1
-COLOR:nonrnav
-// via PAD
-COORD:{{PAD_NDB}}
-COORD_FD:254M:PAD:8.8
-COORD_DF:254M:L:1.73:10:KOMIL
-COORDLINE
-// Fixes
-SYMBOL:VOR:{{PAD_NDB}}
-SYMBOL:FIX3:KOMIL
-// Altitudes
-TEXTALIGN:LT
-TEXT:KOMIL:A30:5:0
-
-
-MAP:EDLP ILS/NDB 24
-FOLDER:NON-RNAV APP
-LAYER:3
-STYLE:Dot:1
-COLOR:nonrnav
-// via PAD
-COORD:{{PAD_NDB}}
-COORD_FD:078M:PAD:8.6
-COORD_TURN:1.68:10:078M:-120
-COORDLINE
-// via WRB
-COORD:WRB
-COORD_FC:318M:14.2
-COORD_DF:318M:L:1.59:10:IBEGO
-COORDLINE
-// Fixes
-SYMBOL:VOR:{{PAD_NDB}}
-SYMBOL:VOR:WRB
-SYMBOL:FIX3:IBEGO
-// Altitudes
-TEXTALIGN:LT
-TEXT:IBEGO:A30:5:0

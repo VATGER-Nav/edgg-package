@@ -5,7 +5,7 @@
     WARNING: When performing any changes on this file,
     please bring them to the following files as well:
     
-     * TOPSKY-PHOENIX-MAPS\500-EDxx\506-EDLN.jinja
+     * TOPSKY-EDGG-MAPS\500-EDxx\506-EDLN.jinja
 #}
 {%- set sids = {
     "13": {
@@ -29,23 +29,10 @@
         "SONEB": ['LMA', 'ABODU', 'LN140', 'SONEB'],
     },
 } %}
-{%- set rnp = {
-    "13": [
-        'MHV',
-        'LN400',
-        'LN401',
-        'SUVIG',
-    ],
-    "31": [
-        'MHV',
-        'LN600',
-        'LN601',
-        'GREKA',
-    ]
-} %}
 
 MAP:EDLN 13/31
 FOLDER:SIDs
+ASRDATA:PHOENIX
 LAYER:3
 
 // ---- RWY 13 ----
@@ -141,68 +128,3 @@ TEXT:SONEB:SO:5:0
 TEXTALIGN:RB
 TEXT:MODRU:MO:-5:0
 TEXT:ROMIN:RO:-5:0
-
-
-MAP:EDLN RNP 13
-FOLDER:RNAV/RNP APP
-ACTIVE:RWY:ARR:EDLN13:DEP:*
-COLOR:standard
-SYMBOL:VOR:MHV
-{%- for fx in rnp['13'] if fx not in ['MHV'] %}
-SYMBOL:FIX3:{{fx}}
-{%- endfor %}
-ZOOM:8
-FONTSIZE:=:11
-TEXTALIGN:LB
-{%- for fx in rnp['13'] %}
-TEXT:{{fx}}:{{fx}}:5:0
-{%- endfor %}
-
-MAP:EDLN RNP 31
-FOLDER:RNAV/RNP APP
-ACTIVE:RWY:ARR:EDLN31:DEP:*
-COLOR:standard
-SYMBOL:VOR:MHV
-{%- for fx in rnp['31'] if fx not in ['MHV'] %}
-SYMBOL:FIX3:{{fx}}
-{%- endfor %}
-ZOOM:8
-FONTSIZE:=:11
-TEXTALIGN:LB
-{%- for fx in rnp['31'] %}
-TEXT:{{fx}}:{{fx}}:5:0
-{%- endfor %}
-
-MAP:EDLN ILS/VOR 13
-FOLDER:NON-RNAV APP
-LAYER:3
-STYLE:Dot:1
-COLOR:nonrnav
-// via MHV
-COORD:MHV
-COORD_FD:334M:MHV:5.7
-COORD_DF:334M:L:1.4:10:SUVIG
-COORDLINE
-// Fixes
-SYMBOL:VOR:MHV
-SYMBOL:FIX3:SUVIG
-// Altitudes
-TEXTALIGN:RT
-TEXT:SUVIG:A20:-5:0
-
-MAP:EDLN ILS/VOR 31
-FOLDER:NON-RNAV APP
-LAYER:3
-STYLE:Dot:1
-COLOR:nonrnav
-// via MHV
-COORD:MHV
-COORD_FD:147M:MHV:7.6
-COORD_DF:147M:L:1.39:10:GREKA
-COORDLINE
-// Fixes
-SYMBOL:VOR:MHV
-SYMBOL:FIX3:GREKA
-// Altitudes
-TEXTALIGN:RT
-TEXT:GREKA:A20:-5:0

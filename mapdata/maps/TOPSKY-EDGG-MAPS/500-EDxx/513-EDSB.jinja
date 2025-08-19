@@ -1,6 +1,13 @@
 //---------------------------------------------------------------
 //                 EDSB - Karlsruhe/Baden-Baden
 //---------------------------------------------------------------
+{#- 
+    WARNING: When performing any changes on this file,
+    please bring them to the following files as well:
+    
+     * TOPSKY-PHOENIX-MAPS\500-EDxx\513-EDSB.jinja
+#}
+{%- set SE = "N048.35.20.100:E007.42.53.100" %}
 {%- set rnp = {
     "03": [
         'KBA',
@@ -19,6 +26,81 @@
     ]
 } %}
 
+MAP:EDSB 03/21
+FOLDER:SIDs
+LAYER:3
+
+// ---- RWY 03 ----
+STYLE:Solid
+COLOR:sid_east
+// GAGSI
+COORD:EDSB/21
+COORD:SB050
+COORD_DF:030M:R:2.53:10:SB051
+COORD:PABLA
+COORD:GAGSI
+COORDLINE
+// STR
+COORD:SB050
+COORD:SB052
+COORD_DF:030M:L:2.48:10:SB053
+COORD:{{SE}}
+COORD:STR
+COORDLINE
+// TUBLO
+COORD:GAGSI
+COORD:TUBLO
+COORDLINE
+
+// Labels
+TEXTALIGN:RB
+TEXT:N048.49.52.200:E008.07.55.000:Y:-5:0
+
+
+// ---- RWY 21 ----
+STYLE:Solid
+COLOR:sid_west
+// GAGSI
+COORD:EDSB/03
+COORD:SB041
+COORD_DF:210M:L:3.02:10:SB042
+COORD:GAGSI
+COORDLINE
+// STR
+COORD:SB041
+COORD:SB040
+COORD:LUPEN
+COORD:STR
+COORDLINE
+// TUBLO
+COORD:SB040
+COORD_DF:210M:L:4.9:10:SB043
+COORD:TUBLO
+COORDLINE
+
+// Labels
+TEXTALIGN:RB
+TEXT:N048.42.57.300:E008.01.35.200:Z:-5:0
+
+// Fixes
+COLOR:sid_east
+SYMBOL:FIX_SID_A:GAGSI
+SYMBOL:FIX_SID_A:STR
+SYMBOL:FIX_SID_A:TUBLO
+
+COLOR:sid_west
+SYMBOL:FIX_SID_B:GAGSI
+SYMBOL:FIX_SID_B:STR
+SYMBOL:FIX_SID_B:TUBLO
+
+COLOR:label
+TEXTALIGN:RB
+TEXT:STR:ST:-5:0
+TEXTALIGN:LB
+TEXT:GAGSI:GA:5:0
+TEXT:TUBLO:TU:5:0
+
+
 MAP:EDSB RNP 03
 FOLDER:RNAV/RNP APP
 ACTIVE:RWY:ARR:EDSB03:DEP:*
@@ -33,6 +115,7 @@ TEXTALIGN:LB
 {%- for fx in rnp['03'] %}
 TEXT:{{fx}}:{{fx}}:5:0
 {%- endfor %}
+
 
 MAP:EDSB RNP 21
 FOLDER:RNAV/RNP APP
@@ -49,6 +132,7 @@ TEXTALIGN:LB
 {%- for fx in rnp['21'] %}
 TEXT:{{fx}}:{{fx}}:5:0
 {%- endfor %}
+
 
 MAP:EDSB ILS/NDB 03
 FOLDER:NON-RNAV APP
@@ -67,6 +151,7 @@ SYMBOL:FIX3:RENBO
 TEXTALIGN:LT
 TEXT:N048.34.34.900:E007.58.40.900:A50:5:0
 TEXT:RENBO:A40:5:0
+
 
 MAP:EDSB ILS/NDB 21
 FOLDER:NON-RNAV APP
