@@ -1,0 +1,235 @@
+{ "VFR": {
+    "EDDF": [
+        {"name": "L", "symb": "CRP", "text_align": "LB"},
+        {"name": "N", "symb": "CRP", "text_align": "LB"},
+        {"name": "S", "symb": "CRP", "text_align": "LB"},
+        {"name": "R1", "symb": "CRP", "text_align": "LB"}
+    ],
+    "EDDL": [
+        {"name": "N", "symb": "CRP", "text_align": "LB"},
+        {"name": "S", "symb": "CRP", "text_align": "LB"},
+        {"name": "E", "symb": "CRP", "text_align": "LB"}
+    ],
+    "EDDK": [
+        {"name": "K1", "symb": "CRP", "text_align": "LB"},
+        {"name": "K2", "symb": "CRP", "text_align": "LB"},
+        {"name": "S1", "symb": "CRP", "text_align": "LB"},
+        {"name": "S2", "symb": "CRP", "text_align": "LB"},
+        {"name": "E1", "symb": "CRP", "text_align": "LB"},
+        {"name": "E2", "symb": "ORRP", "text_align": "LB"},
+        {"name": "N1", "symb": "CRP", "text_align": "LB"},
+        {"name": "N2", "symb": "CRP", "text_align": "LB"}
+    ],
+    "EDDS": [
+        {"name": "W", "symb": "CRP", "text_align": "LB"},
+        {"name": "E", "symb": "CRP", "text_align": "LB"},
+        {"name": "O", "symb": "CRP", "text_align": "LB"},
+        {"name": "S", "symb": "CRP", "text_align": "LB"},
+        {"name": "L", "symb": "CRP", "text_align": "LB"}
+    ],
+    "EDDG": [
+        {"name": "D", "symb": "CRP", "text_align": "LB"},
+        {"name": "W", "symb": "CRP", "text_align": "LB"},
+        {"name": "N1", "symb": "CRP", "text_align": "LB"},
+        {"name": "N2", "symb": "CRP", "text_align": "LB"},
+        {"name": "S", "symb": "CRP", "text_align": "LB"},
+        {"name": "T", "symb": "CRP", "text_align": "LB"},
+        {"name": "E", "symb": "CRP", "text_align": "LB"}
+    ],
+    "EDDR": [
+        {"name": "S", "symb": "CRP", "text_align": "LB"},
+        {"name": "N1", "symb": "CRP", "text_align": "LB"},
+        {"name": "N2", "symb": "ORRP", "text_align": "LB"},
+        {"name": "E1", "symb": "CRP", "text_align": "LB"},
+        {"name": "E2", "symb": "ORRP", "text_align": "LB"}
+    ],
+    "EDFE": [
+        {"name": "Y", "symb": "ORRP", "text_align": "LB"},
+        {"name": "D", "symb": "ORRP", "text_align": "LB"},
+        {"name": "E", "symb": "ORRP", "text_align": "LB"},
+        {"name": "T", "symb": "ORRP", "text_align": "LB"},
+        {"name": "K", "symb": "ORRP", "text_align": "LB"}
+    ],
+    "EDFH": [
+        {"name": "W", "symb": "CRP", "text_align": "LB"},
+        {"name": "E", "symb": "CRP", "text_align": "LB"},
+        {"name": "N", "symb": "CRP", "text_align": "LB"},
+        {"name": "S", "symb": "CRP", "text_align": "LB"}
+    ],
+    "EDFM": [
+        {"name": "R", "symb": "CRP", "text_align": "LB"},
+        {"name": "W", "symb": "CRP", "text_align": "LB"},
+        {"name": "S", "symb": "CRP", "text_align": "LB"},
+        {"name": "K", "symb": "CRP", "text_align": "LB"},
+        {"name": "E", "symb": "CRP", "text_align": "LB"}
+    ],
+    "EDLN": [
+        {"name": "W", "symb": "CRP", "text_align": "LB"},
+        {"name": "R", "symb": "CRP", "text_align": "LB"},
+        {"name": "G", "symb": "CRP", "text_align": "LB"},
+        {"name": "M", "symb": "CRP", "text_align": "LB"},
+        {"name": "K1", "symb": "CRP", "text_align": "LB"},
+        {"name": "K2", "symb": "CRP", "text_align": "LB"}
+    ],
+    "EDLP": [
+        {"name": "N", "symb": "CRP", "text_align": "LB"},
+        {"name": "E", "symb": "CRP", "text_align": "LB"},
+        {"name": "S", "symb": "CRP", "text_align": "LB"},
+        {"name": "H", "symb": "CRP", "text_align": "LB"},
+        {"name": "K", "symb": "CRP", "text_align": "LB"},
+        {"name": "W1", "symb": "CRP", "text_align": "LB"},
+        {"name": "W2", "symb": "CRP", "text_align": "LB"}
+    ],
+    "EDLV": [
+        {"name": "N", "symb": "CRP", "text_align": "LB"},
+        {"name": "S", "symb": "CRP", "text_align": "LB"}
+    ],
+    "EDLW": [
+        {"name": "W", "symb": "CRP", "text_align": "LB"},
+        {"name": "N", "symb": "CRP", "text_align": "LB"},
+        {"name": "E", "symb": "CRP", "text_align": "LB"},
+        {"name": "S", "symb": "CRP", "text_align": "LB"}
+    ],
+    "EDSB": [
+        {"name": "S", "symb": "CRP", "text_align": "LB"},
+        {"name": "W", "symb": "CRP", "text_align": "LB"},
+        {"name": "N", "symb": "CRP", "text_align": "LB"},
+        {"name": "R", "symb": "CRP", "text_align": "LB"},
+        {"name": "B", "symb": "CRP", "text_align": "LB"},
+        {"name": "E", "symb": "CRP", "text_align": "LB"}
+    ],
+    "EDTL": [
+        {"name": "S2", "symb": "CRP", "text_align": "LB"},
+        {"name": "S1", "symb": "CRP", "text_align": "LB"},
+        {"name": "E", "symb": "CRP", "text_align": "LB"},
+        {"name": "O2", "symb": "CRP", "text_align": "LB"},
+        {"name": "O1", "symb": "CRP", "text_align": "LB"},
+        {"name": "W", "symb": "CRP", "text_align": "LB"}
+    ],
+    "EDTQ": [
+        {"name": "AUTOKINO", "symb": "CRP", "text_align": "LB"},
+        {"name": "OEFFINGEN", "symb": "CRP", "text_align": "LB"},
+        {"name": "WASSERTURM", "symb": "CRP", "text_align": "LB"}
+    ]
+},
+"MIL": {
+    "ETAD": [
+        {"name": "NATTENHEIM", "fix": "AD-NATTENHEIM", "symb": "CRP", "text_align": "RB", "default_vis": false},
+        {"name": "HEIDWEILER", "fix": "AD-HEIDWEILER", "symb": "CRP", "text_align": "LB", "default_vis": false},
+        {"name": "ALPHA", "fix": "TAD-A", "symb": "CRP", "text_align": "LB", "default_vis": false},
+        {"name": "BANGOR", "fix": "TAD-BANGOR", "symb": "CRP", "text_align": "LB", "default_vis": false},
+        {"name": "LAKE", "fix": "TAD-LAKE", "symb": "CRP", "text_align": "LB", "default_vis": false},
+        {"name": "BRAVO", "fix": "TAD-B", "symb": "CRP", "text_align": "LB", "default_vis": false},
+        {"name": "TUCSON", "fix": "TAD-TUCSON", "symb": "CRP", "text_align": "LB", "default_vis": false}
+    ],
+    "ETAR": [
+        {"name": "OLSBRUCKEN", "fix": "AR-OLSBRUCKEN", "symb": "CRP", "text_align": "LB", "default_vis": false},
+        {"name": "MACKENBACH", "fix": "AR-MACKENBACH", "symb": "ORRP", "text_align": "LB", "default_vis": false},
+        {"name": "GLAN MUNCHWEILER", "fix": "AR-GLANMUNCHWEILER", "symb": "CRP", "text_align": "LB", "default_vis": false},
+        {"name": "MIESENBACH", "fix": "AR-MIESENBACH", "symb": "ORRP", "text_align": "LB", "default_vis": false},
+        {"name": "LANDSTUHL WEST", "fix": "AR-LANDSTUHLWEST", "symb": "ORRP", "text_align": "RB", "default_vis": false},
+        {"name": "HAUPTSTUHL", "fix": "AR-HAUPTSTUHL", "symb": "ORRP", "text_align": "LB", "default_vis": false},
+        {"name": "MIESAU", "fix": "AR-MIESAU", "symb": "CRP", "text_align": "RB", "default_vis": false},
+        {"name": "LINDEN", "fix": "AR-LINDEN", "symb": "CRP", "text_align": "LB", "default_vis": false},
+        {"name": "HOHENECKEN LAKE", "fix": "AR-HOHENECKENLAKE", "symb": "CRP", "text_align": "LB", "default_vis": false},
+        {"name": "KINDSBACH", "fix": "AR-KINDSBACH", "symb": "ORRP", "text_align": "LB", "default_vis": false},
+        {"name": "WISKY", "fix": "TAR-WISKY", "symb": "CRP", "text_align": "RB", "default_vis": false},
+        {"name": "PIVOT", "fix": "TAR-PIVOT", "symb": "CRP", "text_align": "LB", "default_vis": false},
+        {"name": "ECHO", "fix": "TAR-ECHO", "symb": "CRP", "text_align": "LB", "default_vis": false}
+    ],
+    "ETEB": [
+        {"name": "LINDACH", "fix": "EB-LINDACH", "symb": "CRP", "text_align": "LB", "default_vis": false},
+        {"name": "RIDGE", "fix": "EB-RIDGE", "symb": "ORRP", "text_align": "RB", "default_vis": false},
+        {"name": "W", "fix": "EB-W", "symb": "CRP", "text_align": "LB", "default_vis": false},
+        {"name": "C", "fix": "EB-C", "symb": "CRP", "text_align": "RB", "default_vis": false},
+        {"name": "B", "fix": "EB-B", "symb": "ORRP", "text_align": "LB", "default_vis": false},
+        {"name": "A", "fix": "EB-A", "symb": "ORRP", "text_align": "LB", "default_vis": false},
+        {"name": "F", "fix": "EB-F", "symb": "CRP", "text_align": "LB", "default_vis": false},
+        {"name": "T", "fix": "EB-T", "symb": "ORRP", "text_align": "LB", "default_vis": false},
+        {"name": "PLANT", "fix": "EB-PLANT", "symb": "ORRP", "text_align": "RB", "default_vis": false},
+        {"name": "POWER STATION", "fix": "EB-POWERSTATION", "symb": "ORRP", "text_align": "RB", "default_vis": false},
+        {"name": "SPECKHEIM", "fix": "EB-SPECKHEIM", "symb": "CRP", "text_align": "LB", "default_vis": false},
+        {"name": "FIVE TREES", "fix": "EB-FIVETREES", "symb": "ORRP", "text_align": "LB", "default_vis": false},
+        {"name": "S", "fix": "EB-S", "symb": "ORRP", "text_align": "LB", "default_vis": false},
+        {"name": "BRIDGE", "fix": "EB-BRIDGE", "symb": "ORRP", "text_align": "LB", "default_vis": false}
+    ],
+    "ETHF": [
+        {"name": "N1", "fix": "HF-N1", "symb": "CRP", "text_align": "LB", "default_vis": true},
+        {"name": "N2", "fix": "HF-N2", "symb": "CRP", "text_align": "LB", "default_vis": true},
+        {"name": "NE", "fix": "HF-NE", "symb": "ORRP", "text_align": "LB", "default_vis": true},
+        {"name": "E1", "fix": "HF-E1", "symb": "CRP", "text_align": "LB", "default_vis": true},
+        {"name": "E2", "fix": "HF-E2", "symb": "CRP", "text_align": "LB", "default_vis": true},
+        {"name": "SE", "fix": "HF-SE", "symb": "CRP", "text_align": "LB", "default_vis": true},
+        {"name": "L1", "fix": "HF-L1", "symb": "CRP", "text_align": "LB", "default_vis": true},
+        {"name": "L2", "fix": "HF-L2", "symb": "CRP", "text_align": "LB", "default_vis": true},
+        {"name": "S", "fix": "HF-S", "symb": "CRP", "text_align": "RB", "default_vis": true},
+        {"name": "W", "fix": "HF-W", "symb": "CRP", "text_align": "LB", "default_vis": true}
+    ],
+    "ETHN": [
+        {"name": "N1", "fix": "HN-N1", "symb": "CRP", "text_align": "LB", "default_vis": true},
+        {"name": "N2", "fix": "HN-N2", "symb": "ORRP", "text_align": "LB", "default_vis": true},
+        {"name": "E", "fix": "HN-E", "symb": "CRP", "text_align": "LB", "default_vis": true},
+        {"name": "H", "fix": "HN-H", "symb": "CRP", "text_align": "LB", "default_vis": true},
+        {"name": "S", "fix": "HN-S", "symb": "CRP", "text_align": "LB", "default_vis": true},
+        {"name": "W1", "fix": "HN-W1", "symb": "CRP", "text_align": "RB", "default_vis": true},
+        {"name": "W2", "fix": "HN-W2", "symb": "ORRP", "text_align": "LB", "default_vis": true}
+    ],
+    "ETIK": [
+        {"name": "E1", "fix": "IK-E1", "symb": "CRP", "text_align": "RB", "default_vis": false},
+        {"name": "E2", "fix": "IK-E2", "symb": "ORRP", "text_align": "LB", "default_vis": false},
+        {"name": "N1", "fix": "IK-N1", "symb": "CRP", "text_align": "LB", "default_vis": false},
+        {"name": "N2", "fix": "IK-N2", "symb": "ORRP", "text_align": "LB", "default_vis": false},
+        {"name": "N3", "fix": "IK-N3", "symb": "ORRP", "text_align": "LB", "default_vis": false},
+        {"name": "W", "fix": "IK-W", "symb": "CRP", "text_align": "LB", "default_vis": false},
+        {"name": "S", "fix": "IK-S", "symb": "CRP", "text_align": "LB", "default_vis": false},
+        {"name": "INTERSECTION", "fix": "IK-INTERSECTION", "symb": "ORRP", "text_align": "LB", "default_vis": false}
+    ],
+    "ETNG": [
+        {"name": "N1", "fix": "NG-N1", "symb": "CRP", "text_align": "LB", "default_vis": true},
+        {"name": "N2", "fix": "NG-N2", "symb": "CRP", "text_align": "LB", "default_vis": true},
+        {"name": "S1", "fix": "NG-S1", "symb": "CRP", "text_align": "LB", "default_vis": true},
+        {"name": "S2", "fix": "NG-S2", "symb": "CRP", "text_align": "LB", "default_vis": true},
+        {"name": "INITIAL", "fix": "NG-INITIAL", "symb": "CRP", "text_align": "LB", "default_vis": false},
+        {"name": "ENTRY/EXIT NORTH", "fix": "NG-NORTH", "symb": "CRP", "text_align": "RB", "default_vis": false},
+        {"name": "ENTRY/EXIT SOUTH", "fix": "NG-SOUTH", "symb": "CRP", "text_align": "RB", "default_vis": false}
+    ],
+    "ETNN": [
+        {"name": "N", "fix": "NN-N", "symb": "CRP", "text_align": "LB", "default_vis": true},
+        {"name": "S", "fix": "NN-S", "symb": "CRP", "text_align": "RB", "default_vis": true},
+        {"name": "E1", "fix": "NN-E1", "symb": "CRP", "text_align": "LB", "default_vis": true},
+        {"name": "E2", "fix": "NN-E2", "symb": "CRP", "text_align": "LB", "default_vis": true},
+        {"name": "ENTRY EAST", "fix": "NN-ENTRYEAST", "symb": "CRP", "text_align": "LB", "default_vis": false},
+        {"name": "ENTRY NORTH", "fix": "NN-ENTRYNORTH", "symb": "CRP", "text_align": "RB", "default_vis": false},
+        {"name": "ENTRY SOUTH", "fix": "NN-ENTRYSOUTH", "symb": "CRP", "text_align": "LB", "default_vis": false},
+        {"name": "ENTRY WEST", "fix": "NN-ENTRYWEST", "symb": "CRP", "text_align": "RB", "default_vis": false},
+        {"name": "EXIT EAST", "fix": "NN-EXITEAST", "symb": "CRP", "text_align": "LB", "default_vis": false},
+        {"name": "EXIT NORTH", "fix": "NN-EXITNORTH", "symb": "CRP", "text_align": "RB", "default_vis": false},
+        {"name": "EXIT SOUTH", "fix": "NN-EXITSOUTH", "symb": "CRP", "text_align": "LB", "default_vis": false},
+        {"name": "EXIT WEST", "fix": "NN-EXITWEST", "symb": "CRP", "text_align": "LB", "default_vis": false},
+        {"name": "INITIAL 06", "fix": "NN-INITIAL06", "symb": "CRP", "text_align": "LB", "default_vis": false},
+        {"name": "INITIAL 24", "fix": "NN-INITIAL24", "symb": "CRP", "text_align": "LB", "default_vis": false}
+    ],
+    "ETOU": [
+        {"name": "BRIDGE", "fix": "OU-BRIDGE", "symb": "CRP", "text_align": "RB", "default_vis": false},
+        {"name": "EDNA", "fix": "OU-EDNA", "symb": "CRP", "text_align": "LB", "default_vis": false},
+        {"name": "IGSTADT", "fix": "OU-IGSTADT", "symb": "CRP", "text_align": "LB", "default_vis": false},
+        {"name": "NIEDERNHAUSEN", "fix": "OU-NIEDERNHAUSEN", "symb": "CRP", "text_align": "LB", "default_vis": false},
+        {"name": "NORB", "fix": "OU-NORB", "symb": "ORRP", "text_align": "LB", "default_vis": false},
+        {"name": "RAILROAD", "fix": "OU-RAILROAD", "symb": "CRP", "text_align": "LB", "default_vis": false},
+        {"name": "RESTSTOP", "fix": "OU-RESTSTOP", "symb": "CRP", "text_align": "LB", "default_vis": false},
+        {"name": "WANDA", "fix": "OU-WANDA", "symb": "CRP", "text_align": "RB", "default_vis": false},
+        {"name": "WEILBACH", "fix": "OU-WEILBACH", "symb": "CRP", "text_align": "LB", "default_vis": false},
+        {"name": "WERNER", "fix": "OU-WERNER", "symb": "ORRP", "text_align": "LB", "default_vis": false},
+        {"name": "WILLI", "fix": "OU-WILLI", "symb": "CRP", "text_align": "LB", "default_vis": false}
+    ],
+    "ETSB": [
+        {"name": "N", "fix": "TSB-N", "symb": "CRP", "text_align": "LB", "default_vis": true},
+        {"name": "ENTRY EAST", "fix": "TSB-ENTRYEAST", "symb": "CRP", "text_align": "LB", "default_vis": false},
+        {"name": "ENTRY NORTH", "fix": "TSB-ENTRYNORTH", "symb": "CRP", "text_align": "LB", "default_vis": false},
+        {"name": "ENTRY SOUTH", "fix": "TSB-ENTRYSOUTH", "symb": "CRP", "text_align": "RB", "default_vis": false},
+        {"name": "ENTRY WEST", "fix": "TSB-ENTRYWEST", "symb": "CRP", "text_align": "RB", "default_vis": false},
+        {"name": "INITIAL 03", "fix": "TSB-INITIAL03", "symb": "CRP", "text_align": "LB", "default_vis": false},
+        {"name": "INITIAL 21", "fix": "TSB-INITIAL21", "symb": "CRP", "text_align": "LB", "default_vis": false}
+    ]
+}
+}

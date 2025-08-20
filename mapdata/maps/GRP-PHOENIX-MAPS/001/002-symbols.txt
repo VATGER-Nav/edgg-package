@@ -12,21 +12,24 @@ LINETO:3:3
 MOVETO:2:-2
 LINETO:-3:3
 
-// VFR Reporting Points
-SYMBOLDEF:VFR
+// Compulsory Reporting Point
+SYMBOLDEF:CRP
 POLYGON:-4:3:0:-4:4:3
 
-// Airports
-SYMBOLDEF:AIRPORT
+// On-Request Reporting Point
+SYMBOLDEF:ORRP
+MOVETO:-4:3
+LINETO:0:-4
+LINETO:4:3
+LINETO:-4:3
+
+// Aerodrome Hotspot
+SYMBOLDEF:AD
 MOVETO:-4:-4
 LINETO:4:-4
 LINETO:4:4
 LINETO:-4:4
 LINETO:-4:-4
-
-// Circle
-SYMBOLDEF:CIRCLE
-ARC:-1:-1:8:0:360
 
 // RRS Marker (v)
 SYMBOLDEF:RRS

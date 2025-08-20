@@ -78,11 +78,9 @@ source = "misc/sectors-adf.txt"
 type = "sectors"
 source = "misc/aor.txt"
 
-#--------------VFR-------------
-
-[data.reporting_points]
+[data.vrp]
 type = "json"
-source = "misc/vfr/reporting-points.json"
+source = "misc/vrp.json"
 
 #-------Groundlayouts AIXM-----
 
