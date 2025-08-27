@@ -117,6 +117,10 @@ Areas_Label_MapText=0
 Areas_Label_Levels=1
 Areas_Label_Times=0
 
+HTTP_Areas_Remote_URL=[URL]https://lara-backend.lusep.fi/topsky/edxx.txt[/URL]
+Areas_PreActiveTime=900
+Areas_Remote_Activation=1
+
 CPDLC_MinLevel=245
 CPDLC_Transfer=1
 CPDLC_CFL=1
