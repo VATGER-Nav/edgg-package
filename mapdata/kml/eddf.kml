@@ -39655,6 +39655,7 @@
 	</Folder>
 	<Folder>
 		<name>labels</name>
+		<visibility>0</visibility>
 		<Folder>
 			<name>stopbars</name>
 			<visibility>0</visibility>
@@ -42728,142 +42729,141 @@
 		</Folder>
 		<Folder>
 			<name>buildings</name>
+			<visibility>0</visibility>
 			<Placemark id="labels_buildings.1">
 				<name>Lufthansa Technik#3</name>
+				<visibility>0</visibility>
 				<Point>
 					<coordinates>8.54524397475234,50.0241322370327,0</coordinates>
 				</Point>
 			</Placemark>
 			<Placemark id="labels_buildings.2">
 				<name>Run-up position</name>
+				<visibility>0</visibility>
 				<Point>
 					<coordinates>8.54149891244202,50.0252345482767,0</coordinates>
 				</Point>
 			</Placemark>
 			<Placemark id="labels_buildings.3">
 				<name>Railway station</name>
+				<visibility>0</visibility>
 				<Point>
 					<coordinates>8.56912546695998,50.05280319228619,0</coordinates>
 				</Point>
 			</Placemark>
 			<Placemark id="labels_buildings.4">
 				<name>Fire station#1</name>
+				<visibility>0</visibility>
 				<Point>
 					<coordinates>8.573073650961121,50.04481121459891,0</coordinates>
 				</Point>
 			</Placemark>
 			<Placemark id="labels_buildings.5">
 				<name>Fire station#2</name>
+				<visibility>0</visibility>
 				<Point>
 					<coordinates>8.536396059633869,50.0242192349269,0</coordinates>
 				</Point>
 			</Placemark>
 			<Placemark id="labels_buildings.6">
 				<name>Terminal 1</name>
+				<visibility>0</visibility>
 				<Point>
 					<coordinates>8.57201967976575,50.0503054855442,0</coordinates>
 				</Point>
 			</Placemark>
 			<Placemark id="labels_buildings.7">
 				<name>Terminal 2</name>
+				<visibility>0</visibility>
 				<Point>
 					<coordinates>8.58717622344555,50.0516433130317,0</coordinates>
 				</Point>
 			</Placemark>
 			<Placemark id="labels_buildings.8">
 				<name>Terminal 3</name>
+				<visibility>0</visibility>
 				<Point>
 					<coordinates>8.58127526806823,50.0293115909502,0</coordinates>
 				</Point>
 			</Placemark>
 			<Placemark id="labels_buildings.9">
 				<name>Lufthansa Technik#1</name>
+				<visibility>0</visibility>
 				<Point>
 					<coordinates>8.55551508886238,50.04526952731539,0</coordinates>
 				</Point>
 			</Placemark>
 			<Placemark id="labels_buildings.10">
 				<name>Tower</name>
+				<visibility>0</visibility>
 				<Point>
 					<coordinates>8.55792845266404,50.04561470481989,0</coordinates>
 				</Point>
 			</Placemark>
 			<Placemark id="labels_buildings.11">
 				<name>5</name>
+				<visibility>0</visibility>
 				<Point>
 					<coordinates>8.55597700236137,50.0444826422652,0</coordinates>
 				</Point>
 			</Placemark>
 			<Placemark id="labels_buildings.12">
 				<name>6</name>
+				<visibility>0</visibility>
 				<Point>
 					<coordinates>8.555146041161199,50.04596036882391,0</coordinates>
 				</Point>
 			</Placemark>
 			<Placemark id="labels_buildings.13">
 				<name>Lufthansa Cargo#1</name>
+				<visibility>0</visibility>
 				<Point>
 					<coordinates>8.54296294997957,50.0426450349302,0</coordinates>
 				</Point>
 			</Placemark>
 			<Placemark id="labels_buildings.14">
 				<name>Lufthansa Cargo#2</name>
+				<visibility>0</visibility>
 				<Point>
 					<coordinates>8.538039020923531,50.0382391578235,0</coordinates>
 				</Point>
 			</Placemark>
 			<Placemark id="labels_buildings.15">
 				<name>Cargo Center</name>
+				<visibility>0</visibility>
 				<Point>
 					<coordinates>8.534275932918669,50.0393594551023,0</coordinates>
 				</Point>
 			</Placemark>
 			<Placemark id="labels_buildings.16">
 				<name>Fuel</name>
+				<visibility>0</visibility>
 				<Point>
 					<coordinates>8.55243317263445,50.0422736935863,0</coordinates>
 				</Point>
 			</Placemark>
 			<Placemark id="labels_buildings.17">
 				<name>CargoCity South</name>
+				<visibility>0</visibility>
 				<Point>
 					<coordinates>8.567612793595771,50.024126952922,0</coordinates>
 				</Point>
 			</Placemark>
 			<Placemark id="labels_buildings.18">
 				<name>Condor Technik</name>
+				<visibility>0</visibility>
 				<Point>
 					<coordinates>8.55544995779564,50.02820009032191,0</coordinates>
 				</Point>
 			</Placemark>
 			<Placemark id="labels_buildings.19">
 				<name>Lufthansa Technik#2</name>
+				<visibility>0</visibility>
 				<Point>
 					<coordinates>8.550778187304999,50.0266813888182,0</coordinates>
 				</Point>
 			</Placemark>
 		</Folder>
-		<Placemark>
-			<name>Link 5</name>
-			<visibility>0</visibility>
-			<Point>
-				<coordinates>8.55945618363827,50.0444178580706,0</coordinates>
-			</Point>
-		</Placemark>
-		<Placemark>
-			<name>Link 3</name>
-			<visibility>0</visibility>
-			<Point>
-				<coordinates>8.559330253893791,50.0439688617149,0</coordinates>
-			</Point>
-		</Placemark>
-		<Placemark>
-			<name>Link 4</name>
-			<visibility>0</visibility>
-			<Point>
-				<coordinates>8.564430062922799,50.046280090763,0</coordinates>
-			</Point>
-		</Placemark>
 		<Placemark>
 			<name>GAT</name>
 			<visibility>0</visibility>

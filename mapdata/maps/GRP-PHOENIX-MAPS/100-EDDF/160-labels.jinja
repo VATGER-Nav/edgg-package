@@ -10,7 +10,12 @@ OTHER_MAP_ACT:=:Labels\Links
 ZOOM:300
 FONTSIZE:=:10
 COLOR:layout-label-taxiway
-{% for desig, geom in data.eddf_kml['layout']['labels']['taxiways'].items() %}
+{% for desig, geom in data.eddf_kml['layout']['labels']['taxiways'].items() if desig not in
+[
+    'Link 3',
+    'Link 4',
+    'Link 5',
+] %}
 {{- geom | to_text(desig) }}
 {% endfor %}
 
@@ -238,11 +243,11 @@ ZOOM:800
 FONTSIZE:=:9
 COLOR:layout-label-stand
 TEXTALIGN:CC
-{{ data.eddf_kml['layout']['labels']['Link 3'] | to_text('Link 3') }}
+{{ data.eddf_kml['layout']['labels']['taxiways']['Link 3'] | to_text('Link 3') }}
 TEXTALIGN:LC
-{{ data.eddf_kml['layout']['labels']['Link 4'] | to_text('Link 4') }}
+{{ data.eddf_kml['layout']['labels']['taxiways']['Link 4'] | to_text('Link 4') }}
 TEXTALIGN:RC
-{{ data.eddf_kml['layout']['labels']['Link 5'] | to_text('Link 5') }}
+{{ data.eddf_kml['layout']['labels']['taxiways']['Link 5'] | to_text('Link 5') }}
 
 MAP:Buildings
 AIRPORT:EDDF
