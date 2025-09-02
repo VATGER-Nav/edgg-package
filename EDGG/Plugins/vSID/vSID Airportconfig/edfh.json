@@ -4,6 +4,7 @@
         "runways": "03,21",
         "transAlt": 6000,
         "maxInitialClimb": 7000,
+        "intersections": {"03": "B1,B2,C,D", "21": "F,G,E"},
         "appSI": "EIF,PFA,RUD,GIN,KTG",
         "sids": {
             "initial": 5000,

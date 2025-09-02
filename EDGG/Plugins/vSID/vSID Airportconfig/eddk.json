@@ -2,6 +2,7 @@
     "EDDK": {
         "elevation": 302,
         "runways": "31R,31L,24,13L,13R,06",
+        "intersections": {"06": "B,T,Z1", "13L": "A7,A5", "31R": "A,A1,A2", "13R": "B,T2", "31L": "C1", "24": "D,E,A"},
         "transAlt": 5000,
         "maxInitialClimb": 7000,
         "customRules" : {"high":false},

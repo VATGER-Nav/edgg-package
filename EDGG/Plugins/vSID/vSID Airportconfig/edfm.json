@@ -4,6 +4,7 @@
         "runways": "09,27",
         "transAlt": 5000,
         "maxInitialClimb": 7000,
+        "intersections": {"09": "D,C,B", "27": "A,F"},
         "appSI": "NKRL,NKRH,BAD,DKB,KTG",
         "sids": {
             "initial": 5000,
