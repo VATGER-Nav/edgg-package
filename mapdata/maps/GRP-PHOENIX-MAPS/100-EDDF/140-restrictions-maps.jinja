@@ -67,7 +67,8 @@ COLOR:restrictions-C
 STYLE:SOLID:4
 {{ data.eddf_kml['layout']['restrictions']['line']['S13_1'] | to_line('') -}}
 COLOR:restrictions-E
-{{ data.eddf_kml['layout']['restrictions']['line']['S13_2'] | to_line('') -}}
+{{ data.eddf_kml['layout']['restrictions']['line']['S13_2a'] | to_line('') -}}
+{{ data.eddf_kml['layout']['restrictions']['line']['S13_2b'] | to_line('') -}}
 COLOR:restrictions-F
 {{ data.eddf_kml['layout']['restrictions']['line']['S13_3a'] | to_line('') -}}
 {{ data.eddf_kml['layout']['restrictions']['line']['S13_3b'] | to_line('') -}}
@@ -76,7 +77,7 @@ COLOR:restrictions-F
 COLOR:restrictions-C
 STYLE:SOLID:4
 {{ data.eddf_kml['layout']['restrictions']['line']['S5_1'] | to_line('') -}}
-COLOR:restrictions-E
+COLOR:restrictions-D
 {{ data.eddf_kml['layout']['restrictions']['line']['S5_2a'] | to_line('') -}}
 {{ data.eddf_kml['layout']['restrictions']['line']['S5_2b'] | to_line('') -}}
 
@@ -176,13 +177,10 @@ TEXTALIGN:LC
 {{ data.eddf_kml['layout']['restrictions']['labels']['M19'] | to_text('Crossing - Max code E') }}
 {{ data.eddf_kml['layout']['restrictions']['labels']['M19'] | to_text('Exiting  - Max A343:0:12') }}
 
-// S8/S9
-COLOR:restrictions-E
+// S8
+COLOR:restrictions-D
 STYLE:SOLID:4
 {{ data.eddf_kml['layout']['restrictions']['line']['S8'] | to_line('') -}}
-{{ data.eddf_kml['layout']['restrictions']['line']['S9_a'] | to_line('') -}}
-{{ data.eddf_kml['layout']['restrictions']['line']['S9_b'] | to_line('') -}}
-{{ data.eddf_kml['layout']['restrictions']['line']['S9_c'] | to_line('') -}}
 
 // N6
 COLOR:restrictions-F
@@ -266,10 +264,15 @@ COLOR:restrictions-C
     'G1',
     'G3',
     'G5',
+    'H1',
     'H2',
+    'H7',
     'H8',
+    'H9',
     'H10',
+    'H11',
     'H12',
+    'H13',
     'H14',
     'J13',
     'J17',
@@ -342,10 +345,6 @@ COLOR:restrictions-C
     'F232A',
     'F233A',
     'G16A',
-    'J2A',
-    'J2B',
-    'J6A',
-    'J6B',
     'V119',
     'V121',
     'V123',
@@ -369,6 +368,10 @@ COLOR:restrictions-C
 COLOR:restrictions-D
 {% for desig in
 [
+    'H3',
+    'H4',
+    'H5',
+    'H6',
     'B24',
     'V110',
     'V111',
@@ -393,11 +396,7 @@ COLOR:restrictions-E
     'E6',
     'F235',
     'G2',
-    'J2',
-    'J4',
     'J5',
-    'J6',
-    'J8',
     'V120',
     'V122',
     'V124',
@@ -429,8 +428,6 @@ COLOR:restrictions-E
     'F216',
     'F222',
     'F224',
-    'H4',
-    'H6',
     'K4',
 ] %}
 {{- data.eddf_kml['layout']['restrictions']['stands'][desig] | to_symbol('STAND') }}
@@ -455,7 +452,6 @@ COLOR:restrictions-E
     'F216',
     'F222',
     'F224',
-    'H4',
     'K4',
 ] %}
 {{- data.eddf_kml['layout']['restrictions']['stands'][desig] | to_text('MAX A343:0:15') }}
@@ -480,6 +476,9 @@ COLOR:restrictions-F
     'G14',
     'G15',
     'G16',
+    'J7',
+    'J9',
+    'J11',
     'K6',
     'V322',
     'V324',

@@ -73,15 +73,18 @@ STYLE:Solid:1
 {{ data.eddf_kml['layout']['closures']['symb']['Y_a'] | to_coordtype('','closure-symbol') }}
 {{ data.eddf_kml['layout']['closures']['symb']['Y_b'] | to_coordtype('','closure-symbol') }}
 
-MAP:S10
+// -------------------------- Constructions --------------------------
+
+MAP:S9/S10
 AIRPORT:EDDF
-FOLDER:Closures
+FOLDER:Constructions
 ACTIVE:1
 LAYER:4
+STYLE:Solid:2
+{{ data.eddf_kml['layout']['closures']['poly']['S9'] | to_coordtype('','closure', 'TWYCLOSED', 'POLYGON') }}
 STYLE:Solid:1
+{{ data.eddf_kml['layout']['closures']['symb']['S9'] | to_coordtype('','closure-symbol') }}
 {{ data.eddf_kml['layout']['closures']['symb']['S10'] | to_coordtype('','closure-symbol') }}
-
-// -------------------------- Constructions --------------------------
 
 MAP:S16/S21
 AIRPORT:EDDF
