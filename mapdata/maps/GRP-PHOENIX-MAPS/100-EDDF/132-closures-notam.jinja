@@ -7,3 +7,11 @@ LAYER:4
 ACTIVE:1
 STYLE:Solid:2
 {{ data.notam['notam']['EDDF']['M6'] | to_coordtype('', 'closure', 'TWYCLOSED') }}
+
+MAP:AIP SUP IFR 38/25 - TWYs L20, L21
+AIRPORT:EDDF
+FOLDER:Closures
+LAYER:4
+ACTIVE:1
+STYLE:Solid:2
+{{ data.notam['notam']['EDDF']['L20_L21'] | to_coordtype('', 'closure', 'TWYCLOSED') }}
