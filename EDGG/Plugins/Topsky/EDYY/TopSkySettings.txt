@@ -163,7 +163,7 @@ FPCP_PredictionTime=10
 
 HTTP_AUP_URL=https://atciss.vatsim-germany.org/api/areas/topsky
 
-HTTP_Areas_Remote_URL=[URL]https://lara-backend.lusep.fi/topsky/edxx.txt[/URL]
+HTTP_Areas_Remote_URL=https://lara-backend.lusep.fi/topsky/edxx.txt
 Areas_PreActiveTime=900
 Areas_Remote_Activation=1
 
