@@ -1,5 +1,6 @@
 // ------------------------- NOTAM Closures -------------------------
 {% set default = 0.000005 %}
+
 MAP:W/Z
 AIRPORT:EDDS
 FOLDER:Closures
@@ -8,6 +9,7 @@ ACTIVE:1
 STYLE:Solid:2
 {{ data.edds_kml['layout']['closures']['poly']['W_Z'] | to_coordtype('', 'closure', 'TWYCLOSED') }}
 
+{#
 MAP:AIP SUP IFR 04/25 - STANDS 16-18
 AIRPORT:EDDS
 FOLDER:Constructions
@@ -36,3 +38,4 @@ COLOR:layout-taxiline-yellow
 {{ data.edds_aixm['GuidanceLineMarking']['6a66009e-cfb9-4614-abdd-ca0906970826'] | simplify(default) | to_line('') -}}
 {{ data.notam['notam']['EDDS']['taxilanes']['M'] | to_line('') -}}
 {{ data.notam['notam']['EDDS']['taxilanes']['L2'] | to_line('') -}}
+#}
