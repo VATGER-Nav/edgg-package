@@ -196,7 +196,7 @@ Shortcut_Map_Target=2,Labels\Stands
 Shortcut_Map_Target=3,Restrictions\Restrictions
 Shortcut_Map_Target=7,Apron Info\Break Away Areas
 Shortcut_Map_Target=8,Runway Crossing\25
-Shortcut_Map_Target=9,Runway Crossing\07 (NOTAM)
+Shortcut_Map_Target=9,Runway Crossing\07
 System_RIM=0
 Window_TSW_Rotation=200.3
 
@@ -254,7 +254,7 @@ Airport_Runway_Buffer_LVP=07:N048.41.13.480:E009.12.00.487:N048.41.07.794:E009.1
 
 Shortcut_Map_Target=1,Labels\Taxiways
 Shortcut_Map_Target=2,Labels\Stands
-Shortcut_Map_Target=3,Restrictions\Restrictions (NOTAM)
+Shortcut_Map_Target=3,Restrictions\Restrictions
 Window_APP=1,0,750,620,1100,300
 Window_APP_Scale=25
 Window_APP_Rotation=16.2
