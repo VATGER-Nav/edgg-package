@@ -6,7 +6,7 @@
 {%- set EDMM = data.sectors['lines']['EDMM'] %}
 {%- set EDWW = data.sectors['lines']['EDWW'] %}
 {%- set EBBU = data.sectors['lines']['EBBU'] %}
-{%- set ADF = data.sectors_adf['lines']['EDGG'] %}
+{%- set AoR = data.aor['lines']['EDGG'] %}
 
 MAP:EDGG ACC
 ACTIVE:1
@@ -45,11 +45,8 @@ STYLE:Solid:1
         EDGG['LBU1']['145-245'],
         EDGG['LBU2']['145-235'],
 
-        sector_sub(
-            EDGG['MAN1']['135-175'], 
-            EDGG['MAN3']['175-245']
-            ),
-        EDGG['MAN3']['175-245'],
+        EDGG['MAN1']['135-245'], 
+        EDGG['MAN2']['175-245'],
         
         EDGG['NKRH1']['075-245'],
         EDGG['NKRH2']['145-245'],
@@ -62,7 +59,6 @@ STYLE:Solid:1
 // EBG 3 - GED GIN HEF SIG TAU
 {{ render_sectorlines(
         EDGG['GED1']['000-215'],
-        EDGG['GED2']['105-215'],
         EDGG['GED3']['135-215'],
         EDGG['GED4']['175-245'],
         EDGG['GED5']['215-245'],
@@ -115,30 +111,25 @@ STYLE:Solid:1
 
         EDGG['KNG1']['000-245'],
         EDGG['KNG6']['135-195'],
-        EDGG['KNG9']['000-195'],
+        EDGG['KNG8']['000-195'],
         sector_and(
-            EDGG['KNG3A']['085-195'],
+            EDGG['KNG2']['085-195'],
             EDGG['KTG2']['085-195'],
             ),
         sector_and(
-            EDGG['KNG3B']['085-245'],
-            EDGG['HAB2']['195-245'],
+            EDGG['KNG3']['085-245'],
+            EDGG['KNG2']['085-195'],
             ),
         sector_and(
-            EDGG['KNG4A']['135-175'],
-            EDGG['KNG4B']['000-175'],
+            EDGG['KNG4']['135-175'],
+            EDGG['KNG5']['000-175'],
             ),
         sector_and(
-            EDGG['KNG4A']['135-175'],
+            EDGG['KNG4']['135-175'],
             EDGG['PSA3']['135-175'],
-            ),
-        sector_sub(
-            EDGG['KNG2']['000-135'],
-            EDGG['KNG6']['135-195'],
             ),
 
         EDGG['KTG1']['135-245'],
-        EDGG['KTG5']['085-195'],
 
         EDGG['PSA2']['000-195'],
     ) }}
@@ -228,21 +219,17 @@ STYLE:Solid:1
             ),
     ) }}
 
-// EBG 10 - ADF (Custom Data, not from GNG!)
+// EBG 10 - DFA
 {{ render_sectorlines(
-        ADF['ADF1']['000-135'],
-        ADF['ADF2']['000-115'],
-        ADF['ADF3']['000-055'],
-        ADF['ADF5']['000-115'],
-        ADF['ADF6']['000-185'],
-        ADF['ADF8']['085-115'],
-        ADF['ADF9']['000-135'],
-        ADF['ADF10']['000-135'],
-        ADF['ADF11']['000-135'],
-        ADF['ADF12']['000-115'],
-        ADF['ADF13']['000-075'],
-        ADF['ADF15']['000-085'],
-        ADF['ADF16']['115-135'],        
+        AoR['DFA']['000-135'],
+        sector_sub(
+            EDGG['DFAS5']['075-135'],
+            AoR['DFA']['000-135'],
+            ),
+        sector_and(
+            EDGG['DFDN1']['000-085'],
+            EDGG['DFDS1']['000-135'],
+            ),
     ) }}
 
 // Upper overlaying sectors

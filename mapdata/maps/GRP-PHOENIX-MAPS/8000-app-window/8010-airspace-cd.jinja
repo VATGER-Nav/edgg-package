@@ -28,7 +28,7 @@ STYLE:DOT:1
 {% for uuid, geom in data.topsky['common']['airspace']['EDDFCLC'].items() %}
 {{- geom | to_line('') -}}
 {% endfor %}
-{{ render_sectorlines(data.aor['lines']['EDGG']['EDDFAPP']['000-135']) }}
+{{ render_sectorlines(data.aor['lines']['EDGG']['DFA']['000-135']) }}
 // EDDLCLC & EDDKCLC
 {% for uuid, geom in data.topsky['common']['airspace']['EDLLCLC'].items() %}
 {{- geom | to_line('') -}}
