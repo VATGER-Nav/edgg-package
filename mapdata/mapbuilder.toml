@@ -70,10 +70,6 @@ source = "misc/sectors.txt"
 type = "sectors"
 source = "misc/sectors-ext.txt"
 
-[data.sectors_adf]
-type = "sectors"
-source = "misc/sectors-adf.txt"
-
 [data.aor]
 type = "sectors"
 source = "misc/aor.txt"

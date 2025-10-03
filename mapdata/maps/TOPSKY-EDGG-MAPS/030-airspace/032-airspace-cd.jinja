@@ -38,7 +38,7 @@ ACTIVE:RWY:ARR:*:DEP:EDDF07C
 {% for uuid, geom in data.topsky['common']['airspace']['EDDFCLC'].items() %}
 {{- geom | to_line('') -}}
 {% endfor %}
-{{ render_sectorlines(data.aor['lines']['EDGG']['EDDFAPP']['000-135']) }}
+{{ render_sectorlines(data.aor['lines']['EDGG']['DFA']['000-135']) }}
 
 
 MAP:DL/DK C/D
