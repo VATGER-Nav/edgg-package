@@ -1,4 +1,5 @@
 // ----------------------- Permament Closures -----------------------
+{%- set default = 0.000005 %}
 
 MAP:M3
 AIRPORT:EDDF
@@ -42,6 +43,25 @@ STYLE:Solid:2
 {{ data.eddf_kml['layout']['closures']['poly']['R_2'] | to_coordtype('','closure', 'TWYCLOSED') }}
 STYLE:Solid:1
 {{ data.eddf_kml['layout']['closures']['symb']['R_2'] | to_coordtype('','closure-symbol') }}
+
+MAP:S (N/A in Flight Sims)
+AIRPORT:EDDF
+FOLDER:Closures
+ACTIVE:1
+LAYER:4
+STYLE:Solid:2
+// Taxilane remover
+COLOR:layout-taxiway
+{% for uuid in
+[
+    '84f72b7f-a7a6-42ca-b84f-2b4f77ab9b9c',
+    '33d42bb6-4f07-49e8-843b-f3366403a507',
+]
+%}
+{{- data.eddf_aixm['GuidanceLineMarking'][uuid] | join_segments | simplify(default) | to_line(uuid) -}}
+{% endfor %}
+{{ data.eddf_kml['layout']['closures']['poly']['S_a'] | to_coordtype('','closure') }}
+{{ data.eddf_kml['layout']['closures']['poly']['S_b'] | to_coordtype('','closure') }}
 
 MAP:W, W9
 AIRPORT:EDDF
@@ -96,7 +116,6 @@ STYLE:Solid:2
 STYLE:Solid:1
 {{ data.eddf_kml['layout']['closures']['symb']['S16'] | to_coordtype('','closure-symbol') }}
 {{ data.eddf_kml['layout']['closures']['symb']['S21'] | to_coordtype('','closure-symbol') }}
-{{ data.eddf_kml['layout']['closures']['symb']['S'] | to_coordtype('','closure-symbol') }}
 
 MAP:Terminal 3
 AIRPORT:EDDF
