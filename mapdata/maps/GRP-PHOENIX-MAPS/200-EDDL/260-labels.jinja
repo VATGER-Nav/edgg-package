@@ -1,4 +1,62 @@
 // ----------------------------- Labels -----------------------------
+{%- set stands_sec = [
+    'A05',
+    'A11',
+    'A12A',
+    'B05',
+    'B07',
+    'C02A',
+    'C03A',
+    'V04',
+    'V06',
+    'V38A',
+    'V38B',
+    'V39A',
+    'V41A',
+    'V61A',
+    'V72A',
+    'V82A',
+    'V91A',
+    'V103A',
+    'V104A',
+    'V106A',
+    'V107A',
+    'V01',
+    'V02A',
+    'V03A',
+    'V04A',
+    'V05A',
+    'V07A',
+    'V08A',
+    'V08B',
+    'V08C',
+    'V11A',
+    'V11B',
+    'V11C',
+] %}
+{%- set stands_old = [
+    'V11A',
+    'V11B',
+    'V11C',
+    'V12',
+    'V14',
+    'V16',
+    'V17',
+    'V19',
+    'V20',
+    'V22',
+    'V23',
+    'V24',
+    'V25',
+    'V26',
+    'V27',
+    'V28',
+    'V29',
+    'V39A',
+    'V41A',
+    'V49',
+    'V51',
+] %}
 
 MAP:Buffer EDDL
 AIRPORT:EDDL
@@ -34,45 +92,43 @@ LAYER:6
 ZOOM:600
 FONTSIZE:=:9
 COLOR:layout-label-yellow
-{% for desig, geom in data.eddl_kml['layout']['labels']['stands'].items() if not desig in
-[
-    'A05',
-    'A11',
-    'A12A',
-    'B05',
-    'B07',
-    'C02A',
-    'C03A',
-    'V04',
-    'V06',
-    'V38A',
-    'V38B',
-    'V39A',
-    'V41A',
-    'V61A',
-    'V72A',
-    'V82A',
-    'V91A',
-    'V103A',
-    'V104A',
-    'V106A',
-    'V107A',
-    'V01',
-    'V02A',
-    'V03A',
-    'V04A',
-    'V05A',
-    'V07A',
-    'V08A',
-    'V08B',
-    'V08C',
-    'V11A',
-    'V11B',
-    'V11C',
-] %}
+{% for desig, geom in data.eddl_kml['layout']['labels']['stands'].items() if not desig in stands_sec %}
 {{- geom | to_text(desig) }}
 {% endfor %}
+
+// New Stands
+COLOR:closure-symbol
+{% for desig in
+[
+    'V12',
+    'V13',
+    'V14',
+    'V15',
+    'V16',
+    'V17',
+    'V18',
+    'V19',
+    'V20',
+    'V21',
+    'V22',
+    'V23',
+    'V24',
+] %}
+{{- data.eddl_kml['layout']['labels']['stands_new'][desig] | to_text('(' + desig + '):0:-10') }}
+{% endfor %}
+{{ data.eddl_kml['layout']['labels']['stands_new']['V48'] | to_text('(V48):0:10') }}
+{{ data.eddl_kml['layout']['labels']['stands_new']['V49'] | to_text('(V49):0:10') }}
+
+// Strikethrough
+COLOR:closure-symbol
+FONTSTYLE:700:0:0:0
+{% for desig, geom in data.eddl_kml['layout']['labels']['stands'].items() if (desig in stands_old) and (not desig in stands_sec) %}
+{{- geom | to_text('___:0:-4') }}
+{% endfor %}
+FONTSTYLE:0
+
 ZOOM:1200
+COLOR:layout-label-yellow
 {% for desig in
 [
     'A05',
@@ -111,6 +167,22 @@ ZOOM:1200
 ] %}
 {{- data.eddl_kml['layout']['labels']['stands'][desig] | to_text(desig) }}
 {% endfor %}
+COLOR:closure-symbol
+{{ data.eddl_kml['layout']['labels']['stands_new']['V10'] | to_text('(V10) :15:-10') }}
+{{ data.eddl_kml['layout']['labels']['stands_new']['V10A'] | to_text('(V10A):27:0') }}
+{{ data.eddl_kml['layout']['labels']['stands_new']['V11'] | to_text('(V11) :15:10') }}
+{{ data.eddl_kml['layout']['labels']['stands_new']['V11A'] | to_text('(V11A):0:-10') }}
+{{ data.eddl_kml['layout']['labels']['stands_new']['V12A'] | to_text('(V12A):0:-10') }}
+{{ data.eddl_kml['layout']['labels']['stands_new']['V40A'] | to_text('(V40A):0:10') }}
+{{ data.eddl_kml['layout']['labels']['stands_new']['V42A'] | to_text('(V42A):0:10') }}
+
+// Strikethrough
+COLOR:closure-symbol
+FONTSTYLE:700:0:0:0
+{% for desig, geom in data.eddl_kml['layout']['labels']['stands'].items() if (desig in stands_old) and (desig in stands_sec) %}
+{{- geom | to_text('____:0:-4') }}
+{% endfor %}
+FONTSTYLE:0
 
 MAP:Areas
 AIRPORT:EDDL
