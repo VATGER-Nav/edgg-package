@@ -1,9 +1,169 @@
+// --------------------- New East Apron Layout ----------------------
+{%- set default = 0.000005 %}
+
+MAP:East Apron Stands
+AIRPORT:EDDL
+FOLDER:Apron Info
+LAYER:7
+COLOR:closure
+{% for uuid in
+[
+    '3d2da2f5-e2a3-f015-e063-86c812ac0154',
+    '3d2da2f5-e2a4-f015-e063-86c812ac0154',
+    '3d2da2f5-e2a5-f015-e063-86c812ac0154',
+    '3d2da2f5-e2a9-f015-e063-86c812ac0154',
+    '3d2da2f5-e2aa-f015-e063-86c812ac0154',
+    '3d2da2f5-e2ab-f015-e063-86c812ac0154',
+    '3d2da2f5-e2ad-f015-e063-86c812ac0154',
+    '3d2da2f5-e2ae-f015-e063-86c812ac0154',
+    '3d2da2f5-e2af-f015-e063-86c812ac0154',
+    '3d3e5714-6f27-2200-e063-86c812ac116b',
+    '3d3e5714-6f28-2200-e063-86c812ac116b',
+    '3d3e5714-6f29-2200-e063-86c812ac116b',
+    '3d3e5714-6f2b-2200-e063-86c812ac116b',
+    '3d3e5714-6f2c-2200-e063-86c812ac116b',
+    '3d3e5714-6f2d-2200-e063-86c812ac116b',
+    '3d3e5714-6f2f-2200-e063-86c812ac116b',
+    '3d3e5714-6f30-2200-e063-86c812ac116b',
+    '3d3e5714-6f31-2200-e063-86c812ac116b',
+    '3d3e5714-6f33-2200-e063-86c812ac116b',
+    '3d3e5714-6f34-2200-e063-86c812ac116b',
+    '3d3e5714-6f35-2200-e063-86c812ac116b',
+    '3d3e5714-6f37-2200-e063-86c812ac116b',
+    '3d3e5714-6f38-2200-e063-86c812ac116b',
+    '3d3e5714-6f39-2200-e063-86c812ac116b',
+    '3d3e5714-6f3a-2200-e063-86c812ac116b',
+    '3d3e5714-6f95-2200-e063-86c812ac116b',
+    '3d3e5714-6f96-2200-e063-86c812ac116b',
+    '3d3e5714-6f97-2200-e063-86c812ac116b',
+    '3d3e5714-6f98-2200-e063-86c812ac116b',
+    '3d3e5714-6f99-2200-e063-86c812ac116b',
+    '3d3e5714-6f9a-2200-e063-86c812ac116b',
+    '3d3e5714-6f9b-2200-e063-86c812ac116b',
+    '3d3e5714-6f9c-2200-e063-86c812ac116b',
+    '3d3e5714-6f9d-2200-e063-86c812ac116b',
+    '3d3e5714-6f9e-2200-e063-86c812ac116b',
+    '3d3e5714-6f9f-2200-e063-86c812ac116b',
+    '3d3e5714-6fa0-2200-e063-86c812ac116b',
+    '3d3e5714-6fa5-2200-e063-86c812ac116b',
+    '3d3e5714-6fa6-2200-e063-86c812ac116b',
+    '3d3e5714-6fa7-2200-e063-86c812ac116b',
+    '3d3e5714-6fc7-2200-e063-86c812ac116b',
+    '3d3e5714-6fc8-2200-e063-86c812ac116b',
+    '3d3e5714-6fc9-2200-e063-86c812ac116b',
+    '3d3e5714-6fca-2200-e063-86c812ac116b',
+    '3d3e5714-6fcb-2200-e063-86c812ac116b',
+    '3d3e5714-6fcc-2200-e063-86c812ac116b',
+    '3d534cc4-7ffd-faad-e063-86c812ac0c81',
+    '3d534cc4-7ffe-faad-e063-86c812ac0c81',
+    '3d534cc4-7fff-faad-e063-86c812ac0c81',
+    '3d534cc4-8001-faad-e063-86c812ac0c81',
+    '3d534cc4-8002-faad-e063-86c812ac0c81',
+    '3d534cc4-8003-faad-e063-86c812ac0c81',
+    '3d534cc4-8005-faad-e063-86c812ac0c81',
+    '3d534cc4-8006-faad-e063-86c812ac0c81',
+    '3d534cc4-800e-faad-e063-86c812ac0c81',
+    '3d534cc4-800f-faad-e063-86c812ac0c81',
+    '3d534cc4-8010-faad-e063-86c812ac0c81',
+    '3d534cc4-8011-faad-e063-86c812ac0c81',
+    '3d534cc4-8031-faad-e063-86c812ac0c81',
+    '3d534cc4-8032-faad-e063-86c812ac0c81',
+    '3d67483c-5de5-40d4-e063-86c812ac4a80',
+    '3d67483c-5de6-40d4-e063-86c812ac4a80',
+    '3d67483c-5df3-40d4-e063-86c812ac4a80',
+    '3d67483c-5df4-40d4-e063-86c812ac4a80',
+    '3d67483c-5df5-40d4-e063-86c812ac4a80',
+    '3d67483c-5df6-40d4-e063-86c812ac4a80',
+    '3d67483c-5df7-40d4-e063-86c812ac4a80',
+    '3d67483c-5df8-40d4-e063-86c812ac4a80',
+    '3d67483c-5df9-40d4-e063-86c812ac4a80',
+    '3d67483c-5dfa-40d4-e063-86c812ac4a80',
+    '3d67483c-5dfb-40d4-e063-86c812ac4a80',
+    '3d67483c-5e04-40d4-e063-86c812ac4a80',
+    '3d67483c-5e06-40d4-e063-86c812ac4a80',
+    '3d67483c-5e07-40d4-e063-86c812ac4a80',
+    '3d67483c-5e08-40d4-e063-86c812ac4a80',
+    '3d67483c-5e0a-40d4-e063-86c812ac4a80',
+    '3d67483c-5e0b-40d4-e063-86c812ac4a80',
+    '3d67483c-5e0c-40d4-e063-86c812ac4a80',
+    '3d67483c-5e0e-40d4-e063-86c812ac4a80',
+    '3d67483c-5e0f-40d4-e063-86c812ac4a80',
+    '3d67483c-5e10-40d4-e063-86c812ac4a80',
+    '3d67483c-5e12-40d4-e063-86c812ac4a80',
+    '3d67483c-5e13-40d4-e063-86c812ac4a80',
+    '3d67483c-5e14-40d4-e063-86c812ac4a80',
+    '3d67483c-5e16-40d4-e063-86c812ac4a80',
+    '3d67483c-5e17-40d4-e063-86c812ac4a80',
+    '3d67483c-5e18-40d4-e063-86c812ac4a80',
+    '70132de0-0fb8-71c5-e055-0a0027980ba7',
+    '70132de0-0fba-71c5-e055-0a0027980ba7',
+    '70132de0-0fbc-71c5-e055-0a0027980ba7',
+    '70132de0-0fbd-71c5-e055-0a0027980ba7',
+    '70132de0-0fbe-71c5-e055-0a0027980ba7',
+    '70132de0-0fbf-71c5-e055-0a0027980ba7',
+    '70132de0-0fc0-71c5-e055-0a0027980ba7',
+    '70132de0-0fc1-71c5-e055-0a0027980ba7',
+    'ddc49ec3-5855-8c2f-e053-86c812acf574',
+    'ddc49ec3-5856-8c2f-e053-86c812acf574',
+    'ddc49ec3-5859-8c2f-e053-86c812acf574',
+    'ddc49ec3-585a-8c2f-e053-86c812acf574',
+] %}
+{{- data.eddl_aixm['GuidanceLine'][uuid] | join_segments | simplify(default) | to_line(uuid) -}}
+{% endfor %}
+
+ZOOM:600
+COLOR:closure-symbol
+FONTSIZE:=:9
+{% for desig in
+[
+    'V12',
+    'V13',
+    'V14',
+    'V15',
+    'V16',
+    'V17',
+    'V18',
+    'V19',
+    'V20',
+    'V21',
+    'V22',
+    'V23',
+    'V24',
+] %}
+{{- data.eddl_kml['layout']['labels']['stands_new'][desig] | to_text(desig + ':0:-10') }}
+{% endfor %}
+{% for desig in
+[
+    'V38',
+    'V39',
+    'V40',
+    'V41',
+    'V42',
+    'V43',
+    'V44',
+    'V45',
+    'V46',
+    'V47',
+    'V48',
+    'V49',
+] %}
+{{- data.eddl_kml['layout']['labels']['stands_new'][desig] | to_text(desig + ':0:10') }}
+{% endfor %}
+
+ZOOM:1200
+{{ data.eddl_kml['layout']['labels']['stands_new']['V10'] | to_text(' V10  :15:-10') }}
+{{ data.eddl_kml['layout']['labels']['stands_new']['V10A'] | to_text(' V10A :27:0') }}
+{{ data.eddl_kml['layout']['labels']['stands_new']['V11'] | to_text(' V11  :15:10') }}
+{{ data.eddl_kml['layout']['labels']['stands_new']['V11A'] | to_text('V11A:0:-10') }}
+{{ data.eddl_kml['layout']['labels']['stands_new']['V12A'] | to_text('V12A:0:-10') }}
+{{ data.eddl_kml['layout']['labels']['stands_new']['V40A'] | to_text('V40A:0:10') }}
+{{ data.eddl_kml['layout']['labels']['stands_new']['V42A'] | to_text('V42A:0:10') }}
+
 // ----------------------- Aircraft Outlines ------------------------
 
 MAP:Aircraft Outlines
 AIRPORT:EDDL
 FOLDER:Apron Info
-ACTIVE:1
 {% for uuid, geom in data.eddl_kml['layout']['aproninfo']['aircraft_a'].items() %}
 {{- geom | to_coordtype('', 'layout-runway') }}
 {% endfor %}
