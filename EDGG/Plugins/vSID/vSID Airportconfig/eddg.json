@@ -12,6 +12,7 @@
                 "E": {
                     "1": {
                         "rwy": "07",
+                        "climbvia": true,
                         "prio": 2
                     }
                 },
@@ -23,7 +24,7 @@
                         "mtow": 5700
                     }
                 },
-                "C": {
+                "W": {
                     "1": {
                         "rwy": "25",
                         "prio": 2
@@ -43,14 +44,8 @@
                     }
                 }
             },
-            "RKN": {
+            "AMSAM": {
                 "equip": {"RNAV": true, "NON-RNAV": true},
-                "E": {
-                    "1": {
-                        "rwy": "07",
-                        "prio": 2
-                    }
-                },
                 "Y": {
                     "1": {
                         "rwy": "07",
@@ -66,14 +61,14 @@
                         "engineType": "PT"
                     }
                 },
-                "C": {
+                "W": {
                     "1": {
                         "rwy": "25",
                         "prio": 1
                     }
                 }
             },
-			"OSN": {
+			"OSNAD": {
                 "equip": {"RNAV": true, "NON-RNAV": true},
                 "E": {
                     "1": {
@@ -81,34 +76,11 @@
                         "prio": 1
                     }
                 },
-                "C": {
+                "W": {
                     "1": {
                         "rwy": "25",
+                        "climbvia": true,
                         "prio": 2
-                    }
-                },
-                "X": {
-                    "1": {
-                        "rwy": "25",
-                        "prio": 1,
-                        "engineType": "J",
-                        "mtow": 20000
-                    },
-                    "2": {
-                        "rwy": "25",
-                        "prio": 1,
-                        "engineType": "TP"
-                    }
-                }
-            },
-			"HMM": {
-                "equip": {"NON-RNAV": true},
-                "Y": {
-                    "1": {
-                        "rwy": "07",
-                        "prio": 1,
-                        "engineType": "PT",
-                        "mtow": 5700
                     }
                 },
                 "Z": {
@@ -122,6 +94,70 @@
                         "rwy": "25",
                         "prio": 1,
                         "engineType": "TP"
+                    }
+                }
+            },
+            "SUVOX": {
+                "equip": {"RNAV": true, "NON-RNAV": true},
+                "E": {
+                    "1": {
+                        "rwy": "07",
+                        "climbvia": true,
+                        "prio": 1
+                    }
+                },
+                "W": {
+                    "1": {
+                        "rwy": "25",
+                        "prio": 1
+                    }
+                }
+            },
+            "BOTTA": {
+                "equip": {"RNAV": true, "NON-RNAV": true},
+                "E": {
+                    "1": {
+                        "rwy": "07",
+                        "climbvia": true,
+                        "prio": 1
+                    }
+                },
+                "W": {
+                    "1": {
+                        "rwy": "25",
+                        "climbvia": true,
+                        "prio": 1
+                    }
+                }
+            },
+            "EXOBA": {
+                "equip": {"RNAV": true, "NON-RNAV": true},
+                "E": {
+                    "1": {
+                        "rwy": "07",
+                        "prio": 1
+                    }
+                },
+                "W": {
+                    "1": {
+                        "rwy": "25",
+                        "climbvia": true,
+                        "prio": 1
+                    }
+                }
+            },
+            "EDDG": {
+                "equip": {"RNAV": true, "NON-RNAV": true},
+                "E": {
+                    "1": {
+                        "rwy": "07",
+                        "prio": 1
+                    }
+                },
+                "W": {
+                    "1": {
+                        "rwy": "25",
+                        "prio": 1
                     }
                 }
             }
