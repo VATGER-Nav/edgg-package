@@ -9,17 +9,22 @@
 #}
 {%- set sids = {
     "07": {
-        "DOMEGxE": ['DG074', 'DOMEG'],
-        "OSN":     ['MYN', 'OSN'],
-        "RKNxE":   ['DG074', 'DG075', 'DG076', 'RKN'],
+        "BOTTA":   ['DG704', 'BOTTA'],
+        "DOMEGxE": ['EDDG/25', 'DG072', 'DG071', 'DG701', 'DG702', 'DOMEG'],
+        "EXOBA":   ['DG701', 'DG706', 'EXOBA'],
+        "OSNAD":   ['DG701', 'OSNAD'],
+        "SUVOX":   ['DG702', 'DG703', 'DG704', 'DG705', 'SUVOX'],
         "DOMEGxY": ['DG071', 'DOMEG'],
     },
     "25": {
-        "DOMEGxC": ['EDDG/07', 'DG023', 'DG022', 'DG021', 'DG024', 'DOMEG'],
-        "OSNxC":   ['DG024', 'DG025', 'DG027', 'OSN'],
-        "RKN":     ['DG022', 'RKN'],
+        "AMSAN":   ['EDDG/07', 'DG023', 'DG251', 'DG253', 'DG257', 'DG259', 'AMSAN'],
+        "BOTTA":   ['DG257', 'BOTTA'],
+        "DOMEGxW": ['DG251', 'DG704', 'DOMEG'],
+        "EXOBA":   ['DG255', 'DG256', 'EXOBA'],
+        "OSNADxW": ['DG253', 'DG254', 'DG027', 'DG255', 'OSNAD'],
+        "SUVOX":   ['DG257', 'DG258', 'SUVOX'],
         "DOMEGxZ": ['DG023', 'DG026', 'DOMEG'],
-        "OSNxX":   ['DG026', 'DG027'],
+        "OSNADxZ": ['DG026', 'DG027'],
     },
 } %}
 {%- set rnav = {
@@ -48,12 +53,10 @@ LAYER:3
 // ---- RWY 07 ----
 STYLE:Solid
 COLOR:sid_east
-// Initial Turn
-COORD:EDDG/25
+// AMSAN
 COORD:DG072
-COORD:DG071
-COORD:MYN
-COORD_DF:070M:R:2.14:10:DG074
+COORD_DF:070M:L:1.29:10:DG073
+COORD:AMSAN
 COORDLINE
 {%- for desig, fixes in sids['07'].items() if desig not in ['DOMEGxY'] %}
 // {{desig}}
@@ -64,16 +67,6 @@ COORDLINE
 {%- endfor %}
 
 STYLE:alternate
-// HMM
-COORD:EDDG/25
-COORD_FC:070M:0.3
-COORD_DF:070M:R:0.5:10:HMM
-COORDLINE
-// RKNxY
-COORD:DG072
-COORD_DF:070M:L:1.29:10:DG073
-COORD:RKN
-COORDLINE
 {%- for sid in ['DOMEGxY'] %}
 // {{sid}}
 {%- for fx in sids['07'][sid] %}
@@ -93,7 +86,7 @@ TEXT:N052.07.50.500:E007.52.32.100:E:5:0
 // ---- RWY 25 ----
 STYLE:Solid
 COLOR:sid_west
-{%- for desig, fixes in sids['25'].items() if desig not in ['DOMEGxZ', 'OSNxX'] %}
+{%- for desig, fixes in sids['25'].items() if desig not in ['DOMEGxZ', 'OSNADxZ'] %}
 // {{desig}}
 {%- for fx in fixes %}
 COORD:{{fx}}
@@ -102,12 +95,7 @@ COORDLINE
 {%- endfor %}
 
 STYLE:alternate
-// HMM
-COORD:EDDG/07
-COORD_FC:249M:0.5
-COORD_DF:249M:L:0.6:10:HMM
-COORDLINE
-{%- for sid in ['DOMEGxZ', 'OSNxX'] %}
+{%- for sid in ['DOMEGxZ', 'OSNADxZ'] %}
 // {{sid}}
 {%- for fx in sids['25'][sid] %}
 COORD:{{fx}}
@@ -117,31 +105,36 @@ COORDLINE
 
 // Labels
 TEXTALIGN:RT
-TEXT:N052.04.04.900:E007.30.48.500:C:-5:0
+TEXT:N052.04.04.900:E007.30.48.500:W:-5:0
 TEXTALIGN:RB
-TEXT:N052.05.17.300:E007.38.24.700:X/Z:-5:0
+TEXT:N052.05.17.300:E007.38.24.700:Z:-5:0
 
 // Fixes
 COLOR:sid_east
+SYMBOL:FIX_SID_A:AMSAN
+SYMBOL:FIX_SID_A:BOTTA
 SYMBOL:FIX_SID_A:DOMEG
-SYMBOL:FIX_SID_A:HMM
-SYMBOL:FIX_SID_A:OSN
-SYMBOL:FIX_SID_A:RKN
+SYMBOL:FIX_SID_A:EXOBA
+SYMBOL:FIX_SID_A:OSNAD
+SYMBOL:FIX_SID_A:SUVOX
 
 COLOR:sid_west
+SYMBOL:FIX_SID_B:AMSAN
+SYMBOL:FIX_SID_B:BOTTA
 SYMBOL:FIX_SID_B:DOMEG
-SYMBOL:FIX_SID_B:HMM
-SYMBOL:FIX_SID_B:OSN
-SYMBOL:FIX_SID_B:RKN
+SYMBOL:FIX_SID_B:EXOBA
+SYMBOL:FIX_SID_B:OSNAD
+SYMBOL:FIX_SID_B:SUVOX
 
 COLOR:label
 TEXTALIGN:RB
+TEXT:AMSAN:AM:-5:0
+TEXT:BOTTA:BO:-5:0
 TEXT:DOMEG:DO:-5:0
+TEXT:SUVOX:SU:-5:0
 TEXTALIGN:LB
-TEXT:HMM:HM:5:0
-TEXT:OSN:OS:5:0
-TEXTALIGN:RB
-TEXT:RKN:RK:-5:0
+TEXT:EXOBA:EX:5:0
+TEXT:OSNAD:OS:5:0
 
 
 MAP:EDDG RNAV 07
