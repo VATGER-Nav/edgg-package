@@ -50,7 +50,7 @@ ATIS3:PDC/DCL Datalink [EDDS] - Pilotbriefing vats.im/edds
 ATIS4:You have feedback? Submit it! feedback.vatger.de
 
 PROFILE:EDDG_TWR:50:4
-ATIS2:Muenster/Osnabrueck Tower
+ATIS2:Muenster Tower
 ATIS3:PDC/DCL Datalink [EDDG] - Pilotbriefing vats.im/eddg
 ATIS4:You have feedback? Submit it! feedback.vatger.de
 
@@ -97,6 +97,11 @@ ATIS4:You have feedback? Submit it! feedback.vatger.de
 PROFILE:EDSB_TWR:50:4
 ATIS2:Baden Tower
 ATIS3:PDC/DCL Datalink [EDSB] - Pilotbriefing vats.im/edsb
+ATIS4:You have feedback? Submit it! feedback.vatger.de
+
+PROFILE:EDTL_TWR:50:4
+ATIS2:Lahr Tower
+ATIS3:PDC/DCL Datalink [EDTL] - Pilotbriefing vats.im/edtl
 ATIS4:You have feedback? Submit it! feedback.vatger.de
 
 PROFILE:EDLN_TWR:50:4
