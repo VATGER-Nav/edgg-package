@@ -248,6 +248,7 @@ Airport_Runway_NotATYP=23R:A388,B741,B742,B743,B744,B748,A124,A225
 Shortcut_Map_Target=1,Labels\Taxiways
 Shortcut_Map_Target=2,Labels\Stands
 Shortcut_Map_Target=3,Restrictions\Restrictions
+System_RIM=0
 Window_APP_Rotation=37.25
 Window_TSW_Rotation=37.25
 
