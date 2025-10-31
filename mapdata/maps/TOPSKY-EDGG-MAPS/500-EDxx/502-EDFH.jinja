@@ -9,30 +9,29 @@
 #}
 {%- set trans = {
     "03": [
-        'HAN',
         'EMGOD',
         'OLGIL',
         'OLIVI',
-        'ROPUV',
+        'RINIR',
         'FH400',
         'FH401',
         'FH402',
         'FH403',
         'FH404',
         'FH405',
+        'FH406',
         'FH410',
         'FH411',
         'FH412',
+        'FH414',
         'FH415',
     ],
     "21": [
-        'HAN',
         'OLGIL',
         'OLIVI',
+        'RALUV',
         'ROLIS',
         'ROPUV',
-        'FH500',
-        'FH501',
         'FH502',
         'FH503',
         'FH504',
@@ -45,33 +44,15 @@
         'FH517',
     ]
 } %}
-{%- set rnp = {
-    "03": [
-        'HAN',
-        'FH010',
-        'FH012',
-        'FH414',
-        'FH415',
-        'RINIR',
-    ],
-    "21": [
-        'HAN',
-        'FH502',
-        'FH031',
-        'FH506',
-        'FH515',
-        'RALUV',
-    ]
-} %}
 
 MAP:EDFH 03
 FOLDER:Transitions
+ACTIVE:RWY:ARR:EDFH03:DEP:*
 COLOR:standard
-SYMBOL:VOR:HAN
-{%- for fx in ['EMGOD', 'OLGIL', 'OLIVI', 'ROPUV'] %}
+{%- for fx in ['EMGOD', 'OLGIL', 'OLIVI'] %}
 SYMBOL:FIX2:{{fx}}
 {%- endfor %}
-{%- for fx in trans['03'] if fx not in ['HAN', 'EMGOD', 'OLGIL', 'OLIVI', 'ROPUV'] %}
+{%- for fx in trans['03'] if fx not in ['EMGOD', 'OLGIL', 'OLIVI'] %}
 SYMBOL:FIX3:{{fx}}
 {%- endfor %}
 ZOOM:8
@@ -84,12 +65,12 @@ TEXT:{{fx}}:{{fx}}:5:0
 
 MAP:EDFH 21
 FOLDER:Transitions
+ACTIVE:RWY:ARR:EDFH21:DEP:*
 COLOR:standard
-SYMBOL:VOR:HAN
 {%- for fx in ['OLGIL', 'OLIVI', 'ROLIS', 'ROPUV'] %}
 SYMBOL:FIX2:{{fx}}
 {%- endfor %}
-{%- for fx in trans['21'] if fx not in ['HAN', 'OLGIL', 'OLIVI', 'ROLIS', 'ROPUV'] %}
+{%- for fx in trans['21'] if fx not in ['OLGIL', 'OLIVI', 'ROLIS', 'ROPUV'] %}
 SYMBOL:FIX3:{{fx}}
 {%- endfor %}
 ZOOM:8
@@ -244,91 +225,3 @@ TEXT:IDARO:ID:-5:0
 TEXT:RUDOT:RU:-5:0
 TEXTALIGN:RT
 TEXT:ULKIG:UL:-5:0
-
-
-MAP:EDFH RNP 03
-FOLDER:RNAV/RNP APP
-ACTIVE:RWY:ARR:EDFH03:DEP:*
-COLOR:standard
-SYMBOL:VOR:HAN
-{%- for fx in rnp['03'] if fx not in ['HAN'] %}
-SYMBOL:FIX3:{{fx}}
-{%- endfor %}
-ZOOM:8
-FONTSIZE:=:11
-TEXTALIGN:LB
-{%- for fx in rnp['03'] %}
-TEXT:{{fx}}:{{fx}}:5:0
-{%- endfor %}
-
-
-MAP:EDFH RNP 21
-FOLDER:RNAV/RNP APP
-ACTIVE:RWY:ARR:EDFH21:DEP:*
-COLOR:standard
-SYMBOL:VOR:HAN
-{%- for fx in rnp['21'] if fx not in ['HAN'] %}
-SYMBOL:FIX3:{{fx}}
-{%- endfor %}
-ZOOM:8
-FONTSIZE:=:11
-TEXTALIGN:LB
-{%- for fx in rnp['21'] %}
-TEXT:{{fx}}:{{fx}}:5:0
-{%- endfor %}
-
-
-MAP:EDFH ILS/NDB 03
-FOLDER:NON-RNAV APP
-LAYER:3
-STYLE:Dot:1
-// via HAN
-COLOR:nonrnav
-COORD:HAN
-COORD_FD:225M:FHH:12.1
-COORD_DF:225M:L:1.78:10:RINIR
-COORDLINE
-// Fixes
-SYMBOL:VOR:HAN
-SYMBOL:FIX3:RINIR
-// Altitudes
-TEXTALIGN:LT
-TEXT:RINIR:A50:5:0
-TEXTALIGN:RT
-TEXT:N049.46.06.700:E007.01.13.700:210KT:-5:0
-
-// via FH415
-COLOR:grey
-COORD:FH415
-COORD_FC:029.8M:6.3
-COORDLINE
-// Fixes
-SYMBOL:FIX3:FH415
-
-
-MAP:EDFH ILS/NDB 21
-FOLDER:NON-RNAV APP
-LAYER:3
-STYLE:Dot:1
-// via HAN
-COLOR:nonrnav
-COORD:HAN
-COORD_FD:014M:FHH:13.3
-COORD_DF:014M:R:1.64:10:RALUV
-COORDLINE
-// Fixes
-SYMBOL:VOR:HAN
-SYMBOL:FIX3:RALUV
-// Altitudes
-TEXTALIGN:LT
-TEXT:RALUV:A50:5:0
-
-// via FH506
-COLOR:grey
-COORD:FH506
-COORD:FH515
-COORD_FC:209.9M:2.1
-COORDLINE
-// Fixes
-SYMBOL:FIX3:FH506
-SYMBOL:FIX3:FH515
