@@ -29,20 +29,18 @@
 } %}
 {%- set rnav = {
     "07": [
-        'HMM',
-        'OSN',
-        'KEMOT',
-        'DG010',
-        'DG011',
-        'DG012',
+        'SUVOX',
+        'DG698',
+        'DG699',
+        'DG700',
     ],
     "25": [
-        'HMM',
-        'OSN',
-        'IBATO',
-        'DG014',
-        'DG015',
-        'DG016',
+        'BAWUC',
+        'OSNAD',
+        'DG247',
+        'DG248',
+        'DG249',
+        'DG250',
     ]
 } %}
 
@@ -141,9 +139,8 @@ MAP:EDDG RNAV 07
 FOLDER:RNAV/RNP APP
 ACTIVE:RWY:ARR:EDDG07:DEP:*
 COLOR:standard
-SYMBOL:VOR:HMM
-SYMBOL:VOR:OSN
-{%- for fx in rnav['07'] if fx not in ['HMM', 'OSN'] %}
+SYMBOL:FIX2:SUVOX
+{%- for fx in rnav['07'] if fx not in ['SUVOX'] %}
 SYMBOL:FIX3:{{fx}}
 {%- endfor %}
 ZOOM:8
@@ -158,9 +155,8 @@ MAP:EDDG RNAV 25
 FOLDER:RNAV/RNP APP
 ACTIVE:RWY:ARR:EDDG25:DEP:*
 COLOR:standard
-SYMBOL:VOR:HMM
-SYMBOL:VOR:OSN
-{%- for fx in rnav['25'] if fx not in ['HMM', 'OSN'] %}
+SYMBOL:FIX2:OSNAD
+{%- for fx in rnav['25'] if fx not in ['OSNAD'] %}
 SYMBOL:FIX3:{{fx}}
 {%- endfor %}
 ZOOM:8
@@ -171,54 +167,39 @@ TEXT:{{fx}}:{{fx}}:5:0
 {%- endfor %}
 
 
-MAP:EDDG ILS/NDB 07
+MAP:EDDG ILS Y 07
 FOLDER:NON-RNAV APP
 LAYER:3
 STYLE:Dot:1
 COLOR:nonrnav
-// via OSN
-COORD:OSN
-COORD_FC:251M:32.6
-COORD_TURN:1.05:10:251M:146
-COORDLINE
 // via HMM
 COORD:HMM
-COORD_FC:312M:15.5
-COORD_DF:312M:R:1.52:10:KEMOT
+COORD_FC:310M:15.5
+COORD_DF:310M:R:1.65:10:KEMOT
 COORDLINE
 // Fixes
-SYMBOL:VOR:OSN
 SYMBOL:VOR:HMM
 SYMBOL:FIX3:KEMOT
 // Altitudes
 TEXTALIGN:RT
-TEXT:N051.58.24.600:E007.30.55.900:A50:-5:0
-TEXTALIGN:LT
-TEXT:N052.05.40.000:E007.42.42.200:A50:5:0
+TEXT:N051.58.13.500:E007.30.22.300:A50:-5:0
 TEXT:KEMOT:A30:5:0
 
 
-MAP:EDDG ILS/NDB 25
+MAP:EDDG ILS Y 25
 FOLDER:NON-RNAV APP
 LAYER:3
 STYLE:Dot:1
 COLOR:nonrnav
-// via OSN
-COORD:OSN
-COORD_FC:267M:10.4
-COORDLINE
 // via HMM
 COORD:HMM
-COORD_FC:032M:21.5
-COORD_DF:032M:L:1.82:10:IBATO
+COORD_FC:029M:21.5
+COORD_DF:029M:L:1.36:10:IBATO
 COORDLINE
 // Fixes
-SYMBOL:VOR:OSN
 SYMBOL:VOR:HMM
 SYMBOL:FIX3:IBATO
 // Altitudes
-TEXTALIGN:CT
-TEXT:N052.11.58.900:E008.11.01.400:A50:0:5
 TEXTALIGN:LT
-TEXT:N052.03.46.300:E007.56.23.900:A50:5:0
+TEXT:N052.04.23.900:E007.55.31.500:A50:5:0
 TEXT:IBATO:A30:5:0
