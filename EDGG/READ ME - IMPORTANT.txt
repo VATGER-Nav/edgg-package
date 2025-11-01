@@ -1,1 +1,2 @@
-Further Information regarding this Euroscope setup is available at the Vatsim Germany Wiki via vats.im/edgg-es
+More information regarding the Euroscope setup can be found in the VATSIM Germany Knowledgebase, accessible via vats.im/edgg-es.
+More information regarding the vATIS software can be found in the VATSIM Germany Knowledgebase, accessible via kb.vatger.de/books/vatis/page/vatis-user-guide.
