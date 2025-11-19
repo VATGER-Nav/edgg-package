@@ -161,10 +161,10 @@ SYMBOL:FIX3_L:{{fx}}
 ZOOM:7
 FONTSIZE:=:12
 TEXTALIGN:CC
-{%- for fx in trans['07N'] if fx not in ['BADSO', 'NOSBU'] %}
+{%- for fx in trans['25N'] if fx not in ['BADSO'] %}
 TEXT:{{fx}}:{{fx | replace('DS', '')}}:-6:-13
 {%- endfor %}
-{%- for fx in trans['07S'] if fx not in ['IBIRU', 'REUTL', 'TEKSI'] %}
+{%- for fx in trans['25S'] if fx not in ['ARSUT', 'IBIRU', 'REUTL', 'TEKSI'] %}
 TEXT:{{fx}}:{{fx | replace('DS', '')}}:2:13
 {%- endfor %}
 {%- for fx in final['25'] if fx not in ['UNSER'] %}
