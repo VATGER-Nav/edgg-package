@@ -54,8 +54,9 @@ STYLE:Solid:2
 COLOR:layout-taxiway
 {% for uuid in
 [
-    '84f72b7f-a7a6-42ca-b84f-2b4f77ab9b9c',
-    '33d42bb6-4f07-49e8-843b-f3366403a507',
+    '87e3b145-d3f0-433c-9066-1a0ed61765fe',
+    'a928170e-c802-42d1-abd2-d37cf5e7f7fa',
+    'aae9a2f9-0d39-49af-b9ed-bad5759a3e7e',
 ]
 %}
 {{- data.eddf_aixm['GuidanceLineMarking'][uuid] | join_segments | simplify(default) | to_line(uuid) -}}
@@ -94,17 +95,6 @@ STYLE:Solid:1
 {{ data.eddf_kml['layout']['closures']['symb']['Y_b'] | to_coordtype('','closure-symbol') }}
 
 // -------------------------- Constructions --------------------------
-
-MAP:S9/S10
-AIRPORT:EDDF
-FOLDER:Constructions
-ACTIVE:1
-LAYER:4
-STYLE:Solid:2
-{{ data.eddf_kml['layout']['closures']['poly']['S9'] | to_coordtype('','closure', 'TWYCLOSED', 'POLYGON') }}
-STYLE:Solid:1
-{{ data.eddf_kml['layout']['closures']['symb']['S9'] | to_coordtype('','closure-symbol') }}
-{{ data.eddf_kml['layout']['closures']['symb']['S10'] | to_coordtype('','closure-symbol') }}
 
 MAP:S16/S21
 AIRPORT:EDDF

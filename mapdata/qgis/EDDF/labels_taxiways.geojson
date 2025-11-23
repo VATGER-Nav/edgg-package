@@ -130,7 +130,7 @@
 { "type": "Feature", "properties": { "name": "S11#3" }, "geometry": { "type": "Point", "coordinates": [ 469227.546215722104535, 5541862.626131298951805 ] } },
 { "type": "Feature", "properties": { "name": "S#5" }, "geometry": { "type": "Point", "coordinates": [ 469156.686599606473465, 5542396.49059862177819 ] } },
 { "type": "Feature", "properties": { "name": "S#4" }, "geometry": { "type": "Point", "coordinates": [ 469784.645321387972217, 5542620.629530064761639 ] } },
-{ "type": "Feature", "properties": { "name": "S10" }, "geometry": { "type": "Point", "coordinates": [ 469311.687254971882794, 5542508.116315135732293 ] } },
+{ "type": "Feature", "properties": { "name": "S10#1" }, "geometry": { "type": "Point", "coordinates": [ 469311.687254971882794, 5542508.116315135732293 ] } },
 { "type": "Feature", "properties": { "name": "S#6" }, "geometry": { "type": "Point", "coordinates": [ 470512.126354579988401, 5542879.625673336908221 ] } },
 { "type": "Feature", "properties": { "name": "S29" }, "geometry": { "type": "Point", "coordinates": [ 466657.585321426624432, 5541541.109666001051664 ] } },
 { "type": "Feature", "properties": { "name": "S28" }, "geometry": { "type": "Point", "coordinates": [ 466826.976166113163345, 5541602.354280600324273 ] } },
@@ -182,6 +182,8 @@
 { "type": "Feature", "properties": { "name": "Link 5" }, "geometry": { "type": "Point", "coordinates": [ 468456.66538009699434, 5543662.259888224303722 ] } },
 { "type": "Feature", "properties": { "name": "Link 3" }, "geometry": { "type": "Point", "coordinates": [ 468447.35440592415398, 5543612.391447053290904 ] } },
 { "type": "Feature", "properties": { "name": "Link 4" }, "geometry": { "type": "Point", "coordinates": [ 468814.005028532352298, 5543867.224815107882023 ] } },
-{ "type": "Feature", "properties": { "name": "S14" }, "geometry": { "type": "Point", "coordinates": [ 469329.26257848466048, 5541950.659614602103829 ] } }
+{ "type": "Feature", "properties": { "name": "S14" }, "geometry": { "type": "Point", "coordinates": [ 469329.26257848466048, 5541950.659614602103829 ] } },
+{ "type": "Feature", "properties": { "name": "S10#2" }, "geometry": { "type": "Point", "coordinates": [ 469438.211272280430421, 5542374.246164531446993 ] } },
+{ "type": "Feature", "properties": { "name": "S8#3" }, "geometry": { "type": "Point", "coordinates": [ 469768.617734459636267, 5542198.772255494259298 ] } }
 ]
 }
