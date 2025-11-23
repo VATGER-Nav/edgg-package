@@ -12,7 +12,6 @@
 { "type": "Feature", "properties": { "name": "N7ob" }, "geometry": { "type": "Point", "coordinates": [ 468737.097559635527432, 5543430.497231069020927 ] } },
 { "type": "Feature", "properties": { "name": "N8ob_a" }, "geometry": { "type": "Point", "coordinates": [ 468782.766996999445837, 5543844.355543944984674 ] } },
 { "type": "Feature", "properties": { "name": "L19" }, "geometry": { "type": "Point", "coordinates": [ 467176.890580882842187, 5542695.2026656428352 ] } },
-{ "type": "Feature", "properties": { "name": "M19" }, "geometry": { "type": "Point", "coordinates": [ 468116.100968528480735, 5542533.301026606932282 ] } },
 { "type": "Feature", "properties": { "name": "W" }, "geometry": { "type": "Point", "coordinates": [ 465784.530861794017255, 5541637.50019920244813 ] } },
 { "type": "Feature", "properties": { "name": "Nob_b" }, "geometry": { "type": "Point", "coordinates": [ 470454.237952544121072, 5544163.192379334941506 ] } },
 { "type": "Feature", "properties": { "name": "Nob_c" }, "geometry": { "type": "Point", "coordinates": [ 469941.296597365173511, 5543976.836903475224972 ] } },

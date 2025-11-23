@@ -173,9 +173,6 @@ TEXTALIGN:LC
 COLOR:restrictions-E
 STYLE:SOLID:4
 {{ data.eddf_kml['layout']['restrictions']['line']['M19'] | to_line('') -}}
-TEXTALIGN:LC
-{{ data.eddf_kml['layout']['restrictions']['labels']['M19'] | to_text('Crossing - Max code E') }}
-{{ data.eddf_kml['layout']['restrictions']['labels']['M19'] | to_text('Exiting  - Max A343:0:12') }}
 
 // S8
 COLOR:restrictions-D
@@ -368,11 +365,12 @@ COLOR:restrictions-C
 COLOR:restrictions-D
 {% for desig in
 [
+    'B24',
     'H3',
     'H4',
     'H5',
     'H6',
-    'B24',
+    'J2',
     'V110',
     'V111',
     'V113',
@@ -382,6 +380,9 @@ COLOR:restrictions-D
     'V173',
 ] %}
 {{- data.eddf_kml['layout']['restrictions']['stands'][desig] | to_symbol('STAND') }}
+{% endfor %}
+{% for desig in ['J2'] %}
+{{- data.eddf_kml['layout']['restrictions']['stands'][desig] | to_text('MAX B753:0:15') }}
 {% endfor %}
 COLOR:restrictions-E
 {% for desig in
@@ -396,7 +397,10 @@ COLOR:restrictions-E
     'E6',
     'F235',
     'G2',
+    'J4',
     'J5',
+    'J10',
+    'J12',
     'V120',
     'V122',
     'V124',
@@ -508,6 +512,8 @@ COLOR:restrictions-F2
     'G9',
     'G11',
     'G13',
+    'J6',
+    'J8',
     'K8',
     'K10',
     'F231',
