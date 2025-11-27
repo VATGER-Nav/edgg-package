@@ -1,6 +1,7 @@
 // ------------------------- NOTAM Closures -------------------------
 {% set default = 0.000005 %}
 
+{#
 MAP:W/Z
 AIRPORT:EDDS
 FOLDER:Closures
@@ -8,6 +9,7 @@ LAYER:4
 ACTIVE:1
 STYLE:Solid:2
 {{ data.edds_kml['layout']['closures']['poly']['W_Z'] | to_coordtype('', 'closure', 'TWYCLOSED') }}
+#}
 
 {#
 MAP:AIP SUP IFR 04/25 - STANDS 16-18

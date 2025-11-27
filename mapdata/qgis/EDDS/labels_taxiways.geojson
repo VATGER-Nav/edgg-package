@@ -40,11 +40,11 @@
 { "type": "Feature", "properties": { "name": "B#1" }, "geometry": { "type": "Point", "coordinates": [ 517444.85207487893058, 5393455.475322773680091 ] } },
 { "type": "Feature", "properties": { "name": "B#2" }, "geometry": { "type": "Point", "coordinates": [ 517465.346531191084068, 5393573.676475284621119 ] } },
 { "type": "Feature", "properties": { "name": "A" }, "geometry": { "type": "Point", "coordinates": [ 517893.59547703480348, 5393580.135515047237277 ] } },
-{ "type": "Feature", "properties": { "name": "Z#1" }, "geometry": { "type": "Point", "coordinates": [ 514191.27020030823769, 5392353.184426764026284 ] } },
-{ "type": "Feature", "properties": { "name": "R" }, "geometry": { "type": "Point", "coordinates": [ 514537.117020365200005, 5392030.61783398501575 ] } },
-{ "type": "Feature", "properties": { "name": "Z#2" }, "geometry": { "type": "Point", "coordinates": [ 514623.592300700605847, 5392229.434331049211323 ] } },
+{ "type": "Feature", "properties": { "name": "Z" }, "geometry": { "type": "Point", "coordinates": [ 514191.27020030823769, 5392353.184426764026284 ] } },
+{ "type": "Feature", "properties": { "name": "R" }, "geometry": { "type": "Point", "coordinates": [ 514540.28520945442142, 5392205.7889150576666 ] } },
 { "type": "Feature", "properties": { "name": "Y" }, "geometry": { "type": "Point", "coordinates": [ 514774.045106402831152, 5392428.448289084248245 ] } },
-{ "type": "Feature", "properties": { "name": "Z#3" }, "geometry": { "type": "Point", "coordinates": [ 515455.854049330053385, 5392476.272015280090272 ] } },
-{ "type": "Feature", "properties": { "name": "W" }, "geometry": { "type": "Point", "coordinates": [ 515562.752852472593077, 5392656.736408706754446 ] } }
+{ "type": "Feature", "properties": { "name": "V#2" }, "geometry": { "type": "Point", "coordinates": [ 515455.854049330053385, 5392476.272015280090272 ] } },
+{ "type": "Feature", "properties": { "name": "W" }, "geometry": { "type": "Point", "coordinates": [ 515562.752852472593077, 5392656.736408706754446 ] } },
+{ "type": "Feature", "properties": { "name": "V#1" }, "geometry": { "type": "Point", "coordinates": [ 515021.667547303484753, 5392350.538152582943439 ] } }
 ]
 }

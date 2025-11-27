@@ -1,4 +1,31 @@
 // ----------------------------- Labels -----------------------------
+{%- set stands_sec = [
+    '9A',
+    '24',
+    '26',
+    '28',
+    '71A',
+    '74A',
+    '200',
+    '201',
+    '202',
+    '203',
+    '204',
+] %}
+{%- set stands_old = [
+    '100',
+    '101',
+    '102',
+    '103',
+    '104',
+    '105',
+    '106',
+    '200',
+    '201',
+    '202',
+    '203',
+    '204',
+] %}
 
 MAP:Buffer EDDS
 AIRPORT:EDDS
@@ -33,39 +60,46 @@ ACTIVE:1
 ZOOM:600
 FONTSIZE:=:9
 COLOR:layout-label-yellow
-{% for desig, geom in data.edds_kml['layout']['labels']['stands'].items() if not desig in
-[
-    '9A',
-    '24',
-    '26',
-    '28',
-    '71A',
-    '74A',
-    '200',
-    '201',
-    '202',
-    '203',
-    '204',
-] %}
+{% for desig, geom in data.edds_kml['layout']['labels']['stands'].items() if not desig in stands_sec %}
 {{- geom | to_text(desig) }}
 {% endfor %}
-ZOOM:1200
+
+// New Stands
+COLOR:closure-symbol
 {% for desig in
 [
-    '9A',
-    '24',
-    '26',
-    '28',
-    '71A',
-    '74A',
-    '200',
-    '201',
-    '202',
-    '203',
-    '204',
+    '100',
+    '101',
+    '102',
+    '103',
+    '104',
+    '206',
+    '207',
 ] %}
+{{- data.edds_kml['layout']['labels']['stands_new'][desig] | to_text('(' + desig + '):0:10') }}
+{% endfor %}
+
+// Strikethrough
+COLOR:closure-symbol
+FONTSTYLE:700:0:0:0
+{% for desig, geom in data.edds_kml['layout']['labels']['stands'].items() if (desig in stands_old) and (not desig in stands_sec) %}
+{{- geom | to_text('___:0:-4') }}
+{% endfor %}
+FONTSTYLE:0
+
+ZOOM:1200
+COLOR:layout-label-yellow
+{% for desig in stands_sec %}
 {{- data.edds_kml['layout']['labels']['stands'][desig] | to_text(desig) }}
 {% endfor %}
+
+// Strikethrough
+COLOR:closure-symbol
+FONTSTYLE:700:0:0:0
+{% for desig, geom in data.edds_kml['layout']['labels']['stands'].items() if (desig in stands_old) and (desig in stands_sec) %}
+{{- geom | to_text('____:0:-4') }}
+{% endfor %}
+FONTSTYLE:0
 
 // There is 2 space symbols at the end of the map name to avoid accidental activation by EDDL and EDDK stand maps
 MAP:Areas  
