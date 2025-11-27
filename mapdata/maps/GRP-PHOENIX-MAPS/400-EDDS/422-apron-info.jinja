@@ -1,3 +1,84 @@
+// --------------------- New East Apron Layout ----------------------
+{%- set default = 0.000005 %}
+
+MAP:South Apron Stands
+AIRPORT:EDDS
+FOLDER:Apron Info
+LAYER:7
+OTHER_MAP_ACT:=:Apron Info\Layout (South Apron)
+
+// Layout
+{{ data.edds_kml['layout']['aproninfo']['southapron']['grass'] | to_coordtype('','appwindow-background') }}
+{{ data.edds_kml['layout']['aproninfo']['southapron']['taxiway_b'] | to_coordtype('','layout-taxiway') }}
+{{ data.edds_kml['layout']['aproninfo']['southapron']['apron'] | to_coordtype('','layout-apron') }}
+COLOR:layout-building
+{{ data.edds_kml['layout']['fence']['019566e2-fc27-7901-b18d-add548f4c6cf'] | to_line('') -}}
+
+// Markings
+COLOR:closure
+{% for uuid in
+[
+    '13810bf5-b53b-4771-a2f7-15a510530b02',
+    '14fd8e8b-1f71-408f-a890-b62e17e8dcdd',
+    '22df4788-f798-48d4-9885-a1f751b2dd22',
+    '32e86c66-b76b-4fa4-9fd7-00eca83e9d40',
+    '33ce1beb-a6d7-4614-bc47-d040064b4000',
+    '394a9df6-2e53-4ef2-b8a2-437e6cd3acae',
+    '3bbada14-70eb-4ffe-9937-cdd414ea2069',
+    '4602c5ee-e030-44a8-8362-fec7cf3f7e47',
+    '50c0a6bc-35ba-4024-94e7-7a065d04c8cf',
+    '65cbbef2-13fa-4961-8e46-4da48ed1b8d2',
+    '688d5b1b-cd56-40e4-bdf4-af784bcd3729',
+    '88c48cc3-d7c1-4ff1-9456-35bffd37a843',
+    'a75ce918-d7c2-4205-981f-5d76f56add96',
+    'c973c951-c59a-4feb-a418-f2e0c8da56cd',
+    'd3bea00e-5612-4182-b861-b0cfb9310b3b',
+    ] %}
+{{- data.edds_aixm['GuidanceLineMarking'][uuid] | join_segments | simplify(default) | to_line(uuid) -}}
+{% endfor %}
+
+ZOOM:600
+COLOR:closure-symbol
+FONTSIZE:=:9
+{% for desig in
+[
+    '100',
+    '101',
+    '102',
+    '103',
+    '104',
+    '206',
+    '207',
+] %}
+{{- data.edds_kml['layout']['labels']['stands_new'][desig] | to_text('(' + desig + '):0:10') }}
+{% endfor %}
+
+ZOOM:1200
+{% for desig in
+[
+    '105',
+    '106',
+    '107',
+    '300',
+    '301',
+    '302',
+    '303',
+] %}
+{{- data.edds_kml['layout']['labels']['stands_new'][desig] | to_text(desig) }}
+{% endfor %}
+
+
+MAP:Layout (South Apron)
+AIRPORT:EDDS
+FOLDER:Apron Info
+LAYER:1
+HIDDEN
+{{ data.edds_kml['layout']['aproninfo']['southapron']['taxiway_a'] | to_coordtype('','layout-taxiway') }}
+COLOR:layout-taxiline-yellow
+{{ data.edds_aixm['GuidanceLineMarking']['57ea2277-4974-4cee-8f38-7fa0485ea2ed'] | simplify(default) | to_line('') -}}
+{{ data.edds_aixm['GuidanceLineMarking']['b9e2015d-6194-41f0-ab77-ea38be726a2d'] | simplify(default) | to_line('') -}}
+
+
 // ------------------------ Pushback Stands -------------------------
 
 MAP:Pushback Stands

@@ -20,7 +20,7 @@ FOLDER:Holding Points
 LAYER:5
 ACTIVE:LVP:EDDS:1
 {% for desig, geom in data.edds_kml['layout']['holdingpoints']['cat3'].items() %}
-{{- geom | to_coordtype(desig + ' CATIII', 'layout-holdingpoint') }}
+{{- geom | to_coordtype(desig + ' CATIII', 'layout-holdingpoint-red') }}
 {% endfor %}
 
 MAP:Stopbars
@@ -30,14 +30,7 @@ LAYER:5
 ACTIVE:1
 STYLE:SOLID:2
 COLOR:layout-holdingpoint
-{% for uuid in
-[
-    '530847d5-56be-419d-9498-d55037cdf5c4',
-    '612fa43e-486f-48b3-b246-709b5a057425',
-    '6a300d95-440c-44f6-916f-33fb9839cffa',
-] %}
-{{- data.edds_aixm['TaxiwayMarking'][uuid] | to_line(desig) -}}
-{% endfor %}
+{{ data.edds_aixm['TaxiwayMarking']['7606ce06-bd8b-42f8-a624-1fbe37e548c9'] | to_line(uuid) }}
 
 MAP:All Stopbars
 AIRPORT:EDDS
@@ -46,47 +39,22 @@ LAYER:5
 COLOR:layout-holdingpoint
 {% for uuid in
 [
-    '0888a2b6-53e8-4188-b6dc-8f12edc83569',
     '0a0e4d6a-dac7-43bc-8dc2-20908687f29d',
-    '13b0f71f-1cfc-4441-98c4-f8f427dc309c',
-    '1578feb6-6477-4cfe-b27a-fb63b05e7725',
-    '21bd50c2-11e2-4f9c-bcfe-6b865314b350',
-    '28c81901-f330-449b-b9fa-7dded3cb1c2f',
-    '334066eb-7b16-467d-b807-d5c14f2776e8',
-    '36949ae2-c915-4e1d-964b-5e2ce7df8783',
-    '3f79d4cb-ed88-4ce1-87cb-9f5453ec321f',
-    '3fdf5eba-432b-4501-a4c4-b6f1f08b418a',
-    '4d767d70-746b-4719-9791-8051f2a2c972',
-    '5290128f-9a35-472d-a73f-62cf49d78c22',
+    '0c842ce5-969e-427d-8d49-e4a760137f61',
+    '3c78c26a-a4bb-41d2-970a-20c43e6a69fa',
     '62c44f22-d052-4ba2-aed1-bbb629e315f7',
-    '67b60d43-b87d-4283-bf19-a0272cae1fa8',
-    '6dc6421e-6000-45c1-8772-e66c1fa294f5',
-    '7501f917-dd12-4357-9c4a-6746cb133ee6',
     '776c9bbe-836c-44e6-bfdc-5eb5a8c21162',
-    '8220c06c-3f41-4282-b432-5cde6d019f56',
+    '7e7b4945-d36a-40b6-95df-ffe5a41dc4e0',
     '82c081c6-b88e-4740-a493-0e6dbc53b0cd',
-    '86326ea5-4976-4cac-b672-6f12cb506288',
-    '89d2b23e-c401-41f9-ad94-0613e94bc362',
-    '8b64b9e2-b1f3-423d-a9be-ee38289e1006',
     '8cf4cbfa-ff75-4b6b-945e-077c7b069cdc',
-    '90ea708f-8af7-4de3-b89a-103daa191f2b',
-    '954b354d-879e-440c-8ea8-465912ed33dc',
-    '9a9b2331-3506-4596-b3d7-15f9a5c3dc84',
-    '9db896d5-5e20-4578-b775-f0d370a3cb0a',
-    'a736ec92-8b42-4040-a0e8-ea4d110c97be',
-    'a9f7f39a-99b4-4059-8e65-b2711b06cd8e',
-    'ae5b83ec-d21c-4b68-9a7d-01c545705ac2',
+    '8d368f1c-aa67-49d7-ab85-887dee69462c',
+    '8ec38a47-859a-4e34-a102-d2ca97a1f788',
+    'a63cbcf1-26c6-4e78-939f-7d5d0875afb1',
     'b364fc50-bd8b-43b3-b41a-95f7fb297e9e',
-    'b8d25ebc-7d47-4053-8b17-187daaeefe28',
+    'b3ad7334-b8ce-4379-8d5f-8317a16b4b87',
     'be7e4fdd-c89b-4f45-bbd7-e8dcd3374af1',
-    'be8ce3a0-9436-46ac-87e6-91f826eaaf48',
-    'd0678d25-b99a-4201-8f1e-019dc29bb839',
-    'd0b192d9-5d82-4380-8a5a-def867bcd185',
     'dc5c2129-821a-4a65-ae72-90ff217eda00',
-    'e71d12c5-f126-41ff-8f44-21b9fe4287fc',
-    'eab4e2d4-cb50-4b5c-9923-184164c2056a',
-    'f0057ac3-7413-4a97-b40d-0919f4e14340',
-    'fe219b88-75ca-430f-97ed-f9f952bff08d',
+    'f4201886-78b4-4642-b54a-af9ac362d64d',
 ] %}
-{{- data.edds_aixm['TaxiwayMarking'][uuid] | to_line(desig) -}}
+{{- data.edds_aixm['TaxiwayMarking'][uuid] | to_line(uuid) -}}
 {% endfor %}
