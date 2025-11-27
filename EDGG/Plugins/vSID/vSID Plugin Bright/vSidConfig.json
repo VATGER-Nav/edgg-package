@@ -1,6 +1,7 @@
 {
     "airportConfigs": "../vSID Airportconfig",
     "preferTopsky": true,
+    "notifyUpdate": 1,
     "esePath": "../../../../",
     "colors": {
         "sidSuggestion": {"r": 75,"g": 75,"b": 75},
