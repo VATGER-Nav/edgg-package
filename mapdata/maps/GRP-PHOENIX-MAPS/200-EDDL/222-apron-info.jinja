@@ -95,20 +95,16 @@ COLOR:closure
     '3d67483c-5e16-40d4-e063-86c812ac4a80',
     '3d67483c-5e17-40d4-e063-86c812ac4a80',
     '3d67483c-5e18-40d4-e063-86c812ac4a80',
-    '70132de0-0fb8-71c5-e055-0a0027980ba7',
-    '70132de0-0fba-71c5-e055-0a0027980ba7',
-    '70132de0-0fbc-71c5-e055-0a0027980ba7',
-    '70132de0-0fbd-71c5-e055-0a0027980ba7',
-    '70132de0-0fbe-71c5-e055-0a0027980ba7',
-    '70132de0-0fbf-71c5-e055-0a0027980ba7',
-    '70132de0-0fc0-71c5-e055-0a0027980ba7',
-    '70132de0-0fc1-71c5-e055-0a0027980ba7',
-    'ddc49ec3-5855-8c2f-e053-86c812acf574',
-    'ddc49ec3-5856-8c2f-e053-86c812acf574',
-    'ddc49ec3-5859-8c2f-e053-86c812acf574',
-    'ddc49ec3-585a-8c2f-e053-86c812acf574',
 ] %}
 {{- data.eddl_aixm['GuidanceLine'][uuid] | join_segments | simplify(default) | to_line(uuid) -}}
+{% endfor %}
+{% for desig in [
+    'V46',
+    'V45',
+    'V44',
+    'V43',
+] %}
+{{- data.eddl_kml['layout']['markings']['leadin_solid'][desig] | to_line('') -}}
 {% endfor %}
 
 ZOOM:600
