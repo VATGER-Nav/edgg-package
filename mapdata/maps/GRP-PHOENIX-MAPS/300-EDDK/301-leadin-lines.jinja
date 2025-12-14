@@ -4,7 +4,7 @@ MAP:Leadin Lines
 AIRPORT:EDDK
 FOLDER:Airport Layout
 ACTIVE:1
-COLOR:layout-taxiline-grey
+COLOR:layout-taxiline-yellow
 {% for uuid in
 [
     '07e4e164-cd4d-8a57-e063-b410f10a609c',
@@ -421,7 +421,7 @@ COLOR:layout-taxiline-grey
 
 // Taxi-Out Arrows
 {% for uuid, geom in data.eddk_kml['layout']['markings']['arrows'].items() %}
-{{- geom | to_coordtype('', 'layout-taxiline-grey') }}
+{{- geom | to_coordtype('', 'layout-taxiline-yellow') }}
 {% endfor %}
 
 // V-Stands Orange
@@ -457,7 +457,7 @@ COLOR:layout-taxiline-orange
 {% endfor %}
 
 // V-Stands Declutter
-COLOR:layout-taxiline-grey
+COLOR:layout-taxiline-yellow
 ZOOM:1200
 {% for uuid in
 [

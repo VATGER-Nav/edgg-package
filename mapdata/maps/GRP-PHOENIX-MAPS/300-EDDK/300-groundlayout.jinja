@@ -13,15 +13,6 @@ ACTIVE:1
 {{- geom | to_coordtype('', 'layout-apron') }}
 {% endfor %}
 
-MAP:Parking Area
-AIRPORT:EDDK
-FOLDER:Airport Layout
-ACTIVE:1
-COLOR:layout-taxiway
-{% for uuid, geom in data.eddk_kml['layout']['markings']['parking'].items() %}
-{{- geom | to_line('') -}}
-{% endfor %}
-
 MAP:Roads
 AIRPORT:EDDK
 FOLDER:Airport Layout
@@ -54,6 +45,6 @@ ACTIVE:1
 ] %}
 {{- data.eddk_kml['layout']['runways'][name] | to_coordtype(name, 'layout-apron') }}
 {% endfor %}
-{{ data.eddk_kml['layout']['runways']['13L-31R'] | to_coordtype('Runway 13L/31R','layout-taxiway') }}
-{{ data.eddk_kml['layout']['runways']['13R-31L'] | to_coordtype('Runway 13R/31L','layout-taxiway') }}
-{{ data.eddk_kml['layout']['runways']['06-24'] | to_coordtype('Runway 06/24','layout-taxiway') }}
+{{ data.eddk_kml['layout']['runways']['13L-31R'] | to_coordtype('Runway 13L/31R','layout-runway') }}
+{{ data.eddk_kml['layout']['runways']['13R-31L'] | to_coordtype('Runway 13R/31L','layout-runway') }}
+{{ data.eddk_kml['layout']['runways']['06-24'] | to_coordtype('Runway 06/24','layout-runway') }}
