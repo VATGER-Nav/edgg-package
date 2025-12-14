@@ -87,7 +87,7 @@ STYLE:SOLID:4
 {{ data.eddk_kml['layout']['restrictions']['line']['N_M_b'] | to_line('') -}}
 TEXTALIGN:CC
 {{ data.eddk_kml['layout']['restrictions']['labels']['N_M'] | to_text('      - Max code E') }}
-COLOR:layout-taxiline-white
+COLOR:layout-taxiline-yellow
 {{ data.eddk_kml['layout']['restrictions']['labels']['N_M'] | to_text('_____             :0:-4') }}
 
 // B and L
@@ -260,7 +260,15 @@ COLOR:restrictions-C
 {{- data.eddk_kml['layout']['restrictions']['stands'][desig] | to_symbol('STAND') }}
 {% endfor %}
 // Secondary Stands
-{% for desig in ['V55'] %}
+{% for desig in [
+    'A25',
+    'A27',
+    'A29',
+    'A31',
+    'A33',
+    'A35',
+    'V55',
+] %}
 {{- data.eddk_kml['layout']['restrictions']['stands'][desig] | to_symbol('STAND_S') }}
 {% endfor %}
 COLOR:restrictions-D

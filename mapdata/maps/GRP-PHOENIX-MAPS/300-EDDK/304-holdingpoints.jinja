@@ -40,7 +40,7 @@ ACTIVE:LVP:EDDK:1
 {{- data.eddk_kml['layout']['holdingpoints']['cat1'][desig] | to_coordtype(desig, 'layout-holdingpoint') }}
 {% endfor %}
 {% for desig, geom in data.eddk_kml['layout']['holdingpoints']['cat3'].items() %}
-{{- geom | to_coordtype(desig + ' CATIII', 'layout-holdingpoint') }}
+{{- geom | to_coordtype(desig + ' CATIII', 'layout-holdingpoint-red') }}
 {% endfor %}
 COLOR:layout-holdingpoint
 STYLE:SOLID:2

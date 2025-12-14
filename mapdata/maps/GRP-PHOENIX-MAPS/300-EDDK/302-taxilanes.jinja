@@ -6,7 +6,7 @@ FOLDER:Airport Layout
 ACTIVE:1
 
 // Yellow Lines
-COLOR:layout-taxiline-white
+COLOR:layout-taxiline-yellow
 {% for uuid in
 [
     '044c14c4-6e8c-2661-e063-b410f10a9977',
@@ -24,7 +24,6 @@ COLOR:layout-taxiline-white
     '12fbd5c1-1251-4be5-e063-b510f10aab97',
     '136330ab-9a8a-963a-e063-b510f10a8b24',
     '136330ab-9a8b-963a-e063-b510f10a8b24',
-    '136330ab-9a8e-963a-e063-b510f10a8b24',
     '136330ab-9a8f-963a-e063-b510f10a8b24',
     '136330ab-9a92-963a-e063-b510f10a8b24',
     '136330ab-9a93-963a-e063-b510f10a8b24',
@@ -39,6 +38,9 @@ COLOR:layout-taxiline-white
     '391603ed-404f-d26a-e063-b410f10a2a62',
     '391603ed-4050-d26a-e063-b410f10a2a62',
     '391603ed-4051-d26a-e063-b410f10a2a62',
+    '3efac601-8080-9675-e063-b510f10a938d',
+    '3efac601-8082-9675-e063-b510f10a938d',
+    '3efac601-8083-9675-e063-b510f10a938d',
     '6c69628d-73ae-2c22-e054-020820e7ddd6',
     '6c69628d-73b0-2c22-e054-020820e7ddd6',
     '6c69628d-73b2-2c22-e054-020820e7ddd6',
@@ -286,6 +288,7 @@ COLOR:layout-taxiline-white
     '8d3dd9b5-eae9-5e28-e054-020820585373',
     '8f834d5f-724a-4760-e054-020820e7ddd6',
     '8f834d5f-724b-4760-e054-020820e7ddd6',
+    '95920323-f156-37ce-e054-020820e7ddd6',
     '95920323-f157-37ce-e054-020820e7ddd6',
     '99482d26-f565-115f-e054-0208209c4fc0',
     '99482d26-f566-115f-e054-0208209c4fc0',
@@ -329,6 +332,7 @@ COLOR:layout-taxiline-blue
 [
     '0449ad55-5457-41c9-e063-b410f10afdc8',
     '0449ad55-5459-41c9-e063-b410f10afdc8',
+    '3f73be42-96a5-1555-e063-b510f10aa7f9',
     '6c69628d-7741-2c22-e054-020820e7ddd6',
     '6c69628d-7742-2c22-e054-020820e7ddd6',
     '6c69628d-7751-2c22-e054-020820e7ddd6',
@@ -350,12 +354,12 @@ COLOR:layout-taxiline-blue
 ] %}
 {{- data.eddk_aixm['GuidanceLine'][uuid] | join_segments | simplify(default) | to_line(uuid) -}}
 {% endfor %}
-{{ data.eddk_kml['layout']['markings']['taxilanes']['N_blue'] | simplify(default) | to_line('') -}}
 
 // Orange Lines
 COLOR:layout-taxiline-orange
 {% for uuid in
 [
+    '3f73be42-96a6-1555-e063-b510f10aa7f9',
     '6c69628d-7744-2c22-e054-020820e7ddd6',
     '6c69628d-7747-2c22-e054-020820e7ddd6',
     '6c69628d-7748-2c22-e054-020820e7ddd6',
@@ -375,4 +379,3 @@ COLOR:layout-taxiline-orange
 ] %}
 {{- data.eddk_aixm['GuidanceLine'][uuid] | join_segments | simplify(default) | to_line(uuid) -}}
 {% endfor %}
-{{ data.eddk_kml['layout']['markings']['taxilanes']['N_orng'] | simplify(default) | to_line('') -}}

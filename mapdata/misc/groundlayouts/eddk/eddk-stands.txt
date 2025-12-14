@@ -7,6 +7,12 @@ A11
 A17
 A21
 A23
+A25
+A27
+A29
+A31
+A33
+A35
 B11
 B17
 B21
@@ -54,11 +60,6 @@ V54
 V55
 
 Additional Stands:
-V10
-V11
-V12
-V13
-V14
 V101
 V111
 V121
