@@ -110,19 +110,9 @@ STYLE:Solid:1
         EXT['EBBU']['ELLX TMA']['000-095'],
 
         EXT['EBBU']['EBLG TMA1']['000-055'],
-        EXT['EBBU']['EBLG TMA3-4-5']['000-055'],
 
-        EXT['EBBU']['EBBU EHS']['195-245'],
-        sector_sub(
-            EXT['EBBU']['EBBU CTA E5']['095-185'],
-            EXT['EBBU']['EBBU EHS']['195-245']
-            ),
-        sector_sub(
-            EXT['EBBU']['EBBU ELS1']['045-055'],
-            EXT['EBBU']['EBBU EHS']['195-245']
-            ),
+        EBBU['EBBU EHS 195-245']['195-245'],
         EXT['EBBU']['EBBU HUL']['185-245'],
-
         sector_sub(
             EXT['EBBU']['EBBU LUS']['145-165'],
             EXT['EBBU']['ELLX TMA']['000-145']
@@ -131,26 +121,22 @@ STYLE:Solid:1
 
 // LFEE ACC
 {{ render_sectorlines(
-        EXT['LFEE']['UE']['195-315'],
+        LFEE['UE']['195-315'],
         sector_sub(
             LFEE['BO']['145-195'],
-            EXT['LFEE']['UE']['195-315']
+            LFEE['UE']['195-315']
             ),
         sector_sub(
-            LFEE['LFEE_SU1']['115-195'],
-            EXT['LFEE']['UE']['195-315']
-            ),
-        sector_sub(
-            LFEE['LFEE_SU2']['115-195'],
-            EXT['LFEE']['UE']['195-315']
+            EXT['LFEE']['SU1-2']['115-195'],
+            LFEE['UE']['195-315']
             ),
         sector_sub(
             EXT['LFEE']['UE1']['195-245'],
-            LFEE['LFEE_SU2']['115-195']
+            EXT['LFEE']['SU1-2']['115-195']
             ),
         
         sector_sub(
-            LFEE['LFEE_BC']['115-145'],
+            LFEE['BC']['115-145'],
             LFEE['BO']['145-195']
             ),
     
