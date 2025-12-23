@@ -274,7 +274,7 @@
                 },
                 "U": {
                     "1": {
-                        "rwy": "05L",
+                        "rwy": "23R",
                         "climbvia": true,
                         "route": {"allow": {"1": "NETEX,RASCA", "2": "NETEX,DELOM"}},
                         "prio": 1
@@ -289,7 +289,7 @@
                 },
                 "Y": {
                     "1": {
-                        "rwy": "23R",
+                        "rwy": "05L",
                         "route": {"allow": {"1": "NETEX,RASCA","2": "NETEX,DELOM"}},
                         "prio": 2
                     }
