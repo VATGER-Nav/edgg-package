@@ -198,6 +198,8 @@
 { "type": "Feature", "properties": { "name": "A35" }, "geometry": { "type": "Point", "coordinates": [ 367707.0224692953052, 5637823.164325065910816 ] } },
 { "type": "Feature", "properties": { "name": "A29" }, "geometry": { "type": "Point", "coordinates": [ 367646.458030906273052, 5637784.180672775022686 ] } },
 { "type": "Feature", "properties": { "name": "A27" }, "geometry": { "type": "Point", "coordinates": [ 367683.466056935547385, 5637783.785022420808673 ] } },
-{ "type": "Feature", "properties": { "name": "A25" }, "geometry": { "type": "Point", "coordinates": [ 367725.676625700260047, 5637768.854152899235487 ] } }
+{ "type": "Feature", "properties": { "name": "A25" }, "geometry": { "type": "Point", "coordinates": [ 367725.676625700260047, 5637768.854152899235487 ] } },
+{ "type": "Feature", "properties": { "name": "F17" }, "geometry": { "type": "Point", "coordinates": [ 368766.335329653869849, 5637075.452581344172359 ] } },
+{ "type": "Feature", "properties": { "name": "F19" }, "geometry": { "type": "Point", "coordinates": [ 368815.086459244659636, 5637019.568152968771756 ] } }
 ]
 }
