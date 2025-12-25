@@ -136,8 +136,11 @@ FlightLeg_Use_Ack_Color=0
 FPCP_HeadingTime=5
 FPCP_PredictionTime=10
 
-HTTP_AUP_URL=https://atciss.vatsim-germany.org/api/areas/topsky
+HTTP_NOTAM_Server=https://notams.blip-radar.org/
+HTTP_NOTAM_Page_Prefix=api/legacy/query?loc=
+HTTP_NOTAM_Page_Suffix=
 
+HTTP_AUP_URL=https://atciss.vatsim-germany.org/api/areas/topsky
 HTTP_Areas_Remote_URL=https://lara-backend.lusep.fi/topsky/edxx.txt
 Areas_PreActiveTime=900
 Areas_Remote_Activation=1
