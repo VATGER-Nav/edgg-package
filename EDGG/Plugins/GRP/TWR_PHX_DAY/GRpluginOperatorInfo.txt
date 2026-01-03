@@ -209,7 +209,6 @@ NATO	Mil
 NCA	C
 NCL	C
 NCR	C
-NDF	Mil
 NFC	C
 NFL	C
 NGR	Mil
