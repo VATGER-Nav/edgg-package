@@ -1,0 +1,48 @@
+{%- set fra_navaids = [
+    'BKD',
+    'BUB',
+    'DIK',
+    'DKB',
+    'EPL',
+    'GMH',
+    'GTQ',
+    'HAM',
+    'HDO',
+    'HLZ',
+    'HMM',
+    'HOC',
+    'INN',
+    'KPT',
+    'KRH',
+    'LBU',
+    'LNO',
+    'MAG',
+    'MAH',
+    'MAS',
+    'NIE',
+    'NVO',
+    'OKG',
+    'OTT',
+    'RKN',
+    'SAS',
+    'SPI',
+    'TRA',
+    'WRB',
+    'WSN',
+] %}
+
+MAP:Navaids
+FOLDER:Fixes
+ACTIVE:1
+COLOR:standard
+{%- for nav in fra_navaids %}
+SYMBOL:VOR:{{nav}}
+{%- endfor %}
+
+MAP:Navaids w/ L
+FOLDER:Fixes
+TEXTALIGN:LB
+COLOR:standard
+{%- for nav in fra_navaids %}
+SYMBOL:VOR:{{nav}}:{{nav}}:5:0
+{%- endfor %}

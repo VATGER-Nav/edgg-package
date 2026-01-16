@@ -1,0 +1,89 @@
+//---------------------------------------------------------------
+//                            Aerodromes
+//---------------------------------------------------------------
+{%- set ads = [
+    'EDAB',
+    'EDAC',
+    'EDAH',
+    'EDDB',
+    'EDDC',
+    'EDDE',
+    'EDDF',
+    'EDDG',
+    'EDDH',
+    'EDDK',
+    'EDDL',
+    'EDDM',
+    'EDDN',
+    'EDDP',
+    'EDDR',
+    'EDDS',
+    'EDDV',
+    'EDDW',
+    'EDFH',
+    'EDFM',
+    'EDHI',
+    'EDHL',
+    'EDJA',
+    'EDLN',
+    'EDLP',
+    'EDLV',
+    'EDLW',
+    'EDMA',
+    'EDME',
+    'EDMO',
+    'EDMS',
+    'EDNY',
+    'EDPR',
+    'EDQC',
+    'EDQD',
+    'EDQM',
+    'EDSB',
+    'EDTL',
+    'EDTM',
+    'EDVE',
+    'EDVK',
+    'EDXW',
+    'EHBK',
+    'ELLX',
+    'ETAD',
+    'ETAR',
+    'ETHB',
+    'ETHC',
+    'ETHL',
+    'ETHN',
+    'ETHS',
+    'ETIC',
+    'ETMN',
+    'ETND',
+    'ETNG',
+    'ETNH',
+    'ETNL',
+    'ETNN',
+    'ETNS',
+    'ETNT',
+    'ETNW',
+    'ETOU',
+    'ETSB',
+    'ETSH',
+    'ETSI',
+    'ETSL',
+    'ETSN',
+] %}
+
+MAP:AD_Hotspots
+FOLDER:Aerodromes
+COLOR:standard
+{%- for ad in ads %}
+SYMBOL:AD:{{ad}}
+{%- endfor %}
+SYMBOL:AD:N047.27.29.000:E008.32.53.000    // LSZH
+
+MAP:AD_Hotspots w/ L
+FOLDER:Aerodromes
+TEXTALIGN:LB
+COLOR:standard
+{%- for ad in ads %}
+SYMBOL:AD:{{ad}}:{{ad}}:5:0
+{%- endfor %}
+SYMBOL:AD:N047.27.29.000:E008.32.53.000    // LSZH

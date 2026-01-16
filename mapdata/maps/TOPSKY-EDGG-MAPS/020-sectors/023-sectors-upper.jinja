@@ -17,7 +17,7 @@ FOLDER:Sectors
 LAYER:2
 STYLE:Solid:2
 // EDUU UAC
-// Over EDGG FIR
+// West
 {{ render_sectorlines(
 		EDGG['NTM142']['265-325'],
         sector_sub(
@@ -67,17 +67,17 @@ STYLE:Solid:2
 
         EDGG['SLN13']['245-355'],
     ) }}
-// Over EDMM FIR
+// East
 {{ render_sectorlines(
 		EDMM['EDUUALP14']['315-355'],
         EDMM['EDUUISA14']['315-355'],
         EDMM['EDUUDON14']['315-355'],
-        EDMM['EDUUERL14']['315-365'],
+        EDMM['EDUUERL14']['315-355'],
         EDMM['EDUUSAL12']['315-365'],
         EXT['EDMM']['EDUUCHI141']['315-355'],
         EXT['EDMM']['EDUUSPE12']['315-365'],
     ) }}
-// Over EDWW FIR
+// North
 {{ render_sectorlines(
         EXT['EDWW']['EDUUHVL12']['285-365'],
         EXT['EDWW']['EDUUOSE12']['285-365'],
@@ -138,6 +138,11 @@ STYLE:Solid:2
 
 
 // UACs beyond
-{% for uuid, geom in data.topsky['common']['sectors']['uac_ext'].items() %}
+{% for uuid, geom in data.topsky['common']['sectors']['uac_ext']['EDGG'].items() %}
 {{- geom | to_line('') -}}
 {% endfor %}
+{{ render_sectorlines(
+    EXT['EKDK']['EKDK_A']['285-365'],
+    EXT['LKAA']['WM']['305-355'],
+    EXT['LOVV']['B2']['315-345'],
+) }}

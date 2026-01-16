@@ -232,6 +232,8 @@ Shortcut_Map_Xfr_Key=4,0x48 ; H
 Shortcut_Map_Xfr_Key=5,0x42 ; B
 Shortcut_Map_Xfr_Key=6,0x56 ; V
 Shortcut_Map_Xfr_Key=7,0x54 ; T
+Shortcut_Map_Xfr_Key=8,0x4E ; N
+Shortcut_Map_Xfr_Key=9,0x49 ; I
 // Shortcut_Map_Target=1,MVA\MVA Warm (MAR-NOV)
 Shortcut_Map_Target=1,MVA\MVA Cold (NOV-MAR)
 Shortcut_Map_Target=2,Airspace C/D/E\Airspace Levels
@@ -240,6 +242,8 @@ Shortcut_Map_Target=4,Tools\SepGuide Upper
 Shortcut_Map_Target=5,Sectors\UAC Highlight
 Shortcut_Map_Target=6,VFR\VRPs
 Shortcut_Map_Target=7,Topography
+Shortcut_Map_Target=8,Fixes\Fixes w/ L
+// Shortcut_Map_Target=9,Airspace Info\Sector Info
 
 STCA_Sep_Lat_SepLevel=24500
 STCA_Filter=1

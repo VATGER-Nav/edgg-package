@@ -1,0 +1,16 @@
+{
+"type": "FeatureCollection",
+"name": "EDDL_Bridges",
+"crs": { "type": "name", "properties": { "name": "urn:ogc:def:crs:OGC:1.3:CRS84" } },
+"features": [
+{ "type": "Feature", "properties": { "name": "Flughafenbruecke" }, "geometry": { "type": "LineString", "coordinates": [ [ 6.692557777777778, 51.282445833333334 ], [ 6.714076111111111, 51.274921388888885 ] ] } },
+{ "type": "Feature", "properties": { "name": "Krefelder_Bruecke" }, "geometry": { "type": "LineString", "coordinates": [ [ 6.654941944444444, 51.347340833333334 ], [ 6.663725555555556, 51.352558611111114 ] ] } },
+{ "type": "Feature", "properties": { "name": "Eisenbahnbruecke" }, "geometry": { "type": "LineString", "coordinates": [ [ 6.739716666666666, 51.4070075 ], [ 6.749218888888889, 51.408653333333334 ] ] } },
+{ "type": "Feature", "properties": { "name": "Friedrich-Ebert-Bruecke" }, "geometry": { "type": "LineString", "coordinates": [ [ 6.7189925, 51.456646666666671 ], [ 6.729422222222222, 51.4559075 ] ] } },
+{ "type": "Feature", "properties": { "name": "Rheinkniebruecke" }, "geometry": { "type": "LineString", "coordinates": [ [ 6.759575277777778, 51.224576944444443 ], [ 6.766588333333333, 51.218750277777779 ] ] } },
+{ "type": "Feature", "properties": { "name": "Ruhrtalbruecke" }, "geometry": { "type": "LineString", "coordinates": [ [ 6.900266388888889, 51.378604444444441 ], [ 6.907480277777778, 51.381345277777775 ] ] } },
+{ "type": "Feature", "properties": { "name": "Theodor-Heuss-Bruecke" }, "geometry": { "type": "LineString", "coordinates": [ [ 6.754595555555555, 51.244356111111109 ], [ 6.765819722222222, 51.250527777777776 ] ] } },
+{ "type": "Feature", "properties": { "name": "Josef-Kardinal-Bruecke" }, "geometry": { "type": "LineString", "coordinates": [ [ 6.727893611111111, 51.198987222222222 ], [ 6.736195555555556, 51.198461666666667 ] ] } },
+{ "type": "Feature", "properties": { "name": "Fleher_Bruecke" }, "geometry": { "type": "LineString", "coordinates": [ [ 6.7756425, 51.187790555555551 ], [ 6.774340555555556, 51.182373055555551 ] ] } }
+]
+}

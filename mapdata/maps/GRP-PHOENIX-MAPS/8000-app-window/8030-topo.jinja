@@ -13,6 +13,14 @@ LAYER:-3
 COLOR:appwindow-border
 STYLE:Solid:1
 ACTIVE:1
-{% for uuid, geom in data.topsky['common']['topo']['EDGG_border_de'].items() %}
-{{- geom | to_line('') -}}
+{% for desig in [
+    'CH_DE',
+    'DE_AT',
+    'DE_BE',
+    'DE_CH',
+    'DE_FR',
+    'DE_LU',
+    'DE_NL',
+] %}
+{{- data.topsky['common']['topo']['EDXX_stateboundary'][desig] | to_line('') -}}
 {% endfor %}
