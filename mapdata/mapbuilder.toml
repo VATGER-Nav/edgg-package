@@ -25,6 +25,11 @@ maps = [
     { map = "TOPSKY-EDGG-MAPS", target = "Plugins/Topsky/EDGG/TopSkyMaps.txt" },
 ]
 
+[profiles.EDUU]
+maps = [
+    { map = "TOPSKY-EDUU-MAPS", target = "Plugins/Topsky/EDUU/TopSkyMaps.txt" },
+]
+
 [profiles.CPDLC-PHX]
 maps = [
     { map = "TOPSKY-CPDLC", target = "Plugins/Topsky/TWR_PHX_NIGHT/TopSkyCPDLC.txt" },

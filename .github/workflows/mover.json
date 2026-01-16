@@ -1,17 +1,4 @@
 {
-  "EDGG/Plugins/Topsky/EDUU/TopSkyMaps.txt": [
-    ".github/workflows/source/topsky_eduu_maps/general.txt",
-
-    ".github/workflows/source/topsky_eduu_maps/fixes.txt",
-
-    ".github/workflows/source/topsky_eduu_maps/borders.txt",
-    ".github/workflows/source/topsky_eduu_maps/upper_sectors.txt",
-
-    ".github/workflows/source/topsky_eduu_maps/eduu_tools.txt",
-
-    ".github/workflows/source/topsky_eduu_maps/heuse_area.txt"
-  ],
-
   "EDGG/Plugins/Topsky/EDYY/TopSkyMaps.txt": [
     ".github/workflows/source/topsky_edyy_maps/general.txt",
 

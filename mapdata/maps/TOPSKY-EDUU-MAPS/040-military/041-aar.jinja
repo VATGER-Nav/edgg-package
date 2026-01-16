@@ -1,0 +1,49 @@
+//---------------------------------------------------------------
+//                  AAR - Air Refuelling Anchors
+//---------------------------------------------------------------
+{#- 
+    WARNING: When performing any changes on this file,
+    please bring them to the following files as well:
+    
+     * TOPSKY-EDGG-MAPS\600-military\611-aar.jinja
+#}
+{%- set aar = {
+    "virgin": {
+        "desig":  'Virgin',
+        "coord":  'N049.19.23.400:E007.53.19.800',
+        "inbd":   '101',
+        "turn":   'L',
+        "length": '40',
+        "radius": '9',
+        "level_up":  '660',
+        "level_lo":  '260'
+    }
+} %}
+
+{% set points = data.topsky['common']['military']['aar']['points'] %}
+{% set levels = data.topsky['common']['military']['aar']['levels'] %}
+
+{%- for desig, hold in aar.items() %}
+MAP:AAR - {{hold.desig}}
+FOLDER:Military
+COLOR:holding
+STYLE:Solid:1
+COORD_HM:{{hold.coord}}:{{hold.inbd}}M:{{hold.turn}}:{{hold.length}}:{{hold.radius}}:10
+COORDPOLY:0
+// Anchor Points
+TEXTALIGN:LB
+SYMBOL:FIX2:{{hold.coord}}:AP1:7:0
+{{ points['TP1_' + desig] | to_symbol('FIX2') }}:TP1:7:0
+{{ points['AP2_' + desig] | to_symbol('FIX2') }}:AP2:7:0
+{{ points['TP2_' + desig] | to_symbol('FIX2') }}:TP2:7:0
+{%- if 'RP_' + desig in points %}
+{{ points['RP_' + desig] | to_symbol('FIX2') }}:RP:7:0
+{%- endif %}
+// Levels
+FONTSIZE:=:11
+TEXTALIGN:CC
+{{ levels[desig] | to_text(hold.level_up) }}:0:-7
+{{ levels[desig] | to_text(hold.level_lo) }}:0:8
+FONTSIZE:=:12
+{{ levels[desig] | to_text('---') }}:0:-1
+{% endfor %}

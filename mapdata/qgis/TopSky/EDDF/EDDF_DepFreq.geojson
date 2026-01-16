@@ -1,0 +1,9 @@
+{
+"type": "FeatureCollection",
+"name": "EDDF_DepFreq",
+"crs": { "type": "name", "properties": { "name": "urn:ogc:def:crs:OGC:1.3:CRS84" } },
+"features": [
+{ "type": "Feature", "properties": { "name": "DFDN" }, "geometry": { "type": "Point", "coordinates": [ 8.3078725, 50.077607222222227 ] } },
+{ "type": "Feature", "properties": { "name": "DFDS" }, "geometry": { "type": "Point", "coordinates": [ 8.843389444444446, 49.893776111111109 ] } }
+]
+}

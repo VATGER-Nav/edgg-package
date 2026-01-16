@@ -1,0 +1,9 @@
+{
+"type": "FeatureCollection",
+"name": "EDDS_Obstacles",
+"crs": { "type": "name", "properties": { "name": "urn:ogc:def:crs:OGC:1.3:CRS84" } },
+"features": [
+{ "type": "Feature", "properties": { "name": "019787c4-5b56-7fb9-87fe-2963035db3c4" }, "geometry": { "type": "Point", "coordinates": [ 9.190055555555556, 48.755694444444444 ] } },
+{ "type": "Feature", "properties": { "name": "019787c4-5b56-7ced-a45c-186b5f666763" }, "geometry": { "type": "Point", "coordinates": [ 9.145222222222221, 48.618 ] } }
+]
+}
