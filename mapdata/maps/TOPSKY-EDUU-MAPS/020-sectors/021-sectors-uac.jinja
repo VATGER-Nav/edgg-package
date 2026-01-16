@@ -1,0 +1,161 @@
+//---------------------------------------------------------------
+//                             Sectors
+//---------------------------------------------------------------
+
+{%- set EDGG = data.sectors['lines']['EDGG'] %}
+{%- set EDMM = data.sectors['lines']['EDMM'] %}
+{%- set EDWW = data.sectors['lines']['EDWW'] %}
+{%- set EHAA = data.sectors['lines']['EHAA'] %}
+{%- set EBBU = data.sectors['lines']['EBBU'] %}
+{%- set LFEE = data.sectors['lines']['LFEE'] %}
+{%- set LSAS = data.sectors['lines']['LSAS'] %}
+{%- set EXT = data.sectors_ext['lines'] %}
+
+MAP:UACs
+ACTIVE:1
+COLOR:standard
+FOLDER:Sectors
+STYLE:Solid:1
+// EDUU UAC
+// West
+{{ render_sectorlines(
+    EDGG['NTM142']['265-325'],
+    sector_sub(
+        EDGG['NTM141']['245-265'],
+        EDGG['NTM142']['265-325']
+    ),
+    sector_and(
+        EDGG['NOR5']['245-265'],
+        EDGG['RUD4']['245-265']
+    ),
+    
+    EDGG['FFM141']['245-325'],
+    sector_sub(
+        EDGG['FFM142']['245-295'],
+        EDGG['FFM141']['245-325']
+    ),
+    sector_sub(
+        EDGG['FFM24']['325-355'],
+        EDGG['FFM141']['245-325']
+    ),
+    
+    EDGG['FUL133']['325-355'],
+    sector_sub(
+        EDGG['FUL132']['255-325'],
+        EDGG['FUL133']['325-355']
+    ),
+    sector_sub(
+        EDGG['FUL134']['295-315'],
+        EDGG['FUL133']['325-355']
+    ),
+    sector_sub(
+        EDGG['FUL131']['245-255'],
+        EDGG['FUL133']['325-355']
+    ),
+    
+    EDGG['WUR141']['305-325'],
+    sector_sub(
+        EDGG['WUR142']['245-305'],
+        EDGG['WUR141']['305-325']
+    ),
+
+    EDGG['TGO131']['245-355'],
+    sector_sub(
+        EDGG['TGO132']['235-245'],
+        EDGG['TGO131']['245-355']
+    ),
+
+    EDGG['SLN13']['245-355'],
+) }}
+// East
+{{ render_sectorlines(
+    EDMM['EDUUALP14']['315-355'],
+    EDMM['EDUUISA14']['315-355'],
+    EDMM['EDUUDON14']['315-355'],
+    EDMM['EDUUERL14']['315-355'],
+    EDMM['EDUUSAL12']['315-365'],
+    EXT['EDMM']['EDUUCHI141']['315-355'],
+    EXT['EDMM']['EDUUSPE12']['315-365'],
+) }}
+// North
+{{ render_sectorlines(
+    EXT['EDWW']['EDUUHVL12']['285-365'],
+    EXT['EDWW']['EDUUOSE12']['285-365'],
+) }}
+
+// EDYY UAC
+{{ render_sectorlines(
+    EDGG['YYRL1']['245-355'],
+    EDGG['YYRAB']['245-315'],
+
+    EDGG['YYML1']['245-355'],
+    EDGG['YYML2']['295-355'],
+    EDGG['YYML4']['245-315'],
+    EDGG['YYMAB']['245-315'],
+
+    EDWW['EDYYSL1']['245-355'],
+    EDWW['EDYYSL2']['255-355'],
+
+    EDWW['EDYYCL1']['245-355'],
+    EDWW['EDYYCL2']['245-315'],
+
+    EDWW['EDYYHL1']['245-365'],
+
+    EBBU['EDYYLNH_SCT']['245-660'],
+    EBBU['EDYYLNH_SCT 2']['255-660'],
+    EXT['EBBU']['EDYYLXH']['245-660'],
+) }}
+
+// LFEE UAC
+{{ render_sectorlines(
+    sector_sub(
+        sector_sub(
+            LFEE['HE']['365-660'],
+            EDGG['NTM142']['265-325']
+        ),
+        EDGG['SLN13']['245-355']
+    ),
+) }}
+
+// LSAS UAC
+{{ render_sectorlines(
+    LSAS['LSASZ']['315-999']
+) }}
+
+// EKDK ACC
+{{ render_sectorlines(
+    EXT['EKDK']['EKDK_A']['285-365'],
+) }}
+
+// ESMM ACC
+{{ render_sectorlines(
+    EXT['ESAA']['ESMM 8-1']['195-365'],
+    EXT['ESAA']['ESMM 8-2']['245-365'],
+    EXT['ESAA']['ESMM 8-3']['285-365'],
+    EXT['ESAA']['ESMM 8-4']['095-365'],
+) }}
+
+// EPWW ACC
+{{ render_sectorlines(
+    EXT['EPWW']['EPWWB']['295-365'],
+    EXT['EPWW']['EPWWD']['295-365'],
+    EXT['EPWW']['EPWWT']['295-365'],
+) }}
+
+// LKAA ACC
+{{ render_sectorlines(
+    EXT['LKAA']['NM']['305-355'],
+    EXT['LKAA']['WM']['305-355'],
+) }}
+
+// LOVV ACC
+{{ render_sectorlines(
+    EXT['LOVV']['N2']['315-345'],
+    EXT['LOVV']['B2']['315-345'],
+    EXT['LOVV']['W2']['315-345'],
+) }}
+
+// UACs beyond
+{% for uuid, geom in data.topsky['common']['sectors']['uac_ext']['EDUU'].items() %}
+{{- geom | to_line('') -}}
+{% endfor %}

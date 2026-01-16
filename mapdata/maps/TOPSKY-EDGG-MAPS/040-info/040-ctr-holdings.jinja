@@ -1,33 +1,39 @@
 //---------------------------------------------------------------
 //                         Airspace Info
 //---------------------------------------------------------------
+{#- 
+    WARNING: When performing any changes on this file,
+    please bring them to the following files as well:
+    
+     * TOPSKY-EDUU-MAPS\030-info\030-holdings.jinja
+#}
 {%- set holdings = {
-        "ADEMI": {"inbd": "284", "turn": "L", "lvllo": "A60", "lvlup": "240", "symb": "FIX2_L"},
-        "BOWEK": {"inbd": "302", "turn": "R", "lvllo": "140", "lvlup": null,  "symb": "FIX2_L"},
-        "DKB":   {"inbd": "128", "turn": "L", "lvllo": "A50", "lvlup": "270", "symb": "VOR"   },
-        "ELDAR": {"inbd": "356", "turn": "L", "lvllo": "A60", "lvlup": "240", "symb": "FIX3_L"},
-        "EMGOD": {"inbd": "112", "turn": "L", "lvllo": "110", "lvlup": null,  "symb": "FIX2_L"},
-        "ERUKI": {"inbd": "093", "turn": "R", "lvllo": "070", "lvlup": "180", "symb": "FIX2_L"},
-        "FFM":   {"inbd": "087", "turn": "R", "lvllo": "A50", "lvlup": "240", "symb": "VOR"   },
-        "GMH":   {"inbd": "158", "turn": "L", "lvllo": "A60", "lvlup": "240", "symb": "VOR"   },
-        "GULKO": {"inbd": "275", "turn": "L", "lvllo": "A50", "lvlup": null,  "symb": "FIX3_L"},
-        "HMM":   {"inbd": "257", "turn": "L", "lvllo": "A50", "lvlup": "240", "symb": "VOR"   },
-        "KERAX": {"inbd": "196", "turn": "R", "lvllo": "A60", "lvlup": null,  "symb": "FIX3_L"},
-        "KISEK": {"inbd": "003", "turn": "R", "lvllo": "A65", "lvlup": null,  "symb": "FIX2_L"},
-        "KOPAG": {"inbd": "203", "turn": "L", "lvllo": "A50", "lvlup": null,  "symb": "FIX3_L"},
-        "LETKU": {"inbd": "042", "turn": "L", "lvllo": "A50", "lvlup": null,  "symb": "FIX3_L"},
-        "MAMBU": {"inbd": "283", "turn": "R", "lvllo": "130", "lvlup": null,  "symb": "FIX3_L"},
-        "NVO":   {"inbd": "066", "turn": "R", "lvllo": "A60", "lvlup": "240", "symb": "VOR"   },
-        "RANIN": {"inbd": "178", "turn": "R", "lvllo": "A60", "lvlup": "240", "symb": "FIX2_L"},
-        "REKDI": {"inbd": "325", "turn": "R", "lvllo": "140", "lvlup": "240", "symb": "FIX2_L"},
-        "ROBEL": {"inbd": "081", "turn": "R", "lvllo": "A50", "lvlup": null,  "symb": "FIX3_L"},
-        "ROLIS": {"inbd": "157", "turn": "L", "lvllo": "100", "lvlup": null,  "symb": "FIX2_L"},
-        "RUNER": {"inbd": "238", "turn": "R", "lvllo": "100", "lvlup": "240", "symb": "FIX2_L"},
-        "SPESA": {"inbd": "283", "turn": "R", "lvllo": "A50", "lvlup": null,  "symb": "FIX3_L"},
-        "SUL":   {"inbd": "188", "turn": "R", "lvllo": "150", "lvlup": "240", "symb": "VOR"   },
-        "TUTOV": {"inbd": "093", "turn": "L", "lvllo": "110", "lvlup": "240", "symb": "FIX2_L"},
-        "UNOKO": {"inbd": "087", "turn": "R", "lvllo": "110", "lvlup": null,  "symb": "FIX2_L"}
-    } %}
+    "ADEMI": {"inbd": "284", "turn": "L", "lvllo": "A60", "lvlup": "240", "symb": "FIX2_L"},
+    "BOWEK": {"inbd": "302", "turn": "R", "lvllo": "140", "lvlup": null,  "symb": "FIX2_L"},
+    "DKB":   {"inbd": "128", "turn": "L", "lvllo": "A50", "lvlup": "270", "symb": "VOR"   },
+    "ELDAR": {"inbd": "356", "turn": "L", "lvllo": "A60", "lvlup": "240", "symb": "FIX3_L"},
+    "EMGOD": {"inbd": "112", "turn": "L", "lvllo": "110", "lvlup": null,  "symb": "FIX2_L"},
+    "ERUKI": {"inbd": "093", "turn": "R", "lvllo": "070", "lvlup": "180", "symb": "FIX2_L"},
+    "FOLWU": {"inbd": "087", "turn": "R", "lvllo": "A50", "lvlup": "240", "symb": "FIX2_L"},
+    "GMH":   {"inbd": "158", "turn": "L", "lvllo": "A60", "lvlup": "240", "symb": "VOR"   },
+    "GULKO": {"inbd": "275", "turn": "L", "lvllo": "A50", "lvlup": null,  "symb": "FIX3_L"},
+    "HMM":   {"inbd": "257", "turn": "L", "lvllo": "A50", "lvlup": "240", "symb": "VOR"   },
+    "KERAX": {"inbd": "196", "turn": "R", "lvllo": "A60", "lvlup": null,  "symb": "FIX3_L"},
+    "KISEK": {"inbd": "003", "turn": "R", "lvllo": "A65", "lvlup": null,  "symb": "FIX2_L"},
+    "KOPAG": {"inbd": "203", "turn": "L", "lvllo": "A50", "lvlup": null,  "symb": "FIX3_L"},
+    "LETKU": {"inbd": "042", "turn": "L", "lvllo": "A50", "lvlup": null,  "symb": "FIX3_L"},
+    "MAMBU": {"inbd": "283", "turn": "R", "lvllo": "130", "lvlup": null,  "symb": "FIX3_L"},
+    "NVO":   {"inbd": "066", "turn": "R", "lvllo": "A60", "lvlup": "240", "symb": "VOR"   },
+    "RANIN": {"inbd": "178", "turn": "R", "lvllo": "A60", "lvlup": "240", "symb": "FIX2_L"},
+    "REKDI": {"inbd": "325", "turn": "R", "lvllo": "140", "lvlup": "240", "symb": "FIX2_L"},
+    "ROBEL": {"inbd": "081", "turn": "R", "lvllo": "A50", "lvlup": null,  "symb": "FIX3_L"},
+    "ROLIS": {"inbd": "157", "turn": "L", "lvllo": "100", "lvlup": null,  "symb": "FIX2_L"},
+    "RUNER": {"inbd": "238", "turn": "R", "lvllo": "100", "lvlup": "240", "symb": "FIX2_L"},
+    "SPESA": {"inbd": "283", "turn": "R", "lvllo": "A50", "lvlup": null,  "symb": "FIX3_L"},
+    "SUL":   {"inbd": "188", "turn": "R", "lvllo": "150", "lvlup": "240", "symb": "VOR"   },
+    "TUTOV": {"inbd": "093", "turn": "L", "lvllo": "110", "lvlup": "240", "symb": "FIX2_L"},
+    "UNOKO": {"inbd": "087", "turn": "R", "lvllo": "110", "lvlup": null,  "symb": "FIX2_L"}
+} %}
 
 MAP:Holdings CTR
 FOLDER:Airspace Info

@@ -1,0 +1,140 @@
+{%- set sectors = {
+    "FFM": { "names": [ "FFM" ], "lvls": [ "245", "660" ] },
+    "FUL": { "names": [ "FUL" ], "lvls": [ "245", "660" ] },
+    "NTM": { "names": [ "NTM" ], "lvls": [ "245", "660" ] },
+    "SLN": { "names": [ "SLN" ], "lvls": [ "245", "660" ] },
+    "TGO": { "names": [ "TGO" ], "lvls": [ "245", "660" ] },
+    "WUR": { "names": [ "WUR" ], "lvls": [ "245", "660" ] },
+    "ALP": { "names": [ "ALP" ], "lvls": [ "315", "660" ] },
+    "CHI": { "names": [ "CHI" ], "lvls": [ "315", "660" ] },
+    "DON": { "names": [ "DON" ], "lvls": [ "315", "660" ] },
+    "ERL": { "names": [ "ERL" ], "lvls": [ "315", "660" ] },
+    "ISA": { "names": [ "ISA" ], "lvls": [ "315", "660" ] },
+    "SAL": { "names": [ "SAL" ], "lvls": [ "315", "660" ] },
+    "SPE": { "names": [ "SPE" ], "lvls": [ "315", "660" ] },
+    "HVL": { "names": [ "HVL1", "HVL2" ], "lvls": [ "285", "365", "660" ] },
+    "OSE": { "names": [ "OSE1", "OSE2" ], "lvls": [ "285", "365", "660" ] },
+    "CEL": { "names": [ "CL", "CH" ], "lvls": [ "245", "355", "660" ] },
+    "HOL": { "names": [ "HL", "HH" ], "lvls": [ "245", "355", "660" ] },
+    "MNS": { "names": [ "ML", "MH" ], "lvls": [ "245", "355", "660" ] },
+    "RHR": { "names": [ "RL", "RH" ], "lvls": [ "245", "355", "660" ] },
+    "SOL": { "names": [ "SL", "SH" ], "lvls": [ "245", "355", "660" ] },
+    "LUX": { "names": [ "LUX" ], "lvls": [ "245", "660" ] },
+    "OLN": { "names": [ "OLN" ], "lvls": [ "245", "660" ] },
+    "EKDK_A": { "names": [ "EKDK-A", "EKDK-UA" ], "lvls": [ "285", "365", "660" ] },
+    "EPWW_B": { "names": [ "EPWW-B", "EPWW-U" ], "lvls": [ "095", "365", "660" ] },
+    "EPWW_D": { "names": [ "EPWW-D", "EPWW-U" ], "lvls": [ "095", "365", "660" ] },
+    "EPWW_T": { "names": [ "EPWW-T", "EPWW-U" ], "lvls": [ "095", "365", "660" ] },
+    "ESMM_8-2": { "names": [ "ESMM-8", "ESMM-9" ], "lvls": [ "245", "365", "660" ] },
+    "ESMM_8-3": { "names": [ "ESMM-8", "ESMM-9" ], "lvls": [ "285", "365", "660" ] },
+    "LFEE_UE": { "names": [ "LFEE-UE", "LFEE-XE", "LFEE-KE", "LFEE-HE" ], "lvls": [ "195", "315", "345", "365", "660" ] },
+    "LIPP": { "names": [ "LIPP" ], "lvls": [ "000", "660" ] },
+    "LKAA_N": { "names": [ "LKAA-N" ], "lvls": [ "165", "660" ] },
+    "LKAA_W": { "names": [ "LKAA-W" ], "lvls": [ "165", "660" ] },
+    "LOVV_B2": { "names": [ "LOVV-BU" ], "lvls": [ "315", "660" ] },
+    "LOVV_N2": { "names": [ "LOVV-NU" ], "lvls": [ "315", "660" ] },
+    "LOVV_W2": { "names": [ "LOVV-WU" ], "lvls": [ "315", "660" ] },
+    "LSAS_Z": { "names": [ "LSAS" ], "lvls": [ "245", "660" ] },
+} %}
+{%- set sectors_s = {
+    "CEL_HOL": { "names": [ "CL", "HL", "HH" ], "lvls": [ "245", "315", "365", "660" ] },
+    "FFM_FUL": { "names": [ "FFM", "FUL" ], "lvls": [ "245", "325", "660" ] },
+    "FFM_RHR": { "names": [ "FFM", "RL", "RH" ], "lvls": [ "245", "295", "355", "660" ] },
+    "FUL_255": { "names": [ "FUL" ], "lvls": [ "255", "660" ] },
+    "FUL_PILAM": { "names": [ "FUL" ], "lvls": [ "295", "315" ] },
+    "MNS_PADH": { "names": [ "ML", "MH" ], "lvls": [ "295", "355", "660" ] },
+    "NTM_KIR": { "names": [ "NTM" ], "lvls": [ "265", "660" ] },
+    "NTM_NOR": { "names": [ "NTM" ], "lvls": [ "265", "660" ] },
+    "NTM_RUD": { "names": [ "NTM" ], "lvls": [ "265", "660" ] },
+    "OLN_NOR": { "names": [ "OLN" ], "lvls": [ "255", "660" ] },
+    "SOL_255": { "names": [ "SOL" ], "lvls": [ "255", "660" ] },
+    "TGO_235": { "names": [ "TGO" ], "lvls": [ "235", "660" ] },
+    "WUR_ALB": { "names": [ "WUR" ], "lvls": [ "305", "660" ] },
+} %}
+
+{%- set sector_structure = data.topsky['common']['sectors']['structure']['EDUU'] %}
+
+MAP:Sector Info
+FOLDER:Airspace Info
+COLOR:label
+LAYER:4
+TEXTALIGN:RB
+FONTSIZE:=:15
+{#- 1 Row #}
+{% for desig, sector in sectors.items() if sector['names']|length == 1 %}
+
+// {{ desig }}
+{{ sector_structure[desig] | to_text(sector['names'][0] + '  :0:9') }}
+{{ sector_structure[desig] | to_text(sector['lvls'][1] + ':23:0') }}
+{{ sector_structure[desig] | to_text('......:24:5') }}
+{{ sector_structure[desig] | to_text(sector['lvls'][0] + ':23:19') }}
+{%- endfor %}
+
+{#- 2 Rows #}
+{% for desig, sector in sectors.items() if sector['names']|length == 2 %}
+
+// {{ desig }}
+{{ sector_structure[desig] | to_text(sector['names'][1] + '  :0:0') }}
+{{ sector_structure[desig] | to_text(sector['names'][0] + '  :0:19') }}
+{{ sector_structure[desig] | to_text(sector['lvls'][2] + ':23:-10') }}
+{{ sector_structure[desig] | to_text('......:24:-5') }}
+{{ sector_structure[desig] | to_text(sector['lvls'][1] + ':23:9') }}
+{{ sector_structure[desig] | to_text('......:24:14') }}
+{{ sector_structure[desig] | to_text(sector['lvls'][0] + ':23:28') }}
+{%- endfor %}
+
+{#- 4 Rows #}
+// LFEE
+{{ sector_structure['LFEE_UE'] | to_text(sectors['LFEE_UE']['names'][3] + '  :0:-19') }}
+{{ sector_structure['LFEE_UE'] | to_text(sectors['LFEE_UE']['names'][2] + '  :0:0') }}
+{{ sector_structure['LFEE_UE'] | to_text(sectors['LFEE_UE']['names'][1] + '  :0:19') }}
+{{ sector_structure['LFEE_UE'] | to_text(sectors['LFEE_UE']['names'][0] + '  :0:38') }}
+{{ sector_structure['LFEE_UE'] | to_text(sectors['LFEE_UE']['lvls'][4] + ':23:-29') }}
+{{ sector_structure['LFEE_UE'] | to_text('......:24:-24') }}
+{{ sector_structure['LFEE_UE'] | to_text(sectors['LFEE_UE']['lvls'][3] + ':23:-10') }}
+{{ sector_structure['LFEE_UE'] | to_text('......:24:-5') }}
+{{ sector_structure['LFEE_UE'] | to_text(sectors['LFEE_UE']['lvls'][2] + ':23:9') }}
+{{ sector_structure['LFEE_UE'] | to_text('......:24:14') }}
+{{ sector_structure['LFEE_UE'] | to_text(sectors['LFEE_UE']['lvls'][1] + ':23:28') }}
+{{ sector_structure['LFEE_UE'] | to_text('......:24:33') }}
+{{ sector_structure['LFEE_UE'] | to_text(sectors['LFEE_UE']['lvls'][0] + ':23:47') }}
+
+FONTSIZE:=:11
+{#- 1 Row #}
+{% for desig, sector in sectors_s.items() if sector['names']|length == 1 %}
+
+// {{ desig }}
+{{ sector_structure[desig] | to_text(sector['names'][0] + '  :0:8') }}
+{{ sector_structure[desig] | to_text(sector['lvls'][1] + ':20:1') }}
+{{ sector_structure[desig] | to_text('.......:20:4') }}
+{{ sector_structure[desig] | to_text(sector['lvls'][0] + ':20:14') }}
+{%- endfor %}
+
+{#- 2 Rows #}
+{% for desig, sector in sectors_s.items() if sector['names']|length == 2 %}
+
+// {{ desig }}
+{{ sector_structure[desig] | to_text(sector['names'][1] + '  :0:1') }}
+{{ sector_structure[desig] | to_text(sector['names'][0] + '  :0:14') }}
+{{ sector_structure[desig] | to_text(sector['lvls'][2] + ':20:-5') }}
+{{ sector_structure[desig] | to_text('.......:20:-2') }}
+{{ sector_structure[desig] | to_text(sector['lvls'][1] + ':20:8') }}
+{{ sector_structure[desig] | to_text('.......:20:11') }}
+{{ sector_structure[desig] | to_text(sector['lvls'][0] + ':20:21') }}
+{%- endfor %}
+
+{#- 3 Rows #}
+{% for desig, sector in sectors_s.items() if sector['names']|length == 3 %}
+
+// {{ desig }}
+{{ sector_structure[desig] | to_text(sector['names'][2] + '  :0:-5') }}
+{{ sector_structure[desig] | to_text(sector['names'][1] + '  :0:8') }}
+{{ sector_structure[desig] | to_text(sector['names'][0] + '  :0:21') }}
+{{ sector_structure[desig] | to_text(sector['lvls'][3] + ':20:-12') }}
+{{ sector_structure[desig] | to_text('.......:20:-9') }}
+{{ sector_structure[desig] | to_text(sector['lvls'][2] + ':20:1') }}
+{{ sector_structure[desig] | to_text('.......:20:4') }}
+{{ sector_structure[desig] | to_text(sector['lvls'][1] + ':20:14') }}
+{{ sector_structure[desig] | to_text('.......:20:17') }}
+{{ sector_structure[desig] | to_text(sector['lvls'][0] + ':20:27') }}
+{%- endfor %}
