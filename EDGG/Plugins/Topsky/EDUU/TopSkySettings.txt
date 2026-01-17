@@ -369,11 +369,14 @@ Shortcut_Map_Xfr_Key=2,0x42 ; B
 Shortcut_Map_Xfr_Key=3,0x54 ; T
 Shortcut_Map_Xfr_Key=4,0x4E ; N
 Shortcut_Map_Xfr_Key=5,0x49 ; I
+Shortcut_Map_Xfr_Key=6,0x44 ; D
 Shortcut_Map_Target=1,Tools\SepGuide
 Shortcut_Map_Target=2,Sectors\ACCs
 Shortcut_Map_Target=3,Topography
 Shortcut_Map_Target=4,Fixes\Fixes w/ L
 Shortcut_Map_Target=5,Airspace Info\Sector Info
+// Temporary!!!
+Shortcut_Map_Target=6,Airspace Info\T-Directs - UCW
 
 [_CTR]
 Color_Assumed=0,0,0

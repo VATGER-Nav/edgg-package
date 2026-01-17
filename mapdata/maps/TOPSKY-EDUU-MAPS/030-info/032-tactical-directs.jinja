@@ -1,0 +1,288 @@
+//---------------------------------------------------------------
+//                        Tactical Directs
+//---------------------------------------------------------------
+{#- 
+    WARNING: When performing any changes on this file,
+    please bring them to the following files as well:
+    
+     * TOPSKY-EDUU-MAPS\030-info\032-tactical-directs.jinja
+#}
+{%- set EDGG = data.sectors['lines']['EDGG'] %}
+{%- set EDMM = data.sectors['lines']['EDMM'] %}
+{%- set EDWW = data.sectors['lines']['EDWW'] %}
+{%- set EBBU = data.sectors['lines']['EBBU'] %}
+{%- set LFEE = data.sectors['lines']['LFEE'] %}
+{%- set LSAS = data.sectors['lines']['LSAS'] %}
+{%- set directs = [
+    { "desig": "ABNED", "ebg": [ "EDGG-UCW", "UCW", "UC" ] },
+    { "desig": "AKANU", "ebg": [ "EDGG-UCW", "UCW", "UC" ] },
+    { "desig": "BOMBI", "ebg": [ "EDGG-UCW", "UC" ] },
+    { "desig": "BUB"  , "ebg": [ "EDGG-UCW", "UCW", "UC", "UW" ] },
+    { "desig": "COA"  , "ebg": [ "EDGG-UCW", "UCW", "UW" ] },
+    { "desig": "DENUT", "ebg": [ "EDGG-UCW", "UCW", "UW" ] },
+    { "desig": "DITON", "ebg": [ "EDGG-UCW", "UCW", "UW" ] },
+    { "desig": "DUDCA", "ebg": [ "EDGG-UCW", "UCW", "UC" ] },
+    { "desig": "EKERN", "ebg": [ "EDGG-UCW", "UCW", "UC" ] },
+    { "desig": "ELMEM", "ebg": [ "EDGG-UCW", "UCW", "UW" ] },
+    { "desig": "ELMOX", "ebg": [ "EDGG-UCW", "UCW", "UC" ] },
+    { "desig": "ENITA", "ebg": [ "EDGG-UCW", "UCW", "UC" ] },
+    { "desig": "ESAMA", "ebg": [ "EDGG-UCW", "UC" ] },
+    { "desig": "FEDZA", "ebg": [ "EDGG-UCW", "UCW", "UC", "UW" ] },
+    { "desig": "GALSO", "ebg": [ "EDGG-UCW", "UCW", "UC" ] },
+    { "desig": "GIGET", "ebg": [ "EDGG-UCW", "UC" ] },
+    { "desig": "HMM"  , "ebg": [ "EDGG-UCW", "UCW", "UC" ] },
+    { "desig": "HAREM", "ebg": [ "EDGG-UCW", "UW" ] },
+    { "desig": "IBGES", "ebg": [ "EDGG-UCW", "UCW", "UW" ] },
+    { "desig": "IDOSA", "ebg": [ "EDGG-UCW", "UCW", "UW" ] },
+    { "desig": "IDOVI", "ebg": [ "EDGG-UCW", "UCW", "UW" ] },
+    { "desig": "IRBIR", "ebg": [ "EDGG-UCW", "UCW", "UW" ] },
+    { "desig": "KOZUF", "ebg": [ "EDGG-UCW", "UCW", "UW" ] },
+    { "desig": "KRH"  , "ebg": [ "EDGG-UCW", "UCW", "UW" ] },
+    { "desig": "LAMGO", "ebg": [ "EDGG-UCW", "UCW", "UW" ] },
+    { "desig": "LASTO", "ebg": [ "EDGG-UCW", "UCW", "UC" ] },
+    { "desig": "LIRSU", "ebg": [ "EDGG-UCW", "UCW", "UW" ] },
+    { "desig": "LUTIX", "ebg": [ "EDGG-UCW", "UCW", "UW" ] },
+    { "desig": "MADEB", "ebg": [ "EDGG-UCW", "UCW", "UW" ] },
+    { "desig": "MASEK", "ebg": [ "EDGG-UCW", "UC", "UW" ] },
+    { "desig": "MIMVA", "ebg": [ "EDGG-UCW", "UCW", "UC" ] },
+    { "desig": "MOMUK", "ebg": [ "EDGG-UCW", "UCW", "UW" ] },
+    { "desig": "NOGRO", "ebg": [ "EDGG-UCW", "UCW", "UC" ] },
+    { "desig": "NORKU", "ebg": [ "EDGG-UCW", "UCW", "UC" ] },
+    { "desig": "NORTA", "ebg": [ "EDGG-UCW", "UCW", "UC" ] },
+    { "desig": "OKG"  , "ebg": [ "EDGG-UCW", "UCW", "UC" ] },
+    { "desig": "OSBIT", "ebg": [ "EDGG-UCW", "UC" ] },
+    { "desig": "OTRES", "ebg": [ "EDGG-UCW", "UCW", "UW" ] },
+    { "desig": "RAVLO", "ebg": [ "EDGG-UCW", "UCW", "UC" ] },
+    { "desig": "RKN"  , "ebg": [ "EDGG-UCW", "UCW", "UC" ] },
+    { "desig": "ROBEL", "ebg": [ "EDGG-UCW", "UCW", "UC", "UW" ] },
+    { "desig": "ROLIS", "ebg": [ "EDGG-UCW", "UCW", "UW" ] },
+    { "desig": "ROTOS", "ebg": [ "EDGG-UCW", "UCW", "UW" ] },
+    { "desig": "RUDAP", "ebg": [ "EDGG-UCW", "UCW", "UC" ] },
+    { "desig": "RUDUS", "ebg": [ "EDGG-UCW", "UC" ] },
+    { "desig": "SPY"  , "ebg": [ "EDGG-UCW", "UCW", "UC" ] },
+    { "desig": "SUBIX", "ebg": [ "EDGG-UCW", "UCW", "UC" ] },
+    { "desig": "TAMEB", "ebg": [ "EDGG-UCW", "UCW", "UC", "UW" ] },
+    { "desig": "TEDGO", "ebg": [ "EDGG-UCW", "UCW", "UC" ] },
+    { "desig": "TESGA", "ebg": [ "EDGG-UCW", "UW" ] },
+    { "desig": "TIKNI", "ebg": [ "EDGG-UCW", "UW" ] },
+    { "desig": "TIRUL", "ebg": [ "EDGG-UCW", "UCW", "UW" ] },
+    { "desig": "TIVUN", "ebg": [ "EDGG-UCW", "UCW", "UC" ] },
+    { "desig": "TONSU", "ebg": [ "EDGG-UCW", "UCW", "UC" ] },
+    { "desig": "TORNU", "ebg": [ "EDGG-UCW", "UCW", "UC" ] },
+    { "desig": "TRA"  , "ebg": [ "EDGG-UCW", "UCW", "UW" ] },
+    { "desig": "UMDAS", "ebg": [ "EDGG-UCW", "UCW", "UW" ] },
+    { "desig": "UMUPU", "ebg": [ "EDGG-UCW", "UCW", "UC" ] },
+    { "desig": "VEMUT", "ebg": [ "EDGG-UCW", "UCW", "UC" ] },
+    { "desig": "XERUM", "ebg": [ "EDGG-UCW", "UCW", "UC" ] },
+] %}
+{%- set notes = [
+    { "text": "BUB:Not DEP EDDF, EDFx:5:11", "ebg": [ "EDGG-UCW", "UCW", "UW" ] },
+    { "text": "DENUT:Not DEP EDDF, EDFx:5:11", "ebg": [ "EDGG-UCW", "UCW", "UW" ] },
+    { "text": "ELMOX:ARR EDDM:5:11", "ebg": [ "EDGG-UCW", "UCW", "UC" ] },
+    { "text": "IBGES:ARR ELLX:5:11", "ebg": [ "EDGG-UCW", "UCW", "UW" ] },
+    { "text": "IDOVI:ARR EBxx:5:11", "ebg": [ "EDGG-UCW", "UCW", "UW" ] },
+    { "text": "KRH:ARR LFSB:5:11", "ebg": [ "EDGG-UCW", "UCW", "UW" ] },
+    { "text": "LAMGO:ARR LSZH, LSAZ,:5:11", "ebg": [ "EDGG-UCW", "UCW", "UW" ] },
+    { "text": "LAMGO:EDNY, LSMD:5:22", "ebg": [ "EDGG-UCW", "UCW", "UW" ] },
+    { "text": "ROLIS:ARR EHEH:5:11", "ebg": [ "EDGG-UCW", "UCW", "UW" ] },
+    { "text": "RUDAP:ARR LKPR:5:11", "ebg": [ "EDGG-UCW", "UCW", "UC" ] },
+    { "text": "UMDAS:ARR EDDK:5:11", "ebg": [ "EDGG-UCW", "UCW", "UW" ] },
+    { "text": "DUDCA:Via or west of BERXO:5:11", "ebg": [ "EDGG-UCW", "UCW", "UC" ] },
+    { "text": "DUDCA:Not ARR EDDV:5:22", "ebg": [ "EDGG-UCW", "UCW", "UC" ] },
+    { "text": "EKERN:Via or west of BERXO:5:11", "ebg": [ "EDGG-UCW", "UCW", "UC" ] },
+    { "text": "NORTA:Via or west of BERXO:5:11", "ebg": [ "EDGG-UCW", "UCW", "UC" ] },
+    { "text": "NORTA:Not ARR EDDV:5:22", "ebg": [ "EDGG-UCW", "UCW", "UC" ] },
+    { "text": "UMDAS:North of KOVAN:5:22", "ebg": [ "EDGG-UCW", "UCW", "UW" ] },
+    { "text": "AKANU:Between GEBNO & DINKU:5:11", "ebg": [ "EDGG-UCW", "UCW", "UC" ] },
+    { "text": "XERUM:Between GEBNO & DINKU:5:11", "ebg": [ "EDGG-UCW", "UCW", "UC" ] },
+    { "text": "BOMBI:From WUR:5:11", "ebg": [ "EDGG-UCW", "UC" ] },
+    { "text": "ESAMA:From WUR:5:11", "ebg": [ "EDGG-UCW", "UC" ] },
+    { "text": "GIGET:From FFM:5:11", "ebg": [ "EDGG-UCW" ] },
+    { "text": "HAREM:From TGO:5:11", "ebg": [ "EDGG-UCW" ] },
+    { "text": "OSBIT:From FUL:5:11", "ebg": [ "EDGG-UCW", "UC" ] },
+    { "text": "RUDUS:From FFM:5:11", "ebg": [ "EDGG-UCW" ] },
+    { "text": "TESGA:From NTM:5:11", "ebg": [ "EDGG-UCW" ] },
+    { "text": "TIKNI:From TGO:5:11", "ebg": [ "EDGG-UCW" ] },
+] %}
+
+MAP:T-Directs - UCW
+FOLDER:Airspace Info
+TEXTALIGN:LB
+
+// Misc Points
+COLOR:label
+SYMBOL:FIX3:BERXO:BERXO:5:0
+SYMBOL:FIX3:DINKU:DINKU:5:0
+SYMBOL:FIX3:GEBNO:GEBNO:5:0
+SYMBOL:FIX3:KOVAN:KOVAN:5:0
+SYMBOL:FIX3:LOHRE:LOHRE:5:0
+
+// Tactical Directs
+COLOR:blue
+{%- for fx in directs if 'UCW' in fx['ebg'] %}
+SYMBOL:FIX3:{{fx['desig']}}:{{fx['desig']}}:5:0
+{%- endfor %}
+TEXTALIGN:LT
+SYMBOL:FIX3:ADKUV:ADKUV:5:0
+SYMBOL:FIX3:ARPEG:ARPEG:5:0
+
+// Notes
+FONTSIZE:=:10
+TEXTALIGN:LB
+{%- for fx in notes if 'UCW' in fx['ebg'] %}
+TEXT:{{fx['text']}}
+{%- endfor %}
+TEXTALIGN:LT
+TEXT:ARPEG:North of LOHRE:5:11
+
+
+// EBG West and Central
+TEXTALIGN:CC
+FONTSIZE:=:15
+FONTSTYLE:700:0:0:0
+STYLE:SOLID:2
+{{ render_sectorlines(
+    sector_and( EDGG['FUL33']['375-660'], EDGG['YYMH']['355-660'] ),
+    sector_and( EDGG['FUL33']['375-660'], EDWW['EDYYSH']['355-660'] ),
+    sector_and( EDGG['FUL33']['375-660'], EDMM['EDUUSAL22']['365-660'] ),
+    sector_and( EDGG['FUL33']['375-660'], EDMM['EDUUERL44']['375-660'] ),
+    sector_and( EDGG['WUR44']['375-660'], EDMM['EDUUERL44']['375-660'] ),
+    sector_and( EDGG['WUR44']['375-660'], EDMM['EDUUDON44']['375-660'] ),
+    sector_and( EDGG['WUR44']['375-660'], EDMM['EDUUISA44']['375-660'] ),
+    sector_and( EDGG['TGO33']['375-660'], EDMM['EDUUISA44']['375-660'] ),
+    sector_and( EDGG['TGO33']['375-660'], EDMM['EDUUALP44']['375-660'] ),
+    sector_and( EDGG['TGO33']['375-660'], LSAS['LSASZ']['315-999'] ),
+    sector_and( EDGG['SLN33']['375-660'], LSAS['LSASZ']['315-999'] ),
+    sector_and( EDGG['SLN33']['375-660'], LFEE['HE']['365-660'] ),
+    sector_and( EDGG['NTM44']['375-660'], LFEE['HE']['365-660'] ),
+    sector_and( EDGG['NTM44']['375-660'], EBBU['EDYYLXH_SCT']['245-660'] ),
+    sector_and( EDGG['NTM44']['375-660'], EBBU['EDYYLNH_SCT']['245-660'] ),
+    sector_and( EDGG['NTM44']['375-660'], EBBU['EDYYLNH_SCT 2']['255-660'] ),
+    sector_and( EDGG['NTM44']['375-660'], EDGG['YYRH']['355-660'] ),
+    sector_and( EDGG['FFM44']['375-660'], EDGG['YYRH']['355-660'] ),
+) }}
+TEXT:N049.53.05.500:E008.55.42.000:Within EBG West and Central
+TEXT:N049.53.05.500:E008.55.42.000:all waypoints cross-sector approved:0:20
+
+// ERL
+STYLE:DASHED:2
+{{ render_sectorlines(EDMM['EDUUERL44']['375-660']) }}
+TEXT:N050.10.37.500:E011.21.29.000:Any Waypoint
+TEXT:N050.10.37.500:E011.21.29.000:within ERL from WUR:0:20
+
+
+MAP:T-Directs - UC
+FOLDER:Airspace Info
+TEXTALIGN:LB
+
+// Misc Points
+COLOR:label
+SYMBOL:FIX3:BERXO:BERXO:5:0
+SYMBOL:FIX3:DINKU:DINKU:5:0
+SYMBOL:FIX3:GEBNO:GEBNO:5:0
+SYMBOL:FIX3:LOHRE:LOHRE:5:0
+
+// Exceptions
+COLOR:red
+FONTSIZE:=:10
+SYMBOL:FIX3:MAPOX:Except:5:-5
+FONTSIZE:0
+SYMBOL:FIX3:MAPOX:MAPOX:5:7
+
+// Tactical Directs
+COLOR:blue
+{%- for fx in directs if 'UC' in fx['ebg'] %}
+SYMBOL:FIX3:{{fx['desig']}}:{{fx['desig']}}:5:0
+{%- endfor %}
+TEXTALIGN:LT
+SYMBOL:FIX3:ADKUV:ADKUV:5:0
+SYMBOL:FIX3:ARPEG:ARPEG:5:0
+
+// Notes
+FONTSIZE:=:10
+TEXTALIGN:LB
+{%- for fx in notes if 'UC' in fx['ebg'] %}
+TEXT:{{fx['text']}}
+{%- endfor %}
+TEXTALIGN:LT
+TEXT:ARPEG:North of LOHRE:5:11
+
+// EBG Central
+TEXTALIGN:CC
+FONTSIZE:=:15
+FONTSTYLE:700:0:0:0
+STYLE:SOLID:2
+{{ render_sectorlines(
+    sector_and( EDGG['FUL33']['375-660'], EDGG['YYMH']['355-660'] ),
+    sector_and( EDGG['FUL33']['375-660'], EDWW['EDYYSH']['355-660'] ),
+    sector_and( EDGG['FUL33']['375-660'], EDMM['EDUUSAL22']['365-660'] ),
+    sector_and( EDGG['FUL33']['375-660'], EDMM['EDUUERL44']['375-660'] ),
+    sector_and( EDGG['WUR44']['375-660'], EDMM['EDUUERL44']['375-660'] ),
+    sector_and( EDGG['WUR44']['375-660'], EDMM['EDUUDON44']['375-660'] ),
+    sector_and( EDGG['WUR44']['375-660'], EDMM['EDUUISA44']['375-660'] ),
+    sector_and( EDGG['WUR44']['375-660'], EDGG['TGO33']['375-660'] ),
+    sector_and( EDGG['WUR44']['375-660'], EDGG['SLN33']['375-660'] ),
+    sector_and( EDGG['FFM44']['375-660'], EDGG['SLN33']['375-660'] ),
+    sector_and( EDGG['FFM44']['375-660'], EDGG['NTM44']['375-660'] ),
+    sector_and( EDGG['FFM44']['375-660'], EDGG['YYRH']['355-660'] ),
+) }}
+
+// FUL
+STYLE:DASHED:2
+{{ render_sectorlines(EDGG['FUL132']['255-325']) }}
+TEXT:N050.55.42.000:E009.31.53.500:Any Waypoint
+TEXT:N050.55.42.000:E009.31.53.500:within FUL from WUR:0:20
+
+// ERL
+STYLE:DASHED:2
+{{ render_sectorlines(EDMM['EDUUERL44']['375-660']) }}
+TEXT:N050.10.37.500:E011.21.29.000:Any Waypoint
+TEXT:N050.10.37.500:E011.21.29.000:within ERL from WUR:0:20
+
+
+MAP:T-Directs - UW
+FOLDER:Airspace Info
+TEXTALIGN:LB
+
+// Misc Points
+COLOR:label
+SYMBOL:FIX3:KOVAN:KOVAN:5:0
+
+// Tactical Directs
+COLOR:blue
+{%- for fx in directs if 'UW' in fx['ebg'] %}
+SYMBOL:FIX3:{{fx['desig']}}:{{fx['desig']}}:5:0
+{%- endfor %}
+TEXTALIGN:LT
+SYMBOL:FIX3:ADKUV:ADKUV:5:0
+
+// Notes
+FONTSIZE:=:10
+TEXTALIGN:LB
+{%- for fx in notes if 'UW' in fx['ebg'] %}
+TEXT:{{fx['text']}}
+{%- endfor %}
+
+// EBG West
+TEXTALIGN:CC
+FONTSIZE:=:15
+FONTSTYLE:700:0:0:0
+STYLE:SOLID:2
+{{ render_sectorlines(
+    sector_and( EDGG['TGO33']['375-660'], EDMM['EDUUISA44']['375-660'] ),
+    sector_and( EDGG['TGO33']['375-660'], EDMM['EDUUALP44']['375-660'] ),
+    sector_and( EDGG['TGO33']['375-660'], LSAS['LSASZ']['315-999'] ),
+    sector_and( EDGG['SLN33']['375-660'], LSAS['LSASZ']['315-999'] ),
+    sector_and( EDGG['SLN33']['375-660'], LFEE['HE']['365-660'] ),
+    sector_and( EDGG['NTM44']['375-660'], LFEE['HE']['365-660'] ),
+    sector_and( EDGG['NTM44']['375-660'], EBBU['EDYYLXH_SCT']['245-660'] ),
+    sector_and( EDGG['NTM44']['375-660'], EBBU['EDYYLNH_SCT']['245-660'] ),
+    sector_and( EDGG['NTM44']['375-660'], EBBU['EDYYLNH_SCT 2']['255-660'] ),
+    sector_and( EDGG['NTM44']['375-660'], EDGG['YYRH']['355-660'] ),
+    sector_and( EDGG['NTM44']['375-660'], EDGG['FFM44']['375-660'] ),
+    sector_and( EDGG['SLN33']['375-660'], EDGG['FFM44']['375-660'] ),
+    sector_and( EDGG['SLN33']['375-660'], EDGG['WUR44']['375-660'] ),
+    sector_and( EDGG['TGO33']['375-660'], EDGG['WUR44']['375-660'] ),
+) }}
+TEXT:N049.33.59.000:E007.43.52.500:Within EBG West all waypoints
+TEXT:N049.33.59.000:E007.43.52.500:cross-sector approved:0:20
