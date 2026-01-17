@@ -29,8 +29,8 @@ Datablock:assumed:6264500:3.4:0:0:7
 Datablock:transfer to me initiated:0:3.4:0:0:7
 Datablock:redundant:0:3.4:0:0:7
 Datablock:information:0:3.4:0:0:7
-Datablock:even flight level:11974326:3.5:0:0:7
-Datablock:odd flight level:39835:3.5:0:0:7
+Datablock:even flight level:11974326:3.4:0:0:7
+Datablock:odd flight level:39835:3.4:0:0:7
 Datablock:arrivals:29294:3.4:0:0:7
 Datablock:departures:10703152:3.4:0:0:7
 Datablock:user 1:0:3.5:0:0:7
@@ -39,11 +39,11 @@ Datablock:user 3:16777215:3.5:0:0:7
 Datablock:user 4:16777215:3.5:0:0:7
 Datablock:user 5:16777215:3.5:0:0:7
 Datablock:user 6:16777215:3.5:0:0:7
-Datablock:emergency:1645025:3.5:0:0:7
-Datablock:ongoing requested by me:693910:3.5:0:0:7
-Datablock:ongoing requested by other:11146480:3.5:0:0:7
-Datablock:ongoing accepted:2263842:3.5:0:0:7
-Datablock:ongoing refused:32225:3.5:0:0:7
+Datablock:emergency:1645025:3.4:0:0:7
+Datablock:ongoing requested by me:693910:3.4:0:0:7
+Datablock:ongoing requested by other:11146480:3.4:0:0:7
+Datablock:ongoing accepted:2263842:3.4:0:0:7
+Datablock:ongoing refused:32225:3.4:0:0:7
 Datablock:detailed background:14342874:3.5:0:0:7
 Datablock:active item background:13816530:3.5:0:0:7
 Datablock:arrival background:1395241:3.5:0:0:7
