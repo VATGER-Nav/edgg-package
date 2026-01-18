@@ -172,8 +172,8 @@ COLOR:restrictions-E
 STYLE:SOLID:4
 {{ data.eddf_kml['layout']['restrictions']['line']['M19'] | to_line('') -}}
 
-// S8
-COLOR:restrictions-D
+// S8 (Abeam H1-H3)
+COLOR:restrictions-C
 STYLE:SOLID:4
 {{ data.eddf_kml['layout']['restrictions']['line']['S8'] | to_line('') -}}
 
@@ -269,7 +269,9 @@ COLOR:restrictions-C
     'H12',
     'H13',
     'H14',
+    'J1',
     'J13',
+    'J15',
     'J17',
     'K2',
     'V93',
@@ -369,6 +371,7 @@ COLOR:restrictions-D
     'H5',
     'H6',
     'J2',
+    'J3',
     'V110',
     'V111',
     'V113',
@@ -379,7 +382,7 @@ COLOR:restrictions-D
 ] %}
 {{- data.eddf_kml['layout']['restrictions']['stands'][desig] | to_symbol('STAND') }}
 {% endfor %}
-{% for desig in ['J2'] %}
+{% for desig in ['J2', 'J3'] %}
 {{- data.eddf_kml['layout']['restrictions']['stands'][desig] | to_text('MAX B753:0:15') }}
 {% endfor %}
 COLOR:restrictions-E
