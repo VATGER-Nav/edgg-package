@@ -24,9 +24,6 @@ COLOR:layout-label-taxiway
 {{- geom | to_text(desig) }}
 {% endfor %}
 
-// Closed due to NOTAM C0007/25:
-// 321, 326
-
 MAP:Stands
 AIRPORT:EDFH
 FOLDER:Labels
@@ -35,7 +32,7 @@ ACTIVE:1
 ZOOM:500
 FONTSIZE:=:9
 COLOR:layout-label-stand
-{% for desig, geom in data.edfh_kml['layout']['labels']['stands'].items() if not desig in ['321', '326'] %}
+{% for desig, geom in data.edfh_kml['layout']['labels']['stands'].items() %}
 {{- geom | to_text(desig) }}
 {% endfor %}
 {{ data.edfh_kml['layout']['labels']['GAT'] | to_text('GAT') }}
@@ -51,16 +48,6 @@ COLOR:layout-label-stand
 {{ data.edfh_kml['layout']['labels']['aprons']['APN 3'] | to_text('APN 3') }}
 {{ data.edfh_kml['layout']['labels']['aprons']['APN 4'] | to_text('APN 4') }}
 {{ data.edfh_kml['layout']['labels']['aprons']['APN 5'] | to_text('APN 5:0:-12') }}
-
-MAP:Closed Stands
-AIRPORT:EDFH
-FOLDER:Labels
-ZOOM:500
-FONTSIZE:=:9
-COLOR:layout-label-stand
-{% for desig in ['321', '326'] %}
-{{- data.edfh_kml['layout']['labels']['stands'][desig] | to_text(desig) }}
-{% endfor %}
 
 MAP:Stands Old
 AIRPORT:EDFH
