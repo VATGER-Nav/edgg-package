@@ -5,7 +5,7 @@
         "transAlt": 5000,
         "maxInitialClimb": 7000,
         "intersections": {"13": "B,F,C", "31": "A,D"},
-        "appSI": "DLD,DLA,BOT,PADH",
+        "appSI": "DLD,DLA,BOT,DKLA,GN,GNH",
         "sids": {
             "initial": 2000,
             "ABODU": {

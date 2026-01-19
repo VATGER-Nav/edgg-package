@@ -6,7 +6,7 @@
         "maxInitialClimb": 7000,
         "customRules" : {"nosouth":false},
         "intersections": {"05R": "L9,L8,L6", "05L": "K5", "23L": "L1,L2,L3,L4", "23R": "K,K1,K2"},
-		"appSI": "DLA,DLD,BOT,PADH",
+		"appSI": "DLA,DLD,BOT,DKLA,GN,GNH",
         "sids": {
             "initial": 5000,
             "COL": {

@@ -5,7 +5,7 @@
         "transAlt": 5000,
         "maxInitialClimb": 8000,
         "intersections": {"08": "C,B", "26": "A,B"},
-        "appSI": "PFA,EIF,RUD,GIN,KTG",
+        "appSI": "PFA,EIF,RUD,RUDH,GC,GCA,GCH,GCS,GCSH",
         "sids": {
             "climbvia": true,
             "GTQ": {
