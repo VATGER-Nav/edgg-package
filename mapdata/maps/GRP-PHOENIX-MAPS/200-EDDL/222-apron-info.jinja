@@ -11,7 +11,6 @@ COLOR:closure
     '3d2da2f5-e2a3-f015-e063-86c812ac0154',
     '3d2da2f5-e2a4-f015-e063-86c812ac0154',
     '3d2da2f5-e2a5-f015-e063-86c812ac0154',
-    '3d2da2f5-e2a9-f015-e063-86c812ac0154',
     '3d2da2f5-e2aa-f015-e063-86c812ac0154',
     '3d2da2f5-e2ab-f015-e063-86c812ac0154',
     '3d2da2f5-e2ad-f015-e063-86c812ac0154',
@@ -95,16 +94,21 @@ COLOR:closure
     '3d67483c-5e16-40d4-e063-86c812ac4a80',
     '3d67483c-5e17-40d4-e063-86c812ac4a80',
     '3d67483c-5e18-40d4-e063-86c812ac4a80',
+    '43caf4de-9c9c-f787-e063-86c812acece1',
+    '43caf4de-9c9d-f787-e063-86c812acece1',
+    '43caf4de-9c9e-f787-e063-86c812acece1',
+    '43caf4de-9ca1-f787-e063-86c812acece1',
+    '43dfcf3a-9575-305a-e063-86c812acbf48',
+    '43dfcf3a-9577-305a-e063-86c812acbf48',
+    '43dfcf3a-9578-305a-e063-86c812acbf48',
+    '43dfcf3a-957a-305a-e063-86c812acbf48',
+    '43dfcf3a-9581-305a-e063-86c812acbf48',
+    '43dfcf3a-9583-305a-e063-86c812acbf48',
+    '43dfcf3a-9585-305a-e063-86c812acbf48',
+    '43dfcf3a-9586-305a-e063-86c812acbf48',
+    '43dfcf3a-9587-305a-e063-86c812acbf48',
 ] %}
 {{- data.eddl_aixm['GuidanceLine'][uuid] | join_segments | simplify(default) | to_line(uuid) -}}
-{% endfor %}
-{% for desig in [
-    'V46',
-    'V45',
-    'V44',
-    'V43',
-] %}
-{{- data.eddl_kml['layout']['markings']['leadin_solid'][desig] | to_line('') -}}
 {% endfor %}
 
 ZOOM:600
