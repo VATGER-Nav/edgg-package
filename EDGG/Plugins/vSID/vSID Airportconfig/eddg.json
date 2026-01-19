@@ -5,7 +5,7 @@
         "intersections": {"07": "B,C", "28": "A,C"},
         "transAlt": 5000,
         "maxInitialClimb": 7000,
-		"appSI": "HMM,PADL,PADH",
+		"appSI": "HMM,PADL,PAD,PADH,GN,GNH,GA,GAH",
         "sids": {
             "initial": 5000,
             "DOMEG": {

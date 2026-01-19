@@ -6,7 +6,7 @@
         "transAlt": 5000,
         "maxInitialClimb": 7000,
         "customRules" : {"high":false},
-		"appSI": "DKA,NOR,PADH",
+		"appSI": "DKA,NOR,DKLA,GN,GNH",
         "sids": {
             "initial": 5000,
             "COL": {

@@ -99,7 +99,7 @@
         "runways": "10,28",
         "transAlt": 5000,
         "maxInitialClimb": 7000,
-		"appSI": "STG,BAD,DKB,KTG",
+		"appSI": "STG,BAD,BADH,GS,GSA,GCS,GCSH",
         "sids": {
             "initial": 5000,
             "climbvia": true,
@@ -188,7 +188,7 @@
         "runways": "08,26",
         "transAlt": 5000,
         "maxInitialClimb": 7000,
-		"appSI": "DKB,KTG,BAD",
+		"appSI": "DKB,DKBH,GS,GSA,GCS,GCSH",
         "sids": {
             "initial": 5000,
             "climbvia": true,
@@ -227,7 +227,7 @@
         "runways": "03,21",
         "transAlt": 5000,
         "maxInitialClimb": 4000,
-		"appSI": "PFA,EIF,RUD,GIN,KTG",
+		"appSI": "PFA,EIF,RUD,RUDH,GC,GCA,GCH,GCS,GCSH",
         "sids": {
             "initial": 4000,
             "LADAT": {
@@ -308,7 +308,7 @@
         "runways": "13,31",
         "transAlt": 5000,
         "maxInitialClimb": 7000,
-		"appSI": "SIG,TAU,GIN,RUD,KTG",
+		"appSI": "TAU,SIG,GIN,GINH,GC,GCH,GA,GAH,GCS,GCSH",
         "sids": {
             "initial": 6000,
             "climbvia": true,
@@ -375,7 +375,7 @@
         "runways": "11,29",
         "transAlt": 5000,
         "maxInitialClimb": 7000,
-		"appSI": "GIN,RUD,KTG",
+		"appSI": "GIN,GINH,GC,GCH,GA,GAH,GCS,GCSH",
         "sids": {
             "initial": 7000,
             "climbvia": true,

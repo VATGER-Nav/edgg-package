@@ -8,7 +8,7 @@
         "intersections": {"25C": "L1,L3,L4,L5,L6,L9,M6,M8,M10", "25L": "R3,R5,M7", "07C": "L21,L20,L19,L17,L16,L14,M34,M30,M28", "07R": "R17,R15,M29,M25", "18": "N,N-S,L,M,S,W1,W3"},
         "timeMode": true,
         "timezone": "Europe/Berlin",
-		"appSI": "GIN,DKB,KTG",
+		"appSI": "RUD,RUDH,DKB,DKBH,GCA,GSA",
         "sids": {
             "climbvia": true,
 			"ANEKI": {
