@@ -99,7 +99,7 @@
         "runways": "10,28",
         "transAlt": 5000,
         "maxInitialClimb": 7000,
-		"appSI": "STG,BAD,BADH,GS,GSA,GCS,GCSH",
+		"appSI": "STG,BAD,BADH,GS,GSH,GSA,GCS,GCSH",
         "sids": {
             "initial": 5000,
             "climbvia": true,
@@ -188,7 +188,7 @@
         "runways": "08,26",
         "transAlt": 5000,
         "maxInitialClimb": 7000,
-		"appSI": "DKB,DKBH,GS,GSA,GCS,GCSH",
+		"appSI": "DKB,DKBH,GS,GSH,GSA,GCS,GCSH",
         "sids": {
             "initial": 5000,
             "climbvia": true,
