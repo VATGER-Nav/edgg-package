@@ -90,7 +90,7 @@ SAP=0
 
 Shortcut_RadarMenu_Combo=0x00
 Shortcut_Map_Xfr_Key=1,0x4D ; M
-Shortcut_Map_Xfr_Key=2,0x44 ; D
+Shortcut_Map_Xfr_Key=2,0x41 ; A
 Shortcut_Map_Xfr_Key=3,0x48 ; H
 Shortcut_Map_Xfr_Key=4,0x56 ; V
 Shortcut_Map_Xfr_Key=5,0x54 ; T
