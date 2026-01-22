@@ -19,6 +19,11 @@ ATIS2:Langen Radar
 ATIS3:Pilotbriefing vats.im/eddf
 ATIS4:You have feedback? Submit it! feedback.vatger.de
 
+PROFILE:EDGG_KL_APP:150:5
+ATIS2:Langen Radar
+ATIS3:Coverage at vatsim-radar.com/vg - PDC/DCL Datalink [EDDL]
+ATIS4:You have feedback? Submit it! feedback.vatger.de
+
 PROFILE:EDDL_APP:150:5
 ATIS2:Langen Radar
 ATIS3:Coverage at vatsim-radar.com/vg - PDC/DCL Datalink [EDDL]
@@ -94,24 +99,99 @@ ATIS2:Langen Radar
 ATIS3:Coverage at vatsim-radar.com/vg - PDC/DCL Datalink [EDLP]
 ATIS4:You have feedback? Submit it! feedback.vatger.de
 
+PROFILE:EDGG_A_CTR:300:6
+ATIS2:Langen Radar - NO CPDLC
+ATIS3:Coverage at vatsim-radar.com/vg - only below FL245
+ATIS4:You have feedback? Submit it! feedback.vatger.de
+
+PROFILE:EDGG_AH_CTR:300:6
+ATIS2:Langen Radar - CPDLC [EDGA]
+ATIS3:Coverage at vatsim-radar.com/vg
+ATIS4:You have feedback? Submit it! feedback.vatger.de
+
+PROFILE:EDGG_N_CTR:300:6
+ATIS2:Langen Radar - NO CPDLC
+ATIS3:Coverage at vatsim-radar.com/vg - only below FL245
+ATIS4:You have feedback? Submit it! feedback.vatger.de
+
+PROFILE:EDGG_NH_CTR:300:6
+ATIS2:Langen Radar - CPDLC [EDGN]
+ATIS3:Coverage at vatsim-radar.com/vg
+ATIS4:You have feedback? Submit it! feedback.vatger.de
+
+PROFILE:EDGG_C_CTR:300:6
+ATIS2:Langen Radar - NO CPDLC
+ATIS3:Coverage at vatsim-radar.com/vg - only below FL245
+ATIS4:You have feedback? Submit it! feedback.vatger.de
+
+PROFILE:EDGG_CH_CTR:300:6
+ATIS2:Langen Radar - CPDLC [EDGC]
+ATIS3:Coverage at vatsim-radar.com/vg
+ATIS4:You have feedback? Submit it! feedback.vatger.de
+
+PROFILE:EDGG_CA_CTR:300:6
+ATIS2:Langen Radar - PDC/DCL Datalink [EDDF]
+ATIS3:Coverage at vatsim-radar.com/vg - only below FL245
+ATIS4:You have feedback? Submit it! feedback.vatger.de
+
+PROFILE:EDGG_S_CTR:300:6
+ATIS2:Langen Radar - NO CPDLC
+ATIS3:Coverage at vatsim-radar.com/vg - only below FL245
+ATIS4:You have feedback? Submit it! feedback.vatger.de
+
+PROFILE:EDGG_SH_CTR:300:6
+ATIS2:Langen Radar - CPDLC [EDGC]
+ATIS3:Coverage at vatsim-radar.com/vg
+ATIS4:You have feedback? Submit it! feedback.vatger.de
+
+PROFILE:EDGG_SA_CTR:300:6
+ATIS2:Langen Radar - PDC/DCL Datalink [EDDF]
+ATIS3:Coverage at vatsim-radar.com/vg - only below FL245
+ATIS4:You have feedback? Submit it! feedback.vatger.de
+
+PROFILE:EDGG_CS_CTR:300:6
+ATIS2:Langen Radar - NO CPDLC
+ATIS3:Coverage at vatsim-radar.com/vg - only below FL245
+ATIS4:You have feedback? Submit it! feedback.vatger.de
+
+PROFILE:EDGG_CSH_CTR:300:6
+ATIS2:Langen Radar - CPDLC [EDGH]
+ATIS3:Coverage at vatsim-radar.com/vg
+ATIS4:You have feedback? Submit it! feedback.vatger.de
+
 PROFILE:EDGG_BAD_CTR:300:6
 ATIS2:Langen Radar - NO CPDLC
 ATIS3:Coverage at vatsim-radar.com/vg - only below FL245
 ATIS4:You have feedback? Submit it! feedback.vatger.de
 
+PROFILE:EDGG_BAH_CTR:300:6
+ATIS2:Langen Radar - CPDLC [EDGB]
+ATIS3:Coverage at vatsim-radar.com/vg
+ATIS4:You have feedback? Submit it! feedback.vatger.de
+
 PROFILE:EDGG_DKB_CTR:300:6
+ATIS2:Langen Radar - NO CPDLC
+ATIS3:Coverage at vatsim-radar.com/vg - only below FL245
+ATIS4:You have feedback? Submit it! feedback.vatger.de
+
+PROFILE:EDGG_DKH_CTR:300:6
 ATIS2:Langen Radar - CPDLC [EDGD]
 ATIS3:Coverage at vatsim-radar.com/vg
 ATIS4:You have feedback? Submit it! feedback.vatger.de
 
 PROFILE:EDGG_GIN_CTR:300:6
+ATIS2:Langen Radar - NO CPDLC
+ATIS3:Coverage at vatsim-radar.com/vg - only below FL245
+ATIS4:You have feedback? Submit it! feedback.vatger.de
+
+PROFILE:EDGG_GIH_CTR:300:6
 ATIS2:Langen Radar - CPDLC [EDGG]
 ATIS3:Coverage at vatsim-radar.com/vg
 ATIS4:You have feedback? Submit it! feedback.vatger.de
 
-PROFILE:EDGG_KTG_CTR:300:6
-ATIS2:Langen Radar - CPDLC [EDGK]
-ATIS3:Coverage at vatsim-radar.com/vg
+PROFILE:EDGG_PAD_CTR:300:6
+ATIS2:Langen Radar - NO CPDLC
+ATIS3:Coverage at vatsim-radar.com/vg - only below FL245
 ATIS4:You have feedback? Submit it! feedback.vatger.de
 
 PROFILE:EDGG_PAH_CTR:300:6
@@ -124,12 +204,42 @@ ATIS2:Langen Radar - NO CPDLC
 ATIS3:Coverage at vatsim-radar.com/vg - only below FL245
 ATIS4:You have feedback? Submit it! feedback.vatger.de
 
+PROFILE:EDGG_RUH_CTR:300:6
+ATIS2:Langen Radar - CPDLC [EDGR]
+ATIS3:Coverage at vatsim-radar.com/vg
+ATIS4:You have feedback? Submit it! feedback.vatger.de
+
 PROFILE:EDGG_HEF_CTR:300:6
 ATIS2:Langen Radar - NO CPDLC
 ATIS3:Coverage at vatsim-radar.com/vg - only below FL245
 ATIS4:You have feedback? Submit it! feedback.vatger.de
 
-PROFILE:EDGG_HAB_CTR:300:6
+PROFILE:EDGG_KIR_CTR:300:6
+ATIS2:Langen Radar - NO CPDLC
+ATIS3:Coverage at vatsim-radar.com/vg - only below FL245
+ATIS4:You have feedback? Submit it! feedback.vatger.de
+
+PROFILE:EDGG_KTG_CTR:300:6
+ATIS2:Langen Radar - NO CPDLC
+ATIS3:Coverage at vatsim-radar.com/vg - only below FL245
+ATIS4:You have feedback? Submit it! feedback.vatger.de
+
+PROFILE:EDGG_LBU_CTR:300:6
+ATIS2:Langen Radar - NO CPDLC
+ATIS3:Coverage at vatsim-radar.com/vg - only below FL245
+ATIS4:You have feedback? Submit it! feedback.vatger.de
+
+PROFILE:EDGG_MAN_CTR:300:6
+ATIS2:Langen Radar - NO CPDLC
+ATIS3:Coverage at vatsim-radar.com/vg - only below FL245
+ATIS4:You have feedback? Submit it! feedback.vatger.de
+
+PROFILE:EDGG_SIG_CTR:300:6
+ATIS2:Langen Radar - NO CPDLC
+ATIS3:Coverage at vatsim-radar.com/vg - only below FL245
+ATIS4:You have feedback? Submit it! feedback.vatger.de
+
+PROFILE:EDGG_TAU_CTR:300:6
 ATIS2:Langen Radar - NO CPDLC
 ATIS3:Coverage at vatsim-radar.com/vg - only below FL245
 ATIS4:You have feedback? Submit it! feedback.vatger.de

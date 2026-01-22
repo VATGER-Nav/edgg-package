@@ -4,6 +4,21 @@ ATIS2:
 ATIS3:
 ATIS4:
 
+PROFILE:EDUU_C_CTR:300:6
+ATIS2:Rhein Radar - CPDLC [EDUX]
+ATIS3:Coverage at vatsim-radar.com/vg - only above FL245!
+ATIS4:You have feedback? Submit it! feedback.vatger.de
+
+PROFILE:EDUU_W_CTR:300:6
+ATIS2:Rhein Radar - CPDLC [EDUY]
+ATIS3:Coverage at vatsim-radar.com/vg - only above FL245!
+ATIS4:You have feedback? Submit it! feedback.vatger.de
+
+PROFILE:EDUU_CW_CTR:300:6
+ATIS2:Rhein Radar - CPDLC [EDUZ]
+ATIS3:Coverage at vatsim-radar.com/vg - only above FL245!
+ATIS4:You have feedback? Submit it! feedback.vatger.de
+
 PROFILE:EDUU_WUR_CTR:300:6
 ATIS2:Rhein Radar - CPDLC [EDUW]
 ATIS3:Coverage at vatsim-radar.com/vg - only above FL245!
@@ -15,12 +30,12 @@ ATIS3:Coverage at vatsim-radar.com/vg - only above FL245!
 ATIS4:You have feedback? Submit it! feedback.vatger.de
 
 PROFILE:EDUU_FFM_CTR:300:6
-ATIS2:Rhein Radar - CPDLC [EDUF]
+ATIS2:Rhein Radar - CPDLC [EDUM]
 ATIS3:Coverage at vatsim-radar.com/vg - only above FL245!
 ATIS4:You have feedback? Submit it! feedback.vatger.de
 
 PROFILE:EDUU_FUL_CTR:300:6
-ATIS2:Rhein Radar - CPDLC [EDUU]
+ATIS2:Rhein Radar - CPDLC [EDUF]
 ATIS3:Coverage at vatsim-radar.com/vg - only above FL245!
 ATIS4:You have feedback? Submit it! feedback.vatger.de
 
