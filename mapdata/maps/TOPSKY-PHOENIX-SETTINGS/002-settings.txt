@@ -53,7 +53,6 @@ Label_Field18_Flag_Items=STS/,newbie,NEWBIE,Newbie,beginner,newbe,deaf,blind,new
 Label_GS_Digits=2
 Label_ASP_Digits=2
 Label_WTC_Highlight_WTC=LHJ
-Label_WTC_Highlight_ATYP=B752,B753
 
 Label_CFL_DefaultValue=1
 
