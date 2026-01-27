@@ -241,8 +241,6 @@ Label_OpTextCaps=0
 
 Label_SI_ShowFreq=1
 Label_SI_FreqTime=3
-Label_WTC_Highlight_WTC=LHJ
-Label_WTC_Highlight_ATYP=B752,B753
 
 Label_N_Default=0
 
