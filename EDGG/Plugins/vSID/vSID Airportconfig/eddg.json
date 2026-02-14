@@ -2,7 +2,7 @@
     "EDDG": {
         "elevation": 159,
         "runways": "25,07",
-        "intersections": {"07": "B,C", "28": "A,C"},
+        "intersections": {"07": "B,C", "25": "A,C"},
         "transAlt": 5000,
         "maxInitialClimb": 7000,
 		"appSI": "HMM,PADL,PAD,PADH,GN,GNH,GA,GAH",
