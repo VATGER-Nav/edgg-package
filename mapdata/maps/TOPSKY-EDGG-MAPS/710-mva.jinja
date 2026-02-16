@@ -68,7 +68,6 @@ STYLE:Solid:1
     '01984d4d-ac8b-717d-8889-fb1af0e6cd81',
     '01984d4d-ae27-77e8-8575-6f0617c13561',
     '01984d4d-af39-7279-9461-ca540e158b8b',
-    '01984d4d-b1fa-77eb-b861-753ed8bd9f00',
     '01984d4d-b635-71be-a08c-dbab45a8a657',
     '01984d4d-bfe0-77ff-a918-4d25ef37b537',
     '01984d4d-c3fc-760b-a39f-df62687d566a',
@@ -86,9 +85,16 @@ STYLE:Solid:1
     '01984d4d-dca8-7769-ab64-559ca2945570',
     '01984d4d-dddb-74c9-ad9d-c3c5399a1b55',
     '01984d4d-e093-73ff-9771-6faa5a254fd6',
+    '01984d4d-b0bb-72fb-8b9b-aa0cef6a9f52',
+    '01984d4d-d848-71e2-8ff7-21817d543b37',
 ] %}
 {{- geom | to_line('') -}}
 {% endfor %}
+
+// Dotted lines
+STYLE:DOT:1
+{{ data.topsky['common']['mva']['line']['01984d4d-b0bb-72fb-8b9b-aa0cef6a9f52'] | to_line('') -}}
+{{ data.topsky['common']['mva']['line']['01984d4d-d848-71e2-8ff7-21817d543b37'] | to_line('') -}}
 
 // Labels
 {%- for id, geom in data.topsky['common']['mva']['labels'].items() if id not in
@@ -96,10 +102,16 @@ STYLE:Solid:1
     '22_24_cf882fe0',
     '33_35_7d1541a5',
     '33_35_f4bb3784',
+    '20_22_f35f1954',
+    '30_32_d9fc5260',
 ] %}
 {%- set lvl = id.split('_')[1] %}
 {{ geom | to_text(lvl) }}
 {%- endfor %}
+{{ data.topsky['common']['mva']['labels']['20_22_f35f1954'] | to_text('20:0:-6') }}
+{{ data.topsky['common']['mva']['labels']['20_22_f35f1954'] | to_text('[22 when T < -15C]:0:6') }}
+{{ data.topsky['common']['mva']['labels']['30_32_d9fc5260'] | to_text('30:0:-6') }}
+{{ data.topsky['common']['mva']['labels']['30_32_d9fc5260'] | to_text('[32 when T < -15C]:0:6') }}
 
 MAP:MVA Military
 FOLDER:MVA
