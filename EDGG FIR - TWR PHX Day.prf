@@ -39,21 +39,19 @@ Sounds	Sound18	\EDGG\Sounds\startup_silent.wav
 Plugins	Plugin0	\EDGG\Plugins\Topsky\TWR_PHX_DAY\TopSky.dll
 Plugins	Plugin0Display0	Standard ES radar screen
 Plugins	Plugin0Display1	Ground Radar display
-Plugins	Plugin1	\EDGG\Plugins\AfvEuroScopeBridge.dll
-Plugins	Plugin2	\EDGG\Plugins\VCH.dll
-Plugins	Plugin3	\EDGG\Plugins\GRP\TWR_PHX_DAY\GRplugin.dll
-Plugins	Plugin3Display0	Ground Radar display
-Plugins	Plugin3Display1	Standard ES radar screen
-Plugins	Plugin4	\EDGG\Plugins\VFPC\VFPC.dll
-Plugins	Plugin5	\EDGG\Plugins\Squawk\TWR_PHX_DAY\Squawks.dll
-Plugins	Plugin6	\EDGG\Plugins\IASsure\IASsure.dll
-Plugins	Plugin7	\EDGG\Plugins\vACDM\vACDM Bright\vACDM.dll
-Plugins	Plugin8	\EDGG\Plugins\AMAN\Aman.dll
-Plugins	Plugin8Display0	Ground Radar display
-Plugins	Plugin8Display1	Standard ES radar screen
-Plugins	Plugin9	\EDGG\Plugins\vSID\vSID Plugin Bright\vSID.dll
-Plugins	Plugin9Display0	Standard ES radar screen
-Plugins	Plugin9Display1	Ground Radar display
+Plugins	Plugin1	\EDGG\Plugins\GRP\TWR_PHX_DAY\GRplugin.dll
+Plugins	Plugin1Display0	Ground Radar display
+Plugins	Plugin1Display1	Standard ES radar screen
+Plugins	Plugin2	\EDGG\Plugins\AfvEuroScopeBridge.dll
+Plugins	Plugin3	\EDGG\Plugins\VFPC\VFPC.dll
+Plugins	Plugin4	\EDGG\Plugins\Squawk\TWR_PHX_DAY\Squawks.dll
+Plugins	Plugin5	\EDGG\Plugins\IASsure\IASsure.dll
+Plugins	Plugin6	\EDGG\Plugins\AMAN\Aman.dll
+Plugins	Plugin6Display0	Ground Radar display
+Plugins	Plugin6Display1	Standard ES radar screen
+Plugins	Plugin7	\EDGG\Plugins\vSID\vSID Plugin Bright\vSID.dll
+Plugins	Plugin7Display0	Standard ES radar screen
+Plugins	Plugin7Display1	Ground Radar display
 
 TeamSpeakVccs	TsVccsMiniControlX	1494
 TeamSpeakVccs	TsVccsMiniControlY	46
