@@ -55,6 +55,15 @@ maps = [
 ]
 aliases = [ "no-dcl", "general", "edyy" ]
 
+[profiles.SSR]
+maps = [
+    { map = "TOPSKY-SSR", target = "Plugins/Topsky/EDGG/TopSkySSRCodes.txt" },
+    { map = "TOPSKY-SSR", target = "Plugins/Topsky/EDUU/TopSkySSRCodes.txt" },
+    { map = "TOPSKY-SSR", target = "Plugins/Topsky/EDYY/TopSkySSRCodes.txt" },
+    { map = "TOPSKY-SSR", target = "Plugins/Topsky/TWR_PHX_NIGHT/TopSkySSRCodes.txt" },
+    { map = "TOPSKY-SSR", target = "Plugins/Topsky/TWR_PHX_DAY/TopSkySSRCodes.txt" },
+]
+
 [data]
 
 #------------Common------------
