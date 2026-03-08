@@ -70,7 +70,7 @@ FOLDER:Closures
 ACTIVE:1
 LAYER:4
 STYLE:Solid:2
-{{ data.notam['notam']['EDDF']['W'] | to_coordtype('','closure', 'TWYCLOSED') }}
+{{ data.eddf_kml['layout']['closures']['poly']['W'] | to_coordtype('','closure', 'TWYCLOSED') }}
 
 MAP:W7
 AIRPORT:EDDF
