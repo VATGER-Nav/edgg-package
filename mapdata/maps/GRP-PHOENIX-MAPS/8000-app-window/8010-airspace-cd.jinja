@@ -25,10 +25,9 @@ ACTIVE:1
 LAYER:+2
 STYLE:DOT:1
 // EDDFCLC
-{% for uuid, geom in data.topsky['common']['airspace']['EDDFCLC'].items() %}
+{% for uuid, geom in data.topsky['common']['airspace']['EDDFCLC_TWR'].items() %}
 {{- geom | to_line('') -}}
 {% endfor %}
-{{ render_sectorlines(data.aor['lines']['EDGG']['DFA']['000-135']) }}
 // EDDLCLC & EDDKCLC
 {% for uuid, geom in data.topsky['common']['airspace']['EDLLCLC'].items() %}
 {{- geom | to_line('') -}}
