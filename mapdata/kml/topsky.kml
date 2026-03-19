@@ -49,6 +49,7 @@
 		</Folder>
 		<Folder>
 			<name>airspace</name>
+			<visibility>0</visibility>
 			<Folder>
 				<name>levels</name>
 				<visibility>0</visibility>
@@ -1686,8 +1687,10 @@
 			</Folder>
 			<Folder>
 				<name>EDDFCLC_TWR</name>
+				<visibility>0</visibility>
 				<Placemark id="EDDFCLC_TWR.1">
 					<name>019d0321-6d31-7138-ab64-d10a331b7c2b</name>
+					<visibility>0</visibility>
 					<Style>
 						<LineStyle>
 							<color>ff0000ff</color>
@@ -1704,6 +1707,7 @@
 				</Placemark>
 				<Placemark id="EDDFCLC_TWR.2">
 					<name>019d0321-6d31-7138-ab64-d67d60064a17</name>
+					<visibility>0</visibility>
 					<Style>
 						<LineStyle>
 							<color>ff0000ff</color>
@@ -1720,6 +1724,7 @@
 				</Placemark>
 				<Placemark id="EDDFCLC_TWR.3">
 					<name>019d0321-6d31-7138-ab64-db443601337d</name>
+					<visibility>0</visibility>
 					<Style>
 						<LineStyle>
 							<color>ff0000ff</color>
@@ -1736,6 +1741,7 @@
 				</Placemark>
 				<Placemark id="EDDFCLC_TWR.4">
 					<name>019d0321-6d31-7138-ab64-dd53a634ce45</name>
+					<visibility>0</visibility>
 					<Style>
 						<LineStyle>
 							<color>ff0000ff</color>
@@ -1752,6 +1758,7 @@
 				</Placemark>
 				<Placemark id="EDDFCLC_TWR.5">
 					<name>019d0321-6d31-7138-ab64-e12b86a2aede</name>
+					<visibility>0</visibility>
 					<Style>
 						<LineStyle>
 							<color>ff0000ff</color>
@@ -1768,6 +1775,7 @@
 				</Placemark>
 				<Placemark id="EDDFCLC_TWR.6">
 					<name>019d0321-6d31-7138-ab64-e6378d482dd4</name>
+					<visibility>0</visibility>
 					<Style>
 						<LineStyle>
 							<color>ff0000ff</color>
@@ -1784,6 +1792,7 @@
 				</Placemark>
 				<Placemark id="EDDFCLC_TWR.7">
 					<name>019d0321-6d31-7138-ab64-e9f1f8ea65cf</name>
+					<visibility>0</visibility>
 					<Style>
 						<LineStyle>
 							<color>ff0000ff</color>
@@ -1800,6 +1809,7 @@
 				</Placemark>
 				<Placemark id="EDDFCLC_TWR.8">
 					<name>019d0321-6d31-7138-ab64-edab017496ee</name>
+					<visibility>0</visibility>
 					<Style>
 						<LineStyle>
 							<color>ff0000ff</color>
@@ -1816,6 +1826,7 @@
 				</Placemark>
 				<Placemark id="EDDFCLC_TWR.9">
 					<name>019d0321-6d31-7138-ab64-f23a20b6ab2d</name>
+					<visibility>0</visibility>
 					<Style>
 						<LineStyle>
 							<color>ff0000ff</color>
@@ -1832,6 +1843,7 @@
 				</Placemark>
 				<Placemark id="EDDFCLC_TWR.10">
 					<name>019d0321-6d31-7138-ab64-f74f37d6fac0</name>
+					<visibility>0</visibility>
 					<Style>
 						<LineStyle>
 							<color>ff0000ff</color>
@@ -1848,6 +1860,7 @@
 				</Placemark>
 				<Placemark id="EDDFCLC_TWR.11">
 					<name>019d0321-6d31-7138-ab64-f8e6c7845226</name>
+					<visibility>0</visibility>
 					<Style>
 						<LineStyle>
 							<color>ff0000ff</color>
@@ -1864,6 +1877,7 @@
 				</Placemark>
 				<Placemark id="EDDFCLC_TWR.12">
 					<name>019d0321-6d31-7138-ab64-fd2f38a1f205</name>
+					<visibility>0</visibility>
 					<Style>
 						<LineStyle>
 							<color>ff0000ff</color>
@@ -1880,6 +1894,7 @@
 				</Placemark>
 				<Placemark id="EDDFCLC_TWR.13">
 					<name>019d0321-6d31-7138-ab65-03d6dc7bf571</name>
+					<visibility>0</visibility>
 					<Style>
 						<LineStyle>
 							<color>ff0000ff</color>
@@ -1896,6 +1911,7 @@
 				</Placemark>
 				<Placemark id="EDDFCLC_TWR.14">
 					<name>019d0321-6d31-7138-ab65-04de18338e93</name>
+					<visibility>0</visibility>
 					<Style>
 						<LineStyle>
 							<color>ff0000ff</color>
@@ -1912,6 +1928,7 @@
 				</Placemark>
 				<Placemark id="EDDFCLC_TWR.15">
 					<name>019d0321-6d31-7138-ab65-0a3de0a0b717</name>
+					<visibility>0</visibility>
 					<Style>
 						<LineStyle>
 							<color>ff0000ff</color>
@@ -1928,6 +1945,7 @@
 				</Placemark>
 				<Placemark id="EDDFCLC_TWR.16">
 					<name>019d0321-6d31-7138-ab65-0daf6a6b7023</name>
+					<visibility>0</visibility>
 					<Style>
 						<LineStyle>
 							<color>ff0000ff</color>
@@ -1944,6 +1962,7 @@
 				</Placemark>
 				<Placemark id="EDDFCLC_TWR.17">
 					<name>019d0321-6d31-7138-ab65-106c3b02244f</name>
+					<visibility>0</visibility>
 					<Style>
 						<LineStyle>
 							<color>ff0000ff</color>
@@ -1960,6 +1979,7 @@
 				</Placemark>
 				<Placemark id="EDDFCLC_TWR.18">
 					<name>019d0321-6d31-7138-ab65-152ac7c24a91</name>
+					<visibility>0</visibility>
 					<Style>
 						<LineStyle>
 							<color>ff0000ff</color>
@@ -1976,6 +1996,7 @@
 				</Placemark>
 				<Placemark id="EDDFCLC_TWR.19">
 					<name>019d0321-6d31-7138-ab65-194bf30f279d</name>
+					<visibility>0</visibility>
 					<Style>
 						<LineStyle>
 							<color>ff0000ff</color>
@@ -1992,6 +2013,7 @@
 				</Placemark>
 				<Placemark id="EDDFCLC_TWR.20">
 					<name>019d0321-6d31-7138-ab65-1eea9936b9a2</name>
+					<visibility>0</visibility>
 					<Style>
 						<LineStyle>
 							<color>ff0000ff</color>
@@ -2008,6 +2030,7 @@
 				</Placemark>
 				<Placemark id="EDDFCLC_TWR.21">
 					<name>019d0321-6d31-7138-ab65-23a714d6d85b</name>
+					<visibility>0</visibility>
 					<Style>
 						<LineStyle>
 							<color>ff0000ff</color>
@@ -2024,6 +2047,7 @@
 				</Placemark>
 				<Placemark id="EDDFCLC_TWR.22">
 					<name>019d0321-6d31-7138-ab65-268de7750b1c</name>
+					<visibility>0</visibility>
 					<Style>
 						<LineStyle>
 							<color>ff0000ff</color>
@@ -2040,6 +2064,7 @@
 				</Placemark>
 				<Placemark id="EDDFCLC_TWR.23">
 					<name>019d0321-6d31-7138-ab65-2b4e8ac35367</name>
+					<visibility>0</visibility>
 					<Style>
 						<LineStyle>
 							<color>ff0000ff</color>
@@ -2056,6 +2081,7 @@
 				</Placemark>
 				<Placemark id="EDDFCLC_TWR.24">
 					<name>019d0321-6d31-7138-ab65-2e0838c10f8d</name>
+					<visibility>0</visibility>
 					<Style>
 						<LineStyle>
 							<color>ff0000ff</color>
@@ -2072,6 +2098,7 @@
 				</Placemark>
 				<Placemark id="EDDFCLC_TWR.25">
 					<name>019d0321-6d31-7138-ab65-311327189dcd</name>
+					<visibility>0</visibility>
 					<Style>
 						<LineStyle>
 							<color>ff0000ff</color>
@@ -2088,6 +2115,7 @@
 				</Placemark>
 				<Placemark id="EDDFCLC_TWR.26">
 					<name>019d0321-6d31-7138-ab65-377745f3cfa9</name>
+					<visibility>0</visibility>
 					<Style>
 						<LineStyle>
 							<color>ff0000ff</color>
@@ -2104,6 +2132,7 @@
 				</Placemark>
 				<Placemark id="EDDFCLC_TWR.27">
 					<name>019d0321-6d31-7138-ab65-3809c08cd58b</name>
+					<visibility>0</visibility>
 					<Style>
 						<LineStyle>
 							<color>ff0000ff</color>
@@ -2120,6 +2149,7 @@
 				</Placemark>
 				<Placemark id="EDDFCLC_TWR.28">
 					<name>019d0321-6d31-7138-ab65-3f2dc5dd0026</name>
+					<visibility>0</visibility>
 					<Style>
 						<LineStyle>
 							<color>ff0000ff</color>
@@ -2136,6 +2166,7 @@
 				</Placemark>
 				<Placemark id="EDDFCLC_TWR.29">
 					<name>019d0321-6d31-7138-ab65-43c30fe894ed</name>
+					<visibility>0</visibility>
 					<Style>
 						<LineStyle>
 							<color>ff0000ff</color>
@@ -2152,6 +2183,7 @@
 				</Placemark>
 				<Placemark id="EDDFCLC_TWR.30">
 					<name>019d0321-6d31-7138-ab65-46ffad03ad37</name>
+					<visibility>0</visibility>
 					<Style>
 						<LineStyle>
 							<color>ff0000ff</color>
@@ -2168,6 +2200,7 @@
 				</Placemark>
 				<Placemark id="EDDFCLC_TWR.31">
 					<name>019d0321-6d31-7138-ab65-4bf0affed5bb</name>
+					<visibility>0</visibility>
 					<Style>
 						<LineStyle>
 							<color>ff0000ff</color>
@@ -2184,6 +2217,7 @@
 				</Placemark>
 				<Placemark id="EDDFCLC_TWR.32">
 					<name>019d0321-6d31-7138-ab65-4c2800be996c</name>
+					<visibility>0</visibility>
 					<Style>
 						<LineStyle>
 							<color>ff0000ff</color>
@@ -2200,6 +2234,7 @@
 				</Placemark>
 				<Placemark id="EDDFCLC_TWR.33">
 					<name>019d0321-6d31-7138-ab65-514539a2235c</name>
+					<visibility>0</visibility>
 					<Style>
 						<LineStyle>
 							<color>ff0000ff</color>
@@ -2216,6 +2251,7 @@
 				</Placemark>
 				<Placemark id="EDDFCLC_TWR.34">
 					<name>019d0321-6d31-7138-ab65-56856d02ced1</name>
+					<visibility>0</visibility>
 					<Style>
 						<LineStyle>
 							<color>ff0000ff</color>
@@ -2232,6 +2268,7 @@
 				</Placemark>
 				<Placemark id="EDDFCLC_TWR.35">
 					<name>019d0321-6d31-7138-ab65-58a3636c3ba7</name>
+					<visibility>0</visibility>
 					<Style>
 						<LineStyle>
 							<color>ff0000ff</color>
@@ -2248,6 +2285,7 @@
 				</Placemark>
 				<Placemark id="EDDFCLC_TWR.36">
 					<name>019d0321-6d31-7138-ab65-5c27c9df0e11</name>
+					<visibility>0</visibility>
 					<Style>
 						<LineStyle>
 							<color>ff0000ff</color>
@@ -2264,6 +2302,7 @@
 				</Placemark>
 				<Placemark id="EDDFCLC_TWR.37">
 					<name>019d0321-6d31-7138-ab65-601c175e1234</name>
+					<visibility>0</visibility>
 					<Style>
 						<LineStyle>
 							<color>ff0000ff</color>
@@ -2280,6 +2319,7 @@
 				</Placemark>
 				<Placemark id="EDDFCLC_TWR.38">
 					<name>019d0321-6d31-7138-ab65-67b196681219</name>
+					<visibility>0</visibility>
 					<Style>
 						<LineStyle>
 							<color>ff0000ff</color>
@@ -2296,6 +2336,7 @@
 				</Placemark>
 				<Placemark id="EDDFCLC_TWR.39">
 					<name>019d0321-6d31-7138-ab65-69b0c4818439</name>
+					<visibility>0</visibility>
 					<Style>
 						<LineStyle>
 							<color>ff0000ff</color>
@@ -2312,6 +2353,7 @@
 				</Placemark>
 				<Placemark id="EDDFCLC_TWR.40">
 					<name>019d0321-6d31-7138-ab65-6d04c968fb0f</name>
+					<visibility>0</visibility>
 					<Style>
 						<LineStyle>
 							<color>ff0000ff</color>
@@ -2328,6 +2370,7 @@
 				</Placemark>
 				<Placemark id="EDDFCLC_TWR.41">
 					<name>019d0321-6d31-7138-ab65-736827634436</name>
+					<visibility>0</visibility>
 					<Style>
 						<LineStyle>
 							<color>ff0000ff</color>
@@ -2344,6 +2387,7 @@
 				</Placemark>
 				<Placemark id="EDDFCLC_TWR.42">
 					<name>019d0321-6d31-7138-ab65-77572a220a50</name>
+					<visibility>0</visibility>
 					<Style>
 						<LineStyle>
 							<color>ff0000ff</color>
@@ -2360,6 +2404,7 @@
 				</Placemark>
 				<Placemark id="EDDFCLC_TWR.43">
 					<name>019d0321-6d32-764a-8b45-da1681f8813e</name>
+					<visibility>0</visibility>
 					<Style>
 						<LineStyle>
 							<color>ff0000ff</color>
@@ -2376,6 +2421,7 @@
 				</Placemark>
 				<Placemark id="EDDFCLC_TWR.44">
 					<name>019d0321-6d32-764a-8b45-de085b79be94</name>
+					<visibility>0</visibility>
 					<Style>
 						<LineStyle>
 							<color>ff0000ff</color>
@@ -2392,6 +2438,7 @@
 				</Placemark>
 				<Placemark id="EDDFCLC_TWR.45">
 					<name>019d0321-6d32-764a-8b45-e2184d2062cb</name>
+					<visibility>0</visibility>
 					<Style>
 						<LineStyle>
 							<color>ff0000ff</color>
@@ -2408,6 +2455,7 @@
 				</Placemark>
 				<Placemark id="EDDFCLC_TWR.46">
 					<name>019d0321-6d32-764a-8b45-e66896c14ecd</name>
+					<visibility>0</visibility>
 					<Style>
 						<LineStyle>
 							<color>ff0000ff</color>
@@ -2424,6 +2472,7 @@
 				</Placemark>
 				<Placemark id="EDDFCLC_TWR.47">
 					<name>019d0321-6d32-764a-8b45-ebb1c1fff767</name>
+					<visibility>0</visibility>
 					<Style>
 						<LineStyle>
 							<color>ff0000ff</color>
@@ -2440,6 +2489,7 @@
 				</Placemark>
 				<Placemark id="EDDFCLC_TWR.48">
 					<name>019d0321-6d32-764a-8b45-ed6c4059a076</name>
+					<visibility>0</visibility>
 					<Style>
 						<LineStyle>
 							<color>ff0000ff</color>
@@ -2456,6 +2506,7 @@
 				</Placemark>
 				<Placemark id="EDDFCLC_TWR.49">
 					<name>019d0321-6d32-764a-8b45-f150dbec878a</name>
+					<visibility>0</visibility>
 					<Style>
 						<LineStyle>
 							<color>ff0000ff</color>
@@ -2472,6 +2523,7 @@
 				</Placemark>
 				<Placemark id="EDDFCLC_TWR.50">
 					<name>019d0321-6d32-764a-8b45-f53bf3d03c1e</name>
+					<visibility>0</visibility>
 					<Style>
 						<LineStyle>
 							<color>ff0000ff</color>
@@ -2488,6 +2540,7 @@
 				</Placemark>
 				<Placemark id="EDDFCLC_TWR.51">
 					<name>019d0321-6d32-764a-8b45-fa7a816e2304</name>
+					<visibility>0</visibility>
 					<Style>
 						<LineStyle>
 							<color>ff0000ff</color>
@@ -2504,6 +2557,7 @@
 				</Placemark>
 				<Placemark id="EDDFCLC_TWR.52">
 					<name>019d0321-6d32-764a-8b45-fc426a490fca</name>
+					<visibility>0</visibility>
 					<Style>
 						<LineStyle>
 							<color>ff0000ff</color>
@@ -2520,6 +2574,7 @@
 				</Placemark>
 				<Placemark id="EDDFCLC_TWR.53">
 					<name>019d0321-6d32-764a-8b46-02a464b966d4</name>
+					<visibility>0</visibility>
 					<Style>
 						<LineStyle>
 							<color>ff0000ff</color>
@@ -2536,6 +2591,7 @@
 				</Placemark>
 				<Placemark id="EDDFCLC_TWR.54">
 					<name>019d0321-6d32-764a-8b46-06e0e8fbb18e</name>
+					<visibility>0</visibility>
 					<Style>
 						<LineStyle>
 							<color>ff0000ff</color>
@@ -2552,6 +2608,7 @@
 				</Placemark>
 				<Placemark id="EDDFCLC_TWR.55">
 					<name>019d0321-6d32-764a-8b46-0aa8d7a2854b</name>
+					<visibility>0</visibility>
 					<Style>
 						<LineStyle>
 							<color>ff0000ff</color>
@@ -2568,6 +2625,7 @@
 				</Placemark>
 				<Placemark id="EDDFCLC_TWR.56">
 					<name>019d0321-6d32-764a-8b46-0d745331609e</name>
+					<visibility>0</visibility>
 					<Style>
 						<LineStyle>
 							<color>ff0000ff</color>
@@ -2584,6 +2642,7 @@
 				</Placemark>
 				<Placemark id="EDDFCLC_TWR.57">
 					<name>019d0321-6d32-764a-8b46-12f2538beb92</name>
+					<visibility>0</visibility>
 					<Style>
 						<LineStyle>
 							<color>ff0000ff</color>
@@ -2600,6 +2659,7 @@
 				</Placemark>
 				<Placemark id="EDDFCLC_TWR.58">
 					<name>019d0321-6d32-764a-8b46-15180f0159dc</name>
+					<visibility>0</visibility>
 					<Style>
 						<LineStyle>
 							<color>ff0000ff</color>
@@ -2616,6 +2676,7 @@
 				</Placemark>
 				<Placemark id="EDDFCLC_TWR.59">
 					<name>019d0321-6d32-764a-8b46-1a4f4111601b</name>
+					<visibility>0</visibility>
 					<Style>
 						<LineStyle>
 							<color>ff0000ff</color>
@@ -2632,6 +2693,7 @@
 				</Placemark>
 				<Placemark id="EDDFCLC_TWR.60">
 					<name>019d0321-6d32-764a-8b46-1fb9cce3880b</name>
+					<visibility>0</visibility>
 					<Style>
 						<LineStyle>
 							<color>ff0000ff</color>
@@ -2648,6 +2710,7 @@
 				</Placemark>
 				<Placemark id="EDDFCLC_TWR.61">
 					<name>019d0321-6d32-764a-8b46-213eddef8522</name>
+					<visibility>0</visibility>
 					<Style>
 						<LineStyle>
 							<color>ff0000ff</color>
@@ -2664,6 +2727,7 @@
 				</Placemark>
 				<Placemark id="EDDFCLC_TWR.62">
 					<name>019d0321-6d32-764a-8b46-251d67f3ea3b</name>
+					<visibility>0</visibility>
 					<Style>
 						<LineStyle>
 							<color>ff0000ff</color>
@@ -2680,6 +2744,7 @@
 				</Placemark>
 				<Placemark id="EDDFCLC_TWR.63">
 					<name>019d0321-6d32-764a-8b46-2a2354ab3cd1</name>
+					<visibility>0</visibility>
 					<Style>
 						<LineStyle>
 							<color>ff0000ff</color>
@@ -2696,6 +2761,7 @@
 				</Placemark>
 				<Placemark id="EDDFCLC_TWR.64">
 					<name>019d0321-6d32-764a-8b46-2e46867d884d</name>
+					<visibility>0</visibility>
 					<Style>
 						<LineStyle>
 							<color>ff0000ff</color>
@@ -2712,6 +2778,7 @@
 				</Placemark>
 				<Placemark id="EDDFCLC_TWR.65">
 					<name>019d0321-6d32-764a-8b46-30c1be242f11</name>
+					<visibility>0</visibility>
 					<Style>
 						<LineStyle>
 							<color>ff0000ff</color>
@@ -2728,6 +2795,7 @@
 				</Placemark>
 				<Placemark id="EDDFCLC_TWR.66">
 					<name>019d0321-6d32-764a-8b46-355d133cc666</name>
+					<visibility>0</visibility>
 					<Style>
 						<LineStyle>
 							<color>ff0000ff</color>
@@ -2744,6 +2812,7 @@
 				</Placemark>
 				<Placemark id="EDDFCLC_TWR.67">
 					<name>019d0321-6d32-764a-8b46-383bd22d2bb6</name>
+					<visibility>0</visibility>
 					<Style>
 						<LineStyle>
 							<color>ff0000ff</color>
@@ -2760,6 +2829,7 @@
 				</Placemark>
 				<Placemark id="EDDFCLC_TWR.68">
 					<name>019d0321-6d32-764a-8b46-3ce15b46cb09</name>
+					<visibility>0</visibility>
 					<Style>
 						<LineStyle>
 							<color>ff0000ff</color>
@@ -2776,6 +2846,7 @@
 				</Placemark>
 				<Placemark id="EDDFCLC_TWR.69">
 					<name>019d0321-6d32-764a-8b46-41f234a7e2af</name>
+					<visibility>0</visibility>
 					<Style>
 						<LineStyle>
 							<color>ff0000ff</color>
@@ -2792,6 +2863,7 @@
 				</Placemark>
 				<Placemark id="EDDFCLC_TWR.70">
 					<name>019d0321-6d32-764a-8b46-4795dbc2f92d</name>
+					<visibility>0</visibility>
 					<Style>
 						<LineStyle>
 							<color>ff0000ff</color>
@@ -2808,6 +2880,7 @@
 				</Placemark>
 				<Placemark id="EDDFCLC_TWR.71">
 					<name>019d0321-6d32-764a-8b46-4aa1aeea8d29</name>
+					<visibility>0</visibility>
 					<Style>
 						<LineStyle>
 							<color>ff0000ff</color>
@@ -2824,6 +2897,7 @@
 				</Placemark>
 				<Placemark id="EDDFCLC_TWR.72">
 					<name>019d0321-6d32-764a-8b46-52156e7913eb</name>
+					<visibility>0</visibility>
 					<Style>
 						<LineStyle>
 							<color>ff0000ff</color>
@@ -2840,6 +2914,7 @@
 				</Placemark>
 				<Placemark id="EDDFCLC_TWR.73">
 					<name>019d0321-6d32-764a-8b46-56d5ddd359cd</name>
+					<visibility>0</visibility>
 					<Style>
 						<LineStyle>
 							<color>ff0000ff</color>
@@ -2856,6 +2931,7 @@
 				</Placemark>
 				<Placemark id="EDDFCLC_TWR.74">
 					<name>019d0321-6d32-764a-8b46-5901cb102d4c</name>
+					<visibility>0</visibility>
 					<Style>
 						<LineStyle>
 							<color>ff0000ff</color>
@@ -2872,6 +2948,7 @@
 				</Placemark>
 				<Placemark id="EDDFCLC_TWR.75">
 					<name>019d0321-6d32-764a-8b46-5e8a45bdac96</name>
+					<visibility>0</visibility>
 					<Style>
 						<LineStyle>
 							<color>ff0000ff</color>
@@ -2888,6 +2965,7 @@
 				</Placemark>
 				<Placemark id="EDDFCLC_TWR.76">
 					<name>019d0321-6d32-764a-8b46-6360dfaa28d3</name>
+					<visibility>0</visibility>
 					<Style>
 						<LineStyle>
 							<color>ff0000ff</color>
@@ -2904,6 +2982,7 @@
 				</Placemark>
 				<Placemark id="EDDFCLC_TWR.77">
 					<name>019d0321-6d32-764a-8b46-66f2ae66922e</name>
+					<visibility>0</visibility>
 					<Style>
 						<LineStyle>
 							<color>ff0000ff</color>
@@ -2920,6 +2999,7 @@
 				</Placemark>
 				<Placemark id="EDDFCLC_TWR.78">
 					<name>019d0321-6d32-764a-8b46-6912ec388cca</name>
+					<visibility>0</visibility>
 					<Style>
 						<LineStyle>
 							<color>ff0000ff</color>
@@ -2936,6 +3016,7 @@
 				</Placemark>
 				<Placemark id="EDDFCLC_TWR.79">
 					<name>019d0321-6d32-764a-8b46-6f6b72054b98</name>
+					<visibility>0</visibility>
 					<Style>
 						<LineStyle>
 							<color>ff0000ff</color>
@@ -2952,6 +3033,7 @@
 				</Placemark>
 				<Placemark id="EDDFCLC_TWR.80">
 					<name>019d0321-6d32-764a-8b46-72863df49a81</name>
+					<visibility>0</visibility>
 					<Style>
 						<LineStyle>
 							<color>ff0000ff</color>
@@ -2968,6 +3050,7 @@
 				</Placemark>
 				<Placemark id="EDDFCLC_TWR.81">
 					<name>019d0321-6d32-764a-8b46-755e39fd1a0f</name>
+					<visibility>0</visibility>
 					<Style>
 						<LineStyle>
 							<color>ff0000ff</color>
@@ -2984,6 +3067,7 @@
 				</Placemark>
 				<Placemark id="EDDFCLC_TWR.82">
 					<name>019d0321-6d32-764a-8b46-79dffa31101f</name>
+					<visibility>0</visibility>
 					<Style>
 						<LineStyle>
 							<color>ff0000ff</color>
@@ -3000,6 +3084,7 @@
 				</Placemark>
 				<Placemark id="EDDFCLC_TWR.83">
 					<name>019d0321-6d32-764a-8b46-7ee870ac2878</name>
+					<visibility>0</visibility>
 					<Style>
 						<LineStyle>
 							<color>ff0000ff</color>
@@ -3016,6 +3101,7 @@
 				</Placemark>
 				<Placemark id="EDDFCLC_TWR.84">
 					<name>019d0321-6d32-764a-8b46-81a9681770c5</name>
+					<visibility>0</visibility>
 					<Style>
 						<LineStyle>
 							<color>ff0000ff</color>
@@ -3032,6 +3118,7 @@
 				</Placemark>
 				<Placemark id="EDDFCLC_TWR.85">
 					<name>019d0321-6d32-764a-8b46-86353ade7a91</name>
+					<visibility>0</visibility>
 					<Style>
 						<LineStyle>
 							<color>ff0000ff</color>
@@ -3048,6 +3135,7 @@
 				</Placemark>
 				<Placemark id="EDDFCLC_TWR.86">
 					<name>019d0321-6d32-764a-8b46-8bc6d59cd124</name>
+					<visibility>0</visibility>
 					<Style>
 						<LineStyle>
 							<color>ff0000ff</color>
@@ -3064,6 +3152,7 @@
 				</Placemark>
 				<Placemark id="EDDFCLC_TWR.87">
 					<name>019d0321-6d32-764a-8b46-8f24bcc8955e</name>
+					<visibility>0</visibility>
 					<Style>
 						<LineStyle>
 							<color>ff0000ff</color>
@@ -3080,6 +3169,7 @@
 				</Placemark>
 				<Placemark id="EDDFCLC_TWR.88">
 					<name>019d0321-6d32-764a-8b46-91df167ebc85</name>
+					<visibility>0</visibility>
 					<Style>
 						<LineStyle>
 							<color>ff0000ff</color>
@@ -3096,6 +3186,7 @@
 				</Placemark>
 				<Placemark id="EDDFCLC_TWR.89">
 					<name>019d0321-6d32-764a-8b46-95faa8ceea7f</name>
+					<visibility>0</visibility>
 					<Style>
 						<LineStyle>
 							<color>ff0000ff</color>
@@ -3112,6 +3203,7 @@
 				</Placemark>
 				<Placemark id="EDDFCLC_TWR.90">
 					<name>019d0321-6d32-764a-8b46-9b6606206fd1</name>
+					<visibility>0</visibility>
 					<Style>
 						<LineStyle>
 							<color>ff0000ff</color>
@@ -3128,6 +3220,7 @@
 				</Placemark>
 				<Placemark id="EDDFCLC_TWR.91">
 					<name>019d0321-6d32-764a-8b46-9e9ad9df0746</name>
+					<visibility>0</visibility>
 					<Style>
 						<LineStyle>
 							<color>ff0000ff</color>
@@ -3144,6 +3237,7 @@
 				</Placemark>
 				<Placemark id="EDDFCLC_TWR.92">
 					<name>019d0321-6d32-764a-8b46-a275cdac4b4a</name>
+					<visibility>0</visibility>
 					<Style>
 						<LineStyle>
 							<color>ff0000ff</color>
@@ -3160,6 +3254,7 @@
 				</Placemark>
 				<Placemark id="EDDFCLC_TWR.93">
 					<name>019d0321-6d32-764a-8b46-ab9aca773987</name>
+					<visibility>0</visibility>
 					<Style>
 						<LineStyle>
 							<color>ff0000ff</color>
@@ -3176,6 +3271,7 @@
 				</Placemark>
 				<Placemark id="EDDFCLC_TWR.94">
 					<name>019d0321-6d32-764a-8b46-ac890c875289</name>
+					<visibility>0</visibility>
 					<Style>
 						<LineStyle>
 							<color>ff0000ff</color>
@@ -3192,6 +3288,7 @@
 				</Placemark>
 				<Placemark id="EDDFCLC_TWR.95">
 					<name>019d0321-6d32-764a-8b46-b22d61a89a5f</name>
+					<visibility>0</visibility>
 					<Style>
 						<LineStyle>
 							<color>ff0000ff</color>
@@ -3208,6 +3305,7 @@
 				</Placemark>
 				<Placemark id="EDDFCLC_TWR.96">
 					<name>019d0321-6d32-764a-8b46-b449eb2c2bc9</name>
+					<visibility>0</visibility>
 					<Style>
 						<LineStyle>
 							<color>ff0000ff</color>
@@ -3224,6 +3322,7 @@
 				</Placemark>
 				<Placemark id="EDDFCLC_TWR.97">
 					<name>019d0321-6d32-764a-8b46-ba642f74e13e</name>
+					<visibility>0</visibility>
 					<Style>
 						<LineStyle>
 							<color>ff0000ff</color>
@@ -3240,6 +3339,7 @@
 				</Placemark>
 				<Placemark id="EDDFCLC_TWR.98">
 					<name>019d0321-6d32-764a-8b46-bf0357fa09f3</name>
+					<visibility>0</visibility>
 					<Style>
 						<LineStyle>
 							<color>ff0000ff</color>
@@ -3256,6 +3356,7 @@
 				</Placemark>
 				<Placemark id="EDDFCLC_TWR.99">
 					<name>019d0321-6d32-764a-8b46-c088d7c6ea71</name>
+					<visibility>0</visibility>
 					<Style>
 						<LineStyle>
 							<color>ff0000ff</color>
@@ -3272,6 +3373,7 @@
 				</Placemark>
 				<Placemark id="EDDFCLC_TWR.100">
 					<name>019d0321-6d32-764a-8b46-c4b984829919</name>
+					<visibility>0</visibility>
 					<Style>
 						<LineStyle>
 							<color>ff0000ff</color>
@@ -3288,6 +3390,7 @@
 				</Placemark>
 				<Placemark id="EDDFCLC_TWR.101">
 					<name>019d0321-6d32-764a-8b46-cb20d345ec19</name>
+					<visibility>0</visibility>
 					<Style>
 						<LineStyle>
 							<color>ff0000ff</color>
@@ -3304,6 +3407,7 @@
 				</Placemark>
 				<Placemark id="EDDFCLC_TWR.102">
 					<name>019d0321-6d32-764a-8b46-cf455a0dc8dc</name>
+					<visibility>0</visibility>
 					<Style>
 						<LineStyle>
 							<color>ff0000ff</color>
@@ -3320,6 +3424,7 @@
 				</Placemark>
 				<Placemark id="EDDFCLC_TWR.103">
 					<name>019d0321-6d32-764a-8b46-d12910f7a58a</name>
+					<visibility>0</visibility>
 					<Style>
 						<LineStyle>
 							<color>ff0000ff</color>
@@ -3336,6 +3441,7 @@
 				</Placemark>
 				<Placemark id="EDDFCLC_TWR.104">
 					<name>019d0321-6d32-764a-8b46-d7388072a7eb</name>
+					<visibility>0</visibility>
 					<Style>
 						<LineStyle>
 							<color>ff0000ff</color>
@@ -3352,6 +3458,7 @@
 				</Placemark>
 				<Placemark id="EDDFCLC_TWR.105">
 					<name>019d0321-6d32-764a-8b46-d9c19f95469f</name>
+					<visibility>0</visibility>
 					<Style>
 						<LineStyle>
 							<color>ff0000ff</color>
@@ -3368,6 +3475,7 @@
 				</Placemark>
 				<Placemark id="EDDFCLC_TWR.106">
 					<name>019d0321-6d32-764a-8b46-de6d0a76658a</name>
+					<visibility>0</visibility>
 					<Style>
 						<LineStyle>
 							<color>ff0000ff</color>
@@ -3384,6 +3492,7 @@
 				</Placemark>
 				<Placemark id="EDDFCLC_TWR.107">
 					<name>019d0321-6d32-764a-8b46-e0a708a4a65b</name>
+					<visibility>0</visibility>
 					<Style>
 						<LineStyle>
 							<color>ff0000ff</color>
@@ -3400,6 +3509,7 @@
 				</Placemark>
 				<Placemark id="EDDFCLC_TWR.108">
 					<name>019d0321-6d32-764a-8b46-e62e07ae3998</name>
+					<visibility>0</visibility>
 					<Style>
 						<LineStyle>
 							<color>ff0000ff</color>
@@ -3416,6 +3526,7 @@
 				</Placemark>
 				<Placemark id="EDDFCLC_TWR.109">
 					<name>019d0321-6d32-764a-8b46-ea62ec4d4015</name>
+					<visibility>0</visibility>
 					<Style>
 						<LineStyle>
 							<color>ff0000ff</color>
@@ -3432,6 +3543,7 @@
 				</Placemark>
 				<Placemark id="EDDFCLC_TWR.110">
 					<name>019d0321-6d32-764a-8b46-ec062e4b34b3</name>
+					<visibility>0</visibility>
 					<Style>
 						<LineStyle>
 							<color>ff0000ff</color>
@@ -3448,6 +3560,7 @@
 				</Placemark>
 				<Placemark id="EDDFCLC_TWR.111">
 					<name>019d0321-6d32-764a-8b46-f1782fff5de2</name>
+					<visibility>0</visibility>
 					<Style>
 						<LineStyle>
 							<color>ff0000ff</color>
@@ -3464,6 +3577,7 @@
 				</Placemark>
 				<Placemark id="EDDFCLC_TWR.112">
 					<name>019d0321-6d32-764a-8b46-f65711b77313</name>
+					<visibility>0</visibility>
 					<Style>
 						<LineStyle>
 							<color>ff0000ff</color>
@@ -3480,6 +3594,7 @@
 				</Placemark>
 				<Placemark id="EDDFCLC_TWR.113">
 					<name>019d0321-6d32-764a-8b46-fb121548b3e9</name>
+					<visibility>0</visibility>
 					<Style>
 						<LineStyle>
 							<color>ff0000ff</color>
@@ -3496,6 +3611,7 @@
 				</Placemark>
 				<Placemark id="EDDFCLC_TWR.114">
 					<name>019d0321-6d32-764a-8b46-fecd7ad8a58d</name>
+					<visibility>0</visibility>
 					<Style>
 						<LineStyle>
 							<color>ff0000ff</color>
@@ -3512,6 +3628,7 @@
 				</Placemark>
 				<Placemark id="EDDFCLC_TWR.115">
 					<name>019d0321-6d32-764a-8b47-011cad88788e</name>
+					<visibility>0</visibility>
 					<Style>
 						<LineStyle>
 							<color>ff0000ff</color>
@@ -3528,6 +3645,7 @@
 				</Placemark>
 				<Placemark id="EDDFCLC_TWR.116">
 					<name>019d0321-6d32-764a-8b47-04e19020c063</name>
+					<visibility>0</visibility>
 					<Style>
 						<LineStyle>
 							<color>ff0000ff</color>
@@ -3544,6 +3662,7 @@
 				</Placemark>
 				<Placemark id="EDDFCLC_TWR.117">
 					<name>019d0321-6d32-764a-8b47-08c9d2efc379</name>
+					<visibility>0</visibility>
 					<Style>
 						<LineStyle>
 							<color>ff0000ff</color>
@@ -3560,6 +3679,7 @@
 				</Placemark>
 				<Placemark id="EDDFCLC_TWR.118">
 					<name>019d0321-6d32-764a-8b47-0feaf2c0143b</name>
+					<visibility>0</visibility>
 					<Style>
 						<LineStyle>
 							<color>ff0000ff</color>
@@ -3576,6 +3696,7 @@
 				</Placemark>
 				<Placemark id="EDDFCLC_TWR.119">
 					<name>019d0321-6d32-764a-8b47-119fe6e3027d</name>
+					<visibility>0</visibility>
 					<Style>
 						<LineStyle>
 							<color>ff0000ff</color>
@@ -3592,6 +3713,7 @@
 				</Placemark>
 				<Placemark id="EDDFCLC_TWR.120">
 					<name>019d0321-6d32-764a-8b47-1682ab4b0616</name>
+					<visibility>0</visibility>
 					<Style>
 						<LineStyle>
 							<color>ff0000ff</color>
@@ -14895,349 +15017,292 @@
 			</Folder>
 			<Folder>
 				<name>structure</name>
-				<visibility>0</visibility>
 				<Folder>
 					<name>EDUU</name>
-					<visibility>0</visibility>
 					<Placemark id="EDUU_Structure.1">
 						<name>TGO_235</name>
-						<visibility>0</visibility>
 						<Point>
 							<coordinates>9.38082123777528,48.59728417583479,0</coordinates>
 						</Point>
 					</Placemark>
 					<Placemark id="EDUU_Structure.2">
 						<name>FFM_FUL</name>
-						<visibility>0</visibility>
 						<Point>
 							<coordinates>8.426675093711459,50.9714090820646,0</coordinates>
 						</Point>
 					</Placemark>
 					<Placemark id="EDUU_Structure.3">
 						<name>LSAS_Z</name>
-						<visibility>0</visibility>
 						<Point>
 							<coordinates>8.56917349050955,47.28733350691971,0</coordinates>
 						</Point>
 					</Placemark>
 					<Placemark id="EDUU_Structure.4">
 						<name>FFM</name>
-						<visibility>0</visibility>
 						<Point>
 							<coordinates>8.66903380088285,50.3606627557399,0</coordinates>
 						</Point>
 					</Placemark>
 					<Placemark id="EDUU_Structure.5">
 						<name>FFM_RHR</name>
-						<visibility>0</visibility>
 						<Point>
 							<coordinates>7.87267970222844,50.9802499844151,0</coordinates>
 						</Point>
 					</Placemark>
 					<Placemark id="EDUU_Structure.6">
 						<name>FUL</name>
-						<visibility>0</visibility>
 						<Point>
 							<coordinates>9.65866164175193,50.7835671881452,0</coordinates>
 						</Point>
 					</Placemark>
 					<Placemark id="EDUU_Structure.7">
 						<name>SOL_255</name>
-						<visibility>0</visibility>
 						<Point>
 							<coordinates>10.1438018072161,51.2510257576947,0</coordinates>
 						</Point>
 					</Placemark>
 					<Placemark id="EDUU_Structure.8">
 						<name>FUL_255</name>
-						<visibility>0</visibility>
 						<Point>
 							<coordinates>9.65627362688234,51.1559139679345,0</coordinates>
 						</Point>
 					</Placemark>
 					<Placemark id="EDUU_Structure.9">
 						<name>NTM_KIR</name>
-						<visibility>0</visibility>
 						<Point>
 							<coordinates>6.66335064284404,49.7350406017577,0</coordinates>
 						</Point>
 					</Placemark>
 					<Placemark id="EDUU_Structure.10">
 						<name>NTM_NOR</name>
-						<visibility>0</visibility>
 						<Point>
 							<coordinates>7.43981938450672,50.57031009455509,0</coordinates>
 						</Point>
 					</Placemark>
 					<Placemark id="EDUU_Structure.11">
 						<name>OLN_NOR</name>
-						<visibility>0</visibility>
 						<Point>
 							<coordinates>6.926860873880279,50.5740926313455,0</coordinates>
 						</Point>
 					</Placemark>
 					<Placemark id="EDUU_Structure.12">
 						<name>NTM</name>
-						<visibility>0</visibility>
 						<Point>
 							<coordinates>7.46047757993253,49.84004036668811,0</coordinates>
 						</Point>
 					</Placemark>
 					<Placemark id="EDUU_Structure.13">
 						<name>MNS_PADH</name>
-						<visibility>0</visibility>
 						<Point>
 							<coordinates>8.32571174447285,51.1320666836374,0</coordinates>
 						</Point>
 					</Placemark>
 					<Placemark id="EDUU_Structure.14">
 						<name>NTM_RUD</name>
-						<visibility>0</visibility>
 						<Point>
 							<coordinates>6.83998143469224,50.36546445477661,0</coordinates>
 						</Point>
 					</Placemark>
 					<Placemark id="EDUU_Structure.15">
 						<name>SLN</name>
-						<visibility>0</visibility>
 						<Point>
 							<coordinates>8.554966887128851,48.9585538513656,0</coordinates>
 						</Point>
 					</Placemark>
 					<Placemark id="EDUU_Structure.16">
 						<name>TGO</name>
-						<visibility>0</visibility>
 						<Point>
 							<coordinates>9.304230631011761,49.1124708631591,0</coordinates>
 						</Point>
 					</Placemark>
 					<Placemark id="EDUU_Structure.17">
 						<name>WUR</name>
-						<visibility>0</visibility>
 						<Point>
 							<coordinates>9.90448434220977,49.66669522885691,0</coordinates>
 						</Point>
 					</Placemark>
 					<Placemark id="EDUU_Structure.18">
 						<name>MNS</name>
-						<visibility>0</visibility>
 						<Point>
 							<coordinates>7.95083364703101,52.0129291485143,0</coordinates>
 						</Point>
 					</Placemark>
-					<Placemark id="EDUU_Structure.20">
+					<Placemark id="EDUU_Structure.19">
 						<name>RHR</name>
-						<visibility>0</visibility>
 						<Point>
 							<coordinates>7.08789566401733,51.2588937520702,0</coordinates>
 						</Point>
 					</Placemark>
-					<Placemark id="EDUU_Structure.21">
+					<Placemark id="EDUU_Structure.20">
 						<name>LFEE_UE</name>
-						<visibility>0</visibility>
 						<Point>
 							<coordinates>7.23429454350804,48.6662307925973,0</coordinates>
 						</Point>
 					</Placemark>
-					<Placemark id="EDUU_Structure.22">
+					<Placemark id="EDUU_Structure.21">
 						<name>OLN</name>
-						<visibility>0</visibility>
 						<Point>
 							<coordinates>6.168534459771379,50.5650844262841,0</coordinates>
 						</Point>
 					</Placemark>
-					<Placemark id="EDUU_Structure.23">
+					<Placemark id="EDUU_Structure.22">
 						<name>LUX</name>
-						<visibility>0</visibility>
 						<Point>
 							<coordinates>5.976074267682351,49.71957827899189,0</coordinates>
 						</Point>
 					</Placemark>
-					<Placemark id="EDUU_Structure.24">
+					<Placemark id="EDUU_Structure.23">
 						<name>WUR_ALB</name>
-						<visibility>0</visibility>
 						<Point>
 							<coordinates>10.660860785592,49.4196957216816,0</coordinates>
 						</Point>
 					</Placemark>
-					<Placemark id="EDUU_Structure.25">
+					<Placemark id="EDUU_Structure.24">
 						<name>CEL</name>
-						<visibility>0</visibility>
 						<Point>
 							<coordinates>9.877819460528629,52.4963827952876,0</coordinates>
 						</Point>
 					</Placemark>
-					<Placemark id="EDUU_Structure.26">
+					<Placemark id="EDUU_Structure.25">
 						<name>CEL_HOL</name>
-						<visibility>0</visibility>
 						<Point>
 							<coordinates>10.3151496294688,53.1298012366191,0</coordinates>
 						</Point>
 					</Placemark>
-					<Placemark id="EDUU_Structure.27">
+					<Placemark id="EDUU_Structure.26">
 						<name>HOL</name>
-						<visibility>0</visibility>
 						<Point>
 							<coordinates>10.3991915929379,53.9758056121501,0</coordinates>
 						</Point>
 					</Placemark>
-					<Placemark id="EDUU_Structure.28">
+					<Placemark id="EDUU_Structure.27">
 						<name>SOL</name>
-						<visibility>0</visibility>
 						<Point>
 							<coordinates>9.840170163502041,51.7511814153058,0</coordinates>
 						</Point>
 					</Placemark>
-					<Placemark id="EDUU_Structure.29">
+					<Placemark id="EDUU_Structure.28">
 						<name>ERL</name>
-						<visibility>0</visibility>
 						<Point>
 							<coordinates>11.3832598343576,49.99822879847591,0</coordinates>
 						</Point>
 					</Placemark>
-					<Placemark id="EDUU_Structure.30">
+					<Placemark id="EDUU_Structure.29">
 						<name>SAL</name>
-						<visibility>0</visibility>
 						<Point>
 							<coordinates>11.5882291988847,51.1505415334652,0</coordinates>
 						</Point>
 					</Placemark>
-					<Placemark id="EDUU_Structure.31">
+					<Placemark id="EDUU_Structure.30">
 						<name>LOVV_B2</name>
-						<visibility>0</visibility>
 						<Point>
 							<coordinates>13.460537852496,47.8133238295725,0</coordinates>
 						</Point>
 					</Placemark>
-					<Placemark id="EDUU_Structure.32">
+					<Placemark id="EDUU_Structure.31">
 						<name>LOVV_N2</name>
-						<visibility>0</visibility>
 						<Point>
 							<coordinates>14.463705811835,48.3298312521514,0</coordinates>
 						</Point>
 					</Placemark>
-					<Placemark id="EDUU_Structure.33">
+					<Placemark id="EDUU_Structure.32">
 						<name>LOVV_W2</name>
-						<visibility>0</visibility>
 						<Point>
 							<coordinates>13.2285493227358,47.0578937557525,0</coordinates>
 						</Point>
 					</Placemark>
-					<Placemark id="EDUU_Structure.34">
+					<Placemark id="EDUU_Structure.33">
 						<name>EPWW_D</name>
-						<visibility>0</visibility>
 						<Point>
 							<coordinates>16.2217293082416,52.31012991882629,0</coordinates>
 						</Point>
 					</Placemark>
-					<Placemark id="EDUU_Structure.35">
+					<Placemark id="EDUU_Structure.34">
 						<name>EPWW_T</name>
-						<visibility>0</visibility>
 						<Point>
 							<coordinates>16.910309091109,51.0054424352213,0</coordinates>
 						</Point>
 					</Placemark>
-					<Placemark id="EDUU_Structure.36">
+					<Placemark id="EDUU_Structure.35">
 						<name>ALP</name>
-						<visibility>0</visibility>
 						<Point>
 							<coordinates>10.5680127175034,47.6183499464903,0</coordinates>
 						</Point>
 					</Placemark>
-					<Placemark id="EDUU_Structure.37">
-						<name>CHI</name>
-						<visibility>0</visibility>
+					<Placemark id="EDUU_Structure.36">
+						<name>AMM</name>
 						<Point>
-							<coordinates>11.9834323440449,47.95044611288431,0</coordinates>
+							<coordinates>11.3026325225418,48.3002672895139,0</coordinates>
 						</Point>
 					</Placemark>
-					<Placemark id="EDUU_Structure.38">
+					<Placemark id="EDUU_Structure.37">
 						<name>DON</name>
-						<visibility>0</visibility>
 						<Point>
 							<coordinates>12.2894173088787,48.9622809734919,0</coordinates>
 						</Point>
 					</Placemark>
-					<Placemark id="EDUU_Structure.39">
-						<name>ISA</name>
-						<visibility>0</visibility>
-						<Point>
-							<coordinates>10.7709003211626,48.54477348627601,0</coordinates>
-						</Point>
-					</Placemark>
-					<Placemark id="EDUU_Structure.40">
+					<Placemark id="EDUU_Structure.38">
 						<name>SPE</name>
-						<visibility>0</visibility>
 						<Point>
 							<coordinates>13.644470203421,51.25027237511949,0</coordinates>
 						</Point>
 					</Placemark>
-					<Placemark id="EDUU_Structure.41">
+					<Placemark id="EDUU_Structure.39">
 						<name>HVL</name>
-						<visibility>0</visibility>
 						<Point>
 							<coordinates>12.7809004971928,52.33228652047959,0</coordinates>
 						</Point>
 					</Placemark>
-					<Placemark id="EDUU_Structure.42">
+					<Placemark id="EDUU_Structure.40">
 						<name>LKAA_N</name>
-						<visibility>0</visibility>
 						<Point>
 							<coordinates>15.3619160861982,50.351245867493,0</coordinates>
 						</Point>
 					</Placemark>
-					<Placemark id="EDUU_Structure.43">
+					<Placemark id="EDUU_Structure.41">
 						<name>LKAA_W</name>
-						<visibility>0</visibility>
 						<Point>
 							<coordinates>13.6048158237363,49.7125857595763,0</coordinates>
 						</Point>
 					</Placemark>
-					<Placemark id="EDUU_Structure.44">
+					<Placemark id="EDUU_Structure.42">
 						<name>LIPP</name>
-						<visibility>0</visibility>
 						<Point>
 							<coordinates>11.509535674939,46.3787228972093,0</coordinates>
 						</Point>
 					</Placemark>
-					<Placemark id="EDUU_Structure.45">
+					<Placemark id="EDUU_Structure.43">
 						<name>EPWW_B</name>
-						<visibility>0</visibility>
 						<Point>
 							<coordinates>15.5392530235202,53.6971415985463,0</coordinates>
 						</Point>
 					</Placemark>
-					<Placemark id="EDUU_Structure.46">
+					<Placemark id="EDUU_Structure.44">
 						<name>OSE</name>
-						<visibility>0</visibility>
 						<Point>
 							<coordinates>12.974770913051,53.7650071755876,0</coordinates>
 						</Point>
 					</Placemark>
-					<Placemark id="EDUU_Structure.47">
+					<Placemark id="EDUU_Structure.45">
 						<name>EKDK_A</name>
-						<visibility>0</visibility>
 						<Point>
 							<coordinates>11.9656827372981,54.9631068394733,0</coordinates>
 						</Point>
 					</Placemark>
-					<Placemark id="EDUU_Structure.48">
+					<Placemark id="EDUU_Structure.46">
 						<name>ESMM_8-2</name>
-						<visibility>0</visibility>
 						<Point>
 							<coordinates>14.8177343491925,54.4778982263941,0</coordinates>
 						</Point>
 					</Placemark>
-					<Placemark id="EDUU_Structure.49">
+					<Placemark id="EDUU_Structure.47">
 						<name>ESMM_8-3</name>
-						<visibility>0</visibility>
 						<Point>
 							<coordinates>13.9590223753645,55.473878762008,0</coordinates>
 						</Point>
 					</Placemark>
-					<Placemark id="EDUU_Structure.50">
+					<Placemark id="EDUU_Structure.48">
 						<name>FUL_PILAM</name>
-						<visibility>0</visibility>
 						<Point>
 							<coordinates>10.6979079434358,50.4354078351211,0</coordinates>
 						</Point>
