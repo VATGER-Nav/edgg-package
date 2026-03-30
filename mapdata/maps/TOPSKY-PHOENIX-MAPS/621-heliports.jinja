@@ -1,9 +1,16 @@
+{#- 
+    WARNING: When performing any changes on this file,
+    please bring them to the following files as well:
+    
+     * TOPSKY-EDGG-MAPS\721-vrp.jinja
+-#}
+
 MAP:Hospitals
 FOLDER:Aerodromes
 ASRDATA:PHOENIX
 COLOR:standard
 ACTIVE:1
-{%- for name, geom in data.topsky['common']['vfr']['EDGG_hospitals'].items() %}
+{%- for name, geom in data.topsky['common']['vfr']['EDGG_Hospitals'].items() %}
 {{ geom | to_symbol('HOSPITAL') }}  // {{name}}
 {%- endfor %}
 
@@ -11,6 +18,6 @@ MAP:Hospitals w/ L
 FOLDER:Aerodromes
 ASRDATA:PHOENIX
 COLOR:standard
-{%- for name, geom in data.topsky['common']['vfr']['EDGG_hospitals'].items() %}
+{%- for name, geom in data.topsky['common']['vfr']['EDGG_Hospitals'].items() %}
 {{ geom | to_symbol('HOSPITAL') }}:{{name}}:0:-13
 {%- endfor %}

@@ -15017,292 +15017,342 @@
 			</Folder>
 			<Folder>
 				<name>structure</name>
+				<visibility>0</visibility>
 				<Folder>
 					<name>EDUU</name>
+					<visibility>0</visibility>
 					<Placemark id="EDUU_Structure.1">
 						<name>TGO_235</name>
+						<visibility>0</visibility>
 						<Point>
 							<coordinates>9.38082123777528,48.59728417583479,0</coordinates>
 						</Point>
 					</Placemark>
 					<Placemark id="EDUU_Structure.2">
 						<name>FFM_FUL</name>
+						<visibility>0</visibility>
 						<Point>
 							<coordinates>8.426675093711459,50.9714090820646,0</coordinates>
 						</Point>
 					</Placemark>
 					<Placemark id="EDUU_Structure.3">
 						<name>LSAS_Z</name>
+						<visibility>0</visibility>
 						<Point>
 							<coordinates>8.56917349050955,47.28733350691971,0</coordinates>
 						</Point>
 					</Placemark>
 					<Placemark id="EDUU_Structure.4">
 						<name>FFM</name>
+						<visibility>0</visibility>
 						<Point>
 							<coordinates>8.66903380088285,50.3606627557399,0</coordinates>
 						</Point>
 					</Placemark>
 					<Placemark id="EDUU_Structure.5">
 						<name>FFM_RHR</name>
+						<visibility>0</visibility>
 						<Point>
 							<coordinates>7.87267970222844,50.9802499844151,0</coordinates>
 						</Point>
 					</Placemark>
 					<Placemark id="EDUU_Structure.6">
 						<name>FUL</name>
+						<visibility>0</visibility>
 						<Point>
 							<coordinates>9.65866164175193,50.7835671881452,0</coordinates>
 						</Point>
 					</Placemark>
 					<Placemark id="EDUU_Structure.7">
 						<name>SOL_255</name>
+						<visibility>0</visibility>
 						<Point>
 							<coordinates>10.1438018072161,51.2510257576947,0</coordinates>
 						</Point>
 					</Placemark>
 					<Placemark id="EDUU_Structure.8">
 						<name>FUL_255</name>
+						<visibility>0</visibility>
 						<Point>
 							<coordinates>9.65627362688234,51.1559139679345,0</coordinates>
 						</Point>
 					</Placemark>
 					<Placemark id="EDUU_Structure.9">
 						<name>NTM_KIR</name>
+						<visibility>0</visibility>
 						<Point>
 							<coordinates>6.66335064284404,49.7350406017577,0</coordinates>
 						</Point>
 					</Placemark>
 					<Placemark id="EDUU_Structure.10">
 						<name>NTM_NOR</name>
+						<visibility>0</visibility>
 						<Point>
 							<coordinates>7.43981938450672,50.57031009455509,0</coordinates>
 						</Point>
 					</Placemark>
 					<Placemark id="EDUU_Structure.11">
 						<name>OLN_NOR</name>
+						<visibility>0</visibility>
 						<Point>
 							<coordinates>6.926860873880279,50.5740926313455,0</coordinates>
 						</Point>
 					</Placemark>
 					<Placemark id="EDUU_Structure.12">
 						<name>NTM</name>
+						<visibility>0</visibility>
 						<Point>
 							<coordinates>7.46047757993253,49.84004036668811,0</coordinates>
 						</Point>
 					</Placemark>
 					<Placemark id="EDUU_Structure.13">
 						<name>MNS_PADH</name>
+						<visibility>0</visibility>
 						<Point>
 							<coordinates>8.32571174447285,51.1320666836374,0</coordinates>
 						</Point>
 					</Placemark>
 					<Placemark id="EDUU_Structure.14">
 						<name>NTM_RUD</name>
+						<visibility>0</visibility>
 						<Point>
 							<coordinates>6.83998143469224,50.36546445477661,0</coordinates>
 						</Point>
 					</Placemark>
 					<Placemark id="EDUU_Structure.15">
 						<name>SLN</name>
+						<visibility>0</visibility>
 						<Point>
 							<coordinates>8.554966887128851,48.9585538513656,0</coordinates>
 						</Point>
 					</Placemark>
 					<Placemark id="EDUU_Structure.16">
 						<name>TGO</name>
+						<visibility>0</visibility>
 						<Point>
 							<coordinates>9.304230631011761,49.1124708631591,0</coordinates>
 						</Point>
 					</Placemark>
 					<Placemark id="EDUU_Structure.17">
 						<name>WUR</name>
+						<visibility>0</visibility>
 						<Point>
 							<coordinates>9.90448434220977,49.66669522885691,0</coordinates>
 						</Point>
 					</Placemark>
 					<Placemark id="EDUU_Structure.18">
 						<name>MNS</name>
+						<visibility>0</visibility>
 						<Point>
 							<coordinates>7.95083364703101,52.0129291485143,0</coordinates>
 						</Point>
 					</Placemark>
 					<Placemark id="EDUU_Structure.19">
 						<name>RHR</name>
+						<visibility>0</visibility>
 						<Point>
 							<coordinates>7.08789566401733,51.2588937520702,0</coordinates>
 						</Point>
 					</Placemark>
 					<Placemark id="EDUU_Structure.20">
 						<name>LFEE_UE</name>
+						<visibility>0</visibility>
 						<Point>
 							<coordinates>7.23429454350804,48.6662307925973,0</coordinates>
 						</Point>
 					</Placemark>
 					<Placemark id="EDUU_Structure.21">
 						<name>OLN</name>
+						<visibility>0</visibility>
 						<Point>
 							<coordinates>6.168534459771379,50.5650844262841,0</coordinates>
 						</Point>
 					</Placemark>
 					<Placemark id="EDUU_Structure.22">
 						<name>LUX</name>
+						<visibility>0</visibility>
 						<Point>
 							<coordinates>5.976074267682351,49.71957827899189,0</coordinates>
 						</Point>
 					</Placemark>
 					<Placemark id="EDUU_Structure.23">
 						<name>WUR_ALB</name>
+						<visibility>0</visibility>
 						<Point>
 							<coordinates>10.660860785592,49.4196957216816,0</coordinates>
 						</Point>
 					</Placemark>
 					<Placemark id="EDUU_Structure.24">
 						<name>CEL</name>
+						<visibility>0</visibility>
 						<Point>
 							<coordinates>9.877819460528629,52.4963827952876,0</coordinates>
 						</Point>
 					</Placemark>
 					<Placemark id="EDUU_Structure.25">
 						<name>CEL_HOL</name>
+						<visibility>0</visibility>
 						<Point>
 							<coordinates>10.3151496294688,53.1298012366191,0</coordinates>
 						</Point>
 					</Placemark>
 					<Placemark id="EDUU_Structure.26">
 						<name>HOL</name>
+						<visibility>0</visibility>
 						<Point>
 							<coordinates>10.3991915929379,53.9758056121501,0</coordinates>
 						</Point>
 					</Placemark>
 					<Placemark id="EDUU_Structure.27">
 						<name>SOL</name>
+						<visibility>0</visibility>
 						<Point>
 							<coordinates>9.840170163502041,51.7511814153058,0</coordinates>
 						</Point>
 					</Placemark>
 					<Placemark id="EDUU_Structure.28">
 						<name>ERL</name>
+						<visibility>0</visibility>
 						<Point>
 							<coordinates>11.3832598343576,49.99822879847591,0</coordinates>
 						</Point>
 					</Placemark>
 					<Placemark id="EDUU_Structure.29">
 						<name>SAL</name>
+						<visibility>0</visibility>
 						<Point>
 							<coordinates>11.5882291988847,51.1505415334652,0</coordinates>
 						</Point>
 					</Placemark>
 					<Placemark id="EDUU_Structure.30">
 						<name>LOVV_B2</name>
+						<visibility>0</visibility>
 						<Point>
 							<coordinates>13.460537852496,47.8133238295725,0</coordinates>
 						</Point>
 					</Placemark>
 					<Placemark id="EDUU_Structure.31">
 						<name>LOVV_N2</name>
+						<visibility>0</visibility>
 						<Point>
 							<coordinates>14.463705811835,48.3298312521514,0</coordinates>
 						</Point>
 					</Placemark>
 					<Placemark id="EDUU_Structure.32">
 						<name>LOVV_W2</name>
+						<visibility>0</visibility>
 						<Point>
 							<coordinates>13.2285493227358,47.0578937557525,0</coordinates>
 						</Point>
 					</Placemark>
 					<Placemark id="EDUU_Structure.33">
 						<name>EPWW_D</name>
+						<visibility>0</visibility>
 						<Point>
 							<coordinates>16.2217293082416,52.31012991882629,0</coordinates>
 						</Point>
 					</Placemark>
 					<Placemark id="EDUU_Structure.34">
 						<name>EPWW_T</name>
+						<visibility>0</visibility>
 						<Point>
 							<coordinates>16.910309091109,51.0054424352213,0</coordinates>
 						</Point>
 					</Placemark>
 					<Placemark id="EDUU_Structure.35">
 						<name>ALP</name>
+						<visibility>0</visibility>
 						<Point>
 							<coordinates>10.5680127175034,47.6183499464903,0</coordinates>
 						</Point>
 					</Placemark>
 					<Placemark id="EDUU_Structure.36">
 						<name>AMM</name>
+						<visibility>0</visibility>
 						<Point>
 							<coordinates>11.3026325225418,48.3002672895139,0</coordinates>
 						</Point>
 					</Placemark>
 					<Placemark id="EDUU_Structure.37">
 						<name>DON</name>
+						<visibility>0</visibility>
 						<Point>
 							<coordinates>12.2894173088787,48.9622809734919,0</coordinates>
 						</Point>
 					</Placemark>
 					<Placemark id="EDUU_Structure.38">
 						<name>SPE</name>
+						<visibility>0</visibility>
 						<Point>
 							<coordinates>13.644470203421,51.25027237511949,0</coordinates>
 						</Point>
 					</Placemark>
 					<Placemark id="EDUU_Structure.39">
 						<name>HVL</name>
+						<visibility>0</visibility>
 						<Point>
 							<coordinates>12.7809004971928,52.33228652047959,0</coordinates>
 						</Point>
 					</Placemark>
 					<Placemark id="EDUU_Structure.40">
 						<name>LKAA_N</name>
+						<visibility>0</visibility>
 						<Point>
 							<coordinates>15.3619160861982,50.351245867493,0</coordinates>
 						</Point>
 					</Placemark>
 					<Placemark id="EDUU_Structure.41">
 						<name>LKAA_W</name>
+						<visibility>0</visibility>
 						<Point>
 							<coordinates>13.6048158237363,49.7125857595763,0</coordinates>
 						</Point>
 					</Placemark>
 					<Placemark id="EDUU_Structure.42">
 						<name>LIPP</name>
+						<visibility>0</visibility>
 						<Point>
 							<coordinates>11.509535674939,46.3787228972093,0</coordinates>
 						</Point>
 					</Placemark>
 					<Placemark id="EDUU_Structure.43">
 						<name>EPWW_B</name>
+						<visibility>0</visibility>
 						<Point>
 							<coordinates>15.5392530235202,53.6971415985463,0</coordinates>
 						</Point>
 					</Placemark>
 					<Placemark id="EDUU_Structure.44">
 						<name>OSE</name>
+						<visibility>0</visibility>
 						<Point>
 							<coordinates>12.974770913051,53.7650071755876,0</coordinates>
 						</Point>
 					</Placemark>
 					<Placemark id="EDUU_Structure.45">
 						<name>EKDK_A</name>
+						<visibility>0</visibility>
 						<Point>
 							<coordinates>11.9656827372981,54.9631068394733,0</coordinates>
 						</Point>
 					</Placemark>
 					<Placemark id="EDUU_Structure.46">
 						<name>ESMM_8-2</name>
+						<visibility>0</visibility>
 						<Point>
 							<coordinates>14.8177343491925,54.4778982263941,0</coordinates>
 						</Point>
 					</Placemark>
 					<Placemark id="EDUU_Structure.47">
 						<name>ESMM_8-3</name>
+						<visibility>0</visibility>
 						<Point>
 							<coordinates>13.9590223753645,55.473878762008,0</coordinates>
 						</Point>
 					</Placemark>
 					<Placemark id="EDUU_Structure.48">
 						<name>FUL_PILAM</name>
+						<visibility>0</visibility>
 						<Point>
 							<coordinates>10.6979079434358,50.4354078351211,0</coordinates>
 						</Point>
@@ -17784,7 +17834,6 @@
 		</Folder>
 		<Folder>
 			<name>vfr</name>
-			<visibility>0</visibility>
 			<Folder>
 				<name>fis</name>
 				<visibility>0</visibility>
@@ -18045,1378 +18094,1187 @@
 				</Folder>
 			</Folder>
 			<Folder>
-				<name>EDGG_hospitals</name>
-				<visibility>0</visibility>
-				<Placemark>
+				<name>EDGG_Hospitals</name>
+				<Placemark id="EDDG_Hospitals.1">
 					<name>Bad Oeynhausen</name>
-					<visibility>0</visibility>
 					<Point>
 						<coordinates>8.795357222222201,52.192496111111,0</coordinates>
 					</Point>
 				</Placemark>
-				<Placemark>
+				<Placemark id="EDDG_Hospitals.2">
 					<name>Schaumburg Ev. Klinikum</name>
-					<visibility>0</visibility>
 					<Point>
 						<coordinates>9.1036111111111,52.265556111111,0</coordinates>
 					</Point>
 				</Placemark>
-				<Placemark>
+				<Placemark id="EDDG_Hospitals.3">
 					<name>Osnabrueck Marienhospital</name>
-					<visibility>0</visibility>
 					<Point>
 						<coordinates>8.0557730555556,52.269987222222,0</coordinates>
 					</Point>
 				</Placemark>
-				<Placemark>
+				<Placemark id="EDDG_Hospitals.4">
 					<name>Rheine LRZ</name>
-					<visibility>0</visibility>
 					<Point>
 						<coordinates>7.4333333333333,52.27722222222201,0</coordinates>
 					</Point>
 				</Placemark>
-				<Placemark>
+				<Placemark id="EDDG_Hospitals.5">
 					<name>Ibbenbueren</name>
-					<visibility>0</visibility>
 					<Point>
 						<coordinates>7.7144072222222,52.278041111111,0</coordinates>
 					</Point>
 				</Placemark>
-				<Placemark>
+				<Placemark id="EDDG_Hospitals.6">
 					<name>Osnabrueck Klinikum</name>
-					<visibility>0</visibility>
 					<Point>
 						<coordinates>8.004722222222201,52.278056111111,0</coordinates>
 					</Point>
 				</Placemark>
-				<Placemark>
+				<Placemark id="EDDG_Hospitals.7">
 					<name>Luebbecke Kreiskrankenhaus</name>
-					<visibility>0</visibility>
 					<Point>
 						<coordinates>8.60233,52.296095,0</coordinates>
 					</Point>
 				</Placemark>
-				<Placemark>
+				<Placemark id="EDDG_Hospitals.8">
 					<name>Diepenau Polipol</name>
-					<visibility>0</visibility>
 					<Point>
 						<coordinates>8.711944166666701,52.406389166667,0</coordinates>
 					</Point>
 				</Placemark>
-				<Placemark>
+				<Placemark id="EDDG_Hospitals.9">
 					<name>Beverungen Nord</name>
-					<visibility>0</visibility>
 					<Point>
 						<coordinates>9.3813822222222,51.673944166667,0</coordinates>
 					</Point>
 				</Placemark>
-				<Placemark>
+				<Placemark id="EDDG_Hospitals.10">
 					<name>Fuldatal Ihringhausen</name>
-					<visibility>0</visibility>
 					<Point>
 						<coordinates>9.5027441666667,51.35959999999999,0</coordinates>
 					</Point>
 				</Placemark>
-				<Placemark>
+				<Placemark id="EDDG_Hospitals.11">
 					<name>Hann Muenden Klinik</name>
-					<visibility>0</visibility>
 					<Point>
 						<coordinates>9.658333333333299,51.39750000000001,0</coordinates>
 					</Point>
 				</Placemark>
-				<Placemark>
+				<Placemark id="EDDG_Hospitals.12">
 					<name>Heiligenstadt Heilbad</name>
-					<visibility>0</visibility>
 					<Point>
 						<coordinates>10.14065,51.37685,0</coordinates>
 					</Point>
 				</Placemark>
-				<Placemark>
+				<Placemark id="EDDG_Hospitals.13">
 					<name>Immenstadt EADS GMBH</name>
-					<visibility>0</visibility>
 					<Point>
 						<coordinates>9.391441111111099,47.669672222222,0</coordinates>
 					</Point>
 				</Placemark>
-				<Placemark>
+				<Placemark id="EDDG_Hospitals.14">
 					<name>Kisslegg</name>
-					<visibility>0</visibility>
 					<Point>
 						<coordinates>9.891925000000001,47.76883305555601,0</coordinates>
 					</Point>
 				</Placemark>
-				<Placemark>
+				<Placemark id="EDDG_Hospitals.15">
 					<name>Ravensburg St. Elisabeth</name>
-					<visibility>0</visibility>
 					<Point>
 						<coordinates>9.6210291666667,47.787972222222,0</coordinates>
 					</Point>
 				</Placemark>
-				<Placemark>
+				<Placemark id="EDDG_Hospitals.16">
 					<name>Klinikum Weissenhorn</name>
-					<visibility>0</visibility>
 					<Point>
 						<coordinates>10.156764166667,48.312122222222,0</coordinates>
 					</Point>
 				</Placemark>
-				<Placemark>
+				<Placemark id="EDDG_Hospitals.17">
 					<name>Ulm Uniklinikum</name>
-					<visibility>0</visibility>
 					<Point>
 						<coordinates>9.951389166666701,48.4225,0</coordinates>
 					</Point>
 				</Placemark>
-				<Placemark>
+				<Placemark id="EDDG_Hospitals.18">
 					<name>BWK Ulm Boden</name>
-					<visibility>0</visibility>
 					<Point>
 						<coordinates>9.945469166666699,48.426519166667,0</coordinates>
 					</Point>
 				</Placemark>
-				<Placemark>
+				<Placemark id="EDDG_Hospitals.19">
 					<name>Friedrichshafen Klinikum</name>
-					<visibility>0</visibility>
 					<Point>
 						<coordinates>9.42855,47.672767222222,0</coordinates>
 					</Point>
 				</Placemark>
-				<Placemark>
+				<Placemark id="EDDG_Hospitals.20">
 					<name>Ehingen Gesundheitszentrum</name>
-					<visibility>0</visibility>
 					<Point>
 						<coordinates>9.71917,48.27916999999999,0</coordinates>
 					</Point>
 				</Placemark>
-				<Placemark>
+				<Placemark id="EDDG_Hospitals.21">
 					<name>Tettnang Kreiskrankenhaus</name>
-					<visibility>0</visibility>
 					<Point>
 						<coordinates>9.598281111111101,47.671667222222,0</coordinates>
 					</Point>
 				</Placemark>
-				<Placemark>
+				<Placemark id="EDDG_Hospitals.22">
 					<name>Guenzburg Bezirkskrankenhaus</name>
-					<visibility>0</visibility>
 					<Point>
 						<coordinates>10.291178055556,48.456289166667,0</coordinates>
 					</Point>
 				</Placemark>
-				<Placemark>
+				<Placemark id="EDDG_Hospitals.23">
 					<name>Ulm BWK Dach</name>
-					<visibility>0</visibility>
 					<Point>
 						<coordinates>9.9477080555556,48.425031111111,0</coordinates>
 					</Point>
 				</Placemark>
-				<Placemark>
+				<Placemark id="EDDG_Hospitals.24">
 					<name>Biberach an der Riss Sana Kliniken</name>
-					<visibility>0</visibility>
 					<Point>
 						<coordinates>9.7793391666667,48.113103055556,0</coordinates>
 					</Point>
 				</Placemark>
-				<Placemark>
+				<Placemark id="EDDG_Hospitals.25">
 					<name>Gotha Helios Kreiskrankenhaus</name>
-					<visibility>0</visibility>
 					<Point>
 						<coordinates>10.678889166667,50.92888916666701,0</coordinates>
 					</Point>
 				</Placemark>
-				<Placemark>
+				<Placemark id="EDDG_Hospitals.26">
 					<name>Suhl SRH Zentralklinikum</name>
-					<visibility>0</visibility>
 					<Point>
 						<coordinates>10.710386111111,50.603042222222,0</coordinates>
 					</Point>
 				</Placemark>
-				<Placemark>
+				<Placemark id="EDDG_Hospitals.27">
 					<name>Hildburghausen Helios</name>
-					<visibility>0</visibility>
 					<Point>
 						<coordinates>10.747614166667,50.42895000000001,0</coordinates>
 					</Point>
 				</Placemark>
-				<Placemark>
+				<Placemark id="EDDG_Hospitals.28">
 					<name>Lichtenfels Klinikum</name>
-					<visibility>0</visibility>
 					<Point>
 						<coordinates>11.081583055556,50.13886111111099,0</coordinates>
 					</Point>
 				</Placemark>
-				<Placemark>
+				<Placemark id="EDDG_Hospitals.29">
 					<name>Aalen Ostalbklinikum</name>
-					<visibility>0</visibility>
 					<Point>
 						<coordinates>10.085763055556,48.84982305555601,0</coordinates>
 					</Point>
 				</Placemark>
-				<Placemark>
+				<Placemark id="EDDG_Hospitals.30">
 					<name>Ellenberg Schweizerhof</name>
-					<visibility>0</visibility>
 					<Point>
 						<coordinates>10.209366111111,48.99218999999999,0</coordinates>
 					</Point>
 				</Placemark>
-				<Placemark>
+				<Placemark id="EDDG_Hospitals.31">
 					<name>Dinkelsbuehl</name>
-					<visibility>0</visibility>
 					<Point>
 						<coordinates>10.401581111111,49.065944166667,0</coordinates>
 					</Point>
 				</Placemark>
-				<Placemark>
+				<Placemark id="EDDG_Hospitals.32">
 					<name>Sonneberg Regiomed Klinik</name>
-					<visibility>0</visibility>
 					<Point>
 						<coordinates>11.162256111111,50.35401916666699,0</coordinates>
 					</Point>
 				</Placemark>
-				<Placemark>
+				<Placemark id="EDDG_Hospitals.33">
 					<name>Saalfeld Klinikum</name>
-					<visibility>0</visibility>
 					<Point>
 						<coordinates>11.342111111111,50.643939166667,0</coordinates>
 					</Point>
 				</Placemark>
-				<Placemark>
+				<Placemark id="EDDG_Hospitals.34">
 					<name>Loerrach Kreiskrankenhaus</name>
-					<visibility>0</visibility>
 					<Point>
 						<coordinates>7.6589,47.61438416666699,0</coordinates>
 					</Point>
 				</Placemark>
-				<Placemark>
+				<Placemark id="EDDG_Hospitals.35">
 					<name>Schwarzwaldbaar Klinikum</name>
-					<visibility>0</visibility>
 					<Point>
 						<coordinates>8.4807272222222,47.95602000000001,0</coordinates>
 					</Point>
 				</Placemark>
-				<Placemark>
+				<Placemark id="EDDG_Hospitals.36">
 					<name>Freiburg St. Josefskrankenhaus</name>
-					<visibility>0</visibility>
 					<Point>
 						<coordinates>7.8519230555556,48.001566111111,0</coordinates>
 					</Point>
 				</Placemark>
-				<Placemark>
+				<Placemark id="EDDG_Hospitals.37">
 					<name>Freiburg Uniklinikum FR2</name>
-					<visibility>0</visibility>
 					<Point>
 						<coordinates>7.8402280555556,48.00678916666699,0</coordinates>
 					</Point>
 				</Placemark>
-				<Placemark>
+				<Placemark id="EDDG_Hospitals.38">
 					<name>Freiburg Uniklinikum FR1</name>
-					<visibility>0</visibility>
 					<Point>
 						<coordinates>7.8392472222222,48.007469166667,0</coordinates>
 					</Point>
 				</Placemark>
-				<Placemark>
+				<Placemark id="EDDG_Hospitals.39">
 					<name>Rottweil Helios Klinik</name>
-					<visibility>0</visibility>
 					<Point>
 						<coordinates>8.61126,48.165165,0</coordinates>
 					</Point>
 				</Placemark>
-				<Placemark>
+				<Placemark id="EDDG_Hospitals.40">
 					<name>Polizeistuetzpunkt</name>
-					<visibility>0</visibility>
 					<Point>
 						<coordinates>8.574870000000001,48.173511111111,0</coordinates>
 					</Point>
 				</Placemark>
-				<Placemark>
+				<Placemark id="EDDG_Hospitals.41">
 					<name>Norddach Firma Junker</name>
-					<visibility>0</visibility>
 					<Point>
 						<coordinates>8.072303055555601,48.391028055556,0</coordinates>
 					</Point>
 				</Placemark>
-				<Placemark>
+				<Placemark id="EDDG_Hospitals.42">
 					<name>Freudenstadt Krankenhaus</name>
-					<visibility>0</visibility>
 					<Point>
 						<coordinates>8.40455,48.47691722222199,0</coordinates>
 					</Point>
 				</Placemark>
-				<Placemark>
+				<Placemark id="EDDG_Hospitals.43">
 					<name>Bruchsal</name>
-					<visibility>0</visibility>
 					<Point>
 						<coordinates>8.56264,49.122004166667,0</coordinates>
 					</Point>
 				</Placemark>
-				<Placemark>
+				<Placemark id="EDDG_Hospitals.44">
 					<name>Saarbruecken</name>
-					<visibility>0</visibility>
 					<Point>
 						<coordinates>6.9986891666667,49.222261111111,0</coordinates>
 					</Point>
 				</Placemark>
-				<Placemark>
+				<Placemark id="EDDG_Hospitals.45">
 					<name>KL Westpfalz Klinikum</name>
-					<visibility>0</visibility>
 					<Point>
 						<coordinates>7.7569280555556,49.44168305555599,0</coordinates>
 					</Point>
 				</Placemark>
-				<Placemark>
+				<Placemark id="EDDG_Hospitals.46">
 					<name>St. Wendel Golfhotel</name>
-					<visibility>0</visibility>
 					<Point>
 						<coordinates>7.1387111111111,49.474894166667,0</coordinates>
 					</Point>
 				</Placemark>
-				<Placemark>
+				<Placemark id="EDDG_Hospitals.47">
 					<name>BGU Ludwigshafen</name>
-					<visibility>0</visibility>
 					<Point>
 						<coordinates>8.3891672222222,49.486389166667,0</coordinates>
 					</Point>
 				</Placemark>
-				<Placemark>
+				<Placemark id="EDDG_Hospitals.48">
 					<name>Mannheim Theresienkrankenhaus</name>
-					<visibility>0</visibility>
 					<Point>
 						<coordinates>8.4813672222222,49.489394166667,0</coordinates>
 					</Point>
 				</Placemark>
-				<Placemark>
+				<Placemark id="EDDG_Hospitals.49">
 					<name>Ludwigshafen</name>
-					<visibility>0</visibility>
 					<Point>
 						<coordinates>8.424722222222201,49.49111111111101,0</coordinates>
 					</Point>
 				</Placemark>
-				<Placemark>
+				<Placemark id="EDDG_Hospitals.50">
 					<name>Gruenstadt Kreiskrankenhaus</name>
-					<visibility>0</visibility>
 					<Point>
 						<coordinates>8.158333333333299,49.563167222222,0</coordinates>
 					</Point>
 				</Placemark>
-				<Placemark>
+				<Placemark id="EDDG_Hospitals.51">
 					<name>Worms Klinikum</name>
-					<visibility>0</visibility>
 					<Point>
 						<coordinates>8.321111111111099,49.648611111111,0</coordinates>
 					</Point>
 				</Placemark>
-				<Placemark>
+				<Placemark id="EDDG_Hospitals.52">
 					<name>Rottweil Krankenhaus</name>
-					<visibility>0</visibility>
 					<Point>
 						<coordinates>8.6361111111111,48.149444444444,0</coordinates>
 					</Point>
 				</Placemark>
-				<Placemark>
+				<Placemark id="EDDG_Hospitals.53">
 					<name>Karlsruhe Staedt</name>
-					<visibility>0</visibility>
 					<Point>
 						<coordinates>8.3748280555556,49.018365,0</coordinates>
 					</Point>
 				</Placemark>
-				<Placemark>
+				<Placemark id="EDDG_Hospitals.54">
 					<name>Klinik Bruchsal</name>
-					<visibility>0</visibility>
 					<Point>
 						<coordinates>8.6027780555556,49.132222222222,0</coordinates>
 					</Point>
 				</Placemark>
-				<Placemark>
+				<Placemark id="EDDG_Hospitals.55">
 					<name>Zentralklinikum Villingen Schwenningen</name>
-					<visibility>0</visibility>
 					<Point>
 						<coordinates>8.501028055555601,48.066278055556,0</coordinates>
 					</Point>
 				</Placemark>
-				<Placemark>
+				<Placemark id="EDDG_Hospitals.56">
 					<name>Braeunlingen Firma Straub</name>
-					<visibility>0</visibility>
 					<Point>
 						<coordinates>8.461824999999999,47.927725,0</coordinates>
 					</Point>
 				</Placemark>
-				<Placemark>
+				<Placemark id="EDDG_Hospitals.57">
 					<name>Lahr ETT Ortenau Klinikum</name>
-					<visibility>0</visibility>
 					<Point>
 						<coordinates>7.8871172222222,48.344067222222,0</coordinates>
 					</Point>
 				</Placemark>
-				<Placemark>
+				<Placemark id="EDDG_Hospitals.58">
 					<name>Rueppurr Diakonie</name>
-					<visibility>0</visibility>
 					<Point>
 						<coordinates>8.4091672222222,48.970833055556,0</coordinates>
 					</Point>
 				</Placemark>
-				<Placemark>
+				<Placemark id="EDDG_Hospitals.59">
 					<name>SRH Klinikum</name>
-					<visibility>0</visibility>
 					<Point>
 						<coordinates>8.503,48.9045,0</coordinates>
 					</Point>
 				</Placemark>
-				<Placemark>
+				<Placemark id="EDDG_Hospitals.60">
 					<name>Mannheim Klinikum</name>
-					<visibility>0</visibility>
 					<Point>
 						<coordinates>8.4864311111111,49.493264166667,0</coordinates>
 					</Point>
 				</Placemark>
-				<Placemark>
+				<Placemark id="EDDG_Hospitals.61">
 					<name>Pforzheim Krankenhaus</name>
-					<visibility>0</visibility>
 					<Point>
 						<coordinates>8.673406111111101,48.897892222222,0</coordinates>
 					</Point>
 				</Placemark>
-				<Placemark>
+				<Placemark id="EDDG_Hospitals.62">
 					<name>Pforzheim Arcus</name>
-					<visibility>0</visibility>
 					<Point>
 						<coordinates>8.6655,48.897833055556,0</coordinates>
 					</Point>
 				</Placemark>
-				<Placemark>
+				<Placemark id="EDDG_Hospitals.63">
 					<name>Heidelberg Uniklinikum</name>
-					<visibility>0</visibility>
 					<Point>
 						<coordinates>8.6698330555556,49.4215,0</coordinates>
 					</Point>
 				</Placemark>
-				<Placemark>
+				<Placemark id="EDDG_Hospitals.64">
 					<name>Bad Krozingen Herzzentrum</name>
-					<visibility>0</visibility>
 					<Point>
 						<coordinates>7.69889,47.907408055556,0</coordinates>
 					</Point>
 				</Placemark>
-				<Placemark>
+				<Placemark id="EDDG_Hospitals.65">
 					<name>Offenburg Kreiskrankenhaus</name>
-					<visibility>0</visibility>
 					<Point>
 						<coordinates>7.955,48.476389166667,0</coordinates>
 					</Point>
 				</Placemark>
-				<Placemark>
+				<Placemark id="EDDG_Hospitals.66">
 					<name>Speyer Diakonie</name>
-					<visibility>0</visibility>
 					<Point>
 						<coordinates>8.4355830555556,49.31044444444401,0</coordinates>
 					</Point>
 				</Placemark>
-				<Placemark>
+				<Placemark id="EDDG_Hospitals.67">
 					<name>Heidelberg Chirurg Dach</name>
-					<visibility>0</visibility>
 					<Point>
 						<coordinates>8.665706111111099,49.415203055556,0</coordinates>
 					</Point>
 				</Placemark>
-				<Placemark>
+				<Placemark id="EDDG_Hospitals.68">
 					<name>Neunkirchen Staedt</name>
-					<visibility>0</visibility>
 					<Point>
 						<coordinates>7.1830561111111,49.34138916666701,0</coordinates>
 					</Point>
 				</Placemark>
-				<Placemark>
+				<Placemark id="EDDG_Hospitals.69">
 					<name>Homburg Saar Uniklinik</name>
-					<visibility>0</visibility>
 					<Point>
 						<coordinates>7.345,49.306667222222,0</coordinates>
 					</Point>
 				</Placemark>
-				<Placemark>
+				<Placemark id="EDDG_Hospitals.70">
 					<name>Singen Hegauklinikum</name>
-					<visibility>0</visibility>
 					<Point>
 						<coordinates>8.82124,47.760212222222,0</coordinates>
 					</Point>
 				</Placemark>
-				<Placemark>
+				<Placemark id="EDDG_Hospitals.71">
 					<name>Muelhausen</name>
-					<visibility>0</visibility>
 					<Point>
 						<coordinates>8.8215172222222,47.805763055556,0</coordinates>
 					</Point>
 				</Placemark>
-				<Placemark>
+				<Placemark id="EDDG_Hospitals.72">
 					<name>Balingen Krankenhaus</name>
-					<visibility>0</visibility>
 					<Point>
 						<coordinates>8.863386111111099,48.287047222222,0</coordinates>
 					</Point>
 				</Placemark>
-				<Placemark>
+				<Placemark id="EDDG_Hospitals.73">
 					<name>Burladingen Firma Trigema</name>
-					<visibility>0</visibility>
 					<Point>
 						<coordinates>9.106745,48.287656111111,0</coordinates>
 					</Point>
 				</Placemark>
-				<Placemark>
+				<Placemark id="EDDG_Hospitals.74">
 					<name>Reutlingen Klinikum</name>
-					<visibility>0</visibility>
 					<Point>
 						<coordinates>9.2184311111111,48.48397222222201,0</coordinates>
 					</Point>
 				</Placemark>
-				<Placemark>
+				<Placemark id="EDDG_Hospitals.75">
 					<name>Reutlingenbetzingen</name>
-					<visibility>0</visibility>
 					<Point>
 						<coordinates>9.154513055555601,48.491522222222,0</coordinates>
 					</Point>
 				</Placemark>
-				<Placemark>
+				<Placemark id="EDDG_Hospitals.76">
 					<name>Tuebingen Cronakliniken</name>
-					<visibility>0</visibility>
 					<Point>
 						<coordinates>9.038139166666699,48.52957305555599,0</coordinates>
 					</Point>
 				</Placemark>
-				<Placemark>
+				<Placemark id="EDDG_Hospitals.77">
 					<name>Tuebingen Unfallklinik</name>
-					<visibility>0</visibility>
 					<Point>
 						<coordinates>9.0356391666667,48.532906111111,0</coordinates>
 					</Point>
 				</Placemark>
-				<Placemark>
+				<Placemark id="EDDG_Hospitals.78">
 					<name>Nagold Kreiskrankenhaus</name>
-					<visibility>0</visibility>
 					<Point>
 						<coordinates>8.7229780555556,48.541713055556,0</coordinates>
 					</Point>
 				</Placemark>
-				<Placemark>
+				<Placemark id="EDDG_Hospitals.79">
 					<name>Tuttlingen Klinikum</name>
-					<visibility>0</visibility>
 					<Point>
 						<coordinates>8.8314172222222,47.98517500000001,0</coordinates>
 					</Point>
 				</Placemark>
-				<Placemark>
+				<Placemark id="EDDG_Hospitals.80">
 					<name>Pfronstettenaichelau</name>
-					<visibility>0</visibility>
 					<Point>
 						<coordinates>9.394447222222199,48.288439166667,0</coordinates>
 					</Point>
 				</Placemark>
-				<Placemark>
+				<Placemark id="EDDG_Hospitals.81">
 					<name>Konstanz Klinikum</name>
-					<visibility>0</visibility>
 					<Point>
 						<coordinates>9.188675,47.671989166667,0</coordinates>
 					</Point>
 				</Placemark>
-				<Placemark>
+				<Placemark id="EDDG_Hospitals.82">
 					<name>Schwalmstadt Krankenhaus</name>
-					<visibility>0</visibility>
 					<Point>
 						<coordinates>9.166389166666701,50.909722222222,0</coordinates>
 					</Point>
 				</Placemark>
-				<Placemark>
+				<Placemark id="EDDG_Hospitals.83">
 					<name>Schwalmstadt Asklepios</name>
-					<visibility>0</visibility>
 					<Point>
 						<coordinates>9.255208055555601,50.921336111111,0</coordinates>
 					</Point>
 				</Placemark>
-				<Placemark>
+				<Placemark id="EDDG_Hospitals.84">
 					<name>Kassel Rotes Kreuz Krankenhaus</name>
-					<visibility>0</visibility>
 					<Point>
 						<coordinates>9.453472222222199,51.311667222222,0</coordinates>
 					</Point>
 				</Placemark>
-				<Placemark>
+				<Placemark id="EDDG_Hospitals.85">
 					<name>Kassel Klinikum</name>
-					<visibility>0</visibility>
 					<Point>
 						<coordinates>9.509401111111099,51.328549166667,0</coordinates>
 					</Point>
 				</Placemark>
-				<Placemark>
+				<Placemark id="EDDG_Hospitals.86">
 					<name>Fulda Klinikum</name>
-					<visibility>0</visibility>
 					<Point>
 						<coordinates>9.704209166666701,50.545843055556,0</coordinates>
 					</Point>
 				</Placemark>
-				<Placemark>
+				<Placemark id="EDDG_Hospitals.87">
 					<name>Bad Salzungen Klinikum</name>
-					<visibility>0</visibility>
 					<Point>
 						<coordinates>10.216731111111,50.804194166667,0</coordinates>
 					</Point>
 				</Placemark>
-				<Placemark>
+				<Placemark id="EDDG_Hospitals.88">
 					<name>Eisenach St. Georg</name>
-					<visibility>0</visibility>
 					<Point>
 						<coordinates>10.316667222222,50.9875,0</coordinates>
 					</Point>
 				</Placemark>
-				<Placemark>
+				<Placemark id="EDDG_Hospitals.89">
 					<name>Meiningen Helios Klinikum</name>
-					<visibility>0</visibility>
 					<Point>
 						<coordinates>10.398942222222,50.557083055556,0</coordinates>
 					</Point>
 				</Placemark>
-				<Placemark>
+				<Placemark id="EDDG_Hospitals.90">
 					<name>Muehlhausen Klinikum</name>
-					<visibility>0</visibility>
 					<Point>
 						<coordinates>10.468736111111,51.200392222222,0</coordinates>
 					</Point>
 				</Placemark>
-				<Placemark>
+				<Placemark id="EDDG_Hospitals.91">
 					<name>Aachen Uniklinikum</name>
-					<visibility>0</visibility>
 					<Point>
 						<coordinates>6.0443811111111,50.775672222222,0</coordinates>
 					</Point>
 				</Placemark>
-				<Placemark>
+				<Placemark id="EDDG_Hospitals.92">
 					<name>Rhein Maas Klinikum</name>
-					<visibility>0</visibility>
 					<Point>
 						<coordinates>6.1432141666667,50.814897222222,0</coordinates>
 					</Point>
 				</Placemark>
-				<Placemark>
+				<Placemark id="EDDG_Hospitals.93">
 					<name>Kalkar</name>
-					<visibility>0</visibility>
 					<Point>
 						<coordinates>6.3226441666667,51.764617222222,0</coordinates>
 					</Point>
 				</Placemark>
-				<Placemark>
+				<Placemark id="EDDG_Hospitals.94">
 					<name>Krefeld Klinikum</name>
-					<visibility>0</visibility>
 					<Point>
 						<coordinates>6.56525,51.32128111111101,0</coordinates>
 					</Point>
 				</Placemark>
-				<Placemark>
+				<Placemark id="EDDG_Hospitals.95">
 					<name>Goennersdorf am Achelshof</name>
-					<visibility>0</visibility>
 					<Point>
 						<coordinates>6.582499999999999,50.327,0</coordinates>
 					</Point>
 				</Placemark>
-				<Placemark>
+				<Placemark id="EDDG_Hospitals.96">
 					<name>Trier Barmherzige Muetter</name>
-					<visibility>0</visibility>
 					<Point>
 						<coordinates>6.6408330555556,49.762833055556,0</coordinates>
 					</Point>
 				</Placemark>
-				<Placemark>
+				<Placemark id="EDDG_Hospitals.97">
 					<name>Mechernich Kreiskrankenhaus</name>
-					<visibility>0</visibility>
 					<Point>
 						<coordinates>6.6500261111111,50.59207222222199,0</coordinates>
 					</Point>
 				</Placemark>
-				<Placemark>
+				<Placemark id="EDDG_Hospitals.98">
 					<name>Duisburg BG Dach</name>
-					<visibility>0</visibility>
 					<Point>
 						<coordinates>6.78602,51.381404166667,0</coordinates>
 					</Point>
 				</Placemark>
-				<Placemark>
+				<Placemark id="EDDG_Hospitals.99">
 					<name>Duisburg BG Boden</name>
-					<visibility>0</visibility>
 					<Point>
 						<coordinates>6.786764166666699,51.380639166667,0</coordinates>
 					</Point>
 				</Placemark>
-				<Placemark>
+				<Placemark id="EDDG_Hospitals.100">
 					<name>Duesseldorf Uniklink</name>
-					<visibility>0</visibility>
 					<Point>
 						<coordinates>6.7892530555556,51.195258055556,0</coordinates>
 					</Point>
 				</Placemark>
-				<Placemark>
+				<Placemark id="EDDG_Hospitals.101">
 					<name>Dormagen</name>
-					<visibility>0</visibility>
 					<Point>
 						<coordinates>6.80926,51.073728055556,0</coordinates>
 					</Point>
 				</Placemark>
-				<Placemark>
+				<Placemark id="EDDG_Hospitals.102">
 					<name>Wittlich St. Elisabeth</name>
-					<visibility>0</visibility>
 					<Point>
 						<coordinates>6.8930561111111,49.99972222222199,0</coordinates>
 					</Point>
 				</Placemark>
-				<Placemark>
+				<Placemark id="EDDG_Hospitals.103">
 					<name>Koeln Uniklinik UKK2</name>
-					<visibility>0</visibility>
 					<Point>
 						<coordinates>6.9197941666667,50.923928055556,0</coordinates>
 					</Point>
 				</Placemark>
-				<Placemark>
+				<Placemark id="EDDG_Hospitals.104">
 					<name>Nippes St. Vinzenz</name>
-					<visibility>0</visibility>
 					<Point>
 						<coordinates>6.945764166666699,50.966753055556,0</coordinates>
 					</Point>
 				</Placemark>
-				<Placemark>
+				<Placemark id="EDDG_Hospitals.105">
 					<name>Koelndeutz Messe</name>
-					<visibility>0</visibility>
 					<Point>
 						<coordinates>6.9809030555556,50.943186111111,0</coordinates>
 					</Point>
 				</Placemark>
-				<Placemark>
+				<Placemark id="EDDG_Hospitals.106">
 					<name>Essen Uniklinikum</name>
-					<visibility>0</visibility>
 					<Point>
 						<coordinates>6.9890561111111,51.43356111111099,0</coordinates>
 					</Point>
 				</Placemark>
-				<Placemark>
+				<Placemark id="EDDG_Hospitals.107">
 					<name>Koelnmerheim</name>
-					<visibility>0</visibility>
 					<Point>
 						<coordinates>7.0541111111111,50.93861111111099,0</coordinates>
 					</Point>
 				</Placemark>
-				<Placemark>
+				<Placemark id="EDDG_Hospitals.108">
 					<name>Grafschaft Haribo</name>
-					<visibility>0</visibility>
 					<Point>
 						<coordinates>7.0894672222222,50.576917222222,0</coordinates>
 					</Point>
 				</Placemark>
-				<Placemark>
+				<Placemark id="EDDG_Hospitals.109">
 					<name>Venusberg Uni</name>
-					<visibility>0</visibility>
 					<Point>
 						<coordinates>7.1024061111111,50.70177499999999,0</coordinates>
 					</Point>
 				</Placemark>
-				<Placemark>
+				<Placemark id="EDDG_Hospitals.110">
 					<name>St. Johanneskrankenhaus</name>
-					<visibility>0</visibility>
 					<Point>
 						<coordinates>7.1181061111111,50.796814166667,0</coordinates>
 					</Point>
 				</Placemark>
-				<Placemark>
+				<Placemark id="EDDG_Hospitals.111">
 					<name>Marl</name>
-					<visibility>0</visibility>
 					<Point>
 						<coordinates>7.123889166666699,51.663889166667,0</coordinates>
 					</Point>
 				</Placemark>
-				<Placemark>
+				<Placemark id="EDDG_Hospitals.112">
 					<name>Trier Mutterhaus</name>
-					<visibility>0</visibility>
 					<Point>
 						<coordinates>6.6308891666667,49.754361111111,0</coordinates>
 					</Point>
 				</Placemark>
-				<Placemark>
+				<Placemark id="EDDG_Hospitals.113">
 					<name>Zuerburgring Hotel</name>
-					<visibility>0</visibility>
 					<Point>
 						<coordinates>6.9430561111111,50.33111111111101,0</coordinates>
 					</Point>
 				</Placemark>
-				<Placemark>
+				<Placemark id="EDDG_Hospitals.114">
 					<name>Eschweiler St. Antonius</name>
-					<visibility>0</visibility>
 					<Point>
 						<coordinates>6.264467222222201,50.818481111111,0</coordinates>
 					</Point>
 				</Placemark>
-				<Placemark>
+				<Placemark id="EDDG_Hospitals.115">
 					<name>Duisburg Nord Ev.</name>
-					<visibility>0</visibility>
 					<Point>
 						<coordinates>6.766728055555599,51.515839166667,0</coordinates>
 					</Point>
 				</Placemark>
-				<Placemark>
+				<Placemark id="EDDG_Hospitals.116">
 					<name>Frechen Katharinen</name>
-					<visibility>0</visibility>
 					<Point>
 						<coordinates>6.8087111111111,50.92316111111099,0</coordinates>
 					</Point>
 				</Placemark>
-				<Placemark>
+				<Placemark id="EDDG_Hospitals.117">
 					<name>MGL St. Franziskus</name>
-					<visibility>0</visibility>
 					<Point>
 						<coordinates>6.421600000000001,51.217308055556,0</coordinates>
 					</Point>
 				</Placemark>
-				<Placemark>
+				<Placemark id="EDDG_Hospitals.118">
 					<name>Duisburg Wedau Sana Kliniken</name>
-					<visibility>0</visibility>
 					<Point>
 						<coordinates>6.7825561111111,51.396028055556,0</coordinates>
 					</Point>
 				</Placemark>
-				<Placemark>
+				<Placemark id="EDDG_Hospitals.119">
 					<name>Coesfeld</name>
-					<visibility>0</visibility>
 					<Point>
 						<coordinates>7.1747641666667,51.943912222222,0</coordinates>
 					</Point>
 				</Placemark>
-				<Placemark>
+				<Placemark id="EDDG_Hospitals.120">
 					<name>Bochum</name>
-					<visibility>0</visibility>
 					<Point>
 						<coordinates>7.2108691666667,51.468685,0</coordinates>
 					</Point>
 				</Placemark>
-				<Placemark>
+				<Placemark id="EDDG_Hospitals.121">
 					<name>Dattenberg Firma SP</name>
-					<visibility>0</visibility>
 					<Point>
 						<coordinates>7.3028030555556,50.557397222222,0</coordinates>
 					</Point>
 				</Placemark>
-				<Placemark>
+				<Placemark id="EDDG_Hospitals.122">
 					<name>Leubsdorf</name>
-					<visibility>0</visibility>
 					<Point>
 						<coordinates>7.3144444444444,50.544444444444,0</coordinates>
 					</Point>
 				</Placemark>
-				<Placemark>
+				<Placemark id="EDDG_Hospitals.123">
 					<name>Ennepetal Oelklinghausen</name>
-					<visibility>0</visibility>
 					<Point>
 						<coordinates>7.32863,51.292594166667,0</coordinates>
 					</Point>
 				</Placemark>
-				<Placemark>
+				<Placemark id="EDDG_Hospitals.124">
 					<name>Herdecke</name>
-					<visibility>0</visibility>
 					<Point>
 						<coordinates>7.399175,51.400637222222,0</coordinates>
 					</Point>
 				</Placemark>
-				<Placemark>
+				<Placemark id="EDDG_Hospitals.125">
 					<name>DHD Heliservice</name>
-					<visibility>0</visibility>
 					<Point>
 						<coordinates>7.424176111111101,50.353252222222,0</coordinates>
 					</Point>
 				</Placemark>
-				<Placemark>
+				<Placemark id="EDDG_Hospitals.126">
 					<name>Saffig</name>
-					<visibility>0</visibility>
 					<Point>
 						<coordinates>7.430811111111099,50.37413305555599,0</coordinates>
 					</Point>
 				</Placemark>
-				<Placemark>
+				<Placemark id="EDDG_Hospitals.127">
 					<name>DO Klinikzentrum Nord</name>
-					<visibility>0</visibility>
 					<Point>
 						<coordinates>7.4547222222222,51.533333333333,0</coordinates>
 					</Point>
 				</Placemark>
-				<Placemark>
+				<Placemark id="EDDG_Hospitals.128">
 					<name>Neuwied Elisabeth</name>
-					<visibility>0</visibility>
 					<Point>
 						<coordinates>7.4715,50.428,0</coordinates>
 					</Point>
 				</Placemark>
-				<Placemark>
+				<Placemark id="EDDG_Hospitals.129">
 					<name>Luenen St. Marienhospital</name>
-					<visibility>0</visibility>
 					<Point>
 						<coordinates>7.5152691666667,51.618947222222,0</coordinates>
 					</Point>
 				</Placemark>
-				<Placemark>
+				<Placemark id="EDDG_Hospitals.130">
 					<name>Koblenz BWZK</name>
-					<visibility>0</visibility>
 					<Point>
 						<coordinates>7.5452780555556,50.367778055556,0</coordinates>
 					</Point>
 				</Placemark>
-				<Placemark>
+				<Placemark id="EDDG_Hospitals.131">
 					<name>Gummersbach Kreiskrankenhaus</name>
-					<visibility>0</visibility>
 					<Point>
 						<coordinates>7.5683191666667,51.014846111111,0</coordinates>
 					</Point>
 				</Placemark>
-				<Placemark>
+				<Placemark id="EDDG_Hospitals.132">
 					<name>Muenster Zentralklinikum</name>
-					<visibility>0</visibility>
 					<Point>
 						<coordinates>7.5905561111111,51.960556111111,0</coordinates>
 					</Point>
 				</Placemark>
-				<Placemark>
+				<Placemark id="EDDG_Hospitals.133">
 					<name>Boppard Jakobsberg</name>
-					<visibility>0</visibility>
 					<Point>
 						<coordinates>7.595819166666701,50.256318055556,0</coordinates>
 					</Point>
 				</Placemark>
-				<Placemark>
+				<Placemark id="EDDG_Hospitals.134">
 					<name>Bad Kreuznach Marienwoerth</name>
-					<visibility>0</visibility>
 					<Point>
 						<coordinates>7.8621672222222,49.847,0</coordinates>
 					</Point>
 				</Placemark>
-				<Placemark>
+				<Placemark id="EDDG_Hospitals.135">
 					<name>Ahlennord</name>
-					<visibility>0</visibility>
 					<Point>
 						<coordinates>7.9096561111111,51.783652222222,0</coordinates>
 					</Point>
 				</Placemark>
-				<Placemark>
+				<Placemark id="EDDG_Hospitals.136">
 					<name>Siegen Jungstillkrankenhaus</name>
-					<visibility>0</visibility>
 					<Point>
 						<coordinates>8.018255,50.85181000000001,0</coordinates>
 					</Point>
 				</Placemark>
-				<Placemark>
+				<Placemark id="EDDG_Hospitals.137">
 					<name>Mainz Uniklinikum</name>
-					<visibility>0</visibility>
 					<Point>
 						<coordinates>8.2546580555556,49.994131111111,0</coordinates>
 					</Point>
 				</Placemark>
-				<Placemark>
+				<Placemark id="EDDG_Hospitals.138">
 					<name>Erwitte</name>
-					<visibility>0</visibility>
 					<Point>
 						<coordinates>8.340704166666701,51.611171111111,0</coordinates>
 					</Point>
 				</Placemark>
-				<Placemark>
+				<Placemark id="EDDG_Hospitals.139">
 					<name>Lintel</name>
-					<visibility>0</visibility>
 					<Point>
 						<coordinates>8.363754999999999,51.838646111111,0</coordinates>
 					</Point>
 				</Placemark>
-				<Placemark>
+				<Placemark id="EDDG_Hospitals.140">
 					<name>Bad Berleburg</name>
-					<visibility>0</visibility>
 					<Point>
 						<coordinates>8.3787572222222,51.049845,0</coordinates>
 					</Point>
 				</Placemark>
-				<Placemark>
+				<Placemark id="EDDG_Hospitals.141">
 					<name>Guetersloh</name>
-					<visibility>0</visibility>
 					<Point>
 						<coordinates>8.4201361111111,51.90752722222201,0</coordinates>
 					</Point>
 				</Placemark>
-				<Placemark>
+				<Placemark id="EDDG_Hospitals.142">
 					<name>Bielefeld Krankenhaus</name>
-					<visibility>0</visibility>
 					<Point>
 						<coordinates>8.544284166666699,52.014737222222,0</coordinates>
 					</Point>
 				</Placemark>
-				<Placemark>
+				<Placemark id="EDDG_Hospitals.143">
 					<name>Frankfurt Hoechst</name>
-					<visibility>0</visibility>
 					<Point>
 						<coordinates>8.547114166666701,50.109825,0</coordinates>
 					</Point>
 				</Placemark>
-				<Placemark>
+				<Placemark id="EDDG_Hospitals.144">
 					<name>Stukenbrock</name>
-					<visibility>0</visibility>
 					<Point>
 						<coordinates>8.602887222222201,51.86753222222201,0</coordinates>
 					</Point>
 				</Placemark>
-				<Placemark>
+				<Placemark id="EDDG_Hospitals.145">
 					<name>Frankfurt am Main Nordwestkrankenhaus</name>
-					<visibility>0</visibility>
 					<Point>
 						<coordinates>8.6195630555556,50.150778055556,0</coordinates>
 					</Point>
 				</Placemark>
-				<Placemark>
+				<Placemark id="EDDG_Hospitals.146">
 					<name>Oerlinghausen</name>
-					<visibility>0</visibility>
 					<Point>
 						<coordinates>8.647324166666699,51.945301111111,0</coordinates>
 					</Point>
 				</Placemark>
-				<Placemark>
+				<Placemark id="EDDG_Hospitals.147">
 					<name>Frankfurt am Main Uniklinik</name>
-					<visibility>0</visibility>
 					<Point>
 						<coordinates>8.6625,50.0955,0</coordinates>
 					</Point>
 				</Placemark>
-				<Placemark>
+				<Placemark id="EDDG_Hospitals.148">
 					<name>Burgholzhausen Rotorflug</name>
-					<visibility>0</visibility>
 					<Point>
 						<coordinates>8.6663333333333,50.264333333333,0</coordinates>
 					</Point>
 				</Placemark>
-				<Placemark>
+				<Placemark id="EDDG_Hospitals.149">
 					<name>Giessen Uniklinikum</name>
-					<visibility>0</visibility>
 					<Point>
 						<coordinates>8.6670561111111,50.57580611111099,0</coordinates>
 					</Point>
 				</Placemark>
-				<Placemark>
+				<Placemark id="EDDG_Hospitals.150">
 					<name>Bad Rothenfelde Kliniken</name>
-					<visibility>0</visibility>
 					<Point>
 						<coordinates>8.1658330555556,52.113333333333,0</coordinates>
 					</Point>
 				</Placemark>
-				<Placemark>
+				<Placemark id="EDDG_Hospitals.151">
 					<name>Marburg</name>
-					<visibility>0</visibility>
 					<Point>
 						<coordinates>8.8076780555556,50.814758055556,0</coordinates>
 					</Point>
 				</Placemark>
-				<Placemark>
+				<Placemark id="EDDG_Hospitals.152">
 					<name>Bad Soden</name>
-					<visibility>0</visibility>
 					<Point>
 						<coordinates>8.514444444444401,50.15,0</coordinates>
 					</Point>
 				</Placemark>
-				<Placemark>
+				<Placemark id="EDDG_Hospitals.153">
 					<name>Bad Homburg Hochtaunuskliniken</name>
-					<visibility>0</visibility>
 					<Point>
 						<coordinates>8.619167222222201,50.212417222222,0</coordinates>
 					</Point>
 				</Placemark>
-				<Placemark>
+				<Placemark id="EDDG_Hospitals.154">
 					<name>Darmstadt Klinikum</name>
-					<visibility>0</visibility>
 					<Point>
 						<coordinates>8.645345000000001,49.87457611111099,0</coordinates>
 					</Point>
 				</Placemark>
-				<Placemark>
+				<Placemark id="EDDG_Hospitals.155">
 					<name>Wetzlar Lahndillkliniken</name>
-					<visibility>0</visibility>
 					<Point>
 						<coordinates>8.5283941666667,50.53716416666699,0</coordinates>
 					</Point>
 				</Placemark>
-				<Placemark>
+				<Placemark id="EDDG_Hospitals.156">
 					<name>Giessen Johanniter</name>
-					<visibility>0</visibility>
 					<Point>
 						<coordinates>8.6526311111111,50.5724,0</coordinates>
 					</Point>
 				</Placemark>
-				<Placemark>
+				<Placemark id="EDDG_Hospitals.157">
 					<name>Nuertingen Medius Klinik</name>
-					<visibility>0</visibility>
 					<Point>
 						<coordinates>9.359039166666699,48.62881916666699,0</coordinates>
 					</Point>
 				</Placemark>
-				<Placemark>
+				<Placemark id="EDDG_Hospitals.158">
 					<name>Kirchheim unter Teck Medius</name>
-					<visibility>0</visibility>
 					<Point>
 						<coordinates>9.44308,48.652063055556,0</coordinates>
 					</Point>
 				</Placemark>
-				<Placemark>
+				<Placemark id="EDDG_Hospitals.159">
 					<name>Boeblingen Krankenhaus</name>
-					<visibility>0</visibility>
 					<Point>
 						<coordinates>9.0322,48.69056111111099,0</coordinates>
 					</Point>
 				</Placemark>
-				<Placemark>
+				<Placemark id="EDDG_Hospitals.160">
 					<name>Sindelfingen Daimler AG</name>
-					<visibility>0</visibility>
 					<Point>
 						<coordinates>8.985644166666701,48.692888888889,0</coordinates>
 					</Point>
 				</Placemark>
-				<Placemark>
+				<Placemark id="EDDG_Hospitals.161">
 					<name>Calw Kreiskrankenhaus</name>
-					<visibility>0</visibility>
 					<Point>
 						<coordinates>8.7466672222222,48.71500000000001,0</coordinates>
 					</Point>
 				</Placemark>
-				<Placemark>
+				<Placemark id="EDDG_Hospitals.162">
 					<name>Ostfildernruit Medius</name>
-					<visibility>0</visibility>
 					<Point>
 						<coordinates>9.2546111111111,48.741806111111,0</coordinates>
 					</Point>
 				</Placemark>
-				<Placemark>
+				<Placemark id="EDDG_Hospitals.163">
 					<name>Untertuerkheim Daimler AG</name>
-					<visibility>0</visibility>
 					<Point>
 						<coordinates>9.2397722222222,48.782047222222,0</coordinates>
 					</Point>
 				</Placemark>
-				<Placemark>
+				<Placemark id="EDDG_Hospitals.164">
 					<name>Stuttgart Katharinen</name>
-					<visibility>0</visibility>
 					<Point>
 						<coordinates>9.173114999999999,48.78399,0</coordinates>
 					</Point>
 				</Placemark>
-				<Placemark>
+				<Placemark id="EDDG_Hospitals.165">
 					<name>Gerlingen Firma Bosch</name>
-					<visibility>0</visibility>
 					<Point>
 						<coordinates>9.0628530555556,48.78537805555601,0</coordinates>
 					</Point>
 				</Placemark>
-				<Placemark>
+				<Placemark id="EDDG_Hospitals.166">
 					<name>Leonberg Kreiskrankenhaus</name>
-					<visibility>0</visibility>
 					<Point>
 						<coordinates>8.9992511111111,48.803153055556,0</coordinates>
 					</Point>
 				</Placemark>
-				<Placemark>
+				<Placemark id="EDDG_Hospitals.167">
 					<name>Mutlangen Stauferklinikum</name>
-					<visibility>0</visibility>
 					<Point>
 						<coordinates>9.787195000000001,48.82010222222199,0</coordinates>
 					</Point>
 				</Placemark>
-				<Placemark>
+				<Placemark id="EDDG_Hospitals.168">
 					<name>Schwieberdingen Bosch</name>
-					<visibility>0</visibility>
 					<Point>
 						<coordinates>9.0820161111111,48.88369999999999,0</coordinates>
 					</Point>
 				</Placemark>
-				<Placemark>
+				<Placemark id="EDDG_Hospitals.169">
 					<name>Pforzheim Klinikum</name>
-					<visibility>0</visibility>
 					<Point>
 						<coordinates>8.712043055555601,48.888683055556,0</coordinates>
 					</Point>
 				</Placemark>
-				<Placemark>
+				<Placemark id="EDDG_Hospitals.170">
 					<name>Ludwigsburg Klinik</name>
-					<visibility>0</visibility>
 					<Point>
 						<coordinates>9.2039430555556,48.899533055556,0</coordinates>
 					</Point>
 				</Placemark>
-				<Placemark>
+				<Placemark id="EDDG_Hospitals.171">
 					<name>Markgroeningen Klinik</name>
-					<visibility>0</visibility>
 					<Point>
 						<coordinates>9.1088891666667,48.908889166667,0</coordinates>
 					</Point>
 				</Placemark>
-				<Placemark>
+				<Placemark id="EDDG_Hospitals.172">
 					<name>Loewenstein Klink</name>
-					<visibility>0</visibility>
 					<Point>
 						<coordinates>9.401967222222201,49.089513055556,0</coordinates>
 					</Point>
 				</Placemark>
-				<Placemark>
+				<Placemark id="EDDG_Hospitals.173">
 					<name>Schwäbisch Hall Diakonie</name>
-					<visibility>0</visibility>
 					<Point>
 						<coordinates>9.74164,49.12506722222201,0</coordinates>
 					</Point>
 				</Placemark>
-				<Placemark>
+				<Placemark id="EDDG_Hospitals.174">
 					<name>Klinikum am Gesundbrunnen</name>
-					<visibility>0</visibility>
 					<Point>
 						<coordinates>9.190129166666701,49.153018055556,0</coordinates>
 					</Point>
 				</Placemark>
-				<Placemark>
+				<Placemark id="EDDG_Hospitals.175">
 					<name>Obersoellbach Firma Helix</name>
-					<visibility>0</visibility>
 					<Point>
 						<coordinates>9.558544166666699,49.18409722222201,0</coordinates>
 					</Point>
 				</Placemark>
-				<Placemark>
+				<Placemark id="EDDG_Hospitals.176">
 					<name>Bad Friedrichshall Klinikum</name>
-					<visibility>0</visibility>
 					<Point>
 						<coordinates>9.2367330555556,49.213009166667,0</coordinates>
 					</Point>
 				</Placemark>
-				<Placemark>
+				<Placemark id="EDDG_Hospitals.177">
 					<name>Oedheim</name>
-					<visibility>0</visibility>
 					<Point>
 						<coordinates>9.234405000000001,49.241479166667,0</coordinates>
 					</Point>
 				</Placemark>
-				<Placemark>
+				<Placemark id="EDDG_Hospitals.178">
 					<name>Mosbach Kreiskrankenhaus</name>
-					<visibility>0</visibility>
 					<Point>
 						<coordinates>9.1526941666667,49.355555555556,0</coordinates>
 					</Point>
 				</Placemark>
-				<Placemark>
+				<Placemark id="EDDG_Hospitals.179">
 					<name>Erbach Odenwald Kreiskrankenhaus</name>
-					<visibility>0</visibility>
 					<Point>
 						<coordinates>9.001689166666701,49.651986111111,0</coordinates>
 					</Point>
 				</Placemark>
-				<Placemark>
+				<Placemark id="EDDG_Hospitals.180">
 					<name>Ochsenfurt Kreiskrankenhaus</name>
-					<visibility>0</visibility>
 					<Point>
 						<coordinates>10.086736111111,49.659711111111,0</coordinates>
 					</Point>
 				</Placemark>
-				<Placemark>
+				<Placemark id="EDDG_Hospitals.181">
 					<name>Iphofen Firma Knauf</name>
-					<visibility>0</visibility>
 					<Point>
 						<coordinates>10.282436111111,49.694861111111,0</coordinates>
 					</Point>
 				</Placemark>
-				<Placemark>
+				<Placemark id="EDDG_Hospitals.182">
 					<name>Wuerzburg</name>
-					<visibility>0</visibility>
 					<Point>
 						<coordinates>9.95632,49.80832416666701,0</coordinates>
 					</Point>
 				</Placemark>
-				<Placemark>
+				<Placemark id="EDDG_Hospitals.183">
 					<name>Grossumstadt Kreisklinik</name>
-					<visibility>0</visibility>
 					<Point>
 						<coordinates>8.9355222222222,49.866657222222,0</coordinates>
 					</Point>
 				</Placemark>
-				<Placemark>
+				<Placemark id="EDDG_Hospitals.184">
 					<name>Offenbach Klinikum</name>
-					<visibility>0</visibility>
 					<Point>
 						<coordinates>8.757016111111099,50.094506111111,0</coordinates>
 					</Point>
 				</Placemark>
-				<Placemark>
+				<Placemark id="EDDG_Hospitals.185">
 					<name>Frankfurt BG</name>
-					<visibility>0</visibility>
 					<Point>
 						<coordinates>8.7090191666667,50.14544722222201,0</coordinates>
 					</Point>
 				</Placemark>
-				<Placemark>
+				<Placemark id="EDDG_Hospitals.186">
 					<name>Hammelburg Unterer Thal</name>
-					<visibility>0</visibility>
 					<Point>
 						<coordinates>9.875769999999999,50.15717305555599,0</coordinates>
 					</Point>
 				</Placemark>
-				<Placemark>
+				<Placemark id="EDDG_Hospitals.187">
 					<name>Bad Kissingen Elisabeth</name>
-					<visibility>0</visibility>
 					<Point>
 						<coordinates>10.082639166667,50.190275,0</coordinates>
 					</Point>
 				</Placemark>
-				<Placemark>
+				<Placemark id="EDDG_Hospitals.188">
 					<name>Winnenden Klinik</name>
-					<visibility>0</visibility>
 					<Point>
 						<coordinates>9.3932111111111,48.870194166667,0</coordinates>
 					</Point>
 				</Placemark>
-				<Placemark>
+				<Placemark id="EDDG_Hospitals.189">
 					<name>Stuttgart Marienhospital</name>
-					<visibility>0</visibility>
 					<Point>
 						<coordinates>9.1638561111111,48.76107416666699,0</coordinates>
 					</Point>
 				</Placemark>
-				<Placemark>
+				<Placemark id="EDDG_Hospitals.190">
 					<name>Esslingen Klinikum</name>
-					<visibility>0</visibility>
 					<Point>
 						<coordinates>9.3269972222222,48.737533055556,0</coordinates>
 					</Point>
 				</Placemark>
-				<Placemark>
+				<Placemark id="EDDG_Hospitals.191">
 					<name>Seitenbacher</name>
-					<visibility>0</visibility>
 					<Point>
 						<coordinates>9.340917222222201,49.5282,0</coordinates>
 					</Point>
 				</Placemark>
-				<Placemark>
+				<Placemark id="EDDG_Hospitals.192">
 					<name>Sindelfingen Staedt Krankenhaus</name>
-					<visibility>0</visibility>
 					<Point>
 						<coordinates>9.024526111111101,48.715108055556,0</coordinates>
 					</Point>
 				</Placemark>
-				<Placemark>
+				<Placemark id="EDDG_Hospitals.193">
 					<name>Bad Mergentheim Krankenhaus</name>
-					<visibility>0</visibility>
 					<Point>
 						<coordinates>9.7630030555556,49.48929222222201,0</coordinates>
 					</Point>
 				</Placemark>
-				<Placemark>
+				<Placemark id="EDDG_Hospitals.194">
 					<name>Frankfurt BGU LRZ Dach</name>
-					<visibility>0</visibility>
 					<Point>
 						<coordinates>8.7102,50.145467222222,0</coordinates>
 					</Point>
 				</Placemark>
-				<Placemark>
+				<Placemark id="EDDG_Hospitals.195">
 					<name>Bad Neustadt Saale</name>
-					<visibility>0</visibility>
 					<Point>
 						<coordinates>10.235075,50.322678055556,0</coordinates>
 					</Point>
 				</Placemark>
-				<Placemark>
+				<Placemark id="EDDG_Hospitals.196">
 					<name>Bad Cannstadt Robert Bosch</name>
-					<visibility>0</visibility>
 					<Point>
 						<coordinates>9.185467222222201,48.813872222222,0</coordinates>
+					</Point>
+				</Placemark>
+				<Placemark id="EDDG_Hospitals.197">
+					<name>Klinikum Mittelbaden</name>
+					<Point>
+						<coordinates>8.215833333333331,48.7846666666667,0</coordinates>
 					</Point>
 				</Placemark>
 			</Folder>

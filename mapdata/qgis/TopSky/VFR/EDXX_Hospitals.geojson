@@ -442,6 +442,7 @@
     { "type": "Feature", "properties": { "name": "Bad Mergentheim Krankenhaus" }, "geometry": { "type": "Point", "coordinates": [ 9.7630030555556, 49.4892922222220 ] } },
     { "type": "Feature", "properties": { "name": "Frankfurt BGU LRZ Dach" }, "geometry": { "type": "Point", "coordinates": [ 8.7102000000000, 50.1454672222220 ] } },
     { "type": "Feature", "properties": { "name": "Bad Neustadt Saale" }, "geometry": { "type": "Point", "coordinates": [ 10.235075000000, 50.3226780555560 ] } },
-    { "type": "Feature", "properties": { "name": "Bad Cannstadt Robert Bosch" }, "geometry": { "type": "Point", "coordinates": [ 9.1854672222222, 48.8138722222220 ] } }
+    { "type": "Feature", "properties": { "name": "Bad Cannstadt Robert Bosch" }, "geometry": { "type": "Point", "coordinates": [ 9.1854672222222, 48.8138722222220 ] } },
+    { "type": "Feature", "properties": { "name": "Klinikum Mittelbaden" }, "geometry": { "type": "Point", "coordinates": [ 8.215833333333332, 48.784666666666666 ] } }
 ]
 }

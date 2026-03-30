@@ -4,6 +4,7 @@
     
      * GRP-PHOENIX-MAPS\8000-app-window\8000-vrp.jinja
      * TOPSKY-PHOENIX-MAPS\010-fixes\010-vrp.jinja
+     * TOPSKY-PHOENIX-MAPS\621-heliports.jinja
 -#}
 
 MAP:VRPs
@@ -35,6 +36,6 @@ SYMBOL:{{fx['symb']}}:{{fx['fix']}}:{{fx['name']}}:5:0
 MAP:Hospitals
 FOLDER:VFR
 COLOR:standard
-{%- for name, geom in data.topsky['common']['vfr']['EDGG_hospitals'].items() %}
+{%- for name, geom in data.topsky['common']['vfr']['EDGG_Hospitals'].items() %}
 {{ geom | to_symbol('HOSPITAL') }}:{{name}}:0:-13
 {%- endfor %}
