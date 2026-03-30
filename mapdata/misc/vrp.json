@@ -76,7 +76,7 @@
         {"name": "E", "symb": "CRP", "text_align": "LB"},
         {"name": "S", "symb": "CRP", "text_align": "LB"},
         {"name": "H", "symb": "CRP", "text_align": "LB"},
-        {"name": "K", "symb": "CRP", "text_align": "LB"},
+        {"name": "B", "symb": "CRP", "text_align": "LB"},
         {"name": "W1", "symb": "CRP", "text_align": "LB"},
         {"name": "W2", "symb": "CRP", "text_align": "LB"}
     ],
