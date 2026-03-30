@@ -3,135 +3,10 @@
 <Folder>
 	<name>notam</name>
 	<visibility>0</visibility>
+	<open>1</open>
 	<Folder>
 		<name>EDDF</name>
 		<visibility>0</visibility>
-		<Placemark id="notam_closures.4">
-			<name>SUP-02-26_M6</name>
-			<visibility>0</visibility>
-			<Style>
-				<LineStyle>
-					<color>ff0000ff</color>
-				</LineStyle>
-				<PolyStyle>
-					<fill>0</fill>
-				</PolyStyle>
-			</Style>
-			<Polygon>
-				<outerBoundaryIs>
-					<LinearRing>
-						<coordinates>
-							8.58566366099957,50.0445187576332,0 8.58536808782638,50.0450328283693,0 8.5868276305556,50.0453811050212,0 8.5871226782651,50.0448669087972,0 8.58566366099957,50.0445187576332,0 
-						</coordinates>
-					</LinearRing>
-				</outerBoundaryIs>
-			</Polygon>
-		</Placemark>
-		<Placemark id="notam_closures.6">
-			<name>SUP-02-26_M10</name>
-			<visibility>0</visibility>
-			<Style>
-				<LineStyle>
-					<color>ff0000ff</color>
-				</LineStyle>
-				<PolyStyle>
-					<fill>0</fill>
-				</PolyStyle>
-			</Style>
-			<Polygon>
-				<outerBoundaryIs>
-					<LinearRing>
-						<coordinates>
-							8.57632979893474,50.0422909555417,0 8.57603238781776,50.0428045868271,0 8.57786673937591,50.04324248473429,0 8.578160095231381,50.04272788524471,0 8.57632979893474,50.0422909555417,0 
-						</coordinates>
-					</LinearRing>
-				</outerBoundaryIs>
-			</Polygon>
-		</Placemark>
-		<Placemark id="notam_closures.5">
-			<name>SUP-02-26_RWY_a</name>
-			<visibility>0</visibility>
-			<Style>
-				<LineStyle>
-					<color>ff0000ff</color>
-				</LineStyle>
-				<PolyStyle>
-					<fill>0</fill>
-				</PolyStyle>
-			</Style>
-			<Polygon>
-				<outerBoundaryIs>
-					<LinearRing>
-						<coordinates>
-							8.578160095231381,50.04272788524471,0 8.57786673937591,50.04324248473429,0 8.58536808782638,50.0450328283693,0 8.58566366099957,50.0445187576332,0 8.578160095231381,50.04272788524471,0 
-						</coordinates>
-					</LinearRing>
-				</outerBoundaryIs>
-			</Polygon>
-		</Placemark>
-		<Placemark id="notam_closures.3">
-			<name>SUP-02-26_RWY_b</name>
-			<visibility>0</visibility>
-			<Style>
-				<LineStyle>
-					<color>ff0000ff</color>
-				</LineStyle>
-				<PolyStyle>
-					<fill>0</fill>
-				</PolyStyle>
-			</Style>
-			<Polygon>
-				<outerBoundaryIs>
-					<LinearRing>
-						<coordinates>
-							8.54872385060651,50.03569638133741,0 8.5484400993902,50.03621275082651,0 8.57603238781776,50.0428045868271,0 8.57632979893474,50.0422909555417,0 8.54872385060651,50.03569638133741,0 
-						</coordinates>
-					</LinearRing>
-				</outerBoundaryIs>
-			</Polygon>
-		</Placemark>
-		<Placemark id="notam_closures.7">
-			<name>SUP-02-26_RWY_c</name>
-			<visibility>0</visibility>
-			<Style>
-				<LineStyle>
-					<color>ff0000ff</color>
-				</LineStyle>
-				<PolyStyle>
-					<fill>0</fill>
-				</PolyStyle>
-			</Style>
-			<Polygon>
-				<outerBoundaryIs>
-					<LinearRing>
-						<coordinates>
-							8.547350830020999,50.0353671138365,0 8.544917158476,50.0347851056106,0 8.54462056137957,50.035300196059,0 8.547055260956061,50.0358822413797,0 8.547350830020999,50.0353671138365,0 
-						</coordinates>
-					</LinearRing>
-				</outerBoundaryIs>
-			</Polygon>
-		</Placemark>
-		<Placemark id="notam_closures.8">
-			<name>SUP-02-26_RWY_d</name>
-			<visibility>0</visibility>
-			<Style>
-				<LineStyle>
-					<color>ff0000ff</color>
-				</LineStyle>
-				<PolyStyle>
-					<fill>0</fill>
-				</PolyStyle>
-			</Style>
-			<Polygon>
-				<outerBoundaryIs>
-					<LinearRing>
-						<coordinates>
-							8.53477698777286,50.0323615391971,0 8.543460514466339,50.03443811313711,0 8.543164550039879,50.0349520872625,0 8.53448063473817,50.0328754197027,0 8.53477698777286,50.0323615391971,0 
-						</coordinates>
-					</LinearRing>
-				</outerBoundaryIs>
-			</Polygon>
-		</Placemark>
 		<Placemark>
 			<name>M6</name>
 			<visibility>0</visibility>
@@ -683,6 +558,6 @@
 			</Polygon>
 		</Placemark>
 	</Folder>
-	<atom:link rel="app" href="https://www.google.com/earth/about/versions/#earth-pro" title="Google Earth Pro 7.3.6.10441"></atom:link>
+	<atom:link rel="app" href="https://www.google.com/earth/about/versions/#earth-pro" title="Google Earth Pro 7.3.7.1094"></atom:link>
 </Folder>
 </kml>
