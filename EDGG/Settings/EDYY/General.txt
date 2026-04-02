@@ -43,7 +43,7 @@ m_DoNotUseRefusedColor:0
 SET_TransparentAcListBackground:0
 m_PutIncomingCoordinationToFirst:1
 m_AutoProxyMode:1
-m_TransparentAcListSelectedBackground:1
+m_TransparentAcListSelectedBackground:0
 m_TransparentDetailedTagBackground:1
 m_TransparentDetailedTagSelectedItemBackground:1
 m_AllowDirectBeyondCOPX:0
