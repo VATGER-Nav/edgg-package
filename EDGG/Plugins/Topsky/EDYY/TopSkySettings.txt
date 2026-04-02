@@ -1,50 +1,66 @@
-// Maastricht Radar - EDYY Profil
+// TOPSKY-EDYY-SETTINGS EDYY
 
 Setup_COOPANS=1
 
+Airspace_ASSR_AutoAssign_Type=2
 Airspace_ASSR_Type=2
-Airspace_ASSR_AutoAssign_Type=0
 Airspace_ModeS_Code_VFR=7000
-Airspace_ModeS_Code=1000
-Airspace_No_DUPE_Codes=0020,0021,0023,0024,0025,0026,0027,0030,0031,0032,0033,0034,0035,0036,0037,0076,0420,0421,0422,0423,0424,0425,2677,4426,4427,4432,4433,4440,4441,4442,4443,4444,4445,4446,4447,4450,4451,4452,4453,4454,4455,4456,4457,4470,4477,6101,6102,6103,6104,6105,6130,6140,6150,6160,6170,6220,6223,6224,7000,7001,7002,7003,7004,7373,7377,7740,7741,7742,7743,7744,7745,7746,7747
-Airspace_SIGMET_Areas=EDGG,EDUU,EDMM,EDWW,EHAA,EBUU,EDYY,LSAS,LFEE
-Airspace_NOTAM_Add=EDGG,EDUU
+Airspace_No_DUPE_Codes=0020,0023,0024,0025,0027,0030,0031,0033,0034,0035,0036,0037,4450,4451,4452,4453,4454,7000,7737,7740,7741,7742,7743,7744,7745
+Airspace_SIGMET_Areas=EDGG,EDUU,EDMM,EDWW,EHAA,EBUU,EDYY
+Airspace_NOTAM_Add=EDGG,EDUU,EDWW,EDYY
+Airspace_NOTAM_Remove=EDMM,EDAH,EDBC,EDDB,EDDC,EDDE,EDDF,EDDG,EDDH,EDDK,EDDL,EDDM,EDDN,EDDP,EDDR,EDDS,EDDV,EDDW,EDFE,EDFH,EDFL,EDFM,EDFN,EDFO,EDFQ,EDFV,EDFW,EDGE,EDGQ,EDGS,EDHI,EDJA,EDKM,EDLA,EDLB,EDLD,EDLE,EDLK,EDLN,EDLP,EDLS,EDLT,EDLV,EDLW,EDMA,EDMO,EDNY,EDPA,EDQG,EDQM,EDRE,EDRF,EDRK,EDRL,EDRS,EDRY,EDRZ,EDSA,EDSB,EDTD,EDTF,EDTL,EDTM,EDTY,EDVE,EDVK,EDXW,EHAM,EHBK,EHEH,ELLX,ETAD,ETAR,ETEB,ETHF,ETHN,ETIK,ETNG,ETNL,ETNN,ETOU,ETSB,LSZH
 
-AIW_FlightRules=0
-AIW_Floor=5100
+AIW=0
 
 APW_VFR=1
-APW_Buffer_Lat_SepLevel=29000
-APW_Buffer_Lat_U=2.5
+APW_Buffer_Lat_SepLevel=24500
 APW_Buffer_Lat_L_IFR=2.5
 APW_Buffer_Lat_L_VFR=2.5
-APW_Buffer_Vert_U=1500
-APW_Buffer_Vert_L_IFR=500
-APW_Buffer_Vert_L_VFR=500
+APW_Buffer_Lat_U=2.5
+APW_Buffer_Vert_L_IFR=799
+APW_Buffer_Vert_L_VFR=799
+APW_Buffer_Vert_U=1799
 
-Areas_Label_Levels=1
+Areas_AUP_Activation=1
+Areas_NOTAM_Activation=1
+Areas_PreActiveTime=900
+Areas_Remote_Activation=1
+Areas_Altitude_Filtering=1
 
 BlindSpot=1
-BlindSpot_Level_Range=100
-BlindSpot_Time_Warning=400
+BlindSpot_Level_Range=200
+BlindSpot_Time_Aged=10
+BlindSpot_Time_Warning=120
 
-//Standard colors, all other defined below
-Color_Assumed=0,0,0
-Color_Concerned=0,0,0
-Color_Unconcerned=0,0,0
-Color_Unknown=0,0,0
-Color_Redundant=0,0,0
-Color_Coordination=0,0,0
+// Standard colors, all other defined below
+Color_Assumed=200,200,200
+Color_Concerned=200,200,200
+Color_Coordination=200,200,200
+Color_Informed=200,200,200
+Color_Redundant=200,200,200
+Color_Unconcerned=200,200,200
+Color_Unknown=200,200,200
 
-//EDYY COLORS
-Color_Active_Map=120,0,0
-Color_Active_Map_Type_1=128,0,0
-Color_Active_Map_Type_2=255,0,0
-Color_Active_Map_Type_3=150,150,150
-Color_Active_Map_Type_12=15,120,200
-Color_Active_RD_Infill_Map=255,0,0
+// EDYY colors
+Color_Active_Map=190,70,70             // Default Area Color
+Color_Active_Map_Type_1=60,60,60       // Sectorlines
+Color_Active_Map_Type_2=200,200,200    // Labels
+Color_Active_Map_Type_3=190,70,70      // ED-Rs
+Color_Active_Map_Type_4=190,70,70      // ED-Ds
+Color_Active_RD_Infill_Map=77,80,72
+Color_Active_RD_Map=122,25,15
+Color_Active_Text_Map=153,124,107
+Color_Map_1=0,0,1
+Color_Map_2=86,87,87
+Color_Map_3=103,103,102
+Color_Map_4=40,100,40
+Color_Map_Hotspot=200,90,1
+Color_Map_Info=70,70,60
+Color_Map_Symbol=120,50,120
+Color_Preactive_Map=177,110,29
+Color_Preactive_Text_Map=159,110,15
+
 Color_Active_Sector=0,0,0
-Color_Active_Text_Map=50,200,200
 Color_AIW_Intrusion=60,150,200
 Color_Background=74,74,74
 Color_BS_Aged=255,128,0
@@ -74,24 +90,14 @@ Color_Global_Menu_Highlight=0,156,156
 Color_Heading_Vector=0,102,0
 Color_Inactive_Sector=74,74,74
 Color_Info_Coord=34,139,34
-Color_Information=0,156,156
+Color_Information=255,128,0
 Color_Information_FL=0,156,156
-Color_Informed=0,0,255
-Color_Map_1=168,164,165
-Color_Map_2=168,164,165
-Color_Map_3=168,164,165
-Color_Map_4=168,164,165
 Color_Map_Auto_Label=80,80,80
 Color_Map_Auto_Symbol=100,100,100
-Color_Map_Hotspot=100,100,100
-Color_Map_Info=0,255,0
 Color_MQDM=0,156,156
 Color_Overflown=0,255,0
 Color_Potential=255,130,71
 Color_Potential_FL=255,130,71
-Color_Preactive_Map=255,069,0
-Color_Preactive_Text_Map=255,069,0
-Color_Predisplay_Map=255,069,0
 Color_Proposition_Accepted=255,255,0
 Color_Proposition_In=60,150,200
 Color_Proposition_Out=60,150,200
@@ -104,13 +110,13 @@ Color_Select=0,0,0
 Color_Selected=0,156,156
 Color_Selected_Group=0,156,156
 Color_Selected_Period=251,251,2
-Color_SEP_Tool_1=255,120,80
-Color_SEP_Tool_2=255,120,80
-Color_SEP_Tool_3=255,120,80
-Color_SEP_Tool_4=255,120,80
-Color_SEP_Tool_5=255,120,80
-Color_SEP_Tool_6=255,120,80
-Color_SEP_Tool_7=255,120,80
+Color_SEP_Tool_1=153,217,234
+Color_SEP_Tool_2=255,153,184
+Color_SEP_Tool_3=255,209,143
+Color_SEP_Tool_4=197,64,212
+Color_SEP_Tool_5=166,160,245
+Color_SEP_Tool_6=95,170,140
+Color_SEP_Tool_7=185,130,85
 Color_SEP_Vert=255,120,80
 Color_Sid_Star_Allocation=34,139,34
 Color_SMW_Level_Band=0,156,156
@@ -123,11 +129,11 @@ Color_System_Calculated_TOC=210,110,210
 Color_System_Calculated_TOD=210,110,210
 Color_Text_Notes=180,220,230
 Color_Track_Default=130,130,130
-Color_Track_Highlight=0,0,255
+Color_Track_Highlight=96,255,227
 Color_TSA_Active=0,156,156
-Color_TSA_Border_Highlight=0,0,0
+Color_TSA_Border_Highlight=255,255,254
 Color_TSA_Filter=0,255,255
-Color_TSA_Preactive=30,30,30
+Color_TSA_Preactive=149,86,15
 Color_Urgency=240,190,30
 Color_Urgency_FL=240,190,30
 Color_VAW_Profile=0,156,156
@@ -148,7 +154,8 @@ CPDLC_CFL=1
 CPDLC_DCT=1
 CPDLC_AHDG=1
 CPDLC_ASP=1
-CPDLC_AutoAcceptLogon=0
+CPDLC_AutoAcceptLogon=1
+CPDLC_AutoAcceptLogon_Time=15
 CPDLC_PlaySound=1
 CPDLC_PDC_PlaySound=1
 CPDLC_FSM_Header=FSM <hour><min> <year2><month2><day> <adep2> <callsign>
@@ -156,38 +163,43 @@ CPDLC_CLD_Header=CLD <hour><min> <year2><month2><day> <adep2> PDC <number> <call
 
 Divergence_CLAM_DelayTime=120
 Divergence_CLAM_MinCFL=7000
-Divergence_RAM_DCT_DelayTime=90
+Divergence_RAM_Limit=3
+Divergence_RAM_DCT_DelayTime=120
 
-FlightLeg_FontSize=11
+Equip_Assume_All_SSRs_Mode_S=1
+Equip_UseCodes=0
+
+FAST=0
+
+FlightLeg_Font=EuroScope
+FlightLeg_FontSize=10
+FlightLeg_Label_Time=1
 FlightLeg_Label_DIST=1
 FlightLeg_Label_RFL=1
 FlightLeg_Label_SCFL=1
 FlightLeg_LineWidth=0
-FlightLeg_Label_Time=1
-FlightLeg_Use_Ack_Color=0
 
-FPCP_HeadingTime=5
-FPCP_PredictionTime=10
-
+HTTP_Areas_Remote_URL=https://lara-backend.lusep.fi/topsky/edxx.txt
+HTTP_AUP_URL=https://atciss.vatsim-germany.org/api/areas/topsky
 HTTP_NOTAM_Server=https://notams.blip-radar.org/
 HTTP_NOTAM_Page_Prefix=api/legacy/query?loc=
 HTTP_NOTAM_Page_Suffix=
+HTTP_SIGMET_Server=http://aviationweather.gov/
 
-HTTP_AUP_URL=https://atciss.vatsim-germany.org/api/areas/topsky
-HTTP_Areas_Remote_URL=https://lara-backend.lusep.fi/topsky/edxx.txt
-Areas_PreActiveTime=900
-Areas_Remote_Activation=1
-
+Label_ACF_Use=0
+Label_AFL_Buffer=125
 Label_AHDG_Point_Label=0
-Label_AHDG_HideDctIfCOPX=0
+Label_AHDG_HideDctIfCOPX=1
+Label_AHDG_ShowDct=0
 Label_AHDG_ShowExtra=0
-
-Label_Field18_Flag_Items=STS/,newbie,NEWBIE,Newbie,beginner,newbe,deaf,blind,new,first,slow,slowly,noob
-Label_GS_Digits=2
-
+Label_Alt_Digits=2
+Label_ASP_Digits=2
+Label_CFL_DefaultValue=0
+Label_DAPs=1
+Label_Field18_Flag_Items=STS/,newbie,NEWBIE,Newbie,beginner,disabled,disability,impaired
+Label_GS_Digits=3
+Label_GS_Prefix=0
 Label_Rev_Highlight_Delta_ETN=4
-Label_OpTextCaps=0
-
 Label_SI_ShowFreq=1
 Label_SI_FreqTime=3
 
@@ -196,130 +208,159 @@ Label_N_Default=0
 Label_SQ_Default=0000
 Label_ATYP_Default=0000
 Label_WTC_Default=0000
-Label_GS_Default=0000
 Label_ADES_Default=0000
-Label_COPN_Default=0000
-Label_COPX_Default=0000
 Label_NRAC_Default=0000
-Label_XFL_Default=1110
-Label_AHDG_Default=0000
-Label_ASP_Default=1110
-Label_PEL_Default=1000
+Label_GS_Default=0000
+Label_COPN_Default=0000
+Label_COPX_Default=0110
+Label_XFL_Default=1111
+Label_AHDG_Default=1111
+Label_ASP_Default=1111
+Label_PEL_Default=0000
 Label_TSSR_Default=0000
 Label_RFL_Default=0000
-Label_NPT_Default=1111
+Label_NPT_Default=1000
 Label_FCOPX_Default=0000
-Label_OFL_Default=1111
-Label_AMA_Default=1111
+Label_OFL_Default=0000
+Label_AMA_Default=0000
 Label_TOG_Default=0000
 
-Malrt_Misap=MAPP
-Malrt_Inbound_EST=EST
-Malrt_Irregular=IRR
-Malrt_Weather=WEATHER
+List_OptionsInGlobalMenu=0
+List_VFR_FPL_Filter=1
 
-Menu_MaxListItems=12
+Maps_Font=Lucida Sans Unicode
+
+Menu_CFL_ExtendedItems=14
 
 MSAW=0
 
 MTCD_Filter_Dep=3
+MTCD_DeAcknowledge=5
+MTCD_Sep_Lat=6
 
-RDF_Mode=0
-RDF_Accuracy=0
-RDF_Floor=0
+RDF_Mode=-1
 
 RwyAppLines_Auto=0
+RwyAppLines_Markers=15
+RwyAppLines_MarkerSpacing=1.0
 
-SAP_Floor=3500
-SAP_Buffer_Lat_SepLevel=29000
-SAP_Buffer_Lat_U=2.5
+
 SAP_Buffer_Lat_L_IFR=2.5
 SAP_Buffer_Lat_L_VFR=2.5
-SAP_Buffer_Vert_U=1500
+SAP_Buffer_Lat_SepLevel=29000
+SAP_Buffer_Lat_U=2.5
 SAP_Buffer_Vert_L_IFR=500
 SAP_Buffer_Vert_L_VFR=500
+SAP_Buffer_Vert_U=1500
+SAP_Floor=3500
 
-STCA_Sep_Lat_SepLevel=24500
-STCA_Filter=1
-STCA_Floor=2000
-STCA_LinPred_Sep_Lat_U=5
-STCA_LinPred_Sep_Lat_L=3
-STCA_LinPred_Sep_Vert_U=1775
-STCA_LinPred_Sep_Vert_L=775
-STCA_CurrProx_Sep_Lat_U=5
-STCA_CurrProx_Sep_Lat_L=3
-STCA_CurrProx_Sep_Vert_U=1775
+Shortcut_RadarMenu_Combo=0x00
+Shortcut_Map_Xfr_Key=1,0x42 ; B
+Shortcut_Map_Xfr_Key=2,0x54 ; T
+Shortcut_Map_Xfr_Key=3,0x4E ; N
+Shortcut_Map_Xfr_Key=4,0x49 ; I
+Shortcut_Map_Target=1,Sectors\ACCs
+Shortcut_Map_Target=2,Topography
+Shortcut_Map_Target=3,Fixes\Fixes w/ L
+Shortcut_Map_Target=4,Airspace Info\Sector Info
+
+STCA=1
+STCA_AlertSound=1
+STCA_AlertSound_Filter=2
+STCA_Uncontrolled=1
+STCA_Uncorrelated=0
+STCA_Coarse_PredictionTime=90
+STCA_Coarse_Sep_Vert_L=750
+STCA_Coarse_Sep_Vert_U=1700
+STCA_CurrProx_Sep_Lat_L=2,9
+STCA_CurrProx_Sep_Lat_U=4,9
 STCA_CurrProx_Sep_Vert_L=775
-STCA_WarningTime_U=80
-STCA_WarningTime_L=60
-STCA_WarningTime_U_Imm=50
-STCA_WarningTime_L_Imm=50
+STCA_CurrProx_Sep_Vert_U=1775
+STCA_FastDiv_Sep_Lat_L=2
+STCA_FastDiv_Sep_Lat_U=4
+STCA_FastDiv_Sep_Vert_L=650
+STCA_FastDiv_Sep_Vert_U=1500
+STCA_Floor=2200
+STCA_LinPred_Sep_Lat_L=2,9
+STCA_LinPred_Sep_Lat_S=2
+STCA_LinPred_Sep_Lat_U=4,9
+STCA_LinPred_Sep_Vert_L=775
+STCA_LinPred_Sep_Vert_U=1775
+STCA_Max_Track_Age=40
+STCA_Sep_Lat_SepLevel=24500
+STCA_WarningTime_L=40
+STCA_WarningTime_L_Imm=30
+STCA_WarningTime_U=60
+STCA_WarningTime_U_Imm=30
 
+System_ASP_IasMach=28500
+System_Filters_Alt_Allow=4000
+System_Filters_Concerned=2
+System_Filters_Hard=1
+System_GUI_Font_1=Lucida Sans Unicode
+System_GUI_Font_2=Lucida Sans Unicode
+System_GUI_Font_Fixed_1=EuroScope
+System_LocalCSfirst=1
+System_ProxySounds=0
 System_TransferConfirmation=0
 System_TrueColorMode=1
-System_UseReportedGS=1
-System_ASP_IasMach=28500
-System_Filters_Concerned=0
-System_Filters_Alt_Allow=4000
-System_Filters_Hard=1
-System_MetarSourceVATSIM=1
-System_TaxiTime=10
-System_GUI_Font_1_Size=12
-System_GUI_Font_2_Size=10
-System_GUI_Scale_Menus=1
-System_ProxySounds=0
-
-System_UseAUP=1
 System_UseAcceptedCoordColor=1
+System_UseReportedGS=1
 System_UseRwyLockedColor=0
-System_UseSidAllocationColor=0
-System_UseStarAllocationColor=0
+System_UseTSAborderHighlightColor=1
+
+TCT=1
+TCT_Floor=24500
+TCT_Min_State_Source=3
+TCT_Inhibit_Active_Areas=1
+TCT_AHDG_Max_Time=45
+TCT_Leg_Width=1
 
 Track_HistoryDots=5
 Track_PredictionLine=0
+Track_PredictionLine_Max=15
 
-Vector_AHDG_FontSize=11
-Vector_AHDG_Label_Dist=2
+Vector_AHDG_FontSize=12
+Vector_AHDG_Label_Dir=1
+Vector_AHDG_Label_Dist=1
 Vector_AHDG_Label_Time=1
-Vector_MinSep_FontSize=11
+Vector_MinSep_FontSize=12
 Vector_MinSep_Label_Time=1
-Vector_QDM_FontSize=11
 Vector_QDM_MaxNumber=99
-Vector_QDM_Airports=0
-Vector_QDM_AA_Label_Dist=1
-Vector_QDM_AP_Label_Dist=1
 
-Window_SM_LeaveHoldTime=3
-Window_CPDLC_Current=1,1000,44
-Window_CARD=3,1565,755
+Window_ASM=1,500,500,675,400
+Window_ASM_Chars_Name=9
+Window_ASM_Chars_MapText=25
+Window_CARD=1,1525,788
 Window_CARD_View_Risk=0
-Window_COL_Warning_Threshold=12
-Window_CPDLC_Setting=1,1400,44
-Window_LFUNCFP=3,1570,44
-Window_ASM=3,80,120,570,300
+Window_CARD_View_PotPred=0
+Window_CPDLC_Current=1,1350,48
+Window_CPDLC_Setting=1,1,248
+Window_PredTfc=1,1,48,200,200
+Window_PredTfc_Caution=15
+Window_PredTfc_Warning=20
+Window_SM_LeaveHoldTime=2
+Window_SepList=225,48
+Window_MsgIn=1,980,48
 
-WXR_Latitude=49,3
+WXR_Latitude=52
 WXR_Latitude_Max=55
-WXR_Latitude_Min=44
-WXR_Longitude=8,5
-WXR_Longitude_Max=20
+WXR_Latitude_Min=49
+WXR_Longitude=7.25
+WXR_Longitude_Max=12.5
 WXR_Longitude_Min=2
-WXR_ImageSize=512
-WXR_Brightness=75
+WXR_Brightness=7
+WXR_Gain=120
+WXR_Zoom=5
 WXR_Echo_dBZ_Hi=50
 WXR_Echo_dBZ_Med=30
 WXR_Echo_dBZ_Lo=25
 
-Shortcut_RadarMenu_Combo=0x00
-Shortcut_Map_Xfr_Key=1,0x47 ; G
-Shortcut_Map_Xfr_Key=2,0x42 ; B
-Shortcut_Map_Target=1,Topo\FIR Border
-Shortcut_Map_Target=2,Borders
-
 [_CTR]
 Color_Assumed=10,180,20
-Color_Concerned=200,200,200
-Color_Coordination=200,200,200
-Color_Unconcerned=74,74,74
-Color_Unknown=239,224,42
+Color_Concerned=10,180,20
+Color_Coordination=10,180,20
+Color_Informed=0,0,255
 Color_Redundant=200,200,200
+Color_Unconcerned=200,200,200
+Color_Unknown=239,224,42
