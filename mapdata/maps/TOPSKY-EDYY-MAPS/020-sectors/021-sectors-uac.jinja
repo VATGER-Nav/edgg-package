@@ -1,0 +1,81 @@
+//---------------------------------------------------------------
+//                             Sectors
+//---------------------------------------------------------------
+{#- 
+    WARNING: When performing any changes on this file,
+    please bring them to the following files as well:
+    
+     * TOPSKY-EDYY-MAPS\030-info\030-sector-info.jinja
+#}
+{%- set EDGG = data.sectors['lines']['EDGG'] %}
+{%- set EDMM = data.sectors['lines']['EDMM'] %}
+{%- set EDWW = data.sectors['lines']['EDWW'] %}
+{%- set EHAA = data.sectors['lines']['EHAA'] %}
+{%- set EBBU = data.sectors['lines']['EBBU'] %}
+{%- set LFEE = data.sectors['lines']['LFEE'] %}
+{%- set EXT = data.sectors_ext['lines'] %}
+
+MAP:UACs
+FOLDER:Sectors
+ACTIVE:1
+STYLE:DOT:1
+COLOR:Active_Map_Type_1
+{#-
+    EDYY UAC:
+    - Hannover Sector Group
+    - DeCo Sector Group
+    - Brussels Sector Group
+    EDUU UAC:
+    - EBG North
+    - EBG West
+    - EBG East
+    EKDK ACC
+#}
+{{ render_sectorlines(
+    EDGG['YYMAB']['245-315'],
+	EDGG['YYML1']['245-355'],
+	EDGG['YYML2']['295-315'],
+	EDGG['YYRAB']['245-315'],
+	EDGG['YYRL1']['245-355'],
+	EDGG['YYRL2']['295-355'],
+    EDWW['EDYYCL1']['245-355'],
+    EDWW['EDYYSL1']['245-355'],
+    EDWW['EDYYSL2']['255-355'],
+
+    EHAA['EDYYDLT']['315-660'],
+    EDWW['EDYYHL1']['245-365'],
+	EDWW['EDYYHL2']['315-365'],
+	EDWW['EDYYHL3']['315-365'],
+	EDWW['EDYYJL']['245-365'],
+
+    EBBU['EDYYLNH_SCT']['245-660'],
+    EBBU['EDYYLNH_SCT 2']['255-660'],
+    EXT['EBBU']['EDYYLXH']['245-660'],
+    EXT['EBBU']['EDYYNIH']['245-660'],
+    EXT['EBBU']['EDYYKOH']['245-660'],
+
+    EXT['EDWW']['EDUUHVL12']['285-365'],
+    EXT['EDWW']['EDUUOSE12']['285-365'],
+
+    EDGG['FUL131']['245-255'],
+	EDGG['FUL132']['255-325'],
+	EDGG['FUL133']['325-355'],
+	EDGG['FFM24']['325-355'],
+	EDGG['NTM142']['265-325'],
+    EDGG['NTM141']['245-265'],
+    EDGG['NOR5']['245-265'],
+
+    EDMM['EDUUSAL12']['315-365'],
+    EXT['EDMM']['EDUUSPE12']['315-365'],
+
+    EXT['EKDK']['EKDK_A']['285-365'],
+    EXT['EKDK']['EKDK_B']['245-285'],
+    EXT['EKDK']['EKDK_C']['285-365'],
+    sector_sub(EXT['EKDK']['EKDK_D1']['245-285'], EXT['EKDK']['EKDK_D2']['245-285']),
+    sector_sub(EXT['EKDK']['EKDK_D2']['245-285'], EXT['EKDK']['EKDK_D1']['245-285']),
+    EXT['EKDK']['EKDK_I']['245-285'],
+) }}
+
+{% for uuid, geom in data.topsky['common']['sectors']['uac_ext']['EDYY'].items() %}
+{{- geom | to_coordline(uuid) -}}
+{% endfor %}

@@ -1,13 +1,1 @@
-{
-  "EDGG/Plugins/Topsky/EDYY/TopSkyMaps.txt": [
-    ".github/workflows/source/topsky_edyy_maps/general.txt",
-
-    ".github/workflows/source/topsky_edyy_maps/fixes.txt",
-    ".github/workflows/source/topsky_edyy_maps/edyy_airways.txt",
-
-    ".github/workflows/source/topsky_edyy_maps/borders.txt",
-    ".github/workflows/source/topsky_edyy_maps/upper_sectors.txt",
-
-    ".github/workflows/source/topsky_edyy_maps/topo.txt"
-  ]
-}
+{ }

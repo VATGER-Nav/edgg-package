@@ -1,0 +1,22 @@
+//---------------------------------------------------------------
+//                          Lower Sectors
+//---------------------------------------------------------------
+{#-
+    The sector outlines are created from GNG data using QGIS:
+
+     - Convert GNG data to GeoJSON
+     - Select required sectors using a virtual layer
+     - Transform the resulted polygons into boundaries
+       (use PolygonsToSingleBoundaries.model3)
+     - Clean up the lines if needed
+#}
+
+MAP:ACCs
+FOLDER:Sectors
+ACTIVE:1
+LAYER:-1
+STYLE:SOLID:1
+COLOR:Active_Map_Type_1
+{% for uuid, geom in data.topsky['common']['sectors']['lower']['EDYY'].items() %}
+{{- geom | to_line('') -}}
+{% endfor %}

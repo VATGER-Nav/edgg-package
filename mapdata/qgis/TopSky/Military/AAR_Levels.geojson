@@ -6,6 +6,9 @@
 { "type": "Feature", "properties": { "name": "angie" }, "geometry": { "type": "Point", "coordinates": [ 8.070105416666667, 48.328577222222222 ] } },
 { "type": "Feature", "properties": { "name": "luca" }, "geometry": { "type": "Point", "coordinates": [ 7.963350972222224, 49.412123055555554 ] } },
 { "type": "Feature", "properties": { "name": "virgin" }, "geometry": { "type": "Point", "coordinates": [ 7.442639722222223, 49.545013472222216 ] } },
-{ "type": "Feature", "properties": { "name": "jojo" }, "geometry": { "type": "Point", "coordinates": [ 6.529178333333332, 51.398528055555545 ] } }
+{ "type": "Feature", "properties": { "name": "jojo" }, "geometry": { "type": "Point", "coordinates": [ 6.529178333333332, 51.398528055555545 ] } },
+{ "type": "Feature", "properties": { "name": "kim_l" }, "geometry": { "type": "Point", "coordinates": [ 8.649634000993309, 53.407213303196805 ] } },
+{ "type": "Feature", "properties": { "name": "kim_s" }, "geometry": { "type": "Point", "coordinates": [ 9.147763909742002, 53.831862736692727 ] } },
+{ "type": "Feature", "properties": { "name": "northsea" }, "geometry": { "type": "Point", "coordinates": [ 7.02177130374278, 54.4678822321982 ] } }
 ]
 }

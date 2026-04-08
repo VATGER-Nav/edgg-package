@@ -1,0 +1,71 @@
+//---------------------------------------------------------------
+//                    AWACS - E-3A Orbit Areas
+//---------------------------------------------------------------
+{%- set NG11 = 'N054.08.00.000:E007.02.00.000' %}
+{%- set NG12 = 'N054.42.00.000:E007.02.00.000' %}
+{%- set NG13 = 'N054.42.00.000:E007.25.00.000' %}
+{%- set NG14 = 'N054.35.00.000:E007.11.00.000' %}
+{%- set NG21 = 'N054.15.00.000:E009.46.00.000' %}
+{%- set NG22 = 'N053.43.00.000:E008.44.00.000' %}
+{%- set NG23 = 'N053.37.00.000:E008.22.00.000' %}
+{%- set NG31 = 'N052.54.36.000:E010.27.00.000' %}
+{%- set NG32 = 'N053.09.30.000:E010.38.00.000' %}
+{%- set NG33 = 'N052.48.36.000:E009.59.00.000' %}
+
+MAP:AWACS - NG1
+FOLDER:Military
+STYLE:SOLID:1
+COLOR:BLUE
+{{ data.topsky['common']['military']['awacs']['NG1'] | to_coordline('') }}
+// NG11
+COORD_CIRCLE:{{NG11}}:12:10
+COORDPOLY:0
+TEXT:{{NG11}}:NG11
+// NG12
+COORD_CIRCLE:{{NG12}}:12:10
+COORDPOLY:0
+TEXT:{{NG12}}:NG12
+// NG13
+COORD_CIRCLE:{{NG13}}:12:10
+COORDPOLY:0
+TEXT:{{NG13}}:NG13
+// NG14
+COORD_CIRCLE:{{NG14}}:16:10
+COORDPOLY:0
+TEXT:{{NG14}}:NG14
+
+MAP:AWACS - NG2
+FOLDER:Military
+STYLE:SOLID:1
+COLOR:BLUE
+{{ data.topsky['common']['military']['awacs']['NG2'] | to_coordline('') }}
+// NG21
+COORD_CIRCLE:{{NG21}}:15:10
+COORDPOLY:0
+TEXT:{{NG21}}:NG21
+// NG22
+COORD_CIRCLE:{{NG22}}:14:10
+COORDPOLY:0
+TEXT:{{NG22}}:NG22
+// NG23
+COORD_CIRCLE:{{NG23}}:12:10
+COORDPOLY:0
+TEXT:{{NG23}}:NG23
+
+MAP:AWACS - NG3
+FOLDER:Military
+STYLE:SOLID:1
+COLOR:BLUE
+{{ data.topsky['common']['military']['awacs']['NG3'] | to_coordline('') }}
+// NG31
+COORD_CIRCLE:{{NG31}}:18:10
+COORDPOLY:0
+TEXT:{{NG31}}:NG31
+// NG32
+COORD_CIRCLE:{{NG32}}:12:10
+COORDPOLY:0
+TEXT:{{NG32}}:NG32
+// NG33
+COORD_CIRCLE:{{NG33}}:12:10
+COORDPOLY:0
+TEXT:{{NG33}}:NG33

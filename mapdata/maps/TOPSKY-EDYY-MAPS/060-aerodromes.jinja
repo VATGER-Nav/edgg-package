@@ -1,0 +1,85 @@
+//---------------------------------------------------------------
+//                            Aerodromes
+//---------------------------------------------------------------
+{%- set ads = [
+    'EDAH',
+    'EDDB',
+    'EDDC',
+    'EDDE',
+    'EDDF',
+    'EDDG',
+    'EDDH',
+    'EDDK',
+    'EDDL',
+    'EDDN',
+    'EDDP',
+    'EDDR',
+    'EDDS',
+    'EDDV',
+    'EDDW',
+    'EDFH',
+    'EDFM',
+    'EDHI',
+    'EDHL',
+    'EDLN',
+    'EDLP',
+    'EDLV',
+    'EDLW',
+    'EDQM',
+    'EDSB',
+    'EDVE',
+    'EDVK',
+    'EDXW',
+    'EHAM',
+    'EHBK',
+    'EHEH',
+    'ELLX',
+    'ETAD',
+    'ETAR',
+    'ETHB',
+    'ETHC',
+    'ETHN',
+    'ETHS',
+    'ETND',
+    'ETNG',
+    'ETNL',
+    'ETNN',
+    'ETNW',
+    'ETOU',
+    'ETSB',
+] %}
+
+MAP:AD_Hotspots
+FOLDER:Aerodromes
+COLOR:Active_Map_Type_1
+{%- for ad in ads %}
+SYMBOL:AIRPORT:{{ad}}
+{%- endfor %}
+SYMBOL:AIRPORT:N051.11.22.000:E004.27.37.000    // EBAW
+SYMBOL:AIRPORT:N050.54.05.000:E004.29.04.000    // EBBR
+SYMBOL:AIRPORT:N050.27.36.000:E004.27.10.000    // EBCI
+SYMBOL:AIRPORT:N050.38.11.000:E005.26.34.000    // EBLG
+SYMBOL:AIRPORT:N051.11.56.000:E002.51.44.000    // EBOS
+SYMBOL:AIRPORT:N053.07.30.000:E006.35.00.000    // EHGG
+SYMBOL:AIRPORT:N051.57.25.000:E004.26.14.000    // EHRD
+SYMBOL:AIRPORT:N055.44.25.000:E009.09.07.000    // EKBI
+SYMBOL:AIRPORT:N055.37.05.000:E012.39.22.000    // EKCH
+SYMBOL:AIRPORT:N054.57.52.000:E009.47.30.000    // EKSB
+
+MAP:AD_Hotspots w/ L
+FOLDER:Aerodromes
+TEXTALIGN:LB
+COLOR:Active_Map_Type_1
+{%- for ad in ads %}
+SYMBOL:AIRPORT:{{ad}}:{{ad}}:5:0
+{%- endfor %}
+SYMBOL:AIRPORT:N051.11.22.000:E004.27.37.000:EBAW:5:0
+SYMBOL:AIRPORT:N050.54.05.000:E004.29.04.000:EBBR:5:0
+SYMBOL:AIRPORT:N050.27.36.000:E004.27.10.000:EBCI:5:0
+SYMBOL:AIRPORT:N050.38.11.000:E005.26.34.000:EBLG:5:0
+SYMBOL:AIRPORT:N051.11.56.000:E002.51.44.000:EBOS:5:0
+SYMBOL:AIRPORT:N053.07.30.000:E006.35.00.000:EHGG:5:0
+SYMBOL:AIRPORT:N051.57.25.000:E004.26.14.000:EHRD:5:0
+SYMBOL:AIRPORT:N055.44.25.000:E009.09.07.000:EKBI:5:0
+SYMBOL:AIRPORT:N055.37.05.000:E012.39.22.000:EKCH:5:0
+SYMBOL:AIRPORT:N054.57.52.000:E009.47.30.000:EKSB:5:0
