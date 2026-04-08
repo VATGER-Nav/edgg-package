@@ -259,10 +259,12 @@ Shortcut_Map_Xfr_Key=1,0x42 ; B
 Shortcut_Map_Xfr_Key=2,0x54 ; T
 Shortcut_Map_Xfr_Key=3,0x4E ; N
 Shortcut_Map_Xfr_Key=4,0x49 ; I
+Shortcut_Map_Xfr_Key=5,0x44 ; D
 Shortcut_Map_Target=1,Sectors\ACCs
 Shortcut_Map_Target=2,Topography
 Shortcut_Map_Target=3,Fixes\Fixes w/ L
 Shortcut_Map_Target=4,Airspace Info\Sector Info
+Shortcut_Map_Target=5,Airspace Info\Tactical Directs
 
 STCA=1
 STCA_AlertSound=1
