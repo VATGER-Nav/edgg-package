@@ -1,0 +1,84 @@
+//---------------------------------------------------------------
+//                  AAR - Air Refuelling Anchors
+//---------------------------------------------------------------
+{#- 
+    WARNING: When performing any changes on this file,
+    please bring them to the following files as well:
+    
+     * TOPSKY-EDGG-MAPS\600-military\611-aar.jinja
+     * TOPSKY-EDUU-MAPS\040-military\041-aar.jinja
+#}
+{%- set aar = {
+    "jojo": {
+        "desig":  'Jojo',
+        "coord":  'N051.39.51.000:E006.36.22.800',
+        "inbd":   '346',
+        "turn":   'L',
+        "length": '30',
+        "radius": '6',
+        "level_up":  '300',
+        "level_lo":  '270',
+        "arip": []
+    },
+    "kim_l": {
+        "desig":  'Kim Long',
+        "coord":  'N054.06.10.800:E009.43.48.600',
+        "inbd":   '031.5',
+        "turn":   'L',
+        "length": '112',
+        "radius": '8',
+        "level_up":  '300',
+        "level_lo":  '270',
+        "arip": [ 'SWG', 'EKKIH' ]
+    },
+    "kim_s": {
+        "desig":  'Kim Short',
+        "coord":  'N054.06.15.600:E009.43.55.200',
+        "inbd":   '030.75',
+        "turn":   'L',
+        "length": '50',
+        "radius": '8',
+        "level_up":  '300',
+        "level_lo":  '270',
+        "arip": [ 'SWG' ]
+    },
+    "northsea": {
+        "desig":  'Northsea',
+        "coord":  'N054.43.42.600:E007.18.03.000',
+        "inbd":   '007',
+        "turn":   'L',
+        "length": '34',
+        "radius": '7',
+        "level_up":  '300',
+        "level_lo":  '070',
+        "arip": []
+    },
+} %}
+
+{% set points = data.topsky['common']['military']['aar']['points'] %}
+{% set levels = data.topsky['common']['military']['aar']['levels'] %}
+
+{%- for desig, hold in aar.items() %}
+MAP:AAR - {{hold.desig}}
+FOLDER:Military
+STYLE:SOLID:1
+COLOR:BLUE
+COORD_HM:{{hold.coord}}:{{hold.inbd}}M:{{hold.turn}}:{{hold.length}}:{{hold.radius}}:10
+COORDPOLY:0
+// Anchor Points
+TEXTALIGN:LB
+SYMBOL:FIX2:{{hold.coord}}:AP1:7:0
+{{ points['TP1_' + desig] | to_symbol('FIX2') }}:TP1:7:0
+{{ points['AP2_' + desig] | to_symbol('FIX2') }}:AP2:7:0
+{{ points['TP2_' + desig] | to_symbol('FIX2') }}:TP2:7:0
+{%- for arip in hold.arip %}
+SYMBOL:FIX:{{arip}}:{{arip}}:5:0
+{%- endfor %}
+// Levels
+FONTSIZE:=:11
+TEXTALIGN:CC
+{{ levels[desig] | to_text(hold.level_up) }}:0:-7
+{{ levels[desig] | to_text(hold.level_lo) }}:0:8
+FONTSIZE:=:12
+{{ levels[desig] | to_text('---') }}:0:-1
+{% endfor %}

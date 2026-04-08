@@ -1,0 +1,21 @@
+//---------------------------------------------------------------
+//                            Topography
+//---------------------------------------------------------------
+
+MAP:Coastline
+FOLDER:Topography
+LAYER:-3
+STYLE:SOLID:1
+COLOR:TOPO_WATER
+{% for uuid, geom in data.topsky['common']['topo']['EDXX_coastline'].items() %}
+{{- geom | to_coordline('') }}
+{% endfor %}
+
+MAP:State Borders
+FOLDER:Topography
+LAYER:-3
+STYLE:SOLID:1
+COLOR:TOPO_BORDER
+{% for uuid, geom in data.topsky['common']['topo']['EDXX_stateboundary'].items() %}
+{{- geom | to_coordline('') }}
+{% endfor %}

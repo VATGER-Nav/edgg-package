@@ -15,6 +15,15 @@
 { "type": "Feature", "properties": { "name": "TP1_angie" }, "geometry": { "type": "Point", "coordinates": [ 8.031398611111111, 48.603277222222225 ] } },
 { "type": "Feature", "properties": { "name": "AP2_angie" }, "geometry": { "type": "Point", "coordinates": [ 7.779789166666666, 48.132413333333332 ] } },
 { "type": "Feature", "properties": { "name": "TP2_angie" }, "geometry": { "type": "Point", "coordinates": [ 8.108812222222221, 48.053877222222219 ] } },
-{ "type": "Feature", "properties": { "name": "RP_angie" }, "geometry": { "type": "Point", "coordinates": [ 8.224716666666668, 48.26848861111111 ] } }
+{ "type": "Feature", "properties": { "name": "RP_angie" }, "geometry": { "type": "Point", "coordinates": [ 8.224716666666668, 48.26848861111111 ] } },
+{ "type": "Feature", "properties": { "name": "TP1_kim_l" }, "geometry": { "type": "Point", "coordinates": [ 9.355331944444444, 54.254298055555559 ] } },
+{ "type": "Feature", "properties": { "name": "AP2_kim_l" }, "geometry": { "type": "Point", "coordinates": [ 7.607711388888888, 52.70538916666667 ] } },
+{ "type": "Feature", "properties": { "name": "TP2_kim_l" }, "geometry": { "type": "Point", "coordinates": [ 7.971436388888889, 52.556044166666666 ] } },
+{ "type": "Feature", "properties": { "name": "TP1_kim_s" }, "geometry": { "type": "Point", "coordinates": [ 9.353684722222221, 54.252665833333332 ] } },
+{ "type": "Feature", "properties": { "name": "AP2_kim_s" }, "geometry": { "type": "Point", "coordinates": [ 8.57300388888889, 53.5582175 ] } },
+{ "type": "Feature", "properties": { "name": "TP2_kim_s" }, "geometry": { "type": "Point", "coordinates": [ 8.945939166666667, 53.41068083333333 ] } },
+{ "type": "Feature", "properties": { "name": "TP1_northsea" }, "geometry": { "type": "Point", "coordinates": [ 6.902176388888889, 54.766285555555555 ] } },
+{ "type": "Feature", "properties": { "name": "AP2_northsea" }, "geometry": { "type": "Point", "coordinates": [ 6.746271944444445, 54.20708 ] } },
+{ "type": "Feature", "properties": { "name": "TP2_northsea" }, "geometry": { "type": "Point", "coordinates": [ 7.139586944444445, 54.169333888888886 ] } }
 ]
 }
