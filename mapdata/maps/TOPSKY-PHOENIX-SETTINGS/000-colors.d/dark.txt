@@ -1,10 +1,10 @@
-Color_Assumed=255,255,255 
+Color_Assumed=255,255,255
 Color_Concerned=255,255,255
-Color_Informed=255,255,255 
-Color_Unconcerned=255,255,255 
-Color_Unknown=255,255,255
-Color_Redundant=255,255,255 
 Color_Coordination=255,255,255
+Color_Informed=255,255,255
+Color_Redundant=255,255,255
+Color_Unconcerned=255,255,255
+Color_Unknown=255,255,255
 
 Color_Active_Map=205,0,0
 Color_Active_Text_Map=198,174,58

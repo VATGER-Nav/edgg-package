@@ -28,6 +28,15 @@ BlindSpot=1
 BlindSpot_Level_Range=100
 BlindSpot_Time_Warning=400
 
+// Standard colors, all other defined below
+Color_Assumed=0,0,0
+Color_Concerned=0,0,0
+Color_Coordination=0,0,0
+Color_Informed=0,0,0
+Color_Redundant=0,0,0
+Color_Unconcerned=0,0,0
+Color_Unknown=0,0,0
+
 Color_ACF_Via_CFL
 Color_AIW_Intrusion=160,140,0
 Color_Active_Map=80,80,255            // Default Area Color
@@ -55,7 +64,6 @@ Color_Active_RD_Infill_Map=255,0,0
 Color_Active_RD_Map
 Color_Active_Text_Map=80,80,255
 Color_Arm=120,120,120
-Color_Assumed=0,0,0
 Color_Background=200,200,192
 Color_Border
 Color_BottomShadow=180,180,172
@@ -82,10 +90,8 @@ Color_CPDLC_Standby=212,128,44
 Color_CPDLC_UM_Clearance=0,0,205
 Color_CPDLC_Unable=212,128,44
 Color_CPDLC_Urgency=225,25,25
-Color_Concerned=0,0,250
 Color_Conflict_Ack
 Color_Conflict_Ack_FL
-Color_Coordination=0,0,250
 Color_Datalink_Logged_On
 Color_Deselected
 Color_East_NAT_Map
@@ -105,9 +111,6 @@ Color_Inactive_Sector=200,200,200
 Color_Info_Coord=0,255,0
 Color_Information=34,139,34
 Color_Information_FL=0,0,0
-Color_Informed=68,141,208
-Color_Informed_2
-Color_Informed_3
 Color_LatLong_Info
 Color_MQDM
 Color_Map_1=168,164,165
@@ -122,8 +125,8 @@ Color_Map_Hotspot=168,164,165
 Color_Map_Info=0,255,0
 Color_Map_Land
 Color_Map_Symbol
-Color_Negotiation_In
-Color_Negotiation_Out
+Color_Negotiation_In=0,162,0
+Color_Negotiation_Out=0,162,0
 Color_Oceanic_Level_Highlight
 Color_Overflown=0,255,0
 Color_Potential=255,130,71
@@ -143,7 +146,6 @@ Color_Raw_Video4
 Color_Raw_Video5
 Color_Raw_Video6
 Color_Raw_Video7
-Color_Redundant=140,27,138
 Color_Reminder
 Color_Runway=0,0,255
 Color_Rwy_App_Line_Inuse=168,164,165
@@ -183,14 +185,12 @@ Color_TopShadow=117,117,117
 Color_Track_Default=0,0,0
 Color_Track_Highlight=0,0,0
 Color_Trough
-Color_Unconcerned=255,255,255
-Color_Unknown
 Color_Urgency=255,25,26
 Color_Urgency_FL=255,136,0
 Color_VAW_Profile
 Color_VAW_Sector_Limits
 Color_VAW_Track_Position
-Color_VFR=180,150,95
+Color_VFR=163,134,82
 Color_WM_Active_Fg=0,0,0
 Color_WM_Bg=214,216,150
 Color_WM_Border=0,0,0
@@ -298,6 +298,18 @@ SAP_Buffer_Vert_U=1500
 SAP_Buffer_Vert_L_IFR=500
 SAP_Buffer_Vert_L_VFR=500
 
+Shortcut_RadarMenu_Combo=0x00
+Shortcut_Map_Xfr_Key=1,0x47 ; G
+Shortcut_Map_Xfr_Key=2,0x42 ; B
+Shortcut_Map_Xfr_Key=3,0x54 ; T
+Shortcut_Map_Xfr_Key=4,0x4E ; N
+Shortcut_Map_Xfr_Key=5,0x49 ; I
+Shortcut_Map_Target=1,Tools\SepGuide
+Shortcut_Map_Target=2,Sectors\ACCs
+Shortcut_Map_Target=3,Topography
+Shortcut_Map_Target=4,Fixes\Fixes w/ L
+Shortcut_Map_Target=5,Airspace Info\Sector Info
+
 STCA_Sep_Lat_SepLevel=24500
 STCA_Filter=1
 STCA_Floor=2000
@@ -369,22 +381,11 @@ WXR_Echo_dBZ_Hi=50
 WXR_Echo_dBZ_Med=30
 WXR_Echo_dBZ_Lo=25
 
-Shortcut_RadarMenu_Combo=0x00
-Shortcut_Map_Xfr_Key=1,0x47 ; G
-Shortcut_Map_Xfr_Key=2,0x42 ; B
-Shortcut_Map_Xfr_Key=3,0x54 ; T
-Shortcut_Map_Xfr_Key=4,0x4E ; N
-Shortcut_Map_Xfr_Key=5,0x49 ; I
-Shortcut_Map_Target=1,Tools\SepGuide
-Shortcut_Map_Target=2,Sectors\ACCs
-Shortcut_Map_Target=3,Topography
-Shortcut_Map_Target=4,Fixes\Fixes w/ L
-Shortcut_Map_Target=5,Airspace Info\Sector Info
-
 [_CTR]
 Color_Assumed=0,0,0
 Color_Concerned=0,0,250
 Color_Coordination=0,0,250
+Color_Informed=68,141,208
 Color_Redundant=140,27,138
 Color_Unconcerned=255,255,255
 Color_Unknown
