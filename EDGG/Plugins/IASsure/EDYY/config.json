@@ -1,0 +1,14 @@
+{
+    "mach": {
+        "thresholdFL": 245,
+        "digits": 3,
+        "prefix": "/"
+    },
+    "ias": {
+        "prefix": "I"
+    },
+    "weather": {
+        "url": "https://wx.vatsim-germany.org/api/regions/EDXX/wx",
+        "update": 30
+    }
+}

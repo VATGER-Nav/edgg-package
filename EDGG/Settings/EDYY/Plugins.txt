@@ -243,4 +243,13 @@ TopSky plugin:ACList/Traffic Management List 2/m_Column_21:SID:8:1:10011:17:0:0:
 TopSky plugin:ACList/Sector List/m_Column_18:ARWY:4:1:10010:19:0:0:TopSky plugin::
 TopSky plugin:ACList/Sector List/m_Column_19:T:2:1:11:32:0:1:::
 TopSky plugin:ACList/Sector List/m_Column_20:RMK:10:1:10059:2:0:1:TopSky plugin:TopSky plugin:
+MTEPlugin:ALT/Feet:1              ; 0: metric, 1: imperial
+MTEPlugin:VS/Mode:1               ; 0: hide, 1: show
+MTEPlugin:VS/Threshold:100        ; positive integer, FPM
+MTEPlugin:VS/Rounding:100         ; positive integer, FPM
+MTEPlugin:VS/LevelMark:^-|        ; 3 characters for climb-level-descend
+MTEPlugin:GS/Knot:0               ; 0: KPH, 1: KTS
+MTEPlugin:GS/ModeThreshold:0      ; integer, KTS
+MTEPlugin:GS/TrendThreshold:5     ; positive integer, KPH
+MTEPlugin:Flag/CoordinationAuto:1 ; 0: manual, 1: auto
 END
