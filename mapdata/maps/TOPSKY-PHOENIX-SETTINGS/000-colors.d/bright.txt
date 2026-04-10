@@ -1,10 +1,10 @@
 Color_Assumed=0,0,0
 Color_Concerned=0,0,0
+Color_Coordination=0,0,0
 Color_Informed=0,0,0
+Color_Redundant=0,0,0
 Color_Unconcerned=0,0,0
 Color_Unknown=0,0,0
-Color_Redundant=0,0,0
-Color_Coordination=0,0,0
 
 Color_Active_Map=240,73,80
 Color_Active_Text_Map=193,128,0
@@ -42,7 +42,7 @@ Color_SEP_Tool_4=197,64,212
 Color_SEP_Tool_5=166,160,245
 Color_Select=0,0,0
 Color_Sid_Star_Allocation=34,139,34
-Color_VFR=180,150,95
+Color_VFR=163,134,82
 Color_Warning=219,142,39
 Color_Warning_FL=219,142,39
 Color_Weather_Map=100,100,100
