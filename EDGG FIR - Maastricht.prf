@@ -42,7 +42,7 @@ Plugins	Plugin2	\EDGG\Plugins\AfvEuroScopeBridge.dll
 Plugins	Plugin3	\EDGG\Plugins\Squawk\EDGG\Squawks.dll
 Plugins	Plugin3Display0	Ground Radar display
 Plugins	Plugin3Display1	Standard ES radar screen
-Plugins	Plugin4	\EDGG\Plugins\IASsure\IASsure.dll
+Plugins	Plugin4	\EDGG\Plugins\IASsure\EDYY\IASsure.dll
 Plugins	Plugin5	\EDGG\Plugins\VFPC\VFPC.dll
 Plugins	Plugin6	\EDGG\Plugins\AMAN\Aman.dll
 Plugins	Plugin6Display0	Ground Radar display
@@ -50,6 +50,7 @@ Plugins	Plugin6Display1	Standard ES radar screen
 Plugins	Plugin7	\EDGG\Plugins\vSID\vSID Plugin Dark\vSID.dll
 Plugins	Plugin7Display0	Standard ES radar screen
 Plugins	Plugin7Display1	Ground Radar display
+Plugins	Plugin8	\EDGG\Plugins\MTEPlugin.dll
 TeamSpeakVccs	TsVccsMiniControlX	1744
 TeamSpeakVccs	TsVccsMiniControlY	44
 TeamSpeakVccs	Ts3NickName	YOUR ID
