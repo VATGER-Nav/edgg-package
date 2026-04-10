@@ -4,23 +4,33 @@ ATIS2:
 ATIS3:
 ATIS4:
 
-PROFILE:EDYY_ML_CTR:450:6
-ATIS2:Maastricht Radar - CPDLC [EDYM]
+PROFILE:EDYY_CL_CTR:450:6
+ATIS2:Maastricht Radar - CPDLC [EDYC]
 ATIS3:Coverage at vatsim-radar.com/vg - only above FL245!
 ATIS4:You have feedback? Submit it! feedback.vatger.de
 
-PROFILE:EDYY_MH_CTR:450:6
-ATIS2:Maastricht Radar - CPDLC [EDNH]
+PROFILE:EDYY_CH_CTR:450:6
+ATIS2:Maastricht Radar - CPDLC [EDCH]
 ATIS3:Coverage at vatsim-radar.com/vg - only above FL245!
 ATIS4:You have feedback? Submit it! feedback.vatger.de
 
-PROFILE:EDYY_RL_CTR:450:6
-ATIS2:Maastricht Radar - CPDLC [EDYR]
+PROFILE:EDYY_JL_CTR:450:6
+ATIS2:Maastricht Radar - CPDLC [EDYJ]
 ATIS3:Coverage at vatsim-radar.com/vg - only above FL245!
 ATIS4:You have feedback? Submit it! feedback.vatger.de
 
-PROFILE:EDYY_RH_CTR:450:6
-ATIS2:Maastricht Radar - CPDLC [EDRH]
+PROFILE:EDYY_JH_CTR:450:6
+ATIS2:Maastricht Radar - CPDLC [EDJH]
+ATIS3:Coverage at vatsim-radar.com/vg - only above FL245!
+ATIS4:You have feedback? Submit it! feedback.vatger.de
+
+PROFILE:EDYY_HL_CTR:450:6
+ATIS2:Maastricht Radar - CPDLC [EDYH]
+ATIS3:Coverage at vatsim-radar.com/vg - only above FL245!
+ATIS4:You have feedback? Submit it! feedback.vatger.de
+
+PROFILE:EDYY_HH_CTR:450:6
+ATIS2:Maastricht Radar - CPDLC [EDHH]
 ATIS3:Coverage at vatsim-radar.com/vg - only above FL245!
 ATIS4:You have feedback? Submit it! feedback.vatger.de
 
@@ -34,14 +44,48 @@ ATIS2:Maastricht Radar - CPDLC [EDSH]
 ATIS3:Coverage at vatsim-radar.com/vg - only above FL245!
 ATIS4:You have feedback? Submit it! feedback.vatger.de
 
-PROFILE:EDYY_CL_CTR:450:6
-ATIS2:Maastricht Radar - CPDLC [EDYC]
+PROFILE:EDYY_ML_CTR:450:6
+ATIS2:Maastricht Radar - CPDLC [EDYM]
 ATIS3:Coverage at vatsim-radar.com/vg - only above FL245!
 ATIS4:You have feedback? Submit it! feedback.vatger.de
 
-PROFILE:EDYY_CH_CTR:450:6
-ATIS2:Maastricht Radar - CPDLC [EDCH]
+PROFILE:EDYY_MH_CTR:450:6
+ATIS2:Maastricht Radar - CPDLC [EDNH]
 ATIS3:Coverage at vatsim-radar.com/vg - only above FL245!
 ATIS4:You have feedback? Submit it! feedback.vatger.de
 
+PROFILE:EDYY_MM_CTR:450:6
+ATIS2:Maastricht Radar - CPDLC [EDTG]
+ATIS3:Coverage at vatsim-radar.com/vg - only above FL245!
+ATIS4:You have feedback? Submit it! feedback.vatger.de
+
+PROFILE:EDYY_RL_CTR:450:6
+ATIS2:Maastricht Radar - CPDLC [EDYR]
+ATIS3:Coverage at vatsim-radar.com/vg - only above FL245!
+ATIS4:You have feedback? Submit it! feedback.vatger.de
+
+PROFILE:EDYY_RH_CTR:450:6
+ATIS2:Maastricht Radar - CPDLC [EDRH]
+ATIS3:Coverage at vatsim-radar.com/vg - only above FL245!
+ATIS4:You have feedback? Submit it! feedback.vatger.de
+
+PROFILE:EDYY_BB_CTR:450:6
+ATIS2:Maastricht Radar - CPDLC [EDYB]
+ATIS3:Coverage at vatsim-radar.com/vg - only above FL245!
+ATIS4:You have feedback? Submit it! feedback.vatger.de
+
+PROFILE:ETXX_SR_CTR:150:5
+ATIS2:Sunrise
+ATIS3:You have feedback? Submit it! feedback.vatger.de
+ATIS4:
+
+PROFILE:ETXX_LS_CTR:150:5
+ATIS2:Loneship
+ATIS3:You have feedback? Submit it! feedback.vatger.de
+ATIS4:
+
+PROFILE:ETXX_TRA_CTR:150:5
+ATIS2:Maastricht Monitor
+ATIS3:You have feedback? Submit it! feedback.vatger.de
+ATIS4:
 END
