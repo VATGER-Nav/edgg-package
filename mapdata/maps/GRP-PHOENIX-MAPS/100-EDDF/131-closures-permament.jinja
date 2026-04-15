@@ -47,22 +47,22 @@ STYLE:Solid:1
 MAP:S (N/A in Flight Sims)
 AIRPORT:EDDF
 FOLDER:Closures
-ACTIVE:1
+ACTIVE:260415:260422:0:0000:2359
 LAYER:4
 STYLE:Solid:2
-// Taxilane remover
-COLOR:layout-taxiway
-{% for uuid in
-[
-    '87e3b145-d3f0-433c-9066-1a0ed61765fe',
-    'a928170e-c802-42d1-abd2-d37cf5e7f7fa',
-    'aae9a2f9-0d39-49af-b9ed-bad5759a3e7e',
-]
-%}
-{{- data.eddf_aixm['GuidanceLineMarking'][uuid] | join_segments | simplify(default) | to_line(uuid) -}}
-{% endfor %}
-{{ data.eddf_kml['layout']['closures']['poly']['S_a'] | to_coordtype('','closure') }}
-{{ data.eddf_kml['layout']['closures']['poly']['S_b'] | to_coordtype('','closure') }}
+{{ data.eddf_kml['layout']['closures']['poly']['S'] | to_coordtype('','closure') }}
+
+MAP:S17, S19, S20, S21, S23
+AIRPORT:EDDF
+FOLDER:Closures
+ACTIVE:1
+LAYER:4
+STYLE:Solid:1
+{{ data.eddf_kml['layout']['closures']['symb']['S17'] | to_coordtype('','closure-symbol') }}
+{{ data.eddf_kml['layout']['closures']['symb']['S19'] | to_coordtype('','closure-symbol') }}
+{{ data.eddf_kml['layout']['closures']['symb']['S20'] | to_coordtype('','closure-symbol') }}
+{{ data.eddf_kml['layout']['closures']['symb']['S21'] | to_coordtype('','closure-symbol') }}
+{{ data.eddf_kml['layout']['closures']['symb']['S23'] | to_coordtype('','closure-symbol') }}
 
 MAP:W, W9
 AIRPORT:EDDF
@@ -96,21 +96,18 @@ STYLE:Solid:1
 
 // -------------------------- Constructions --------------------------
 
-MAP:S16/S21
-AIRPORT:EDDF
-FOLDER:Constructions
-ACTIVE:1
-LAYER:4
-STYLE:Solid:2
-{{ data.eddf_kml['layout']['closures']['poly']['S16_S21'] | to_coordtype('','closure', 'TWYCLOSED', 'POLYGON') }}
-STYLE:Solid:1
-{{ data.eddf_kml['layout']['closures']['symb']['S16'] | to_coordtype('','closure-symbol') }}
-{{ data.eddf_kml['layout']['closures']['symb']['S21'] | to_coordtype('','closure-symbol') }}
-
 MAP:Terminal 3
 AIRPORT:EDDF
 FOLDER:Constructions
-ACTIVE:1
+ACTIVE:260415:260422:0:0000:2359
 LAYER:4
 STYLE:Solid:2
 {{ data.eddf_kml['layout']['closures']['poly']['terminal3'] | to_coordtype('','closure', 'TWYCLOSED', 'POLYGON') }}
+
+MAP:Stands V333-V340 (N/A in Flight Sims)
+AIRPORT:EDDF
+FOLDER:Constructions
+ACTIVE:260415:260422:0:0000:2359
+LAYER:4
+STYLE:Solid:2
+{{ data.eddf_kml['layout']['closures']['poly']['S16_S21'] | to_coordtype('','closure', 'TWYCLOSED', 'POLYGON') }}

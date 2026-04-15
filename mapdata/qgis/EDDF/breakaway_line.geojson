@@ -61,9 +61,8 @@
 { "type": "Feature", "properties": { "name": "S11_7b" }, "geometry": { "type": "LineString", "coordinates": [ [ 469105.86636307783192, 5542298.275797590613365 ], [ 469116.167532513325568, 5542270.099816537462175 ] ] } },
 { "type": "Feature", "properties": { "name": "S13_1a" }, "geometry": { "type": "LineString", "coordinates": [ [ 469631.516326386481524, 5541931.874528193846345 ], [ 469630.929780041798949, 5541916.886000469326973 ] ] } },
 { "type": "Feature", "properties": { "name": "S13_1b" }, "geometry": { "type": "LineString", "coordinates": [ [ 469631.221744857728481, 5541924.380322611890733 ], [ 469661.196284031495452, 5541923.144603652879596 ] ] } },
-{ "type": "Feature", "properties": { "name": "S15_2a" }, "geometry": { "type": "LineString", "coordinates": [ [ 469441.734602390031796, 5541871.910964583978057 ], [ 469446.989031918521505, 5541857.86137489695102 ] ] } },
-{ "type": "Feature", "properties": { "name": "S15_2b" }, "geometry": { "type": "LineString", "coordinates": [ [ 469444.360588021751028, 5541864.885717608034611 ], [ 469472.481661444704514, 5541875.335848205722868 ] ] } },
-{ "type": "Feature", "properties": { "name": "S15_2c" }, "geometry": { "type": "LineString", "coordinates": [ [ 469444.361778752994724, 5541864.886152938939631 ], [ 469416.240705330041237, 5541854.436022341251373 ] ] } },
+{ "type": "Feature", "properties": { "name": "S15_2a" }, "geometry": { "type": "LineString", "coordinates": [ [ 469441.760686184221413, 5541871.979714591056108 ], [ 469446.924127964652143, 5541857.896431271918118 ] ] } },
+{ "type": "Feature", "properties": { "name": "S15_2b" }, "geometry": { "type": "LineString", "coordinates": [ [ 469444.342405581090134, 5541864.938077004626393 ], [ 469472.529255393659696, 5541875.205643470399082 ] ] } },
 { "type": "Feature", "properties": { "name": "S15_4a" }, "geometry": { "type": "LineString", "coordinates": [ [ 469350.022896350361407, 5541838.556566179729998 ], [ 469355.202902817167342, 5541824.479367133229971 ] ] } },
 { "type": "Feature", "properties": { "name": "S15_4b" }, "geometry": { "type": "LineString", "coordinates": [ [ 469352.611668074503541, 5541831.517521034926176 ], [ 469380.787649127654731, 5541841.818690470419824 ] ] } },
 { "type": "Feature", "properties": { "name": "S7_2a" }, "geometry": { "type": "LineString", "coordinates": [ [ 470019.10038107377477, 5542566.484313922934234 ], [ 470005.023182027274743, 5542561.304307456128299 ] ] } },
@@ -85,13 +84,15 @@
 { "type": "Feature", "properties": { "name": "S13_5b" }, "geometry": { "type": "LineString", "coordinates": [ [ 469292.904578340239823, 5542073.299783482216299 ], [ 469320.095046360976994, 5542060.623883165419102 ] ] } },
 { "type": "Feature", "properties": { "name": "S8_5a" }, "geometry": { "type": "LineString", "coordinates": [ [ 469667.455466107989196, 5542499.736398904584348 ], [ 469653.378267061489169, 5542494.556392437778413 ] ] } },
 { "type": "Feature", "properties": { "name": "S8_5b" }, "geometry": { "type": "LineString", "coordinates": [ [ 469660.416420963185374, 5542497.147627180442214 ], [ 469670.717590398679022, 5542468.971646127291024 ] ] } },
-{ "type": "Feature", "properties": { "name": "S8_3a" }, "geometry": { "type": "LineString", "coordinates": [ [ 469707.905026028573047, 5542388.741825870238245 ], [ 469693.82782698207302, 5542383.56181940343231 ] ] } },
-{ "type": "Feature", "properties": { "name": "S8_3b" }, "geometry": { "type": "LineString", "coordinates": [ [ 469700.865980883769225, 5542386.15305414609611 ], [ 469711.167150319262873, 5542357.97707309294492 ] ] } },
+{ "type": "Feature", "properties": { "name": "S8_3a" }, "geometry": { "type": "LineString", "coordinates": [ [ 469707.907163408584893, 5542388.735575808212161 ], [ 469693.824640086852014, 5542383.570061611011624 ] ] } },
+{ "type": "Feature", "properties": { "name": "S8_3b" }, "geometry": { "type": "LineString", "coordinates": [ [ 469700.86545739416033, 5542386.15405067615211 ], [ 469711.137620105408132, 5542357.967481655068696 ] ] } },
+{ "type": "Feature", "properties": { "name": "S8_3c" }, "geometry": { "type": "LineString", "coordinates": [ [ 469700.865885189734399, 5542386.152857217006385 ], [ 469690.593722477555275, 5542414.3394262380898 ] ] } },
 { "type": "Feature", "properties": { "name": "S8_1a" }, "geometry": { "type": "LineString", "coordinates": [ [ 469777.186553590698168, 5542235.079298539087176 ], [ 469766.15983489016071, 5542224.91015527676791 ] ] } },
 { "type": "Feature", "properties": { "name": "S8_1b" }, "geometry": { "type": "LineString", "coordinates": [ [ 469771.672311583766714, 5542229.995694436132908 ], [ 469791.964479116490111, 5542207.899813895113766 ] ] } },
 { "type": "Feature", "properties": { "name": "S10_4a" }, "geometry": { "type": "LineString", "coordinates": [ [ 469431.168392862193286, 5542411.367643577046692 ], [ 469424.867324427235872, 5542397.755276530981064 ] ] } },
 { "type": "Feature", "properties": { "name": "S10_4b" }, "geometry": { "type": "LineString", "coordinates": [ [ 469428.016673134639859, 5542404.562016614712775 ], [ 469455.215019103139639, 5542391.903028636239469 ] ] } },
-{ "type": "Feature", "properties": { "name": "S10_2a" }, "geometry": { "type": "LineString", "coordinates": [ [ 469595.265511369798332, 5542334.929136434569955 ], [ 469588.980339029338211, 5542321.309422464109957 ] ] } },
-{ "type": "Feature", "properties": { "name": "S10_2b" }, "geometry": { "type": "LineString", "coordinates": [ [ 469592.121739040594548, 5542328.119834625162184 ], [ 469619.334845249075443, 5542315.49260806851089 ] ] } }
+{ "type": "Feature", "properties": { "name": "S10_2a" }, "geometry": { "type": "LineString", "coordinates": [ [ 469595.27754760440439, 5542334.926917849108577 ], [ 469588.970191856380552, 5542321.31746291834861 ] ] } },
+{ "type": "Feature", "properties": { "name": "S10_2b" }, "geometry": { "type": "LineString", "coordinates": [ [ 469592.122684478294104, 5542328.122747491113842 ], [ 469619.315179954748601, 5542315.45119708403945 ] ] } },
+{ "type": "Feature", "properties": { "name": "S10_2c" }, "geometry": { "type": "LineString", "coordinates": [ [ 469592.123830796219409, 5542328.122205910272896 ], [ 469564.931335318367928, 5542340.793756315484643 ] ] } }
 ]
 }
