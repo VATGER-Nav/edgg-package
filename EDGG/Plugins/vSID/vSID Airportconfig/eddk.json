@@ -443,22 +443,12 @@
                     }
                 }
             },
-			"WYP": {
+			"WIPUR": {
                 "F":{
                     "1": {
                         "rwy": "13L",
                         "climbvia": true,
                         "prio": 2
-                    }
-                },
-                "X":{
-                    "1": {
-                        "rwy": "13L",
-                        "climbvia": true,
-                        "prio": 1,
-                        "wtc": "H",
-                        "engineType": "J",
-                        "engineCount": 3
                     }
                 },
                 "B":{
@@ -534,37 +524,49 @@
                         "prio": 4,
                         "wtc": "LM"
                     }
-                },
-                "N":{
+                }
+            },
+            "EDDK": {
+                "B":{
                     "1": {
                         "rwy": "31R",
                         "climbvia": true,
-                        "equip": {"NON-RNAV": true},
-                        "prio": 1
+                        "prio": 99
                     }
                 },
-                "Y":{
+                "D":{
+                    "1": {
+                        "rwy": "24",
+                        "climbvia": true,
+                        "prio": 99
+                    }
+                },
+                "E":{
+                    "1": {
+                        "rwy": "13R",
+                        "climbvia": true,
+                        "prio": 99
+                    }
+                },
+                "F":{
                     "1": {
                         "rwy": "13L",
                         "climbvia": true,
-                        "equip": {"NON-RNAV": true},
-                        "prio": 1
+                        "prio": 99
                     }
                 },
-                "T":{
-                    "1": {
-                        "rwy": "24",
-                        "equip": {"NON-RNAV": true},
-                        "prio": 2,
-                        "acftType": {"A388": false}
-                    }
-                },
-                "U":{
+                "K":{
                     "1": {
                         "rwy": "06",
-                        "equip": {"NON-RNAV": true},
-                        "prio": 1,
-                        "acftType": {"A388": false}
+                        "climbvia": true,
+                        "prio": 99
+                    }
+                },
+                "M":{
+                    "1": {
+                        "rwy": "31L",
+                        "climbvia": true,
+                        "prio": 99
                     }
                 }
             }
