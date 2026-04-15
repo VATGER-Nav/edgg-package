@@ -1648,6 +1648,10 @@ COLOR:layout-taxiline-yellow
 {{- data.eddf_aixm['GuidanceLineMarking'][uuid] | join_segments | simplify(default) | to_line(uuid) -}}
 {% endfor %}
 
+{% for uuid, geom in data.eddf_kml['layout']['markings']['taxilanes'].items() %}
+{{- geom | to_line('') -}}
+{% endfor %}
+
 // Orange Lines
 COLOR:layout-taxiline-orange
 {% for uuid in
