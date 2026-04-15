@@ -38,7 +38,9 @@ Plugins	Plugin0Display1	Ground Radar display
 Plugins	Plugin1	\EDGG\Plugins\GRP\TWR_PHX_NIGHT\GRplugin.dll
 Plugins	Plugin1Display0	Ground Radar display
 Plugins	Plugin1Display1	Standard ES radar screen
-Plugins	Plugin2	\EDGG\Plugins\AfvEuroScopeBridge.dll
+Plugins	Plugin2	\EDGG\Plugins\RDFPlugin.dll
+Plugins	Plugin2Display0	Ground Radar display
+Plugins	Plugin2Display1	Standard ES radar screen
 Plugins	Plugin3	\EDGG\Plugins\Squawk\EDGG\Squawks.dll
 Plugins	Plugin3Display0	Ground Radar display
 Plugins	Plugin3Display1	Standard ES radar screen

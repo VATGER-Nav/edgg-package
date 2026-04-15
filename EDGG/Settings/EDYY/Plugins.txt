@@ -252,4 +252,8 @@ MTEPlugin:GS/Knot:0               ; 0: KPH, 1: KTS
 MTEPlugin:GS/ModeThreshold:0      ; integer, KTS
 MTEPlugin:GS/TrendThreshold:5     ; positive integer, KPH
 MTEPlugin:Flag/CoordinationAuto:1 ; 0: manual, 1: auto
+RDF Plugin for Euroscope:RGB:200:200:200
+RDF Plugin for Euroscope:Radius:30
+RDF Plugin for Euroscope:Threshold:-1
+RDF Plugin for Euroscope:Precision:3
 END
