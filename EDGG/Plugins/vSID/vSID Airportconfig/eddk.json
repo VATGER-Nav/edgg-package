@@ -9,11 +9,11 @@
 		"appSI": "DKA,NOR,DKLA,GN,GNH",
         "sids": {
             "initial": 5000,
+            "climbvia": true,
             "COL": {
                 "F":{
                     "1": {
                         "rwy": "13L",
-                        "climbvia": true,
                         "dest": {"EDDF": true, "EDDK": true},
                         "prio": 2
                     }
@@ -21,7 +21,6 @@
                 "X":{
                     "1": {
                         "rwy": "13L",
-                        "climbvia": true,
                         "prio": 1,
                         "wtc": "H",
                         "engineType": "J",
@@ -32,13 +31,11 @@
                 "B":{
                     "1": {
                         "rwy": "31R",
-                        "climbvia": true,
                         "dest": {"EDDF": true, "EDDK": true},
                         "prio": 3
                     }
                 },
                 "R":{
-                    "climbvia": true,
                     "dest": {"EDDF": true, "EDDK": true},
                     "1": {
                         "rwy": "31R",
@@ -54,7 +51,6 @@
                 "D":{
                     "1": {
                         "rwy": "24",
-                        "climbvia": true,
                         "prio": 3,
                         "acftType": {"A388": false},
                         "dest": {"EDDF": true, "EDDK": true}
@@ -63,14 +59,12 @@
                 "K":{
                     "1": {
                         "rwy": "06",
-                        "climbvia": false,
                         "prio": 3,
                         "acftType": {"A388": false},
                         "dest": {"EDDF": true, "EDDK": true}
                     }
                 },
                 "E":{
-                    "climbvia": true,
                     "dest": {"EDDF": true, "EDDK": true},
                     "1": {
                         "rwy": "13R",
@@ -90,7 +84,6 @@
                     }
                 },
                 "M":{
-                    "climbvia": true,
                     "dest": {"EDDF": true, "EDDK": true},
                     "1": {
                         "rwy": "31L",
@@ -111,7 +104,6 @@
                 }
             },
             "KUMIK": {
-                "climbvia": true,
                 "F":{
                     "1": {
                         "rwy": "13L",
@@ -207,21 +199,18 @@
                 "F":{
                     "1": {
                         "rwy": "13L",
-                        "climbvia": true,
                         "prio": 3
                     }
                 },
                 "P":{
                     "1": {
                         "rwy": "13L",
-                        "climbvia": true,
                         "prio": 99
                     }
                 },
                 "Q":{
                     "1": {
                         "rwy": "13L",
-                        "climbvia": true,
                         "prio": 2,
                         "pilotfiled": true
                     }
@@ -229,21 +218,18 @@
                 "W":{
                     "1": {
                         "rwy": "13L",
-                        "climbvia": true,
                         "prio": 99
                     }
                 },
                 "B":{
                     "1": {
                         "rwy": "31R",
-                        "climbvia": true,
                         "prio": 3
                     }
                 },
                 "R":{
                     "1": {
                         "rwy": "31R",
-                        "climbvia": true,
                         "prio": 2,
                         "pilotfiled": true
                     }
@@ -251,7 +237,6 @@
                 "D":{
                     "1": {
                         "rwy": "24",
-                        "climbvia": true,
                         "prio": 4,
                         "acftType": {"A388": false}
                     }
@@ -259,7 +244,6 @@
                 "K":{
                     "1": {
                         "rwy": "06",
-                        "climbvia": true,
                         "prio": 4,
                         "acftType": {"A388": false}
                     }
@@ -267,19 +251,16 @@
                 "C":{
                     "1": {
                         "rwy": "13R",
-                        "climbvia": true,
                         "prio": 99
                     }
                 },
                 "V":{
                     "1": {
                         "rwy": "13R",
-                        "climbvia": true,
                         "prio": 99
                     }
                 },
                 "E":{
-                    "climbvia": true,
                     "1": {
                         "rwy": "13R",
                         "prio": 1,
@@ -298,7 +279,6 @@
                     }
                 },
                 "M":{
-                    "climbvia": true,
                     "1": {
                         "rwy": "31L",
                         "prio": 1,
@@ -319,7 +299,6 @@
                 "N":{
                     "1": {
                         "rwy": "31R",
-                        "climbvia": true,
                         "equip": {"NON-RNAV": true},
                         "prio": 1
                     }
@@ -327,7 +306,6 @@
                 "Y":{
                     "1": {
                         "rwy": "13L",
-                        "climbvia": true,
                         "equip": {"NON-RNAV": true},
                         "prio": 1
                     }
@@ -343,7 +321,6 @@
                 "U":{
                     "1": {
                         "rwy": "06",
-                        "climbvia": true,
                         "equip": {"NON-RNAV": true},
                         "prio": 1,
                         "acftType": {"A388": false}
@@ -351,7 +328,6 @@
                 }
             },
 			"PODIP": {
-                "climbvia": true,
                 "F":{
                     "1": {
                         "rwy": "13L",
@@ -447,19 +423,16 @@
                 "F":{
                     "1": {
                         "rwy": "13L",
-                        "climbvia": true,
                         "prio": 2
                     }
                 },
                 "B":{
                     "1": {
                         "rwy": "31R",
-                        "climbvia": true,
                         "prio": 3
                     }
                 },
                 "R":{
-                    "climbvia": true,
                     "1": {
                         "rwy": "31R",
                         "prio": 2,
@@ -474,7 +447,6 @@
                 "D":{
                     "1": {
                         "rwy": "24",
-                        "climbvia": true,
                         "prio": 3,
                         "acftType": {"A388": false}
                     }
@@ -482,13 +454,11 @@
                 "K":{
                     "1": {
                         "rwy": "06",
-                        "climbvia": true,
                         "prio": 3,
                         "acftType": {"A388": false}
                     }
                 },
                 "E":{
-                    "climbvia": true,
                     "1": {
                         "rwy": "13R",
                         "prio": 1,
@@ -507,7 +477,6 @@
                     }
                 },
                 "M":{
-                    "climbvia": true,
                     "1": {
                         "rwy": "31L",
                         "prio": 1,
@@ -530,42 +499,36 @@
                 "B":{
                     "1": {
                         "rwy": "31R",
-                        "climbvia": true,
                         "prio": 99
                     }
                 },
                 "D":{
                     "1": {
                         "rwy": "24",
-                        "climbvia": true,
                         "prio": 99
                     }
                 },
                 "E":{
                     "1": {
                         "rwy": "13R",
-                        "climbvia": true,
                         "prio": 99
                     }
                 },
                 "F":{
                     "1": {
                         "rwy": "13L",
-                        "climbvia": true,
                         "prio": 99
                     }
                 },
                 "K":{
                     "1": {
                         "rwy": "06",
-                        "climbvia": true,
                         "prio": 99
                     }
                 },
                 "M":{
                     "1": {
                         "rwy": "31L",
-                        "climbvia": true,
                         "prio": 99
                     }
                 }
