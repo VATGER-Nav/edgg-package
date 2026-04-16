@@ -20,6 +20,7 @@ GROUP:EDDF_Kindergarten:AFR:ANE:CFE:DLA:DLH:KLM:LOT
 
 GROUP:EDDF_G:XXX
 GROUP:EDDF_H:XXX
+GROUP:EDDF_J:XXX
 
 // ---------------- Terminal 3 Opening ------------------------
 

@@ -48,6 +48,7 @@ Plugins	Plugin6Display1	Ground Radar display
 Plugins	Plugin7	\EDGG\Plugins\vSID\vSID Plugin Bright\vSID.dll
 Plugins	Plugin7Display0	Standard ES radar screen
 Plugins	Plugin7Display1	Ground Radar display
+Plugins	Plugin8	\EDGG\Plugins\eddft3\eddft3.dll
 ASRFastKeys	1	\EDGG\ASR\Ground\EDDF_GND.asr
 ASRFastKeys	2	\EDGG\ASR\Ground\EDDL_GND.asr
 ASRFastKeys	3	\EDGG\ASR\Ground\EDDS_GND.asr
