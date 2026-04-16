@@ -50,6 +50,7 @@ Plugins	Plugin6Display1	Standard ES radar screen
 Plugins	Plugin7	\EDGG\Plugins\vSID\vSID Plugin Bright\vSID.dll
 Plugins	Plugin7Display0	Standard ES radar screen
 Plugins	Plugin7Display1	Ground Radar display
+Plugins	Plugin8	\EDGG\Plugins\eddft3\eddft3.dll
 TeamSpeakVccs	TsVccsMiniControlX	1744
 TeamSpeakVccs	TsVccsMiniControlY	44
 TeamSpeakVccs	Ts3NickName	YOUR ID
