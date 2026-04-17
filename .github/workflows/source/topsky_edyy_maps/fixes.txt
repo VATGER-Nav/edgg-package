@@ -1,5 +1,0 @@
-MAP:FIXES
-FOLDER:Upper
-COLOR:greysector
-ACTIVE:1
-#import .github\workflows\source\data\navdata\edyy_fixes.txt
