@@ -243,4 +243,5 @@ TopSky plugin:ACList/Traffic Management List 2/m_Column_21:SID:8:1:10011:17:0:0:
 TopSky plugin:ACList/Sector List/m_Column_18:ARWY:4:1:10010:19:0:0:TopSky plugin::
 TopSky plugin:ACList/Sector List/m_Column_19:T:2:1:11:32:0:1:::
 TopSky plugin:ACList/Sector List/m_Column_20:RMK:10:1:38:2:0:1:TopSky plugin:TopSky plugin:
+eddft3:okColor:000.128.000
 END
