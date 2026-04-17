@@ -1,105 +1,206 @@
 //------------------------ RNAV-Transitions ---------------------
 {%- set trans = {
     "13": [
+        'BIFTE',
+        'ERNEP',
+        'ERUKI',
         'GULKO',
         'KOPAG',
         'LEGDU',
-        'DK415',
-        'DK416',
-        'DK417',
-        'DK418',
-        'DK428',
+        'ROKAK',
+        'DK354',
+        'DK425',
+        'DK426',
+        'DK434',
         'DK435',
+        'DK436',
         'DK437',
-        'DK455',
+        'DK454',
+        'DK474',
+        'DK475',
+        'DK476',
+        'DK477',
+        'DK478',
+        'DK486',
+        'DK487',
+        'DK488',
+        'DK497',
     ],
     "31": [
+        'BIFTE',
+        'ERNEP',
+        'ERUKI',
         'GULKO',
         'KOPAG',
+        'LIRMU',
         'RARIX',
-        'DK615',
-        'DK616',
-        'DK617',
+        'DK254',
+        'DK625',
+        'DK626',
         'DK627',
+        'DK628',
+        'DK634',
         'DK635',
         'DK636',
-        'DK637',
-        'DK638',
         'DK654',
-        'DK654',
+        'DK674',
+        'DK675',
+        'DK676',
+        'DK685',
+        'DK686',
+        'DK687',
+        'DK688',
+        'DK695',
+        'DK696',
     ],
     "06": [
+        'BIFTE',
         'BEBSA',
+        'ERNEP',
+        'ERUKI',
         'GULKO',
         'KOPAG',
-        'DK705',
-        'DK717',
-        'DK718',
-        'DK719',
-        'DK729',
-        'DK755',
+        'DK426',
+        'DK726',
+        'DK727',
+        'DK737',
+        'DK738',
+        'DK739',
+        'DK754',
+        'DK774',
+        'DK775',
+        'DK776',
+        'DK777',
+        'DK778',
+        'DK788',
+        'DK789',
+        'DK794',
+        'DK795',
+        'DK796',
+        'DK797',
+        'DK798',
     ],
     "24": [
+        'BIFTE',
+        'ERNEP',
+        'ERUKI',
         'GULKO',
         'KOPAG',
         'KUKIT',
-        'DK515',
+        'DK426',
+        'DK524',
+        'DK525',
+        'DK526',
         'DK527',
+        'DK534',
         'DK535',
         'DK536',
-        'DK537',
-        'DK545',
-        'DK546',
-        'DK547',
+        'DK552',
+        'DK553',
         'DK554',
+        'DK574',
+        'DK575',
+        'DK576',
+        'DK584',
+        'DK585',
+        'DK586',
+        'DK587',
     ],
-    "13N": [
-        'DEPOK',
+    "13G": [
+        'BIFTE',
         'ERNEP',
+        'ERUKI',
         'GULKO',
         'KOPAG',
         'LEGDU',
+        'ROKAK',
+        'DK354',
+        'DK440',
+        'DK441',
+        'DK442',
+        'DK443',
+        'DK444',
+        'DK445',
+        'DK446',
+        'DK450',
         'DK451',
         'DK452',
         'DK453',
         'DK454',
-        'DK455',
-        'DK481',
-        'DK482',
-        'DK483',
-        'DK484',
-        'DK485',
-        'DK491',
-        'DK492',
-        'DK493',
-        'DK494',
-        'DK495',
-        'DK687',
+        'DK460',
+        'DK461',
+        'DK462',
+        'DK463',
+        'DK464',
+        'DK465',
+        'DK466',
+        'DK847',
+        'DK848',
+        'DK867',
+        'DK868',
     ],
-    "31N": [
-        'DEPOK',
+    "31C": [
+        'BIFTE',
         'ERNEP',
+        'ERUKI',
         'GULKO',
         'KOPAG',
+        'LIRMU',
         'RARIX',
+        'DK254',
+        'DK640',
+        'DK641',
+        'DK642',
+        'DK643',
+        'DK644',
+        'DK645',
+        'DK646',
         'DK650',
         'DK651',
         'DK652',
         'DK653',
         'DK654',
-        'DK680',
-        'DK681',
-        'DK682',
-        'DK683',
-        'DK684',
-        'DK685',
-        'DK686',
-        'DK687',
-        'DK690',
-        'DK691',
-        'DK692',
-        'DK693',
-        'DK694',
+        'DK660',
+        'DK661',
+        'DK662',
+        'DK663',
+        'DK664',
+        'DK665',
+        'DK666',
+        'DK847',
+        'DK848',
+        'DK867',
+        'DK868',
+    ],
+    "24E": [
+        'BIFTE',
+        'ERNEP',
+        'ERUKI',
+        'GULKO',
+        'KOPAG',
+        'KUKIT',
+        'DK426',
+        'DK540',
+        'DK541',
+        'DK542',
+        'DK543',
+        'DK544',
+        'DK545',
+        'DK546',
+        'DK550',
+        'DK551',
+        'DK552',
+        'DK553',
+        'DK554',
+        'DK560',
+        'DK561',
+        'DK562',
+        'DK563',
+        'DK564',
+        'DK565',
+        'DK566',
+        'DK567',
+        'DK568',
     ]
 } %}
 
@@ -113,7 +214,9 @@ SYMBOL:FIX3_L:{{fx}}
 {%- endfor %}
 FONTSIZE:=:12
 TEXTALIGN:LB
-TEXT:DK455:455:5:0
+TEXT:DK434:434:5:0
+TEXT:DK454:454:5:0
+TEXT:DK475:475:5:0
 TEXT:LEGDU:LEGDU:5:0
 
 MAP:EDDK 31
@@ -126,7 +229,9 @@ SYMBOL:FIX3_L:{{fx}}
 {%- endfor %}
 FONTSIZE:=:12
 TEXTALIGN:LB
+TEXT:DK634:634:5:0
 TEXT:DK654:654:5:0
+TEXT:DK674:674:5:0
 TEXT:RARIX:RARIX:5:0
 
 MAP:EDDK 06
@@ -138,7 +243,7 @@ SYMBOL:FIX3_L:{{fx}}
 {%- endfor %}
 FONTSIZE:=:12
 TEXTALIGN:LB
-TEXT:DK755:755:5:0
+TEXT:DK754:754:5:0
 TEXT:BEBSA:BEBSA:5:0
 
 MAP:EDDK 24
@@ -155,27 +260,39 @@ TEXT:KUKIT:KUKIT:5:0
 
 // Night Transitions
 
-MAP:S TRANS 13 (Night)
+MAP:G TRANS 13 (Night)
 COLOR:standard
 FOLDER:EDDK
 FONTSIZE:=:12
 TEXTALIGN:LB
-{%- for fx in trans['13N'] if fx not in ['GULKO', 'KOPAG', 'DEPOK', 'ERNEP'] %}
+{%- for fx in trans['13G'] if fx not in ['BIFTE', 'ERNEP', 'ERUKI', 'GULKO', 'KOPAG', 'ROKAK', 'DK354'] %}
 SYMBOL:FIX3_L:{{fx}}:{{fx | replace('DK', '')}}:5:0
 {%- endfor %}
-{%- for fx in ['GULKO', 'KOPAG', 'DEPOK', 'ERNEP'] %}
+{%- for fx in ['BIFTE', 'ERNEP', 'ERUKI', 'GULKO', 'KOPAG', 'ROKAK', 'DK354' ] %}
 SYMBOL:FIX3_L:{{fx}}
 {%- endfor %}
 
-MAP:N TRANS 31 (Night)
+MAP:C TRANS 31 (Night)
 COLOR:standard
 FOLDER:EDDK
 FONTSIZE:=:12
 TEXTALIGN:LB
-{%- for fx in trans['31N'] if fx not in ['GULKO', 'KOPAG', 'DEPOK', 'ERNEP'] %}
+{%- for fx in trans['31C'] if fx not in ['BIFTE', 'ERNEP', 'ERUKI', 'GULKO', 'KOPAG', 'LIRMU', 'DK254' ] %}
 SYMBOL:FIX3_L:{{fx}}:{{fx | replace('DK', '')}}:5:0
 {%- endfor %}
-{%- for fx in ['GULKO', 'KOPAG', 'DEPOK', 'ERNEP'] %}
+{%- for fx in ['BIFTE', 'ERNEP', 'ERUKI', 'GULKO', 'KOPAG', 'LIRMU', 'DK254' ] %}
+SYMBOL:FIX3_L:{{fx}}
+{%- endfor %}
+
+MAP:E TRANS 24 (Night)
+COLOR:standard
+FOLDER:EDDK
+FONTSIZE:=:12
+TEXTALIGN:LB
+{%- for fx in trans['24E'] if fx not in ['BIFTE', 'ERNEP', 'ERUKI', 'GULKO', 'KOPAG'] %}
+SYMBOL:FIX3_L:{{fx}}:{{fx | replace('DK', '')}}:5:0
+{%- endfor %}
+{%- for fx in ['BIFTE', 'ERNEP', 'ERUKI', 'GULKO', 'KOPAG'] %}
 SYMBOL:FIX3_L:{{fx}}
 {%- endfor %}
 
@@ -186,10 +303,10 @@ COLOR:standard
 FOLDER:EDDK
 FONTSIZE:=:12
 TEXTALIGN:LB
-{%- for fx in trans['13'] if fx not in ['GULKO', 'KOPAG'] %}
+{%- for fx in trans['13'] if fx not in ['BIFTE', 'ERNEP', 'ERUKI', 'GULKO', 'KOPAG', 'ROKAK', 'DK354'] %}
 SYMBOL:FIX3_L:{{fx}}:{{fx | replace('DK', '')}}:5:0
 {%- endfor %}
-{%- for fx in ['GULKO', 'KOPAG'] %}
+{%- for fx in ['BIFTE', 'ERNEP', 'ERUKI', 'GULKO', 'KOPAG', 'ROKAK', 'DK354'] %}
 SYMBOL:FIX3_L:{{fx}}
 {%- endfor %}
 
@@ -198,10 +315,10 @@ COLOR:standard
 FOLDER:EDDK
 FONTSIZE:=:12
 TEXTALIGN:LB
-{%- for fx in trans['31'] if fx not in ['GULKO', 'KOPAG'] %}
+{%- for fx in trans['31'] if fx not in ['BIFTE', 'ERNEP', 'ERUKI', 'GULKO', 'KOPAG', 'LIRMU', 'DK254' ] %}
 SYMBOL:FIX3_L:{{fx}}:{{fx | replace('DK', '')}}:5:0
 {%- endfor %}
-{%- for fx in ['GULKO', 'KOPAG'] %}
+{%- for fx in ['BIFTE', 'ERNEP', 'ERUKI', 'GULKO', 'KOPAG', 'LIRMU', 'DK254' ] %}
 SYMBOL:FIX3_L:{{fx}}
 {%- endfor %}
 
@@ -210,10 +327,10 @@ COLOR:standard
 FOLDER:EDDK
 FONTSIZE:=:12
 TEXTALIGN:LB
-{%- for fx in trans['06'] if fx not in ['GULKO', 'KOPAG'] %}
+{%- for fx in trans['06'] if fx not in ['BIFTE', 'ERNEP', 'ERUKI', 'GULKO', 'KOPAG'] %}
 SYMBOL:FIX3_L:{{fx}}:{{fx | replace('DK', '')}}:5:0
 {%- endfor %}
-{%- for fx in ['GULKO', 'KOPAG'] %}
+{%- for fx in ['BIFTE', 'ERNEP', 'ERUKI', 'GULKO', 'KOPAG'] %}
 SYMBOL:FIX3_L:{{fx}}
 {%- endfor %}
 
@@ -222,9 +339,9 @@ COLOR:standard
 FOLDER:EDDK
 FONTSIZE:=:12
 TEXTALIGN:LB
-{%- for fx in trans['24'] if fx not in ['GULKO', 'KOPAG'] %}
+{%- for fx in trans['24'] if fx not in ['BIFTE', 'ERNEP', 'ERUKI', 'GULKO', 'KOPAG'] %}
 SYMBOL:FIX3_L:{{fx}}:{{fx | replace('DK', '')}}:5:0
 {%- endfor %}
-{%- for fx in ['GULKO', 'KOPAG'] %}
+{%- for fx in ['BIFTE', 'ERNEP', 'ERUKI', 'GULKO', 'KOPAG'] %}
 SYMBOL:FIX3_L:{{fx}}
 {%- endfor %}
