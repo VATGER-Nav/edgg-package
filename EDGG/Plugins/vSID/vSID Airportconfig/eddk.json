@@ -15,17 +15,7 @@
                     "1": {
                         "rwy": "13L",
                         "dest": {"EDDF": true, "EDDK": true},
-                        "prio": 2
-                    }
-                },
-                "X":{
-                    "1": {
-                        "rwy": "13L",
-                        "prio": 1,
-                        "wtc": "H",
-                        "engineType": "J",
-                        "dest": {"EDDF": true, "EDDK": true},
-                        "engineCount": 3
+                        "prio": 1
                     }
                 },
                 "B":{
@@ -107,22 +97,13 @@
                 "F":{
                     "1": {
                         "rwy": "13L",
-                        "prio": 3
-                    }
-                },
-                "X":{
-                    "1": {
-                        "rwy": "13L",
-                        "prio": 1,
-                        "wtc": "H",
-                        "engineType": "J",
-                        "engineCount": 3
+                        "prio": 2
                     }
                 },
                 "Q":{
                     "1": {
                         "rwy": "13L",
-                        "prio": 2,
+                        "prio": 1,
                         "pilotfiled": true
                     }
                 },
@@ -310,7 +291,7 @@
                         "prio": 1
                     }
                 },
-                "T":{
+                "X":{
                     "1": {
                         "rwy": "24",
                         "equip": {"NON-RNAV": true},
@@ -331,22 +312,13 @@
                 "F":{
                     "1": {
                         "rwy": "13L",
-                        "prio": 3
-                    }
-                },
-                "X":{
-                    "1": {
-                        "rwy": "13L",
-                        "prio": 1,
-                        "wtc": "H",
-                        "engineType": "J",
-                        "engineCount": 3
+                        "prio": 2
                     }
                 },
                 "Q":{
                     "1": {
                         "rwy": "13L",
-                        "prio": 2,
+                        "prio": 1,
                         "pilotfiled": true
                     }
                 },
