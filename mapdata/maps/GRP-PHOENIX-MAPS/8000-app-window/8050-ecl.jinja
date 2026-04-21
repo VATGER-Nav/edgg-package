@@ -289,13 +289,13 @@ ACTIVE:RWY:ARR:EDFM09:DEP:*
 ACTIVE:RWY:ARR:*:DEP:EDFM27
 ACTIVE:RWY:ARR:*:DEP:EDFM09
 // 09
-{{ ecl_dashes(runways.EDFM['09'], 12) }}
+// It's also confusing IRL
+{{ fix(runways.EDFM['09'].thr).line_to(-1, runways.EDFM['09'].bearing) }}
 {{ marker_ticks(runways.EDFM['09'], [0.5], 0, 0.5) }}
-{{ marker_ticks(runways.EDFM['09'], [10], 0.5, 0.5) }}
 // 27
-{{ ecl_dashes(runways.EDFM['27'], 16) }}
+{{ ecl_dashes(runways.EDFM['27'], 14) }}
 {{ marker_ticks(runways.EDFM['27'], [0.5], 0, 0.5) }}
-{{ marker_ticks(runways.EDFM['27'], [10], 0.5, 0.5) }}
+{{ marker_ticks(runways.EDFM['27'], [6, 12], 0.5, 0.5) }}
 
 MAP:EDFQ ECL:A
 FOLDER:ECL
