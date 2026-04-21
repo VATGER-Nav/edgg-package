@@ -7,3 +7,20 @@ LAYER:4
 ACTIVE:1
 STYLE:Solid:2
 {{ data.notam['notam']['EDDF']['L20_L21'] | to_coordtype('', 'closure', 'TWYCLOSED') }}
+
+MAP:AIP SUP IFR 40/25 - TWY R
+AIRPORT:EDDF
+FOLDER:Constructions
+LAYER:4
+ACTIVE:1
+STYLE:Solid:2
+{{ data.notam['notam']['EDDF']['R_a'] | to_coordtype('', 'closure', 'TWYCLOSED') }}
+{{ data.notam['notam']['EDDF']['R_b'] | to_coordtype('', 'closure', 'TWYCLOSED') }}
+
+MAP:Stand V340
+AIRPORT:EDDF
+FOLDER:Constructions
+ACTIVE:1
+LAYER:4
+STYLE:Solid:2
+{{ data.notam['notam']['EDDF']['S21'] | to_coordtype('','closure', 'TWYCLOSED', 'POLYGON') }}
