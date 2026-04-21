@@ -194,7 +194,7 @@
 { "type": "Feature", "properties": { "name": "S24" }, "geometry": { "type": "Point", "coordinates": [ 467914.875965543673374, 5541998.598677560687065 ] } },
 { "type": "Feature", "properties": { "name": "S17#2" }, "geometry": { "type": "Point", "coordinates": [ 468995.871687370876316, 5542200.581007302738726 ] } },
 { "type": "Feature", "properties": { "name": "S19#2" }, "geometry": { "type": "Point", "coordinates": [ 468901.203922012762632, 5542160.70387205760926 ] } },
-{ "type": "Feature", "properties": { "name": "S13#3" }, "geometry": { "type": "Point", "coordinates": [ 469063.009014892624691, 5542105.99941725935787 ] } },
+{ "type": "Feature", "properties": { "name": "S13#3" }, "geometry": { "type": "Point", "coordinates": [ 469051.379891772579867, 5542087.454169426113367 ] } },
 { "type": "Feature", "properties": { "name": "S21#2" }, "geometry": { "type": "Point", "coordinates": [ 468592.132905281789135, 5542061.979146191850305 ] } },
 { "type": "Feature", "properties": { "name": "R#8" }, "geometry": { "type": "Point", "coordinates": [ 467782.817763010447379, 5541994.286171643063426 ] } },
 { "type": "Feature", "properties": { "name": "S#8" }, "geometry": { "type": "Point", "coordinates": [ 467817.260550625273027, 5541902.555087697692215 ] } }

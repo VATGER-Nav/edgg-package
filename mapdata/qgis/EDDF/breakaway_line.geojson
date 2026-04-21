@@ -93,6 +93,12 @@
 { "type": "Feature", "properties": { "name": "S10_4b" }, "geometry": { "type": "LineString", "coordinates": [ [ 469428.016673134639859, 5542404.562016614712775 ], [ 469455.215019103139639, 5542391.903028636239469 ] ] } },
 { "type": "Feature", "properties": { "name": "S10_2a" }, "geometry": { "type": "LineString", "coordinates": [ [ 469595.27754760440439, 5542334.926917849108577 ], [ 469588.970191856380552, 5542321.31746291834861 ] ] } },
 { "type": "Feature", "properties": { "name": "S10_2b" }, "geometry": { "type": "LineString", "coordinates": [ [ 469592.122684478294104, 5542328.122747491113842 ], [ 469619.315179954748601, 5542315.45119708403945 ] ] } },
-{ "type": "Feature", "properties": { "name": "S10_2c" }, "geometry": { "type": "LineString", "coordinates": [ [ 469592.123830796219409, 5542328.122205910272896 ], [ 469564.931335318367928, 5542340.793756315484643 ] ] } }
+{ "type": "Feature", "properties": { "name": "S10_2c" }, "geometry": { "type": "LineString", "coordinates": [ [ 469592.123830796219409, 5542328.122205910272896 ], [ 469564.931335318367928, 5542340.793756315484643 ] ] } },
+{ "type": "Feature", "properties": { "name": "S19_2a" }, "geometry": { "type": "LineString", "coordinates": [ [ 468932.164464761735871, 5542214.266480890102684 ], [ 468918.087265715235844, 5542209.08647442329675 ] ] } },
+{ "type": "Feature", "properties": { "name": "S19_2b" }, "geometry": { "type": "LineString", "coordinates": [ [ 468925.125419616932049, 5542211.67770916596055 ], [ 468935.426589052425697, 5542183.50172811280936 ] ] } },
+{ "type": "Feature", "properties": { "name": "S19_1a" }, "geometry": { "type": "LineString", "coordinates": [ [ 469004.245284735166933, 5542017.228677159175277 ], [ 468990.168085688666906, 5542012.048670692369342 ] ] } },
+{ "type": "Feature", "properties": { "name": "S19_1b" }, "geometry": { "type": "LineString", "coordinates": [ [ 468997.206239590363111, 5542014.639905435033143 ], [ 469007.507409025856759, 5541986.463924381881952 ] ] } },
+{ "type": "Feature", "properties": { "name": "S21a" }, "geometry": { "type": "LineString", "coordinates": [ [ 468625.109088364115451, 5542106.616346715018153 ], [ 468611.031889317615423, 5542101.436340248212218 ] ] } },
+{ "type": "Feature", "properties": { "name": "S21b" }, "geometry": { "type": "LineString", "coordinates": [ [ 468618.070043219311628, 5542104.027574990876019 ], [ 468628.371212654805277, 5542075.851593937724829 ] ] } }
 ]
 }

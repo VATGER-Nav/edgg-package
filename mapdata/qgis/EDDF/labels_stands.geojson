@@ -247,6 +247,10 @@
 { "type": "Feature", "properties": { "name": "J12" }, "geometry": { "type": "Point", "coordinates": [ 469327.736994710227009, 5542306.57446308247745 ] } },
 { "type": "Feature", "properties": { "name": "J15" }, "geometry": { "type": "Point", "coordinates": [ 469229.770068206009455, 5542236.393830209039152 ] } },
 { "type": "Feature", "properties": { "name": "J3" }, "geometry": { "type": "Point", "coordinates": [ 469691.507916439441033, 5542023.643260052427649 ] } },
-{ "type": "Feature", "properties": { "name": "J1" }, "geometry": { "type": "Point", "coordinates": [ 469744.206260558101349, 5541999.361943716183305 ] } }
+{ "type": "Feature", "properties": { "name": "J1" }, "geometry": { "type": "Point", "coordinates": [ 469744.206260558101349, 5541999.361943716183305 ] } },
+{ "type": "Feature", "properties": { "name": "V333" }, "geometry": { "type": "Point", "coordinates": [ 468862.341860924963839, 5541983.170248374342918 ] } },
+{ "type": "Feature", "properties": { "name": "V335" }, "geometry": { "type": "Point", "coordinates": [ 468833.826722329948097, 5542061.514947776682675 ] } },
+{ "type": "Feature", "properties": { "name": "V337" }, "geometry": { "type": "Point", "coordinates": [ 468803.67763196589658, 5542144.348892768844962 ] } },
+{ "type": "Feature", "properties": { "name": "V340" }, "geometry": { "type": "Point", "coordinates": [ 468765.333378384122625, 5542129.180690229870379 ] } }
 ]
 }
