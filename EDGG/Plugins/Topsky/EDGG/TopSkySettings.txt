@@ -45,7 +45,6 @@ Color_Coordination=0,0,0
 Color_Informed=0,0,0
 Color_Redundant=0,0,0
 Color_Unconcerned=0,0,0
-Color_Unknown=0,0,0
 
 Color_ACF_Via_CFL
 Color_AIW_Intrusion=255,168,0
@@ -184,18 +183,17 @@ Color_Standard_RDF
 Color_Suite_Highlight=0,100,0
 Color_System_Calculated_TOC=126,192,238
 Color_System_Calculated_TOD=126,192,238
-Color_TSA_Active=201,201,127
-Color_TSA_Border_Highlight=255,255,255
-Color_TSA_Filter
-Color_TSA_Preactive=214,216,150
 Color_Temp_Track_Highlight
 Color_Text_Notes
 Color_TopShadow=117,117,117
 Color_Track_Default=130,130,130
 Color_Track_Highlight=0,0,255
-Color_TSA_Border_Highlight=0,0,0
-Color_TSA_Filter=0,0,255
 Color_Trough
+Color_TSA_Active=201,201,127
+Color_TSA_Border_Highlight=255,255,255
+Color_TSA_Filter
+Color_TSA_Preactive=214,216,150
+Color_Unknown=250,162,0
 Color_Urgency=255,0,0
 Color_Urgency_FL=255,0,0
 Color_VAW_Profile
@@ -425,7 +423,6 @@ Color_Coordination=15,120,200
 Color_Informed=68,141,208
 Color_Redundant=110,110,110
 Color_Unconcerned=204,127,166
-Color_Unknown=239,224,42
 
 RDF_Mode=1
 RDF_Floor=1400
@@ -443,7 +440,6 @@ Color_Coordination=15,120,200
 Color_Informed=68,141,208
 Color_Redundant=110,110,110
 Color_Unconcerned=204,127,166
-Color_Unknown=239,224,42
 
 Divergence_RAM=0
 
@@ -459,7 +455,6 @@ Color_Coordination=15,120,200
 Color_Informed=68,141,208
 Color_Redundant=110,110,110
 Color_Unconcerned=204,127,166
-Color_Unknown=239,224,42
 
 Divergence_RAM=0
 

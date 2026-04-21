@@ -4,7 +4,6 @@ Color_Coordination=255,255,255
 Color_Informed=255,255,255
 Color_Redundant=255,255,255
 Color_Unconcerned=255,255,255
-Color_Unknown=255,255,255
 
 Color_Active_Map=205,0,0
 Color_Active_Text_Map=198,174,58
@@ -38,8 +37,6 @@ Color_Rwy_Locked=0,255,0
 Color_SEP_Tool_1=153,217,234
 Color_SEP_Tool_2=255,153,184
 Color_SEP_Tool_3=255,209,143
-Color_SEP_Tool_4=197,64,212
-Color_SEP_Tool_5=166,160,245
 Color_Select=151,215,150
 Color_Sid_Star_Allocation=0,255,0
 Color_VFR=55,156,255
