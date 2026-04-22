@@ -85,3 +85,11 @@ STYLE:Solid:2
 STYLE:Solid:1
 {{ data.eddf_kml['layout']['closures']['symb']['Y_a'] | to_coordtype('','closure-symbol') }}
 {{ data.eddf_kml['layout']['closures']['symb']['Y_b'] | to_coordtype('','closure-symbol') }}
+
+MAP:Stands V333-V340 (N/A in Flight Sims)
+AIRPORT:EDDF
+FOLDER:Constructions
+ACTIVE:1
+LAYER:4
+STYLE:Solid:2
+{{ data.eddf_kml['layout']['closures']['poly']['S16_S21'] | to_coordtype('','closure', 'TWYCLOSED', 'POLYGON') }}
