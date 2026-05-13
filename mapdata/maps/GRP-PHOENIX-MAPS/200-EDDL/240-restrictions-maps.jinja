@@ -90,12 +90,21 @@ COLOR:restrictions-C
     'B01',
     'B10',
     'B11',
+    'V10',
+    'V11',
+    'V12',
+    'V13',
+    'V14',
+    'V15',
+    'V16',
+    'V17',
+    'V18',
+    'V19',
+    'V20',
+    'V21',
+    'V22',
+    'V23',
     'V24',
-    'V25',
-    'V26',
-    'V27',
-    'V28',
-    'V29',
     'V38',
     'V39',
     'V40',
@@ -106,8 +115,8 @@ COLOR:restrictions-C
     'V45',
     'V46',
     'V47',
+    'V48',
     'V49',
-    'V51',
     'V61',
     'V62',
     'V63',
@@ -155,9 +164,7 @@ COLOR:restrictions-C
     'V05A',
     'V07A',
     'V08A',
-    'V08C',
-    'V11A',
-    'V11C'
+    'V08C'
 ] %}
 {{- data.eddl_kml['layout']['restrictions']['stands'][desig] | to_symbol('STAND_S') }}
 {% endfor %}
@@ -171,30 +178,9 @@ COLOR:restrictions-D
     'V02',
     'V03',
     'V05',
-    'V07',
-    'V12',
-    'V14',
-    'V16',
-    'V17',
-    'V19',
-    'V20',
-    'V22',
-    'V23'
+    'V07'
 ] %}
 {{- data.eddl_kml['layout']['restrictions']['stands'][desig] | to_symbol('STAND') }}
-{% endfor %}
-{% for desig in
-[
-    'V12',
-    'V14',
-    'V16',
-    'V17',
-    'V19',
-    'V20',
-    'V22',
-    'V23'
-] %}
-{{- data.eddl_kml['layout']['restrictions']['stands'][desig] | to_text('MAX B753:0:15') }}
 {% endfor %}
 // Secondary Stands
 {% for desig in
@@ -227,9 +213,11 @@ COLOR:restrictions-E
     'C01',
     'C06',
     'C07',
+    'V11A',
+    'V12A',
     'V38A',
-    'V39A',
-    'V41A',
+    'V40A',
+    'V42A',
     'V61A',
     'V72A',
     'V101',
@@ -247,9 +235,11 @@ COLOR:restrictions-E
     'A11',
     'A12A',
     'V01',
+    'V11A',
+    'V12A',
     'V38A',
-    'V39A',
-    'V41A',
+    'V40A',
+    'V42A',
     'V61A',
     'V72A',
     'V82A',
@@ -268,7 +258,7 @@ COLOR:restrictions-F
 {% for desig in
 [
     'V08B',
-    'V11B',
+    'V10A',
     'V38B'
 ] %}
 {{- data.eddl_kml['layout']['restrictions']['stands'][desig] | to_symbol('STAND_S') }}

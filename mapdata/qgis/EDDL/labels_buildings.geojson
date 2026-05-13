@@ -10,7 +10,7 @@
 { "type": "Feature", "properties": { "name": "A" }, "geometry": { "type": "Point", "coordinates": [ 344229.912631418206729, 5683474.510231713764369 ] } },
 { "type": "Feature", "properties": { "name": "B" }, "geometry": { "type": "Point", "coordinates": [ 344023.521072017611004, 5683293.16238328628242 ] } },
 { "type": "Feature", "properties": { "name": "C" }, "geometry": { "type": "Point", "coordinates": [ 343979.534766418626532, 5682999.857969314791262 ] } },
-{ "type": "Feature", "properties": { "name": "Fire station" }, "geometry": { "type": "Point", "coordinates": [ 344445.784985161910299, 5683537.410528538748622 ] } },
+{ "type": "Feature", "properties": { "name": "Fire station#1" }, "geometry": { "type": "Point", "coordinates": [ 344445.784985161910299, 5683537.410528538748622 ] } },
 { "type": "Feature", "properties": { "name": "Cargo Center" }, "geometry": { "type": "Point", "coordinates": [ 344942.17330844164826, 5683842.336065303534269 ] } },
 { "type": "Feature", "properties": { "name": "Condor Technik" }, "geometry": { "type": "Point", "coordinates": [ 345109.617531747324392, 5683968.122669946402311 ] } },
 { "type": "Feature", "properties": { "name": "Nayak" }, "geometry": { "type": "Point", "coordinates": [ 345274.118632780504413, 5684111.388518650084734 ] } },
@@ -18,6 +18,7 @@
 { "type": "Feature", "properties": { "name": "Hangar 9" }, "geometry": { "type": "Point", "coordinates": [ 345420.535010872932617, 5684214.769309050403535 ] } },
 { "type": "Feature", "properties": { "name": "Tower" }, "geometry": { "type": "Point", "coordinates": [ 344514.015275359037332, 5683173.672381886281073 ] } },
 { "type": "Feature", "properties": { "name": "Railway station" }, "geometry": { "type": "Point", "coordinates": [ 345634.381545678246766, 5684577.211512750945985 ] } },
-{ "type": "Feature", "properties": { "name": "Photo-voltaic" }, "geometry": { "type": "Point", "coordinates": [ 342904.157003387750592, 5684350.093073487281799 ] } }
+{ "type": "Feature", "properties": { "name": "Photo-voltaic" }, "geometry": { "type": "Point", "coordinates": [ 342904.157003387750592, 5684350.093073487281799 ] } },
+{ "type": "Feature", "properties": { "name": "Fire station#2" }, "geometry": { "type": "Point", "coordinates": [ 344708.00234483362874, 5683716.648904025554657 ] } }
 ]
 }
