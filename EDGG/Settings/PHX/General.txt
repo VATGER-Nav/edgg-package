@@ -152,7 +152,7 @@ m_Column:STS:5:1:3:13:13:1:Ground Radar plugin:Ground Radar plugin:Ground Radar 
 m_Column:SI:4:1:10061:20:0:1:TopSky plugin:::0:0.0
 END
 TAXIOUT
-m_Visible:1
+m_Visible:0
 m_X:1897
 m_Y:493
 m_LineNumber:0

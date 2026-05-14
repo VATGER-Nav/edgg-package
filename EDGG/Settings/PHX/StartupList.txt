@@ -4,11 +4,11 @@ m_X:702
 m_Y:46
 m_LineNumber:0
 m_Resizable:1
-m_OrderingColumn:7
+m_OrderingColumn:6
 m_HeaderOnly:1
 m_Column:TIMER:5:1:645:0:0:0:vSID:::0:0.0
 m_Column:REQ:5:1:644:744:0:1:vSID:vSID::0:0.0
-m_Column:EOBT:5:1:1:117:154:0:CDM Plugin:CDM Plugin:CDM Plugin:0:0.0
+m_Column:EOBT:5:1:1:120:0:0:CDM Plugin:CDM Plugin::0:0.0
 m_Column:CALLSIGN:10:0:9:0:143:1:::TopSky plugin:0:0.0
 m_Column:STAND:7:1:1:0:1:1:Ground Radar plugin::Ground Radar plugin:0:0.0
 m_Column:C:2:1:10046:747:748:1:TopSky plugin:vSID:vSID:1:0.0
