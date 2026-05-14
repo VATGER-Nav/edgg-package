@@ -27,7 +27,6 @@
                 "R": {
                     "1": {
                         "rwy": "09",
-                        "climbvia": true,
                         "prio": 1
                     }
                 },
@@ -44,6 +43,7 @@
                 "R": {
                     "1": {
                         "rwy": "09",
+                        "climbvia": true,
                         "prio": 1
                     }
                 },
@@ -51,6 +51,15 @@
                     "1": {
                         "rwy": "27",
                         "climbvia": true,
+                        "prio": 1
+                    }
+                }
+			},
+            "EDLV": {
+                "equip": {"RNAV": true, "NON-RNAV": true},
+                "E": {
+                    "1": {
+                        "rwy": "09",
                         "prio": 1
                     }
                 }
