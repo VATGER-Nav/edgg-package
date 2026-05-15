@@ -49,10 +49,10 @@ Plugins	Plugin5	\EDGG\Plugins\IASsure\Common\IASsure.dll
 Plugins	Plugin6	\EDGG\Plugins\AMAN\Aman.dll
 Plugins	Plugin6Display0	Ground Radar display
 Plugins	Plugin6Display1	Standard ES radar screen
-Plugins	Plugin7	\EDGG\Plugins\CDM\CDM NIGHT\CDM.dll
+Plugins	Plugin7	\EDGG\Plugins\CDM\CDM DAY\CDM.dll
 Plugins	Plugin7Display0	Ground Radar display
 Plugins	Plugin7Display1	Standard ES radar screen
-Plugins	Plugin8	\EDGG\Plugins\vSID\vSID Plugin Dark\vSID.dll
+Plugins	Plugin8	\EDGG\Plugins\vSID\vSID Plugin Bright\vSID.dll
 Plugins	Plugin8Display0	Standard ES radar screen
 Plugins	Plugin8Display1	Ground Radar display
 Plugins	Plugin9	\EDGG\Plugins\eddft3\eddft3.dll
