@@ -34781,13 +34781,10 @@
 	</Folder>
 	<Folder>
 		<name>breakaway</name>
-		<visibility>0</visibility>
 		<Folder>
 			<name>poly</name>
-			<visibility>0</visibility>
 			<Placemark id="breakaway_poly.1">
 				<name>N7_N8_1</name>
-				<visibility>0</visibility>
 				<Style>
 					<LineStyle>
 						<color>ff0000ff</color>
@@ -34808,7 +34805,6 @@
 			</Placemark>
 			<Placemark id="breakaway_poly.2">
 				<name>N7_N8_3</name>
-				<visibility>0</visibility>
 				<Style>
 					<LineStyle>
 						<color>ff0000ff</color>
@@ -34829,7 +34825,6 @@
 			</Placemark>
 			<Placemark id="breakaway_poly.3">
 				<name>N7_N8_5</name>
-				<visibility>0</visibility>
 				<Style>
 					<LineStyle>
 						<color>ff0000ff</color>
@@ -34850,7 +34845,6 @@
 			</Placemark>
 			<Placemark id="breakaway_poly.4">
 				<name>N7_N8_2</name>
-				<visibility>0</visibility>
 				<Style>
 					<LineStyle>
 						<color>ff0000ff</color>
@@ -34871,7 +34865,6 @@
 			</Placemark>
 			<Placemark id="breakaway_poly.5">
 				<name>N7_N8_4</name>
-				<visibility>0</visibility>
 				<Style>
 					<LineStyle>
 						<color>ff0000ff</color>
@@ -34892,7 +34885,6 @@
 			</Placemark>
 			<Placemark id="breakaway_poly.6">
 				<name>N7_N8_6</name>
-				<visibility>0</visibility>
 				<Style>
 					<LineStyle>
 						<color>ff0000ff</color>
@@ -34913,7 +34905,6 @@
 			</Placemark>
 			<Placemark id="breakaway_poly.7">
 				<name>N7_N8_7</name>
-				<visibility>0</visibility>
 				<Style>
 					<LineStyle>
 						<color>ff0000ff</color>
@@ -34934,7 +34925,6 @@
 			</Placemark>
 			<Placemark id="breakaway_poly.8">
 				<name>N7_N8_9</name>
-				<visibility>0</visibility>
 				<Style>
 					<LineStyle>
 						<color>ff0000ff</color>
@@ -34955,7 +34945,6 @@
 			</Placemark>
 			<Placemark id="breakaway_poly.9">
 				<name>N5_1</name>
-				<visibility>0</visibility>
 				<Style>
 					<LineStyle>
 						<color>ff0000ff</color>
@@ -34976,7 +34965,6 @@
 			</Placemark>
 			<Placemark id="breakaway_poly.10">
 				<name>N5_2</name>
-				<visibility>0</visibility>
 				<Style>
 					<LineStyle>
 						<color>ff0000ff</color>
@@ -34997,7 +34985,6 @@
 			</Placemark>
 			<Placemark id="breakaway_poly.11">
 				<name>N5_3</name>
-				<visibility>0</visibility>
 				<Style>
 					<LineStyle>
 						<color>ff0000ff</color>
@@ -35018,7 +35005,6 @@
 			</Placemark>
 			<Placemark id="breakaway_poly.12">
 				<name>N3_1</name>
-				<visibility>0</visibility>
 				<Style>
 					<LineStyle>
 						<color>ff0000ff</color>
@@ -35039,7 +35025,6 @@
 			</Placemark>
 			<Placemark id="breakaway_poly.13">
 				<name>N3_2</name>
-				<visibility>0</visibility>
 				<Style>
 					<LineStyle>
 						<color>ff0000ff</color>
@@ -35060,7 +35045,6 @@
 			</Placemark>
 			<Placemark id="breakaway_poly.14">
 				<name>N_2</name>
-				<visibility>0</visibility>
 				<Style>
 					<LineStyle>
 						<color>ff0000ff</color>
@@ -35081,7 +35065,6 @@
 			</Placemark>
 			<Placemark id="breakaway_poly.15">
 				<name>N_1</name>
-				<visibility>0</visibility>
 				<Style>
 					<LineStyle>
 						<color>ff0000ff</color>
@@ -35102,7 +35085,6 @@
 			</Placemark>
 			<Placemark id="breakaway_poly.16">
 				<name>L_2</name>
-				<visibility>0</visibility>
 				<Style>
 					<LineStyle>
 						<color>ff0000ff</color>
@@ -35123,7 +35105,6 @@
 			</Placemark>
 			<Placemark id="breakaway_poly.17">
 				<name>L_1</name>
-				<visibility>0</visibility>
 				<Style>
 					<LineStyle>
 						<color>ff0000ff</color>
@@ -35144,7 +35125,6 @@
 			</Placemark>
 			<Placemark id="breakaway_poly.18">
 				<name>N13</name>
-				<visibility>0</visibility>
 				<Style>
 					<LineStyle>
 						<color>ff0000ff</color>
@@ -35165,7 +35145,6 @@
 			</Placemark>
 			<Placemark id="breakaway_poly.19">
 				<name>N14</name>
-				<visibility>0</visibility>
 				<Style>
 					<LineStyle>
 						<color>ff0000ff</color>
@@ -35186,7 +35165,6 @@
 			</Placemark>
 			<Placemark id="breakaway_poly.20">
 				<name>P1_1</name>
-				<visibility>0</visibility>
 				<Style>
 					<LineStyle>
 						<color>ff0000ff</color>
@@ -35207,7 +35185,6 @@
 			</Placemark>
 			<Placemark id="breakaway_poly.21">
 				<name>P1_2</name>
-				<visibility>0</visibility>
 				<Style>
 					<LineStyle>
 						<color>ff0000ff</color>
@@ -35228,7 +35205,6 @@
 			</Placemark>
 			<Placemark id="breakaway_poly.22">
 				<name>Y7_2</name>
-				<visibility>0</visibility>
 				<Style>
 					<LineStyle>
 						<color>ff0000ff</color>
@@ -35249,7 +35225,6 @@
 			</Placemark>
 			<Placemark id="breakaway_poly.23">
 				<name>Y7_3</name>
-				<visibility>0</visibility>
 				<Style>
 					<LineStyle>
 						<color>ff0000ff</color>
@@ -35270,7 +35245,6 @@
 			</Placemark>
 			<Placemark id="breakaway_poly.24">
 				<name>S11_6</name>
-				<visibility>0</visibility>
 				<Style>
 					<LineStyle>
 						<color>ff0000ff</color>
@@ -35291,7 +35265,6 @@
 			</Placemark>
 			<Placemark id="breakaway_poly.25">
 				<name>S11_7</name>
-				<visibility>0</visibility>
 				<Style>
 					<LineStyle>
 						<color>ff0000ff</color>
@@ -35312,7 +35285,6 @@
 			</Placemark>
 			<Placemark id="breakaway_poly.26">
 				<name>S13_1</name>
-				<visibility>0</visibility>
 				<Style>
 					<LineStyle>
 						<color>ff0000ff</color>
@@ -35333,7 +35305,6 @@
 			</Placemark>
 			<Placemark id="breakaway_poly.27">
 				<name>S15_4</name>
-				<visibility>0</visibility>
 				<Style>
 					<LineStyle>
 						<color>ff0000ff</color>
@@ -35354,7 +35325,6 @@
 			</Placemark>
 			<Placemark id="breakaway_poly.28">
 				<name>S7_2</name>
-				<visibility>0</visibility>
 				<Style>
 					<LineStyle>
 						<color>ff0000ff</color>
@@ -35375,7 +35345,6 @@
 			</Placemark>
 			<Placemark id="breakaway_poly.29">
 				<name>S5_3</name>
-				<visibility>0</visibility>
 				<Style>
 					<LineStyle>
 						<color>ff0000ff</color>
@@ -35396,7 +35365,6 @@
 			</Placemark>
 			<Placemark id="breakaway_poly.30">
 				<name>S5_1</name>
-				<visibility>0</visibility>
 				<Style>
 					<LineStyle>
 						<color>ff0000ff</color>
@@ -35417,7 +35385,6 @@
 			</Placemark>
 			<Placemark id="breakaway_poly.31">
 				<name>S4_1</name>
-				<visibility>0</visibility>
 				<Style>
 					<LineStyle>
 						<color>ff0000ff</color>
@@ -35438,7 +35405,6 @@
 			</Placemark>
 			<Placemark id="breakaway_poly.32">
 				<name>S4_2</name>
-				<visibility>0</visibility>
 				<Style>
 					<LineStyle>
 						<color>ff0000ff</color>
@@ -35459,7 +35425,6 @@
 			</Placemark>
 			<Placemark id="breakaway_poly.33">
 				<name>N_N4_1</name>
-				<visibility>0</visibility>
 				<Style>
 					<LineStyle>
 						<color>ff0000ff</color>
@@ -35480,7 +35445,6 @@
 			</Placemark>
 			<Placemark id="breakaway_poly.34">
 				<name>N_N4_2</name>
-				<visibility>0</visibility>
 				<Style>
 					<LineStyle>
 						<color>ff0000ff</color>
@@ -35501,7 +35465,6 @@
 			</Placemark>
 			<Placemark id="breakaway_poly.35">
 				<name>Y7_1</name>
-				<visibility>0</visibility>
 				<Style>
 					<LineStyle>
 						<color>ff0000ff</color>
@@ -35522,7 +35485,6 @@
 			</Placemark>
 			<Placemark id="breakaway_poly.36">
 				<name>S15_2</name>
-				<visibility>0</visibility>
 				<Style>
 					<LineStyle>
 						<color>ff0000ff</color>
@@ -35535,7 +35497,7 @@
 					<outerBoundaryIs>
 						<LinearRing>
 							<coordinates>
-								8.573551136324591,50.0283912700584,0 8.57360053586414,50.0283056328579,0 8.573393219532059,50.0283047363463,0 8.573551136324591,50.0283912700584,0 
+								8.57323530330738,50.0282182024195,0 8.573185903210019,50.02830383946431,0 8.573393219532059,50.0283047363463,0 8.57323530330738,50.0282182024195,0 
 							</coordinates>
 						</LinearRing>
 					</outerBoundaryIs>
@@ -35543,7 +35505,6 @@
 			</Placemark>
 			<Placemark id="breakaway_poly.37">
 				<name>S13_3</name>
-				<visibility>0</visibility>
 				<Style>
 					<LineStyle>
 						<color>ff0000ff</color>
@@ -35564,7 +35525,6 @@
 			</Placemark>
 			<Placemark id="breakaway_poly.38">
 				<name>S13_5</name>
-				<visibility>0</visibility>
 				<Style>
 					<LineStyle>
 						<color>ff0000ff</color>
@@ -35585,7 +35545,6 @@
 			</Placemark>
 			<Placemark id="breakaway_poly.39">
 				<name>S8_5</name>
-				<visibility>0</visibility>
 				<Style>
 					<LineStyle>
 						<color>ff0000ff</color>
@@ -35606,7 +35565,6 @@
 			</Placemark>
 			<Placemark id="breakaway_poly.40">
 				<name>S8_3</name>
-				<visibility>0</visibility>
 				<Style>
 					<LineStyle>
 						<color>ff0000ff</color>
@@ -35627,7 +35585,6 @@
 			</Placemark>
 			<Placemark id="breakaway_poly.41">
 				<name>S8_1</name>
-				<visibility>0</visibility>
 				<Style>
 					<LineStyle>
 						<color>ff0000ff</color>
@@ -35648,7 +35605,6 @@
 			</Placemark>
 			<Placemark id="breakaway_poly.42">
 				<name>S10_4</name>
-				<visibility>0</visibility>
 				<Style>
 					<LineStyle>
 						<color>ff0000ff</color>
@@ -35669,7 +35625,6 @@
 			</Placemark>
 			<Placemark id="breakaway_poly.43">
 				<name>S10_2</name>
-				<visibility>0</visibility>
 				<Style>
 					<LineStyle>
 						<color>ff0000ff</color>
@@ -35690,7 +35645,6 @@
 			</Placemark>
 			<Placemark id="breakaway_poly.44">
 				<name>S19_1</name>
-				<visibility>0</visibility>
 				<Style>
 					<LineStyle>
 						<color>ff0000ff</color>
@@ -35711,7 +35665,6 @@
 			</Placemark>
 			<Placemark id="breakaway_poly.45">
 				<name>S19_2</name>
-				<visibility>0</visibility>
 				<Style>
 					<LineStyle>
 						<color>ff0000ff</color>
@@ -35732,7 +35685,6 @@
 			</Placemark>
 			<Placemark id="breakaway_poly.46">
 				<name>S21</name>
-				<visibility>0</visibility>
 				<Style>
 					<LineStyle>
 						<color>ff0000ff</color>
@@ -35754,10 +35706,8 @@
 		</Folder>
 		<Folder>
 			<name>line</name>
-			<visibility>0</visibility>
 			<Placemark id="breakaway_line.1">
 				<name>N7_N8_1a</name>
-				<visibility>0</visibility>
 				<Style>
 					<LineStyle>
 						<color>ff0000ff</color>
@@ -35774,7 +35724,6 @@
 			</Placemark>
 			<Placemark id="breakaway_line.2">
 				<name>N7_N8_1b</name>
-				<visibility>0</visibility>
 				<Style>
 					<LineStyle>
 						<color>ff0000ff</color>
@@ -35791,7 +35740,6 @@
 			</Placemark>
 			<Placemark id="breakaway_line.3">
 				<name>N7_N8_3a</name>
-				<visibility>0</visibility>
 				<Style>
 					<LineStyle>
 						<color>ff0000ff</color>
@@ -35808,7 +35756,6 @@
 			</Placemark>
 			<Placemark id="breakaway_line.4">
 				<name>N7_N8_3b</name>
-				<visibility>0</visibility>
 				<Style>
 					<LineStyle>
 						<color>ff0000ff</color>
@@ -35825,7 +35772,6 @@
 			</Placemark>
 			<Placemark id="breakaway_line.5">
 				<name>N7_N8_5a</name>
-				<visibility>0</visibility>
 				<Style>
 					<LineStyle>
 						<color>ff0000ff</color>
@@ -35842,7 +35788,6 @@
 			</Placemark>
 			<Placemark id="breakaway_line.6">
 				<name>N7_N8_5b</name>
-				<visibility>0</visibility>
 				<Style>
 					<LineStyle>
 						<color>ff0000ff</color>
@@ -35859,7 +35804,6 @@
 			</Placemark>
 			<Placemark id="breakaway_line.7">
 				<name>N7_N8_2a</name>
-				<visibility>0</visibility>
 				<Style>
 					<LineStyle>
 						<color>ff0000ff</color>
@@ -35876,7 +35820,6 @@
 			</Placemark>
 			<Placemark id="breakaway_line.8">
 				<name>N7_N8_2b</name>
-				<visibility>0</visibility>
 				<Style>
 					<LineStyle>
 						<color>ff0000ff</color>
@@ -35893,7 +35836,6 @@
 			</Placemark>
 			<Placemark id="breakaway_line.9">
 				<name>N7_N8_4a</name>
-				<visibility>0</visibility>
 				<Style>
 					<LineStyle>
 						<color>ff0000ff</color>
@@ -35910,7 +35852,6 @@
 			</Placemark>
 			<Placemark id="breakaway_line.10">
 				<name>N7_N8_4b</name>
-				<visibility>0</visibility>
 				<Style>
 					<LineStyle>
 						<color>ff0000ff</color>
@@ -35927,7 +35868,6 @@
 			</Placemark>
 			<Placemark id="breakaway_line.11">
 				<name>N7_N8_6a</name>
-				<visibility>0</visibility>
 				<Style>
 					<LineStyle>
 						<color>ff0000ff</color>
@@ -35944,7 +35884,6 @@
 			</Placemark>
 			<Placemark id="breakaway_line.12">
 				<name>N7_N8_6b</name>
-				<visibility>0</visibility>
 				<Style>
 					<LineStyle>
 						<color>ff0000ff</color>
@@ -35961,7 +35900,6 @@
 			</Placemark>
 			<Placemark id="breakaway_line.13">
 				<name>N7_N8_7a</name>
-				<visibility>0</visibility>
 				<Style>
 					<LineStyle>
 						<color>ff0000ff</color>
@@ -35978,7 +35916,6 @@
 			</Placemark>
 			<Placemark id="breakaway_line.14">
 				<name>N7_N8_7b</name>
-				<visibility>0</visibility>
 				<Style>
 					<LineStyle>
 						<color>ff0000ff</color>
@@ -35995,7 +35932,6 @@
 			</Placemark>
 			<Placemark id="breakaway_line.15">
 				<name>N7_N8_9a</name>
-				<visibility>0</visibility>
 				<Style>
 					<LineStyle>
 						<color>ff0000ff</color>
@@ -36012,7 +35948,6 @@
 			</Placemark>
 			<Placemark id="breakaway_line.16">
 				<name>N7_N8_9b</name>
-				<visibility>0</visibility>
 				<Style>
 					<LineStyle>
 						<color>ff0000ff</color>
@@ -36029,7 +35964,6 @@
 			</Placemark>
 			<Placemark id="breakaway_line.17">
 				<name>N5_1a</name>
-				<visibility>0</visibility>
 				<Style>
 					<LineStyle>
 						<color>ff0000ff</color>
@@ -36046,7 +35980,6 @@
 			</Placemark>
 			<Placemark id="breakaway_line.18">
 				<name>N5_1b</name>
-				<visibility>0</visibility>
 				<Style>
 					<LineStyle>
 						<color>ff0000ff</color>
@@ -36063,7 +35996,6 @@
 			</Placemark>
 			<Placemark id="breakaway_line.19">
 				<name>N5_2a</name>
-				<visibility>0</visibility>
 				<Style>
 					<LineStyle>
 						<color>ff0000ff</color>
@@ -36080,7 +36012,6 @@
 			</Placemark>
 			<Placemark id="breakaway_line.20">
 				<name>N5_2b</name>
-				<visibility>0</visibility>
 				<Style>
 					<LineStyle>
 						<color>ff0000ff</color>
@@ -36097,7 +36028,6 @@
 			</Placemark>
 			<Placemark id="breakaway_line.21">
 				<name>N5_3a</name>
-				<visibility>0</visibility>
 				<Style>
 					<LineStyle>
 						<color>ff0000ff</color>
@@ -36114,7 +36044,6 @@
 			</Placemark>
 			<Placemark id="breakaway_line.22">
 				<name>N5_3b</name>
-				<visibility>0</visibility>
 				<Style>
 					<LineStyle>
 						<color>ff0000ff</color>
@@ -36131,7 +36060,6 @@
 			</Placemark>
 			<Placemark id="breakaway_line.23">
 				<name>N_N4_1a</name>
-				<visibility>0</visibility>
 				<Style>
 					<LineStyle>
 						<color>ff0000ff</color>
@@ -36148,7 +36076,6 @@
 			</Placemark>
 			<Placemark id="breakaway_line.24">
 				<name>N_N4_1b</name>
-				<visibility>0</visibility>
 				<Style>
 					<LineStyle>
 						<color>ff0000ff</color>
@@ -36165,7 +36092,6 @@
 			</Placemark>
 			<Placemark id="breakaway_line.25">
 				<name>N_N4_2a</name>
-				<visibility>0</visibility>
 				<Style>
 					<LineStyle>
 						<color>ff0000ff</color>
@@ -36182,7 +36108,6 @@
 			</Placemark>
 			<Placemark id="breakaway_line.26">
 				<name>N_N4_2b</name>
-				<visibility>0</visibility>
 				<Style>
 					<LineStyle>
 						<color>ff0000ff</color>
@@ -36199,7 +36124,6 @@
 			</Placemark>
 			<Placemark id="breakaway_line.27">
 				<name>N3_1a</name>
-				<visibility>0</visibility>
 				<Style>
 					<LineStyle>
 						<color>ff0000ff</color>
@@ -36216,7 +36140,6 @@
 			</Placemark>
 			<Placemark id="breakaway_line.28">
 				<name>N3_1b</name>
-				<visibility>0</visibility>
 				<Style>
 					<LineStyle>
 						<color>ff0000ff</color>
@@ -36233,7 +36156,6 @@
 			</Placemark>
 			<Placemark id="breakaway_line.29">
 				<name>N3_2a</name>
-				<visibility>0</visibility>
 				<Style>
 					<LineStyle>
 						<color>ff0000ff</color>
@@ -36250,7 +36172,6 @@
 			</Placemark>
 			<Placemark id="breakaway_line.30">
 				<name>N3_2b</name>
-				<visibility>0</visibility>
 				<Style>
 					<LineStyle>
 						<color>ff0000ff</color>
@@ -36267,7 +36188,6 @@
 			</Placemark>
 			<Placemark id="breakaway_line.31">
 				<name>N_2a</name>
-				<visibility>0</visibility>
 				<Style>
 					<LineStyle>
 						<color>ff0000ff</color>
@@ -36284,7 +36204,6 @@
 			</Placemark>
 			<Placemark id="breakaway_line.32">
 				<name>N_2b</name>
-				<visibility>0</visibility>
 				<Style>
 					<LineStyle>
 						<color>ff0000ff</color>
@@ -36301,7 +36220,6 @@
 			</Placemark>
 			<Placemark id="breakaway_line.33">
 				<name>N_2c</name>
-				<visibility>0</visibility>
 				<Style>
 					<LineStyle>
 						<color>ff0000ff</color>
@@ -36318,7 +36236,6 @@
 			</Placemark>
 			<Placemark id="breakaway_line.34">
 				<name>N_1a</name>
-				<visibility>0</visibility>
 				<Style>
 					<LineStyle>
 						<color>ff0000ff</color>
@@ -36335,7 +36252,6 @@
 			</Placemark>
 			<Placemark id="breakaway_line.35">
 				<name>N_1b</name>
-				<visibility>0</visibility>
 				<Style>
 					<LineStyle>
 						<color>ff0000ff</color>
@@ -36352,7 +36268,6 @@
 			</Placemark>
 			<Placemark id="breakaway_line.36">
 				<name>L_2a</name>
-				<visibility>0</visibility>
 				<Style>
 					<LineStyle>
 						<color>ff0000ff</color>
@@ -36369,7 +36284,6 @@
 			</Placemark>
 			<Placemark id="breakaway_line.37">
 				<name>L_2b</name>
-				<visibility>0</visibility>
 				<Style>
 					<LineStyle>
 						<color>ff0000ff</color>
@@ -36386,7 +36300,6 @@
 			</Placemark>
 			<Placemark id="breakaway_line.38">
 				<name>L_1a</name>
-				<visibility>0</visibility>
 				<Style>
 					<LineStyle>
 						<color>ff0000ff</color>
@@ -36403,7 +36316,6 @@
 			</Placemark>
 			<Placemark id="breakaway_line.39">
 				<name>L_1b</name>
-				<visibility>0</visibility>
 				<Style>
 					<LineStyle>
 						<color>ff0000ff</color>
@@ -36420,7 +36332,6 @@
 			</Placemark>
 			<Placemark id="breakaway_line.40">
 				<name>N13a</name>
-				<visibility>0</visibility>
 				<Style>
 					<LineStyle>
 						<color>ff0000ff</color>
@@ -36437,7 +36348,6 @@
 			</Placemark>
 			<Placemark id="breakaway_line.41">
 				<name>N13b</name>
-				<visibility>0</visibility>
 				<Style>
 					<LineStyle>
 						<color>ff0000ff</color>
@@ -36454,7 +36364,6 @@
 			</Placemark>
 			<Placemark id="breakaway_line.42">
 				<name>N14a</name>
-				<visibility>0</visibility>
 				<Style>
 					<LineStyle>
 						<color>ff0000ff</color>
@@ -36471,7 +36380,6 @@
 			</Placemark>
 			<Placemark id="breakaway_line.43">
 				<name>N14b</name>
-				<visibility>0</visibility>
 				<Style>
 					<LineStyle>
 						<color>ff0000ff</color>
@@ -36488,7 +36396,6 @@
 			</Placemark>
 			<Placemark id="breakaway_line.44">
 				<name>P1_1a</name>
-				<visibility>0</visibility>
 				<Style>
 					<LineStyle>
 						<color>ff0000ff</color>
@@ -36505,7 +36412,6 @@
 			</Placemark>
 			<Placemark id="breakaway_line.45">
 				<name>P1_1b</name>
-				<visibility>0</visibility>
 				<Style>
 					<LineStyle>
 						<color>ff0000ff</color>
@@ -36522,7 +36428,6 @@
 			</Placemark>
 			<Placemark id="breakaway_line.46">
 				<name>P1_1c</name>
-				<visibility>0</visibility>
 				<Style>
 					<LineStyle>
 						<color>ff0000ff</color>
@@ -36539,7 +36444,6 @@
 			</Placemark>
 			<Placemark id="breakaway_line.47">
 				<name>P1_2a</name>
-				<visibility>0</visibility>
 				<Style>
 					<LineStyle>
 						<color>ff0000ff</color>
@@ -36556,7 +36460,6 @@
 			</Placemark>
 			<Placemark id="breakaway_line.48">
 				<name>P1_2b</name>
-				<visibility>0</visibility>
 				<Style>
 					<LineStyle>
 						<color>ff0000ff</color>
@@ -36573,7 +36476,6 @@
 			</Placemark>
 			<Placemark id="breakaway_line.49">
 				<name>Y7_2a</name>
-				<visibility>0</visibility>
 				<Style>
 					<LineStyle>
 						<color>ff0000ff</color>
@@ -36590,7 +36492,6 @@
 			</Placemark>
 			<Placemark id="breakaway_line.50">
 				<name>Y7_2b</name>
-				<visibility>0</visibility>
 				<Style>
 					<LineStyle>
 						<color>ff0000ff</color>
@@ -36607,7 +36508,6 @@
 			</Placemark>
 			<Placemark id="breakaway_line.51">
 				<name>Y7_3a</name>
-				<visibility>0</visibility>
 				<Style>
 					<LineStyle>
 						<color>ff0000ff</color>
@@ -36624,7 +36524,6 @@
 			</Placemark>
 			<Placemark id="breakaway_line.52">
 				<name>Y7_3b</name>
-				<visibility>0</visibility>
 				<Style>
 					<LineStyle>
 						<color>ff0000ff</color>
@@ -36641,7 +36540,6 @@
 			</Placemark>
 			<Placemark id="breakaway_line.53">
 				<name>S11_6a</name>
-				<visibility>0</visibility>
 				<Style>
 					<LineStyle>
 						<color>ff0000ff</color>
@@ -36658,7 +36556,6 @@
 			</Placemark>
 			<Placemark id="breakaway_line.54">
 				<name>S11_6b</name>
-				<visibility>0</visibility>
 				<Style>
 					<LineStyle>
 						<color>ff0000ff</color>
@@ -36675,7 +36572,6 @@
 			</Placemark>
 			<Placemark id="breakaway_line.55">
 				<name>S11_7a</name>
-				<visibility>0</visibility>
 				<Style>
 					<LineStyle>
 						<color>ff0000ff</color>
@@ -36692,7 +36588,6 @@
 			</Placemark>
 			<Placemark id="breakaway_line.56">
 				<name>S11_7b</name>
-				<visibility>0</visibility>
 				<Style>
 					<LineStyle>
 						<color>ff0000ff</color>
@@ -36709,7 +36604,6 @@
 			</Placemark>
 			<Placemark id="breakaway_line.57">
 				<name>S13_1a</name>
-				<visibility>0</visibility>
 				<Style>
 					<LineStyle>
 						<color>ff0000ff</color>
@@ -36726,7 +36620,6 @@
 			</Placemark>
 			<Placemark id="breakaway_line.58">
 				<name>S13_1b</name>
-				<visibility>0</visibility>
 				<Style>
 					<LineStyle>
 						<color>ff0000ff</color>
@@ -36743,7 +36636,6 @@
 			</Placemark>
 			<Placemark id="breakaway_line.59">
 				<name>S15_2a</name>
-				<visibility>0</visibility>
 				<Style>
 					<LineStyle>
 						<color>ff0000ff</color>
@@ -36760,7 +36652,6 @@
 			</Placemark>
 			<Placemark id="breakaway_line.60">
 				<name>S15_2b</name>
-				<visibility>0</visibility>
 				<Style>
 					<LineStyle>
 						<color>ff0000ff</color>
@@ -36771,13 +36662,12 @@
 				</Style>
 				<LineString>
 					<coordinates>
-						8.573393219532059,50.0283047363463,0 8.57378592514066,50.02839852626521,0 
+						8.573393219532059,50.0283047363463,0 8.57300051546015,50.028210945101,0 
 					</coordinates>
 				</LineString>
 			</Placemark>
 			<Placemark id="breakaway_line.61">
 				<name>S15_4a</name>
-				<visibility>0</visibility>
 				<Style>
 					<LineStyle>
 						<color>ff0000ff</color>
@@ -36794,7 +36684,6 @@
 			</Placemark>
 			<Placemark id="breakaway_line.62">
 				<name>S15_4b</name>
-				<visibility>0</visibility>
 				<Style>
 					<LineStyle>
 						<color>ff0000ff</color>
@@ -36811,7 +36700,6 @@
 			</Placemark>
 			<Placemark id="breakaway_line.63">
 				<name>S7_2a</name>
-				<visibility>0</visibility>
 				<Style>
 					<LineStyle>
 						<color>ff0000ff</color>
@@ -36828,7 +36716,6 @@
 			</Placemark>
 			<Placemark id="breakaway_line.64">
 				<name>S7_2b</name>
-				<visibility>0</visibility>
 				<Style>
 					<LineStyle>
 						<color>ff0000ff</color>
@@ -36845,7 +36732,6 @@
 			</Placemark>
 			<Placemark id="breakaway_line.65">
 				<name>S5_3a</name>
-				<visibility>0</visibility>
 				<Style>
 					<LineStyle>
 						<color>ff0000ff</color>
@@ -36862,7 +36748,6 @@
 			</Placemark>
 			<Placemark id="breakaway_line.66">
 				<name>S5_3b</name>
-				<visibility>0</visibility>
 				<Style>
 					<LineStyle>
 						<color>ff0000ff</color>
@@ -36879,7 +36764,6 @@
 			</Placemark>
 			<Placemark id="breakaway_line.67">
 				<name>S5_1a</name>
-				<visibility>0</visibility>
 				<Style>
 					<LineStyle>
 						<color>ff0000ff</color>
@@ -36896,7 +36780,6 @@
 			</Placemark>
 			<Placemark id="breakaway_line.68">
 				<name>S5_1b</name>
-				<visibility>0</visibility>
 				<Style>
 					<LineStyle>
 						<color>ff0000ff</color>
@@ -36913,7 +36796,6 @@
 			</Placemark>
 			<Placemark id="breakaway_line.69">
 				<name>S4_1a</name>
-				<visibility>0</visibility>
 				<Style>
 					<LineStyle>
 						<color>ff0000ff</color>
@@ -36930,7 +36812,6 @@
 			</Placemark>
 			<Placemark id="breakaway_line.70">
 				<name>S4_1b</name>
-				<visibility>0</visibility>
 				<Style>
 					<LineStyle>
 						<color>ff0000ff</color>
@@ -36947,7 +36828,6 @@
 			</Placemark>
 			<Placemark id="breakaway_line.71">
 				<name>S4_2a</name>
-				<visibility>0</visibility>
 				<Style>
 					<LineStyle>
 						<color>ff0000ff</color>
@@ -36964,7 +36844,6 @@
 			</Placemark>
 			<Placemark id="breakaway_line.72">
 				<name>S4_2b</name>
-				<visibility>0</visibility>
 				<Style>
 					<LineStyle>
 						<color>ff0000ff</color>
@@ -36981,7 +36860,6 @@
 			</Placemark>
 			<Placemark id="breakaway_line.73">
 				<name>Y7_1a</name>
-				<visibility>0</visibility>
 				<Style>
 					<LineStyle>
 						<color>ff0000ff</color>
@@ -36998,7 +36876,6 @@
 			</Placemark>
 			<Placemark id="breakaway_line.74">
 				<name>Y7_1b</name>
-				<visibility>0</visibility>
 				<Style>
 					<LineStyle>
 						<color>ff0000ff</color>
@@ -37015,7 +36892,6 @@
 			</Placemark>
 			<Placemark id="breakaway_line.75">
 				<name>S13_3a</name>
-				<visibility>0</visibility>
 				<Style>
 					<LineStyle>
 						<color>ff0000ff</color>
@@ -37032,7 +36908,6 @@
 			</Placemark>
 			<Placemark id="breakaway_line.76">
 				<name>S13_3b</name>
-				<visibility>0</visibility>
 				<Style>
 					<LineStyle>
 						<color>ff0000ff</color>
@@ -37049,7 +36924,6 @@
 			</Placemark>
 			<Placemark id="breakaway_line.77">
 				<name>S13_3c</name>
-				<visibility>0</visibility>
 				<Style>
 					<LineStyle>
 						<color>ff0000ff</color>
@@ -37066,7 +36940,6 @@
 			</Placemark>
 			<Placemark id="breakaway_line.78">
 				<name>S13_5a</name>
-				<visibility>0</visibility>
 				<Style>
 					<LineStyle>
 						<color>ff0000ff</color>
@@ -37083,7 +36956,6 @@
 			</Placemark>
 			<Placemark id="breakaway_line.79">
 				<name>S13_5b</name>
-				<visibility>0</visibility>
 				<Style>
 					<LineStyle>
 						<color>ff0000ff</color>
@@ -37100,7 +36972,6 @@
 			</Placemark>
 			<Placemark id="breakaway_line.80">
 				<name>S8_5a</name>
-				<visibility>0</visibility>
 				<Style>
 					<LineStyle>
 						<color>ff0000ff</color>
@@ -37117,7 +36988,6 @@
 			</Placemark>
 			<Placemark id="breakaway_line.81">
 				<name>S8_5b</name>
-				<visibility>0</visibility>
 				<Style>
 					<LineStyle>
 						<color>ff0000ff</color>
@@ -37134,7 +37004,6 @@
 			</Placemark>
 			<Placemark id="breakaway_line.82">
 				<name>S8_3a</name>
-				<visibility>0</visibility>
 				<Style>
 					<LineStyle>
 						<color>ff0000ff</color>
@@ -37151,7 +37020,6 @@
 			</Placemark>
 			<Placemark id="breakaway_line.83">
 				<name>S8_3b</name>
-				<visibility>0</visibility>
 				<Style>
 					<LineStyle>
 						<color>ff0000ff</color>
@@ -37168,7 +37036,6 @@
 			</Placemark>
 			<Placemark id="breakaway_line.84">
 				<name>S8_3c</name>
-				<visibility>0</visibility>
 				<Style>
 					<LineStyle>
 						<color>ff0000ff</color>
@@ -37185,7 +37052,6 @@
 			</Placemark>
 			<Placemark id="breakaway_line.85">
 				<name>S8_1a</name>
-				<visibility>0</visibility>
 				<Style>
 					<LineStyle>
 						<color>ff0000ff</color>
@@ -37202,7 +37068,6 @@
 			</Placemark>
 			<Placemark id="breakaway_line.86">
 				<name>S8_1b</name>
-				<visibility>0</visibility>
 				<Style>
 					<LineStyle>
 						<color>ff0000ff</color>
@@ -37219,7 +37084,6 @@
 			</Placemark>
 			<Placemark id="breakaway_line.87">
 				<name>S10_4a</name>
-				<visibility>0</visibility>
 				<Style>
 					<LineStyle>
 						<color>ff0000ff</color>
@@ -37236,7 +37100,6 @@
 			</Placemark>
 			<Placemark id="breakaway_line.88">
 				<name>S10_4b</name>
-				<visibility>0</visibility>
 				<Style>
 					<LineStyle>
 						<color>ff0000ff</color>
@@ -37253,7 +37116,6 @@
 			</Placemark>
 			<Placemark id="breakaway_line.89">
 				<name>S10_2a</name>
-				<visibility>0</visibility>
 				<Style>
 					<LineStyle>
 						<color>ff0000ff</color>
@@ -37270,7 +37132,6 @@
 			</Placemark>
 			<Placemark id="breakaway_line.90">
 				<name>S10_2b</name>
-				<visibility>0</visibility>
 				<Style>
 					<LineStyle>
 						<color>ff0000ff</color>
@@ -37287,7 +37148,6 @@
 			</Placemark>
 			<Placemark id="breakaway_line.91">
 				<name>S10_2c</name>
-				<visibility>0</visibility>
 				<Style>
 					<LineStyle>
 						<color>ff0000ff</color>
@@ -37304,7 +37164,6 @@
 			</Placemark>
 			<Placemark id="breakaway_line.92">
 				<name>S19_2a</name>
-				<visibility>0</visibility>
 				<Style>
 					<LineStyle>
 						<color>ff0000ff</color>
@@ -37321,7 +37180,6 @@
 			</Placemark>
 			<Placemark id="breakaway_line.93">
 				<name>S19_2b</name>
-				<visibility>0</visibility>
 				<Style>
 					<LineStyle>
 						<color>ff0000ff</color>
@@ -37338,7 +37196,6 @@
 			</Placemark>
 			<Placemark id="breakaway_line.94">
 				<name>S19_1a</name>
-				<visibility>0</visibility>
 				<Style>
 					<LineStyle>
 						<color>ff0000ff</color>
@@ -37355,7 +37212,6 @@
 			</Placemark>
 			<Placemark id="breakaway_line.95">
 				<name>S19_1b</name>
-				<visibility>0</visibility>
 				<Style>
 					<LineStyle>
 						<color>ff0000ff</color>
@@ -37372,7 +37228,6 @@
 			</Placemark>
 			<Placemark id="breakaway_line.96">
 				<name>S21a</name>
-				<visibility>0</visibility>
 				<Style>
 					<LineStyle>
 						<color>ff0000ff</color>
@@ -37389,7 +37244,6 @@
 			</Placemark>
 			<Placemark id="breakaway_line.97">
 				<name>S21b</name>
-				<visibility>0</visibility>
 				<Style>
 					<LineStyle>
 						<color>ff0000ff</color>
@@ -37407,290 +37261,248 @@
 		</Folder>
 		<Folder>
 			<name>labels</name>
-			<visibility>0</visibility>
 			<Placemark id="breakaway_labels.1">
 				<name>1#N7_N8</name>
-				<visibility>0</visibility>
 				<Point>
 					<coordinates>8.566471154975281,50.047722250386,0</coordinates>
 				</Point>
 			</Placemark>
 			<Placemark id="breakaway_labels.2">
 				<name>3#N7_N8</name>
-				<visibility>0</visibility>
 				<Point>
 					<coordinates>8.56357297431401,50.0465645580118,0</coordinates>
 				</Point>
 			</Placemark>
 			<Placemark id="breakaway_labels.3">
 				<name>5#N7_N8</name>
-				<visibility>0</visibility>
 				<Point>
 					<coordinates>8.56306156562351,50.0464356117163,0</coordinates>
 				</Point>
 			</Placemark>
 			<Placemark id="breakaway_labels.4">
 				<name>2#N7_N8</name>
-				<visibility>0</visibility>
 				<Point>
 					<coordinates>8.564313792510619,50.0455952644705,0</coordinates>
 				</Point>
 			</Placemark>
 			<Placemark id="breakaway_labels.5">
 				<name>4#N7_N8</name>
-				<visibility>0</visibility>
 				<Point>
 					<coordinates>8.563481568239171,50.0451513188771,0</coordinates>
 				</Point>
 			</Placemark>
 			<Placemark id="breakaway_labels.6">
 				<name>6#N7_N8</name>
-				<visibility>0</visibility>
 				<Point>
 					<coordinates>8.56084282705134,50.044525241593,0</coordinates>
 				</Point>
 			</Placemark>
 			<Placemark id="breakaway_labels.7">
 				<name>7#N7_N8</name>
-				<visibility>0</visibility>
 				<Point>
 					<coordinates>8.56022052466041,50.0457713685071,0</coordinates>
 				</Point>
 			</Placemark>
 			<Placemark id="breakaway_labels.8">
 				<name>9#N7_N8</name>
-				<visibility>0</visibility>
 				<Point>
 					<coordinates>8.559390909429011,50.0430058475773,0</coordinates>
 				</Point>
 			</Placemark>
 			<Placemark id="breakaway_labels.9">
 				<name>1#N5</name>
-				<visibility>0</visibility>
 				<Point>
 					<coordinates>8.57024539605148,50.04755061971159,0</coordinates>
 				</Point>
 			</Placemark>
 			<Placemark id="breakaway_labels.10">
 				<name>2#N5</name>
-				<visibility>0</visibility>
 				<Point>
 					<coordinates>8.5693589367763,50.0463056027673,0</coordinates>
 				</Point>
 			</Placemark>
 			<Placemark id="breakaway_labels.11">
 				<name>3#N5</name>
-				<visibility>0</visibility>
 				<Point>
 					<coordinates>8.5689641548688,50.0451266029278,0</coordinates>
 				</Point>
 			</Placemark>
 			<Placemark id="breakaway_labels.12">
 				<name>1#N3</name>
-				<visibility>0</visibility>
 				<Point>
 					<coordinates>8.576692508915089,50.0490783415357,0</coordinates>
 				</Point>
 			</Placemark>
 			<Placemark id="breakaway_labels.13">
 				<name>2#N3</name>
-				<visibility>0</visibility>
 				<Point>
 					<coordinates>8.57866300538929,50.0485119538086,0</coordinates>
 				</Point>
 			</Placemark>
 			<Placemark id="breakaway_labels.14">
 				<name>2#N</name>
-				<visibility>0</visibility>
 				<Point>
 					<coordinates>8.58984265706327,50.0504189745885,0</coordinates>
 				</Point>
 			</Placemark>
 			<Placemark id="breakaway_labels.15">
 				<name>1#N</name>
-				<visibility>0</visibility>
 				<Point>
 					<coordinates>8.59312223605855,50.0499861115314,0</coordinates>
 				</Point>
 			</Placemark>
 			<Placemark id="breakaway_labels.16">
 				<name>1#L</name>
-				<visibility>0</visibility>
 				<Point>
 					<coordinates>8.59863735066941,50.0492162808541,0</coordinates>
 				</Point>
 			</Placemark>
 			<Placemark id="breakaway_labels.17">
 				<name>2#L</name>
-				<visibility>0</visibility>
 				<Point>
 					<coordinates>8.59567226465405,50.0485296230659,0</coordinates>
 				</Point>
 			</Placemark>
 			<Placemark id="breakaway_labels.18">
 				<name>1#P1</name>
-				<visibility>0</visibility>
 				<Point>
 					<coordinates>8.52669270991257,50.03588033968139,0</coordinates>
 				</Point>
 			</Placemark>
 			<Placemark id="breakaway_labels.19">
 				<name>2#P1</name>
-				<visibility>0</visibility>
 				<Point>
 					<coordinates>8.52514613279949,50.0358108863875,0</coordinates>
 				</Point>
 			</Placemark>
 			<Placemark id="breakaway_labels.20">
 				<name>2#Y7</name>
-				<visibility>0</visibility>
 				<Point>
 					<coordinates>8.533194486164209,50.0226499424374,0</coordinates>
 				</Point>
 			</Placemark>
 			<Placemark id="breakaway_labels.21">
 				<name>3#Y7</name>
-				<visibility>0</visibility>
 				<Point>
 					<coordinates>8.53131321626036,50.02220066496259,0</coordinates>
 				</Point>
 			</Placemark>
 			<Placemark id="breakaway_labels.22">
 				<name>1#S13</name>
-				<visibility>0</visibility>
 				<Point>
 					<coordinates>8.57581698268916,50.0287118612941,0</coordinates>
 				</Point>
 			</Placemark>
 			<Placemark id="breakaway_labels.23">
 				<name>2#S15</name>
-				<visibility>0</visibility>
 				<Point>
-					<coordinates>8.573307398794929,50.0281336231088,0</coordinates>
+					<coordinates>8.57363184001952,50.0282110476182,0</coordinates>
 				</Point>
 			</Placemark>
 			<Placemark id="breakaway_labels.24">
 				<name>4#S15</name>
-				<visibility>0</visibility>
 				<Point>
 					<coordinates>8.572029534000521,50.0278283629433,0</coordinates>
 				</Point>
 			</Placemark>
 			<Placemark id="breakaway_labels.25">
 				<name>6#S11</name>
-				<visibility>0</visibility>
 				<Point>
 					<coordinates>8.57003720077252,50.0293370348179,0</coordinates>
 				</Point>
 			</Placemark>
 			<Placemark id="breakaway_labels.26">
 				<name>7#S11</name>
-				<visibility>0</visibility>
 				<Point>
 					<coordinates>8.568367174514631,50.03223979004179,0</coordinates>
 				</Point>
 			</Placemark>
 			<Placemark id="breakaway_labels.27">
 				<name>1#S5</name>
-				<visibility>0</visibility>
 				<Point>
 					<coordinates>8.58256090799679,50.0326124638636,0</coordinates>
 				</Point>
 			</Placemark>
 			<Placemark id="breakaway_labels.28">
 				<name>3#S5</name>
-				<visibility>0</visibility>
 				<Point>
 					<coordinates>8.584583920500821,50.03546906212581,0</coordinates>
 				</Point>
 			</Placemark>
 			<Placemark id="breakaway_labels.29">
 				<name>2#S7</name>
-				<visibility>0</visibility>
 				<Point>
 					<coordinates>8.58148296685707,50.0347848874734,0</coordinates>
 				</Point>
 			</Placemark>
 			<Placemark id="breakaway_labels.30">
 				<name>2#S4</name>
-				<visibility>0</visibility>
 				<Point>
 					<coordinates>8.58921836953226,50.03461082866251,0</coordinates>
 				</Point>
 			</Placemark>
 			<Placemark id="breakaway_labels.31">
 				<name>1#S4</name>
-				<visibility>0</visibility>
 				<Point>
 					<coordinates>8.587802468983851,50.0326441517886,0</coordinates>
 				</Point>
 			</Placemark>
 			<Placemark id="breakaway_labels.32">
 				<name>1#Y7</name>
-				<visibility>0</visibility>
 				<Point>
 					<coordinates>8.53462655685462,50.0227968435072,0</coordinates>
 				</Point>
 			</Placemark>
 			<Placemark id="breakaway_labels.33">
 				<name>5#S13</name>
-				<visibility>0</visibility>
 				<Point>
 					<coordinates>8.57101372505891,50.03008916924689,0</coordinates>
 				</Point>
 			</Placemark>
 			<Placemark id="breakaway_labels.34">
 				<name>3#S13</name>
-				<visibility>0</visibility>
 				<Point>
 					<coordinates>8.57335466900077,50.02939739200389,0</coordinates>
 				</Point>
 			</Placemark>
 			<Placemark id="breakaway_labels.35">
 				<name>5#S8</name>
-				<visibility>0</visibility>
 				<Point>
 					<coordinates>8.57609425830918,50.0340569329219,0</coordinates>
 				</Point>
 			</Placemark>
 			<Placemark id="breakaway_labels.36">
 				<name>3#S8</name>
-				<visibility>0</visibility>
 				<Point>
 					<coordinates>8.576727939187171,50.03295681793249,0</coordinates>
 				</Point>
 			</Placemark>
 			<Placemark id="breakaway_labels.37">
 				<name>1#S8</name>
-				<visibility>0</visibility>
 				<Point>
 					<coordinates>8.577656195561319,50.0315902850376,0</coordinates>
 				</Point>
 			</Placemark>
 			<Placemark id="breakaway_labels.38">
 				<name>4#S10</name>
-				<visibility>0</visibility>
 				<Point>
 					<coordinates>8.57287377880024,50.0330753182808,0</coordinates>
 				</Point>
 			</Placemark>
 			<Placemark id="breakaway_labels.39">
 				<name>2#S10</name>
-				<visibility>0</visibility>
 				<Point>
 					<coordinates>8.575327760892019,50.03235006984211,0</coordinates>
 				</Point>
 			</Placemark>
 			<Placemark id="breakaway_labels.40">
 				<name>1#S19</name>
-				<visibility>0</visibility>
 				<Point>
 					<coordinates>8.56687297439731,50.0296831768612,0</coordinates>
 				</Point>
 			</Placemark>
 			<Placemark id="breakaway_labels.41">
 				<name>2#S19</name>
-				<visibility>0</visibility>
 				<Point>
 					<coordinates>8.56585062836489,50.0314515359681,0</coordinates>
 				</Point>
