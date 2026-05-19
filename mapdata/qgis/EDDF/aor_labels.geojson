@@ -6,7 +6,7 @@
 { "type": "Feature", "properties": { "name": "DFGC" }, "geometry": { "type": "Point", "coordinates": [ 468777.980417860788293, 5544184.098080687224865 ] } },
 { "type": "Feature", "properties": { "name": "DFGE" }, "geometry": { "type": "Point", "coordinates": [ 470247.239665557921398, 5544423.302254185080528 ] } },
 { "type": "Feature", "properties": { "name": "DFGW" }, "geometry": { "type": "Point", "coordinates": [ 466493.265073797956575, 5543069.612501353025436 ] } },
-{ "type": "Feature", "properties": { "name": "DFGS" }, "geometry": { "type": "Point", "coordinates": [ 469058.290037950093392, 5541691.766979887150228 ] } },
+{ "type": "Feature", "properties": { "name": "DFGSW" }, "geometry": { "type": "Point", "coordinates": [ 468395.19666282471735, 5541624.746727552264929 ] } },
 { "type": "Feature", "properties": { "name": "DFG_a" }, "geometry": { "type": "Point", "coordinates": [ 467204.06671446794644, 5541735.140888264402747 ] } },
 { "type": "Feature", "properties": { "name": "DFG_b" }, "geometry": { "type": "Point", "coordinates": [ 471183.384070344327483, 5543346.154169077053666 ] } },
 { "type": "Feature", "properties": { "name": "mixed_area" }, "geometry": { "type": "Point", "coordinates": [ 468464.068679079995491, 5543229.668341833166778 ] } },
@@ -15,6 +15,7 @@
 { "type": "Feature", "properties": { "name": "DFTS" }, "geometry": { "type": "Point", "coordinates": [ 468642.626100747147575, 5542859.38913016486913 ] } },
 { "type": "Feature", "properties": { "name": "DFTW" }, "geometry": { "type": "Point", "coordinates": [ 465761.336876662855502, 5542006.253825097344816 ] } },
 { "type": "Feature", "properties": { "name": "DFD_a" }, "geometry": { "type": "Point", "coordinates": [ 465158.046024197188672, 5541560.493964277207851 ] } },
-{ "type": "Feature", "properties": { "name": "DFD_b" }, "geometry": { "type": "Point", "coordinates": [ 471805.170690548431594, 5543982.477482603862882 ] } }
+{ "type": "Feature", "properties": { "name": "DFD_b" }, "geometry": { "type": "Point", "coordinates": [ 471805.170690548431594, 5543982.477482603862882 ] } },
+{ "type": "Feature", "properties": { "name": "DFGSE" }, "geometry": { "type": "Point", "coordinates": [ 470642.804913257306907, 5542447.764127392321825 ] } }
 ]
 }
