@@ -26,9 +26,7 @@ FOLDER:AoR|EDDF_x_GND 25
 LAYER:6
 COLOR:aor-gnd-c
 STYLE:Dot
-{{ data.eddf_kml['layout']['aor']['line']['DFGE_25a'] | to_line('') -}}
-{{ data.eddf_kml['layout']['aor']['line']['DFGE_b'] | to_line('') -}}
-{{ data.eddf_kml['layout']['aor']['line']['DFGE_c'] | to_line('') -}}
+{{ data.eddf_kml['layout']['aor']['line']['DFGE_25'] | to_line('') -}}
 ZOOM:300
 FONTSIZE:=:13
 {{ data.eddf_kml['layout']['aor']['labels']['DFGE'] | to_text('DFGE 121.955') }}
@@ -66,9 +64,7 @@ FOLDER:AoR|EDDF_x_GND 07
 LAYER:6
 COLOR:aor-gnd-c
 STYLE:Dot
-{{ data.eddf_kml['layout']['aor']['line']['DFGE_07a'] | to_line('') -}}
-{{ data.eddf_kml['layout']['aor']['line']['DFGE_b'] | to_line('') -}}
-{{ data.eddf_kml['layout']['aor']['line']['DFGE_c'] | to_line('') -}}
+{{ data.eddf_kml['layout']['aor']['line']['DFGE_07'] | to_line('') -}}
 COLOR:layout-label-taxiway
 {{ data.eddf_kml['layout']['aor']['line']['mixed_area'] | to_line('') -}}
 ZOOM:300
@@ -94,19 +90,28 @@ COLOR:aor-gnd-b
 COLOR:layout-label-taxiway
 {{ data.eddf_kml['layout']['aor']['labels']['mixed_area'] | to_text('MIXED AREA') }}
 
-MAP:EDDF_S_GND
+MAP:EDDF_S_GND (E)
 AIRPORT:EDDF
 FOLDER:AoR
 LAYER:6
 COLOR:aor-gnd-e
 STYLE:Dot
-{{ data.eddf_kml['layout']['aor']['line']['DFGS_a'] | to_line('') -}}
-{{ data.eddf_kml['layout']['aor']['line']['DFGS_b'] | to_line('') -}}
-{{ data.eddf_kml['layout']['aor']['line']['DFGS_c'] | to_line('') -}}
+{{ data.eddf_kml['layout']['aor']['line']['DFGSE'] | to_line('') -}}
 ZOOM:300
 FONTSIZE:=:13
-TEXTALIGN:LC
-{{ data.eddf_kml['layout']['aor']['labels']['DFGS'] | to_text('DFGS 121.655') }}
+TEXTALIGN:RC
+{{ data.eddf_kml['layout']['aor']['labels']['DFGSE'] | to_text('DFGS 121.655') }}
+
+MAP:EDDF_S_GND (W)
+AIRPORT:EDDF
+FOLDER:AoR
+LAYER:6
+COLOR:aor-gnd-e
+STYLE:Dot
+{{ data.eddf_kml['layout']['aor']['line']['DFGSW'] | to_line('') -}}
+ZOOM:300
+FONTSIZE:=:13
+{{ data.eddf_kml['layout']['aor']['labels']['DFGSW'] | to_text('DFGS 121.915') }}
 
 MAP:EDDF_ICE_GND
 AIRPORT:EDDF
