@@ -10,20 +10,20 @@
         },
 		"EDDK": {
             "targetFixes": [ "EDDK"],
-            "viaFixes": [ "DEPOK", "ERNEP", "GULKO", "KOPAG" ],
+            "viaFixes": [ "ERUKI", "ERNEP", "GULKO", "KOPAG", "BIFTE" ],
             "tagLayout": "myLayout",
             "destinationAirports": [ "EDDK" ],
 			"defaultTimeSpan": 30
         },
 		"EDDK 31R/24": {
-            "viaFixes": [ "DEPOK", "ERNEP", "GULKO", "KOPAG" ],
+            "viaFixes": [ "ERUKI", "ERNEP", "GULKO", "KOPAG", "BIFTE" ],
             "tagLayout": "RWY",
 			"targetFixes": [ "RARIX", "KUKIT" ],
             "destinationAirports": [ "EDDK" ],
 			"defaultTimeSpan": 30
         },
 		"EDDK 13L/24": {
-            "viaFixes": [ "DEPOK", "ERNEP", "GULKO", "KOPAG" ],
+            "viaFixes": [ "ERUKI", "ERNEP", "GULKO", "KOPAG", "BIFTE" ],
             "tagLayout": "RWY",
 			"targetFixes": [ "LEDGU", "KUKIT" ],
             "destinationAirports": [ "EDDK" ],
@@ -111,7 +111,7 @@
         "myLayout": [
             { "source": "assignedRunway", "width": 4 },
             { "source": "callsign", "width": 8 },
-            { "source": "static", "defaultValue": "¤", "width": 2, "isViaFixIndicator": true },
+            { "source": "static", "defaultValue": "Â¤", "width": 2, "isViaFixIndicator": true },
             { "source": "aircraftType", "width": 5 },
             { "source": "aircraftWtc", "width": 2 },
             { "source": "remainingDistance", "width": 3, "rightAligned": true },
@@ -120,7 +120,7 @@
 		"RWY": [
             { "source": "assignedRunway", "width": 4 },
             { "source": "callsign", "width": 8 },
-            { "source": "static", "defaultValue": "¤", "width": 2, "isViaFixIndicator": true },
+            { "source": "static", "defaultValue": "Â¤", "width": 2, "isViaFixIndicator": true },
             { "source": "aircraftType", "width": 5 },
             { "source": "aircraftWtc", "width": 2 },
             { "source": "assignedStar", "width": 7 },
