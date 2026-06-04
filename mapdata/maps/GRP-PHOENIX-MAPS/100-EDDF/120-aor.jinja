@@ -99,7 +99,13 @@ STYLE:Dot
 {{ data.eddf_kml['layout']['aor']['line']['DFGSE'] | to_line('') -}}
 ZOOM:300
 FONTSIZE:=:13
+{#- South Up #}
+FILTER_ASR:EDDF_GND
 TEXTALIGN:RC
+{{ data.eddf_kml['layout']['aor']['labels']['DFGSE'] | to_text('DFGS 121.655') }}
+{#- North Up #}
+FILTER_ASR:EDDF_S_GND
+TEXTALIGN:LC
 {{ data.eddf_kml['layout']['aor']['labels']['DFGSE'] | to_text('DFGS 121.655') }}
 
 MAP:EDDF_S_GND (W)
@@ -122,7 +128,12 @@ STYLE:Dot
 {{ data.eddf_kml['layout']['aor']['line']['DFGI'] | to_line('') -}}
 ZOOM:300
 FONTSIZE:=:13
+{#- South Up #}
+FILTER_ASR:EDDF_GND
 {{ data.eddf_kml['layout']['aor']['labels']['DFGW'] | to_text('DFGI 121.985:0:20') }}
+{#- North Up #}
+FILTER_ASR:EDDF_S_GND
+{{ data.eddf_kml['layout']['aor']['labels']['DFGW'] | to_text('DFGI 121.985:0:-20') }}
 
 MAP:EDDF_GND
 AIRPORT:EDDF
@@ -134,7 +145,13 @@ STYLE:Dot
 ZOOM:300
 FONTSIZE:=:13
 {{ data.eddf_kml['layout']['aor']['labels']['DFG_a'] | to_text('DFG  121.805') }}
+{#- South Up #}
+FILTER_ASR:EDDF_GND
 TEXTALIGN:RC
+{{ data.eddf_kml['layout']['aor']['labels']['DFG_b'] | to_text('DFG  121.805') }}
+{#- North Up #}
+FILTER_ASR:EDDF_S_GND
+TEXTALIGN:LC
 {{ data.eddf_kml['layout']['aor']['labels']['DFG_b'] | to_text('DFG  121.805') }}
 
 MAP:EDDF_C_TWR
@@ -157,7 +174,13 @@ STYLE:Dot
 {{ data.eddf_kml['layout']['aor']['line']['DFTW'] | to_line('') -}}
 ZOOM:300
 FONTSIZE:=:13
+{#- South Up #}
+FILTER_ASR:EDDF_GND
 TEXTALIGN:LC
+{{ data.eddf_kml['layout']['aor']['labels']['DFTW'] | to_text('DFTW 124.855') }}
+{#- North Up #}
+FILTER_ASR:EDDF_S_GND
+TEXTALIGN:RC
 {{ data.eddf_kml['layout']['aor']['labels']['DFTW'] | to_text('DFTW 124.855') }}
 
 MAP:EDDF_N_TWR
@@ -190,8 +213,14 @@ OTHER_MAP_ACT:=:EDDF\DEP Frequency
 COLOR:aor-app-a
 ZOOM:300
 FONTSIZE:=:13
+{#- South Up #}
+FILTER_ASR:EDDF_GND
 {{ data.eddf_kml['layout']['aor']['labels']['DFD_a'] | to_text('DFDN 120.155:0:10') }}
 {{ data.eddf_kml['layout']['aor']['labels']['DFD_b'] | to_text('DFDN 120.155:0:10') }}
+{#- North Up #}
+FILTER_ASR:EDDF_S_GND
+{{ data.eddf_kml['layout']['aor']['labels']['DFD_a'] | to_text('DFDN 120.155:0:-10') }}
+{{ data.eddf_kml['layout']['aor']['labels']['DFD_b'] | to_text('DFDN 120.155:0:-10') }}
 
 MAP:EDDF_S_DEP
 AIRPORT:EDDF
@@ -201,5 +230,11 @@ OTHER_MAP_ACT:=:EDDF\DEP Frequency
 COLOR:aor-app-b
 ZOOM:300
 FONTSIZE:=:13
+{#- South Up #}
+FILTER_ASR:EDDF_GND
 {{ data.eddf_kml['layout']['aor']['labels']['DFD_a'] | to_text('DFDS 136.130:0:-10') }}
 {{ data.eddf_kml['layout']['aor']['labels']['DFD_b'] | to_text('DFDS 136.130:0:-10') }}
+{#- North Up #}
+FILTER_ASR:EDDF_S_GND
+{{ data.eddf_kml['layout']['aor']['labels']['DFD_a'] | to_text('DFDS 136.130:0:10') }}
+{{ data.eddf_kml['layout']['aor']['labels']['DFD_b'] | to_text('DFDS 136.130:0:10') }}

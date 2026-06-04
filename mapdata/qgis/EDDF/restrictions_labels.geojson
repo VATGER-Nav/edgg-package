@@ -17,6 +17,7 @@
 { "type": "Feature", "properties": { "name": "Nob_c" }, "geometry": { "type": "Point", "coordinates": [ 469941.296597365173511, 5543976.836903475224972 ] } },
 { "type": "Feature", "properties": { "name": "N8ob_b" }, "geometry": { "type": "Point", "coordinates": [ 468383.568245911446866, 5543708.67529717925936 ] } },
 { "type": "Feature", "properties": { "name": "reference_2" }, "geometry": { "type": "Point", "coordinates": [ 470119.491527645441238, 5544783.364135971292853 ] } },
-{ "type": "Feature", "properties": { "name": "L_2" }, "geometry": { "type": "Point", "coordinates": [ 466046.434011833742261, 5542334.5341538451612 ] } }
+{ "type": "Feature", "properties": { "name": "L_2" }, "geometry": { "type": "Point", "coordinates": [ 466046.434011833742261, 5542334.5341538451612 ] } },
+{ "type": "Feature", "properties": { "name": "reference_3" }, "geometry": { "type": "Point", "coordinates": [ 470855.454178822750691, 5542175.076442078687251 ] } }
 ]
 }

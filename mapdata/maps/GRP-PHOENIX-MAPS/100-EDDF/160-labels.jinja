@@ -199,8 +199,15 @@ ZOOM:800
 ] %}
 {{- data.eddf_kml['layout']['labels']['stands'][desig] | to_text(desig) }}
 {% endfor %}
+{#- South Up #}
+FILTER_ASR:EDDF_GND
 {% for desig in ['C14', 'C15', 'C16'] %}
 {{- data.eddf_kml['layout']['labels']['stands'][desig] | to_text(' ' + desig + 'S:0:12') }}
+{% endfor %}
+{#- North Up #}
+FILTER_ASR:EDDF_S_GND
+{% for desig in ['C14', 'C15', 'C16'] %}
+{{- data.eddf_kml['layout']['labels']['stands'][desig] | to_text(' ' + desig + 'S:0:-12') }}
 {% endfor %}
 
 MAP:Stopbars
@@ -215,11 +222,23 @@ TEXTALIGN:CC
 {% for desig in ['T8', 'Y12'] %}
 {{- data.eddf_kml['layout']['labels']['stopbars'][desig] | to_text(desig) }}
 {% endfor %}
+{#- South Up #}
+FILTER_ASR:EDDF_GND
 TEXTALIGN:LC
 {% for desig in ['M2', 'S40', 'T2', 'T4', 'T6', 'W10', 'W4', 'W6', 'W8', 'Y4', 'Y6'] %}
 {{- data.eddf_kml['layout']['labels']['stopbars'][desig] | to_text(desig) }}
 {% endfor %}
 TEXTALIGN:RC
+{% for desig in ['U2', 'U4', 'U6', 'U8', 'W2', 'Y10', 'Y2'] %}
+{{- data.eddf_kml['layout']['labels']['stopbars'][desig] | to_text(desig) }}
+{% endfor %}
+{#- North Up #}
+FILTER_ASR:EDDF_S_GND
+TEXTALIGN:RC
+{% for desig in ['M2', 'S40', 'T2', 'T4', 'T6', 'W10', 'W4', 'W6', 'W8', 'Y4', 'Y6'] %}
+{{- data.eddf_kml['layout']['labels']['stopbars'][desig] | to_text(desig) }}
+{% endfor %}
+TEXTALIGN:LC
 {% for desig in ['U2', 'U4', 'U6', 'U8', 'W2', 'Y10', 'Y2'] %}
 {{- data.eddf_kml['layout']['labels']['stopbars'][desig] | to_text(desig) }}
 {% endfor %}
@@ -234,9 +253,17 @@ FONTSIZE:=:9
 COLOR:layout-label-stand
 TEXTALIGN:CC
 {{ data.eddf_kml['layout']['labels']['taxiways']['Link 3'] | to_text('Link 3') }}
+{#- South Up #}
+FILTER_ASR:EDDF_GND
 TEXTALIGN:LC
 {{ data.eddf_kml['layout']['labels']['taxiways']['Link 4'] | to_text('Link 4') }}
 TEXTALIGN:RC
+{{ data.eddf_kml['layout']['labels']['taxiways']['Link 5'] | to_text('Link 5') }}
+{#- North Up #}
+FILTER_ASR:EDDF_S_GND
+TEXTALIGN:RC
+{{ data.eddf_kml['layout']['labels']['taxiways']['Link 4'] | to_text('Link 4') }}
+TEXTALIGN:LC
 {{ data.eddf_kml['layout']['labels']['taxiways']['Link 5'] | to_text('Link 5') }}
 
 MAP:Buildings

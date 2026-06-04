@@ -6,7 +6,16 @@ FOLDER:Runway Info
 LAYER:6
 COLOR:tora-label
 ZOOM:300
+{#- South Up #}
+FILTER_ASR:EDDF_GND
 TEXTALIGN:LC
+{{ data.eddf_kml['layout']['tora']['25L_R3'] | to_text('4000') }}
+{{ data.eddf_kml['layout']['tora']['25L_R5_M7'] | to_text('3494') }}
+{{ data.eddf_kml['layout']['tora']['25L_R7'] | to_text('2872') }}
+{{ data.eddf_kml['layout']['tora']['25L_M19'] | to_text('1700') }}
+{#- North Up #}
+FILTER_ASR:EDDF_S_GND
+TEXTALIGN:RC
 {{ data.eddf_kml['layout']['tora']['25L_R3'] | to_text('4000') }}
 {{ data.eddf_kml['layout']['tora']['25L_R5_M7'] | to_text('3494') }}
 {{ data.eddf_kml['layout']['tora']['25L_R7'] | to_text('2872') }}
@@ -18,7 +27,15 @@ FOLDER:Runway Info
 LAYER:6
 COLOR:tora-label
 ZOOM:300
+{#- South Up #}
+FILTER_ASR:EDDF_GND
 TEXTALIGN:RC
+{{ data.eddf_kml['layout']['tora']['07R_R17_M29'] | to_text('4000') }}
+{{ data.eddf_kml['layout']['tora']['07R_R15_M25'] | to_text('3085') }}
+{{ data.eddf_kml['layout']['tora']['07R_R11_M19'] | to_text('2330') }}
+{#- North Up #}
+FILTER_ASR:EDDF_S_GND
+TEXTALIGN:LC
 {{ data.eddf_kml['layout']['tora']['07R_R17_M29'] | to_text('4000') }}
 {{ data.eddf_kml['layout']['tora']['07R_R15_M25'] | to_text('3085') }}
 {{ data.eddf_kml['layout']['tora']['07R_R11_M19'] | to_text('2330') }}
@@ -29,9 +46,20 @@ FOLDER:Runway Info
 LAYER:6
 COLOR:tora-label
 ZOOM:300
+{#- South Up #}
+FILTER_ASR:EDDF_GND
 TEXTALIGN:RC
 {{ data.eddf_kml['layout']['tora']['25C_L1'] | to_text('4000') }}
 TEXTALIGN:LC
+{{ data.eddf_kml['layout']['tora']['25C_L3_M6'] | to_text('3972') }}
+{{ data.eddf_kml['layout']['tora']['25C_L4'] | to_text('3700') }}
+{{ data.eddf_kml['layout']['tora']['25C_L5_M8'] | to_text('3595') }}
+{{ data.eddf_kml['layout']['tora']['25C_L6_M10'] | to_text('3266') }}
+{#- North Up #}
+FILTER_ASR:EDDF_S_GND
+TEXTALIGN:LC
+{{ data.eddf_kml['layout']['tora']['25C_L1'] | to_text('4000') }}
+TEXTALIGN:RC
 {{ data.eddf_kml['layout']['tora']['25C_L3_M6'] | to_text('3972') }}
 {{ data.eddf_kml['layout']['tora']['25C_L4'] | to_text('3700') }}
 {{ data.eddf_kml['layout']['tora']['25C_L5_M8'] | to_text('3595') }}
@@ -43,7 +71,17 @@ FOLDER:Runway Info
 LAYER:6
 COLOR:tora-label
 ZOOM:300
+{#- South Up #}
+FILTER_ASR:EDDF_GND
 TEXTALIGN:RC
+{{ data.eddf_kml['layout']['tora']['07C_L21_M34'] | to_text('4000') }}
+{{ data.eddf_kml['layout']['tora']['07C_L20'] | to_text('3942') }}
+{{ data.eddf_kml['layout']['tora']['07C_L17_L19_M30'] | to_text('3312') }}
+{{ data.eddf_kml['layout']['tora']['07C_L16_M28'] | to_text('3012') }}
+{{ data.eddf_kml['layout']['tora']['07C_L14_M24'] | to_text('2412') }}
+{#- North Up #}
+FILTER_ASR:EDDF_S_GND
+TEXTALIGN:LC
 {{ data.eddf_kml['layout']['tora']['07C_L21_M34'] | to_text('4000') }}
 {{ data.eddf_kml['layout']['tora']['07C_L20'] | to_text('3942') }}
 {{ data.eddf_kml['layout']['tora']['07C_L17_L19_M30'] | to_text('3312') }}
@@ -56,11 +94,26 @@ FOLDER:Runway Info
 LAYER:6
 COLOR:tora-label
 ZOOM:300
+{#- South Up #}
+FILTER_ASR:EDDF_GND
 TEXTALIGN:LC
 {{ data.eddf_kml['layout']['tora']['18_W3'] | to_text('3817') }}
 {#{{ data.eddf_kml['layout']['tora']['18_W7'] | to_text('2823') }}#}
 {{ data.eddf_kml['layout']['tora']['18_W9'] | to_text('2726') }}
 TEXTALIGN:RC
+{{ data.eddf_kml['layout']['tora']['18_N_W1'] | to_text('3970') }}
+{{ data.eddf_kml['layout']['tora']['18_N-South'] | to_text('3894') }}
+{{ data.eddf_kml['layout']['tora']['18_L'] | to_text('3823') }}
+{{ data.eddf_kml['layout']['tora']['18_M'] | to_text('3454') }}
+{#{{ data.eddf_kml['layout']['tora']['18_R'] | to_text('2842') }}#}
+{{ data.eddf_kml['layout']['tora']['18_S'] | to_text('2755') }}
+{#- North Up #}
+FILTER_ASR:EDDF_S_GND
+TEXTALIGN:RC
+{{ data.eddf_kml['layout']['tora']['18_W3'] | to_text('3817') }}
+{#{{ data.eddf_kml['layout']['tora']['18_W7'] | to_text('2823') }}#}
+{{ data.eddf_kml['layout']['tora']['18_W9'] | to_text('2726') }}
+TEXTALIGN:LC
 {{ data.eddf_kml['layout']['tora']['18_N_W1'] | to_text('3970') }}
 {{ data.eddf_kml['layout']['tora']['18_N-South'] | to_text('3894') }}
 {{ data.eddf_kml['layout']['tora']['18_L'] | to_text('3823') }}
