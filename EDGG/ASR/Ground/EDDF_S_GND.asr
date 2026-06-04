@@ -1,0 +1,24 @@
+DisplayTypeName:Ground Radar display
+DisplayTypeNeedRadarContent:0
+DisplayTypeGeoReferenced:1
+SECTORFILE:
+SECTORTITLE:
+SHOWC:1
+SHOWSB:0
+BELOW:0
+ABOVE:13500
+LEADER:5
+SHOWLEADER:0
+TURNLEADER:0
+HISTORY_DOTS:0
+SIMULATION_MODE:1
+DISABLEPANNING:0
+DISABLEZOOMING:0
+DisplayRotation:20.30000
+TAGFAMILY:PHX Ground
+WINDOWAREA:50.015436:8.492779:50.055801:8.612158
+PLUGIN:Ground Radar plugin:AirportElevation:364 
+PLUGIN:Ground Radar plugin:AirportRadius:3
+PLUGIN:Ground Radar plugin:GroundMode:EDDF
+PLUGIN:Ground Radar plugin:ShowMapData:EDDF_S_GND
+PLUGIN:TopSky plugin:ShowMapData:NONE
