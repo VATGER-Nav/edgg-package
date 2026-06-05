@@ -867,15 +867,15 @@
 MAP:Fixes
 FOLDER:Fixes
 ACTIVE:1
-COLOR:standard
+COLOR:Active_Map_Type_1
 {%- for fx in all_fixes|unique %}
-SYMBOL:FIX1:{{fx}}
+SYMBOL:FIX:{{fx}}
 {%- endfor %}
 
 MAP:Fixes w/ L
 FOLDER:Fixes
 TEXTALIGN:LB
-COLOR:standard
+COLOR:Active_Map_Type_1
 {%- for fx in all_fixes|unique %}
-SYMBOL:FIX1:{{fx}}:{{fx}}:5:0
+SYMBOL:FIX:{{fx}}:{{fx}}:5:0
 {%- endfor %}

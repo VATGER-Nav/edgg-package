@@ -58,15 +58,15 @@
 
 MAP:AD_Hotspots
 FOLDER:Aerodromes
-COLOR:standard
+COLOR:Active_Map_Type_1
 {%- for ad in ads %}
-SYMBOL:AD:{{ad}}
+SYMBOL:AIRPORT:{{ad}}
 {%- endfor %}
 
 MAP:AD_Hotspots w/ L
 FOLDER:Aerodromes
 TEXTALIGN:LB
-COLOR:standard
+COLOR:Active_Map_Type_1
 {%- for ad in ads %}
-SYMBOL:AD:{{ad}}:{{ad}}:5:0
+SYMBOL:AIRPORT:{{ad}}:{{ad}}:5:0
 {%- endfor %}

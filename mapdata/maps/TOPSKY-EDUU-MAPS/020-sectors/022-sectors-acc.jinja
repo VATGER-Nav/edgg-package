@@ -12,10 +12,10 @@
 #}
 
 MAP:ACCs
-COLOR:standard
 FOLDER:Sectors
 LAYER:-1
 STYLE:DOT:1
+COLOR:Active_Map_Type_1
 {% for uuid, geom in data.topsky['common']['sectors']['lower']['EDUU'].items() %}
 {{- geom | to_line('') -}}
 {% endfor %}

@@ -110,7 +110,7 @@ FOLDER:Airspace Info
 TEXTALIGN:LB
 
 // Misc Points
-COLOR:label
+COLOR:Active_Map_Type_2
 SYMBOL:FIX3:BERXO:BERXO:5:0
 SYMBOL:FIX3:DINKU:DINKU:5:0
 SYMBOL:FIX3:GEBNO:GEBNO:5:0
@@ -118,7 +118,7 @@ SYMBOL:FIX3:KOVAN:KOVAN:5:0
 SYMBOL:FIX3:LOHRE:LOHRE:5:0
 
 // Tactical Directs
-COLOR:blue
+COLOR:BLUE
 {%- for fx in directs if 'UCW' in fx['ebg'] %}
 SYMBOL:FIX3:{{fx['desig']}}:{{fx['desig']}}:5:0
 {%- endfor %}
@@ -176,21 +176,21 @@ FOLDER:Airspace Info
 TEXTALIGN:LB
 
 // Misc Points
-COLOR:label
+COLOR:Active_Map_Type_2
 SYMBOL:FIX3:BERXO:BERXO:5:0
 SYMBOL:FIX3:DINKU:DINKU:5:0
 SYMBOL:FIX3:GEBNO:GEBNO:5:0
 SYMBOL:FIX3:LOHRE:LOHRE:5:0
 
 // Exceptions
-COLOR:red
+COLOR:RED
 FONTSIZE:=:10
 SYMBOL:FIX3:MAPOX:Except:5:-5
 FONTSIZE:0
 SYMBOL:FIX3:MAPOX:MAPOX:5:7
 
 // Tactical Directs
-COLOR:blue
+COLOR:BLUE
 {%- for fx in directs if 'UC' in fx['ebg'] %}
 SYMBOL:FIX3:{{fx['desig']}}:{{fx['desig']}}:5:0
 {%- endfor %}
@@ -245,11 +245,11 @@ FOLDER:Airspace Info
 TEXTALIGN:LB
 
 // Misc Points
-COLOR:label
+COLOR:Active_Map_Type_2
 SYMBOL:FIX3:KOVAN:KOVAN:5:0
 
 // Tactical Directs
-COLOR:blue
+COLOR:BLUE
 {%- for fx in directs if 'UW' in fx['ebg'] %}
 SYMBOL:FIX3:{{fx['desig']}}:{{fx['desig']}}:5:0
 {%- endfor %}
