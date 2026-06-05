@@ -9,15 +9,15 @@
 #}
 {%- set holdings = {
     "DKB":   { "inbd": "128", "turn": "L", "lvllo": "A50", "lvlup": "270", "symb": "VOR"  },
-    "KISEK": { "inbd": "003", "turn": "R", "lvllo": "A65", "lvlup": null,  "symb": "FIX1" },
-    "NIMDI": { "inbd": "276", "turn": "R", "lvllo": "A50", "lvlup": null,  "symb": "FIX1" },
+    "KISEK": { "inbd": "003", "turn": "R", "lvllo": "A65", "lvlup": null,  "symb": "FIX" },
+    "NIMDI": { "inbd": "276", "turn": "R", "lvllo": "A50", "lvlup": null,  "symb": "FIX" },
 } %}
 
 MAP:Holdings
 FOLDER:Airspace Info
-COLOR:holding
 LAYER:4
-STYLE:Solid:1
+STYLE:SOLID:1
+COLOR:BLUE
 TEXTALIGN:LB
 FONTSIZE:=:11
 {% for desig, hold in holdings.items() %}
