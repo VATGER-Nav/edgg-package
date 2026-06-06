@@ -41,7 +41,9 @@ Plugins	Plugin0Display1	Standard ES radar screen
 Plugins	Plugin1	\EDGG\Plugins\GRP\TWR_PHX_DAY\GRplugin.dll
 Plugins	Plugin1Display0	Ground Radar display
 Plugins	Plugin1Display1	Standard ES radar screen
-Plugins	Plugin2	\EDGG\Plugins\AfvEuroScopeBridge.dll
+Plugins	Plugin2	\EDGG\Plugins\RDF\RDFPlugin.dll
+Plugins	Plugin2Display0	Ground Radar display
+Plugins	Plugin2Display1	Standard ES radar screen
 Plugins	Plugin3	\EDGG\Plugins\VFPC\VFPC.dll
 Plugins	Plugin4	\EDGG\Plugins\IASsure\Common\IASsure.dll
 Plugins	Plugin5	\EDGG\Plugins\Squawk\EDGG\Squawks.dll

@@ -244,4 +244,9 @@ TopSky plugin:ACList/Sector List/m_Column_18:ARWY:4:1:10010:19:0:0:TopSky plugin
 TopSky plugin:ACList/Sector List/m_Column_19:T:2:1:11:32:0:1:::
 TopSky plugin:ACList/Sector List/m_Column_20:RMK:10:1:38:2:0:1:TopSky plugin:TopSky plugin:
 eddft3:okColor:000.128.000
+RDF Plugin for Euroscope:RGB:114:150:102
+RDF Plugin for Euroscope:Radius:30
+RDF Plugin for Euroscope:Threshold:-1
+RDF Plugin for Euroscope:Precision:0
+RDF Plugin for Euroscope:EnableDraw:0
 END
