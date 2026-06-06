@@ -1,0 +1,66 @@
+{
+  "EDGG": {
+    "Radius": 30,
+    "Precision": 20,
+    "Threshold": 999999,
+    "LowAltitude": 0,
+    "HighAltitude": 40000,
+    "LowPrecision": 10,
+    "HighPrecision": 30,
+    "RGB": "114:150:102",
+    "ConcurrentTransmissionRGB": "114:150:102",
+    "DrawControllers": false,
+    "DrawRequireTx": false
+  },
+  "edgg": {
+    "Radius": 30,
+    "Precision": 20,
+    "Threshold": 999999,
+    "LowAltitude": 0,
+    "HighAltitude": 40000,
+    "LowPrecision": 10,
+    "HighPrecision": 30,
+    "RGB": "114:150:102",
+    "ConcurrentTransmissionRGB": "114:150:102",
+    "DrawControllers": false,
+    "DrawRequireTx": false
+  },
+  "RING": {
+    "Radius": 30,
+    "Precision": 0,
+    "Threshold": -1,
+    "LowAltitude": 0,
+    "HighAltitude": 0,
+    "LowPrecision": 0,
+    "HighPrecision": 0,
+    "RGB": "114:150:102",
+    "ConcurrentTransmissionRGB": "114:150:102",
+    "DrawControllers": false,
+    "DrawRequireTx": false
+  },
+  "ring": {
+    "Radius": 30,
+    "Precision": 0,
+    "Threshold": -1,
+    "LowAltitude": 0,
+    "HighAltitude": 0,
+    "LowPrecision": 0,
+    "HighPrecision": 0,
+    "RGB": "114:150:102",
+    "ConcurrentTransmissionRGB": "114:150:102",
+    "DrawControllers": false,
+    "DrawRequireTx": false
+  },
+  "EDYY": {
+    "Radius": 30,
+    "RGB": "200:200:200",
+    "Threshold": -1,
+    "Precision": 3
+  },
+  "edyy": {
+    "Radius": 30,
+    "RGB": "200:200:200",
+    "Threshold": -1,
+    "Precision": 3
+  }
+}

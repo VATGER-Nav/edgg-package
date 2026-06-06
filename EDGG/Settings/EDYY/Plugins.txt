@@ -256,5 +256,6 @@ RDF Plugin for Euroscope:RGB:200:200:200
 RDF Plugin for Euroscope:Radius:30
 RDF Plugin for Euroscope:Threshold:-1
 RDF Plugin for Euroscope:Precision:3
+RDF Plugin for Euroscope:EnableDraw:0
 eddft3:okColor:000.200.000
 END

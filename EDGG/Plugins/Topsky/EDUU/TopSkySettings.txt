@@ -282,7 +282,7 @@ MSAW=0
 
 MTCD_Filter_Dep=3
 
-RDF_Mode=0
+RDF_Mode=-1
 RDF_Accuracy=0
 RDF_Floor=0
 
