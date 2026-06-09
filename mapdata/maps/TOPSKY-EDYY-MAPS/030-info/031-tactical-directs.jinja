@@ -7,22 +7,39 @@
     
      * TOPSKY-EDGG-MAPS\040-info\043-tactical-directs.jinja
 #}
-{% set AAL =   'N057.06.13.500:E009.59.44.100' %}
-{% set AMTOT = 'N056.02.26.000:E012.10.49.000' %}
-{% set DANKO = 'N057.00.00.000:E006.41.52.200' %}
-{% set DEKIK = 'N056.45.52.000:E014.18.28.000' %}
-{% set DETSO = 'N058.36.00.000:E014.15.52.000' %}
-{% set GOTEX = 'N057.12.18.000:E011.16.22.000' %}
-{% set KARLI = 'N057.00.00.000:E005.30.26.800' %}
-{% set MITSI = 'N057.00.00.000:E006.27.20.500' %}
-{% set PIPEX = 'N058.50.50.100:E009.02.32.100' %}
-{% set RADIS = 'N056.32.30.000:E009.59.42.000' %}
-{% set SABAK = 'N058.10.36.000:E011.38.34.000' %}
+{%- set EDGG = data.sectors['lines']['EDGG'] %}
+{%- set EDMM = data.sectors['lines']['EDMM'] %}
+{%- set EDWW = data.sectors['lines']['EDWW'] %}
+{%- set EHAA = data.sectors['lines']['EHAA'] %}
+{%- set EBBU = data.sectors['lines']['EBBU'] %}
+{%- set EXT_EBBU = data.sectors_ext['lines']['EBBU'] %}
+
+{%- set AAL =   'N057.06.13.500:E009.59.44.100' %}
+{%- set AMTOT = 'N056.02.26.000:E012.10.49.000' %}
+{%- set DANKO = 'N057.00.00.000:E006.41.52.200' %}
+{%- set DEKIK = 'N056.45.52.000:E014.18.28.000' %}
+{%- set DETSO = 'N058.36.00.000:E014.15.52.000' %}
+{%- set GOTEX = 'N057.12.18.000:E011.16.22.000' %}
+{%- set KARLI = 'N057.00.00.000:E005.30.26.800' %}
+{%- set MITSI = 'N057.00.00.000:E006.27.20.500' %}
+{%- set PIPEX = 'N058.50.50.100:E009.02.32.100' %}
+{%- set RADIS = 'N056.32.30.000:E009.59.42.000' %}
+{%- set SABAK = 'N058.10.36.000:E011.38.34.000' %}
 
 MAP:Tactical Directs
 FOLDER:Airspace Info
-COLOR:DARKGREEN
+LAYER:2
 
+// Origin Arcs
+COLOR:ORANGE
+STYLE:NULL
+COORD:OSBIT
+COORD_AF:OSBIT:20:10:360M:>:011M
+COORDPOLY:25
+
+// Waypoints
+COLOR:DARKGREEN
+FONTSIZE:0
 // EDUU
 SYMBOL/LB:FIX3:ALUKA:ALUKA:5:0
 SYMBOL/CT:FIX3:BAKLI:BAKLI:0:5
@@ -87,7 +104,8 @@ SYMBOL/LB:FIX3:RARUP:RARUP:5:0
 
 // Reference Waypoints
 COLOR:Active_Map_Type_2
-SYMBOL/LB:FIX3:BERXO:BERXO:5:0
+FONTSIZE:=:10
+SYMBOL/LB:FIX2:BERXO:BERXO:3:0
 
 // Notes
 COLOR:DARKGREEN
@@ -104,5 +122,38 @@ COLOR:DARKGREEN
 TEXTALIGN:CC
 FONTSIZE:=:17
 FONTSTYLE:700:0:0:0
+STYLE:SOLID:2
+{#- ========= Super complex shenanigans to create EDYY Outline ========= #}
+{%- set EDYY = 
+    EDGG['YYRH']['355-660'] +
+    EDGG['YYMH']['355-660'] +
+    EDWW['EDYYSH']['355-660'] +
+    EDWW['EDYYCH']['355-660'] +
+    EDWW['EDYYHH']['365-660'] +
+    EDWW['EDYYJH']['365-660'] +
+    EHAA['EDYYDLT']['315-660'] +
+    EBBU['EDYYLNH_SCT']['245-660'] +
+    EBBU['EDYYLNH_SCT 2']['255-660'] +
+    EXT_EBBU['EDYYLXH']['245-660'] +
+    EXT_EBBU['EDYYNIH']['245-660'] +
+    EXT_EBBU['EDYYKOH']['245-660']
+%}
+{#- 
+    Extract duplicate (inner) and unique
+    sectorlines from the set of sectors
+#}
+{%- set EDYY_unique = [] %}
+{%- set EDYY_inner = [] %}
+
+{%- for line in EDYY %}
+{%- if line in EDYY_unique %}
+{%- set EDYY_inner = EDYY_inner.append(line) %}
+{%- else %}
+{%- set EDYY_unique = EDYY_unique.append(line) %}
+{%- endif %}
+{%- endfor %}
+
+{%- set EDYY_outer = sector_sub(EDYY_unique, EDYY_inner) %}
+{{ render_sectorlines(EDYY_outer) }}
 TEXT:N052.12.18.000:E007.40.35.000:WITHIN MUAC ALL WAYPOINTS CROSS-SECTOR APPROVED:0:0
 TEXT:N052.12.18.000:E007.40.35.000:VIA EDGG/EDWW/EHAA/EBBU ACC FURTHEST DIRECT COP TO LOWER SECTOR:0:25
