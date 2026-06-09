@@ -336,7 +336,7 @@ Shortcut_Map_Target=6,VFR\VRPs
 Shortcut_Map_Target=7,Topography
 Shortcut_Map_Target=8,Fixes\Fixes w/ L
 // Shortcut_Map_Target=9,Airspace Info\Sector Info
-Shortcut_Map_Target=10,Airspace Info\T-Directs - UU
+Shortcut_Map_Target=10,Airspace Info\Tactical Directs
 
 STCA_Sep_Lat_SepLevel=24500
 STCA_Filter=1
