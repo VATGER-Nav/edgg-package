@@ -126,10 +126,10 @@
 } %}
 
 MAP:FINAL 07C
-COLOR:standard
+COLOR:Active_Map_Type_1
 FOLDER:EDDF
 {%- for fx in final['07C'] %}
-SYMBOL:FIX3_L:{{fx}}
+SYMBOL:FIX2_L:{{fx}}
 {%- endfor %}
 ZOOM:8
 FONTSIZE:=:12
@@ -140,10 +140,10 @@ TEXT:DF571:571:7:13
 TEXT:DF572:572:7:13
 
 MAP:FINAL 07R
-COLOR:standard
+COLOR:Active_Map_Type_1
 FOLDER:EDDF
 {%- for fx in final['07R'] %}
-SYMBOL:FIX3_L:{{fx}}
+SYMBOL:FIX2_L:{{fx}}
 {%- endfor %}
 ZOOM:8
 FONTSIZE:=:12
@@ -152,10 +152,10 @@ TEXT:{{fx}}:{{fx | replace('DF', '')}}:10:18
 {%- endfor %}
 
 MAP:FINAL 07L
-COLOR:standard
+COLOR:Active_Map_Type_1
 FOLDER:EDDF
 {%- for fx in final['07L'] %}
-SYMBOL:FIX3_L:{{fx}}
+SYMBOL:FIX2_L:{{fx}}
 {%- endfor %}
 ZOOM:8
 FONTSIZE:=:12
@@ -164,7 +164,7 @@ TEXT:{{fx}}:{{fx | replace('DF', '')}}:-8:-18
 {%- endfor %}
 
 MAP:FINAL 07C w/o X
-COLOR:standard
+COLOR:Active_Map_Type_1
 FOLDER:EDDF
 ACTIVE:RWY:ARR:EDDF07C:DEP:*
 ZOOM:8
@@ -176,7 +176,7 @@ TEXT:DF571:571:7:13
 TEXT:DF572:572:7:13
 
 MAP:FINAL 07R w/o X
-COLOR:standard
+COLOR:Active_Map_Type_1
 FOLDER:EDDF
 ACTIVE:RWY:ARR:EDDF07R:DEP:*
 ZOOM:8
@@ -186,7 +186,7 @@ TEXT:{{fx}}:{{fx | replace('DF', '')}}:10:18
 {%- endfor %}
 
 MAP:FINAL 07L w/o X
-COLOR:standard
+COLOR:Active_Map_Type_1
 FOLDER:EDDF
 ACTIVE:RWY:ARR:EDDF07L:DEP:*
 ZOOM:8
@@ -200,11 +200,11 @@ FOLDER:EDDF
 ACTIVE:RWY:ARR:EDDF07R:DEP:*
 ACTIVE:RWY:ARR:EDDF07L:DEP:*
 ACTIVE:RWY:ARR:EDDF07C:DEP:*
-COLOR:darkgreen
-SYMBOL:FIX3_L:DF441
-SYMBOL:FIX3_L:DF640
+COLOR:DARKGREEN
+SYMBOL:FIX2_L:DF441
+SYMBOL:FIX2_L:DF640
 ZOOM:8
-COLOR:standard
+COLOR:Active_Map_Type_1
 FONTSIZE:=:12
 TEXTALIGN:LB
 {%- for fx in trans['07'] %}
@@ -212,7 +212,7 @@ TEXT:{{fx}}:{{fx | replace('DF', '')}}:5:0
 {%- endfor %}
 
 MAP:DOWNWIND 07
-COLOR:standard
+COLOR:Active_Map_Type_1
 FOLDER:EDDF
 ZOOM:8
 FONTSIZE:=:12
@@ -222,10 +222,10 @@ TEXT:{{fx}}:{{fx | replace('DF', '')}}:5:0
 {%- endfor %}
 
 MAP:FINAL 25C
-COLOR:standard
+COLOR:Active_Map_Type_1
 FOLDER:EDDF
 {%- for fx in final['25C'] %}
-SYMBOL:FIX3_L:{{fx}}
+SYMBOL:FIX2_L:{{fx}}
 {%- endfor %}
 ZOOM:8
 FONTSIZE:=:12
@@ -236,10 +236,10 @@ TEXT:DF581:581:7:13
 TEXT:DF582:582:7:13
 
 MAP:FINAL 25L
-COLOR:standard
+COLOR:Active_Map_Type_1
 FOLDER:EDDF
 {%- for fx in final['25L'] %}
-SYMBOL:FIX3_L:{{fx}}
+SYMBOL:FIX2_L:{{fx}}
 {%- endfor %}
 ZOOM:8
 FONTSIZE:=:12
@@ -248,10 +248,10 @@ TEXT:{{fx}}:{{fx | replace('DF', '')}}:10:18
 {%- endfor %}
 
 MAP:FINAL 25R
-COLOR:standard
+COLOR:Active_Map_Type_1
 FOLDER:EDDF
 {%- for fx in final['25R'] %}
-SYMBOL:FIX3_L:{{fx}}
+SYMBOL:FIX2_L:{{fx}}
 {%- endfor %}
 ZOOM:8
 FONTSIZE:=:12
@@ -260,7 +260,7 @@ TEXT:{{fx}}:{{fx | replace('DF', '')}}:-8:-18
 {%- endfor %}
 
 MAP:FINAL 25C w/o X
-COLOR:standard
+COLOR:Active_Map_Type_1
 FOLDER:EDDF
 ACTIVE:RWY:ARR:EDDF25C:DEP:*
 ZOOM:8
@@ -272,7 +272,7 @@ TEXT:DF581:581:7:13
 TEXT:DF582:582:7:13
 
 MAP:FINAL 25L w/o X
-COLOR:standard
+COLOR:Active_Map_Type_1
 FOLDER:EDDF
 ACTIVE:RWY:ARR:EDDF25R:DEP:*
 ZOOM:8
@@ -282,7 +282,7 @@ TEXT:{{fx}}:{{fx | replace('DF', '')}}:10:18
 {%- endfor %}
 
 MAP:FINAL 25R w/o X
-COLOR:standard
+COLOR:Active_Map_Type_1
 FOLDER:EDDF
 ACTIVE:RWY:ARR:EDDF25L:DEP:*
 ZOOM:8
@@ -296,11 +296,11 @@ FOLDER:EDDF
 ACTIVE:RWY:ARR:EDDF25R:DEP:*
 ACTIVE:RWY:ARR:EDDF25L:DEP:*
 ACTIVE:RWY:ARR:EDDF25C:DEP:*
-COLOR:darkgreen
-SYMBOL:FIX3_L:DF411
-SYMBOL:FIX3_L:DF609
+COLOR:DARKGREEN
+SYMBOL:FIX2_L:DF411
+SYMBOL:FIX2_L:DF609
 ZOOM:8
-COLOR:standard
+COLOR:Active_Map_Type_1
 FONTSIZE:=:12
 TEXTALIGN:LB
 {%- for fx in trans['25'] %}
@@ -310,7 +310,7 @@ FONTSIZE:=:14
 TEXT:MEFTO:MEFTO:5:-16
 
 MAP:DOWNWIND 25
-COLOR:standard
+COLOR:Active_Map_Type_1
 FOLDER:EDDF
 ZOOM:8
 FONTSIZE:=:12

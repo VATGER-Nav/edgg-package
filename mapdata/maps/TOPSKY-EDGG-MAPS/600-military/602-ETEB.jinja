@@ -19,11 +19,11 @@
 MAP:ETEB RNP 08
 FOLDER:RNAV/RNP APP
 ACTIVE:RWY:ARR:ETEB08:DEP:*
-COLOR:standard
+COLOR:Active_Map_Type_1
 SYMBOL:VOR:DKB
 SYMBOL:VOR:NUB
 {%- for fx in rnp['08'] if not fx in ['DKB', 'NUB'] %}
-SYMBOL:FIX3:{{fx}}
+SYMBOL:FIX2:{{fx}}
 {%- endfor %}
 ZOOM:8
 FONTSIZE:=:11
@@ -35,11 +35,11 @@ TEXT:{{fx}}:{{fx}}:5:0
 MAP:ETEB RNP 26
 FOLDER:RNAV/RNP APP
 ACTIVE:RWY:ARR:ETEB26:DEP:*
-COLOR:standard
+COLOR:Active_Map_Type_1
 SYMBOL:VOR:DKB
 SYMBOL:VOR:NUB
 {%- for fx in rnp['26'] if not fx in ['DKB', 'NUB'] %}
-SYMBOL:FIX3:{{fx}}
+SYMBOL:FIX2:{{fx}}
 {%- endfor %}
 ZOOM:8
 FONTSIZE:=:11

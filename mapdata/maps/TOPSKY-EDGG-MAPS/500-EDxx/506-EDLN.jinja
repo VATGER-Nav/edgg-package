@@ -49,8 +49,8 @@ FOLDER:SIDs
 LAYER:3
 
 // ---- RWY 13 ----
-STYLE:Solid
-COLOR:sid_east
+STYLE:SOLID
+COLOR:ORANGE
 {%- for desig, fixes in sids['13'].items() %}
 // {{desig}}
 {%- for fx in fixes %}
@@ -59,7 +59,7 @@ COORD:{{fx}}
 COORDLINE
 {%- endfor %}
 
-STYLE:sid_dash_east
+STYLE:SID_DASH_EAST
 {%- for desig, fixes in sids['both'].items() %}
 // {{desig}}
 {%- for fx in fixes %}
@@ -74,8 +74,8 @@ TEXT:N051.12.02.700:E006.33.48.500:A/M/Z:5:0
 
 
 // ---- RWY 31 ----
-STYLE:Solid
-COLOR:sid_west
+STYLE:SOLID
+COLOR:BLUE
 // COL
 COORD:EDLN/13
 COORD:LN313
@@ -92,7 +92,7 @@ COORD:{{fx}}
 COORDLINE
 {%- endfor %}
 
-STYLE:sid_dash_west
+STYLE:SID_DASH_WEST
 {%- for desig, fixes in sids['both'].items() %}
 // {{desig}}
 {%- for fx in fixes %}
@@ -106,7 +106,7 @@ TEXTALIGN:LB
 TEXT:N051.15.16.900:E006.27.17.000:N:5:0
 
 // Fixes
-COLOR:sid_east
+COLOR:ORANGE
 SYMBOL:FIX_SID_A:ABODU
 SYMBOL:FIX_SID_A:COL
 SYMBOL:FIX_SID_A:GMH
@@ -117,7 +117,7 @@ SYMBOL:FIX_SID_A:NVO
 SYMBOL:FIX_SID_A:ROMIN
 SYMBOL:FIX_SID_A:SONEB
 
-COLOR:sid_west
+COLOR:BLUE
 SYMBOL:FIX_SID_B:ABODU
 SYMBOL:FIX_SID_B:COL
 SYMBOL:FIX_SID_B:GMH
@@ -128,7 +128,7 @@ SYMBOL:FIX_SID_B:NVO
 SYMBOL:FIX_SID_B:ROMIN
 SYMBOL:FIX_SID_B:SONEB
 
-COLOR:label
+COLOR:Active_Map_Type_2
 TEXTALIGN:RT
 TEXT:COL:CO:-5:0
 TEXT:NVO:NV:-5:0
@@ -146,10 +146,10 @@ TEXT:ROMIN:RO:-5:0
 MAP:EDLN RNP 13
 FOLDER:RNAV/RNP APP
 ACTIVE:RWY:ARR:EDLN13:DEP:*
-COLOR:standard
+COLOR:Active_Map_Type_1
 SYMBOL:VOR:MHV
 {%- for fx in rnp['13'] if fx not in ['MHV'] %}
-SYMBOL:FIX3:{{fx}}
+SYMBOL:FIX2:{{fx}}
 {%- endfor %}
 ZOOM:8
 FONTSIZE:=:11
@@ -161,10 +161,10 @@ TEXT:{{fx}}:{{fx}}:5:0
 MAP:EDLN RNP 31
 FOLDER:RNAV/RNP APP
 ACTIVE:RWY:ARR:EDLN31:DEP:*
-COLOR:standard
+COLOR:Active_Map_Type_1
 SYMBOL:VOR:MHV
 {%- for fx in rnp['31'] if fx not in ['MHV'] %}
-SYMBOL:FIX3:{{fx}}
+SYMBOL:FIX2:{{fx}}
 {%- endfor %}
 ZOOM:8
 FONTSIZE:=:11
@@ -176,8 +176,8 @@ TEXT:{{fx}}:{{fx}}:5:0
 MAP:EDLN ILS/VOR 13
 FOLDER:NON-RNAV APP
 LAYER:3
-STYLE:Dot:1
-COLOR:nonrnav
+STYLE:DOT:1
+COLOR:ORANGE
 // via MHV
 COORD:MHV
 COORD_FD:334M:MHV:5.7
@@ -185,7 +185,7 @@ COORD_DF:334M:L:1.4:10:SUVIG
 COORDLINE
 // Fixes
 SYMBOL:VOR:MHV
-SYMBOL:FIX3:SUVIG
+SYMBOL:FIX2:SUVIG
 // Altitudes
 TEXTALIGN:RT
 TEXT:SUVIG:A20:-5:0
@@ -193,8 +193,8 @@ TEXT:SUVIG:A20:-5:0
 MAP:EDLN ILS/VOR 31
 FOLDER:NON-RNAV APP
 LAYER:3
-STYLE:Dot:1
-COLOR:nonrnav
+STYLE:DOT:1
+COLOR:ORANGE
 // via MHV
 COORD:MHV
 COORD_FD:147M:MHV:7.6
@@ -202,7 +202,7 @@ COORD_DF:147M:L:1.39:10:GREKA
 COORDLINE
 // Fixes
 SYMBOL:VOR:MHV
-SYMBOL:FIX3:GREKA
+SYMBOL:FIX2:GREKA
 // Altitudes
 TEXTALIGN:RT
 TEXT:GREKA:A20:-5:0

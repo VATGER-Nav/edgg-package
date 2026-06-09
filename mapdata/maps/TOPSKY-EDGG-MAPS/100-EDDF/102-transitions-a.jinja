@@ -72,14 +72,14 @@
 } %}
 
 MAP:EDDF 07
-COLOR:standard
+COLOR:Active_Map_Type_1
 FOLDER:Transitions
 ACTIVE:RWY:ARR:EDDF07:DEP:*
 {%- for fx in trans['07'] %}
-SYMBOL:FIX3_L:{{fx}}
+SYMBOL:FIX2_L:{{fx}}
 {%- endfor %}
 {%- for fx in downwind['07'] %}
-SYMBOL:FIX3_L:{{fx}}
+SYMBOL:FIX2_L:{{fx}}
 {%- endfor %}
 ZOOM:8
 FONTSIZE:=:12
@@ -89,14 +89,14 @@ TEXT:{{fx}}:{{fx | replace('DF', '')}}:5:0
 {%- endfor %}
 
 MAP:EDDF 25
-COLOR:standard
+COLOR:Active_Map_Type_1
 FOLDER:Transitions
 ACTIVE:RWY:ARR:EDDF25:DEP:*
 {%- for fx in trans['25'] %}
-SYMBOL:FIX3_L:{{fx}}
+SYMBOL:FIX2_L:{{fx}}
 {%- endfor %}
 {%- for fx in downwind['25'] %}
-SYMBOL:FIX3_L:{{fx}}
+SYMBOL:FIX2_L:{{fx}}
 {%- endfor %}
 ZOOM:8
 FONTSIZE:=:12

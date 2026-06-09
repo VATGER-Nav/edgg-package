@@ -73,15 +73,15 @@
 // Complete Transitions
 
 MAP:EDDL 05
-COLOR:standard
+COLOR:Active_Map_Type_1
 FOLDER:Transitions
 ACTIVE:RWY:ARR:EDDL05R:DEP:*
 ACTIVE:RWY:ARR:EDDL05L:DEP:*
 {%- for fx in trans['05'] %}
-SYMBOL:FIX3_L:{{fx}}
+SYMBOL:FIX2_L:{{fx}}
 {%- endfor %}
 {%- for fx in downwind['05'] %}
-SYMBOL:FIX3_L:{{fx}}
+SYMBOL:FIX2_L:{{fx}}
 {%- endfor %}
 ZOOM:8
 FONTSIZE:=:12
@@ -91,15 +91,15 @@ TEXT:{{fx}}:{{fx | replace('DL', '')}}:5:0
 {%- endfor %}
 
 MAP:EDDL 23
-COLOR:standard
+COLOR:Active_Map_Type_1
 FOLDER:Transitions
 ACTIVE:RWY:ARR:EDDL23R:DEP:*
 ACTIVE:RWY:ARR:EDDL23L:DEP:*
 {%- for fx in trans['23'] %}
-SYMBOL:FIX3_L:{{fx}}
+SYMBOL:FIX2_L:{{fx}}
 {%- endfor %}
 {%- for fx in downwind['23'] %}
-SYMBOL:FIX3_L:{{fx}}
+SYMBOL:FIX2_L:{{fx}}
 {%- endfor %}
 ZOOM:8
 FONTSIZE:=:12
@@ -111,7 +111,7 @@ TEXT:{{fx}}:{{fx | replace('DL', '')}}:5:0
 // Maps specific for EDDL
 
 MAP:DOWNWIND 05
-COLOR:standard
+COLOR:Active_Map_Type_1
 FOLDER:EDDL
 ZOOM:8
 FONTSIZE:=:12
@@ -121,7 +121,7 @@ TEXT:{{fx}}:{{fx | replace('DL', '')}}:5:0
 {%- endfor %}
 
 MAP:DOWNWIND 23
-COLOR:standard
+COLOR:Active_Map_Type_1
 FOLDER:EDDL
 ZOOM:8
 FONTSIZE:=:12

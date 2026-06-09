@@ -12,8 +12,8 @@
 MAP:Highways
 FOLDER:Topography
 LAYER:-2
-COLOR:topo_road
-STYLE:Solid:1
+COLOR:Active_Map_Type_19
+STYLE:SOLID:1
 {% for uuid, geom in data.topsky['common']['topo']['EDGG_autobahn'].items() %}
 {{- geom | to_coordline('') }}
 {% endfor %}
@@ -24,8 +24,8 @@ STYLE:Solid:1
 MAP:Rivers/Lakes
 FOLDER:Topography
 LAYER:-2
-COLOR:topo_water
-STYLE:Solid:1
+COLOR:Active_Map_Type_18
+STYLE:SOLID:1
 {% for uuid, geom in data.topsky['common']['topo']['EDGG_rivers'].items() %}
 {{- geom | to_coordline('') }}
 {% endfor %}
@@ -33,14 +33,14 @@ STYLE:Solid:1
 {{- geom | to_text(label) }}
 {% endfor %}
 {% for name, geom in data.topsky['common']['topo']['EDGG_lakes'].items() %}
-{{- geom | to_poly(name, 'topo_water', 100) }}
+{{- geom | to_poly(name, 'Active_Map_Type_18', 100) }}
 {% endfor %}
 
 MAP:DE Border
 FOLDER:Topography
 LAYER:-3
-COLOR:topo_border
-STYLE:Solid:1
+COLOR:Active_Map_Type_1
+STYLE:ALTERNATE:1
 {% for desig in [
     'CH_DE',
     'DE_AT',

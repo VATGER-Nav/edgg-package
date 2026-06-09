@@ -10,8 +10,8 @@
 
 MAP:MVA Warm (MAR-NOV)
 FOLDER:MVA
-COLOR:mva
-STYLE:Solid:1
+COLOR:Active_Map_Type_7
+STYLE:SOLID:1
 {% for uuid, geom in data.topsky['common']['mva']['line'].items() if uuid not in
 [
     '01984d4d-a7f8-772f-b075-e284bb254a89',
@@ -49,8 +49,8 @@ STYLE:Solid:1
 
 MAP:MVA Cold (NOV-MAR)
 FOLDER:MVA
-COLOR:mva
-STYLE:Solid:1
+COLOR:Active_Map_Type_7
+STYLE:SOLID:1
 {% for uuid, geom in data.topsky['common']['mva']['line'].items() if uuid not in
 [
     '01984d4d-a1f2-7290-8663-83c29996aff0',
@@ -115,8 +115,8 @@ STYLE:DOT:1
 
 MAP:MVA Military
 FOLDER:MVA
-COLOR:mva_mil
-STYLE:Solid:1
+COLOR:YELLOW
+STYLE:SOLID:1
 {% for uuid, geom in data.topsky['common']['mva']['mil_line'].items() %}
 {{- geom | to_line('') -}}
 {% endfor %}

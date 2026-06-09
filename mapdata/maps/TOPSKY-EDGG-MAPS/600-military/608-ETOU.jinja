@@ -35,10 +35,10 @@
 MAP:ETOU RNP 07
 FOLDER:RNAV/RNP APP
 ACTIVE:RWY:ARR:ETOU07:DEP:*
-COLOR:standard
-SYMBOL:FIX2:TABUM
+COLOR:Active_Map_Type_1
+SYMBOL:FIX:TABUM
 {%- for fx in rnp['07'] if not fx in ['TABUM'] %}
-SYMBOL:FIX3:{{fx}}
+SYMBOL:FIX2:{{fx}}
 {%- endfor %}
 ZOOM:8
 FONTSIZE:=:12
@@ -50,10 +50,10 @@ TEXT:{{fx}}:{{fx}}:5:0
 MAP:ETOU ILS 25
 FOLDER:RNAV/RNP APP
 ACTIVE:RWY:ARR:ETOU25:DEP:*
-COLOR:standard
+COLOR:Active_Map_Type_1
 SYMBOL:VOR:TAU
 {%- for fx in ils['25'] %}
-SYMBOL:FIX3:{{fx}}
+SYMBOL:FIX2:{{fx}}
 {%- endfor %}
 ZOOM:8
 FONTSIZE:=:12
@@ -66,10 +66,10 @@ TEXT:TAU:TAU:5:0
 
 MAP:ETOU RNAV 25
 FOLDER:RNAV/RNP APP
-COLOR:standard
+COLOR:Active_Map_Type_1
 SYMBOL:VOR:MTR
 {%- for fx in rnav['25'] %}
-SYMBOL:FIX3:{{fx}}
+SYMBOL:FIX2:{{fx}}
 {%- endfor %}
 ZOOM:8
 FONTSIZE:=:12

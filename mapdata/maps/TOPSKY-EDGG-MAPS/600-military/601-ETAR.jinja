@@ -30,17 +30,17 @@ MAP:ETAR AoR
 FOLDER:Sectors
 ACTIVE:ID:*:*:TARA:*
 ACTIVE:ID:TARA:*:*:*
-COLOR:standard
-STYLE:Solid:1
+COLOR:Active_Map_Type_1
+STYLE:SOLID:1
 {{ render_sectorlines(EDGG['ETAR']['000-050']) }}
 
 MAP:ETAR RNP 08
 FOLDER:RNAV/RNP APP
 ACTIVE:RWY:ARR:ETAR08:DEP:*
-COLOR:standard
-SYMBOL:FIX2:MAPIG
+COLOR:Active_Map_Type_1
+SYMBOL:FIX:MAPIG
 {%- for fx in rnp['08'] if not fx in ['MAPIG'] %}
-SYMBOL:FIX3:{{fx}}
+SYMBOL:FIX2:{{fx}}
 {%- endfor %}
 ZOOM:8
 FONTSIZE:=:11
@@ -52,10 +52,10 @@ TEXT:{{fx}}:{{fx}}:5:0
 MAP:ETAR RNP 26
 FOLDER:RNAV/RNP APP
 ACTIVE:RWY:ARR:ETAR26:DEP:*
-COLOR:standard
-SYMBOL:FIX2:XIDOD
+COLOR:Active_Map_Type_1
+SYMBOL:FIX:XIDOD
 {%- for fx in rnp['26'] if fx not in ['XIDOD'] %}
-SYMBOL:FIX3:{{fx}}
+SYMBOL:FIX2:{{fx}}
 {%- endfor %}
 ZOOM:8
 FONTSIZE:=:11
@@ -67,10 +67,10 @@ TEXT:{{fx}}:{{fx}}:5:0
 MAP:ETAR RNP 09
 FOLDER:RNAV/RNP APP
 ACTIVE:RWY:ARR:ETAR09:DEP:*
-COLOR:standard
-SYMBOL:FIX2:MAPIG
+COLOR:Active_Map_Type_1
+SYMBOL:FIX:MAPIG
 {%- for fx in rnp['09'] if not fx in ['MAPIG'] %}
-SYMBOL:FIX3:{{fx}}
+SYMBOL:FIX2:{{fx}}
 {%- endfor %}
 ZOOM:8
 FONTSIZE:=:11
@@ -82,10 +82,10 @@ TEXT:{{fx}}:{{fx}}:5:0
 MAP:ETAR RNP 27
 FOLDER:RNAV/RNP APP
 ACTIVE:RWY:ARR:ETAR27:DEP:*
-COLOR:standard
-SYMBOL:FIX2:XIDOD
+COLOR:Active_Map_Type_1
+SYMBOL:FIX:XIDOD
 {%- for fx in rnp['27'] if fx not in ['XIDOD'] %}
-SYMBOL:FIX3:{{fx}}
+SYMBOL:FIX2:{{fx}}
 {%- endfor %}
 ZOOM:8
 FONTSIZE:=:11

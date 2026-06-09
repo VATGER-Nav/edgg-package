@@ -12,168 +12,83 @@
 {%- set EXT = data.sectors_ext['lines'] %}
 
 MAP:EXT ACC
-ACTIVE:1
-COLOR:standard
 FOLDER:Sectors
+ACTIVE:1
 ASRDATA:EDGG
-STYLE:Solid:1
-// EDMM ACC 
-// EBG Approach - ILR
+COLOR:Active_Map_Type_1
+STYLE:SOLID:1
+{#-
+    EDMM ACC:
+    - EBG Approach - ILR
+    - EBG West - ALB FUE NDG WLD
+    - EBG East - BBG FRK GER HAL TRN TRS
+    EDWW ACC:
+    - EBG South - EMS HRZ HAN
+    EHAA ACC
+    EBBU ACC
+    LFEE ACC
+    LSAS ACC
+#}
 {{ render_sectorlines(
-		EDMM['EDMMILR1']['000-105'],
-        EDMM['EDMMILR2']['095-105'],
-    ) }}
+	EDMM['EDMMILR1']['000-105'],
+    EDMM['EDMMILR2']['095-105'],
 
-// EBG West - ALB FUE NDG WLD
-{{ render_sectorlines(
-        EDMM['EDMMALB']['135-245'],
+    EDMM['EDMMALB']['135-245'],
+    EDMM['EDMMFUE']['105-145'],
+    EDMM['EDMMFUE']['195-245'],
+    EDMM['EDMMNDG']['000-105'],
+	EDMM['EDMMNDG']['195-245'],
+    EDMM['EDMMWLD']['105-245'],
 
-        EDMM['EDMMFUE']['195-245'],
-        sector_sub(
-            EDMM['EDMMFUE']['105-145'],
-            EDMM['EDMMFUE']['195-245']
-            ),
+    EDMM['EDMMBBG']['195-315'],
+    EDMM['EDMMFRK']['000-135'],
+    EDMM['EDMMFRK']['135-195'],
+    EDMM['EDMMGER']['195-245'],
+    EDMM['EDMMHAL']['195-245'],
+    EDMM['EDMMTRN']['000-145'],
+    EDMM['EDMMTRN']['145-165'],
+    EDMM['EDMMTRN']['165-195'],
+    EDMM['EDMMTRS']['000-145'],
+    EDMM['EDMMTRS']['145-195'],
 
-		EDMM['EDMMNDG']['195-245'],
-        sector_sub(
-            EDMM['EDMMNDG']['000-105'],
-            EDMM['EDMMNDG']['195-245']
-            ),
+    EDWW['EDWWEMS1']['000-245'],
+    EDWW['EDWWEMS2']['105-245'],
+    EXT['EDWW']['EDWWEMS3']['000-025'],
+    EDWW['EDWWHRZ1']['000-245'],
+    EDWW['EDWWHRZ2']['105-245'],
+    EDWW['EDWWHAN']['000-105'],
 
-        EDMM['EDMMWLD']['105-245'],
-    ) }}
+    EHAA['EHBK TMA1']['015-095'],
+    EHAA['EHMC TMA C']['095-245'],
+    EHAA['EHMC TMA D']['015-245'],
+    EHAA['EHMC TMA D 2']['015-095'],
+    EHAA['EHMC TMA E']['015-095'],
 
-// EBG East - BBG FRK GER HAL TRN TRS
-{{ render_sectorlines(
-        sector_sub(
-            EDMM['EDMMBBG']['195-315'],
-            EDMM['EDMMFRK']['135-195']
-            ),
+    EXT['EBBU']['ELLX TMA']['000-145'],
+    EXT['EBBU']['ELLX TMA']['000-165'],
+    EXT['EBBU']['ELLX TMA']['000-095'],
+    EXT['EBBU']['EBLG TMA1']['000-055'],
+    EBBU['EBBU EHS 195-245']['195-245'],
+    EXT['EBBU']['EBBU HUL']['185-245'],
+    EXT['EBBU']['EBBU LUS']['195-245'],
 
-        EDMM['EDMMFRK']['000-135'],
-        sector_sub(
-            EDMM['EDMMFRK']['135-195'],
-            EDMM['EDMMFRK']['000-135']
-            ),
-        
-        sector_and(
-            EDMM['EDMMGER']['195-245'],
-            EDMM['EDMMHAL']['195-245']
-            ),  
+    LFEE['UE']['195-315'],
+    LFEE['BO']['145-195'],
+    EXT['LFEE']['SU1-2']['115-195'],
+    EXT['LFEE']['UE1']['195-245'],
+    LFEE['BC']['115-145'],
+    LFEE['BALE_DELEG.LANGEN_NORD']['000-145'],
 
-        EDMM['EDMMTRN']['000-145'],
-        sector_sub(
-            EDMM['EDMMTRN']['145-165'],
-            EDMM['EDMMTRN']['000-145']
-            ),
-        sector_sub(
-            EDMM['EDMMTRN']['165-195'],
-            EDMM['EDMMTRN']['145-165']
-            ),
-
-        EDMM['EDMMTRS']['000-145'],
-        sector_sub(
-            EDMM['EDMMTRS']['145-195'],
-            EDMM['EDMMTRS']['000-145']
-            ),
-    ) }}
-
-// EDWW ACC
-// EBG South - EMS HRZ HAN
-{{ render_sectorlines(
-        EDWW['EDWWEMS1']['000-245'],
-        EDWW['EDWWEMS2']['105-245'],
-        EXT['EDWW']['EDWWEMS3']['000-025'],
-
-        EDWW['EDWWHRZ1']['000-245'],
-        EDWW['EDWWHRZ2']['105-245'],
-
-        sector_sub(
-            EDWW['EDWWHAN']['000-105'],
-            EDWW['EDWWHRZ2']['105-245']
-            ),
-    ) }}
-
-// EHAA ACC
-{{ render_sectorlines(
-        EHAA['EHBK TMA1']['015-095'],
-        EHAA['EHMC TMA C']['095-245'],
-        EHAA['EHMC TMA D']['015-245'],
-        EHAA['EHMC TMA D 2']['015-095'],
-        EHAA['EHMC TMA E']['015-095'],
-    ) }}
-
-// EBBU ACC
-{{ render_sectorlines(
-        EXT['EBBU']['ELLX TMA']['000-145'],
-        EXT['EBBU']['ELLX TMA']['000-165'],
-        EXT['EBBU']['ELLX TMA']['000-095'],
-
-        EXT['EBBU']['EBLG TMA1']['000-055'],
-
-        EBBU['EBBU EHS 195-245']['195-245'],
-        EXT['EBBU']['EBBU HUL']['185-245'],
-        EXT['EBBU']['EBBU LUS']['195-245'],
-    ) }}
-
-// LFEE ACC
-{{ render_sectorlines(
-        LFEE['UE']['195-315'],
-        sector_sub(
-            LFEE['BO']['145-195'],
-            LFEE['UE']['195-315']
-            ),
-        sector_sub(
-            EXT['LFEE']['SU1-2']['115-195'],
-            LFEE['UE']['195-315']
-            ),
-        sector_sub(
-            EXT['LFEE']['UE1']['195-245'],
-            EXT['LFEE']['SU1-2']['115-195']
-            ),
-        
-        sector_sub(
-            LFEE['BC']['115-145'],
-            LFEE['BO']['145-195']
-            ),
-    
-        LFEE['BALE_DELEG.LANGEN_NORD']['000-145'],
-    ) }}
-
-// LSAS ACC
-{{ render_sectorlines(
-        LSAS['ARFA']['000-105'],
-        sector_sub(
-            LSAS['LSASZE']['105-125'],
-            LSAS['ARFA']['000-105']
-            ),
-        sector_sub(
-            LSAS['LSASZE']['125-245'],
-            LSAS['LSASZE']['105-125'],
-            ),
-
-        LSAS['LSASZN']['125-245'],
-        sector_sub(
-            LSAS['LSASZN']['000-125'],
-            LSAS['LSASZN']['125-245'],
-            ),
-        sector_sub(
-            LSAS['LSASZN']['105-125'],
-            LSAS['LSASZN']['125-245'],
-            ),
-        sector_sub(
-            LSAS['LSASZN']['115-125'],
-            LSAS['LSASZN']['125-245'],
-            ),        
-
-        LSAS['LSASZW']['125-245'],
-
-        sector_sub(
-            LSAS['LSASZW']['115-125'],
-            LSAS['LSASZW']['125-245'],
-            ),
-        
-        EXT['LSAS']['LSZH-APD']['000-125'],
-        EXT['LSAS']['LSZH-APE']['000-125'],
-        EXT['LSAS']['LSZH-APW']['000-125'],
-    ) }}
+    LSAS['ARFA']['000-105'],
+    LSAS['LSASZE']['105-125'],
+    LSAS['LSASZE']['125-245'],
+    LSAS['LSASZN']['000-125'],
+    LSAS['LSASZN']['105-125'],
+    LSAS['LSASZN']['115-125'],
+    LSAS['LSASZN']['125-245'],
+    LSAS['LSASZW']['115-125'],
+    LSAS['LSASZW']['125-245'],
+    EXT['LSAS']['LSZH-APD']['000-125'],
+    EXT['LSAS']['LSZH-APE']['000-125'],
+    EXT['LSAS']['LSZH-APW']['000-125'],
+) }}

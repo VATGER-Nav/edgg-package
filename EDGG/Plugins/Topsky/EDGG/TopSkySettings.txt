@@ -48,14 +48,14 @@ Color_Unconcerned=0,0,0
 
 Color_ACF_Via_CFL
 Color_AIW_Intrusion=255,168,0
-Color_Active_Map=200,200,200
-Color_Active_Map_Type_1=200,200,200
+Color_Active_Map=200,200,200          // Default Area Color
+Color_Active_Map_Type_1=200,200,200   // Sectorlines
 Color_Active_Map_Type_2=80,80,80      // Labels
 Color_Active_Map_Type_3=80,80,255     // ED-Rs
 Color_Active_Map_Type_4=80,80,255     // ED-Ds
-Color_Active_Map_Type_5
-Color_Active_Map_Type_6
-Color_Active_Map_Type_7
+Color_Active_Map_Type_5=200,200,200   // Runways
+Color_Active_Map_Type_6=200,200,200   // ECL
+Color_Active_Map_Type_7=106,171,102   // MVA
 Color_Active_Map_Type_8
 Color_Active_Map_Type_9
 Color_Active_Map_Type_10
@@ -66,9 +66,9 @@ Color_Active_Map_Type_14
 Color_Active_Map_Type_15
 Color_Active_Map_Type_16
 Color_Active_Map_Type_17
-Color_Active_Map_Type_18
-Color_Active_Map_Type_19
-Color_Active_Map_Type_20
+Color_Active_Map_Type_18=166,179,215  // Topo Water
+Color_Active_Map_Type_19=209,178,155  // Topo Highways
+Color_Active_Map_Type_20=220,220,220  // Topo Urban
 Color_Active_RD_Infill_Map=255,0,0
 Color_Active_RD_Map
 Color_Active_Sector=209,209,209
