@@ -56,18 +56,18 @@
 {%- for desig, hold in aar.items() %}
 MAP:AAR - {{hold.desig}}
 FOLDER:Military
-COLOR:holding_ctr
-STYLE:Solid:1
+COLOR:BLUE
+STYLE:SOLID:1
 COORD_HM:{{hold.coord}}:{{hold.inbd}}M:{{hold.turn}}:{{hold.length}}:{{hold.radius}}:10
 COORDPOLY:0
 // Anchor Points
 TEXTALIGN:LB
-SYMBOL:FIX3_L:{{hold.coord}}:AP1:7:0
-{{ points['TP1_' + desig] | to_symbol('FIX3_L') }}:TP1:7:0
-{{ points['AP2_' + desig] | to_symbol('FIX3_L') }}:AP2:7:0
-{{ points['TP2_' + desig] | to_symbol('FIX3_L') }}:TP2:7:0
+SYMBOL:FIX2_L:{{hold.coord}}:AP1:7:0
+{{ points['TP1_' + desig] | to_symbol('FIX2_L') }}:TP1:7:0
+{{ points['AP2_' + desig] | to_symbol('FIX2_L') }}:AP2:7:0
+{{ points['TP2_' + desig] | to_symbol('FIX2_L') }}:TP2:7:0
 {%- if 'RP_' + desig in points %}
-{{ points['RP_' + desig] | to_symbol('FIX3_L') }}:RP:7:0
+{{ points['RP_' + desig] | to_symbol('FIX2_L') }}:RP:7:0
 {%- endif %}
 // Levels
 FONTSIZE:=:11

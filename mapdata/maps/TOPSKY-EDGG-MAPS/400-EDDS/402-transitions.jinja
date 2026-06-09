@@ -71,18 +71,18 @@
 // Complete Transitions
 
 MAP:EDDS 07
-COLOR:standard
+COLOR:Active_Map_Type_1
 FOLDER:Transitions
 ACTIVE:RWY:ARR:EDDS07:DEP:*
 AND_ACTIVE:ID:*:STG,REU,DSAT:*:*
 {%- for fx in trans['07N'] %}
-SYMBOL:FIX3_L:{{fx}}
+SYMBOL:FIX2_L:{{fx}}
 {%- endfor %}
 {%- for fx in trans['07S'] %}
-SYMBOL:FIX3_L:{{fx}}
+SYMBOL:FIX2_L:{{fx}}
 {%- endfor %}
 {%- for fx in final['07'] %}
-SYMBOL:FIX3_L:{{fx}}
+SYMBOL:FIX2_L:{{fx}}
 {%- endfor %}
 ZOOM:7
 FONTSIZE:=:12
@@ -99,18 +99,18 @@ TEXT:{{fx}}:{{fx | replace('DS', '')}}:-6:-13
 TEXT:VATER:VA:-6:-13
 
 MAP:EDDS 25
-COLOR:standard
+COLOR:Active_Map_Type_1
 FOLDER:Transitions
 ACTIVE:RWY:ARR:EDDS25:DEP:*
 AND_ACTIVE:ID:*:STG,REU,DSAT:*:*
 {%- for fx in trans['25N'] %}
-SYMBOL:FIX3_L:{{fx}}
+SYMBOL:FIX2_L:{{fx}}
 {%- endfor %}
 {%- for fx in trans['25S'] %}
-SYMBOL:FIX3_L:{{fx}}
+SYMBOL:FIX2_L:{{fx}}
 {%- endfor %}
 {%- for fx in final['25'] %}
-SYMBOL:FIX3_L:{{fx}}
+SYMBOL:FIX2_L:{{fx}}
 {%- endfor %}
 ZOOM:7
 FONTSIZE:=:12
@@ -129,12 +129,12 @@ TEXT:UNSER:UN:-6:-13
 // Maps specific for EDDS
 
 MAP:TRANS 07 w/o X
-COLOR:standard
+COLOR:Active_Map_Type_1
 FOLDER:EDDS
 ACTIVE:RWY:ARR:EDDS07:DEP:*
 ASRDATA:EDDS
 {%- for fx in ['BADSO', 'IBIRU', 'NOSBU', 'REUTL', 'TEKSI'] %}
-SYMBOL:FIX3_L:{{fx}}
+SYMBOL:FIX2_L:{{fx}}
 {%- endfor %}
 ZOOM:7
 FONTSIZE:=:12
@@ -151,12 +151,12 @@ TEXT:{{fx}}:{{fx | replace('DS', '')}}:-6:-13
 TEXT:VATER:VA:-6:-13
 
 MAP:TRANS 25 w/o X
-COLOR:standard
+COLOR:Active_Map_Type_1
 FOLDER:EDDS
 ACTIVE:RWY:ARR:EDDS25:DEP:*
 ASRDATA:EDDS
 {%- for fx in ['ARSUT', 'BADSO', 'IBIRU', 'REUTL', 'TEKSI'] %}
-SYMBOL:FIX3_L:{{fx}}
+SYMBOL:FIX2_L:{{fx}}
 {%- endfor %}
 ZOOM:7
 FONTSIZE:=:12

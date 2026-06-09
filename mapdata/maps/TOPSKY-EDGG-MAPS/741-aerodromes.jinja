@@ -292,38 +292,38 @@
 
 MAP:AD_Hotspots
 FOLDER:Aerodromes
-COLOR:standard
+COLOR:Active_Map_Type_1
 // Aerodromes IDF FIS Area
 {%- for acc, ads in idf.items() %}
 {%- for ad in ads %}
-SYMBOL:AD:{{ ad }}
+SYMBOL:AIRPORT:{{ ad }}
 {%- endfor %}
 {%- endfor %}
 
 // Aerodromes IDL FIS Area
 {%- for acc, ads in idl.items() %}
 {%- for ad in ads %}
-SYMBOL:AD:{{ ad }}
+SYMBOL:AIRPORT:{{ ad }}
 {%- endfor %}
 {%- endfor %}
 
 // Aerodromes IDR FIS Area
 {%- for acc, ads in idr.items() %}
 {%- for ad in ads %}
-SYMBOL:AD:{{ ad }}
+SYMBOL:AIRPORT:{{ ad }}
 {%- endfor %}
 {%- endfor %}
 
 // Aerodromes IDS FIS Area
 {%- for acc, ads in ids.items() %}
 {%- for ad in ads %}
-SYMBOL:AD:{{ ad }}
+SYMBOL:AIRPORT:{{ ad }}
 {%- endfor %}
 {%- endfor %}
 
 // Aerodromes IDV FIS Area
 {%- for acc, ads in idv.items() %}
 {%- for ad in ads %}
-SYMBOL:AD:{{ ad }}
+SYMBOL:AIRPORT:{{ ad }}
 {%- endfor %}
 {%- endfor %}

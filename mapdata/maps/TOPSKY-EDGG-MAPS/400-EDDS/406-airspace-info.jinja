@@ -93,7 +93,7 @@ MAP:Obstacles
 FOLDER:EDDS
 ACTIVE:1
 ASRDATA:EDDS
-COLOR:standard
+COLOR:Active_Map_Type_1
 ZOOM:7
 {% for desig, geom in data.topsky['common']['EDDS']['obstacles'].items() %}
 {{- geom | to_symbol('OBSTACLE') }}
@@ -103,20 +103,20 @@ MAP:ADs IDS Area
 FOLDER:EDDS
 ACTIVE:1
 ASRDATA:EDDS
-COLOR:standard
+COLOR:Active_Map_Type_1
 ZOOM:7
 {%- for ad in ids['EDGG'] %}
-SYMBOL:AD:{{ ad }}
+SYMBOL:AIRPORT:{{ ad }}
 {%- endfor %}
 {%- for ad in ids['EDMM'] %}
-SYMBOL:AD:{{ ad }}
+SYMBOL:AIRPORT:{{ ad }}
 {%- endfor %}
 {%- for ad in ids['LSAS-EDxx'] %}
-SYMBOL:AD:{{ ad }}
+SYMBOL:AIRPORT:{{ ad }}
 {%- endfor %}
 {%- for ad in ids['LFEE'] %}
-SYMBOL:AD:{{ ad }}
+SYMBOL:AIRPORT:{{ ad }}
 {%- endfor %}
 {%- for ad in ids['LSAS'] %}
-SYMBOL:AD:{{ ad }}
+SYMBOL:AIRPORT:{{ ad }}
 {%- endfor %}

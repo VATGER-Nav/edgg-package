@@ -22,10 +22,10 @@
 MAP:EDRY RNP 16
 FOLDER:RNAV/RNP APP
 ACTIVE:RWY:ARR:EDRY16:DEP:*
-COLOR:standard
-SYMBOL:FIX2:NORFE
+COLOR:Active_Map_Type_1
+SYMBOL:FIX:NORFE
 {%- for fx in rnp['16'] if fx not in ['NORFE'] %}
-SYMBOL:FIX3:{{fx}}
+SYMBOL:FIX2:{{fx}}
 {%- endfor %}
 ZOOM:8
 FONTSIZE:=:11
@@ -38,11 +38,11 @@ TEXT:{{fx}}:{{fx}}:5:0
 MAP:EDRY RNP 34
 FOLDER:RNAV/RNP APP
 ACTIVE:RWY:ARR:EDRY34:DEP:*
-COLOR:standard
+COLOR:Active_Map_Type_1
 SYMBOL:VOR:KRH
-SYMBOL:FIX2:ITJET
+SYMBOL:FIX:ITJET
 {%- for fx in rnp['34'] if fx not in ['KRH', 'ITJET'] %}
-SYMBOL:FIX3:{{fx}}
+SYMBOL:FIX2:{{fx}}
 {%- endfor %}
 ZOOM:8
 FONTSIZE:=:11

@@ -4,14 +4,14 @@
 
 MAP:NLFS (ED-R150)
 FOLDER:Military
-COLOR:standard
+COLOR:Active_Map_Type_1
 // ED-R150
-STYLE:Solid:1
+STYLE:SOLID:1
 {% for uuid, geom in data.topsky['common']['military']['nlfs']['line'].items() %}
 {{- geom | to_coordline('') }}
 {% endfor %}
 // ED-R150 Segments excluded from terrain following
-STYLE:Dot:1
+STYLE:DOT:1
 {% for uuid, geom in data.topsky['common']['military']['nlfs']['terrain'].items() %}
 {{- geom | to_coordline('') }}
 {% endfor %}

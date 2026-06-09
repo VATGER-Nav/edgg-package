@@ -5,16 +5,10 @@ MAP:ADF CTRs
 FOLDER:CTR/ATZ
 ACTIVE:1
 ASRDATA:EDDF
-COLOR:standard
-STYLE:DashDot:1
+COLOR:Active_Map_Type_1
+STYLE:DASHDOT:1
 {{ render_sectorlines(
-        EDGG['EDDFCTR']['000-025'],
-        sector_sub(
-            EDGG['ETOUCTR']['000-015'], 
-            EDGG['EDDFCTR']['000-025']
-            ),
-        sector_sub(
-            EDGG['EDFEATZ']['000-015'], 
-            EDGG['EDDFCTR']['000-025']
-            ),
+    EDGG['EDDFCTR']['000-025'],
+    EDGG['ETOUCTR']['000-015'],
+    EDGG['EDFEATZ']['000-015'],
 ) }}

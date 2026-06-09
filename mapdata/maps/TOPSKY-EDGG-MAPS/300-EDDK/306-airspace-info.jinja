@@ -36,11 +36,11 @@ MAP:ADs IDR Area
 FOLDER:EDDK
 ACTIVE:1
 ASRDATA:EDDL,EDDK
-COLOR:standard
+COLOR:Active_Map_Type_1
 ZOOM:8
 {%- for ad in idr_eddk['EDGG'] %}
-SYMBOL:AD:{{ ad }}
+SYMBOL:AIRPORT:{{ ad }}
 {%- endfor %}
 {%- for ad in idr_eddk['EBBU'] %}
-SYMBOL:AD:{{ ad }}
+SYMBOL:AIRPORT:{{ ad }}
 {%- endfor %}

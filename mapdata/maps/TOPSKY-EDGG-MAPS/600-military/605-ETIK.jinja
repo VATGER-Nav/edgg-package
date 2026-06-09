@@ -20,10 +20,10 @@
 MAP:ETIK RNAV 06
 FOLDER:RNAV/RNP APP
 ACTIVE:RWY:ARR:ETIK06:DEP:*
-COLOR:standard
+COLOR:Active_Map_Type_1
 SYMBOL:VOR:ANS
 {%- for fx in rnav['06'] if not fx in ['ANS'] %}
-SYMBOL:FIX3:{{fx}}
+SYMBOL:FIX2:{{fx}}
 {%- endfor %}
 ZOOM:8
 FONTSIZE:=:11
@@ -35,10 +35,10 @@ TEXT:{{fx}}:{{fx}}:5:0
 MAP:ETIK RNAV 24
 FOLDER:RNAV/RNP APP
 ACTIVE:RWY:ARR:ETIK24:DEP:*
-COLOR:standard
+COLOR:Active_Map_Type_1
 SYMBOL:VOR:DKB
 {%- for fx in rnav['24'] if not fx in ['DKB'] %}
-SYMBOL:FIX3:{{fx}}
+SYMBOL:FIX2:{{fx}}
 {%- endfor %}
 ZOOM:8
 FONTSIZE:=:11

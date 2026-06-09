@@ -9,7 +9,7 @@
 
 MAP:VRPs
 FOLDER:VFR
-COLOR:standard
+COLOR:Active_Map_Type_1
 TEXTALIGN:LB
 {%- for icao, fxnames in data.vrp['VFR'].items() %}
 // {{icao}}
@@ -20,7 +20,7 @@ SYMBOL:{{fx['symb']}}:{{icao | replace('ED', '')}}-{{fx['name']}}:{{fx['name']}}
 
 MAP:MIL VRPs
 FOLDER:VFR
-COLOR:standard
+COLOR:Active_Map_Type_1
 TEXTALIGN:LB
 {%- for icao, fxnames in data.vrp['MIL'].items() %}
 // {{icao}}
@@ -35,7 +35,7 @@ SYMBOL:{{fx['symb']}}:{{fx['fix']}}:{{fx['name']}}:5:0
 
 MAP:Hospitals
 FOLDER:VFR
-COLOR:standard
+COLOR:Active_Map_Type_1
 {%- for name, geom in data.topsky['common']['vfr']['EDGG_Hospitals'].items() %}
-{{ geom | to_symbol('HOSPITAL') }}:{{name}}:0:-13
+{{ geom | to_symbol('HELIPAD') }}:{{name}}:0:-13
 {%- endfor %}

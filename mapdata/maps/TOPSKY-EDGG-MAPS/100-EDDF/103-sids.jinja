@@ -58,8 +58,8 @@
 MAP:EDDF 07
 FOLDER:SIDs
 LAYER:3
-STYLE:Solid
-COLOR:sid_east
+STYLE:SOLID
+COLOR:ORANGE
 // Initial Turn xE
 LINE:EDDF/25C:DF139
 COORD:EDDF/25L
@@ -91,7 +91,7 @@ COORD:{{fx}}
 COORDLINE
 {%- endfor %}
 
-STYLE:alternate
+STYLE:ALTERNATE
 {%- for sid in ['ANEKIxD', 'MARUNxD', 'OBOKAxD', 'SOBRAxD'] %}
 // {{sid}}
 {%- for fx in sids['07'][sid] %}
@@ -135,8 +135,8 @@ TEXT:TOBAK:TO:5:0
 MAP:EDDF 25
 FOLDER:SIDs
 LAYER:3
-STYLE:Solid
-COLOR:sid_west
+STYLE:SOLID
+COLOR:BLUE
 // Initial Turn
 COORD:EDDF/07C
 COORD:DF999
@@ -163,7 +163,7 @@ COORD:{{fx}}
 COORDLINE
 {%- endfor %}
 
-STYLE:alternate
+STYLE:ALTERNATE
 // Initial Turn
 LINE:DF234:DF133
 LINE:DF235:DF133
@@ -216,9 +216,9 @@ TEXT:TOBAK:TO:5:0
 
 MAP:EDDF 18
 FOLDER:SIDs
-COLOR:green
+COLOR:GREEN
 LAYER:3
-STYLE:Solid
+STYLE:SOLID
 {%- for desig, fixes in sids['18'].items() if desig not in ['CINDYxL', 'OBOKAxL'] %}
 // {{desig}}
 {%- for fx in fixes %}
@@ -227,7 +227,7 @@ COORD:{{fx}}
 COORDLINE
 {%- endfor %}
 
-STYLE:alternate
+STYLE:ALTERNATE
 {%- for sid in ['CINDYxL', 'OBOKAxL'] %}
 // {{sid}}
 {%- for fx in sids['18'][sid] %}
@@ -274,8 +274,8 @@ FOLDER:SIDs
 LAYER:3
 
 // ---- RWY 18 ----
-STYLE:Solid
-COLOR:green
+STYLE:SOLID
+COLOR:GREEN
 {%- for sid in ['MARUNxR', 'OBOKAxR'] %}
 // {{sid}}
 {%- for fx in sids['night'][sid] %}
@@ -284,7 +284,7 @@ COORD:{{fx}}
 COORDLINE
 {%- endfor %}
 
-STYLE:sid_dash_east
+STYLE:SID_DASH_EAST
 // OBOKA
 COORD:RAVKI
 COORD:DITAM
@@ -297,8 +297,8 @@ TEXT:DF159:R:5:0
 
 
 // ---- RWY 25 ----
-STYLE:Solid
-COLOR:sid_west
+STYLE:SOLID
+COLOR:BLUE
 // Initial Turn
 COORD:EDDF/07C
 COORD:DF134
@@ -320,7 +320,7 @@ COORD:{{fx}}
 COORDLINE
 {%- endfor %}
 
-STYLE:sid_dash_west
+STYLE:SID_DASH_WEST
 // OBOKA
 COORD:RAVKI
 COORD:DITAM
@@ -332,12 +332,12 @@ TEXTALIGN:RB
 TEXT:N049.55.28.800:E008.26.37.900:S:-5:0
 
 // Fixes
-COLOR:green
+COLOR:GREEN
 SYMBOL:FIX_SID_A:MARUN
 SYMBOL:FIX_SID_A:OBOKA
 SYMBOL:FIX_SID_A:TOBAK
 
-COLOR:sid_west
+COLOR:BLUE
 SYMBOL:FIX_SID_B:MARUN
 SYMBOL:FIX_SID_B:OBOKA
 SYMBOL:FIX_SID_B:TOBAK
@@ -345,7 +345,7 @@ SYMBOL:FIX_SID_A:SOBRA
 TEXTALIGN:LB
 TEXT:SOBRA:SO:5:0
 
-COLOR:label
+COLOR:Active_Map_Type_2
 TEXTALIGN:LB
 TEXT:MARUN:MA:5:0
 TEXT:OBOKA:OB:5:0

@@ -23,7 +23,7 @@ MAP:Fixes/Navaids
 FOLDER:EDDF
 ACTIVE:1
 ASRDATA:EDDF
-COLOR:standard
+COLOR:Active_Map_Type_1
 FONTSIZE:=:14
 TEXTALIGN:LC
 TEXT:RAMOB:RAMOB:5:0
@@ -35,9 +35,9 @@ TEXT:ETOU:ETOU:10:-7
 TEXT:EDFE:EDFE:5:-5
 
 TEXTALIGN:LB
-SYMBOL:FIX2_L:SPESA:SPESA:5:0
+SYMBOL:FIX_L:SPESA:SPESA:5:0
 {%- for fx in fixes %}
-SYMBOL:FIX2:{{fx}}:{{fx}}:5:0
+SYMBOL:FIX:{{fx}}:{{fx}}:5:0
 {%- endfor %}
 {%- for nav in navaids %}
 SYMBOL:VOR:{{nav}}:{{nav}}:5:0
