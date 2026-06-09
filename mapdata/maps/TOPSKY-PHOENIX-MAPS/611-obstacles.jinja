@@ -1,7 +1,7 @@
 MAP:Obstacles
 FOLDER:Topography
 ASRDATA:PHOENIX
-COLOR:standard
+COLOR:Active_Map_Type_1
 {% for uuid, geom in data.topsky['common']['topo']['EDGG_obstacles_sparse'].items() %}
 {{- geom | to_symbol('OBSTACLE') }}
 {% endfor %}

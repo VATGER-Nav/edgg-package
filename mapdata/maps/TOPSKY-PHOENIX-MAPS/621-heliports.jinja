@@ -8,16 +8,16 @@
 MAP:Hospitals
 FOLDER:Aerodromes
 ASRDATA:PHOENIX
-COLOR:standard
+COLOR:Active_Map_Type_1
 ACTIVE:1
 {%- for name, geom in data.topsky['common']['vfr']['EDGG_Hospitals'].items() %}
-{{ geom | to_symbol('HOSPITAL') }}  // {{name}}
+{{ geom | to_symbol('HELIPAD') }}  // {{name}}
 {%- endfor %}
 
 MAP:Hospitals w/ L
 FOLDER:Aerodromes
 ASRDATA:PHOENIX
-COLOR:standard
+COLOR:Active_Map_Type_1
 {%- for name, geom in data.topsky['common']['vfr']['EDGG_Hospitals'].items() %}
-{{ geom | to_symbol('HOSPITAL') }}:{{name}}:0:-13
+{{ geom | to_symbol('HELIPAD') }}:{{name}}:0:-13
 {%- endfor %}
