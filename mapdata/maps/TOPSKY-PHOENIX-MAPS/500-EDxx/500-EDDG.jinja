@@ -34,8 +34,8 @@ ASRDATA:PHOENIX
 LAYER:3
 
 // ---- RWY 07 ----
-STYLE:Solid
-COLOR:sid_east
+STYLE:SOLID
+COLOR:ORANGE
 // AMSAN
 COORD:DG072
 COORD_DF:070M:L:1.29:10:DG073
@@ -49,7 +49,7 @@ COORD:{{fx}}
 COORDLINE
 {%- endfor %}
 
-STYLE:alternate
+STYLE:ALTERNATE
 {%- for sid in ['DOMEGxY'] %}
 // {{sid}}
 {%- for fx in sids['07'][sid] %}
@@ -67,8 +67,8 @@ TEXT:N052.07.50.500:E007.52.32.100:E:5:0
 
 
 // ---- RWY 25 ----
-STYLE:Solid
-COLOR:sid_west
+STYLE:SOLID
+COLOR:BLUE
 {%- for desig, fixes in sids['25'].items() if desig not in ['DOMEGxZ', 'OSNADxZ'] %}
 // {{desig}}
 {%- for fx in fixes %}
@@ -77,7 +77,7 @@ COORD:{{fx}}
 COORDLINE
 {%- endfor %}
 
-STYLE:alternate
+STYLE:ALTERNATE
 {%- for sid in ['DOMEGxZ', 'OSNADxZ'] %}
 // {{sid}}
 {%- for fx in sids['25'][sid] %}
@@ -93,7 +93,7 @@ TEXTALIGN:RB
 TEXT:N052.05.17.300:E007.38.24.700:Z:-5:0
 
 // Fixes
-COLOR:sid_east
+COLOR:ORANGE
 SYMBOL:FIX_SID_A:AMSAN
 SYMBOL:FIX_SID_A:BOTTA
 SYMBOL:FIX_SID_A:DOMEG
@@ -101,7 +101,7 @@ SYMBOL:FIX_SID_A:EXOBA
 SYMBOL:FIX_SID_A:OSNAD
 SYMBOL:FIX_SID_A:SUVOX
 
-COLOR:sid_west
+COLOR:BLUE
 SYMBOL:FIX_SID_B:AMSAN
 SYMBOL:FIX_SID_B:BOTTA
 SYMBOL:FIX_SID_B:DOMEG
@@ -109,7 +109,7 @@ SYMBOL:FIX_SID_B:EXOBA
 SYMBOL:FIX_SID_B:OSNAD
 SYMBOL:FIX_SID_B:SUVOX
 
-COLOR:label
+COLOR:Active_Map_Type_2
 TEXTALIGN:RB
 TEXT:AMSAN:AM:-5:0
 TEXT:BOTTA:BO:-5:0

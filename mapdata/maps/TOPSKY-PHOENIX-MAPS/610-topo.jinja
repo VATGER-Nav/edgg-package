@@ -13,19 +13,19 @@ MAP:Topography
 FOLDER:Topography
 ASRDATA:PHOENIX
 LAYER:-2
-STYLE:Solid:1
+STYLE:SOLID:1
 TEXTALIGN:LC
 {% for uuid, geom in data.topsky['common']['topo']['EDGG_urban'].items() %}
-{{- geom | to_poly('', 'topo_urban', 100) }}
+{{- geom | to_poly('', 'Active_Map_Type_20', 100) }}
 {% endfor %}
-COLOR:topo_road
+COLOR:Active_Map_Type_19
 {% for uuid, geom in data.topsky['common']['topo']['EDGG_autobahn'].items() %}
 {{- geom | to_coordline('') }}
 {% endfor %}
 {% for label, geom in data.topsky['common']['topo']['EDGG_autobahn_labels'].items() %}
 {{- geom | to_text(label) }}
 {% endfor %}
-COLOR:topo_water
+COLOR:Active_Map_Type_18
 {% for uuid, geom in data.topsky['common']['topo']['EDGG_rivers'].items() %}
 {{- geom | to_coordline('') }}
 {% endfor %}
@@ -33,15 +33,15 @@ COLOR:topo_water
 {{- geom | to_text(label) }}
 {% endfor %}
 {% for name, geom in data.topsky['common']['topo']['EDGG_lakes'].items() %}
-{{- geom | to_poly(name, 'topo_water', 100) }}
+{{- geom | to_poly(name, 'Active_Map_Type_18', 100) }}
 {% endfor %}
 
 MAP:Highways
 FOLDER:Topography
 ASRDATA:PHOENIX
 LAYER:-2
-COLOR:topo_road
-STYLE:Solid:1
+COLOR:Active_Map_Type_19
+STYLE:SOLID:1
 ACTIVE:ID:*:DFC,DFGW,DFGC,DFGE,DFGI,DFG,DFTC,DFTS,DFTN,DFTW,DFAN,DFAS,DFANT,DFAST:*:*
 AND_ACTIVE:ID:*:DLC,DLGE,DLGW,DLT,DLA,DLAT,DLD,BOT:*:*
 AND_ACTIVE:ID:*:DKC,DKG,DKT,DKA,DKAT,NOR:*:*
@@ -53,14 +53,14 @@ MAP:Rivers/Lakes
 FOLDER:Topography
 ASRDATA:PHOENIX
 LAYER:-2
-COLOR:topo_water
-STYLE:Solid:1
+COLOR:Active_Map_Type_18
+STYLE:SOLID:1
 ACTIVE:ID:*:DFC,DFGW,DFGC,DFGE,DFGI,DFG,DFTC,DFTS,DFTN,DFTW,DFAN,DFAS,DFANT,DFAST:*:*
 {% for uuid, geom in data.topsky['common']['topo']['EDGG_rivers'].items() %}
 {{- geom | to_coordline('') }}
 {% endfor %}
 {% for name, geom in data.topsky['common']['topo']['EDGG_lakes'].items() %}
-{{- geom | to_poly(name, 'topo_water', 100) }}
+{{- geom | to_poly(name, 'Active_Map_Type_18', 100) }}
 {% endfor %}
 
 MAP:Urban Area
@@ -71,15 +71,15 @@ ACTIVE:ID:*:DFC,DFGW,DFGC,DFGE,DFGI,DFG,DFTC,DFTS,DFTN,DFTW,DFAN,DFAS,DFANT,DFAS
 AND_ACTIVE:ID:*:DLC,DLGE,DLGW,DLT,DLA,DLAT,DLD,BOT:*:*
 AND_ACTIVE:ID:*:DKC,DKG,DKT,DKA,DKAT,NOR:*:*
 {% for uuid, geom in data.topsky['common']['topo']['EDGG_urban'].items() %}
-{{- geom | to_poly('', 'topo_urban', 100) }}
+{{- geom | to_poly('', 'Active_Map_Type_20', 100) }}
 {% endfor %}
 
 MAP:DE Border
 FOLDER:Topography
 ASRDATA:PHOENIX
 LAYER:-3
-COLOR:topo_border
-STYLE:Solid:1
+COLOR:Active_Map_Type_1
+STYLE:ALTERNATE
 ACTIVE:1
 {% for desig in [
     'CH_DE',

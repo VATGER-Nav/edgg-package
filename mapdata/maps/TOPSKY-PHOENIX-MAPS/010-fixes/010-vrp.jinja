@@ -12,7 +12,7 @@
 MAP:VRPs
 FOLDER:Fixes
 ASRDATA:PHOENIX
-COLOR:standard
+COLOR:Active_Map_Type_1
 ACTIVE:1
 {%- for icao, fxnames in data.vrp['VFR'].items() %}
 // {{icao}}
@@ -24,7 +24,7 @@ SYMBOL:{{fx['symb']}}:{{icao | replace('ED', '')}}-{{fx['name']}}
 MAP:VRPs w/ L
 FOLDER:Fixes
 ASRDATA:PHOENIX
-COLOR:standard
+COLOR:Active_Map_Type_1
 TEXTALIGN:LB
 {%- for icao, fxnames in data.vrp['VFR'].items() %}
 // {{icao}}
@@ -36,7 +36,7 @@ SYMBOL:{{fx['symb']}}:{{icao | replace('ED', '')}}-{{fx['name']}}:{{fx['name']}}
 MAP:MIL VRPs
 FOLDER:Fixes
 ASRDATA:PHOENIX
-COLOR:standard
+COLOR:Active_Map_Type_1
 ACTIVE:1
 {%- for icao, fxnames in data.vrp['MIL'].items() %}
 // {{icao}}
@@ -48,7 +48,7 @@ SYMBOL:{{fx['symb']}}:{{fx['fix']}}
 MAP:MIL VRPs w/ L
 FOLDER:Fixes
 ASRDATA:PHOENIX
-COLOR:standard
+COLOR:Active_Map_Type_1
 TEXTALIGN:LB
 {%- for icao, fxnames in data.vrp['MIL'].items() %}
 // {{icao}}

@@ -11,8 +11,8 @@
 MAP:MVA Warm (MAR-NOV)
 FOLDER:MVA
 ASRDATA:PHOENIX
-COLOR:mva
-STYLE:Solid:2
+COLOR:Active_Map_Type_7
+STYLE:SOLID:2
 FONTSTYLE:700:0:0:0
 {% for uuid, geom in data.topsky['common']['mva']['line'].items() if uuid not in
 [
@@ -52,8 +52,8 @@ FONTSTYLE:700:0:0:0
 MAP:MVA Cold (NOV-MAR)
 FOLDER:MVA
 ASRDATA:PHOENIX
-COLOR:mva
-STYLE:Solid:2
+COLOR:Active_Map_Type_7
+STYLE:SOLID:2
 FONTSTYLE:700:0:0:0
 {% for uuid, geom in data.topsky['common']['mva']['line'].items() if uuid not in
 [
@@ -120,8 +120,8 @@ STYLE:DOT:2
 MAP:MVA Military
 FOLDER:MVA
 ASRDATA:PHOENIX
-COLOR:mva
-STYLE:Solid:2
+COLOR:Active_Map_Type_7
+STYLE:SOLID:2
 FONTSTYLE:700:0:0:0
 {% for uuid, geom in data.topsky['common']['mva']['mil_line'].items() %}
 {{- geom | to_line('') -}}

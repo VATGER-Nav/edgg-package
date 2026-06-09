@@ -5,7 +5,27 @@ Color_Informed=0,0,0
 Color_Redundant=0,0,0
 Color_Unconcerned=0,0,0
 
-Color_Active_Map=240,73,80
+Color_Active_Map=240,73,80            // Default Area Color
+Color_Active_Map_Type_1=170,170,170   // Sectorlines
+Color_Active_Map_Type_2=80,80,80      // Labels
+Color_Active_Map_Type_3=240,73,80     // ED-Rs
+Color_Active_Map_Type_4=240,73,80     // ED-Ds
+Color_Active_Map_Type_5=89,89,89      // Runways
+Color_Active_Map_Type_6=170,170,170   // ECL
+Color_Active_Map_Type_7=106,171,102   // MVA
+Color_Active_Map_Type_8
+Color_Active_Map_Type_9
+Color_Active_Map_Type_10
+Color_Active_Map_Type_11
+Color_Active_Map_Type_12
+Color_Active_Map_Type_13
+Color_Active_Map_Type_14
+Color_Active_Map_Type_15
+Color_Active_Map_Type_16
+Color_Active_Map_Type_17
+Color_Active_Map_Type_18=166,179,215  // Topo Water
+Color_Active_Map_Type_19=209,178,155  // Topo Highways
+Color_Active_Map_Type_20=220,220,220  // Topo Urban
 Color_Active_Text_Map=193,128,0
 
 Color_Field_Highlight=210,210,210

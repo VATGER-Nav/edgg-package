@@ -151,10 +151,12 @@ ACTIVE:RWY:ARR:ETNN24:DEP:*
 ACTIVE:RWY:ARR:ETNN06:DEP:*
 // 13L
 {{ ecl_dashes(runways.EDDK['13L'], 12) }}
-{{ marker_ticks(runways.EDDK['13L'], [6, 10], 0.5, 0.5) }}
+{{ fix(runways.EDDK['13L'].thr).move_to(-6 , DK13).move_to(0.5, DK13-90).line_to(0.5, DK13-90) }}
+{{ fix(runways.EDDK['13L'].thr).move_to(-10, DK13).move_to(0.5, DK13-90).line_to(0.5, DK13-90) }}
 // 31R
 {{ ecl_dashes(runways.EDDK['31R'], 12) }}
-{{ marker_ticks(runways.EDDK['31R'], [6, 10], 0.5, 0.5) }}
+{{ fix(runways.EDDK['31R'].thr).move_to(-6 , DK31).move_to(0.5, DK31+90).line_to(0.5, DK31+90) }}
+{{ fix(runways.EDDK['31R'].thr).move_to(-10, DK31).move_to(0.5, DK31+90).line_to(0.5, DK31+90) }}
 // 06
 {{ ecl_dashes(runways.EDDK['06'], 12) }}
 {{ marker_ticks(runways.EDDK['06'], [6, 10], 0.5, 0.5) }}
@@ -175,19 +177,10 @@ COLOR:red
 
 MAP:EDDK ECL 13R/31L:A
 FOLDER:ECL
-ACTIVE:RWY:ARR:EDDK13R:DEP:*
-ACTIVE:RWY:ARR:EDDK31L:DEP:*
-// Masks
-STYLE:SOLID:2
-COLOR:appwindow-background
-// 13L
-{{ fix(runways.EDDK['13L'].thr).move_to(-6 , DK13).move_to(0.4, DK13+90).line_to(0.6, DK13+90) }}
-{{ fix(runways.EDDK['13L'].thr).move_to(-10, DK13).move_to(0.4, DK13+90).line_to(0.6, DK13+90) }}
-// 31R
-{{ fix(runways.EDDK['31R'].thr).move_to(-6 , DK31).move_to(0.4, DK31-90).line_to(0.6, DK31-90) }}
-{{ fix(runways.EDDK['31R'].thr).move_to(-10, DK31).move_to(0.4, DK31-90).line_to(0.6, DK31-90) }}
 STYLE:SOLID:1
 COLOR:appwindow-ecl
+ACTIVE:RWY:ARR:EDDK13R:DEP:*
+ACTIVE:RWY:ARR:EDDK31L:DEP:*
 // 13R
 {{ ecl_dashes(runways.EDDK['13R'], 12) }}
 {{ fix(runways.EDDK['13R'].thr).move_to(-6 , DK13).move_to(0.5, DK13+90).line_to(0.5, DK13+90) }}
@@ -201,6 +194,20 @@ COLOR:appwindow-ecl
 COLOR:red
 {{ marker_ticks(runways.EDDK['13R'], [1], 0, 0.25) }}
 {{ marker_ticks(runways.EDDK['31L'], [1], 0, 0.25) }}
+
+MAP:EDDK ECL 13L/31R Ticks:A
+FOLDER:ECL
+HIDDEN
+ACTIVE:MAP:=:ECL\EDDK ECL
+AND_ACTIVE:MAP:!:ECL\EDDK ECL 13R/31L
+COLOR:appwindow-ecl
+STYLE:SOLID:1
+// 13L
+{{ fix(runways.EDDK['13L'].thr).move_to(-6 , DK13).move_to(0.5, DK13+90).line_to(0.5, DK13+90) }}
+{{ fix(runways.EDDK['13L'].thr).move_to(-10, DK13).move_to(0.5, DK13+90).line_to(0.5, DK13+90) }}
+// 31R
+{{ fix(runways.EDDK['31R'].thr).move_to(-6 , DK31).move_to(0.5, DK31-90).line_to(0.5, DK31-90) }}
+{{ fix(runways.EDDK['31R'].thr).move_to(-10, DK31).move_to(0.5, DK31-90).line_to(0.5, DK31-90) }}
 
 MAP:EDDS ECL:A
 FOLDER:ECL
