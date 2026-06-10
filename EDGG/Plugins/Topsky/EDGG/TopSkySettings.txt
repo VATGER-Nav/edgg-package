@@ -424,10 +424,6 @@ Color_Informed=68,141,208
 Color_Redundant=110,110,110
 Color_Unconcerned=204,127,166
 
-RDF_Mode=1
-RDF_Floor=1400
-RDF_Accuracy=3
-
 Label_ADES_Default=1111
 
 [_APP]
@@ -462,20 +458,12 @@ Track_PredictionLine=0
 
 [EDDF_]
 Airspace_C_Flag=ETOU
-RDF_Mode=1
-RDF_Floor=1400
-RDF_Accuracy=3
 
 [EDDL_]
 Airspace_C_Flag=EDLV,EDLN,ETNG
 
 [EDDK_]
 Airspace_C_Flag=ETNN,EDKB
-
-[EDDS_]
-RDF_Mode=1
-RDF_Floor=1400
-RDF_Accuracy=3
 
 [_FMP]
 List_Sector_Informed=1
