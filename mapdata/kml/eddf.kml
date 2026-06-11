@@ -34710,7 +34710,6 @@
 	</Folder>
 	<Folder>
 		<name>breakaway</name>
-		<visibility>0</visibility>
 		<Folder>
 			<name>poly</name>
 			<visibility>0</visibility>
@@ -37623,6 +37622,825 @@
 				<Point>
 					<coordinates>8.56580144723139,50.03152571072909,0</coordinates>
 				</Point>
+			</Placemark>
+		</Folder>
+		<Folder>
+			<name>buffer</name>
+			<Placemark id="breakaway_buffer_2458768474512.1">
+				<name>N7_N8_5b</name>
+				<Style>
+					<LineStyle>
+						<color>ff0000ff</color>
+					</LineStyle>
+					<PolyStyle>
+						<fill>0</fill>
+					</PolyStyle>
+				</Style>
+				<LineString>
+					<coordinates>
+						8.563029536074691,50.0463461728111,0 8.56253188746034,50.04622739311021,0 
+					</coordinates>
+				</LineString>
+			</Placemark>
+			<Placemark id="breakaway_buffer_2458768474512.2">
+				<name>N7_N8_1b</name>
+				<Style>
+					<LineStyle>
+						<color>ff0000ff</color>
+					</LineStyle>
+					<PolyStyle>
+						<fill>0</fill>
+					</PolyStyle>
+				</Style>
+				<LineString>
+					<coordinates>
+						8.56668173682931,50.0477293164503,0 8.566901817889731,50.0480403165049,0 
+					</coordinates>
+				</LineString>
+			</Placemark>
+			<Placemark id="breakaway_buffer_2458768474512.3">
+				<name>S15_2b</name>
+				<Style>
+					<LineStyle>
+						<color>ff0000ff</color>
+					</LineStyle>
+					<PolyStyle>
+						<fill>0</fill>
+					</PolyStyle>
+				</Style>
+				<LineString>
+					<coordinates>
+						8.573847778117971,50.0284132902154,0 8.573350346395021,50.0282944886001,0 
+					</coordinates>
+				</LineString>
+			</Placemark>
+			<Placemark id="breakaway_buffer_2458768474512.4">
+				<name>S5_1b</name>
+				<Style>
+					<LineStyle>
+						<color>ff0000ff</color>
+					</LineStyle>
+					<PolyStyle>
+						<fill>0</fill>
+					</PolyStyle>
+				</Style>
+				<LineString>
+					<coordinates>
+						8.58234009998665,50.0325737143534,0 8.58231981201018,50.0322321959337,0 
+					</coordinates>
+				</LineString>
+			</Placemark>
+			<Placemark id="breakaway_buffer_2458768474512.5">
+				<name>S10_2b</name>
+				<Style>
+					<LineStyle>
+						<color>ff0000ff</color>
+					</LineStyle>
+					<PolyStyle>
+						<fill>0</fill>
+					</PolyStyle>
+				</Style>
+				<LineString>
+					<coordinates>
+						8.57536893013787,50.0324930835227,0 8.57585112146567,50.0323504866511,0 
+					</coordinates>
+				</LineString>
+			</Placemark>
+			<Placemark id="breakaway_buffer_2458768474512.6">
+				<name>S11_6b</name>
+				<Style>
+					<LineStyle>
+						<color>ff0000ff</color>
+					</LineStyle>
+					<PolyStyle>
+						<fill>0</fill>
+					</PolyStyle>
+				</Style>
+				<LineString>
+					<coordinates>
+						8.569972120621131,50.02985838097269,0 8.57015715943106,50.0295380725852,0 
+					</coordinates>
+				</LineString>
+			</Placemark>
+			<Placemark id="breakaway_buffer_2458768474512.7">
+				<name>Y7_1b</name>
+				<Style>
+					<LineStyle>
+						<color>ff0000ff</color>
+					</LineStyle>
+					<PolyStyle>
+						<fill>0</fill>
+					</PolyStyle>
+				</Style>
+				<LineString>
+					<coordinates>
+						8.53478024356769,50.0227412995273,0 8.53525876043296,50.02288881288741,0 
+					</coordinates>
+				</LineString>
+			</Placemark>
+			<Placemark id="breakaway_buffer_2458768474512.8">
+				<name>N7_N8_6b</name>
+				<Style>
+					<LineStyle>
+						<color>ff0000ff</color>
+					</LineStyle>
+					<PolyStyle>
+						<fill>0</fill>
+					</PolyStyle>
+				</Style>
+				<LineString>
+					<coordinates>
+						8.560996534781831,50.0444783062139,0 8.561494161508691,50.04459709247551,0 
+					</coordinates>
+				</LineString>
+			</Placemark>
+			<Placemark id="breakaway_buffer_2458768474512.9">
+				<name>N13b</name>
+				<Style>
+					<LineStyle>
+						<color>ff0000ff</color>
+					</LineStyle>
+					<PolyStyle>
+						<fill>0</fill>
+					</PolyStyle>
+				</Style>
+				<LineString>
+					<coordinates>
+						8.546696126895091,50.0401110735164,0 8.546511588776729,50.04043151036571,0 
+					</coordinates>
+				</LineString>
+			</Placemark>
+			<Placemark id="breakaway_buffer_2458768474512.10">
+				<name>S5_3b</name>
+				<Style>
+					<LineStyle>
+						<color>ff0000ff</color>
+					</LineStyle>
+					<PolyStyle>
+						<fill>0</fill>
+					</PolyStyle>
+				</Style>
+				<LineString>
+					<coordinates>
+						8.58434323384466,50.0355322433798,0 8.584121292936381,50.0352218079241,0 
+					</coordinates>
+				</LineString>
+			</Placemark>
+			<Placemark id="breakaway_buffer_2458768474512.11">
+				<name>Y7_3b</name>
+				<Style>
+					<LineStyle>
+						<color>ff0000ff</color>
+					</LineStyle>
+					<PolyStyle>
+						<fill>0</fill>
+					</PolyStyle>
+				</Style>
+				<LineString>
+					<coordinates>
+						8.53147971119426,50.0221207647838,0 8.53197703361311,50.022239677191,0 
+					</coordinates>
+				</LineString>
+			</Placemark>
+			<Placemark id="breakaway_buffer_2458768474512.12">
+				<name>S15_4b</name>
+				<Style>
+					<LineStyle>
+						<color>ff0000ff</color>
+					</LineStyle>
+					<PolyStyle>
+						<fill>0</fill>
+					</PolyStyle>
+				</Style>
+				<LineString>
+					<coordinates>
+						8.572062877755391,50.02798689900799,0 8.572560102921971,50.0281060871398,0 
+					</coordinates>
+				</LineString>
+			</Placemark>
+			<Placemark id="breakaway_buffer_2458768474512.13">
+				<name>N_1b</name>
+				<Style>
+					<LineStyle>
+						<color>ff0000ff</color>
+					</LineStyle>
+					<PolyStyle>
+						<fill>0</fill>
+					</PolyStyle>
+				</Style>
+				<LineString>
+					<coordinates>
+						8.59336601979903,50.0499813759209,0 8.593550981326111,50.0496610311593,0 
+					</coordinates>
+				</LineString>
+			</Placemark>
+			<Placemark id="breakaway_buffer_2458768474512.14">
+				<name>S8_5b</name>
+				<Style>
+					<LineStyle>
+						<color>ff0000ff</color>
+					</LineStyle>
+					<PolyStyle>
+						<fill>0</fill>
+					</PolyStyle>
+				</Style>
+				<LineString>
+					<coordinates>
+						8.57634038502068,50.0340354440887,0 8.576525397757219,50.03371512571151,0 
+					</coordinates>
+				</LineString>
+			</Placemark>
+			<Placemark id="breakaway_buffer_2458768474512.15">
+				<name>P1_1b</name>
+				<Style>
+					<LineStyle>
+						<color>ff0000ff</color>
+					</LineStyle>
+					<PolyStyle>
+						<fill>0</fill>
+					</PolyStyle>
+				</Style>
+				<LineString>
+					<coordinates>
+						8.52655357142851,50.0360170437128,0 8.52704977754197,50.03613811957791,0 
+					</coordinates>
+				</LineString>
+			</Placemark>
+			<Placemark id="breakaway_buffer_2458768474512.16">
+				<name>S19_1b</name>
+				<Style>
+					<LineStyle>
+						<color>ff0000ff</color>
+					</LineStyle>
+					<PolyStyle>
+						<fill>0</fill>
+					</PolyStyle>
+				</Style>
+				<LineString>
+					<coordinates>
+						8.56712166784353,50.029639655618,0 8.567306724733539,50.0293193518108,0 
+					</coordinates>
+				</LineString>
+			</Placemark>
+			<Placemark id="breakaway_buffer_2458768474512.17">
+				<name>N14b</name>
+				<Style>
+					<LineStyle>
+						<color>ff0000ff</color>
+					</LineStyle>
+					<PolyStyle>
+						<fill>0</fill>
+					</PolyStyle>
+				</Style>
+				<LineString>
+					<coordinates>
+						8.54273352367376,50.0390909500636,0 8.54254896317765,50.0394113806064,0 
+					</coordinates>
+				</LineString>
+			</Placemark>
+			<Placemark id="breakaway_buffer_2458768474512.18">
+				<name>S4_2b</name>
+				<Style>
+					<LineStyle>
+						<color>ff0000ff</color>
+					</LineStyle>
+					<PolyStyle>
+						<fill>0</fill>
+					</PolyStyle>
+				</Style>
+				<LineString>
+					<coordinates>
+						8.58893957677658,50.0346013348127,0 8.588717008737619,50.034291086824,0 
+					</coordinates>
+				</LineString>
+			</Placemark>
+			<Placemark id="breakaway_buffer_2458768474512.19">
+				<name>N_N4_2b</name>
+				<Style>
+					<LineStyle>
+						<color>ff0000ff</color>
+					</LineStyle>
+					<PolyStyle>
+						<fill>0</fill>
+					</PolyStyle>
+				</Style>
+				<LineString>
+					<coordinates>
+						8.5757385211237,50.0462947618652,0 8.5762349580116,50.04641562781021,0 
+					</coordinates>
+				</LineString>
+			</Placemark>
+			<Placemark id="breakaway_buffer_2458768474512.20">
+				<name>N5_1b</name>
+				<Style>
+					<LineStyle>
+						<color>ff0000ff</color>
+					</LineStyle>
+					<PolyStyle>
+						<fill>0</fill>
+					</PolyStyle>
+				</Style>
+				<LineString>
+					<coordinates>
+						8.570159013770549,50.0476789729156,0 8.57037911711433,50.0479899664373,0 
+					</coordinates>
+				</LineString>
+			</Placemark>
+			<Placemark id="breakaway_buffer_2458768474512.21">
+				<name>P1_2b</name>
+				<Style>
+					<LineStyle>
+						<color>ff0000ff</color>
+					</LineStyle>
+					<PolyStyle>
+						<fill>0</fill>
+					</PolyStyle>
+				</Style>
+				<LineString>
+					<coordinates>
+						8.525198792231199,50.03595340864191,0 8.5257294100522,50.0359533553314,0 
+					</coordinates>
+				</LineString>
+			</Placemark>
+			<Placemark id="breakaway_buffer_2458768474512.22">
+				<name>S13_3c</name>
+				<Style>
+					<LineStyle>
+						<color>ff0000ff</color>
+					</LineStyle>
+					<PolyStyle>
+						<fill>0</fill>
+					</PolyStyle>
+				</Style>
+				<LineString>
+					<coordinates>
+						8.57349741746917,50.0295103304646,0 8.57301543973084,50.0296531868097,0 
+					</coordinates>
+				</LineString>
+			</Placemark>
+			<Placemark id="breakaway_buffer_2458768474512.23">
+				<name>S8_1b</name>
+				<Style>
+					<LineStyle>
+						<color>ff0000ff</color>
+					</LineStyle>
+					<PolyStyle>
+						<fill>0</fill>
+					</PolyStyle>
+				</Style>
+				<LineString>
+					<coordinates>
+						8.577896364213791,50.0316310458388,0 8.578257444735829,50.0313806321197,0 
+					</coordinates>
+				</LineString>
+			</Placemark>
+			<Placemark id="breakaway_buffer_2458768474512.24">
+				<name>S13_3b</name>
+				<Style>
+					<LineStyle>
+						<color>ff0000ff</color>
+					</LineStyle>
+					<PolyStyle>
+						<fill>0</fill>
+					</PolyStyle>
+				</Style>
+				<LineString>
+					<coordinates>
+						8.573395932667371,50.02954041047279,0 8.57387790815612,50.0293975525389,0 
+					</coordinates>
+				</LineString>
+			</Placemark>
+			<Placemark id="breakaway_buffer_2458768474512.25">
+				<name>N_2c</name>
+				<Style>
+					<LineStyle>
+						<color>ff0000ff</color>
+					</LineStyle>
+					<PolyStyle>
+						<fill>0</fill>
+					</PolyStyle>
+				</Style>
+				<LineString>
+					<coordinates>
+						8.58988913699123,50.0502618546574,0 8.58939262584564,50.05014104701,0 
+					</coordinates>
+				</LineString>
+			</Placemark>
+			<Placemark id="breakaway_buffer_2458768474512.26">
+				<name>N7_N8_7b</name>
+				<Style>
+					<LineStyle>
+						<color>ff0000ff</color>
+					</LineStyle>
+					<PolyStyle>
+						<fill>0</fill>
+					</PolyStyle>
+				</Style>
+				<LineString>
+					<coordinates>
+						8.560381537735299,50.0457148064428,0 8.5608791756919,50.0458335953457,0 
+					</coordinates>
+				</LineString>
+			</Placemark>
+			<Placemark id="breakaway_buffer_2458768474512.27">
+				<name>N3_2b</name>
+				<Style>
+					<LineStyle>
+						<color>ff0000ff</color>
+					</LineStyle>
+					<PolyStyle>
+						<fill>0</fill>
+					</PolyStyle>
+				</Style>
+				<LineString>
+					<coordinates>
+						8.57844296320633,50.0484524820445,0 8.57795512308989,50.0485871159188,0 
+					</coordinates>
+				</LineString>
+			</Placemark>
+			<Placemark id="breakaway_buffer_2458768474512.28">
+				<name>N7_N8_2b</name>
+				<Style>
+					<LineStyle>
+						<color>ff0000ff</color>
+					</LineStyle>
+					<PolyStyle>
+						<fill>0</fill>
+					</PolyStyle>
+				</Style>
+				<LineString>
+					<coordinates>
+						8.564484906813959,50.04561916046351,0 8.564708612313259,50.0459290835247,0 
+					</coordinates>
+				</LineString>
+			</Placemark>
+			<Placemark id="breakaway_buffer_2458768474512.29">
+				<name>S8_3b</name>
+				<Style>
+					<LineStyle>
+						<color>ff0000ff</color>
+					</LineStyle>
+					<PolyStyle>
+						<fill>0</fill>
+					</PolyStyle>
+				</Style>
+				<LineString>
+					<coordinates>
+						8.57691399536477,50.03303926816719,0 8.577098488473739,50.0327188263124,0 
+					</coordinates>
+				</LineString>
+			</Placemark>
+			<Placemark id="breakaway_buffer_2458768474512.30">
+				<name>L_2b</name>
+				<Style>
+					<LineStyle>
+						<color>ff0000ff</color>
+					</LineStyle>
+					<PolyStyle>
+						<fill>0</fill>
+					</PolyStyle>
+				</Style>
+				<LineString>
+					<coordinates>
+						8.596296635957231,50.0485713288054,0 8.59679486439564,50.0486891405185,0 
+					</coordinates>
+				</LineString>
+			</Placemark>
+			<Placemark id="breakaway_buffer_2458768474512.31">
+				<name>S8_3c</name>
+				<Style>
+					<LineStyle>
+						<color>ff0000ff</color>
+					</LineStyle>
+					<PolyStyle>
+						<fill>0</fill>
+					</PolyStyle>
+				</Style>
+				<LineString>
+					<coordinates>
+						8.57695284229173,50.0329717960385,0 8.5767683472353,50.0332922376429,0 
+					</coordinates>
+				</LineString>
+			</Placemark>
+			<Placemark id="breakaway_buffer_2458768474512.32">
+				<name>S10_4b</name>
+				<Style>
+					<LineStyle>
+						<color>ff0000ff</color>
+					</LineStyle>
+					<PolyStyle>
+						<fill>0</fill>
+					</PolyStyle>
+				</Style>
+				<LineString>
+					<coordinates>
+						8.573071504838371,50.0331721382062,0 8.573553811926409,50.0330296944243,0 
+					</coordinates>
+				</LineString>
+			</Placemark>
+			<Placemark id="breakaway_buffer_2458768474512.33">
+				<name>S19_2b</name>
+				<Style>
+					<LineStyle>
+						<color>ff0000ff</color>
+					</LineStyle>
+					<PolyStyle>
+						<fill>0</fill>
+					</PolyStyle>
+				</Style>
+				<LineString>
+					<coordinates>
+						8.566047565452219,50.03150424369271,0 8.566232636719381,50.03118394173911,0 
+					</coordinates>
+				</LineString>
+			</Placemark>
+			<Placemark id="breakaway_buffer_2458768474512.34">
+				<name>S7_2b</name>
+				<Style>
+					<LineStyle>
+						<color>ff0000ff</color>
+					</LineStyle>
+					<PolyStyle>
+						<fill>0</fill>
+					</PolyStyle>
+				</Style>
+				<LineString>
+					<coordinates>
+						8.581218975330721,50.0347013255348,0 8.5814039582463,50.0343809993415,0 
+					</coordinates>
+				</LineString>
+			</Placemark>
+			<Placemark id="breakaway_buffer_2458768474512.35">
+				<name>S13_1b</name>
+				<Style>
+					<LineStyle>
+						<color>ff0000ff</color>
+					</LineStyle>
+					<PolyStyle>
+						<fill>0</fill>
+					</PolyStyle>
+				</Style>
+				<LineString>
+					<coordinates>
+						8.575941766011949,50.0288501851092,0 8.576471972123221,50.0288380433533,0 
+					</coordinates>
+				</LineString>
+			</Placemark>
+			<Placemark id="breakaway_buffer_2458768474512.36">
+				<name>N5_3b</name>
+				<Style>
+					<LineStyle>
+						<color>ff0000ff</color>
+					</LineStyle>
+					<PolyStyle>
+						<fill>0</fill>
+					</PolyStyle>
+				</Style>
+				<LineString>
+					<coordinates>
+						8.56880818582728,50.04523266391121,0 8.56893485468354,50.04556455425149,0 
+					</coordinates>
+				</LineString>
+			</Placemark>
+			<Placemark id="breakaway_buffer_2458768474512.37">
+				<name>N_N4_1b</name>
+				<Style>
+					<LineStyle>
+						<color>ff0000ff</color>
+					</LineStyle>
+					<PolyStyle>
+						<fill>0</fill>
+					</PolyStyle>
+				</Style>
+				<LineString>
+					<coordinates>
+						8.57307807642996,50.0456576299929,0 8.572581655360359,50.0455367505706,0 
+					</coordinates>
+				</LineString>
+			</Placemark>
+			<Placemark id="breakaway_buffer_2458768474512.38">
+				<name>L_1b</name>
+				<Style>
+					<LineStyle>
+						<color>ff0000ff</color>
+					</LineStyle>
+					<PolyStyle>
+						<fill>0</fill>
+					</PolyStyle>
+				</Style>
+				<LineString>
+					<coordinates>
+						8.59879688824201,50.04916731093971,0 8.59929451157512,50.0492861891497,0 
+					</coordinates>
+				</LineString>
+			</Placemark>
+			<Placemark id="breakaway_buffer_2458768474512.39">
+				<name>S13_5b</name>
+				<Style>
+					<LineStyle>
+						<color>ff0000ff</color>
+					</LineStyle>
+					<PolyStyle>
+						<fill>0</fill>
+					</PolyStyle>
+				</Style>
+				<LineString>
+					<coordinates>
+						8.571211528552359,50.0301859131255,0 8.57169367352361,50.0300432837552,0 
+					</coordinates>
+				</LineString>
+			</Placemark>
+			<Placemark id="breakaway_buffer_2458768474512.40">
+				<name>Y7_2b</name>
+				<Style>
+					<LineStyle>
+						<color>ff0000ff</color>
+					</LineStyle>
+					<PolyStyle>
+						<fill>0</fill>
+					</PolyStyle>
+				</Style>
+				<LineString>
+					<coordinates>
+						8.533354997951241,50.0225770438709,0 8.53385232975711,50.0226959482587,0 
+					</coordinates>
+				</LineString>
+			</Placemark>
+			<Placemark id="breakaway_buffer_2458768474512.41">
+				<name>N5_2b</name>
+				<Style>
+					<LineStyle>
+						<color>ff0000ff</color>
+					</LineStyle>
+					<PolyStyle>
+						<fill>0</fill>
+					</PolyStyle>
+				</Style>
+				<LineString>
+					<coordinates>
+						8.56925219461024,50.0464064148081,0 8.569472286315751,50.0467174100874,0 
+					</coordinates>
+				</LineString>
+			</Placemark>
+			<Placemark id="breakaway_buffer_2458768474512.42">
+				<name>S10_2c</name>
+				<Style>
+					<LineStyle>
+						<color>ff0000ff</color>
+					</LineStyle>
+					<PolyStyle>
+						<fill>0</fill>
+					</PolyStyle>
+				</Style>
+				<LineString>
+					<coordinates>
+						8.57547046038645,50.0324630584838,0 8.574988266811911,50.0326056537652,0 
+					</coordinates>
+				</LineString>
+			</Placemark>
+			<Placemark id="breakaway_buffer_2458768474512.43">
+				<name>N_2b</name>
+				<Style>
+					<LineStyle>
+						<color>ff0000ff</color>
+					</LineStyle>
+					<PolyStyle>
+						<fill>0</fill>
+					</PolyStyle>
+				</Style>
+				<LineString>
+					<coordinates>
+						8.58978459152263,50.0502364176707,0 8.59028110464479,50.0503572236442,0 
+					</coordinates>
+				</LineString>
+			</Placemark>
+			<Placemark id="breakaway_buffer_2458768474512.44">
+				<name>S4_1b</name>
+				<Style>
+					<LineStyle>
+						<color>ff0000ff</color>
+					</LineStyle>
+					<PolyStyle>
+						<fill>0</fill>
+					</PolyStyle>
+				</Style>
+				<LineString>
+					<coordinates>
+						8.587529980698831,50.0326246336601,0 8.58730775818692,50.0323142855605,0 
+					</coordinates>
+				</LineString>
+			</Placemark>
+			<Placemark id="breakaway_buffer_2458768474512.45">
+				<name>S11_7b</name>
+				<Style>
+					<LineStyle>
+						<color>ff0000ff</color>
+					</LineStyle>
+					<PolyStyle>
+						<fill>0</fill>
+					</PolyStyle>
+				</Style>
+				<LineString>
+					<coordinates>
+						8.568613295277631,50.0322183175736,0 8.56879835227911,50.0318980115306,0 
+					</coordinates>
+				</LineString>
+			</Placemark>
+			<Placemark id="breakaway_buffer_2458768474512.46">
+				<name>N3_1b</name>
+				<Style>
+					<LineStyle>
+						<color>ff0000ff</color>
+					</LineStyle>
+					<PolyStyle>
+						<fill>0</fill>
+					</PolyStyle>
+				</Style>
+				<LineString>
+					<coordinates>
+						8.5764689989381,50.0489916340872,0 8.575991190858501,50.0491404465957,0 
+					</coordinates>
+				</LineString>
+			</Placemark>
+			<Placemark id="breakaway_buffer_2458768474512.47">
+				<name>N7_N8_9b</name>
+				<Style>
+					<LineStyle>
+						<color>ff0000ff</color>
+					</LineStyle>
+					<PolyStyle>
+						<fill>0</fill>
+					</PolyStyle>
+				</Style>
+				<LineString>
+					<coordinates>
+						8.55948494408845,50.043090551429,0 8.55930047942131,50.0434110086432,0 
+					</coordinates>
+				</LineString>
+			</Placemark>
+			<Placemark id="breakaway_buffer_2458768474512.48">
+				<name>N7_N8_3b</name>
+				<Style>
+					<LineStyle>
+						<color>ff0000ff</color>
+					</LineStyle>
+					<PolyStyle>
+						<fill>0</fill>
+					</PolyStyle>
+				</Style>
+				<LineString>
+					<coordinates>
+						8.56368902088956,50.0465063665035,0 8.5641866752713,50.0466251412525,0 
+					</coordinates>
+				</LineString>
+			</Placemark>
+			<Placemark id="breakaway_buffer_2458768474512.49">
+				<name>P1_1c</name>
+				<Style>
+					<LineStyle>
+						<color>ff0000ff</color>
+					</LineStyle>
+					<PolyStyle>
+						<fill>0</fill>
+					</PolyStyle>
+				</Style>
+				<LineString>
+					<coordinates>
+						8.526658052253151,50.0360425375276,0 8.526161848119759,50.0359214599914,0 
+					</coordinates>
+				</LineString>
+			</Placemark>
+			<Placemark id="breakaway_buffer_2458768474512.50">
+				<name>N7_N8_4b</name>
+				<Style>
+					<LineStyle>
+						<color>ff0000ff</color>
+					</LineStyle>
+					<PolyStyle>
+						<fill>0</fill>
+					</PolyStyle>
+				</Style>
+				<LineString>
+					<coordinates>
+						8.563623469628631,50.0451064916941,0 8.56412110939492,50.0452252667141,0 
+					</coordinates>
+				</LineString>
+			</Placemark>
+			<Placemark id="breakaway_buffer_2458768474512.51">
+				<name>S21b</name>
+				<Style>
+					<LineStyle>
+						<color>ff0000ff</color>
+					</LineStyle>
+					<PolyStyle>
+						<fill>0</fill>
+					</PolyStyle>
+				</Style>
+				<LineString>
+					<coordinates>
+						8.56181841595005,50.0304457837251,0 8.562003511189969,50.0301254885211,0 
+					</coordinates>
+				</LineString>
 			</Placemark>
 		</Folder>
 	</Folder>
