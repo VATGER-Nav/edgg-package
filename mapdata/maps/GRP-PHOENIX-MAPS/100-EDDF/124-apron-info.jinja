@@ -6,6 +6,12 @@ FOLDER:Apron Info
 ACTIVE:1
 LAYER:6
 ZOOM:300
+STYLE:Solid:6
+COLOR:layout-taxiway
+{% for desig, geom in data.eddf_kml['layout']['breakaway']['buffer'].items() %}
+{{- geom | to_line('') -}}
+{% endfor %}
+STYLE:Solid:1
 {% for desig, geom in data.eddf_kml['layout']['breakaway']['poly'].items() %}
 {{- geom | to_coordtype('', 'break-away-area') }}
 {% endfor %}
