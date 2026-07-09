@@ -82,19 +82,20 @@
                 }
 			},
             "EDLP": {
+                "wpt": "XXX",
                 "equip": {"RNAV": true, "NON-RNAV": true},
                 "P": {
                     "1": {
                         "rwy": "05",
                         "initial": 4800,
-                        "prio": 1
+                        "prio": 99
                     }
                 },
                 "L": {
                     "1": {
                         "rwy": "23",
                         "initial": 5200,
-                        "prio": 1
+                        "prio": 99
                     }
                 }
             }
