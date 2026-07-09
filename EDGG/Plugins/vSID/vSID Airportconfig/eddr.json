@@ -79,18 +79,18 @@
 			},
 		"EDDR": {
                 "initial": 4000,
+                "wpt": "XXX",
+                "equip": {"NON-RNAV": true},
                 "E": {
                     "1": {
                         "rwy": "08",
-			"equip": {"NON-RNAV": true},
-                        "prio": 1
+                        "prio": 99
                     }
                 },
                 "W": {
                     "1": {
                         "rwy": "26",
-			"equip": {"NON-RNAV": true},
-                        "prio": 1
+                        "prio": 99
                     }
                 }
 			}

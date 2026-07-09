@@ -381,6 +381,7 @@
             "wpt": "XXX",
             "initial": 4000,
             "ETSB": {
+                "wpt": "XXX",
                 "C": {
                     "1": {
                         "rwy": "03",
