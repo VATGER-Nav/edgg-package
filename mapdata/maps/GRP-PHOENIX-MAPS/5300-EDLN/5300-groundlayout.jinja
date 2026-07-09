@@ -9,8 +9,25 @@ MAP:Apron Area
 AIRPORT:EDLN
 FOLDER:Airport Layout
 ACTIVE:1
-{% for uuid, geom in data.edln_aixm['ApronElement'].items() %}
-{{- geom | simplify(default) | to_coordtype(uuid, 'layout-apron') }}
+{% for uuid in
+[
+    '4682806b-ee25-c6ff-e053-1514a8c027b7',
+    '4682806b-ee26-c6ff-e053-1514a8c027b7',
+    '4682806b-ee27-c6ff-e053-1514a8c027b7',
+    '4682806b-f0ac-c6ff-e053-1514a8c027b7',
+    '4682806b-f0ad-c6ff-e053-1514a8c027b7',
+    '4682806b-f0ae-c6ff-e053-1514a8c027b7',
+    '4682806b-f0af-c6ff-e053-1514a8c027b7',
+    '4682806b-f4e3-c6ff-e053-1514a8c027b7',
+    '4682806b-f4e4-c6ff-e053-1514a8c027b7',
+    '4682806b-f4e5-c6ff-e053-1514a8c027b7',
+    '4682806b-f4e6-c6ff-e053-1514a8c027b7',
+    '4682806b-f4e7-c6ff-e053-1514a8c027b7',
+    '4682806b-f4e8-c6ff-e053-1514a8c027b7',
+    '4682806b-f4e9-c6ff-e053-1514a8c027b7',
+    '4682806b-f4ea-c6ff-e053-1514a8c027b7',
+] %}
+{{- data.edln_aixm['ApronElement'][uuid] | simplify(default) | to_coordtype(uuid, 'layout-apron') }}
 {% endfor %}
 {% for uuid in
 [
@@ -18,7 +35,7 @@ ACTIVE:1
     '4682806b-ee16-c6ff-e053-1514a8c027b7',
     '4682806b-ee18-c6ff-e053-1514a8c027b7',
 ] %}
-{{- data.edln_aixm['TaxiwayElement'][uuid] | simplify(default) | to_coordtype(uuid,'layout-apron') }}
+{{- data.edln_aixm['TaxiwayElement'][uuid] | simplify(default) | to_coordtype(uuid, 'layout-apron') }}
 {% endfor %}
 
 MAP:Parking Area
@@ -44,13 +61,13 @@ FOLDER:Airport Layout
 ACTIVE:1
 {% for uuid in
 [
+    '023dae7f-4ffa-4766-8df0-ed8e845535bf',
     '4682806b-ee06-c6ff-e053-1514a8c027b7',
     '4682806b-ee07-c6ff-e053-1514a8c027b7',
     '4682806b-ee08-c6ff-e053-1514a8c027b7',
     '4682806b-ee09-c6ff-e053-1514a8c027b7',
     '4682806b-ee0a-c6ff-e053-1514a8c027b7',
     '4682806b-ee0b-c6ff-e053-1514a8c027b7',
-    '4682806b-ee0c-c6ff-e053-1514a8c027b7',
     '4682806b-ee0d-c6ff-e053-1514a8c027b7',
     '4682806b-ee0e-c6ff-e053-1514a8c027b7',
     '4682806b-ee0f-c6ff-e053-1514a8c027b7',
@@ -65,19 +82,14 @@ ACTIVE:1
 ] %}
 {{- data.edln_aixm['TaxiwayElement'][uuid] | simplify(default) | to_coordtype(uuid, 'layout-taxiway') }}
 {% endfor %}
-{% for uuid in
-[
-    '4682806b-f43c-c6ff-e053-1514a8c027b7',
-    '4682806b-edc5-c6ff-e053-1514a8c027b7',
-] %}
-{{- data.edln_aixm['RunwayElement'][uuid] | simplify(default) | to_coordtype(uuid,'layout-taxiway') }}
-{% endfor %}
+{{ data.edln_aixm['ApronElement']['294474a4-e0cf-4a27-9d62-77ea6cb074ce'] | simplify(default) | to_coordtype('294474a4-e0cf-4a27-9d62-77ea6cb074ce', 'layout-taxiway') }}
+{{ data.edln_aixm['RunwayElement']['4682806b-edc5-c6ff-e053-1514a8c027b7'] | simplify(default) | to_coordtype('4682806b-edc5-c6ff-e053-1514a8c027b7', 'layout-taxiway') }}
 
 MAP:Runway
 AIRPORT:EDLN
 FOLDER:Airport Layout
 ACTIVE:1
-{{ data.edln_aixm['RunwayElement']['4682806b-f43d-c6ff-e053-1514a8c027b7'] | simplify(default) | to_coordtype('Runway 13/31','layout-runway') }}
+{{ data.edln_aixm['RunwayElement']['4682806b-f43d-c6ff-e053-1514a8c027b7'] | simplify(default) | to_coordtype('Runway 13/31', 'layout-runway') }}
 {% for uuid, geom in data.edln_aixm['RunwayBlastPad'].items() %}
 {{- geom | simplify(0.00001) | to_coordtype(uuid,'layout-apron') }}
 {% endfor %}
@@ -338,11 +350,6 @@ ACTIVE:1
     '4682806b-eb9d-c6ff-e053-1514a8c027b7',
     '4682806b-eb9e-c6ff-e053-1514a8c027b7',
     '4682806b-eba2-c6ff-e053-1514a8c027b7',
-    '4682806b-eba3-c6ff-e053-1514a8c027b7',
-    '4682806b-eba4-c6ff-e053-1514a8c027b7',
-    '4682806b-eba5-c6ff-e053-1514a8c027b7',
-    '4682806b-eba6-c6ff-e053-1514a8c027b7',
-    '4682806b-eba7-c6ff-e053-1514a8c027b7',
     '4682806b-eba8-c6ff-e053-1514a8c027b7',
     '4682806b-eba9-c6ff-e053-1514a8c027b7',
     '4682806b-ebab-c6ff-e053-1514a8c027b7',

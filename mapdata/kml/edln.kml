@@ -2,6 +2,7 @@
 <kml xmlns="http://www.opengis.net/kml/2.2" xmlns:gx="http://www.google.com/kml/ext/2.2" xmlns:kml="http://www.opengis.net/kml/2.2" xmlns:atom="http://www.w3.org/2005/Atom">
 <Folder>
 	<name>layout</name>
+	<visibility>0</visibility>
 	<open>1</open>
 	<Folder>
 		<name>roads</name>
@@ -3154,10 +3155,13 @@
 	</Folder>
 	<Folder>
 		<name>closures</name>
+		<visibility>0</visibility>
 		<Folder>
 			<name>poly</name>
-			<Placemark>
+			<visibility>0</visibility>
+			<Placemark id="closures_poly_3087510577040.1">
 				<name>E_1</name>
+				<visibility>0</visibility>
 				<Style>
 					<LineStyle>
 						<color>ff0000ff</color>
@@ -3176,8 +3180,9 @@
 					</outerBoundaryIs>
 				</Polygon>
 			</Placemark>
-			<Placemark>
+			<Placemark id="closures_poly_3087510577040.2">
 				<name>E_2</name>
+				<visibility>0</visibility>
 				<Style>
 					<LineStyle>
 						<color>ff0000ff</color>
@@ -3196,171 +3201,76 @@
 					</outerBoundaryIs>
 				</Polygon>
 			</Placemark>
+			<Placemark id="closures_poly_3087510577040.3">
+				<name>apron_1</name>
+				<visibility>0</visibility>
+				<Style>
+					<LineStyle>
+						<color>ff0000ff</color>
+					</LineStyle>
+					<PolyStyle>
+						<fill>0</fill>
+					</PolyStyle>
+				</Style>
+				<Polygon>
+					<outerBoundaryIs>
+						<LinearRing>
+							<coordinates>
+								6.49767629717245,51.2320018748126,0 6.498421084638409,51.2316284800594,0 6.4984900148645,51.2316035662225,0 6.498559673690489,51.23159371819149,0 6.49858498240357,51.23166011434,0 6.49850018611501,51.2317691740451,0 6.49782705820958,51.2321095361631,0 6.49767629717245,51.2320018748126,0 
+							</coordinates>
+						</LinearRing>
+					</outerBoundaryIs>
+				</Polygon>
+			</Placemark>
+			<Placemark id="closures_poly_3087510577040.4">
+				<name>apron_2</name>
+				<visibility>0</visibility>
+				<Style>
+					<LineStyle>
+						<color>ff0000ff</color>
+					</LineStyle>
+					<PolyStyle>
+						<fill>0</fill>
+					</PolyStyle>
+				</Style>
+				<Polygon>
+					<outerBoundaryIs>
+						<LinearRing>
+							<coordinates>
+								6.504118199720449,51.2292965962852,0 6.50537132104755,51.2286677109995,0 6.505477289442611,51.2286242148259,0 6.50562812397281,51.2286045159149,0 6.50576015866957,51.2286280031136,0 6.505693161618371,51.22868764353701,0 6.50453712008623,51.2292654409687,0 6.504118199720449,51.2292965962852,0 
+							</coordinates>
+						</LinearRing>
+					</outerBoundaryIs>
+				</Polygon>
+			</Placemark>
+			<Placemark id="closures_poly_3087510577040.5">
+				<name>apron_3</name>
+				<visibility>0</visibility>
+				<Style>
+					<LineStyle>
+						<color>ff0000ff</color>
+					</LineStyle>
+					<PolyStyle>
+						<fill>0</fill>
+					</PolyStyle>
+				</Style>
+				<Polygon>
+					<outerBoundaryIs>
+						<LinearRing>
+							<coordinates>
+								6.49417787713851,51.2339477146501,0 6.49430101652118,51.23409751980649,0 6.49270106643138,51.23454951327441,0 6.490349793208881,51.23539341766559,0 6.4897745832907,51.2355432574932,0 6.489393976791469,51.2350994533469,0 6.49133286687013,51.2345237994115,0 6.49152539410178,51.2347618935519,0 6.492598870218799,51.2343969029236,0 6.49417787713851,51.2339477146501,0 
+							</coordinates>
+						</LinearRing>
+					</outerBoundaryIs>
+				</Polygon>
+			</Placemark>
 		</Folder>
 		<Folder>
 			<name>symb</name>
-			<Placemark>
-				<name>apron_1a</name>
-				<Style>
-					<LineStyle>
-						<color>ff0000ff</color>
-					</LineStyle>
-					<PolyStyle>
-						<fill>0</fill>
-					</PolyStyle>
-				</Style>
-				<Polygon>
-					<outerBoundaryIs>
-						<LinearRing>
-							<coordinates>
-								6.49772637668617,51.23199629563171,0 6.497719255528511,51.2319958365122,0 6.49771779280357,51.2320047782539,0 6.49776255462036,51.2320076641853,0 6.49775868905001,51.2320312957634,0 6.49775795776473,51.2320357665911,0 6.49777220023167,51.2320366849181,0 6.497776797083609,51.23200858242171,0 6.497814437456371,51.2320110093006,0 6.49782155876061,51.2320114684174,0 6.49782302132265,51.2320025266711,0 6.4977782596542,51.2319996406761,0 6.497782125063351,51.2319760091838,0 6.49778285635001,51.231971538266,0 6.49776861389803,51.2319706200304,0 6.497764017193661,51.2319987224398,0 6.49772637668617,51.23199629563171,0 
-							</coordinates>
-						</LinearRing>
-					</outerBoundaryIs>
-				</Polygon>
-			</Placemark>
-			<Placemark>
-				<name>apron_1b</name>
-				<Style>
-					<LineStyle>
-						<color>ff0000ff</color>
-					</LineStyle>
-					<PolyStyle>
-						<fill>0</fill>
-					</PolyStyle>
-				</Style>
-				<Polygon>
-					<outerBoundaryIs>
-						<LinearRing>
-							<coordinates>
-								6.4984792225516,51.23162529078479,0 6.49847342086405,51.2316226579303,0 6.49846503368155,51.2316299428563,0 6.498501501310781,51.2316464920684,0 6.49847933557281,51.2316657450095,0 6.49847514197831,51.23166938747269,0 6.49848674536586,51.2316746531814,0 6.49851310470063,51.2316517576847,0 6.49851310483885,51.2316517577776,0 6.4985437708107,51.2316656740342,0 6.498549572507719,51.2316683068854,0 6.49855795968426,51.2316610219533,0 6.49852149202283,51.23164447275829,0 6.49854365773295,51.2316252198088,0 6.49854785131797,51.231621577343,0 6.49853624779329,51.23161631163731,0 6.49850988849559,51.23163920705,0 6.4984792225516,51.23162529078479,0 
-							</coordinates>
-						</LinearRing>
-					</outerBoundaryIs>
-				</Polygon>
-			</Placemark>
-			<Placemark>
-				<name>apron_2a</name>
-				<Style>
-					<LineStyle>
-						<color>ff0000ff</color>
-					</LineStyle>
-					<PolyStyle>
-						<fill>0</fill>
-					</PolyStyle>
-				</Style>
-				<Polygon>
-					<outerBoundaryIs>
-						<LinearRing>
-							<coordinates>
-								6.504269484947899,51.2292650808608,0 6.50426542884687,51.2292687841129,0 6.50427722511615,51.22927387753111,0 6.504302720957779,51.2292506004116,0 6.50433389660701,51.2292640614877,0 6.504339794813741,51.22926660824,0 6.504347907141191,51.2292592018232,0 6.50431083343127,51.2292431940004,0 6.504310833436131,51.2292431939106,0 6.504332273013689,51.2292236199449,0 6.504336329243539,51.2292199167832,0 6.50432453298599,51.2292148232812,0 6.50429903717562,51.229238100406,0 6.50426786155418,51.2292246393209,0 6.50426196335684,51.2292220925651,0 6.504253851017669,51.2292294990657,0 6.504290924696319,51.2292455069062,0 6.504269484947899,51.2292650808608,0 
-							</coordinates>
-						</LinearRing>
-					</outerBoundaryIs>
-				</Polygon>
-			</Placemark>
-			<Placemark>
-				<name>apron_2b</name>
-				<Style>
-					<LineStyle>
-						<color>ff0000ff</color>
-					</LineStyle>
-					<PolyStyle>
-						<fill>0</fill>
-					</PolyStyle>
-				</Style>
-				<Polygon>
-					<outerBoundaryIs>
-						<LinearRing>
-							<coordinates>
-								6.50559892656954,51.2286504415776,0 6.505591883420139,51.2286512443847,0 6.50559444066849,51.2286600886454,0 6.50563871111407,51.2286550425336,0 6.50564546939161,51.2286784163942,0 6.50564674802393,51.2286828384792,0 6.50566083418743,51.2286812328551,0 6.50565279712621,51.22865343690729,0 6.505690024417041,51.2286491934963,0 6.505697067416679,51.22864839077021,0 6.505694510292211,51.2286395465144,0 6.50565023986694,51.2286445926477,0 6.50564348159133,51.2286212187873,0 6.505642202960839,51.2286167967023,0 6.50562811681653,51.2286184023243,0 6.505636153857441,51.2286461982737,0 6.50559892656954,51.2286504415776,0 
-							</coordinates>
-						</LinearRing>
-					</outerBoundaryIs>
-				</Polygon>
-			</Placemark>
-			<Placemark>
-				<name>E_1a</name>
-				<Style>
-					<LineStyle>
-						<color>ff0000ff</color>
-					</LineStyle>
-					<PolyStyle>
-						<fill>0</fill>
-					</PolyStyle>
-				</Style>
-				<Polygon>
-					<outerBoundaryIs>
-						<LinearRing>
-							<coordinates>
-								6.499073466419591,51.2311517339261,0 6.49905922418909,51.2311508158507,0 6.49905629960845,51.23116869938399,0 6.49916132402027,51.2311754696017,0 6.49915200305112,51.2312324657839,0 6.49915054077593,51.2312414075519,0 6.499179025292949,51.2312432437693,0 6.49918980864025,51.2311773058191,0 6.49928059085449,51.23118315777889,0 6.49929483310031,51.23118407582751,0 6.499297757732901,51.23116619229009,0 6.49919273317475,51.2311594221919,0 6.4992020540806,51.23110242591499,0 6.499203516483561,51.23109348414909,0 6.49917503205281,51.2310916480287,0 6.49916424870874,51.2311575859785,0 6.499073466419591,51.2311517339261,0 
-							</coordinates>
-						</LinearRing>
-					</outerBoundaryIs>
-				</Polygon>
-			</Placemark>
-			<Placemark>
-				<name>E_1b</name>
-				<Style>
-					<LineStyle>
-						<color>ff0000ff</color>
-					</LineStyle>
-					<PolyStyle>
-						<fill>0</fill>
-					</PolyStyle>
-				</Style>
-				<Polygon>
-					<outerBoundaryIs>
-						<LinearRing>
-							<coordinates>
-								6.500081099152239,51.2306465311237,0 6.50006685705309,51.2306456131729,0 6.50006393290135,51.2306634967386,0 6.500168956344531,51.2306702660382,0 6.500159636742281,51.2307272623237,0 6.50015817468153,51.23073620410791,0 6.50018665893583,51.2307380400763,0 6.50019744070179,51.23067210200651,0 6.50028822207874,51.23067795317279,0 6.5003024641932,51.23067887109689,0 6.5003053883969,51.230660987527,0 6.5002003648074,51.2306542183469,0 6.500209684341489,51.2305972220566,0 6.50021114653,51.2305882802744,0 6.50018266236683,51.2305864443132,0 6.50017188060411,51.2306523823825,0 6.500081099152239,51.2306465311237,0 
-							</coordinates>
-						</LinearRing>
-					</outerBoundaryIs>
-				</Polygon>
-			</Placemark>
-			<Placemark>
-				<name>E_2a</name>
-				<Style>
-					<LineStyle>
-						<color>ff0000ff</color>
-					</LineStyle>
-					<PolyStyle>
-						<fill>0</fill>
-					</PolyStyle>
-				</Style>
-				<Polygon>
-					<outerBoundaryIs>
-						<LinearRing>
-							<coordinates>
-								6.50107811378162,51.2301466323228,0 6.50106387181246,51.23014571449509,0 6.501060947941979,51.2301635980899,0 6.50116597056977,51.23017036648411,0 6.50115665231998,51.23022736287189,0 6.50115519032832,51.2302363046691,0 6.501183674465761,51.2302381403942,0 6.50119445452886,51.2301722021131,0 6.50128523522038,51.2301780524972,0 6.501299477199989,51.230178970388,0 6.50130240083625,51.230161086783,0 6.50119737834833,51.2301543185143,0 6.501206696534831,51.2300973220319,0 6.50120815836808,51.2300883802306,0 6.50117967446,51.2300865446056,0 6.5011688942619,51.2301524827932,0 6.50107811378162,51.2301466323228,0 
-							</coordinates>
-						</LinearRing>
-					</outerBoundaryIs>
-				</Polygon>
-			</Placemark>
-			<Placemark>
-				<name>E_2b</name>
-				<Style>
-					<LineStyle>
-						<color>ff0000ff</color>
-					</LineStyle>
-					<PolyStyle>
-						<fill>0</fill>
-					</PolyStyle>
-				</Style>
-				<Polygon>
-					<outerBoundaryIs>
-						<LinearRing>
-							<coordinates>
-								6.5018344832036,51.2297663883507,0 6.501820241338221,51.22976547052671,0 6.50181731793283,51.2297833541489,0 6.50192233968811,51.2297901218508,0 6.50191302245969,51.229847118406,0 6.50191156077212,51.2298560602184,0 6.5019400445735,51.2298578956637,0 6.50195082358758,51.2297919573858,0 6.50204160350551,51.22979780717111,0 6.50205584539107,51.2297987248786,0 6.50205876884842,51.2297808412523,0 6.50195374694684,51.2297740736698,0 6.501963064102229,51.2297170771996,0 6.501964525774491,51.2297081353862,0 6.50193604206911,51.2297062998582,0 6.50192526319646,51.22977223822851,0 6.5018344832036,51.2297663883507,0 
-							</coordinates>
-						</LinearRing>
-					</outerBoundaryIs>
-				</Polygon>
-			</Placemark>
-			<Placemark>
+			<visibility>0</visibility>
+			<Placemark id="ClosureSymbols_3087510579280.1">
 				<name>28_a</name>
+				<visibility>0</visibility>
 				<Style>
 					<LineStyle>
 						<color>ff0000ff</color>
@@ -3379,8 +3289,9 @@
 					</outerBoundaryIs>
 				</Polygon>
 			</Placemark>
-			<Placemark>
+			<Placemark id="ClosureSymbols_3087510579280.2">
 				<name>28_b</name>
+				<visibility>0</visibility>
 				<Style>
 					<LineStyle>
 						<color>ff0000ff</color>
@@ -3399,14 +3310,248 @@
 					</outerBoundaryIs>
 				</Polygon>
 			</Placemark>
+			<Placemark id="ClosureSymbols_3087510579280.3">
+				<name>E_1a</name>
+				<visibility>0</visibility>
+				<Style>
+					<LineStyle>
+						<color>ff0000ff</color>
+					</LineStyle>
+					<PolyStyle>
+						<fill>0</fill>
+					</PolyStyle>
+				</Style>
+				<Polygon>
+					<outerBoundaryIs>
+						<LinearRing>
+							<coordinates>
+								6.499073466419591,51.2311517339261,0 6.49905922418909,51.2311508158507,0 6.49905629960845,51.23116869938399,0 6.49916132402027,51.2311754696017,0 6.49915200305112,51.2312324657839,0 6.49915054077593,51.2312414075519,0 6.499179025292949,51.2312432437693,0 6.49918980864025,51.2311773058191,0 6.49928059085449,51.23118315777889,0 6.49929483310031,51.23118407582751,0 6.499297757732901,51.23116619229009,0 6.49919273317475,51.2311594221919,0 6.4992020540806,51.23110242591499,0 6.499203516483561,51.23109348414909,0 6.49917503205281,51.2310916480287,0 6.49916424870874,51.2311575859785,0 6.499073466419591,51.2311517339261,0 
+							</coordinates>
+						</LinearRing>
+					</outerBoundaryIs>
+				</Polygon>
+			</Placemark>
+			<Placemark id="ClosureSymbols_3087510579280.4">
+				<name>E_1b</name>
+				<visibility>0</visibility>
+				<Style>
+					<LineStyle>
+						<color>ff0000ff</color>
+					</LineStyle>
+					<PolyStyle>
+						<fill>0</fill>
+					</PolyStyle>
+				</Style>
+				<Polygon>
+					<outerBoundaryIs>
+						<LinearRing>
+							<coordinates>
+								6.500081099152239,51.2306465311237,0 6.50006685705309,51.2306456131729,0 6.50006393290135,51.2306634967386,0 6.500168956344531,51.2306702660382,0 6.500159636742281,51.2307272623237,0 6.50015817468153,51.23073620410791,0 6.50018665893583,51.2307380400763,0 6.50019744070179,51.23067210200651,0 6.50028822207874,51.23067795317279,0 6.5003024641932,51.23067887109689,0 6.5003053883969,51.230660987527,0 6.5002003648074,51.2306542183469,0 6.500209684341489,51.2305972220566,0 6.50021114653,51.2305882802744,0 6.50018266236683,51.2305864443132,0 6.50017188060411,51.2306523823825,0 6.500081099152239,51.2306465311237,0 
+							</coordinates>
+						</LinearRing>
+					</outerBoundaryIs>
+				</Polygon>
+			</Placemark>
+			<Placemark id="ClosureSymbols_3087510579280.5">
+				<name>E_2a</name>
+				<visibility>0</visibility>
+				<Style>
+					<LineStyle>
+						<color>ff0000ff</color>
+					</LineStyle>
+					<PolyStyle>
+						<fill>0</fill>
+					</PolyStyle>
+				</Style>
+				<Polygon>
+					<outerBoundaryIs>
+						<LinearRing>
+							<coordinates>
+								6.50107811378162,51.2301466323228,0 6.50106387181246,51.23014571449509,0 6.501060947941979,51.2301635980899,0 6.50116597056977,51.23017036648411,0 6.50115665231998,51.23022736287189,0 6.50115519032832,51.2302363046691,0 6.501183674465761,51.2302381403942,0 6.50119445452886,51.2301722021131,0 6.50128523522038,51.2301780524972,0 6.501299477199989,51.230178970388,0 6.50130240083625,51.230161086783,0 6.50119737834833,51.2301543185143,0 6.501206696534831,51.2300973220319,0 6.50120815836808,51.2300883802306,0 6.50117967446,51.2300865446056,0 6.5011688942619,51.2301524827932,0 6.50107811378162,51.2301466323228,0 
+							</coordinates>
+						</LinearRing>
+					</outerBoundaryIs>
+				</Polygon>
+			</Placemark>
+			<Placemark id="ClosureSymbols_3087510579280.6">
+				<name>E_2b</name>
+				<visibility>0</visibility>
+				<Style>
+					<LineStyle>
+						<color>ff0000ff</color>
+					</LineStyle>
+					<PolyStyle>
+						<fill>0</fill>
+					</PolyStyle>
+				</Style>
+				<Polygon>
+					<outerBoundaryIs>
+						<LinearRing>
+							<coordinates>
+								6.5018344832036,51.2297663883507,0 6.501820241338221,51.22976547052671,0 6.50181731793283,51.2297833541489,0 6.50192233968811,51.2297901218508,0 6.50191302245969,51.229847118406,0 6.50191156077212,51.2298560602184,0 6.5019400445735,51.2298578956637,0 6.50195082358758,51.2297919573858,0 6.50204160350551,51.22979780717111,0 6.50205584539107,51.2297987248786,0 6.50205876884842,51.2297808412523,0 6.50195374694684,51.2297740736698,0 6.501963064102229,51.2297170771996,0 6.501964525774491,51.2297081353862,0 6.50193604206911,51.2297062998582,0 6.50192526319646,51.22977223822851,0 6.5018344832036,51.2297663883507,0 
+							</coordinates>
+						</LinearRing>
+					</outerBoundaryIs>
+				</Polygon>
+			</Placemark>
+			<Placemark id="ClosureSymbols_3087510579280.7">
+				<name>apron_1a</name>
+				<visibility>0</visibility>
+				<Style>
+					<LineStyle>
+						<color>ff0000ff</color>
+					</LineStyle>
+					<PolyStyle>
+						<fill>0</fill>
+					</PolyStyle>
+				</Style>
+				<Polygon>
+					<outerBoundaryIs>
+						<LinearRing>
+							<coordinates>
+								6.49772637668617,51.23199629563171,0 6.497719255528511,51.2319958365122,0 6.49771779280357,51.2320047782539,0 6.49776255462036,51.2320076641853,0 6.49775868905001,51.2320312957634,0 6.49775795776473,51.2320357665911,0 6.49777220023167,51.2320366849181,0 6.497776797083609,51.23200858242171,0 6.497814437456371,51.2320110093006,0 6.49782155876061,51.2320114684174,0 6.49782302132265,51.2320025266711,0 6.4977782596542,51.2319996406761,0 6.497782125063351,51.2319760091838,0 6.49778285635001,51.231971538266,0 6.49776861389803,51.2319706200304,0 6.497764017193661,51.2319987224398,0 6.49772637668617,51.23199629563171,0 
+							</coordinates>
+						</LinearRing>
+					</outerBoundaryIs>
+				</Polygon>
+			</Placemark>
+			<Placemark id="ClosureSymbols_3087510579280.8">
+				<name>apron_1b</name>
+				<visibility>0</visibility>
+				<Style>
+					<LineStyle>
+						<color>ff0000ff</color>
+					</LineStyle>
+					<PolyStyle>
+						<fill>0</fill>
+					</PolyStyle>
+				</Style>
+				<Polygon>
+					<outerBoundaryIs>
+						<LinearRing>
+							<coordinates>
+								6.4984792225516,51.23162529078479,0 6.49847342086405,51.2316226579303,0 6.49846503368155,51.2316299428563,0 6.498501501310781,51.2316464920684,0 6.49847933557281,51.2316657450095,0 6.49847514197831,51.23166938747269,0 6.49848674536586,51.2316746531814,0 6.49851310470063,51.2316517576847,0 6.49851310483885,51.2316517577776,0 6.4985437708107,51.2316656740342,0 6.498549572507719,51.2316683068854,0 6.49855795968426,51.2316610219533,0 6.49852149202283,51.23164447275829,0 6.49854365773295,51.2316252198088,0 6.49854785131797,51.231621577343,0 6.49853624779329,51.23161631163731,0 6.49850988849559,51.23163920705,0 6.4984792225516,51.23162529078479,0 
+							</coordinates>
+						</LinearRing>
+					</outerBoundaryIs>
+				</Polygon>
+			</Placemark>
+			<Placemark id="ClosureSymbols_3087510579280.9">
+				<name>apron_2a</name>
+				<visibility>0</visibility>
+				<Style>
+					<LineStyle>
+						<color>ff0000ff</color>
+					</LineStyle>
+					<PolyStyle>
+						<fill>0</fill>
+					</PolyStyle>
+				</Style>
+				<Polygon>
+					<outerBoundaryIs>
+						<LinearRing>
+							<coordinates>
+								6.504269484947899,51.2292650808608,0 6.50426542884687,51.2292687841129,0 6.50427722511615,51.22927387753111,0 6.504302720957779,51.2292506004116,0 6.50433389660701,51.2292640614877,0 6.504339794813741,51.22926660824,0 6.504347907141191,51.2292592018232,0 6.50431083343127,51.2292431940004,0 6.504310833436131,51.2292431939106,0 6.504332273013689,51.2292236199449,0 6.504336329243539,51.2292199167832,0 6.50432453298599,51.2292148232812,0 6.50429903717562,51.229238100406,0 6.50426786155418,51.2292246393209,0 6.50426196335684,51.2292220925651,0 6.504253851017669,51.2292294990657,0 6.504290924696319,51.2292455069062,0 6.504269484947899,51.2292650808608,0 
+							</coordinates>
+						</LinearRing>
+					</outerBoundaryIs>
+				</Polygon>
+			</Placemark>
+			<Placemark id="ClosureSymbols_3087510579280.10">
+				<name>apron_2b</name>
+				<visibility>0</visibility>
+				<Style>
+					<LineStyle>
+						<color>ff0000ff</color>
+					</LineStyle>
+					<PolyStyle>
+						<fill>0</fill>
+					</PolyStyle>
+				</Style>
+				<Polygon>
+					<outerBoundaryIs>
+						<LinearRing>
+							<coordinates>
+								6.50559892656954,51.2286504415776,0 6.505591883420139,51.2286512443847,0 6.50559444066849,51.2286600886454,0 6.50563871111407,51.2286550425336,0 6.50564546939161,51.2286784163942,0 6.50564674802393,51.2286828384791,0 6.50566083418743,51.2286812328551,0 6.50565279712621,51.22865343690729,0 6.505690024417041,51.2286491934963,0 6.505697067416679,51.22864839077021,0 6.505694510292211,51.2286395465144,0 6.50565023986694,51.2286445926477,0 6.50564348159133,51.2286212187873,0 6.505642202960839,51.2286167967023,0 6.50562811681653,51.2286184023243,0 6.505636153857441,51.2286461982737,0 6.50559892656954,51.2286504415776,0 
+							</coordinates>
+						</LinearRing>
+					</outerBoundaryIs>
+				</Polygon>
+			</Placemark>
+			<Placemark id="ClosureSymbols_3087510579280.11">
+				<name>apron_3a</name>
+				<visibility>0</visibility>
+				<Style>
+					<LineStyle>
+						<color>ff0000ff</color>
+					</LineStyle>
+					<PolyStyle>
+						<fill>0</fill>
+					</PolyStyle>
+				</Style>
+				<Polygon>
+					<outerBoundaryIs>
+						<LinearRing>
+							<coordinates>
+								6.49400007288661,51.2340401809235,0 6.49398655121419,51.23403722497449,0 6.493977134429009,51.23405420265641,0 6.4940768454763,51.23407599991209,0 6.49407684547142,51.23407600000189,0 6.49404683330424,51.2341301092358,0 6.49404212498502,51.2341385980807,0 6.49406916840311,51.2341445098753,0 6.49410388871471,51.234081911785,0 6.494103888857801,51.2340819117881,0 6.49419007817553,51.2341007530981,0 6.49420359988031,51.234103709024,0 6.49421301673657,51.2340867313261,0 6.49411330559779,51.2340649341853,0 6.494113305602671,51.23406493409551,0 6.494143317504209,51.2340108248393,0 6.494148025934161,51.23400233599281,0 6.49412098258808,51.2339964242173,0 6.494086262224889,51.2340590223116,0 6.49400007288661,51.2340401809235,0 
+							</coordinates>
+						</LinearRing>
+					</outerBoundaryIs>
+				</Polygon>
+			</Placemark>
+			<Placemark id="ClosureSymbols_3087510579280.12">
+				<name>apron_3b</name>
+				<visibility>0</visibility>
+				<Style>
+					<LineStyle>
+						<color>ff0000ff</color>
+					</LineStyle>
+					<PolyStyle>
+						<fill>0</fill>
+					</PolyStyle>
+				</Style>
+				<Polygon>
+					<outerBoundaryIs>
+						<LinearRing>
+							<coordinates>
+								6.49000802407741,51.2352443554059,0 6.49000389598986,51.2352529624928,0 6.49003131662767,51.2352581455365,0 6.49006175770096,51.2351946756599,0 6.4901491495854,51.2352111943569,0 6.49016285997148,51.235213785864,0 6.490171116073589,51.2351965717676,0 6.490070013836899,51.235177461571,0 6.49009632674709,51.23512259868299,0 6.49010045480007,51.23511399168211,0 6.490073034096,51.2351088086526,0 6.4900425932421,51.23517227853699,0 6.48995520132883,51.2351557597587,0 6.489941491115521,51.2351531682307,0 6.489933234936571,51.23517038231,0 6.490034337096979,51.2351894926238,0 6.49000802407741,51.2352443554059,0 
+							</coordinates>
+						</LinearRing>
+					</outerBoundaryIs>
+				</Polygon>
+			</Placemark>
+			<Placemark id="ClosureSymbols_3087510579280.13">
+				<name>apron_3c</name>
+				<visibility>0</visibility>
+				<Style>
+					<LineStyle>
+						<color>ff0000ff</color>
+					</LineStyle>
+					<PolyStyle>
+						<fill>0</fill>
+					</PolyStyle>
+				</Style>
+				<Polygon>
+					<outerBoundaryIs>
+						<LinearRing>
+							<coordinates>
+								6.491092141710711,51.2347895786053,0 6.491078351825271,51.2347871593553,0 6.49107064456142,51.2348044735163,0 6.49117233312094,51.23482231360241,0 6.49117233311605,51.23482231369231,0 6.49114776909018,51.23487749511569,0 6.49114391546382,51.23488615219859,0 6.4911714952976,51.23489099077221,0 6.49119991291997,51.2348271521689,0 6.49128781166452,51.23484257300809,0 6.4913016015783,51.2348449922338,0 6.49130930890145,51.2348276781494,0 6.49120762013966,51.2348098379987,0 6.49123218405542,51.2347546565607,0 6.491236037653449,51.2347459994743,0 6.49120845803678,51.2347411610099,0 6.491180040488249,51.2348049995271,0 6.491092141710711,51.2347895786053,0 
+							</coordinates>
+						</LinearRing>
+					</outerBoundaryIs>
+				</Polygon>
+			</Placemark>
 		</Folder>
 	</Folder>
 	<Folder>
 		<name>aor</name>
+		<visibility>0</visibility>
 		<Folder>
 			<name>line</name>
+			<visibility>0</visibility>
 			<Placemark>
 				<name>LNG_a</name>
+				<visibility>0</visibility>
 				<Style>
 					<LineStyle>
 						<color>ff0000ff</color>
@@ -3423,6 +3568,7 @@
 			</Placemark>
 			<Placemark>
 				<name>LNT_a</name>
+				<visibility>0</visibility>
 				<Style>
 					<LineStyle>
 						<color>ff0000ff</color>
@@ -3439,6 +3585,7 @@
 			</Placemark>
 			<Placemark>
 				<name>area_b</name>
+				<visibility>0</visibility>
 				<Style>
 					<LineStyle>
 						<color>ff0000ff</color>
@@ -3455,6 +3602,7 @@
 			</Placemark>
 			<Placemark>
 				<name>LNT_b</name>
+				<visibility>0</visibility>
 				<Style>
 					<LineStyle>
 						<color>ff0000ff</color>
@@ -3471,6 +3619,7 @@
 			</Placemark>
 			<Placemark>
 				<name>area_a</name>
+				<visibility>0</visibility>
 				<Style>
 					<LineStyle>
 						<color>ff0000ff</color>
@@ -3487,6 +3636,7 @@
 			</Placemark>
 			<Placemark>
 				<name>LNG_b</name>
+				<visibility>0</visibility>
 				<Style>
 					<LineStyle>
 						<color>ff0000ff</color>
@@ -3504,14 +3654,17 @@
 		</Folder>
 		<Folder>
 			<name>labels</name>
+			<visibility>0</visibility>
 			<Placemark>
 				<name>LNG</name>
+				<visibility>0</visibility>
 				<Point>
 					<coordinates>6.503864236906601,51.22980581614199,0</coordinates>
 				</Point>
 			</Placemark>
 			<Placemark>
 				<name>LNT</name>
+				<visibility>0</visibility>
 				<Point>
 					<coordinates>6.50521845259573,51.23086884001859,0</coordinates>
 				</Point>
@@ -3520,14 +3673,17 @@
 	</Folder>
 	<Folder>
 		<name>tora</name>
+		<visibility>0</visibility>
 		<Placemark>
 			<name>13_B_F</name>
+			<visibility>0</visibility>
 			<Point>
 				<coordinates>6.498068926887481,51.2332449168376,0</coordinates>
 			</Point>
 		</Placemark>
 		<Placemark>
 			<name>31_A</name>
+			<visibility>0</visibility>
 			<Point>
 				<coordinates>6.5105364810674,51.2269840927101,0</coordinates>
 			</Point>
@@ -3535,6 +3691,7 @@
 	</Folder>
 	<Folder>
 		<name>labels</name>
+		<visibility>0</visibility>
 		<Folder>
 			<name>taxiways</name>
 			<visibility>0</visibility>
@@ -3650,8 +3807,10 @@
 		</Folder>
 		<Folder>
 			<name>buffer</name>
+			<visibility>0</visibility>
 			<Placemark>
 				<name>01963f4e-8ce3-7a61-8cac-b440e6679d63</name>
+				<visibility>0</visibility>
 				<Style>
 					<LineStyle>
 						<color>ff0000ff</color>
@@ -3672,6 +3831,7 @@
 			</Placemark>
 			<Placemark>
 				<name>01963f4e-8ce3-7c0c-afb7-adf322874f98</name>
+				<visibility>0</visibility>
 				<Style>
 					<LineStyle>
 						<color>ff0000ff</color>
@@ -3692,6 +3852,7 @@
 			</Placemark>
 			<Placemark>
 				<name>01963f4e-8ce3-7b76-9e0b-67f79a26cae2</name>
+				<visibility>0</visibility>
 				<Style>
 					<LineStyle>
 						<color>ff0000ff</color>
@@ -3712,6 +3873,7 @@
 			</Placemark>
 			<Placemark>
 				<name>01963f4e-8ce3-7336-832e-323b322926fd</name>
+				<visibility>0</visibility>
 				<Style>
 					<LineStyle>
 						<color>ff0000ff</color>
@@ -3732,6 +3894,7 @@
 			</Placemark>
 			<Placemark>
 				<name>01963f4e-8ce3-775c-a6db-fa008d655238</name>
+				<visibility>0</visibility>
 				<Style>
 					<LineStyle>
 						<color>ff0000ff</color>
@@ -3752,6 +3915,7 @@
 			</Placemark>
 			<Placemark>
 				<name>01963f4e-8ce3-7c87-9985-709e6096ebb9</name>
+				<visibility>0</visibility>
 				<Style>
 					<LineStyle>
 						<color>ff0000ff</color>
@@ -3772,6 +3936,7 @@
 			</Placemark>
 			<Placemark>
 				<name>01963f4e-8ce3-751f-841c-2f2753cfbc4c</name>
+				<visibility>0</visibility>
 				<Style>
 					<LineStyle>
 						<color>ff0000ff</color>
@@ -3792,6 +3957,7 @@
 			</Placemark>
 			<Placemark>
 				<name>01963f4e-8ce3-7856-a124-d257bc345e22</name>
+				<visibility>0</visibility>
 				<Style>
 					<LineStyle>
 						<color>ff0000ff</color>
@@ -3812,6 +3978,6 @@
 			</Placemark>
 		</Folder>
 	</Folder>
-	<atom:link rel="app" href="https://www.google.com/earth/about/versions/#earth-pro" title="Google Earth Pro 7.3.6.10201"></atom:link>
+	<atom:link rel="app" href="https://www.google.com/earth/about/versions/#earth-pro" title="Google Earth Pro 7.3.7.1155"></atom:link>
 </Folder>
 </kml>
