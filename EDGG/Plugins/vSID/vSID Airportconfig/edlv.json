@@ -56,11 +56,12 @@
                 }
 			},
             "EDLV": {
+                "wpt": "XXX",
                 "equip": {"RNAV": true, "NON-RNAV": true},
                 "E": {
                     "1": {
                         "rwy": "09",
-                        "prio": 1
+                        "prio": 99
                     }
                 }
 			}

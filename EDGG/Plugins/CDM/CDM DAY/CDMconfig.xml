@@ -5,7 +5,7 @@
 	<expiredCtot time="25" />
 	<realMode mode="true" />
 	<pilotTobt mode="true" />
-	<autoAtot mode="false" />
+	<autoAtot mode="true" />
 	<invalidateAtTsat mode="asrt" />
 	<invalidateAtTobt mode="false" />
 	<readySetTsac mode="false" />
@@ -33,5 +33,6 @@
 	<autoSetTobtFromEvSlot mode="true" />
 	<reqTobtPriority mode="true" />
 	<remarksOptionCtot mode="true" />
+	<disableTobtReqAfterAsrt mode="false" />
 	<PrivateMessage text="[ACDM MSG] Please set your TOBT (Target Off-Block Time) at https://vats.im/vdgs if you have not done already. [END OF ACDM MSG]" />
 </CDM>

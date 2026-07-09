@@ -7,96 +7,74 @@
     
      * TOPSKY-PHOENIX-MAPS\500-EDxx\507-EDLP.jinja
 #}
-{%- set PAD_NDB = 'N051.37.24.500:E008.38.21.800' %}
+{%- set sids = {
+    "05": {
+        "DOMEG": ['EDLP/23', 'LP501', 'LP504', 'LP505', 'LP506', 'LP507', 'DOMEG'],
+        "GISDI": ['LP501', 'LP502', 'GISDI'],
+        "HMM":   ['LP507', 'HMM'],
+        "TINSA": ['LP506', 'TINSA'],
+        "WRB":   ['LP502', 'WRB'],
+    },
+    "23": {
+        "DOMEG": ['EDLP/05', 'LP231', 'LP232', 'DOMEG'],
+        "GISDI": ['LP231', 'LP233', 'LP234', 'LP235', 'GISDI'],
+        "HMM":   ['LP232', 'HMM'],
+        "TINSA": ['LP233', 'TINSA'],
+        "WRB":   ['LP233', 'LP236', 'WRB'],
+    },
+} %}
 {%- set rnp = {
-    "06": [
-        'KOMIL',
-        'LP025',
-        'LP026',
-        'LP027',
+    "05": [
+        'PADDO',
+        'LP497',
+        'LP498',
+        'LP499',
+        'LP500',
     ],
-    "24": [
+    "23": [
+        'PADDO',
         'WRB',
-        'IBEGO',
-        'LP020',
-        'LP021',
-        'LP022',
+        'LP227',
+        'LP228',
+        'LP229',
+        'LP230',
     ]
 } %}
 
-MAP:EDLP 06/24
+MAP:EDLP 05/23
 FOLDER:SIDs
 LAYER:3
 
-// ---- RWY 06 ----
+// ---- RWY 05 ----
 STYLE:SOLID
 COLOR:ORANGE
-// DOMEG
-COORD:EDLP/24
-COORD:LP100
-COORD:LP101
-COORD_DF:055M:L:2.09:10:LP102
-COORD:LP105
-COORD:DOMEG
+{%- for desig, fixes in sids['05'].items() %}
+// {{desig}}
+{%- for fx in fixes %}
+COORD:{{fx}}
+{%- endfor %}
 COORDLINE
-// GISDI
-COORD:LP100
-COORD:LP104
-COORD:GISDI
-COORDLINE
-// HMM
-COORD:LP105
-COORD:HMM
-COORDLINE
-// TINSA
-COORD:LP102
-COORD_DF:281M:L:2.09:10:LP106
-COORD:LP107
-COORD:TINSA
-COORDLINE
-// WRB
-COORD:LP104
-COORD:WRB
-COORDLINE
+{%- endfor %}
 
 // Labels
 TEXTALIGN:LB
-TEXT:N051.39.27.500:E008.44.18.100:X:5:0
+TEXT:LP504:P:5:0
 
 
-// ---- RWY 24 ----
+// ---- RWY 23 ----
 STYLE:SOLID
 COLOR:BLUE
-// DOMEG
-COORD:EDLP/06
-COORD:LP204
-COORD:LP203
-COORD:DOMEG
+{%- for desig, fixes in sids['23'].items() %}
+// {{desig}}
+{%- for fx in fixes %}
+COORD:{{fx}}
+{%- endfor %}
 COORDLINE
-// GISDI
-COORD:LP204
-COORD:LP205
-COORD_DF:235M:L:2.02:10:LP206
-COORD:GISDI
-COORDLINE
-// HMM
-COORD:LP203
-COORD:HMM
-COORDLINE
-// TINSA
-COORD:LP205
-COORD:LP207
-COORD:TINSA
-COORDLINE
-// WRB
-COORD:LP206
-COORD_DF:138M:L:2.02:10:LP202
-COORD:WRB
-COORDLINE
+{%- endfor %}
 
 // Labels
 TEXTALIGN:LT
-TEXT:LP204:W:5:0
+TEXT:LP231:L:5:0
 
 // Fixes
 COLOR:ORANGE
@@ -124,78 +102,34 @@ TEXT:HMM:HM:5:0
 TEXT:WRB:WR:5:0
 
 
-MAP:EDLP RNP 06
+MAP:EDLP RNP 05
 FOLDER:RNAV/RNP APP
-ACTIVE:RWY:ARR:EDLP06:DEP:*
+ACTIVE:RWY:ARR:EDLP05:DEP:*
 COLOR:Active_Map_Type_1
-SYMBOL:VOR:{{PAD_NDB}}
-{%- for fx in rnp['06'] %}
+SYMBOL:FIX:PADDO
+{%- for fx in rnp['05'] if fx not in ['PADDO'] %}
 SYMBOL:FIX2:{{fx}}
 {%- endfor %}
 ZOOM:8
 FONTSIZE:=:11
 TEXTALIGN:LB
-TEXT:{{PAD_NDB}}:PAD:5:0
-{%- for fx in rnp['06'] %}
+{%- for fx in rnp['05'] %}
 TEXT:{{fx}}:{{fx}}:5:0
 {%- endfor %}
 
 
-MAP:EDLP RNP 24
+MAP:EDLP RNP 23
 FOLDER:RNAV/RNP APP
-ACTIVE:RWY:ARR:EDLP24:DEP:*
+ACTIVE:RWY:ARR:EDLP23:DEP:*
 COLOR:Active_Map_Type_1
-SYMBOL:VOR:{{PAD_NDB}}
+SYMBOL:FIX:PADDO
 SYMBOL:VOR:WRB
-{%- for fx in rnp['24'] if fx not in ['WRB'] %}
+{%- for fx in rnp['23'] if fx not in ['PADDO', 'WRB'] %}
 SYMBOL:FIX2:{{fx}}
 {%- endfor %}
 ZOOM:8
 FONTSIZE:=:11
 TEXTALIGN:LB
-TEXT:{{PAD_NDB}}:PAD:5:0
-{%- for fx in rnp['24'] %}
+{%- for fx in rnp['23'] %}
 TEXT:{{fx}}:{{fx}}:5:0
 {%- endfor %}
-
-
-MAP:EDLP ILS/NDB 06
-FOLDER:NON-RNAV APP
-LAYER:3
-STYLE:DOT:1
-COLOR:ORANGE
-// via PAD
-COORD:{{PAD_NDB}}
-COORD_FD:254M:PAD:8.8
-COORD_DF:254M:L:1.73:10:KOMIL
-COORDLINE
-// Fixes
-SYMBOL:VOR:{{PAD_NDB}}
-SYMBOL:FIX2:KOMIL
-// Altitudes
-TEXTALIGN:LT
-TEXT:KOMIL:A30:5:0
-
-
-MAP:EDLP ILS/NDB 24
-FOLDER:NON-RNAV APP
-LAYER:3
-STYLE:DOT:1
-COLOR:ORANGE
-// via PAD
-COORD:{{PAD_NDB}}
-COORD_FD:078M:PAD:8.6
-COORD_TURN:1.68:10:078M:-120
-COORDLINE
-// via WRB
-COORD:WRB
-COORD_FC:318M:14.2
-COORD_DF:318M:L:1.59:10:IBEGO
-COORDLINE
-// Fixes
-SYMBOL:VOR:{{PAD_NDB}}
-SYMBOL:VOR:WRB
-SYMBOL:FIX2:IBEGO
-// Altitudes
-TEXTALIGN:LT
-TEXT:IBEGO:A30:5:0

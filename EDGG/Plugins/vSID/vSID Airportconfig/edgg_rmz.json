@@ -296,8 +296,9 @@
                 "A": {
                     "1": {
                         "rwy": "03",
+                        "wpt": "XXX",
                         "equip": {"NON-RNAV": true},
-                        "prio": 1
+                        "prio": 99
                     }
                 }
 			}

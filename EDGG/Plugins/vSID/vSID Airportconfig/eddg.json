@@ -147,17 +147,18 @@
                 }
             },
             "EDDG": {
+                "wpt": "XXX",
                 "equip": {"RNAV": true, "NON-RNAV": true},
                 "E": {
                     "1": {
                         "rwy": "07",
-                        "prio": 1
+                        "prio": 99
                     }
                 },
                 "W": {
                     "1": {
                         "rwy": "25",
-                        "prio": 1
+                        "prio": 99
                     }
                 }
             }
