@@ -38,7 +38,6 @@
                 }
 			},
 			"HMM": {
-                "equip": {"RNAV": true, "NON-RNAV": true},
                 "P": {
                     "1": {
                         "rwy": "05",
@@ -67,7 +66,6 @@
                 }
 			},
 			"WRB": {
-                "equip": {"RNAV": true, "NON-RNAV": true},
                 "P": {
                     "1": {
                         "rwy": "05",
