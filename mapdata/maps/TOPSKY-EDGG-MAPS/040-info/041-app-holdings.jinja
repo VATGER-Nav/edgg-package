@@ -1,4 +1,3 @@
-{%- set PAD_NDB = 'N051.37.24.500:E008.38.21.800' %}
 {%- set holdings = {
         "ABHOL": {"inbd": "275", "turn": "R", "lvllo": "A50", "lvlup": null,  "symb": "FIX2_L"},
         "ADEMI": {"inbd": "284", "turn": "L", "lvllo": "A60", "lvlup": null,  "symb": "FIX_L"},
@@ -38,7 +37,7 @@
         "NVO":   {"inbd": "066", "turn": "R", "lvllo": "A60", "lvlup": "130", "symb": "VOR"   },
         "OHMAR": {"inbd": "118", "turn": "L", "lvllo": "A60", "lvlup": null,  "symb": "FIX_L"},
         "OSN":   {"inbd": "207", "turn": "R", "lvllo": "A50", "lvlup": null,  "symb": "VOR"   },
-        "PAD":   {"inbd": "055", "turn": "R", "lvllo": "A30", "lvlup": null,  "symb": "VOR"   },
+        "PADDO": {"inbd": "053", "turn": "R", "lvllo": "A40", "lvlup": null,  "symb": "FIX_L"   },
         "REUTL": {"inbd": "346", "turn": "L", "lvllo": "A60", "lvlup": null,  "symb": "FIX2_L"},
         "RINEX": {"inbd": "351", "turn": "L", "lvllo": "A50", "lvlup": null,  "symb": "FIX_L"},
         "SIL":   {"inbd": "108", "turn": "R", "lvllo": "A60", "lvlup": null,  "symb": "VOR"   },
@@ -62,7 +61,7 @@ LAYER:4
 STYLE:SOLID:1
 TEXTALIGN:LB
 FONTSIZE:=:11
-{% for desig, hold in holdings.items() if not desig in ['PAD'] %}
+{% for desig, hold in holdings.items() %}
 // {{desig}}
 COORD_HM:{{desig}}:{{hold.inbd}}M:{{hold.turn}}:1MIN:250KTS:10
 COORDPOLY:0
@@ -74,9 +73,3 @@ TEXT:{{desig}}:{{hold.lvllo}}:10:26
 TEXT:{{desig}}:{{hold.lvllo}}-{{hold.lvlup}}:10:26
 {%- endif %}
 {% endfor %}
-// PAD
-COORD_HM:{{PAD_NDB}}:{{holdings['PAD'].inbd}}M:{{holdings['PAD'].turn}}:1MIN:250KTS:10
-COORDPOLY:0
-SYMBOL:{{holdings['PAD'].symb}}:{{PAD_NDB}}:PAD:10:0
-TEXT:{{PAD_NDB}}:{{holdings['PAD'].turn}} {{holdings['PAD'].inbd}}:10:13
-TEXT:{{PAD_NDB}}:{{holdings['PAD'].lvllo}}:10:26

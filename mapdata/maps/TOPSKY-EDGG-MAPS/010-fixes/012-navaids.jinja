@@ -6,7 +6,6 @@
 #}
 
 {%- set BAM = 'N051.19.39.900:E007.10.37.100' %}
-{%- set PAD = 'N051.37.24.500:E008.38.21.800' %}
 {%- set SPA = 'N049.58.44.300:E006.41.51.700' %}
 {%- set STR = 'N048.30.19.400:E007.34.19.100' %}
 {%- set navaids = [
@@ -91,7 +90,6 @@ COLOR:Active_Map_Type_1
 SYMBOL:VOR:{{nav}}
 {%- endfor %}
 SYMBOL:VOR:{{BAM}}
-SYMBOL:VOR:{{PAD}}
 SYMBOL:VOR:{{SPA}}
 SYMBOL:VOR:{{STR}}
 
@@ -103,6 +101,5 @@ COLOR:Active_Map_Type_1
 SYMBOL:VOR:{{nav}}:{{nav}}:5:0
 {%- endfor %}
 SYMBOL:VOR:{{BAM}}:BAM:5:0
-SYMBOL:VOR:{{PAD}}:PAD:5:0
 SYMBOL:VOR:{{SPA}}:SPA:5:0
 SYMBOL:VOR:{{STR}}:STR:5:0

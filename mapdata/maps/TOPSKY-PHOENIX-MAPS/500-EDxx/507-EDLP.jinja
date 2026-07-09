@@ -7,81 +7,58 @@
     
      * TOPSKY-EDGG-MAPS\500-EDxx\507-EDLP.jinja
 #}
+{%- set sids = {
+    "05": {
+        "DOMEG": ['EDLP/23', 'LP501', 'LP504', 'LP505', 'LP506', 'LP507', 'DOMEG'],
+        "GISDI": ['LP501', 'LP502', 'GISDI'],
+        "HMM":   ['LP507', 'HMM'],
+        "TINSA": ['LP506', 'TINSA'],
+        "WRB":   ['LP502', 'WRB'],
+    },
+    "23": {
+        "DOMEG": ['EDLP/05', 'LP231', 'LP232', 'DOMEG'],
+        "GISDI": ['LP231', 'LP233', 'LP234', 'LP235', 'GISDI'],
+        "HMM":   ['LP232', 'HMM'],
+        "TINSA": ['LP233', 'TINSA'],
+        "WRB":   ['LP233', 'LP236', 'WRB'],
+    },
+} %}
 
-MAP:EDLP 06/24
+MAP:EDLP 05/23
 FOLDER:SIDs
 ASRDATA:PHOENIX
 LAYER:3
 
-// ---- RWY 06 ----
+// ---- RWY 05 ----
 STYLE:SOLID
 COLOR:ORANGE
-// DOMEG
-COORD:EDLP/24
-COORD:LP100
-COORD:LP101
-COORD_DF:055M:L:2.09:10:LP102
-COORD:LP105
-COORD:DOMEG
+{%- for desig, fixes in sids['05'].items() %}
+// {{desig}}
+{%- for fx in fixes %}
+COORD:{{fx}}
+{%- endfor %}
 COORDLINE
-// GISDI
-COORD:LP100
-COORD:LP104
-COORD:GISDI
-COORDLINE
-// HMM
-COORD:LP105
-COORD:HMM
-COORDLINE
-// TINSA
-COORD:LP102
-COORD_DF:281M:L:2.09:10:LP106
-COORD:LP107
-COORD:TINSA
-COORDLINE
-// WRB
-COORD:LP104
-COORD:WRB
-COORDLINE
+{%- endfor %}
 
 // Labels
 TEXTALIGN:LB
-TEXT:N051.39.27.500:E008.44.18.100:X:5:0
+TEXT:LP504:P:5:0
 
 
-// ---- RWY 24 ----
+// ---- RWY 23 ----
 STYLE:SOLID
 COLOR:BLUE
-// DOMEG
-COORD:EDLP/06
-COORD:LP204
-COORD:LP203
-COORD:DOMEG
+{%- for desig, fixes in sids['23'].items() %}
+// {{desig}}
+{%- for fx in fixes %}
+COORD:{{fx}}
+{%- endfor %}
 COORDLINE
-// GISDI
-COORD:LP204
-COORD:LP205
-COORD_DF:235M:L:2.02:10:LP206
-COORD:GISDI
-COORDLINE
-// HMM
-COORD:LP203
-COORD:HMM
-COORDLINE
-// TINSA
-COORD:LP205
-COORD:LP207
-COORD:TINSA
-COORDLINE
-// WRB
-COORD:LP206
-COORD_DF:138M:L:2.02:10:LP202
-COORD:WRB
-COORDLINE
+{%- endfor %}
 
 // Labels
 TEXTALIGN:LT
-TEXT:LP204:W:5:0
+TEXT:LP231:L:5:0
 
 // Fixes
 COLOR:ORANGE

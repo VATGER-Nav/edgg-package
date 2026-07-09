@@ -394,11 +394,11 @@ bearing = 308.6
 
 #------------EDLP--------------
 
-[runways.EDLP.06]
+[runways.EDLP.05]
 thr = [ 51.608713, 8.603167 ]
 bearing = 56.78
 
-[runways.EDLP.24]
+[runways.EDLP.23]
 thr = [ 51.619440, 8.629478 ]
 bearing = 236.78
 
