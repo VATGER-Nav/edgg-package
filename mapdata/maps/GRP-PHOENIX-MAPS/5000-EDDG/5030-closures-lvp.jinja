@@ -5,5 +5,6 @@ AIRPORT:EDDG
 FOLDER:Closures
 LAYER:4
 ACTIVE:LVP:EDDG:1
-STYLE:Solid:2
-{{ data.eddg_kml['layout']['closures']['poly']['C'] | to_coordtype('', 'closure', 'TWYCLOSED') }}
+COLOR:CLOSURE
+STYLE:SOLID:2
+{{ data.eddg_kml['layout']['closures']['poly']['C'] | render_area('TWYCLOSED:REGION') }}

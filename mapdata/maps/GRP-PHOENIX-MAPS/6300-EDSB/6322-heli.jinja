@@ -6,20 +6,20 @@ FOLDER:Heli
 LAYER:6
 ACTIVE:1
 ZOOM:400
-COLOR:layout-holdingpoint
-STYLE:SOLID:1
-{{ data.edsb_kml['layout']['heli']['poly']['helipad'] | to_coordtype('', '', 'OTHER', 'POLYGON') }}
+COLOR:LAYOUT_HOLDINGPOINT
+{{ data.edsb_kml['layout']['heli']['poly']['helipad'] | render_area('OTHER:POLYGON') }}
 {{ data.edsb_kml['layout']['heli']['symb']['helipad'] | to_symbol('HELIPAD') }}
+
 
 MAP:Heli Positions
 AIRPORT:EDSB
 FOLDER:Heli
 LAYER:6
 ZOOM:600
-COLOR:layout-label-stand
-{% for desig, geom in data.edsb_kml['layout']['labels']['heli'].items() %}
-{{- geom | to_text('H:-1:0') }}
+COLOR:LAYOUT_LABEL_STAND
+{% for desig, feat in data.edsb_kml['layout']['labels']['heli'].items() %}
+{{- feat | to_text('H:-1:0') }}
 {% endfor %}
-{% for desig, geom in data.edsb_kml['layout']['labels']['heli'].items() %}
-{{- geom | to_symbol('CIRCLE') }}
+{% for desig, feat in data.edsb_kml['layout']['labels']['heli'].items() %}
+{{- feat | to_symbol('CIRCLE') }}
 {% endfor %}

@@ -4,21 +4,23 @@ MAP:TORA 26
 AIRPORT:EDDR
 FOLDER:Runway Info
 LAYER:6
-COLOR:tora-label
+COLOR:TORA_LABEL
 ZOOM:500
 TEXTALIGN:RC
 {{ data.eddr_kml['layout']['tora']['27_A'] | to_text('1930') }}
 {{ data.eddr_kml['layout']['tora']['27_B'] | to_text('985') }}
 
+
 MAP:TORA 08
 AIRPORT:EDDR
 FOLDER:Runway Info
 LAYER:6
-COLOR:tora-label
+COLOR:TORA_LABEL
 ZOOM:500
 TEXTALIGN:LC
 {{ data.eddr_kml['layout']['tora']['09_C'] | to_text('1900') }}
 {{ data.eddr_kml['layout']['tora']['09_B'] | to_text('889') }}
+
 
 MAP:RRS 26
 AIRPORT:EDDR
@@ -26,7 +28,7 @@ FOLDER:Runway Info
 LAYER:6
 ACTIVE:RWY:ARR:*:DEP:EDDR26
 ACTIVE:RWY:ARR:EDDR26:DEP:*
-COLOR:rrs-marker
+COLOR:RRS_MARKER
 {{ data.eddr_kml['layout']['rrs']['26_600'] | to_symbol('RRS-S') }}
 {{ data.eddr_kml['layout']['rrs']['26_1500'] | to_symbol('RRS-S') }}
 FONTSIZE:=:12
@@ -35,13 +37,14 @@ TEXTALIGN:CT
 {{ data.eddr_kml['layout']['rrs']['26_600'] | to_text('600:0:12') }}
 {{ data.eddr_kml['layout']['rrs']['26_1500'] | to_text('1500:0:12') }}
 
+
 MAP:RRS 08
 AIRPORT:EDDR
 FOLDER:Runway Info
 LAYER:6
 ACTIVE:RWY:ARR:*:DEP:EDDR08
 ACTIVE:RWY:ARR:EDDR08:DEP:*
-COLOR:rrs-marker
+COLOR:RRS_MARKER
 {{ data.eddr_kml['layout']['rrs']['08_600'] | to_symbol('RRS-S') }}
 {{ data.eddr_kml['layout']['rrs']['08_1500'] | to_symbol('RRS-S') }}
 FONTSIZE:=:12
@@ -50,19 +53,23 @@ TEXTALIGN:CT
 {{ data.eddr_kml['layout']['rrs']['08_600'] | to_text('600:0:12') }}
 {{ data.eddr_kml['layout']['rrs']['08_1500'] | to_text('1500:0:12') }}
 
+
 MAP:Runway Designators
 AIRPORT:EDDR
 FOLDER:Runway Info
 LAYER:6
 ACTIVE:1
-{% for uuid, geom in data.eddr_kml['layout']['markings']['runways'].items() %}
-{{- geom | to_coordtype('', 'runway-label') }}
+COLOR:RUNWAY_LABEL
+{% for _, feat in data.eddr_kml['layout']['markings']['runways'].items() %}
+{{- feat | render_area('OTHER:REGION') }}
 {% endfor %}
+
 
 MAP:Runway Markings
 AIRPORT:EDDR
 FOLDER:Runway Info
-{% for uuid, geom in data.eddr_aixm['RunwayMarking'].items() if not uuid in
+COLOR:LAYOUT_RUNWAY_MARKING
+{% for uuid, feat in data.eddr_aixm['RunwayMarking'].items() if not uuid in
 [
     '44e67b12-fa94-459a-9257-f69fed4d8ee1',
     '54c7ff6b-f00c-4590-b8fc-7b3e2347fcdb',
@@ -70,8 +77,9 @@ FOLDER:Runway Info
     'b5a4100f-7a4a-4009-92b5-178261890ea8',
     'e183acf0-e8f8-48a8-931c-c43e413e8903'
 ] %}
-{{- geom | to_coordtype('', 'layout-runway-marking') }}
+{{- feat | render_area('OTHER:REGION') }}
 {% endfor %}
+COLOR:LAYOUT_RUNWAY
 {% for uuid in
 [
     '44e67b12-fa94-459a-9257-f69fed4d8ee1',
@@ -80,5 +88,5 @@ FOLDER:Runway Info
     'b5a4100f-7a4a-4009-92b5-178261890ea8',
     'e183acf0-e8f8-48a8-931c-c43e413e8903'
 ] %}
-{{- data.eddr_aixm['RunwayMarking'][uuid] | to_coordtype('', 'layout-runway') }}
+{{- data.eddr_aixm['RunwayMarking'][uuid] | render_area('OTHER:REGION') }}
 {% endfor %}

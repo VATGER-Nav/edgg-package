@@ -4,29 +4,31 @@ MAP:EDDK_GND
 AIRPORT:EDDK
 FOLDER:AoR
 LAYER:6
-COLOR:aor-gnd-a
-STYLE:Dot
-{{ data.eddk_kml['layout']['aor']['line']['DKG'] | to_line('DKG') }}
+COLOR:AOR_GND_A
+STYLE:DOT
+{{ data.eddk_kml['layout']['aor']['line']['DKG'] | render_line }}
 ZOOM:400
 FONTSIZE:=:13
 {{ data.eddk_kml['layout']['aor']['labels']['DKG'] | to_text('DKG  121.730') }}
+
 
 MAP:EDDK_TWR
 AIRPORT:EDDK
 FOLDER:AoR
 LAYER:6
-COLOR:aor-twr-a
-STYLE:Dot
-{{ data.eddk_kml['layout']['aor']['line']['DKT'] | to_line('DKT') }}
+COLOR:AOR_TWR_A
+STYLE:DOT
+{{ data.eddk_kml['layout']['aor']['line']['DKT'] | render_line }}
 ZOOM:400
 FONTSIZE:=:13
 {{ data.eddk_kml['layout']['aor']['labels']['DKT'] | to_text('DKT  124.980') }}
+
 
 MAP:EDDK_APP
 AIRPORT:EDDK
 FOLDER:AoR
 LAYER:6
-COLOR:aor-app-a
+COLOR:AOR_APP_A
 ZOOM:400
 FONTSIZE:=:13
 {{ data.eddk_kml['layout']['aor']['labels']['DKT'] | to_text('DKA  135.350:0:-20') }}

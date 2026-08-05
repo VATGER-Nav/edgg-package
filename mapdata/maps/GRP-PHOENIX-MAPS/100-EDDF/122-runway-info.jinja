@@ -1,10 +1,11 @@
-// ------------------------- Runway Crossing ------------------------
+// -------------------------- Runway Info ---------------------------
+{#- TODO: Remove simplify() when AIXM2 parser gets fixed #}
 
 MAP:TORA 25L
 AIRPORT:EDDF
 FOLDER:Runway Info
 LAYER:6
-COLOR:tora-label
+COLOR:TORA_LABEL
 ZOOM:300
 {#- South Up #}
 FILTER_ASR:EDDF_GND
@@ -20,12 +21,13 @@ TEXTALIGN:RC
 {{ data.eddf_kml['layout']['tora']['25L_R5_M7'] | to_text('3494') }}
 {{ data.eddf_kml['layout']['tora']['25L_R7'] | to_text('2872') }}
 {{ data.eddf_kml['layout']['tora']['25L_M19'] | to_text('1700') }}
+
 
 MAP:TORA 07R
 AIRPORT:EDDF
 FOLDER:Runway Info
 LAYER:6
-COLOR:tora-label
+COLOR:TORA_LABEL
 ZOOM:300
 {#- South Up #}
 FILTER_ASR:EDDF_GND
@@ -39,12 +41,13 @@ TEXTALIGN:LC
 {{ data.eddf_kml['layout']['tora']['07R_R17_M29'] | to_text('4000') }}
 {{ data.eddf_kml['layout']['tora']['07R_R15_M25'] | to_text('3085') }}
 {{ data.eddf_kml['layout']['tora']['07R_R11_M19'] | to_text('2330') }}
+
 
 MAP:TORA 25C
 AIRPORT:EDDF
 FOLDER:Runway Info
 LAYER:6
-COLOR:tora-label
+COLOR:TORA_LABEL
 ZOOM:300
 {#- South Up #}
 FILTER_ASR:EDDF_GND
@@ -64,12 +67,13 @@ TEXTALIGN:RC
 {{ data.eddf_kml['layout']['tora']['25C_L4'] | to_text('3700') }}
 {{ data.eddf_kml['layout']['tora']['25C_L5_M8'] | to_text('3595') }}
 {{ data.eddf_kml['layout']['tora']['25C_L6_M10'] | to_text('3266') }}
+
 
 MAP:TORA 07C
 AIRPORT:EDDF
 FOLDER:Runway Info
 LAYER:6
-COLOR:tora-label
+COLOR:TORA_LABEL
 ZOOM:300
 {#- South Up #}
 FILTER_ASR:EDDF_GND
@@ -88,11 +92,12 @@ TEXTALIGN:LC
 {{ data.eddf_kml['layout']['tora']['07C_L16_M28'] | to_text('3012') }}
 {{ data.eddf_kml['layout']['tora']['07C_L14_M24'] | to_text('2412') }}
 
+
 MAP:TORA 18
 AIRPORT:EDDF
 FOLDER:Runway Info
 LAYER:6
-COLOR:tora-label
+COLOR:TORA_LABEL
 ZOOM:300
 {#- South Up #}
 FILTER_ASR:EDDF_GND
@@ -120,19 +125,23 @@ TEXTALIGN:LC
 {{ data.eddf_kml['layout']['tora']['18_M'] | to_text('3454') }}
 {#{{ data.eddf_kml['layout']['tora']['18_R'] | to_text('2842') }}#}
 {{ data.eddf_kml['layout']['tora']['18_S'] | to_text('2755') }}
+
 
 MAP:Runway Designators
 AIRPORT:EDDF
 FOLDER:Runway Info
 LAYER:6
 ACTIVE:1
-{% for uuid, geom in data.eddf_kml['layout']['markings']['runways'].items() %}
-{{- geom | to_coordtype('', 'runway-label') }}
+COLOR:RUNWAY_LABEL
+{% for _, feat in data.eddf_kml['layout']['markings']['runways'].items() %}
+{{- feat | render_area('OTHER:REGION') }}
 {% endfor %}
+
 
 MAP:Runway Markings
 AIRPORT:EDDF
 FOLDER:Runway Info
+COLOR:LAYOUT_RUNWAY_MARKING
 {% for uuid in
 [
     '00833957-55af-405b-908e-92ef7b88d233',
@@ -612,8 +621,9 @@ FOLDER:Runway Info
     'ff89a541-c7fa-4807-9c50-cea0e6831612',
     'ffabab36-01c6-45a5-9cc1-2156278d27eb',
 ] %}
-{{- data.eddf_aixm['RunwayMarking'][uuid] | to_coordtype('', 'layout-runway-marking') }}
+{{- data.eddf_aixm['RunwayMarking'][uuid] | simplify(0) | render_area('OTHER:REGION') }}
 {% endfor %}
+COLOR:LAYOUT_TAXIWAY
 {% for uuid in
 [
     '3ae1194c-2d63-56b0-e053-b3472c0af7d6',
@@ -657,5 +667,5 @@ FOLDER:Runway Info
     '3ae2cfe7-944e-309a-e053-b4472c0a637d',
     '3ae2cfe7-9458-309a-e053-b4472c0a637d',
 ] %}
-{{- data.eddf_aixm['RunwayMarking'][uuid] | to_coordtype('', 'layout-taxiway') }}
+{{- data.eddf_aixm['RunwayMarking'][uuid] | simplify(0) | render_area('OTHER:REGION') }}
 {% endfor %}

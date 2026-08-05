@@ -1,51 +1,43 @@
 // ------------------------- Holding Points -------------------------
+{%- set tolerance = 0.000005 %}
+{%- set holdingpoints_cat1_only = ['B', 'C', 'D', 'Q'] %}
 
 MAP:Holding Points CAT I
 AIRPORT:EDSB
 FOLDER:Holding Points
 LAYER:5
 ACTIVE:LVP:EDSB:0
-{% for desig, geom in data.edsb_kml['layout']['holdingpoints']['cat1'].items() %}
-{{- geom | to_coordtype(desig, 'layout-holdingpoint') }}
+COLOR:LAYOUT_HOLDINGPOINT
+{% for desig, feat in data.edsb_kml['layout']['holdingpoints']['cat1'].items() %}
+{{- feat | render_area('OTHER:REGION', desig) }}
 {% endfor %}
-COLOR:layout-holdingpoint
-{% for desig, geom in data.edsb_kml['layout']['holdingpoints']['line'].items() %}
-{{- geom | to_line(desig) -}}
+{% for desig, feat in data.edsb_kml['layout']['holdingpoints']['line'].items() %}
+{{- feat | render_line(desig) }}
 {% endfor %}
+
 
 MAP:Holding Points CAT II/III
 AIRPORT:EDSB
 FOLDER:Holding Points
 LAYER:5
 ACTIVE:LVP:EDSB:1
-{% for desig in 
-[
-    'B',
-    'C',
-    'D',
-    'Q',
-] %}
-{{- data.edsb_kml['layout']['holdingpoints']['cat1'][desig] | to_coordtype(desig, 'layout-holdingpoint') }}
+COLOR:LAYOUT_HOLDINGPOINT
+{% for desig, feat in data.edsb_kml['layout']['holdingpoints']['cat3'].items() %}
+{{- feat | render_area('OTHER:REGION', desig + ' CAT III') }}
 {% endfor %}
-{% for desig, geom in data.edsb_kml['layout']['holdingpoints']['cat3'].items() %}
-{{- geom | to_coordtype(desig + ' CATIII', 'layout-holdingpoint') }}
+{% for desig in holdingpoints_cat1_only %}
+{{- data.edsb_kml['layout']['holdingpoints']['cat1'][desig] | render_area('OTHER:REGION', desig) }}
 {% endfor %}
-COLOR:layout-holdingpoint
-{% for desig in 
-[
-    'B',
-    'C',
-    'D',
-    'Q',
-] %}
-{{- data.edsb_kml['layout']['holdingpoints']['line'][desig] | to_line(desig) }}
+{% for desig in holdingpoints_cat1_only %}
+{{- data.edsb_kml['layout']['holdingpoints']['line'][desig] | render_line(desig) }}
 {% endfor %}
+
 
 MAP:All Stopbars
 AIRPORT:EDSB
 FOLDER:Holding Points
 LAYER:5
-COLOR:layout-holdingpoint
-{% for uuid, geom in data.edsb_aixm['TaxiwayMarking'].items() if geom.marking_location == 'TWY_INT' %}
-    {{- geom | to_line(uuid) }}
+COLOR:LAYOUT_HOLDINGPOINT
+{% for uuid, feat in data.edsb_aixm['TaxiwayMarking'].items() if feat.properties['marking_location'] == 'TWY_INT' %}
+{{- feat | geom_simplify(tolerance) | render_line(uuid) }}
 {% endfor %}

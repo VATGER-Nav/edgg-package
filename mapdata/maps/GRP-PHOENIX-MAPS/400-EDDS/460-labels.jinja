@@ -33,9 +33,11 @@ FOLDER:Labels
 HIDDEN
 LAYER:3
 ZOOM:400
-{% for uuid, geom in data.edds_kml['layout']['labels']['buffer'].items() %}
-{{- geom | to_coordtype('', 'layout-taxiway') }}
+COLOR:LAYOUT_TAXIWAY
+{% for _, feat in data.edds_kml['layout']['labels']['buffer'].items() %}
+{{- feat | render_area('OTHER:REGION') }}
 {% endfor %}
+
 
 MAP:Taxiways
 AIRPORT:EDDS
@@ -44,12 +46,13 @@ OTHER_MAP_ACT:=:Labels\Buffer EDDS
 LAYER:6
 ZOOM:400
 FONTSIZE:=:10
-COLOR:layout-label-yellow
-{% for desig, geom in data.edds_kml['layout']['labels']['taxiways'].items() if desig != 'Exit 3' %}
-{{- geom | to_text(desig) }}
+COLOR:LAYOUT_LABEL_YELLOW
+{% for desig, feat in data.edds_kml['layout']['labels']['taxiways'].items() if desig != 'Exit 3' %}
+{{- feat | to_text(desig) }}
 {% endfor %}
 TEXTALIGN:LC
 {{ data.edds_kml['layout']['labels']['taxiways']['Exit 3'] | to_text('Exit 3') }}
+
 
 MAP:Stands
 AIRPORT:EDDS
@@ -59,13 +62,13 @@ LAYER:6
 ACTIVE:1
 ZOOM:600
 FONTSIZE:=:9
-COLOR:layout-label-yellow
-{% for desig, geom in data.edds_kml['layout']['labels']['stands'].items() if not desig in stands_sec %}
-{{- geom | to_text(desig) }}
+COLOR:LAYOUT_LABEL_YELLOW
+{% for desig, feat in data.edds_kml['layout']['labels']['stands'].items() if not desig in stands_sec %}
+{{- feat | to_text(desig) }}
 {% endfor %}
 
 // New Stands
-COLOR:closure-symbol
+COLOR:CLOSURE_SYMBOL
 {% for desig in
 [
     '100',
@@ -80,24 +83,24 @@ COLOR:closure-symbol
 {% endfor %}
 
 // Strikethrough
-COLOR:closure-symbol
+COLOR:CLOSURE_SYMBOL
 FONTSTYLE:700:0:0:0
-{% for desig, geom in data.edds_kml['layout']['labels']['stands'].items() if (desig in stands_old) and (not desig in stands_sec) %}
-{{- geom | to_text('___:0:-4') }}
+{% for desig, feat in data.edds_kml['layout']['labels']['stands'].items() if (desig in stands_old) and (not desig in stands_sec) %}
+{{- feat | to_text('___:0:-4') }}
 {% endfor %}
 FONTSTYLE:0
 
 ZOOM:1200
-COLOR:layout-label-yellow
+COLOR:LAYOUT_LABEL_YELLOW
 {% for desig in stands_sec %}
 {{- data.edds_kml['layout']['labels']['stands'][desig] | to_text(desig) }}
 {% endfor %}
 
 // Strikethrough
-COLOR:closure-symbol
+COLOR:CLOSURE_SYMBOL
 FONTSTYLE:700:0:0:0
-{% for desig, geom in data.edds_kml['layout']['labels']['stands'].items() if (desig in stands_old) and (desig in stands_sec) %}
-{{- geom | to_text('____:0:-4') }}
+{% for desig, feat in data.edds_kml['layout']['labels']['stands'].items() if (desig in stands_old) and (desig in stands_sec) %}
+{{- feat | to_text('____:0:-4') }}
 {% endfor %}
 FONTSTYLE:0
 
@@ -108,19 +111,20 @@ FOLDER:Labels
 ACTIVE:1
 ZOOM:400
 FONTSIZE:=:10
-COLOR:layout-label-stand
+COLOR:LAYOUT_LABEL_STAND
 {{ data.edds_kml['layout']['labels']['GAT'] | to_text('GAT') }}
 {{ data.edds_kml['layout']['labels']['Police'] | to_text('Police') }}
 {{ data.edds_kml['layout']['labels']['US Army'] | to_text('US Army') }}
+
 
 MAP:Buildings
 AIRPORT:EDDS
 FOLDER:Labels
 ZOOM:400
 FONTSIZE:=:9
-COLOR:layout-label-stand
-{% for desig, geom in data.edds_kml['layout']['labels']['buildings'].items() if not desig in ['Lufthansa Technik'] %}
-{{- geom | to_text(desig) }}
+COLOR:LAYOUT_LABEL_STAND
+{% for desig, feat in data.edds_kml['layout']['labels']['buildings'].items() if not desig in ['Lufthansa Technik'] %}
+{{- feat | to_text(desig) }}
 {% endfor %}
 {{ data.edds_kml['layout']['labels']['buildings']['Lufthansa Technik'] | to_text('Lufthansa:0:-6') }}
 {{ data.edds_kml['layout']['labels']['buildings']['Lufthansa Technik'] | to_text('Technik:0:6') }}

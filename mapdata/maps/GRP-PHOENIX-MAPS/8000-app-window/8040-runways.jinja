@@ -42,11 +42,12 @@
     "ETSB": [["03", "21"]]
 } %}
 
+
 MAP:Runways:A
 FOLDER:Aerodromes
 ACTIVE:1
-COLOR:appwindow-runway
-STYLE:Solid:2
+COLOR:APPWINDOW_RUNWAY
+STYLE:SOLID:2
 {%- for icao, rwys in runways.items() %}
 {%- for rwy in rwys %}
 LINE:{{icao}}/{{rwy[0]}}:{{icao}}/{{rwy[1]}}

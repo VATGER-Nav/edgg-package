@@ -6,11 +6,11 @@ FOLDER:Restrictions
 ACTIVE:1
 // B, C
 RESTRICTION:MAXCODE:C
-{{ data.edlv_kml['layout']['restrictions']['poly']['B'] | to_coordtype('', '', 'TWYTYPE', 'NONE') }}
+{{ data.edlv_kml['layout']['restrictions']['poly']['B'] | render_area('TWYTYPE:NONE') }}
 RESTRICTION:MAXCODE:C
-{{ data.edlv_kml['layout']['restrictions']['poly']['C'] | to_coordtype('', '', 'TWYTYPE', 'NONE') }}
+{{ data.edlv_kml['layout']['restrictions']['poly']['C'] | render_area('TWYTYPE:NONE') }}
 // F, G
 RESTRICTION:MAXCODE:B
-{{ data.edlv_kml['layout']['restrictions']['poly']['F'] | to_coordtype('', '', 'TWYTYPE', 'NONE') }}
+{{ data.edlv_kml['layout']['restrictions']['poly']['F'] | render_area('TWYTYPE:NONE') }}
 RESTRICTION:MAXCODE:B
-{{ data.edlv_kml['layout']['restrictions']['poly']['G'] | to_coordtype('', '', 'TWYTYPE', 'NONE') }}
+{{ data.edlv_kml['layout']['restrictions']['poly']['G'] | render_area('TWYTYPE:NONE') }}

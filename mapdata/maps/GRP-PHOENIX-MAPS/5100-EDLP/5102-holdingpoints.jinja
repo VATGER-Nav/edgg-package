@@ -5,21 +5,21 @@ AIRPORT:EDLP
 FOLDER:Holding Points
 LAYER:5
 ACTIVE:1
-{% for desig, geom in data.edlp_kml['layout']['holdingpoints']['cat1'].items() %}
-{{- geom | to_coordtype(desig, 'layout-holdingpoint') }}
+COLOR:LAYOUT_HOLDINGPOINT
+{% for desig, feat in data.edlp_kml['layout']['holdingpoints']['cat1'].items() %}
+{{- feat | render_area('OTHER:REGION', desig) }}
 {% endfor %}
-STYLE:SOLID:1
-COLOR:layout-holdingpoint
-{% for desig, geom in data.edlp_kml['layout']['holdingpoints']['line'].items() %}
-{{- geom | to_line(desig) -}}
+{% for desig, feat in data.edlp_kml['layout']['holdingpoints']['line'].items() %}
+{{- feat | render_line(desig) }}
 {% endfor %}
+
 
 MAP:Stopbars
 AIRPORT:EDLP
 FOLDER:Holding Points
 LAYER:5
 ACTIVE:1
-COLOR:layout-holdingpoint
-{% for uuid, geom in data.edlp_kml['layout']['stopbars'].items() %}
-{{- geom | to_line('') -}}
+COLOR:LAYOUT_HOLDINGPOINT
+{% for _, feat in data.edlp_kml['layout']['stopbars'].items() %}
+{{- feat | render_line }}
 {% endfor %}

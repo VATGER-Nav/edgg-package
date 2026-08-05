@@ -1,9 +1,11 @@
 // ---------------------------- Buildings ---------------------------
-{% set default = 0.000005 %}
+{%- set tolerance = 0.000005 %}
+
 MAP:Buildings
 AIRPORT:EDDS
 FOLDER:Airport Layout
 ACTIVE:1
+COLOR:LAYOUT_BUILDING
 {% for uuid in
 [
     '01288bba-42f6-4c69-9584-f16234b1e8ba',
@@ -290,14 +292,15 @@ ACTIVE:1
     'fec8eb5a-b48c-49dc-9883-75b5b30a0312',
     'ff21e3b8-aaf3-4e89-928f-452aa1eb6646',
     ] %}
-{{- data.edds_aixm['VerticalStructure'][uuid] | simplify(default) | to_coordtype(uuid, 'layout-building') }}
+{{- data.edds_aixm['VerticalStructure'][uuid] | geom_simplify(tolerance) | render_area('OTHER:REGION', uuid) }}
 {% endfor %}
+
 
 MAP:Jetways
 AIRPORT:EDDS
 FOLDER:Airport Layout
 ACTIVE:1
-COLOR:layout-building
+COLOR:LAYOUT_BUILDING
 {% for uuid in
 [
     '2ae69908-0caa-4508-8025-c6da90c02875',
@@ -309,14 +312,15 @@ COLOR:layout-building
     'b8612a2d-2b2a-4f7f-a758-983bce3b0c74',
     'd0a2f0cc-c45f-4c8c-8bc5-2e2c7f734701',
     ] %}
-{{- data.edds_aixm['VerticalStructure'][uuid] | simplify(0.0000005) | to_line(uuid) -}}
+{{- data.edds_aixm['VerticalStructure'][uuid] | geom_simplify(0.0000005) | render_area('OTHER:POLYGON', uuid) }}
 {% endfor %}
+
 
 MAP:Fence
 AIRPORT:EDDS
 FOLDER:Airport Layout
 ACTIVE:1
-COLOR:layout-building
-{% for uuid, geom in data.edds_kml['layout']['fence'].items() %}
-{{- geom | to_line('') -}}
+COLOR:LAYOUT_BUILDING
+{% for _, feat in data.edds_kml['layout']['fence'].items() %}
+{{- feat | render_line }}
 {% endfor %}

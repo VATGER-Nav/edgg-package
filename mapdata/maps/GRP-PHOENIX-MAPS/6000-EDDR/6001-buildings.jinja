@@ -1,10 +1,11 @@
 // ---------------------------- Buildings ---------------------------
-{% set default = 0.000005 %}
+{%- set tolerance = 0.000005 %}
 
 MAP:Buildings
 AIRPORT:EDDR
 FOLDER:Airport Layout
 ACTIVE:1
+COLOR:LAYOUT_BUILDING
 {% for uuid in
 [
     '0574745a-58a2-41e3-9597-12bb8e71b247',
@@ -166,14 +167,15 @@ ACTIVE:1
     'f489c8bb-77ec-4055-96da-e9286fe52d53',
     'ff14dcf4-3291-426e-878f-1a48c96f57eb',
 ] %}
-{{- data.eddr_aixm['VerticalStructure'][uuid] | simplify(default) | to_coordtype(uuid, 'layout-building') }}
+{{- data.eddr_aixm['VerticalStructure'][uuid] | geom_simplify(tolerance) | render_area('OTHER:REGION', uuid) }}
 {% endfor %}
+
 
 MAP:Fence
 AIRPORT:EDDR
 FOLDER:Airport Layout
 ACTIVE:1
-COLOR:layout-building
-{% for uuid, geom in data.eddr_kml['layout']['fence'].items() %}
-{{- geom | to_line('') -}}
+COLOR:LAYOUT_BUILDING
+{% for _, feat in data.eddr_kml['layout']['fence'].items() %}
+{{- feat | render_line }}
 {% endfor %}

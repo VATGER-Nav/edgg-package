@@ -6,10 +6,10 @@ FOLDER:Apron Info
 LAYER:6
 ZOOM:600
 FONTSIZE:=:10
-COLOR:layout-label-stand
-{% for desig, geom in data.eddk_kml['layout']['labels']['heli'].items() %}
-{{- geom | to_text('H:-1:0') }}
+COLOR:LAYOUT_LABEL_STAND
+{% for desig, feat in data.eddk_kml['layout']['labels']['heli'].items() %}
+{{- feat | to_text('H:-1:0') }}
 {% endfor %}
-{% for desig, geom in data.eddk_kml['layout']['labels']['heli'].items() %}
-{{- geom | to_symbol('CIRCLE') }}
+{% for desig, feat in data.eddk_kml['layout']['labels']['heli'].items() %}
+{{- feat | to_symbol('CIRCLE') }}
 {% endfor %}

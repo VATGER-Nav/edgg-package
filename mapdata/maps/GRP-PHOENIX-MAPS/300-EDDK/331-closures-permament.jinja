@@ -5,92 +5,113 @@ AIRPORT:EDDK
 FOLDER:Closures
 LAYER:4
 ACTIVE:1
-STYLE:Solid:2
-{{ data.eddk_kml['layout']['closures']['poly']['C_1'] | to_coordtype('', 'closure', 'TWYCLOSED') }}
-{{ data.eddk_kml['layout']['closures']['poly']['C_2'] | to_coordtype('', 'closure', 'TWYCLOSED') }}
-{{ data.eddk_kml['layout']['closures']['poly']['C_3'] | to_coordtype('', '', 'TWYCLOSED', 'NONE') }}
-STYLE:Solid:1
-{{ data.eddk_kml['layout']['closures']['symb']['C_1a'] | to_coordtype('', 'closure-symbol') }}
-{{ data.eddk_kml['layout']['closures']['symb']['C_1b'] | to_coordtype('', 'closure-symbol') }}
-{{ data.eddk_kml['layout']['closures']['symb']['C_2a'] | to_coordtype('', 'closure-symbol') }}
-{{ data.eddk_kml['layout']['closures']['symb']['C_2b'] | to_coordtype('', 'closure-symbol') }}
-{{ data.eddk_kml['layout']['closures']['symb']['C_3a'] | to_coordtype('', 'closure-symbol') }}
-{{ data.eddk_kml['layout']['closures']['symb']['C_3b'] | to_coordtype('', 'closure-symbol') }}
+COLOR:CLOSURE
+STYLE:SOLID:2
+{{ data.eddk_kml['layout']['closures']['poly']['C_1'] | render_area('TWYCLOSED:REGION') }}
+{{ data.eddk_kml['layout']['closures']['poly']['C_2'] | render_area('TWYCLOSED:REGION') }}
+{{ data.eddk_kml['layout']['closures']['poly']['C_3'] | render_area('TWYCLOSED:NONE') }}
+COLOR:CLOSURE_SYMBOL
+STYLE:SOLID:1
+{{ data.eddk_kml['layout']['closures']['symb']['C_1a'] | render_area('OTHER:REGION') }}
+{{ data.eddk_kml['layout']['closures']['symb']['C_1b'] | render_area('OTHER:REGION') }}
+{{ data.eddk_kml['layout']['closures']['symb']['C_2a'] | render_area('OTHER:REGION') }}
+{{ data.eddk_kml['layout']['closures']['symb']['C_2b'] | render_area('OTHER:REGION') }}
+{{ data.eddk_kml['layout']['closures']['symb']['C_3a'] | render_area('OTHER:REGION') }}
+{{ data.eddk_kml['layout']['closures']['symb']['C_3b'] | render_area('OTHER:REGION') }}
+
 
 MAP:C1
 AIRPORT:EDDK
 FOLDER:Closures
 LAYER:4
 ACTIVE:1
-STYLE:Solid:2
-{{ data.eddk_kml['layout']['closures']['poly']['C1'] | to_coordtype('', 'closure', 'TWYCLOSED') }}
-STYLE:Solid:1
-{{ data.eddk_kml['layout']['closures']['symb']['C1_a'] | to_coordtype('', 'closure-symbol') }}
-{{ data.eddk_kml['layout']['closures']['symb']['C1_b'] | to_coordtype('', 'closure-symbol') }}
+COLOR:CLOSURE
+STYLE:SOLID:2
+{{ data.eddk_kml['layout']['closures']['poly']['C1'] | render_area('TWYCLOSED:REGION') }}
+COLOR:CLOSURE_SYMBOL
+STYLE:SOLID:1
+{{ data.eddk_kml['layout']['closures']['symb']['C1_a'] | render_area('OTHER:REGION') }}
+{{ data.eddk_kml['layout']['closures']['symb']['C1_b'] | render_area('OTHER:REGION') }}
+
 
 MAP:E
 AIRPORT:EDDK
 FOLDER:Closures
 LAYER:4
 ACTIVE:1
-{{ data.eddk_kml['layout']['closures']['poly']['E'] | to_coordtype('', '', 'TWYCLOSED', 'NONE') }}
-{{ data.eddk_kml['layout']['closures']['symb']['E'] | to_coordtype('', 'closure-symbol') }}
+COLOR:CLOSURE_SYMBOL
+{{ data.eddk_kml['layout']['closures']['poly']['E'] | render_area('TWYCLOSED:NONE') }}
+{{ data.eddk_kml['layout']['closures']['symb']['E'] | render_area('OTHER:REGION') }}
+
 
 MAP:G
 AIRPORT:EDDK
 FOLDER:Closures
 LAYER:4
 ACTIVE:1
-STYLE:Solid:2
-{{ data.eddk_kml['layout']['closures']['poly']['G_a'] | to_coordtype('','closure', 'TWYCLOSED') }}
-{{ data.eddk_kml['layout']['closures']['poly']['G_b'] | to_coordtype('', '', 'TWYCLOSED', 'NONE') }}
-STYLE:Solid:1
-{{ data.eddk_kml['layout']['closures']['symb']['G_a'] | to_coordtype('','closure-symbol-yellow') }}
-{{ data.eddk_kml['layout']['closures']['symb']['G_b'] | to_coordtype('','closure-symbol-yellow') }}
-{{ data.eddk_kml['layout']['closures']['symb']['G_c'] | to_coordtype('','closure-symbol-yellow') }}
+COLOR:CLOSURE
+STYLE:SOLID:2
+{{ data.eddk_kml['layout']['closures']['poly']['G_a'] | render_area('TWYCLOSED:REGION') }}
+{{ data.eddk_kml['layout']['closures']['poly']['G_b'] | render_area('TWYCLOSED:NONE') }}
+COLOR:CLOSURE_SYMBOL_YELLOW
+STYLE:SOLID:1
+{{ data.eddk_kml['layout']['closures']['symb']['G_a'] | render_area('OTHER:REGION') }}
+{{ data.eddk_kml['layout']['closures']['symb']['G_b'] | render_area('OTHER:REGION') }}
+{{ data.eddk_kml['layout']['closures']['symb']['G_c'] | render_area('OTHER:REGION') }}
+
 
 MAP:H
 AIRPORT:EDDK
 FOLDER:Closures
 LAYER:4
 ACTIVE:1
-STYLE:Solid:2
-{{ data.eddk_kml['layout']['closures']['poly']['H'] | to_coordtype('','closure', 'TWYCLOSED') }}
-STYLE:Solid:1
-{{ data.eddk_kml['layout']['closures']['symb']['H'] | to_coordtype('','closure-symbol') }}
+COLOR:CLOSURE
+STYLE:SOLID:2
+{{ data.eddk_kml['layout']['closures']['poly']['H'] | render_area('TWYCLOSED:REGION') }}
+COLOR:CLOSURE_SYMBOL
+STYLE:SOLID:1
+{{ data.eddk_kml['layout']['closures']['symb']['H'] | render_area('OTHER:REGION') }}
+
 
 MAP:P
 AIRPORT:EDDK
 FOLDER:Closures
 LAYER:4
 ACTIVE:1
-STYLE:Solid:2
-{{ data.eddk_kml['layout']['closures']['poly']['P'] | to_coordtype('','closure', 'TWYCLOSED') }}
-STYLE:Solid:1
-{{ data.eddk_kml['layout']['closures']['symb']['P'] | to_coordtype('','closure-symbol') }}
+COLOR:CLOSURE
+STYLE:SOLID:2
+{{ data.eddk_kml['layout']['closures']['poly']['P'] | render_area('TWYCLOSED:REGION') }}
+COLOR:CLOSURE_SYMBOL
+STYLE:SOLID:1
+{{ data.eddk_kml['layout']['closures']['symb']['P'] | render_area('OTHER:REGION') }}
+
 
 MAP:Z2
 AIRPORT:EDDK
 FOLDER:Closures
 LAYER:4
 ACTIVE:1
-STYLE:Solid:2
-{{ data.eddk_kml['layout']['closures']['poly']['Z2'] | to_coordtype('','closure', 'TWYCLOSED') }}
-STYLE:Solid:1
-{{ data.eddk_kml['layout']['closures']['symb']['Z2'] | to_coordtype('','closure-symbol') }}
+COLOR:CLOSURE
+STYLE:SOLID:2
+{{ data.eddk_kml['layout']['closures']['poly']['Z2'] | render_area('TWYCLOSED:REGION') }}
+COLOR:CLOSURE_SYMBOL
+STYLE:SOLID:1
+{{ data.eddk_kml['layout']['closures']['symb']['Z2'] | render_area('OTHER:REGION') }}
+
 
 MAP:Apron X
 AIRPORT:EDDK
 FOLDER:Closures
 LAYER:4
 ACTIVE:1
-{{ data.eddk_kml['layout']['closures']['poly']['X'] | to_coordtype('', '', 'TWYCLOSED', 'NONE') }}
-{{ data.eddk_kml['layout']['closures']['symb']['X'] | to_coordtype('','closure-symbol') }}
+{{ data.eddk_kml['layout']['closures']['poly']['X'] | render_area('TWYCLOSED:NONE') }}
+{{ data.eddk_kml['layout']['closures']['symb']['X'] | render_area('OTHER:REGION') }}
+
 
 MAP:Apron Y
 AIRPORT:EDDK
 FOLDER:Closures
 LAYER:4
 ACTIVE:1
-{{ data.eddk_kml['layout']['closures']['poly']['Y'] | to_coordtype('', '', 'TWYCLOSED', 'NONE') }}
-{{ data.eddk_kml['layout']['closures']['symb']['Y'] | to_coordtype('','closure-symbol') }}
+{{ data.eddk_kml['layout']['closures']['poly']['Y'] | render_area('TWYCLOSED:NONE') }}
+{{ data.eddk_kml['layout']['closures']['symb']['Y'] | render_area('OTHER:REGION') }}

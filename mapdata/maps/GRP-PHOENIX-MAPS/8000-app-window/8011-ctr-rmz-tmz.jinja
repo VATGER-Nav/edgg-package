@@ -8,11 +8,12 @@
 #}
 {%- set EDGG = data.airspace['lines']['EDGG'] -%}
 
+
 MAP:CTR/ATZ:A
 FOLDER:Airspace
-COLOR:appwindow-standard
+COLOR:APPWINDOW_STANDARD
 ACTIVE:1
-STYLE:Solid:1
+STYLE:SOLID:1
 {{ render_sectorlines(
     EDGG['EDDFCTR']['000-025'],
     EDGG['EDDLCTR']['000-025'],
@@ -47,19 +48,20 @@ STYLE:Solid:1
     ),
 ) }}
 // EHBKCTR
-{{ data.topsky['common']['airspace']['EHBKCTR_a'] | to_line('') -}}
-{{ data.topsky['common']['airspace']['EHBKCTR_b'] | to_line('') -}}
+{{ data.topsky['common']['airspace']['EHBKCTR_a'] | render_line }}
+{{ data.topsky['common']['airspace']['EHBKCTR_b'] | render_line }}
 // EHVKCTR
-{{ data.topsky['common']['airspace']['EHVKCTR_a'] | to_line('') -}}
-{{ data.topsky['common']['airspace']['EHVKCTR_b'] | to_line('') -}}
+{{ data.topsky['common']['airspace']['EHVKCTR_a'] | render_line }}
+{{ data.topsky['common']['airspace']['EHVKCTR_b'] | render_line }}
 // EHDPCTR
-{{ data.topsky['common']['airspace']['EHDPCTR'] | to_line('') -}}
+{{ data.topsky['common']['airspace']['EHDPCTR'] | render_line }}
 // Duennwald Sector - EDDK CTR
 LINE:N050.59.10.175:E006.58.38.988:N051.00.00.015:E007.03.21.079
 
+
 MAP:RMZ/TMZ:A
 FOLDER:Airspace
-COLOR:appwindow-standard
+COLOR:APPWINDOW_STANDARD
 ACTIVE:1
 STYLE:DASH:1
 // RMZ

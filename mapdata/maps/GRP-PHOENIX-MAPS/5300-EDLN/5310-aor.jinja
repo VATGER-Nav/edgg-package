@@ -5,58 +5,63 @@ AIRPORT:EDLN
 FOLDER:AoR
 LAYER:6
 ACTIVE:1
-COLOR:layout-taxiline-grey
-STYLE:Dot
-{{ data.edln_kml['layout']['aor']['line']['area_a'] | to_line('') -}}
-{{ data.edln_kml['layout']['aor']['line']['area_b'] | to_line('') -}}
+COLOR:LAYOUT_TAXILINE_GREY
+STYLE:DOT
+{{ data.edln_kml['layout']['aor']['line']['area_a'] | render_line }}
+{{ data.edln_kml['layout']['aor']['line']['area_b'] | render_line }}
+
 
 MAP:EDLN_GND
 AIRPORT:EDLN
 FOLDER:AoR
 LAYER:6
-COLOR:aor-gnd-a
-STYLE:Dot
-{{ data.edln_kml['layout']['aor']['line']['LNG_a'] | to_line('') -}}
-{{ data.edln_kml['layout']['aor']['line']['LNG_b'] | to_line('') -}}
+COLOR:AOR_GND_A
+STYLE:DOT
+{{ data.edln_kml['layout']['aor']['line']['LNG_a'] | render_line }}
+{{ data.edln_kml['layout']['aor']['line']['LNG_b'] | render_line }}
 ZOOM:600
 FONTSIZE:=:13
 {{ data.edln_kml['layout']['aor']['labels']['LNG'] | to_text('LNG  121.930') }}
+
 
 MAP:EDLN_TWR
 AIRPORT:EDLN
 FOLDER:AoR
 LAYER:6
-COLOR:aor-twr-a
-STYLE:Dot
-{{ data.edln_kml['layout']['aor']['line']['LNT_a'] | to_line('') -}}
-{{ data.edln_kml['layout']['aor']['line']['LNT_b'] | to_line('') -}}
+COLOR:AOR_TWR_A
+STYLE:DOT
+{{ data.edln_kml['layout']['aor']['line']['LNT_a'] | render_line }}
+{{ data.edln_kml['layout']['aor']['line']['LNT_b'] | render_line }}
 ZOOM:600
 FONTSIZE:=:13
 {{ data.edln_kml['layout']['aor']['labels']['LNT'] | to_text('LNT  120.455') }}
+
 
 MAP:EDDL_APP
 AIRPORT:EDLN
 FOLDER:AoR
 LAYER:6
-COLOR:aor-app-a
+COLOR:AOR_APP_A
 ZOOM:600
 FONTSIZE:=:13
 {{ data.edln_kml['layout']['aor']['labels']['LNT'] | to_text('DLA  128.555:0:-20') }}
+
 
 MAP:EDDL_DEP
 AIRPORT:EDLN
 FOLDER:AoR
 LAYER:6
-COLOR:aor-app-a
+COLOR:AOR_APP_A
 ZOOM:600
 FONTSIZE:=:13
 {{ data.edln_kml['layout']['aor']['labels']['LNT'] | to_text('DLD  121.355:0:-20') }}
+
 
 MAP:EDDL_F_APP
 AIRPORT:EDLN
 FOLDER:AoR
 LAYER:6
-COLOR:aor-app-a
+COLOR:AOR_APP_A
 ZOOM:600
 FONTSIZE:=:13
 {{ data.edln_kml['layout']['aor']['labels']['LNT'] | to_text('DLAT 128.655:0:-20') }}

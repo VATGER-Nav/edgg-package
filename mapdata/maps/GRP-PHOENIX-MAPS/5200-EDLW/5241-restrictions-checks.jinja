@@ -6,7 +6,7 @@ FOLDER:Restrictions
 ACTIVE:1
 // L, K
 RESTRICTION:MAXCODE:C
-{{ data.edlw_kml['layout']['restrictions']['poly']['L_K'] | to_coordtype('', '', 'TWYTYPE', 'NONE') }}
+{{ data.edlw_kml['layout']['restrictions']['poly']['L_K'] | render_area('TWYTYPE:NONE') }}
 // B
 RESTRICTION:MAXWEIGHT:30000
-{{ data.edlw_kml['layout']['restrictions']['poly']['B'] | to_coordtype('', '', 'TWYTYPE', 'NONE') }}
+{{ data.edlw_kml['layout']['restrictions']['poly']['B'] | render_area('TWYTYPE:NONE') }}

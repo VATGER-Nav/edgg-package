@@ -7,9 +7,11 @@ HIDDEN
 LAYER:3
 ACTIVE:1
 ZOOM:400
-{% for uuid, geom in data.edsb_kml['layout']['labels']['buffer'].items() %}
-{{- geom | to_coordtype('', 'layout-taxiway') }}
+COLOR:LAYOUT_TAXIWAY
+{% for _, feat in data.edsb_kml['layout']['labels']['buffer'].items() %}
+{{- feat | render_area('OTHER:REGION') }}
 {% endfor %}
+
 
 MAP:Taxiways
 AIRPORT:EDSB
@@ -19,10 +21,11 @@ LAYER:6
 ACTIVE:1
 ZOOM:400
 FONTSIZE:=:10
-COLOR:layout-label-taxiway
-{% for desig, geom in data.edsb_kml['layout']['labels']['taxiways'].items() %}
-{{- geom | to_text(desig) }}
+COLOR:LAYOUT_LABEL_TAXIWAY
+{% for desig, feat in data.edsb_kml['layout']['labels']['taxiways'].items() %}
+{{- feat | to_text(desig) }}
 {% endfor %}
+
 
 MAP:Stands
 AIRPORT:EDSB
@@ -31,21 +34,22 @@ LAYER:6
 ACTIVE:1
 ZOOM:600
 FONTSIZE:=:9
-COLOR:layout-label-stand
-{% for desig, geom in data.edsb_kml['layout']['labels']['stands'].items() if desig != '19' %}
-{{- geom | to_text(desig) }}
+COLOR:LAYOUT_LABEL_STAND
+{% for desig, feat in data.edsb_kml['layout']['labels']['stands'].items() if desig != '19' %}
+{{- feat | to_text(desig) }}
 {% endfor %}
 {{ data.edsb_kml['layout']['labels']['stands']['19'] | to_text('19/19A') }}
 {{ data.edsb_kml['layout']['labels']['GAT'] | to_text('GAT') }}
 {{ data.edsb_kml['layout']['labels']['Police'] | to_text('Police') }}
 {{ data.edsb_kml['layout']['labels']['Business Aviation'] | to_text('Business Aviation') }}
 
+
 MAP:Aprons
 AIRPORT:EDSB
 FOLDER:Labels
 ZOOM:400
 FONTSIZE:=:9
-COLOR:layout-label-stand
+COLOR:LAYOUT_LABEL_STAND
 {{ data.edsb_kml['layout']['labels']['aprons']['APN 1'] | to_text('APN 1') }}
 {{ data.edsb_kml['layout']['labels']['aprons']['APN 2'] | to_text('APN 2') }}
 {{ data.edsb_kml['layout']['labels']['Business Aviation'] | to_text('APN 3:0:-12') }}

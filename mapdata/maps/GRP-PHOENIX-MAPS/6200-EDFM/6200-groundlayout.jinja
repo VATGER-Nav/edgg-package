@@ -3,104 +3,116 @@
 // ------------------------------------------------------------------
 
 // -------------------------- Ground Layout -------------------------
-{%- set default = 0.000005 %}
+{%- set tolerance = 0.000005 %}
 
 MAP:Apron Area
 AIRPORT:EDFM
 FOLDER:Airport Layout
 ACTIVE:1
-{% for uuid, geom in data.edfm_kml['layout']['aprons'].items() %}
-{{- geom | to_coordtype('', 'layout-apron') }}
+COLOR:LAYOUT_APRON
+{% for _, feat in data.edfm_kml['layout']['aprons'].items() %}
+{{- feat | render_area('OTHER:REGION') }}
 {% endfor %}
+
 
 MAP:Parking Area
 AIRPORT:EDFM
 FOLDER:Airport Layout
 ACTIVE:1
-COLOR:layout-taxiway
-{% for uuid, geom in data.edfm_kml['layout']['markings']['parking'].items() %}
-{{- geom | to_line('') -}}
+COLOR:LAYOUT_TAXIWAY
+{% for _, feat in data.edfm_kml['layout']['markings']['parking'].items() %}
+{{- feat | render_line }}
 {% endfor %}
 STYLE:DOT:1
-{{ data.edfm_kml['layout']['markings']['grass']['parking'] | to_line('Parking Area Grass') -}}
+{{ data.edfm_kml['layout']['markings']['grass']['parking'] | render_line('Parking Area Grass') }}
+
 
 MAP:Roads
 AIRPORT:EDFM
 FOLDER:Airport Layout
-COLOR:layout-taxiway
-{% for uuid, geom in data.edfm_kml['layout']['roads'].items() %}
-{{- geom | simplify(default) | to_line('') -}}
+COLOR:LAYOUT_TAXIWAY
+{% for _, feat in data.edfm_kml['layout']['roads'].items() %}
+{{- feat | geom_simplify(tolerance) | render_line }}
 {% endfor %}
+
 
 MAP:Taxiway Movement Area
 AIRPORT:EDFM
 FOLDER:Airport Layout
 ACTIVE:1
-{% for uuid, geom in data.edfm_kml['layout']['taxiways'].items() %}
-{{- geom | to_coordtype('', 'layout-taxiway') }}
+COLOR:LAYOUT_TAXIWAY
+{% for _, feat in data.edfm_kml['layout']['taxiways'].items() %}
+{{- feat | render_area('OTHER:REGION') }}
 {% endfor %}
-COLOR:layout-taxiway
 STYLE:DOT:1
-{{ data.edfm_kml['layout']['markings']['grass']['G'] | to_line('G Grass') -}}
+{{ data.edfm_kml['layout']['markings']['grass']['G'] | render_line }}
+
 
 MAP:Runway
 AIRPORT:EDFM
 FOLDER:Airport Layout
 ACTIVE:1
-{{ data.edfm_kml['layout']['runways']['09-27'] | to_coordtype('Runway 09/27', 'layout-runway') }}
+COLOR:LAYOUT_RUNWAY
+{{ data.edfm_kml['layout']['runways']['09-27'] | render_area('OTHER:REGION') }}
+
 
 MAP:Grass Runway
 AIRPORT:EDFM
 FOLDER:Airport Layout
 ACTIVE:1
-COLOR:layout-taxiway
-STYLE:DOT:1
-{{ data.edfm_kml['layout']['runways']['grass'] | to_line('Grass Runway') }}
+COLOR:LAYOUT_GRASS
+{{ data.edfm_kml['layout']['runways']['grass'] | render_area('OTHER:REGION') }}
 ZOOM:400
 FONTSIZE:=:11
-COLOR:layout-label-stand
+COLOR:LAYOUT_LABEL_STAND
 {{ data.edfm_kml['layout']['labels']['Grass Runway'] | to_text('Grass Runway') }}
+
 
 MAP:Leadin Lines
 AIRPORT:EDFM
 FOLDER:Airport Layout
 ACTIVE:1
-COLOR:layout-taxiline-grey
-{% for uuid, geom in data.edfm_kml['layout']['markings']['leadin_solid'].items() %}
-{{- geom | to_line('') -}}
+COLOR:LAYOUT_TAXILINE_GREY
+{% for _, feat in data.edfm_kml['layout']['markings']['leadin_solid'].items() %}
+{{- feat | render_line }}
 {% endfor %}
+
 
 MAP:Taxi Lanes
 AIRPORT:EDFM
 FOLDER:Airport Layout
 ACTIVE:1
-COLOR:layout-taxiline-yellow
-{% for uuid, geom in data.edfm_kml['layout']['markings']['taxilanes'].items() %}
-{{- geom | to_line('') -}}
+COLOR:LAYOUT_TAXILINE_YELLOW
+{% for _, feat in data.edfm_kml['layout']['markings']['taxilanes'].items() %}
+{{- feat | render_line }}
 {% endfor %}
+
 
 MAP:Terrain
 AIRPORT:EDFM
 FOLDER:Airport Layout
 ACTIVE:1
-COLOR:layout-building
-{% for uuid, geom in data.edfm_kml['layout']['terrain'].items() %}
-{{- geom | to_line('') -}}
+COLOR:LAYOUT_BUILDING
+{% for _, feat in data.edfm_kml['layout']['terrain'].items() %}
+{{- feat | render_line }}
 {% endfor %}
+
 
 MAP:Buildings
 AIRPORT:EDFM
 FOLDER:Airport Layout
 ACTIVE:1
-{% for uuid, geom in data.edfm_kml['layout']['buildings'].items() %}
-{{- geom | to_coordtype('', 'layout-building') }}
+COLOR:LAYOUT_BUILDING
+{% for _, feat in data.edfm_kml['layout']['buildings'].items() %}
+{{- feat | render_area('OTHER:REGION') }}
 {% endfor %}
+
 
 MAP:Fence
 AIRPORT:EDFM
 FOLDER:Airport Layout
 ACTIVE:1
-COLOR:layout-building
-{% for uuid, geom in data.edfm_kml['layout']['fence'].items() %}
-{{- geom | to_line('') -}}
+COLOR:LAYOUT_BUILDING
+{% for _, feat in data.edfm_kml['layout']['fence'].items() %}
+{{- feat | render_line }}
 {% endfor %}

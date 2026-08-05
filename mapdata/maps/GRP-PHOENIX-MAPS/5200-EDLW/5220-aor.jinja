@@ -4,29 +4,31 @@ MAP:EDLW_GND
 AIRPORT:EDLW
 FOLDER:AoR
 LAYER:6
-COLOR:aor-gnd-a
-STYLE:Dot
-{{ data.edlw_kml['layout']['aor']['line']['LWG'] | to_line('LWG') }}
+COLOR:AOR_GND_A
+STYLE:DOT
+{{ data.edlw_kml['layout']['aor']['line']['LWG'] | render_line }}
 ZOOM:400
 FONTSIZE:=:13
 {{ data.edlw_kml['layout']['aor']['labels']['LWG'] | to_text('LWG  121.830') }}
+
 
 MAP:EDLW_TWR
 AIRPORT:EDLW
 FOLDER:AoR
 LAYER:6
-COLOR:aor-twr-a
-STYLE:Dot
-{{ data.edlw_kml['layout']['aor']['line']['LWT'] | to_line('LWT') }}
+COLOR:AOR_TWR_A
+STYLE:DOT
+{{ data.edlw_kml['layout']['aor']['line']['LWT'] | render_line }}
 ZOOM:400
 FONTSIZE:=:13
 {{ data.edlw_kml['layout']['aor']['labels']['LWT'] | to_text('LWT  134.180') }}
+
 
 MAP:EDLP_PAL_APP
 AIRPORT:EDLW
 FOLDER:AoR
 LAYER:6
-COLOR:aor-app-a
+COLOR:AOR_APP_A
 ZOOM:400
 FONTSIZE:=:13
 {{ data.edlw_kml['layout']['aor']['labels']['PADL'] | to_text('PADL 125.225') }}

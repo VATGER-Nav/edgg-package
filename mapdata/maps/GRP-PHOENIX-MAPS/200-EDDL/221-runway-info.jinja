@@ -4,7 +4,7 @@ MAP:TORA 23L
 AIRPORT:EDDL
 FOLDER:Runway Info
 LAYER:6
-COLOR:tora-label
+COLOR:TORA_LABEL
 ZOOM:600
 TEXTALIGN:LC
 {{ data.eddl_kml['layout']['tora']['23L_L1'] | to_text('2700') }}
@@ -12,22 +12,24 @@ TEXTALIGN:RC
 {{ data.eddl_kml['layout']['tora']['23L_L2'] | to_text('2500') }}
 {{ data.eddl_kml['layout']['tora']['23L_L3'] | to_text('2235') }}
 
+
 MAP:TORA 05R
 AIRPORT:EDDL
 FOLDER:Runway Info
 LAYER:6
-COLOR:tora-label
+COLOR:TORA_LABEL
 ZOOM:600
 TEXTALIGN:LC
 {{ data.eddl_kml['layout']['tora']['05R_L9'] | to_text('2700') }}
 {{ data.eddl_kml['layout']['tora']['05R_L8'] | to_text('2475') }}
 {{ data.eddl_kml['layout']['tora']['05R_L6'] | to_text('2031') }}
 
+
 MAP:TORA 23R
 AIRPORT:EDDL
 FOLDER:Runway Info
 LAYER:6
-COLOR:tora-label
+COLOR:TORA_LABEL
 ZOOM:600
 TEXTALIGN:LC
 {{ data.eddl_kml['layout']['tora']['23R_K'] | to_text('2400') }}
@@ -35,15 +37,17 @@ TEXTALIGN:RC
 {{ data.eddl_kml['layout']['tora']['23R_K1'] | to_text('2280') }}
 {{ data.eddl_kml['layout']['tora']['23R_K2'] | to_text('2062') }}
 
+
 MAP:TORA 05L
 AIRPORT:EDDL
 FOLDER:Runway Info
 LAYER:6
-COLOR:tora-label
+COLOR:TORA_LABEL
 ZOOM:600
 TEXTALIGN:LC
 {{ data.eddl_kml['layout']['tora']['05L_K5'] | to_text('2400') }}
 {{ data.eddl_kml['layout']['tora']['05L_K3'] | to_text('1720') }}
+
 
 MAP:RRS 23L
 AIRPORT:EDDL
@@ -51,7 +55,7 @@ FOLDER:Runway Info
 LAYER:6
 ACTIVE:RWY:ARR:*:DEP:EDDL23L
 ACTIVE:RWY:ARR:EDDL23L:DEP:*
-COLOR:rrs-marker
+COLOR:RRS_MARKER
 {{ data.eddl_kml['layout']['rrs']['23L_600'] | to_symbol('RRS') }}
 {{ data.eddl_kml['layout']['rrs']['23L_1500'] | to_symbol('RRS') }}
 {{ data.eddl_kml['layout']['rrs']['23L_2400'] | to_symbol('RRS') }}
@@ -62,13 +66,14 @@ TEXTALIGN:CB
 {{ data.eddl_kml['layout']['rrs']['23L_1500'] | to_text('1500:0:-10') }}
 {{ data.eddl_kml['layout']['rrs']['23L_2400'] | to_text('2400:0:-10') }}
 
+
 MAP:RRS 05R
 AIRPORT:EDDL
 FOLDER:Runway Info
 LAYER:6
 ACTIVE:RWY:ARR:*:DEP:EDDL05R
 ACTIVE:RWY:ARR:EDDL05R:DEP:*
-COLOR:rrs-marker
+COLOR:RRS_MARKER
 {{ data.eddl_kml['layout']['rrs']['05R_600'] | to_symbol('RRS') }}
 {{ data.eddl_kml['layout']['rrs']['05R_1500'] | to_symbol('RRS') }}
 {{ data.eddl_kml['layout']['rrs']['05R_2400'] | to_symbol('RRS') }}
@@ -79,13 +84,14 @@ TEXTALIGN:CB
 {{ data.eddl_kml['layout']['rrs']['05R_1500'] | to_text('1500:0:-10') }}
 {{ data.eddl_kml['layout']['rrs']['05R_2400'] | to_text('2400:0:-10') }}
 
+
 MAP:RRS 23R
 AIRPORT:EDDL
 FOLDER:Runway Info
 LAYER:6
 ACTIVE:RWY:ARR:*:DEP:EDDL23R
 ACTIVE:RWY:ARR:EDDL23R:DEP:*
-COLOR:rrs-marker
+COLOR:RRS_MARKER
 {{ data.eddl_kml['layout']['rrs']['23R_600'] | to_symbol('RRS') }}
 {{ data.eddl_kml['layout']['rrs']['23R_1500'] | to_symbol('RRS') }}
 FONTSIZE:=:12
@@ -94,13 +100,14 @@ TEXTALIGN:CB
 {{ data.eddl_kml['layout']['rrs']['23R_600'] | to_text('600:0:-10') }}
 {{ data.eddl_kml['layout']['rrs']['23R_1500'] | to_text('1500:0:-10') }}
 
+
 MAP:RRS 05L
 AIRPORT:EDDL
 FOLDER:Runway Info
 LAYER:6
 ACTIVE:RWY:ARR:*:DEP:EDDL05L
 ACTIVE:RWY:ARR:EDDL05L:DEP:*
-COLOR:rrs-marker
+COLOR:RRS_MARKER
 {{ data.eddl_kml['layout']['rrs']['05L_600'] | to_symbol('RRS') }}
 {{ data.eddl_kml['layout']['rrs']['05L_1500'] | to_symbol('RRS') }}
 FONTSIZE:=:12
@@ -109,28 +116,34 @@ TEXTALIGN:CB
 {{ data.eddl_kml['layout']['rrs']['05L_600'] | to_text('600:0:-10') }}
 {{ data.eddl_kml['layout']['rrs']['05L_1500'] | to_text('1500:0:-10') }}
 
+
 MAP:Runway Thresholds
 AIRPORT:EDDL
 FOLDER:Runway Info
 LAYER:6
 ACTIVE:1
-{{ data.eddl_kml['layout']['markings']['poly']['thr05R'] | to_poly('05R', 'runway-label') }}
-{{ data.eddl_kml['layout']['markings']['poly']['thr23L'] | to_poly('23L', 'runway-label') }}
-{{ data.eddl_kml['layout']['markings']['poly']['thr05L'] | to_poly('05L', 'runway-label') }}
-{{ data.eddl_kml['layout']['markings']['poly']['thr23R'] | to_poly('23R', 'runway-label') }}
+COLOR:RUNWAY_LABEL
+{{ data.eddl_kml['layout']['markings']['poly']['thr05R'] | render_area('OTHER:REGION', '05R') }}
+{{ data.eddl_kml['layout']['markings']['poly']['thr23L'] | render_area('OTHER:REGION', '23L') }}
+{{ data.eddl_kml['layout']['markings']['poly']['thr05L'] | render_area('OTHER:REGION', '05L') }}
+{{ data.eddl_kml['layout']['markings']['poly']['thr23R'] | render_area('OTHER:REGION', '23R') }}
+
 
 MAP:Runway Designators
 AIRPORT:EDDL
 FOLDER:Runway Info
 LAYER:6
 ACTIVE:1
-{% for uuid, geom in data.eddl_kml['layout']['markings']['runways'].items() %}
-{{- geom | to_coordtype('', 'runway-label') }}
+COLOR:RUNWAY_LABEL
+{% for _, feat in data.eddl_kml['layout']['markings']['runways'].items() %}
+{{- feat | render_area('OTHER:REGION') }}
 {% endfor %}
+
 
 MAP:Runway Markings
 AIRPORT:EDDL
 FOLDER:Runway Info
+COLOR:LAYOUT_RUNWAY_MARKING
 {% for uuid in 
 [
     '6bc8d0df-d0a5-679e-e055-0a00272b55b3',
@@ -399,8 +412,9 @@ FOLDER:Runway Info
     '6d3fa502-92a4-73a9-e055-0a0027980ba7',
     '6d3fa502-92a5-73a9-e055-0a0027980ba7',
 ] %}
-{{- data.eddl_aixm['RunwayMarking'][uuid] | to_coordtype('', 'layout-runway-marking') }}
+{{- data.eddl_aixm['RunwayMarking'][uuid] | render_area('OTHER:REGION') }}
 {% endfor %}
+COLOR:LAYOUT_TAXIWAY
 {% for uuid in
 [
     'de162807-48f2-d2fc-e053-86c812acd642',
@@ -432,8 +446,9 @@ FOLDER:Runway Info
     'de162807-4914-d2fc-e053-86c812acd642',
     'de162807-4915-d2fc-e053-86c812acd642',
 ] %}
-{{- data.eddl_aixm['RunwayMarking'][uuid] | to_coordtype('', 'layout-taxiway') }}
+{{- data.eddl_aixm['RunwayMarking'][uuid] | render_area('OTHER:REGION') }}
 {% endfor %}
+COLOR:LAYOUT_RUNWAY
 {% for uuid in
 [
     'de162807-4906-d2fc-e053-86c812acd642',
@@ -444,5 +459,5 @@ FOLDER:Runway Info
     'de162807-490b-d2fc-e053-86c812acd642',
     'de162807-490c-d2fc-e053-86c812acd642',
 ] %}
-{{- data.eddl_aixm['RunwayMarking'][uuid] | to_coordtype('', 'layout-runway') }}
+{{- data.eddl_aixm['RunwayMarking'][uuid] | render_area('OTHER:REGION') }}
 {% endfor %}

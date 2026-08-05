@@ -5,8 +5,10 @@ AIRPORT:EDLP
 FOLDER:Closures
 LAYER:4
 ACTIVE:1
-STYLE:Solid:2
-{{ data.edlp_kml['layout']['closures']['poly']['E'] | to_coordtype('', 'closure', 'TWYCLOSED') }}
-STYLE:Solid:1 
-{{ data.edlp_kml['layout']['closures']['symb']['E_a'] | to_coordtype('', 'closure-symbol') }}
-{{ data.edlp_kml['layout']['closures']['symb']['E_b'] | to_coordtype('', 'closure-symbol') }}
+COLOR:CLOSURE
+STYLE:SOLID:2
+{{ data.edlp_kml['layout']['closures']['poly']['E'] | render_area('TWYCLOSED:REGION') }}
+COLOR:CLOSURE_SYMBOL
+STYLE:SOLID:1 
+{{ data.edlp_kml['layout']['closures']['symb']['E_a'] | render_area('OTHER:REGION') }}
+{{ data.edlp_kml['layout']['closures']['symb']['E_b'] | render_area('OTHER:REGION') }}

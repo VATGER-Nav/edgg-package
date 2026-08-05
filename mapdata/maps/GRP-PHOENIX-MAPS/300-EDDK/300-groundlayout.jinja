@@ -1,40 +1,46 @@
 // ------------------------------------------------------------------
 //                                 EDDK
 // ------------------------------------------------------------------
-{%- set default = 0.000005 %}
 
 // -------------------------- Ground Layout -------------------------
+{%- set tolerance = 0.000005 %}
 
 MAP:Apron Area
 AIRPORT:EDDK
 FOLDER:Airport Layout
 ACTIVE:1
-{% for uuid, geom in data.eddk_kml['layout']['aprons'].items() %}
-{{- geom | to_coordtype('', 'layout-apron') }}
+COLOR:LAYOUT_APRON
+{% for _, feat in data.eddk_kml['layout']['aprons'].items() %}
+{{- feat | render_area('OTHER:REGION') }}
 {% endfor %}
+
 
 MAP:Roads
 AIRPORT:EDDK
 FOLDER:Airport Layout
 ACTIVE:1
-COLOR:layout-taxiway
-{% for uuid, geom in data.eddk_kml['layout']['roads'].items() %}
-{{- geom | simplify(default) | to_line('') -}}
+COLOR:LAYOUT_TAXIWAY
+{% for _, feat in data.eddk_kml['layout']['roads'].items() %}
+{{- feat | geom_simplify(tolerance) | render_line }}
 {% endfor %}
+
 
 MAP:Taxiway Movement Area
 AIRPORT:EDDK
 FOLDER:Airport Layout
 ACTIVE:1
-{% for uuid, geom in data.eddk_kml['layout']['taxiways'].items() %}
-{{- geom | to_coordtype('', 'layout-taxiway') }}
+COLOR:LAYOUT_TAXIWAY
+{% for _, feat in data.eddk_kml['layout']['taxiways'].items() %}
+{{- feat | render_area('OTHER:REGION') }}
 {% endfor %}
+
 
 MAP:Runways
 AIRPORT:EDDK
 FOLDER:Airport Layout
 ACTIVE:1
-{% for name in
+COLOR:LAYOUT_APRON
+{% for desig in
 [
     'rwyBlastpad31L',
     'rwyBlastpad13R',
@@ -43,8 +49,9 @@ ACTIVE:1
     'rwyBlastpad24',
     'rwyBlastpad06'
 ] %}
-{{- data.eddk_kml['layout']['runways'][name] | to_coordtype(name, 'layout-apron') }}
+{{- data.eddk_kml['layout']['runways'][desig] | render_area('OTHER:REGION', desig) }}
 {% endfor %}
-{{ data.eddk_kml['layout']['runways']['13L-31R'] | to_coordtype('Runway 13L/31R','layout-runway') }}
-{{ data.eddk_kml['layout']['runways']['13R-31L'] | to_coordtype('Runway 13R/31L','layout-runway') }}
-{{ data.eddk_kml['layout']['runways']['06-24'] | to_coordtype('Runway 06/24','layout-runway') }}
+COLOR:LAYOUT_RUNWAY
+{{ data.eddk_kml['layout']['runways']['13L-31R'] | render_area('OTHER:REGION', 'Runway 13L/31R') }}
+{{ data.eddk_kml['layout']['runways']['13R-31L'] | render_area('OTHER:REGION', 'Runway 13R/31L') }}
+{{ data.eddk_kml['layout']['runways']['06-24'] | render_area('OTHER:REGION', 'Runway 06/24') }}

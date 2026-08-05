@@ -1,5 +1,5 @@
 // --------------------- New East Apron Layout ----------------------
-{%- set default = 0.000005 %}
+{%- set tolerance = 0.000005 %}
 
 MAP:South Apron Stands
 AIRPORT:EDDS
@@ -8,14 +8,17 @@ LAYER:7
 OTHER_MAP_ACT:=:Apron Info\Layout (South Apron)
 
 // Layout
-{{ data.edds_kml['layout']['aproninfo']['southapron']['grass'] | to_coordtype('','appwindow-background') }}
-{{ data.edds_kml['layout']['aproninfo']['southapron']['taxiway_b'] | to_coordtype('','layout-taxiway') }}
-{{ data.edds_kml['layout']['aproninfo']['southapron']['apron'] | to_coordtype('','layout-apron') }}
-COLOR:layout-building
-{{ data.edds_kml['layout']['fence']['019566e2-fc27-7901-b18d-add548f4c6cf'] | to_line('') -}}
+COLOR:APPWINDOW_BACKGROUND
+{{ data.edds_kml['layout']['aproninfo']['southapron']['grass'] | render_area('OTHER:REGION') }}
+COLOR:LAYOUT_TAXIWAY
+{{ data.edds_kml['layout']['aproninfo']['southapron']['taxiway_b'] | render_area('OTHER:REGION') }}
+COLOR:LAYOUT_APRON
+{{ data.edds_kml['layout']['aproninfo']['southapron']['apron'] | render_area('OTHER:REGION') }}
+COLOR:LAYOUT_BUILDING
+{{ data.edds_kml['layout']['fence']['019566e2-fc27-7901-b18d-add548f4c6cf'] | render_line }}
 
 // Markings
-COLOR:closure
+COLOR:CLOSURE
 {% for uuid in
 [
     '13810bf5-b53b-4771-a2f7-15a510530b02',
@@ -34,11 +37,11 @@ COLOR:closure
     'c973c951-c59a-4feb-a418-f2e0c8da56cd',
     'd3bea00e-5612-4182-b861-b0cfb9310b3b',
     ] %}
-{{- data.edds_aixm['GuidanceLineMarking'][uuid] | join_segments | simplify(default) | to_line(uuid) -}}
+{{- data.edds_aixm['GuidanceLineMarking'][uuid] | geom_simplify(tolerance) | render_line(uuid) }}
 {% endfor %}
 
 ZOOM:600
-COLOR:closure-symbol
+COLOR:CLOSURE_SYMBOL
 FONTSIZE:=:9
 {% for desig in
 [
@@ -73,10 +76,11 @@ AIRPORT:EDDS
 FOLDER:Apron Info
 LAYER:1
 HIDDEN
-{{ data.edds_kml['layout']['aproninfo']['southapron']['taxiway_a'] | to_coordtype('','layout-taxiway') }}
-COLOR:layout-taxiline-yellow
-{{ data.edds_aixm['GuidanceLineMarking']['57ea2277-4974-4cee-8f38-7fa0485ea2ed'] | simplify(default) | to_line('') -}}
-{{ data.edds_aixm['GuidanceLineMarking']['b9e2015d-6194-41f0-ab77-ea38be726a2d'] | simplify(default) | to_line('') -}}
+COLOR:LAYOUT_TAXIWAY
+{{ data.edds_kml['layout']['aproninfo']['southapron']['taxiway_a'] | render_area('OTHER:REGION') }}
+COLOR:LAYOUT_TAXILINE_YELLOW
+{{ data.edds_aixm['GuidanceLineMarking']['57ea2277-4974-4cee-8f38-7fa0485ea2ed'] | geom_simplify(tolerance) | render_line }}
+{{ data.edds_aixm['GuidanceLineMarking']['b9e2015d-6194-41f0-ab77-ea38be726a2d'] | geom_simplify(tolerance) | render_line }}
 
 
 // ------------------------ Pushback Stands -------------------------
@@ -85,18 +89,20 @@ MAP:Pushback Stands
 AIRPORT:EDDS
 FOLDER:Apron Info
 ACTIVE:1
-COLOR:layout-runway
-{% for uuid, geom in data.edds_kml['layout']['aproninfo']['pushback'].items() %}
-{{- geom | to_line('') -}}
+COLOR:LAYOUT_RUNWAY
+{% for _, feat in data.edds_kml['layout']['aproninfo']['pushback'].items() %}
+{{- feat | render_line }}
 {% endfor %}
+
 
 MAP:Aircraft Outlines
 AIRPORT:EDDS
 FOLDER:Apron Info
 ACTIVE:1
-{% for uuid, geom in data.edds_kml['layout']['aproninfo']['aircraft_a'].items() %}
-{{- geom | to_coordtype('', 'layout-runway') }}
+COLOR:LAYOUT_RUNWAY
+{% for _, feat in data.edds_kml['layout']['aproninfo']['aircraft_a'].items() %}
+{{- feat | render_area('OTHER:REGION') }}
 {% endfor %}
-{% for uuid, geom in data.edds_kml['layout']['aproninfo']['aircraft_b'].items() %}
-{{- geom | to_coordtype('', 'layout-runway', 'OTHER', 'POLYGON') }}
+{% for _, feat in data.edds_kml['layout']['aproninfo']['aircraft_b'].items() %}
+{{- feat | render_area('OTHER:POLYGON') }}
 {% endfor %}

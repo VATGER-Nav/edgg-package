@@ -7,26 +7,26 @@ LAYER:2
 ZOOM:400
 
 // D
-COLOR:restrictions-AB
+COLOR:RESTRICTIONS_AB
 STYLE:SOLID:4
-{{ data.edfh_kml['layout']['restrictions']['line']['D_a'] | to_line('') -}}
-{{ data.edfh_kml['layout']['restrictions']['line']['D_b'] | to_line('') -}}
+{{ data.edfh_kml['layout']['restrictions']['line']['D_a'] | render_line }}
+{{ data.edfh_kml['layout']['restrictions']['line']['D_b'] | render_line }}
 TEXTALIGN:RC
 {{ data.edfh_kml['layout']['restrictions']['labels']['D'] | to_text('Max MTOW 14t') }}
 
 // A, C
-COLOR:restrictions-C
+COLOR:RESTRICTIONS_C
 STYLE:SOLID:4
-{{ data.edfh_kml['layout']['restrictions']['line']['A_a'] | to_line('') -}}
-{{ data.edfh_kml['layout']['restrictions']['line']['A_b'] | to_line('') -}}
-{{ data.edfh_kml['layout']['restrictions']['line']['C'] | to_line('') -}}
+{{ data.edfh_kml['layout']['restrictions']['line']['A_a'] | render_line }}
+{{ data.edfh_kml['layout']['restrictions']['line']['A_b'] | render_line }}
+{{ data.edfh_kml['layout']['restrictions']['line']['C'] | render_line }}
 
 // Backtrack RWY 03
-COLOR:restrictions-D
+COLOR:RESTRICTIONS_D
 STYLE:SOLID:4
-{{ data.edfh_kml['layout']['restrictions']['line']['backtrack'] | to_line('') -}}
+{{ data.edfh_kml['layout']['restrictions']['line']['backtrack'] | render_line }}
 STYLE:SOLID:1
-{{ data.edfh_kml['layout']['restrictions']['poly']['backtrack_b'] | to_coordtype('', 'restrictions-D') }}
+{{ data.edfh_kml['layout']['restrictions']['poly']['backtrack_b'] | render_area('OTHER:REGION') }}
 TEXTALIGN:CC
 {{ data.edfh_kml['layout']['restrictions']['labels']['backtrack'] | to_text('Max code D') }}
 
@@ -34,21 +34,21 @@ TEXTALIGN:CC
 
 TEXTALIGN:CC
 FONTSIZE:=:9
-COLOR:restrictions-C
+COLOR:RESTRICTIONS_C
 {% for desig in ['311', '312', '313', '314', '315', '316', '321', '322', '323', '324', '325', '333', '332'] %}
 {{- data.edfh_kml['layout']['restrictions']['stands'][desig] | to_symbol('STAND') }}
 {% endfor %}
 {% for desig in ['334'] %}
 {{- data.edfh_kml['layout']['restrictions']['stands'][desig] | to_symbol('STAND_S') }}
 {% endfor %}
-COLOR:restrictions-E
+COLOR:RESTRICTIONS_E
 {% for desig in ['341', '351', '411', '441', '451'] %}
 {{- data.edfh_kml['layout']['restrictions']['stands'][desig] | to_symbol('STAND') }}
 {% endfor %}
 {% for desig in ['326'] %}
 {{- data.edfh_kml['layout']['restrictions']['stands'][desig] | to_symbol('STAND_S') }}
 {% endfor %}
-COLOR:restrictions-F
+COLOR:RESTRICTIONS_F
 {% for desig in ['421', '431'] %}
 {{- data.edfh_kml['layout']['restrictions']['stands'][desig] | to_symbol('STAND') }}
 {% endfor %}
@@ -57,7 +57,7 @@ COLOR:restrictions-F
 {% endfor %}
 
 // Reference
-COLOR:layout-label-stand
+COLOR:LAYOUT_LABEL_STAND
 FONTSIZE:=:12
 {{ data.edfh_kml['layout']['restrictions']['labels']['reference'] | to_text('Reference  ') }}
 {{ data.edfh_kml['layout']['restrictions']['labels']['reference'] | to_text('MTOW 14t - up to D-Cxxx :0:15') }}
@@ -67,13 +67,13 @@ FONTSIZE:=:12
 {{ data.edfh_kml['layout']['restrictions']['labels']['reference'] | to_text('Code F < 80m (A124/B748):0:75') }}
 
 FONTSIZE:=:70
-COLOR:restrictions-AB
+COLOR:RESTRICTIONS_AB
 {{ data.edfh_kml['layout']['restrictions']['labels']['reference'] | to_text('.:-95:-39') }}
-COLOR:restrictions-C
+COLOR:RESTRICTIONS_C
 {{ data.edfh_kml['layout']['restrictions']['labels']['reference'] | to_text('.:-95:-24') }}
-COLOR:restrictions-D
+COLOR:RESTRICTIONS_D
 {{ data.edfh_kml['layout']['restrictions']['labels']['reference'] | to_text('.:-95:-9') }}
-COLOR:restrictions-E
+COLOR:RESTRICTIONS_E
 {{ data.edfh_kml['layout']['restrictions']['labels']['reference'] | to_text('.:-95:6') }}
-COLOR:restrictions-F
+COLOR:RESTRICTIONS_F
 {{ data.edfh_kml['layout']['restrictions']['labels']['reference'] | to_text('.:-95:21') }}

@@ -7,22 +7,22 @@ LAYER:2
 ZOOM:400
 
 // F, G
-COLOR:restrictions-AB
+COLOR:RESTRICTIONS_AB
 STYLE:SOLID:4
-{{ data.edlv_kml['layout']['restrictions']['line']['F'] | to_line('') -}}
-{{ data.edlv_kml['layout']['restrictions']['line']['G'] | to_line('') -}}
+{{ data.edlv_kml['layout']['restrictions']['line']['F'] | render_line }}
+{{ data.edlv_kml['layout']['restrictions']['line']['G'] | render_line }}
 
 // B, C
-COLOR:restrictions-C
+COLOR:RESTRICTIONS_C
 STYLE:SOLID:4
-{{ data.edlv_kml['layout']['restrictions']['line']['B'] | to_line('') -}}
-{{ data.edlv_kml['layout']['restrictions']['line']['C_a'] | to_line('') -}}
-{{ data.edlv_kml['layout']['restrictions']['line']['C_b'] | to_line('') -}}
+{{ data.edlv_kml['layout']['restrictions']['line']['B'] | render_line }}
+{{ data.edlv_kml['layout']['restrictions']['line']['C_a'] | render_line }}
+{{ data.edlv_kml['layout']['restrictions']['line']['C_b'] | render_line }}
 
 // Restriction Stands
 TEXTALIGN:CC
 FONTSIZE:=:9
-COLOR:restrictions-C
+COLOR:RESTRICTIONS_C
 {% for desig in
 [
     '1',
@@ -39,13 +39,13 @@ COLOR:restrictions-C
 {% endfor %}
 
 // Reference
-COLOR:layout-label-stand
+COLOR:LAYOUT_LABEL_STAND
 FONTSIZE:=:12
 {{ data.edlv_kml['layout']['restrictions']['labels']['reference'] | to_text('Reference  :0:-15') }}
 {{ data.edlv_kml['layout']['restrictions']['labels']['reference'] | to_text('Code B < 24m (CRJ2/C700):0:0') }}
 {{ data.edlv_kml['layout']['restrictions']['labels']['reference'] | to_text('Code C < 36m (A321/B739):0:15') }}
 FONTSIZE:=:70
-COLOR:restrictions-AB
+COLOR:RESTRICTIONS_AB
 {{ data.edlv_kml['layout']['restrictions']['labels']['reference'] | to_text('.:-95:-54') }}
-COLOR:restrictions-C
+COLOR:RESTRICTIONS_C
 {{ data.edlv_kml['layout']['restrictions']['labels']['reference'] | to_text('.:-95:-39') }}

@@ -1,10 +1,12 @@
 // ----------------------------- Stands -----------------------------
-{% set default = 0.000005 %}
+{#- TODO: Change simplify() to feat_simplify() when AIXM2 parser gets fixed #}
+{%- set tolerance = 0.000005 %}
+
 MAP:Leadin Lines
 AIRPORT:EDDF
 FOLDER:Airport Layout
 ACTIVE:1
-COLOR:layout-taxiline-grey
+COLOR:LAYOUT_TAXILINE_GREY
 
 // Solid Leadin Lines
 {% for uuid in
@@ -302,19 +304,19 @@ COLOR:layout-taxiline-grey
     'ff3184cb-ab4a-4471-a35a-b0833fc61ee1',
     'ffb522bb-48e2-45aa-8cd2-471bbbe24b0c',
 ] %}
-{{- data.eddf_aixm['GuidanceLineMarking'][uuid] | join_segments | simplify(default) | to_line(uuid) -}}
+{{- data.eddf_aixm['GuidanceLineMarking'][uuid] | simplify(tolerance) | render_line(uuid) }}
 {% endfor %}
 
-{% for uuid, geom in data.eddf_kml['layout']['markings']['leadin_solid'].items() %}
-{{- geom | to_line('') -}}
+{% for _, feat in data.eddf_kml['layout']['markings']['leadin_solid'].items() %}
+{{- feat | render_line }}
 {% endfor %}
 
 // Dash Leadin Lines
-{% for uuid, geom in data.eddf_kml['layout']['markings']['leadin_dash'].items() if uuid not in [] %}
-{{- geom | to_line('') -}}
+{% for _, feat in data.eddf_kml['layout']['markings']['leadin_dash'].items() %}
+{{- feat | render_line }}
 {% endfor %}
 
 // Taxi-Out Arrows
-{% for uuid, geom in data.eddf_kml['layout']['markings']['arrows'].items() %}
-{{- geom | to_coordtype(uuid, 'layout-taxiline-grey') }}
+{% for _, feat in data.eddf_kml['layout']['markings']['arrows'].items() %}
+{{- feat | render_area('OTHER:REGION') }}
 {% endfor %}

@@ -7,9 +7,11 @@ HIDDEN
 LAYER:3
 ACTIVE:1
 ZOOM:400
-{% for uuid, geom in data.edfh_kml['layout']['labels']['buffer'].items() %}
-{{- geom | to_coordtype('', 'layout-taxiway') }}
+COLOR:LAYOUT_TAXIWAY
+{% for _, feat in data.edfh_kml['layout']['labels']['buffer'].items() %}
+{{- feat | render_area('OTHER:REGION') }}
 {% endfor %}
+
 
 MAP:Taxiways
 AIRPORT:EDFH
@@ -19,10 +21,11 @@ LAYER:6
 ACTIVE:1
 ZOOM:400
 FONTSIZE:=:10
-COLOR:layout-label-taxiway
-{% for desig, geom in data.edfh_kml['layout']['labels']['taxiways'].items() %}
-{{- geom | to_text(desig) }}
+COLOR:LAYOUT_LABEL_TAXIWAY
+{% for desig, feat in data.edfh_kml['layout']['labels']['taxiways'].items() %}
+{{- feat | to_text(desig) }}
 {% endfor %}
+
 
 MAP:Stands
 AIRPORT:EDFH
@@ -31,42 +34,32 @@ LAYER:6
 ACTIVE:1
 ZOOM:500
 FONTSIZE:=:9
-COLOR:layout-label-stand
-{% for desig, geom in data.edfh_kml['layout']['labels']['stands'].items() %}
-{{- geom | to_text(desig) }}
+COLOR:LAYOUT_LABEL_STAND
+{% for desig, feat in data.edfh_kml['layout']['labels']['stands'].items() %}
+{{- feat | to_text(desig) }}
 {% endfor %}
 {{ data.edfh_kml['layout']['labels']['GAT'] | to_text('GAT') }}
 {{ data.edfh_kml['layout']['labels']['aprons']['APN 5'] | to_text('Maintenance') }}
+
 
 MAP:Aprons
 AIRPORT:EDFH
 FOLDER:Labels
 ZOOM:400
 FONTSIZE:=:9
-COLOR:layout-label-stand
+COLOR:LAYOUT_LABEL_STAND
 {{ data.edfh_kml['layout']['labels']['aprons']['APN 2'] | to_text('APN 2') }}
 {{ data.edfh_kml['layout']['labels']['aprons']['APN 3'] | to_text('APN 3') }}
 {{ data.edfh_kml['layout']['labels']['aprons']['APN 4'] | to_text('APN 4') }}
 {{ data.edfh_kml['layout']['labels']['aprons']['APN 5'] | to_text('APN 5:0:-12') }}
 
-MAP:Stands Old
-AIRPORT:EDFH
-FOLDER:Labels
-ZOOM:500
-FONTSIZE:=:9
-COLOR:layout-label-stand
-{% for desig, geom in data.edfh_kml['layout']['labels']['stands_old'].items() %}
-{{- geom | to_text(desig) }}
-{% endfor %}
-{{ data.edfh_kml['layout']['labels']['GAT'] | to_text('GAT') }}
-{{ data.edfh_kml['layout']['labels']['aprons']['APN 5'] | to_text('Maintenance') }}
 
 MAP:Buildings
 AIRPORT:EDFH
 FOLDER:Labels
 ZOOM:500
 FONTSIZE:=:9
-COLOR:layout-label-stand
+COLOR:LAYOUT_LABEL_STAND
 {% for desig in
 [
     'Hangar 901',

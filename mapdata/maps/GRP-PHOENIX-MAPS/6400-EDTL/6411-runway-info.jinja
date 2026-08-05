@@ -4,7 +4,7 @@ MAP:TORA 21
 AIRPORT:EDTL
 FOLDER:Runway Info
 LAYER:6
-COLOR:tora-label
+COLOR:TORA_LABEL
 ZOOM:400
 TEXTALIGN:RC
 {{ data.edtl_kml['layout']['tora']['21_H'] | to_text('3000') }}
@@ -17,7 +17,7 @@ MAP:TORA 03
 AIRPORT:EDTL
 FOLDER:Runway Info
 LAYER:6
-COLOR:tora-label
+COLOR:TORA_LABEL
 ZOOM:400
 TEXTALIGN:LC
 {{ data.edtl_kml['layout']['tora']['03_B_C'] | to_text('3000') }}
@@ -25,21 +25,26 @@ TEXTALIGN:LC
 {{ data.edtl_kml['layout']['tora']['03_E'] | to_text('1915') }}
 {{ data.edtl_kml['layout']['tora']['03_F'] | to_text('1108') }}
 
+
 MAP:Runway Designators
 AIRPORT:EDTL
 FOLDER:Runway Info
 LAYER:6
 ACTIVE:1
-{% for uuid, geom in data.edtl_kml['layout']['markings']['runways'].items() %}
-{{- geom | to_coordtype('', 'runway-label') }}
+COLOR:RUNWAY_LABEL
+{% for _, feat in data.edtl_kml['layout']['markings']['runways'].items() %}
+{{- feat | render_area('OTHER:REGION') }}
 {% endfor %}
+
 
 MAP:Runway Markings
 AIRPORT:EDTL
 FOLDER:Runway Info
-{% for uuid, geom in data.edtl_kml['layout']['markings']['poly_a'].items() %}
-{{- geom | to_coordtype('', 'layout-runway-marking') }}
+COLOR:LAYOUT_RUNWAY_MARKING
+{% for _, feat in data.edtl_kml['layout']['markings']['poly_a'].items() %}
+{{- feat | render_area('OTHER:REGION') }}
 {% endfor %}
-{% for uuid, geom in data.edtl_kml['layout']['markings']['poly_b'].items() %}
-{{- geom | to_coordtype('', 'layout-runway') }}
+COLOR:LAYOUT_RUNWAY
+{% for _, feat in data.edtl_kml['layout']['markings']['poly_b'].items() %}
+{{- feat | render_area('OTHER:REGION') }}
 {% endfor %}
