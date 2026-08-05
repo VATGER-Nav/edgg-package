@@ -1,57 +1,43 @@
 // ------------------------- Holding Points -------------------------
+{%- set holdingpoints_cat1_only = ['B', 'C', 'E', 'F', 'G', 'H'] %}
 
 MAP:Holding Points CAT I
 AIRPORT:EDLV
 FOLDER:Holding Points
 LAYER:5
 ACTIVE:LVP:EDLV:0
-{% for desig, geom in data.edlv_kml['layout']['holdingpoints']['cat1'].items() %}
-{{- geom | to_coordtype(desig, 'layout-holdingpoint') }}
+COLOR:LAYOUT_HOLDINGPOINT
+{% for desig, feat in data.edlv_kml['layout']['holdingpoints']['cat1'].items() %}
+{{- feat | render_area('OTHER:REGION', desig) }}
 {% endfor %}
-COLOR:layout-holdingpoint
-{% for desig, geom in data.edlv_kml['layout']['holdingpoints']['line'].items() %}
-{{- geom | to_line(desig) -}}
+{% for desig, feat in data.edlv_kml['layout']['holdingpoints']['line'].items() %}
+{{- feat | render_line(desig) }}
 {% endfor %}
+
 
 MAP:Holding Points CAT II/III
 AIRPORT:EDLV
 FOLDER:Holding Points
 LAYER:5
 ACTIVE:LVP:EDLV:1
-COLOR:layout-holdingpoint
-{% for desig in 
-[
-    'B',
-    'C',
-    'E',
-    'F',
-    'G',
-    'H',
-] %}
-{{- data.edlv_kml['layout']['holdingpoints']['cat1'][desig] | to_coordtype(desig, 'layout-holdingpoint') }}
+COLOR:LAYOUT_HOLDINGPOINT
+{% for desig, feat in data.edlv_kml['layout']['holdingpoints']['cat3'].items() %}
+{{- feat | render_area('OTHER:REGION', desig + ' CAT III') }}
 {% endfor %}
-{% for desig, geom in data.edlv_kml['layout']['holdingpoints']['cat3'].items() %}
-{{- geom | to_coordtype(desig + ' CATIII', 'layout-holdingpoint') }}
+{% for desig in holdingpoints_cat1_only %}
+{{- data.edlv_kml['layout']['holdingpoints']['cat1'][desig] | render_area('OTHER:REGION', desig) }}
 {% endfor %}
-COLOR:layout-holdingpoint
-{% for desig in 
-[
-    'B',
-    'C',
-    'E',
-    'F',
-    'G',
-    'H',
-] %}
-{{- data.edlv_kml['layout']['holdingpoints']['line'][desig] | to_line(desig) }}
+{% for desig in holdingpoints_cat1_only %}
+{{- data.edlv_kml['layout']['holdingpoints']['line'][desig] | render_line(desig) }}
 {% endfor %}
+
 
 MAP:Stopbars
 AIRPORT:EDLV
 FOLDER:Holding Points
 LAYER:5
 ACTIVE:1
-COLOR:layout-holdingpoint
-{% for desig, geom in data.edlv_kml['layout']['stopbars'].items() %}
-{{- geom | to_line('') -}}
+COLOR:LAYOUT_HOLDINGPOINT
+{% for desig, feat in data.edlv_kml['layout']['stopbars'].items() %}
+{{- feat | render_line }}
 {% endfor %}

@@ -6,6 +6,7 @@ FOLDER:Closures
 LAYER:4
 RWYCLOSEDDEP:EDDS:07,25
 RWYCLOSEDARR:EDDS:07,25
-STYLE:Solid:2
-{{ data.edds_aixm['RunwayElement']['0d48f5ad-f099-464d-b13d-94cf0014d057'] | simplify(0.00001) | to_coordtype('', 'closure') }}
-{{ data.edds_aixm['RunwayElement']['5f954a0a-08d7-48c3-9875-19263da9b4de'] | simplify(0.00001) | to_coordtype('', 'closure') }}
+STYLE:SOLID:2
+COLOR:CLOSURE
+{{ data.edds_aixm['RunwayElement']['0d48f5ad-f099-464d-b13d-94cf0014d057'] | geom_simplify(0.00001) | render_area('OTHER:REGION') }}
+{{ data.edds_aixm['RunwayElement']['5f954a0a-08d7-48c3-9875-19263da9b4de'] | geom_simplify(0.00001) | render_area('OTHER:REGION') }}

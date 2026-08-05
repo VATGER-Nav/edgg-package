@@ -4,69 +4,71 @@ MAP:23L
 AIRPORT:EDDL
 FOLDER:A380
 LAYER:2
-{{ data.eddl_kml['layout']['restrictions_A380']['23']['poly']['23arr_a'] | to_coordtype('', 'restrictions-C') }}
-{{ data.eddl_kml['layout']['restrictions_A380']['23']['poly']['23arr_b'] | to_coordtype('', 'restrictions-C') }}
-{{ data.eddl_kml['layout']['restrictions_A380']['23']['poly']['23arr_c'] | to_coordtype('', 'restrictions-C') }}
-{{ data.eddl_kml['layout']['restrictions_A380']['23']['poly']['23arr_d'] | to_coordtype('', 'restrictions-C') }}
-{{ data.eddl_kml['layout']['restrictions_A380']['23']['poly']['23arr_e'] | to_coordtype('', 'restrictions-C') }}
-{{ data.eddl_kml['layout']['restrictions_A380']['23']['poly']['23arr_f'] | to_coordtype('', 'restrictions-C') }}
-{{ data.eddl_kml['layout']['restrictions_A380']['23']['poly']['23dep_a'] | to_coordtype('', 'restrictions-D') }}
-{{ data.eddl_kml['layout']['restrictions_A380']['23']['poly']['23dep_b'] | to_coordtype('', 'restrictions-D') }}
-{{ data.eddl_kml['layout']['restrictions_A380']['23']['poly']['23dep_c'] | to_coordtype('', 'restrictions-D') }}
-{{ data.eddl_kml['layout']['restrictions_A380']['23']['poly']['23dep_d'] | to_coordtype('', 'restrictions-D') }}
+COLOR:RESTRICTIONS_C
+{{ data.eddl_kml['layout']['restrictions_A380']['23']['poly']['23arr_a'] | render_area('OTHER:REGION') }}
+{{ data.eddl_kml['layout']['restrictions_A380']['23']['poly']['23arr_b'] | render_area('OTHER:REGION') }}
+{{ data.eddl_kml['layout']['restrictions_A380']['23']['poly']['23arr_c'] | render_area('OTHER:REGION') }}
+{{ data.eddl_kml['layout']['restrictions_A380']['23']['poly']['23arr_d'] | render_area('OTHER:REGION') }}
+{{ data.eddl_kml['layout']['restrictions_A380']['23']['poly']['23arr_e'] | render_area('OTHER:REGION') }}
+{{ data.eddl_kml['layout']['restrictions_A380']['23']['poly']['23arr_f'] | render_area('OTHER:REGION') }}
+COLOR:RESTRICTIONS_D
+{{ data.eddl_kml['layout']['restrictions_A380']['23']['poly']['23dep_a'] | render_area('OTHER:REGION') }}
+{{ data.eddl_kml['layout']['restrictions_A380']['23']['poly']['23dep_b'] | render_area('OTHER:REGION') }}
+{{ data.eddl_kml['layout']['restrictions_A380']['23']['poly']['23dep_c'] | render_area('OTHER:REGION') }}
+{{ data.eddl_kml['layout']['restrictions_A380']['23']['poly']['23dep_d'] | render_area('OTHER:REGION') }}
 STYLE:SOLID:3
-COLOR:restrictions-C
-{{ data.eddl_kml['layout']['restrictions_A380']['23']['line']['23arr_a'] | to_line('') -}}
-{{ data.eddl_kml['layout']['restrictions_A380']['23']['line']['23arr_b'] | to_line('') -}}
-{{ data.eddl_kml['layout']['restrictions_A380']['23']['line']['23arr_c'] | to_line('') -}}
-{{ data.eddl_kml['layout']['restrictions_A380']['23']['line']['23arr_d'] | to_line('') -}}
-{{ data.eddl_kml['layout']['restrictions_A380']['23']['line']['23arr_e'] | to_line('') -}}
-{{ data.eddl_kml['layout']['restrictions_A380']['23']['line']['23arr_f'] | to_line('') -}}
-{{ data.eddl_kml['layout']['restrictions_A380']['23']['line']['23arr_g'] | to_line('') -}}
-{{ data.eddl_kml['layout']['restrictions_A380']['23']['line']['23arr_h'] | to_line('') -}}
-{{ data.eddl_kml['layout']['restrictions_A380']['23']['line']['23arr_i'] | to_line('') -}}
-COLOR:restrictions-D
-{{ data.eddl_kml['layout']['restrictions_A380']['23']['line']['23dep_a'] | to_line('') -}}
-{{ data.eddl_kml['layout']['restrictions_A380']['23']['line']['23dep_b'] | to_line('') -}}
-{{ data.eddl_kml['layout']['restrictions_A380']['23']['line']['23dep_c'] | to_line('') -}}
-{{ data.eddl_kml['layout']['restrictions_A380']['23']['line']['23dep_d'] | to_line('') -}}
-{{ data.eddl_kml['layout']['restrictions_A380']['23']['line']['23dep_e'] | to_line('') -}}
-{{ data.eddl_kml['layout']['restrictions_A380']['23']['line']['23dep_f'] | to_line('') -}}
+COLOR:RESTRICTIONS_C
+{{ data.eddl_kml['layout']['restrictions_A380']['23']['line']['23arr_a'] | render_line }}
+{{ data.eddl_kml['layout']['restrictions_A380']['23']['line']['23arr_b'] | render_line }}
+{{ data.eddl_kml['layout']['restrictions_A380']['23']['line']['23arr_c'] | render_line }}
+{{ data.eddl_kml['layout']['restrictions_A380']['23']['line']['23arr_d'] | render_line }}
+{{ data.eddl_kml['layout']['restrictions_A380']['23']['line']['23arr_e'] | render_line }}
+{{ data.eddl_kml['layout']['restrictions_A380']['23']['line']['23arr_f'] | render_line }}
+{{ data.eddl_kml['layout']['restrictions_A380']['23']['line']['23arr_g'] | render_line }}
+{{ data.eddl_kml['layout']['restrictions_A380']['23']['line']['23arr_h'] | render_line }}
+{{ data.eddl_kml['layout']['restrictions_A380']['23']['line']['23arr_i'] | render_line }}
+COLOR:RESTRICTIONS_D
+{{ data.eddl_kml['layout']['restrictions_A380']['23']['line']['23dep_a'] | render_line }}
+{{ data.eddl_kml['layout']['restrictions_A380']['23']['line']['23dep_b'] | render_line }}
+{{ data.eddl_kml['layout']['restrictions_A380']['23']['line']['23dep_c'] | render_line }}
+{{ data.eddl_kml['layout']['restrictions_A380']['23']['line']['23dep_d'] | render_line }}
+{{ data.eddl_kml['layout']['restrictions_A380']['23']['line']['23dep_e'] | render_line }}
+{{ data.eddl_kml['layout']['restrictions_A380']['23']['line']['23dep_f'] | render_line }}
 
 STYLE:SOLID:2
-COLOR:restrictions-AB
-{% for uuid, geom in data.eddl_kml['layout']['restrictions_A380']['line'].items() %}
-{{- geom | to_line('') -}}
+COLOR:RESTRICTIONS_AB
+{% for _, feat in data.eddl_kml['layout']['restrictions_A380']['line'].items() %}
+{{- feat | render_line }}
 {% endfor %}
-COLOR:restrictions-AB
-{% for uuid, geom in data.eddl_kml['layout']['restrictions_A380']['symb'].items() %}
-{{- geom | to_symbol('VERBOT_1') }}
+COLOR:RESTRICTIONS_AB
+{% for _, feat in data.eddl_kml['layout']['restrictions_A380']['symb'].items() %}
+{{- feat | to_symbol('VERBOT_1') }}
 {% endfor %}
-COLOR:white
-{% for uuid, geom in data.eddl_kml['layout']['restrictions_A380']['symb'].items() %}
-{{- geom | to_symbol('VERBOT_2') }}
+COLOR:WHITE
+{% for _, feat in data.eddl_kml['layout']['restrictions_A380']['symb'].items() %}
+{{- feat | to_symbol('VERBOT_2') }}
 {% endfor %}
 
-COLOR:restrictions-C
+COLOR:RESTRICTIONS_C
 TEXTALIGN:RC
 {{ data.eddl_kml['layout']['restrictions_A380']['labels']['L7'] | to_text('Then via:0:-12') }}
 {{ data.eddl_kml['layout']['restrictions_A380']['labels']['L7'] | to_text('M, L8, R') }}
 
-COLOR:layout-label-stand
+COLOR:LAYOUT_LABEL_STAND
 FONTSIZE:=:12
 TEXTALIGN:CC
 {{ data.eddl_kml['layout']['restrictions']['labels']['reference_1'] | to_text('A380 Taxiroutes:0:-15') }}
 {{ data.eddl_kml['layout']['restrictions']['labels']['reference_1'] | to_text('      - DEP 23L:0:0') }}
 {{ data.eddl_kml['layout']['restrictions']['labels']['reference_1'] | to_text('      - ARR 23L:0:15') }}
-COLOR:restrictions-D
+COLOR:RESTRICTIONS_D
 {{ data.eddl_kml['layout']['restrictions']['labels']['reference_1'] | to_text('_____          :0:-6') }}
-COLOR:restrictions-C
+COLOR:RESTRICTIONS_C
 {{ data.eddl_kml['layout']['restrictions']['labels']['reference_1'] | to_text('_____          :0:9') }}
 
 // C02A, V08B, V10A, V38B
 ZOOM:600
 FONTSIZE:=:9
-COLOR:layout-label-yellow
+COLOR:LAYOUT_LABEL_YELLOW
 {% for desig in
 [
     'C02A',
@@ -77,7 +79,7 @@ COLOR:layout-label-yellow
 {{- data.eddl_kml['layout']['labels']['stands'][desig] | to_text(desig + ':0:1') }}
 {{ data.eddl_kml['layout']['labels']['stands'][desig] | to_text('____:0:1') }}
 {% endfor %}
-COLOR:restrictions-F
+COLOR:RESTRICTIONS_F
 {% for desig in
 [
     'C02A',
@@ -88,67 +90,70 @@ COLOR:restrictions-F
 {{- data.eddl_kml['layout']['restrictions']['stands'][desig] | to_symbol('STAND') }}
 {% endfor %}
 
+
 MAP:05R
 AIRPORT:EDDL
 FOLDER:A380
-{{ data.eddl_kml['layout']['restrictions_A380']['05']['poly']['05arr_a'] | to_coordtype('', 'restrictions-C') }}
-{{ data.eddl_kml['layout']['restrictions_A380']['05']['poly']['05arr_b'] | to_coordtype('', 'restrictions-C') }}
-{{ data.eddl_kml['layout']['restrictions_A380']['05']['poly']['05arr_c'] | to_coordtype('', 'restrictions-C') }}
-{{ data.eddl_kml['layout']['restrictions_A380']['05']['poly']['05arr_d'] | to_coordtype('', 'restrictions-C') }}
-{{ data.eddl_kml['layout']['restrictions_A380']['05']['poly']['05dep_a'] | to_coordtype('', 'restrictions-D') }}
-{{ data.eddl_kml['layout']['restrictions_A380']['05']['poly']['05dep_b'] | to_coordtype('', 'restrictions-D') }}
-{{ data.eddl_kml['layout']['restrictions_A380']['05']['poly']['05dep_c'] | to_coordtype('', 'restrictions-D') }}
-{{ data.eddl_kml['layout']['restrictions_A380']['05']['poly']['05dep_d'] | to_coordtype('', 'restrictions-D') }}
+COLOR:RESTRICTIONS_C
+{{ data.eddl_kml['layout']['restrictions_A380']['05']['poly']['05arr_a'] | render_area('OTHER:REGION') }}
+{{ data.eddl_kml['layout']['restrictions_A380']['05']['poly']['05arr_b'] | render_area('OTHER:REGION') }}
+{{ data.eddl_kml['layout']['restrictions_A380']['05']['poly']['05arr_c'] | render_area('OTHER:REGION') }}
+{{ data.eddl_kml['layout']['restrictions_A380']['05']['poly']['05arr_d'] | render_area('OTHER:REGION') }}
+COLOR:RESTRICTIONS_D
+{{ data.eddl_kml['layout']['restrictions_A380']['05']['poly']['05dep_a'] | render_area('OTHER:REGION') }}
+{{ data.eddl_kml['layout']['restrictions_A380']['05']['poly']['05dep_b'] | render_area('OTHER:REGION') }}
+{{ data.eddl_kml['layout']['restrictions_A380']['05']['poly']['05dep_c'] | render_area('OTHER:REGION') }}
+{{ data.eddl_kml['layout']['restrictions_A380']['05']['poly']['05dep_d'] | render_area('OTHER:REGION') }}
 STYLE:SOLID:3
-COLOR:restrictions-C
-{{ data.eddl_kml['layout']['restrictions_A380']['05']['line']['05arr_a'] | to_line('') -}}
-{{ data.eddl_kml['layout']['restrictions_A380']['05']['line']['05arr_b'] | to_line('') -}}
-{{ data.eddl_kml['layout']['restrictions_A380']['05']['line']['05arr_c'] | to_line('') -}}
-{{ data.eddl_kml['layout']['restrictions_A380']['05']['line']['05arr_d'] | to_line('') -}}
-{{ data.eddl_kml['layout']['restrictions_A380']['05']['line']['05arr_e'] | to_line('') -}}
-COLOR:restrictions-D
-{{ data.eddl_kml['layout']['restrictions_A380']['05']['line']['05dep_a'] | to_line('') -}}
-{{ data.eddl_kml['layout']['restrictions_A380']['05']['line']['05dep_b'] | to_line('') -}}
-{{ data.eddl_kml['layout']['restrictions_A380']['05']['line']['05dep_c'] | to_line('') -}}
-{{ data.eddl_kml['layout']['restrictions_A380']['05']['line']['05dep_d'] | to_line('') -}}
-{{ data.eddl_kml['layout']['restrictions_A380']['05']['line']['05dep_e'] | to_line('') -}}
-{{ data.eddl_kml['layout']['restrictions_A380']['05']['line']['05dep_f'] | to_line('') -}}
+COLOR:RESTRICTIONS_C
+{{ data.eddl_kml['layout']['restrictions_A380']['05']['line']['05arr_a'] | render_line }}
+{{ data.eddl_kml['layout']['restrictions_A380']['05']['line']['05arr_b'] | render_line }}
+{{ data.eddl_kml['layout']['restrictions_A380']['05']['line']['05arr_c'] | render_line }}
+{{ data.eddl_kml['layout']['restrictions_A380']['05']['line']['05arr_d'] | render_line }}
+{{ data.eddl_kml['layout']['restrictions_A380']['05']['line']['05arr_e'] | render_line }}
+COLOR:RESTRICTIONS_D
+{{ data.eddl_kml['layout']['restrictions_A380']['05']['line']['05dep_a'] | render_line }}
+{{ data.eddl_kml['layout']['restrictions_A380']['05']['line']['05dep_b'] | render_line }}
+{{ data.eddl_kml['layout']['restrictions_A380']['05']['line']['05dep_c'] | render_line }}
+{{ data.eddl_kml['layout']['restrictions_A380']['05']['line']['05dep_d'] | render_line }}
+{{ data.eddl_kml['layout']['restrictions_A380']['05']['line']['05dep_e'] | render_line }}
+{{ data.eddl_kml['layout']['restrictions_A380']['05']['line']['05dep_f'] | render_line }}
 
 STYLE:SOLID:2
-COLOR:restrictions-AB
-{% for uuid, geom in data.eddl_kml['layout']['restrictions_A380']['line'].items() %}
-{{- geom | to_line('') -}}
+COLOR:RESTRICTIONS_AB
+{% for _, feat in data.eddl_kml['layout']['restrictions_A380']['line'].items() %}
+{{- feat | render_line }}
 {% endfor %}
-COLOR:restrictions-AB
-{% for uuid, geom in data.eddl_kml['layout']['restrictions_A380']['symb'].items() if uuid not in 
+COLOR:RESTRICTIONS_AB
+{% for uuid, feat in data.eddl_kml['layout']['restrictions_A380']['symb'].items() if uuid not in 
 [
     '01959eb3-e66f-755e-97d0-abe8eea8981d'
 ]%}
-{{- geom | to_symbol('VERBOT_1') }}
+{{- feat | to_symbol('VERBOT_1') }}
 {% endfor %}
-COLOR:white
-{% for uuid, geom in data.eddl_kml['layout']['restrictions_A380']['symb'].items() if uuid not in 
+COLOR:WHITE
+{% for uuid, feat in data.eddl_kml['layout']['restrictions_A380']['symb'].items() if uuid not in 
 [
     '01959eb3-e66f-755e-97d0-abe8eea8981d'
 ]%}
-{{- geom | to_symbol('VERBOT_2') }}
+{{- feat | to_symbol('VERBOT_2') }}
 {% endfor %}
 
-COLOR:layout-label-stand
+COLOR:LAYOUT_LABEL_STAND
 FONTSIZE:=:12
 TEXTALIGN:CC
 {{ data.eddl_kml['layout']['restrictions']['labels']['reference_1'] | to_text('A380 Taxiroutes:0:-15') }}
 {{ data.eddl_kml['layout']['restrictions']['labels']['reference_1'] | to_text('      - DEP 05R:0:0') }}
 {{ data.eddl_kml['layout']['restrictions']['labels']['reference_1'] | to_text('      - ARR 05R:0:15') }}
-COLOR:restrictions-D
+COLOR:RESTRICTIONS_D
 {{ data.eddl_kml['layout']['restrictions']['labels']['reference_1'] | to_text('_____          :0:-6') }}
-COLOR:restrictions-C
+COLOR:RESTRICTIONS_C
 {{ data.eddl_kml['layout']['restrictions']['labels']['reference_1'] | to_text('_____          :0:9') }}
 
 // C02A, V08B, V10A, V38B
 ZOOM:600
 FONTSIZE:=:9
-COLOR:layout-label-yellow
+COLOR:LAYOUT_LABEL_YELLOW
 {% for desig in
 [
     'C02A',
@@ -159,7 +164,7 @@ COLOR:layout-label-yellow
 {{- data.eddl_kml['layout']['labels']['stands'][desig] | to_text(desig + ':0:1') }}
 {{ data.eddl_kml['layout']['labels']['stands'][desig] | to_text('____:0:1') }}
 {% endfor %}
-COLOR:restrictions-F
+COLOR:RESTRICTIONS_F
 {% for desig in
 [
     'C02A',

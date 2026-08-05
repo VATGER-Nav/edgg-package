@@ -1,10 +1,11 @@
 // ----------------------------- Stands -----------------------------
-{% set default = 0.000005 %}
+{%- set tolerance = 0.000005 %}
+
 MAP:Leadin Lines
 AIRPORT:EDDK
 FOLDER:Airport Layout
 ACTIVE:1
-COLOR:layout-taxiline-yellow
+COLOR:LAYOUT_TAXILINE_YELLOW
 {% for uuid in
 [
     '07e4e164-cd4d-8a57-e063-b410f10a609c',
@@ -387,7 +388,7 @@ COLOR:layout-taxiline-yellow
     'c1fccb50-1d62-4c6d-e054-020820e7ddd6',
     'c1fccb50-1d63-4c6d-e054-020820e7ddd6',
 ] %}
-{{- data.eddk_aixm['GuidanceLine'][uuid] | join_segments | simplify(default) | to_line(uuid) -}}
+{{- data.eddk_aixm['GuidanceLine'][uuid] | geom_simplify(tolerance) | render_line(uuid) }}
 {% endfor %}
 
 // V-Stands
@@ -399,7 +400,7 @@ COLOR:layout-taxiline-yellow
     'V13',
     'V14',
 ] %}
-{{- data.eddk_kml['layout']['markings']['leadin_solid'][desig] | join_segments | simplify(default) | to_line(desig) -}}
+{{- data.eddk_kml['layout']['markings']['leadin_solid'][desig] | render_line(desig) }}
 {% endfor %}
 
 // Bundeswehr-Stands
@@ -413,21 +414,21 @@ COLOR:layout-taxiline-yellow
     'BW6',
     'BW7',
 ] %}
-{{- data.eddk_kml['layout']['markings']['leadin_solid'][desig] | join_segments | simplify(default) | to_line(desig) -}}
+{{- data.eddk_kml['layout']['markings']['leadin_solid'][desig] | render_line(desig) }}
 {% endfor %}
 
 // Dash Leadin Lines
-{% for uuid, geom in data.eddk_kml['layout']['markings']['leadin_dash'].items() if uuid not in [] %}
-{{- geom | to_line('') -}}
+{% for _, feat in data.eddk_kml['layout']['markings']['leadin_dash'].items() %}
+{{- feat | render_line }}
 {% endfor %}
 
 // Taxi-Out Arrows
-{% for uuid, geom in data.eddk_kml['layout']['markings']['arrows'].items() %}
-{{- geom | to_coordtype('', 'layout-taxiline-yellow') }}
+{% for _, feat in data.eddk_kml['layout']['markings']['arrows'].items() %}
+{{- feat | render_area('OTHER:REGION') }}
 {% endfor %}
 
 // V-Stands Orange
-COLOR:layout-taxiline-orange
+COLOR:LAYOUT_TAXILINE_ORANGE
 {% for uuid in
 [
     '6c69628d-7545-2c22-e054-020820e7ddd6',
@@ -455,11 +456,11 @@ COLOR:layout-taxiline-orange
     '6c69628d-761f-2c22-e054-020820e7ddd6',
     '6c69628d-7620-2c22-e054-020820e7ddd6',
 ] %}
-{{- data.eddk_aixm['GuidanceLine'][uuid] | join_segments | simplify(default) | to_line(uuid) -}}
+{{- data.eddk_aixm['GuidanceLine'][uuid] | geom_simplify(tolerance) | render_line(uuid) }}
 {% endfor %}
 
 // V-Stands Declutter
-COLOR:layout-taxiline-yellow
+COLOR:LAYOUT_TAXILINE_YELLOW
 ZOOM:1200
 {% for uuid in
 [
@@ -473,5 +474,5 @@ ZOOM:1200
     '6c69628d-7622-2c22-e054-020820e7ddd6',
     '6c69628d-7623-2c22-e054-020820e7ddd6',
 ] %}
-{{- data.eddk_aixm['GuidanceLine'][uuid] | join_segments | simplify(default) | to_line(uuid) -}}
+{{- data.eddk_aixm['GuidanceLine'][uuid] | geom_simplify(tolerance) | render_line(uuid) }}
 {% endfor %}

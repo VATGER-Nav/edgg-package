@@ -1,73 +1,40 @@
-// ----------------------------- LVP Areas --------------------------
-
-MAP:25
+// ------------------------------ LVP -------------------------------
+{% for runway in ['25', '07'] %}
+MAP:{{runway}}
 AIRPORT:EDDS
 FOLDER:LVP|Heavy
-// Orthogonal
-{{ data.edds_kml['layout']['lvp']['heavy']['25_orthogonal_a'] | to_coordtype('', 'lvp-orthogonal', 'OTHER', 'REGION', '\\') }}
-{{ data.edds_kml['layout']['lvp']['heavy']['25_orthogonal_b'] | to_coordtype('', 'lvp-orthogonal', 'OTHER', 'REGION', '\\') }}
-// Sensitive
-{{ data.edds_kml['layout']['lvp']['heavy']['25_sensitive'] | to_coordtype('', 'lvp-sensitive', 'OTHER', 'REGION', '\\') }}
-// Critical
+COLOR:LVP_ORTHOGONAL
+{{ data.edds_kml['layout']['lvp']['heavy'][runway + '_orthogonal_a'] | render_area('OTHER:REGION:\\') }}
+{{ data.edds_kml['layout']['lvp']['heavy'][runway + '_orthogonal_b'] | render_area('OTHER:REGION:\\') }}
+COLOR:LVP_SENSITIVE
+{{ data.edds_kml['layout']['lvp']['heavy'][runway + '_sensitive'] | render_area('OTHER:REGION:\\') }}
+COLOR:LVP_CRITICAL
 STYLE:SOLID:2
-{{ data.edds_kml['layout']['lvp']['heavy']['25_critical_loc'] | to_coordtype('', 'lvp-critical', 'OTHER', 'REGION', '\\') }}
-{{ data.edds_kml['layout']['lvp']['heavy']['25_critical_gs'] | to_coordtype('', 'lvp-critical', 'OTHER', 'REGION', '\\') }}
+{{ data.edds_kml['layout']['lvp']['heavy'][runway + '_critical_loc'] | render_area('OTHER:REGION:\\') }}
+{{ data.edds_kml['layout']['lvp']['heavy'][runway + '_critical_gs'] | render_area('OTHER:REGION:\\') }}
 // LOC
 STYLE:SOLID:2
-COLOR:lvp-marking
-{{ loc_tick(runways.EDDS['25'], 0, -0.01) }}
-{{ loc_tick(runways.EDDS['25'], 0, 0.01) }}
+COLOR:LVP_MARKING
+{{ loc_tick(runways.EDDS[runway], 0, -0.01) }}
+{{ loc_tick(runways.EDDS[runway], 0, 0.01) }}
+{% endfor %}
 
-MAP:07
-AIRPORT:EDDS
-FOLDER:LVP|Heavy
-// Orthogonal
-{{ data.edds_kml['layout']['lvp']['heavy']['07_orthogonal_a'] | to_coordtype('', 'lvp-orthogonal', 'OTHER', 'REGION', '\\') }}
-{{ data.edds_kml['layout']['lvp']['heavy']['07_orthogonal_b'] | to_coordtype('', 'lvp-orthogonal', 'OTHER', 'REGION', '\\') }}
-// Sensitive
-{{ data.edds_kml['layout']['lvp']['heavy']['07_sensitive'] | to_coordtype('', 'lvp-sensitive', 'OTHER', 'REGION', '\\') }}
-// Critical
-STYLE:SOLID:2
-{{ data.edds_kml['layout']['lvp']['heavy']['07_critical_loc'] | to_coordtype('', 'lvp-critical', 'OTHER', 'REGION', '\\') }}
-{{ data.edds_kml['layout']['lvp']['heavy']['07_critical_gs'] | to_coordtype('', 'lvp-critical', 'OTHER', 'REGION', '\\') }}
-// LOC
-STYLE:SOLID:2
-COLOR:lvp-marking
-{{ loc_tick(runways.EDDS['07'], 0, -0.01) }}
-{{ loc_tick(runways.EDDS['07'], 0, 0.01) }}
-
-MAP:25
+{% for runway in ['25', '07'] %}
+MAP:{{runway}}
 AIRPORT:EDDS
 FOLDER:LVP|Super
-// Orthogonal
-{{ data.edds_kml['layout']['lvp']['super']['25_orthogonal_a'] | to_coordtype('', 'lvp-orthogonal', 'OTHER', 'REGION', '\\') }}
-{{ data.edds_kml['layout']['lvp']['super']['25_orthogonal_b'] | to_coordtype('', 'lvp-orthogonal', 'OTHER', 'REGION', '\\') }}
-// Sensitive
-{{ data.edds_kml['layout']['lvp']['super']['25_sensitive'] | to_coordtype('', 'lvp-sensitive', 'OTHER', 'REGION', '\\') }}
-// Critical
+COLOR:LVP_ORTHOGONAL
+{{ data.edds_kml['layout']['lvp']['super'][runway + '_orthogonal_a'] | render_area('OTHER:REGION:\\') }}
+{{ data.edds_kml['layout']['lvp']['super'][runway + '_orthogonal_b'] | render_area('OTHER:REGION:\\') }}
+COLOR:LVP_SENSITIVE
+{{ data.edds_kml['layout']['lvp']['super'][runway + '_sensitive'] | render_area('OTHER:REGION:\\') }}
+COLOR:LVP_CRITICAL
 STYLE:SOLID:2
-{{ data.edds_kml['layout']['lvp']['super']['25_critical_loc'] | to_coordtype('', 'lvp-critical', 'OTHER', 'REGION', '\\') }}
-{{ data.edds_kml['layout']['lvp']['super']['25_critical_gs'] | to_coordtype('', 'lvp-critical', 'OTHER', 'REGION', '\\') }}
+{{ data.edds_kml['layout']['lvp']['super'][runway + '_critical_loc'] | render_area('OTHER:REGION:\\') }}
+{{ data.edds_kml['layout']['lvp']['super'][runway + '_critical_gs'] | render_area('OTHER:REGION:\\') }}
 // LOC
 STYLE:SOLID:2
-COLOR:lvp-marking
-{{ loc_tick(runways.EDDS['25'], 0, -0.01) }}
-{{ loc_tick(runways.EDDS['25'], 0, 0.01) }}
-
-MAP:07 
-AIRPORT:EDDS
-FOLDER:LVP|Super
-// Orthogonal
-{{ data.edds_kml['layout']['lvp']['super']['07_orthogonal_a'] | to_coordtype('', 'lvp-orthogonal', 'OTHER', 'REGION', '\\') }}
-{{ data.edds_kml['layout']['lvp']['super']['07_orthogonal_b'] | to_coordtype('', 'lvp-orthogonal', 'OTHER', 'REGION', '\\') }}
-// Sensitive
-{{ data.edds_kml['layout']['lvp']['super']['07_sensitive'] | to_coordtype('', 'lvp-sensitive', 'OTHER', 'REGION', '\\') }}
-// Critical
-STYLE:SOLID:2
-{{ data.edds_kml['layout']['lvp']['super']['07_critical_loc'] | to_coordtype('', 'lvp-critical', 'OTHER', 'REGION', '\\') }}
-{{ data.edds_kml['layout']['lvp']['super']['07_critical_gs'] | to_coordtype('', 'lvp-critical', 'OTHER', 'REGION', '\\') }}
-// LOC
-STYLE:SOLID:2
-COLOR:lvp-marking
-{{ loc_tick(runways.EDDS['07'], 0, -0.01) }}
-{{ loc_tick(runways.EDDS['07'], 0, 0.01) }}
+COLOR:LVP_MARKING
+{{ loc_tick(runways.EDDS[runway], 0, -0.01) }}
+{{ loc_tick(runways.EDDS[runway], 0, 0.01) }}
+{% endfor %}

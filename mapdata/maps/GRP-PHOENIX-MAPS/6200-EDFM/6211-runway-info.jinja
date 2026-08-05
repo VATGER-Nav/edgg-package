@@ -4,32 +4,37 @@ MAP:TORA 27
 AIRPORT:EDFM
 FOLDER:Runway Info
 LAYER:6
-COLOR:tora-label
+COLOR:TORA_LABEL
 ZOOM:600
 TEXTALIGN:RC
 {{ data.edfm_kml['layout']['tora']['27'] | to_text('1060') }}
+
 
 MAP:TORA 09
 AIRPORT:EDFM
 FOLDER:Runway Info
 LAYER:6
-COLOR:tora-label
+COLOR:TORA_LABEL
 ZOOM:600
 TEXTALIGN:LC
 {{ data.edfm_kml['layout']['tora']['09'] | to_text('1013') }}
+
 
 MAP:Runway Designators
 AIRPORT:EDFM
 FOLDER:Runway Info
 LAYER:6
 ACTIVE:1
-{% for uuid, geom in data.edfm_kml['layout']['markings']['runways'].items() %}
-{{- geom | to_coordtype('', 'runway-label') }}
+COLOR:RUNWAY_LABEL
+{% for _, feat in data.edfm_kml['layout']['markings']['runways'].items() %}
+{{- feat | render_area('OTHER:REGION') }}
 {% endfor %}
+
 
 MAP:Runway Markings
 AIRPORT:EDFM
 FOLDER:Runway Info
-{% for uuid, geom in data.edfm_kml['layout']['markings']['poly'].items() %}
-{{- geom | to_coordtype('', 'layout-runway-marking') }}
+COLOR:LAYOUT_RUNWAY_MARKING
+{% for _, feat in data.edfm_kml['layout']['markings']['poly'].items() %}
+{{- feat | render_area('OTHER:REGION') }}
 {% endfor %}

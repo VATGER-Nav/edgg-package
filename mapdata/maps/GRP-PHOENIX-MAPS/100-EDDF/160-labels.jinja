@@ -9,16 +9,17 @@ OTHER_MAP_ACT:=:Labels\Stopbars
 OTHER_MAP_ACT:=:Labels\Links
 ZOOM:300
 FONTSIZE:=:10
-COLOR:layout-label-taxiway
-{% for desig, geom in data.eddf_kml['layout']['labels']['taxiways'].items() if desig not in
+COLOR:LAYOUT_LABEL_TAXIWAY
+{% for desig, feat in data.eddf_kml['layout']['labels']['taxiways'].items() if desig not in
 [
     'Link 3',
     'Link 4',
     'Link 5',
     'S23',
 ] %}
-{{- geom | to_text(desig) }}
+{{- feat | to_text(desig) }}
 {% endfor %}
+
 
 MAP:Stands
 AIRPORT:EDDF
@@ -27,8 +28,8 @@ LAYER:6
 ACTIVE:1
 ZOOM:400
 FONTSIZE:=:9
-COLOR:layout-label-stand
-{% for desig, geom in data.eddf_kml['layout']['labels']['stands'].items() if not desig in
+COLOR:LAYOUT_LABEL_STAND
+{% for desig, feat in data.eddf_kml['layout']['labels']['stands'].items() if not desig in
 [
     'A54A',
     'A54B',
@@ -106,7 +107,7 @@ COLOR:layout-label-stand
     'V267',
     'V269',
 ] %}
-{{- geom | to_text(desig) }}
+{{- feat | to_text(desig) }}
 {% endfor %}
 
 {{ data.eddf_kml['layout']['labels']['GAT'] | to_text('GAT - V7xx') }}
@@ -210,6 +211,7 @@ FILTER_ASR:EDDF_S_GND
 {{- data.eddf_kml['layout']['labels']['stands'][desig] | to_text(' ' + desig + 'S:0:-12') }}
 {% endfor %}
 
+
 MAP:Stopbars
 AIRPORT:EDDF
 FOLDER:Labels
@@ -217,7 +219,7 @@ LAYER:6
 ACTIVE:1
 ZOOM:400
 FONTSIZE:=:9
-COLOR:layout-label-stand
+COLOR:LAYOUT_LABEL_STAND
 TEXTALIGN:CC
 {% for desig in ['T8', 'Y12'] %}
 {{- data.eddf_kml['layout']['labels']['stopbars'][desig] | to_text(desig) }}
@@ -243,6 +245,7 @@ TEXTALIGN:LC
 {{- data.eddf_kml['layout']['labels']['stopbars'][desig] | to_text(desig) }}
 {% endfor %}
 
+
 MAP:Links
 AIRPORT:EDDF
 FOLDER:Labels
@@ -250,7 +253,7 @@ LAYER:6
 ACTIVE:1
 ZOOM:800
 FONTSIZE:=:9
-COLOR:layout-label-stand
+COLOR:LAYOUT_LABEL_STAND
 TEXTALIGN:CC
 {{ data.eddf_kml['layout']['labels']['taxiways']['Link 3'] | to_text('Link 3') }}
 {#- South Up #}
@@ -266,20 +269,21 @@ TEXTALIGN:RC
 TEXTALIGN:LC
 {{ data.eddf_kml['layout']['labels']['taxiways']['Link 5'] | to_text('Link 5') }}
 
+
 MAP:Buildings
 AIRPORT:EDDF
 FOLDER:Labels
 ZOOM:400
 FONTSIZE:=:9
-COLOR:layout-label-stand
-{% for desig, geom in data.eddf_kml['layout']['labels']['buildings'].items() if not desig in
+COLOR:LAYOUT_LABEL_STAND
+{% for desig, feat in data.eddf_kml['layout']['labels']['buildings'].items() if not desig in
 [
     'Run-up position',
     'Condor Technik',
     'Lufthansa Technik#2',
     'Lufthansa Technik#3',
 ] %}
-{{- geom | to_text(desig) }}
+{{- feat | to_text(desig) }}
 {% endfor %}
 {{ data.eddf_kml['layout']['labels']['buildings']['Run-up position'] | to_text('Run-up:0:-6') }}
 {{ data.eddf_kml['layout']['labels']['buildings']['Run-up position'] | to_text('position:0:6') }}

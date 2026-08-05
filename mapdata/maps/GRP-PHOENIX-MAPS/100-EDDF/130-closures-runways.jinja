@@ -6,8 +6,10 @@ FOLDER:Closures
 LAYER:4
 RWYCLOSEDDEP:EDDF:07R,25L
 RWYCLOSEDARR:EDDF:07R,25L
-STYLE:Solid:2
-{{ data.eddf_kml['layout']['runways']['07R-25L'] | to_coordtype('', 'closure') }}
+STYLE:SOLID:2
+COLOR:CLOSURE
+{{ data.eddf_kml['layout']['runways']['07R-25L'] | render_area('OTHER:REGION') }}
+
 
 MAP:25C/07C
 AIRPORT:EDDF
@@ -15,8 +17,10 @@ FOLDER:Closures
 LAYER:4
 RWYCLOSEDDEP:EDDF:07C,25C
 RWYCLOSEDARR:EDDF:07C,25C
-STYLE:Solid:2
-{{ data.eddf_kml['layout']['runways']['07C-25C'] | to_coordtype('', 'closure') }}
+STYLE:SOLID:2
+COLOR:CLOSURE
+{{ data.eddf_kml['layout']['runways']['07C-25C'] | render_area('OTHER:REGION') }}
+
 
 MAP:25R/07L
 AIRPORT:EDDF
@@ -24,8 +28,10 @@ FOLDER:Closures
 LAYER:4
 RWYCLOSEDDEP:EDDF:07L,25R
 RWYCLOSEDARR:EDDF:07L,25R
-STYLE:Solid:2
-{{ data.eddf_kml['layout']['runways']['07L-25R'] | to_coordtype('', 'closure') }}
+STYLE:SOLID:2
+COLOR:CLOSURE
+{{ data.eddf_kml['layout']['runways']['07L-25R'] | render_area('OTHER:REGION') }}
+
 
 MAP:18
 AIRPORT:EDDF
@@ -33,5 +39,6 @@ FOLDER:Closures
 LAYER:4
 RWYCLOSEDDEP:EDDF:18,36
 RWYCLOSEDARR:EDDF:18,36
-STYLE:Solid:2
-{{ data.eddf_kml['layout']['runways']['18'] | to_coordtype('', 'closure') }}
+STYLE:SOLID:2
+COLOR:CLOSURE
+{{ data.eddf_kml['layout']['runways']['18'] | render_area('OTHER:REGION') }}

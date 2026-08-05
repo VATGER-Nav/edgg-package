@@ -5,5 +5,6 @@ AIRPORT:EDLV
 FOLDER:Closures
 LAYER:4
 ACTIVE:1
-{{ data.edlv_kml['layout']['closures']['symb']['helipad'] | to_coordtype('', 'closure-symbol') }}
-{{ data.edlv_kml['layout']['closures']['poly']['helipad'] | to_coordtype('', '', 'TWYCLOSED', 'NONE') }}
+COLOR:CLOSURE_SYMBOL
+{{ data.edlv_kml['layout']['closures']['symb']['helipad'] | render_area('OTHER:REGION') }}
+{{ data.edlv_kml['layout']['closures']['poly']['helipad'] | render_area('TWYCLOSED:NONE') }}

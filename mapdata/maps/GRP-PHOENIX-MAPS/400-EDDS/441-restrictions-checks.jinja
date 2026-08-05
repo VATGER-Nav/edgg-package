@@ -1,5 +1,6 @@
 // ----------------------- Restriction Checks -----------------------
 
+
 MAP:Checks
 AIRPORT:EDDS
 FOLDER:Restrictions
@@ -7,58 +8,58 @@ ACTIVE:1
 
 // GAT 29m
 RESTRICTION:MAXWINGSPAN:29
-{{ data.edds_kml['layout']['restrictions']['poly']['GAT1'] | to_coordtype('', '', 'TWYTYPE', 'NONE') }}
+{{ data.edds_kml['layout']['restrictions']['poly']['GAT1'] | render_area('TWYTYPE:NONE') }}
 
 // GAT 20m
 RESTRICTION:MAXWINGSPAN:20
-{{ data.edds_kml['layout']['restrictions']['poly']['GAT2'] | to_coordtype('', '', 'TWYTYPE', 'NONE') }}
+{{ data.edds_kml['layout']['restrictions']['poly']['GAT2'] | render_area('TWYTYPE:NONE') }}
 
 // Turn S - I
 RESTRICTION:MAXCODE:C
-{{ data.edds_kml['layout']['restrictions']['poly']['S_I'] | to_coordtype('', '', 'TWYTYPE', 'NONE') }}
+{{ data.edds_kml['layout']['restrictions']['poly']['S_I'] | render_area('TWYTYPE:NONE') }}
 
 // M (Between H and Exit 3)
 RESTRICTION:MAXCODE:C
-{{ data.edds_kml['layout']['restrictions']['poly']['M'] | to_coordtype('', '', 'TWYTYPE', 'NONE') }}
+{{ data.edds_kml['layout']['restrictions']['poly']['M'] | render_area('TWYTYPE:NONE') }}
 
 // W/Z
 RESTRICTION:MAXWINGSPAN:43
-{{ data.edds_kml['layout']['restrictions']['poly']['W_Z'] | to_coordtype('', '', 'TWYTYPE', 'NONE') }}
+{{ data.edds_kml['layout']['restrictions']['poly']['W_Z'] | render_area('TWYTYPE:NONE') }}
 
 // C
 RESTRICTION:MAXCODE:D
-{{ data.edds_kml['layout']['restrictions']['poly']['C'] | to_coordtype('', '', 'TWYTYPE', 'NONE') }}
+{{ data.edds_kml['layout']['restrictions']['poly']['C'] | render_area('TWYTYPE:NONE') }}
 
 // E
 RESTRICTION:MAXCODE:D
-{{ data.edds_kml['layout']['restrictions']['poly']['E_a'] | to_coordtype('', '', 'TWYTYPE', 'NONE') }}
-{{ data.edds_kml['layout']['restrictions']['poly']['E_b'] | to_coordtype('', '', 'TWYTYPE', 'NONE') }}
+{{ data.edds_kml['layout']['restrictions']['poly']['E_a'] | render_area('TWYTYPE:NONE') }}
+{{ data.edds_kml['layout']['restrictions']['poly']['E_b'] | render_area('TWYTYPE:NONE') }}
 
 // G
 RESTRICTION:MAXCODE:D
-{{ data.edds_kml['layout']['restrictions']['poly']['G_a'] | to_coordtype('', '', 'TWYTYPE', 'NONE') }}
-{{ data.edds_kml['layout']['restrictions']['poly']['G_b'] | to_coordtype('', '', 'TWYTYPE', 'NONE') }}
-{{ data.edds_kml['layout']['restrictions']['poly']['G_c'] | to_coordtype('', '', 'TWYTYPE', 'NONE') }}
+{{ data.edds_kml['layout']['restrictions']['poly']['G_a'] | render_area('TWYTYPE:NONE') }}
+{{ data.edds_kml['layout']['restrictions']['poly']['G_b'] | render_area('TWYTYPE:NONE') }}
+{{ data.edds_kml['layout']['restrictions']['poly']['G_c'] | render_area('TWYTYPE:NONE') }}
 
 // Turn L2 - O
 RESTRICTION:MAXCODE:D
-{{ data.edds_kml['layout']['restrictions']['poly']['L2_O'] | to_coordtype('', '', 'TWYTYPE', 'NONE') }}
+{{ data.edds_kml['layout']['restrictions']['poly']['L2_O'] | render_area('TWYTYPE:NONE') }}
 
 // Z
 RESTRICTION:MAXCODE:D
-{{ data.edds_kml['layout']['restrictions']['poly']['Z'] | to_coordtype('', '', 'TWYTYPE', 'NONE') }}
+{{ data.edds_kml['layout']['restrictions']['poly']['Z'] | render_area('TWYTYPE:NONE') }}
 
 // D
 RESTRICTION:MAXCODE:E
-{{ data.edds_kml['layout']['restrictions']['poly']['D_a'] | to_coordtype('', '', 'TWYTYPE', 'NONE') }}
-{{ data.edds_kml['layout']['restrictions']['poly']['D_b'] | to_coordtype('', '', 'TWYTYPE', 'NONE') }}
-{{ data.edds_kml['layout']['restrictions']['poly']['D_c'] | to_coordtype('', '', 'TWYTYPE', 'NONE') }}
+{{ data.edds_kml['layout']['restrictions']['poly']['D_a'] | render_area('TWYTYPE:NONE') }}
+{{ data.edds_kml['layout']['restrictions']['poly']['D_b'] | render_area('TWYTYPE:NONE') }}
+{{ data.edds_kml['layout']['restrictions']['poly']['D_c'] | render_area('TWYTYPE:NONE') }}
 
 // M/H/L2/L3/O
 RESTRICTION:MAXCODE:E
-{{ data.edds_kml['layout']['restrictions']['poly']['M_H_L2_L3_O'] | to_coordtype('', '', 'TWYTYPE', 'NONE') }}
+{{ data.edds_kml['layout']['restrictions']['poly']['M_H_L2_L3_O'] | render_area('TWYTYPE:NONE') }}
 
 // N
 RESTRICTION:MAXWINGSPAN:69
-{{ data.edds_kml['layout']['restrictions']['poly']['N_a'] | to_coordtype('', '', 'TWYTYPE', 'NONE') }}
-{{ data.edds_kml['layout']['restrictions']['poly']['N_b'] | to_coordtype('', '', 'TWYTYPE', 'NONE') }}
+{{ data.edds_kml['layout']['restrictions']['poly']['N_a'] | render_area('TWYTYPE:NONE') }}
+{{ data.edds_kml['layout']['restrictions']['poly']['N_b'] | render_area('TWYTYPE:NONE') }}

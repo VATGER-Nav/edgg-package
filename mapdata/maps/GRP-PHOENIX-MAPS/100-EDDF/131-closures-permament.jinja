@@ -1,95 +1,118 @@
 // ----------------------- Permament Closures -----------------------
-{%- set default = 0.000005 %}
+{%- set tolerance = 0.000005 %}
 
 MAP:M3
 AIRPORT:EDDF
 FOLDER:Closures
 ACTIVE:1
 LAYER:4
-STYLE:Solid:2
-{{ data.eddf_kml['layout']['closures']['poly']['M3'] | to_coordtype('','closure', 'TWYCLOSED') }}
-STYLE:Solid:1 
-{{ data.eddf_kml['layout']['closures']['symb']['M3_a'] | to_coordtype('','closure-symbol') }}
-{{ data.eddf_kml['layout']['closures']['symb']['M3_b'] | to_coordtype('','closure-symbol') }}
+COLOR:CLOSURE
+STYLE:SOLID:2
+{{ data.eddf_kml['layout']['closures']['poly']['M3'] | render_area('TWYCLOSED:REGION') }}
+COLOR:CLOSURE_SYMBOL
+STYLE:SOLID:1 
+{{ data.eddf_kml['layout']['closures']['symb']['M3_a'] | render_area('OTHER:REGION') }}
+{{ data.eddf_kml['layout']['closures']['symb']['M3_b'] | render_area('OTHER:REGION') }}
+
 
 MAP:M16
 AIRPORT:EDDF
 FOLDER:Closures
 ACTIVE:1
 LAYER:4
-STYLE:Solid:2
-{{ data.eddf_kml['layout']['closures']['poly']['M16'] | to_coordtype('','closure', 'TWYCLOSED') }}
-STYLE:Solid:1
-{{ data.eddf_kml['layout']['closures']['symb']['M16'] | to_coordtype('','closure-symbol') }}
+COLOR:CLOSURE
+STYLE:SOLID:2
+{{ data.eddf_kml['layout']['closures']['poly']['M16'] | render_area('TWYCLOSED:REGION') }}
+COLOR:CLOSURE_SYMBOL
+STYLE:SOLID:1
+{{ data.eddf_kml['layout']['closures']['symb']['M16'] | render_area('OTHER:REGION') }}
+
 
 MAP:R
 AIRPORT:EDDF
 FOLDER:Closures
 ACTIVE:1
 LAYER:4
-STYLE:Solid:2
-{{ data.eddf_kml['layout']['closures']['poly']['R_1'] | to_coordtype('','closure', 'TWYCLOSED') }}
-STYLE:Solid:1
-{{ data.eddf_kml['layout']['closures']['symb']['R_1a'] | to_coordtype('','closure-symbol') }}
-{{ data.eddf_kml['layout']['closures']['symb']['R_1b'] | to_coordtype('','closure-symbol') }}
-{{ data.eddf_kml['layout']['closures']['symb']['R_1c'] | to_coordtype('','closure-symbol') }}
+COLOR:CLOSURE
+STYLE:SOLID:2
+{{ data.eddf_kml['layout']['closures']['poly']['R_1'] | render_area('TWYCLOSED:REGION') }}
+COLOR:CLOSURE_SYMBOL
+STYLE:SOLID:1
+{{ data.eddf_kml['layout']['closures']['symb']['R_1a'] | render_area('OTHER:REGION') }}
+{{ data.eddf_kml['layout']['closures']['symb']['R_1b'] | render_area('OTHER:REGION') }}
+{{ data.eddf_kml['layout']['closures']['symb']['R_1c'] | render_area('OTHER:REGION') }}
+
 
 MAP:R
 AIRPORT:EDDF
 FOLDER:Closures
 ACTIVE:1
 LAYER:4
-STYLE:Solid:2
-{{ data.eddf_kml['layout']['closures']['poly']['R_2'] | to_coordtype('','closure', 'TWYCLOSED') }}
-STYLE:Solid:1
-{{ data.eddf_kml['layout']['closures']['symb']['R_2'] | to_coordtype('','closure-symbol') }}
+COLOR:CLOSURE
+STYLE:SOLID:2
+{{ data.eddf_kml['layout']['closures']['poly']['R_2'] | render_area('TWYCLOSED:REGION') }}
+COLOR:CLOSURE_SYMBOL
+STYLE:SOLID:1
+{{ data.eddf_kml['layout']['closures']['symb']['R_2'] | render_area('OTHER:REGION') }}
 
-MAP:S17, S19, S20, S21, S23
+
+MAP:S17, S19, S20, S21, S23 (N/A in Flight Sims)
 AIRPORT:EDDF
 FOLDER:Closures
 ACTIVE:1
 LAYER:5
-STYLE:Solid:1
-{{ data.eddf_kml['layout']['closures']['symb']['S17'] | to_coordtype('','closure-symbol') }}
-{{ data.eddf_kml['layout']['closures']['symb']['S19'] | to_coordtype('','closure-symbol') }}
-{{ data.eddf_kml['layout']['closures']['symb']['S20'] | to_coordtype('','closure-symbol') }}
-{{ data.eddf_kml['layout']['closures']['symb']['S21'] | to_coordtype('','closure-symbol') }}
-{{ data.eddf_kml['layout']['closures']['symb']['S23'] | to_coordtype('','closure-symbol') }}
+COLOR:CLOSURE_SYMBOL
+STYLE:SOLID:1
+{{ data.eddf_kml['layout']['closures']['symb']['S17'] | render_area('OTHER:REGION') }}
+{{ data.eddf_kml['layout']['closures']['symb']['S19'] | render_area('OTHER:REGION') }}
+{{ data.eddf_kml['layout']['closures']['symb']['S20'] | render_area('OTHER:REGION') }}
+{{ data.eddf_kml['layout']['closures']['symb']['S21'] | render_area('OTHER:REGION') }}
+{{ data.eddf_kml['layout']['closures']['symb']['S23'] | render_area('OTHER:REGION') }}
+
+
+MAP:Stands V333-V340 (N/A in Flight Sims)
+AIRPORT:EDDF
+FOLDER:Closures
+ACTIVE:1
+LAYER:4
+COLOR:CLOSURE
+STYLE:SOLID:2
+{{ data.eddf_kml['layout']['closures']['poly']['S16_S21'] | render_area('TWYCLOSED:POLYGON') }}
+
 
 MAP:W, W9
 AIRPORT:EDDF
 FOLDER:Closures
 ACTIVE:1
 LAYER:4
-STYLE:Solid:2
-{{ data.eddf_kml['layout']['closures']['poly']['W'] | to_coordtype('','closure', 'TWYCLOSED') }}
+COLOR:CLOSURE
+STYLE:SOLID:2
+{{ data.eddf_kml['layout']['closures']['poly']['W'] | render_area('TWYCLOSED:REGION') }}
+
 
 MAP:W7
 AIRPORT:EDDF
 FOLDER:Closures
 ACTIVE:1
 LAYER:4
-STYLE:Solid:2
-{{ data.eddf_kml['layout']['closures']['poly']['W7'] | to_coordtype('','closure', 'TWYCLOSED') }}
-STYLE:Solid:1
-{{ data.eddf_kml['layout']['closures']['symb']['W7_a'] | to_coordtype('','closure-symbol') }}
-{{ data.eddf_kml['layout']['closures']['symb']['W7_b'] | to_coordtype('','closure-symbol') }}
+COLOR:CLOSURE
+STYLE:SOLID:2
+{{ data.eddf_kml['layout']['closures']['poly']['W7'] | render_area('TWYCLOSED:REGION') }}
+COLOR:CLOSURE_SYMBOL
+STYLE:SOLID:1
+{{ data.eddf_kml['layout']['closures']['symb']['W7_a'] | render_area('OTHER:REGION') }}
+{{ data.eddf_kml['layout']['closures']['symb']['W7_b'] | render_area('OTHER:REGION') }}
+
 
 MAP:Y
 AIRPORT:EDDF
 FOLDER:Closures
 ACTIVE:1
 LAYER:4
-STYLE:Solid:2
-{{ data.eddf_kml['layout']['closures']['poly']['Y'] | to_coordtype('','closure', 'TWYCLOSED') }}
-STYLE:Solid:1
-{{ data.eddf_kml['layout']['closures']['symb']['Y_a'] | to_coordtype('','closure-symbol') }}
-{{ data.eddf_kml['layout']['closures']['symb']['Y_b'] | to_coordtype('','closure-symbol') }}
-
-MAP:Stands V333-V340 (N/A in Flight Sims)
-AIRPORT:EDDF
-FOLDER:Constructions
-ACTIVE:1
-LAYER:4
-STYLE:Solid:2
-{{ data.eddf_kml['layout']['closures']['poly']['S16_S21'] | to_coordtype('','closure', 'TWYCLOSED', 'POLYGON') }}
+COLOR:CLOSURE
+STYLE:SOLID:2
+{{ data.eddf_kml['layout']['closures']['poly']['Y'] | render_area('TWYCLOSED:REGION') }}
+COLOR:CLOSURE_SYMBOL
+STYLE:SOLID:1
+{{ data.eddf_kml['layout']['closures']['symb']['Y_a'] | render_area('OTHER:REGION') }}
+{{ data.eddf_kml['layout']['closures']['symb']['Y_b'] | render_area('OTHER:REGION') }}

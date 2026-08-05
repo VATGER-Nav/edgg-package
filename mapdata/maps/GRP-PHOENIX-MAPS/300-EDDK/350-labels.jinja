@@ -1,17 +1,21 @@
 // ----------------------------- Labels -----------------------------
 
+
 MAP:Buffer EDDK
 AIRPORT:EDDK
 FOLDER:Labels
 HIDDEN
 LAYER:3
 ZOOM:400
-{% for uuid, geom in data.eddk_kml['layout']['labels']['buffer_a'].items() %}
-{{- geom | to_coordtype('', 'layout-taxiway') }}
+COLOR:LAYOUT_TAXIWAY
+{% for _, feat in data.eddk_kml['layout']['labels']['buffer_a'].items() %}
+{{- feat | render_area('OTHER:REGION') }}
 {% endfor %}
-{% for uuid, geom in data.eddk_kml['layout']['labels']['buffer_b'].items() %}
-{{- geom | to_coordtype('', 'layout-apron') }}
+COLOR:LAYOUT_APRON
+{% for _, feat in data.eddk_kml['layout']['labels']['buffer_b'].items() %}
+{{- feat | render_area('OTHER:REGION') }}
 {% endfor %}
+
 
 MAP:Taxiways
 AIRPORT:EDDK
@@ -20,12 +24,13 @@ OTHER_MAP_ACT:=:Labels\Buffer EDDK
 LAYER:6
 ZOOM:400
 FONTSIZE:=:10
-COLOR:layout-label-yellow
-{% for desig, geom in data.eddk_kml['layout']['labels']['taxiways'].items() if desig != 'K1' %}
-{{- geom | to_text(desig) }}
+COLOR:LAYOUT_LABEL_YELLOW
+{% for desig, feat in data.eddk_kml['layout']['labels']['taxiways'].items() if desig != 'K1' %}
+{{- feat | to_text(desig) }}
 {% endfor %}
 TEXTALIGN:RC
 {{ data.eddk_kml['layout']['labels']['taxiways']['K1'] | to_text('K1') }}
+
 
 MAP:Stands
 AIRPORT:EDDK
@@ -35,8 +40,8 @@ OTHER_MAP_ACT:=:Labels\Areas
 LAYER:6
 ZOOM:500
 FONTSIZE:=:9
-COLOR:layout-label-yellow
-{% for desig, geom in data.eddk_kml['layout']['labels']['stands'].items() if not desig in
+COLOR:LAYOUT_LABEL_YELLOW
+{% for desig, feat in data.eddk_kml['layout']['labels']['stands'].items() if not desig in
 [
     'A01',
     'A03',
@@ -114,11 +119,11 @@ COLOR:layout-label-yellow
     'V530',
     'V550',
 ] %}
-{{- geom | to_text(desig) }}
+{{- feat | to_text(desig) }}
 {% endfor %}
 {{ data.eddk_kml['layout']['labels']['V1x1|'] | to_text('V1x1|') }}
 {{ data.eddk_kml['layout']['labels']['V2x1|'] | to_text('V2x1|') }}
-COLOR:layout-holdingpoint
+COLOR:LAYOUT_HOLDINGPOINT
 {% for desig in
 [
     'V3x0|',
@@ -129,7 +134,7 @@ COLOR:layout-holdingpoint
 {% endfor %}
 
 ZOOM:1500
-COLOR:layout-label-yellow
+COLOR:LAYOUT_LABEL_YELLOW
 {% for desig in
 [
     'A01',
@@ -197,7 +202,7 @@ COLOR:layout-label-yellow
 
 // GAT Additional Stans
 ZOOM:2500
-COLOR:layout-label-yellow
+COLOR:LAYOUT_LABEL_YELLOW
 {% for desig in
 [
     'V101',
@@ -210,7 +215,7 @@ COLOR:layout-label-yellow
 ] %}
 {{- data.eddk_kml['layout']['labels']['stands'][desig] | to_text(desig) }}
 {% endfor %}
-COLOR:layout-holdingpoint
+COLOR:LAYOUT_HOLDINGPOINT
 {% for desig in
 [
     'V310',
@@ -234,12 +239,13 @@ LAYER:6
 ACTIVE:1
 ZOOM:400
 FONTSIZE:=:10
-COLOR:layout-label-stand
+COLOR:LAYOUT_LABEL_STAND
 {{ data.eddk_kml['layout']['labels']['V3x0|'] | to_text('GAT:0:-15') }}
 {{ data.eddk_kml['layout']['labels']['BMI'] | to_text('BMI Heli') }}
 {{ data.eddk_kml['layout']['labels']['Bundeswehr#1'] | to_text('Bundeswehr') }}
 {{ data.eddk_kml['layout']['labels']['Bundeswehr#2'] | to_text('Bundeswehr') }}
 {{ data.eddk_kml['layout']['labels']['Maintenance'] | to_text('Maintenance') }}
+
 
 MAP:Aprons
 AIRPORT:EDDK
@@ -247,7 +253,7 @@ FOLDER:Labels
 LAYER:6
 ZOOM:400
 FONTSIZE:=:10
-COLOR:layout-label-stand
+COLOR:LAYOUT_LABEL_STAND
 {{ data.eddk_kml['layout']['labels']['V3x0|'] | to_text('           /Apron V:0:-15') }}
 {{ data.eddk_kml['layout']['labels']['Bundeswehr#1'] | to_text('Apron 2:0:10') }}
 {{ data.eddk_kml['layout']['labels']['Bundeswehr#2'] | to_text('Apron Z:0:10') }}
@@ -260,14 +266,15 @@ COLOR:layout-label-stand
 {{ data.eddk_kml['layout']['labels']['aprons']['Apron F'] | to_text('Apron F') }}
 {{ data.eddk_kml['layout']['labels']['aprons']['Apron W'] | to_text('Apron W') }}
 
+
 MAP:Buildings
 AIRPORT:EDDK
 FOLDER:Labels
 ZOOM:400
 FONTSIZE:=:9
-COLOR:layout-label-stand
-{% for desig, geom in data.eddk_kml['layout']['labels']['buildings'].items() if desig != 'Noise facility' %}
-{{- geom | to_text(desig) }}
+COLOR:LAYOUT_LABEL_STAND
+{% for desig, feat in data.eddk_kml['layout']['labels']['buildings'].items() if desig != 'Noise facility' %}
+{{- feat | to_text(desig) }}
 {% endfor %}
 {{ data.eddk_kml['layout']['labels']['buildings']['Terminal 2'] | to_text('D:0:-12') }}
 {{ data.eddk_kml['layout']['labels']['buildings']['Noise facility'] | to_text('Noise:0:-12') }}

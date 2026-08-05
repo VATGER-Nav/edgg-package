@@ -5,17 +5,20 @@ AIRPORT:EDDL
 FOLDER:Closures
 LAYER:4
 ACTIVE:1
-{{ data.eddl_kml['layout']['closures']['symb']['K4_a'] | to_coordtype('','closure-symbol') }}
-{{ data.eddl_kml['layout']['closures']['symb']['K4_b'] | to_coordtype('','closure-symbol') }}
-{{ data.eddl_kml['layout']['closures']['poly']['K4'] | to_coordtype('K4', '', 'TWYCLOSED', 'NONE') }}
+COLOR:CLOSURE_SYMBOL
+{{ data.eddl_kml['layout']['closures']['symb']['K4_a'] | render_area('OTHER:REGION') }}
+{{ data.eddl_kml['layout']['closures']['symb']['K4_b'] | render_area('OTHER:REGION') }}
+{{ data.eddl_kml['layout']['closures']['poly']['K4'] | render_area('TWYCLOSED:NONE', 'K4') }}
+
 
 MAP:J1/J2/J3
 AIRPORT:EDDL
 FOLDER:Closures
 LAYER:4
 ACTIVE:1
-{{ data.eddl_kml['layout']['closures']['symb']['J1'] | to_coordtype('','closure-symbol') }}
-{{ data.eddl_kml['layout']['closures']['symb']['J2'] | to_coordtype('','closure-symbol') }}
-{{ data.eddl_kml['layout']['closures']['symb']['J3_a'] | to_coordtype('','closure-symbol') }}
-{{ data.eddl_kml['layout']['closures']['symb']['J3_b'] | to_coordtype('','closure-symbol') }}
-{{ data.eddl_kml['layout']['closures']['poly']['J1_J2_J3'] | to_coordtype('J1/J2/J3', '', 'TWYCLOSED', 'NONE') }}
+COLOR:CLOSURE_SYMBOL
+{{ data.eddl_kml['layout']['closures']['symb']['J1'] | render_area('OTHER:REGION') }}
+{{ data.eddl_kml['layout']['closures']['symb']['J2'] | render_area('OTHER:REGION') }}
+{{ data.eddl_kml['layout']['closures']['symb']['J3_a'] | render_area('OTHER:REGION') }}
+{{ data.eddl_kml['layout']['closures']['symb']['J3_b'] | render_area('OTHER:REGION') }}
+{{ data.eddl_kml['layout']['closures']['poly']['J1_J2_J3'] | render_area('TWYCLOSED:NONE', 'J1/J2/J3') }}

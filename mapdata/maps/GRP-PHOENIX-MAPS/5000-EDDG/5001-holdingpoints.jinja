@@ -5,37 +5,34 @@ AIRPORT:EDDG
 FOLDER:Holding Points
 LAYER:5
 ACTIVE:LVP:EDDG:0
-{% for desig, geom in data.eddg_kml['layout']['holdingpoints']['cat1'].items() %}
-{{- geom | to_coordtype(desig, 'layout-holdingpoint') }}
+COLOR:LAYOUT_HOLDINGPOINT
+{% for desig, feat in data.eddg_kml['layout']['holdingpoints']['cat1'].items() %}
+{{- feat | render_area('OTHER:REGION', desig) }}
 {% endfor %}
-COLOR:layout-holdingpoint
-{% for desig, geom in data.eddg_kml['layout']['holdingpoints']['line'].items() %}
-{{- geom | to_line(desig) -}}
+{% for desig, feat in data.eddg_kml['layout']['holdingpoints']['line'].items() %}
+{{- feat | render_line(desig) }}
 {% endfor %}
+
 
 MAP:Holding Points CAT II/III
 AIRPORT:EDDG
 FOLDER:Holding Points
 LAYER:5
 ACTIVE:LVP:EDDG:1
-COLOR:layout-holdingpoint
-{% for desig in ['C'] %}
-{{- data.eddg_kml['layout']['holdingpoints']['cat1'][desig] | to_coordtype(desig, 'layout-holdingpoint') }}
+COLOR:LAYOUT_HOLDINGPOINT
+{% for desig, feat in data.eddg_kml['layout']['holdingpoints']['cat3'].items() %}
+{{- feat | render_area('OTHER:REGION', desig + ' CAT III') }}
 {% endfor %}
-{% for desig, geom in data.eddg_kml['layout']['holdingpoints']['cat3'].items() %}
-{{- geom | to_coordtype(desig + ' CATIII', 'layout-holdingpoint') }}
-{% endfor %}
-COLOR:layout-holdingpoint
-{% for desig in ['C'] %}
-{{- data.eddg_kml['layout']['holdingpoints']['line'][desig] | to_line(desig) }}
-{% endfor %}
+{{ data.eddg_kml['layout']['holdingpoints']['cat1']['C'] | render_area('OTHER:REGION', 'C') }}
+{{ data.eddg_kml['layout']['holdingpoints']['line']['C'] | render_line('C') }}
+
 
 MAP:Stopbars
 AIRPORT:EDDG
 FOLDER:Holding Points
 LAYER:5
 ACTIVE:1
-COLOR:layout-holdingpoint
-{% for uuid, geom in data.eddg_kml['layout']['stopbars'].items() %}
-{{- geom | to_line('') -}}
+COLOR:LAYOUT_HOLDINGPOINT
+{% for _, feat in data.eddg_kml['layout']['stopbars'].items() %}
+{{- feat | render_line }}
 {% endfor %}

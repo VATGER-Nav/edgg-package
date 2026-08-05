@@ -5,4 +5,5 @@ AIRPORT:EDDG
 FOLDER:Closures
 LAYER:4
 ACTIVE:1
-{{ data.eddg_kml['layout']['closures']['symb']['apron'] | to_coordtype('','closure-symbol') }}
+COLOR:CLOSURE_SYMBOL
+{{ data.eddg_kml['layout']['closures']['symb']['apron'] | render_area('OTHER:REGION') }}

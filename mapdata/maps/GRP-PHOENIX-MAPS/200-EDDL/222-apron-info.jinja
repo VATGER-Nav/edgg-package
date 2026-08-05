@@ -3,11 +3,12 @@
 MAP:Aircraft Outlines
 AIRPORT:EDDL
 FOLDER:Apron Info
-{% for uuid, geom in data.eddl_kml['layout']['aproninfo']['aircraft_a'].items() %}
-{{- geom | to_coordtype('', 'layout-runway') }}
+COLOR:LAYOUT_RUNWAY
+{% for _, feat in data.eddl_kml['layout']['aproninfo']['aircraft_a'].items() %}
+{{- feat | render_area('OTHER:REGION') }}
 {% endfor %}
-{% for uuid, geom in data.eddl_kml['layout']['aproninfo']['aircraft_b'].items() %}
-{{- geom | to_coordtype('', 'layout-runway', 'OTHER', 'POLYGON') }}
+{% for _, feat in data.eddl_kml['layout']['aproninfo']['aircraft_b'].items() %}
+{{- feat | render_area('OTHER:POLYGON') }}
 {% endfor %}
 
 // ------------------------- Heli Positions -------------------------
@@ -18,10 +19,10 @@ FOLDER:Apron Info
 LAYER:6
 ZOOM:600
 FONTSIZE:=:10
-COLOR:layout-label-stand
-{% for desig, geom in data.eddl_kml['layout']['labels']['heli'].items() %}
-{{- geom | to_text('H:-1:0') }}
+COLOR:LAYOUT_LABEL_STAND
+{% for desig, feat in data.eddl_kml['layout']['labels']['heli'].items() %}
+{{- feat | to_text('H:-1:0') }}
 {% endfor %}
-{% for desig, geom in data.eddl_kml['layout']['labels']['heli'].items() %}
-{{- geom | to_symbol('CIRCLE') }}
+{% for desig, feat in data.eddl_kml['layout']['labels']['heli'].items() %}
+{{- feat | to_symbol('CIRCLE') }}
 {% endfor %}

@@ -62,10 +62,8 @@ Dashed:
 12A
 13A
 14A
-14A
 1A
 1B
 7A
 7B
-7C
 7C

@@ -4,47 +4,51 @@ MAP:EDSB_GND
 AIRPORT:EDSB
 FOLDER:AoR
 LAYER:6
-COLOR:aor-gnd-a
-STYLE:Dot
-{{ data.edsb_kml['layout']['aor']['line']['SBG'] | to_line('SBG') }}
+COLOR:AOR_GND_A
+STYLE:DOT
+{{ data.edsb_kml['layout']['aor']['line']['SBG'] | render_line }}
 ZOOM:400
 FONTSIZE:=:13
 {{ data.edsb_kml['layout']['aor']['labels']['SBG'] | to_text('SBG  121.830') }}
+
 
 MAP:EDSB_TWR
 AIRPORT:EDSB
 FOLDER:AoR
 LAYER:6
-COLOR:aor-twr-a
-STYLE:Dot
-{{ data.edsb_kml['layout']['aor']['line']['SBT'] | to_line('SBT') }}
+COLOR:AOR_TWR_A
+STYLE:DOT
+{{ data.edsb_kml['layout']['aor']['line']['SBT'] | render_line }}
 ZOOM:400
 FONTSIZE:=:13
 {{ data.edsb_kml['layout']['aor']['labels']['SBT'] | to_text('SBT  134.105') }}
+
 
 MAP:LFST_APP
 AIRPORT:EDSB
 FOLDER:AoR
 LAYER:6
-COLOR:aor-app-a
+COLOR:AOR_APP_A
 ZOOM:400
 FONTSIZE:=:13
 {{ data.edsb_kml['layout']['aor']['labels']['SBT'] | to_text('FSTA 120.700:0:-20') }}
+
 
 MAP:EDDS_STG_APP
 AIRPORT:EDSB
 FOLDER:AoR
 LAYER:6
-COLOR:aor-app-a
+COLOR:AOR_APP_A
 ZOOM:400
 FONTSIZE:=:13
 {{ data.edsb_kml['layout']['aor']['labels']['SBT'] | to_text('STG  125.050:0:-20') }}
+
 
 MAP:EDDS_REU_APP
 AIRPORT:EDSB
 FOLDER:AoR
 LAYER:6
-COLOR:aor-app-a
+COLOR:AOR_APP_A
 ZOOM:400
 FONTSIZE:=:13
 {{ data.edsb_kml['layout']['aor']['labels']['SBT'] | to_text('REU  119.200:0:-20') }}

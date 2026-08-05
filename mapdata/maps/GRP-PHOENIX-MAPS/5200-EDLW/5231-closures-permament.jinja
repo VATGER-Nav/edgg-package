@@ -5,13 +5,16 @@ AIRPORT:EDLW
 FOLDER:Closures
 LAYER:4
 ACTIVE:1
-{{ data.edlw_kml['layout']['closures']['symb']['GAT'] | to_coordtype('', 'closure-symbol') }}
-{{ data.edlw_kml['layout']['closures']['poly']['GAT'] | to_coordtype('', '', 'TWYCLOSED', 'NONE') }}
+COLOR:CLOSURE_SYMBOL
+{{ data.edlw_kml['layout']['closures']['symb']['GAT'] | render_area('OTHER:REGION') }}
+{{ data.edlw_kml['layout']['closures']['poly']['GAT'] | render_area('TWYCLOSED:NONE') }}
+
 
 MAP:Apron
 AIRPORT:EDLW
 FOLDER:Closures
 LAYER:4
 ACTIVE:1
-{{ data.edlw_kml['layout']['closures']['symb']['apron'] | to_coordtype('', 'closure-symbol') }}
-{{ data.edlw_kml['layout']['closures']['poly']['apron'] | to_coordtype('', '', 'TWYCLOSED', 'NONE') }}
+COLOR:CLOSURE_SYMBOL
+{{ data.edlw_kml['layout']['closures']['symb']['apron'] | render_area('OTHER:REGION') }}
+{{ data.edlw_kml['layout']['closures']['poly']['apron'] | render_area('TWYCLOSED:NONE') }}

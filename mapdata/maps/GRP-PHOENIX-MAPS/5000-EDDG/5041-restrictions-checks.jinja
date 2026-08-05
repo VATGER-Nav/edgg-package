@@ -1,15 +1,16 @@
 // ----------------------- Restriction Checks -----------------------
 
+
 MAP:Checks
 AIRPORT:EDDG
 FOLDER:Restrictions
 ACTIVE:1
 // Glider
 RESTRICTION:MAXCODE:A
-{{ data.eddg_kml['layout']['restrictions']['poly']['glider'] | to_coordtype('', '', 'TWYTYPE', 'NONE') }}
+{{ data.eddg_kml['layout']['restrictions']['poly']['glider'] | render_area('TWYTYPE:NONE') }}
 // G
 RESTRICTION:MAXCODE:D
-{{ data.eddg_kml['layout']['restrictions']['poly']['G'] | to_coordtype('', '', 'TWYTYPE', 'NONE') }}
+{{ data.eddg_kml['layout']['restrictions']['poly']['G'] | render_area('TWYTYPE:NONE') }}
 // 30x
 RESTRICTION:MAXWINGSPAN:20
-{{ data.eddg_kml['layout']['restrictions']['poly']['30x'] | to_coordtype('', '', 'TWYTYPE', 'NONE') }}
+{{ data.eddg_kml['layout']['restrictions']['poly']['30x'] | render_area('TWYTYPE:NONE') }}

@@ -1,10 +1,11 @@
 // ---------------------------- Taxi Lanes --------------------------
-{% set default = 0.000005 %}
+{%- set tolerance = 0.000005 %}
+
 MAP:Taxi Lanes
 AIRPORT:EDDL
 FOLDER:Airport Layout
 ACTIVE:1
-COLOR:layout-taxiline-yellow
+COLOR:LAYOUT_TAXILINE_YELLOW
 {% for uuid in
 [
     '05b20e81-cd41-6683-e063-86c812acd49d',
@@ -381,7 +382,7 @@ COLOR:layout-taxiline-yellow
     'f20f0382-10cf-491f-e053-86c812ac3b17',
     'f20f0382-10d1-491f-e053-86c812ac3b17',
 ] %}
-{{- data.eddl_aixm['GuidanceLine'][uuid] | join_segments | simplify(default) | to_line(uuid) -}}
+{{- data.eddl_aixm['GuidanceLine'][uuid] | geom_simplify(tolerance) | render_line(uuid) }}
 {% endfor %}
 
 {% for desig in
@@ -393,9 +394,9 @@ COLOR:layout-taxiline-yellow
     'J2',
     'J3',
 ] %}
-{{- data.eddl_kml['layout']['markings']['taxilane_solid'][desig] | to_line(desig) -}}
+{{- data.eddl_kml['layout']['markings']['taxilane_solid'][desig] | render_line(desig) }}
 {% endfor %}
 
-{% for uuid, geom in data.eddl_kml['layout']['markings']['taxilane_dash'].items() %}
-{{- geom | to_line('') -}}
+{% for _, feat in data.eddl_kml['layout']['markings']['taxilane_dash'].items() %}
+{{- feat | render_line }}
 {% endfor %}

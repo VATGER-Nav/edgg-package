@@ -1,63 +1,71 @@
 // ------------------------------------------------------------------
 //                                 EDSB
 // ------------------------------------------------------------------
-{%- set default = 0.000005 %}
 
 // -------------------------- Ground Layout -------------------------
+{%- set tolerance = 0.000005 %}
 
 MAP:Apron Area
 AIRPORT:EDSB
 FOLDER:Airport Layout
 ACTIVE:1
-{% for uuid, geom in data.edsb_aixm['ApronElement'].items() %}
-{{- geom | simplify(default) | to_coordtype(uuid,'layout-apron') }}
+COLOR:LAYOUT_APRON
+{% for uuid, feat in data.edsb_aixm['ApronElement'].items() %}
+{{- feat | geom_simplify(tolerance) | render_area('OTHER:REGION', uuid) }}
 {% endfor %}
+
 
 MAP:Parking Area
 AIRPORT:EDSB
 FOLDER:Airport Layout
 ACTIVE:1
-COLOR:layout-taxiway
-{% for uuid, geom in data.edsb_kml['layout']['markings']['parking'].items() %}
-{{- geom | to_line('') -}}
+COLOR:LAYOUT_TAXIWAY
+{% for _, feat in data.edsb_kml['layout']['markings']['parking'].items() %}
+{{- feat | render_line }}
 {% endfor %}
+
 
 MAP:Roads
 AIRPORT:EDSB
 FOLDER:Airport Layout
-COLOR:layout-taxiway
-{% for uuid, geom in data.edsb_kml['layout']['roads'].items() %}
-{{- geom | simplify(default) | to_line('') -}}
+COLOR:LAYOUT_TAXIWAY
+{% for _, feat in data.edsb_kml['layout']['roads'].items() %}
+{{- feat | geom_simplify(tolerance) | render_line }}
 {% endfor %}
+
 
 MAP:Taxiway Movement Area
 AIRPORT:EDSB
 FOLDER:Airport Layout
 ACTIVE:1
-{% for uuid, geom in data.edsb_aixm['TaxiwayElement'].items() %}
-{{- geom | simplify(default) | to_coordtype(uuid, 'layout-taxiway') }}
+COLOR:LAYOUT_TAXIWAY
+{% for uuid, feat in data.edsb_aixm['TaxiwayElement'].items() %}
+{{- feat | geom_simplify(tolerance) | render_area('OTHER:REGION', uuid) }}
 {% endfor %}
-{% for uuid, geom in data.edsb_kml['layout']['taxiways'].items() %}
-{{- geom | to_coordtype('', 'layout-taxiway') }}
+{% for _, feat in data.edsb_kml['layout']['taxiways'].items() %}
+{{- feat | render_area('OTHER:REGION') }}
 {% endfor %}
+
 
 MAP:Runway
 AIRPORT:EDSB
 FOLDER:Airport Layout
 ACTIVE:1
-// Runway 03/21
-{% for uuid, geom in data.edsb_aixm['RunwayElement'].items() %}
-{{- geom | simplify(0.00001) | to_coordtype(uuid,'layout-runway') }}
+COLOR:LAYOUT_RUNWAY
+{% for uuid, feat in data.edsb_aixm['RunwayElement'].items() %}
+{{- feat | geom_simplify(0.00001) | render_area('OTHER:REGION', uuid) }}
 {% endfor %}
-{% for uuid, geom in data.edsb_aixm['RunwayBlastPad'].items() %}
-{{- geom | simplify(0.00001) | to_coordtype(uuid,'layout-apron') }}
+COLOR:LAYOUT_APRON
+{% for uuid, feat in data.edsb_aixm['RunwayBlastPad'].items() %}
+{{- feat | geom_simplify(0.00001) | render_area('OTHER:REGION', uuid) }}
 {% endfor %}
+
 
 MAP:Leadin Lines
 AIRPORT:EDSB
 FOLDER:Airport Layout
 ACTIVE:1
-COLOR:layout-taxiline-grey
+COLOR:LAYOUT_TAXILINE_GREY
 {% for uuid in
 [
     '2cb684ed-31bc-4c33-9936-3dcf88f68da6',
@@ -114,22 +122,23 @@ COLOR:layout-taxiline-grey
     'de2308ca-c903-4fe1-a96e-e0d04bd5b08f',
     'f60f916c-9aaa-46a6-b33c-a742d4d07496'
 ] %}
-{{- data.edsb_aixm['GuidanceLine'][uuid] | join_segments | simplify(default) | to_line(uuid) -}}
+{{- data.edsb_aixm['GuidanceLine'][uuid] | geom_simplify(tolerance) | render_line(uuid) }}
 {% endfor %}
-{% for uuid, geom in data.edsb_kml['layout']['markings']['leadin_solid'].items() %}
-{{- geom | to_line('') -}}
+{% for _, feat in data.edsb_kml['layout']['markings']['leadin_solid'].items() %}
+{{- feat | render_line }}
 {% endfor %}
 
 // Dash Leadin Lines
-{% for uuid, geom in data.edsb_kml['layout']['markings']['leadin_dash'].items() if uuid not in [] %}
-{{- geom | to_line('') -}}
+{% for _, feat in data.edsb_kml['layout']['markings']['leadin_dash'].items() %}
+{{- feat | render_line }}
 {% endfor %}
+
 
 MAP:Taxi Lanes
 AIRPORT:EDSB
 FOLDER:Airport Layout
 ACTIVE:1
-COLOR:layout-taxiline-yellow
+COLOR:LAYOUT_TAXILINE_YELLOW
 {% for uuid in
 [
     '05d5af00-6423-4224-a563-de49e70fd93e',
@@ -204,16 +213,18 @@ COLOR:layout-taxiline-yellow
     'fe413fd8-31bd-4beb-9680-59088fba60ba',
     'ffceab23-afc4-4122-8193-98bfcb42ba56'
 ] %}
-{{- data.edsb_aixm['GuidanceLine'][uuid] | join_segments | simplify(default) | to_line(uuid) -}}
+{{- data.edsb_aixm['GuidanceLine'][uuid] | geom_simplify(tolerance) | render_line(uuid) }}
 {% endfor %}
-{% for uuid, geom in data.edsb_kml['layout']['markings']['taxilanes'].items() %}
-{{- geom | to_line('') -}}
+{% for _, feat in data.edsb_kml['layout']['markings']['taxilanes'].items() %}
+{{- feat | render_line }}
 {% endfor %}
+
 
 MAP:Buildings
 AIRPORT:EDSB
 FOLDER:Airport Layout
 ACTIVE:1
+COLOR:LAYOUT_BUILDING
 {% for uuid in
 [
     '0118dc22-ad61-49f8-b98a-2350cdcbb797',
@@ -334,18 +345,18 @@ ACTIVE:1
     'fcb36190-570f-458f-b511-c940bbac1bd1',
     'fea145c2-2ea8-4bae-95df-d7405894f492'
 ] %}
-{{- data.edsb_aixm['VerticalStructure'][uuid] | join_segments | simplify(default) | to_coordtype(uuid, 'layout-building') }}
+{{- data.edsb_aixm['VerticalStructure'][uuid] | geom_simplify(tolerance) | render_area('OTHER:REGION', uuid) }}
+{% endfor %}
+{% for _, feat in data.edsb_kml['layout']['buildings'].items() %}
+{{- feat | render_area('OTHER:REGION') }}
 {% endfor %}
 
-{% for uuid, geom in data.edsb_kml['layout']['buildings'].items() %}
-{{- geom | to_coordtype('', 'layout-building') }}
-{% endfor %}
 
 MAP:Fence
 AIRPORT:EDSB
 FOLDER:Airport Layout
 ACTIVE:1
-COLOR:layout-building
-{% for uuid, geom in data.edsb_kml['layout']['fence'].items() %}
-{{- geom | to_line('') -}}
+COLOR:LAYOUT_BUILDING
+{% for _, feat in data.edsb_kml['layout']['fence'].items() %}
+{{- feat | render_line }}
 {% endfor %}

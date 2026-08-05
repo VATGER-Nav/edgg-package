@@ -1,10 +1,12 @@
 // ---------------------------- Taxi Lanes --------------------------
-{% set default = 0.000005 %}
+{#- TODO: Change simplify() to geom_simplify() when AIXM2 parser gets fixed #}
+{%- set tolerance = 0.000005 %}
+
 MAP:Taxi Lanes
 AIRPORT:EDDF
 FOLDER:Airport Layout
 ACTIVE:1
-COLOR:layout-taxiline-yellow
+COLOR:LAYOUT_TAXILINE_YELLOW
 {% for uuid in
 [
     '002ce268-0bb2-4449-a502-34186f5c5867',
@@ -1676,11 +1678,11 @@ COLOR:layout-taxiline-yellow
     'ffa9852d-4384-44ba-bf81-e65c4ecedaa8',
     'ffbadb86-c6fc-4d44-9325-96e973500a26',
 ] %}
-{{- data.eddf_aixm['GuidanceLineMarking'][uuid] | join_segments | simplify(default) | to_line(uuid) -}}
+{{- data.eddf_aixm['GuidanceLineMarking'][uuid] | simplify(tolerance) | render_line(uuid) }}
 {% endfor %}
 
 // Orange Lines
-COLOR:layout-taxiline-orange
+COLOR:LAYOUT_TAXILINE_ORANGE
 {% for uuid in
 [
     '01b1ba27-02b9-453d-bb0b-339c7baa83d3',
@@ -1737,11 +1739,11 @@ COLOR:layout-taxiline-orange
     'fb03ad98-53c1-49d0-8393-f7988963044b',
     'fe6e2e5e-12b8-4630-9250-db33e615f889',
 ] %}
-{{- data.eddf_aixm['GuidanceLineMarking'][uuid] | join_segments | simplify(default) | to_line(uuid) -}}
+{{- data.eddf_aixm['GuidanceLineMarking'][uuid] | simplify(tolerance) | render_line(uuid) }}
 {% endfor %}
 
 // Blue Lines
-COLOR:layout-taxiline-blue
+COLOR:LAYOUT_TAXILINE_BLUE
 {% for uuid in
 [
     '003a65bf-bffd-420e-8303-c43a6e645d15',
@@ -1795,5 +1797,5 @@ COLOR:layout-taxiline-blue
     'feb22e3b-8439-4f3e-92b7-a025fe1eb628',
 ] 
 %}
-{{- data.eddf_aixm['GuidanceLineMarking'][uuid] | join_segments | simplify(default) | to_line(uuid) -}}
+{{- data.eddf_aixm['GuidanceLineMarking'][uuid] | simplify(tolerance) | render_line(uuid) }}
 {% endfor %}

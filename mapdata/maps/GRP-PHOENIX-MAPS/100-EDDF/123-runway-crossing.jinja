@@ -1,4 +1,6 @@
 // ------------------------- Runway Crossing ------------------------
+{#- TODO: Change simplify() to geom_simplify() when AIXM2 parser gets fixed #}
+{%- set tolerance = 0.000005 %}
 
 MAP:25
 AIRPORT:EDDF
@@ -6,73 +8,75 @@ FOLDER:Runway Crossing
 LAYER:6
 
 // T
-COLOR:restrictions-F
+COLOR:RESTRICTIONS_F
 STYLE:SOLID:3
-{{ data.eddf_kml['layout']['runwaycrossing']['line']['T'] | to_line('') -}}
+{{ data.eddf_kml['layout']['runwaycrossing']['line']['T'] | render_line }}
 STYLE:SOLID:1
-{{ data.eddf_kml['layout']['runwaycrossing']['poly']['T'] | to_coordtype('', 'restrictions-F') }}
-{{ data.eddf_kml['layout']['stopbars']['poly']['T2'] | to_coordtype('', 'layout-holdingpoint') }}
+{{ data.eddf_kml['layout']['runwaycrossing']['poly']['T'] | render_area('OTHER:REGION') }}
+COLOR:LAYOUT_HOLDINGPOINT
+STYLE:SOLID:1
+{{ data.eddf_kml['layout']['stopbars']['poly']['T2'] | render_area('OTHER:REGION') }}
 STYLE:SOLID:2
-COLOR:layout-holdingpoint
-{{ data.eddf_kml['layout']['stopbars']['line']['T2'] | to_line('') -}}
+{{ data.eddf_kml['layout']['stopbars']['line']['T2'] | render_line }}
 
 // M8
-COLOR:restrictions-D
+COLOR:RESTRICTIONS_D
 STYLE:SOLID:3
-{{ data.eddf_kml['layout']['runwaycrossing']['line']['M8_25'] | to_line('') -}}
+{{ data.eddf_kml['layout']['runwaycrossing']['line']['M8_25'] | render_line }}
 STYLE:SOLID:1
-{{ data.eddf_kml['layout']['runwaycrossing']['poly']['M8_25'] | to_coordtype('', 'restrictions-D') }}
+{{ data.eddf_kml['layout']['runwaycrossing']['poly']['M8_25'] | render_area('OTHER:REGION') }}
 STYLE:SOLID:2
-COLOR:layout-holdingpoint
-{{ data.eddf_aixm['TaxiwayMarking']['7233e590-7fc6-dc2b-e053-b4472c0a9450'] | to_line('') -}}
+COLOR:LAYOUT_HOLDINGPOINT
+{{ data.eddf_aixm['TaxiwayMarking']['7233e590-7fc6-dc2b-e053-b4472c0a9450'] | simplify(tolerance) | render_line }}
 
 // M30
-COLOR:restrictions-E
+COLOR:RESTRICTIONS_E
 STYLE:SOLID:3
-{{ data.eddf_kml['layout']['runwaycrossing']['line']['M30'] | to_line('') -}}
+{{ data.eddf_kml['layout']['runwaycrossing']['line']['M30'] | render_line }}
 STYLE:SOLID:1
-{{ data.eddf_kml['layout']['runwaycrossing']['poly']['M30'] | to_coordtype('', 'restrictions-E') }}
+{{ data.eddf_kml['layout']['runwaycrossing']['poly']['M30'] | render_area('OTHER:REGION') }}
 STYLE:SOLID:2
-COLOR:layout-holdingpoint
-{{ data.eddf_aixm['TaxiwayMarking']['61f3b1e6-5ffb-4693-bf3f-8de116c4ef99'] | to_line('') -}}
+COLOR:LAYOUT_HOLDINGPOINT
+{{ data.eddf_aixm['TaxiwayMarking']['61f3b1e6-5ffb-4693-bf3f-8de116c4ef99'] | simplify(tolerance) | render_line }}
 
 // Y
-COLOR:restrictions-AB
+COLOR:RESTRICTIONS_AB
 STYLE:SOLID:3
-{{ data.eddf_kml['layout']['runwaycrossing']['line']['Y'] | to_line('') -}}
+{{ data.eddf_kml['layout']['runwaycrossing']['line']['Y'] | render_line }}
 STYLE:SOLID:1
-{{ data.eddf_kml['layout']['runwaycrossing']['poly']['Y'] | to_coordtype('', 'restrictions-AB') }}
+{{ data.eddf_kml['layout']['runwaycrossing']['poly']['Y'] | render_area('OTHER:REGION') }}
 STYLE:SOLID:2
-COLOR:layout-holdingpoint
-{{ data.eddf_aixm['TaxiwayMarking']['05091d27-5df6-4f84-9c3b-af410b6d525d'] | to_line('') -}}
+COLOR:LAYOUT_HOLDINGPOINT
+{{ data.eddf_aixm['TaxiwayMarking']['05091d27-5df6-4f84-9c3b-af410b6d525d'] | simplify(tolerance) | render_line }}
 
 // Stands
-COLOR:restrictions-F
-{{ data.eddf_kml['layout']['runwaycrossing']['stands']['Ea_1'] | to_line('') -}}
-{{ data.eddf_kml['layout']['runwaycrossing']['stands']['Ea_2'] | to_line('') -}}
-{{ data.eddf_kml['layout']['runwaycrossing']['stands']['Ea_3'] | to_line('') -}}
-{{ data.eddf_kml['layout']['runwaycrossing']['stands']['Ea_4'] | to_line('') -}}
-COLOR:restrictions-D
-{{ data.eddf_kml['layout']['runwaycrossing']['stands']['Eb_1'] | to_line('') -}}
-{{ data.eddf_kml['layout']['runwaycrossing']['stands']['Eb_2'] | to_line('') -}}
-COLOR:restrictions-E
-{{ data.eddf_kml['layout']['runwaycrossing']['stands']['C_01'] | to_line('') -}}
-{{ data.eddf_kml['layout']['runwaycrossing']['stands']['C_02'] | to_line('') -}}
-{{ data.eddf_kml['layout']['runwaycrossing']['stands']['C_03'] | to_line('') -}}
-{{ data.eddf_kml['layout']['runwaycrossing']['stands']['C_04'] | to_line('') -}}
-{{ data.eddf_kml['layout']['runwaycrossing']['stands']['C_05'] | to_line('') -}}
-{{ data.eddf_kml['layout']['runwaycrossing']['stands']['C_06'] | to_line('') -}}
-{{ data.eddf_kml['layout']['runwaycrossing']['stands']['C_07'] | to_line('') -}}
-{{ data.eddf_kml['layout']['runwaycrossing']['stands']['C_08'] | to_line('') -}}
-{{ data.eddf_kml['layout']['runwaycrossing']['stands']['C_09'] | to_line('') -}}
-{{ data.eddf_kml['layout']['runwaycrossing']['stands']['C_10'] | to_line('') -}}
-{{ data.eddf_kml['layout']['runwaycrossing']['stands']['C_11'] | to_line('') -}}
-{{ data.eddf_kml['layout']['runwaycrossing']['stands']['C_12'] | to_line('') -}}
-{{ data.eddf_kml['layout']['runwaycrossing']['stands']['C_13'] | to_line('') -}}
-{{ data.eddf_kml['layout']['runwaycrossing']['stands']['C_14'] | to_line('') -}}
-COLOR:restrictions-AB
-{{ data.eddf_kml['layout']['runwaycrossing']['stands']['W_01'] | to_line('') -}}
-{{ data.eddf_kml['layout']['runwaycrossing']['stands']['W_02'] | to_line('') -}}
+COLOR:RESTRICTIONS_F
+{{ data.eddf_kml['layout']['runwaycrossing']['stands']['Ea_1'] | render_line }}
+{{ data.eddf_kml['layout']['runwaycrossing']['stands']['Ea_2'] | render_line }}
+{{ data.eddf_kml['layout']['runwaycrossing']['stands']['Ea_3'] | render_line }}
+{{ data.eddf_kml['layout']['runwaycrossing']['stands']['Ea_4'] | render_line }}
+COLOR:RESTRICTIONS_D
+{{ data.eddf_kml['layout']['runwaycrossing']['stands']['Eb_1'] | render_line }}
+{{ data.eddf_kml['layout']['runwaycrossing']['stands']['Eb_2'] | render_line }}
+COLOR:RESTRICTIONS_E
+{{ data.eddf_kml['layout']['runwaycrossing']['stands']['C_01'] | render_line }}
+{{ data.eddf_kml['layout']['runwaycrossing']['stands']['C_02'] | render_line }}
+{{ data.eddf_kml['layout']['runwaycrossing']['stands']['C_03'] | render_line }}
+{{ data.eddf_kml['layout']['runwaycrossing']['stands']['C_04'] | render_line }}
+{{ data.eddf_kml['layout']['runwaycrossing']['stands']['C_05'] | render_line }}
+{{ data.eddf_kml['layout']['runwaycrossing']['stands']['C_06'] | render_line }}
+{{ data.eddf_kml['layout']['runwaycrossing']['stands']['C_07'] | render_line }}
+{{ data.eddf_kml['layout']['runwaycrossing']['stands']['C_08'] | render_line }}
+{{ data.eddf_kml['layout']['runwaycrossing']['stands']['C_09'] | render_line }}
+{{ data.eddf_kml['layout']['runwaycrossing']['stands']['C_10'] | render_line }}
+{{ data.eddf_kml['layout']['runwaycrossing']['stands']['C_11'] | render_line }}
+{{ data.eddf_kml['layout']['runwaycrossing']['stands']['C_12'] | render_line }}
+{{ data.eddf_kml['layout']['runwaycrossing']['stands']['C_13'] | render_line }}
+{{ data.eddf_kml['layout']['runwaycrossing']['stands']['C_14'] | render_line }}
+COLOR:RESTRICTIONS_AB
+{{ data.eddf_kml['layout']['runwaycrossing']['stands']['W_01'] | render_line }}
+{{ data.eddf_kml['layout']['runwaycrossing']['stands']['W_02'] | render_line }}
+
 
 MAP:07
 AIRPORT:EDDF
@@ -80,57 +84,60 @@ FOLDER:Runway Crossing
 LAYER:6
 
 // T
-COLOR:restrictions-F
+COLOR:RESTRICTIONS_F
 STYLE:SOLID:3
-{{ data.eddf_kml['layout']['runwaycrossing']['line']['T'] | to_line('') -}}
+{{ data.eddf_kml['layout']['runwaycrossing']['line']['T'] | render_line }}
 STYLE:SOLID:1
-{{ data.eddf_kml['layout']['runwaycrossing']['poly']['T'] | to_coordtype('', 'restrictions-F') }}
-{{ data.eddf_kml['layout']['stopbars']['poly']['T2'] | to_coordtype('', 'layout-holdingpoint') }}
+{{ data.eddf_kml['layout']['runwaycrossing']['poly']['T'] | render_area('OTHER:REGION') }}
+COLOR:LAYOUT_HOLDINGPOINT
+STYLE:SOLID:1
+{{ data.eddf_kml['layout']['stopbars']['poly']['T2'] | render_area('OTHER:REGION') }}
 STYLE:SOLID:2
-COLOR:layout-holdingpoint
-{{ data.eddf_kml['layout']['stopbars']['line']['T2'] | to_line('') -}}
+{{ data.eddf_kml['layout']['stopbars']['line']['T2'] | render_line }}
 
 // M6
-COLOR:restrictions-D
+COLOR:RESTRICTIONS_D
 STYLE:SOLID:3
-{{ data.eddf_kml['layout']['runwaycrossing']['line']['M6'] | to_line('') -}}
+{{ data.eddf_kml['layout']['runwaycrossing']['line']['M6'] | render_line }}
 STYLE:SOLID:1
-{{ data.eddf_kml['layout']['runwaycrossing']['poly']['M6'] | to_coordtype('', 'restrictions-D') }}
-{{ data.eddf_kml['layout']['holdingpoints']['cat3']['L1'] | to_coordtype('', 'layout-holdingpoint') }}
+{{ data.eddf_kml['layout']['runwaycrossing']['poly']['M6'] | render_area('OTHER:REGION') }}
+COLOR:LAYOUT_HOLDINGPOINT
+STYLE:SOLID:1
+{{ data.eddf_kml['layout']['holdingpoints']['cat3']['L1'] | render_area('OTHER:REGION') }}
 
 // M8
-COLOR:restrictions-E
+COLOR:RESTRICTIONS_E
 STYLE:SOLID:3
-{{ data.eddf_kml['layout']['runwaycrossing']['line']['M8_07'] | to_line('') -}}
+{{ data.eddf_kml['layout']['runwaycrossing']['line']['M8_07'] | render_line }}
 STYLE:SOLID:1
-{{ data.eddf_kml['layout']['runwaycrossing']['poly']['M8_07'] | to_coordtype('', 'restrictions-E') }}
+{{ data.eddf_kml['layout']['runwaycrossing']['poly']['M8_07'] | render_area('OTHER:REGION') }}
 STYLE:SOLID:2
-COLOR:layout-holdingpoint
-{{ data.eddf_aixm['TaxiwayMarking']['5627e7e0-c30d-7c0d-e053-b3472c0a22ab'] | to_line('') -}}
+COLOR:LAYOUT_HOLDINGPOINT
+{{ data.eddf_aixm['TaxiwayMarking']['5627e7e0-c30d-7c0d-e053-b3472c0a22ab'] | simplify(tolerance) | render_line }}
 
 // Stands
-COLOR:restrictions-F
-{{ data.eddf_kml['layout']['runwaycrossing']['stands']['Ea_1'] | to_line('') -}}
-{{ data.eddf_kml['layout']['runwaycrossing']['stands']['Ea_2'] | to_line('') -}}
-{{ data.eddf_kml['layout']['runwaycrossing']['stands']['Ea_3'] | to_line('') -}}
-{{ data.eddf_kml['layout']['runwaycrossing']['stands']['Ea_4'] | to_line('') -}}
-COLOR:restrictions-D
-{{ data.eddf_kml['layout']['runwaycrossing']['stands']['Eb_1'] | to_line('') -}}
-{{ data.eddf_kml['layout']['runwaycrossing']['stands']['Eb_2'] | to_line('') -}}
-COLOR:restrictions-E
-{{ data.eddf_kml['layout']['runwaycrossing']['stands']['C_01'] | to_line('') -}}
-{{ data.eddf_kml['layout']['runwaycrossing']['stands']['C_02'] | to_line('') -}}
-{{ data.eddf_kml['layout']['runwaycrossing']['stands']['C_03'] | to_line('') -}}
-{{ data.eddf_kml['layout']['runwaycrossing']['stands']['C_04'] | to_line('') -}}
-{{ data.eddf_kml['layout']['runwaycrossing']['stands']['C_05'] | to_line('') -}}
-{{ data.eddf_kml['layout']['runwaycrossing']['stands']['C_06'] | to_line('') -}}
-{{ data.eddf_kml['layout']['runwaycrossing']['stands']['C_07'] | to_line('') -}}
-{{ data.eddf_kml['layout']['runwaycrossing']['stands']['C_08'] | to_line('') -}}
-{{ data.eddf_kml['layout']['runwaycrossing']['stands']['C_09'] | to_line('') -}}
-{{ data.eddf_kml['layout']['runwaycrossing']['stands']['C_10'] | to_line('') -}}
-{{ data.eddf_kml['layout']['runwaycrossing']['stands']['C_11'] | to_line('') -}}
-{{ data.eddf_kml['layout']['runwaycrossing']['stands']['C_12'] | to_line('') -}}
-{{ data.eddf_kml['layout']['runwaycrossing']['stands']['C_13'] | to_line('') -}}
-{{ data.eddf_kml['layout']['runwaycrossing']['stands']['C_14'] | to_line('') -}}
-{{ data.eddf_kml['layout']['runwaycrossing']['stands']['W_01'] | to_line('') -}}
-{{ data.eddf_kml['layout']['runwaycrossing']['stands']['W_02'] | to_line('') -}}
+COLOR:RESTRICTIONS_F
+{{ data.eddf_kml['layout']['runwaycrossing']['stands']['Ea_1'] | render_line }}
+{{ data.eddf_kml['layout']['runwaycrossing']['stands']['Ea_2'] | render_line }}
+{{ data.eddf_kml['layout']['runwaycrossing']['stands']['Ea_3'] | render_line }}
+{{ data.eddf_kml['layout']['runwaycrossing']['stands']['Ea_4'] | render_line }}
+COLOR:RESTRICTIONS_D
+{{ data.eddf_kml['layout']['runwaycrossing']['stands']['Eb_1'] | render_line }}
+{{ data.eddf_kml['layout']['runwaycrossing']['stands']['Eb_2'] | render_line }}
+COLOR:RESTRICTIONS_E
+{{ data.eddf_kml['layout']['runwaycrossing']['stands']['C_01'] | render_line }}
+{{ data.eddf_kml['layout']['runwaycrossing']['stands']['C_02'] | render_line }}
+{{ data.eddf_kml['layout']['runwaycrossing']['stands']['C_03'] | render_line }}
+{{ data.eddf_kml['layout']['runwaycrossing']['stands']['C_04'] | render_line }}
+{{ data.eddf_kml['layout']['runwaycrossing']['stands']['C_05'] | render_line }}
+{{ data.eddf_kml['layout']['runwaycrossing']['stands']['C_06'] | render_line }}
+{{ data.eddf_kml['layout']['runwaycrossing']['stands']['C_07'] | render_line }}
+{{ data.eddf_kml['layout']['runwaycrossing']['stands']['C_08'] | render_line }}
+{{ data.eddf_kml['layout']['runwaycrossing']['stands']['C_09'] | render_line }}
+{{ data.eddf_kml['layout']['runwaycrossing']['stands']['C_10'] | render_line }}
+{{ data.eddf_kml['layout']['runwaycrossing']['stands']['C_11'] | render_line }}
+{{ data.eddf_kml['layout']['runwaycrossing']['stands']['C_12'] | render_line }}
+{{ data.eddf_kml['layout']['runwaycrossing']['stands']['C_13'] | render_line }}
+{{ data.eddf_kml['layout']['runwaycrossing']['stands']['C_14'] | render_line }}
+{{ data.eddf_kml['layout']['runwaycrossing']['stands']['W_01'] | render_line }}
+{{ data.eddf_kml['layout']['runwaycrossing']['stands']['W_02'] | render_line }}

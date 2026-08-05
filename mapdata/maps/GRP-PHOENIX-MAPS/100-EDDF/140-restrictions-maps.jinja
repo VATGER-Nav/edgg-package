@@ -8,26 +8,26 @@ ZOOM:300
 LAYER:2
 
 // Y7
-COLOR:restrictions-AB
+COLOR:RESTRICTIONS_AB
 STYLE:SOLID:4
-{{ data.eddf_kml['layout']['restrictions']['line']['Y7_1'] | to_line('') -}}
-COLOR:restrictions-C
-{{ data.eddf_kml['layout']['restrictions']['line']['Y7_2'] | to_line('') -}}
+{{ data.eddf_kml['layout']['restrictions']['line']['Y7_1'] | render_line }}
+COLOR:RESTRICTIONS_C
+{{ data.eddf_kml['layout']['restrictions']['line']['Y7_2'] | render_line }}
 
 // Orange/Blue Lines
-COLOR:restrictions-C
+COLOR:RESTRICTIONS_C
 STYLE:SOLID:4
-{{ data.eddf_kml['layout']['restrictions']['line']['Nb'] | to_line('') -}}
-{{ data.eddf_kml['layout']['restrictions']['line']['No'] | to_line('') -}}
-{{ data.eddf_kml['layout']['restrictions']['line']['N7b'] | to_line('') -}}
-{{ data.eddf_kml['layout']['restrictions']['line']['N7o'] | to_line('') -}}
-{{ data.eddf_kml['layout']['restrictions']['line']['N8b_a'] | to_line('') -}}
-{{ data.eddf_kml['layout']['restrictions']['line']['N8b_b'] | to_line('') -}}
-{{ data.eddf_kml['layout']['restrictions']['line']['N8b_c'] | to_line('') -}}
-{{ data.eddf_kml['layout']['restrictions']['line']['N8o_a'] | to_line('') -}}
-{{ data.eddf_kml['layout']['restrictions']['line']['N8o_b'] | to_line('') -}}
-{{ data.eddf_kml['layout']['restrictions']['line']['N8o_c'] | to_line('') -}}
-{{ data.eddf_kml['layout']['restrictions']['line']['N8o_d'] | to_line('') -}}
+{{ data.eddf_kml['layout']['restrictions']['line']['Nb'] | render_line }}
+{{ data.eddf_kml['layout']['restrictions']['line']['No'] | render_line }}
+{{ data.eddf_kml['layout']['restrictions']['line']['N7b'] | render_line }}
+{{ data.eddf_kml['layout']['restrictions']['line']['N7o'] | render_line }}
+{{ data.eddf_kml['layout']['restrictions']['line']['N8b_a'] | render_line }}
+{{ data.eddf_kml['layout']['restrictions']['line']['N8b_b'] | render_line }}
+{{ data.eddf_kml['layout']['restrictions']['line']['N8b_c'] | render_line }}
+{{ data.eddf_kml['layout']['restrictions']['line']['N8o_a'] | render_line }}
+{{ data.eddf_kml['layout']['restrictions']['line']['N8o_b'] | render_line }}
+{{ data.eddf_kml['layout']['restrictions']['line']['N8o_c'] | render_line }}
+{{ data.eddf_kml['layout']['restrictions']['line']['N8o_d'] | render_line }}
 TEXTALIGN:CC
 {{ data.eddf_kml['layout']['restrictions']['labels']['N7ob'] | to_text('1') }}
 {{ data.eddf_kml['layout']['restrictions']['labels']['N8ob_a'] | to_text('1') }}
@@ -43,121 +43,121 @@ TEXTALIGN:CC
 {{ data.eddf_kml['layout']['restrictions']['labels']['Nob_c'] | to_symbol('CIRCLE') }}
 
 // L (Abeam V93-V97)
-COLOR:restrictions-C
+COLOR:RESTRICTIONS_C
 STYLE:SOLID:4
-{{ data.eddf_kml['layout']['restrictions']['line']['L_1'] | to_line('') -}}
+{{ data.eddf_kml['layout']['restrictions']['line']['L_1'] | render_line }}
 
 // L8
-COLOR:restrictions-C
+COLOR:RESTRICTIONS_C
 STYLE:SOLID:4
-{{ data.eddf_kml['layout']['restrictions']['line']['L8_a'] | to_line('') -}}
-{{ data.eddf_kml['layout']['restrictions']['line']['L8_b'] | to_line('') -}}
+{{ data.eddf_kml['layout']['restrictions']['line']['L8_a'] | render_line }}
+{{ data.eddf_kml['layout']['restrictions']['line']['L8_b'] | render_line }}
 
 // N8 (Abeam A14-A16)
-COLOR:restrictions-C
+COLOR:RESTRICTIONS_C
 STYLE:SOLID:4
-{{ data.eddf_kml['layout']['restrictions']['line']['N8'] | to_line('') -}}
+{{ data.eddf_kml['layout']['restrictions']['line']['N8'] | render_line }}
 
 // S33
-COLOR:restrictions-C
+COLOR:RESTRICTIONS_C
 STYLE:SOLID:4
-{{ data.eddf_kml['layout']['restrictions']['line']['S33'] | to_line('') -}}
+{{ data.eddf_kml['layout']['restrictions']['line']['S33'] | render_line }}
 
 // S13 (Abeam K2-K6)
-COLOR:restrictions-C
+COLOR:RESTRICTIONS_C
 STYLE:SOLID:4
-{{ data.eddf_kml['layout']['restrictions']['line']['S13_1'] | to_line('') -}}
-COLOR:restrictions-E
-{{ data.eddf_kml['layout']['restrictions']['line']['S13_2a'] | to_line('') -}}
-{{ data.eddf_kml['layout']['restrictions']['line']['S13_2b'] | to_line('') -}}
-COLOR:restrictions-F
-{{ data.eddf_kml['layout']['restrictions']['line']['S13_3a'] | to_line('') -}}
-{{ data.eddf_kml['layout']['restrictions']['line']['S13_3b'] | to_line('') -}}
+{{ data.eddf_kml['layout']['restrictions']['line']['S13_1'] | render_line }}
+COLOR:RESTRICTIONS_E
+{{ data.eddf_kml['layout']['restrictions']['line']['S13_2a'] | render_line }}
+{{ data.eddf_kml['layout']['restrictions']['line']['S13_2b'] | render_line }}
+COLOR:RESTRICTIONS_F
+{{ data.eddf_kml['layout']['restrictions']['line']['S13_3a'] | render_line }}
+{{ data.eddf_kml['layout']['restrictions']['line']['S13_3b'] | render_line }}
 
 // S5 (Abeam G1-G5)
-COLOR:restrictions-C
+COLOR:RESTRICTIONS_C
 STYLE:SOLID:4
-{{ data.eddf_kml['layout']['restrictions']['line']['S5_1'] | to_line('') -}}
-COLOR:restrictions-D
-{{ data.eddf_kml['layout']['restrictions']['line']['S5_2a'] | to_line('') -}}
-{{ data.eddf_kml['layout']['restrictions']['line']['S5_2b'] | to_line('') -}}
+{{ data.eddf_kml['layout']['restrictions']['line']['S5_1'] | render_line }}
+COLOR:RESTRICTIONS_D
+{{ data.eddf_kml['layout']['restrictions']['line']['S5_2a'] | render_line }}
+{{ data.eddf_kml['layout']['restrictions']['line']['S5_2b'] | render_line }}
 
 // N-South
-COLOR:restrictions-D
+COLOR:RESTRICTIONS_D
 STYLE:SOLID:4
-{{ data.eddf_kml['layout']['restrictions']['line']['N-South'] | to_line('') -}}
+{{ data.eddf_kml['layout']['restrictions']['line']['N-South'] | render_line }}
 
 // Turn N1 - L-North
-COLOR:restrictions-E
+COLOR:RESTRICTIONS_E
 STYLE:SOLID:3
-{% for uuid, geom in data.eddf_kml['layout']['restrictions']['dash'].items() %}
-{{- geom | to_line('') -}}
+{% for _, feat in data.eddf_kml['layout']['restrictions']['dash'].items() %}
+{{- feat | render_line }}
 {% endfor %}
-COLOR:restrictions-C
+COLOR:RESTRICTIONS_C
 TEXTALIGN:CC
 {{ data.eddf_kml['layout']['restrictions']['labels']['N1'] | to_text('2') }}
 {{ data.eddf_kml['layout']['restrictions']['labels']['N1'] | to_symbol('CIRCLE') }}
 
 // L-North
-COLOR:restrictions-E
+COLOR:RESTRICTIONS_E
 STYLE:SOLID:4
-{{ data.eddf_kml['layout']['restrictions']['line']['L-North_a'] | to_line('') -}}
-{{ data.eddf_kml['layout']['restrictions']['line']['L-North_b'] | to_line('') -}}
-{{ data.eddf_kml['layout']['restrictions']['line']['L-North_c'] | to_line('') -}}
-{{ data.eddf_kml['layout']['restrictions']['line']['L-North_d'] | to_line('') -}}
+{{ data.eddf_kml['layout']['restrictions']['line']['L-North_a'] | render_line }}
+{{ data.eddf_kml['layout']['restrictions']['line']['L-North_b'] | render_line }}
+{{ data.eddf_kml['layout']['restrictions']['line']['L-North_c'] | render_line }}
+{{ data.eddf_kml['layout']['restrictions']['line']['L-North_d'] | render_line }}
 
 // N3 (Abeam Stands)
-COLOR:restrictions-E
+COLOR:RESTRICTIONS_E
 STYLE:SOLID:4
-{{ data.eddf_kml['layout']['restrictions']['line']['N3'] | to_line('') -}}
+{{ data.eddf_kml['layout']['restrictions']['line']['N3'] | render_line }}
 
 // N4
-COLOR:restrictions-E
+COLOR:RESTRICTIONS_E
 STYLE:SOLID:4
-{{ data.eddf_kml['layout']['restrictions']['line']['N4'] | to_line('') -}}
+{{ data.eddf_kml['layout']['restrictions']['line']['N4'] | render_line }}
 
 // N5 (Abeam Stands)
-COLOR:restrictions-E
+COLOR:RESTRICTIONS_E
 STYLE:SOLID:4
-{{ data.eddf_kml['layout']['restrictions']['line']['N5_1'] | to_line('') -}}
-COLOR:restrictions-F
-{{ data.eddf_kml['layout']['restrictions']['line']['N5_2'] | to_line('') -}}
+{{ data.eddf_kml['layout']['restrictions']['line']['N5_1'] | render_line }}
+COLOR:RESTRICTIONS_F
+{{ data.eddf_kml['layout']['restrictions']['line']['N5_2'] | render_line }}
 
 // N7 (Abeam Stands)
-COLOR:restrictions-E
+COLOR:RESTRICTIONS_E
 STYLE:SOLID:4
-{{ data.eddf_kml['layout']['restrictions']['line']['N7_a'] | to_line('') -}}
-{{ data.eddf_kml['layout']['restrictions']['line']['N7_b'] | to_line('') -}}
-{{ data.eddf_kml['layout']['restrictions']['line']['N7_c'] | to_line('') -}}
-{{ data.eddf_kml['layout']['restrictions']['line']['N7_d'] | to_line('') -}}
-{{ data.eddf_kml['layout']['restrictions']['line']['N7_e'] | to_line('') -}}
+{{ data.eddf_kml['layout']['restrictions']['line']['N7_a'] | render_line }}
+{{ data.eddf_kml['layout']['restrictions']['line']['N7_b'] | render_line }}
+{{ data.eddf_kml['layout']['restrictions']['line']['N7_c'] | render_line }}
+{{ data.eddf_kml['layout']['restrictions']['line']['N7_d'] | render_line }}
+{{ data.eddf_kml['layout']['restrictions']['line']['N7_e'] | render_line }}
 
 // N11
-COLOR:restrictions-E
+COLOR:RESTRICTIONS_E
 STYLE:SOLID:4
-{{ data.eddf_kml['layout']['restrictions']['line']['N11_1'] | to_line('') -}}
-COLOR:restrictions-F
-{{ data.eddf_kml['layout']['restrictions']['line']['N11_2'] | to_line('') -}}
+{{ data.eddf_kml['layout']['restrictions']['line']['N11_1'] | render_line }}
+COLOR:RESTRICTIONS_F
+{{ data.eddf_kml['layout']['restrictions']['line']['N11_2'] | render_line }}
 
 // N13 (Abeam Stands)
-COLOR:restrictions-E
+COLOR:RESTRICTIONS_E
 STYLE:SOLID:4
-{{ data.eddf_kml['layout']['restrictions']['line']['N13'] | to_line('') -}}
+{{ data.eddf_kml['layout']['restrictions']['line']['N13'] | render_line }}
 
 // N14 (Abeam Stands)
-COLOR:restrictions-E
+COLOR:RESTRICTIONS_E
 STYLE:SOLID:4
-{{ data.eddf_kml['layout']['restrictions']['line']['N14'] | to_line('') -}}
+{{ data.eddf_kml['layout']['restrictions']['line']['N14'] | render_line }}
 
 // L19
-COLOR:restrictions-C
+COLOR:RESTRICTIONS_C
 STYLE:SOLID:4
-{{ data.eddf_kml['layout']['restrictions']['line']['L19'] | to_line('') -}}
+{{ data.eddf_kml['layout']['restrictions']['line']['L19'] | render_line }}
 
 // Turn L - Runway 18
-COLOR:restrictions-E
+COLOR:RESTRICTIONS_E
 STYLE:SOLID:4
-{{ data.eddf_kml['layout']['restrictions']['line']['L_2'] | to_line('') -}}
+{{ data.eddf_kml['layout']['restrictions']['line']['L_2'] | render_line }}
 {#- South Up #}
 FILTER_ASR:EDDF_GND
 TEXTALIGN:LC
@@ -169,9 +169,9 @@ TEXTALIGN:RC
 FILTERS_OFF
 
 // W
-COLOR:restrictions-E
+COLOR:RESTRICTIONS_E
 STYLE:SOLID:4
-{{ data.eddf_kml['layout']['restrictions']['line']['W'] | to_line('') -}}
+{{ data.eddf_kml['layout']['restrictions']['line']['W'] | render_line }}
 {#- South Up #}
 FILTER_ASR:EDDF_GND
 TEXTALIGN:LC
@@ -183,46 +183,47 @@ TEXTALIGN:RC
 FILTERS_OFF
 
 // M19
-COLOR:restrictions-E
+COLOR:RESTRICTIONS_E
 STYLE:SOLID:4
-{{ data.eddf_kml['layout']['restrictions']['line']['M19'] | to_line('') -}}
+{{ data.eddf_kml['layout']['restrictions']['line']['M19'] | render_line }}
 
 // S8 (Abeam H1-H3)
-COLOR:restrictions-C
+COLOR:RESTRICTIONS_C
 STYLE:SOLID:4
-{{ data.eddf_kml['layout']['restrictions']['line']['S8'] | to_line('') -}}
+{{ data.eddf_kml['layout']['restrictions']['line']['S8'] | render_line }}
 
 // N6
-COLOR:restrictions-F
+COLOR:RESTRICTIONS_F
 STYLE:SOLID:4
-{{ data.eddf_kml['layout']['restrictions']['line']['N6'] | to_line('') -}}
+{{ data.eddf_kml['layout']['restrictions']['line']['N6'] | render_line }}
 
 // S11
-COLOR:restrictions-F
+COLOR:RESTRICTIONS_F
 STYLE:SOLID:4
-{{ data.eddf_kml['layout']['restrictions']['line']['S11'] | to_line('') -}}
+{{ data.eddf_kml['layout']['restrictions']['line']['S11'] | render_line }}
 
 // S4
-COLOR:restrictions-F
+COLOR:RESTRICTIONS_F
 STYLE:SOLID:4
-{{ data.eddf_kml['layout']['restrictions']['line']['S4'] | to_line('') -}}
+{{ data.eddf_kml['layout']['restrictions']['line']['S4'] | render_line }}
 
 // Y5
-COLOR:restrictions-F
+COLOR:RESTRICTIONS_F
 STYLE:SOLID:4
-{{ data.eddf_kml['layout']['restrictions']['line']['Y5'] | to_line('') -}}
+{{ data.eddf_kml['layout']['restrictions']['line']['Y5'] | render_line }}
 
 // 25R/07L
+COLOR:RESTRICTIONS_AB
 STYLE:SOLID:1
-{{ data.eddf_kml['layout']['restrictions']['poly']['07L-25R'] | to_coordtype('', 'restrictions-AB', 'OTHER', 'REGION', '\\') }}
+{{ data.eddf_kml['layout']['restrictions']['poly']['07L-25R'] | render_area('OTHER:REGION:\\') }}
 TEXTALIGN:CC
-COLOR:restrictions-AB
+COLOR:RESTRICTIONS_AB
 {{ data.eddf_kml['layout']['restrictions']['labels']['07L-25R_a'] | to_symbol('VERBOT_1') }}
 {{ data.eddf_kml['layout']['restrictions']['labels']['07L-25R_b'] | to_symbol('VERBOT_1') }}
-COLOR:white
+COLOR:WHITE
 {{ data.eddf_kml['layout']['restrictions']['labels']['07L-25R_a'] | to_symbol('VERBOT_2') }}
 {{ data.eddf_kml['layout']['restrictions']['labels']['07L-25R_b'] | to_symbol('VERBOT_2') }}
-COLOR:layout-label-stand
+COLOR:LAYOUT_LABEL_STAND
 {#- South Up #}
 FILTER_ASR:EDDF_GND
 {{ data.eddf_kml['layout']['restrictions']['labels']['07L-25R_c'] | to_text('Only arriving traffic:0:-12') }}
@@ -237,7 +238,7 @@ FILTERS_OFF
 
 TEXTALIGN:CC
 FONTSIZE:=:9
-COLOR:restrictions-AB
+COLOR:RESTRICTIONS_AB
 {% for desig in
 [
     'V711',
@@ -253,7 +254,7 @@ COLOR:restrictions-AB
 ] %}
 {{- data.eddf_kml['layout']['restrictions']['stands'][desig] | to_symbol('STAND') }}
 {% endfor %}
-COLOR:restrictions-C
+COLOR:RESTRICTIONS_C
 {% for desig in
 [
     'A1',
@@ -382,7 +383,7 @@ COLOR:restrictions-C
 ] %}
 {{- data.eddf_kml['layout']['restrictions']['stands'][desig] | to_symbol('STAND_S') }}
 {% endfor %}
-COLOR:restrictions-D
+COLOR:RESTRICTIONS_D
 {% for desig in
 [
     'B24',
@@ -405,7 +406,7 @@ COLOR:restrictions-D
 {% for desig in ['J2', 'J3'] %}
 {{- data.eddf_kml['layout']['restrictions']['stands'][desig] | to_text('MAX B753:0:15') }}
 {% endfor %}
-COLOR:restrictions-E
+COLOR:RESTRICTIONS_E
 {% for desig in
 [
     'A15',
@@ -460,7 +461,7 @@ COLOR:restrictions-E
 ] %}
 {{- data.eddf_kml['layout']['restrictions']['stands'][desig] | to_symbol('STAND') }}
 {% endfor %}
-COLOR:restrictions-F
+COLOR:RESTRICTIONS_F
 {% for desig in
 [
     'A23',
@@ -489,7 +490,7 @@ COLOR:restrictions-F
 ] %}
 {{- data.eddf_kml['layout']['restrictions']['stands'][desig] | to_symbol('STAND') }}
 {% endfor %}
-COLOR:restrictions-F2
+COLOR:RESTRICTIONS_F2
 {% for desig in
 [
     'A54',
@@ -537,7 +538,7 @@ COLOR:restrictions-F2
 
 // Reference (South Up)
 FILTER_ASR:EDDF_GND
-COLOR:layout-label-stand
+COLOR:LAYOUT_LABEL_STAND
 FONTSIZE:=:12
 TEXTALIGN:CC
 {{ data.eddf_kml['layout']['restrictions']['labels']['reference_1'] | to_text('Reference    ') }}
@@ -549,34 +550,34 @@ TEXTALIGN:CC
 {{ data.eddf_kml['layout']['restrictions']['labels']['reference_1'] | to_text('Code F < 80m (A388/A124)     :0:90') }}
 
 FONTSIZE:=:70
-COLOR:restrictions-AB
+COLOR:RESTRICTIONS_AB
 {{ data.eddf_kml['layout']['restrictions']['labels']['reference_1'] | to_text('.:-113:-39') }}
-COLOR:restrictions-C
+COLOR:RESTRICTIONS_C
 {{ data.eddf_kml['layout']['restrictions']['labels']['reference_1'] | to_text('.:-113:-24') }}
-COLOR:restrictions-D
+COLOR:RESTRICTIONS_D
 {{ data.eddf_kml['layout']['restrictions']['labels']['reference_1'] | to_text('.:-113:-9') }}
-COLOR:restrictions-E
+COLOR:RESTRICTIONS_E
 {{ data.eddf_kml['layout']['restrictions']['labels']['reference_1'] | to_text('.:-113:6') }}
-COLOR:restrictions-F
+COLOR:RESTRICTIONS_F
 {{ data.eddf_kml['layout']['restrictions']['labels']['reference_1'] | to_text('.:-113:21') }}
-COLOR:restrictions-F2
+COLOR:RESTRICTIONS_F2
 {{ data.eddf_kml['layout']['restrictions']['labels']['reference_1'] | to_text('.:-113:36') }}
 
-COLOR:layout-label-stand
+COLOR:LAYOUT_LABEL_STAND
 FONTSIZE:=:12
 {{ data.eddf_kml['layout']['restrictions']['labels']['reference_2'] | to_text('   Taxiing on orange and blue lines') }}
 {{ data.eddf_kml['layout']['restrictions']['labels']['reference_2'] | to_text('   only for ACFT up to code C      :0:15') }}
 {{ data.eddf_kml['layout']['restrictions']['labels']['reference_2'] | to_text('   Turn only for ACFT up to A343   :0:30') }}
 {{ data.eddf_kml['layout']['restrictions']['labels']['reference_2'] | to_text('   Stands C14S, C15S, C16S         :0:60') }}
 {{ data.eddf_kml['layout']['restrictions']['labels']['reference_2'] | to_text('   assigned specifically for A388  :0:75') }}
-COLOR:restrictions-C
+COLOR:RESTRICTIONS_C
 {{ data.eddf_kml['layout']['restrictions']['labels']['reference_2'] | to_text('1.                                 ') }}
 {{ data.eddf_kml['layout']['restrictions']['labels']['reference_2'] | to_text('2.                                 :0:30') }}
 
 
 // Reference (North Up)
 FILTER_ASR:EDDF_S_GND
-COLOR:layout-label-stand
+COLOR:LAYOUT_LABEL_STAND
 FONTSIZE:=:12
 TEXTALIGN:CC
 {{ data.eddf_kml['layout']['restrictions']['labels']['reference_3'] | to_text('Reference    ') }}
@@ -588,26 +589,26 @@ TEXTALIGN:CC
 {{ data.eddf_kml['layout']['restrictions']['labels']['reference_3'] | to_text('Code F < 80m (A388/A124)     :0:90') }}
 
 FONTSIZE:=:70
-COLOR:restrictions-AB
+COLOR:RESTRICTIONS_AB
 {{ data.eddf_kml['layout']['restrictions']['labels']['reference_3'] | to_text('.:-113:-39') }}
-COLOR:restrictions-C
+COLOR:RESTRICTIONS_C
 {{ data.eddf_kml['layout']['restrictions']['labels']['reference_3'] | to_text('.:-113:-24') }}
-COLOR:restrictions-D
+COLOR:RESTRICTIONS_D
 {{ data.eddf_kml['layout']['restrictions']['labels']['reference_3'] | to_text('.:-113:-9') }}
-COLOR:restrictions-E
+COLOR:RESTRICTIONS_E
 {{ data.eddf_kml['layout']['restrictions']['labels']['reference_3'] | to_text('.:-113:6') }}
-COLOR:restrictions-F
+COLOR:RESTRICTIONS_F
 {{ data.eddf_kml['layout']['restrictions']['labels']['reference_3'] | to_text('.:-113:21') }}
-COLOR:restrictions-F2
+COLOR:RESTRICTIONS_F2
 {{ data.eddf_kml['layout']['restrictions']['labels']['reference_3'] | to_text('.:-113:36') }}
 
-COLOR:layout-label-stand
+COLOR:LAYOUT_LABEL_STAND
 FONTSIZE:=:12
 {{ data.eddf_kml['layout']['restrictions']['labels']['reference_2'] | to_text('   Taxiing on orange and blue lines:0:-75') }}
 {{ data.eddf_kml['layout']['restrictions']['labels']['reference_2'] | to_text('   only for ACFT up to code C      :0:-60') }}
 {{ data.eddf_kml['layout']['restrictions']['labels']['reference_2'] | to_text('   Turn only for ACFT up to A343   :0:-45') }}
 {{ data.eddf_kml['layout']['restrictions']['labels']['reference_2'] | to_text('   Stands C14S, C15S, C16S         :0:-15') }}
 {{ data.eddf_kml['layout']['restrictions']['labels']['reference_2'] | to_text('   assigned specifically for A388  ') }}
-COLOR:restrictions-C
+COLOR:RESTRICTIONS_C
 {{ data.eddf_kml['layout']['restrictions']['labels']['reference_2'] | to_text('1.                                 :0:-75') }}
 {{ data.eddf_kml['layout']['restrictions']['labels']['reference_2'] | to_text('2.                                 :0:-45') }}

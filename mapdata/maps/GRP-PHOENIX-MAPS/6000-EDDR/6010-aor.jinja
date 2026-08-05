@@ -4,29 +4,31 @@ MAP:EDDR_GND
 AIRPORT:EDDR
 FOLDER:AoR
 LAYER:6
-COLOR:aor-gnd-a
-STYLE:Dot
-{{ data.eddr_kml['layout']['aor']['line']['DRG'] | to_line('DRG') }}
+COLOR:AOR_GND_A
+STYLE:DOT
+{{ data.eddr_kml['layout']['aor']['line']['DRG'] | render_line }}
 ZOOM:400
 FONTSIZE:=:13
 {{ data.eddr_kml['layout']['aor']['labels']['DRG'] | to_text('DRG  118.555') }}
+
 
 MAP:EDDR_TWR
 AIRPORT:EDDR
 FOLDER:AoR
 LAYER:6
-COLOR:aor-twr-a
-STYLE:Dot
-{{ data.eddr_kml['layout']['aor']['line']['DRT'] | to_line('DRT') }}
+COLOR:AOR_TWR_A
+STYLE:DOT
+{{ data.eddr_kml['layout']['aor']['line']['DRT'] | render_line }}
 ZOOM:400
 FONTSIZE:=:13
 {{ data.eddr_kml['layout']['aor']['labels']['DRT'] | to_text('DRT  118.355') }}
+
 
 MAP:EDDR_PFA_APP
 AIRPORT:EDDR
 FOLDER:AoR
 LAYER:6
-COLOR:aor-app-a
+COLOR:AOR_APP_A
 ZOOM:400
 FONTSIZE:=:13
 {{ data.eddr_kml['layout']['aor']['labels']['DRT'] | to_text('PFA  129.675:0:20') }}

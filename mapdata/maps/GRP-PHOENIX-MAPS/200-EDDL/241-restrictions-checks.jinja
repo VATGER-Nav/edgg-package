@@ -7,11 +7,11 @@ ACTIVE:1
 
 // L2
 RESTRICTION:MAXCODE:E
-{{ data.eddl_kml['layout']['restrictions']['poly']['L2_1a'] | to_coordtype('', '', 'TWYTYPE', 'NONE') }}
-{{ data.eddl_kml['layout']['restrictions']['poly']['L2_1b'] | to_coordtype('', '', 'TWYTYPE', 'NONE') }}
+{{ data.eddl_kml['layout']['restrictions']['poly']['L2_1a'] | render_area('TWYTYPE:NONE') }}
+{{ data.eddl_kml['layout']['restrictions']['poly']['L2_1b'] | render_area('TWYTYPE:NONE') }}
 
 // GAT
 RESTRICTION:MAXCODE:B
-{{ data.eddl_kml['layout']['restrictions']['poly']['GAT_a'] | to_coordtype('', '', 'TWYTYPE', 'NONE') }}
-{{ data.eddl_kml['layout']['restrictions']['poly']['GAT_b'] | to_coordtype('', '', 'TWYTYPE', 'NONE') }}
-{{ data.eddl_kml['layout']['restrictions']['poly']['GAT_c'] | to_coordtype('', '', 'TWYTYPE', 'NONE') }}
+{{ data.eddl_kml['layout']['restrictions']['poly']['GAT_a'] | render_area('TWYTYPE:NONE') }}
+{{ data.eddl_kml['layout']['restrictions']['poly']['GAT_b'] | render_area('TWYTYPE:NONE') }}
+{{ data.eddl_kml['layout']['restrictions']['poly']['GAT_c'] | render_area('TWYTYPE:NONE') }}

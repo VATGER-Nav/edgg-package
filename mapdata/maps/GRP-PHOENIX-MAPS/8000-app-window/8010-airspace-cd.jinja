@@ -18,26 +18,28 @@
     'H': EDGG['EDSBCLDH']['045-065']
 } %}
 
+
 MAP:Airspace C:A
 FOLDER:Airspace
-COLOR:appwindow-standard
+COLOR:APPWINDOW_STANDARD
 ACTIVE:1
 LAYER:+2
 STYLE:DOT:1
 // EDDFCLC
-{% for uuid, geom in data.topsky['common']['airspace']['EDDFCLC_TWR'].items() %}
-{{- geom | to_line('') -}}
+{% for _, feat in data.topsky['common']['airspace']['EDDFCLC_TWR'].items() %}
+{{- feat | render_line }}
 {% endfor %}
 // EDDLCLC & EDDKCLC
-{% for uuid, geom in data.topsky['common']['airspace']['EDLLCLC'].items() %}
-{{- geom | to_line('') -}}
+{% for _, feat in data.topsky['common']['airspace']['EDLLCLC'].items() %}
+{{- feat | render_line }}
 {% endfor %}
 // EDDSCLC
 {{ render_sectorlines(EDGG['EDDSCLC']['035-055']) }}
 
+
 MAP:Airspace D:A
 FOLDER:Airspace
-COLOR:appwindow-standard
+COLOR:APPWINDOW_STANDARD
 ACTIVE:1
 LAYER:+1
 // EDDS D
@@ -115,7 +117,7 @@ LAYER:+1
         ),
 ) }}
 
-STYLE:Dot:1
+STYLE:DOT:1
 // EDDG D
 {{ render_sectorlines(EDGG['EDDGCLD']['025-045']) }}
 // EDLW D

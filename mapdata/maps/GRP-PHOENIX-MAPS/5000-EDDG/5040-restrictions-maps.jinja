@@ -1,5 +1,5 @@
 // ------------------------ Restriction Maps ------------------------
-{% set default = 0.000005 %}
+
 MAP:Restrictions
 AIRPORT:EDDG
 FOLDER:Restrictions
@@ -7,49 +7,49 @@ LAYER:2
 ZOOM:600
 
 // Glider
-COLOR:restrictions-AB
+COLOR:RESTRICTIONS_AB
 STYLE:SOLID:4
-{{ data.eddg_kml['layout']['restrictions']['line']['glider'] | to_line('') -}}
+{{ data.eddg_kml['layout']['restrictions']['line']['glider'] | render_line }}
 TEXTALIGN:LC
 {{ data.eddg_kml['layout']['restrictions']['labels']['glider'] | to_text('Max code A') }}
 
 // G
-COLOR:restrictions-D
+COLOR:RESTRICTIONS_D
 STYLE:SOLID:4
-{{ data.eddg_kml['layout']['restrictions']['line']['G'] | to_line('') -}}
+{{ data.eddg_kml['layout']['restrictions']['line']['G'] | render_line }}
 
 // 10x
-COLOR:restrictions-AB
+COLOR:RESTRICTIONS_AB
 STYLE:SOLID:1
-{{ data.eddg_kml['layout']['restrictions']['poly']['10x'] | to_coordtype('', '', 'OTHER', 'REGION', '/') }}
+{{ data.eddg_kml['layout']['restrictions']['poly']['10x'] | render_area('OTHER:REGION:/') }}
 TEXTALIGN:CC
 {{ data.eddg_kml['layout']['restrictions']['labels']['10x'] | to_text('Max code A') }}
 
 // 20x
-COLOR:restrictions-AB
+COLOR:RESTRICTIONS_AB
 STYLE:SOLID:1
-{{ data.eddg_kml['layout']['restrictions']['poly']['20x'] | to_coordtype('', '', 'OTHER', 'REGION', '/') }}
+{{ data.eddg_kml['layout']['restrictions']['poly']['20x'] | render_area('OTHER:REGION:/') }}
 TEXTALIGN:LC
 {{ data.eddg_kml['layout']['restrictions']['labels']['20x'] | to_text('Max code B') }}
 
 // 30x
-COLOR:restrictions-AB
+COLOR:RESTRICTIONS_AB
 STYLE:SOLID:1
-{{ data.eddg_kml['layout']['restrictions']['poly']['30x'] | to_coordtype('', '', 'OTHER', 'REGION', '/') }}
+{{ data.eddg_kml['layout']['restrictions']['poly']['30x'] | render_area('OTHER:REGION:/') }}
 TEXTALIGN:CC
 {{ data.eddg_kml['layout']['restrictions']['labels']['30x'] | to_text('Max wingspan 20m') }}
 
 // 40x
-COLOR:restrictions-AB
+COLOR:RESTRICTIONS_AB
 STYLE:SOLID:1
-{{ data.eddg_kml['layout']['restrictions']['poly']['40x'] | to_coordtype('', '', 'OTHER', 'REGION', '\\') }}
+{{ data.eddg_kml['layout']['restrictions']['poly']['40x'] | render_area('OTHER:REGION:\\') }}
 TEXTALIGN:RC
 {{ data.eddg_kml['layout']['restrictions']['labels']['40x'] | to_text('Max wingspan 12m') }}
 
 // 18-19
-COLOR:restrictions-AB
+COLOR:RESTRICTIONS_AB
 STYLE:SOLID:1
-{{ data.eddg_kml['layout']['restrictions']['poly']['18-19'] | to_coordtype('', '', 'OTHER', 'REGION', '/') }}
+{{ data.eddg_kml['layout']['restrictions']['poly']['18-19'] | render_area('OTHER:REGION:/') }}
 TEXTALIGN:CC
 {{ data.eddg_kml['layout']['restrictions']['labels']['18-19'] | to_text('Max wingspan 20m') }}
 
@@ -57,25 +57,25 @@ TEXTALIGN:CC
 
 TEXTALIGN:CC
 FONTSIZE:=:9
-COLOR:restrictions-AB
+COLOR:RESTRICTIONS_AB
 {% for desig in ['7', '8'] %}
 {{- data.eddg_kml['layout']['restrictions']['stands'][desig] | to_symbol('STAND') }}
 {% endfor %}
-COLOR:restrictions-C
+COLOR:RESTRICTIONS_C
 {% for desig in ['9A', '9B', '20', '21A', '21B', '22', '24A', '24B'] %}
 {{- data.eddg_kml['layout']['restrictions']['stands'][desig] | to_symbol('STAND') }}
 {% endfor %}
 {% for desig in ['21A', '21B'] %}
 {{- data.eddg_kml['layout']['restrictions']['stands'][desig] | to_text('MAX AT72:0:15') }}
 {% endfor %}
-COLOR:restrictions-D
+COLOR:RESTRICTIONS_D
 {% for desig in ['9', '10', '13', '14', '21', '11', '12', '25'] %}
 {{- data.eddg_kml['layout']['restrictions']['stands'][desig] | to_symbol('STAND') }}
 {% endfor %}
 {% for desig in ['11', '12', '25'] %}
 {{- data.eddg_kml['layout']['restrictions']['stands'][desig] | to_text('MAX B753:0:15') }}
 {% endfor %}
-COLOR:restrictions-E
+COLOR:RESTRICTIONS_E
 {% for desig in ['24'] %}
 {{- data.eddg_kml['layout']['restrictions']['stands'][desig] | to_symbol('STAND') }}
 {% endfor %}
@@ -84,7 +84,7 @@ COLOR:restrictions-E
 {% endfor %}
 
 // Reference
-COLOR:layout-label-stand
+COLOR:LAYOUT_LABEL_STAND
 FONTSIZE:=:12
 {{ data.eddg_kml['layout']['restrictions']['labels']['reference'] | to_text('Reference  :0:-45') }}
 {{ data.eddg_kml['layout']['restrictions']['labels']['reference'] | to_text('Code A < 15m (P28R/C172):0:-30') }}
@@ -94,13 +94,13 @@ FONTSIZE:=:12
 {{ data.eddg_kml['layout']['restrictions']['labels']['reference'] | to_text('Code E < 65m (A343/A333):0:30') }}
 
 FONTSIZE:=:70
-COLOR:restrictions-AB
+COLOR:RESTRICTIONS_AB
 {{ data.eddg_kml['layout']['restrictions']['labels']['reference'] | to_text('.:-95:-84') }}
-COLOR:restrictions-AB
+COLOR:RESTRICTIONS_AB
 {{ data.eddg_kml['layout']['restrictions']['labels']['reference'] | to_text('.:-95:-69') }}
-COLOR:restrictions-C
+COLOR:RESTRICTIONS_C
 {{ data.eddg_kml['layout']['restrictions']['labels']['reference'] | to_text('.:-95:-54') }}
-COLOR:restrictions-D
+COLOR:RESTRICTIONS_D
 {{ data.eddg_kml['layout']['restrictions']['labels']['reference'] | to_text('.:-95:-39') }}
-COLOR:restrictions-E
+COLOR:RESTRICTIONS_E
 {{ data.eddg_kml['layout']['restrictions']['labels']['reference'] | to_text('.:-95:-24') }}

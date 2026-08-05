@@ -41,12 +41,15 @@ FOLDER:Labels
 HIDDEN
 LAYER:3
 ZOOM:400
-{% for uuid, geom in data.eddl_kml['layout']['labels']['buffer_a'].items() %}
-{{- geom | to_coordtype('', 'layout-taxiway') }}
+COLOR:LAYOUT_TAXIWAY
+{% for _, feat in data.eddl_kml['layout']['labels']['buffer_a'].items() %}
+{{- feat | render_area('OTHER:REGION') }}
 {% endfor %}
-{% for uuid, geom in data.eddl_kml['layout']['labels']['buffer_b'].items() %}
-{{- geom | to_coordtype('', 'layout-apron') }}
+COLOR:LAYOUT_APRON
+{% for _, feat in data.eddl_kml['layout']['labels']['buffer_b'].items() %}
+{{- feat | render_area('OTHER:REGION') }}
 {% endfor %}
+
 
 MAP:Taxiways
 AIRPORT:EDDL
@@ -55,10 +58,11 @@ OTHER_MAP_ACT:=:Labels\Buffer EDDL
 LAYER:6
 ZOOM:400
 FONTSIZE:=:10
-COLOR:layout-label-yellow
-{% for desig, geom in data.eddl_kml['layout']['labels']['taxiways'].items() %}
-{{- geom | to_text(desig) }}
+COLOR:LAYOUT_LABEL_YELLOW
+{% for desig, feat in data.eddl_kml['layout']['labels']['taxiways'].items() %}
+{{- feat | to_text(desig) }}
 {% endfor %}
+
 
 MAP:Stands
 AIRPORT:EDDL
@@ -68,16 +72,17 @@ OTHER_MAP_ACT:=:Labels\Areas
 LAYER:6
 ZOOM:600
 FONTSIZE:=:9
-COLOR:layout-label-yellow
-{% for desig, geom in data.eddl_kml['layout']['labels']['stands'].items() if not desig in stands_sec %}
-{{- geom | to_text(desig) }}
+COLOR:LAYOUT_LABEL_YELLOW
+{% for desig, feat in data.eddl_kml['layout']['labels']['stands'].items() if not desig in stands_sec %}
+{{- feat | to_text(desig) }}
 {% endfor %}
 
 ZOOM:1200
-COLOR:layout-label-yellow
+COLOR:LAYOUT_LABEL_YELLOW
 {% for desig in stands_sec %}
 {{- data.eddl_kml['layout']['labels']['stands'][desig] | to_text(desig) }}
 {% endfor %}
+
 
 MAP:Areas
 AIRPORT:EDDL
@@ -86,9 +91,10 @@ ACTIVE:1
 LAYER:6
 ZOOM:400
 FONTSIZE:=:9
-COLOR:layout-label-stand
+COLOR:LAYOUT_LABEL_STAND
 {{ data.eddl_kml['layout']['labels']['GAT'] | to_text('GAT') }}
 {{ data.eddl_kml['layout']['labels']['Police'] | to_text('Police') }}
+
 
 MAP:Checkpoints
 AIRPORT:EDDL
@@ -97,26 +103,27 @@ ACTIVE:1
 LAYER:6
 ZOOM:800
 FONTSIZE:=:10
-COLOR:layout-holdingpoint
+COLOR:LAYOUT_HOLDINGPOINT
 TEXTALIGN:CC
 {{ data.eddl_kml['layout']['labels']['stopbars']['CP1'] | to_text('Check-:0:-10') }}
 {{ data.eddl_kml['layout']['labels']['stopbars']['CP1'] | to_text('point 1') }}
 {{ data.eddl_kml['layout']['labels']['stopbars']['CP2'] | to_text('Check-:10:-10') }}
 {{ data.eddl_kml['layout']['labels']['stopbars']['CP2'] | to_text('point 2:10:0') }}
 
+
 MAP:Buildings
 AIRPORT:EDDL
 FOLDER:Labels
 ZOOM:400
 FONTSIZE:=:9
-COLOR:layout-label-stand
-{% for desig, geom in data.eddl_kml['layout']['labels']['buildings'].items() if not desig in
+COLOR:LAYOUT_LABEL_STAND
+{% for desig, feat in data.eddl_kml['layout']['labels']['buildings'].items() if not desig in
 [
     'Fire station#1',
     'Hangar 9',
     'Photo-voltaic',
 ] %}
-{{- geom | to_text(desig) }}
+{{- feat | to_text(desig) }}
 {% endfor %}
 {{ data.eddl_kml['layout']['labels']['buildings']['Fire station#1'] | to_text('Fire:0:-6') }}
 {{ data.eddl_kml['layout']['labels']['buildings']['Fire station#1'] | to_text('station:0:6') }}

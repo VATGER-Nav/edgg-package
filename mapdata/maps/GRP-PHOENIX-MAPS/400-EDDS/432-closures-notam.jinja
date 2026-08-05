@@ -1,5 +1,4 @@
 // ------------------------- NOTAM Closures -------------------------
-{% set default = 0.000005 %}
 
 {#
 MAP:W/Z
@@ -7,9 +6,10 @@ AIRPORT:EDDS
 FOLDER:Closures
 LAYER:4
 ACTIVE:1
-STYLE:Solid:2
-{{ data.edds_kml['layout']['closures']['poly']['W_Z'] | to_coordtype('', 'closure', 'TWYCLOSED') }}
+STYLE:SOLID:2
+{{ data.edds_kml['layout']['closures']['poly']['W_Z'] | render_area('CLOSURE', 'TWYCLOSED') }}
 #}
+
 
 MAP:AIP SUP IFR 13/26 - STANDS 45-48
 AIRPORT:EDDS
@@ -17,9 +17,12 @@ FOLDER:Constructions
 LAYER:7
 ACTIVE:260504:261030:0:0000:2359
 BLOCKS:EDDS:45,46,47,48
-{{ data.notam['notam']['EDDS']['construction'] | to_coordtype('Apron','layout-apron') }}
-{{ data.notam['notam']['EDDS']['taxiway'] | to_coordtype('Taxiway','layout-taxiway') }}
-STYLE:Solid:2
-{{ data.notam['notam']['EDDS']['construction'] | to_coordtype('Construction', 'closure', 'TWYCLOSED', 'POLYGON') }}
+COLOR:LAYOUT_APRON
+{{ data.notam['notam']['EDDS']['construction'] | render_area('OTHER:REGION') }}
+COLOR:LAYOUT_TAXIWAY
+{{ data.notam['notam']['EDDS']['taxiway'] | render_area('OTHER:REGION') }}
+COLOR:CLOSURE
+STYLE:SOLID:2
+{{ data.notam['notam']['EDDS']['construction'] | render_area('TWYCLOSED:POLYGON') }}
 RESTRICTION:MAXCODE:C
-{{ data.notam['notam']['EDDS']['restrictions']['M'] | to_coordtype('', '', 'TWYTYPE', 'NONE') }}
+{{ data.notam['notam']['EDDS']['restrictions']['M'] | render_area('TWYTYPE:NONE') }}

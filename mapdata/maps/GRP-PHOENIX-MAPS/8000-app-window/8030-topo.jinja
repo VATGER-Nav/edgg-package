@@ -7,11 +7,12 @@
      * TOPSKY-PHOENIX-MAPS\510-topo.jinja
 #}
 
+
 MAP:DE Border:A
 FOLDER:Topography
 LAYER:-3
-COLOR:appwindow-border
-STYLE:Solid:1
+COLOR:APPWINDOW_BORDER
+STYLE:SOLID:1
 ACTIVE:1
 {% for desig in [
     'CH_DE',
@@ -22,5 +23,5 @@ ACTIVE:1
     'DE_LU',
     'DE_NL',
 ] %}
-{{- data.topsky['common']['topo']['EDXX_stateboundary'][desig] | to_line('') -}}
+{{- data.topsky['common']['topo']['EDXX_stateboundary'][desig] | render_line }}
 {% endfor %}

@@ -4,29 +4,31 @@ MAP:EDLP_GND
 AIRPORT:EDLP
 FOLDER:AoR
 LAYER:6
-COLOR:aor-gnd-a
-STYLE:Dot
-{{ data.edlp_kml['layout']['aor']['line']['LPG'] | to_line('LPG') }}
+COLOR:AOR_GND_A
+STYLE:DOT
+{{ data.edlp_kml['layout']['aor']['line']['LPG'] | render_line }}
 ZOOM:400
 FONTSIZE:=:13
 {{ data.edlp_kml['layout']['aor']['labels']['LPG'] | to_text('LPG  121.930') }}
+
 
 MAP:EDLP_TWR
 AIRPORT:EDLP
 FOLDER:AoR
 LAYER:6
-COLOR:aor-twr-a
-STYLE:Dot
-{{ data.edlp_kml['layout']['aor']['line']['LPT'] | to_line('LPT') }}
+COLOR:AOR_TWR_A
+STYLE:DOT
+{{ data.edlp_kml['layout']['aor']['line']['LPT'] | render_line }}
 ZOOM:400
 FONTSIZE:=:13
 {{ data.edlp_kml['layout']['aor']['labels']['LPT'] | to_text('LPT  133.380') }}
+
 
 MAP:EDLP_PAL_APP
 AIRPORT:EDLP
 FOLDER:AoR
 LAYER:6
-COLOR:aor-app-a
+COLOR:AOR_APP_A
 ZOOM:400
 FONTSIZE:=:13
 {{ data.edlp_kml['layout']['aor']['labels']['LPT'] | to_text('PADL 125.225:0:-20') }}

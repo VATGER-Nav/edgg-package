@@ -1,9 +1,11 @@
 // ---------------------------- Buildings ---------------------------
-{% set default = 0.000005 %}
+{%- set tolerance = 0.000005 %}
+
 MAP:Buildings
 AIRPORT:EDDL
 FOLDER:Airport Layout
 ACTIVE:1
+COLOR:LAYOUT_BUILDING
 {% for uuid in
 [
     '1df99506-d801-028a-e063-86c812ac096d',
@@ -285,17 +287,18 @@ ACTIVE:1
     'efa095e4-d487-db43-e053-86c812acd57b',
     'efa095e4-d488-db43-e053-86c812acd57b',
     ] %}
-{{- data.eddl_aixm['VerticalStructure'][uuid] | simplify(default) | to_coordtype(uuid, 'layout-building') }}
+{{- data.eddl_aixm['VerticalStructure'][uuid] | geom_simplify(tolerance) | render_area('OTHER:REGION', uuid) }}
 {% endfor %}
-{% for uuid, geom in data.eddl_kml['layout']['buildings'].items() %}
-{{- geom | to_coordtype('', 'layout-building') }}
+{% for _, feat in data.eddl_kml['layout']['buildings'].items() %}
+{{- feat | render_area('OTHER:REGION') }}
 {% endfor %}
+
 
 MAP:Fence
 AIRPORT:EDDL
 FOLDER:Airport Layout
 ACTIVE:1
-COLOR:layout-building
-{% for uuid, geom in data.eddl_kml['layout']['fence'].items() %}
-{{- geom | to_line('') -}}
+COLOR:LAYOUT_BUILDING
+{% for _, feat in data.eddl_kml['layout']['fence'].items() %}
+{{- feat | render_line }}
 {% endfor %}

@@ -4,48 +4,51 @@ MAP:LVP
 AIRPORT:EDFH
 FOLDER:AoR
 LAYER:6
-STYLE:Dot
-COLOR:aor-gnd-a
-{{ data.edfh_kml['layout']['aor']['line']['FHG_lvp_a'] | to_line('') -}}
-{{ data.edfh_kml['layout']['aor']['line']['FHG_lvp_b'] | to_line('') -}}
-COLOR:aor-twr-a
-{{ data.edfh_kml['layout']['aor']['line']['FHT_lvp_a'] | to_line('') -}}
-{{ data.edfh_kml['layout']['aor']['line']['FHT_lvp_b'] | to_line('') -}}
+STYLE:DOT
+COLOR:AOR_GND_A
+{{ data.edfh_kml['layout']['aor']['line']['FHG_lvp_a'] | render_line }}
+{{ data.edfh_kml['layout']['aor']['line']['FHG_lvp_b'] | render_line }}
+COLOR:AOR_TWR_A
+{{ data.edfh_kml['layout']['aor']['line']['FHT_lvp_a'] | render_line }}
+{{ data.edfh_kml['layout']['aor']['line']['FHT_lvp_b'] | render_line }}
 ZOOM:400
 FONTSIZE:=:11
-COLOR:layout-label-taxiway
+COLOR:LAYOUT_LABEL_TAXIWAY
 TEXTALIGN:RC
 {{ data.edfh_kml['layout']['aor']['labels']['lvp_a'] | to_text('During LVO') }}
 TEXTALIGN:LC
 {{ data.edfh_kml['layout']['aor']['labels']['lvp_b'] | to_text('During LVO') }}
 
+
 MAP:EDFH_GND
 AIRPORT:EDFH
 FOLDER:AoR
 LAYER:6
-COLOR:aor-gnd-a
-STYLE:Dot
-{{ data.edfh_kml['layout']['aor']['line']['FHG'] | to_line('FHG') }}
+COLOR:AOR_GND_A
+STYLE:DOT
+{{ data.edfh_kml['layout']['aor']['line']['FHG'] | render_line }}
 ZOOM:400
 FONTSIZE:=:13
 {{ data.edfh_kml['layout']['aor']['labels']['FHG'] | to_text('FHG  121.980') }}
+
 
 MAP:EDFH_TWR
 AIRPORT:EDFH
 FOLDER:AoR
 LAYER:6
-COLOR:aor-twr-a
-STYLE:Dot
-{{ data.edfh_kml['layout']['aor']['line']['FHT'] | to_line('FHT') }}
+COLOR:AOR_TWR_A
+STYLE:DOT
+{{ data.edfh_kml['layout']['aor']['line']['FHT'] | render_line }}
 ZOOM:400
 FONTSIZE:=:13
 {{ data.edfh_kml['layout']['aor']['labels']['FHT'] | to_text('FHT  119.655') }}
+
 
 MAP:EDFH_EIF_APP
 AIRPORT:EDFH
 FOLDER:AoR
 LAYER:6
-COLOR:aor-app-a
+COLOR:AOR_APP_A
 ZOOM:400
 FONTSIZE:=:13
 {{ data.edfh_kml['layout']['aor']['labels']['FHT'] | to_text('EIF  125.600:0:-20') }}

@@ -7,92 +7,92 @@ LAYER:2
 ZOOM:400
 
 // Turn S - I
-COLOR:restrictions-C
+COLOR:RESTRICTIONS_C
 STYLE:SOLID:4
-{{ data.edds_kml['layout']['restrictions']['line']['S_I'] | to_line('') -}}
+{{ data.edds_kml['layout']['restrictions']['line']['S_I'] | render_line }}
 
 // M (Between H and Exit 3)
-COLOR:restrictions-C
+COLOR:RESTRICTIONS_C
 STYLE:SOLID:4
-{{ data.edds_kml['layout']['restrictions']['line']['M_a'] | to_line('') -}}
-{{ data.edds_kml['layout']['restrictions']['line']['M_b'] | to_line('') -}}
+{{ data.edds_kml['layout']['restrictions']['line']['M_a'] | render_line }}
+{{ data.edds_kml['layout']['restrictions']['line']['M_b'] | render_line }}
 
 // W/Z
-COLOR:restrictions-D
+COLOR:RESTRICTIONS_D
 STYLE:SOLID:4
-{{ data.edds_kml['layout']['restrictions']['line']['W_Z'] | to_line('') -}}
+{{ data.edds_kml['layout']['restrictions']['line']['W_Z'] | render_line }}
 TEXTALIGN:LC
 {{ data.edds_kml['layout']['restrictions']['labels']['W_Z'] | to_text('Max wingspan 42m') }}
 {{ data.edds_kml['layout']['restrictions']['labels']['W_Z'] | to_text('e.g. B753:0:12') }}
 
 // C
-COLOR:restrictions-D
+COLOR:RESTRICTIONS_D
 STYLE:SOLID:4
-{{ data.edds_kml['layout']['restrictions']['line']['C'] | to_line('') -}}
+{{ data.edds_kml['layout']['restrictions']['line']['C'] | render_line }}
 
 // E
-COLOR:restrictions-D
+COLOR:RESTRICTIONS_D
 STYLE:SOLID:4
-{{ data.edds_kml['layout']['restrictions']['line']['E_a'] | to_line('') -}}
-{{ data.edds_kml['layout']['restrictions']['line']['E_b'] | to_line('') -}}
+{{ data.edds_kml['layout']['restrictions']['line']['E_a'] | render_line }}
+{{ data.edds_kml['layout']['restrictions']['line']['E_b'] | render_line }}
 
 // G
-COLOR:restrictions-D
+COLOR:RESTRICTIONS_D
 STYLE:SOLID:4
-{{ data.edds_kml['layout']['restrictions']['line']['G_a'] | to_line('') -}}
-{{ data.edds_kml['layout']['restrictions']['line']['G_b'] | to_line('') -}}
+{{ data.edds_kml['layout']['restrictions']['line']['G_a'] | render_line }}
+{{ data.edds_kml['layout']['restrictions']['line']['G_b'] | render_line }}
 
 // Turn L2 - O
-COLOR:restrictions-D
+COLOR:RESTRICTIONS_D
 STYLE:SOLID:4
-{{ data.edds_kml['layout']['restrictions']['line']['L2_O'] | to_line('') -}}
+{{ data.edds_kml['layout']['restrictions']['line']['L2_O'] | render_line }}
 
 // Z
-COLOR:restrictions-D
+COLOR:RESTRICTIONS_D
 STYLE:SOLID:4
-{{ data.edds_kml['layout']['restrictions']['line']['Z_a'] | to_line('') -}}
-{{ data.edds_kml['layout']['restrictions']['line']['Z_b'] | to_line('') -}}
+{{ data.edds_kml['layout']['restrictions']['line']['Z_a'] | render_line }}
+{{ data.edds_kml['layout']['restrictions']['line']['Z_b'] | render_line }}
 
 // D
-COLOR:restrictions-E
+COLOR:RESTRICTIONS_E
 STYLE:SOLID:4
-{{ data.edds_kml['layout']['restrictions']['line']['D'] | to_line('') -}}
+{{ data.edds_kml['layout']['restrictions']['line']['D'] | render_line }}
 
 // N
-COLOR:restrictions-F
+COLOR:RESTRICTIONS_F
 STYLE:SOLID:4
-{{ data.edds_kml['layout']['restrictions']['line']['N'] | to_line('') -}}
+{{ data.edds_kml['layout']['restrictions']['line']['N'] | render_line }}
 TEXTALIGN:CC
 {{ data.edds_kml['layout']['restrictions']['labels']['N'] | to_text('Max B748') }}
 
 // M/H/O/L2/L3
-COLOR:restrictions-E
+COLOR:RESTRICTIONS_E
 STYLE:SOLID:4
-{{ data.edds_kml['layout']['restrictions']['line']['M_L3_O_H'] | to_line('') -}}
-{{ data.edds_kml['layout']['restrictions']['line']['L2_a'] | to_line('') -}}
-{{ data.edds_kml['layout']['restrictions']['line']['L2_b'] | to_line('') -}}
+{{ data.edds_kml['layout']['restrictions']['line']['M_L3_O_H'] | render_line }}
+{{ data.edds_kml['layout']['restrictions']['line']['L2_a'] | render_line }}
+{{ data.edds_kml['layout']['restrictions']['line']['L2_b'] | render_line }}
 
 // GAT 29m
-COLOR:restrictions-AB
+COLOR:RESTRICTIONS_AB
 STYLE:SOLID:1
-{{ data.edds_kml['layout']['restrictions']['poly']['GAT1'] | to_coordtype('', '', 'OTHER', 'REGION', '/') }}
+{{ data.edds_kml['layout']['restrictions']['poly']['GAT1'] | render_area('OTHER:REGION:/') }}
 TEXTALIGN:LC
 {{ data.edds_kml['layout']['restrictions']['labels']['GAT1'] | to_text('Max wingspan 29m') }}
 
 // GAT 20m
-COLOR:restrictions-AB
+COLOR:RESTRICTIONS_AB
 STYLE:SOLID:1
-{{ data.edds_kml['layout']['restrictions']['poly']['GAT2'] | to_coordtype('', '', 'OTHER', 'REGION', '\\') }}
+{{ data.edds_kml['layout']['restrictions']['poly']['GAT2'] | render_area('OTHER:REGION:\\') }}
 TEXTALIGN:LC
 {{ data.edds_kml['layout']['restrictions']['labels']['GAT2'] | to_text('Max wingspan 20m') }}
 
 TEXTALIGN:CC
 FONTSIZE:=:9
-COLOR:restrictions-AB
+COLOR:RESTRICTIONS_AB
 {% for desig in ['65'] %}
 {{- data.edds_kml['layout']['restrictions']['stands'][desig] | to_symbol('STAND') }}
 {% endfor %}
-COLOR:restrictions-C
+COLOR:RESTRICTIONS_C
 {% for desig in
 [
     '10',
@@ -149,7 +149,7 @@ COLOR:restrictions-C
 ] %}
 {{- data.edds_kml['layout']['restrictions']['stands'][desig] | to_symbol('STAND_S') }}
 {% endfor %}
-COLOR:restrictions-D
+COLOR:RESTRICTIONS_D
 {% for desig in
 [
     '11',
@@ -178,7 +178,7 @@ COLOR:restrictions-D
 ] %}
 {{- data.edds_kml['layout']['restrictions']['stands'][desig] | to_text('MAX B753:0:15') }}
 {% endfor %}
-COLOR:restrictions-E
+COLOR:RESTRICTIONS_E
 {% for desig in
 [
     '9',
@@ -199,7 +199,7 @@ COLOR:restrictions-E
 {{- data.edds_kml['layout']['restrictions']['stands'][desig] | to_symbol('STAND_S') }}
 {% endfor %}
 
-COLOR:restrictions-F
+COLOR:RESTRICTIONS_F
 {% for desig in [
     '105',
     '106',
@@ -208,7 +208,7 @@ COLOR:restrictions-F
 {% endfor %}
 
 // Reference
-COLOR:layout-label-stand
+COLOR:LAYOUT_LABEL_STAND
 FONTSIZE:=:12
 TEXTALIGN:CC
 {{ data.edds_kml['layout']['restrictions']['labels']['reference'] | to_text('Reference  :0:-45') }}
@@ -219,13 +219,13 @@ TEXTALIGN:CC
 {{ data.edds_kml['layout']['restrictions']['labels']['reference'] | to_text('Code F < 80m (A124/B748):0:30') }}
 
 FONTSIZE:=:70
-COLOR:restrictions-AB
+COLOR:RESTRICTIONS_AB
 {{ data.edds_kml['layout']['restrictions']['labels']['reference'] | to_text('.:-95:-84') }}
-COLOR:restrictions-C
+COLOR:RESTRICTIONS_C
 {{ data.edds_kml['layout']['restrictions']['labels']['reference'] | to_text('.:-95:-69') }}
-COLOR:restrictions-D
+COLOR:RESTRICTIONS_D
 {{ data.edds_kml['layout']['restrictions']['labels']['reference'] | to_text('.:-95:-54') }}
-COLOR:restrictions-E
+COLOR:RESTRICTIONS_E
 {{ data.edds_kml['layout']['restrictions']['labels']['reference'] | to_text('.:-95:-39') }}
-COLOR:restrictions-F
+COLOR:RESTRICTIONS_F
 {{ data.edds_kml['layout']['restrictions']['labels']['reference'] | to_text('.:-95:-24') }}

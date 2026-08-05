@@ -1,27 +1,31 @@
 // ------------------------- Holding Points -------------------------
-{% set default = 0.000005 %}
+{% set tolerance = 0.000005 %}
+
 MAP:Holding Points CAT I
 AIRPORT:EDDS
 FOLDER:Holding Points
 LAYER:5
 ACTIVE:LVP:EDDS:0
-{% for desig, geom in data.edds_kml['layout']['holdingpoints']['cat1'].items() %}
-{{- geom | to_coordtype(desig, 'layout-holdingpoint') }}
+COLOR:LAYOUT_HOLDINGPOINT
+{% for desig, feat in data.edds_kml['layout']['holdingpoints']['cat1'].items() %}
+{{- feat | render_area('OTHER:REGION', desig) }}
 {% endfor %}
 STYLE:SOLID:2
-COLOR:layout-holdingpoint
-{% for desig, geom in data.edds_kml['layout']['holdingpoints']['line'].items() %}
-{{- geom | to_line(desig) -}}
+{% for desig, feat in data.edds_kml['layout']['holdingpoints']['line'].items() %}
+{{- feat | render_line(desig) }}
 {% endfor %}
+
 
 MAP:Holding Points CAT II/III
 AIRPORT:EDDS
 FOLDER:Holding Points
 LAYER:5
 ACTIVE:LVP:EDDS:1
-{% for desig, geom in data.edds_kml['layout']['holdingpoints']['cat3'].items() %}
-{{- geom | to_coordtype(desig + ' CATIII', 'layout-holdingpoint-red') }}
+COLOR:LAYOUT_HOLDINGPOINT_RED
+{% for desig, feat in data.edds_kml['layout']['holdingpoints']['cat3'].items() %}
+{{- feat | render_area('OTHER:REGION', desig + ' CAT III') }}
 {% endfor %}
+
 
 MAP:Stopbars
 AIRPORT:EDDS
@@ -29,14 +33,15 @@ FOLDER:Holding Points
 LAYER:5
 ACTIVE:1
 STYLE:SOLID:2
-COLOR:layout-holdingpoint
-{{ data.edds_aixm['TaxiwayMarking']['7606ce06-bd8b-42f8-a624-1fbe37e548c9'] | to_line(uuid) }}
+COLOR:LAYOUT_HOLDINGPOINT
+{{ data.edds_aixm['TaxiwayMarking']['7606ce06-bd8b-42f8-a624-1fbe37e548c9'] | geom_simplify(tolerance) | render_line }}
+
 
 MAP:All Stopbars
 AIRPORT:EDDS
 FOLDER:Holding Points
 LAYER:5
-COLOR:layout-holdingpoint
+COLOR:LAYOUT_HOLDINGPOINT
 {% for uuid in
 [
     '0a0e4d6a-dac7-43bc-8dc2-20908687f29d',
@@ -56,5 +61,5 @@ COLOR:layout-holdingpoint
     'dc5c2129-821a-4a65-ae72-90ff217eda00',
     'f4201886-78b4-4642-b54a-af9ac362d64d',
 ] %}
-{{- data.edds_aixm['TaxiwayMarking'][uuid] | to_line(uuid) -}}
+{{- data.edds_aixm['TaxiwayMarking'][uuid] | geom_simplify(tolerance) | render_line(uuid) }}
 {% endfor %}
