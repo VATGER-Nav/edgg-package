@@ -1,22 +1,37 @@
 {
     "EDTD": {
         "elevation": 2231,
-        "runways": "18,36",
+        "runways": "17,35",
         "transAlt": 5000,
         "maxInitialClimb": 10000,
 		"appSI": "ZHA",
         "sids": {
             "initial": 6000,
+            "climbvia": true,
             "MOPAN": {
                 "S": {
                     "1": {
-                        "rwy": "18",
+                        "rwy": "17",
                         "prio": 1
                     }
                 },
                 "N": {
                     "1": {
-                        "rwy": "36",
+                        "rwy": "35",
+                        "prio": 1
+                    }
+                }
+			},
+            "MUGOF": {
+                "S": {
+                    "1": {
+                        "rwy": "17",
+                        "prio": 1
+                    }
+                },
+                "N": {
+                    "1": {
+                        "rwy": "35",
                         "prio": 1
                     }
                 }
@@ -24,13 +39,14 @@
 			"NEDOV": {
                 "S": {
                     "1": {
-                        "rwy": "18",
-                        "prio": 1
+                        "rwy": "17",
+                        "prio": 1,
+                        "climbvia": false
                     }
                 },
                 "N": {
                     "1": {
-                        "rwy": "36",
+                        "rwy": "35",
                         "prio": 1
                     }
                 }
@@ -38,18 +54,16 @@
 			"TRA": {
                 "S": {
                     "1": {
-                        "rwy": "18",
+                        "rwy": "17",
                         "initial": 9000,
-                        "prio": 1,
-                        "climbvia": true
+                        "prio": 1
                     }
                 },
                 "N": {
                     "1": {
-                        "rwy": "36",
+                        "rwy": "35",
                         "initial": 9000,
-                        "prio": 1,
-                        "climbvia": true
+                        "prio": 1
                     }
                 }
 			}
