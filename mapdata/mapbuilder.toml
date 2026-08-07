@@ -2,71 +2,71 @@
 
 [profiles.PHX-NIGHT]
 maps = [
-    { map = "TOPSKY-PHOENIX-MAPS", target = "Plugins/Topsky/TWR_PHX_NIGHT/TopSkyMaps.txt" },
-    { map = "TOPSKY-PHOENIX-SETTINGS", target = "Plugins/Topsky/TWR_PHX_NIGHT/TopSkySettings.txt" },
-    { map = "GRP-PHOENIX-SETTINGS", target = "Plugins/GRP/TWR_PHX_NIGHT/GRpluginSettings.txt" },
-    { map = "GRP-PHOENIX-MAPS", target = "Plugins/GRP/TWR_PHX_NIGHT/GRpluginMaps.txt" },
-    { map = "GRP-STANDS", target = "Plugins/GRP/TWR_PHX_NIGHT/GRpluginStands.txt" },
+    { map = "TOPSKY-PHOENIX-MAPS", target = "EDGG/Plugins/Topsky/TWR_PHX_NIGHT/TopSkyMaps.txt", add-version = true },
+    { map = "TOPSKY-PHOENIX-SETTINGS", target = "EDGG/Plugins/Topsky/TWR_PHX_NIGHT/TopSkySettings.txt" },
+    { map = "GRP-PHOENIX-MAPS", target = "EDGG/Plugins/GRP/TWR_PHX_NIGHT/GRpluginMaps.txt", add-version = true },
+    { map = "GRP-PHOENIX-SETTINGS", target = "EDGG/Plugins/GRP/TWR_PHX_NIGHT/GRpluginSettings.txt" },
+    { map = "GRP-STANDS", target = "EDGG/Plugins/GRP/TWR_PHX_NIGHT/GRpluginStands.txt" },
 ]
 aliases = [ "dark" ]
 
 [profiles.PHX-DAY]
 maps = [
-    { map = "TOPSKY-PHOENIX-MAPS", target = "Plugins/Topsky/TWR_PHX_DAY/TopSkyMaps.txt" },
-    { map = "TOPSKY-PHOENIX-SETTINGS", target = "Plugins/Topsky/TWR_PHX_DAY/TopSkySettings.txt" },
-    { map = "GRP-PHOENIX-SETTINGS", target = "Plugins/GRP/TWR_PHX_DAY/GRpluginSettings.txt" },
-    { map = "GRP-PHOENIX-MAPS", target = "Plugins/GRP/TWR_PHX_DAY/GRpluginMaps.txt" },
-    { map = "GRP-STANDS", target = "Plugins/GRP/TWR_PHX_DAY/GRpluginStands.txt" },
+    { map = "TOPSKY-PHOENIX-MAPS", target = "EDGG/Plugins/Topsky/TWR_PHX_DAY/TopSkyMaps.txt", add-version = true },
+    { map = "TOPSKY-PHOENIX-SETTINGS", target = "EDGG/Plugins/Topsky/TWR_PHX_DAY/TopSkySettings.txt" },
+    { map = "GRP-PHOENIX-MAPS", target = "EDGG/Plugins/GRP/TWR_PHX_DAY/GRpluginMaps.txt", add-version = true },
+    { map = "GRP-PHOENIX-SETTINGS", target = "EDGG/Plugins/GRP/TWR_PHX_DAY/GRpluginSettings.txt" },
+    { map = "GRP-STANDS", target = "EDGG/Plugins/GRP/TWR_PHX_DAY/GRpluginStands.txt" },
 ]
 aliases = [ "bright" ]
 
 [profiles.EDGG]
 maps = [
-    { map = "TOPSKY-EDGG-MAPS", target = "Plugins/Topsky/EDGG/TopSkyMaps.txt" },
+    { map = "TOPSKY-EDGG-MAPS", target = "EDGG/Plugins/Topsky/EDGG/TopSkyMaps.txt", add-version = true },
 ]
 
 [profiles.EDUU]
 maps = [
-    { map = "TOPSKY-EDUU-MAPS", target = "Plugins/Topsky/EDUU/TopSkyMaps.txt" },
+    { map = "TOPSKY-EDUU-MAPS", target = "EDGG/Plugins/Topsky/EDUU/TopSkyMaps.txt", add-version = true },
 ]
 
 [profiles.EDYY]
 maps = [
-    { map = "TOPSKY-EDYY-MAPS", target = "Plugins/Topsky/EDYY/TopSkyMaps.txt" },
+    { map = "TOPSKY-EDYY-MAPS", target = "EDGG/Plugins/Topsky/EDYY/TopSkyMaps.txt", add-version = true },
 ]
 
 [profiles.CPDLC-PHX]
 maps = [
-    { map = "TOPSKY-CPDLC", target = "Plugins/Topsky/TWR_PHX_NIGHT/TopSkyCPDLC.txt" },
-    { map = "TOPSKY-CPDLC", target = "Plugins/Topsky/TWR_PHX_DAY/TopSkyCPDLC.txt" },
+    { map = "TOPSKY-CPDLC", target = "EDGG/Plugins/Topsky/TWR_PHX_NIGHT/TopSkyCPDLC.txt" },
+    { map = "TOPSKY-CPDLC", target = "EDGG/Plugins/Topsky/TWR_PHX_DAY/TopSkyCPDLC.txt" },
 ]
 aliases = [ "dcl", "no-general" ]
 
 [profiles.CPDLC-EDGG]
 maps = [
-    { map = "TOPSKY-CPDLC", target = "Plugins/Topsky/EDGG/TopSkyCPDLC.txt" },
+    { map = "TOPSKY-CPDLC", target = "EDGG/Plugins/Topsky/EDGG/TopSkyCPDLC.txt" },
 ]
 aliases = [ "dcl", "general", "eduu", "edyy" ]
 
 [profiles.CPDLC-EDUU]
 maps = [
-    { map = "TOPSKY-CPDLC", target = "Plugins/Topsky/EDUU/TopSkyCPDLC.txt" },
+    { map = "TOPSKY-CPDLC", target = "EDGG/Plugins/Topsky/EDUU/TopSkyCPDLC.txt" },
 ]
 aliases = [ "no-dcl", "general", "eduu" ]
 
 [profiles.CPDLC-EDYY]
 maps = [
-    { map = "TOPSKY-CPDLC", target = "Plugins/Topsky/EDYY/TopSkyCPDLC.txt" },
+    { map = "TOPSKY-CPDLC", target = "EDGG/Plugins/Topsky/EDYY/TopSkyCPDLC.txt" },
 ]
 aliases = [ "no-dcl", "general", "edyy" ]
 
 [profiles.SSR]
 maps = [
-    { map = "TOPSKY-SSR", target = "Plugins/Topsky/EDGG/TopSkySSRCodes.txt" },
-    { map = "TOPSKY-SSR", target = "Plugins/Topsky/EDUU/TopSkySSRCodes.txt" },
-    { map = "TOPSKY-SSR", target = "Plugins/Topsky/EDYY/TopSkySSRCodes.txt" },
-    { map = "TOPSKY-SSR", target = "Plugins/Topsky/TWR_PHX_NIGHT/TopSkySSRCodes.txt" },
-    { map = "TOPSKY-SSR", target = "Plugins/Topsky/TWR_PHX_DAY/TopSkySSRCodes.txt" },
+    { map = "TOPSKY-SSR", target = "EDGG/Plugins/Topsky/EDGG/TopSkySSRCodes.txt" },
+    { map = "TOPSKY-SSR", target = "EDGG/Plugins/Topsky/EDUU/TopSkySSRCodes.txt" },
+    { map = "TOPSKY-SSR", target = "EDGG/Plugins/Topsky/EDYY/TopSkySSRCodes.txt" },
+    { map = "TOPSKY-SSR", target = "EDGG/Plugins/Topsky/TWR_PHX_NIGHT/TopSkySSRCodes.txt" },
+    { map = "TOPSKY-SSR", target = "EDGG/Plugins/Topsky/TWR_PHX_DAY/TopSkySSRCodes.txt" },
 ]
 
 [data]
@@ -76,6 +76,11 @@ maps = [
 [data.topsky]
 type = "kml"
 source = "kml/topsky.kml"
+
+[data.topsky_gpkg]
+type = "gpkg"
+source = "gis/topsky.gpkg"
+layers = ["VisualReportingPoint"]
 
 [data.airspace]
 type = "sectors"
@@ -92,10 +97,6 @@ source = "misc/sectors-ext.txt"
 [data.aor]
 type = "sectors"
 source = "misc/aor.txt"
-
-# [data.vrp]
-# type = "json"
-# source = "misc/vrp.json"
 
 #-------Groundlayouts AIXM-----
 
@@ -148,6 +149,17 @@ source = "dfs:0:EDSB AerodromeMapping:AIXM 5.1.1"
 [data.eddf_kml]
 type = "kml"
 source = "kml/eddf.kml"
+
+[data.eddf_gpkg]
+type = "gpkg"
+source = "gis/eddf.gpkg"
+layers = ["ApronElement", "HoldingPoint_PolyDot", "RunwayBlastPad", "RunwayElement", "TaxiwayElement", "VerticalStructure_Line", "VerticalStructure_Poly"]
+
+[data.eddf_idx]
+type = "gpkg"
+source = "gis/eddf-idx.gpkg"
+layers = ["GuidanceLineMarking_Index", "TaxiwayMarking_Index"]
+id_property = "identifier"
 
 [data.eddl_kml]
 type = "kml"
