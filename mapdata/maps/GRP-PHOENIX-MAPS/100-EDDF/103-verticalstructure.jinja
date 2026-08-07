@@ -1,0 +1,33 @@
+// ---------------------------- Buildings ---------------------------
+{#- TODO: Change simplify() to geom_simplify() when AIXM2 parser gets fixed #}
+{%- set tolerance = 0.000005 %}
+
+MAP:Buildings
+AIRPORT:EDDF
+FOLDER:Airport Layout
+ACTIVE:1
+COLOR:LAYOUT_BUILDING
+{% for uuid, feat in data.eddf_aixm['VerticalStructure'].items() if feat.type == 'BUILDING' %}
+{{- feat | simplify(tolerance) | render_area('OTHER:REGION', uuid + ' / ' + feat.name) }}
+{% endfor %}
+{% for _, feat in data.eddf_gpkg['VerticalStructure_Poly'].items() %}
+{{- feat | render_area('OTHER:REGION') }}
+{% endfor %}
+
+
+MAP:Fence
+AIRPORT:EDDF
+FOLDER:Airport Layout
+ACTIVE:1
+COLOR:LAYOUT_BUILDING
+{#
+{% for uuid, feat in data.eddf_aixm['VerticalStructure'].items() if feat.name in ['FENCE', 'PV'] %}
+{{- feat | simplify(tolerance) | render_line(uuid) }}
+{% endfor %}
+{% for _, feat in data.eddf_gpkg['VerticalStructure_Line'].items() %}
+{{- feat | render_line }}
+{% endfor %}
+#}
+{% for _, feat in data.eddf_kml['layout']['fence'].items() %}
+{{- feat | render_line }}
+{% endfor %}

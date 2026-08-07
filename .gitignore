@@ -3,13 +3,16 @@
 *.rwy
 *.sct
 
+.cache
 EDGG/ICAO/*
 EDGG/NavData/*
-EDGG/Plugins/Maestro/Documentation/*
-EDGG/.cache
+EDGG/Plugins/vATIS/*
 mapdata/aixm
 poetry.toml
+vsid.log
+vsid.1.log
 
+*TEST.prf
 aeronav_copyright.txt
 VoiceChannels.txt
 euroscope_sector_providers.txt

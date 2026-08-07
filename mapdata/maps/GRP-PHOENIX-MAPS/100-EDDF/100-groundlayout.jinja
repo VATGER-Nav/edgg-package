@@ -9,19 +9,11 @@ AIRPORT:EDDF
 FOLDER:Airport Layout
 ACTIVE:1
 COLOR:LAYOUT_APRON
-{% for _, feat in data.eddf_kml['layout']['aprons'].items() %}
+{% for _, feat in data.eddf_gpkg['ApronElement'].items() %}
 {{- feat | render_area('OTHER:REGION') }}
 {% endfor %}
-{% for desig in
-[
-    'rwyBlastpad25L',
-    'rwyBlastpad07R',
-    'rwyBlastpad25C',
-    'rwyBlastpad07C',
-    'rwyBlastpad25R',
-    'rwyBlastpad07L'
-] %}
-{{- data.eddf_kml['layout']['runways'][desig] | render_area('OTHER:REGION', desig) }}
+{% for _, feat in data.eddf_gpkg['RunwayBlastPad'].items() %}
+{{- feat | render_area('OTHER:REGION') }}
 {% endfor %}
 
 
@@ -30,7 +22,7 @@ AIRPORT:EDDF
 FOLDER:Airport Layout
 ACTIVE:1
 COLOR:LAYOUT_TAXIWAY
-{% for _, feat in data.eddf_kml['layout']['taxiways'].items() %}
+{% for _, feat in data.eddf_gpkg['TaxiwayElement'].items() %}
 {{- feat | render_area('OTHER:REGION') }}
 {% endfor %}
 
@@ -40,7 +32,6 @@ AIRPORT:EDDF
 FOLDER:Airport Layout
 ACTIVE:1
 COLOR:LAYOUT_RUNWAY
-{{ data.eddf_kml['layout']['runways']['07R-25L'] | render_area('OTHER:REGION', 'Runway 07R/25L') }}
-{{ data.eddf_kml['layout']['runways']['07C-25C'] | render_area('OTHER:REGION', 'Runway 07C/25C') }}
-{{ data.eddf_kml['layout']['runways']['07L-25R'] | render_area('OTHER:REGION', 'Runway 07L/25R') }}
-{{ data.eddf_kml['layout']['runways']['18'] | render_area('OTHER:REGION', 'Runway 18') }}
+{% for _, feat in data.eddf_gpkg['RunwayElement'].items() %}
+{{- feat | render_area('OTHER:REGION') }}
+{% endfor %}

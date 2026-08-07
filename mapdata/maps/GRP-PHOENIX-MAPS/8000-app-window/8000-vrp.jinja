@@ -10,51 +10,45 @@
      * TOPSKY-EDGG-MAPS\721-vrp.jinja
      * TOPSKY-PHOENIX-MAPS\010-fixes\010-vrp.jinja
 #}
+{%- set vrp_table = data.topsky_gpkg['VisualReportingPoint'] %}
 
 MAP:VRPs:A
 FOLDER:Fixes
-COLOR:appwindow-standard
+COLOR:APPWINDOW_STANDARD
 ACTIVE:1
-{%- for icao, fxnames in data.vrp['VFR'].items() %}
-// {{icao}}
-{%- for fx in fxnames %}
-SYMBOL:{{fx['symb']}}:{{icao | replace('ED', '')}}-{{fx['name']}}
+{%- for _, vrp in vrp_table.items() if vrp.properties['type'] == 'CIV' %}
+SYMBOL:{{vrp.properties['symb']}}:{{vrp.properties['desig']}}
 {%- endfor %}
-{%- endfor %}
+
 
 MAP:VRPs w/ L:A
 FOLDER:Fixes
-COLOR:appwindow-standard
-TEXTALIGN:LB
-{%- for icao, fxnames in data.vrp['VFR'].items() %}
-// {{icao}}
-{%- for fx in fxnames %}
-SYMBOL:{{fx['symb']}}:{{icao | replace('ED', '')}}-{{fx['name']}}:{{fx['name']}}:5:0
+COLOR:APPWINDOW_STANDARD
+{%- for _, vrp in vrp_table.items() if vrp.properties['type'] == 'CIV' %}
+{%- if vrp.properties["text_align"] == 'RB' %}
+SYMBOL/RB:{{vrp.properties['symb']}}:{{vrp.properties['desig']}}:{{vrp.properties['name']}}:-5:0
+{%- else %}
+SYMBOL/LB:{{vrp.properties['symb']}}:{{vrp.properties['desig']}}:{{vrp.properties['name']}}:5:0
+{%- endif%}
 {%- endfor %}
-{%- endfor %}
+
 
 MAP:MIL VRPs:A
 FOLDER:Fixes
-COLOR:appwindow-standard
+COLOR:APPWINDOW_STANDARD
 ACTIVE:1
-{%- for icao, fxnames in data.vrp['MIL'].items() %}
-// {{icao}}
-{%- for fx in fxnames if fx['default_vis'] == true %}
-SYMBOL:{{fx['symb']}}:{{fx['fix']}}
+{%- for _, vrp in vrp_table.items() if vrp.properties['type'] == 'MIL' %}
+SYMBOL:{{vrp.properties['symb']}}:{{vrp.properties['desig']}}
 {%- endfor %}
-{%- endfor %}
+
 
 MAP:MIL VRPs w/ L:A
 FOLDER:Fixes
-COLOR:appwindow-standard
-TEXTALIGN:LB
-{%- for icao, fxnames in data.vrp['MIL'].items() %}
-// {{icao}}
-{%- for fx in fxnames %}
-{%- if fx["text_align"] == 'RB' %}
-SYMBOL/{{fx["text_align"]}}:{{fx['symb']}}:{{fx['fix']}}:{{fx['name']}}:-5:0
+COLOR:APPWINDOW_STANDARD
+{%- for _, vrp in vrp_table.items() if vrp.properties['type'] == 'MIL' %}
+{%- if vrp.properties["text_align"] == 'RB' %}
+SYMBOL/RB:{{vrp.properties['symb']}}:{{vrp.properties['desig']}}:{{vrp.properties['name']}}:-5:0
 {%- else %}
-SYMBOL:{{fx['symb']}}:{{fx['fix']}}:{{fx['name']}}:5:0
+SYMBOL/LB:{{vrp.properties['symb']}}:{{vrp.properties['desig']}}:{{vrp.properties['name']}}:5:0
 {%- endif%}
-{%- endfor %}
 {%- endfor %}
