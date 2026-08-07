@@ -9,8 +9,8 @@ EDGG/NavData/*
 EDGG/Plugins/vATIS/*
 mapdata/aixm
 poetry.toml
-vsid.log
-vsid.1.log
+EDGG/Plugins/vSID/vSID Plugin Bright/logs
+EDGG/Plugins/vSID/vSID Plugin Dark/logs
 
 *TEST.prf
 aeronav_copyright.txt
