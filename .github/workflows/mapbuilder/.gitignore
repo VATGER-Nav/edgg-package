@@ -1,9 +1,0 @@
-__pycache__/
-*.py[cod]
-*$py.class
-/build
-/dist
-/.idea
-/.direnv
-/.ruff_cache
-/result*
