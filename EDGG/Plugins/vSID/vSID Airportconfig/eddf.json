@@ -9,6 +9,7 @@
         "timeMode": true,
         "timezone": "Europe/Berlin",
 		"appSI": "RUD,RUDH,DKB,DKBH,GCA,GSA",
+        "autoHandoff": false,
         "sids": {
             "climbvia": true,
 			"ANEKI": {
