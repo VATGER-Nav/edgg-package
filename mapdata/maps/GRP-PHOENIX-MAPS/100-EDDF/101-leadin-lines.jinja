@@ -1,7 +1,7 @@
 // ----------------------------- Stands -----------------------------
 {#- TODO: Change simplify() to feat_simplify() when AIXM2 parser gets fixed #}
 {%- set tolerance = 0.000005 %}
-{%- set index_table = data.eddf_idx['GuidanceLineMarking_Index'] %}
+{%- set index_table = data.eddf_index['GuidanceLineMarking_Index'] %}
 
 MAP:Lead-in Lines
 AIRPORT:EDDF
@@ -13,17 +13,25 @@ COLOR:LAYOUT_TAXILINE_GREY
 {% for uuid, index in index_table.items() if index.properties['type'] == 'LI_TLANE' %}
 {{- data.eddf_aixm['GuidanceLineMarking'][uuid] | simplify(tolerance) | render_line(uuid) }}
 {% endfor %}
-
-{% for _, feat in data.eddf_kml['layout']['markings']['leadin_solid'].items() %}
+{% for _, feat in data.eddf_layout['Marking_Line'].items() if feat.properties['style'] == 'SOLID' %}
 {{- feat | render_line }}
 {% endfor %}
 
 // Dash Leadin Lines
-{% for _, feat in data.eddf_kml['layout']['markings']['leadin_dash'].items() %}
+STYLE:TLANE_DASH
+{% for _, feat in data.eddf_layout['Marking_Line'].items() if feat.properties['style'] == 'DASH' and feat.properties['is_polyline'] == false %}
 {{- feat | render_line }}
+{% endfor %}
+{% for _, feat in data.eddf_layout['Marking_Line'].items() if feat.properties['style'] == 'DASH' and feat.properties['is_polyline'] == true %}
+{{- feat | render_area('OTHER:POLYLINE') }}
+{% endfor %}
+STYLE:TLANE_DOT
+{% for _, feat in data.eddf_layout['Marking_Line'].items() if feat.properties['style'] == 'DOT' %}
+{{- feat | render_area('OTHER:POLYLINE') }}
 {% endfor %}
 
 // Taxi-Out Arrows
-{% for _, feat in data.eddf_kml['layout']['markings']['arrows'].items() %}
+STYLE:SOLID
+{% for _, feat in data.eddf_layout['Marking_Poly'].items() if feat.properties['type'] == 'LO_TLANE' %}
 {{- feat | render_area('OTHER:REGION') }}
 {% endfor %}

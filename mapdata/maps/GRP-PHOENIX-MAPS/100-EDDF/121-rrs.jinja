@@ -1,91 +1,22 @@
 // ------------------------------ RRS -------------------------------
+{#- TODO: Remove macros when filters for the new API are implemented #}
+{%- from "_macros.jinja" import render_point %}
 
-MAP:RRS 25L
+{% for runway in ['25L', '07R', '25C', '07C', '25R', '07L'] %}
+MAP:RRS {{runway}}
 AIRPORT:EDDF
 FOLDER:Runway Info|RRS
 LAYER:6
-ACTIVE:RWY:ARR:EDDF25L:DEP:*
-ACTIVE:RWY:ARR:*:DEP:EDDF25L
+ACTIVE:RWY:ARR:EDDF{{runway}}:DEP:*
+ACTIVE:RWY:ARR:*:DEP:EDDF{{runway}}
 COLOR:RRS_MARKER
 {#- South Up #}
 FILTER_ASR:EDDF_GND
-{{ data.eddf_kml['layout']['rrs']['25L_2400'] | to_symbol('RRS') }}
+{{ render_point(data.eddf_info['RRSMarker'][runway+'_2400'], 'SYMBOL:RRS') }}
 {#- North Up #}
 FILTER_ASR:EDDF_S_GND
-{{ data.eddf_kml['layout']['rrs']['25L_2400_s'] | to_symbol('RRS') }}
-
-
-MAP:RRS 07R
-AIRPORT:EDDF
-FOLDER:Runway Info|RRS
-LAYER:6
-ACTIVE:RWY:ARR:EDDF07R:DEP:*
-ACTIVE:RWY:ARR:*:DEP:EDDF07R
-COLOR:RRS_MARKER
-{#- South Up #}
-FILTER_ASR:EDDF_GND
-{{ data.eddf_kml['layout']['rrs']['07R_2400'] | to_symbol('RRS') }}
-{#- North Up #}
-FILTER_ASR:EDDF_S_GND
-{{ data.eddf_kml['layout']['rrs']['07R_2400_s'] | to_symbol('RRS') }}
-
-
-MAP:RRS 25C
-AIRPORT:EDDF
-FOLDER:Runway Info|RRS
-LAYER:6
-ACTIVE:RWY:ARR:EDDF25C:DEP:*
-ACTIVE:RWY:ARR:*:DEP:EDDF25C
-COLOR:RRS_MARKER
-{#- South Up #}
-FILTER_ASR:EDDF_GND
-{{ data.eddf_kml['layout']['rrs']['25C_2400'] | to_symbol('RRS') }}
-{#- North Up #}
-FILTER_ASR:EDDF_S_GND
-{{ data.eddf_kml['layout']['rrs']['25C_2400_s'] | to_symbol('RRS') }}
-
-
-MAP:RRS 07C
-AIRPORT:EDDF
-FOLDER:Runway Info|RRS
-LAYER:6
-ACTIVE:RWY:ARR:EDDF07C:DEP:*
-ACTIVE:RWY:ARR:*:DEP:EDDF07C
-COLOR:RRS_MARKER
-{#- South Up #}
-FILTER_ASR:EDDF_GND
-{{ data.eddf_kml['layout']['rrs']['07C_2400'] | to_symbol('RRS') }}
-{#- North Up #}
-FILTER_ASR:EDDF_S_GND
-{{ data.eddf_kml['layout']['rrs']['07C_2400_s'] | to_symbol('RRS') }}
-
-
-MAP:RRS 25R
-AIRPORT:EDDF
-FOLDER:Runway Info|RRS
-LAYER:6
-ACTIVE:RWY:ARR:EDDF25R:DEP:*
-COLOR:RRS_MARKER
-{#- South Up #}
-FILTER_ASR:EDDF_GND
-{{ data.eddf_kml['layout']['rrs']['25R_2400'] | to_symbol('RRS') }}
-{#- North Up #}
-FILTER_ASR:EDDF_S_GND
-{{ data.eddf_kml['layout']['rrs']['25R_2400_s'] | to_symbol('RRS') }}
-
-
-MAP:RRS 07L
-AIRPORT:EDDF
-FOLDER:Runway Info|RRS
-LAYER:6
-ACTIVE:RWY:ARR:EDDF07L:DEP:*
-COLOR:RRS_MARKER
-{#- South Up #}
-FILTER_ASR:EDDF_GND
-{{ data.eddf_kml['layout']['rrs']['07L_2400'] | to_symbol('RRS') }}
-{#- North Up #}
-FILTER_ASR:EDDF_S_GND
-{{ data.eddf_kml['layout']['rrs']['07L_2400_s'] | to_symbol('RRS') }}
+{{ render_point(data.eddf_info['RRSMarker'][runway+'_2400_s'], 'SYMBOL:RRS') }}
+{% endfor %}
 
 
 MAP:RRS 18
@@ -96,97 +27,24 @@ ACTIVE:RWY:ARR:*:DEP:EDDF18
 COLOR:RRS_MARKER
 {#- South Up #}
 FILTER_ASR:EDDF_GND
-{{ data.eddf_kml['layout']['rrs']['18_2400'] | to_symbol('RRS-E') }}
+{{ render_point(data.eddf_info['RRSMarker']['18_2400'], 'SYMBOL:RRS-E') }}
 {#- North Up #}
 FILTER_ASR:EDDF_S_GND
-{{ data.eddf_kml['layout']['rrs']['18_2400'] | to_symbol('RRS-W') }}
+{{ render_point(data.eddf_info['RRSMarker']['18_2400'], 'SYMBOL:RRS-W') }}
 
 
-MAP:RRS 600/1500 25L
+{% for runway in ['25L', '07R', '25C', '07C', '25R', '07L'] %}
+MAP:RRS 600/1500 {{runway}}
 AIRPORT:EDDF
 FOLDER:Runway Info|RRS
 LAYER:6
 COLOR:RRS_MARKER
 {#- South Up #}
 FILTER_ASR:EDDF_GND
-{{ data.eddf_kml['layout']['rrs']['25L_600'] | to_symbol('RRS') }}
-{{ data.eddf_kml['layout']['rrs']['25L_1500'] | to_symbol('RRS') }}
+{{ render_point(data.eddf_info['RRSMarker'][runway+'_600'], 'SYMBOL:RRS') }}
+{{ render_point(data.eddf_info['RRSMarker'][runway+'_1500'], 'SYMBOL:RRS') }}
 {#- North Up #}
 FILTER_ASR:EDDF_S_GND
-{{ data.eddf_kml['layout']['rrs']['25L_600_s'] | to_symbol('RRS') }}
-{{ data.eddf_kml['layout']['rrs']['25L_1500_s'] | to_symbol('RRS') }}
-
-
-MAP:RRS 600/1500 07R
-AIRPORT:EDDF
-FOLDER:Runway Info|RRS
-LAYER:6
-COLOR:RRS_MARKER
-{#- South Up #}
-FILTER_ASR:EDDF_GND
-{{ data.eddf_kml['layout']['rrs']['07R_600'] | to_symbol('RRS') }}
-{{ data.eddf_kml['layout']['rrs']['07R_1500'] | to_symbol('RRS') }}
-{#- North Up #}
-FILTER_ASR:EDDF_S_GND
-{{ data.eddf_kml['layout']['rrs']['07R_600_s'] | to_symbol('RRS') }}
-{{ data.eddf_kml['layout']['rrs']['07R_1500_s'] | to_symbol('RRS') }}
-
-
-MAP:RRS 600/1500 25C
-AIRPORT:EDDF
-FOLDER:Runway Info|RRS
-LAYER:6
-COLOR:RRS_MARKER
-{#- South Up #}
-FILTER_ASR:EDDF_GND
-{{ data.eddf_kml['layout']['rrs']['25C_600'] | to_symbol('RRS') }}
-{{ data.eddf_kml['layout']['rrs']['25C_1500'] | to_symbol('RRS') }}
-{#- North Up #}
-FILTER_ASR:EDDF_S_GND
-{{ data.eddf_kml['layout']['rrs']['25C_600_s'] | to_symbol('RRS') }}
-{{ data.eddf_kml['layout']['rrs']['25C_1500_s'] | to_symbol('RRS') }}
-
-
-MAP:RRS 600/1500 07C
-AIRPORT:EDDF
-FOLDER:Runway Info|RRS
-LAYER:6
-COLOR:RRS_MARKER
-{#- South Up #}
-FILTER_ASR:EDDF_GND
-{{ data.eddf_kml['layout']['rrs']['07C_600'] | to_symbol('RRS') }}
-{{ data.eddf_kml['layout']['rrs']['07C_1500'] | to_symbol('RRS') }}
-{#- North Up #}
-FILTER_ASR:EDDF_S_GND
-{{ data.eddf_kml['layout']['rrs']['07C_600_s'] | to_symbol('RRS') }}
-{{ data.eddf_kml['layout']['rrs']['07C_1500_s'] | to_symbol('RRS') }}
-
-
-MAP:RRS 600/1500 25R
-AIRPORT:EDDF
-FOLDER:Runway Info|RRS
-LAYER:6
-COLOR:RRS_MARKER
-{#- South Up #}
-FILTER_ASR:EDDF_GND
-{{ data.eddf_kml['layout']['rrs']['25R_600'] | to_symbol('RRS') }}
-{{ data.eddf_kml['layout']['rrs']['25R_1500'] | to_symbol('RRS') }}
-{#- North Up #}
-FILTER_ASR:EDDF_S_GND
-{{ data.eddf_kml['layout']['rrs']['25R_600_s'] | to_symbol('RRS') }}
-{{ data.eddf_kml['layout']['rrs']['25R_1500_s'] | to_symbol('RRS') }}
-
-
-MAP:RRS 600/1500 07L
-AIRPORT:EDDF
-FOLDER:Runway Info|RRS
-LAYER:6
-COLOR:RRS_MARKER
-{#- South Up #}
-FILTER_ASR:EDDF_GND
-{{ data.eddf_kml['layout']['rrs']['07L_600'] | to_symbol('RRS') }}
-{{ data.eddf_kml['layout']['rrs']['07L_1500'] | to_symbol('RRS') }}
-{#- North Up #}
-FILTER_ASR:EDDF_S_GND
-{{ data.eddf_kml['layout']['rrs']['07L_600_s'] | to_symbol('RRS') }}
-{{ data.eddf_kml['layout']['rrs']['07L_1500_s'] | to_symbol('RRS') }}
+{{ render_point(data.eddf_info['RRSMarker'][runway+'_600_s'], 'SYMBOL:RRS') }}
+{{ render_point(data.eddf_info['RRSMarker'][runway+'_1500_s'], 'SYMBOL:RRS') }}
+{% endfor %}

@@ -1,8 +1,7 @@
 // ------------------------- Holding Points -------------------------
 {#- TODO: Change simplify() to geom_simplify() when AIXM2 parser gets fixed #}
 {%- set tolerance = 0.000005 %}
-{%- set stopbars_cat1 = ['L', 'M', 'N', 'N-South', 'S', 'W1', 'W3', 'W9', 'Y5', 'Y9'] %}
-{%- set index_table = data.eddf_idx['TaxiwayMarking_Index'] %}
+{%- set index_table = data.eddf_index['TaxiwayMarking_Index'] %}
 
 MAP:Holding Points CAT I
 AIRPORT:EDDF
@@ -10,23 +9,20 @@ FOLDER:Holding Points
 ACTIVE:LVP:EDDF:0
 LAYER:5
 COLOR:LAYOUT_HOLDINGPOINT
-{% for desig, feat in data.eddf_kml['layout']['holdingpoints']['cat1'].items() %}
+{% for desig, feat in data.eddf_layout['HoldingPoint_Poly'].items() if feat.properties['color'] == 'ORANGE' %}
 {{- feat | render_area('OTHER:REGION', desig) }}
 {% endfor %}
 COLOR:LAYOUT_HOLDINGPOINT_GREY
-{% for desig, feat in data.eddf_kml['layout']['stopbars']['poly'].items() %}
+{% for desig, feat in data.eddf_layout['HoldingPoint_Poly'].items() if feat.properties['color'] == 'GREY' %}
 {{- feat | render_area('OTHER:REGION', desig) }}
-{% endfor %}
-{% for desig, feat in data.eddf_kml['layout']['holdingpoints']['cat3'].items() %}
-{{- feat | render_area('OTHER:REGION', desig + ' CAT III') }}
 {% endfor %}
 STYLE:SOLID:2
 COLOR:LAYOUT_HOLDINGPOINT
-{% for desig, feat in data.eddf_kml['layout']['holdingpoints']['line'].items() %}
+{% for desig, feat in data.eddf_layout['HoldingPoint_Line'].items() if feat.properties['color'] == 'ORANGE' %}
 {{- feat | render_line(desig) }}
 {% endfor %}
 COLOR:LAYOUT_HOLDINGPOINT_GREY
-{% for desig, feat in data.eddf_kml['layout']['stopbars']['line'].items() %}
+{% for desig, feat in data.eddf_layout['HoldingPoint_Line'].items() if feat.properties['color'] == 'GREY' %}
 {{- feat | render_line(desig) }}
 {% endfor %}
 
@@ -37,24 +33,21 @@ FOLDER:Holding Points
 ACTIVE:LVP:EDDF:1
 LAYER:5
 COLOR:LAYOUT_HOLDINGPOINT_RED
-{% for desig, feat in data.eddf_kml['layout']['holdingpoints']['cat3'].items() %}
-{{- feat | render_area('OTHER:REGION', desig + ' CAT III') }}
-{% endfor %}
-{% for desig, feat in data.eddf_kml['layout']['stopbars']['poly'].items() if not desig in stopbars_cat1 %}
-{{- feat | render_area('OTHER:REGION', desig + ' CAT III') }}
+{% for desig, feat in data.eddf_layout['HoldingPoint_Poly'].items() if feat.properties['type'] in ['BOTH', 'CAT3'] %}
+{{- feat | render_area('OTHER:REGION', desig) }}
 {% endfor %}
 COLOR:LAYOUT_HOLDINGPOINT_GREY
-{% for desig in stopbars_cat1 %}
-{{- data.eddf_kml['layout']['stopbars']['poly'][desig] | render_area('OTHER:REGION', desig + ' CAT I') }}
+{% for desig, feat in data.eddf_layout['HoldingPoint_Poly'].items() if feat.properties['type'] == 'RWY18' %}
+{{- feat | render_area('OTHER:REGION', desig) }}
 {% endfor %}
 STYLE:SOLID:2
 COLOR:LAYOUT_HOLDINGPOINT_RED
-{% for desig, feat in data.eddf_kml['layout']['stopbars']['line'].items() if not desig in stopbars_cat1 %}
-{{- feat | render_line(desig + ' CAT III') }}
+{% for desig, feat in data.eddf_layout['HoldingPoint_Line'].items() if feat.properties['type'] == 'BOTH' %}
+{{- feat | render_line(desig) }}
 {% endfor %}
 COLOR:LAYOUT_HOLDINGPOINT_GREY
-{% for desig in stopbars_cat1 %}
-{{- data.eddf_kml['layout']['stopbars']['line'][desig] | render_line(desig + ' CAT I') }}
+{% for desig, feat in data.eddf_layout['HoldingPoint_Line'].items() if feat.properties['type'] == 'RWY18' %}
+{{- feat | render_line(desig) }}
 {% endfor %}
 
 
@@ -63,7 +56,7 @@ AIRPORT:EDDF
 FOLDER:Holding Points
 ACTIVE:1
 COLOR:LAYOUT_TAXILINE_GREY
-{% for _, feat in data.eddf_gpkg['HoldingPoint_PolyDot'].items() %}
+{% for _, feat in data.eddf_layout['HoldingPoint_PolyDot'].items() %}
 {{- feat | render_area('OTHER:REGION') }}
 {% endfor %}
 

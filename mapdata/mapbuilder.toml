@@ -144,22 +144,40 @@ source = "dfs:0:EDFH AerodromeMapping:AIXM 5.1.1"
 type = "aixm2"
 source = "dfs:0:EDSB AerodromeMapping:AIXM 5.1.1"
 
-#-------Groundlayouts KML------
+#================================================================
+#                          Groundlayouts
+#================================================================
+
+#----------------------------< EDDF >----------------------------
 
 [data.eddf_kml]
 type = "kml"
 source = "kml/eddf.kml"
 
-[data.eddf_gpkg]
+[data.eddf_layout]
 type = "gpkg"
-source = "gis/eddf.gpkg"
-layers = ["ApronElement", "HoldingPoint_PolyDot", "RunwayBlastPad", "RunwayElement", "TaxiwayElement", "VerticalStructure_Line", "VerticalStructure_Poly"]
+source = "gis/eddf-layout.gpkg"
+layers = ["HoldingPoint_Line", "HoldingPoint_Poly", "HoldingPoint_PolyDot", "Marking_Line", "Marking_Poly", "RunwayElement"]
+id_property = "designator"
 
-[data.eddf_idx]
+[data.eddf_layout_fid]
 type = "gpkg"
-source = "gis/eddf-idx.gpkg"
+source = "gis/eddf-layout.gpkg"
+layers = ["ApronElement", "RunwayBlastPad", "TaxiwayElement", "VerticalStructure_Line", "VerticalStructure_Poly"]
+
+[data.eddf_index]
+type = "gpkg"
+source = "gis/eddf-index.gpkg"
 layers = ["GuidanceLineMarking_Index", "TaxiwayMarking_Index"]
 id_property = "identifier"
+
+[data.eddf_info]
+type = "gpkg"
+source = "gis/eddf-info.gpkg"
+layers = ["AoRBoundary", "AoRLabel", "AreaLabel", "BuildingLabel", "HoldingPointLabel", "Restriction_Line", "Restriction_Poly", "RestrictionLabel", "RestrictionStand", "RRSMarker", "RunwayLabel", "SensitiveArea", "StandLabel", "TaxiwayLabel", "TORALabel"]
+id_property = "designator"
+
+#----------------------------< EDDL >----------------------------
 
 [data.eddl_kml]
 type = "kml"

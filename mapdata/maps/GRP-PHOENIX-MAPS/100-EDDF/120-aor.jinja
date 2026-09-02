@@ -7,6 +7,8 @@
         - GRP-PHOENIX-MAPS\8000-app-window\8020-EDDF.jinja
         - TOPSKY-PHOENIX-MAPS\100-EDDF\103-tools.jinja
 #}
+{#- TODO: Remove macros when filters for the new API are implemented #}
+{%- from "_macros.jinja" import render_point %}
 
 MAP:EDDF_C_GND
 AIRPORT:EDDF
@@ -14,10 +16,10 @@ FOLDER:AoR|EDDF_x_GND 25
 LAYER:6
 COLOR:AOR_GND_A
 STYLE:DOT
-{{ data.eddf_kml['layout']['aor']['line']['DFGC_25'] | render_line }}
+{{ data.eddf_info['AoRBoundary']['DFGC_25'] | render_line }}
 ZOOM:300
 FONTSIZE:=:13
-{{ data.eddf_kml['layout']['aor']['labels']['DFGC'] | to_text('DFGC 121.855') }}
+{{ render_point(data.eddf_info['AoRLabel']['DFGC'], 'TEXT', 'DFGC 121.855') }}
 
 
 MAP:EDDF_E_GND
@@ -26,10 +28,10 @@ FOLDER:AoR|EDDF_x_GND 25
 LAYER:6
 COLOR:AOR_GND_C
 STYLE:DOT
-{{ data.eddf_kml['layout']['aor']['line']['DFGE_25'] | render_line }}
+{{ data.eddf_info['AoRBoundary']['DFGE_25'] | render_line }}
 ZOOM:300
 FONTSIZE:=:13
-{{ data.eddf_kml['layout']['aor']['labels']['DFGE'] | to_text('DFGE 121.955') }}
+{{ render_point(data.eddf_info['AoRLabel']['DFGE'], 'TEXT', 'DFGE 121.955') }}
 
 
 MAP:EDDF_W_GND
@@ -38,10 +40,10 @@ FOLDER:AoR|EDDF_x_GND 25
 LAYER:6
 COLOR:AOR_GND_B
 STYLE:DOT
-{{ data.eddf_kml['layout']['aor']['line']['DFGW_25'] | render_line }}
+{{ data.eddf_info['AoRBoundary']['DFGW_25'] | render_line }}
 ZOOM:300
 FONTSIZE:=:13
-{{ data.eddf_kml['layout']['aor']['labels']['DFGW'] | to_text('DFGW 121.755') }}
+{{ render_point(data.eddf_info['AoRLabel']['DFGW'], 'TEXT', 'DFGW 121.755') }}
 
 
 MAP:EDDF_C_GND
@@ -50,15 +52,15 @@ FOLDER:AoR|EDDF_x_GND 07
 LAYER:6
 COLOR:AOR_GND_A
 STYLE:DOT
-{{ data.eddf_kml['layout']['aor']['line']['DFGC_07'] | render_line }}
+{{ data.eddf_info['AoRBoundary']['DFGC_07'] | render_line }}
 COLOR:LAYOUT_LABEL_TAXIWAY
-{{ data.eddf_kml['layout']['aor']['line']['mixed_area'] | render_line }}
+{{ data.eddf_info['AoRBoundary']['mixed_area'] | render_line }}
 ZOOM:300
 FONTSIZE:=:13
 COLOR:AOR_GND_A
-{{ data.eddf_kml['layout']['aor']['labels']['DFGC'] | to_text('DFGC 121.855') }}
+{{ render_point(data.eddf_info['AoRLabel']['DFGC'], 'TEXT', 'DFGC 121.855') }}
 COLOR:LAYOUT_LABEL_TAXIWAY
-{{ data.eddf_kml['layout']['aor']['labels']['mixed_area'] | to_text('MIXED AREA') }}
+{{ render_point(data.eddf_info['AoRLabel']['mixed_area'], 'TEXT', 'MIXED AREA') }}
 
 
 MAP:EDDF_E_GND
@@ -67,15 +69,15 @@ FOLDER:AoR|EDDF_x_GND 07
 LAYER:6
 COLOR:AOR_GND_C
 STYLE:DOT
-{{ data.eddf_kml['layout']['aor']['line']['DFGE_07'] | render_line }}
+{{ data.eddf_info['AoRBoundary']['DFGE_07'] | render_line }}
 COLOR:LAYOUT_LABEL_TAXIWAY
-{{ data.eddf_kml['layout']['aor']['line']['mixed_area'] | render_line }}
+{{ data.eddf_info['AoRBoundary']['mixed_area'] | render_line }}
 ZOOM:300
 FONTSIZE:=:13
 COLOR:AOR_GND_C
-{{ data.eddf_kml['layout']['aor']['labels']['DFGE'] | to_text('DFGE 121.955') }}
+{{ render_point(data.eddf_info['AoRLabel']['DFGE'], 'TEXT', 'DFGE 121.955') }}
 COLOR:LAYOUT_LABEL_TAXIWAY
-{{ data.eddf_kml['layout']['aor']['labels']['mixed_area'] | to_text('MIXED AREA') }}
+{{ render_point(data.eddf_info['AoRLabel']['mixed_area'], 'TEXT', 'MIXED AREA') }}
 
 
 MAP:EDDF_W_GND
@@ -84,15 +86,15 @@ FOLDER:AoR|EDDF_x_GND 07
 LAYER:6
 COLOR:AOR_GND_B
 STYLE:DOT
-{{ data.eddf_kml['layout']['aor']['line']['DFGW_07'] | render_line }}
+{{ data.eddf_info['AoRBoundary']['DFGW_07'] | render_line }}
 COLOR:LAYOUT_LABEL_TAXIWAY
-{{ data.eddf_kml['layout']['aor']['line']['mixed_area'] | render_line }}
+{{ data.eddf_info['AoRBoundary']['mixed_area'] | render_line }}
 ZOOM:300
 FONTSIZE:=:13
 COLOR:AOR_GND_B
-{{ data.eddf_kml['layout']['aor']['labels']['DFGW'] | to_text('DFGW 121.755') }}
+{{ render_point(data.eddf_info['AoRLabel']['DFGW'], 'TEXT', 'DFGW 121.755') }}
 COLOR:LAYOUT_LABEL_TAXIWAY
-{{ data.eddf_kml['layout']['aor']['labels']['mixed_area'] | to_text('MIXED AREA') }}
+{{ render_point(data.eddf_info['AoRLabel']['mixed_area'], 'TEXT', 'MIXED AREA') }}
 
 
 MAP:EDDF_S_GND (E)
@@ -101,17 +103,15 @@ FOLDER:AoR
 LAYER:6
 COLOR:AOR_GND_E
 STYLE:DOT
-{{ data.eddf_kml['layout']['aor']['line']['DFGSE'] | render_line }}
+{{ data.eddf_info['AoRBoundary']['DFGSE'] | render_line }}
 ZOOM:300
 FONTSIZE:=:13
 {#- South Up #}
 FILTER_ASR:EDDF_GND
-TEXTALIGN:RC
-{{ data.eddf_kml['layout']['aor']['labels']['DFGSE'] | to_text('DFGS 121.655') }}
+{{ render_point(data.eddf_info['AoRLabel']['DFGSE'], 'TEXT/RC', 'DFGS 121.655') }}
 {#- North Up #}
 FILTER_ASR:EDDF_S_GND
-TEXTALIGN:LC
-{{ data.eddf_kml['layout']['aor']['labels']['DFGSE'] | to_text('DFGS 121.655') }}
+{{ render_point(data.eddf_info['AoRLabel']['DFGSE'], 'TEXT/LC', 'DFGS 121.655') }}
 
 
 MAP:EDDF_S_GND (W)
@@ -120,10 +120,10 @@ FOLDER:AoR
 LAYER:6
 COLOR:AOR_GND_E
 STYLE:DOT
-{{ data.eddf_kml['layout']['aor']['line']['DFGSW'] | render_line }}
+{{ data.eddf_info['AoRBoundary']['DFGSW'] | render_line }}
 ZOOM:300
 FONTSIZE:=:13
-{{ data.eddf_kml['layout']['aor']['labels']['DFGSW'] | to_text('DFGS 121.915') }}
+{{ render_point(data.eddf_info['AoRLabel']['DFGSW'], 'TEXT', 'DFGS 121.915') }}
 
 
 MAP:EDDF_ICE_GND
@@ -132,15 +132,15 @@ FOLDER:AoR
 LAYER:6
 COLOR:AOR_ICE
 STYLE:DOT
-{{ data.eddf_kml['layout']['aor']['line']['DFGI'] | render_line }}
+{{ data.eddf_info['AoRBoundary']['DFGI'] | render_line }}
 ZOOM:300
 FONTSIZE:=:13
 {#- South Up #}
 FILTER_ASR:EDDF_GND
-{{ data.eddf_kml['layout']['aor']['labels']['DFGW'] | to_text('DFGI 121.985:0:20') }}
+{{ render_point(data.eddf_info['AoRLabel']['DFGW'], 'TEXT', 'DFGI 121.985:0:20') }}
 {#- North Up #}
 FILTER_ASR:EDDF_S_GND
-{{ data.eddf_kml['layout']['aor']['labels']['DFGW'] | to_text('DFGI 121.985:0:-20') }}
+{{ render_point(data.eddf_info['AoRLabel']['DFGW'], 'TEXT', 'DFGI 121.985:0:-20') }}
 
 
 MAP:EDDF_GND
@@ -149,18 +149,16 @@ FOLDER:AoR
 LAYER:6
 COLOR:AOR_GND_D
 STYLE:DOT
-{{ data.eddf_kml['layout']['aor']['line']['DFG'] | render_line }}
+{{ data.eddf_info['AoRBoundary']['DFG'] | render_line }}
 ZOOM:300
 FONTSIZE:=:13
-{{ data.eddf_kml['layout']['aor']['labels']['DFG_a'] | to_text('DFG  121.805') }}
+{{ render_point(data.eddf_info['AoRLabel']['DFG_a'], 'TEXT', 'DFG  121.805') }}
 {#- South Up #}
 FILTER_ASR:EDDF_GND
-TEXTALIGN:RC
-{{ data.eddf_kml['layout']['aor']['labels']['DFG_b'] | to_text('DFG  121.805') }}
+{{ render_point(data.eddf_info['AoRLabel']['DFG_b'], 'TEXT/RC', 'DFG  121.805') }}
 {#- North Up #}
 FILTER_ASR:EDDF_S_GND
-TEXTALIGN:LC
-{{ data.eddf_kml['layout']['aor']['labels']['DFG_b'] | to_text('DFG  121.805') }}
+{{ render_point(data.eddf_info['AoRLabel']['DFG_b'], 'TEXT/LC', 'DFG  121.805') }}
 
 
 MAP:EDDF_C_TWR
@@ -169,10 +167,10 @@ FOLDER:AoR
 LAYER:6
 COLOR:AOR_TWR_B
 STYLE:DOT
-{{ data.eddf_kml['layout']['aor']['line']['DFTC'] | render_line }}
+{{ data.eddf_info['AoRBoundary']['DFTC'] | render_line }}
 ZOOM:300
 FONTSIZE:=:13
-{{ data.eddf_kml['layout']['aor']['labels']['DFTC'] | to_text('DFTC 118.780') }}
+{{ render_point(data.eddf_info['AoRLabel']['DFTC'], 'TEXT', 'DFTC 118.780') }}
 
 
 MAP:EDDF_W_TWR
@@ -181,17 +179,15 @@ FOLDER:AoR
 LAYER:6
 COLOR:AOR_TWR_C
 STYLE:DOT
-{{ data.eddf_kml['layout']['aor']['line']['DFTW'] | render_line }}
+{{ data.eddf_info['AoRBoundary']['DFTW'] | render_line }}
 ZOOM:300
 FONTSIZE:=:13
 {#- South Up #}
 FILTER_ASR:EDDF_GND
-TEXTALIGN:LC
-{{ data.eddf_kml['layout']['aor']['labels']['DFTW'] | to_text('DFTW 124.855') }}
+{{ render_point(data.eddf_info['AoRLabel']['DFTW'], 'TEXT/LC', 'DFTW 124.855') }}
 {#- North Up #}
 FILTER_ASR:EDDF_S_GND
-TEXTALIGN:RC
-{{ data.eddf_kml['layout']['aor']['labels']['DFTW'] | to_text('DFTW 124.855') }}
+{{ render_point(data.eddf_info['AoRLabel']['DFTW'], 'TEXT/RC', 'DFTW 124.855') }}
 
 
 MAP:EDDF_N_TWR
@@ -200,10 +196,10 @@ FOLDER:AoR
 LAYER:6
 COLOR:AOR_TWR_C
 STYLE:DOT
-{{ data.eddf_kml['layout']['aor']['line']['DFTN'] | render_line }}
+{{ data.eddf_info['AoRBoundary']['DFTN'] | render_line }}
 ZOOM:300
 FONTSIZE:=:13
-{{ data.eddf_kml['layout']['aor']['labels']['DFTN'] | to_text('DFTN 136.500') }}
+{{ render_point(data.eddf_info['AoRLabel']['DFTN'], 'TEXT', 'DFTN 136.500') }}
 
 
 MAP:EDDF_S_TWR
@@ -212,10 +208,10 @@ FOLDER:AoR
 LAYER:6
 COLOR:AOR_TWR_A
 STYLE:DOT
-{{ data.eddf_kml['layout']['aor']['line']['DFTS'] | render_line }}
+{{ data.eddf_info['AoRBoundary']['DFTS'] | render_line }}
 ZOOM:300
 FONTSIZE:=:13
-{{ data.eddf_kml['layout']['aor']['labels']['DFTS'] | to_text('DFTS 119.905') }}
+{{ render_point(data.eddf_info['AoRLabel']['DFTS'], 'TEXT', 'DFTS 119.905') }}
 
 
 MAP:EDDF_N_DEP
@@ -228,12 +224,12 @@ ZOOM:300
 FONTSIZE:=:13
 {#- South Up #}
 FILTER_ASR:EDDF_GND
-{{ data.eddf_kml['layout']['aor']['labels']['DFD_a'] | to_text('DFDN 120.155:0:10') }}
-{{ data.eddf_kml['layout']['aor']['labels']['DFD_b'] | to_text('DFDN 120.155:0:10') }}
+{{ render_point(data.eddf_info['AoRLabel']['DFD_a'], 'TEXT', 'DFDN 120.155:0:10') }}
+{{ render_point(data.eddf_info['AoRLabel']['DFD_b'], 'TEXT', 'DFDN 120.155:0:10') }}
 {#- North Up #}
 FILTER_ASR:EDDF_S_GND
-{{ data.eddf_kml['layout']['aor']['labels']['DFD_a'] | to_text('DFDN 120.155:0:-10') }}
-{{ data.eddf_kml['layout']['aor']['labels']['DFD_b'] | to_text('DFDN 120.155:0:-10') }}
+{{ render_point(data.eddf_info['AoRLabel']['DFD_a'], 'TEXT', 'DFDN 120.155:0:-10') }}
+{{ render_point(data.eddf_info['AoRLabel']['DFD_b'], 'TEXT', 'DFDN 120.155:0:-10') }}
 
 
 MAP:EDDF_S_DEP
@@ -246,9 +242,9 @@ ZOOM:300
 FONTSIZE:=:13
 {#- South Up #}
 FILTER_ASR:EDDF_GND
-{{ data.eddf_kml['layout']['aor']['labels']['DFD_a'] | to_text('DFDS 136.130:0:-10') }}
-{{ data.eddf_kml['layout']['aor']['labels']['DFD_b'] | to_text('DFDS 136.130:0:-10') }}
+{{ render_point(data.eddf_info['AoRLabel']['DFD_a'], 'TEXT', 'DFDS 136.130:0:-10') }}
+{{ render_point(data.eddf_info['AoRLabel']['DFD_b'], 'TEXT', 'DFDS 136.130:0:-10') }}
 {#- North Up #}
 FILTER_ASR:EDDF_S_GND
-{{ data.eddf_kml['layout']['aor']['labels']['DFD_a'] | to_text('DFDS 136.130:0:10') }}
-{{ data.eddf_kml['layout']['aor']['labels']['DFD_b'] | to_text('DFDS 136.130:0:10') }}
+{{ render_point(data.eddf_info['AoRLabel']['DFD_a'], 'TEXT', 'DFDS 136.130:0:10') }}
+{{ render_point(data.eddf_info['AoRLabel']['DFD_b'], 'TEXT', 'DFDS 136.130:0:10') }}

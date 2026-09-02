@@ -1,7 +1,7 @@
 // ---------------------------- Taxilanes --------------------------
 {#- TODO: Change simplify() to geom_simplify() when AIXM2 parser gets fixed #}
 {%- set tolerance = 0.000005 %}
-{%- set index_table = data.eddf_idx['GuidanceLineMarking_Index'] %}
+{%- set index_table = data.eddf_index['GuidanceLineMarking_Index'] %}
 {%- set guidanceline = data.eddf_aixm['GuidanceLineMarking'] %}
 
 MAP:Taxilanes

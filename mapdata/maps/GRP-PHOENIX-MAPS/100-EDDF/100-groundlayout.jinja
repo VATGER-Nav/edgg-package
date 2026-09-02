@@ -9,10 +9,10 @@ AIRPORT:EDDF
 FOLDER:Airport Layout
 ACTIVE:1
 COLOR:LAYOUT_APRON
-{% for _, feat in data.eddf_gpkg['ApronElement'].items() %}
+{% for _, feat in data.eddf_layout_fid['ApronElement'].items() %}
 {{- feat | render_area('OTHER:REGION') }}
 {% endfor %}
-{% for _, feat in data.eddf_gpkg['RunwayBlastPad'].items() %}
+{% for _, feat in data.eddf_layout_fid['RunwayBlastPad'].items() %}
 {{- feat | render_area('OTHER:REGION') }}
 {% endfor %}
 
@@ -22,7 +22,7 @@ AIRPORT:EDDF
 FOLDER:Airport Layout
 ACTIVE:1
 COLOR:LAYOUT_TAXIWAY
-{% for _, feat in data.eddf_gpkg['TaxiwayElement'].items() %}
+{% for _, feat in data.eddf_layout_fid['TaxiwayElement'].items() %}
 {{- feat | render_area('OTHER:REGION') }}
 {% endfor %}
 
@@ -32,6 +32,6 @@ AIRPORT:EDDF
 FOLDER:Airport Layout
 ACTIVE:1
 COLOR:LAYOUT_RUNWAY
-{% for _, feat in data.eddf_gpkg['RunwayElement'].items() %}
+{% for _, feat in data.eddf_layout['RunwayElement'].items() %}
 {{- feat | render_area('OTHER:REGION') }}
 {% endfor %}
