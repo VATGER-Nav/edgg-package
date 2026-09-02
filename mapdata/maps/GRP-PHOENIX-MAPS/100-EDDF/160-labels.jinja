@@ -1,4 +1,6 @@
 // ----------------------------- Labels -----------------------------
+{#- TODO: Remove macros when filters for the new API are implemented #}
+{%- from "_macros.jinja" import render_point %}
 
 MAP:Taxiways
 AIRPORT:EDDF
@@ -6,19 +8,24 @@ FOLDER:Labels
 LAYER:6
 ACTIVE:1
 OTHER_MAP_ACT:=:Labels\Stopbars
-OTHER_MAP_ACT:=:Labels\Links
 ZOOM:300
 FONTSIZE:=:10
 COLOR:LAYOUT_LABEL_TAXIWAY
-{% for desig, feat in data.eddf_kml['layout']['labels']['taxiways'].items() if desig not in
-[
-    'Link 3',
-    'Link 4',
-    'Link 5',
-    'S23',
-] %}
-{{- feat | to_text(desig) }}
+{% for _, feat in data.eddf_info['TaxiwayLabel'].items() if feat.properties['zoomlevel'] == 300 %}
+{{- render_point(feat, 'TEXT', feat.properties['text']) }}
 {% endfor %}
+ZOOM:800
+FONTSIZE:=:9
+COLOR:LAYOUT_LABEL_STAND
+{{ render_point(data.eddf_info['TaxiwayLabel']['Link3'], 'TEXT/CC', 'Link 3') }}
+{#- South Up #}
+FILTER_ASR:EDDF_GND
+{{ render_point(data.eddf_info['TaxiwayLabel']['Link4'], 'TEXT/LC', 'Link 4') }}
+{{ render_point(data.eddf_info['TaxiwayLabel']['Link5'], 'TEXT/RC', 'Link 5') }}
+{#- North Up #}
+FILTER_ASR:EDDF_S_GND
+{{ render_point(data.eddf_info['TaxiwayLabel']['Link4'], 'TEXT/RC', 'Link 4') }}
+{{ render_point(data.eddf_info['TaxiwayLabel']['Link5'], 'TEXT/LC', 'Link 5') }}
 
 
 MAP:Stands
@@ -29,186 +36,28 @@ ACTIVE:1
 ZOOM:400
 FONTSIZE:=:9
 COLOR:LAYOUT_LABEL_STAND
-{% for desig, feat in data.eddf_kml['layout']['labels']['stands'].items() if not desig in
-[
-    'A54A',
-    'A54B',
-    'A58A',
-    'A58B',
-    'A62A',
-    'A62B',
-    'A66A',
-    'A66B',
-    'C15A',
-    'C15B',
-    'C16A',
-    'C16B',
-    'D1A',
-    'D4A',
-    'D4B',
-    'D5A',
-    'D8A',
-    'E2A',
-    'E2B',
-    'E5A',
-    'E5B',
-    'E6A',
-    'E9A',
-    'F221',
-    'F223',
-    'F225',
-    'F232A',
-    'F233A',
-    'G16A',
-    'V119',
-    'V121',
-    'V123',
-    'V125',
-    'V126',
-    'V128',
-    'V130',
-    'V134',
-    'V136',
-    'V151',
-    'V153',
-    'V158',
-    'V160',
-    'V162',
-    'V171A',
-    'V171B',
-    'V173A',
-    'V173B',
-    'V701',
-    'V702',
-    'V704',
-    'V706',
-    'V708',
-    'V711',
-    'V712',
-    'V713',
-    'V714',
-    'V715',
-    'V716',
-    'V717',
-    'V718',
-    'V719',
-    'V721',
-    'A28',
-    'A34',
-    'A38',
-    'V108',
-    'V109',
-    'V112',
-    'V115',
-    'V116',
-    'V172',
-    'V175',
-    'V177',
-    'V267',
-    'V269',
-] %}
-{{- feat | to_text(desig) }}
+{% for desig, feat in data.eddf_info['StandLabel'].items() if feat.properties['zoomlevel'] == 400 %}
+{{- render_point(feat, 'TEXT', desig) }}
 {% endfor %}
-
-{{ data.eddf_kml['layout']['labels']['GAT'] | to_text('GAT - V7xx') }}
+{{ render_point(data.eddf_info['AreaLabel']['GAT'], 'TEXT', 'GAT - V7xx') }}
 
 ZOOM:600
-{% for desig in
-[
-    'A28',
-    'A34',
-    'A38',
-    'V108',
-    'V109',
-    'V112',
-    'V115',
-    'V116',
-    'V172',
-    'V175',
-    'V177',
-    'V267',
-    'V269',
-] %}
-{{- data.eddf_kml['layout']['labels']['stands'][desig] | to_text(desig) }}
+{% for desig, feat in data.eddf_info['StandLabel'].items() if feat.properties['zoomlevel'] == 600 %}
+{{- render_point(feat, 'TEXT', desig) }}
 {% endfor %}
-
 ZOOM:800
-{% for desig in
-[
-    'A54A',
-    'A54B',
-    'A58A',
-    'A58B',
-    'A62A',
-    'A62B',
-    'A66A',
-    'A66B',
-    'C15A',
-    'C15B',
-    'C16A',
-    'C16B',
-    'D1A',
-    'D4A',
-    'D4B',
-    'D5A',
-    'D8A',
-    'E2A',
-    'E2B',
-    'E5A',
-    'E5B',
-    'E6A',
-    'E9A',
-    'F221',
-    'F223',
-    'F225',
-    'F232A',
-    'F233A',
-    'G16A',
-    'V119',
-    'V121',
-    'V123',
-    'V125',
-    'V126',
-    'V128',
-    'V130',
-    'V134',
-    'V136',
-    'V151',
-    'V153',
-    'V158',
-    'V160',
-    'V162',
-    'V171A',
-    'V171B',
-    'V173A',
-    'V173B',
-    'V701',
-    'V702',
-    'V704',
-    'V706',
-    'V708',
-    'V711',
-    'V712',
-    'V713',
-    'V714',
-    'V715',
-    'V716',
-    'V717',
-    'V718',
-    'V719',
-    'V721',
-] %}
-{{- data.eddf_kml['layout']['labels']['stands'][desig] | to_text(desig) }}
+{% for desig, feat in data.eddf_info['StandLabel'].items() if feat.properties['zoomlevel'] == 800 %}
+{{- render_point(feat, 'TEXT', desig) }}
 {% endfor %}
 {#- South Up #}
 FILTER_ASR:EDDF_GND
 {% for desig in ['C14', 'C15', 'C16'] %}
-{{- data.eddf_kml['layout']['labels']['stands'][desig] | to_text(' ' + desig + 'S:0:12') }}
+{{- render_point(data.eddf_info['StandLabel'][desig], 'TEXT', ' '+desig+'S:0:12') }}
 {% endfor %}
 {#- North Up #}
 FILTER_ASR:EDDF_S_GND
 {% for desig in ['C14', 'C15', 'C16'] %}
-{{- data.eddf_kml['layout']['labels']['stands'][desig] | to_text(' ' + desig + 'S:0:-12') }}
+{{- render_point(data.eddf_info['StandLabel'][desig], 'TEXT', ' '+desig+'S:0:-12') }}
 {% endfor %}
 
 
@@ -220,54 +69,16 @@ ACTIVE:1
 ZOOM:400
 FONTSIZE:=:9
 COLOR:LAYOUT_LABEL_STAND
-TEXTALIGN:CC
-{% for desig in ['T8', 'Y12'] %}
-{{- data.eddf_kml['layout']['labels']['stopbars'][desig] | to_text(desig) }}
-{% endfor %}
 {#- South Up #}
 FILTER_ASR:EDDF_GND
-TEXTALIGN:LC
-{% for desig in ['M2', 'S40', 'T2', 'T4', 'T6', 'W10', 'W4', 'W6', 'W8', 'Y4', 'Y6'] %}
-{{- data.eddf_kml['layout']['labels']['stopbars'][desig] | to_text(desig) }}
-{% endfor %}
-TEXTALIGN:RC
-{% for desig in ['U2', 'U4', 'U6', 'U8', 'W2', 'Y10', 'Y2'] %}
-{{- data.eddf_kml['layout']['labels']['stopbars'][desig] | to_text(desig) }}
+{% for desig, feat in data.eddf_info['HoldingPointLabel'].items() %}
+{{- render_point(feat, 'TEXT/'+feat.properties['textalign'], desig) }}
 {% endfor %}
 {#- North Up #}
 FILTER_ASR:EDDF_S_GND
-TEXTALIGN:RC
-{% for desig in ['M2', 'S40', 'T2', 'T4', 'T6', 'W10', 'W4', 'W6', 'W8', 'Y4', 'Y6'] %}
-{{- data.eddf_kml['layout']['labels']['stopbars'][desig] | to_text(desig) }}
+{% for desig, feat in data.eddf_info['HoldingPointLabel'].items() %}
+{{- render_point(feat, 'TEXT/'+feat.properties['textalign_s'], desig) }}
 {% endfor %}
-TEXTALIGN:LC
-{% for desig in ['U2', 'U4', 'U6', 'U8', 'W2', 'Y10', 'Y2'] %}
-{{- data.eddf_kml['layout']['labels']['stopbars'][desig] | to_text(desig) }}
-{% endfor %}
-
-
-MAP:Links
-AIRPORT:EDDF
-FOLDER:Labels
-LAYER:6
-ACTIVE:1
-ZOOM:800
-FONTSIZE:=:9
-COLOR:LAYOUT_LABEL_STAND
-TEXTALIGN:CC
-{{ data.eddf_kml['layout']['labels']['taxiways']['Link 3'] | to_text('Link 3') }}
-{#- South Up #}
-FILTER_ASR:EDDF_GND
-TEXTALIGN:LC
-{{ data.eddf_kml['layout']['labels']['taxiways']['Link 4'] | to_text('Link 4') }}
-TEXTALIGN:RC
-{{ data.eddf_kml['layout']['labels']['taxiways']['Link 5'] | to_text('Link 5') }}
-{#- North Up #}
-FILTER_ASR:EDDF_S_GND
-TEXTALIGN:RC
-{{ data.eddf_kml['layout']['labels']['taxiways']['Link 4'] | to_text('Link 4') }}
-TEXTALIGN:LC
-{{ data.eddf_kml['layout']['labels']['taxiways']['Link 5'] | to_text('Link 5') }}
 
 
 MAP:Buildings
@@ -276,23 +87,8 @@ FOLDER:Labels
 ZOOM:400
 FONTSIZE:=:9
 COLOR:LAYOUT_LABEL_STAND
-{% for desig, feat in data.eddf_kml['layout']['labels']['buildings'].items() if not desig in
-[
-    'Run-up position',
-    'Condor Technik',
-    'Lufthansa Technik#2',
-    'Lufthansa Technik#3',
-] %}
-{{- feat | to_text(desig) }}
-{% endfor %}
-{{ data.eddf_kml['layout']['labels']['buildings']['Run-up position'] | to_text('Run-up:0:-6') }}
-{{ data.eddf_kml['layout']['labels']['buildings']['Run-up position'] | to_text('position:0:6') }}
-{{ data.eddf_kml['layout']['labels']['buildings']['Condor Technik'] | to_text('Condor:0:-12') }}
-{{ data.eddf_kml['layout']['labels']['buildings']['Condor Technik'] | to_text('Technik:0:0') }}
-{{ data.eddf_kml['layout']['labels']['buildings']['Condor Technik'] | to_text('9:0:12') }}
-{{ data.eddf_kml['layout']['labels']['buildings']['Lufthansa Technik#2'] | to_text('Lufthansa:0:-12') }}
-{{ data.eddf_kml['layout']['labels']['buildings']['Lufthansa Technik#2'] | to_text('Technik:0:0') }}
-{{ data.eddf_kml['layout']['labels']['buildings']['Lufthansa Technik#2'] | to_text('12:0:12') }}
-{{ data.eddf_kml['layout']['labels']['buildings']['Lufthansa Technik#3'] | to_text('Lufthansa:0:-12') }}
-{{ data.eddf_kml['layout']['labels']['buildings']['Lufthansa Technik#3'] | to_text('Technik:0:0') }}
-{{ data.eddf_kml['layout']['labels']['buildings']['Lufthansa Technik#3'] | to_text('7:0:12') }}
+{%- for _, feat in data.eddf_info['BuildingLabel'].items() %}
+{%- for textline in feat.properties['text'].split('\\n') %}
+{{ render_point(feat, 'TEXT', textline) }}
+{%- endfor %}
+{%- endfor %}

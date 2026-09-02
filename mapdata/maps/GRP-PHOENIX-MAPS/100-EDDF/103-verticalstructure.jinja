@@ -8,9 +8,9 @@ FOLDER:Airport Layout
 ACTIVE:1
 COLOR:LAYOUT_BUILDING
 {% for uuid, feat in data.eddf_aixm['VerticalStructure'].items() if feat.type == 'BUILDING' %}
-{{- feat | simplify(tolerance) | render_area('OTHER:REGION', uuid + ' / ' + feat.name) }}
+{{- feat | simplify(tolerance) | render_area('OTHER:REGION', uuid+' / '+feat.name) }}
 {% endfor %}
-{% for _, feat in data.eddf_gpkg['VerticalStructure_Poly'].items() %}
+{% for _, feat in data.eddf_layout_fid['VerticalStructure_Poly'].items() %}
 {{- feat | render_area('OTHER:REGION') }}
 {% endfor %}
 
@@ -24,10 +24,7 @@ COLOR:LAYOUT_BUILDING
 {% for uuid, feat in data.eddf_aixm['VerticalStructure'].items() if feat.name in ['FENCE', 'PV'] %}
 {{- feat | simplify(tolerance) | render_line(uuid) }}
 {% endfor %}
-{% for _, feat in data.eddf_gpkg['VerticalStructure_Line'].items() %}
-{{- feat | render_line }}
-{% endfor %}
 #}
-{% for _, feat in data.eddf_kml['layout']['fence'].items() %}
-{{- feat | render_line }}
+{% for _, feat in data.eddf_layout_fid['VerticalStructure_Line'].items() %}
+{{- feat | simplify(tolerance) | render_line }}
 {% endfor %}
