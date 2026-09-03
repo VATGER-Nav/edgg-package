@@ -49,6 +49,10 @@ ZOOM:800
 {% for desig, feat in data.eddf_info['StandLabel'].items() if feat.properties['zoomlevel'] == 800 %}
 {{- render_point(feat, 'TEXT', desig) }}
 {% endfor %}
+ZOOM:1200
+{% for desig, feat in data.eddf_info['StandLabel'].items() if feat.properties['zoomlevel'] == 1200 %}
+{{- render_point(feat, 'TEXT', desig) }}
+{% endfor %}
 {#- South Up #}
 FILTER_ASR:EDDF_GND
 {% for desig in ['C14', 'C15', 'C16'] %}

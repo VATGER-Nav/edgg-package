@@ -1,4 +1,6 @@
 // ------------------------ Break Away Areas ------------------------
+{#- TODO: Remove macros when filters for the new API are implemented #}
+{%- from "_macros.jinja" import render_point %}
 
 MAP:Break Away Areas
 AIRPORT:EDDF
@@ -8,23 +10,23 @@ LAYER:6
 ZOOM:300
 COLOR:LAYOUT_TAXIWAY
 STYLE:SOLID:6
-{% for desig, feat in data.eddf_kml['layout']['breakaway']['buffer'].items() %}
+{% for _, feat in data.eddf_info['BAA_Line'].items() if feat.properties['type'] == 'BUFFER' %}
 {{- feat | render_line }}
 {% endfor %}
 COLOR:BREAK_AWAY_AREA
 STYLE:SOLID:1
-{% for desig, feat in data.eddf_kml['layout']['breakaway']['poly'].items() %}
+{% for _, feat in data.eddf_info['BAA_Poly'].items() %}
 {{- feat | render_area('OTHER:REGION') }}
 {% endfor %}
-{% for desig, feat in data.eddf_kml['layout']['breakaway']['line'].items() if 'a' in desig %}
+{% for _, feat in data.eddf_info['BAA_Line'].items() if feat.properties['type'] == 'POSITION' %}
 {{- feat | render_line }}
 {% endfor %}
 STYLE:SOLID:2
-{% for desig, feat in data.eddf_kml['layout']['breakaway']['line'].items() if not 'a' in desig %}
+{% for _, feat in data.eddf_info['BAA_Line'].items() if feat.properties['type'] == 'DIRECTION' %}
 {{- feat | render_line }}
 {% endfor %}
-{% for desig, feat in data.eddf_kml['layout']['breakaway']['labels'].items() %}
-{{- feat | to_text(desig) }}
+{% for _, feat in data.eddf_info['BAALabel'].items() %}
+{{- render_point(feat, 'TEXT', feat.properties['text']) }}
 {% endfor %}
 
 // ------------------------- Heli Positions -------------------------
@@ -36,8 +38,7 @@ LAYER:6
 ZOOM:400
 FONTSIZE:=:10
 COLOR:LAYOUT_LABEL_STAND
-{{ data.eddf_kml['layout']['restrictions']['stands']['V701'] | to_text('H:-1:0') }}
-{{ data.eddf_kml['layout']['restrictions']['stands']['V701'] | to_symbol('CIRCLE') }}
+{{ render_point(data.eddf_info['RestrictionStand']['V701'], 'SYMBOL:CIRCLE', 'H:-1:0') }}
 
 // ----------------------------- Old GAT ----------------------------
 
@@ -47,7 +48,7 @@ FOLDER:Apron Info
 HIDDEN
 LAYER:7
 COLOR:LAYOUT_APRON
-{{ data.eddf_kml['layout']['oldgat']['aprons']['oldgat'] | render_area('OTHER:REGION') }}
+{{ data.eddf_oldgat['ApronElement']['apron'] | render_area('OTHER:REGION') }}
 
 
 MAP:Old South Apron
@@ -56,66 +57,33 @@ FOLDER:Apron Info
 LAYER:7
 OTHER_MAP_ACT:=:Apron Info\Old Apron Layout
 COLOR:CLOSURE_SYMBOL
-{% for _, feat in data.eddf_kml['layout']['oldgat']['taxilanes'].items() %}
-{{- feat | render_line }}
-{% endfor %}
-{% for _, feat in data.eddf_kml['layout']['oldgat']['leadin'].items() %}
-{{- feat | render_line }}
-{% endfor %}
-{% for _, feat in data.eddf_kml['layout']['oldgat']['arrows'].items() %}
-{{- feat | render_area('OTHER:REGION') }}
-{% endfor %}
+{{ data.eddf_oldgat['Marking_Line']['TWY'] | render_line }}
+{{ data.eddf_oldgat['Marking_Line']['LI_TLANE'] | render_line }}
+{{ data.eddf_oldgat['Marking_Poly']['LO_TLANE'] | render_area('OTHER:REGION') }}
 
 ZOOM:300
 COLOR:LAYOUT_LABEL_TAXIWAY
 FONTSIZE:=:10
-{% for desig in ['S16', 'S21'] %}
-{{- data.eddf_kml['layout']['oldgat']['labels'][desig] | to_text(desig) }}
+{% for _, feat in data.eddf_oldgat['TaxiwayLabel'].items() %}
+{{- render_point(feat, 'TEXT', feat.properties['text']) }}
 {% endfor %}
 
 ZOOM:400
 COLOR:LAYOUT_LABEL_STAND
 FONTSIZE:=:9
-{% for desig in
-[
-    'S501',
-    'S503',
-    'S504',
-    'S505',
-    'S506',
-    'S507',
-    'S508',
-    'S601',
-    'S602',
-    'S603',
-    'S604',
-] %}
-{{- data.eddf_kml['layout']['oldgat']['stands'][desig] | to_text(desig) }}
+{% for desig, feat in data.eddf_oldgat['StandLabel'].items() if feat.properties['zoomlevel'] == 400 %}
+{{- render_point(feat, 'TEXT', desig) }}
 {% endfor %}
-{{ data.eddf_kml['layout']['oldgat']['labels']['GAT'] | to_text('GAT - S4xx') }}
+{{ render_point(data.eddf_oldgat['AreaLabel']['GAT'], 'TEXT', 'GAT - S4xx') }}
 
-ZOOM:800
-{% for desig in
-[
-    'S413',
-    'S411',
-    'S409',
-    'S407',
-    'S405',
-    'S403',
-    'S401',
-    'S402',
-    'S404',
-    'S406',
-    'S408',
-    'S410',
-    'S412',
-    'S414',
-    'S416',
-    'S418',
-    'S420',
-] %}
-{{- data.eddf_kml['layout']['oldgat']['stands'][desig] | to_text(desig) }}
+ZOOM:600
+{% for desig, feat in data.eddf_oldgat['StandLabel'].items() if feat.properties['zoomlevel'] == 600 %}
+{{- render_point(feat, 'TEXT', desig) }}
+{% endfor %}
+
+ZOOM:1200
+{% for desig, feat in data.eddf_oldgat['StandLabel'].items() if feat.properties['zoomlevel'] == 1200 %}
+{{- render_point(feat, 'TEXT', desig) }}
 {% endfor %}
 
 // --------------------------- vSID Areas ---------------------------

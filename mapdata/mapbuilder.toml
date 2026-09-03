@@ -150,10 +150,6 @@ source = "dfs:0:EDSB AerodromeMapping:AIXM 5.1.1"
 
 #----------------------------< EDDF >----------------------------
 
-[data.eddf_kml]
-type = "kml"
-source = "kml/eddf.kml"
-
 [data.eddf_layout]
 type = "gpkg"
 source = "gis/eddf-layout.gpkg"
@@ -174,7 +170,19 @@ id_property = "identifier"
 [data.eddf_info]
 type = "gpkg"
 source = "gis/eddf-info.gpkg"
-layers = ["AoRBoundary", "AoRLabel", "AreaLabel", "BuildingLabel", "HoldingPointLabel", "Restriction_Line", "Restriction_Poly", "RestrictionLabel", "RestrictionStand", "RRSMarker", "RunwayLabel", "SensitiveArea", "StandLabel", "TaxiwayLabel", "TORALabel"]
+layers = ["AoRBoundary", "AoRLabel", "AreaLabel", "BAA_Line", "BAA_Poly", "BAALabel", "BuildingLabel", "DeicingArea", "DeicingLabel", "DeicingMarking_Line", "DeicingMarking_Poly", "HoldingPointLabel", "Restriction_Line", "Restriction_Poly", "RestrictionLabel", "RestrictionStand", "RRSMarker", "RunwayCrossing_Line", "RunwayCrossing_Poly", "RunwayLabel", "SensitiveArea", "StandLabel", "TaxiwayLabel", "TORALabel"]
+id_property = "designator"
+
+[data.eddf_oldgat]
+type = "gpkg"
+source = "gis/eddf-oldgat.gpkg"
+layers = ["ApronElement", "AreaLabel", "Marking_Line", "Marking_Poly", "StandLabel", "TaxiwayLabel"]
+id_property = "designator"
+
+[data.eddf_sup]
+type = "gpkg"
+source = "gis/eddf-sup.gpkg"
+layers = ["ClosurePerm_Poly", "ClosureSymbol_Poly", "ClosureTemp_Poly"]
 id_property = "designator"
 
 #----------------------------< EDDL >----------------------------

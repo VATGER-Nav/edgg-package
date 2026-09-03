@@ -1,26 +1,6 @@
 // ----------------------- Restrictions (BAA) -----------------------
-{%- set baa_max_b = ['1#Y7'] %}
-{%- set baa_max_c = [
-    '1#L',
-    '2#L',
-    '1#N3',
-    '1#N5',
-    '1#N7_N8',
-    '4#N7_N8',
-    '1#S5',
-    '2#Y7',
-    '3#Y7',
-] %}
-{%- set baa_max_d = ['1#S8', '1#S13'] %}
-{%- set baa_max_e = [
-    '2#N3',
-    '2#N5',
-    '2#N7_N8',
-    '5#N7_N8',
-    '6#N7_N8',
-] %}
-{%- set baa_max_748 = ['1#S4', '2#S4'] %}
-
+{#- TODO: Remove macros when filters for the new API are implemented #}
+{%- from "_macros.jinja" import render_point %}
 
 MAP:BAA Restrictions
 AIRPORT:EDDF
@@ -28,31 +8,31 @@ FOLDER:Restrictions
 LAYER:7
 ZOOM:300
 COLOR:RESTRICTIONS_AB
-{% for desig in baa_max_b %}
-{{- data.eddf_kml['layout']['breakaway']['labels'][desig] | to_symbol('STAND') }}
+{% for _, feat in data.eddf_info['BAALabel'].items() if feat.properties['restriction'] == 'B' %}
+{{- render_point(feat, 'SYMBOL:STAND') }}
 {% endfor %}
 COLOR:RESTRICTIONS_C
-{% for desig in baa_max_c %}
-{{- data.eddf_kml['layout']['breakaway']['labels'][desig] | to_symbol('STAND') }}
+{% for _, feat in data.eddf_info['BAALabel'].items() if feat.properties['restriction'] == 'C' %}
+{{- render_point(feat, 'SYMBOL:STAND') }}
 {% endfor %}
 COLOR:RESTRICTIONS_D
-{% for desig in baa_max_d %}
-{{- data.eddf_kml['layout']['breakaway']['labels'][desig] | to_symbol('STAND') }}
+{% for _, feat in data.eddf_info['BAALabel'].items() if feat.properties['restriction'] == 'D' %}
+{{- render_point(feat, 'SYMBOL:STAND') }}
 {% endfor %}
 COLOR:RESTRICTIONS_E
-{% for desig in baa_max_e %}
-{{- data.eddf_kml['layout']['breakaway']['labels'][desig] | to_symbol('STAND') }}
+{% for _, feat in data.eddf_info['BAALabel'].items() if feat.properties['restriction'] == 'E' %}
+{{- render_point(feat, 'SYMBOL:STAND') }}
 {% endfor %}
 COLOR:RESTRICTIONS_F
-{% for desig in baa_max_748 %}
-{{- data.eddf_kml['layout']['breakaway']['labels'][desig] | to_symbol('STAND') }}
+{% for _, feat in data.eddf_info['BAALabel'].items() if feat.properties['restriction'] == 'B748' %}
+{{- render_point(feat, 'SYMBOL:STAND') }}
 {% endfor %}
 
 COLOR:WHITE
-{% for desig in baa_max_b + baa_max_e + baa_max_748 %}
-{{- data.eddf_kml['layout']['breakaway']['labels'][desig] | to_text(desig) }}:1:0
+{% for _, feat in data.eddf_info['BAALabel'].items() if feat.properties['restriction'] in ['B', 'E', 'B748'] %}
+{{- render_point(feat, 'TEXT', feat.properties['text']+':1:0') }}
 {% endfor %}
 COLOR:BLACK
-{% for desig in baa_max_c + baa_max_d %}
-{{- data.eddf_kml['layout']['breakaway']['labels'][desig] | to_text(desig) }}:1:0
+{% for _, feat in data.eddf_info['BAALabel'].items() if feat.properties['restriction'] in ['C', 'D'] %}
+{{- render_point(feat, 'TEXT', feat.properties['text']+':1:0') }}
 {% endfor %}
