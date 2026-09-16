@@ -127,6 +127,8 @@ ZOOM:300
 FONTSIZE:=:13
 COLOR:AOR_GND_E
 {{ render_point(data.eddf_info['AoRLabel']['DFGSW'], 'TEXT', 'DFGS 121.915') }}
+COLOR:LAYOUT_LABEL_TAXIWAY
+{{ render_point(data.eddf_info['AoRLabel']['mixed_area2'], 'TEXT', 'MIXED AREA') }}
 
 
 MAP:EDDF_ICE_GND
@@ -160,7 +162,10 @@ FONTSIZE:=:13
 COLOR:AOR_GND_D
 {{ render_point(data.eddf_info['AoRLabel']['DFG_a'], 'TEXT', 'DFG  121.805') }}
 {#- South Up #}
+COLOR:LAYOUT_LABEL_TAXIWAY
+{{ render_point(data.eddf_info['AoRLabel']['mixed_area2'], 'TEXT', 'MIXED AREA') }}
 FILTER_ASR:EDDF_GND
+COLOR:AOR_GND_D
 {{ render_point(data.eddf_info['AoRLabel']['DFG_b'], 'TEXT/RC', 'DFG  121.805') }}
 {#- North Up #}
 FILTER_ASR:EDDF_S_GND
@@ -190,9 +195,11 @@ COLOR:LAYOUT_LABEL_TAXIWAY
 {{ data.eddf_info['AoRBoundary']['mixed_area2'] | render_line }}
 ZOOM:300
 FONTSIZE:=:13
-COLOR:AOR_TWR_C
 {#- South Up #}
+COLOR:LAYOUT_LABEL_TAXIWAY
+{{ render_point(data.eddf_info['AoRLabel']['mixed_area2'], 'TEXT', 'MIXED AREA') }}
 FILTER_ASR:EDDF_GND
+COLOR:AOR_TWR_C
 {{ render_point(data.eddf_info['AoRLabel']['DFTW'], 'TEXT/LC', 'DFTW 124.855') }}
 {#- North Up #}
 FILTER_ASR:EDDF_S_GND
