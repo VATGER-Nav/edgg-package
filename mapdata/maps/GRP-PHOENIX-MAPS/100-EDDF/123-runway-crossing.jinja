@@ -41,7 +41,7 @@ COLOR:LAYOUT_HOLDINGPOINT
 
 // Y
 COLOR:RESTRICTIONS_AB
-STYLE:SOLID:3
+STYLE:DOT:
 {{ data.eddf_info['RunwayCrossing_Line']['Y'] | render_line }}
 STYLE:SOLID:1
 {{ data.eddf_info['RunwayCrossing_Poly']['Y'] | render_area('OTHER:REGION') }}
@@ -56,7 +56,7 @@ COLOR:RESTRICTIONS_D
 {{ data.eddf_info['RunwayCrossing_Line']['east_b'] | render_line }}
 COLOR:RESTRICTIONS_E
 {{ data.eddf_info['RunwayCrossing_Line']['center'] | render_line }}
-COLOR:RESTRICTIONS_AB
+COLOR:RESTRICTIONS_E
 {{ data.eddf_info['RunwayCrossing_Line']['west'] | render_line }}
 
 
