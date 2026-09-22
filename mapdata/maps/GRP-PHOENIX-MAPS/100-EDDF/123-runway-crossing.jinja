@@ -6,6 +6,7 @@ MAP:25
 AIRPORT:EDDF
 FOLDER:Runway Crossing
 LAYER:6
+LINESTYLEDEF:VATGERdash:Solid:-:15,10
 
 // T
 COLOR:RESTRICTIONS_F
@@ -41,7 +42,7 @@ COLOR:LAYOUT_HOLDINGPOINT
 
 // Y
 COLOR:RESTRICTIONS_AB
-STYLE:DOT:
+STYLE:VATGERdash:3
 {{ data.eddf_info['RunwayCrossing_Line']['Y'] | render_line }}
 STYLE:SOLID:1
 {{ data.eddf_info['RunwayCrossing_Poly']['Y'] | render_area('OTHER:REGION') }}
