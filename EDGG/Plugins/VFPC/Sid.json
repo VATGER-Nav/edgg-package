@@ -24,7 +24,7 @@
 			   {
                "direction": "ANY",
                "max_fl": 230,
-               "destinations": ["EDDM","EDDN","EDM","EDJA"],
+               "destinations": ["EDDM","EDM","EDJA"],
 			   "airways": ["T104"]
             },
 			   {
@@ -33,12 +33,10 @@
 			   "airways": ["Y161","ASLEP"]
             }
          ],
-         "KOMIB": [
+         "ERTES": [
             {
-               "direction": "ANY",
-			   "max_fl": 230,
-               "destinations": ["EDDN"],
-			   "airways": ["T194"]
+            "direction": "ANY",
+			   "airways": ["ODOMO","VEMUT","NOGRA"]
             }
          ],
          "MARUN": [
@@ -79,9 +77,9 @@
          ],
          "SULUS": [
             {
-               "direction": "ANY",
+            "direction": "ANY",
 			   "forbidden_fls": 250,
-			   "airways": ["Z12","L984","Z650"]
+			   "airways": ["Z12","L984"]
             }
          ],
          "TOBAK": [

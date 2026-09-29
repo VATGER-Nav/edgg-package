@@ -13,10 +13,10 @@
         "sids": {
             "climbvia": true,
 			"ANEKI": {
+                "initial": 4000,
 				"D": {
 					"1":{
 						"rwy": "07C,07R",
-						"initial": 4000,
 						"prio": 20,
 						"wtc": "HJ"
 					}
@@ -24,7 +24,6 @@
 				"E": {
 					"1":{
 						"rwy": "07C,07R",
-						"initial": 4000,
 						"prio": 20,
 						"wtc": "LM"
 					}
@@ -44,36 +43,29 @@
 				"L": {
 					"1":{
 						"rwy": "18",
-						"initial": 4000,
 						"prio": 10
 					}
 				},
 				"X": {
 					"1":{
 						"rwy": "07C",
-						"initial": 4000,
 						"prio": 99
 					}
 				},
 				"Y": {
 					"1":{
 						"rwy": "07R",
-						"initial": 4000,
 						"prio": 99
 					}
 				}
             },
             "CINDY": {
+                "dest": {"EDDN": false},
+                "initial": 4000,
 				"D": {
-                    "initial": 4000,
 					"1":{
 						"rwy": "07C,07R",
 						"prio": 20
-					},
-					"2": {
-						"rwy": "07C,07R",
-						"prio": 0,
-						"dest": {"EDDN": true}
 					}
 				},
 				"F": {
@@ -91,55 +83,64 @@
 				"L": {
 					"1":{
 						"rwy": "18",
-						"initial": 4000,
 						"prio": 99
 					}
                 },
 				"S": {
-                    "initial": 4000,
 					"1":{
 						"rwy": "18",
 						"prio": 10
-					},
-					"2": {
-						"rwy": "18",
-						"prio": 0,
-						"dest": {"EDDN": true},
-						"actDepRwy": {"allow": {"any": "07C,07L,07R"}}
 					}
                 },
 				"X": {
 					"1":{
 						"rwy": "07C",
-						"initial": 4000,
 						"prio": 99
 					}
                 },
 				"Y": {
 					"1":{
 						"rwy": "07R",
-						"initial": 4000,
 						"prio": 99
 					}
                 }
             },
-            "KOMIB": {
-				"dest": {"EDDN": true},
-				"initial": 4000,
+            "ERTES": {
+                "route": {"allow": {"1": "ODOMO", "2": "NOGRA,VEMUT", "3": "NOGRA,Z650"}},
+                "initial": 4000,
 				"D": {
 					"1":{
 						"rwy": "07C",
-						"prio": 10
+						"prio": 2
 					},
 					"2": {
 						"rwy": "07R",
-						"prio": 11
+						"prio": 3
 					},
 					"3": {
 						"rwy": "07R",
 						"prio": 1,
                         "arrAsDep": true,
 						"area": "south"
+					}
+                },
+                "F": {
+                    "initial": 5000,
+					"1":{
+						"rwy": "25C,25L",
+						"prio": 20
+					}
+                },
+                "S": {
+					"1":{
+						"rwy": "18",
+						"prio": 10
+					}
+                },
+                "L": {
+					"1":{
+						"rwy": "18",
+						"prio": 99
 					}
                 }
             },
@@ -622,8 +623,10 @@
                 }
             },
             "SULUS": {
+                "dest": {"EDDN": false},
+                "route": {"deny": {"1": "Z650", "2": "TIPAM"}, "allow": {"1": "Z12", "2": "L984"}},
+                "initial": 4000,
 				"D": {
-                    "initial": 4000,
 					"1":{
 						"rwy": "07C",
 						"prio": 10
@@ -634,7 +637,8 @@
 					},
 					"3": {
 						"rwy": "07R",
-						"prio": 1,
+						"prio": 2,
+                        "arrAsDep": true,
 						"area": "south"
 					}
                 },
@@ -642,26 +646,24 @@
                     "initial": 5000,
 					"1":{
 						"rwy": "25C,25L",
-						"prio": 20
+						"prio": 30
 					},
 					"2": {
 						"rwy": "25C",
-						"prio": 1,
+						"prio": 3,
 						"area": "east25"
 					}
                 },
 				"L": {
 					"1":{
 						"rwy": "18",
-						"initial": 4000,
 						"prio": 99
 					}
                 },
 				"S": {
-                    "initial": 4000,
 					"1":{
 						"rwy": "18",
-						"prio": 12
+						"prio": 20
 					},
 					"2": {
 						"rwy": "18",
