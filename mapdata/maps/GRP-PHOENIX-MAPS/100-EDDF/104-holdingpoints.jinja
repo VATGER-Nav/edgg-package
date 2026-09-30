@@ -1,7 +1,21 @@
 // ------------------------- Holding Points -------------------------
 {#- TODO: Change simplify() to geom_simplify() when AIXM2 parser gets fixed #}
 {%- set tolerance = 0.000005 %}
-{%- set index_table = data.eddf_index['TaxiwayMarking_Index'] %}
+{%- set dot_stopbars = data.eddf_layout['HoldingPoint_PolyDot'] %}
+{%- set nodraw_stopbars = dot_stopbars.values() | map(attribute='properties') | map(attribute='aixm_identifier') | list %}
+{%- set nodraw_stopbars = nodraw_stopbars + [
+	'257a6e08-afcf-4975-8816-6cd999abc3da',
+	'a3abc9d4-9b11-4aa3-9be3-776c3bc66f5e',
+	'a9abdd3b-a55a-432e-9a1f-27b0811ed0dc',
+] %}
+{%- set draw_stopbars = [
+    '3f4e0eeb-1bb2-d63c-e053-b3472c0a9e49',
+    '5df223d0-87f6-cec2-e053-b4472c0af018',
+    '5df223d0-87f1-cec2-e053-b4472c0af018',
+    '7a0fabea-7296-8aaa-e053-b3472c0a5a54',
+    '7a0fabea-7291-8aaa-e053-b3472c0a5a54',
+    '5b1be2dd-9103-e747-e053-b4472c0a72b2',
+] %}
 
 MAP:Holding Points CAT I
 AIRPORT:EDDF
@@ -56,7 +70,7 @@ AIRPORT:EDDF
 FOLDER:Holding Points
 ACTIVE:1
 COLOR:LAYOUT_TAXILINE_GREY
-{% for _, feat in data.eddf_layout['HoldingPoint_PolyDot'].items() %}
+{% for _, feat in dot_stopbars.items() %}
 {{- feat | render_area('OTHER:REGION') }}
 {% endfor %}
 
@@ -66,6 +80,12 @@ AIRPORT:EDDF
 FOLDER:Holding Points
 COLOR:LAYOUT_HOLDINGPOINT
 LAYER:5
-{% for uuid, _ in index_table.items() %}
-{{- data.eddf_aixm['TaxiwayMarking'][uuid] | simplify(tolerance) | render_line(uuid) }}
+{% for uuid, feat in data.eddf_aixm['TaxiwayMarking'].items()
+    if uuid in draw_stopbars or (
+        feat.style == 'DASHED' and 
+        feat.marking_location == 'TWY_INT' and 
+        not uuid in nodraw_stopbars
+    )
+%}
+{{- feat | simplify(tolerance) | render_line(uuid) }}
 {% endfor %}

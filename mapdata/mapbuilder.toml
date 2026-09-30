@@ -161,10 +161,10 @@ type = "gpkg"
 source = "gis/eddf-layout.gpkg"
 layers = ["ApronElement", "RunwayBlastPad", "TaxiwayElement", "VerticalStructure_Line", "VerticalStructure_Poly"]
 
-[data.eddf_index]
+[data.eddf_guidanceline]
 type = "gpkg"
-source = "gis/eddf-index.gpkg"
-layers = ["GuidanceLineMarking_Index", "TaxiwayMarking_Index"]
+source = "gis/eddf-aixm.gpkg"
+layers = ["GuidanceLineMarking"]
 id_property = "identifier"
 
 [data.eddf_info]
