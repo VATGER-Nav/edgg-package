@@ -1,0 +1,28 @@
+// ---------------------------- Buildings ---------------------------
+{%- set tolerance = 0.000005 %}
+{%- set nodraw_buildings = [
+    '6bc888a1-a9b8-6508-e055-0a00272b55b3',
+    '6bc888a1-a9b9-6508-e055-0a00272b55b3',
+] %}
+
+MAP:Buildings
+AIRPORT:EDDL
+FOLDER:Airport Layout
+ACTIVE:1
+COLOR:LAYOUT_BUILDING
+{% for uuid, feat in data.eddl_aixm['VerticalStructure'].items() if feat.geometry.type == 'Polygon' and not uuid in nodraw_buildings %}
+{{- feat | geom_simplify(tolerance) | render_area('OTHER:REGION', uuid+' / '+feat.properties['name']) }}
+{% endfor %}
+{% for _, feat in data.eddl_kml['layout']['buildings'].items() %}
+{{- feat | render_area('OTHER:REGION') }}
+{% endfor %}
+
+
+MAP:Fence
+AIRPORT:EDDL
+FOLDER:Airport Layout
+ACTIVE:1
+COLOR:LAYOUT_BUILDING
+{% for _, feat in data.eddl_kml['layout']['fence'].items() %}
+{{- feat | render_line }}
+{% endfor %}
