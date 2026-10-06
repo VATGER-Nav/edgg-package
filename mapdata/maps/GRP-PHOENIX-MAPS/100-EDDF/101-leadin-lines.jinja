@@ -1,7 +1,13 @@
 // ----------------------------- Stands -----------------------------
 {#- TODO: Change simplify() to feat_simplify() when AIXM2 parser gets fixed #}
+{#- In comparison to other airports, Frankfurt's AIXM is a special case.
+    The GuidanceLine feature set cannot be parsed by Mapbuilder as it is
+    geometryless. GuidanceLineMarking is an unstructured set of geometries.
+    As Frankfurt changes its markings seemingly with every AIRAC update, 
+    it has been decided that it is better to maintain its own set of
+    geometries, which must be manually compared every other time.
+#}
 {%- set tolerance = 0.000005 %}
-{%- set index_table = data.eddf_index['GuidanceLineMarking_Index'] %}
 
 MAP:Lead-in Lines
 AIRPORT:EDDF
@@ -10,8 +16,8 @@ ACTIVE:1
 COLOR:LAYOUT_TAXILINE_GREY
 
 // Solid Leadin Lines
-{% for uuid, index in index_table.items() if index.properties['type'] == 'LI_TLANE' %}
-{{- data.eddf_aixm['GuidanceLineMarking'][uuid] | simplify(tolerance) | render_line(uuid) }}
+{% for uuid, feat in data.eddf_guidanceline['GuidanceLineMarking'].items() if feat.properties['type'] == 'LI_TLANE' %}
+{{- feat | simplify(tolerance) | render_line(uuid) }}
 {% endfor %}
 {% for _, feat in data.eddf_layout['Marking_Line'].items() if feat.properties['style'] == 'SOLID' %}
 {{- feat | render_line }}

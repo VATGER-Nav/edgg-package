@@ -13,14 +13,28 @@
                     "1":{
                         "rwy": "25",
                         "climbvia": true,
+                        "customRule": "reu",
+                        "sidHighlight": true,
                         "prio": 1
+                    },
+                    "2":{
+                        "rwy": "25",
+                        "climbvia": true,
+                        "prio": 2
                     }
                 },
                 "H": {
                     "1":{
                         "rwy": "07",
                         "equip": {"RNAV": true, "NON-RNAV": true},
+                        "customRule": "reu",
+                        "sidHighlight": true,
                         "prio": 1
+                    },
+                    "2":{
+                        "rwy": "07",
+                        "equip": {"RNAV": true, "NON-RNAV": true},
+                        "prio": 2
                     }
                 }
             },
@@ -92,14 +106,28 @@
                     "1":{
                         "rwy": "25",
                         "climbvia": true,
+                        "customRule": "reu",
+                        "sidHighlight": true,
                         "prio": 1
+                    },
+                    "2":{
+                        "rwy": "25",
+                        "climbvia": true,
+                        "prio": 2
                     }
                 },
                 "H": {
                     "1":{
                         "rwy": "07",
                         "climbvia": true,
+                        "customRule": "reu",
+                        "sidHighlight": true,
                         "prio": 1
+                    },
+                    "2":{
+                        "rwy": "07",
+                        "climbvia": true,
+                        "prio": 2
                     }
                 }
             },
@@ -124,18 +152,39 @@
                     "1":{
                         "rwy": "25",
                         "equip": {"RNAV": true, "NON-RNAV": true},
+                        "customRule": "reu",
+                        "sidHighlight": true,
                         "prio": 1
+                    },
+                    "2":{
+                        "rwy": "25",
+                        "equip": {"RNAV": true, "NON-RNAV": true},
+                        "prio": 2
                     }
                 },
                 "H": {
                     "1":{
                         "rwy": "07",
                         "climbvia": true,
+                        "customRule": "reu",
+                        "sidHighlight": true,
                         "prio": 1
+                    },
+                    "2":{
+                        "rwy": "07",
+                        "climbvia": true,
+                        "prio": 2
                     }
                 },
                 "K": {
                     "1":{
+                        "rwy": "07",
+                        "climbvia": true,
+                        "customRule": "reu",
+                        "sidHighlight": true,
+                        "prio": 99
+                    },
+                    "2":{
                         "rwy": "07",
                         "climbvia": true,
                         "prio": 99
@@ -163,18 +212,39 @@
                     "1":{
                         "rwy": "25",
                         "equip": {"RNAV": true, "NON-RNAV": true},
+                        "customRule": "reu",
+                        "sidHighlight": true,
                         "prio": 1
+                    },
+                    "2":{
+                        "rwy": "25",
+                        "equip": {"RNAV": true, "NON-RNAV": true},
+                        "prio": 2
                     }
                 },
                 "H": {
                     "1":{
                         "rwy": "07",
                         "climbvia": true,
+                        "customRule": "reu",
+                        "sidHighlight": true,
                         "prio": 1
+                    },
+                    "2":{
+                        "rwy": "07",
+                        "climbvia": true,
+                        "prio": 2
                     }
                 },
                 "K": {
                     "1":{
+                        "rwy": "07",
+                        "climbvia": true,
+                        "customRule": "reu",
+                        "sidHighlight": true,
+                        "prio": 99
+                    },
+                    "2":{
                         "rwy": "07",
                         "climbvia": true,
                         "prio": 99
@@ -201,6 +271,13 @@
                     "1":{
                         "rwy": "25",
                         "climbvia": true,
+                        "customRule": "reu",
+                        "sidHighlight": true,
+                        "prio": 99
+                    },
+                    "2":{
+                        "rwy": "25",
+                        "climbvia": true,
                         "prio": 99
                     }
                 },
@@ -208,11 +285,25 @@
                     "1":{
                         "rwy": "07",
                         "climbvia": true,
+                        "customRule": "reu",
+                        "sidHighlight": true,
+                        "prio": 99
+                    },
+                    "2":{
+                        "rwy": "07",
+                        "climbvia": true,
                         "prio": 99
                     }
                 },
                 "K": {
                     "1":{
+                        "rwy": "07",
+                        "climbvia": true,
+                        "customRule": "reu",
+                        "sidHighlight": true,
+                        "prio": 99
+                    },
+                    "2":{
                         "rwy": "07",
                         "climbvia": true,
                         "prio": 99

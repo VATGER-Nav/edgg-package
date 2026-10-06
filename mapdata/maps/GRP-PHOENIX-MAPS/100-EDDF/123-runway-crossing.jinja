@@ -19,12 +19,12 @@ STYLE:SOLID:1
 STYLE:SOLID:2
 {{ data.eddf_layout['HoldingPoint_Line']['T2'] | render_line }}
 
-// M8
+// M8 to N3
 COLOR:RESTRICTIONS_D
 STYLE:SOLID:3
-{{ data.eddf_info['RunwayCrossing_Line']['M8_25'] | render_line }}
+{{ data.eddf_info['RunwayCrossing_Line']['M8_N3'] | render_line }}
 STYLE:SOLID:1
-{{ data.eddf_info['RunwayCrossing_Poly']['M8_25'] | render_area('OTHER:REGION') }}
+{{ data.eddf_info['RunwayCrossing_Poly']['M8_N3'] | render_area('OTHER:REGION') }}
 STYLE:SOLID:2
 COLOR:LAYOUT_HOLDINGPOINT
 {{ data.eddf_aixm['TaxiwayMarking']['7233e590-7fc6-dc2b-e053-b4472c0a9450'] | simplify(tolerance) | render_line }}
@@ -39,25 +39,14 @@ STYLE:SOLID:2
 COLOR:LAYOUT_HOLDINGPOINT
 {{ data.eddf_aixm['TaxiwayMarking']['61f3b1e6-5ffb-4693-bf3f-8de116c4ef99'] | simplify(tolerance) | render_line }}
 
-// Y
-COLOR:RESTRICTIONS_AB
-STYLE:SOLID:3
-{{ data.eddf_info['RunwayCrossing_Line']['Y'] | render_line }}
-STYLE:SOLID:1
-{{ data.eddf_info['RunwayCrossing_Poly']['Y'] | render_area('OTHER:REGION') }}
-STYLE:SOLID:2
-COLOR:LAYOUT_HOLDINGPOINT
-{{ data.eddf_aixm['TaxiwayMarking']['05091d27-5df6-4f84-9c3b-af410b6d525d'] | simplify(tolerance) | render_line }}
-
 // Stands
 COLOR:RESTRICTIONS_F
 {{ data.eddf_info['RunwayCrossing_Line']['east_a'] | render_line }}
 COLOR:RESTRICTIONS_D
 {{ data.eddf_info['RunwayCrossing_Line']['east_b'] | render_line }}
+{{ data.eddf_info['RunwayCrossing_Line']['east_c'] | render_line }}
 COLOR:RESTRICTIONS_E
 {{ data.eddf_info['RunwayCrossing_Line']['center'] | render_line }}
-COLOR:RESTRICTIONS_AB
-{{ data.eddf_info['RunwayCrossing_Line']['west'] | render_line }}
 
 
 MAP:07
@@ -78,7 +67,7 @@ STYLE:SOLID:2
 {{ data.eddf_layout['HoldingPoint_Line']['T2'] | render_line }}
 
 // M6
-COLOR:RESTRICTIONS_D
+COLOR:RESTRICTIONS_AB
 STYLE:SOLID:3
 {{ data.eddf_info['RunwayCrossing_Line']['M6'] | render_line }}
 STYLE:SOLID:1
@@ -87,12 +76,22 @@ COLOR:LAYOUT_HOLDINGPOINT
 STYLE:SOLID:1
 {{ data.eddf_layout['HoldingPoint_Poly']['L1_c3'] | render_area('OTHER:REGION') }}
 
-// M8
+// M8 to N3
+COLOR:RESTRICTIONS_D
+STYLE:SOLID:3
+{{ data.eddf_info['RunwayCrossing_Line']['M8_N3'] | render_line }}
+STYLE:SOLID:1
+{{ data.eddf_info['RunwayCrossing_Poly']['M8_N3'] | render_area('OTHER:REGION') }}
+STYLE:SOLID:2
+COLOR:LAYOUT_HOLDINGPOINT
+{{ data.eddf_aixm['TaxiwayMarking']['7233e590-7fc6-dc2b-e053-b4472c0a9450'] | simplify(tolerance) | render_line }}
+
+// M8 to L
 COLOR:RESTRICTIONS_E
 STYLE:SOLID:3
-{{ data.eddf_info['RunwayCrossing_Line']['M8_07'] | render_line }}
+{{ data.eddf_info['RunwayCrossing_Line']['M8_L'] | render_line }}
 STYLE:SOLID:1
-{{ data.eddf_info['RunwayCrossing_Poly']['M8_07'] | render_area('OTHER:REGION') }}
+{{ data.eddf_info['RunwayCrossing_Poly']['M8_L'] | render_area('OTHER:REGION') }}
 STYLE:SOLID:2
 COLOR:LAYOUT_HOLDINGPOINT
 {{ data.eddf_aixm['TaxiwayMarking']['5627e7e0-c30d-7c0d-e053-b3472c0a22ab'] | simplify(tolerance) | render_line }}
@@ -100,8 +99,9 @@ COLOR:LAYOUT_HOLDINGPOINT
 // Stands
 COLOR:RESTRICTIONS_F
 {{ data.eddf_info['RunwayCrossing_Line']['east_a'] | render_line }}
-COLOR:RESTRICTIONS_D
+COLOR:RESTRICTIONS_AB
 {{ data.eddf_info['RunwayCrossing_Line']['east_b'] | render_line }}
+COLOR:RESTRICTIONS_D
+{{ data.eddf_info['RunwayCrossing_Line']['east_c'] | render_line }}
 COLOR:RESTRICTIONS_E
 {{ data.eddf_info['RunwayCrossing_Line']['center'] | render_line }}
-{{ data.eddf_info['RunwayCrossing_Line']['west'] | render_line }}
