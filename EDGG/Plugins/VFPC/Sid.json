@@ -37,6 +37,11 @@
             {
             "direction": "ANY",
 			   "airways": ["ODOMO","VEMUT","NOGRA"]
+            },
+            {
+            "direction": "ANY",
+            "destinations": ["EDDN"],
+			   "airways": ["DODAS"]
             }
          ],
          "MARUN": [

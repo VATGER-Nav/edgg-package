@@ -106,7 +106,7 @@
                 }
             },
             "ERTES": {
-                "route": {"allow": {"1": "ODOMO", "2": "NOGRA,VEMUT", "3": "NOGRA,Z650"}},
+                "route": {"allow": {"1": "ODOMO", "2": "NOGRA,VEMUT", "3": "NOGRA,Z650", "4": "T194,DODAS"}},
                 "initial": 4000,
 				"D": {
 					"1":{
