@@ -35,4 +35,10 @@
 	<remarksOptionCtot mode="true" />
 	<disableTobtReqAfterAsrt mode="false" />
 	<PrivateMessage text="[ACDM MSG] Please set your TOBT (Target Off-Block Time) at https://vats.im/vdgs if you have not done already. [END OF ACDM MSG]" />
+	<loading text="...." />
+	<nonCdmEarlyClearenceColor minutes="0" />
+	<AtfcmPrivateMessage
+		fls="[ATFCM MSG] OFF-BLOCK TIME EXPIRED - {CALLSIGN} ({EOBT} - {TOBT}). Please update your off-block time."
+        slot="[ATFCM MSG] SLOT ALLOCATION - {CALLSIGN} ({EOBT} - {TOBT}) CTOT:{CTOT} REGUL:{REGUL}. Please monitor for updates."
+	/>
 </CDM>
