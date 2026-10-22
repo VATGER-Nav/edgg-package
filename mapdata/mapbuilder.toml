@@ -1,3 +1,7 @@
+[render]
+# Decimal places of coordinates in generated maps (7 ~ 1 cm); omit for full precision
+precision = 7
+
 [profiles]
 
 [profiles.PHX-NIGHT]
