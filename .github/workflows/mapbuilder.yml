@@ -29,7 +29,7 @@ jobs:
           path: .cache
           key: sources
       - name: Run mapbuilder
-        uses: vatger-nav/mapbuilder@v2
+        uses: vatger-nav/mapbuilder@v2.1
       - name: Store cached sources
         uses: actions/cache/save@v4
         with:
