@@ -1,4 +1,5 @@
-// ----------------------- Permament Closures -----------------------
+// ======================< Permament Closures >======================
+
 {%- set tolerance = 0.000005 %}
 
 MAP:M3
@@ -8,12 +9,11 @@ ACTIVE:1
 LAYER:4
 COLOR:CLOSURE
 STYLE:SOLID:2
-{{ data.eddf_sup['ClosurePerm_Poly']['M3'] | render_area('TWYCLOSED:REGION') }}
+{{ data.eddf_sup['ClosurePerm_Poly']['M3'] | render_area('TWYCLOSED:REGION') -}}
 COLOR:CLOSURE_SYMBOL
 STYLE:SOLID:1 
-{{ data.eddf_sup['ClosureSymbol_Poly']['M3_a'] | render_area('OTHER:REGION') }}
+{{ data.eddf_sup['ClosureSymbol_Poly']['M3_a'] | render_area('OTHER:REGION') -}}
 {{ data.eddf_sup['ClosureSymbol_Poly']['M3_b'] | render_area('OTHER:REGION') }}
-
 
 MAP:M16
 AIRPORT:EDDF
@@ -22,12 +22,11 @@ ACTIVE:1
 LAYER:4
 COLOR:CLOSURE
 STYLE:SOLID:2
-{{ data.eddf_sup['ClosurePerm_Poly']['M16'] | render_area('TWYCLOSED:REGION') }}
+{{ data.eddf_sup['ClosurePerm_Poly']['M16'] | render_area('TWYCLOSED:REGION') -}}
 COLOR:CLOSURE_SYMBOL
 STYLE:SOLID:1
 {{ data.eddf_sup['ClosureSymbol_Poly']['M16'] | render_area('OTHER:REGION') }}
 
-
 MAP:R
 AIRPORT:EDDF
 FOLDER:Closures
@@ -35,13 +34,12 @@ ACTIVE:1
 LAYER:4
 COLOR:CLOSURE
 STYLE:SOLID:2
-{{ data.eddf_sup['ClosurePerm_Poly']['R_1'] | render_area('TWYCLOSED:REGION') }}
+{{ data.eddf_sup['ClosurePerm_Poly']['R_1'] | render_area('TWYCLOSED:REGION') -}}
 COLOR:CLOSURE_SYMBOL
 STYLE:SOLID:1
-{{ data.eddf_sup['ClosureSymbol_Poly']['R_1a'] | render_area('OTHER:REGION') }}
-{{ data.eddf_sup['ClosureSymbol_Poly']['R_1b'] | render_area('OTHER:REGION') }}
+{{ data.eddf_sup['ClosureSymbol_Poly']['R_1a'] | render_area('OTHER:REGION') -}}
+{{ data.eddf_sup['ClosureSymbol_Poly']['R_1b'] | render_area('OTHER:REGION') -}}
 {{ data.eddf_sup['ClosureSymbol_Poly']['R_1c'] | render_area('OTHER:REGION') }}
-
 
 MAP:R
 AIRPORT:EDDF
@@ -50,11 +48,10 @@ ACTIVE:1
 LAYER:4
 COLOR:CLOSURE
 STYLE:SOLID:2
-{{ data.eddf_sup['ClosurePerm_Poly']['R_2'] | render_area('TWYCLOSED:REGION') }}
+{{ data.eddf_sup['ClosurePerm_Poly']['R_2'] | render_area('TWYCLOSED:REGION') -}}
 COLOR:CLOSURE_SYMBOL
 STYLE:SOLID:1
 {{ data.eddf_sup['ClosureSymbol_Poly']['R_2'] | render_area('OTHER:REGION') }}
-
 
 MAP:S17, S19, S20, S21, S23 (N/A in Flight Sims)
 AIRPORT:EDDF
@@ -63,12 +60,11 @@ ACTIVE:1
 LAYER:5
 COLOR:CLOSURE_SYMBOL
 STYLE:SOLID:1
-{{ data.eddf_sup['ClosureSymbol_Poly']['S17'] | render_area('OTHER:REGION') }}
-{{ data.eddf_sup['ClosureSymbol_Poly']['S19'] | render_area('OTHER:REGION') }}
-{{ data.eddf_sup['ClosureSymbol_Poly']['S20'] | render_area('OTHER:REGION') }}
-{{ data.eddf_sup['ClosureSymbol_Poly']['S21'] | render_area('OTHER:REGION') }}
+{{ data.eddf_sup['ClosureSymbol_Poly']['S17'] | render_area('OTHER:REGION') -}}
+{{ data.eddf_sup['ClosureSymbol_Poly']['S19'] | render_area('OTHER:REGION') -}}
+{{ data.eddf_sup['ClosureSymbol_Poly']['S20'] | render_area('OTHER:REGION') -}}
+{{ data.eddf_sup['ClosureSymbol_Poly']['S21'] | render_area('OTHER:REGION') -}}
 {{ data.eddf_sup['ClosureSymbol_Poly']['S23'] | render_area('OTHER:REGION') }}
-
 
 MAP:Stands V333-V340 (N/A in Flight Sims)
 AIRPORT:EDDF
@@ -79,7 +75,6 @@ COLOR:CLOSURE
 STYLE:SOLID:2
 {{ data.eddf_sup['ClosurePerm_Poly']['S16_S21'] | render_area('TWYCLOSED:POLYGON') }}
 
-
 MAP:W, W9
 AIRPORT:EDDF
 FOLDER:Closures
@@ -89,7 +84,6 @@ COLOR:CLOSURE
 STYLE:SOLID:2
 {{ data.eddf_sup['ClosurePerm_Poly']['W'] | render_area('TWYCLOSED:REGION') }}
 
-
 MAP:W7
 AIRPORT:EDDF
 FOLDER:Closures
@@ -97,12 +91,11 @@ ACTIVE:1
 LAYER:4
 COLOR:CLOSURE
 STYLE:SOLID:2
-{{ data.eddf_sup['ClosurePerm_Poly']['W7'] | render_area('TWYCLOSED:REGION') }}
+{{ data.eddf_sup['ClosurePerm_Poly']['W7'] | render_area('TWYCLOSED:REGION') -}}
 COLOR:CLOSURE_SYMBOL
 STYLE:SOLID:1
-{{ data.eddf_sup['ClosureSymbol_Poly']['W7_a'] | render_area('OTHER:REGION') }}
+{{ data.eddf_sup['ClosureSymbol_Poly']['W7_a'] | render_area('OTHER:REGION') -}}
 {{ data.eddf_sup['ClosureSymbol_Poly']['W7_b'] | render_area('OTHER:REGION') }}
-
 
 MAP:Y
 AIRPORT:EDDF
@@ -111,8 +104,8 @@ ACTIVE:1
 LAYER:4
 COLOR:CLOSURE
 STYLE:SOLID:2
-{{ data.eddf_sup['ClosurePerm_Poly']['Y'] | render_area('TWYCLOSED:REGION') }}
+{{ data.eddf_sup['ClosurePerm_Poly']['Y'] | render_area('TWYCLOSED:REGION') -}}
 COLOR:CLOSURE_SYMBOL
 STYLE:SOLID:1
-{{ data.eddf_sup['ClosureSymbol_Poly']['Y_a'] | render_area('OTHER:REGION') }}
+{{ data.eddf_sup['ClosureSymbol_Poly']['Y_a'] | render_area('OTHER:REGION') -}}
 {{ data.eddf_sup['ClosureSymbol_Poly']['Y_b'] | render_area('OTHER:REGION') }}

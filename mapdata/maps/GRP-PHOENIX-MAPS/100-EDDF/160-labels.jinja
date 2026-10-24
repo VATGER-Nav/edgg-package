@@ -1,6 +1,6 @@
-// ----------------------------- Labels -----------------------------
-{#- TODO: Remove macros when filters for the new API are implemented #}
-{%- from "_macros.jinja" import render_point %}
+{%- from "_macros.jinja" import render_multilinetext -%}
+
+// ========================< Taxiway Labels >========================
 
 MAP:Taxiways
 AIRPORT:EDDF
@@ -11,22 +11,22 @@ OTHER_MAP_ACT:=:Labels\Stopbars
 ZOOM:300
 FONTSIZE:=:10
 COLOR:LAYOUT_LABEL_TAXIWAY
-{% for _, feat in data.eddf_info['TaxiwayLabel'].items() if feat.properties['zoomlevel'] == 300 %}
-{{- render_point(feat, 'TEXT', feat.properties['text']) }}
-{% endfor %}
+{{ data.eddf_info['TaxiwayLabel'] | feat_where('zoomlevel', 300) | render_text(prop='text') }}
+
 ZOOM:800
 FONTSIZE:=:9
 COLOR:LAYOUT_LABEL_STAND
-{{ render_point(data.eddf_info['TaxiwayLabel']['Link3'], 'TEXT/CC', 'Link 3') }}
-{#- South Up #}
+{{ data.eddf_info['TaxiwayLabel']['Link3'] | render_text(prop='text', align='CC') -}}
+{#- South Up -#}
 FILTER_ASR:EDDF_GND
-{{ render_point(data.eddf_info['TaxiwayLabel']['Link4'], 'TEXT/LC', 'Link 4') }}
-{{ render_point(data.eddf_info['TaxiwayLabel']['Link5'], 'TEXT/RC', 'Link 5') }}
-{#- North Up #}
+{{ data.eddf_info['TaxiwayLabel']['Link4'] | render_text(prop='text', align='LC') -}}
+{{ data.eddf_info['TaxiwayLabel']['Link5'] | render_text(prop='text', align='RC') -}}
+{#- North Up -#}
 FILTER_ASR:EDDF_S_GND
-{{ render_point(data.eddf_info['TaxiwayLabel']['Link4'], 'TEXT/RC', 'Link 4') }}
-{{ render_point(data.eddf_info['TaxiwayLabel']['Link5'], 'TEXT/LC', 'Link 5') }}
+{{ data.eddf_info['TaxiwayLabel']['Link4'] | render_text(prop='text', align='RC') -}}
+{{ data.eddf_info['TaxiwayLabel']['Link5'] | render_text(prop='text', align='LC') }}
 
+// =========================< Stand Labels >=========================
 
 MAP:Stands
 AIRPORT:EDDF
@@ -36,34 +36,30 @@ ACTIVE:1
 ZOOM:400
 FONTSIZE:=:9
 COLOR:LAYOUT_LABEL_STAND
-{% for desig, feat in data.eddf_info['StandLabel'].items() if feat.properties['zoomlevel'] == 400 %}
-{{- render_point(feat, 'TEXT', desig) }}
-{% endfor %}
-{{ render_point(data.eddf_info['AreaLabel']['GAT'], 'TEXT', 'GAT - V7xx') }}
+{{ data.eddf_info['StandLabel'] | feat_where('zoomlevel', 400) | render_text(prop='designator') }}
+{{ data.eddf_info['AreaLabel']['GAT'] | render_text(prop='text') }}
 
 ZOOM:600
-{% for desig, feat in data.eddf_info['StandLabel'].items() if feat.properties['zoomlevel'] == 600 %}
-{{- render_point(feat, 'TEXT', desig) }}
-{% endfor %}
+{{ data.eddf_info['StandLabel'] | feat_where('zoomlevel', 600) | render_text(prop='designator') }}
+
 ZOOM:800
-{% for desig, feat in data.eddf_info['StandLabel'].items() if feat.properties['zoomlevel'] == 800 %}
-{{- render_point(feat, 'TEXT', desig) }}
-{% endfor %}
+{{ data.eddf_info['StandLabel'] | feat_where('zoomlevel', 800) | render_text(prop='designator') }}
+
 ZOOM:1200
-{% for desig, feat in data.eddf_info['StandLabel'].items() if feat.properties['zoomlevel'] == 1200 %}
-{{- render_point(feat, 'TEXT', desig) }}
-{% endfor %}
+{{ data.eddf_info['StandLabel'] | feat_where('zoomlevel', 1200) | render_text(prop='designator') }}
+
 {#- South Up #}
 FILTER_ASR:EDDF_GND
 {% for desig in ['C14', 'C15', 'C16'] %}
-{{- render_point(data.eddf_info['StandLabel'][desig], 'TEXT', ' '+desig+'S:0:12') }}
+{{- data.eddf_info['StandLabel'][desig] | render_text(' '+desig+'S', offset=(0,12)) -}}
 {% endfor %}
-{#- North Up #}
+{#- North Up -#}
 FILTER_ASR:EDDF_S_GND
 {% for desig in ['C14', 'C15', 'C16'] %}
-{{- render_point(data.eddf_info['StandLabel'][desig], 'TEXT', ' '+desig+'S:0:-12') }}
+{{- data.eddf_info['StandLabel'][desig] | render_text(' '+desig+'S', offset=(0,-12)) -}}
 {% endfor %}
 
+// ========================< Stopbar Labels >========================
 
 MAP:Stopbars
 AIRPORT:EDDF
@@ -75,15 +71,16 @@ FONTSIZE:=:9
 COLOR:LAYOUT_LABEL_STAND
 {#- South Up #}
 FILTER_ASR:EDDF_GND
-{% for desig, feat in data.eddf_info['HoldingPointLabel'].items() %}
-{{- render_point(feat, 'TEXT/'+feat.properties['textalign'], desig) }}
+{% for feat in data.eddf_info['HoldingPointLabel'].values() %}
+{{- feat | render_text(prop='designator', align=feat.properties.textalign) -}}
 {% endfor %}
 {#- North Up #}
 FILTER_ASR:EDDF_S_GND
-{% for desig, feat in data.eddf_info['HoldingPointLabel'].items() %}
-{{- render_point(feat, 'TEXT/'+feat.properties['textalign_s'], desig) }}
+{% for feat in data.eddf_info['HoldingPointLabel'].values() %}
+{{- feat | render_text(prop='designator', align=feat.properties.textalign_s) -}}
 {% endfor %}
 
+// =======================< Building Labels >========================
 
 MAP:Buildings
 AIRPORT:EDDF
@@ -91,8 +88,6 @@ FOLDER:Labels
 ZOOM:400
 FONTSIZE:=:9
 COLOR:LAYOUT_LABEL_STAND
-{%- for _, feat in data.eddf_info['BuildingLabel'].items() %}
-{%- for textline in feat.properties['text'].split('\\n') %}
-{{ render_point(feat, 'TEXT', textline) }}
-{%- endfor %}
-{%- endfor %}
+{% for feat in data.eddf_info['BuildingLabel'].values() %}
+{{ render_multilinetext(feat, 12) }}
+{% endfor %}
