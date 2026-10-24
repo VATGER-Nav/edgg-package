@@ -105,7 +105,7 @@ source = "misc/aor.txt"
 #-------Groundlayouts AIXM-----
 
 [data.eddf_aixm]
-type = "aixm"
+type = "aixm51"
 source = "dfs:0:EDDF AerodromeMapping:AIXM 5.1.1"
 
 [data.eddl_aixm]
@@ -157,36 +157,19 @@ source = "dfs:0:EDSB AerodromeMapping:AIXM 5.1.1"
 [data.eddf_layout]
 type = "gpkg"
 source = "gis/eddf-layout.gpkg"
-layers = ["HoldingPoint_Line", "HoldingPoint_Poly", "HoldingPoint_PolyDot", "Marking_Line", "Marking_Poly", "RunwayElement"]
-id_property = "designator"
-
-[data.eddf_layout_fid]
-type = "gpkg"
-source = "gis/eddf-layout.gpkg"
-layers = ["ApronElement", "RunwayBlastPad", "TaxiwayElement", "VerticalStructure_Line", "VerticalStructure_Poly"]
-
-[data.eddf_guidanceline]
-type = "gpkg"
-source = "gis/eddf-aixm.gpkg"
-layers = ["GuidanceLineMarking"]
-id_property = "identifier"
 
 [data.eddf_info]
 type = "gpkg"
 source = "gis/eddf-info.gpkg"
-layers = ["AoRBoundary", "AoRLabel", "AreaLabel", "BAA_Line", "BAA_Poly", "BAALabel", "BuildingLabel", "DeicingArea", "DeicingLabel", "DeicingMarking_Line", "DeicingMarking_Poly", "HoldingPointLabel", "Restriction_Line", "Restriction_Poly", "RestrictionLabel", "RestrictionStand", "RRSMarker", "RunwayCrossing_Line", "RunwayCrossing_Poly", "RunwayLabel", "SensitiveArea", "StandLabel", "TaxiwayLabel", "TORALabel"]
 id_property = "designator"
 
 [data.eddf_oldgat]
 type = "gpkg"
 source = "gis/eddf-oldgat.gpkg"
-layers = ["ApronElement", "AreaLabel", "Marking_Line", "Marking_Poly", "StandLabel", "TaxiwayLabel"]
-id_property = "designator"
 
 [data.eddf_sup]
 type = "gpkg"
 source = "gis/eddf-sup.gpkg"
-layers = ["ClosurePerm_Poly", "ClosureSymbol_Poly", "ClosureTemp_Poly"]
 id_property = "designator"
 
 #----------------------------< EDDL >----------------------------

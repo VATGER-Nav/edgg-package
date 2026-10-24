@@ -1,4 +1,5 @@
-// ------------------------------- AoR ------------------------------
+// ====================< Areas of Responsibility >===================
+
 {#- 
     WARNING: When performing any changes on this file,
     please bring them to the following files as well:
@@ -7,8 +8,6 @@
         - GRP-PHOENIX-MAPS\8000-app-window\8020-EDDF.jinja
         - TOPSKY-PHOENIX-MAPS\100-EDDF\103-tools.jinja
 #}
-{#- TODO: Remove macros when filters for the new API are implemented #}
-{%- from "_macros.jinja" import render_point %}
 
 MAP:EDDF_C_GND
 AIRPORT:EDDF
@@ -16,11 +15,10 @@ FOLDER:AoR|EDDF_x_GND 25
 LAYER:6
 COLOR:AOR_GND_A
 STYLE:DOT
-{{ data.eddf_info['AoRBoundary']['DFGC_25'] | render_line }}
+{{ data.eddf_info['AoRBoundary']['DFGC_25'] | render_line -}}
 ZOOM:300
 FONTSIZE:=:13
-{{ render_point(data.eddf_info['AoRLabel']['DFGC'], 'TEXT', 'DFGC 121.855') }}
-
+{{ data.eddf_info['AoRLabel']['DFGC'] | render_text('DFGC 121.855') }}
 
 MAP:EDDF_E_GND
 AIRPORT:EDDF
@@ -28,11 +26,10 @@ FOLDER:AoR|EDDF_x_GND 25
 LAYER:6
 COLOR:AOR_GND_C
 STYLE:DOT
-{{ data.eddf_info['AoRBoundary']['DFGE_25'] | render_line }}
+{{ data.eddf_info['AoRBoundary']['DFGE_25'] | render_line -}}
 ZOOM:300
 FONTSIZE:=:13
-{{ render_point(data.eddf_info['AoRLabel']['DFGE'], 'TEXT', 'DFGE 121.955') }}
-
+{{ data.eddf_info['AoRLabel']['DFGE'] | render_text('DFGE 121.955') }}
 
 MAP:EDDF_W_GND
 AIRPORT:EDDF
@@ -40,11 +37,10 @@ FOLDER:AoR|EDDF_x_GND 25
 LAYER:6
 COLOR:AOR_GND_B
 STYLE:DOT
-{{ data.eddf_info['AoRBoundary']['DFGW_25'] | render_line }}
+{{ data.eddf_info['AoRBoundary']['DFGW_25'] | render_line -}}
 ZOOM:300
 FONTSIZE:=:13
-{{ render_point(data.eddf_info['AoRLabel']['DFGW'], 'TEXT', 'DFGW 121.755') }}
-
+{{ data.eddf_info['AoRLabel']['DFGW'] | render_text('DFGW 121.755') }}
 
 MAP:EDDF_C_GND
 AIRPORT:EDDF
@@ -52,16 +48,15 @@ FOLDER:AoR|EDDF_x_GND 07
 LAYER:6
 COLOR:AOR_GND_A
 STYLE:DOT
-{{ data.eddf_info['AoRBoundary']['DFGC_07'] | render_line }}
+{{ data.eddf_info['AoRBoundary']['DFGC_07'] | render_line -}}
 COLOR:LAYOUT_LABEL_TAXIWAY
-{{ data.eddf_info['AoRBoundary']['mixed_area'] | render_line }}
+{{ data.eddf_info['AoRBoundary']['mixed_area'] | render_line -}}
 ZOOM:300
 FONTSIZE:=:13
 COLOR:AOR_GND_A
-{{ render_point(data.eddf_info['AoRLabel']['DFGC'], 'TEXT', 'DFGC 121.855') }}
+{{ data.eddf_info['AoRLabel']['DFGC'] | render_text('DFGC 121.855') -}}
 COLOR:LAYOUT_LABEL_TAXIWAY
-{{ render_point(data.eddf_info['AoRLabel']['mixed_area'], 'TEXT', 'MIXED AREA') }}
-
+{{ data.eddf_info['AoRLabel']['mixed_area'] | render_text('MIXED AREA') }}
 
 MAP:EDDF_E_GND
 AIRPORT:EDDF
@@ -69,16 +64,15 @@ FOLDER:AoR|EDDF_x_GND 07
 LAYER:6
 COLOR:AOR_GND_C
 STYLE:DOT
-{{ data.eddf_info['AoRBoundary']['DFGE_07'] | render_line }}
+{{ data.eddf_info['AoRBoundary']['DFGE_07'] | render_line -}}
 COLOR:LAYOUT_LABEL_TAXIWAY
-{{ data.eddf_info['AoRBoundary']['mixed_area'] | render_line }}
+{{ data.eddf_info['AoRBoundary']['mixed_area'] | render_line -}}
 ZOOM:300
 FONTSIZE:=:13
 COLOR:AOR_GND_C
-{{ render_point(data.eddf_info['AoRLabel']['DFGE'], 'TEXT', 'DFGE 121.955') }}
+{{ data.eddf_info['AoRLabel']['DFGE'] | render_text('DFGE 121.955') -}}
 COLOR:LAYOUT_LABEL_TAXIWAY
-{{ render_point(data.eddf_info['AoRLabel']['mixed_area'], 'TEXT', 'MIXED AREA') }}
-
+{{ data.eddf_info['AoRLabel']['mixed_area'] | render_text('MIXED AREA') }}
 
 MAP:EDDF_W_GND
 AIRPORT:EDDF
@@ -86,16 +80,15 @@ FOLDER:AoR|EDDF_x_GND 07
 LAYER:6
 COLOR:AOR_GND_B
 STYLE:DOT
-{{ data.eddf_info['AoRBoundary']['DFGW_07'] | render_line }}
+{{ data.eddf_info['AoRBoundary']['DFGW_07'] | render_line -}}
 COLOR:LAYOUT_LABEL_TAXIWAY
-{{ data.eddf_info['AoRBoundary']['mixed_area'] | render_line }}
+{{ data.eddf_info['AoRBoundary']['mixed_area'] | render_line -}}
 ZOOM:300
 FONTSIZE:=:13
 COLOR:AOR_GND_B
-{{ render_point(data.eddf_info['AoRLabel']['DFGW'], 'TEXT', 'DFGW 121.755') }}
+{{ data.eddf_info['AoRLabel']['DFGW'] | render_text('DFGW 121.755') -}}
 COLOR:LAYOUT_LABEL_TAXIWAY
-{{ render_point(data.eddf_info['AoRLabel']['mixed_area'], 'TEXT', 'MIXED AREA') }}
-
+{{ data.eddf_info['AoRLabel']['mixed_area'] | render_text('MIXED AREA') }}
 
 MAP:EDDF_S_GND (E)
 AIRPORT:EDDF
@@ -103,16 +96,15 @@ FOLDER:AoR
 LAYER:6
 COLOR:AOR_GND_E
 STYLE:DOT
-{{ data.eddf_info['AoRBoundary']['DFGSE'] | render_line }}
+{{ data.eddf_info['AoRBoundary']['DFGSE'] | render_line -}}
 ZOOM:300
 FONTSIZE:=:13
 {#- South Up #}
 FILTER_ASR:EDDF_GND
-{{ render_point(data.eddf_info['AoRLabel']['DFGSE'], 'TEXT/RC', 'DFGS 121.655') }}
-{#- North Up #}
+{{ data.eddf_info['AoRLabel']['DFGSE'] | render_text('DFGS 121.655', align='RC') -}}
+{#- North Up -#}
 FILTER_ASR:EDDF_S_GND
-{{ render_point(data.eddf_info['AoRLabel']['DFGSE'], 'TEXT/LC', 'DFGS 121.655') }}
-
+{{ data.eddf_info['AoRLabel']['DFGSE'] | render_text('DFGS 121.655', align='LC') }}
 
 MAP:EDDF_S_GND (W)
 AIRPORT:EDDF
@@ -120,11 +112,10 @@ FOLDER:AoR
 LAYER:6
 COLOR:AOR_GND_E
 STYLE:DOT
-{{ data.eddf_info['AoRBoundary']['DFGSW'] | render_line }}
+{{ data.eddf_info['AoRBoundary']['DFGSW'] | render_line -}}
 ZOOM:300
 FONTSIZE:=:13
-{{ render_point(data.eddf_info['AoRLabel']['DFGSW'], 'TEXT', 'DFGS 121.915') }}
-
+{{ data.eddf_info['AoRLabel']['DFGSW'] | render_text('DFGS 121.915') }}
 
 MAP:EDDF_ICE_GND
 AIRPORT:EDDF
@@ -132,16 +123,15 @@ FOLDER:AoR
 LAYER:6
 COLOR:AOR_ICE
 STYLE:DOT
-{{ data.eddf_info['AoRBoundary']['DFGI'] | render_line }}
+{{ data.eddf_info['AoRBoundary']['DFGI'] | render_line -}}
 ZOOM:300
 FONTSIZE:=:13
 {#- South Up #}
 FILTER_ASR:EDDF_GND
-{{ render_point(data.eddf_info['AoRLabel']['DFGW'], 'TEXT', 'DFGI 121.985:0:20') }}
-{#- North Up #}
+{{ data.eddf_info['AoRLabel']['DFGW'] | render_text('DFGI 121.985', offset=(0,20)) -}}
+{#- North Up -#}
 FILTER_ASR:EDDF_S_GND
-{{ render_point(data.eddf_info['AoRLabel']['DFGW'], 'TEXT', 'DFGI 121.985:0:-20') }}
-
+{{ data.eddf_info['AoRLabel']['DFGW'] | render_text('DFGI 121.985', offset=(0,-20)) }}
 
 MAP:EDDF_GND
 AIRPORT:EDDF
@@ -149,17 +139,16 @@ FOLDER:AoR
 LAYER:6
 COLOR:AOR_GND_D
 STYLE:DOT
-{{ data.eddf_info['AoRBoundary']['DFG'] | render_line }}
+{{ data.eddf_info['AoRBoundary']['DFG'] | render_line -}}
 ZOOM:300
 FONTSIZE:=:13
-{{ render_point(data.eddf_info['AoRLabel']['DFG_a'], 'TEXT', 'DFG  121.805') }}
-{#- South Up #}
+{{ data.eddf_info['AoRLabel']['DFG_a'] | render_text('DFG  121.805') -}}
+{#- South Up -#}
 FILTER_ASR:EDDF_GND
-{{ render_point(data.eddf_info['AoRLabel']['DFG_b'], 'TEXT/RC', 'DFG  121.805') }}
-{#- North Up #}
+{{ data.eddf_info['AoRLabel']['DFG_b'] | render_text('DFG  121.805', align='RC') -}}
+{#- North Up -#}
 FILTER_ASR:EDDF_S_GND
-{{ render_point(data.eddf_info['AoRLabel']['DFG_b'], 'TEXT/LC', 'DFG  121.805') }}
-
+{{ data.eddf_info['AoRLabel']['DFG_b'] | render_text('DFG  121.805', align='LC') }}
 
 MAP:EDDF_C_TWR
 AIRPORT:EDDF
@@ -167,11 +156,10 @@ FOLDER:AoR
 LAYER:6
 COLOR:AOR_TWR_B
 STYLE:DOT
-{{ data.eddf_info['AoRBoundary']['DFTC'] | render_line }}
+{{ data.eddf_info['AoRBoundary']['DFTC'] | render_line -}}
 ZOOM:300
 FONTSIZE:=:13
-{{ render_point(data.eddf_info['AoRLabel']['DFTC'], 'TEXT', 'DFTC 118.780') }}
-
+{{ data.eddf_info['AoRLabel']['DFTC'] | render_text('DFTC 118.780') }}
 
 MAP:EDDF_W_TWR
 AIRPORT:EDDF
@@ -179,16 +167,15 @@ FOLDER:AoR
 LAYER:6
 COLOR:AOR_TWR_C
 STYLE:DOT
-{{ data.eddf_info['AoRBoundary']['DFTW'] | render_line }}
+{{ data.eddf_info['AoRBoundary']['DFTW'] | render_line -}}
 ZOOM:300
 FONTSIZE:=:13
 {#- South Up #}
 FILTER_ASR:EDDF_GND
-{{ render_point(data.eddf_info['AoRLabel']['DFTW'], 'TEXT/LC', 'DFTW 124.855') }}
-{#- North Up #}
+{{ data.eddf_info['AoRLabel']['DFTW'] | render_text('DFTW 124.855', align='LC') -}}
+{#- North Up -#}
 FILTER_ASR:EDDF_S_GND
-{{ render_point(data.eddf_info['AoRLabel']['DFTW'], 'TEXT/RC', 'DFTW 124.855') }}
-
+{{ data.eddf_info['AoRLabel']['DFTW'] | render_text('DFTW 124.855', align='RC') }}
 
 MAP:EDDF_N_TWR
 AIRPORT:EDDF
@@ -196,11 +183,10 @@ FOLDER:AoR
 LAYER:6
 COLOR:AOR_TWR_C
 STYLE:DOT
-{{ data.eddf_info['AoRBoundary']['DFTN'] | render_line }}
+{{ data.eddf_info['AoRBoundary']['DFTN'] | render_line -}}
 ZOOM:300
 FONTSIZE:=:13
-{{ render_point(data.eddf_info['AoRLabel']['DFTN'], 'TEXT', 'DFTN 136.500') }}
-
+{{ data.eddf_info['AoRLabel']['DFTN'] | render_text('DFTN 136.500') }}
 
 MAP:EDDF_S_TWR
 AIRPORT:EDDF
@@ -208,11 +194,10 @@ FOLDER:AoR
 LAYER:6
 COLOR:AOR_TWR_A
 STYLE:DOT
-{{ data.eddf_info['AoRBoundary']['DFTS'] | render_line }}
+{{ data.eddf_info['AoRBoundary']['DFTS'] | render_line -}}
 ZOOM:300
 FONTSIZE:=:13
-{{ render_point(data.eddf_info['AoRLabel']['DFTS'], 'TEXT', 'DFTS 119.905') }}
-
+{{ data.eddf_info['AoRLabel']['DFTS'] | render_text('DFTS 119.905') }}
 
 MAP:EDDF_N_DEP
 AIRPORT:EDDF
@@ -224,13 +209,12 @@ ZOOM:300
 FONTSIZE:=:13
 {#- South Up #}
 FILTER_ASR:EDDF_GND
-{{ render_point(data.eddf_info['AoRLabel']['DFD_a'], 'TEXT', 'DFDN 120.155:0:10') }}
-{{ render_point(data.eddf_info['AoRLabel']['DFD_b'], 'TEXT', 'DFDN 120.155:0:10') }}
-{#- North Up #}
+{{ data.eddf_info['AoRLabel']['DFD_a'] | render_text('DFDN 120.155', offset=(0,10)) -}}
+{{ data.eddf_info['AoRLabel']['DFD_b'] | render_text('DFDN 120.155', offset=(0,10)) -}}
+{#- North Up -#}
 FILTER_ASR:EDDF_S_GND
-{{ render_point(data.eddf_info['AoRLabel']['DFD_a'], 'TEXT', 'DFDN 120.155:0:-10') }}
-{{ render_point(data.eddf_info['AoRLabel']['DFD_b'], 'TEXT', 'DFDN 120.155:0:-10') }}
-
+{{ data.eddf_info['AoRLabel']['DFD_a'] | render_text('DFDN 120.155', offset=(0,-10)) -}}
+{{ data.eddf_info['AoRLabel']['DFD_b'] | render_text('DFDN 120.155', offset=(0,-10)) }}
 
 MAP:EDDF_S_DEP
 AIRPORT:EDDF
@@ -242,9 +226,9 @@ ZOOM:300
 FONTSIZE:=:13
 {#- South Up #}
 FILTER_ASR:EDDF_GND
-{{ render_point(data.eddf_info['AoRLabel']['DFD_a'], 'TEXT', 'DFDS 136.130:0:-10') }}
-{{ render_point(data.eddf_info['AoRLabel']['DFD_b'], 'TEXT', 'DFDS 136.130:0:-10') }}
-{#- North Up #}
+{{ data.eddf_info['AoRLabel']['DFD_a'] | render_text('DFDS 136.130', offset=(0,-10)) -}}
+{{ data.eddf_info['AoRLabel']['DFD_b'] | render_text('DFDS 136.130', offset=(0,-10)) -}}
+{#- North Up -#}
 FILTER_ASR:EDDF_S_GND
-{{ render_point(data.eddf_info['AoRLabel']['DFD_a'], 'TEXT', 'DFDS 136.130:0:10') }}
-{{ render_point(data.eddf_info['AoRLabel']['DFD_b'], 'TEXT', 'DFDS 136.130:0:10') }}
+{{ data.eddf_info['AoRLabel']['DFD_a'] | render_text('DFDS 136.130', offset=(0,10)) -}}
+{{ data.eddf_info['AoRLabel']['DFD_b'] | render_text('DFDS 136.130', offset=(0,10)) }}
