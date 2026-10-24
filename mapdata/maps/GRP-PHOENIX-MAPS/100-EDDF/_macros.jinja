@@ -1,4 +1,26 @@
-{#- Jinja Macros -#}
-{%- macro render_point(feat, point_def, text = none) -%}
-{{point_def}}:{{feat.geometry.coords[0][0]}}:{{feat.geometry.coords[0][1]}}{{':'+text if text}}
+{#-
+    This macro takes Features with multiline text and a desired
+    text height, and renders them appropriately. New lines should
+    be separated using the '\n' character.
+#}
+{%- macro render_multilinetext(feat, text_height) -%}
+{%- set textlines = feat.properties['text'].split('\\n') | list %}
+{%- set label_height = (textlines | length - 1) * text_height %}
+
+{%- for textline in textlines %}
+    {{- feat | render_text(textline, offset=(0, (loop.index0*text_height)-(label_height/2)|int)) -}}
+{%- endfor %}
 {%- endmacro -%}
+
+{#-
+    This macro takes the RestrictionStand Features and
+    renders them as a primary or secondary symbol, along
+    with the text if defined.
+#}
+{%- macro render_restriction(feat) %}
+{%- set text = feat.properties['text'] -%}
+{{ feat | render_symbol(
+    'STAND_S' if feat.properties['is_secondary'] == true else 'STAND',
+    text=text, offset=(0,15) if text != none else none
+) }}
+{%- endmacro %}

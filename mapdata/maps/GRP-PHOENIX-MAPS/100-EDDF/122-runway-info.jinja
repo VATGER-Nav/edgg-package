@@ -1,7 +1,4 @@
-// -------------------------- Runway Info ---------------------------
-{#- TODO: Remove simplify() when AIXM2 parser gets fixed #}
-{#- TODO: Remove macros when filters for the new API are implemented #}
-{%- from "_macros.jinja" import render_point %}
+// =======================< TORA Distances >=========================
 
 {% for runway in ['25L', '07R', '25C', '07C', '18'] %}
 MAP:TORA {{runway}}
@@ -12,16 +9,17 @@ COLOR:TORA_LABEL
 ZOOM:300
 {#- South Up #}
 FILTER_ASR:EDDF_GND
-{% for _, feat in data.eddf_info['TORALabel'].items() if feat.properties['runway'] == runway %}
-{{- render_point(feat, 'TEXT/'+feat.properties['textalign'], feat.properties['tora']) }}
+{% for feat in data.eddf_info['TORALabel'] | feat_where('runway', runway) %}
+{{- feat | render_text(prop='tora', align=feat.properties.textalign) -}}
 {% endfor %}
-{#- North Up #}
+{#- North Up -#}
 FILTER_ASR:EDDF_S_GND
-{% for _, feat in data.eddf_info['TORALabel'].items() if feat.properties['runway'] == runway %}
-{{- render_point(feat, 'TEXT/'+feat.properties['textalign_s'], feat.properties['tora']) }}
+{% for feat in data.eddf_info['TORALabel'] | feat_where('runway', runway) %}
+{{- feat | render_text(prop='tora', align=feat.properties.textalign_s) -}}
 {% endfor %}
 {% endfor %}
 
+// ======================< Runway Designators >======================
 
 MAP:Runway Designators
 AIRPORT:EDDF
@@ -29,19 +27,15 @@ FOLDER:Runway Info
 LAYER:6
 ACTIVE:1
 COLOR:RUNWAY_LABEL
-{% for _, feat in data.eddf_info['RunwayLabel'].items() %}
-{{- feat | render_area('OTHER:REGION') }}
-{% endfor %}
+{{ data.eddf_info['RunwayLabel'] | render_grp }}
 
+// =======================< Runway Markings >========================
 
 MAP:Runway Markings
 AIRPORT:EDDF
 FOLDER:Runway Info
 COLOR:LAYOUT_RUNWAY_MARKING
-{% for _, feat in data.eddf_aixm['RunwayMarking'].items() if feat.color == 'WHITE' %}
-{{- feat | simplify(0) | render_area('OTHER:REGION') }}
-{% endfor %}
+{{ data.eddf_aixm['RunwayMarking'] | feat_where('colour', 'WHITE') | render_area('OTHER:REGION') }}
+
 COLOR:LAYOUT_TAXIWAY
-{% for _, feat in data.eddf_aixm['RunwayMarking'].items() if feat.color == 'YELLOW' %}
-{{- feat | simplify(0) | render_area('OTHER:REGION') }}
-{% endfor %}
+{{ data.eddf_aixm['RunwayMarking'] | feat_where('colour', 'YELLOW') | render_area('OTHER:REGION') }}

@@ -1,6 +1,6 @@
-// ------------------------------ RRS -------------------------------
-{#- TODO: Remove macros when filters for the new API are implemented #}
-{%- from "_macros.jinja" import render_point %}
+// =========================< RRS Markers >==========================
+
+// - - - - - - - - - - - - - - - 2400 - - - - - - - - - - - - - - - -
 
 {% for runway in ['25L', '07R', '25C', '07C', '25R', '07L'] %}
 MAP:RRS {{runway}}
@@ -12,12 +12,11 @@ ACTIVE:RWY:ARR:*:DEP:EDDF{{runway}}
 COLOR:RRS_MARKER
 {#- South Up #}
 FILTER_ASR:EDDF_GND
-{{ render_point(data.eddf_info['RRSMarker'][runway+'_2400'], 'SYMBOL:RRS') }}
-{#- North Up #}
+{{ data.eddf_info['RRSMarker'][runway+'_2400'] | render_symbol('RRS') }}
+{#- North Up -#}
 FILTER_ASR:EDDF_S_GND
-{{ render_point(data.eddf_info['RRSMarker'][runway+'_2400_s'], 'SYMBOL:RRS') }}
+{{ data.eddf_info['RRSMarker'][runway+'_2400_s'] | render_symbol('RRS') }}
 {% endfor %}
-
 
 MAP:RRS 18
 AIRPORT:EDDF
@@ -27,11 +26,12 @@ ACTIVE:RWY:ARR:*:DEP:EDDF18
 COLOR:RRS_MARKER
 {#- South Up #}
 FILTER_ASR:EDDF_GND
-{{ render_point(data.eddf_info['RRSMarker']['18_2400'], 'SYMBOL:RRS-E') }}
-{#- North Up #}
+{{ data.eddf_info['RRSMarker']['18_2400'] | render_symbol('RRS-E') }}
+{#- North Up -#}
 FILTER_ASR:EDDF_S_GND
-{{ render_point(data.eddf_info['RRSMarker']['18_2400'], 'SYMBOL:RRS-W') }}
+{{ data.eddf_info['RRSMarker']['18_2400'] | render_symbol('RRS-W') }}
 
+// - - - - - - - - - - - - - - 600/1500 - - - - - - - - - - - - - - -
 
 {% for runway in ['25L', '07R', '25C', '07C', '25R', '07L'] %}
 MAP:RRS 600/1500 {{runway}}
@@ -41,10 +41,10 @@ LAYER:6
 COLOR:RRS_MARKER
 {#- South Up #}
 FILTER_ASR:EDDF_GND
-{{ render_point(data.eddf_info['RRSMarker'][runway+'_600'], 'SYMBOL:RRS') }}
-{{ render_point(data.eddf_info['RRSMarker'][runway+'_1500'], 'SYMBOL:RRS') }}
-{#- North Up #}
+{{ data.eddf_info['RRSMarker'][runway+'_600'] | render_symbol('RRS') -}}
+{{ data.eddf_info['RRSMarker'][runway+'_1500'] | render_symbol('RRS') }}
+{#- North Up -#}
 FILTER_ASR:EDDF_S_GND
-{{ render_point(data.eddf_info['RRSMarker'][runway+'_600_s'], 'SYMBOL:RRS') }}
-{{ render_point(data.eddf_info['RRSMarker'][runway+'_1500_s'], 'SYMBOL:RRS') }}
+{{ data.eddf_info['RRSMarker'][runway+'_600_s'] | render_symbol('RRS') -}}
+{{ data.eddf_info['RRSMarker'][runway+'_1500_s'] | render_symbol('RRS') }}
 {% endfor %}

@@ -1,21 +1,43 @@
-// ------------------------- Holding Points -------------------------
-{#- TODO: Change simplify() to geom_simplify() when AIXM2 parser gets fixed #}
 {%- set tolerance = 0.000005 %}
 {%- set dot_stopbars = data.eddf_layout['HoldingPoint_PolyDot'] %}
-{%- set nodraw_stopbars = dot_stopbars.values() | map(attribute='properties') | map(attribute='aixm_identifier') | list %}
-{%- set nodraw_stopbars = nodraw_stopbars + [
-	'257a6e08-afcf-4975-8816-6cd999abc3da',
+
+{#- Dotted Stopbars which shouldn't be drawn twice #}
+{%- set S10_stopbar = [
+    '257a6e08-afcf-4975-8816-6cd999abc3da',
 	'a3abc9d4-9b11-4aa3-9be3-776c3bc66f5e',
 	'a9abdd3b-a55a-432e-9a1f-27b0811ed0dc',
 ] %}
-{%- set draw_stopbars = [
-    '3f4e0eeb-1bb2-d63c-e053-b3472c0a9e49',
-    '5df223d0-87f6-cec2-e053-b4472c0af018',
-    '5df223d0-87f1-cec2-e053-b4472c0af018',
-    '7a0fabea-7296-8aaa-e053-b3472c0a5a54',
-    '7a0fabea-7291-8aaa-e053-b3472c0a5a54',
-    '5b1be2dd-9103-e747-e053-b4472c0a72b2',
+{%- set dot_stopbars_uuid = dot_stopbars.values() | map(attribute='properties') | map(attribute='aixm_identifier') | list %}
+
+{#- Some 'wanna-be' Edge Markings which for some reason have MarkingLocation == 'TWY_INT' #}
+{%- set nodraw_stopbars = [
+    '04c73301-687d-45ba-9e15-482380322407',
+    '11e08466-c2f1-440a-8d5b-0ca5fd79a075',
+    '17124e59-11bb-405c-96fc-bc7ce4b189e7',
+    '174b99f8-26c1-4d1b-8e9d-87626fd24f81',
+    '1c13d045-3f14-42e3-ae45-152c1f82bbd2',
+    '1f01f14f-e5f3-46b4-9329-9ff13f366dc1',
+    '21b573ae-e2c6-4157-8fea-64a62702da91',
+    '31cf0007-0168-4a41-b7bb-d3e9d5f1994b',
+    '3d6c9339-aa19-46dd-a0db-182ea71b954a',
+    '460e84d7-93e0-4328-bb6d-63172eebf347',
+    '57b184c9-74f5-446b-8a86-f29faf298943',
+    '6048cb8e-b46b-4e01-8198-20829f9e5b25',
+    '624f2cd2-ad20-4850-a6a8-e518dbfa7264',
+    '6948659f-ac52-4ef9-9f2e-ab865681090c',
+    '6d085010-d92b-4176-8f94-4d9dd492d9d4',
+    '95d245ab-eabd-4005-b5df-39d4f199565c',
+    'cc89c5d2-d26a-4f11-a9fd-32e3a4ced11c',
+    'cf3368a1-3e25-45d3-8475-c4c18f99e20a',
+    'da7371f6-5e92-43f3-af02-db0eaaf3832c',
+    'dfc62b3b-dedf-42db-8ece-f7b7a2b213e3',
+    'e125ea41-c64e-4f9d-9af9-7ec93c37c0ba',
+    'e3fabaee-9844-419f-8d46-f8a8fd4b70d7',
+    'edf42baa-f97c-49fb-a3fc-82b158dd188d',
+    'ef5fcafa-ce54-4a0b-ba8c-19a391068a70',
 ] %}
+
+// =====================< Holding Points CAT I >=====================
 
 MAP:Holding Points CAT I
 AIRPORT:EDDF
@@ -23,23 +45,24 @@ FOLDER:Holding Points
 ACTIVE:LVP:EDDF:0
 LAYER:5
 COLOR:LAYOUT_HOLDINGPOINT
-{% for desig, feat in data.eddf_layout['HoldingPoint_Poly'].items() if feat.properties['color'] == 'ORANGE' %}
-{{- feat | render_area('OTHER:REGION', desig) }}
+{% for feat in data.eddf_layout['HoldingPoint_Poly'] | feat_where('color', 'ORANGE') %}
+{{ feat | render_area('OTHER:REGION', feat.properties.designator) }}
 {% endfor %}
 COLOR:LAYOUT_HOLDINGPOINT_GREY
-{% for desig, feat in data.eddf_layout['HoldingPoint_Poly'].items() if feat.properties['color'] == 'GREY' %}
-{{- feat | render_area('OTHER:REGION', desig) }}
+{% for feat in data.eddf_layout['HoldingPoint_Poly'] | feat_where('color', 'GREY') %}
+{{ feat | render_area('OTHER:REGION', feat.properties.designator) }}
 {% endfor %}
 STYLE:SOLID:2
 COLOR:LAYOUT_HOLDINGPOINT
-{% for desig, feat in data.eddf_layout['HoldingPoint_Line'].items() if feat.properties['color'] == 'ORANGE' %}
-{{- feat | render_line(desig) }}
+{% for feat in data.eddf_layout['HoldingPoint_Line'] | feat_where('color', 'ORANGE') %}
+{{ feat | render_line(feat.properties.designator) }}
 {% endfor %}
 COLOR:LAYOUT_HOLDINGPOINT_GREY
-{% for desig, feat in data.eddf_layout['HoldingPoint_Line'].items() if feat.properties['color'] == 'GREY' %}
-{{- feat | render_line(desig) }}
+{% for feat in data.eddf_layout['HoldingPoint_Line'] | feat_where('color', 'GREY') %}
+{{ feat | render_line(feat.properties.designator) }}
 {% endfor %}
 
+// ====================< Holding Points CAT III >====================
 
 MAP:Holding Points CAT II/III
 AIRPORT:EDDF
@@ -47,45 +70,40 @@ FOLDER:Holding Points
 ACTIVE:LVP:EDDF:1
 LAYER:5
 COLOR:LAYOUT_HOLDINGPOINT_RED
-{% for desig, feat in data.eddf_layout['HoldingPoint_Poly'].items() if feat.properties['type'] in ['BOTH', 'CAT3'] %}
-{{- feat | render_area('OTHER:REGION', desig) }}
+{% for feat in data.eddf_layout['HoldingPoint_Poly'] | feat_where('type', 'BOTH', 'CAT3') %}
+{{ feat | render_area('OTHER:REGION', feat.properties.designator) }}
 {% endfor %}
 COLOR:LAYOUT_HOLDINGPOINT_GREY
-{% for desig, feat in data.eddf_layout['HoldingPoint_Poly'].items() if feat.properties['type'] == 'RWY18' %}
-{{- feat | render_area('OTHER:REGION', desig) }}
+{% for feat in data.eddf_layout['HoldingPoint_Poly'] | feat_where('type', 'RWY18') %}
+{{ feat | render_area('OTHER:REGION', feat.properties.designator) }}
 {% endfor %}
 STYLE:SOLID:2
 COLOR:LAYOUT_HOLDINGPOINT_RED
-{% for desig, feat in data.eddf_layout['HoldingPoint_Line'].items() if feat.properties['type'] == 'BOTH' %}
-{{- feat | render_line(desig) }}
+{% for feat in data.eddf_layout['HoldingPoint_Line'] | feat_where('type', 'BOTH') %}
+{{ feat | render_line(feat.properties.designator) }}
 {% endfor %}
 COLOR:LAYOUT_HOLDINGPOINT_GREY
-{% for desig, feat in data.eddf_layout['HoldingPoint_Line'].items() if feat.properties['type'] == 'RWY18' %}
-{{- feat | render_line(desig) }}
+{% for feat in data.eddf_layout['HoldingPoint_Line'] | feat_where('type', 'RWY18') %}
+{{ feat | render_line(feat.properties.designator) }}
 {% endfor %}
 
+// ==========================< Stopbars >============================
 
 MAP:Stopbars
 AIRPORT:EDDF
 FOLDER:Holding Points
 ACTIVE:1
 COLOR:LAYOUT_TAXILINE_GREY
-{% for _, feat in dot_stopbars.items() %}
-{{- feat | render_area('OTHER:REGION') }}
-{% endfor %}
-
+{{ dot_stopbars | render_grp }}
 
 MAP:All Stopbars
 AIRPORT:EDDF
 FOLDER:Holding Points
 COLOR:LAYOUT_HOLDINGPOINT
 LAYER:5
-{% for uuid, feat in data.eddf_aixm['TaxiwayMarking'].items()
-    if uuid in draw_stopbars or (
-        feat.style == 'DASHED' and 
-        feat.marking_location == 'TWY_INT' and 
-        not uuid in nodraw_stopbars
-    )
+{% for feat in data.eddf_aixm['TaxiwayMarking']
+    | feat_where('markingLocation', 'TWY_INT')
+    | feat_exclude('id', *(S10_stopbar + dot_stopbars_uuid + nodraw_stopbars))
 %}
-{{- feat | simplify(tolerance) | render_line(uuid) }}
+{{ feat | feat_join | feat_simplify(tolerance) | render_line(feat.id) }}
 {% endfor %}
