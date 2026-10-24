@@ -1,0 +1,57 @@
+{#-
+    GuidanceLines in EDDF are pretty useless as they don't contain any
+    geometry or other properties except 'type'.
+
+    This small script resolves the links to GuideanceLines and assigns the
+    'type' property, as well as the links to the Taxiway or AircraftStand,
+    to the GuidanceLineMarking.
+
+    For lead-in lines, it resolves the links to the aircraft stand and
+    groups them according to the stand designator.
+
+    Data may be inconsistent; all other exceptions must be defined
+    manually via ID.
+#}
+
+{%- set GLM_resolved = [] %}
+{%- set leadin_grouped = {} %}
+
+{#- Resolve links and type #}
+{%- for feat in data.eddf_aixm['GuidanceLineMarking'] %}
+
+    {%- set resolved_GuidanceLine = data.eddf_aixm.resolve(feat.links.markedGuidanceLine) %}
+
+    {#- Add 'type' property to GuidanceLineMarking #}
+    {%- set _ = feat.properties.update({'type': resolved_GuidanceLine.properties.type}) %}
+    
+    {#- Add link to AircraftStand if it exists #}
+    {%- if resolved_GuidanceLine.links.connectedStand is defined %}
+        {%- set _ = feat.links.update({'connectedStand': resolved_GuidanceLine.links.connectedStand}) %}
+    {%- endif %}
+    
+    {#- Add link to Taxiway if it exists #}
+    {%- if resolved_GuidanceLine.links.connectedTaxiway is defined %}
+        {%- set _ = feat.links.update({'connectedTaxiway': resolved_GuidanceLine.links.connectedTaxiway}) %}
+    {%- endif %}
+
+    {%- set _ = GLM_resolved.append(feat) %}
+
+{%- endfor %}
+
+{#- Create a dict with AircraftStand designators as keys #}
+{%- for stand, _ in data.eddf_aixm.group('AircraftStand', 'designator').items() %}
+
+    {%- set _ = leadin_grouped.update({stand: []}) %}
+
+{%- endfor %}
+
+{#- Group the GuidanceLineMarkings according to the resolved AircraftStand designator #}
+{%- for feat in GLM_resolved %}
+
+    {%- set resolved_stand = data.eddf_aixm.resolve(feat.links.connectedStand) %}
+
+    {%- if resolved_stand != none %}
+        {%- set _ = leadin_grouped[resolved_stand.properties.designator].append(feat) %}
+    {%- endif %}
+
+{%- endfor %}

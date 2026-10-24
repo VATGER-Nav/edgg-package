@@ -1,38 +1,90 @@
-// ---------------------------- Taxilanes --------------------------
-{#- TODO: Change simplify() to geom_simplify() when AIXM2 parser gets fixed #}
-{#- In comparison to other airports, Frankfurt's AIXM is a special case.
-    The GuidanceLine feature set cannot be parsed by Mapbuilder as it is
-    geometryless. GuidanceLineMarking is an unstructured set of geometries.
-    As Frankfurt changes its markings seemingly with every AIRAC update, 
-    it has been decided that it is better to maintain its own set of
-    geometries, which must be manually compared every other time.
-#}
+// ===========================< Taxilanes >==========================
+
 {%- set tolerance = 0.000005 %}
+{% from "_guidanceline.jinja" import GLM_resolved %}
+{%- set GLM_nodraw = [
+    '222d3c76-3a92-4e5f-832a-890324762fb3',
+    '63af5a23-5373-357f-e053-b3472c0afe64',
+    '7e7adc79-f92b-47c4-9831-64b1d01abada',
+    '9c5107a9-58c6-4080-9d91-036c4792ef78',
+] %}
+{%- set GLM_closed = [
+    '08167bbd-d2f9-4054-8fb7-7ff44e984229',
+    '0977ae19-276a-4737-9c2c-d8fddc9ed55a',
+    '1e41dfe7-ff4b-40cd-960b-874d3705edda',
+    '1e9272e5-965d-438b-b2ee-096f3123e3a3',
+    '2747292f-40b5-4de1-9381-99bb72f3b4b6',
+    '27760848-1ebe-4df3-83ab-e636ebcba392',
+    '3d7c3369-fa7e-4682-8d74-34d2ebc1b756',
+    '4177155d-b97e-4f2e-92c2-80b08b77e6a7',
+    '481f5926-ca31-4b89-8b13-acf72737916c',
+    '4bc4a0ec-0632-4bbe-9672-d17cec09b995',
+    '80a74be4-b16c-4e27-b771-2b15366f1418',
+    '8396953e-4659-44eb-b438-26d6e083ab29',
+    '90b9a0d6-7bdb-4016-8359-92bc04ea4fa7',
+    '917f132f-b59d-4690-aee4-57847bf3faec',
+    '932af316-2626-47fd-a3f1-85ab129e3406',
+    '9890ea42-2695-4a40-a70e-8705266d13df',
+    'a2fd4cf4-1d90-4194-86cf-38549b5b35f2',
+    'a374ea50-4252-4582-bffc-d250028074df',
+    'aa9979bf-50b4-4c42-8720-8768a467e71d',
+    'b3388184-45fb-43b9-93e0-ecb91f20dfd1',
+    'ccfbf151-b912-4ce1-9133-432503241b1d',
+    'e18864b4-2a78-4433-b94a-deae5a164b6b',
+] %}
+{%- set GLM_draw = 'ac11c982-85c5-4d7a-88a6-4a5bd25cf03b' %}
+
 
 MAP:Taxilanes
 AIRPORT:EDDF
 FOLDER:Airport Layout
 ACTIVE:1
-// Taxilanes not available in Flightsim
+
+// - - - - - - - Taxilanes not available in Flightsim - - - - - - - -
+
 COLOR:LAYOUT_RUNWAY
-{% for uuid, feat in data.eddf_guidanceline['GuidanceLineMarking'].items() if feat.properties['type'] == 'CLOSED' %}
-{{- feat | simplify(tolerance) | render_line(uuid) }}
+{% for feat in GLM_resolved | feat_where('id', *GLM_closed) %}
+{%- set taxiway = data.eddf_aixm.resolve(feat.links.connectedTaxiway) %}
+{%- set twy_desig = taxiway.properties.designator if taxiway != none else '' %}
+{{ feat | feat_simplify(tolerance) | render_line(feat.id +' / '+ twy_desig) }}
 {% endfor %}
 
-// Yellow Lines
+// - - - - - - - - - - - - - Yellow Lanes - - - - - - - - - - - - - -
+
 COLOR:LAYOUT_TAXILINE_YELLOW
-{% for uuid, feat in data.eddf_guidanceline['GuidanceLineMarking'].items() if feat.properties['type'] == 'TWY' and feat.properties['color'] == 'YELLOW' %}
-{{- feat | simplify(tolerance) | render_line(uuid) }}
+{% for feat in GLM_resolved
+    | feat_exclude('id', *(GLM_nodraw + GLM_closed))
+    | feat_where('type', 'TWY', 'RWY', 'GATE_TLANE')
+    | feat_exclude('colour', 'BLUE', 'ORANGE')
+%}
+{%- set taxiway = data.eddf_aixm.resolve(feat.links.connectedTaxiway) %}
+{%- set twy_desig = taxiway.properties.designator if taxiway != none else '' %}
+{{ feat | feat_simplify(tolerance) | render_line(feat.id +' / '+ twy_desig) }}
 {% endfor %}
+{{ GLM_resolved | feat_where('id', GLM_draw) | feat_simplify(tolerance) | render_line('N8') }}
 
-// Orange Lines
+// - - - - - - - - - - - - - Orange Lanes - - - - - - - - - - - - - -
+
 COLOR:LAYOUT_TAXILINE_ORANGE
-{% for uuid, feat in data.eddf_guidanceline['GuidanceLineMarking'].items() if feat.properties['type'] == 'TWY' and feat.properties['color'] == 'ORANGE' %}
-{{- feat | simplify(tolerance) | render_line(uuid) }}
+{% for feat in GLM_resolved
+    | feat_exclude('id', *(GLM_nodraw + GLM_closed))
+    | feat_where('type', 'TWY', 'RWY', 'GATE_TLANE')
+    | feat_where('colour', 'ORANGE')
+%}
+{%- set taxiway = data.eddf_aixm.resolve(feat.links.connectedTaxiway) %}
+{%- set twy_desig = taxiway.properties.designator if taxiway != none else '' %}
+{{ feat | feat_simplify(tolerance) | render_line(feat.id +' / '+ twy_desig) }}
 {% endfor %}
 
-// Blue Lines
+// - - - - - - - - - - - - - Blue Lanes - - - - - - - - - - - - - - -
+
 COLOR:LAYOUT_TAXILINE_BLUE
-{% for uuid, feat in data.eddf_guidanceline['GuidanceLineMarking'].items() if feat.properties['type'] == 'TWY' and feat.properties['color'] == 'BLUE' %}
-{{- feat | simplify(tolerance) | render_line(uuid) }}
+{% for feat in GLM_resolved
+    | feat_exclude('id', *(GLM_nodraw + GLM_closed))
+    | feat_where('type', 'TWY', 'RWY', 'GATE_TLANE')
+    | feat_where('colour', 'BLUE')
+%}
+{%- set taxiway = data.eddf_aixm.resolve(feat.links.connectedTaxiway) %}
+{%- set twy_desig = taxiway.properties.designator if taxiway != none else '' %}
+{{ feat | feat_simplify(tolerance) | render_line(feat.id +' / '+ twy_desig) }}
 {% endfor %}

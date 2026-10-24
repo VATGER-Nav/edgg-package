@@ -1,5 +1,5 @@
-// ---------------------------- Buildings ---------------------------
-{#- TODO: Change simplify() to geom_simplify() when AIXM2 parser gets fixed #}
+// ===========================< Buildings >==========================
+
 {%- set tolerance = 0.000005 %}
 
 MAP:Buildings
@@ -7,24 +7,33 @@ AIRPORT:EDDF
 FOLDER:Airport Layout
 ACTIVE:1
 COLOR:LAYOUT_BUILDING
-{% for uuid, feat in data.eddf_aixm['VerticalStructure'].items() if feat.type == 'BUILDING' %}
-{{- feat | simplify(tolerance) | render_area('OTHER:REGION', uuid+' / '+feat.name) }}
-{% endfor %}
-{% for _, feat in data.eddf_layout_fid['VerticalStructure_Poly'].items() %}
-{{- feat | render_area('OTHER:REGION') }}
+{% for feat in data.eddf_aixm['VerticalStructure'] | feat_where('type', 'BUILDING') %}
+// {{feat.id}} / {{feat.properties.name | default('')}}
+{{ feat | feat_simplify(tolerance) | render_area('OTHER:REGION') }}
 {% endfor %}
 
+// - - - - - - - - - - - - Custom Buildings - - - - - - - - - - - - -
+
+{{ data.eddf_layout['VerticalStructure_Poly'] | render_grp }}
+
+// =========================< Photovoltaics >========================
+
+MAP:Photovoltaics
+AIRPORT:EDDF
+FOLDER:Airport Layout
+ACTIVE:1
+COLOR:LAYOUT_BUILDING
+{{ data.eddf_aixm['VerticalStructure'] | feat_where('name', 'PV') | feat_simplify(tolerance) | render_line }}
+
+// ============================< Fence >=============================
 
 MAP:Fence
 AIRPORT:EDDF
 FOLDER:Airport Layout
 ACTIVE:1
 COLOR:LAYOUT_BUILDING
-{#
-{% for uuid, feat in data.eddf_aixm['VerticalStructure'].items() if feat.name in ['FENCE', 'PV'] %}
-{{- feat | simplify(tolerance) | render_line(uuid) }}
-{% endfor %}
-#}
-{% for _, feat in data.eddf_layout_fid['VerticalStructure_Line'].items() %}
-{{- feat | simplify(tolerance) | render_line }}
-{% endfor %}
+{{ data.eddf_aixm['VerticalStructure'] | feat_where('name', 'FENCE') | feat_simplify(tolerance) | render_line }}
+
+// - - - - - - - - - - - - - Custom Fence - - - - - - - - - - - - - -
+
+{{ data.eddf_layout['VerticalStructure_Line'] | render_line }}

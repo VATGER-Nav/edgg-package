@@ -1,3 +1,5 @@
+// ===========================< Symbols >============================
+
 // Closure Cross
 SYMBOLDEF:CROSS
 MOVETO:-5:-5

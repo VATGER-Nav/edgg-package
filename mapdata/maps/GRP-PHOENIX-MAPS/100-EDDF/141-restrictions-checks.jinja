@@ -1,4 +1,4 @@
-// ----------------------- Restriction Checks -----------------------
+// ======================< Restriction Checks >======================
 
 MAP:Checks
 AIRPORT:EDDF
@@ -31,7 +31,7 @@ RESTRICTION:MAXCODE:E
 
 // N7/N8 (Abeam Stands)
 RESTRICTION:MAXCODE:E
-{{ data.eddf_info['Restriction_Poly']['N7'] | render_area('TWYTYPE:NONE') }}
+{{ data.eddf_info['Restriction_Poly']['N7'] | render_area('TWYTYPE:NONE') -}}
 RESTRICTION:MAXCODE:C
 {{ data.eddf_info['Restriction_Poly']['N8'] | render_area('TWYTYPE:NONE') }}
 
@@ -45,7 +45,7 @@ RESTRICTION:MAXCODE:C
 
 // Y7
 RESTRICTION:MAXCODE:C
-{{ data.eddf_info['Restriction_Poly']['Y7_C'] | render_area('TWYTYPE:NONE') }}
+{{ data.eddf_info['Restriction_Poly']['Y7_C'] | render_area('TWYTYPE:NONE') -}}
 RESTRICTION:MAXCODE:B
 {{ data.eddf_info['Restriction_Poly']['Y7_B'] | render_area('TWYTYPE:NONE') }}
 

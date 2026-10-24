@@ -1,37 +1,31 @@
-// ------------------------------------------------------------------
-//                                 EDDF
-// ------------------------------------------------------------------
+// ==================================================================
+//                        EDDF - FRANKFURT MAIN
+// ==================================================================
 
-// -------------------------- Ground Layout -------------------------
+// ======================< Apron Movement Area >=====================
 
-MAP:Apron Area
+MAP:Apron Movement Area
 AIRPORT:EDDF
 FOLDER:Airport Layout
 ACTIVE:1
 COLOR:LAYOUT_APRON
-{% for _, feat in data.eddf_layout_fid['ApronElement'].items() %}
-{{- feat | render_area('OTHER:REGION') }}
-{% endfor %}
-{% for _, feat in data.eddf_layout_fid['RunwayBlastPad'].items() %}
-{{- feat | render_area('OTHER:REGION') }}
-{% endfor %}
+{{ data.eddf_layout['ApronElement'] | render_grp -}}
+{{ data.eddf_layout['RunwayBlastPad'] | render_grp }}
 
+// =====================< Taxiway Movement Area >====================
 
 MAP:Taxiway Movement Area
 AIRPORT:EDDF
 FOLDER:Airport Layout
 ACTIVE:1
 COLOR:LAYOUT_TAXIWAY
-{% for _, feat in data.eddf_layout_fid['TaxiwayElement'].items() %}
-{{- feat | render_area('OTHER:REGION') }}
-{% endfor %}
+{{ data.eddf_layout['TaxiwayElement'] | render_grp }}
 
+// ===========================< Runways >============================
 
 MAP:Runways
 AIRPORT:EDDF
 FOLDER:Airport Layout
 ACTIVE:1
 COLOR:LAYOUT_RUNWAY
-{% for _, feat in data.eddf_layout['RunwayElement'].items() %}
-{{- feat | render_area('OTHER:REGION') }}
-{% endfor %}
+{{ data.eddf_layout['RunwayElement'] | render_grp }}

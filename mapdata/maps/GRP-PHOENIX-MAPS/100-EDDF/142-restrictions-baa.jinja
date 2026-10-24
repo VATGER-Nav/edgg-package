@@ -1,6 +1,4 @@
-// ----------------------- Restrictions (BAA) -----------------------
-{#- TODO: Remove macros when filters for the new API are implemented #}
-{%- from "_macros.jinja" import render_point %}
+// ======================< Restrictions (BAA) >======================
 
 MAP:BAA Restrictions
 AIRPORT:EDDF
@@ -8,31 +6,17 @@ FOLDER:Restrictions
 LAYER:7
 ZOOM:300
 COLOR:RESTRICTIONS_AB
-{% for _, feat in data.eddf_info['BAALabel'].items() if feat.properties['restriction'] == 'B' %}
-{{- render_point(feat, 'SYMBOL:STAND') }}
-{% endfor %}
+{{ data.eddf_info['BAALabel'] | feat_where('restriction', 'B') | render_symbol('STAND') }}
 COLOR:RESTRICTIONS_C
-{% for _, feat in data.eddf_info['BAALabel'].items() if feat.properties['restriction'] == 'C' %}
-{{- render_point(feat, 'SYMBOL:STAND') }}
-{% endfor %}
+{{ data.eddf_info['BAALabel'] | feat_where('restriction', 'C') | render_symbol('STAND') }}
 COLOR:RESTRICTIONS_D
-{% for _, feat in data.eddf_info['BAALabel'].items() if feat.properties['restriction'] == 'D' %}
-{{- render_point(feat, 'SYMBOL:STAND') }}
-{% endfor %}
+{{ data.eddf_info['BAALabel'] | feat_where('restriction', 'D') | render_symbol('STAND') }}
 COLOR:RESTRICTIONS_E
-{% for _, feat in data.eddf_info['BAALabel'].items() if feat.properties['restriction'] == 'E' %}
-{{- render_point(feat, 'SYMBOL:STAND') }}
-{% endfor %}
+{{ data.eddf_info['BAALabel'] | feat_where('restriction', 'E') | render_symbol('STAND') }}
 COLOR:RESTRICTIONS_F
-{% for _, feat in data.eddf_info['BAALabel'].items() if feat.properties['restriction'] == 'B748' %}
-{{- render_point(feat, 'SYMBOL:STAND') }}
-{% endfor %}
+{{ data.eddf_info['BAALabel'] | feat_where('restriction', 'B748') | render_symbol('STAND') }}
 
 COLOR:WHITE
-{% for _, feat in data.eddf_info['BAALabel'].items() if feat.properties['restriction'] in ['B', 'E', 'B748'] %}
-{{- render_point(feat, 'TEXT', feat.properties['text']+':1:0') }}
-{% endfor %}
+{{ data.eddf_info['BAALabel'] | feat_where('restriction', 'B', 'E', 'B748') | render_text(prop='text', offset=(1,0)) }}
 COLOR:BLACK
-{% for _, feat in data.eddf_info['BAALabel'].items() if feat.properties['restriction'] in ['C', 'D'] %}
-{{- render_point(feat, 'TEXT', feat.properties['text']+':1:0') }}
-{% endfor %}
+{{ data.eddf_info['BAALabel'] | feat_where('restriction', 'C', 'D') | render_text(prop='text', offset=(1,0)) }}
