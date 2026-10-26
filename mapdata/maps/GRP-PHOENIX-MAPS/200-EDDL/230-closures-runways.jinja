@@ -1,4 +1,4 @@
-// ------------------------ Runway Closures -------------------------
+// ========================< Runway Closures >=======================
 
 MAP:23L/05R
 AIRPORT:EDDL
@@ -8,8 +8,7 @@ RWYCLOSEDDEP:EDDL:05R,23L
 RWYCLOSEDARR:EDDL:05R,23L
 STYLE:SOLID:2
 COLOR:CLOSURE
-{{ data.eddl_kml['layout']['runways']['05R-23L'] | render_area('OTHER:REGION') }}
-
+{{ data.eddl_layout['RunwayElement'] | feat_where('designator', '05R-23L') | render_grp -}}
 
 MAP:23R/05L
 AIRPORT:EDDL
@@ -19,4 +18,4 @@ RWYCLOSEDDEP:EDDL:05L,23R
 RWYCLOSEDARR:EDDL:05L,23R
 STYLE:SOLID:2
 COLOR:CLOSURE
-{{ data.eddl_kml['layout']['runways']['05L-23R'] | render_area('OTHER:REGION') }}
+{{ data.eddl_layout['RunwayElement'] | feat_where('designator', '05L-23R') | render_grp -}}

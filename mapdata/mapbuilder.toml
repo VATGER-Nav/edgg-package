@@ -109,7 +109,7 @@ type = "aixm51"
 source = "dfs:0:EDDF AerodromeMapping:AIXM 5.1.1"
 
 [data.eddl_aixm]
-type = "aixm2"
+type = "aixm51"
 source = "dfs:0:EDDL AerodromeMapping:AIXM 5.1.1"
 
 [data.eddk_aixm]
@@ -174,9 +174,21 @@ id_property = "designator"
 
 #----------------------------< EDDL >----------------------------
 
-[data.eddl_kml]
-type = "kml"
-source = "kml/eddl.kml"
+[data.eddl_layout]
+type = "gpkg"
+source = "gis/eddl-layout.gpkg"
+
+[data.eddl_info]
+type = "gpkg"
+source = "gis/eddl-info.gpkg"
+id_property = "designator"
+
+[data.eddl_sup]
+type = "gpkg"
+source = "gis/eddl-sup.gpkg"
+id_property = "designator"
+
+#----------------------------< EDDK >----------------------------
 
 [data.eddk_kml]
 type = "kml"

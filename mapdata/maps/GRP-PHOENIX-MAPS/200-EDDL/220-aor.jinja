@@ -1,4 +1,4 @@
-// ------------------------------- AoR ------------------------------
+// ====================< Areas of Responsibility >===================
 
 MAP:EDDL_E_GND
 AIRPORT:EDDL
@@ -6,11 +6,10 @@ FOLDER:AoR
 LAYER:6
 COLOR:AOR_GND_A
 STYLE:DOT
-{{ data.eddl_kml['layout']['aor']['line']['DLGE'] | render_line }}
+{{ data.eddl_info['AoRBoundary']['DLGE'] | render_line -}}
 ZOOM:400
 FONTSIZE:=:13
-{{ data.eddl_kml['layout']['aor']['labels']['DLGE'] | to_text('DLGE 121.605') }}
-
+{{ data.eddl_info['AoRLabel']['DLGE'] | render_text('DLGE 121.605') }}
 
 MAP:EDDL_W_GND
 AIRPORT:EDDL
@@ -18,11 +17,10 @@ FOLDER:AoR
 LAYER:6
 COLOR:AOR_GND_B
 STYLE:DOT
-{{ data.eddl_kml['layout']['aor']['line']['DLGW'] | render_line }}
+{{ data.eddl_info['AoRBoundary']['DLGW'] | render_line -}}
 ZOOM:400
 FONTSIZE:=:13
-{{ data.eddl_kml['layout']['aor']['labels']['DLGW'] | to_text('DLGW 121.680') }}
-
+{{ data.eddl_info['AoRLabel']['DLGW'] | render_text('DLGW 121.680') }}
 
 MAP:EDDL_TWR
 AIRPORT:EDDL
@@ -30,11 +28,10 @@ FOLDER:AoR
 LAYER:6
 COLOR:AOR_TWR_A
 STYLE:DOT
-{{ data.eddl_kml['layout']['aor']['line']['DLT'] | render_line }}
+{{ data.eddl_info['AoRBoundary']['DLT'] | render_line -}}
 ZOOM:400
 FONTSIZE:=:13
-{{ data.eddl_kml['layout']['aor']['labels']['DLT'] | to_text('DLT  118.305:0:10') }}
-
+{{ data.eddl_info['AoRLabel']['DLT'] | render_text('DLT  118.305', offset=(0,10)) }}
 
 MAP:EDDL_DEP
 AIRPORT:EDDL
@@ -43,4 +40,4 @@ LAYER:6
 COLOR:AOR_APP_A
 ZOOM:400
 FONTSIZE:=:13
-{{ data.eddl_kml['layout']['aor']['labels']['DLT'] | to_text('DLD  121.355:0:-10') }}
+{{ data.eddl_info['AoRLabel']['DLT'] | render_text('DLD  121.355', offset=(0,-10)) }}
