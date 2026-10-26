@@ -1,4 +1,4 @@
 {#- Jinja Macros -#}
 {%- macro render_point(feat, point_def, text = none) -%}
-{{point_def}}:{{feat.geometry.coordinates[0]}}:{{feat.geometry.coordinates[1]}}{{':'+text if text}}
+{{point_def}}:{{feat.geometry.coords[0][0]}}:{{feat.geometry.coords[0][1]}}{{':'+text if text}}
 {%- endmacro -%}
