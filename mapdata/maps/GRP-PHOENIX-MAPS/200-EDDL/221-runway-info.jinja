@@ -1,4 +1,56 @@
-// -------------------------- Runway Info ---------------------------
+// =========================< RRS Markers >==========================
+
+{% for runway in ['23L', '05R', '23R', '05L'] %}
+MAP:RRS {{runway}}
+AIRPORT:EDDL
+FOLDER:Runway Info
+LAYER:6
+ACTIVE:RWY:ARR:EDDL{{runway}}:DEP:*
+ACTIVE:RWY:ARR:*:DEP:EDDL{{runway}}
+COLOR:RRS_MARKER
+{{ data.eddl_info['RRSMarker'] | feat_where('runway', runway) | render_symbol('RRS') -}}
+FONTSIZE:=:12
+ZOOM:600
+TEXTALIGN:CB
+{{ data.eddl_info['RRSMarker'] | feat_where('runway', runway) | render_text(prop='text', offset=(0,-10)) }}
+{% endfor %}
+
+// =======================< TORA Distances >=========================
+
+{% for runway in ['23L', '05R', '23R', '05L'] %}
+MAP:TORA {{runway}}
+AIRPORT:EDDL
+FOLDER:Runway Info
+LAYER:6
+COLOR:TORA_LABEL
+ZOOM:600
+{% for feat in data.eddl_info['TORALabel'] | feat_where('runway', runway) %}
+{{- feat | render_text(prop='tora', align=feat.properties.textalign) -}}
+{% endfor %}
+{% endfor %}
+
+// ======================< Runway Thresholds >=======================
+
+MAP:Runway Thresholds
+AIRPORT:EDDL
+FOLDER:Runway Info
+LAYER:6
+ACTIVE:1
+COLOR:RUNWAY_LABEL
+{{ data.eddl_layout['Marking_Poly'] | feat_where('type', 'THR') | render_area('OTHER:REGION') }}
+
+// ======================< Runway Designators >======================
+
+MAP:Runway Designators
+AIRPORT:EDDL
+FOLDER:Runway Info
+LAYER:6
+ACTIVE:1
+COLOR:RUNWAY_LABEL
+{{ data.eddl_info['RunwayLabel'] | render_grp }}
+
+// =======================< Runway Markings >========================
+
 {%- set marking23R = [
     'de162807-4906-d2fc-e053-86c812acd642',
     'de162807-4907-d2fc-e053-86c812acd642',
@@ -9,158 +61,14 @@
     'de162807-490c-d2fc-e053-86c812acd642',
 ] %}
 
-MAP:TORA 23L
-AIRPORT:EDDL
-FOLDER:Runway Info
-LAYER:6
-COLOR:TORA_LABEL
-ZOOM:600
-TEXTALIGN:LC
-{{ data.eddl_kml['layout']['tora']['23L_L1'] | to_text('2700') }}
-TEXTALIGN:RC
-{{ data.eddl_kml['layout']['tora']['23L_L2'] | to_text('2500') }}
-{{ data.eddl_kml['layout']['tora']['23L_L3'] | to_text('2235') }}
-
-
-MAP:TORA 05R
-AIRPORT:EDDL
-FOLDER:Runway Info
-LAYER:6
-COLOR:TORA_LABEL
-ZOOM:600
-TEXTALIGN:LC
-{{ data.eddl_kml['layout']['tora']['05R_L9'] | to_text('2700') }}
-{{ data.eddl_kml['layout']['tora']['05R_L8'] | to_text('2475') }}
-{{ data.eddl_kml['layout']['tora']['05R_L6'] | to_text('2031') }}
-
-
-MAP:TORA 23R
-AIRPORT:EDDL
-FOLDER:Runway Info
-LAYER:6
-COLOR:TORA_LABEL
-ZOOM:600
-TEXTALIGN:LC
-{{ data.eddl_kml['layout']['tora']['23R_K'] | to_text('2400') }}
-TEXTALIGN:RC
-{{ data.eddl_kml['layout']['tora']['23R_K1'] | to_text('2280') }}
-{{ data.eddl_kml['layout']['tora']['23R_K2'] | to_text('2062') }}
-
-
-MAP:TORA 05L
-AIRPORT:EDDL
-FOLDER:Runway Info
-LAYER:6
-COLOR:TORA_LABEL
-ZOOM:600
-TEXTALIGN:LC
-{{ data.eddl_kml['layout']['tora']['05L_K5'] | to_text('2400') }}
-{{ data.eddl_kml['layout']['tora']['05L_K3'] | to_text('1720') }}
-
-
-MAP:RRS 23L
-AIRPORT:EDDL
-FOLDER:Runway Info
-LAYER:6
-ACTIVE:RWY:ARR:*:DEP:EDDL23L
-ACTIVE:RWY:ARR:EDDL23L:DEP:*
-COLOR:RRS_MARKER
-{{ data.eddl_kml['layout']['rrs']['23L_600'] | to_symbol('RRS') }}
-{{ data.eddl_kml['layout']['rrs']['23L_1500'] | to_symbol('RRS') }}
-{{ data.eddl_kml['layout']['rrs']['23L_2400'] | to_symbol('RRS') }}
-FONTSIZE:=:12
-ZOOM:600
-TEXTALIGN:CB
-{{ data.eddl_kml['layout']['rrs']['23L_600'] | to_text('600:0:-10') }}
-{{ data.eddl_kml['layout']['rrs']['23L_1500'] | to_text('1500:0:-10') }}
-{{ data.eddl_kml['layout']['rrs']['23L_2400'] | to_text('2400:0:-10') }}
-
-
-MAP:RRS 05R
-AIRPORT:EDDL
-FOLDER:Runway Info
-LAYER:6
-ACTIVE:RWY:ARR:*:DEP:EDDL05R
-ACTIVE:RWY:ARR:EDDL05R:DEP:*
-COLOR:RRS_MARKER
-{{ data.eddl_kml['layout']['rrs']['05R_600'] | to_symbol('RRS') }}
-{{ data.eddl_kml['layout']['rrs']['05R_1500'] | to_symbol('RRS') }}
-{{ data.eddl_kml['layout']['rrs']['05R_2400'] | to_symbol('RRS') }}
-FONTSIZE:=:12
-ZOOM:600
-TEXTALIGN:CB
-{{ data.eddl_kml['layout']['rrs']['05R_600'] | to_text('600:0:-10') }}
-{{ data.eddl_kml['layout']['rrs']['05R_1500'] | to_text('1500:0:-10') }}
-{{ data.eddl_kml['layout']['rrs']['05R_2400'] | to_text('2400:0:-10') }}
-
-
-MAP:RRS 23R
-AIRPORT:EDDL
-FOLDER:Runway Info
-LAYER:6
-ACTIVE:RWY:ARR:*:DEP:EDDL23R
-ACTIVE:RWY:ARR:EDDL23R:DEP:*
-COLOR:RRS_MARKER
-{{ data.eddl_kml['layout']['rrs']['23R_600'] | to_symbol('RRS') }}
-{{ data.eddl_kml['layout']['rrs']['23R_1500'] | to_symbol('RRS') }}
-FONTSIZE:=:12
-ZOOM:600
-TEXTALIGN:CB
-{{ data.eddl_kml['layout']['rrs']['23R_600'] | to_text('600:0:-10') }}
-{{ data.eddl_kml['layout']['rrs']['23R_1500'] | to_text('1500:0:-10') }}
-
-
-MAP:RRS 05L
-AIRPORT:EDDL
-FOLDER:Runway Info
-LAYER:6
-ACTIVE:RWY:ARR:*:DEP:EDDL05L
-ACTIVE:RWY:ARR:EDDL05L:DEP:*
-COLOR:RRS_MARKER
-{{ data.eddl_kml['layout']['rrs']['05L_600'] | to_symbol('RRS') }}
-{{ data.eddl_kml['layout']['rrs']['05L_1500'] | to_symbol('RRS') }}
-FONTSIZE:=:12
-ZOOM:600
-TEXTALIGN:CB
-{{ data.eddl_kml['layout']['rrs']['05L_600'] | to_text('600:0:-10') }}
-{{ data.eddl_kml['layout']['rrs']['05L_1500'] | to_text('1500:0:-10') }}
-
-
-MAP:Runway Thresholds
-AIRPORT:EDDL
-FOLDER:Runway Info
-LAYER:6
-ACTIVE:1
-COLOR:RUNWAY_LABEL
-{{ data.eddl_kml['layout']['markings']['poly']['thr05R'] | render_area('OTHER:REGION', '05R') }}
-{{ data.eddl_kml['layout']['markings']['poly']['thr23L'] | render_area('OTHER:REGION', '23L') }}
-{{ data.eddl_kml['layout']['markings']['poly']['thr05L'] | render_area('OTHER:REGION', '05L') }}
-{{ data.eddl_kml['layout']['markings']['poly']['thr23R'] | render_area('OTHER:REGION', '23R') }}
-
-
-MAP:Runway Designators
-AIRPORT:EDDL
-FOLDER:Runway Info
-LAYER:6
-ACTIVE:1
-COLOR:RUNWAY_LABEL
-{% for _, feat in data.eddl_kml['layout']['markings']['runways'].items() %}
-{{- feat | render_area('OTHER:REGION') }}
-{% endfor %}
-
-
 MAP:Runway Markings
 AIRPORT:EDDL
 FOLDER:Runway Info
 COLOR:LAYOUT_RUNWAY_MARKING
-{% for _, feat in data.eddl_aixm['RunwayMarking'].items() if feat.properties['color'] == 'WHITE' %}
-{{- feat | render_area('OTHER:REGION') }}
-{% endfor %}
+{{ data.eddl_aixm['RunwayMarking'] | feat_where('colour', 'WHITE') | render_area('OTHER:REGION') }}
+
 COLOR:LAYOUT_TAXIWAY
-{% for uuid, feat in data.eddl_aixm['RunwayMarking'].items() if feat.properties['color'] == 'YELLOW' and not uuid in marking23R %}
-{{- feat | render_area('OTHER:REGION') }}
-{% endfor %}
+{{ data.eddl_aixm['RunwayMarking'] | feat_where('colour', 'YELLOW') | feat_exclude('id', *marking23R) | render_area('OTHER:REGION') }}
+
 COLOR:LAYOUT_RUNWAY
-{% for uuid in marking23R %}
-{{- data.eddl_aixm['RunwayMarking'][uuid] | render_area('OTHER:REGION') }}
-{% endfor %}
+{{ data.eddl_aixm['RunwayMarking'] | feat_where('id', *marking23R) | render_area('OTHER:REGION') }}

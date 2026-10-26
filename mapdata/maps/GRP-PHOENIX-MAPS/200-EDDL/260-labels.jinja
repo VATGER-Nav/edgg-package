@@ -1,39 +1,8 @@
-// ----------------------------- Labels -----------------------------
-{%- set stands_sec = [
-    'A05',
-    'A11',
-    'A12A',
-    'B05',
-    'B07',
-    'C02A',
-    'C03A',
-    'V01',
-    'V02A',
-    'V03A',
-    'V04',
-    'V04A',
-    'V05A',
-    'V06',
-    'V07A',
-    'V08A',
-    'V08B',
-    'V08C',
-    'V103A',
-    'V104A',
-    'V106A',
-    'V107A',
-    'V10A',
-    'V11A',
-    'V12A',
-    'V38A',
-    'V38B',
-    'V40A',
-    'V42A',
-    'V61A',
-    'V72A',
-    'V82A',
-    'V91A',
-] %}
+{%- from "_macros.jinja" import render_multilinetext -%}
+
+// ========================< Taxiway Labels >========================
+
+// - - - - - - - - - - - - - Label Buffer - - - - - - - - - - - - - -
 
 MAP:Buffer EDDL
 AIRPORT:EDDL
@@ -42,14 +11,12 @@ HIDDEN
 LAYER:3
 ZOOM:400
 COLOR:LAYOUT_TAXIWAY
-{% for _, feat in data.eddl_kml['layout']['labels']['buffer_a'].items() %}
-{{- feat | render_area('OTHER:REGION') }}
-{% endfor %}
-COLOR:LAYOUT_APRON
-{% for _, feat in data.eddl_kml['layout']['labels']['buffer_b'].items() %}
-{{- feat | render_area('OTHER:REGION') }}
-{% endfor %}
+{{ data.eddl_info['LabelBuffer']['taxiway'] | render_grp }}
 
+COLOR:LAYOUT_APRON
+{{ data.eddl_info['LabelBuffer']['apron'] | render_grp }}
+
+// - - - - - - - - - - - - - - Labels - - - - - - - - - - - - - - - -
 
 MAP:Taxiways
 AIRPORT:EDDL
@@ -59,10 +26,9 @@ LAYER:6
 ZOOM:400
 FONTSIZE:=:10
 COLOR:LAYOUT_LABEL_YELLOW
-{% for desig, feat in data.eddl_kml['layout']['labels']['taxiways'].items() %}
-{{- feat | to_text(desig) }}
-{% endfor %}
+{{ data.eddl_info['TaxiwayLabel'] | feat_where('zoomlevel', 400) | render_text(prop='text') }}
 
+// =========================< Stand Labels >=========================
 
 MAP:Stands
 AIRPORT:EDDL
@@ -73,16 +39,13 @@ LAYER:6
 ZOOM:600
 FONTSIZE:=:9
 COLOR:LAYOUT_LABEL_YELLOW
-{% for desig, feat in data.eddl_kml['layout']['labels']['stands'].items() if not desig in stands_sec %}
-{{- feat | to_text(desig) }}
-{% endfor %}
+{{ data.eddl_info['StandLabel'] | feat_where('zoomlevel', 600) | render_text(prop='designator') }}
 
 ZOOM:1200
 COLOR:LAYOUT_LABEL_YELLOW
-{% for desig in stands_sec %}
-{{- data.eddl_kml['layout']['labels']['stands'][desig] | to_text(desig) }}
-{% endfor %}
+{{ data.eddl_info['StandLabel'] | feat_where('zoomlevel', 1200) | render_text(prop='designator') }}
 
+// =========================< Area Labels >==========================
 
 MAP:Areas
 AIRPORT:EDDL
@@ -92,9 +55,9 @@ LAYER:6
 ZOOM:400
 FONTSIZE:=:9
 COLOR:LAYOUT_LABEL_STAND
-{{ data.eddl_kml['layout']['labels']['GAT'] | to_text('GAT') }}
-{{ data.eddl_kml['layout']['labels']['Police'] | to_text('Police') }}
+{{ data.eddl_info['AreaLabel'] | render_text(prop='text') }}
 
+// ========================< Stopbar Labels >========================
 
 MAP:Checkpoints
 AIRPORT:EDDL
@@ -105,11 +68,12 @@ ZOOM:800
 FONTSIZE:=:10
 COLOR:LAYOUT_HOLDINGPOINT
 TEXTALIGN:CC
-{{ data.eddl_kml['layout']['labels']['stopbars']['CP1'] | to_text('Check-:0:-10') }}
-{{ data.eddl_kml['layout']['labels']['stopbars']['CP1'] | to_text('point 1') }}
-{{ data.eddl_kml['layout']['labels']['stopbars']['CP2'] | to_text('Check-:10:-10') }}
-{{ data.eddl_kml['layout']['labels']['stopbars']['CP2'] | to_text('point 2:10:0') }}
+{{ data.eddl_info['HoldingPointLabel']['CP1'] | render_text('Check-', offset=(0,-10)) -}}
+{{ data.eddl_info['HoldingPointLabel']['CP1'] | render_text('point 1') -}}
+{{ data.eddl_info['HoldingPointLabel']['CP2'] | render_text('Check-', offset=(10,-10)) -}}
+{{ data.eddl_info['HoldingPointLabel']['CP2'] | render_text('point 2', offset=(10,0)) }}
 
+// =======================< Building Labels >========================
 
 MAP:Buildings
 AIRPORT:EDDL
@@ -117,22 +81,6 @@ FOLDER:Labels
 ZOOM:400
 FONTSIZE:=:9
 COLOR:LAYOUT_LABEL_STAND
-{% for desig, feat in data.eddl_kml['layout']['labels']['buildings'].items() if not desig in
-[
-    'Fire station#1',
-    'Hangar 9',
-    'Photo-voltaic',
-] %}
-{{- feat | to_text(desig) }}
+{% for feat in data.eddl_info['BuildingLabel'].values() %}
+{{ render_multilinetext(feat, 12) }}
 {% endfor %}
-{{ data.eddl_kml['layout']['labels']['buildings']['Fire station#1'] | to_text('Fire:0:-6') }}
-{{ data.eddl_kml['layout']['labels']['buildings']['Fire station#1'] | to_text('station:0:6') }}
-{{ data.eddl_kml['layout']['labels']['buildings']['Condor Technik'] | to_text('7:0:12') }}
-{{ data.eddl_kml['layout']['labels']['buildings']['Nayak'] | to_text('8:0:12') }}
-{{ data.eddl_kml['layout']['labels']['buildings']['Hangar 9'] | to_text('Noise:0:-12') }}
-{{ data.eddl_kml['layout']['labels']['buildings']['Hangar 9'] | to_text('protection') }}
-{{ data.eddl_kml['layout']['labels']['buildings']['Hangar 9'] | to_text('hangar:0:12') }}
-{{ data.eddl_kml['layout']['labels']['buildings']['Hangar 9'] | to_text('9:0:24') }}
-{{ data.eddl_kml['layout']['labels']['Police'] | to_text('10:0:12') }}
-{{ data.eddl_kml['layout']['labels']['buildings']['Photo-voltaic'] | to_text('Photo-voltaic:0:-6') }}
-{{ data.eddl_kml['layout']['labels']['buildings']['Photo-voltaic'] | to_text('facility:0:6') }}
