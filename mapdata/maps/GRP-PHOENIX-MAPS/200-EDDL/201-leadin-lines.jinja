@@ -1,53 +1,112 @@
-// ----------------------------- Stands -----------------------------
+// =========================< Lead-in Lines >========================
+
 {%- set tolerance = 0.000005 %}
-{%- set nodraw_orangelines = ['DEICI_O_M2', 'DEICI_O_O'] %}
-{%- set nodraw_leadins = [
-    'AE_V02_1',
-    'AE_V07A_1',
-    'AE_V07A_2',
-    'AW_V61_N',
-    'AW_V61_S',
-    'AW_V61A_N',
-    'AW_V61A_S',
-    'AW_V71_N',
-    'AW_V71_S',
-    'AW_V72_N',
-    'AW_V72_S',
-    'AW_V72A_N',
-    'AW_V72A_S',
-    'AW_V73_N',
-    'AW_V73_S',
-    'AW_V74_N',
-    'AW_V74_S',
-    'AW_V75_N',
-    'AW_V75_S',
-    'MA_A02_1_N',
-    'MA_A04_N',
-    'MA_C06_W',
-] %}
+{%- set leadin_grouped = data.eddl_aixm.group('GuidanceLine', 'designator', 'connectedStand') %}
 
-
-MAP:Leadin Lines
+MAP:Lead-in Lines
 AIRPORT:EDDL
 FOLDER:Airport Layout
 ACTIVE:1
 COLOR:LAYOUT_TAXILINE_YELLOW
-{{ data.eddl_aixm['GuidanceLineByDesig']['AE_LSH1'] | geom_simplify(tolerance) | render_line('AE_LSH1') }}
+STYLE:SOLID
 
-{% for _, feat in data.eddl_aixm['GuidanceLine'].items() if feat.properties['type'] in ['LI_TLANE', 'LO_TLANE'] %}
-{%- if not ('DEICI' in feat.properties['designator'] or feat.properties['designator'] in nodraw_leadins) %}
-{{- feat | geom_simplify(tolerance) | render_line(feat.properties['designator']) }}
-{%- endif %}
+{#- FOR DEBUGGING PURPOSES #}
+{#-
+// {{ data.eddl_aixm['AircraftStand'] | map(attribute='properties') | map(attribute='designator') | list | sort }}
+
+COLOR:RED
+STYLE:SOLID
+{{ data.eddl_aixm['GuidanceLine'] | feat_join | feat_simplify(tolerance) | render_line }}
+COLOR:LAYOUT_TAXILINE_YELLOW
+#}
+
+// - - - - - - - - - - - - - - - Apron A - - - - - - - - - - - - - - 
+
+{%- set A_exclude = ['MA_A02_1_N', 'MA_A04_N'] %}
+
+{% for stand in ['A01', 'A02', 'A03', 'A04', 'A05', 'A07', 'A08', 'A09', 'A10', 'A11', 'A12', 'A12A', 'A13', 'A15', 'A16'] %}
+{{ leadin_grouped[stand] | feat_exclude('designator', *A_exclude) | feat_join | feat_simplify(tolerance) | render_line(stand) }}
 {% endfor %}
 
-{% for desig, feat in data.eddl_kml['layout']['markings']['leadin_solid'].items() %}
-{{- feat | render_line }}
+// - - - - - - - - - - - - - - - Apron B - - - - - - - - - - - - - - 
+
+{% for stand in ['B01', 'B02', 'B03', 'B04', 'B05', 'B06', 'B07', 'B08', 'B09', 'B10', 'B11'] %}
+{{ leadin_grouped[stand] | feat_join | feat_simplify(tolerance) | render_line(stand) }}
 {% endfor %}
 
-// Orange Lines
+// - - - - - - - - - - - - - - - Apron C - - - - - - - - - - - - - - 
+
+{%- set C_exclude = 'MA_C06_W' %}
+
+{% for stand in ['C01', 'C02', 'C02A', 'C03', 'C03A', 'C04', 'C05', 'C06', 'C07'] %}
+{{ leadin_grouped[stand] | feat_exclude('designator', C_exclude) | feat_join | feat_simplify(tolerance) | render_line(stand) }}
+{% endfor %}
+
+// - - - - - - - - - - - - Remote Stands East - - - - - - - - - - - -
+
+// LSH1
+{{ data.eddl_aixm.group('GuidanceLine', 'designator')['AE_LSH1'] | feat_simplify(tolerance) | render_line }}
+
+// V01
+// Part of TWY L3
+
+// V02
+{{ data.eddl_layout['Marking_Line'] | feat_where('designator', 'V02') | render_line }}
+
+{% for stand in ['V02A', 'V03', 'V03A', 'V04', 'V04A', 'V05', 'V05A', 'V06', 'V07', 'V07A'] %}
+{{ leadin_grouped[stand] | feat_join | feat_simplify(tolerance) | render_line(stand) }}
+{% endfor %}
+
+// V08A
+{{ data.eddl_aixm['GuidanceLine'] | feat_where('designator', 'AE_V08A_1', 'AE_V08A_2') | feat_join | feat_simplify(tolerance) | render_line }}
+
+{% for stand in ['V08B', 'V08C', 'V10', 'V10A', 'V11', 'V11A', 'V12', 'V12A', 'V13', 'V14', 'V15', 'V16', 'V17', 'V18', 'V19', 'V20', 'V21', 'V22', 'V23', 'V24', 'V38', 'V38A', 'V38B', 'V39', 'V40', 'V40A', 'V41', 'V42', 'V42A', 'V43', 'V44', 'V45', 'V46', 'V47', 'V48', 'V49'] %}
+{{ leadin_grouped[stand] | feat_join | feat_simplify(tolerance) | render_line(stand) }}
+{% endfor %}
+
+// - - - - - - - - - - - - Remote Stands West - - - - - - - - - - - -
+
+{% for stand in ['V61', 'V61A'] %}
+// {{stand}}
+{{ leadin_grouped[stand]
+    | feat_exclude('designator', 'AW_'+stand+'_N', 'AW_'+stand+'_S')
+    | feat_join | feat_simplify(tolerance) | render_line
+-}}
+{{ data.eddl_layout['Marking_Line'] | feat_where('designator', stand) | render_line }}
+{% endfor %}
+
+{% for stand in ['V62', 'V63'] %}
+{{ leadin_grouped[stand] | feat_join | feat_simplify(tolerance) | render_line(stand) }}
+{% endfor %}
+
+// V70
+{{ data.eddl_aixm['GuidanceLine'] | feat_where('designator', 'AW_V70_1', 'AW_V70_2') | feat_join | feat_simplify(tolerance) | render_line }}
+
+{% for stand in ['V71', 'V72', 'V72A', 'V73', 'V74', 'V75'] %}
+// {{stand}}
+{{ leadin_grouped[stand]
+    | feat_exclude('designator', 'AW_'+stand+'_N', 'AW_'+stand+'_S')
+    | feat_join | feat_simplify(tolerance) | render_line
+-}}
+{{ data.eddl_layout['Marking_Line'] | feat_where('designator', stand) | render_line }}
+{% endfor %}
+
+{% for stand in ['V76', 'V80', 'V81', 'V82', 'V82A', 'V83', 'V84', 'V85', 'V86', 'V87', 'V91', 'V91A', 'V92', 'V93', 'V94', 'V95', 'V96', 'V97', 'V101', 'V102', 'V103', 'V103A', 'V104', 'V104A', 'V105', 'V106', 'V106A', 'V107', 'V107A', 'V108'] %}
+{{ leadin_grouped[stand] | feat_join | feat_simplify(tolerance) | render_line(stand) }}
+{% endfor %}
+
+// - - - - - - - - - - - - - - Orange Lanes - - - - - - - - - - - - -
+
+{%- set exclude_orange = ['DEICI_O_M2', 'DEICI_O_O'] %}
+{%- set orangelane = [] %}
+
+{#- Get all the designators for orange lines #}
+{%- for feat in data.eddl_aixm['GuidanceLine']
+    | feat_exclude('designator', *exclude_orange)
+    if feat.properties.designator.startswith('DEICI_O_')
+%}
+    {%- set _ = orangelane.append(feat.properties.designator) %}
+{%- endfor %}
+
 COLOR:LAYOUT_TAXILINE_ORANGE
-{% for _, feat in data.eddl_aixm['GuidanceLine'].items() if feat.properties['designator'].startswith('DEICI_O_') %}
-{%- if not feat.properties['designator'] in nodraw_orangelines %}
-{{- feat | geom_simplify(tolerance) | render_line(feat.properties['designator']) }}
-{%- endif %}
-{% endfor %}
+{{ data.eddl_aixm['GuidanceLine'] | feat_where('designator', *orangelane) | feat_join | feat_simplify(tolerance) | render_line }}

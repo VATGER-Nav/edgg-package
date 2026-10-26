@@ -1,18 +1,18 @@
-// ------------------------------ LVP -------------------------------
+// ======================< ILS Critical Areas >======================
 
 {% for runway in ['23L', '23R', '05R'] %}
 MAP:{{runway}}
 AIRPORT:EDDL
 FOLDER:LVP|Heavy
 COLOR:LVP_ORTHOGONAL
-{{ data.eddl_kml['layout']['lvp']['heavy'][runway + '_orthogonal_a'] | render_area('OTHER:REGION:\\') }}
-{{ data.eddl_kml['layout']['lvp']['heavy'][runway + '_orthogonal_b'] | render_area('OTHER:REGION:\\') }}
+{{ data.eddl_info['SensitiveArea'][runway+'_orthogonal_a'] | render_area('OTHER:REGION:\\') -}}
+{{ data.eddl_info['SensitiveArea'][runway+'_orthogonal_b'] | render_area('OTHER:REGION:\\') -}}
 COLOR:LVP_SENSITIVE
-{{ data.eddl_kml['layout']['lvp']['heavy'][runway + '_sensitive'] | render_area('OTHER:REGION:\\') }}
+{{ data.eddl_info['SensitiveArea'][runway+'_sensitive'] | render_area('OTHER:REGION:\\') -}}
 COLOR:LVP_CRITICAL
 STYLE:SOLID:2
-{{ data.eddl_kml['layout']['lvp']['heavy'][runway + '_critical_loc'] | render_area('OTHER:REGION:\\') }}
-{{ data.eddl_kml['layout']['lvp']['heavy'][runway + '_critical_gs'] | render_area('OTHER:REGION:\\') }}
+{{ data.eddl_info['SensitiveArea'][runway+'_critical_loc'] | render_area('OTHER:REGION:\\') -}}
+{{ data.eddl_info['SensitiveArea'][runway+'_critical_gs'] | render_area('OTHER:REGION:\\') -}}
 // LOC
 STYLE:SOLID:2
 COLOR:LVP_MARKING
@@ -25,14 +25,14 @@ MAP:{{runway}}
 AIRPORT:EDDL
 FOLDER:LVP|Super
 COLOR:LVP_ORTHOGONAL
-{{ data.eddl_kml['layout']['lvp']['super'][runway + '_orthogonal_a'] | render_area('OTHER:REGION:\\') }}
-{{ data.eddl_kml['layout']['lvp']['super'][runway + '_orthogonal_b'] | render_area('OTHER:REGION:\\') }}
+{{ data.eddl_info['SensitiveArea'][runway+'_orthogonal_j_a'] | render_area('OTHER:REGION:\\') -}}
+{{ data.eddl_info['SensitiveArea'][runway+'_orthogonal_j_b'] | render_area('OTHER:REGION:\\') -}}
 COLOR:LVP_SENSITIVE
-{{ data.eddl_kml['layout']['lvp']['super'][runway + '_sensitive'] | render_area('OTHER:REGION:\\') }}
+{{ data.eddl_info['SensitiveArea'][runway+'_sensitive_j'] | render_area('OTHER:REGION:\\') -}}
 COLOR:LVP_CRITICAL
 STYLE:SOLID:2
-{{ data.eddl_kml['layout']['lvp']['super'][runway + '_critical_loc'] | render_area('OTHER:REGION:\\') }}
-{{ data.eddl_kml['layout']['lvp']['super'][runway + '_critical_gs'] | render_area('OTHER:REGION:\\') }}
+{{ data.eddl_info['SensitiveArea'][runway+'_critical_loc_j'] | render_area('OTHER:REGION:\\') -}}
+{{ data.eddl_info['SensitiveArea'][runway+'_critical_gs_j'] | render_area('OTHER:REGION:\\') -}}
 // LOC
 STYLE:SOLID:2
 COLOR:LVP_MARKING

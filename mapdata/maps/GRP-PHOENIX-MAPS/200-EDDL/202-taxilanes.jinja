@@ -1,4 +1,5 @@
-// ---------------------------- Taxi Lanes --------------------------
+// ===========================< Taxilanes >==========================
+
 {%- set tolerance = 0.000005 %}
 {%- set nodraw_taxilanes = [
     'AE_LSH1',
@@ -8,30 +9,23 @@
 	'TWYL2_2',
 ] %}
 
-MAP:Taxi Lanes
+MAP:Taxilanes
 AIRPORT:EDDL
 FOLDER:Airport Layout
 ACTIVE:1
 COLOR:LAYOUT_TAXILINE_YELLOW
 
-{% for _, feat in data.eddl_aixm['GuidanceLine'].items() if feat.properties['type'] in ['TWY', 'GATE_TLANE'] %}
-{%- if not (feat.properties['designator'].startswith('DEICI') or feat.properties['designator'] in nodraw_taxilanes) %}
-{{- feat | geom_simplify(tolerance) | render_line(feat.properties['designator']) }}
-{%- endif %}
+{% for feat in data.eddl_aixm['GuidanceLine']
+    | feat_where('type', 'TWY', 'GATE_TLANE')
+    | feat_exclude('designator', *nodraw_taxilanes)
+    if not feat.properties.designator.startswith('DEICI')
+%}
+{{ feat | feat_simplify(tolerance) | render_line(feat.properties.designator) }}
 {% endfor %}
 
-{% for desig in
-[
-    'L2_a',
-    'L2_b',
-    'K4',
-    'J1',
-    'J2',
-    'J3',
-] %}
-{{- data.eddl_kml['layout']['markings']['taxilane_solid'][desig] | render_line(desig) }}
-{% endfor %}
+// - - - - - - - - - - - - Custom Markings - - - - - - - - - - - - -
 
-{% for _, feat in data.eddl_kml['layout']['markings']['taxilane_dash'].items() %}
-{{- feat | render_line }}
-{% endfor %}
+{{ data.eddl_layout['Marking_Line'] | feat_where('type', 'TWY', 'RWY') | feat_where('style', 'SOLID') | render_line }}
+
+STYLE:TLANE_DASH
+{{ data.eddl_layout['Marking_Line'] | feat_where('type', 'TWY', 'RWY') | feat_where('style', 'DASHED') | render_polyline }}
