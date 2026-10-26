@@ -1,17 +1,13 @@
-// ----------------------- Aircraft Outlines ------------------------
+// ======================< Aircraft Outlines >=======================
 
 MAP:Aircraft Outlines
 AIRPORT:EDDL
 FOLDER:Apron Info
 COLOR:LAYOUT_RUNWAY
-{% for _, feat in data.eddl_kml['layout']['aproninfo']['aircraft_a'].items() %}
-{{- feat | render_area('OTHER:REGION') }}
-{% endfor %}
-{% for _, feat in data.eddl_kml['layout']['aproninfo']['aircraft_b'].items() %}
-{{- feat | render_area('OTHER:POLYGON') }}
-{% endfor %}
+{{ data.eddl_info['AircraftStandSymbol'] | feat_where('type', 'PRIMARY') | render_area('OTHER:REGION') }}
+{{ data.eddl_info['AircraftStandSymbol'] | feat_where('type', 'SECONDARY') | render_area('OTHER:POLYGON') }}
 
-// ------------------------- Heli Positions -------------------------
+// ========================< Heli Positions >========================
 
 MAP:Heli Positions
 AIRPORT:EDDL
@@ -20,9 +16,8 @@ LAYER:6
 ZOOM:600
 FONTSIZE:=:10
 COLOR:LAYOUT_LABEL_STAND
-{% for desig, feat in data.eddl_kml['layout']['labels']['heli'].items() %}
-{{- feat | to_text('H:-1:0') }}
-{% endfor %}
-{% for desig, feat in data.eddl_kml['layout']['labels']['heli'].items() %}
-{{- feat | to_symbol('CIRCLE') }}
-{% endfor %}
+{{ data.eddl_info['RestrictionStand']
+    | feat_where('designator', 'V61', 'V62', 'V63', 'V71', 'V72', 'V75', 'V76')
+    | render_symbol('CIRCLE', 'H', offset=(-1,0))
+-}}
+{{ data.eddl_info['HelicopterStand'] | render_symbol('CIRCLE', 'H', offset=(-1,0)) }}

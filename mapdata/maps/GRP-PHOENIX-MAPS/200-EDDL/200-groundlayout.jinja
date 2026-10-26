@@ -1,46 +1,39 @@
-// ------------------------------------------------------------------
-//                                 EDDL
-// ------------------------------------------------------------------
+// ==================================================================
+//                          EDDL - DUSSELDORF
+// ==================================================================
 
-// -------------------------- Ground Layout -------------------------
-{%- set tolerance = 0.000005 %}
+// ======================< Apron Movement Area >=====================
 
-MAP:Apron Area
+MAP:Apron Movement Area
 AIRPORT:EDDL
 FOLDER:Airport Layout
 ACTIVE:1
 COLOR:LAYOUT_APRON
-{% for _, feat in data.eddl_kml['layout']['aprons'].items() %}
-{{- feat | render_area('OTHER:REGION') }}
-{% endfor %}
-{{ data.eddl_kml['layout']['runways']['apron05R-23L'] | render_area('OTHER:REGION') }}
-{{ data.eddl_kml['layout']['runways']['apron05L-23R'] | render_area('OTHER:REGION') }}
+{{ data.eddl_layout['ApronElement'] | render_grp }}
 
+// =============================< Roads >============================
 
 MAP:Roads
 AIRPORT:EDDL
 FOLDER:Airport Layout
 ACTIVE:1
 COLOR:LAYOUT_TAXIWAY
-{% for _, feat in data.eddl_kml['layout']['roads'].items() %}
-{{- feat | geom_simplify(tolerance) | render_line }}
-{% endfor %}
+{{ data.eddl_layout['Road'] | render_polyline }}
 
+// =====================< Taxiway Movement Area >====================
 
 MAP:Taxiway Movement Area
 AIRPORT:EDDL
 FOLDER:Airport Layout
 ACTIVE:1
 COLOR:LAYOUT_TAXIWAY
-{% for _, feat in data.eddl_kml['layout']['taxiways'].items() %}
-{{- feat | render_area('OTHER:REGION') }}
-{% endfor %}
+{{ data.eddl_layout['TaxiwayElement'] | render_grp }}
 
+// ===========================< Runways >============================
 
 MAP:Runways
 AIRPORT:EDDL
 FOLDER:Airport Layout
 ACTIVE:1
 COLOR:LAYOUT_RUNWAY
-{{ data.eddl_kml['layout']['runways']['05R-23L'] | render_area('OTHER:REGION') }}
-{{ data.eddl_kml['layout']['runways']['05L-23R'] | render_area('OTHER:REGION') }}
+{{ data.eddl_layout['RunwayElement'] | render_grp }}
