@@ -181,6 +181,4 @@ MAP:Runway Markings
 AIRPORT:EDDK
 FOLDER:Runway Info
 COLOR:LAYOUT_RUNWAY_MARKING
-{% for _, feat in data.eddk_aixm['RunwayMarking'].items() %}
-{{- feat | render_area('OTHER:REGION') }}
-{% endfor %}
+{{ data.eddk_aixm['RunwayMarking'] | render_area('OTHER:REGION') }}
