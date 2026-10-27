@@ -1,4 +1,4 @@
-// ------------------------- Heli Positions -------------------------
+// ========================< Heli Positions >========================
 
 MAP:Heli Positions
 AIRPORT:EDDK
@@ -7,9 +7,4 @@ LAYER:6
 ZOOM:600
 FONTSIZE:=:10
 COLOR:LAYOUT_LABEL_STAND
-{% for desig, feat in data.eddk_kml['layout']['labels']['heli'].items() %}
-{{- feat | to_text('H:-1:0') }}
-{% endfor %}
-{% for desig, feat in data.eddk_kml['layout']['labels']['heli'].items() %}
-{{- feat | to_symbol('CIRCLE') }}
-{% endfor %}
+{{ data.eddk_info['HelicopterStand'] | render_symbol('CIRCLE', 'H', offset=(-1,0)) }}
