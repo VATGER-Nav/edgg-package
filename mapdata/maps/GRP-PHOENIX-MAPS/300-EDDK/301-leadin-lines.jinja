@@ -1,478 +1,302 @@
-// ----------------------------- Stands -----------------------------
-{%- set tolerance = 0.000005 %}
+// =========================< Lead-in Lines >========================
 
-MAP:Leadin Lines
+{%- set tolerance = 0.000005 %}
+{%- set leadin_grouped = data.eddk_aixm.group('GuidanceLine', 'designator', 'connectedStand') %}
+
+MAP:Lead-in Lines
 AIRPORT:EDDK
 FOLDER:Airport Layout
 ACTIVE:1
 COLOR:LAYOUT_TAXILINE_YELLOW
-{% for uuid in
-[
-    '07e4e164-cd4d-8a57-e063-b410f10a609c',
-    '07e4e164-cd4f-8a57-e063-b410f10a609c',
-    '07e4e164-cd50-8a57-e063-b410f10a609c',
-    '099415f7-7c81-3cb1-e063-b410f10a8f99',
-    '099415f7-7c82-3cb1-e063-b410f10a8f99',
-    '099415f7-7c87-3cb1-e063-b410f10a8f99',
-    '099415f7-7c88-3cb1-e063-b410f10a8f99',
-    '12fbd5c1-124a-4be5-e063-b510f10aab97',
-    '12fbd5c1-124f-4be5-e063-b510f10aab97',
-    '136330ab-9a57-963a-e063-b510f10a8b24',
-    '136330ab-9a5a-963a-e063-b510f10a8b24',
-    '136330ab-9a7d-963a-e063-b510f10a8b24',
-    '136330ab-9a84-963a-e063-b510f10a8b24',
-    '136330ab-9a97-963a-e063-b510f10a8b24',
-    '136330ab-9a98-963a-e063-b510f10a8b24',
-    '136330ab-9a99-963a-e063-b510f10a8b24',
-    '136330ab-9ac9-963a-e063-b510f10a8b24',
-    '136330ab-9acb-963a-e063-b510f10a8b24',
-    '136330ab-9acc-963a-e063-b510f10a8b24',
-    '136330ab-9ace-963a-e063-b510f10a8b24',
-    '136330ab-9ad0-963a-e063-b510f10a8b24',
-    '136330ab-9ad2-963a-e063-b510f10a8b24',
-    '136330ab-9ad4-963a-e063-b510f10a8b24',
-    '136330ab-9ad6-963a-e063-b510f10a8b24',
-    '136330ab-9ad8-963a-e063-b510f10a8b24',
-    '136330ab-9ad9-963a-e063-b510f10a8b24',
-    '136330ab-9adb-963a-e063-b510f10a8b24',
-    '136330ab-9add-963a-e063-b510f10a8b24',
-    '13741e1e-6e74-6bde-e063-b510f10a04ee',
-    '13741e1e-6e75-6bde-e063-b510f10a04ee',
-    '6c69628d-7428-2c22-e054-020820e7ddd6',
-    '6c69628d-7429-2c22-e054-020820e7ddd6',
-    '6c69628d-742b-2c22-e054-020820e7ddd6',
-    '6c69628d-742d-2c22-e054-020820e7ddd6',
-    '6c69628d-742e-2c22-e054-020820e7ddd6',
-    '6c69628d-7430-2c22-e054-020820e7ddd6',
-    '6c69628d-7431-2c22-e054-020820e7ddd6',
-    '6c69628d-7432-2c22-e054-020820e7ddd6',
-    '6c69628d-7433-2c22-e054-020820e7ddd6',
-    '6c69628d-7434-2c22-e054-020820e7ddd6',
-    '6c69628d-7437-2c22-e054-020820e7ddd6',
-    '6c69628d-7442-2c22-e054-020820e7ddd6',
-    '6c69628d-7443-2c22-e054-020820e7ddd6',
-    '6c69628d-7444-2c22-e054-020820e7ddd6',
-    '6c69628d-7445-2c22-e054-020820e7ddd6',
-    '6c69628d-7446-2c22-e054-020820e7ddd6',
-    '6c69628d-7447-2c22-e054-020820e7ddd6',
-    '6c69628d-7449-2c22-e054-020820e7ddd6',
-    '6c69628d-744a-2c22-e054-020820e7ddd6',
-    '6c69628d-744b-2c22-e054-020820e7ddd6',
-    '6c69628d-746a-2c22-e054-020820e7ddd6',
-    '6c69628d-746b-2c22-e054-020820e7ddd6',
-    '6c69628d-7484-2c22-e054-020820e7ddd6',
-    '6c69628d-7489-2c22-e054-020820e7ddd6',
-    '6c69628d-748a-2c22-e054-020820e7ddd6',
-    '6c69628d-748b-2c22-e054-020820e7ddd6',
-    '6c69628d-748c-2c22-e054-020820e7ddd6',
-    '6c69628d-7490-2c22-e054-020820e7ddd6',
-    '6c69628d-7491-2c22-e054-020820e7ddd6',
-    '6c69628d-7492-2c22-e054-020820e7ddd6',
-    '6c69628d-7493-2c22-e054-020820e7ddd6',
-    '6c69628d-7497-2c22-e054-020820e7ddd6',
-    '6c69628d-7498-2c22-e054-020820e7ddd6',
-    '6c69628d-7499-2c22-e054-020820e7ddd6',
-    '6c69628d-749a-2c22-e054-020820e7ddd6',
-    '6c69628d-749e-2c22-e054-020820e7ddd6',
-    '6c69628d-749f-2c22-e054-020820e7ddd6',
-    '6c69628d-74a0-2c22-e054-020820e7ddd6',
-    '6c69628d-74a1-2c22-e054-020820e7ddd6',
-    '6c69628d-74a5-2c22-e054-020820e7ddd6',
-    '6c69628d-74a6-2c22-e054-020820e7ddd6',
-    '6c69628d-74a7-2c22-e054-020820e7ddd6',
-    '6c69628d-74a8-2c22-e054-020820e7ddd6',
-    '6c69628d-74af-2c22-e054-020820e7ddd6',
-    '6c69628d-74b0-2c22-e054-020820e7ddd6',
-    '6c69628d-74b1-2c22-e054-020820e7ddd6',
-    '6c69628d-74b2-2c22-e054-020820e7ddd6',
-    '6c69628d-74b6-2c22-e054-020820e7ddd6',
-    '6c69628d-74b7-2c22-e054-020820e7ddd6',
-    '6c69628d-74b8-2c22-e054-020820e7ddd6',
-    '6c69628d-74b9-2c22-e054-020820e7ddd6',
-    '6c69628d-74bd-2c22-e054-020820e7ddd6',
-    '6c69628d-74c0-2c22-e054-020820e7ddd6',
-    '6c69628d-74c1-2c22-e054-020820e7ddd6',
-    '6c69628d-74c2-2c22-e054-020820e7ddd6',
-    '6c69628d-74c7-2c22-e054-020820e7ddd6',
-    '6c69628d-74c8-2c22-e054-020820e7ddd6',
-    '6c69628d-74c9-2c22-e054-020820e7ddd6',
-    '6c69628d-74ca-2c22-e054-020820e7ddd6',
-    '6c69628d-74ce-2c22-e054-020820e7ddd6',
-    '6c69628d-74cf-2c22-e054-020820e7ddd6',
-    '6c69628d-74d2-2c22-e054-020820e7ddd6',
-    '6c69628d-74d3-2c22-e054-020820e7ddd6',
-    '6c69628d-74d8-2c22-e054-020820e7ddd6',
-    '6c69628d-74d9-2c22-e054-020820e7ddd6',
-    '6c69628d-74dc-2c22-e054-020820e7ddd6',
-    '6c69628d-74dd-2c22-e054-020820e7ddd6',
-    '6c69628d-74e0-2c22-e054-020820e7ddd6',
-    '6c69628d-74e5-2c22-e054-020820e7ddd6',
-    '6c69628d-74e6-2c22-e054-020820e7ddd6',
-    '6c69628d-74e7-2c22-e054-020820e7ddd6',
-    '6c69628d-74e8-2c22-e054-020820e7ddd6',
-    '6c69628d-74e9-2c22-e054-020820e7ddd6',
-    '6c69628d-74ea-2c22-e054-020820e7ddd6',
-    '6c69628d-74eb-2c22-e054-020820e7ddd6',
-    '6c69628d-74ec-2c22-e054-020820e7ddd6',
-    '6c69628d-74ed-2c22-e054-020820e7ddd6',
-    '6c69628d-74ee-2c22-e054-020820e7ddd6',
-    '6c69628d-74ef-2c22-e054-020820e7ddd6',
-    '6c69628d-74f0-2c22-e054-020820e7ddd6',
-    '6c69628d-74f1-2c22-e054-020820e7ddd6',
-    '6c69628d-74f2-2c22-e054-020820e7ddd6',
-    '6c69628d-74f3-2c22-e054-020820e7ddd6',
-    '6c69628d-74f4-2c22-e054-020820e7ddd6',
-    '6c69628d-74f5-2c22-e054-020820e7ddd6',
-    '6c69628d-74f6-2c22-e054-020820e7ddd6',
-    '6c69628d-74f9-2c22-e054-020820e7ddd6',
-    '6c69628d-74fa-2c22-e054-020820e7ddd6',
-    '6c69628d-74fb-2c22-e054-020820e7ddd6',
-    '6c69628d-74fc-2c22-e054-020820e7ddd6',
-    '6c69628d-74fd-2c22-e054-020820e7ddd6',
-    '6c69628d-74fe-2c22-e054-020820e7ddd6',
-    '6c69628d-7502-2c22-e054-020820e7ddd6',
-    '6c69628d-7503-2c22-e054-020820e7ddd6',
-    '6c69628d-7504-2c22-e054-020820e7ddd6',
-    '6c69628d-7506-2c22-e054-020820e7ddd6',
-    '6c69628d-7507-2c22-e054-020820e7ddd6',
-    '6c69628d-7508-2c22-e054-020820e7ddd6',
-    '6c69628d-750a-2c22-e054-020820e7ddd6',
-    '6c69628d-750b-2c22-e054-020820e7ddd6',
-    '6c69628d-750c-2c22-e054-020820e7ddd6',
-    '6c69628d-750d-2c22-e054-020820e7ddd6',
-    '6c69628d-750e-2c22-e054-020820e7ddd6',
-    '6c69628d-750f-2c22-e054-020820e7ddd6',
-    '6c69628d-7510-2c22-e054-020820e7ddd6',
-    '6c69628d-7511-2c22-e054-020820e7ddd6',
-    '6c69628d-7512-2c22-e054-020820e7ddd6',
-    '6c69628d-7513-2c22-e054-020820e7ddd6',
-    '6c69628d-7514-2c22-e054-020820e7ddd6',
-    '6c69628d-7515-2c22-e054-020820e7ddd6',
-    '6c69628d-7516-2c22-e054-020820e7ddd6',
-    '6c69628d-7517-2c22-e054-020820e7ddd6',
-    '6c69628d-7518-2c22-e054-020820e7ddd6',
-    '6c69628d-7519-2c22-e054-020820e7ddd6',
-    '6c69628d-751a-2c22-e054-020820e7ddd6',
-    '6c69628d-751b-2c22-e054-020820e7ddd6',
-    '6c69628d-751c-2c22-e054-020820e7ddd6',
-    '6c69628d-751d-2c22-e054-020820e7ddd6',
-    '6c69628d-751f-2c22-e054-020820e7ddd6',
-    '6c69628d-7520-2c22-e054-020820e7ddd6',
-    '6c69628d-7523-2c22-e054-020820e7ddd6',
-    '6c69628d-7524-2c22-e054-020820e7ddd6',
-    '6c69628d-7526-2c22-e054-020820e7ddd6',
-    '6c69628d-7527-2c22-e054-020820e7ddd6',
-    '6c69628d-7529-2c22-e054-020820e7ddd6',
-    '6c69628d-7536-2c22-e054-020820e7ddd6',
-    '6c69628d-753e-2c22-e054-020820e7ddd6',
-    '6c69628d-753f-2c22-e054-020820e7ddd6',
-    '6c69628d-7552-2c22-e054-020820e7ddd6',
-    '6c69628d-7553-2c22-e054-020820e7ddd6',
-    '6c69628d-7556-2c22-e054-020820e7ddd6',
-    '6c69628d-7557-2c22-e054-020820e7ddd6',
-    '6c69628d-7558-2c22-e054-020820e7ddd6',
-    '6c69628d-7559-2c22-e054-020820e7ddd6',
-    '6c69628d-755a-2c22-e054-020820e7ddd6',
-    '6c69628d-755b-2c22-e054-020820e7ddd6',
-    '6c69628d-756a-2c22-e054-020820e7ddd6',
-    '6c69628d-756b-2c22-e054-020820e7ddd6',
-    '6c69628d-756c-2c22-e054-020820e7ddd6',
-    '6c69628d-756d-2c22-e054-020820e7ddd6',
-    '6c69628d-756e-2c22-e054-020820e7ddd6',
-    '6c69628d-756f-2c22-e054-020820e7ddd6',
-    '6c69628d-7570-2c22-e054-020820e7ddd6',
-    '6c69628d-7571-2c22-e054-020820e7ddd6',
-    '6c69628d-7572-2c22-e054-020820e7ddd6',
-    '6c69628d-7573-2c22-e054-020820e7ddd6',
-    '6c69628d-7574-2c22-e054-020820e7ddd6',
-    '6c69628d-7578-2c22-e054-020820e7ddd6',
-    '6c69628d-7579-2c22-e054-020820e7ddd6',
-    '6c69628d-7580-2c22-e054-020820e7ddd6',
-    '6c69628d-7581-2c22-e054-020820e7ddd6',
-    '6c69628d-7582-2c22-e054-020820e7ddd6',
-    '6c69628d-7583-2c22-e054-020820e7ddd6',
-    '6c69628d-7585-2c22-e054-020820e7ddd6',
-    '6c69628d-758a-2c22-e054-020820e7ddd6',
-    '6c69628d-758b-2c22-e054-020820e7ddd6',
-    '6c69628d-758c-2c22-e054-020820e7ddd6',
-    '6c69628d-758f-2c22-e054-020820e7ddd6',
-    '6c69628d-7598-2c22-e054-020820e7ddd6',
-    '6c69628d-7599-2c22-e054-020820e7ddd6',
-    '6c69628d-759a-2c22-e054-020820e7ddd6',
-    '6c69628d-759d-2c22-e054-020820e7ddd6',
-    '6c69628d-759e-2c22-e054-020820e7ddd6',
-    '6c69628d-759f-2c22-e054-020820e7ddd6',
-    '6c69628d-75a0-2c22-e054-020820e7ddd6',
-    '6c69628d-75a1-2c22-e054-020820e7ddd6',
-    '6c69628d-75ac-2c22-e054-020820e7ddd6',
-    '6c69628d-75ad-2c22-e054-020820e7ddd6',
-    '6c69628d-75ae-2c22-e054-020820e7ddd6',
-    '6c69628d-75af-2c22-e054-020820e7ddd6',
-    '6c69628d-75b0-2c22-e054-020820e7ddd6',
-    '6c69628d-75b7-2c22-e054-020820e7ddd6',
-    '6c69628d-75b8-2c22-e054-020820e7ddd6',
-    '6c69628d-75be-2c22-e054-020820e7ddd6',
-    '6c69628d-75bf-2c22-e054-020820e7ddd6',
-    '6c69628d-7607-2c22-e054-020820e7ddd6',
-    '6c69628d-760b-2c22-e054-020820e7ddd6',
-    '6c69628d-760f-2c22-e054-020820e7ddd6',
-    '6c69628d-7610-2c22-e054-020820e7ddd6',
-    '6c69628d-7611-2c22-e054-020820e7ddd6',
-    '6c69628d-7621-2c22-e054-020820e7ddd6',
-    '6c69628d-7624-2c22-e054-020820e7ddd6',
-    '6c69628d-7625-2c22-e054-020820e7ddd6',
-    '6c69628d-7626-2c22-e054-020820e7ddd6',
-    '6c69628d-7627-2c22-e054-020820e7ddd6',
-    '6c69628d-7640-2c22-e054-020820e7ddd6',
-    '6c69628d-7641-2c22-e054-020820e7ddd6',
-    '6c69628d-764a-2c22-e054-020820e7ddd6',
-    '6c69628d-764b-2c22-e054-020820e7ddd6',
-    '6c69628d-764c-2c22-e054-020820e7ddd6',
-    '6c69628d-764d-2c22-e054-020820e7ddd6',
-    '6c69628d-7650-2c22-e054-020820e7ddd6',
-    '6c69628d-7651-2c22-e054-020820e7ddd6',
-    '6c69628d-7680-2c22-e054-020820e7ddd6',
-    '6c69628d-7681-2c22-e054-020820e7ddd6',
-    '6c69628d-76b1-2c22-e054-020820e7ddd6',
-    '6c69628d-76b2-2c22-e054-020820e7ddd6',
-    '6c69628d-76b3-2c22-e054-020820e7ddd6',
-    '6c69628d-76b4-2c22-e054-020820e7ddd6',
-    '6c69628d-76b5-2c22-e054-020820e7ddd6',
-    '6c69628d-76b6-2c22-e054-020820e7ddd6',
-    '6c69628d-76b7-2c22-e054-020820e7ddd6',
-    '6c69628d-76b8-2c22-e054-020820e7ddd6',
-    '6c69628d-76bd-2c22-e054-020820e7ddd6',
-    '6c69628d-76be-2c22-e054-020820e7ddd6',
-    '6c69628d-76bf-2c22-e054-020820e7ddd6',
-    '6c69628d-76c0-2c22-e054-020820e7ddd6',
-    '6c69628d-76c2-2c22-e054-020820e7ddd6',
-    '6c69628d-76c4-2c22-e054-020820e7ddd6',
-    '6c69628d-76c6-2c22-e054-020820e7ddd6',
-    '6c69628d-76c7-2c22-e054-020820e7ddd6',
-    '6c69628d-76c8-2c22-e054-020820e7ddd6',
-    '6c69628d-76c9-2c22-e054-020820e7ddd6',
-    '6c69628d-76ca-2c22-e054-020820e7ddd6',
-    '6c69628d-76cb-2c22-e054-020820e7ddd6',
-    '6c69628d-76cc-2c22-e054-020820e7ddd6',
-    '6c69628d-76cd-2c22-e054-020820e7ddd6',
-    '6c69628d-76cf-2c22-e054-020820e7ddd6',
-    '6c69628d-76d0-2c22-e054-020820e7ddd6',
-    '6c69628d-76d2-2c22-e054-020820e7ddd6',
-    '6c69628d-76d3-2c22-e054-020820e7ddd6',
-    '6c69628d-76d5-2c22-e054-020820e7ddd6',
-    '6c69628d-76d6-2c22-e054-020820e7ddd6',
-    '6c69628d-76d7-2c22-e054-020820e7ddd6',
-    '6c69628d-76db-2c22-e054-020820e7ddd6',
-    '6c69628d-76dc-2c22-e054-020820e7ddd6',
-    '6c69628d-76e0-2c22-e054-020820e7ddd6',
-    '6c69628d-76e1-2c22-e054-020820e7ddd6',
-    '6c69628d-76e2-2c22-e054-020820e7ddd6',
-    '6c69628d-76e6-2c22-e054-020820e7ddd6',
-    '6c69628d-76e7-2c22-e054-020820e7ddd6',
-    '6c69628d-76e8-2c22-e054-020820e7ddd6',
-    '6c69628d-76e9-2c22-e054-020820e7ddd6',
-    '6c69628d-76ed-2c22-e054-020820e7ddd6',
-    '6c69628d-76ee-2c22-e054-020820e7ddd6',
-    '6c69628d-76ef-2c22-e054-020820e7ddd6',
-    '6c69628d-76f0-2c22-e054-020820e7ddd6',
-    '6c69628d-76f3-2c22-e054-020820e7ddd6',
-    '6c69628d-76f4-2c22-e054-020820e7ddd6',
-    '6c69628d-76f5-2c22-e054-020820e7ddd6',
-    '6c69628d-76f6-2c22-e054-020820e7ddd6',
-    '6c69628d-76f7-2c22-e054-020820e7ddd6',
-    '6c69628d-76f8-2c22-e054-020820e7ddd6',
-    '6c69628d-76f9-2c22-e054-020820e7ddd6',
-    '6c69628d-76fa-2c22-e054-020820e7ddd6',
-    '6c69628d-76fb-2c22-e054-020820e7ddd6',
-    '6c69628d-76fc-2c22-e054-020820e7ddd6',
-    '6c69628d-76fd-2c22-e054-020820e7ddd6',
-    '6c69628d-76fe-2c22-e054-020820e7ddd6',
-    '6c69628d-76ff-2c22-e054-020820e7ddd6',
-    '6c69628d-7700-2c22-e054-020820e7ddd6',
-    '6c69628d-7701-2c22-e054-020820e7ddd6',
-    '6c69628d-7702-2c22-e054-020820e7ddd6',
-    '6c69628d-7703-2c22-e054-020820e7ddd6',
-    '6c69628d-7704-2c22-e054-020820e7ddd6',
-    '6c69628d-7705-2c22-e054-020820e7ddd6',
-    '6c69628d-7706-2c22-e054-020820e7ddd6',
-    '6c69628d-7707-2c22-e054-020820e7ddd6',
-    '6c69628d-7708-2c22-e054-020820e7ddd6',
-    '6c69628d-7709-2c22-e054-020820e7ddd6',
-    '6c69628d-770a-2c22-e054-020820e7ddd6',
-    '6c69628d-770b-2c22-e054-020820e7ddd6',
-    '6c69628d-770c-2c22-e054-020820e7ddd6',
-    '6c69628d-770f-2c22-e054-020820e7ddd6',
-    '6c69628d-7710-2c22-e054-020820e7ddd6',
-    '6c69628d-7713-2c22-e054-020820e7ddd6',
-    '6c69628d-7714-2c22-e054-020820e7ddd6',
-    '6c69628d-7715-2c22-e054-020820e7ddd6',
-    '6c69628d-7716-2c22-e054-020820e7ddd6',
-    '6c69628d-7719-2c22-e054-020820e7ddd6',
-    '6c69628d-771a-2c22-e054-020820e7ddd6',
-    '6c69628d-771b-2c22-e054-020820e7ddd6',
-    '6c69628d-771c-2c22-e054-020820e7ddd6',
-    '6c69628d-771d-2c22-e054-020820e7ddd6',
-    '6c69628d-771e-2c22-e054-020820e7ddd6',
-    '6c69628d-771f-2c22-e054-020820e7ddd6',
-    '6c69628d-7720-2c22-e054-020820e7ddd6',
-    '6c69628d-7721-2c22-e054-020820e7ddd6',
-    '6c69628d-7722-2c22-e054-020820e7ddd6',
-    '6c69628d-7724-2c22-e054-020820e7ddd6',
-    '6c69628d-7725-2c22-e054-020820e7ddd6',
-    '6c69628d-7726-2c22-e054-020820e7ddd6',
-    '6c69628d-7727-2c22-e054-020820e7ddd6',
-    '6c69628d-7728-2c22-e054-020820e7ddd6',
-    '6c69628d-7729-2c22-e054-020820e7ddd6',
-    '6c69628d-772a-2c22-e054-020820e7ddd6',
-    '6c69628d-772b-2c22-e054-020820e7ddd6',
-    '6c69628d-772c-2c22-e054-020820e7ddd6',
-    '6c69628d-772d-2c22-e054-020820e7ddd6',
-    '6c69628d-772e-2c22-e054-020820e7ddd6',
-    '6c69628d-772f-2c22-e054-020820e7ddd6',
-    '6c69628d-7730-2c22-e054-020820e7ddd6',
-    '6c69628d-7731-2c22-e054-020820e7ddd6',
-    '6c69628d-7732-2c22-e054-020820e7ddd6',
-    '6c69628d-7733-2c22-e054-020820e7ddd6',
-    '6c69628d-7734-2c22-e054-020820e7ddd6',
-    '6c69628d-7735-2c22-e054-020820e7ddd6',
-    '6c69628d-7737-2c22-e054-020820e7ddd6',
-    '6c69628d-7738-2c22-e054-020820e7ddd6',
-    '6c69628d-7739-2c22-e054-020820e7ddd6',
-    '6c69628d-773a-2c22-e054-020820e7ddd6',
-    '6c69628d-7762-2c22-e054-020820e7ddd6',
-    '6c69628d-7773-2c22-e054-020820e7ddd6',
-    '6c69628d-7775-2c22-e054-020820e7ddd6',
-    '6c69628d-7776-2c22-e054-020820e7ddd6',
-    '6c69628d-7777-2c22-e054-020820e7ddd6',
-    '6c69628d-777e-2c22-e054-020820e7ddd6',
-    '6c69628d-777f-2c22-e054-020820e7ddd6',
-    '6c69628d-7783-2c22-e054-020820e7ddd6',
-    '6c69628d-7784-2c22-e054-020820e7ddd6',
-    '6c69628d-7785-2c22-e054-020820e7ddd6',
-    '6c69628d-7786-2c22-e054-020820e7ddd6',
-    '6c69628d-7787-2c22-e054-020820e7ddd6',
-    '6c69628d-7789-2c22-e054-020820e7ddd6',
-    '6c69628d-778b-2c22-e054-020820e7ddd6',
-    '6c69628d-778e-2c22-e054-020820e7ddd6',
-    '6c69628d-778f-2c22-e054-020820e7ddd6',
-    '6f72b737-836f-14ed-e054-0208209c4fc0',
-    '6f72b737-8370-14ed-e054-0208209c4fc0',
-    '6f72b737-8377-14ed-e054-0208209c4fc0',
-    '6f9faeae-2fac-104c-e054-020820e7ddd6',
-    '6f9faeae-2fad-104c-e054-020820e7ddd6',
-    '6f9faeae-2fae-104c-e054-020820e7ddd6',
-    '6f9faeae-2faf-104c-e054-020820e7ddd6',
-    '70a21f4a-2412-0991-e054-0208209c4fc0',
-    '70a21f4a-2413-0991-e054-0208209c4fc0',
-    '70a21f4a-2417-0991-e054-0208209c4fc0',
-    '70a21f4a-2418-0991-e054-0208209c4fc0',
-    '70a21f4a-2419-0991-e054-0208209c4fc0',
-    '70a21f4a-241c-0991-e054-0208209c4fc0',
-    '70a21f4a-241d-0991-e054-0208209c4fc0',
-    '70a21f4a-2421-0991-e054-0208209c4fc0',
-    '70a21f4a-2422-0991-e054-0208209c4fc0',
-    '70a21f4a-2423-0991-e054-0208209c4fc0',
-    '70a21f4a-2425-0991-e054-0208209c4fc0',
-    '8ceb6ef2-4c3c-5d73-e054-0208202551e2',
-    '8ceb6ef2-4c46-5d73-e054-0208202551e2',
-    '8f834d5f-723c-4760-e054-020820e7ddd6',
-    '8f834d5f-723d-4760-e054-020820e7ddd6',
-    '8f834d5f-723e-4760-e054-020820e7ddd6',
-    '8f834d5f-723f-4760-e054-020820e7ddd6',
-    '8f834d5f-7246-4760-e054-020820e7ddd6',
-    '8f834d5f-7247-4760-e054-020820e7ddd6',
-    '8f834d5f-7248-4760-e054-020820e7ddd6',
-    '8f834d5f-7249-4760-e054-020820e7ddd6',
-    '95920323-f159-37ce-e054-020820e7ddd6',
-    '95920323-f15d-37ce-e054-020820e7ddd6',
-    'c1fccb50-1d62-4c6d-e054-020820e7ddd6',
-    'c1fccb50-1d63-4c6d-e054-020820e7ddd6',
+STYLE:SOLID
+
+{#- FOR DEBUGGING PURPOSES #}
+{#-
+// {{ data.eddk_aixm['AircraftStand'] | map(attribute='properties') | map(attribute='designator') | list | sort }}
+
+COLOR:RED
+STYLE:SOLID
+{{ data.eddk_aixm['GuidanceLine'] | feat_join | feat_simplify(tolerance) | render_line }}
+COLOR:LAYOUT_TAXILINE_YELLOW
+#}
+
+// - - - - - - - - - - - - - - Apron A (even) - - - - - - - - - - - -
+
+{% for stand in ['A10', 'A12', 'A14', 'A16', 'A18', 'A20', 'A22','A24', 'A26', 'A28', 'A30', 'A32', 'A34'] %}
+{{ leadin_grouped[stand] | feat_join | feat_simplify(tolerance) | render_line(stand) }}
+{% endfor %}
+
+// - - - - - - - - - - - - - - Apron A (odd) - - - - - - - - - - - - 
+
+{%- set A_exclude = ['GL_APA_[A03_2]', 'GL_APA_[A05-2]', 'GL_APA_[A07_2]'] %}
+
+STYLE:TLANE_DASH
+
+{% for stand in ['A01', 'A03', 'A05', 'A07'] %}
+{{ leadin_grouped[stand] | feat_exclude('designator', *A_exclude) | feat_join | feat_simplify(tolerance) | render_polyline(label=stand) }}
+{% endfor %}
+
+{% for stand in ['A11', 'A17', 'A21'] %}
+{{ leadin_grouped[stand] | feat_join | feat_simplify(tolerance) | render_line(stand) }}
+{% endfor %}
+
+// A23
+{{ leadin_grouped['A23'] | feat_join | feat_simplify(tolerance) | render_polyline }}
+
+{% for stand in ['A25', 'A27', 'A29', 'A31', 'A33', 'A35'] %}
+{{ data.eddk_aixm['GuidanceLine']
+    | feat_where('designator', 'GL_APA_['+stand+']', 'GL_ACS_['+stand+'-LI]', 'GL_ACS_['+stand+'-LO]')
+    | feat_join | feat_simplify(tolerance) | render_polyline(label=stand)
+}}
+{% endfor %}
+
+// - - - - - - - - - - - - - - Apron B (even) - - - - - - - - - - - -
+
+STYLE:SOLID
+
+{% for stand in ['B10', 'B12', 'B14', 'B16', 'B18', 'B20', 'B22', 'B24', 'B26'] %}
+{{ leadin_grouped[stand] | feat_join | feat_simplify(tolerance) | render_line(stand) }}
+{% endfor %}
+
+// B28
+{{ leadin_grouped['B28'] | feat_join | feat_simplify(tolerance) | render_line -}}
+{{ data.eddk_aixm.group('GuidanceLine', 'designator')['GL_APB_[B30-2]'] | feat_simplify(tolerance) | render_line }}
+
+// B30
+{{ leadin_grouped['B30'] | feat_join | feat_simplify(tolerance) | render_line }}
+
+// - - - - - - - - - - - - - - Apron B (odd) - - - - - - - - - - - - 
+
+STYLE:TLANE_DASH
+
+{% for stand in ['B11', 'B17'] %}
+{{ leadin_grouped[stand] | feat_join | feat_simplify(tolerance) | render_line(stand) }}
+{% endfor %}
+
+{% for stand in ['B21', 'B23', 'B27'] %}
+{{ leadin_grouped[stand] | feat_join | feat_simplify(tolerance) | render_polyline(label=stand) }}
+{% endfor %}
+
+// B29
+{{ data.eddk_aixm['GuidanceLine']
+    | feat_where('designator', 'GL_APB_[B29_1]', 'GL_APB_[B29-2]_2')
+    | feat_join | feat_simplify(tolerance) | render_polyline
+-}}
+{{ data.eddk_aixm.group('GuidanceLine', 'designator')['GL_APB_[B29-2]_1'] | feat_simplify(tolerance) | render_line }}
+
+// - - - - - - - - - - - - - - - Apron C - - - - - - - - - - - - - - 
+
+STYLE:SOLID
+
+{% for stand in ['C01', 'C02', 'C03', 'C04'] %}
+{{ leadin_grouped[stand] | feat_join | feat_simplify(tolerance) | render_line(stand) }}
+{% endfor %}
+
+// C05
+{{ leadin_grouped['C05'] | feat_join | feat_simplify(tolerance) | render_line -}}
+{{ data.eddk_aixm.group('GuidanceLine', 'designator')['GL_APC_[C05-1]_6'] | feat_simplify(tolerance) | render_line }}
+
+{% for stand in ['C06', 'C10', 'C12', 'C14'] %}
+{{ leadin_grouped[stand] | feat_join | feat_simplify(tolerance) | render_line(stand) }}
+{% endfor %}
+
+// C50
+STYLE:TLANE_DASH
+{{ leadin_grouped['C50'] | feat_join | feat_simplify(tolerance) | render_polyline }}
+
+// - - - - - - - - - - - - - - Apron D (even) - - - - - - - - - - - -
+
+STYLE:SOLID
+
+{% for stand in ['D10', 'D12', 'D14', 'D16', 'D18', 'D20', 'D22', 'D24', 'D26', 'D28', 'D30', 'D32', 'D34', 'D36', 'D38', 'D40', 'D42', 'D50', 'D52', 'D54', 'D56', 'D58', 'D60', 'D62', 'D64'] %}
+{{ leadin_grouped[stand] | feat_join | feat_simplify(tolerance) | render_line(stand) }}
+{% endfor %}
+
+// - - - - - - - - - - - - - - Apron D (odd) - - - - - - - - - - - - 
+
+STYLE:TLANE_DASH
+
+{% for stand in ['D11', 'D15', 'D19', 'D23', 'D51', 'D53', 'D57'] %}
+{{ leadin_grouped[stand] | feat_join | feat_simplify(tolerance) | render_line(stand) }}
+{% endfor %}
+
+// - - - - - - - - - - - - - - Apron E (even) - - - - - - - - - - - -
+
+STYLE:TLANE_DASH
+
+{% for stand in ['E10', 'E12', 'E14', 'E16', 'E20', 'E22', 'D57', 'E24', 'E30', 'E32', 'E34', 'E36', 'E40', 'E42', 'E44', 'E46'] %}
+{{ leadin_grouped[stand] | feat_join | feat_simplify(tolerance) | render_line(stand) }}
+{% endfor %}
+
+// - - - - - - - - - - - - - - Apron E (odd) - - - - - - - - - - - - 
+
+STYLE:SOLID
+
+{% for stand in ['E09', 'E13', 'E15', 'E17', 'E21', 'E23', 'E31', 'E33', 'E35', 'E41', 'E43', 'E45'] %}
+{{ leadin_grouped[stand] | feat_join | feat_simplify(tolerance) | render_line(stand) }}
+{% endfor %}
+
+// - - - - - - - - - - - - - - Apron F (even) - - - - - - - - - - - -
+
+STYLE:TLANE_DASH
+
+{% for stand in ['F20', 'F22', 'F24', 'F26'] %}
+{{ leadin_grouped[stand] | feat_join | feat_simplify(tolerance) | render_line(stand) }}
+{% endfor %}
+
+STYLE:SOLID
+
+{% for stand in ['F32', 'F34'] %}
+{{ leadin_grouped[stand] | feat_join | feat_simplify(tolerance) | render_line(stand) }}
+{% endfor %}
+
+// - - - - - - - - - - - - - - Apron F (odd) - - - - - - - - - - - - 
+
+{% for stand in ['F17', 'F19',  'F21',  'F23',  'F25',  'F31'] %}
+{{ leadin_grouped[stand] | feat_join | feat_simplify(tolerance) | render_line(stand) }}
+{% endfor %}
+
+// - - - - - - - - - - - - - - - Apron U - - - - - - - - - - - - - - 
+
+{%- set U14_solidlines = ['GL_APU_[U14-]_14', 'GL_APU_[U14-1]15'] %}
+{%- set undesignated = ['GL_APU_[U18-6]_7', 'GL_APU_[U18-5]_6'] %}
+
+{% for stand in ['U10', 'U12'] %}
+{{ leadin_grouped[stand] | feat_join | feat_simplify(tolerance) | render_line(stand) }}
+{% endfor %}
+
+// U14
+STYLE:TLANE_DASH
+{{ leadin_grouped['U14'] | feat_exclude('designator', *U14_solidlines)
+    | feat_join | feat_simplify(tolerance) | render_line
+-}}
+STYLE:SOLID
+{{ leadin_grouped['U14'] | feat_where('designator', *U14_solidlines)
+    | feat_join | feat_simplify(tolerance) | render_line
+}}
+
+{% for stand in ['U16', 'U18', 'U20', 'U22', 'U24', 'U26'] %}
+{{ leadin_grouped[stand] | feat_join | feat_simplify(tolerance) | render_line(stand) }}
+{% endfor %}
+
+// Undesignated Stand
+{{ data.eddk_aixm['GuidanceLine'] | feat_where('designator', *undesignated)
+    | feat_join | feat_simplify(tolerance) | render_line
+}}
+
+// - - - - - - - - - - - - - - - Apron V - - - - - - - - - - - - - - 
+
+// AIP has incomplete data due to construction site.
+// Lines were recreated from previous AIRAC.
+
+{% for stand in ['V10', 'V11', 'V12', 'V13'] %}
+// {{stand}} / {{stand}}1
+STYLE:SOLID
+{{ data.eddk_layout['Marking_Line'] | feat_where('designator', stand+'_a') | render_line -}}
+{{ data.eddk_layout['Marking_Poly'] | feat_where('designator', stand) | render_grp -}}
+STYLE:TLANE_DOT
+{{ data.eddk_layout['Marking_Line'] | feat_where('designator', stand+'_b') | render_polyline -}}
+{{ data.eddk_layout['Marking_Line'] | feat_where('designator', stand+'1') | render_polyline }}
+{% endfor %}
+
+// V14
+STYLE:SOLID
+{{ data.eddk_layout['Marking_Line'] | feat_where('designator', 'V14_a') | render_line -}}
+{{ data.eddk_layout['Marking_Poly'] | feat_where('designator', 'V14') | render_grp -}}
+STYLE:TLANE_DOT
+{{ data.eddk_layout['Marking_Line'] | feat_where('designator', 'V14_b') | render_polyline }}
+
+// V20
+STYLE:SOLID
+{{ data.eddk_layout['Marking_Line'] | feat_where('designator', 'V20') | render_line }}
+
+{% for stand in ['V21', 'V22', 'V23'] %}
+// {{stand}} / {{stand}}1
+STYLE:SOLID
+{{ data.eddk_layout['Marking_Line'] | feat_where('designator', stand) | render_line -}}
+{{ data.eddk_layout['Marking_Poly'] | feat_where('designator', stand+'1') | render_grp -}}
+STYLE:TLANE_DOT
+{{ data.eddk_layout['Marking_Line'] | feat_where('designator', stand+'1_a') | render_polyline -}}
+{{ data.eddk_layout['Marking_Line'] | feat_where('designator', stand+'1_b') | render_polyline }}
+{% endfor %}
+
+STYLE:SOLID
+
+{% for stand in ['V30', 'V31', 'V32', 'V33'] %}
+{{ data.eddk_layout['Marking_Line'] | feat_where('designator', stand) | render_line(stand) }}
+{% endfor %}
+
+// V35
+STYLE:TLANE_DASH
+{{ data.eddk_layout['Marking_Line'] | feat_where('designator', 'V35') | render_line }}
+
+STYLE:SOLID
+
+{% for stand in ['V40', 'V41', 'V42', 'V43', 'V44'] %}
+{{ data.eddk_layout['Marking_Line'] | feat_where('designator', stand) | render_line(stand) }}
+{% endfor %}
+
+// V45
+STYLE:TLANE_DASH
+{{ data.eddk_layout['Marking_Line'] | feat_where('designator', 'V45') | render_line }}
+
+STYLE:SOLID
+
+{% for stand in ['V50', 'V51', 'V52', 'V53', 'V54'] %}
+{{ data.eddk_layout['Marking_Line'] | feat_where('designator', stand) | render_line(stand) }}
+{% endfor %}
+
+// V55
+STYLE:TLANE_DASH
+{{ data.eddk_layout['Marking_Line'] | feat_where('designator', 'V55') | render_line }}
+
+STYLE:SOLID
+
+{% for stand in ['V56', 'V59'] %}
+{{ data.eddk_layout['Marking_Line'] | feat_where('designator', stand) | render_line(stand) }}
+{% endfor %}
+
+{%- set LSA = [
+    'GL_APV_[LSAA]_22',
+    'GL_APV_[LSAB]_22',
+    'GL_APV_[LSAC]_22',
+    'GL_APV_[LSAD]_21',
+    'GL_APV_[LSAE]_21',
+    'GL_APV_[LSAE]_22',
+    'GL_APV_[LSAE]_23',
+    'GL_APV_[LSAE]_24',
+    'GL_TWYT_31',
+    'GL_TWYT_32',
 ] %}
-{{- data.eddk_aixm['GuidanceLine'][uuid] | geom_simplify(tolerance) | render_line(uuid) }}
+
+// LSA (Laermschutzanlage)
+{{ data.eddk_aixm['GuidanceLine'] | feat_where('designator', *LSA)
+    | feat_join | feat_simplify(tolerance) | render_line
+}}
+
+// - - - - - - - - - - - - - - - Apron W - - - - - - - - - - - - - - 
+
+{% for stand in ['W10', 'W12', 'W14', 'W16', 'W18', 'W20', 'W22', 'W24', 'W26', 'W28', 'W30', 'W32', 'W34'] %}
+{{ leadin_grouped[stand] | feat_join | feat_simplify(tolerance) | render_line(stand) }}
 {% endfor %}
 
-// V-Stands
-{% for desig in
-[
-    'V10',
-    'V11',
-    'V12',
-    'V13',
-    'V14',
-] %}
-{{- data.eddk_kml['layout']['markings']['leadin_solid'][desig] | render_line(desig) }}
+// - - - - - - - - - - - - - - Bundeswehr - - - - - - - - - - - - - - 
+
+{% for stand in range(1, 8) %}
+{{ data.eddk_layout['Marking_Line'] | feat_where('designator', 'BW'+stand|string) | render_line('BW'+stand|string) }}
 {% endfor %}
 
-// Bundeswehr-Stands
-{% for desig in
-[
-    'BW1',
-    'BW2',
-    'BW3',
-    'BW4',
-    'BW5',
-    'BW6',
-    'BW7',
-] %}
-{{- data.eddk_kml['layout']['markings']['leadin_solid'][desig] | render_line(desig) }}
-{% endfor %}
+// - - - - - - - - - - - Apron V (Orange Lanes) - - - - - - - - - - -
 
-// Dash Leadin Lines
-{% for _, feat in data.eddk_kml['layout']['markings']['leadin_dash'].items() %}
-{{- feat | render_line }}
-{% endfor %}
-
-// Taxi-Out Arrows
-{% for _, feat in data.eddk_kml['layout']['markings']['arrows'].items() %}
-{{- feat | render_area('OTHER:REGION') }}
-{% endfor %}
-
-// V-Stands Orange
 COLOR:LAYOUT_TAXILINE_ORANGE
-{% for uuid in
-[
-    '6c69628d-7545-2c22-e054-020820e7ddd6',
-    '6c69628d-7554-2c22-e054-020820e7ddd6',
-    '6c69628d-755c-2c22-e054-020820e7ddd6',
-    '6c69628d-7567-2c22-e054-020820e7ddd6',
-    '6c69628d-7568-2c22-e054-020820e7ddd6',
-    '6c69628d-7569-2c22-e054-020820e7ddd6',
-    '6c69628d-757e-2c22-e054-020820e7ddd6',
-    '6c69628d-757f-2c22-e054-020820e7ddd6',
-    '6c69628d-7584-2c22-e054-020820e7ddd6',
-    '6c69628d-7586-2c22-e054-020820e7ddd6',
-    '6c69628d-7587-2c22-e054-020820e7ddd6',
-    '6c69628d-7588-2c22-e054-020820e7ddd6',
-    '6c69628d-7589-2c22-e054-020820e7ddd6',
-    '6c69628d-758d-2c22-e054-020820e7ddd6',
-    '6c69628d-7590-2c22-e054-020820e7ddd6',
-    '6c69628d-7591-2c22-e054-020820e7ddd6',
-    '6c69628d-7592-2c22-e054-020820e7ddd6',
-    '6c69628d-7593-2c22-e054-020820e7ddd6',
-    '6c69628d-7594-2c22-e054-020820e7ddd6',
-    '6c69628d-7595-2c22-e054-020820e7ddd6',
-    '6c69628d-7596-2c22-e054-020820e7ddd6',
-    '6c69628d-7597-2c22-e054-020820e7ddd6',
-    '6c69628d-761f-2c22-e054-020820e7ddd6',
-    '6c69628d-7620-2c22-e054-020820e7ddd6',
-] %}
-{{- data.eddk_aixm['GuidanceLine'][uuid] | geom_simplify(tolerance) | render_line(uuid) }}
+{% for stand in ['V310', 'V320', 'V330', 'V410', 'V430', 'V440', 'V510', 'V530', 'V550'] %}
+{{ data.eddk_layout['Marking_Line'] | feat_where('designator', stand) | render_line(stand) }}
 {% endfor %}
 
-// V-Stands Declutter
+// - - - - - - - - - - - - Apron V (Declutter) - - - - - - - - - - - 
+
 COLOR:LAYOUT_TAXILINE_YELLOW
 ZOOM:1200
-{% for uuid in
-[
-    '6c69628d-7575-2c22-e054-020820e7ddd6',
-    '6c69628d-7576-2c22-e054-020820e7ddd6',
-    '6c69628d-7577-2c22-e054-020820e7ddd6',
-    '6c69628d-757a-2c22-e054-020820e7ddd6',
-    '6c69628d-757b-2c22-e054-020820e7ddd6',
-    '6c69628d-757c-2c22-e054-020820e7ddd6',
-    '6c69628d-757d-2c22-e054-020820e7ddd6',
-    '6c69628d-7622-2c22-e054-020820e7ddd6',
-    '6c69628d-7623-2c22-e054-020820e7ddd6',
-] %}
-{{- data.eddk_aixm['GuidanceLine'][uuid] | geom_simplify(tolerance) | render_line(uuid) }}
+{% for stand in ['V401', 'V411', 'V421'] %}
+{{ data.eddk_layout['Marking_Line'] | feat_where('designator', stand) | render_line(stand) }}
 {% endfor %}

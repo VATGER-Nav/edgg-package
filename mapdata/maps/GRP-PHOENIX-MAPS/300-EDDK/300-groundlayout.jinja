@@ -21,7 +21,7 @@ FOLDER:Airport Layout
 ACTIVE:1
 COLOR:LAYOUT_TAXIWAY
 {% for _, feat in data.eddk_kml['layout']['roads'].items() %}
-{{- feat | geom_simplify(tolerance) | render_line }}
+{{- feat | feat_simplify(tolerance) | render_line }}
 {% endfor %}
 
 

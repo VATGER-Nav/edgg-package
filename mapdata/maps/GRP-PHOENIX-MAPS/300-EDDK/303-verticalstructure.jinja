@@ -1,0 +1,27 @@
+// ===========================< Buildings >==========================
+
+{%- set tolerance = 0.000005 %}
+
+MAP:Buildings
+AIRPORT:EDDK
+FOLDER:Airport Layout
+ACTIVE:1
+COLOR:LAYOUT_BUILDING
+{% for feat in data.eddk_aixm['VerticalStructure']
+    | feat_exclude('type', 'SIGN', 'STACK')
+    if feat.geometry.geom_type == 'Polygon'
+%}
+// {{feat.id}} / {{feat.properties.name | default('')}}
+{{ feat | feat_simplify(tolerance) | render_area('OTHER:REGION') }}
+{% endfor %}
+
+// ============================< Fence >=============================
+
+MAP:Fence
+AIRPORT:EDDK
+FOLDER:Airport Layout
+ACTIVE:1
+COLOR:LAYOUT_BUILDING
+{% for _, feat in data.eddk_kml['layout']['fence'].items() %}
+{{- feat | render_line }}
+{% endfor %}
