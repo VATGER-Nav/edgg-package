@@ -84,7 +84,7 @@ source = "kml/topsky.kml"
 [data.topsky_gpkg]
 type = "gpkg"
 source = "gis/topsky.gpkg"
-layers = ["VisualReportingPoint"]
+id_property = "designator"
 
 [data.airspace]
 type = "sectors"

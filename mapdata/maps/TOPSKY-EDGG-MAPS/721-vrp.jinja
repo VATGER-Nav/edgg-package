@@ -11,23 +11,25 @@
 MAP:VRPs
 FOLDER:VFR
 COLOR:Active_Map_Type_1
-{%- for _, vrp in vrp_table.items() if vrp.properties['type'] == 'CIV' %}
-{%- if vrp.properties["text_align"] == 'RB' %}
-SYMBOL/RB:{{vrp.properties['symb']}}:{{vrp.properties['desig']}}:{{vrp.properties['name']}}:-5:0
-{%- else %}
-SYMBOL/LB:{{vrp.properties['symb']}}:{{vrp.properties['desig']}}:{{vrp.properties['name']}}:5:0
-{%- endif%}
+{%- for vrp in vrp_table | feat_where('type', 'CIV') %}
+{%- set textalign = vrp.properties['textalign'] %}
+SYMBOL/{{ textalign }}:
+    {{- vrp.properties['symbol'] }}:
+    {{- vrp.properties['designator'] }}:
+    {{- vrp.properties['text'] }}:
+    {{- '-5:0' if textalign == 'RB' else '5:0' }}
 {%- endfor %}
 
 MAP:MIL VRPs
 FOLDER:VFR
 COLOR:Active_Map_Type_1
-{%- for _, vrp in vrp_table.items() if vrp.properties['type'] == 'MIL' %}
-{%- if vrp.properties["text_align"] == 'RB' %}
-SYMBOL/RB:{{vrp.properties['symb']}}:{{vrp.properties['desig']}}:{{vrp.properties['name']}}:-5:0
-{%- else %}
-SYMBOL/LB:{{vrp.properties['symb']}}:{{vrp.properties['desig']}}:{{vrp.properties['name']}}:5:0
-{%- endif%}
+{%- for vrp in vrp_table | feat_where('type', 'MIL') %}
+{%- set textalign = vrp.properties['textalign'] %}
+SYMBOL/{{ textalign }}:
+    {{- vrp.properties['symbol'] }}:
+    {{- vrp.properties['designator'] }}:
+    {{- vrp.properties['text'] }}:
+    {{- '-5:0' if textalign == 'RB' else '5:0' }}
 {%- endfor %}
 
 MAP:Hospitals

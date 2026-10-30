@@ -46,20 +46,23 @@ STYLE:SOLID:1
     sector_and(EDMM['EDMMFRK']['000-135'], EDGG['KTG4']['085-135']),
 
     LSAS['LSASZN']['000-125'],
+    LSAS['LSASZN']['115-125'],
+    LSAS['LSASZN']['145-245'],
     sector_and(LSAS['LSASZN']['125-245'], LSAS['LSASZW']['125-245']),
     sector_and(LSAS['LSASZN']['125-245'], LSAS['LSASZE']['125-245']),
     sector_and(EDMM['EDMMFUE']['195-245'], LSAS['LSASZE']['125-245']),
     sector_and(EXT['LSAS']['LSZH-APE']['000-125'], LSAS['ARFA']['000-105']),
     
-    sector_and(LFEE['BC']['115-145'], EXT['LFEE']['SU1-2']['115-195']),
-    sector_and(LFEE['BC']['115-145'], LFEE['LFEE_SU3']['115-155']),
-    LFEE['BALE_DELEG.LANGEN_NORD']['000-145'],
-    sector_and(LFEE['BALE_TMA_01']['000-145'], LSAS['LSASZW']['115-125']),
-    sector_and(LFEE['BALE_TMA_03']['000-145'], LSAS['LSASZW']['115-125']),
-    sector_sub(LFEE['BALE_DELEG.LANG S-E.20']['000-115'], LSAS['LSASZW']['115-125']),
-    sector_and(LFEE['BALE_DELEG.LANG S-E.20']['000-115'], EXT['LSAS']['LSZH-APW']['000-125']),
-    sector_and(LFEE['BALE_SIV_1.2']['000-105'], EXT['LSAS']['LSZH-APW']['000-125']),
-    sector_and(EDGG['PFA1']['000-245'], EXT['LFEE']['SU1-2']['115-195']),
+    LFEE['STRASBOURG RW1']['075-115'],
+    LFEE['STRASBOURG RW2']['050-115'],
+    LFEE['STRASBOURG RE3']['000-115'],
+    sector_and(LFEE['BALE BC1']['115-145'], LFEE['STRASBOURG SU1']['115-195']),
+    sector_and(LFEE['BALE BC1']['115-145'], LFEE['STRASBOURG SU3']['115-155']),
+    sector_and(LFEE['BALE BC1']['115-145'], LSAS['LSASZW']['115-125']),
+    sector_and(LFEE['BALE BA3']['020-145'], LSAS['LSASZW']['115-125']),
+    sector_and(LFEE['BALE BA1']['020-115'], EXT['LSAS']['LSZH-APW']['000-125']),
+    sector_and(EDGG['PFA1']['000-245'], LFEE['STRASBOURG SU1']['115-195']),
+    sector_and(EDGG['PFA1']['000-245'], LFEE['STRASBOURG SU2']['075-195']),
 ) }}
 // EDMMFRK 000-135
 LINE:N049.10.00.000:E011.58.00.000:N049.08.17.000:E011.07.57.000
