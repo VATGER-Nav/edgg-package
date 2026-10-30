@@ -16,20 +16,22 @@ MAP:VRPs:A
 FOLDER:Fixes
 COLOR:APPWINDOW_STANDARD
 ACTIVE:1
-{%- for _, vrp in vrp_table.items() if vrp.properties['type'] == 'CIV' %}
-SYMBOL:{{vrp.properties['symb']}}:{{vrp.properties['desig']}}
+{%- for vrp in vrp_table | feat_where('type', 'CIV') %}
+{%- set textalign = vrp.properties['textalign'] %}
+SYMBOL:{{ vrp.properties['symbol'] }}:{{ vrp.properties['designator'] }}
 {%- endfor %}
 
 
 MAP:VRPs w/ L:A
 FOLDER:Fixes
 COLOR:APPWINDOW_STANDARD
-{%- for _, vrp in vrp_table.items() if vrp.properties['type'] == 'CIV' %}
-{%- if vrp.properties["text_align"] == 'RB' %}
-SYMBOL/RB:{{vrp.properties['symb']}}:{{vrp.properties['desig']}}:{{vrp.properties['name']}}:-5:0
-{%- else %}
-SYMBOL/LB:{{vrp.properties['symb']}}:{{vrp.properties['desig']}}:{{vrp.properties['name']}}:5:0
-{%- endif%}
+{%- for vrp in vrp_table | feat_where('type', 'CIV') %}
+{%- set textalign = vrp.properties['textalign'] %}
+SYMBOL/{{ textalign }}:
+    {{- vrp.properties['symbol'] }}:
+    {{- vrp.properties['designator'] }}:
+    {{- vrp.properties['text'] }}:
+    {{- '-5:0' if textalign == 'RB' else '5:0' }}
 {%- endfor %}
 
 
@@ -37,18 +39,20 @@ MAP:MIL VRPs:A
 FOLDER:Fixes
 COLOR:APPWINDOW_STANDARD
 ACTIVE:1
-{%- for _, vrp in vrp_table.items() if vrp.properties['type'] == 'MIL' %}
-SYMBOL:{{vrp.properties['symb']}}:{{vrp.properties['desig']}}
+{%- for vrp in vrp_table | feat_where('type', 'MIL') %}
+{%- set textalign = vrp.properties['textalign'] %}
+SYMBOL:{{ vrp.properties['symbol'] }}:{{ vrp.properties['designator'] }}
 {%- endfor %}
 
 
 MAP:MIL VRPs w/ L:A
 FOLDER:Fixes
 COLOR:APPWINDOW_STANDARD
-{%- for _, vrp in vrp_table.items() if vrp.properties['type'] == 'MIL' %}
-{%- if vrp.properties["text_align"] == 'RB' %}
-SYMBOL/RB:{{vrp.properties['symb']}}:{{vrp.properties['desig']}}:{{vrp.properties['name']}}:-5:0
-{%- else %}
-SYMBOL/LB:{{vrp.properties['symb']}}:{{vrp.properties['desig']}}:{{vrp.properties['name']}}:5:0
-{%- endif%}
+{%- for vrp in vrp_table | feat_where('type', 'MIL') %}
+{%- set textalign = vrp.properties['textalign'] %}
+SYMBOL/{{ textalign }}:
+    {{- vrp.properties['symbol'] }}:
+    {{- vrp.properties['designator'] }}:
+    {{- vrp.properties['text'] }}:
+    {{- '-5:0' if textalign == 'RB' else '5:0' }}
 {%- endfor %}

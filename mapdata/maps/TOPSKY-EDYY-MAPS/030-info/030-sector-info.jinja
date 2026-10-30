@@ -13,7 +13,6 @@
 {%- set EDWW = data.sectors['lines']['EDWW'] %}
 {%- set EHAA = data.sectors['lines']['EHAA'] %}
 {%- set EBBU = data.sectors['lines']['EBBU'] %}
-{%- set LFEE = data.sectors['lines']['LFEE'] %}
 {%- set EXT = data.sectors_ext['lines'] %}
 {%- set sectors = {
     "DLT": { "names": [ "DLT" ], "lvls": [ "245", "660" ] },
@@ -64,7 +63,8 @@
     "CEL_HOL": { "names": [ "CL", "HL", "HH" ], "lvls": [ "245", "315", "365", "660" ] },
     "MNS_HOL": { "names": [ "ML", "HL", "HH" ], "lvls": [ "245", "315", "365", "660" ] },
     "MNS_DLT": { "names": [ "ML", "DLT" ], "lvls": [ "245", "315", "660" ] },
-    "MNS_PADH": { "names": [ "ML", "MH" ], "lvls": [ "295", "355", "660" ] },
+    "MNS_PADH": { "names": [ "ML", "MH" ], "lvls": [ "265", "355", "660" ] },
+    "RHR_PADH": { "names": [ "RL", "RH" ], "lvls": [ "295", "355", "660" ] },
     "RHR_DLT": { "names": [ "RL", "DLT" ], "lvls": [ "245", "315", "660" ] },
     "OLN_NOR": { "names": [ "OLN" ], "lvls": [ "255", "660" ] },
     "SOL_255": { "names": [ "SOL" ], "lvls": [ "255", "660" ] },
@@ -79,7 +79,7 @@
     "EKDK_C_I": { "names": [ "EKDK-I", "EKDK-C", "EKDK-UC" ], "lvls": [ "195", "285", "365", "660" ] },
 } %}
 
-{%- set sector_structure = data.topsky['common']['sectors']['structure']['EDYY'] %}
+{%- set sector_structure = data.topsky_gpkg['EDYY_SectorStructure'] %}
 
 MAP:Sector Info
 FOLDER:Airspace Info
@@ -103,7 +103,7 @@ STYLE:DOT:2
 {{ render_sectorlines(
     EDGG['YYMAB']['245-315'],
 	EDGG['YYML1']['245-355'],
-	EDGG['YYML2']['295-315'],
+	EDGG['YYML2']['265-355'],
 	EDGG['YYRAB']['245-315'],
 	EDGG['YYRL1']['245-355'],
 	EDGG['YYRL2']['295-355'],
@@ -154,39 +154,39 @@ STYLE:DOT:2
 {% for desig, sector in sectors.items() if sector['names']|length == 1 %}
 
 // {{ desig }}
-{{ sector_structure[desig] | to_text(sector['names'][0] + '  :0:9') }}
-{{ sector_structure[desig] | to_text(sector['lvls'][1] + ':23:0') }}
-{{ sector_structure[desig] | to_text('......:24:5') }}
-{{ sector_structure[desig] | to_text(sector['lvls'][0] + ':23:19') }}
+{{ sector_structure[desig] | render_text(sector['names'][0] + '  ', offset=(0,9)) -}}
+{{ sector_structure[desig] | render_text(sector['lvls'][1], offset=(23,0)) -}}
+{{ sector_structure[desig] | render_text('......', offset=(24,5)) -}}
+{{ sector_structure[desig] | render_text(sector['lvls'][0], offset=(23,19)) }}
 {%- endfor %}
 
 {#- 2 Rows #}
 {% for desig, sector in sectors.items() if sector['names']|length == 2 %}
 
 // {{ desig }}
-{{ sector_structure[desig] | to_text(sector['names'][1] + '  :0:0') }}
-{{ sector_structure[desig] | to_text(sector['names'][0] + '  :0:19') }}
-{{ sector_structure[desig] | to_text(sector['lvls'][2] + ':23:-10') }}
-{{ sector_structure[desig] | to_text('......:24:-5') }}
-{{ sector_structure[desig] | to_text(sector['lvls'][1] + ':23:9') }}
-{{ sector_structure[desig] | to_text('......:24:14') }}
-{{ sector_structure[desig] | to_text(sector['lvls'][0] + ':23:28') }}
+{{ sector_structure[desig] | render_text(sector['names'][1] + '  ', offset=(0,0)) -}}
+{{ sector_structure[desig] | render_text(sector['names'][0] + '  ', offset=(0,19)) -}}
+{{ sector_structure[desig] | render_text(sector['lvls'][2], offset=(23,-10)) -}}
+{{ sector_structure[desig] | render_text('......', offset=(24,-5)) -}}
+{{ sector_structure[desig] | render_text(sector['lvls'][1], offset=(23,9)) -}}
+{{ sector_structure[desig] | render_text('......', offset=(24,14)) -}}
+{{ sector_structure[desig] | render_text(sector['lvls'][0], offset=(23,28)) }}
 {%- endfor %}
 
 {#- 3 Rows #}
 {% for desig, sector in sectors.items() if sector['names']|length == 3 %}
 
 // {{ desig }}
-{{ sector_structure[desig] | to_text(sector['names'][2] + '  :0:-10') }}
-{{ sector_structure[desig] | to_text(sector['names'][1] + '  :0:9') }}
-{{ sector_structure[desig] | to_text(sector['names'][0] + '  :0:28') }}
-{{ sector_structure[desig] | to_text(sector['lvls'][3] + ':23:-20') }}
-{{ sector_structure[desig] | to_text('......:24:-15') }}
-{{ sector_structure[desig] | to_text(sector['lvls'][2] + ':23:-1') }}
-{{ sector_structure[desig] | to_text('......:24:4') }}
-{{ sector_structure[desig] | to_text(sector['lvls'][1] + ':23:18') }}
-{{ sector_structure[desig] | to_text('......:24:23') }}
-{{ sector_structure[desig] | to_text(sector['lvls'][0] + ':23:37') }}
+{{ sector_structure[desig] | render_text(sector['names'][2] + '  ', offset=(0,-10)) -}}
+{{ sector_structure[desig] | render_text(sector['names'][1] + '  ', offset=(0,9)) -}}
+{{ sector_structure[desig] | render_text(sector['names'][0] + '  ', offset=(0,28)) -}}
+{{ sector_structure[desig] | render_text(sector['lvls'][3], offset=(23,-20)) -}}
+{{ sector_structure[desig] | render_text('......', offset=(24,-15)) -}}
+{{ sector_structure[desig] | render_text(sector['lvls'][2], offset=(23,-1)) -}}
+{{ sector_structure[desig] | render_text('......', offset=(24,4)) -}}
+{{ sector_structure[desig] | render_text(sector['lvls'][1], offset=(23,18)) -}}
+{{ sector_structure[desig] | render_text('......', offset=(24,23)) -}}
+{{ sector_structure[desig] | render_text(sector['lvls'][0], offset=(23,37)) }}
 {%- endfor %}
 
 FONTSIZE:=:11
@@ -194,37 +194,37 @@ FONTSIZE:=:11
 {% for desig, sector in sectors_s.items() if sector['names']|length == 1 %}
 
 // {{ desig }}
-{{ sector_structure[desig] | to_text(sector['names'][0] + '  :0:8') }}
-{{ sector_structure[desig] | to_text(sector['lvls'][1] + ':20:1') }}
-{{ sector_structure[desig] | to_text('.......:20:4') }}
-{{ sector_structure[desig] | to_text(sector['lvls'][0] + ':20:14') }}
+{{ sector_structure[desig] | render_text(sector['names'][0] + '  ', offset=(0,8)) -}}
+{{ sector_structure[desig] | render_text(sector['lvls'][1], offset=(20,1)) -}}
+{{ sector_structure[desig] | render_text('.......', offset=(20,4)) -}}
+{{ sector_structure[desig] | render_text(sector['lvls'][0], offset=(20,14)) }}
 {%- endfor %}
 
 {#- 2 Rows #}
 {% for desig, sector in sectors_s.items() if sector['names']|length == 2 %}
 
 // {{ desig }}
-{{ sector_structure[desig] | to_text(sector['names'][1] + '  :0:1') }}
-{{ sector_structure[desig] | to_text(sector['names'][0] + '  :0:14') }}
-{{ sector_structure[desig] | to_text(sector['lvls'][2] + ':20:-5') }}
-{{ sector_structure[desig] | to_text('.......:20:-2') }}
-{{ sector_structure[desig] | to_text(sector['lvls'][1] + ':20:8') }}
-{{ sector_structure[desig] | to_text('.......:20:11') }}
-{{ sector_structure[desig] | to_text(sector['lvls'][0] + ':20:21') }}
+{{ sector_structure[desig] | render_text(sector['names'][1] + '  ', offset=(0,1)) -}}
+{{ sector_structure[desig] | render_text(sector['names'][0] + '  ', offset=(0,14)) -}}
+{{ sector_structure[desig] | render_text(sector['lvls'][2], offset=(20,-5)) -}}
+{{ sector_structure[desig] | render_text('.......', offset=(20,-2)) -}}
+{{ sector_structure[desig] | render_text(sector['lvls'][1], offset=(20,8)) -}}
+{{ sector_structure[desig] | render_text('.......', offset=(20,11)) -}}
+{{ sector_structure[desig] | render_text(sector['lvls'][0], offset=(20,21)) }}
 {%- endfor %}
 
 {#- 3 Rows #}
 {% for desig, sector in sectors_s.items() if sector['names']|length == 3 %}
 
 // {{ desig }}
-{{ sector_structure[desig] | to_text(sector['names'][2] + '  :0:-5') }}
-{{ sector_structure[desig] | to_text(sector['names'][1] + '  :0:8') }}
-{{ sector_structure[desig] | to_text(sector['names'][0] + '  :0:21') }}
-{{ sector_structure[desig] | to_text(sector['lvls'][3] + ':20:-12') }}
-{{ sector_structure[desig] | to_text('.......:20:-9') }}
-{{ sector_structure[desig] | to_text(sector['lvls'][2] + ':20:1') }}
-{{ sector_structure[desig] | to_text('.......:20:4') }}
-{{ sector_structure[desig] | to_text(sector['lvls'][1] + ':20:14') }}
-{{ sector_structure[desig] | to_text('.......:20:17') }}
-{{ sector_structure[desig] | to_text(sector['lvls'][0] + ':20:27') }}
+{{ sector_structure[desig] | render_text(sector['names'][2] + '  ', offset=(0,-5)) -}}
+{{ sector_structure[desig] | render_text(sector['names'][1] + '  ', offset=(0,8)) -}}
+{{ sector_structure[desig] | render_text(sector['names'][0] + '  ', offset=(0,21)) -}}
+{{ sector_structure[desig] | render_text(sector['lvls'][3], offset=(20,-12)) -}}
+{{ sector_structure[desig] | render_text('.......', offset=(20,-9)) -}}
+{{ sector_structure[desig] | render_text(sector['lvls'][2], offset=(20,1)) -}}
+{{ sector_structure[desig] | render_text('.......', offset=(20,4)) -}}
+{{ sector_structure[desig] | render_text(sector['lvls'][1], offset=(20,14)) -}}
+{{ sector_structure[desig] | render_text('.......', offset=(20,17)) -}}
+{{ sector_structure[desig] | render_text(sector['lvls'][0], offset=(20,27)) }}
 {%- endfor %}
