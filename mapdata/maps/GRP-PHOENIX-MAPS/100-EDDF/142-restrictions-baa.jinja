@@ -5,16 +5,27 @@ AIRPORT:EDDF
 FOLDER:Restrictions
 LAYER:7
 ZOOM:300
+STYLE:SOLID:2
 COLOR:RESTRICTIONS_AB
 {{ data.eddf_info['BAALabel'] | feat_where('restriction', 'B') | render_symbol('STAND') }}
+{{ data.eddf_info['BAA_Poly'] | feat_where('restriction', 'AB') | render_area('OTHER:REGION') }}
+{{ data.eddf_info['BAA_Line'] | feat_where('type', 'DIRECTIONAB') | render_line }}
 COLOR:RESTRICTIONS_C
 {{ data.eddf_info['BAALabel'] | feat_where('restriction', 'C') | render_symbol('STAND') }}
+{{ data.eddf_info['BAA_Poly'] | feat_where('restriction', 'C') | render_area('OTHER:REGION') }}
+{{ data.eddf_info['BAA_Line'] | feat_where('type', 'DIRECTIONC') | render_line }}
 COLOR:RESTRICTIONS_D
 {{ data.eddf_info['BAALabel'] | feat_where('restriction', 'D') | render_symbol('STAND') }}
+{{ data.eddf_info['BAA_Poly'] | feat_where('restriction', 'D') | render_area('OTHER:REGION') }}
+{{ data.eddf_info['BAA_Line'] | feat_where('type', 'DIRECTIOND') | render_line }}
 COLOR:RESTRICTIONS_E
 {{ data.eddf_info['BAALabel'] | feat_where('restriction', 'E') | render_symbol('STAND') }}
+{{ data.eddf_info['BAA_Poly'] | feat_where('restriction', 'E') | render_area('OTHER:REGION') }}
+{{ data.eddf_info['BAA_Line'] | feat_where('type', 'DIRECTIONE') | render_line }}
 COLOR:RESTRICTIONS_F
 {{ data.eddf_info['BAALabel'] | feat_where('restriction', 'B748') | render_symbol('STAND') }}
+{{ data.eddf_info['BAA_Poly'] | feat_where('restriction', 'B748') | render_area('OTHER:REGION') }}
+{{ data.eddf_info['BAA_Line'] | feat_where('type', 'DIRECTIONE+') | render_line }}
 
 COLOR:WHITE
 {{ data.eddf_info['BAALabel'] | feat_where('restriction', 'B', 'E', 'B748') | render_text(prop='text', offset=(1,0)) }}
