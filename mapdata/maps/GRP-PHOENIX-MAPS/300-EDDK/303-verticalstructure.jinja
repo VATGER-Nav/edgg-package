@@ -22,6 +22,4 @@ AIRPORT:EDDK
 FOLDER:Airport Layout
 ACTIVE:1
 COLOR:LAYOUT_BUILDING
-{% for _, feat in data.eddk_kml['layout']['fence'].items() %}
-{{- feat | render_line }}
-{% endfor %}
+{{ data.eddk_layout['VerticalStructure_Line'] | render_polyline }}

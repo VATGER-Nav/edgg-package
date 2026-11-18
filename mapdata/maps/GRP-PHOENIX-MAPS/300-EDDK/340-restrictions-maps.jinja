@@ -1,416 +1,193 @@
-// ------------------------ Restriction Maps ------------------------
+// =======================< Restriction Maps >=======================
+
+{%- from "_macros.jinja" import render_restriction %}
 
 MAP:Restrictions
 AIRPORT:EDDK
 FOLDER:Restrictions
+ZOOM:400
 LAYER:2
 
-// Restrictions
-ZOOM:400
+// - - - - - - - - - - - Taxiway Restrictions - - - - - - - - - - - -
 
 // K1
 COLOR:RESTRICTIONS_AB
 STYLE:SOLID:4
-{{ data.eddk_kml['layout']['restrictions']['line']['K1'] | render_line }}
+{{ data.eddk_info['Restriction_Line']['K1'] | render_line }}
 
 // K2
 COLOR:RESTRICTIONS_C
 STYLE:SOLID:4
-{{ data.eddk_kml['layout']['restrictions']['line']['K2_a'] | render_line }}
-{{ data.eddk_kml['layout']['restrictions']['line']['K2_b'] | render_line }}
+{{ data.eddk_info['Restriction_Line']['K2_a'] | render_line -}}
+{{ data.eddk_info['Restriction_Line']['K2_b'] | render_line }}
 
 // K3
 COLOR:RESTRICTIONS_C
 STYLE:SOLID:4
-{{ data.eddk_kml['layout']['restrictions']['line']['K3_a'] | render_line }}
-{{ data.eddk_kml['layout']['restrictions']['line']['K3_b'] | render_line }}
+{{ data.eddk_info['Restriction_Line']['K3_a'] | render_line -}}
+{{ data.eddk_info['Restriction_Line']['K3_b'] | render_line }}
 
 // C
 COLOR:RESTRICTIONS_C
 STYLE:SOLID:4
-{{ data.eddk_kml['layout']['restrictions']['line']['C'] | render_line }}
+{{ data.eddk_info['Restriction_Line']['C'] | render_line }}
 
 // S
 COLOR:RESTRICTIONS_C
 STYLE:SOLID:4
-{{ data.eddk_kml['layout']['restrictions']['line']['S'] | render_line }}
+{{ data.eddk_info['Restriction_Line']['S'] | render_line }}
 
 // L
 COLOR:RESTRICTIONS_C
 STYLE:SOLID:4
-{{ data.eddk_kml['layout']['restrictions']['line']['L'] | render_line }}
+{{ data.eddk_info['Restriction_Line']['L'] | render_line }}
 
 // N
 COLOR:RESTRICTIONS_C
 STYLE:SOLID:4
-{{ data.eddk_kml['layout']['restrictions']['line']['N'] | render_line }}
+{{ data.eddk_info['Restriction_Line']['N'] | render_line }}
 
 // T2
 COLOR:RESTRICTIONS_C
 STYLE:SOLID:4
-{{ data.eddk_kml['layout']['restrictions']['line']['T2_a'] | render_line }}
-{{ data.eddk_kml['layout']['restrictions']['line']['T2_b'] | render_line }}
+{{ data.eddk_info['Restriction_Line']['T2_a'] | render_line -}}
+{{ data.eddk_info['Restriction_Line']['T2_b'] | render_line }}
 
 // N/M Orange/Blue Lines
 COLOR:RESTRICTIONS_C
 STYLE:SOLID:4
-{{ data.eddk_kml['layout']['restrictions']['line']['Mb_a'] | render_line }}
-{{ data.eddk_kml['layout']['restrictions']['line']['Mb_b'] | render_line }}
-{{ data.eddk_kml['layout']['restrictions']['line']['Mo_a'] | render_line }}
-{{ data.eddk_kml['layout']['restrictions']['line']['Mo_b'] | render_line }}
-{{ data.eddk_kml['layout']['restrictions']['line']['Nb_a'] | render_line }}
-{{ data.eddk_kml['layout']['restrictions']['line']['Nb_b'] | render_line }}
-{{ data.eddk_kml['layout']['restrictions']['line']['No_a'] | render_line }}
-{{ data.eddk_kml['layout']['restrictions']['line']['No_b'] | render_line }}
-{{ data.eddk_kml['layout']['restrictions']['line']['N_M_c'] | render_line }}
+{{ data.eddk_info['Restriction_Line']['Mb_a'] | render_line -}}
+{{ data.eddk_info['Restriction_Line']['Mb_b'] | render_line -}}
+{{ data.eddk_info['Restriction_Line']['Mo_a'] | render_line -}}
+{{ data.eddk_info['Restriction_Line']['Mo_b'] | render_line -}}
+{{ data.eddk_info['Restriction_Line']['Nb_a'] | render_line -}}
+{{ data.eddk_info['Restriction_Line']['Nb_b'] | render_line -}}
+{{ data.eddk_info['Restriction_Line']['No_a'] | render_line -}}
+{{ data.eddk_info['Restriction_Line']['No_b'] | render_line -}}
+{{ data.eddk_info['Restriction_Line']['N_M_c'] | render_line -}}
 TEXTALIGN:CC
-{{ data.eddk_kml['layout']['restrictions']['labels']['N_M'] | to_text('      - Max code C:0:-12') }}
+{{ data.eddk_info['RestrictionLabel']['N_M'] | render_text('      - Max code C', offset=(0,-12)) -}}
 COLOR:LAYOUT_TAXILINE_BLUE
-{{ data.eddk_kml['layout']['restrictions']['labels']['N_M'] | to_text('_____             :0:-15') }}
+{{ data.eddk_info['RestrictionLabel']['N_M'] | render_text('_____             ', offset=(0,-15)) -}}
 COLOR:LAYOUT_TAXILINE_ORANGE
-{{ data.eddk_kml['layout']['restrictions']['labels']['N_M'] | to_text('_____             :0:-18') }}
+{{ data.eddk_info['RestrictionLabel']['N_M'] | render_text('_____             ', offset=(0,-18)) }}
 
 // B (Bridge)
 COLOR:RESTRICTIONS_D
 STYLE:SOLID:4
-{{ data.eddk_kml['layout']['restrictions']['line']['B_1a'] | render_line }}
-{{ data.eddk_kml['layout']['restrictions']['line']['B_1b'] | render_line }}
-{{ data.eddk_kml['layout']['restrictions']['line']['B_1c'] | render_line }}
+{{ data.eddk_info['Restriction_Line']['B_1a'] | render_line -}}
+{{ data.eddk_info['Restriction_Line']['B_1b'] | render_line -}}
+{{ data.eddk_info['Restriction_Line']['B_1c'] | render_line -}}
 TEXTALIGN:RC
-{{ data.eddk_kml['layout']['restrictions']['labels']['B_1'] | to_text('Max code D') }}
-{{ data.eddk_kml['layout']['restrictions']['labels']['B_1'] | to_text('Max 200t:0:12') }}
+{{ data.eddk_info['RestrictionLabel']['B_1'] | render_text('Max code D') -}}
+{{ data.eddk_info['RestrictionLabel']['B_1'] | render_text('Max 200t', offset=(0,12)) }}
 
 // N/M Yellow Line
 COLOR:RESTRICTIONS_E
 STYLE:SOLID:4
-{{ data.eddk_kml['layout']['restrictions']['line']['N_M_a'] | render_line }}
-{{ data.eddk_kml['layout']['restrictions']['line']['N_M_b'] | render_line }}
+{{ data.eddk_info['Restriction_Line']['N_M_a'] | render_line -}}
+{{ data.eddk_info['Restriction_Line']['N_M_b'] | render_line -}}
 TEXTALIGN:CC
-{{ data.eddk_kml['layout']['restrictions']['labels']['N_M'] | to_text('      - Max code E') }}
+{{ data.eddk_info['RestrictionLabel']['N_M'] | render_text('      - Max code E') -}}
 COLOR:LAYOUT_TAXILINE_YELLOW
-{{ data.eddk_kml['layout']['restrictions']['labels']['N_M'] | to_text('_____             :0:-4') }}
+{{ data.eddk_info['RestrictionLabel']['N_M'] | render_text('_____             ', offset=(0,-4)) }}
 
 // B and L
 COLOR:RESTRICTIONS_E
 STYLE:SOLID:4
-{{ data.eddk_kml['layout']['restrictions']['line']['B_L_a'] | render_line }}
-{{ data.eddk_kml['layout']['restrictions']['line']['B_L_b'] | render_line }}
+{{ data.eddk_info['Restriction_Line']['B_L_a'] | render_line -}}
+{{ data.eddk_info['Restriction_Line']['B_L_b'] | render_line }}
 
 // B (Abeam Apron U and 2)
 COLOR:RESTRICTIONS_E
 STYLE:SOLID:4
-{{ data.eddk_kml['layout']['restrictions']['line']['B_2'] | render_line }}
+{{ data.eddk_info['Restriction_Line']['B_2'] | render_line }}
 
 // T and D (Abeam Aprons)
 COLOR:RESTRICTIONS_E
 STYLE:SOLID:4
-{{ data.eddk_kml['layout']['restrictions']['line']['T_D'] | render_line }}
-{{ data.eddk_kml['layout']['restrictions']['line']['T_a'] | render_line }}
-{{ data.eddk_kml['layout']['restrictions']['line']['T_b'] | render_line }}
+{{ data.eddk_info['Restriction_Line']['T_D'] | render_line -}}
+{{ data.eddk_info['Restriction_Line']['T_a'] | render_line -}}
+{{ data.eddk_info['Restriction_Line']['T_b'] | render_line }}
 
 // D
 COLOR:RESTRICTIONS_F
 STYLE:SOLID:4
-{{ data.eddk_kml['layout']['restrictions']['line']['D'] | render_line }}
+{{ data.eddk_info['Restriction_Line']['D'] | render_line -}}
 TEXTALIGN:RC
-{{ data.eddk_kml['layout']['restrictions']['labels']['D'] | to_text('Max B748') }}
+{{ data.eddk_info['RestrictionLabel']['D'] | render_text('Max B748') -}}
 
 // Apron U
 COLOR:RESTRICTIONS_C
 STYLE:SOLID:1
-{{ data.eddk_kml['layout']['restrictions']['poly']['apron_U'] | render_area('OTHER:REGION:/') }}
+{{ data.eddk_info['Restriction_Poly']['apron_U'] | render_area('OTHER:REGION:/') -}}
 TEXTALIGN:RC
-{{ data.eddk_kml['layout']['restrictions']['labels']['apron_U'] | to_text('Max code C') }}
+{{ data.eddk_info['RestrictionLabel']['apron_U'] | render_text('Max code C') }}
 
 // Apron 2
 COLOR:RESTRICTIONS_AB
 STYLE:SOLID:1
-{{ data.eddk_kml['layout']['restrictions']['poly']['apron_2'] | render_area('OTHER:REGION:/') }}
+{{ data.eddk_info['Restriction_Poly']['apron_2'] | render_area('OTHER:REGION:/') -}}
 TEXTALIGN:RC
-{{ data.eddk_kml['layout']['restrictions']['labels']['apron_2'] | to_text('Military only') }}
+{{ data.eddk_info['RestrictionLabel']['apron_2'] | render_text('Military only') }}
 
 // Apron Z
 COLOR:RESTRICTIONS_AB
 STYLE:SOLID:1
-{{ data.eddk_kml['layout']['restrictions']['poly']['apron_Z'] | render_area('OTHER:REGION:/') }}
+{{ data.eddk_info['Restriction_Poly']['apron_Z'] | render_area('OTHER:REGION:/') -}}
 TEXTALIGN:RC
-{{ data.eddk_kml['layout']['restrictions']['labels']['apron_Z'] | to_text('Military only') }}
+{{ data.eddk_info['RestrictionLabel']['apron_Z'] | render_text('Military only') }}
 
 // A1
 COLOR:RESTRICTIONS_AB
 TEXTALIGN:RC
-{{ data.eddk_kml['layout']['restrictions']['labels']['A1'] | to_text('No A346 via A1') }}
+{{ data.eddk_info['RestrictionLabel']['A1'] | render_text('No A346 via A1') }}
 
-// Restriction Stands
+// - - - - - - - - - - - - Stand Restrictions - - - - - - - - - - - -
 
 TEXTALIGN:CC
 FONTSIZE:=:9
 COLOR:RESTRICTIONS_AB
-{% for desig in
-[
-    'V10',
-    'V11',
-    'V12',
-    'V13',
-    'V14',
-    'V30',
-    'V40',
-    'V41',
-    'V42',
-    'V59',
-] %}
-{{- data.eddk_kml['layout']['restrictions']['stands'][desig] | to_symbol('STAND') }}
-{% endfor %}
-// Secondary Stands
-{% for desig in
-[
-    'V35',
-    'V45',
-    'V52',
-    'V54',
-    'V211',
-    'V221',
-    'V231',
-    'V310',
-    'V320',
-    'V330',
-    'V410',
-    'V430',
-    'V440',
-    'V510',
-    'V530',
-    'V550',
-] %}
-{{- data.eddk_kml['layout']['restrictions']['stands'][desig] | to_symbol('STAND_S') }}
+{% for feat in data.eddk_info['RestrictionStand'] | feat_where('restriction', 'B') %}
+{{- render_restriction(feat) -}}
 {% endfor %}
 COLOR:RESTRICTIONS_C
-{% for desig in
-[
-    'A10',
-    'A12',
-    'A14',
-    'A16',
-    'A18',
-    'A20',
-    'A22',
-    'A24',
-    'A26',
-    'A28',
-    'A30',
-    'A32',
-    'A34',
-    'B10',
-    'B12',
-    'B14',
-    'B16',
-    'B18',
-    'B20',
-    'B22',
-    'B24',
-    'B26',
-    'B28',
-    'B30',
-    'C01',
-    'C02',
-    'C03',
-    'C04',
-    'C05',
-    'C06',
-    'C10',
-    'C12',
-    'C14',
-    'D10',
-    'D12',
-    'D14',
-    'D16',
-    'D18',
-    'D20',
-    'D22',
-    'D24',
-    'D26',
-    'D28',
-    'D30',
-    'D32',
-    'D34',
-    'D36',
-    'D38',
-    'D40',
-    'D42',
-    'D50',
-    'D52',
-    'D54',
-    'D56',
-    'D58',
-    'D60',
-    'D62',
-    'D64',
-    'V20',
-    'V21',
-    'V22',
-    'V23',
-    'V31',
-    'V32',
-    'V33',
-    'V43',
-    'V44',
-    'V51',
-    'V53',
-    'V56',
-] %}
-{{- data.eddk_kml['layout']['restrictions']['stands'][desig] | to_symbol('STAND') }}
-{% endfor %}
-// Secondary Stands
-{% for desig in [
-    'A25',
-    'A27',
-    'A29',
-    'A31',
-    'A33',
-    'A35',
-    'V55',
-] %}
-{{- data.eddk_kml['layout']['restrictions']['stands'][desig] | to_symbol('STAND_S') }}
+{% for feat in data.eddk_info['RestrictionStand'] | feat_where('restriction', 'C') %}
+{{- render_restriction(feat) -}}
 {% endfor %}
 COLOR:RESTRICTIONS_D
-{% for desig in
-[
-    'F32',
-    'F34',
-    'W10',
-    'W12',
-    'W14',
-    'W16',
-    'W18',
-    'W20',
-    'W22',
-    'W24',
-    'W26',
-    'W28',
-    'W30',
-    'W32',
-    'W34',
-] %}
-{{- data.eddk_kml['layout']['restrictions']['stands'][desig] | to_symbol('STAND') }}
-{% endfor %}
-// Secondary Stands
-{% for desig in
-[
-    'B27',
-    'B29',
-    'D51',
-    'D53',
-    'D57',
-    'E10',
-    'E12',
-    'E14',
-    'E16',
-    'E20',
-    'E22',
-    'E24',
-    'E30',
-    'E32',
-    'E34',
-    'E36',
-    'E40',
-    'E42',
-    'E44',
-    'E46',
-    'F20',
-    'F22',
-    'F24',
-    'F26',
-] %}
-{{- data.eddk_kml['layout']['restrictions']['stands'][desig] | to_symbol('STAND_S') }}
+{% for feat in data.eddk_info['RestrictionStand'] | feat_where('restriction', 'D') %}
+{{- render_restriction(feat) -}}
 {% endfor %}
 COLOR:RESTRICTIONS_E
-{% for desig in
-[
-    'E09',
-    'E13',
-    'E15',
-    'E17',
-    'E21',
-    'E23',
-] %}
-{{- data.eddk_kml['layout']['restrictions']['stands'][desig] | to_symbol('STAND') }}
+{% for feat in data.eddk_info['RestrictionStand'] | feat_where('restriction', 'E') %}
+{{- render_restriction(feat) -}}
 {% endfor %}
-// Secondary Stands
-{% for desig in
-[
-    'A01',
-    'A03',
-    'A05',
-    'A07',
-    'A11',
-    'A17',
-    'A21',
-    'A23',
-    'B11',
-    'B17',
-    'B21',
-    'B23',
-    'C50',
-    'D11',
-    'D15',
-    'D19',
-    'D23',
-] %}
-{{- data.eddk_kml['layout']['restrictions']['stands'][desig] | to_symbol('STAND_S') }}
-{% endfor %}
-{#{% for desig in
-[
-    'A01',
-    'A03',
-    'A05',
-    'A07',
-    'A11',
-    'A17',
-    'A21',
-    'A23',
-    'B11',
-    'D23',
-] %}
-{{- data.eddk_kml['layout']['restrictions']['stands'][desig] | to_text('MAX A343:0:15') }}
-{% endfor %}#}
 COLOR:RESTRICTIONS_F
-{% for desig in
-[
-    'E31',
-    'E33',
-    'E35',
-    'E41',
-    'E43',
-    'E45',
-    'F17',
-    'F19',
-    'F21',
-    'F23',
-    'F25',
-    'F31',
-] %}
-{{- data.eddk_kml['layout']['restrictions']['stands'][desig] | to_symbol('STAND') }}
+{% for feat in data.eddk_info['RestrictionStand'] | feat_where('restriction', 'F') %}
+{{- render_restriction(feat) -}}
 {% endfor %}
 
+// - - - - - - - - - - - - - - - Reference - - - - - - - - - - - - - 
 
-// Reference
 COLOR:LAYOUT_LABEL_STAND
 FONTSIZE:=:12
 TEXTALIGN:CC
-{{ data.eddk_kml['layout']['restrictions']['labels']['reference'] | to_text('Reference  :0:-45') }}
-{{ data.eddk_kml['layout']['restrictions']['labels']['reference'] | to_text('Code B < 24m (CRJ2/C700):0:-30') }}
-{{ data.eddk_kml['layout']['restrictions']['labels']['reference'] | to_text('Code C < 36m (A321/B739):0:-15') }}
-{{ data.eddk_kml['layout']['restrictions']['labels']['reference'] | to_text('Code D < 52m (A310/B763):0:0') }}
-{{ data.eddk_kml['layout']['restrictions']['labels']['reference'] | to_text('Code E < 65m (A343/B77W):0:15') }}
-{{ data.eddk_kml['layout']['restrictions']['labels']['reference'] | to_text('Code F < 80m (A124/B748):0:30') }}
+{{ data.eddk_info['RestrictionLabel']['reference'] | render_text('Reference  ', offset=(0,0-15*3)) -}}
+{{ data.eddk_info['RestrictionLabel']['reference'] | render_text('Code B < 24m (CRJ2/C700)', offset=(0,0-15*2)) -}}
+{{ data.eddk_info['RestrictionLabel']['reference'] | render_text('Code C < 36m (A321/B739)', offset=(0,0-15*1)) -}}
+{{ data.eddk_info['RestrictionLabel']['reference'] | render_text('Code D < 52m (A310/B763)', offset=(0,0+15*0)) -}}
+{{ data.eddk_info['RestrictionLabel']['reference'] | render_text('Code E < 65m (A343/B77W)', offset=(0,0+15*1)) -}}
+{{ data.eddk_info['RestrictionLabel']['reference'] | render_text('Code F < 80m (A124/B748)', offset=(0,0+15*2)) }}
 
 FONTSIZE:=:70
 COLOR:RESTRICTIONS_AB
-{{ data.eddk_kml['layout']['restrictions']['labels']['reference'] | to_text('.:-95:-84') }}
+{{ data.eddk_info['RestrictionLabel']['reference'] | render_text('.', offset= (-95,-54-15*2)) -}}
 COLOR:RESTRICTIONS_C
-{{ data.eddk_kml['layout']['restrictions']['labels']['reference'] | to_text('.:-95:-69') }}
+{{ data.eddk_info['RestrictionLabel']['reference'] | render_text('.', offset= (-95,-54-15*1)) -}}
 COLOR:RESTRICTIONS_D
-{{ data.eddk_kml['layout']['restrictions']['labels']['reference'] | to_text('.:-95:-54') }}
+{{ data.eddk_info['RestrictionLabel']['reference'] | render_text('.', offset= (-95,-54+15*0)) -}}
 COLOR:RESTRICTIONS_E
-{{ data.eddk_kml['layout']['restrictions']['labels']['reference'] | to_text('.:-95:-39') }}
+{{ data.eddk_info['RestrictionLabel']['reference'] | render_text('.', offset= (-95,-54+15*1)) -}}
 COLOR:RESTRICTIONS_F
-{{ data.eddk_kml['layout']['restrictions']['labels']['reference'] | to_text('.:-95:-24') }}
+{{ data.eddk_info['RestrictionLabel']['reference'] | render_text('.', offset= (-95,-54+15*2)) }}

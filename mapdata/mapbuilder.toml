@@ -199,9 +199,10 @@ type = "gpkg"
 source = "gis/eddk-info.gpkg"
 id_property = "designator"
 
-[data.eddk_kml]
-type = "kml"
-source = "kml/eddk.kml"
+[data.eddk_sup]
+type = "gpkg"
+source = "gis/eddk-sup.gpkg"
+id_property = "designator"
 
 #----------------------------< EDDS >----------------------------
 

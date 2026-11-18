@@ -1,4 +1,4 @@
-// ------------------------------- AoR ------------------------------
+// ====================< Areas of Responsibility >===================
 
 MAP:EDDK_GND
 AIRPORT:EDDK
@@ -6,10 +6,10 @@ FOLDER:AoR
 LAYER:6
 COLOR:AOR_GND_A
 STYLE:DOT
-{{ data.eddk_kml['layout']['aor']['line']['DKG'] | render_line }}
+{{ data.eddk_info['AoRBoundary']['DKG'] | render_line -}}
 ZOOM:400
 FONTSIZE:=:13
-{{ data.eddk_kml['layout']['aor']['labels']['DKG'] | to_text('DKG  121.730') }}
+{{ data.eddk_info['AoRLabel']['DKG'] | render_text('DKG  121.730') }}
 
 
 MAP:EDDK_TWR
@@ -18,10 +18,10 @@ FOLDER:AoR
 LAYER:6
 COLOR:AOR_TWR_A
 STYLE:DOT
-{{ data.eddk_kml['layout']['aor']['line']['DKT'] | render_line }}
+{{ data.eddk_info['AoRBoundary']['DKT'] | render_line -}}
 ZOOM:400
 FONTSIZE:=:13
-{{ data.eddk_kml['layout']['aor']['labels']['DKT'] | to_text('DKT  124.980') }}
+{{ data.eddk_info['AoRLabel']['DKT'] | render_text('DKT  124.980') }}
 
 
 MAP:EDDK_APP
@@ -31,4 +31,4 @@ LAYER:6
 COLOR:AOR_APP_A
 ZOOM:400
 FONTSIZE:=:13
-{{ data.eddk_kml['layout']['aor']['labels']['DKT'] | to_text('DKA  135.350:0:-20') }}
+{{ data.eddk_info['AoRLabel']['DKT'] | render_text('DKA  135.350', offset= (0,-20)) }}
