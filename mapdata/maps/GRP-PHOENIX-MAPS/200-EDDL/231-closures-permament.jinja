@@ -5,22 +5,19 @@ AIRPORT:EDDL
 FOLDER:Closures
 LAYER:4
 ACTIVE:1
+{{ data.eddl_sup['ClosurePerm_Poly']['K4'] | render_area('TWYCLOSED:NONE') -}}
 COLOR:CLOSURE_SYMBOL
 {{ data.eddl_sup['ClosureSymbol_Poly']['K4_a'] | render_area('OTHER:REGION') -}}
 {{ data.eddl_sup['ClosureSymbol_Poly']['K4_b'] | render_area('OTHER:REGION') }}
-
-{{ data.eddl_sup['ClosurePerm_Poly']['K4'] | render_area('TWYCLOSED:NONE') }}
-
 
 MAP:J1/J2/J3
 AIRPORT:EDDL
 FOLDER:Closures
 LAYER:4
 ACTIVE:1
+{{ data.eddl_sup['ClosurePerm_Poly']['J1_J2_J3'] | render_area('TWYCLOSED:NONE') -}}
 COLOR:CLOSURE_SYMBOL
 {{ data.eddl_sup['ClosureSymbol_Poly']['J1'] | render_area('OTHER:REGION') -}}
 {{ data.eddl_sup['ClosureSymbol_Poly']['J2'] | render_area('OTHER:REGION') -}}
 {{ data.eddl_sup['ClosureSymbol_Poly']['J3_a'] | render_area('OTHER:REGION') -}}
 {{ data.eddl_sup['ClosureSymbol_Poly']['J3_b'] | render_area('OTHER:REGION') }}
-
-{{ data.eddl_sup['ClosurePerm_Poly']['J1_J2_J3'] | render_area('TWYCLOSED:NONE') }}
