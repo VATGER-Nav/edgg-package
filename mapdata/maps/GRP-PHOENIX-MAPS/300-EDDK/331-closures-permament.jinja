@@ -1,4 +1,4 @@
-// ----------------------- Permament Closures -----------------------
+// ======================< Permament Closures >======================
 
 MAP:C
 AIRPORT:EDDK
@@ -7,18 +7,17 @@ LAYER:4
 ACTIVE:1
 COLOR:CLOSURE
 STYLE:SOLID:2
-{{ data.eddk_kml['layout']['closures']['poly']['C_1'] | render_area('TWYCLOSED:REGION') }}
-{{ data.eddk_kml['layout']['closures']['poly']['C_2'] | render_area('TWYCLOSED:REGION') }}
-{{ data.eddk_kml['layout']['closures']['poly']['C_3'] | render_area('TWYCLOSED:NONE') }}
+{{ data.eddk_sup['ClosurePerm_Poly']['C_1'] | render_area('TWYCLOSED:REGION') -}}
+{{ data.eddk_sup['ClosurePerm_Poly']['C_2'] | render_area('TWYCLOSED:REGION') -}}
+{{ data.eddk_sup['ClosurePerm_Poly']['C_3'] | render_area('TWYCLOSED:NONE') -}}
 COLOR:CLOSURE_SYMBOL
 STYLE:SOLID:1
-{{ data.eddk_kml['layout']['closures']['symb']['C_1a'] | render_area('OTHER:REGION') }}
-{{ data.eddk_kml['layout']['closures']['symb']['C_1b'] | render_area('OTHER:REGION') }}
-{{ data.eddk_kml['layout']['closures']['symb']['C_2a'] | render_area('OTHER:REGION') }}
-{{ data.eddk_kml['layout']['closures']['symb']['C_2b'] | render_area('OTHER:REGION') }}
-{{ data.eddk_kml['layout']['closures']['symb']['C_3a'] | render_area('OTHER:REGION') }}
-{{ data.eddk_kml['layout']['closures']['symb']['C_3b'] | render_area('OTHER:REGION') }}
-
+{{ data.eddk_sup['ClosureSymbol_Poly']['C_1a'] | render_area('OTHER:REGION') -}}
+{{ data.eddk_sup['ClosureSymbol_Poly']['C_1b'] | render_area('OTHER:REGION') -}}
+{{ data.eddk_sup['ClosureSymbol_Poly']['C_2a'] | render_area('OTHER:REGION') -}}
+{{ data.eddk_sup['ClosureSymbol_Poly']['C_2b'] | render_area('OTHER:REGION') -}}
+{{ data.eddk_sup['ClosureSymbol_Poly']['C_3a'] | render_area('OTHER:REGION') -}}
+{{ data.eddk_sup['ClosureSymbol_Poly']['C_3b'] | render_area('OTHER:REGION') }}
 
 MAP:C1
 AIRPORT:EDDK
@@ -27,12 +26,11 @@ LAYER:4
 ACTIVE:1
 COLOR:CLOSURE
 STYLE:SOLID:2
-{{ data.eddk_kml['layout']['closures']['poly']['C1'] | render_area('TWYCLOSED:REGION') }}
+{{ data.eddk_sup['ClosurePerm_Poly']['C1'] | render_area('TWYCLOSED:REGION') -}}
 COLOR:CLOSURE_SYMBOL
 STYLE:SOLID:1
-{{ data.eddk_kml['layout']['closures']['symb']['C1_a'] | render_area('OTHER:REGION') }}
-{{ data.eddk_kml['layout']['closures']['symb']['C1_b'] | render_area('OTHER:REGION') }}
-
+{{ data.eddk_sup['ClosureSymbol_Poly']['C1_a'] | render_area('OTHER:REGION') -}}
+{{ data.eddk_sup['ClosureSymbol_Poly']['C1_b'] | render_area('OTHER:REGION') }}
 
 MAP:E
 AIRPORT:EDDK
@@ -40,9 +38,8 @@ FOLDER:Closures
 LAYER:4
 ACTIVE:1
 COLOR:CLOSURE_SYMBOL
-{{ data.eddk_kml['layout']['closures']['poly']['E'] | render_area('TWYCLOSED:NONE') }}
-{{ data.eddk_kml['layout']['closures']['symb']['E'] | render_area('OTHER:REGION') }}
-
+{{ data.eddk_sup['ClosurePerm_Poly']['E'] | render_area('TWYCLOSED:NONE') -}}
+{{ data.eddk_sup['ClosureSymbol_Poly']['E'] | render_area('OTHER:REGION') }}
 
 MAP:G
 AIRPORT:EDDK
@@ -51,14 +48,13 @@ LAYER:4
 ACTIVE:1
 COLOR:CLOSURE
 STYLE:SOLID:2
-{{ data.eddk_kml['layout']['closures']['poly']['G_a'] | render_area('TWYCLOSED:REGION') }}
-{{ data.eddk_kml['layout']['closures']['poly']['G_b'] | render_area('TWYCLOSED:NONE') }}
+{{ data.eddk_sup['ClosurePerm_Poly']['G_a'] | render_area('TWYCLOSED:REGION') -}}
+{{ data.eddk_sup['ClosurePerm_Poly']['G_b'] | render_area('TWYCLOSED:NONE') -}}
 COLOR:CLOSURE_SYMBOL_YELLOW
 STYLE:SOLID:1
-{{ data.eddk_kml['layout']['closures']['symb']['G_a'] | render_area('OTHER:REGION') }}
-{{ data.eddk_kml['layout']['closures']['symb']['G_b'] | render_area('OTHER:REGION') }}
-{{ data.eddk_kml['layout']['closures']['symb']['G_c'] | render_area('OTHER:REGION') }}
-
+{{ data.eddk_sup['ClosureSymbol_Poly']['G_a'] | render_area('OTHER:REGION') -}}
+{{ data.eddk_sup['ClosureSymbol_Poly']['G_b'] | render_area('OTHER:REGION') -}}
+{{ data.eddk_sup['ClosureSymbol_Poly']['G_c'] | render_area('OTHER:REGION') }}
 
 MAP:H
 AIRPORT:EDDK
@@ -67,11 +63,10 @@ LAYER:4
 ACTIVE:1
 COLOR:CLOSURE
 STYLE:SOLID:2
-{{ data.eddk_kml['layout']['closures']['poly']['H'] | render_area('TWYCLOSED:REGION') }}
+{{ data.eddk_sup['ClosurePerm_Poly']['H'] | render_area('TWYCLOSED:REGION') -}}
 COLOR:CLOSURE_SYMBOL
 STYLE:SOLID:1
-{{ data.eddk_kml['layout']['closures']['symb']['H'] | render_area('OTHER:REGION') }}
-
+{{ data.eddk_sup['ClosureSymbol_Poly']['H'] | render_area('OTHER:REGION') }}
 
 MAP:P
 AIRPORT:EDDK
@@ -80,11 +75,10 @@ LAYER:4
 ACTIVE:1
 COLOR:CLOSURE
 STYLE:SOLID:2
-{{ data.eddk_kml['layout']['closures']['poly']['P'] | render_area('TWYCLOSED:REGION') }}
+{{ data.eddk_sup['ClosurePerm_Poly']['P'] | render_area('TWYCLOSED:REGION') -}}
 COLOR:CLOSURE_SYMBOL
 STYLE:SOLID:1
-{{ data.eddk_kml['layout']['closures']['symb']['P'] | render_area('OTHER:REGION') }}
-
+{{ data.eddk_sup['ClosureSymbol_Poly']['P'] | render_area('OTHER:REGION') }}
 
 MAP:Z2
 AIRPORT:EDDK
@@ -93,25 +87,23 @@ LAYER:4
 ACTIVE:1
 COLOR:CLOSURE
 STYLE:SOLID:2
-{{ data.eddk_kml['layout']['closures']['poly']['Z2'] | render_area('TWYCLOSED:REGION') }}
+{{ data.eddk_sup['ClosurePerm_Poly']['Z2'] | render_area('TWYCLOSED:REGION') -}}
 COLOR:CLOSURE_SYMBOL
 STYLE:SOLID:1
-{{ data.eddk_kml['layout']['closures']['symb']['Z2'] | render_area('OTHER:REGION') }}
-
+{{ data.eddk_sup['ClosureSymbol_Poly']['Z2'] | render_area('OTHER:REGION') }}
 
 MAP:Apron X
 AIRPORT:EDDK
 FOLDER:Closures
 LAYER:4
 ACTIVE:1
-{{ data.eddk_kml['layout']['closures']['poly']['X'] | render_area('TWYCLOSED:NONE') }}
-{{ data.eddk_kml['layout']['closures']['symb']['X'] | render_area('OTHER:REGION') }}
-
+{{ data.eddk_sup['ClosurePerm_Poly']['X'] | render_area('TWYCLOSED:NONE') -}}
+{{ data.eddk_sup['ClosureSymbol_Poly']['X'] | render_area('OTHER:REGION') }}
 
 MAP:Apron Y
 AIRPORT:EDDK
 FOLDER:Closures
 LAYER:4
 ACTIVE:1
-{{ data.eddk_kml['layout']['closures']['poly']['Y'] | render_area('TWYCLOSED:NONE') }}
-{{ data.eddk_kml['layout']['closures']['symb']['Y'] | render_area('OTHER:REGION') }}
+{{ data.eddk_sup['ClosurePerm_Poly']['Y'] | render_area('TWYCLOSED:NONE') -}}
+{{ data.eddk_sup['ClosureSymbol_Poly']['Y'] | render_area('OTHER:REGION') }}

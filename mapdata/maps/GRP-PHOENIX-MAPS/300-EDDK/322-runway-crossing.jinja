@@ -1,4 +1,4 @@
-// ------------------------ Runway Crossing -------------------------
+// ========================< Runway Crossing >=======================
 
 MAP:31R/13L
 AIRPORT:EDDK
@@ -6,8 +6,7 @@ FOLDER:Runway Crossing
 LAYER:6
 COLOR:CLOSURE_SYMBOL_YELLOW
 STYLE:SOLID:2
-{{ data.eddk_kml['layout']['runways']['13L-31R'] | render_area('OTHER:POLYGON') }}
-
+{{ data.eddk_layout['RunwayElement'] | feat_where('designator', '13L-31R') | render_area('OTHER:POLYGON') }}
 
 MAP:31L/13R
 AIRPORT:EDDK
@@ -15,7 +14,7 @@ FOLDER:Runway Crossing
 LAYER:6
 COLOR:CLOSURE_SYMBOL_YELLOW
 STYLE:SOLID:2
-{{ data.eddk_kml['layout']['runways']['13R-31L'] | render_area('OTHER:POLYGON') }}
+{{ data.eddk_layout['RunwayElement'] | feat_where('designator', '13R-31L') | render_area('OTHER:POLYGON') }}
 
 
 MAP:24/06
@@ -24,4 +23,4 @@ FOLDER:Runway Crossing
 LAYER:6
 COLOR:CLOSURE_SYMBOL_YELLOW
 STYLE:SOLID:2
-{{ data.eddk_kml['layout']['runways']['06-24'] | render_area('OTHER:POLYGON') }}
+{{ data.eddk_layout['RunwayElement'] | feat_where('designator', '06-24') | render_area('OTHER:POLYGON') }}
