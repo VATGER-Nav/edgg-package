@@ -37,7 +37,6 @@ MAP:MIL VRPs
 FOLDER:Fixes
 ASRDATA:PHOENIX
 COLOR:Active_Map_Type_1
-ACTIVE:1
 {%- for vrp in vrp_table | feat_where('type', 'MIL') %}
 {%- set textalign = vrp.properties['textalign'] %}
 SYMBOL:{{ vrp.properties['symbol'] }}:{{ vrp.properties['designator'] }}

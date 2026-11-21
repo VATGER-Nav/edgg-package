@@ -42,9 +42,6 @@ ASRDATA:PHOENIX
 LAYER:-2
 COLOR:Active_Map_Type_19
 STYLE:SOLID:1
-ACTIVE:ID:*:DFC,DFGW,DFGC,DFGE,DFGI,DFG,DFTC,DFTS,DFTN,DFTW,DFAN,DFAS,DFANT,DFAST:*:*
-AND_ACTIVE:ID:*:DLC,DLGE,DLGW,DLT,DLA,DLAT,DLD,BOT:*:*
-AND_ACTIVE:ID:*:DKC,DKG,DKT,DKA,DKAT,NOR:*:*
 {% for uuid, geom in data.topsky['common']['topo']['EDGG_autobahn'].items() %}
 {{- geom | to_coordline('') }}
 {% endfor %}
@@ -55,7 +52,6 @@ ASRDATA:PHOENIX
 LAYER:-2
 COLOR:Active_Map_Type_18
 STYLE:SOLID:1
-ACTIVE:ID:*:DFC,DFGW,DFGC,DFGE,DFGI,DFG,DFTC,DFTS,DFTN,DFTW,DFAN,DFAS,DFANT,DFAST:*:*
 {% for uuid, geom in data.topsky['common']['topo']['EDGG_rivers'].items() %}
 {{- geom | to_coordline('') }}
 {% endfor %}
@@ -67,9 +63,6 @@ MAP:Urban Area
 FOLDER:Topography
 ASRDATA:PHOENIX
 LAYER:-4
-ACTIVE:ID:*:DFC,DFGW,DFGC,DFGE,DFGI,DFG,DFTC,DFTS,DFTN,DFTW,DFAN,DFAS,DFANT,DFAST:*:*
-AND_ACTIVE:ID:*:DLC,DLGE,DLGW,DLT,DLA,DLAT,DLD,BOT:*:*
-AND_ACTIVE:ID:*:DKC,DKG,DKT,DKA,DKAT,NOR:*:*
 {% for uuid, geom in data.topsky['common']['topo']['EDGG_urban'].items() %}
 {{- geom | to_poly('', 'Active_Map_Type_20', 100) }}
 {% endfor %}
