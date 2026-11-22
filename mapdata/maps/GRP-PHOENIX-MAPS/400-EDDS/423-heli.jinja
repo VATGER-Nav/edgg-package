@@ -1,4 +1,4 @@
-// ------------------------------ Heli ------------------------------
+// =============================< Heli >=============================
 
 MAP:Helipads
 AIRPORT:EDDS
@@ -7,11 +7,8 @@ LAYER:6
 ACTIVE:1
 ZOOM:400
 COLOR:LAYOUT_HOLDINGPOINT
-{{ data.edds_kml['layout']['heli']['poly']['Helipad_N'] | render_area('OTHER:POLYGON') }}
-{{ data.edds_kml['layout']['heli']['poly']['Helipad_S'] | render_area('OTHER:POLYGON') }}
-{{ data.edds_kml['layout']['heli']['symb']['Helipad_N'] | to_symbol('HELIPAD') }}
-{{ data.edds_kml['layout']['heli']['symb']['Helipad_S'] | to_symbol('HELIPAD') }}
-
+{{ data.edds_layout['Marking_Poly'] | feat_where('type', 'HELIPAD') | render_area('OTHER:POLYGON') }}
+{{ data.edds_info['Helipad'] | render_symbol('HELIPAD') }}
 
 MAP:Heli Positions
 AIRPORT:EDDS
@@ -19,9 +16,4 @@ FOLDER:Heli
 LAYER:6
 ZOOM:600
 COLOR:LAYOUT_LABEL_STAND
-{% for desig, feat in data.edds_kml['layout']['labels']['heli'].items() %}
-{{- feat | to_text('H:-1:0') }}
-{% endfor %}
-{% for desig, feat in data.edds_kml['layout']['labels']['heli'].items() %}
-{{- feat | to_symbol('CIRCLE') }}
-{% endfor %}
+{{ data.edds_info['HelicopterStand'] | render_symbol('CIRCLE', 'H', offset=(-1,0)) }}

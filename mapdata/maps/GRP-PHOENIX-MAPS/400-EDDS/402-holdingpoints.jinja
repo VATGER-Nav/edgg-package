@@ -1,5 +1,4 @@
-// ------------------------- Holding Points -------------------------
-{% set tolerance = 0.000005 %}
+// =====================< Holding Points CAT I >=====================
 
 MAP:Holding Points CAT I
 AIRPORT:EDDS
@@ -7,14 +6,15 @@ FOLDER:Holding Points
 LAYER:5
 ACTIVE:LVP:EDDS:0
 COLOR:LAYOUT_HOLDINGPOINT
-{% for desig, feat in data.edds_kml['layout']['holdingpoints']['cat1'].items() %}
-{{- feat | render_area('OTHER:REGION', desig) }}
+{% for feat in data.edds_layout['HoldingPoint_Poly'] | feat_where('type', 'CAT1') %}
+{{ feat | render_area('OTHER:REGION', feat.properties.designator) }}
 {% endfor %}
 STYLE:SOLID:2
-{% for desig, feat in data.edds_kml['layout']['holdingpoints']['line'].items() %}
-{{- feat | render_line(desig) }}
+{% for feat in data.edds_layout['HoldingPoint_Line'] | feat_where('type', 'CAT1') %}
+{{ feat | render_line(feat.properties.designator) }}
 {% endfor %}
 
+// ====================< Holding Points CAT III >====================
 
 MAP:Holding Points CAT II/III
 AIRPORT:EDDS
@@ -22,10 +22,20 @@ FOLDER:Holding Points
 LAYER:5
 ACTIVE:LVP:EDDS:1
 COLOR:LAYOUT_HOLDINGPOINT_RED
-{% for desig, feat in data.edds_kml['layout']['holdingpoints']['cat3'].items() %}
-{{- feat | render_area('OTHER:REGION', desig + ' CAT III') }}
+{% for feat in data.edds_layout['HoldingPoint_Poly'] | feat_where('type', 'CAT3') %}
+{{ feat | render_area('OTHER:REGION', feat.properties.designator) }}
 {% endfor %}
 
+// ==========================< Stopbars >============================
+
+{%- set tolerance = 0.000005 %}
+{%- set Z_stopbar = '7606ce06-bd8b-42f8-a624-1fbe37e548c9' %}
+{%- set deicing_stopbar = [
+    '3c78c26a-a4bb-41d2-970a-20c43e6a69fa',
+    '7e7b4945-d36a-40b6-95df-ffe5a41dc4e0',
+    '8ec38a47-859a-4e34-a102-d2ca97a1f788',
+    'a63cbcf1-26c6-4e78-939f-7d5d0875afb1',
+] %}
 
 MAP:Stopbars
 AIRPORT:EDDS
@@ -34,32 +44,21 @@ LAYER:5
 ACTIVE:1
 STYLE:SOLID:2
 COLOR:LAYOUT_HOLDINGPOINT
-{{ data.edds_aixm['TaxiwayMarking']['7606ce06-bd8b-42f8-a624-1fbe37e548c9'] | geom_simplify(tolerance) | render_line }}
-
+{{ data.edds_aixm.find(Z_stopbar) | feat_simplify(tolerance) | render_line }}
 
 MAP:All Stopbars
 AIRPORT:EDDS
 FOLDER:Holding Points
 LAYER:5
 COLOR:LAYOUT_HOLDINGPOINT
-{% for uuid in
-[
-    '0a0e4d6a-dac7-43bc-8dc2-20908687f29d',
-    '0c842ce5-969e-427d-8d49-e4a760137f61',
-    '3c78c26a-a4bb-41d2-970a-20c43e6a69fa',
-    '62c44f22-d052-4ba2-aed1-bbb629e315f7',
-    '776c9bbe-836c-44e6-bfdc-5eb5a8c21162',
-    '7e7b4945-d36a-40b6-95df-ffe5a41dc4e0',
-    '82c081c6-b88e-4740-a493-0e6dbc53b0cd',
-    '8cf4cbfa-ff75-4b6b-945e-077c7b069cdc',
-    '8d368f1c-aa67-49d7-ab85-887dee69462c',
-    '8ec38a47-859a-4e34-a102-d2ca97a1f788',
-    'a63cbcf1-26c6-4e78-939f-7d5d0875afb1',
-    'b364fc50-bd8b-43b3-b41a-95f7fb297e9e',
-    'b3ad7334-b8ce-4379-8d5f-8317a16b4b87',
-    'be7e4fdd-c89b-4f45-bbd7-e8dcd3374af1',
-    'dc5c2129-821a-4a65-ae72-90ff217eda00',
-    'f4201886-78b4-4642-b54a-af9ac362d64d',
-] %}
-{{- data.edds_aixm['TaxiwayMarking'][uuid] | geom_simplify(tolerance) | render_line(uuid) }}
-{% endfor %}
+{% for feat in data.edds_aixm['TaxiwayMarking']
+    | feat_where('markingLocation', 'TWY_INT')
+    | feat_exclude('id', Z_stopbar)
+    if feat.geometry.geom_type == 'LineString'
+%}
+{{- feat | feat_join | feat_simplify(tolerance) | render_line -}}
+{% endfor -%}
+
+{{ data.edds_aixm['TaxiwayMarking'] | feat_where('id', *deicing_stopbar)
+    | feat_join | feat_simplify(tolerance) | render_line
+}}

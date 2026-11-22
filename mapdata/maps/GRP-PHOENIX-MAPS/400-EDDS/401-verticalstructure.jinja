@@ -1,0 +1,60 @@
+// ===========================< Buildings >==========================
+
+{%- set tolerance = 0.000005 %}
+
+MAP:Buildings
+AIRPORT:EDDS
+FOLDER:Airport Layout
+ACTIVE:1
+COLOR:LAYOUT_BUILDING
+
+{% for feat in data.edds_aixm['VerticalStructure']
+    | feat_exclude('type', 'SIGN', 'STACK')
+    if feat.geometry.geom_type == 'Polygon'
+%}
+// {{feat.id}} / {{feat.properties.name | default('')}}
+{{ feat | feat_simplify(tolerance) | render_area('OTHER:REGION') }}
+{% endfor %}
+
+// - - - - - - - - - - - - - - Jet Bridges - - - - - - - - - - - - - 
+
+{% for feat in data.edds_aixm['VerticalStructure']
+    | feat_where('type', 'BRIDGE')
+    if feat.geometry.geom_type == 'Polygon'
+%}
+{{ feat | feat_simplify(0.000001) | render_area('OTHER:REGION', feat.properties.name) }}
+{% endfor %}
+
+// ==========================< Jet Bridges >=========================
+
+MAP:Jet Bridges
+AIRPORT:EDDS
+FOLDER:Airport Layout
+ACTIVE:1
+COLOR:LAYOUT_BUILDING
+{% for feat in data.edds_aixm['VerticalStructure']
+    | feat_where('type', 'BRIDGE') | feat_where('lighted', 'YES')
+    if feat.geometry.geom_type == 'LineString'
+%}
+{{ feat | feat_simplify(0.0000005) | render_area('OTHER:POLYGON', feat.properties.name) }}
+{% endfor %}
+
+// ============================< Fence >=============================
+
+MAP:Fence
+AIRPORT:EDDS
+FOLDER:Airport Layout
+ACTIVE:1
+COLOR:LAYOUT_BUILDING
+
+{% for feat in data.edds_aixm['VerticalStructure']
+    | feat_where('type', 'FENCE')
+    if feat.geometry.geom_type == 'LineString'
+%}
+// {{feat.id}} / {{feat.properties.name | default('')}}
+{{ feat | feat_simplify(tolerance) | render_polyline }}
+{% endfor %}
+
+// - - - - - - - - - - - - - Custom Fence - - - - - - - - - - - - - -
+
+{{ data.edds_layout['VerticalStructure_Line'] | render_polyline }}
