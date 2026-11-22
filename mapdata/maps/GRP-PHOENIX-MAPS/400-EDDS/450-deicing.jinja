@@ -1,4 +1,4 @@
-// ------------------------- Deicing Areas --------------------------
+// =====================< Runway Snow Removal >======================
 
 MAP:Snow 25/07
 AIRPORT:EDDS
@@ -8,8 +8,7 @@ RWYCLOSEDDEP:EDDS:07,25
 RWYCLOSEDARR:EDDS:07,25
 COLOR:CLOSURE
 STYLE:SOLID:2
-{{ data.edds_aixm['RunwayElement']['0d48f5ad-f099-464d-b13d-94cf0014d057'] | geom_simplify(0.00001) | render_area('RWYCLOSED:REGION') }}
-{{ data.edds_aixm['RunwayElement']['5f954a0a-08d7-48c3-9875-19263da9b4de'] | geom_simplify(0.00001) | render_area('RWYCLOSED:REGION') }}
+{{ data.edds_aixm['RunwayElement'] | feat_exclude('type', 'SHOULDER') | feat_union | feat_simplify(0.00001) | render_grp }}
 ZOOM:300
 COLOR:CLOSURE_SYMBOL
 FONTSIZE:=:14

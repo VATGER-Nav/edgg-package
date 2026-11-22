@@ -67,6 +67,7 @@ TEXTALIGN:CT
 {{ data.edds_kml['layout']['rrs']['07_1500'] | to_text('1500:0:24') }}
 {{ data.edds_kml['layout']['rrs']['07_2400'] | to_text('2400:0:12') }}
 
+// ======================< Runway Thresholds >=======================
 
 MAP:Runway Thresholds
 AIRPORT:EDDS
@@ -74,9 +75,9 @@ FOLDER:Runway Info
 LAYER:6
 ACTIVE:1
 COLOR:RUNWAY_LABEL
-{{ data.edds_kml['layout']['markings']['poly']['thr07'] | render_area('OTHER:REGION', '07') }}
-{{ data.edds_kml['layout']['markings']['poly']['thr25'] | render_area('OTHER:REGION', '25') }}
+{{ data.edds_layout['Marking_Poly'] | feat_where('type', 'THR') | render_area('OTHER:REGION') }}
 
+// ======================< Runway Designators >======================
 
 MAP:Runway Designators
 AIRPORT:EDDS
@@ -84,15 +85,12 @@ FOLDER:Runway Info
 LAYER:6
 ACTIVE:1
 COLOR:RUNWAY_LABEL
-{% for _, feat in data.edds_kml['layout']['markings']['runways'].items() %}
-{{- feat | render_area('OTHER:REGION') }}
-{% endfor %}
+{{ data.edds_info['RunwayLabel'] | render_grp }}
 
+// =======================< Runway Markings >========================
 
 MAP:Runway Markings
 AIRPORT:EDDS
 FOLDER:Runway Info
 COLOR:LAYOUT_RUNWAY_MARKING
-{% for _, feat in data.edds_aixm['RunwayMarking'].items() %}
-{{- feat | render_area('OTHER:REGION') }}
-{% endfor %}
+{{ data.edds_aixm['RunwayMarking'] | render_area('OTHER:REGION') }}

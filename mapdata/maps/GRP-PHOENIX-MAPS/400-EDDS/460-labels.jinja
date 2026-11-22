@@ -1,31 +1,8 @@
-// ----------------------------- Labels -----------------------------
-{%- set stands_sec = [
-    '9A',
-    '24',
-    '26',
-    '28',
-    '71A',
-    '74A',
-    '200',
-    '201',
-    '202',
-    '203',
-    '204',
-] %}
-{%- set stands_old = [
-    '100',
-    '101',
-    '102',
-    '103',
-    '104',
-    '105',
-    '106',
-    '200',
-    '201',
-    '202',
-    '203',
-    '204',
-] %}
+{%- from "_macros.jinja" import render_multilinetext -%}
+
+// ========================< Taxiway Labels >========================
+
+// - - - - - - - - - - - - - Label Buffer - - - - - - - - - - - - - -
 
 MAP:Buffer EDDS
 AIRPORT:EDDS
@@ -34,10 +11,9 @@ HIDDEN
 LAYER:3
 ZOOM:400
 COLOR:LAYOUT_TAXIWAY
-{% for _, feat in data.edds_kml['layout']['labels']['buffer'].items() %}
-{{- feat | render_area('OTHER:REGION') }}
-{% endfor %}
+{{ data.edds_info['LabelBuffer']['taxiway'] | render_grp }}
 
+// - - - - - - - - - - - - - - Labels - - - - - - - - - - - - - - - -
 
 MAP:Taxiways
 AIRPORT:EDDS
@@ -47,12 +23,14 @@ LAYER:6
 ZOOM:400
 FONTSIZE:=:10
 COLOR:LAYOUT_LABEL_YELLOW
-{% for desig, feat in data.edds_kml['layout']['labels']['taxiways'].items() if desig != 'Exit 3' %}
-{{- feat | to_text(desig) }}
-{% endfor %}
-TEXTALIGN:LC
-{{ data.edds_kml['layout']['labels']['taxiways']['Exit 3'] | to_text('Exit 3') }}
+{{ data.edds_info['TaxiwayLabel']
+    | feat_where('zoomlevel', 400)
+    | feat_exclude('designator', 'Exit_3')
+    | render_text(prop='text')
+-}}
+{{ data.edds_info['TaxiwayLabel']['Exit_3'] | render_text(prop='text', align='LC') }}
 
+// =========================< Stand Labels >=========================
 
 MAP:Stands
 AIRPORT:EDDS
@@ -63,46 +41,13 @@ ACTIVE:1
 ZOOM:600
 FONTSIZE:=:9
 COLOR:LAYOUT_LABEL_YELLOW
-{% for desig, feat in data.edds_kml['layout']['labels']['stands'].items() if not desig in stands_sec %}
-{{- feat | to_text(desig) }}
-{% endfor %}
-
-// New Stands
-COLOR:CLOSURE_SYMBOL
-{% for desig in
-[
-    '100',
-    '101',
-    '102',
-    '103',
-    '104',
-    '206',
-    '207',
-] %}
-{{- data.edds_kml['layout']['labels']['stands_new'][desig] | to_text('(' + desig + '):0:10') }}
-{% endfor %}
-
-// Strikethrough
-COLOR:CLOSURE_SYMBOL
-FONTSTYLE:700:0:0:0
-{% for desig, feat in data.edds_kml['layout']['labels']['stands'].items() if (desig in stands_old) and (not desig in stands_sec) %}
-{{- feat | to_text('___:0:-4') }}
-{% endfor %}
-FONTSTYLE:0
+{{ data.edds_info['StandLabel'] | feat_where('zoomlevel', 600) | render_text(prop='designator') }}
 
 ZOOM:1200
 COLOR:LAYOUT_LABEL_YELLOW
-{% for desig in stands_sec %}
-{{- data.edds_kml['layout']['labels']['stands'][desig] | to_text(desig) }}
-{% endfor %}
+{{ data.edds_info['StandLabel'] | feat_where('zoomlevel', 1200) | render_text(prop='designator') }}
 
-// Strikethrough
-COLOR:CLOSURE_SYMBOL
-FONTSTYLE:700:0:0:0
-{% for desig, feat in data.edds_kml['layout']['labels']['stands'].items() if (desig in stands_old) and (desig in stands_sec) %}
-{{- feat | to_text('____:0:-4') }}
-{% endfor %}
-FONTSTYLE:0
+// =========================< Area Labels >==========================
 
 // There is 2 space symbols at the end of the map name to avoid accidental activation by EDDL and EDDK stand maps
 MAP:Areas  
@@ -112,10 +57,9 @@ ACTIVE:1
 ZOOM:400
 FONTSIZE:=:10
 COLOR:LAYOUT_LABEL_STAND
-{{ data.edds_kml['layout']['labels']['GAT'] | to_text('GAT') }}
-{{ data.edds_kml['layout']['labels']['Police'] | to_text('Police') }}
-{{ data.edds_kml['layout']['labels']['US Army'] | to_text('US Army') }}
+{{ data.edds_info['AreaLabel'] | render_text(prop='text') }}
 
+// =======================< Building Labels >========================
 
 MAP:Buildings
 AIRPORT:EDDS
@@ -123,8 +67,6 @@ FOLDER:Labels
 ZOOM:400
 FONTSIZE:=:9
 COLOR:LAYOUT_LABEL_STAND
-{% for desig, feat in data.edds_kml['layout']['labels']['buildings'].items() if not desig in ['Lufthansa Technik'] %}
-{{- feat | to_text(desig) }}
+{% for feat in data.edds_info['BuildingLabel'].values() %}
+{{ render_multilinetext(feat, 12) }}
 {% endfor %}
-{{ data.edds_kml['layout']['labels']['buildings']['Lufthansa Technik'] | to_text('Lufthansa:0:-6') }}
-{{ data.edds_kml['layout']['labels']['buildings']['Lufthansa Technik'] | to_text('Technik:0:6') }}
