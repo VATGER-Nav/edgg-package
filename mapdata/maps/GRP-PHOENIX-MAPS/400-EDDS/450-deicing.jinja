@@ -8,75 +8,69 @@ RWYCLOSEDDEP:EDDS:07,25
 RWYCLOSEDARR:EDDS:07,25
 COLOR:CLOSURE
 STYLE:SOLID:2
-{{ data.edds_aixm['RunwayElement'] | feat_exclude('type', 'SHOULDER') | feat_union | feat_simplify(0.00001) | render_grp }}
+{{ data.edds_aixm['RunwayElement'] | feat_exclude('type', 'SHOULDER') | feat_union | feat_simplify(0.00001) | render_grp -}}
 ZOOM:300
 COLOR:CLOSURE_SYMBOL
 FONTSIZE:=:14
-{{ data.edds_kml['layout']['deicing']['labels']['07-25'] | to_text('SNOW REMOVAL') }}
+{{ data.edds_info['DeicingLabel']['07-25'] | render_text('SNOW REMOVAL') }}
 
+// ========================< Deicing Areas >=========================
 
 MAP:De-Icing
 AIRPORT:EDDS
 FOLDER:Ice/Snow
+LAYER:2
 
-// Areas
+// - - - - - - - - - - - - - - - Areas - - - - - - - - - - - - - - - 
+
 COLOR:DEICING:LAYOUT_RUNWAY
 STYLE:SOLID:2
-{{ data.edds_kml['layout']['deicing']['poly']['DP1'] | render_area('OTHER:REGION:X', 'DP1') }}
-{{ data.edds_kml['layout']['deicing']['poly']['DP2'] | render_area('OTHER:REGION:X', 'DP2') }}
-{{ data.edds_kml['layout']['deicing']['poly']['DP3'] | render_area('OTHER:REGION:X', 'DP3') }}
-{{ data.edds_kml['layout']['deicing']['poly']['DP4'] | render_area('OTHER:REGION:X', 'DP4') }}
+{{ data.edds_info['DeicingArea'] | render_area('OTHER:REGION:X') }}
 
-// Arrows
+// - - - - - - - - - - - - - - Markings - - - - - - - - - - - - - - -
+
 COLOR:LAYOUT_TAXILINE_WHITE
 STYLE:SOLID:1
-{{ data.edds_kml['layout']['deicing']['arrows']['DP1'] | render_area('OTHER:REGION') }}
-{{ data.edds_kml['layout']['deicing']['arrows']['DP2'] | render_area('OTHER:REGION') }}
-{{ data.edds_kml['layout']['deicing']['arrows']['DP3'] | render_area('OTHER:REGION') }}
-{{ data.edds_kml['layout']['deicing']['arrows']['DP4'] | render_area('OTHER:REGION') }}
-
-// Taxilines
+{{ data.edds_info['DeicingMarking_Poly'] | render_area('OTHER:REGION') }}
 STYLE:SOLID:2
-{{ data.edds_kml['layout']['deicing']['line']['DP1'] | render_line }}
-{{ data.edds_kml['layout']['deicing']['line']['DP2'] | render_line }}
-{{ data.edds_kml['layout']['deicing']['line']['DP3'] | render_line }}
-{{ data.edds_kml['layout']['deicing']['line']['DP4'] | render_line }}
+{{ data.edds_info['DeicingMarking_Line'] | render_line }}
 
-// Labels
+// - - - - - - - - - - - - - - Labels - - - - - - - - - - - - - - - -
+
 ZOOM:300
 COLOR:LAYOUT_LABEL_STAND
-TEXTALIGN:LC
 FONTSIZE:=:12
 TEXTALIGN:CC
-{{ data.edds_kml['layout']['deicing']['labels']['DP1'] | to_text('DP1:3:0') }}
-{{ data.edds_kml['layout']['deicing']['labels']['DP2'] | to_text('DP2:3:0') }}
-{{ data.edds_kml['layout']['deicing']['labels']['DP3'] | to_text('DP3:3:0') }}
-{{ data.edds_kml['layout']['deicing']['labels']['DP4'] | to_text('DP4:3:0') }}
+{{ data.edds_info['DeicingLabel']['DP1'] | render_text('DP1', offset=(3,0)) -}}
+{{ data.edds_info['DeicingLabel']['DP2'] | render_text('DP2', offset=(3,0)) -}}
+{{ data.edds_info['DeicingLabel']['DP3'] | render_text('DP3', offset=(3,0)) -}}
+{{ data.edds_info['DeicingLabel']['DP4'] | render_text('DP4', offset=(3,0)) }}
 
 FONTSIZE:=:60
 TEXTALIGN:CC
 COLOR:RESTRICTIONS_E
-{{ data.edds_kml['layout']['deicing']['labels']['DP1'] | to_text('.:-14:-17') }}
+{{ data.edds_info['DeicingLabel']['DP1'] | render_text('.', offset=(-14,-17)) -}}
 COLOR:RESTRICTIONS_F
-{{ data.edds_kml['layout']['deicing']['labels']['DP2'] | to_text('.:-14:-17') }}
+{{ data.edds_info['DeicingLabel']['DP2'] | render_text('.', offset=(-14,-17)) -}}
 COLOR:RESTRICTIONS_C
-{{ data.edds_kml['layout']['deicing']['labels']['DP3'] | to_text('.:-14:-17') }}
+{{ data.edds_info['DeicingLabel']['DP3'] | render_text('.', offset=(-14,-17)) -}}
 COLOR:RESTRICTIONS_C
-{{ data.edds_kml['layout']['deicing']['labels']['DP4'] | to_text('.:-14:-17') }}
+{{ data.edds_info['DeicingLabel']['DP4'] | render_text('.', offset=(-14,-17)) }}
 
-// Reference
+// - - - - - - - - - - - - - - - Reference - - - - - - - - - - - - - 
+
 COLOR:LAYOUT_LABEL_STAND
 TEXTALIGN:CC
 FONTSIZE:=:12
-{{ data.edds_kml['layout']['restrictions']['labels']['reference'] | to_text('Reference  :0:-30') }}
-{{ data.edds_kml['layout']['restrictions']['labels']['reference'] | to_text('Code C < 36m (A321/B739):0:-15') }}
-{{ data.edds_kml['layout']['restrictions']['labels']['reference'] | to_text('            Code E < 65m (A343/B77W except B744):0:0') }}
-{{ data.edds_kml['layout']['restrictions']['labels']['reference'] | to_text('Code F < 80m (A124/B748):0:15') }}
+{{ data.edds_info['RestrictionLabel']['reference'] | render_text('Reference  ', offset=(0,12-15*2)) -}}
+{{ data.edds_info['RestrictionLabel']['reference'] | render_text('Code C < 36m (A321/B739)            ', offset=(42,12-15*1)) -}}
+{{ data.edds_info['RestrictionLabel']['reference'] | render_text('Code E < 65m (A343/B77W except B744)', offset=(42,12+15*0)) -}}
+{{ data.edds_info['RestrictionLabel']['reference'] | render_text('Code F < 80m (A124/B748)            ', offset=(42,12+15*1)) -}}
 
 FONTSIZE:=:70
 COLOR:RESTRICTIONS_C
-{{ data.edds_kml['layout']['restrictions']['labels']['reference'] | to_text('.:-95:-69') }}
+{{ data.edds_info['RestrictionLabel']['reference'] | render_text('.', offset=(-95,-42-15*1)) -}}
 COLOR:RESTRICTIONS_E
-{{ data.edds_kml['layout']['restrictions']['labels']['reference'] | to_text('.:-95:-54') }}
+{{ data.edds_info['RestrictionLabel']['reference'] | render_text('.', offset=(-95,-42+15*0)) -}}
 COLOR:RESTRICTIONS_F
-{{ data.edds_kml['layout']['restrictions']['labels']['reference'] | to_text('.:-95:-39') }}
+{{ data.edds_info['RestrictionLabel']['reference'] | render_text('.', offset=(-95,-42+15*1)) }}
