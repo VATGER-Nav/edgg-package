@@ -18,14 +18,12 @@ STYLE:SOLID:4
 // K2
 COLOR:RESTRICTIONS_C
 STYLE:SOLID:4
-{{ data.eddk_info['Restriction_Line']['K2_a'] | render_line -}}
-{{ data.eddk_info['Restriction_Line']['K2_b'] | render_line }}
+{{ data.eddk_info['Restriction_Line']['K2'] | render_line }}
 
 // K3
 COLOR:RESTRICTIONS_C
 STYLE:SOLID:4
-{{ data.eddk_info['Restriction_Line']['K3_a'] | render_line -}}
-{{ data.eddk_info['Restriction_Line']['K3_b'] | render_line }}
+{{ data.eddk_info['Restriction_Line']['K3'] | render_line }}
 
 // C
 COLOR:RESTRICTIONS_C
@@ -50,21 +48,12 @@ STYLE:SOLID:4
 // T2
 COLOR:RESTRICTIONS_C
 STYLE:SOLID:4
-{{ data.eddk_info['Restriction_Line']['T2_a'] | render_line -}}
-{{ data.eddk_info['Restriction_Line']['T2_b'] | render_line }}
+{{ data.eddk_info['Restriction_Line']['T2'] | render_line }}
 
-// N/M Orange/Blue Lines
+// M/N Orange/Blue Lines
 COLOR:RESTRICTIONS_C
 STYLE:SOLID:4
-{{ data.eddk_info['Restriction_Line']['Mb_a'] | render_line -}}
-{{ data.eddk_info['Restriction_Line']['Mb_b'] | render_line -}}
-{{ data.eddk_info['Restriction_Line']['Mo_a'] | render_line -}}
-{{ data.eddk_info['Restriction_Line']['Mo_b'] | render_line -}}
-{{ data.eddk_info['Restriction_Line']['Nb_a'] | render_line -}}
-{{ data.eddk_info['Restriction_Line']['Nb_b'] | render_line -}}
-{{ data.eddk_info['Restriction_Line']['No_a'] | render_line -}}
-{{ data.eddk_info['Restriction_Line']['No_b'] | render_line -}}
-{{ data.eddk_info['Restriction_Line']['N_M_c'] | render_line -}}
+{{ data.eddk_info['Restriction_Line']['M_N_ob'] | render_line -}}
 TEXTALIGN:CC
 {{ data.eddk_info['RestrictionLabel']['N_M'] | render_text('      - Max code C', offset=(0,-12)) -}}
 COLOR:LAYOUT_TAXILINE_BLUE
@@ -75,18 +64,15 @@ COLOR:LAYOUT_TAXILINE_ORANGE
 // B (Bridge)
 COLOR:RESTRICTIONS_D
 STYLE:SOLID:4
-{{ data.eddk_info['Restriction_Line']['B_1a'] | render_line -}}
-{{ data.eddk_info['Restriction_Line']['B_1b'] | render_line -}}
-{{ data.eddk_info['Restriction_Line']['B_1c'] | render_line -}}
+{{ data.eddk_info['Restriction_Line']['B_1'] | render_line -}}
 TEXTALIGN:RC
 {{ data.eddk_info['RestrictionLabel']['B_1'] | render_text('Max code D') -}}
 {{ data.eddk_info['RestrictionLabel']['B_1'] | render_text('Max 200t', offset=(0,12)) }}
 
-// N/M Yellow Line
+// M/N Yellow Line
 COLOR:RESTRICTIONS_E
 STYLE:SOLID:4
-{{ data.eddk_info['Restriction_Line']['N_M_a'] | render_line -}}
-{{ data.eddk_info['Restriction_Line']['N_M_b'] | render_line -}}
+{{ data.eddk_info['Restriction_Line']['M_N'] | render_line }}
 TEXTALIGN:CC
 {{ data.eddk_info['RestrictionLabel']['N_M'] | render_text('      - Max code E') -}}
 COLOR:LAYOUT_TAXILINE_YELLOW
@@ -95,8 +81,7 @@ COLOR:LAYOUT_TAXILINE_YELLOW
 // B and L
 COLOR:RESTRICTIONS_E
 STYLE:SOLID:4
-{{ data.eddk_info['Restriction_Line']['B_L_a'] | render_line -}}
-{{ data.eddk_info['Restriction_Line']['B_L_b'] | render_line }}
+{{ data.eddk_info['Restriction_Line']['B_L'] | render_line }}
 
 // B (Abeam Apron U and 2)
 COLOR:RESTRICTIONS_E
@@ -106,9 +91,7 @@ STYLE:SOLID:4
 // T and D (Abeam Aprons)
 COLOR:RESTRICTIONS_E
 STYLE:SOLID:4
-{{ data.eddk_info['Restriction_Line']['T_D'] | render_line -}}
-{{ data.eddk_info['Restriction_Line']['T_a'] | render_line -}}
-{{ data.eddk_info['Restriction_Line']['T_b'] | render_line }}
+{{ data.eddk_info['Restriction_Line']['T_D'] | render_line }}
 
 // D
 COLOR:RESTRICTIONS_F
