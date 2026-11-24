@@ -1,4 +1,4 @@
-// ------------------------------- AoR ------------------------------
+// ====================< Areas of Responsibility >===================
 
 MAP:EDDS_GND
 AIRPORT:EDDS
@@ -6,12 +6,10 @@ FOLDER:AoR
 LAYER:6
 COLOR:AOR_GND_A
 STYLE:DOT
-{{ data.edds_kml['layout']['aor']['line']['DSG'] | render_line }}
+{{ data.edds_info['AoRBoundary']['DSG'] | render_line -}}
 ZOOM:400
 FONTSIZE:=:13
-TEXTALIGN:RC
-{{ data.edds_kml['layout']['aor']['labels']['DSG'] | to_text('DSG  118.605') }}
-
+{{ data.edds_info['AoRLabel']['DSG'] | render_text('DSG  118.605', align='RC') }}
 
 MAP:EDDS_TWR
 AIRPORT:EDDS
@@ -19,11 +17,10 @@ FOLDER:AoR
 LAYER:6
 COLOR:AOR_TWR_A
 STYLE:DOT
-{{ data.edds_kml['layout']['aor']['line']['DST'] | render_line }}
+{{ data.edds_info['AoRBoundary']['DST'] | render_line -}}
 ZOOM:400
 FONTSIZE:=:13
-{{ data.edds_kml['layout']['aor']['labels']['DST'] | to_text('DST  118.805') }}
-
+{{ data.edds_info['AoRLabel']['DST'] | render_text('DST  118.805') }}
 
 MAP:EDDS_STG_APP
 AIRPORT:EDDS
@@ -32,8 +29,7 @@ LAYER:6
 COLOR:AOR_APP_A
 ZOOM:400
 FONTSIZE:=:13
-{{ data.edds_kml['layout']['aor']['labels']['DST'] | to_text('STG  125.050:0:20') }}
-
+{{ data.edds_info['AoRLabel']['DST'] | render_text('STG  125.050', offset=(0,20)) }}
 
 MAP:EDDS_REU_APP
 AIRPORT:EDDS
@@ -42,4 +38,4 @@ LAYER:6
 COLOR:AOR_APP_B
 ZOOM:400
 FONTSIZE:=:13
-{{ data.edds_kml['layout']['aor']['labels']['DST'] | to_text('REU  119.200:0:40') }}
+{{ data.edds_info['AoRLabel']['DST'] | render_text('REU  119.200', offset=(0,40)) }}

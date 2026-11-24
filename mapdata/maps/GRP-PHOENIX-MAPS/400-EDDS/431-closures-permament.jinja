@@ -1,11 +1,11 @@
-// ----------------------- Permament Closures -----------------------
+// ======================< Permament Closures >======================
 
 MAP:X
 AIRPORT:EDDS
 FOLDER:Closures
 LAYER:4
 ACTIVE:1
-{{ data.edds_kml['layout']['closures']['poly']['X'] | render_area('TWYCLOSED:NONE') }}
+{{ data.edds_sup['ClosurePerm_Poly']['X'] | render_area('TWYCLOSED:NONE') -}}
 COLOR:CLOSURE_SYMBOL
-{{ data.edds_kml['layout']['closures']['symb']['X_a'] | render_area('OTHER:REGION') }}
-{{ data.edds_kml['layout']['closures']['symb']['X_b'] | render_area('OTHER:REGION') }}
+{{ data.edds_sup['ClosureSymbol_Poly']['X_a'] | render_area('OTHER:REGION') -}}
+{{ data.edds_sup['ClosureSymbol_Poly']['X_b'] | render_area('OTHER:REGION') }}
