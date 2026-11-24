@@ -33,9 +33,7 @@ TEXTALIGN:LC
 // L2 (Holding Point)
 COLOR:RESTRICTIONS_E
 STYLE:SOLID:4
-{{ data.eddl_info['Restriction_Line']['L2_1a'] | render_line -}}
-{{ data.eddl_info['Restriction_Line']['L2_1b'] | render_line -}}
-{{ data.eddl_info['Restriction_Line']['L2_1c'] | render_line -}}
+{{ data.eddl_info['Restriction_Line']['L2_1'] | render_line -}}
 TEXTALIGN:RC
 {{ data.eddl_info['RestrictionLabel']['L2_1a'] | render_text('Max A343') -}}
 {{ data.eddl_info['RestrictionLabel']['L2_1b'] | render_text('Max A343') }}
@@ -52,10 +50,10 @@ TEXTALIGN:LC
 // GAT
 COLOR:RESTRICTIONS_AB
 STYLE:SOLID:4
-{{ data.eddl_info['Restriction_Line']['GAT_a'] | render_line -}}
-{{ data.eddl_info['Restriction_Line']['GAT_b'] | render_line -}}
+{{ data.eddl_info['Restriction_Line']['G'] | render_line -}}
+{{ data.eddl_info['Restriction_Line']['H'] | render_line -}}
 STYLE:SOLID:1
-{{ data.eddl_info['Restriction_Poly']['GAT_a'] | render_area('OTHER:REGION:\\') -}}
+{{ data.eddl_info['Restriction_Poly']['GAT'] | render_area('OTHER:REGION:\\') -}}
 TEXTALIGN:RC
 {{ data.eddl_info['RestrictionLabel']['GAT'] | render_text('Max wingspan 29m') }}
 
