@@ -5,8 +5,6 @@ FOLDER:EDDL
 ASRDATA:PHOENIX
 COLOR:Active_Map_Type_19
 STYLE:SOLID:1
-ACTIVE:ID:DLT:*:*:*
-// Bridges
 {% for name, geom in data.topsky['common']['EDDL']['bridges'].items() %}
 {{- geom | to_line(name) -}}
 {% endfor %}

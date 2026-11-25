@@ -148,10 +148,3 @@ WXR_Brightness=75
 WXR_Echo_dBZ_Hi=50
 WXR_Echo_dBZ_Med=30 ;default
 WXR_Echo_dBZ_Lo=25
-
-[EDDF]
-Window_Ops_Caution=60
-Window_Ops_Warning=80
-
-[_DEL]
-Window_CPDLC_Current=1,1,600
