@@ -63,6 +63,10 @@ COLOR:LAYOUT_TAXILINE_YELLOW
 {% endfor %}
 {{ GLM_resolved | feat_where('id', GLM_draw) | feat_simplify(tolerance) | render_line('N8') }}
 
+// - - - - - - - - - - - - Custom Markings - - - - - - - - - - - - -
+
+{{ data.eddf_layout['Marking_Line'] | feat_where('type', 'TWY') | render_line }}
+
 // - - - - - - - - - - - - - Orange Lanes - - - - - - - - - - - - - -
 
 COLOR:LAYOUT_TAXILINE_ORANGE

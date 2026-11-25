@@ -20,6 +20,7 @@ STYLE:SOLID
 COLOR:LAYOUT_TAXILINE_GREY
 #}
 
+
 // - - - - - - - - - - - - - - - Apron A - - - - - - - - - - - - - - 
 
 {%- set A_exclude = [
@@ -37,7 +38,6 @@ COLOR:LAYOUT_TAXILINE_GREY
     '9e6d9a25-6598-4455-b1f8-f77c8f8bc097',
     '9f2b745a-dedc-4c83-b089-c5a32bc734d0',
     'bd1d7f28-bfae-46af-9df4-41430ac86035',
-    'bfb69162-2149-4ca7-b3d0-92c341189617',
     'e7041e26-3024-4b5f-b007-bd5678a36e16',
 ] %}
 {%- set A1_dotted = '66c35b2d-6c11-4dc8-ab93-f6fa68358cc0' %}
@@ -54,7 +54,9 @@ STYLE:SOLID
 
 // A26
 {{ leadin_grouped['A26'] | feat_join | feat_simplify(tolerance) | render_line -}}
-{{ data.eddf_aixm.find('1eb23f09-8816-4823-a3ff-93eda8fecfa9') | feat_simplify(tolerance) | render_line }}
+{{ data.eddf_aixm.find('2bd69c6f-1024-49fd-9222-1d8a57b7e705') | feat_simplify(tolerance) | render_line -}}
+{{ data.eddf_aixm.find('3627bfed-8f5b-4867-b375-18bd862684a8') | feat_simplify(tolerance) | render_line -}}
+{{ data.eddf_aixm.find('85d42841-b506-42e7-b567-ee233a1db3c4') | feat_simplify(tolerance) | render_line }}
 
 {% for stand in ['A28', 'A30', 'A34', 'A36'] %}
 {{ leadin_grouped[stand] | feat_exclude('id', *A_exclude) | feat_join | feat_simplify(tolerance) | render_line(stand) }}
@@ -198,6 +200,10 @@ STYLE:TLANE_DASH
 
 // - - - - - - - - - - - - - - - Apron F - - - - - - - - - - - - - - 
 
+// AIP has incomplete data due to construction site.
+// Lines were recreated from previous AIRAC.
+
+{#-
 STYLE:SOLID
 
 {% for stand in ['F211', 'F212', 'F213', 'F214', 'F215', 'F216'] %}
@@ -223,6 +229,25 @@ STYLE:SOLID
 // F225
 STYLE:TLANE_DASH
 {{ leadin_grouped['F225'] | feat_join | feat_simplify(1) | render_line }}
+#}
+
+STYLE:SOLID
+
+{% for stand in ['F211', 'F212', 'F222', 'F224'] %}
+{{ data.eddf_layout['Marking_Line'] | feat_where('designator', stand) | render_line(stand) }}
+{% endfor %}
+
+STYLE:TLANE_DASH
+
+{% for stand in ['F221', 'F223', 'F225'] %}
+{{ data.eddf_layout['Marking_Line'] | feat_where('designator', stand) | render_line(stand) }}
+{% endfor %}
+
+STYLE:SOLID
+
+{% for stand in ['F213', 'F214', 'F215', 'F216'] %}
+{{ leadin_grouped[stand] | feat_join | feat_simplify(tolerance) | render_line(stand) }}
+{% endfor %}
 
 // F231
 STYLE:SOLID
