@@ -54,11 +54,11 @@ COLOR:LAYOUT_HOLDINGPOINT_GREY
 {% endfor %}
 STYLE:SOLID:2
 COLOR:LAYOUT_HOLDINGPOINT
-{% for feat in data.eddf_layout['HoldingPoint_Line'] | feat_where('color', 'ORANGE') %}
+{% for feat in data.eddf_layout['HoldingPoint_Line'] | feat_where('color', 'ORANGE') | feat_exclude('type', 'STOPBAR') %}
 {{ feat | render_line(feat.properties.designator) }}
 {% endfor %}
 COLOR:LAYOUT_HOLDINGPOINT_GREY
-{% for feat in data.eddf_layout['HoldingPoint_Line'] | feat_where('color', 'GREY') %}
+{% for feat in data.eddf_layout['HoldingPoint_Line'] | feat_where('color', 'GREY') | feat_exclude('type', 'STOPBAR') %}
 {{ feat | render_line(feat.properties.designator) }}
 {% endfor %}
 
@@ -107,3 +107,11 @@ LAYER:5
 %}
 {{ feat | feat_join | feat_simplify(tolerance) | render_line(feat.id) }}
 {% endfor %}
+
+// Thanks to Fraport for providing consistent data that doesn't need any adjustments because of any f*ckups
+// e7e95923-26a3-4ec0-96e0-31a8ec7c7694 (lost because became a BAA Line)
+{{ data.eddf_aixm.find('e7e95923-26a3-4ec0-96e0-31a8ec7c7694') | feat_simplify(tolerance) | render_line }}
+
+// - - - - - - - - - - - - Custom Markings - - - - - - - - - - - - -
+
+{{ data.eddf_layout['HoldingPoint_Line'] | feat_where('type', 'STOPBAR') | render_line }}
