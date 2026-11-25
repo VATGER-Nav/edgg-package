@@ -236,9 +236,33 @@ WXR_Echo_dBZ_Hi=50
 WXR_Echo_dBZ_Med=30 ;default
 WXR_Echo_dBZ_Lo=25
 
-[EDDF]
-Window_Ops_Caution=60
-Window_Ops_Warning=80
-
 [_DEL]
 Window_CPDLC_Current=1,1,600
+
+[_TWR]
+Setup_LoadMap=Fixes\VRPs
+Setup_LoadMap=Fixes\MIL VRPs
+Setup_HideMap=EDDL\Bridges
+Setup_LoadMap=Topography\Highways
+Setup_LoadMap=Topography\Rivers/Lakes
+Setup_LoadMap=Topography\Urban Area
+Setup_LoadMap=Topography\DE Border
+
+[EDDF_]
+Window_Ops_Caution=60
+Window_Ops_Warning=80
+Setup_HideMap=Fixes\MIL VRPs
+Setup_HideMap=Topography
+
+[EDDL_]
+Setup_LoadMap=EDDL\Bridges
+Setup_HideMap=Topography\Highways
+Setup_HideMap=Topography\Urban Area
+
+[EDDK_]
+Setup_HideMap=Topography\Highways
+Setup_HideMap=Topography\Urban Area
+
+[EDLW_]
+Setup_HideMap=Topography\Highways
+Setup_HideMap=Topography\Urban Area
