@@ -60,6 +60,9 @@ Plugins	Plugin8Display1	Ground Radar display
 Plugins	Plugin9	\EDGG\Plugins\eddft3\eddft3.dll
 Plugins	Plugin9Display0	Ground Radar display
 Plugins	Plugin9Display1	Standard ES radar screen
+Plugins	Plugin10	\EDGG\Plugins\WeatherReader.dll
+Plugins	Plugin10Display0	Ground Radar display
+Plugins	Plugin10Display1	Standard ES radar screen
 
 TeamSpeakVccs	TsVccsMiniControlX	1494
 TeamSpeakVccs	TsVccsMiniControlY	46
