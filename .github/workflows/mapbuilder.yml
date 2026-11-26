@@ -1,20 +1,13 @@
 name: mapbuilder
 run-name: Building maps for commit ${{ github.sha }} by ${{ github.actor }}
 on:
+  workflow_dispatch:
   push:
     branches:
-      - "*"
-      - "*/**"
+      - "**"
       - "!main"
-    # paths:
-    #   - 'mapdata/**'
-  workflow_dispatch:
-    branches:
-      - "*"
-      - "*/**"
-      - "!main"
-    # paths:
-    #   - 'mapdata/**'
+    paths:
+      - 'mapdata/**'
 
 jobs:
   build-maps:
