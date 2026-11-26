@@ -10,6 +10,7 @@
         "timezone": "Europe/Berlin",
 		"appSI": "RUD,RUDH,DKB,DKBH,GCA,GSA",
         "autoHandoff": false,
+        "combinedRwys": {"25": ["25L", "25C"], "07": ["07R", "07C"]},
         "sids": {
             "climbvia": true,
 			"ANEKI": {
