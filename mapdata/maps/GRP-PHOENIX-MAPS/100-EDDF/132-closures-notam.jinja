@@ -1,1 +1,14 @@
 // ========================< NOTAM Closures >========================
+
+MAP:N14 - NOTAM A5188/26
+AIRPORT:EDDF
+FOLDER:Constructions
+ACTIVE:1
+LAYER:8
+COLOR:LAYOUT_APRON
+{{ data.eddf_sup['ClosureTemp_Poly']['N14'] | render_area('TWYCLOSED:REGION') -}}
+COLOR:LAYOUT_TAXIWAY
+{{ data.eddf_sup['ClosureTemp_Poly']['N14_taxiway'] | render_area('OTHER:REGION') -}}
+COLOR:CLOSURE
+STYLE:SOLID:2
+{{ data.eddf_sup['ClosureTemp_Poly']['N14'] | render_area('OTHER:POLYGON') }}
