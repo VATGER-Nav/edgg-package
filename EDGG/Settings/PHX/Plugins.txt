@@ -258,4 +258,6 @@ RDF Plugin for Euroscope:Radius:30
 RDF Plugin for Euroscope:Threshold:-1
 RDF Plugin for Euroscope:Precision:0
 RDF Plugin for Euroscope:EnableDraw:0
+WeatherReader:BoxPositionGround:1609,46
+WeatherReader:BoxCollapsedGround:1
 END
